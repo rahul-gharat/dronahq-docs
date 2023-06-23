@@ -28,3 +28,11 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+.sidebar_heading {
+  font-size: .9rem!important;
+  font-weight: 500;
+  margin-bottom: 0!important;
+  margin-top: 12px!important;
+  color: var(--ifm-menu-color);
+}
