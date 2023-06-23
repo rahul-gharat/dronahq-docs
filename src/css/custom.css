@@ -36,3 +36,36 @@
   margin-top: 12px!important;
   color: var(--ifm-menu-color);
 }
+
+.containerGridSampleApp {
+  display: flex;
+  height: fit-content;
+  margin: 10px;
+}
+
+.containerColumnSampleApp {
+  border: 1px solid #dadce0 !important;
+  border-radius: 4px;
+  margin: 10px;
+}
+.columnGrid {
+  flex: 1;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.column-one {
+  order: 1;
+}
+.column-two {
+  order: 2;
+}
+.column-three {
+  order: 3;
+}
+
+.containerImage {
+  margin: 1px;
+  font-weight: bold;
+  vertical-align: center;
+}
