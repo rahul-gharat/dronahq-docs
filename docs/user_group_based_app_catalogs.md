@@ -1,7 +1,7 @@
 ---
-sidebar_position: 14
+sidebar_position: 22
 ---
 
-# Keywords
+# User/Group based App Catalogs
 
 Docusaurus can manage multiple versions of your docs.
