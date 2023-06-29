@@ -6,6 +6,7 @@ slug: /getting-started/start-building
 description:  Learn the basics of building an app on Dronahq.
 ---
 
+import Thumbnail from '@site/src/components/Thumbnail';
 
 
 # Build Your First App
@@ -26,7 +27,7 @@ This tutorial guides you through the steps to create a simple database GUI using
 Here's a screenshot of the final result:
 
 <figure>
-  <img src="/img/beginner-tutorial-output.png" style= {{width:"100%", height:"auto"}} alt="Simple Database GUI"/>
+  <Thumbnail src="/img/beginner-tutorial-output.png" alt="Simple Database GUI" />
   <figcaption align = "center"><i>Simple Database GUI</i></figcaption>
 </figure>
 
