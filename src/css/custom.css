@@ -65,7 +65,7 @@ body {
     font-family: montserrat;
     color: var(--dhq-body-color);
     background-color: var(--dhq-body-background);
-    font-size: 16px;
+    font-size: 15px;
 }
 
 .table-of-contents__link {
