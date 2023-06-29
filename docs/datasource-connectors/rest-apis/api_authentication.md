@@ -2,6 +2,6 @@
 sidebar_position: 3
 ---
 
-# Ready APIs
+# API Authentication
 
 Docusaurus can manage multiple versions of your docs.
