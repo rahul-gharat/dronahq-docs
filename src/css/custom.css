@@ -65,6 +65,7 @@ body {
     font-family: montserrat;
     color: var(--dhq-body-color);
     background-color: var(--dhq-body-background);
+    font-size: 15px;
 }
 
 .table-of-contents__link {
@@ -190,7 +191,7 @@ a {
 }
 
 .menu__link {
-    font-size: 14px;
+    font-size: 13px;
     color: var(--dhq-body-color);
     font-weight: 500;
 }
@@ -219,7 +220,7 @@ h2 {
 }
 
 .sidebar_heading {
-    font-size: 14px !important;
+    font-size: 13px !important;
     font-weight: 700 !important;
     margin-bottom: 0!important;
     margin-top: 18px!important;
