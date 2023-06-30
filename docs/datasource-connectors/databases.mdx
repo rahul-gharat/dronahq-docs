@@ -2,6 +2,7 @@
 sidebar_position: 2
 title: Databases
 ---
+
 import Database from "@site/static/img/database.svg";
 
 # <Database /> Databases
@@ -17,8 +18,14 @@ Here you will learn how to connect to a database on DronaHQ.
 3. From the list, select the database you need to connect to. This opens the page where you can configure the parameters to connect to your database.
 
 <figure>
-  <img src="/img/databases-list.png" style= {{width:"60%", height:"auto"}} alt="List of available databases connectors."/>
-  <figcaption align = "center"><i>List of Databases</i></figcaption>
+  <img
+    src='/img/databases-list.png'
+    style={{ width: "60%", height: "auto" }}
+    alt='List of available databases connectors.'
+  />
+  <figcaption align='center'>
+    <i>List of Databases</i>
+  </figcaption>
 </figure>
 
 4. Give a name to the configuring database, to identify it later on.
@@ -29,5 +36,91 @@ Here you will learn how to connect to a database on DronaHQ.
 
 7. Click **Save** to create and save the database connection.
 
+## Dynamic database configuration
+DronaHQ Studio supports connecting to Postgres, MySQL, MSSQL and MongoDB, and other databases with dynamic database configurations.
+<figure>
+  <img
+    src='/img/dynamic-para-datasource.png'
+    style={{ width: "100%", height: "auto" }}
+    alt='Dynamic database configuration'
+  />
+  <figcaption align='center'>
+    <i>Dynamic database configurations</i>
+  </figcaption>
+</figure>
+
+### Use dynamic database host
+
+With our dynamic database host facility, you can now access various hosts from a single connector, revolutionizing the way you handle your database connections.
+
+During the configuration of your database connectors, we offer you the convenience of utilizing the dynamic database host feature for all databases. This functionality streamlines your workflow, saving you valuable time and effort. By leveraging a single connector, effortlessly craft queries tailored to each host, ensuring optimal performance and customization.
+
+:::info
+
+While using dynamic database host, the schema of the database should be the same.
+
+:::
+
+You can toggle the option which will enable you to access to host dynamically from different action flows and BINDAPI.
+
+<figure>
+  <img
+    src='/img/dynamic-database-host.png'
+    style={{ width: "40%", height: "auto" }}
+    alt='Dynamic database host'
+  />
+  <figcaption align='center'>
+    <i>Dynamic database HOST</i>
+  </figcaption>
+</figure>
+
+In the above image, we have the option to set our host to fetch the database due to toggling **Use dynamic database host**.
+Each time the data will change with respect to the different hosts provided.
+
+### Use dynamic database name
+
+ With **dynamic database name**, users can access different database names/tables from a single connector and also write queries respected to the databases name/table.
+
+Now when you are configuring the database connectors, Studio allows you to Use dynamic database names for all databases.
+
+:::info
+ While using dynamic database name, the schema of the database should be the same.
+:::
+
+You can toggle the option which will enable you to access databases with different names, dynamically from different action flows and BINDAPI
+
+<figure>
+  <img
+    src='/img/dynamic-database-name.png'
+    style={{ width: "40%", height: "auto" }}
+    alt='Dynamic database name'
+  />
+  <figcaption align='center'>
+    <i>Dynamic database Name</i>
+  </figcaption>
+</figure>
+
+In the above image, we have the option to set our database name to fetch the database due to toggling
+**Use dynamic database name**.
+Each time the data will change with respect to the different database names provided.
+
+### Use dynamic database credentials
+
+With **dynamic database credentials**, users can access different database names/tables from a single connector by providing credentials for each and also write queries respected to the databases name/table.
 
 
+You can toggle the option which will enable you to access to databases with different names, dynamically from different action flows and BINDAPI by providing different credentials for each.
+
+<figure>
+  <img
+    src='/img/dynamic-database-creds.png'
+    style={{ width: "40%", height: "auto" }}
+    alt='Dynamic database Credential'
+  />
+  <figcaption align='center'>
+    <i>Dynamic database Credentials</i>
+  </figcaption>
+</figure>
+
+In the above image, we have the option to set our username and password to fetch the database due to toggling **Use dynamic database host**.
+Each time the data will change with respect to different credentials provided.
