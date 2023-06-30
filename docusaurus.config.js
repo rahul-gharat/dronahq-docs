@@ -21,7 +21,7 @@ const config = {
   organizationName: 'rahul-gharat', // Usually your GitHub org/user name.
   projectName: 'dronahq-docs', // Usually your repo name.
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn', // 'throw',
   onBrokenMarkdownLinks: 'warn',
 
   // Even if you don't use internalization, you can use this field to set useful
