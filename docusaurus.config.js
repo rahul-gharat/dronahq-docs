@@ -8,10 +8,10 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'Build stunning internal tools, blazing fast',
   tagline: 'Low code toolkit for developers to quickly build internal tools, digital journeys, operational apps on top of any data source or APIs.',
-  favicon: 'img/dronahq-logo.png',
+  favicon: 'img/dronahq-logo-32x32.png',
 
   // Set the production url of your site here
-  url: 'https://rahul-gharat.github.io/',
+  url: 'https://rahul-gharat.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
@@ -21,7 +21,7 @@ const config = {
   organizationName: 'rahul-gharat', // Usually your GitHub org/user name.
   projectName: 'dronahq-docs', // Usually your repo name.
 
-  onBrokenLinks: 'warn',
+  onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
   // Even if you don't use internalization, you can use this field to set useful
@@ -41,13 +41,13 @@ const config = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl: 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          // editUrl: 'https://github.com/rahul-gharat/dronahq-docs/tree/main/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl: 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          // editUrl: 'https://github.com/rahul-gharat/dronahq-docs/tree/main/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -64,18 +64,29 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
-      navbar: {
-        title: 'DronaHQ',
-        logo: {
-          alt: 'DronaHQ Logo',
-          src: 'img/dronahq-logo.png',
+      image: 'img/dronahq-social-card.jpg',
+      docs: {
+        sidebar: {
+          // hideable: true,
+          autoCollapseCategories: true,
         },
-        items: [{
-            type: 'docSidebar',
+      },
+      navbar: {
+        hideOnScroll: true,
+        title: '',
+        logo: {
+          alt: 'DronaHQ',
+          src: 'img/dronahq-text-logo-light.svg',
+          srcDark: 'img/dronahq-text-logo-light.svg',
+          href: '/',
+        },
+        items: [
+          {
+            // type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Docs',
+            to: '/docs/introduction'
           },
           {
             to: '/blog',
@@ -83,13 +94,12 @@ const config = {
             position: 'left'
           },
           {
-            // to: '/blog',
             href: 'https://community.dronahq.com/',
             label: 'Community',
             position: 'left'
           },
           {
-            href: 'https://github.com/rahul-gharat/dronahq-docs',
+            href: 'https://github.com/rahul-gharat/dronahq-docs/',
             label: 'GitHub',
             position: 'right',
           },
@@ -97,42 +107,47 @@ const config = {
       },
       footer: {
         style: 'dark',
-        links: [{
-            title: 'Docs',
-            items: [{
-              label: 'Tutorial',
-              to: '/docs/intro',
-            }, ],
-          },
-          {
-            title: 'Community',
-            items: [{
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/dronahq',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/dronahq',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/dronahq',
-              },
-            ],
-          },
-          {
-            title: 'More',
-            items: [{
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/rahul-gharat/dronahq-docs',
-              },
-            ],
-          },
-        ],
+        // links: [
+        //   {
+        //     title: 'Docs',
+        //     items: [
+        //       {
+        //         label: 'Tutorial',
+        //         to: '/docs/intro',
+        //       },
+        //     ],
+        //   },
+        //   {
+        //     title: 'Community',
+        //     items: [
+        //       {
+        //         label: 'Stack Overflow',
+        //         href: 'https://dronahq.com/Stack Overflow',
+        //       },
+        //       {
+        //         label: 'Discord',
+        //         href: 'https://dronahq.com/Discord',
+        //       },
+        //       {
+        //         label: 'Twitter',
+        //         href: 'https://dronahq.com/Twitter',
+        //       },
+        //     ],
+        //   },
+        //   {
+        //     title: 'More',
+        //     items: [
+        //       {
+        //         label: 'Blog',
+        //         to: '/blog',
+        //       },
+        //       {
+        //         label: 'GitHub',
+        //         href: 'https://github.com/rahul-gharat/dronahq-docs/',
+        //       },
+        //     ],
+        //   },
+        // ],
         copyright: `Copyright © ${new Date().getFullYear()} DronaHQ, Inc. Built with Docusaurus.`,
       },
       prism: {

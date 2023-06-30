@@ -13,10 +13,10 @@ import useIsBrowser from '@docusaurus/useIsBrowser';
 import DocSidebarItems from '@theme/DocSidebarItems';
 import { useColorMode } from '@docusaurus/theme-common';
 import styles from './styles.module.css';
-// import EnterpriseLight from '@site/static/icons/enterprise-dark.svg';
-// import EnterpriseDark from '@site/static/icons/enterprise-light.svg';
-// import CloudLight from '@site/static/icons/cloud-dark.svg';
-// import CloudDark from '@site/static/icons/cloud-light.svg';
+import EnterpriseLight from '@site/static/icons/enterprise-dark.svg';
+import EnterpriseDark from '@site/static/icons/enterprise-light.svg';
+import CloudLight from '@site/static/icons/cloud-dark.svg';
+import CloudDark from '@site/static/icons/cloud-light.svg';
 
 // If we navigate to a category and it becomes active, it should automatically
 // expand itself
@@ -73,30 +73,30 @@ export default function DocSidebarItemCategory({ item, onItemClick, activePath, 
   const { isDarkTheme } = useColorMode();
 
   // Conditional rendering for sidebar icons
-  // function addIcons(className) {
-  //   switch (className) {
-  //     case 'enterprise-icon':
-  //       return isDarkTheme ? <EnterpriseDark /> : <EnterpriseLight />;
-  //     case 'cloud-icon':
-  //       return isDarkTheme ? <CloudDark /> : <CloudLight />;
-  //     case 'cloud-and-enterprise-icon':
-  //       return (
-  //         <div className={styles['cloud-ee-container']}>
-  //           {isDarkTheme ? (
-  //             <>
-  //               <CloudDark /> <EnterpriseDark />{' '}
-  //             </>
-  //           ) : (
-  //             <>
-  //               <CloudLight /> <EnterpriseLight />
-  //             </>
-  //           )}
-  //         </div>
-  //       );
-  //     default:
-  //       return null;
-  //   }
-  // }
+  function addIcons(className) {
+    switch (className) {
+      case 'enterprise-icon':
+        return isDarkTheme ? <EnterpriseDark /> : <EnterpriseLight />;
+      case 'cloud-icon':
+        return isDarkTheme ? <CloudDark /> : <CloudLight />;
+      case 'cloud-and-enterprise-icon':
+        return (
+          <div className={styles['cloud-ee-container']}>
+            {isDarkTheme ? (
+              <>
+                <CloudDark /> <EnterpriseDark />{' '}
+              </>
+            ) : (
+              <>
+                <CloudLight /> <EnterpriseLight />
+              </>
+            )}
+          </div>
+        );
+      default:
+        return null;
+    }
+  }
 
   const {
     docs: {
@@ -176,7 +176,7 @@ export default function DocSidebarItemCategory({ item, onItemClick, activePath, 
           {...props}
         >
           {label}
-          {/* {addIcons(className)} */}
+          {addIcons(className)}
         </Link>
         {href && collapsible && (
           <CollapseButton
