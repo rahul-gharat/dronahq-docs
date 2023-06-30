@@ -13,7 +13,7 @@ Datasources playes an key role to every application development. They are used t
 DronaHQ can also seamlessly connect with most other tools through the RESTful API plugin.
 
 :::info
-DronaHQ encrypts all your datasource credentials and stores them securely. DronaHQ also doesn't store any data returned from your datasources and acts only as a proxy layer to orchestrate the execution of queries. Additionally, you can self-host DronaHQ to ensure that no data leaves your machine. For more information, see Security.
+DronaHQ ensures the utmost security of your datasource credentials by encrypting them and storing them in a highly secure manner. Moreover, DronaHQ follows a strict policy of not retaining any data obtained from your datasources. Instead, it functions solely as a proxy layer, orchestrating the execution of queries. To further enhance data privacy, you have the option to self-host DronaHQ, guaranteeing that no data ever leaves your machine. For detailed insights on the security measures implemented, please refer to the Security section.
 :::
 
 Based on the roles and access provided to users, they can access, connected and configured datasources from all the other applications present in the same workspace.
@@ -221,4 +221,356 @@ DronaHQ offers support for a variety of databases, including the following:
 
 With DronaHQ, you can seamlessly connect with a diverse array of tools and platforms. In case a supported data source is unavailable, you can establish connections using the REST API. DronaHQ supports the following APIs:
 
-
+<div className="vendor-table">
+  <VersionedLink to="#">
+    <div className="card-wrapper">
+      <div className="card">
+         <img src="/img/restapi-logo.png"  title="RestAPI" alt="Connect RestAPI to DronaHQ" />
+      </div>
+      <h5>RestAPI</h5>
+    </div>
+  </VersionedLink>
+  <VersionedLink to="#">
+    <div className="card-wrapper">
+      <div className="card">
+         <img src="/img/graphql-logo.png"  title="GraphQL" alt="Connect GraphQL to DronaHQ" />
+      </div>
+      <h5>GraphQL</h5>
+    </div>
+  </VersionedLink>
+  <VersionedLink to="#">
+    <div className="card-wrapper">
+      <div className="card">
+         <img src="/img/grpc-logo.png"  title="gRPC" alt="Connect gRPC to DronaHQ" />
+      </div>
+      <h5>gRPC</h5>
+    </div>
+  </VersionedLink>
+  <VersionedLink to="#">
+    <div className="card-wrapper">
+      <div className="card">
+         <img src="/img/salesforce-logo.png"  title="Salesforce" alt="Connect Salesforce to DronaHQ" />
+      </div>
+      <h5>Salesforce</h5>
+    </div>
+  </VersionedLink>
+  <VersionedLink to="#">
+    <div className="card-wrapper">
+      <div className="card">
+         <img src="/img/openai-logo.jpeg"  title="OpenAI" alt="Connect OpenAI to DronaHQ" />
+      </div>
+      <h5>OpenAI</h5>
+    </div>
+  </VersionedLink>
+  <VersionedLink to="#">
+    <div className="card-wrapper">
+      <div className="card">
+         <img src="/img/openaiadv-logo.jpeg"  title="OpenAI Advance" alt="Connect OpenAI Advance to DronaHQ" />
+      </div>
+      <h5>OpenAI Advance</h5>
+    </div>
+  </VersionedLink>
+  <VersionedLink to="#">
+    <div className="card-wrapper">
+      <div className="card">
+         <img src="/img/trello-logo.png"  title="Trello" alt="Connect Trello to DronaHQ" />
+      </div>
+      <h5>Trello</h5>
+    </div>
+  </VersionedLink>
+  <VersionedLink to="#">
+    <div className="card-wrapper">
+      <div className="card">
+         <img src="/img/slack-logo.png"  title="Slack" alt="Connect Slack to DronaHQ" />
+      </div>
+      <h5>Slack</h5>
+    </div>
+  </VersionedLink>
+  <VersionedLink to="#">
+    <div className="card-wrapper">
+      <div className="card">
+         <img src="/img/sendgrid-logo.png"  title="Sendgrid" alt="Connect Sendgrid to DronaHQ" />
+      </div>
+      <h5>Sendgrid</h5>
+    </div>
+  </VersionedLink><VersionedLink to="#">
+    <div className="card-wrapper">
+      <div className="card">
+         <img src="/img/twillio-logo.png"  title="Twillio" alt="Connect Twillio to DronaHQ" />
+      </div>
+      <h5>Twillio</h5>
+    </div>
+  </VersionedLink>
+  <VersionedLink to="#">
+    <div className="card-wrapper">
+      <div className="card">
+         <img src="/img/clearbit-logo.png"  title="Clearbit" alt="Connect Clearbit to DronaHQ" />
+      </div>
+      <h5>Clearbit</h5>
+    </div>
+  </VersionedLink>
+  <VersionedLink to="#">
+    <div className="card-wrapper">
+      <div className="card">
+         <img src="/img/googlesheets-logo.png"  title="Google Sheets" alt="Connect Google Sheets to DronaHQ" />
+      </div>
+      <h5>Google Sheets</h5>
+    </div>
+  </VersionedLink>
+  <VersionedLink to="#">
+    <div className="card-wrapper">
+      <div className="card">
+         <img src="/img/intercom-logo.png"  title="Intercom" alt="Connect Intercom to DronaHQ" />
+      </div>
+      <h5>Intercom</h5>
+    </div>
+  </VersionedLink>
+  <VersionedLink to="#">
+    <div className="card-wrapper">
+      <div className="card">
+         <img src="/img/bitly-logo.png"  title="Bitly" alt="Connect Bitly to DronaHQ" />
+      </div>
+      <h5>Bitly</h5>
+    </div>
+  </VersionedLink>
+  <VersionedLink to="#">
+    <div className="card-wrapper">
+      <div className="card">
+         <img src="/img/proxycrawl-logo.jpeg"  title="Proxy Crawl" alt="Connect Proxy Crawl to DronaHQ" />
+      </div>
+      <h5>Proxy Crawl</h5>
+    </div>
+  </VersionedLink>
+  <VersionedLink to="#">
+    <div className="card-wrapper">
+      <div className="card">
+         <img src="/img/diffbot-logo.png"  title="Diffbot" alt="Connect Diffbot to DronaHQ" />
+      </div>
+      <h5>Diffbot</h5>
+    </div>
+  </VersionedLink>
+  <VersionedLink to="#">
+    <div className="card-wrapper">
+      <div className="card">
+         <img src="/img/what3word-logo.png"  title="What 3 Words" alt="Connect What 3 Words to DronaHQ" />
+      </div>
+      <h5>What 3 Words</h5>
+    </div>
+  </VersionedLink>
+  <VersionedLink to="#">
+    <div className="card-wrapper">
+      <div className="card">
+         <img src="/img/zoom-logo.png"  title="Zoom" alt="Connect Zoom to DronaHQ" />
+      </div>
+      <h5>Zoom</h5>
+    </div>
+  </VersionedLink>
+  <VersionedLink to="#">
+    <div className="card-wrapper">
+      <div className="card">
+         <img src="/img/ocr-logo.jpeg"  title="OCRSPace" alt="Connect OCRSPace to DronaHQ" />
+      </div>
+      <h5>OCRSPace</h5>
+    </div>
+  </VersionedLink>
+  <VersionedLink to="#">
+    <div className="card-wrapper">
+      <div className="card">
+         <img src="/img/jira-logo.png"  title="Jira Software Cloud" alt="Connect Jira Software Cloud to DronaHQ" />
+      </div>
+      <h5>Jira Software Cloud</h5>
+    </div>
+  </VersionedLink>
+  <VersionedLink to="#">
+    <div className="card-wrapper">
+      <div className="card">
+         <img src="/img/typeform-logo.png"  title="Typeform" alt="Connect Typeform to DronaHQ" />
+      </div>
+      <h5>Typeform</h5>
+    </div>
+  </VersionedLink>
+  <VersionedLink to="#">
+    <div className="card-wrapper">
+      <div className="card">
+         <img src="/img/Zendesk-logo.png"  title="Zendesk" alt="Connect Zendesk to DronaHQ" />
+      </div>
+      <h5>Zendesk</h5>
+    </div>
+  </VersionedLink>
+  <VersionedLink to="#">
+    <div className="card-wrapper">
+      <div className="card">
+         <img src="/img/Hacker-logo.jpeg"  title="HackerRank" alt="Connect HackerRank to DronaHQ" />
+      </div>
+      <h5>HackerRank</h5>
+    </div>
+  </VersionedLink>
+  <VersionedLink to="#">
+    <div className="card-wrapper">
+      <div className="card">
+         <img src="/img/Freshdesk-logo.png"  title="Freshdesk" alt="Connect Freshdesk to DronaHQ" />
+      </div>
+      <h5>Freshdesk</h5>
+    </div>
+  </VersionedLink>
+  <VersionedLink to="#">
+    <div className="card-wrapper">
+      <div className="card">
+         <img src="/img/WhatsApp-logo.jpeg"  title="WhatsApp" alt="Connect WhatsApp to DronaHQ" />
+      </div>
+      <h5>WhatsApp</h5>
+    </div>
+  </VersionedLink>
+  <VersionedLink to="#">
+    <div className="card-wrapper">
+      <div className="card">
+         <img src="/img/Clarifai-logo.jpeg"  title="Clarifai" alt="Connect Clarifai to DronaHQ" />
+      </div>
+      <h5>Clarifai</h5>
+    </div>
+  </VersionedLink>
+  <VersionedLink to="#">
+    <div className="card-wrapper">
+      <div className="card">
+         <img src="/img/Shopify-logo.png"  title="Shopify" alt="Connect Shopify to DronaHQ" />
+      </div>
+      <h5>Shopify</h5>
+    </div>
+  </VersionedLink>
+  <VersionedLink to="#">
+    <div className="card-wrapper">
+      <div className="card">
+         <img src="/img/QuickBooks-logo.jpeg"  title="QuickBooks Online" alt="Connect QuickBooks Online to DronaHQ" />
+      </div>
+      <h5>QuickBooks Online</h5>
+    </div>
+  </VersionedLink>
+  <VersionedLink to="#">
+    <div className="card-wrapper">
+      <div className="card">
+         <img src="/img/MyMemory-logo.png"  title="MyMemory" alt="Connect MyMemory to DronaHQ" />
+      </div>
+      <h5>MyMemory</h5>
+    </div>
+  </VersionedLink>
+  <VersionedLink to="#">
+    <div className="card-wrapper">
+      <div className="card">
+         <img src="/img/Gmail-logo.webp"  title="Gmail" alt="Connect Gmail to DronaHQ" />
+      </div>
+      <h5>Gmail</h5>
+    </div>
+  </VersionedLink>
+  <VersionedLink to="#">
+    <div className="card-wrapper">
+      <div className="card">
+         <img src="/img/Googlecal-logo.png"  title="Google Calender" alt="Connect Google Calender to DronaHQ" />
+      </div>
+      <h5>Google Calender</h5>
+    </div>
+  </VersionedLink>
+  <VersionedLink to="#">
+    <div className="card-wrapper">
+      <div className="card">
+         <img src="/img/Asana-logo.jpeg"  title="Asana" alt="Connect Asana to DronaHQ" />
+      </div>
+      <h5>Asana</h5>
+    </div>
+  </VersionedLink>
+  <VersionedLink to="#">
+    <div className="card-wrapper">
+      <div className="card">
+         <img src="/img/Cloudconvert-logo.jpeg"  title="Cloud Convert" alt="Connect Cloud Convert to DronaHQ" />
+      </div>
+      <h5>Cloud Convert</h5>
+    </div>
+  </VersionedLink>
+  <VersionedLink to="#">
+    <div className="card-wrapper">
+      <div className="card">
+         <img src="/img/Github-logo.png"  title="Github" alt="Connect Github to DronaHQ" />
+      </div>
+      <h5>Github</h5>
+    </div>
+  </VersionedLink>
+  <VersionedLink to="#">
+    <div className="card-wrapper">
+      <div className="card">
+         <img src="/img/msoutlook-logo.png"  title="Microsoft Outlook" alt="Connect Microsoft Outlook to DronaHQ" />
+      </div>
+      <h5>Microsoft Outlook</h5>
+    </div>
+  </VersionedLink>
+  <VersionedLink to="#">
+    <div className="card-wrapper">
+      <div className="card">
+         <img src="/img/Razor-logo.png"  title="Razorpay" alt="Connect Razorpay to DronaHQ" />
+      </div>
+      <h5>Razorpay</h5>
+    </div>
+  </VersionedLink>
+  <VersionedLink to="#">
+    <div className="card-wrapper">
+      <div className="card">
+         <img src="/img/Airtable-logo.png"  title="Airtable" alt="Connect Airtable to DronaHQ" />
+      </div>
+      <h5>Airtable</h5>
+    </div>
+  </VersionedLink>
+  <VersionedLink to="#">
+    <div className="card-wrapper">
+      <div className="card">
+         <img src="/img/HubSpot-logo.png"  title="HubSpot" alt="Connect HubSpot to DronaHQ" />
+      </div>
+      <h5>HubSpot</h5>
+    </div>
+  </VersionedLink>
+  <VersionedLink to="#">
+    <div className="card-wrapper">
+      <div className="card">
+         <img src="/img/Instamojo-logo.png"  title="Instamojo" alt="Connect Instamojo to DronaHQ" />
+      </div>
+      <h5>Instamojo</h5>
+    </div>
+  </VersionedLink>
+  <VersionedLink to="#">
+    <div className="card-wrapper">
+      <div className="card">
+         <img src="/img/Stripe-logo.png"  title="Stripe" alt="Connect Stripe to DronaHQ" />
+      </div>
+      <h5>Stripe</h5>
+    </div>
+  </VersionedLink>
+  <VersionedLink to="#">
+    <div className="card-wrapper">
+      <div className="card">
+         <img src="/img/awss3-logo.png"  title="AWS S3" alt="Connect AWS S3 to DronaHQ" />
+      </div>
+      <h5>AWS S3</h5>
+    </div>
+  </VersionedLink>
+  <VersionedLink to="#">
+    <div className="card-wrapper">
+      <div className="card">
+         <img src="/img/awslambda-logo.png"  title="AWS Lambda" alt="Connect AWS Lambda to DronaHQ" />
+      </div>
+      <h5>AWS Lambda</h5>
+    </div>
+  </VersionedLink>
+  <VersionedLink to="#">
+    <div className="card-wrapper">
+      <div className="card">
+         <img src="/img/googlecloud-logo.png"  title="Google Cloud Storage" alt="Connect Google Cloud Storage to DronaHQ" />
+      </div>
+      <h5>Google Cloud Storage</h5>
+    </div>
+  </VersionedLink>
+  <VersionedLink to="#">
+    <div className="card-wrapper">
+      <div className="card">
+         <img src="/img/SMTP-logo.png"  title="SMTP" alt="Connect SMTP to DronaHQ" />
+      </div>
+      <h5>SMTP</h5>
+    </div>
+  </VersionedLink>
+</div>
