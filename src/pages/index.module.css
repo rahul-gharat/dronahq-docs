@@ -21,3 +21,12 @@
   align-items: center;
   justify-content: center;
 }
+
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  grid-gap: 1rem;
+  margin: 1rem 0;
+}
