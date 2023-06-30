@@ -76,8 +76,8 @@ const config = {
         title: '',
         logo: {
           alt: 'DronaHQ',
-          src: 'img/dronahq-text-logo-light.svg',
-          srcDark: 'img/dronahq-text-logo-light.svg',
+          src: 'img/dronahq-name-logo-light.svg',
+          srcDark: 'img/dronahq-name-logo-dark.svg',
           href: '/',
         },
         items: [
