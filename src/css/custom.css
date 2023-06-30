@@ -25,7 +25,7 @@
     --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
     --dhq-header-color: #344658;
     --dhq-body-color: #000;
-    --dhq-background-light: #26bc6a16;
+    --dhq-background-light: #0000000d;
     --dhq-background-menu: #f3f5f7;
     --dhq-shadow-lw: 0px 2px 6px #0003;
     --dhq-card-background: #fff;
@@ -33,7 +33,7 @@
     --dhq-nev-color: #F3F5F8;
     --dhq-nev-hover-color: #e7ebef;
     --dhq-body-background: #fff;
-    --dhq-navbar-background: #fff;
+    --dhq-navbar-background: #f3f5f7;
 }
 
 
@@ -198,7 +198,11 @@ a {
 
 .menu__link--active {
     font-weight: 700;
-    color: var(--ifm-menu-color-active);
+    /* color: var(--ifm-menu-color-active); */
+}
+
+.menu__link--active:hover {
+    color: var(--dhq-body-color);
 }
 
 h1,
@@ -308,6 +312,10 @@ h2 {
     background-color: var(--dhq-navbar-background);
     box-shadow: var(--dhq-shadow-lw);
     /* height: 72px; */
+}
+
+.navbar-sidebar {
+    background-color: var(--dhq-navbar-background);
 }
 
 .pagination-nav__sublabel {
