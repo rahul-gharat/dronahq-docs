@@ -2,6 +2,6 @@
 sidebar_position: 1
 ---
 
-# Reading query params in public apps
+# Creating apps with friendly URLs
 
 Docusaurus can manage multiple versions of your docs.

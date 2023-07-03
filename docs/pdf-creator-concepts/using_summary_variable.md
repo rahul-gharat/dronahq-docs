@@ -2,6 +2,6 @@
 sidebar_position: 1
 ---
 
-# Reading query params in public apps
+# Using Summary Variable
 
 Docusaurus can manage multiple versions of your docs.

@@ -1,7 +1,7 @@
 ---
-sidebar_position: 1
+sidebar_position: 103
 ---
 
-# Reading query params in public apps
+# AI Chat control
 
 Docusaurus can manage multiple versions of your docs.

@@ -1,7 +1,7 @@
 ---
-sidebar_position: 1
+sidebar_position: 132
 ---
 
-# Reading query params in public apps
+# Sharing options
 
 Docusaurus can manage multiple versions of your docs.

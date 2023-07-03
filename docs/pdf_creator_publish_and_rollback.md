@@ -1,7 +1,7 @@
 ---
-sidebar_position: 1
+sidebar_position: 124
 ---
 
-# Reading query params in public apps
+# Publish & Rollback
 
 Docusaurus can manage multiple versions of your docs.

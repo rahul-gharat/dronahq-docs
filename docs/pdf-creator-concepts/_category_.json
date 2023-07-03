@@ -1,8 +1,9 @@
 {
-  "label": "Tutorial - Basics",
-  "position": 203,
+  "label": "Concepts",
+  "position": 126,
   "link": {
     "type": "generated-index",
     "description": "5 minutes to learn the most important Docusaurus concepts."
   }
 }
+

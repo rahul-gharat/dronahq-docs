@@ -1,7 +1,7 @@
 ---
-sidebar_position: 1
+sidebar_position: 101
 ---
 
-# Reading query params in public apps
+# AI assist in DronaHQ
 
 Docusaurus can manage multiple versions of your docs.

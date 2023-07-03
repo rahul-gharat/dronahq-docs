@@ -1,7 +1,7 @@
 ---
-sidebar_position: 1
+sidebar_position: 133
 ---
 
-# Reading query params in public apps
+# Secure embed with user SSO
 
 Docusaurus can manage multiple versions of your docs.
