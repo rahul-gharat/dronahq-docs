@@ -87,3 +87,21 @@ Specifies the endpoint to be queried.
 **Add Name for your Test API**
 
 Enter a name for your test API in the provided field, and click "Save" to save the configuration.
+
+
+**Body/Form Parameters**
+
+The request body can be provided either as a string in a specified format (e.g., JSON) with key-value pairs included within the string, or as a series of key-value pairs using the `application/x-www-form-urlencoded` header.
+
+:::tip
+
+You can pass dynamic parameters to your REST API endpoints by creating variables under *content type* as **`RAW`**
+
+Wrap the variable name inside double curly braces to make it dynamic.
+```js
+{
+    "username": "{{variablename}}"
+}
+```
+This will create a variable with given name. you can use it to configure dynamic value and other properties.
+:::
