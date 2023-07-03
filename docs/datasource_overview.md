@@ -8,7 +8,8 @@ import VersionedLink from "@site/src/components/VersionedLink";
 
 # Overview
 
-Datasources playes an key role to every application development. They are used to store and manage the data. With DronaHQ, you can take benifits of direct connecting to supported datasources avaiable on DronaHQ. You can write queries on DronaHQ to directly intereact to read and write your connected datasources.
+Datasources plays a key role to every application development. They are used to store and manage the data. With DronaHQ, you can take benefits of direct connecting to supported datasources available on DronaHQ. You can write queries on DronaHQ to directly interact to read and write your connected datasources.
+
 
 DronaHQ can also seamlessly connect with most other tools through the RESTful API plugin.
 

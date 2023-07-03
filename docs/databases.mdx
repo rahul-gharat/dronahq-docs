@@ -3,7 +3,8 @@ sidebar_position: 13
 title: Databases
 ---
 
-import Database from "@site/static/img/database.svg";
+import Database from "@site/static/img/database.svg"; 
+import Thumbnail from '@site/src/components/Thumbnail';
 
 # <Database /> Databases
 
@@ -26,7 +27,7 @@ Here you will learn how to connect to a database on DronaHQ.
   <figcaption align='center'>
     <i>List of Databases</i>
   </figcaption>
-</figure>
+</figure> 
 
 4. Give a name to the configuring database, to identify it later on.
 
@@ -36,92 +37,46 @@ Here you will learn how to connect to a database on DronaHQ.
 
 7. Click **Save** to create and save the database connection.
 
-## Dynamic database configuration
+## Pass parameters to Queries
 
-DronaHQ Studio supports connecting to Postgres, MySQL, MSSQL and MongoDB, and other databases with dynamic database configurations.
+In the realm of database connections, the key factor lies in the manner in which we execute queries. 
+
+Sometimes, in certain situations, such as when executing a query within a loop, it may be necessary to pass different parameters to the query on each iteration, where these parameters hold values specific to the current execution context.
+
+
+In DronaHQ's Query Builder, it is possible to accomplish this by creating variables using `{{ }}` notation when adding a query to a configured datasource connector, (It can be database or API connector). These variables can then be utilized to pass dynamic parameters to queries through various methods, such as forms, data, user-input, and more, within the microapp.
+
+<hr />
+
+Let's see how to pass parameters to databse query:
+
+
+For Example, suppose we need to retrieve data from a table based on a particular order ID. However, we want this order ID to be dynamic and passed as a parameter to the query of the database connector.
 
 <figure>
-  <img
-    src='/img/dynamic-para-datasource.png'
+  <Thumbnail
+    src='/img/datasource-passParam.gif'
     style={{ width: "100%", height: "auto" }}
-    alt='Dynamic database configuration'
+    alt='List of available databases connectors.'
   />
   <figcaption align='center'>
-    <i>Dynamic database configurations</i>
+    <i>The keyword of `text input control` is used to provide user input as query parameters.</i>
   </figcaption>
 </figure>
 
-### Use dynamic database host
 
-With our dynamic database host facility, you can now access various hosts from a single connector, revolutionizing the way you handle your database connections.
+As shown in the image above, the `orderid` has been transformed into a dynamic variable. Consequently, you can conveniently provide parameter values from the microapp by utilizing keywords.
 
-During the configuration of your database connectors, we offer you the convenience of utilizing the dynamic database host feature for all databases. This functionality streamlines your workflow, saving you valuable time and effort. By leveraging a single connector, effortlessly craft queries tailored to each host, ensuring optimal performance and customization.
-
-:::info
-
-While using dynamic database host, the schema of the database should be the same.
-
-:::
-
-You can toggle the option which will enable you to access to host dynamically from different action flows and BINDAPI.
 
 <figure>
-  <img
-    src='/img/dynamic-database-host.png'
-    style={{ width: "40%", height: "auto" }}
-    alt='Dynamic database host'
+  <Thumbnail
+    src='/img/database-pass-query.png'
+    style={{ width: "100%", height: "auto" }}
+    alt='List of available databases connectors.'
   />
   <figcaption align='center'>
-    <i>Dynamic database HOST</i>
+    <i>The keyword of `text input control` is used to provide user input as query parameters.</i>
   </figcaption>
 </figure>
 
-In the above image, we have the option to set our host to fetch the database due to toggling **Use dynamic database host**.
-Each time the data will change with respect to the different hosts provided.
 
-### Use dynamic database name
-
-With **dynamic database name**, users can access different database names/tables from a single connector and also write queries respected to the databases name/table.
-
-Now when you are configuring the database connectors, Studio allows you to Use dynamic database names for all databases.
-
-:::info
-While using dynamic database name, the schema of the database should be the same.
-:::
-
-You can toggle the option which will enable you to access databases with different names, dynamically from different action flows and BINDAPI
-
-<figure>
-  <img
-    src='/img/dynamic-database-name.png'
-    style={{ width: "40%", height: "auto" }}
-    alt='Dynamic database name'
-  />
-  <figcaption align='center'>
-    <i>Dynamic database Name</i>
-  </figcaption>
-</figure>
-
-In the above image, we have the option to set our database name to fetch the database due to toggling
-**Use dynamic database name**.
-Each time the data will change with respect to the different database names provided.
-
-### Use dynamic database credentials
-
-With **dynamic database credentials**, users can access different database names/tables from a single connector by providing credentials for each and also write queries respected to the databases name/table.
-
-You can toggle the option which will enable you to access to databases with different names, dynamically from different action flows and BINDAPI by providing different credentials for each.
-
-<figure>
-  <img
-    src='/img/dynamic-database-creds.png'
-    style={{ width: "40%", height: "auto" }}
-    alt='Dynamic database Credential'
-  />
-  <figcaption align='center'>
-    <i>Dynamic database Credentials</i>
-  </figcaption>
-</figure>
-
-In the above image, we have the option to set our username and password to fetch the database due to toggling **Use dynamic database host**.
-Each time the data will change with respect to different credentials provided.
