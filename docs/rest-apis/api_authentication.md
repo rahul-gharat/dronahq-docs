@@ -96,3 +96,7 @@ This method involves copying the **`Hawk Auth ID`** and **`Hawk Auth Key`** from
 Additionally, you need to select the appropriate algorithm supported by your API Service Provider, such as **`SHA-256`** or **`SHA1`**. 
 
 The client must obtain a **`token ID`** and **`token key`** from the server, typically provided in a special Hawk-Session-Token header, to sign subsequent requests. Extracting the Hawk ID and Hawk Key from this token is essential for signing the requests securely.
+
+### JWT Authentication
+
+With DronaHQ you can take experience of JWT (JSON Web Token) Authentication is a widely used authentication method for REST API configuration.
