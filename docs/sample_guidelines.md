@@ -20,3 +20,9 @@ hide_table_of_contents: false
 - Make sure that content which belongs under a bullet point is actually indented under that bullet point in markdown.
 - Use a period at the end of bullet lists which are a sentence, like this.
 - Bullet points should not have a blank line between each point.
+
+## Image
+- Use width property when you don't want image to display full width.
+- Use `Image` component to use image instead of img tag for displaying images without clickable.
+- Use `Thumbnail` component to use image instead which you want to make it clickable.
+- For Images beloning to same roup, Create a `Group Specific Folder` inside `static/img/` folder and place images inside that.
