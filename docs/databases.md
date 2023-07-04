@@ -39,6 +39,51 @@ Here you will learn how to connect to a database on DronaHQ.
 
 ## Writing Queries
 
+The information you want to present in any application is spread across multiple tables in a database. Queries play a vital role in collecting data from different tables and consolidating it for display. 
+
+With queries, you can perform various operations such as data insertion, updating, or removal from the database. Furthermore, queries enable data binding to widgets and offer additional functionalities that enhance the overall performance and user experience of the application.
+
+<hr />
+
+This section talks about the steps to create a database query in the query editor:
+
+1. Once you are done with configuring database connector. It will show in the connectors' list. Click on the **`Add Query`** button. 
+
+<figure>
+  <Thumbnail src="/img/write-query.png" alt="Add Query" />
+  <figcaption align = "center"><i>Click on <code>ADD QUERY</code> to open query editor.</i></figcaption>
+</figure>
+
+2. The query editor will open. You need to provide a name for the query and then write MySQL queries (*Since here MySQL database is taken as an example.*) under ***Write Your Query***.
+
+<figure>
+  <Thumbnail src="/img/query-builder.jpeg" alt="Query Builder" />
+  <figcaption align = "center"><i>MySQL Query builder with schemas on display.</i></figcaption>
+</figure>
+
+:::info
+  DronaHQ provides specialized query editors for different databases, such as MySQL and PostgreSQL. These database-dependent query editors enable users to write queries that are optimized for specific database systems, ensuring efficient and precise data manipulation.
+:::
+
+:::tip
+ DronaHQ offers an impressive feature called Ask AI, which enables you to create database queries swiftly and effortlessly using natural language prompts. This exceptional functionality allows users to generate database queries with ease, making the process much faster and more user-friendly.
+:::
+
+3. Write a query, let's say to fetch all the details from a table in the databsase. After that, click `Test Quey`.
+
+<figure>
+  <Thumbnail src="/img/query-res.jpeg" alt="Query Response" />
+  <figcaption align = "center"><i>Query response.</i></figcaption>
+</figure>
+
+4. Click `Save` and your query will be added to the databse connector.
+
+<figure>
+  <Thumbnail src="/img/query-added.jpeg" alt="Query added to the database connector." />
+  <figcaption align = "center"><i>Query added to the database connector.</i></figcaption>
+</figure>
+
+
 ## Making Queries Dynamic
 
 In the realm of database connections, the key factor lies in the manner in which we execute queries. 
