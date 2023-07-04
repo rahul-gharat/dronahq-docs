@@ -10,8 +10,6 @@ Setting up a Rest API requires the specification of endpoints, methods, and para
 
 DronaHQ simplifies the configuration of Rest APIs through its **REST API connector**, enabling an effortless and proper setup process.
 
-<hr />
-
 This guide provides instructions on configuring a REST API connector and creating queries within DronaHQ.
 
 :::note
@@ -23,14 +21,14 @@ The demonstrated API connector configuration exemplifies a simple authentication
 
 Let us now understand how to configure a REST API Connector:
 
-Under **DronaHQ > Connectors, click (+) Connector.**
+Under `DronaHQ -> Connectors`, click `+ Connector`.
 
 <figure>
-  <Thumbnail src="/img/restapi-inlist.png" alt="REST API connector" />
+  <Thumbnail src="/img/restapi-inlist.png" alt="REST API connector" width='400px'/>
   <figcaption align = "center"><i>REST API connector</i></figcaption>
 </figure>
 
-**DronaHQ** has different options including the use of the REST API that allows you to easily connect to the Third Party APIs and access to important systems.
+DronaHQ has different options including the use of the REST API that allows you to easily connect to the Third Party APIs and access to important systems.
 
 While setting up API configurations, it is necessary to furnish the Authentication details corresponding to the specific authentication method. In this particular case, we will choose the `None` option.
 
