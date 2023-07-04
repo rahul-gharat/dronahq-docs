@@ -3,7 +3,7 @@ sidebar_position: 13
 title: Databases
 ---
 
-import Database from "@site/static/img/database.svg"; 
+
 import Thumbnail from '@site/src/components/Thumbnail';
 
 # Databases
@@ -14,13 +14,13 @@ Databases play a crucial role in numerous applications, serving as the backbone 
 
 Here you will learn how to connect to a database on DronaHQ.
 
-1. Click on **Connectors** from the sidebar.
-2. You will see, on top right there is a **+ Connector** button, click on it.
+1. Click on `Connectors` from the sidebar.
+2. You will see, on top right there is a `+ Connector` button, click on it.
 3. From the list, select the database you need to connect to. This opens the page where you can configure the parameters to connect to your database.
 
 <figure>
   <img
-    src='/img/databases-list.png'
+    src='/img/connectingDatasource/databases-list.png'
     style={{ width: "60%", height: "auto" }}
     alt='List of available databases connectors.'
   />
@@ -33,9 +33,9 @@ Here you will learn how to connect to a database on DronaHQ.
 
 5. Fill up the required details and parameters to configure your database on DronaHQ successfully. DronaHQ encrypts all your data and store them securely.
 
-6. Click the **Test** button and test the connection. Ensure that the database is valid.
+6. Click the `Test` button and test the connection. Ensure that the database is valid.
 
-7. Click **Save** to create and save the database connection.
+7. Click `Save` to create and save the database connection.
 
 ## Writing Queries
 
@@ -43,21 +43,21 @@ The information you want to present in any application is spread across multiple
 
 With queries, you can perform various operations such as data insertion, updating, or removal from the database. Furthermore, queries enable data binding to widgets and offer additional functionalities that enhance the overall performance and user experience of the application.
 
-<hr />
+
 
 This section talks about the steps to create a database query in the query editor:
 
-1. Once you are done with configuring database connector. It will show in the connectors' list. Click on the **`Add Query`** button. 
+1. Once you are done with configuring database connector. It will show in the connectors' list. Click on the `Add Query` button. 
 
 <figure>
-  <Thumbnail src="/img/write-query.png" alt="Add Query" />
+  <Thumbnail src="/img/connectingDatasource/write-query.png" alt="Add Query" />
   <figcaption align = "center"><i>Click on <code>ADD QUERY</code> to open query editor.</i></figcaption>
 </figure>
 
-2. The query editor will open. You need to provide a name for the query and then write MySQL queries (*Since here MySQL database is taken as an example.*) under ***Write Your Query***.
+2. The query editor will open. You need to provide a name for the query and then write MySQL queries (Since here MySQL database is taken as an example.) under`Write Your Query`.
 
 <figure>
-  <Thumbnail src="/img/query-builder.jpeg" alt="Query Builder" />
+  <Thumbnail src="/img/connectingDatasource/query-builder.jpeg" alt="Query Builder" />
   <figcaption align = "center"><i>MySQL Query builder with schemas on display.</i></figcaption>
 </figure>
 
@@ -72,14 +72,14 @@ This section talks about the steps to create a database query in the query edito
 3. Write a query, let's say to fetch all the details from a table in the databsase. After that, click `Test Quey`.
 
 <figure>
-  <Thumbnail src="/img/query-res.jpeg" alt="Query Response" />
+  <Thumbnail src="/img/connectingDatasource/query-res.jpeg" alt="Query Response" />
   <figcaption align = "center"><i>Query response.</i></figcaption>
 </figure>
 
 4. Click `Save` and your query will be added to the databse connector.
 
 <figure>
-  <Thumbnail src="/img/query-added.jpeg" alt="Query added to the database connector." />
+  <Thumbnail src="/img/connectingDatasource/query-added.jpeg" alt="Query added to the database connector." />
   <figcaption align = "center"><i>Query added to the database connector.</i></figcaption>
 </figure>
 
@@ -93,7 +93,7 @@ In certain situations, such as when retrieving order details for products in a s
 
 In DronaHQ's Query Builder, it is possible to accomplish this by creating variables using `{{ }}` notation when adding a query to a configured datasource connector, (It can be database or API connector). These variables can then be utilized to pass dynamic parameters to queries through various methods, such as forms, data, user-input, and more, within the microapp.
 
-<hr />
+
 
 Let's see how to pass parameters to database query:
 
@@ -102,7 +102,7 @@ For Example, suppose we need to retrieve data from a table based on a particular
 
 <figure>
   <Thumbnail
-    src='/img/datasource-passParam.gif'
+    src='/img/connectingDatasource/datasource-passParam.gif'
     style={{ width: "100%", height: "auto" }}
     alt='List of available databases connectors.'
   />
@@ -117,7 +117,7 @@ As shown in the image above, the `orderid` has been transformed into a dynamic v
 
 <figure>
   <Thumbnail
-    src='/img/database-pass-query.png'
+    src='/img/connectingDatasource/database-pass-query.png'
     style={{ width: "100%", height: "auto" }}
     alt='List of available databases connectors.'
   />
