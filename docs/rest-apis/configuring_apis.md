@@ -55,6 +55,7 @@ API Key Authentication
 - `OAuth- JWT` 
 - `OAuth- 1.0a` 
 - `OAuth- 1.0a(3 legged)`
+- `Multistep Authentication`
 
 **Import cURL**
 
