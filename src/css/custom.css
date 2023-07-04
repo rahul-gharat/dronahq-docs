@@ -198,7 +198,7 @@ a {
 }
 
 .menu__link--active {
-    font-weight: 700;
+    font-weight: 600;
     color: var(--ifm-menu-color-active);
 }
 
