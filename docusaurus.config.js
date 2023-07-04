@@ -6,13 +6,12 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "Build stunning internal tools, blazing fast",
-  tagline:
-    "Low code toolkit for developers to quickly build internal tools, digital journeys, operational apps on top of any data source or APIs.",
-  favicon: "img/dronahq-logo-32x32.png",
+  title: 'Build stunning internal tools, blazing fast',
+  tagline: 'Low code toolkit for developers to quickly build internal tools, digital journeys, operational apps on top of any data source or APIs.',
+  favicon: 'img/dronahq-logo-32x32.png',
 
   // Set the production url of your site here
-  url: "https://rahul-gharat.github.io",
+  url: 'https://rahul-gharat.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: "/",
@@ -72,21 +71,21 @@ const config = {
         },
       },
       navbar: {
-        hideOnScroll: false,
-        title: "",
+        hideOnScroll: true,
+        title: '',
         logo: {
-          alt: "DronaHQ",
-          src: "img/dronahq-name-logo-light.svg",
-          srcDark: "img/dronahq-name-logo-dark.svg",
-          href: "/",
+          alt: 'DronaHQ',
+          src: 'img/dronahq-name-logo-light.svg',
+          srcDark: 'img/dronahq-name-logo-dark.svg',
+          href: '/',
         },
         items: [
           {
             // type: 'docSidebar',
-            sidebarId: "tutorialSidebar",
-            position: "left",
-            label: "Docs",
-            to: "/docs/introduction",
+            sidebarId: 'tutorialSidebar',
+            position: 'left',
+            label: 'Docs',
+            to: '/docs/introduction'
           },
           {
             to: "/blog",
@@ -94,19 +93,19 @@ const config = {
             position: "left",
           },
           {
-            href: "https://community.dronahq.com/",
-            label: "Community",
-            position: "left",
+            href: 'https://community.dronahq.com/',
+            label: 'Community',
+            position: 'left'
           },
           {
-            href: "https://github.com/rahul-gharat/dronahq-docs/",
-            label: "GitHub",
-            position: "right",
+            href: 'https://github.com/rahul-gharat/dronahq-docs/',
+            label: 'GitHub',
+            position: 'right',
           },
         ],
       },
       footer: {
-        style: "dark",
+        style: 'dark',
         // links: [
         //   {
         //     title: 'Docs',

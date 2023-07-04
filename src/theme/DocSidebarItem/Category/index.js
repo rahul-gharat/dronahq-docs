@@ -12,17 +12,17 @@ import {
   findFirstCategoryLink,
   useDocSidebarItemsExpandedState,
   isSamePath,
-} from "@docusaurus/theme-common/internal";
-import Link from "@docusaurus/Link";
-import { translate } from "@docusaurus/Translate";
-import useIsBrowser from "@docusaurus/useIsBrowser";
-import DocSidebarItems from "@theme/DocSidebarItems";
-import { useColorMode } from "@docusaurus/theme-common";
-import styles from "./styles.module.css";
-import EnterpriseLight from "@site/static/icons/enterprise-dark.svg";
-import EnterpriseDark from "@site/static/icons/enterprise-light.svg";
-import CloudLight from "@site/static/icons/cloud-dark.svg";
-import CloudDark from "@site/static/icons/cloud-light.svg";
+} from '@docusaurus/theme-common/internal';
+import Link from '@docusaurus/Link';
+import { translate } from '@docusaurus/Translate';
+import useIsBrowser from '@docusaurus/useIsBrowser';
+import DocSidebarItems from '@theme/DocSidebarItems';
+import { useColorMode } from '@docusaurus/theme-common';
+import styles from './styles.module.css';
+import EnterpriseLight from '@site/static/icons/enterprise-dark.svg';
+import EnterpriseDark from '@site/static/icons/enterprise-light.svg';
+import CloudLight from '@site/static/icons/cloud-dark.svg';
+import CloudDark from '@site/static/icons/cloud-light.svg';
 
 // If we navigate to a category and it becomes active, it should automatically
 // expand itself
@@ -89,16 +89,16 @@ export default function DocSidebarItemCategory({
   // Conditional rendering for sidebar icons
   function addIcons(className) {
     switch (className) {
-      case "enterprise-icon":
+      case 'enterprise-icon':
         return isDarkTheme ? <EnterpriseDark /> : <EnterpriseLight />;
-      case "cloud-icon":
+      case 'cloud-icon':
         return isDarkTheme ? <CloudDark /> : <CloudLight />;
-      case "cloud-and-enterprise-icon":
+      case 'cloud-and-enterprise-icon':
         return (
-          <div className={styles["cloud-ee-container"]}>
+          <div className={styles['cloud-ee-container']}>
             {isDarkTheme ? (
               <>
-                <CloudDark /> <EnterpriseDark />{" "}
+                <CloudDark /> <EnterpriseDark />{' '}
               </>
             ) : (
               <>
