@@ -26,7 +26,7 @@ DronaHQ will not include authorization details in a request unless you specify a
 ***API key authentication*** stands out for its inherent simplicity. By utilizing a single key, authentication becomes straightforward as you only need to include the key. This type of authentication, commonly employed with connectors, is often utilized for read-only data access.
 
 <figure>
-  <Thumbnail src="/img/apikey-auth.jpeg" style= {{width:"70%", height:"auto"}} alt="Basic Auth"/>
+  <Thumbnail src="/img/apikey-auth.jpeg" style= {{width:"100%", height:"auto"}} alt="Basic Auth"/>
 </figure>
 
 To configure account-specific fields required by the API for authentication, you must provide the necessary parameters. For API Key Authentication, the input parameter would be `API_key`.
