@@ -6,7 +6,7 @@ title: Databases
 import Database from "@site/static/img/database.svg"; 
 import Thumbnail from '@site/src/components/Thumbnail';
 
-# <Database /> Databases
+# Databases
 
 Databases play a crucial role in numerous applications, serving as the backbone for storing and managing data. With DronaHQ, you have the capability to execute queries for data retrieval and modification directly from its intuitive editor.
 
@@ -37,18 +37,20 @@ Here you will learn how to connect to a database on DronaHQ.
 
 7. Click **Save** to create and save the database connection.
 
-## Pass parameters to Queries
+## Writing Queries
+
+## Making Queries Dynamic
 
 In the realm of database connections, the key factor lies in the manner in which we execute queries. 
 
-Sometimes, in certain situations, such as when executing a query within a loop, it may be necessary to pass different parameters to the query on each iteration, where these parameters hold values specific to the current execution context.
+In certain situations, such as when retrieving order details for products in a shop, there may be a need to obtain specific details for different products each time. To achieve this, dynamic inputs can be utilized. By incorporating dynamic parameters into the query, it becomes possible to fetch data from the data source based on the specific product details desired. This approach allows for flexibility and enables the retrieval of product details by passing dynamic parameters whenever required.
 
 
 In DronaHQ's Query Builder, it is possible to accomplish this by creating variables using `{{ }}` notation when adding a query to a configured datasource connector, (It can be database or API connector). These variables can then be utilized to pass dynamic parameters to queries through various methods, such as forms, data, user-input, and more, within the microapp.
 
 <hr />
 
-Let's see how to pass parameters to databse query:
+Let's see how to pass parameters to database query:
 
 
 For Example, suppose we need to retrieve data from a table based on a particular order ID. However, we want this order ID to be dynamic and passed as a parameter to the query of the database connector.

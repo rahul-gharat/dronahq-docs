@@ -23,7 +23,7 @@ The demonstrated API connector configuration exemplifies a simple authentication
 
 Let us now understand how to configure a REST API Connector:
 
-Under **DronaHQ > Connectors, click (+) Connector.**
+Under `DronaHQ` > `Connectors`, click `(+) Connector`.
 
 <figure>
   <Thumbnail src="/img/restapi-inlist.png" alt="REST API connector" />
