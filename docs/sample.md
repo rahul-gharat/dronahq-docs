@@ -11,8 +11,9 @@ import TabItem from '@theme/TabItem';
 import VersionedLink from '@site/src/components/VersionedLink';
 import Basics from '@site/static/icons/features/basics.svg';
 import ArrowRight from '@site/static/icons/arrow_right.svg';
-
+import Image from '@site/src/components/Image';
  
+
 # Sample Usage
 
 Let's discover **Docusaurus in less than 5 minutes**.
@@ -70,12 +71,23 @@ Open `docs/intro.md` (this page) and edit some lines: the site **reloads automat
   <figcaption align = "center"><i>Simple Database GUI</i></figcaption>
 </figure>
 
-### Image Default
-  
+### Image Clickable with Fix Width
 <figure>
-  <img src="/img/beginner-tutorial-output.png" style= {{width:"100%", height:"auto"}} alt="Simple Database GUI"/>
+  <Thumbnail src="/img/beginner-tutorial-output.png" alt="Simple Database GUI" width="300px" />
+</figure>
+
+
+### Image Default
+
+<figure>
+  <Image src="/img/beginner-tutorial-output.png" alt="Simple Database GUI" width='400px'/>
   <figcaption align = "center"><i>Simple Database GUI</i></figcaption>
 </figure>
+
+<!-- <figure>
+  <img src="/img/beginner-tutorial-output.png" style= {{width:"100%", height:"auto"}} alt="Simple Database GUI"/>
+  <figcaption align = "center"><i>Simple Database GUI</i></figcaption>
+</figure> -->
 
 
 
@@ -183,3 +195,14 @@ sequenceDiagram
       </VersionedLink>
     </div>
   </div>
+  
+
+# Table
+
+  | Field | Description  | 
+  | ----------------- |---------------------------- |
+| Region            | The region of the datacenter where your New Relic account stores its data. [Read more about regions on New Relic docs.](https://docs.newrelic.com/docs/using-new-relic/welcome-new-relic/get-started/our-eu-us-region-data-centers)                                                                                                                                                      |
+| API Key           | API keys are unique to your organization. An API key is required by the New Relic API to submit metrics and events to New Relic. You can get the API key from [here](https://one.newrelic.com/launcher/api-keys-ui.api-keys-launcher) if you are in New Relic US region and [here](https://one.eu.newrelic.com/launcher/api-keys-ui.api-keys-launcher) if you're in New Relic EU region. |
+| Host              | The name of the originating host of the log and metrics.                                                                                                                                                                                                                                                                                                                                 |
+| Custom Attributes | Custom Attributes associated with your logs and metrics. A default source tag `dronahq-cloud-metrics` is added to all exported logs and metrics. Attributes `project_id` and `project_name` are added to all exported metrics.                                                                                                                                                            |
+| Service Name      | The name of the application or service generating the log events.                                                                                                                                                                                                                                                                                                                        |
