@@ -13,7 +13,7 @@ This page provides instructions on how to establish a connection between your ap
 ## Authentication Types -
 
 <figure>
-  <Thumbnail src="/img/connectingDatasource/restapi-auth-types.png" style= {{width:"70%", height:"auto"}} alt="Authetication methods"/>
+  <Thumbnail src="/img/connecting-datasource/restapi-auth-types.png" style= {{width:"70%", height:"auto"}} alt="Authetication methods"/>
   <figcaption align = "center"><i>You can select from different Authentication tyes for REST API configuration</i></figcaption>
 </figure>
 
@@ -26,7 +26,7 @@ DronaHQ will not include authorization details in a request unless you specify a
 `API key authentication` stands out for its inherent simplicity. By utilizing a single key, authentication becomes straightforward as you only need to include the key. This type of authentication, commonly employed with connectors, is often utilized for read-only data access.
 
 <figure>
-  <Thumbnail src="/img/connectingDatasource/apikey-auth.jpeg" style= {{width:"100%", height:"auto"}} alt="Basic Auth"/>
+  <Thumbnail src="/img/connecting-datasource/apikey-auth.jpeg" style= {{width:"100%", height:"auto"}} alt="Basic Auth"/>
 </figure>
 
 To configure account-specific fields required by the API for authentication, you must provide the necessary parameters. For API Key Authentication, the input parameter would be `API_key`.
@@ -40,7 +40,7 @@ If you choose None, you will need to explicitly add this key in your API request
 One of the configuration options available is utilizing `Basic Authentication`, which is commonly employed when an API relies on HTTP Basic authentication standards. 
 
 <figure>
-  <Thumbnail src="/img/connectingDatasource/basic-auth.jpeg" style= {{width:"100%", height:"auto"}} alt="Basic Auth"/>
+  <Thumbnail src="/img/connecting-datasource/basic-auth.jpeg" style= {{width:"100%", height:"auto"}} alt="Basic Auth"/>
 </figure>
 
 During the setup process for a new service, DronaHQ will prompt you to provide a `username` and `password`. Subsequently, the platform will add the necessary encoded authorization headers to the API request.
@@ -54,7 +54,7 @@ DronaHQ supports authenticating requests to their API using AWS Signature. This 
 
 
 <figure>
-  <Thumbnail src="/img/connectingDatasource/aws-auth.jpeg" style= {{width:"100%", height:"auto"}} alt="AWS Auth"/>
+  <Thumbnail src="/img/connecting-datasource/aws-auth.jpeg" style= {{width:"100%", height:"auto"}} alt="AWS Auth"/>
 </figure>
 
 
@@ -71,7 +71,7 @@ When configuring the respective APIs, you can include the required AWS Authentic
 DronaHQ empowers users with the robust security of `Digest Authentication` for REST API configuration.The Digest Authentication method bears resemblance to Basic Auth in its utilization of usernames and passwords.
 
 <figure>
-  <Thumbnail src="/img/connectingDatasource/digest-auth.jpeg" style= {{width:"100%", height:"auto"}} alt="digest Auth"/>
+  <Thumbnail src="/img/connecting-datasource/digest-auth.jpeg" style= {{width:"100%", height:"auto"}} alt="digest Auth"/>
 </figure>
 
 
@@ -86,7 +86,7 @@ DronaHQ offers Hawk Authentication for REST API configuration, ensuring efficien
 The `Hawk Authentication` technology and approach aims to streamline the authentication process by introducing a simplified authentication scheme. Specifically designed for HTTP, it revolves around the utilization of HMAC digests for requests and responses. 
 
 <figure>
-  <Thumbnail src="/img/connectingDatasource/hawk-auth.jpeg" style= {{width:"100%", height:"auto"}} alt="digest Auth"/>
+  <Thumbnail src="/img/connecting-datasource/hawk-auth.jpeg" style= {{width:"100%", height:"auto"}} alt="digest Auth"/>
 </figure>
 
 To ensure authentication and detect any potential data tampering, the Hawk authentication type is recommended for APIs utilizing a *Message Authentication Code (MAC)*. 

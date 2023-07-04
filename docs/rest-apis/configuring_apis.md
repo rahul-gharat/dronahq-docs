@@ -24,7 +24,7 @@ Let us now understand how to configure a REST API Connector:
 Under `DronaHQ -> Connectors`, click `+ Connector`.
 
 <figure>
-  <Thumbnail src="/img/connectingDatasource/restapi-inlist.png" alt="REST API connector" width='400px'/>
+  <Thumbnail src="/img/connecting-datasource/restapi-inlist.png" alt="REST API connector" width='400px'/>
   <figcaption align = "center"><i>REST API connector</i></figcaption>
 </figure>
 
@@ -33,7 +33,7 @@ DronaHQ has different options including the use of the REST API that allows you 
 While setting up API configurations, it is necessary to furnish the Authentication details corresponding to the specific authentication method. In this particular case, we will choose the `None` option.
 
 <figure>
-  <Thumbnail src="/img/connectingDatasource/restapi-config.png" alt="REST API configuration" />
+  <Thumbnail src="/img/connecting-datasource/restapi-config.png" alt="REST API configuration" />
   <figcaption align = "center"><i>REST API configuration with no authentication</i></figcaption>
 </figure>
 

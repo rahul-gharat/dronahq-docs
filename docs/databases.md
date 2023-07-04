@@ -20,7 +20,7 @@ Here you will learn how to connect to a database on DronaHQ.
 
 <figure>
   <img
-    src='/img/connectingDatasource/databases-list.png'
+    src='/img/connecting-datasource/databases-list.png'
     style={{ width: "60%", height: "auto" }}
     alt='List of available databases connectors.'
   />
@@ -50,19 +50,19 @@ This section talks about the steps to create a database query in the query edito
 1. Once you are done with configuring database connector. It will show in the connectors' list. Click on the `Add Query` button. 
 
 <figure>
-  <Thumbnail src="/img/connectingDatasource/write-query.png" alt="Add Query" />
+  <Thumbnail src="/img/connecting-datasource/write-query.png" alt="Add Query" />
   <figcaption align = "center"><i>Click on <code>ADD QUERY</code> to open query editor.</i></figcaption>
 </figure>
 
 2. The query editor will open. You need to provide a name for the query and then write MySQL queries (Since here MySQL database is taken as an example.) under`Write Your Query`.
 
 <figure>
-  <Thumbnail src="/img/connectingDatasource/query-builder.jpeg" alt="Query Builder" />
+  <Thumbnail src="/img/connecting-datasource/query-builder.jpeg" alt="Query Builder" />
   <figcaption align = "center"><i>MySQL Query builder with schemas on display.</i></figcaption>
 </figure>
 
 :::info
-  DronaHQ provides specialized query editors for different databases, such as MySQL and PostgreSQL. These database-dependent query editors enable users to write queries that are optimized for specific database systems, ensuring efficient and precise data manipulation.
+  DronaHQ provides specialized query editors for different databases, such as MySQL and MongoDB. These database-dependent query editors enable users to write queries that are optimized for specific database systems, ensuring efficient and precise data manipulation.
 :::
 
 :::tip
@@ -72,14 +72,14 @@ This section talks about the steps to create a database query in the query edito
 3. Write a query, let's say to fetch all the details from a table in the databsase. After that, click `Test Quey`.
 
 <figure>
-  <Thumbnail src="/img/connectingDatasource/query-res.jpeg" alt="Query Response" />
+  <Thumbnail src="/img/connecting-datasource/query-res.jpeg" alt="Query Response" />
   <figcaption align = "center"><i>Query response.</i></figcaption>
 </figure>
 
 4. Click `Save` and your query will be added to the databse connector.
 
 <figure>
-  <Thumbnail src="/img/connectingDatasource/query-added.jpeg" alt="Query added to the database connector." />
+  <Thumbnail src="/img/connecting-datasource/query-added.jpeg" alt="Query added to the database connector." />
   <figcaption align = "center"><i>Query added to the database connector.</i></figcaption>
 </figure>
 
@@ -102,7 +102,7 @@ For Example, suppose we need to retrieve data from a table based on a particular
 
 <figure>
   <Thumbnail
-    src='/img/connectingDatasource/datasource-passParam.gif'
+    src='/img/connecting-datasource/datasource-passParam.gif'
     style={{ width: "100%", height: "auto" }}
     alt='List of available databases connectors.'
   />
@@ -117,7 +117,7 @@ As shown in the image above, the `orderid` has been transformed into a dynamic v
 
 <figure>
   <Thumbnail
-    src='/img/connectingDatasource/database-pass-query.png'
+    src='/img/connecting-datasource/database-pass-query.png'
     style={{ width: "100%", height: "auto" }}
     alt='List of available databases connectors.'
   />
