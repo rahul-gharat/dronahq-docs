@@ -91,8 +91,8 @@ The ***Hawk Authentication*** technology and approach aims to streamline the aut
 
 To ensure authentication and detect any potential data tampering, the Hawk authentication type is recommended for APIs utilizing a *Message Authentication Code (MAC)*. 
 
-This method involves copying the Hawk Auth ID and Hawk Auth Key from your application.
+This method involves copying the **`Hawk Auth ID`** and **`Hawk Auth Key`** from your application.
 
-Additionally, you need to select the appropriate algorithm supported by your API Service Provider, such as `SHA-256` or `SHA1`. 
+Additionally, you need to select the appropriate algorithm supported by your API Service Provider, such as **`SHA-256`** or **`SHA1`**. 
 
-The client must obtain a `token ID` and `token key` from the server, typically provided in a special Hawk-Session-Token header, to sign subsequent requests. Extracting the Hawk ID and Hawk Key from this token is essential for signing the requests securely.
+The client must obtain a **`token ID`** and **`token key`** from the server, typically provided in a special Hawk-Session-Token header, to sign subsequent requests. Extracting the Hawk ID and Hawk Key from this token is essential for signing the requests securely.
