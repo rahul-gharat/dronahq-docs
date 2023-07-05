@@ -41,23 +41,23 @@ Header bar search field keyboard glyphs
 }
 
 .nav-link_login {
-  color: var(--ifm-color-primary);
+  // color: var(--ifm-color-primary);
 }
 
 .nav-link_getting-started {
-  font-weight: 500;
-  text-transform: capitalize;
-  white-space: nowrap;
-  background-color: var(--ifm-color-primary-light);
-  color: var(--color-gray-0);
-  border-radius: var(--ifm-global-radius);
-  padding: 0.5rem 1rem;
-  margin-right: 0.5rem;
+  // font-weight: 500;
+  // text-transform: capitalize;
+  // white-space: nowrap;
+  // background-color: var(--ifm-color-primary-light);
+  // color: var(--color-gray-0);
+  // border-radius: var(--ifm-global-radius);
+  // padding: 0.5rem 1rem;
+  // margin-right: 0.5rem;
 
-  &:hover {
-    background-color: var(--ifm-color-primary-dark);
-    color: var(--color-gray-0);
-  }
+  // &:hover {
+  //   background-color: var(--ifm-color-primary-dark);
+  //   color: var(--color-gray-0);
+  // }
 }
 
 .header-hasura-cloud-link {
