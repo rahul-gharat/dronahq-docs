@@ -91,15 +91,15 @@ const config = {
       'content-docs',
       /** @type {import('@docusaurus/plugin-content-docs').Options} */
       ({
-        id: 'guide',
-        path: 'guide',
-        routeBasePath: 'guide',
+        id: 'wiki',
+        path: 'wiki',
+        routeBasePath: 'wiki',
         editUrl: ({ docPath }) => `https://github.com/rahul-gharat/dronahq-docs/edit/main/docs/${docPath}`,
         // editCurrentVersion: true,
-        docItemComponent: require.resolve('./src/components/CustomDocItem/CustomDocItemGuide.tsx'),
+        docItemComponent: require.resolve('./src/components/CustomDocItem/CustomDocItemWiki.tsx'),
         // disableVersioning: true,
         breadcrumbs: false,
-        sidebarPath: require.resolve('./sidebarsGuide.js'),
+        sidebarPath: require.resolve('./sidebarsWiki.js'),
         showLastUpdateAuthor: true,
         showLastUpdateTime: true,
       }),
@@ -186,6 +186,11 @@ const config = {
             position: 'left',
             label: 'Docs',
             to: '/introduction'
+          },
+          {
+            to: '/wiki',
+            label: 'Wiki',
+            position: 'left'
           },
           {
             to: '/blog',
