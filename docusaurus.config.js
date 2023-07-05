@@ -203,21 +203,6 @@ const config = {
             position: 'left'
           },
           // {
-          //   to: 'https://hasura.io/products/',
-          //   label: 'Product',
-          //   position: 'left',
-          // },
-          // {
-          //   to: 'https://hasura.io/blog/',
-          //   label: 'Blog',
-          //   position: 'left',
-          // },
-          // {
-          //   to: 'https://hasura.io/learn/',
-          //   label: 'Tutorials',
-          //   position: 'left',
-          // },
-          // {
           //   to: 'https://hasura.io/changelog',
           //   label: "What's New",
           //   id: 'whats-new-link',

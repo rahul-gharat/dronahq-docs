@@ -17,7 +17,7 @@ const ContributionPointer = ({ element }) => {
   return (
     <Link
       className={`${styles['contribution-pointer']} ${isHover ? styles['contribution-hover'] : ''}`}
-      href="https://hasura.io/docs/wiki/contributions/"
+      href="https://rahul-gharat.github.io/dronahq-docs/wiki/contributions/"
       rel="noopener noreferrer"
     >
       <div className={styles['contribution-pointer__text']}>
