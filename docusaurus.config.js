@@ -15,7 +15,6 @@ const config = {
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/dronahq-docs/',
-
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'rahul-gharat', // Usually your GitHub org/user name.
@@ -40,6 +39,7 @@ const config = {
         },
       },
     }),
+  },
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
@@ -124,7 +124,6 @@ const config = {
     //   },
     // ],
   ],
-
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
@@ -311,16 +310,12 @@ const config = {
       //   ],
       //   copyright: `Copyright © ${new Date().getFullYear()} DronaHQ, Inc. Built with Docusaurus.`,
       // },
-      prism: {
-        theme: lightCodeTheme,
-        darkTheme: darkCodeTheme,
-      },
     }),
     markdown: {
       mermaid: true,
     },
     themes: ['@docusaurus/theme-mermaid'],
 
-};
+}
 
 module.exports = config;
