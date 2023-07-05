@@ -58,6 +58,10 @@ Header bar search field keyboard glyphs
     //   background-color: var(--ifm-color-primary-dark);
     //   color: var(--color-gray-0);
     // }
+    background: var(--ifm-color-primary);
+    color: #fff;
+    border-radius: 4px;
+    margin-right: 12px;
 }
 
 .header-hasura-cloud-link {
@@ -167,11 +171,4 @@ html[data-theme='dark'] {
     // background-color: var(--dhq-navbar-background);
     box-shadow: var(--dhq-shadow-lw);
     /* height: 72px; */
-}
-
-.navbar__item.navbar__link.nav-link_getting-started {
-    background: var(--ifm-color-primary);
-    color: #fff;
-    border-radius: 4px;
-    margin-right: 12px;
 }
