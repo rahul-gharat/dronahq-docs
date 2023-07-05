@@ -1,5 +1,6 @@
 ---
 sidebar_position: 1
+title: Set up Branding
 ---
 
 import Thumbnail from '@site/src/components/Thumbnail';
