@@ -34,7 +34,8 @@ SELECT * FROM customers WHERE id = {{Tablegrid1.userId}};
 DronaHQ internally replaces {{Tablegrid1.userId}} with a question mark (?). The payload inserts parameters one by one, ensuring that the bindings are properly escaped and sanitized before sending the query to the database for execution. This process effectively translates an DronaHQ query into a prepared statement.
 
 :::info NOTE
-DronaHQ takes the necessary precautions to sanitize each input, providing protection against SQL injection for the applications you build on the platform.
+- DronaHQ takes the necessary precautions to sanitize each input, providing protection against SQL injection for the applications you build on the platform.
+- Prepared statements are not formed when creating query in the query editor, since the query editor is visible to only the admin users, but it will create prepared statements when the query is run in the app.
 :::
 
 As an example, let's consider a query with multiple bindings:
@@ -95,14 +96,16 @@ In this example, `username` and `useremail` are the two text input controls of t
 
 
 #### In Clause
-When implementing a search feature where customers can select different statuses to filter results, you can use the IN clause. You have two scenarios for IN clause queries: dynamic array length and static array length.
+When implementing a search feature where customers can select different statuses to filter results, you can use the IN clause. You have two scenarios for IN clause queries: dynamic array length and static array length. Its supported for Static array length.
 
 Static Array Length: 
 When you know the exact number of data bindings for the IN clause, you can specify them directly. For example:
 
 ```sql
-SELECT * from customers where status in ({{activeStatusOption}} , {{inActiveStatusOption}})
+SELECT * from customers where type in ({{subscriptionOption}} , {{status}})
 ```
+
+Here, `subscriptionOption` and `status` are two different dropdown control that are added in the `in clause`.
 
 ### When not to use prepared statements in DronaHQ
 There are certain scenarios where using prepared statements is not suitable:
@@ -111,7 +114,7 @@ There are certain scenarios where using prepared statements is not suitable:
 If you dynamically generate a table name based on certain criteria in your code logic and supply it as a binding to the query, prepared statements will not work. For instance:
 
 ```sql
-Select * from {{Generated_Table_Name.text}}
+Select * from {{Runtime_Generated_Table_Name}}
 ```
 
 #### Dynamic Queries
@@ -127,6 +130,11 @@ If you generate a WHERE clause based on code logic, dynamically adding columns a
 ```sql
 SELECT * FROM customers WHERE {{DynamicWhereClause}}
 ```
+
+#### Dynamic Array length
+When the selected options can vary, and the array length is dynamic, you can generate a dynamic IN clause with indefinite bindings. In this case prepared statements will not be able to execute properly. For example:
+
+SELECT * from users where status in = ANY ({{selectedOptionValues}})
 
 For such scenarios, it is recommended to disable prepared statements and continue using the query for generating responses.
 
