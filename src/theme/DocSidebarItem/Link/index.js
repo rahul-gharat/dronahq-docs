@@ -4,7 +4,7 @@ import { ThemeClassNames } from '@docusaurus/theme-common';
 import { isActiveSidebarItem } from '@docusaurus/theme-common/internal';
 import Link from '@docusaurus/Link';
 import isInternalUrl from '@docusaurus/isInternalUrl';
-import styles from './styles.module.css';
+import styles from './styles.module.scss';
 import { useColorMode } from '@docusaurus/theme-common';
 import EnterpriseLight from '@site/static/icons/enterprise-dark.svg';
 import EnterpriseDark from '@site/static/icons/enterprise-light.svg';

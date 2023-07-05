@@ -1,10 +1,11 @@
 import React from 'react';
 import clsx from 'clsx';
+import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import poster from '@site/static/img/dronahq-drag-drop-builder.png';
-import Layout from '@theme/Layout';
-import styles from './index.module.css';
+import VersionedLink from '@site/src/components/VersionedLink';
+import styles from './index.module.scss';
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
@@ -16,24 +17,25 @@ function HomepageHeader() {
           <p className="hero__subtitle">{siteConfig.tagline}</p>
         </div>
         <div className={styles.links}>
+          {/* <VersionedLink className="button button--primary button--lg" to="/index">
+            Hasura Docs
+          </VersionedLink>
           <div className={styles.links}>
-            <Link className="button button--secondary button--lg" to="/docs/introduction">
-              Docs
+            <Link className="button button--secondary button--lg" to="/wiki/">
+              Docs Wiki
             </Link>
-          </div>
-          <div className={styles.links}>
-            <Link className="button button--secondary button--lg" to="/blog/">
-              Blog
-            </Link>
-          </div>
-          <div className={styles.links}>
-            <Link className="button button--secondary button--lg" to="https://www.dronahq.com/signup/">
-              Try for free
-            </Link>
-          </div>
+          </div> */}
+          <VersionedLink className="button button--primary button--lg" to="https://www.dronahq.com/signup/">
+            Try for free
+          </VersionedLink>
           <div className={styles.links}>
             <Link className="button button--secondary button--lg" to="https://www.dronahq.com/request-a-demo/">
               Schedule a demo
+            </Link>
+          </div>
+          <div className={styles.links}>
+            <Link className="button button--success button--lg" to="/guide">
+              Docs Style Guide
             </Link>
           </div>
         </div>
@@ -47,11 +49,11 @@ export default function Home(): JSX.Element {
   const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      title={siteConfig.title}
+      description="Low code toolkit for developers to quickly build internal tools, digital journeys, operational apps on top of any data source or APIs."
+    >
       <HomepageHeader />
-      <main>
-      </main>
+      <main></main>
     </Layout>
   );
 }
