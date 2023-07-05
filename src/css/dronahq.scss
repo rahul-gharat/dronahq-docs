@@ -3,65 +3,9 @@
  * bundles Infima by default. Infima is a CSS framework designed to
  * work well for content-centric websites.
  */
-
-
+ 
 /* You can override the default Infima variables here. */
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url("cloud-db-icon-gallery.css");
-
-/* <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> */
-
-:root {
-    --ifm-color-primary: #26bc6a;
-    --ifm-color-primary-dark: #29784c;
-    --ifm-color-primary-darker: #277148;
-    --ifm-color-primary-darkest: #205d3b;
-    --ifm-color-primary-light: #33925d;
-    --ifm-color-primary-lighter: #359962;
-    --ifm-color-primary-lightest: #3cad6e;
-    --ifm-code-font-size: 95%;
-    --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
-    --dhq-header-color: #344658;
-    --dhq-body-color: #000;
-    --dhq-background-light: #0000000d;
-    --dhq-background-menu: #f3f5f7;
-    --dhq-shadow-lw: 0px 2px 6px #0003;
-    --dhq-card-background: #fff;
-    --dhq-border-color: #D1D2DB;
-    --dhq-nev-color: #F3F5F8;
-    --dhq-nev-hover-color: #e7ebef;
-    --dhq-body-background: #fff;
-    --dhq-navbar-background: #f3f5f7;
-    --ifm-card-background-color: #f3f5f7;
-}
-
-
-/* For readability concerns, you should choose a lighter palette in dark mode. */
-
-[data-theme='dark'] {
-    --ifm-color-primary: #26bc6a;
-    --ifm-color-primary-dark: #21af90;
-    --ifm-color-primary-darker: #1fa588;
-    --ifm-color-primary-darkest: #1a8870;
-    --ifm-color-primary-light: #29d5b0;
-    --ifm-color-primary-lighter: #32d8b4;
-    --ifm-color-primary-lightest: #4fddbf;
-    --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
-    --dhq-body-color: #ffffff;
-    --dhq-header-color: #ffffff;
-    --dhq-background-menu: #1c262f;
-    --dhq-shadow-lw: 0px 2px 6px #0006;
-    --dhq-card-background: #1c262f;
-    --dhq-border-color: #3a3a3e;
-    --dhq-nev-color: #1c262f;
-    --dhq-nev-hover-color: #23303d;
-    --dhq-body-background: #141c22;
-    --dhq-navbar-background: #23303d;
-    --ifm-card-background-color: #23303d;
-}
 
 html,
 body {

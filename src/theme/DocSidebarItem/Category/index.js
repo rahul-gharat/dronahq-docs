@@ -12,7 +12,7 @@ import { translate } from '@docusaurus/Translate';
 import useIsBrowser from '@docusaurus/useIsBrowser';
 import DocSidebarItems from '@theme/DocSidebarItems';
 import { useColorMode } from '@docusaurus/theme-common';
-import styles from './styles.module.css';
+import styles from './styles.module.scss';
 import EnterpriseLight from '@site/static/icons/enterprise-dark.svg';
 import EnterpriseDark from '@site/static/icons/enterprise-light.svg';
 import CloudLight from '@site/static/icons/cloud-dark.svg';

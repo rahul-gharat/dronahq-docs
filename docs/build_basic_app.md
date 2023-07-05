@@ -27,7 +27,7 @@ This tutorial guides you through the steps to create a simple database GUI using
 Here's a screenshot of the final result:
 
 <figure>
-  <Thumbnail src="/img/dronahq-drag-drop-builder.p.png" alt="Simple Database GUI" />
+  <Thumbnail src="/img/dronahq-drag-drop-builder.png" alt="Simple Database GUI" />
   <figcaption align = "center"><i>Simple Database GUI</i></figcaption>
 </figure>
 

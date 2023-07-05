@@ -8,13 +8,15 @@ export default function DocSidebarItem({ item, ...props }) {
     case 'category':
       if (item.customProps?.sidebar_pathname) {
         // if there is a custom sidebar_pathname, use it
-        item.href = `/docs/latest/${item.customProps.sidebar_pathname}/overview/`;
-      } else if (item.href === undefined) {
-        // if there is no custom sidebar_pathname, use the label with our regex
-        // and apparently deal with the Wiki as a special case
-        if (item.label != 'Docs Wiki') {
-          item.href = `/docs/latest/${item.label.toLowerCase().replace(/\s/g, '-')}/overview/`;
-        }
+        // item.href = `/docs/latest/${item.customProps.sidebar_pathname}/overview/`;
+        item.href = `/docs/${item.label.toLowerCase().replace(/\s/g, '-')}/${item.customProps.sidebar_pathname}/`;
+      // } else if (item.href === undefined) {
+      //   // if there is no custom sidebar_pathname, use the label with our regex
+      //   // and apparently deal with the Wiki as a special case
+      //   if (item.label != 'Docs Wiki') {
+      //     // item.href = `/docs/latest/${item.label.toLowerCase().replace(/\s/g, '-')}/overview/`;
+      //     item.href = `/docs/${item.label.toLowerCase().replace(/\s/g, '-')}/overview/`;
+      //   }
       } else {
         // if it already has a href (such as any category that has an index within the dir), use it
         item.href = item.href;
