@@ -131,12 +131,12 @@ const config = {
       image: 'img/dronahq-social-card.jpg',
       docs: {
         sidebar: {
-          // hideable: true,
+          hideable: false,
           autoCollapseCategories: true,
         },
       },
       colorMode: {
-        defaultMode: 'light',
+        defaultMode: 'dark',
         disableSwitch: false,
         respectPrefersColorScheme: true,
       },
