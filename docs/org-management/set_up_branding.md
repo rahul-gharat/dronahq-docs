@@ -7,7 +7,7 @@ import VersionedLink from '@site/src/components/VersionedLink';
 
 # Set up Branding
 
-DronaHQ offers a powerful custom branding feature that enables app builders to personalize their DronaHQ end-user portal with their unique logo and color palette. This feature ensures that your end-users enjoy a seamless and familiar experience, as the login screen reflects your company's branding. This feature can be accessed from Account settings → Domain & Branding
+DronaHQ offers a powerful custom branding feature that enables app builders to personalize their DronaHQ end-user portal with their unique logo and color palette. This feature ensures that your end-users enjoy a seamless and familiar experience, as the login screen reflects your company's branding. This feature can be accessed from `Account settings -> Domain & Branding`
 
 :::info
 
@@ -15,7 +15,7 @@ Branding is only available on [Business plan](https://www.dronahq.com/pricing) 
 
 :::
 
-## Branding configuration
+## Branding configurations
 
 Setting up the branding configuration in DronaHQ is pretty simple, all you need is a logo, favicon and a few colors in the palette and your end-user portal will start looking like your own.
 
@@ -39,6 +39,8 @@ Setting up the branding configuration in DronaHQ is pretty simple, all you need 
 | About the App | This will be seen in the about us section of your end-user portal. |
 
 <br></br>
+
+## Sample screens
 
 When you set up these configurations, you will see your login and home screen as below:
 
