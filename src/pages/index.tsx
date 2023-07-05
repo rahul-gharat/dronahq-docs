@@ -34,7 +34,7 @@ function HomepageHeader() {
             </Link>
           </div>
           <div className={styles.links}>
-            <Link className="button button--success button--lg" to="/guide">
+            <Link className="button button--success button--lg" to="/wiki">
               Docs Style Guide
             </Link>
           </div>

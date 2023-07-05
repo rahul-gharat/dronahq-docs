@@ -58,7 +58,7 @@ const config = {
           // Remove this to remove the "edit this page" links.
           // editUrl: 'https://github.com/rahul-gharat/dronahq-docs/tree/main/',
           routeBasePath: '/',
-          editUrl: ({ docPath }) => `https://github.com/rahul-gharat/dronahq-docs/edit/main/docs/${docPath}`,
+          editUrl: ({ docPath }) => `https://github.com/rahul-gharat/dronahq-docs/blob/main/docs/${docPath}`,
           docItemComponent: require.resolve('./src/components/CustomDocItem/index.tsx'),
           exclude: ['**/*.wip'],
           breadcrumbs: true,
@@ -94,7 +94,7 @@ const config = {
         id: 'wiki',
         path: 'wiki',
         routeBasePath: 'wiki',
-        editUrl: ({ docPath }) => `https://github.com/rahul-gharat/dronahq-docs/edit/main/docs/${docPath}`,
+        editUrl: ({ docPath }) => `https://github.com/rahul-gharat/dronahq-docs/blob/main/wiki/${docPath}`,
         // editCurrentVersion: true,
         docItemComponent: require.resolve('./src/components/CustomDocItem/CustomDocItemWiki.tsx'),
         // disableVersioning: true,
