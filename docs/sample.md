@@ -176,7 +176,6 @@ sequenceDiagram
     </div>
     <div className="card">
       <div className="card-header">
-        <GraphQL />
         <h4>GraphQL API</h4>
       </div>
       <p>We provide an instant GraphQL API by generating your GraphQL schema for you based on your data.</p>
@@ -186,7 +185,6 @@ sequenceDiagram
     </div>
     <div className="card">
       <div className="card-header">
-        <GraphQL />
         <h4>GraphQL API</h4>
       </div>
       <p>We provide an instant GraphQL API by generating your GraphQL schema for you based on your data.</p>
