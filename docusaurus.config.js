@@ -182,7 +182,7 @@ const config = {
         items: [
           {
             // type: 'docSidebar',
-            sidebarId: 'docsSidebar',
+            sidebarId: 'docSidebar',
             position: 'left',
             label: 'Docs',
             to: '/introduction'
@@ -315,7 +315,6 @@ const config = {
       mermaid: true,
     },
     themes: ['@docusaurus/theme-mermaid'],
-
-}
+};
 
 module.exports = config;

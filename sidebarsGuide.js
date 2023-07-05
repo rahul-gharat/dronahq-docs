@@ -27,7 +27,7 @@ const sidebars = {
 
   // But you can create a sidebar manually
   /*
-  docsSidebar: [
+  docSidebar: [
     {
       type: 'category',
       label: 'Tutorial',
