@@ -12,7 +12,6 @@ import VersionedLink from '@site/src/components/VersionedLink';
 import Basics from '@site/static/icons/features/basics.svg';
 import ArrowRight from '@site/static/icons/arrow_right.svg';
 import Image from '@site/src/components/Image';
- 
 
 # Sample Usage
 
@@ -85,7 +84,7 @@ Open `docs/intro.md` (this page) and edit some lines: the site **reloads automat
 </figure>
 
 <!-- <figure>
-  <img src="/img/dronahq-drag-drop-builder.png" style= {{width:"100%", height:"auto"}} alt="Simple Database GUI"/>
+  <Image src="/img/dronahq-drag-drop-builder.png" style= {{width:"100%", height:"auto"}} alt="Simple Database GUI"/>
   <figcaption align = "center"><i>Simple Database GUI</i></figcaption>
 </figure> -->
 

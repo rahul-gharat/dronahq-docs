@@ -5,6 +5,7 @@ title: Databases
 
 
 import Thumbnail from '@site/src/components/Thumbnail';
+import Image from "@site/src/components/Image";
 
 # Databases
 
@@ -19,7 +20,7 @@ Here you will learn how to connect to a database on DronaHQ.
 3. From the list, select the database you need to connect to. This opens the page where you can configure the parameters to connect to your database.
 
 <figure>
-  <img
+  <Image
     src='/img/connecting-datasource/databases-list.png'
     style={{ width: "60%", height: "auto" }}
     alt='List of available databases connectors.'
