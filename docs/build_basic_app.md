@@ -7,7 +7,7 @@ description:  Learn the basics of building an app on Dronahq.
 ---
 
 import Thumbnail from '@site/src/components/Thumbnail';
-
+import Image from "@site/src/components/Image";
 
 # Build Your First App
 
@@ -44,7 +44,7 @@ Let's get started!
 2. On the homepage, click the **+ New** button to the right of the screen under the default workspace. You'll land on a new application in the *Edit* mode. 
 
 <figure>
-  <img src="/img/dronahq-drag-drop-builder.png" style= {{width:"100%", height:"auto"}} alt="Create new application"/>
+  <Image src="/img/dronahq-drag-drop-builder.png" style= {{width:"100%", height:"auto"}} alt="Create new application"/>
   <figcaption align = "center"><i>Create new application</i></figcaption>
 </figure>
 
@@ -55,7 +55,7 @@ Let's get started!
 5. Select the **Edit Name** option. Rename the page to `User Information`.
 
 <figure>
-  <img src="/img/dronahq-drag-drop-builder.png" style= {{width:"100%", height:"auto"}} alt="Edit page name"/>
+  <Image src="/img/dronahq-drag-drop-builder.png" style= {{width:"100%", height:"auto"}} alt="Edit page name"/>
   <figcaption align = "center"><i>Edit page name</i></figcaption>
 </figure>
 
@@ -68,7 +68,7 @@ Let's get started!
 3. Select **PostgreSQL** under the **Databases** section. This opens the page where you can configure the fields to connect to your PostgreSQL database. 
 
 <figure>
-  <img src="/img/dronahq-drag-drop-builder.png" style= {{width:"100%", height:"auto"}} alt="Connect to PostgreSQL database"/>
+  <Image src="/img/dronahq-drag-drop-builder.png" style= {{width:"100%", height:"auto"}} alt="Connect to PostgreSQL database"/>
   <figcaption align = "center"><i>Connect to PostgreSQL database</i></figcaption>
 </figure>
 
@@ -91,7 +91,7 @@ Let's get started!
 1. Click the **+ New Query** button to the right of the screen.
 
 <figure>
-  <img src="/img/dronahq-drag-drop-builder.png" style= {{width:"100%", height:"auto"}} alt="Create a new query on the datasource"/>
+  <Image src="/img/dronahq-drag-drop-builder.png" style= {{width:"100%", height:"auto"}} alt="Create a new query on the datasource"/>
   <figcaption align = "center"><i>Create a new query on the datasource</i></figcaption>
 </figure>
 
@@ -104,7 +104,7 @@ Let's get started!
 5. Click the **Settings** tab. Switch on the **Run query on page load** option.
 
 <figure>
-  <img src="/img/dronahq-drag-drop-builder.png" style= {{width:"100%", height:"auto"}} alt="Fetch data from database"/>
+  <Image src="/img/dronahq-drag-drop-builder.png" style= {{width:"100%", height:"auto"}} alt="Fetch data from database"/>
   <figcaption align = "center"><i>Fetch data from database</i></figcaption>
 </figure>
 
@@ -127,7 +127,7 @@ The mustache template `{{}}` is used to write JS code inside widgets and queries
 :::
 
 <figure>
-  <img src="/img/dronahq-drag-drop-builder.png" style= {{width:"100%", height:"auto"}} alt="Display data in table"/>
+  <Image src="/img/dronahq-drag-drop-builder.png" style= {{width:"100%", height:"auto"}} alt="Display data in table"/>
   <figcaption align = "center"><i>Display data in table</i></figcaption>
 </figure>
 
@@ -157,7 +157,7 @@ The mustache template `{{}}` is used to write JS code inside widgets and queries
 🚩 You've completed binding the data to the widgets on the Form. Select the rows on the Table to view the corresponding user details on the Form.
 
 <figure>
-  <img src="/img/dronahq-drag-drop-builder.png" style= {{width:"100%", height:"auto"}} alt="Bind data to widgets"/>
+  <Image src="/img/dronahq-drag-drop-builder.png" style= {{width:"100%", height:"auto"}} alt="Bind data to widgets"/>
   <figcaption align = "center"><i>Bind data to widgets</i></figcaption>
 </figure>
 
@@ -193,7 +193,7 @@ The mustache template `{{}}` is used to write JS code inside widgets and queries
     The button is now configured to execute the **updateUsers** query to save any modified user details on the Form and to refresh the Table widget with the updated information. 
 
 <figure>
-  <img src="/img/dronahq-drag-drop-builder.png" style= {{width:"100%", height:"auto"}} alt="Run query on the button's onClick event"/>
+  <Image src="/img/dronahq-drag-drop-builder.png" style= {{width:"100%", height:"auto"}} alt="Run query on the button's onClick event"/>
   <figcaption align = "center"><i>Run query on the button's onClick event</i></figcaption>
 </figure>
 
