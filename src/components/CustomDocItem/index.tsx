@@ -27,13 +27,13 @@ const CustomDocItem = props => {
   // redirect them to the index if they attempt to directly navigate to a path with
   // _heading_ in it
   if (props.location.pathname.includes('_heading_')) {
-    return <Redirect to="/dronahq-docs-hasura/introduction/" />;
+    return <Redirect to="/introduction/" />;
   }
 
   return (
     <div
       className={
-        props.location.pathname === `/dronahq-docs-hasura/introduction/`
+        props.location.pathname === `/introduction/`
           ? `custom_doc_item_wrapper custom_doc_item_wrapper-x-wide`
           : `custom_doc_item_wrapper ${styles['custom_doc_item_wrapper']}`
       }

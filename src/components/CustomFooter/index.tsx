@@ -31,8 +31,8 @@ const CustomFooter = () => {
   return (
     <footer className={styles['custom-footer-wrapper']}>
       <div className={styles['logo-wrapper']}>
-        <img src={useBaseUrl('/dronahq-docs-hasura/img/dronahq-name-logo-dark.svg')} className={styles['dark-theme-logo']} />
-        <img src={useBaseUrl('/dronahq-docs-hasura/img/dronahq-name-logo-light.svg')} className={styles['light-theme-logo']} />
+        <img src={useBaseUrl('/img/dronahq-name-logo-dark.svg')} className={styles['dark-theme-logo']} />
+        <img src={useBaseUrl('/img/dronahq-name-logo-light.svg')} className={styles['light-theme-logo']} />
       </div>
       <div className={styles['copyright']}>{`© ${new Date().getFullYear()} Deltecs Infotech Pvt Ltd. All rights reserved`}</div>
       <div className={styles['footerSocialIconsWrapper']}>

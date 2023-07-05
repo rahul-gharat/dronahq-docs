@@ -43,10 +43,10 @@ const config = {
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
-  i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
-  },
+  // i18n: {
+  //   defaultLocale: 'en',
+  //   locales: ['en'],
+  // },
   presets: [
     [
       'classic',
@@ -94,7 +94,7 @@ const config = {
         id: 'guide',
         path: 'guide',
         routeBasePath: 'guide',
-        editUrl: ({ docPath }) => `https://github.com/rahul-gharat/dronahq-docs-hasura/edit/main/docs/${docPath}`,
+        editUrl: ({ docPath }) => `https://github.com/rahul-gharat/dronahq-docs/edit/main/docs/${docPath}`,
         // editCurrentVersion: true,
         docItemComponent: require.resolve('./src/components/CustomDocItem/CustomDocItemGuide.tsx'),
         // disableVersioning: true,
@@ -246,7 +246,7 @@ const config = {
           //   position: 'right',
           // },
           {
-            href: 'https://github.com/rahul-gharat/dronahq-docs-hasura',
+            to: 'https://github.com/rahul-gharat/dronahq-docs',
             position: 'right',
             className: 'header-github-link',
             'aria-label': 'GitHub repository',
