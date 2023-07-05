@@ -10,7 +10,7 @@ hide_table_of_contents: false
 
 ## Semantics
 - Use `code block` for highlighting `actions`, important `keywords`, eg - Go to `Menu -> Settings`, we want this `order ID` to be dynamic or create new `table name` using this query - `CREATE TABLE TABLE_Name (col1 type, col2 type)`
-- Don't use Italics.
+- Don't use Italics except Image captions.
 - Only Headings and Table Headers will be bold.
 - Don't use Linebreak `<hr />`.
 - Use `->` for providing path in this format only and should be always inside codeblock.
