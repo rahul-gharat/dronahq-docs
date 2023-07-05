@@ -9,7 +9,7 @@ import VersionedLink from '@site/src/components/VersionedLink';
 
 DronaHQ offers a powerful custom branding feature that enables app builders to personalize their DronaHQ end-user portal with their unique logo and color palette. This feature ensures that your end-users enjoy a seamless and familiar experience, as the login screen reflects your company's branding. This feature can be accessed from `Account settings -> Domain & Branding`
 
-:::info
+:::info Please Note
 
 Branding is only available on [Business plan](https://www.dronahq.com/pricing) of DronaHQ.
 
@@ -38,6 +38,7 @@ Setting up the branding configuration in DronaHQ is pretty simple, all you need 
 | App Name | This will be the main app name your end-user portal home screen. |
 | About the App | This will be seen in the about us section of your end-user portal. |
 
+Once your changes are done and the preview on the right side looks good, click the `Save` button to save your configurations and check the end user portal on your subdomain or custom domain. 
 <br></br>
 
 ## Sample screens
@@ -53,3 +54,9 @@ When you set up these configurations, you will see your login and home screen as
   <Thumbnail src="/img/org-management/home-screen.png" alt="Home screen of DronaHQ end-user portal" width='100%'/>
   <figcaption align = "center"><i>Home screen of DronaHQ end-user portal</i></figcaption>
 </figure>
+
+:::tip Hat tip
+
+You can also customize the email templates of all system generated emails in `Account Settings -> Integrations -> Email templates` to go one level up in customizing your branding. Also The colors that are set up will reflect in other sections of the end-user portal as well. 
+
+:::
