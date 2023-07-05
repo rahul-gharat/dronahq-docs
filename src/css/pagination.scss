@@ -1,0 +1,66 @@
+.pagination-nav__label {
+    font-weight: 500;
+}
+
+.pagination-nav .pagination-nav__link--prev .pagination-nav__label:before {
+    margin-right: 0.25rem;
+    transform: rotate(180deg);
+}
+
+.pagination-nav .pagination-nav__link--next .pagination-nav__label:after,
+.pagination-nav .pagination-nav__link--prev .pagination-nav__label:before {
+    content: "";
+    display: inline-block;
+    margin-bottom: -1px;
+    transition: transform var(--ifm-transition-fast) linear;
+}
+
+.pagination-nav .pagination-nav__link--next .pagination-nav__label:after {
+    margin-left: 0.25rem;
+}
+
+.pagination-nav .pagination-nav__link--next .pagination-nav__label:after {
+    margin-bottom: -4px;
+}
+
+.pagination-nav .pagination-nav__link--next .pagination-nav__label:after,
+.pagination-nav .pagination-nav__link--prev .pagination-nav__label:before,
+.theme-edit-this-page:after {
+    // background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTMgOGg5TTguMTY4IDEyLjVsNC41LTQuNS00LjUtNC41IiBzdHJva2U9IiMxQjI3MzgiIHN0cm9rZS13aWR0aD0iMS41IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48L3N2Zz4=) no-repeat;
+    background: url("data:image/svg+xml,%3Csvg width='15' height='13' viewBox='0 0 12 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E    %3Cpath d='M1 5H11M11 5L6.71429 1M11 5L6.71429 9' stroke='black' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") no-repeat;
+    height: 1rem;
+    width: 1rem;
+}
+
+[data-theme='dark'] .pagination-nav .pagination-nav__link--next .pagination-nav__label:after,
+[data-theme='dark'] .pagination-nav .pagination-nav__link--prev .pagination-nav__label:before,
+[data-theme='dark'] .theme-edit-this-page:after {
+    // background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTMgOGg5TTguMTY4IDEyLjVsNC41LTQuNS00LjUtNC41IiBzdHJva2U9IiMxQjI3MzgiIHN0cm9rZS13aWR0aD0iMS41IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48L3N2Zz4=) no-repeat;
+    background: url("data:image/svg+xml,%3Csvg width='15' height='13' viewBox='0 0 12 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E    %3Cpath d='M1 5H11M11 5L6.71429 1M11 5L6.71429 9' stroke='white' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") no-repeat;
+    height: 1rem;
+    width: 1rem;
+}
+
+.pagination-nav .pagination-nav__link:not(:empty):hover {
+    background-color: var(--dhq-nev-hover-color);
+}
+
+.pagination-nav .pagination-nav__link:not(:empty) {
+    background-color: var(--dhq-nev-color);
+    border-color: #0000;
+    box-shadow: var(--dhq-shadow-lw);
+    color: var(--color-gray-74);
+}
+
+.pagination-nav .pagination-nav__link--prev:hover .pagination-nav__label:before {
+    transform: rotate(180deg) translateX(.25rem)
+}
+
+.pagination-nav .pagination-nav__link--next:hover .pagination-nav__label:after,
+.theme-edit-this-page:hover:after {
+    transform: translateX(.25rem)
+}
+
+.pagination-nav__sublabel {
+    display: none;
+}
