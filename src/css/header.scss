@@ -168,3 +168,10 @@ html[data-theme='dark'] {
     box-shadow: var(--dhq-shadow-lw);
     /* height: 72px; */
 }
+
+.navbar__item.navbar__link.nav-link_getting-started {
+    background: var(--ifm-color-primary);
+    color: #fff;
+    border-radius: 4px;
+    margin-right: 12px;
+}
