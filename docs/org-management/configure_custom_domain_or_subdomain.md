@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 3
 title: Configure custom domain or subdomain
 ---
 
@@ -15,6 +15,12 @@ DronaHQ provides you with an option of configuring a `custom domain` or `subdoma
 Custom domain is only available on [Business plan](https://www.dronahq.com/pricing) of `DronaHQ cloud edition` whereas subdomain can be set up in all plans.
 ###
 Also since the self-hosted instance is deployed at your own end, it doesnt require any specific plans and the process to set up a custom domain on `DronaHQ self-hosted instance` is specific in the self-hosted documentation.
+
+:::
+
+:::caution Please Note
+
+You you need to have admin or owner level priviledges to access or modify these configurations.
 
 :::
 
