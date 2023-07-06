@@ -10,6 +10,12 @@ import VersionedLink from '@site/src/components/VersionedLink';
 
 This feature allows you to personalize the content of system-generated emails, such as user invite and password reset emails. By utilizing our user-friendly email templates in HTML format, you can customize the invite emails and forgot password emails. Start by navigating to `Account Settings -> Integrations -> Email Template`
 
+:::caution Please Note
+
+You you need to have admin or owner level priviledges to access or modify these configurations.
+
+:::
+
 <figure>
   <Thumbnail src="/img/org-management/email-templates.png" alt="Customize emails" width='100%'/>
   <figcaption align = "center"><i>Customize system generated email templates</i></figcaption>

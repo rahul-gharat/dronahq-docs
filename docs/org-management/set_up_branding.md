@@ -16,6 +16,12 @@ Branding is only available on [Business plan](https://www.dronahq.com/pricing) 
 
 :::
 
+:::caution Please Note
+
+You you need to have admin or owner level priviledges to access or modify these configurations.
+
+:::
+
 ## Branding configurations
 
 Setting up the branding configuration in DronaHQ is pretty simple, all you need is a `logo`, `favicon` and a few `colors` in the palette and your `end-user portal` will start looking like your own.

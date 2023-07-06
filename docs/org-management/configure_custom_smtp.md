@@ -14,7 +14,13 @@ There are a few system generated emails that DronaHQ sends, like user invite, fo
 
 For the DronaHQ cloud edition the emails will by default be sent from DronaHQ email servers if this configuration is not set. If you are using the self-hosted version of DronaHQ - it is mandatory to set up and configure your own SMTP servers.
 
-:::f
+:::
+
+:::caution Please Note
+
+You you need to have admin or owner level priviledges to access or modify these configurations.
+
+:::
 
 <figure>
   <Thumbnail src="/img/org-management/email-config.png" alt="Email configuration" width='100%'/>
