@@ -10,7 +10,7 @@ DronaHQ offers support for various types of authorization. When configuring a Re
 
 This page provides instructions on how to establish a connection between your application and an authenticated API.
 
-## Authentication Types -
+## Authentication Types 
 
 <figure>
   <Thumbnail src="/img/connecting-datasource/restapi-auth-types.png" style= {{width:"70%", height:"auto"}} alt="Authetication methods"/>
@@ -23,10 +23,10 @@ This page provides instructions on how to establish a connection between your ap
 DronaHQ will not include authorization details in a request unless you specify an authentication type. If your request does not require authorization, you can choose `No Auth` from the dropdown list.
 
 ### API Key Authentication
-`API key authentication` stands out for its inherent simplicity. By utilizing a single key, authentication becomes straightforward as you only need to include the key. This type of authentication, commonly employed with connectors, is often utilized for read-only data access.
+API key authentication stands out for its inherent simplicity. By utilizing a single key, authentication becomes straightforward as you only need to include the key. This type of authentication, commonly employed with connectors, is often utilized for read-only data access.
 
 <figure>
-  <Thumbnail src="/img/connecting-datasource/apikey-auth.jpeg" width='600px' alt="Basic Auth"/>
+  <Thumbnail src="/img/connecting-datasource/apikey-auth.jpeg" width='70%' alt="Basic Auth"/>
 </figure>
 
 To configure account-specific fields required by the API for authentication, you must provide the necessary parameters. For API Key Authentication, the input parameter would be `API_key`.
@@ -37,10 +37,10 @@ If you choose None, you will need to explicitly add this key in your API request
 
 ### Basic Authentication
 
-One of the configuration options available is utilizing `Basic Authentication`, which is commonly employed when an API relies on HTTP Basic authentication standards. 
+One of the configuration options available is utilizing Basic Authentication, which is commonly employed when an API relies on HTTP Basic authentication standards. 
 
 <figure>
-  <Thumbnail src="/img/connecting-datasource/basic-auth.jpeg" width='600px' alt="Basic Auth"/>
+  <Thumbnail src="/img/connecting-datasource/basic-auth.jpeg" width='80%' alt="Basic Auth"/>
 </figure>
 
 During the setup process for a new service, DronaHQ will prompt you to provide a `username` and `password`. Subsequently, the platform will add the necessary encoded authorization headers to the API request.
@@ -48,13 +48,13 @@ During the setup process for a new service, DronaHQ will prompt you to provide a
 
 ### AWS Authentication
 
-DronaHQ ensures secure communication and access control to their REST API using `AWS authentication` mechanisms. Use the AWS Authentication scheme if you plan on using an Amazon WebServices API.
+AWS authentication for REST APIs involves the use of AWS Identity and Access Management (IAM) to authorize and secure API requests. This authentication method utilizes access keys, namely an Access Key ID and a Secret Access Key, which are generated and managed through AWS IAM. The Access Key ID and Secret Access Key are included in the API request to authenticate and authorize access to AWS resources. This approach ensures that only authorized users or applications can interact with AWS services via the REST API, providing a secure and controlled access mechanism..
 
 DronaHQ supports authenticating requests to their API using AWS Signature. This method involves signing the requests with AWS access keys and generating a signature to verify their authenticity and integrity.
 
 
 <figure>
-  <Thumbnail src="/img/connecting-datasource/aws-auth.jpeg" width='600px' alt="AWS Auth"/>
+  <Thumbnail src="/img/connecting-datasource/aws-auth.jpeg" width='80%' alt="AWS Auth"/>
 </figure>
 
 
@@ -68,28 +68,29 @@ When configuring the respective APIs, you can include the required AWS Authentic
 
 ### Digest Authentication
 
-DronaHQ empowers users with the robust security of `Digest Authentication` for REST API configuration.The Digest Authentication method bears resemblance to Basic Auth in its utilization of usernames and passwords.
+The Digest Authentication method bears resemblance to Basic Auth in its utilization of usernames and passwords.
+
+Digest authentication involves a series of steps for client-server communication. Initially, the client sends a request to the API, and in response, the server provides specific details, such as a nonce (a unique number), a realm value, and a 401 unauthorized response. Subsequently, the client sends an encrypted array of data, including a combination of the received server data, along with a username and password. 
+
+The server then uses the provided data to generate an encrypted string and compares it with the client's sent data to authenticate the request. This process ensures secure authentication between the client and the server in Digest authentication.
 
 <figure>
-  <Thumbnail src="/img/connecting-datasource/digest-auth.jpeg" width='600px' alt="digest Auth"/>
+  <Thumbnail src="/img/connecting-datasource/digest-auth.jpeg" width='80%' alt="digest Auth"/>
 </figure>
 
 
 Digest Auth is primarily employed when an API relies on the `HTTP "Digest" Authentication standard`. This method serves as a standard approach used by Internet servers to authenticate client credentials. 
 
-Prior to transmission, credentials undergo hashing to ensure they are never transmitted in plain text.This approach ensures the avoidance of transmitting passwords directly, bolstering the overall security of REST API requests.
 
 ### Hawk Authentication
 
-DronaHQ offers Hawk Authentication for REST API configuration, ensuring efficient and secure communication between clients and their API services. 
-
-The `Hawk Authentication` technology and approach aims to streamline the authentication process by introducing a simplified authentication scheme. Specifically designed for HTTP, it revolves around the utilization of HMAC digests for requests and responses. 
+The Hawk Authentication technology and approach aims to streamline the authentication process by introducing a simplified authentication scheme. Specifically designed for HTTP, it revolves around the utilization of HMAC digests for requests and responses. 
 
 <figure>
-  <Thumbnail src="/img/connecting-datasource/hawk-auth.jpeg" width='600px' alt="digest Auth"/>
+  <Thumbnail src="/img/connecting-datasource/hawk-auth.jpeg" width='80%' alt="digest Auth"/>
 </figure>
 
-To ensure authentication and detect any potential data tampering, the Hawk authentication type is recommended for APIs utilizing a *Message Authentication Code (MAC)*. 
+To ensure authentication and detect any potential data tampering, the Hawk authentication type is recommended for APIs utilizing a `Message Authentication Code (MAC)`. 
 
 This method involves copying the **`Hawk Auth ID`** and **`Hawk Auth Key`** from your application.
 
@@ -99,12 +100,10 @@ The client must obtain a `token ID` and **`token key`** from the server, typical
 
 ### JWT Bearer Authentication
 
-With DronaHQ you can take experience of JWT (JSON Web Token) Authentication is a widely used authentication method for REST API configuration.
-
 This feature allows clients to securely authenticate and authorize their requests by leveraging JSON Web Tokens (JWT). 
 
 <figure>
-  <Thumbnail src="/img/connecting-datasource/jwt-auth.jpeg" width='600px' alt="JWT Auth"/>
+  <Thumbnail src="/img/connecting-datasource/jwt-auth.jpeg" width='80%' alt="JWT Auth"/>
 </figure>
 
 You can use the JWT Bearer authentication type if your API uses a JWT Signature to authenticate and detect any kind of tampering with the data.
@@ -128,7 +127,7 @@ NTLM (Windows NT LAN Manager) authentication is a widely used authentication pro
 When configuring REST API authentication in DronaHQ, you have the option to choose the NTLM authentication method. With NTLM authentication, DronaHQ facilitates the integration and authentication of REST APIs within Windows environments.
 
 <figure>
-  <Thumbnail src="/img/connecting-datasource/ntlm-auth.jpeg" width='600px' alt="ntlm Auth"/>
+  <Thumbnail src="/img/connecting-datasource/ntlm-auth.jpeg" width='80%' alt="ntlm Auth"/>
 </figure>
 
  Ensure you have the necessary NTLM credentials required for authentication. These typically include a `username` and `password`.
@@ -143,7 +142,7 @@ OAuth 2.0 primarily focuses on authorization. Upon implementation, it provides a
 This protocol enables users to grant third-party websites or applications access to their protected resources while keeping their identity concealed. OAuth 2.0 is an established open standard adopted by numerous prominent third-party services.
 
 <figure>
-  <Thumbnail src="/img/connecting-datasource/oauthv2-auth.jpeg" width='600px' alt="OAuth V2 Auth"/>
+  <Thumbnail src="/img/connecting-datasource/oauthv2-auth.jpeg" width='80%' alt="OAuth V2 Auth"/>
 </figure>
  
 When configuring the APIs with OAuth 2.0 authentication, you need to provide the authentication details for the respective authentication method, such as  
@@ -157,25 +156,24 @@ These details are essential for establishing the secure authorization flow and o
 
 ### OAuth - PKCE
 
-OAuth 2.0 with the PKCE method is an advanced security approach that DronaHQ provides for REST API configuration. 
-
+OAuth 2.0 with the PKCE method is an advanced security approach REST API configuration. 
 
 It enhances the security of OAuth 2.0 by mitigating Cross-Site Request Forgery (CSRF) and authorization code injection attacks. The PKCE method enables applications to leverage OAuth 2.0 flows even in scenarios involving open or untrusted clients, ensuring the most reliable and secure authentication mechanism.
 
 
 <figure>
-  <Thumbnail src="/img/connecting-datasource/oauthpkce-auth.jpeg" width='600px' alt="oAuth pkce Auth"/>
+  <Thumbnail src="/img/connecting-datasource/oauthpkce-auth.jpeg" width='80%' alt="oAuth pkce Auth"/>
 </figure>
 
 
 ### OAuth - Client Credentials 
 
-DronaHQ offers OAuth client credentials authentication for REST API configuration. With OAuth V2 Client Credentials, applications can request an access token specifically for accessing their own resources, without requiring user involvement. 
+With OAuth V2 Client Credentials, applications can request an access token specifically for accessing their own resources, without requiring user involvement. 
 
 This grant type allows clients to obtain an access token using their client credentials, enabling them to authenticate themselves and make requests independently, separate from any user context. It provides a secure method for clients to authenticate and access resources within the API.
 
 <figure>
-  <Thumbnail src="/img/connecting-datasource/oauthclient-auth.jpeg" width='600px' alt="oAuth client credentials"/>
+  <Thumbnail src="/img/connecting-datasource/oauthclient-auth.jpeg" width='80%' alt="oAuth client credentials"/>
 </figure>
 
 
@@ -189,13 +187,11 @@ OAuth JWT offers a stateless and scalable approach to authentication, allowing c
 
 
 <figure>
-  <Thumbnail src="/img/connecting-datasource/oauthjwt-auth.jpeg" width='600px' alt="oAuth client credentials"/>
+  <Thumbnail src="/img/connecting-datasource/oauthjwt-auth.jpeg" width='80%' alt="oAuth client credentials"/>
 </figure>
 
 
 ### OAuth - 1.0
-
-DronaHQ offers OAuth 1.0a authentication as a method for configuring REST APIs. 
 
 OAuth 1.0a is a legacy authentication protocol that enables websites or applications (Consumers) to securely access Protected Resources from a web service (Service Provider) through an API. It ensures that Users do not have to disclose their Service Provider credentials to the Consumers.
 
@@ -205,20 +201,20 @@ OAuth 1.0a provides a standardized and versatile approach to API authentication,
 
 
 <figure>
-  <Thumbnail src="/img/connecting-datasource/oauth1.0-auth.jpeg" width='600px' alt="oAuth client credentials"/>
+  <Thumbnail src="/img/connecting-datasource/oauth1.0-auth.jpeg" width='80%' alt="oAuth client credentials"/>
 </figure>
 
 
 ### OAuth - 1.0a(3 legged)
 
-DronaHQ offers OAuth 1.0a (3 legged) authentication for configuring REST APIs, providing a robust and secure authentication method. This approach involves four key components: the user, API, application, and login service. 
+OAuth 1.0a (3 legged) authentication for configuring REST APIs, approach involves four key components: the user, API, application, and login service. 
 
 OAuth 1.0 is commonly referred to as "three-legged" authentication because, in this scenario, a client requests data on behalf of a user from a third-party service. 
 
 This involves three parties: the client application, the user, and the third-party service provider. The authentication process allows the client to access and interact with the user's data with their consent.
 
 <figure>
-  <Thumbnail src="/img/connecting-datasource/oauth1.0a-auth.jpeg" width='600px' alt="oAuth client credentials"/>
+  <Thumbnail src="/img/connecting-datasource/oauth1.0a-auth.jpeg" width='80%' alt="oAuth client credentials"/>
 </figure>
 
 In each step of the authentication process, a digital signature is created and passed on to the subsequent step, ensuring the integrity and authenticity of the communication. This method guarantees a reliable and protected authentication flow for accessing REST APIs within the DronaHQ platform.
@@ -230,7 +226,7 @@ DronaHQ provides multistep authentication for configuring REST APIs. This featur
 This feature allows users to set up connectors that involve additional authentication steps beyond the initial authentication process.
 
 <figure>
-  <Thumbnail src="/img/connecting-datasource/mutlistep-auth.jpeg" width='600px' alt="oAuth client credentials"/>
+  <Thumbnail src="/img/connecting-datasource/mutlistep-auth.jpeg" width='80%' alt="oAuth client credentials"/>
 </figure>
 
 When you click on the `+ Add Step` button, you will be presented with a range of authentication step options to choose from. These options include:
