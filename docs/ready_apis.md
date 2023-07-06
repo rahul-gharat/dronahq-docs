@@ -1,7 +1,5 @@
 ---
 sidebar_position: 15
+title: Ready APIs
 ---
 
-# Ready APIs
-
-Docusaurus can manage multiple versions of your docs.
