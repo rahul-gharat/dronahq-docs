@@ -41,3 +41,39 @@ You will notice that, this particular Ready API requires `API TOKEN KEY` to conn
 
 ## Utilizing the Ready API Connector
 
+To use the configured Ready API connector, navigate to your app and select `Data Queries`
+
+Click `New -> Connector Library`, then select connector from the dropdown.
+
+<figure>
+  <Thumbnail src="/img/connecting-datasource/readyapi-gs.png" width='100%' alt="hackerrank key"/>
+</figure>
+
+
+:::info
+Ready API connectors offer a versatile range of functionalities, serving multiple purposes that encompass data management and collaboration tools. These connectors can be utilized not only in Data Queries but also in `Action Builder` and `Automation Builder`. This flexibility allows for seamless integration of Ready API connectors across various modules within DronaHQ, enabling users to leverage their capabilities for a wide range of activities and workflows.
+:::
+
+## Installing API connectors on Self-Hosted Version
+
+To begin integrating external services and APIs with DronaHQ, the first step is to install the API connector.
+
+To install third-party connectors in DronaHQ, simply navigate to `Studio -> Connectors` and click the `"+"` button to add a new connector. The On-Prem version offers a variety of options, including GraphQL, Airtable, Gmail, and more. Additionally, the REST API enables seamless integration with third-party APIs, granting access to external systems.
+
+When installing third-party APIs, the Self-Hosted version provides robust authentication support. You can leverage major API authentication methods to ensure secure and reliable connections between DronaHQ and external services.
+
+Let's dive into the process of installing a Ready API connector on the Self-Hosted version of DronaHQ. Start by selecting the desired connector and providing a name for it.
+
+Next, each Ready API connector has thwir own specific requirements for configuration on the Self-Hosted version. To illustrate, let's explore the example of installing the HackerRank Ready API on the Self-Hosted version of DronaHQ.
+
+<figure>
+  <Thumbnail src="/img/connecting-datasource/hacker-onprem.jpeg" width='70%' alt="Google Sheet"/>
+</figure>
+
+There are mainly 4 major API authentication supports on the Self-Hosted version.
+
+* OAuth V2
+* Basic Authentication
+* API Key Authentication
+* AWS Authentication
+
