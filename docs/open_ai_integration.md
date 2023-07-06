@@ -1,5 +1,5 @@
 ---
-sidebar_position: 102
+sidebar_position: 103
 ---
 
 # OpenAI Integration
