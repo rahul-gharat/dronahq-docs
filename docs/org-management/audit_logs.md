@@ -81,3 +81,9 @@ You can view all the audit logs by navigating to `Analytics -> Audit logs` where
 - Environment Updated
 - Environment Deleted
 - API Environment Updated
+
+:::info Please Note
+
+The audit logs on DronaHQ cloud edition are saved only for 1 month.
+
+:::
