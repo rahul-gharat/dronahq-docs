@@ -109,6 +109,18 @@ This feature allows clients to securely authenticate and authorize their request
 
 You can use the JWT Bearer authentication type if your API uses a JWT Signature to authenticate and detect any kind of tampering with the data.
 
+When configuring JWT authentication, you will encounter the following options:
+
+1. `Algorithm`: Choose the algorithm to be used for the JWT token.
+2. `Secret`: Provide the secret key associated with the selected algorithm.
+3. `Payload`: Enter the payload data for the JWT token in JSON format.
+4. `JWT Header Prefix`: Optionally, specify a prefix to be used at the start of the headers. This prefix is part of the request and not a component of the JWT.
+5. `JWT Headers`: Include any custom headers to be included in the JWT token. Headers relevant to the chosen algorithm are automatically added.
+6.`Add JWT Token to`: Select whether the JWT token should be added to the request header or query parameter.
+
+
+These options allow you to configure JWT authentication in a flexible manner, customizing the algorithm, payload, headers, and the method by which the JWT token is added to the request.
+
 ### NTLM Authentication
 
 NTLM (Windows NT LAN Manager) authentication is a widely used authentication protocol for Windows-based systems. It is a challenge-response-based mechanism where the client and server exchange messages to establish authentication.
@@ -119,7 +131,9 @@ When configuring REST API authentication in DronaHQ, you have the option to choo
   <Thumbnail src="/img/connecting-datasource/ntlm-auth.jpeg" width='600px' alt="ntlm Auth"/>
 </figure>
 
- Ensure you have the necessary NTLM credentials required for authentication. These typically include a username and password and host name of the PC(Work environment).
+ Ensure you have the necessary NTLM credentials required for authentication. These typically include a `username` and `password`.
+
+ NTLM authentication offers advanced parameters for customization. The `Domain` parameter specifies the authentication domain or host, while the `Workstation` parameter identifies the PC's hostname involved in the authentication. These parameters provide greater control and customization options for NTLM authentication configuration.
 
 
  ### OAuth - V2 
@@ -132,7 +146,12 @@ This protocol enables users to grant third-party websites or applications access
   <Thumbnail src="/img/connecting-datasource/oauthv2-auth.jpeg" width='600px' alt="OAuth V2 Auth"/>
 </figure>
  
-When configuring the APIs with OAuth 2.0 authentication, you need to provide the authentication details for the respective authentication method, such as `client credentials` (client ID and client secret), `authorization endpoint`, `scope`, and `token endpoint`. 
+When configuring the APIs with OAuth 2.0 authentication, you need to provide the authentication details for the respective authentication method, such as  
+
+- `client credentials` (client ID and client secret), 
+- `authorization endpoint`, 
+- `scope`, and 
+- `token endpoint`. 
 
 These details are essential for establishing the secure authorization flow and obtaining access tokens to authenticate and authorize API requests.
 
@@ -178,7 +197,9 @@ OAuth JWT offers a stateless and scalable approach to authentication, allowing c
 
 DronaHQ offers OAuth 1.0a authentication as a method for configuring REST APIs. 
 
-OAuth 1.0a is a legacy authentication protocol that enables websites or applications (Consumers) to securely access Protected Resources from a web service (Service Provider) through an API. It ensures that Users do not have to disclose their Service Provider credentials to the Consumers. 
+OAuth 1.0a is a legacy authentication protocol that enables websites or applications (Consumers) to securely access Protected Resources from a web service (Service Provider) through an API. It ensures that Users do not have to disclose their Service Provider credentials to the Consumers.
+
+Accessing user data using OAuth 1.0 requires a series of requests between the client application, user, and service provider. OAuth 1.0 is commonly known as "two-legged" authentication since it involves the authentication process solely between the client and server, without the involvement of additional parties. 
 
 OAuth 1.0a provides a standardized and versatile approach to API authentication, allowing for secure and generic authentication implementation.
 
@@ -192,9 +213,34 @@ OAuth 1.0a provides a standardized and versatile approach to API authentication,
 
 DronaHQ offers OAuth 1.0a (3 legged) authentication for configuring REST APIs, providing a robust and secure authentication method. This approach involves four key components: the user, API, application, and login service. 
 
-OAuth 1.0a follows a traditional pattern of OAuth with resource owner interaction, ensuring a higher level of security. In each step of the authentication process, a digital signature is created and passed on to the subsequent step, ensuring the integrity and authenticity of the communication. This method guarantees a reliable and protected authentication flow for accessing REST APIs within the DronaHQ platform.
+OAuth 1.0 is commonly referred to as "three-legged" authentication because, in this scenario, a client requests data on behalf of a user from a third-party service. 
+
+This involves three parties: the client application, the user, and the third-party service provider. The authentication process allows the client to access and interact with the user's data with their consent.
 
 <figure>
   <Thumbnail src="/img/connecting-datasource/oauth1.0a-auth.jpeg" width='600px' alt="oAuth client credentials"/>
 </figure>
 
+In each step of the authentication process, a digital signature is created and passed on to the subsequent step, ensuring the integrity and authenticity of the communication. This method guarantees a reliable and protected authentication flow for accessing REST APIs within the DronaHQ platform.
+
+### Multistep Authentication  
+
+DronaHQ provides multistep authentication for configuring REST APIs. This feature allows users to set up connectors that involve additional authentication steps beyond the initial authentication process.
+
+This feature allows users to set up connectors that involve additional authentication steps beyond the initial authentication process.
+
+<figure>
+  <Thumbnail src="/img/connecting-datasource/mutlistep-auth.jpeg" width='600px' alt="oAuth client credentials"/>
+</figure>
+
+When you click on the `+ Add Step` button, you will be presented with a range of authentication step options to choose from. These options include:
+
+- FORM: Enables authentication through form-based input.
+- API REQUEST: Allows authentication by making an API request.
+- OAUTH V2: Provides OAuth 2.0 authentication for securing API access.
+- Basic Auth: Supports authentication using Basic Authentication credentials.
+- OAUTH V2 - PKCE: Offers OAuth 2.0 authentication with the Proof Key for Code Exchange (PKCE) method.
+- OAUTH V2 - CLIENT CREDENTIALS: Facilitates OAuth 2.0 authentication using client credentials.
+- SSO TOKEN: Allows authentication using a Single Sign-On (SSO) token.
+
+These authentication steps offer flexibility and cover a variety of authentication scenarios to suit your REST API configuration needs.
