@@ -24,7 +24,7 @@ Let us now understand how to configure a REST API Connector:
 Under `DronaHQ -> Connectors`, click `+ Connector`.
 
 <figure>
-  <Thumbnail src="/img/connecting-datasource/restapi-inlist.png" alt="REST API connector" width='400px'/>
+  <Thumbnail src="/img/connecting-datasource/restapi-inlist.png" alt="REST API connector" width='70%'/>
   <figcaption align = "center"><i>REST API connector</i></figcaption>
 </figure>
 
