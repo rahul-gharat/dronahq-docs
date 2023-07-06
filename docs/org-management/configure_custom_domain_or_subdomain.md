@@ -1,6 +1,6 @@
 ---
 sidebar_position: 3
-title: Configure custom domain or subdomain
+title: Configure Custom domain & Subdomain
 ---
 
 import Thumbnail from '@site/src/components/Thumbnail';
