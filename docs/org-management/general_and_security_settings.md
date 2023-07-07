@@ -71,7 +71,7 @@ IP restrictions will work only on DronaHQ cloud edition.
 
 ## Customizing end user portal homescreen
 
-DronaHQ offers a way in which the end-user portal in some cases can be switched to a specific microapp. You can select the app from a list and this will enable your end-users to directly land on that particular app. The default DronaHQ home screen where you see the catalog of apps will be completely skipped. 
+DronaHQ offers a way in which the end-user portal in some cases can be switched to a specific app. You can select the app from a list and this will enable your end-users to directly land on that particular app. The default DronaHQ home screen where you see the catalog of apps will be completely skipped. 
 
 :::caution Please Note
 
