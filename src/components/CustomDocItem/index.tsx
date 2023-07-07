@@ -3,6 +3,7 @@ import ActualDocItem from '@theme/DocItem';
 import CustomFooter from '@site/src/components/CustomFooter';
 import styles from './styles.module.scss';
 import { Redirect } from '@docusaurus/router';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 
 const CustomDocItem = props => {
   useEffect(() => {
@@ -27,25 +28,20 @@ const CustomDocItem = props => {
   // redirect them to the index if they attempt to directly navigate to a path with
   // _heading_ in it
   if (props.location.pathname.includes('_heading_')) {
-    return <Redirect to="/introduction/" />;
+    return <Redirect to={useBaseUrl("/introduction/")} />;
   }
 
   return (
     <div
       className={
-        props.location.pathname === `/introduction/`
+        props.location.pathname === useBaseUrl(`/introduction/`)
           ? `custom_doc_item_wrapper custom_doc_item_wrapper-x-wide`
           : `custom_doc_item_wrapper ${styles['custom_doc_item_wrapper']}`
       }
     >
       <ActualDocItem {...props} />
-      <div
-        className={
-          props.location.pathname === `/introduction/` || props.location.pathname.includes('overview')
-            ? `custom_doc_item_footer-x-wide`
-            : styles['custom_doc_item_footer']
-        }
-      >
+      {/* <div className={props.location.pathname === `introduction` || props.location.pathname.includes('overview') ? `custom_doc_item_footer-x-wide` : styles['custom_doc_item_footer']}> */}
+      <div className={styles['custom_doc_item_footer']}>
         <CustomFooter />
       </div>
     </div>
