@@ -29,14 +29,16 @@ To illustrate the configuration process, let's consider the example of integrati
 
 
 <figure>
-  <Thumbnail src="/img/connecting-datasource/hacker-connect.jpeg" width='70%' alt="Hackerrank connect"/>
+  <Thumbnail src="/img/connecting-datasource/hacker-connect.jpeg" width='100%' alt="Hackerrank connect"/>
+  <figcaption align = "center"><i>HackerRank Ready API connector.</i></figcaption>
 </figure>
 
 
 You will notice that, this particular Ready API requires `API TOKEN KEY` to connect. Provide the key and click `Save`. This will save your account configuration.
 
 <figure>
-  <Thumbnail src="/img/connecting-datasource/hacker-key.jpeg" width='70%' alt="hackerrank key"/>
+  <Thumbnail src="/img/connecting-datasource/hacker-key.jpeg" width='100%' alt="hackerrank key"/>
+  <figcaption align = "center"><i>Provide API token key along with am account name, for the configuration.</i></figcaption>
 </figure>
 
 ## Utilizing the Ready API Connector
@@ -46,7 +48,8 @@ To use the configured Ready API connector, navigate to your app and select `Data
 Click `New -> Connector Library`, then select connector from the dropdown.
 
 <figure>
-  <Thumbnail src="/img/connecting-datasource/readyapi-gs.png" width='100%' alt="hackerrank key"/>
+  <Thumbnail src="/img/connecting-datasource/readyapi-gs.png" width='100%' alt=" Using Ready APIs"/>
+  <figcaption align = "center"><i>Using Ready API connector through Data Queries.</i></figcaption>
 </figure>
 
 
@@ -67,13 +70,9 @@ Let's dive into the process of installing a Ready API connector on the Self-Host
 Next, each Ready API connector has thwir own specific requirements for configuration on the Self-Hosted version. To illustrate, let's explore the example of installing the HackerRank Ready API on the Self-Hosted version of DronaHQ.
 
 <figure>
-  <Thumbnail src="/img/connecting-datasource/hacker-onprem.jpeg" width='70%' alt="Google Sheet"/>
+  <Thumbnail src="/img/connecting-datasource/hacker-onprem.jpeg" width='100%' alt="Hackerrank On-Prem Installing"/>
+  <figcaption align = "center"><i>Installing Ready API of HackerRank on Self-Hosted version.</i></figcaption>
 </figure>
 
-There are mainly 4 major API authentication supports on the Self-Hosted version.
 
-* OAuth V2
-* Basic Authentication
-* API Key Authentication
-* AWS Authentication
 
