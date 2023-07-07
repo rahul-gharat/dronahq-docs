@@ -10,7 +10,7 @@ import VersionedLink from '@site/src/components/VersionedLink';
 
 DronaHQ maintains 2 different types of versions, a working version and all released versions. Any edits you make to your app are saved live in the working version of the app. 
 
-## Release history
+### Release history
 
 Every time you publish the app in the beta or production goes in the history. You can view all the published history of your app in the `Settings -> Releases & History` section of each app. 
 
@@ -24,7 +24,7 @@ Every time you publish the app in the beta or production goes in the history. Yo
   <figcaption align = "center"><i>Publish new version</i></figcaption>
 </figure>
 
-## Version rollback
+### Version rollback
 
 Clicking on this option will replace the working copy with the released version. Make sure you dont have any changes that you have made in the working copy that you need after the roll back. 
 
