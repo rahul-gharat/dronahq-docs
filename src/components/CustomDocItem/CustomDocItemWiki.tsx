@@ -3,7 +3,7 @@ import ActualDocItem from '@theme/DocItem';
 import styles from "./styles.module.scss";
 import Head from '@docusaurus/Head';
 
-const CustomDocItemGuide = (props) => (
+const CustomDocItemWiki = (props) => (
   <div className={`custom_doc_item_wrapper ${styles["custom_doc_item_wrapper"]}`}>
     <Head>
       <meta name="robots" content="noindex" />
@@ -12,4 +12,4 @@ const CustomDocItemGuide = (props) => (
   </div>
 )
 
-export default CustomDocItemGuide;
+export default CustomDocItemWiki;
