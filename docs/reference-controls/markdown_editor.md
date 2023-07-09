@@ -94,15 +94,15 @@ To view the full feature of the control, we have to view it in preview mode. The
   <Thumbnail src="/img/reference/controls/markdown-editor/control-feature1.png" alt="Markdown editor control" />
 </figure>
 
-| Formatting Option       | Description                                                                       |
+| **Formatting Option **      | **Description**                                                                       |
 |-------------------------|-----------------------------------------------------------------------------------|
-| **Bold (B)/Italic (I)** | These help provide a bold and italic attribute, respectively.                     |
-| **Heading (H)**         | This on-click gives the whole line a heading attribute.                            |
-| **Quote (“)**           | This on-click makes the sentence appear as a quote.                                |
-| **General List**        | This click formats each line in bullet list format.                                |
-| **Control List**        | This click formats each line in numbered list format.                              |
-| **Link**                | This on-click enables you to add a link to a word(s).                              |
-| **Insert Image**        | This on-click enables you to insert an image by providing the image URL.           |
+| Bold (B)/Italic (I) | These help provide a bold and italic attribute, respectively.                     |
+| Heading (H)         | This on-click gives the whole line a heading attribute.                            |
+| Quote (“)           | This on-click makes the sentence appear as a quote.                                |
+| General List        | This click formats each line in bullet list format.                                |
+| Control List        | This click formats each line in numbered list format.                              |
+| Link                | This on-click enables you to add a link to a word(s).                              |
+| Insert Image        | This on-click enables you to insert an image by providing the image URL.           |
 
 
 

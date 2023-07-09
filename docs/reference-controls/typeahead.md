@@ -24,25 +24,17 @@ functionality, the Typeahead control requires data binding to retrieve word sugg
     <Thumbnail src="/img/reference/controls/typeahead/properties-two.png" alt="properties"/>
 </figure>
 
-- Theme: The theme option allows you to select the color of the text box. You have the flexibility to either enter a
-  custom hex code value or choose from the available themes provided in the builder.
-
-- Placeholder: The placeholder serves as a prompt or hint to guide the user on what needs to be done. It appears within
-  the text field and is replaced when the user starts inputting information.
-
-- Debounce Time (In ms): This setting introduces a delay in milliseconds between events. By adding a debounce time, you
-  can control the frequency of triggering actions when there is a change in the value.
-
-- Suggest After (Characters): This feature allows you to specify the number of characters required before suggestions
-  start appearing.
-
-- Suggestion Limit: You can determine the maximum number of suggestions displayed at a time.
-
-- Suggestion Tray Max Height: This property determines the height of each menu/suggestion in the suggestion tray.
-
-- Highlight Color: The highlight color property determines the color of the typed text within the provided suggestions.
-
-- Hover Color: This property enables you to define a color highlight when hovering over the suggestions.
+| **Option**                   | **Description**                                                                             |
+|--------------------------|-----------------------------------------------------------------------------------------|
+| Theme                | Allows you to select the color of the text box. You can enter a custom hex code or choose from available themes. |
+| Placeholder          | Serves as a prompt or hint to guide user input. Replaced when the user starts typing.   |
+| Debounce Time (In ms)| Introduces a delay in milliseconds between events to control the frequency of triggering actions on value change. |
+| Suggest After (Characters) | Specifies the minimum number of characters required before suggestions start appearing. |
+| Suggestion Limit     | Determines the maximum number of suggestions displayed at a time.                        |
+| Suggestion Tray Max Height | Sets the height of each menu/suggestion in the suggestion tray.                       |
+| Highlight Color      | Defines the color of the typed text within the suggestions.                              |
+| Hover Color          | Enables you to define a color highlight when hovering over the suggestions.              |
+  
 
  <figure>
     <Image src="/img/reference/controls/typeahead/hover-color.png" alt="properties"/>

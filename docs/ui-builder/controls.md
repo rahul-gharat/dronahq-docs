@@ -45,7 +45,7 @@ you to create dynamic and interactive experiences within your DronaHQ apps.
 
 ### Grid Configuration
 
-| Property               | Description                                                                                                 |
+| **Property**               | **Description**                                                                                                 |
 |------------------------|-------------------------------------------------------------------------------------------------------------|
 | Hide on desktop        | This option hides the selected control in the desktop view.                                                 |
 | Hide on Mobile         | This option hides the selected control in the mobile view.                                                  |
