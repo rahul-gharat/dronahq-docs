@@ -13,7 +13,7 @@ With the Markdown Editor, you can easily write markdown syntax and preview the o
 a markdown string as its output, allowing you to incorporate formatted text into your application.
 
 <figure>
-  <Image src="/img/reference/controls/markdown-editor/control.png" alt="Markdown Editor control" />
+  <Thumbnail src="/img/reference/controls/markdown-editor/preview.jpeg" alt="Markdown Editor control" />
   <figcaption align = "center"><i>Markdown Editor Control</i></figcaption>
 </figure>
 
