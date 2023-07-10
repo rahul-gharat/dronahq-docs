@@ -18,7 +18,7 @@ For the DronaHQ cloud edition the emails will by default be sent from DronaHQ em
 
 :::caution Please Note
 
-You you need to have admin or owner level priviledges to access or modify these configurations.
+You you need to have admin or owner level privileges to access or modify these configurations.
 
 :::
 
@@ -35,7 +35,7 @@ You need to follow the below steps to set up your SMTP server:
     - **Port** - Ideally 587 should be used.
 - Enter your credentials
     - **User name** - Generally would be an email like email@exmaple.com
-    - **Password** - Enter yoour password
+    - **Password** - Enter your password
     - **Enable SSL** - Check this setting with your SMTP provider
 - Test the connection - check if you have received the test email, You will see a detailed message if there is an error
 - Save the configuration if successful
