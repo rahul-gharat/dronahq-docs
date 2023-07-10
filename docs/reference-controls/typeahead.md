@@ -77,22 +77,19 @@ These outputs can be referenced in other controls, data queries, or JS functions
 | Output                  | Description                                                                             |
 |--------------------------|-----------------------------------------------------------------------------------------|
 | typeahead                | Provides user selected value from the given suggestion of typeahead control. |
-| typeahead.PROPERTIES.TYPEDTEXT                | It will provide current inputted value by user. By
-utilizing the `TYPEDTEXT` property, you can ensure that responses are provided in real-time, without any delay based on
-the debounce time interval. |
+| typeahead.PROPERTIES.TYPEDTEXT                | It will provide current inputted value by user. By utilizing the `TYPEDTEXT` property, you can ensure that responses are provided in real-time, without any delay based on the debounce time interval. |
 
 
 ## Events
 
-| Option                  | Description                                                                             |
+| Trigger                   | Description                                                                             |
 |--------------------------|-----------------------------------------------------------------------------------------|
-| value_change                | Occurs when there is a modification in the Typeahead control's value. To control the frequency or speed of the change event, you can utilize the `debounce` property associated with the
-control. |
+| value_change                | Occurs when there is a modification in the Typeahead control's value. To control the frequency or speed of the change event, you can utilize the `debounce` property associated with the control. |
 
 
 :::info PLEASE NOTE
 
-Binding the `TYPEDTEXT` property in another control/data query will trigger the evaluation with every single
-character input in the Typeahead control, ensuring real-time updates. 
+Binding the `TYPEDTEXT` property in another control/data query will trigger its data evaluation with every single
+character inputted in the Typeahead control, ensuring real-time updates. 
 
 :::
