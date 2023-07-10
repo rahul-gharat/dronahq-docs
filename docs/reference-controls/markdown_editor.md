@@ -70,9 +70,11 @@ To know more about writing markdown, you can view the [markdown guide](https://w
 
 ## Properties
 
+| **Property**            | **Description**                                                                |
+|-----------------------|-----------------------------------------------------------------------------|
+| Theme                 | Allows you to select the color theme for the screen.                         |
+| Fit to Screen         | Enables the screen to automatically adjust its content to fit the screen size. |
 
-
-One can provide the theme to this control and make it fit to screen.
 
 
 ## Control Outputs
