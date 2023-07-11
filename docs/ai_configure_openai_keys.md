@@ -6,16 +6,28 @@ import Thumbnail from '@site/src/components/Thumbnail';
 
 # Configure OpenAI keys 
 
-DronaHQ has multiple built-in `OpenAI` tools to fully utilize the AI potential and help you with your app development activities, such as writing `SQL queries` while adding `connectors`, writing `JS` while binding formulas to `Data Queries` or  `JS Block` in `Action Flow`, thus making your app-building experience much more pleasant and hassle-free. To be able to use these tools you will need to configure the OpenAI secret key in the studio. The key is encrypted before being saved in our system for safekeeping. To enhance the security even further Secret-Key is never fetched to the end user system.
+DronaHQ offers a comprehensive suite of `built-in OpenAI tools` that enable you to harness the full potential of artificial intelligence in your app development activities. With these integrated tools, you can effortlessly `write SQL queries` while seamlessly incorporating connectors, `compose JavaScript code` to bind formulas to Data Queries or JS Blocks within the Action Flow. This streamlined approach ensures a pleasant and hassle-free app-building experience.
+
+To utilize these powerful capabilities, it is essential to configure the OpenAI secret key within the DronaHQ studio. Rest assured, we prioritize the security of your data. The secret key is encrypted before being stored in our system, guaranteeing its safekeeping. Furthermore, we have implemented an additional layer of security by ensuring that the Secret Key is never fetched to the end user system, further enhancing the overall protection of your valuable information.
 
 ## Manage OpenAI Keys
 
-To configure the OpenAI keys go to `Profile Menu  -> Account Settings -> Integrations` look for `OpenAI Accounts` and click on `Configure Accounts`. It will open sidebar where you can perform follwing operations.
+
+To conveniently configure your OpenAI keys within the DronaHQ platform, follow these simple steps:
+
+- Click on the `Profile Menu` located in the top-right corner of the screen.
+- From the dropdown menu, select `Account Settings`.
+- Within the Account Settings section, navigate to the `Integrations`.
+- Look for the `OpenAI Accounts` option and click on it.
+
+This action will open a sidebar, providing you with various operations to manage your OpenAI accounts. By accessing the "Configure Accounts" option in the OpenAI Accounts sidebar, you can easily manage your OpenAI accounts and perform the following tasks.
+
 - <a href="#add-new-openai-account">Add new OpenAI account</a>
 - <a href="#edit-key-for-existing-accounts">Edit key for exising accounts</a>
-- <a href="see-list-of-all-account-keys">See list of all account keys</a>
-- <a href="delete-account-keys">Delete account keys</a>
-- <a href="make-any-account-key-default">Make any account key default</a>
+- <a href="#see-list-of-all-accounts">See list of all accounts</a>
+
+  - Delete accounts
+  - Make any account default
 
 ### Add new OpenAI account
 
@@ -41,6 +53,11 @@ To `Edit/Update` keys for existing `OpenAI Accounts` you will need to click on t
   <figcaption align = "center"><i>Edit key for existing accounts</i></figcaption>
 </figure>
 
-### See list of all account keys
+### See list of all accounts
 
-To view the all configured account keys in the Studio you will need to click on the `All Accounts` tab and you will see a list of all configured accounts
+`All Accounts` tab provides a centralized view of all the configured accounts for easy access and administration. Studio user can conveniently view the listt all all OpenAI accounts configured in the studio, If you want to Delete certain account or make it Default you can utilize the `Delete` and `Make Default` button associated with each entry in the All Accounts tab.
+
+<figure>
+  <Thumbnail src="/img/dronahq-ai/configure-openai-keys/list-all-accounts.png" alt="All configured OpenAI accounts list" width='100%'/>
+  <figcaption align = "center"><i>List of all configured OpenAI accounts</i></figcaption>
+</figure>
