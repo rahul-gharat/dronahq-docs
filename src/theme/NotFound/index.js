@@ -7,6 +7,7 @@ import styles from './styles.module.scss';
 import Light404 from '@site/static/img/light-404.png';
 import Dark404 from '@site/static/img/dark-404.png';
 import Link from "@docusaurus/Link";
+import useBaseUrl from '@docusaurus/useBaseUrl';
 
 export default function NotFound() {
   return (
@@ -40,7 +41,7 @@ export default function NotFound() {
                   </Translate>
                 </p>
                 <div className={styles['homeLink']}>
-                  <Link to='/'>DronaHQ Docs Home</Link>
+                  <Link to={useBaseUrl("/introduction/")}>DronaHQ Docs Home</Link>
                 </div>
               </div>
             </div>
