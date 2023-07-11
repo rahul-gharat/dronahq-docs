@@ -13,7 +13,7 @@ With the Markdown Editor, you can easily write markdown syntax and preview the o
 a markdown string as its output, allowing you to incorporate formatted text into your application.
 
 <figure>
-  <Image src="/img/reference/controls/markdown-editor/control.png" alt="Markdown Editor control" />
+  <Thumbnail src="/img/reference/controls/markdown-editor/preview.jpeg" alt="Markdown Editor control" />
   <figcaption align = "center"><i>Markdown Editor Control</i></figcaption>
 </figure>
 
@@ -70,9 +70,11 @@ To know more about writing markdown, you can view the [markdown guide](https://w
 
 ## Properties
 
+| **Property**            | **Description**                                                                |
+|-----------------------|-----------------------------------------------------------------------------|
+| Theme                 | Allows you to select the color theme for the screen.                         |
+| Fit to Screen         | Enables the screen to automatically adjust its content to fit the screen size. |
 
-
-One can provide the theme to this control and make it fit to screen.
 
 
 ## Control Outputs
