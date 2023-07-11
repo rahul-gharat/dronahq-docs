@@ -12,7 +12,7 @@ This feature allows you to personalize the content of system-generated emails, s
 
 :::caution Please Note
 
-You you need to have admin or owner level priviledges to access or modify these configurations.
+You you need to have admin or owner level privileges to access or modify these configurations.
 
 :::
 
