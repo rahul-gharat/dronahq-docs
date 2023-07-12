@@ -8,7 +8,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Build stunning internal tools, blazing fast',
-  tagline: 'Low code toolkit for developers to quickly build internal tools, digital journeys, operational apps on top of any data source or APIs.',
+  tagline:
+    'Low code toolkit for developers to quickly build internal tools, digital journeys, operational apps on top of any data source or APIs.',
   favicon: 'img/dronahq-logo-32x32.png',
   // Set the production url of your site here
   url: 'https://rahul-gharat.github.io',
@@ -140,7 +141,7 @@ const config = {
         disableSwitch: false,
         respectPrefersColorScheme: true,
       },
-      
+
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
@@ -177,7 +178,7 @@ const config = {
           alt: 'DronaHQ',
           src: 'img/dronahq-name-logo-light.svg',
           srcDark: 'img/dronahq-name-logo-dark.svg',
-          href: '/',
+          href: 'https://www.dronahq.com',
         },
         items: [
           {
@@ -185,29 +186,33 @@ const config = {
             sidebarId: 'docSidebar',
             position: 'left',
             label: 'Docs',
-            to: '/introduction'
-          },
-          {
-            to: '/wiki',
-            label: 'Wiki',
-            position: 'left'
-          },
-          {
-            to: '/blog',
-            label: 'Blog',
-            position: 'left'
-          },
-          {
-            to: 'https://community.dronahq.com/',
-            label: 'Community',
-            position: 'left'
+            to: '/introduction',
           },
           // {
-          //   to: 'https://hasura.io/changelog',
-          //   label: "What's New",
-          //   id: 'whats-new-link',
+          //   to: '/wiki',
+          //   label: 'Wiki',
           //   position: 'left',
           // },
+          // {
+          //   to: '/blog',
+          //   label: 'Blog',
+          //   position: 'left',
+          // },
+          {
+            to: 'https://community.dronahq.com/c/ask-community',
+            label: 'Forum',
+            position: 'left',
+          },
+          {
+            to: 'https://discord.gg/QfN8yq4mqM',
+            label: 'Discord',
+            position: 'left',
+          },
+          {
+            to: 'https://headwayapp.co/dronahq-changelog',
+            label: "What's New",
+            position: 'left',
+          },
           // {
           //   to: '/latest/hasura-cloud/overview',
           //   label: 'Hasura Cloud',
@@ -252,8 +257,8 @@ const config = {
             label: 'Get Started',
             position: 'right',
             className: 'nav-link_getting-started',
-          }
-        ]
+          },
+        ],
       },
       // footer: {
       //   style: 'dark',
@@ -301,10 +306,10 @@ const config = {
       //   copyright: `Copyright © ${new Date().getFullYear()} DronaHQ, Inc. Built with Docusaurus.`,
       // },
     }),
-    markdown: {
-      mermaid: true,
-    },
-    themes: ['@docusaurus/theme-mermaid'],
+  markdown: {
+    mermaid: true,
+  },
+  themes: ['@docusaurus/theme-mermaid'],
 };
 
 module.exports = config;

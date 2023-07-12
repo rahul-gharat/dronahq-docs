@@ -14,13 +14,13 @@ DronaHQ provides you with an option of configuring a `custom domain` or `subdoma
 
 Custom domain is only available on [Business plan](https://www.dronahq.com/pricing) of `DronaHQ cloud edition` whereas subdomain can be set up in all plans.
 ###
-Also since the self-hosted instance is deployed at your own end, it doesnt require any specific plans and the process to set up a custom domain on `DronaHQ self-hosted instance` is specific in the self-hosted documentation.
+Also since the self-hosted instance is deployed at your own end, it doesn't require any specific plans and the process to set up a custom domain on `DronaHQ self-hosted instance` is specific in the self-hosted documentation.
 
 :::
 
 :::caution Please Note
 
-You you need to have admin or owner level priviledges to access or modify these configurations.
+You you need to have admin or owner level privileges to access or modify these configurations.
 
 :::
 
@@ -59,7 +59,7 @@ You need to follow the following steps to set up yoour custom domain:
 - Navigate  to `Account Settings -> Domain & Branding`
 - Click on `Set up custom domain`
 - `Step1`: Enter your root domain (e.g: yourdomain.com), this will add both the root domain (e.g., yourdomain.com) and the www subdomain (e.g: www.yourdomain.com) at our end
-- `Step 2`: You need to validate SSL vertificate by creating a CNAME record with the host as the  `name` field and value as the `value` field. 
+- `Step 2`: You need to validate SSL certificate by creating a CNAME record with the host as the  `name` field and value as the `value` field. 
 - Once the SSL is issued and verified you can move to the next step of domain verification
 - `Step 3`: You need to verify the domain by creating a CNAME record with host as @ and value as the field `generated domain name`
 - Incase you want to set up a subdomain, you will have to create a CNAME record with host as `your subdomain` and value as the field `generated domain name`
