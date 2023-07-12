@@ -25,7 +25,27 @@ Table Grid control accepts array of objects to display data. There are different
 ### Dynamic Data Option
 
 
+## Server-Side Pagination
 
+Server-side pagination is a technique for displaying large data sets in a web application by dividing the data into pages and only sending the current page to the browser. This can improve performance and make the data easier to manage.
+
+Pagination is enabled in the table grid control by toggling on the `Allow Pagination` option. When pagination is enabled, you can set three properties for the table grid control: `LIMIT`, `OFFSET`, and `ROWS PER PAGE`.
+
+`LIMIT` defines the number of records fetched for a single page. `ROWS PER PAGE` sets the number of rows visible per page. `OFFSET` is used to skip the first n rows.
+
+For connectors that support cursor-based pagination, such as Airtable, you must select `Cursor Based Pagination` as the type and use the `OFFSET key` from the respective connector.
+
+| Property | Description |
+|---|---|
+| Rows per page | This allows you to set the index value of the default selected row. |
+| Default offset | This allows you to set the default Offset to start pagination from. |
+| Default selected row | Is the row selected by default on loading of the data. |
+| Height | This allows you to set the height for the table grid control. |
+| Visible | By default you can set the visible rows and columns to specify the height of the control. |
+
+:::info
+When the pagination is enabled your Filter and the Search features do not work on the columns. However, if you disable pagination you would note that the search provides you with the rows matching the search text. The Filter feature would also allow you specify the filter conditions
+:::
 
 ## Properties
 | Property | Description |
@@ -94,27 +114,20 @@ Table Grid control accepts array of objects to display data. There are different
 ## Control Outputs
 
 
-Edited Rows, Edited Table and Selected Rows
+These outputs can be referenced in other controls, data queries, or JS functions using the control's unique name.
 
 
-{{tablegrid6.PROPERTIES.SEARCHTEXT}}
-
-{{tablegrid6.PROPERTIES.OFFSET}}
-
-{{tablegrid6.PROPERTIES.LIMIT}}
-
-{{tablegrid6.PROPERTIES.STARTROW}}
-
-
-{{tablegrid6.PROPERTIES.ENDROW}}
-
-{{tablegrid6.PROPERTIES.EDITEDROWS}}
-
-{{tablegrid6.PROPERTIES.NEWROWS}}
-
-{{tablegrid6.PROPERTIES.SELECTEDROWS}}
-
-{{tablegrid6.PROPERTIES.EDITEDTABLE}}
+| Property | Description |
+|---|---|
+| {{tablegrid.PROPERTIES.SEARCHTEXT}} | The search text that is currently being used to filter the data in the table grid. |
+| {{tablegrid.PROPERTIES.OFFSET}} | The offset of the first row that is currently being displayed in the table grid. |
+| {{tablegrid.PROPERTIES.LIMIT}} | The number of rows that are currently being displayed in the table grid. |
+| {{tablegrid.PROPERTIES.STARTROW}} | The index of the first row that is currently being displayed in the table grid. |
+| {{tablegrid.PROPERTIES.ENDROW}} | The index of the last row that is currently being displayed in the table grid. |
+| {{tablegrid.PROPERTIES.EDITEDROWS}} | The number of rows that have been edited in the table grid. This keyword sends the whole array of the row data whose columns have been edited.  |
+| {{tablegrid.PROPERTIES.NEWROWS}} | The number of rows that have been newly created in the table grid. |
+| {{tablegrid.PROPERTIES.SELECTEDROWS}} | The number of rows that are currently selected in the table grid. |
+| {{tablegrid.PROPERTIES.EDITEDTABLE}} | This property allows users to edit data in a table grid without making any changes to the underlying data source. The altered data can be used by the table grid itself or exported to another data source.|
 
 
 
