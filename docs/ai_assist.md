@@ -8,6 +8,10 @@ import Thumbnail from '@site/src/components/Thumbnail';
 
 The AI Assistant feature in DronaHQ, powered by OpenAI, provides users with advanced capabilities for seamless app creation. It offers significant support in two key areas. Firstly, it assists users in composing efficient database queries, whether they are performing an `Add Query` operation to the database connector in the `Connector Library` or creating a `Database Query` in the `Data Queries` section. Secondly, it aids users in crafting `JavaScript code blocks` for effective data manipulation within the `Action Flow` section or `Custom JavaScript` section of `Data Queries` as well as the `Transform` section of the connector binding process.
 
+:::info Info
+Any data you pass to a AI Assistant is sent to and processed by OpenAI. If you do not use the AI Assistant, no data is sent to AI Assistant.
+:::
+
 ## Database Query Assistance
 The AI Assistant within DronaHQ provides intelligent support for generating database queries based on user input. By leveraging the power of OpenAI's natural language processing and machine learning, the AI Assistant can understand the user's intent and assist in constructing the appropriate database query.
 
