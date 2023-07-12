@@ -6,7 +6,7 @@ title: Markdown Editor
 import Image from '@site/src/components/Image'; import VersionedLink from '@site/src/components/VersionedLink'; import
 Thumbnail from '@site/src/components/Thumbnail';
 
-The DronaHQ Studio offers a control called `Markdown Editor`, which enables the composition of formatted lightweight
+The DronaHQ Studio offers a control called Markdown Editor, which enables the composition of formatted lightweight
 text. Markdown is a straightforward syntax used to format text as headers, lists, boldface, and more.
 
 With the Markdown Editor, you can easily write markdown syntax and preview the output if desired. The control generates
@@ -18,15 +18,16 @@ a markdown string as its output, allowing you to incorporate formatted text into
 </figure>
 
 
-## Binding Data
+## Binding Data Options
 
+Markdown Editor control accepts markdown formatted string.
 There are different ways in which you can bind data to the Markdown Editor control.
 
-<figure>
-    <Image src="/img/reference/controls/markdown-editor/bind-data.jpeg" alt="properties"/>
-</figure>
+### Static Data Options
 
-The expected data format is Markdown:
+To display static data alredy in a Markdown Editor control, you can use the Bind Data option.
+
+The Bind Data option must be specified as markdown formatted string. For example:
 
 ```md
 **Sample Markdown**
@@ -70,26 +71,17 @@ To know more about writing markdown, you can view the [markdown guide](https://w
 
 ## Properties
 
-| **Property**            | **Description**                                                                |
+| Property            | Description                                                                |
 |-----------------------|-----------------------------------------------------------------------------|
 | Theme                 | Allows you to select the color theme for the screen.                         |
 | Fit to Screen         | Enables the screen to automatically adjust its content to fit the screen size. |
 
 
-
-## Control Outputs
-
 ## Events
 
 
-**value_change :**
-
-The `value_change` event occurs when there is a modification in the Markdown Editor control. This event triggers
-subsequent actions, following the same action flow as other controls such as action buttons and list controls. You can
-utilize both on-screen and server-side actions to respond to this event.
-
-To control the frequency or speed of the change event, you can utilize the `debounce` property associated with the
-control. Adjusting the debounce property allows you to manage the delay between consecutive value changes, ensuring
-optimal performance and responsiveness.
+| Trigger                   | Description                                                                             |
+|--------------------------|-----------------------------------------------------------------------------------------|
+| value_change                | Occurs when there is a modification in the Typeahead control's value. To control the frequency or speed of the change event, you can utilize the `debounce` property associated with the control. |
 
 
