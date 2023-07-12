@@ -178,7 +178,7 @@ const config = {
           alt: 'DronaHQ',
           src: 'img/dronahq-name-logo-light.svg',
           srcDark: 'img/dronahq-name-logo-dark.svg',
-          href: '/',
+          href: 'https://www.dronahq.com',
         },
         items: [
           {
@@ -188,27 +188,31 @@ const config = {
             label: 'Docs',
             to: '/introduction',
           },
-          {
-            to: '/wiki',
-            label: 'Wiki',
-            position: 'left',
-          },
-          {
-            to: '/blog',
-            label: 'Blog',
-            position: 'left',
-          },
-          {
-            to: 'https://community.dronahq.com/',
-            label: 'Community',
-            position: 'left',
-          },
           // {
-          //   to: 'https://hasura.io/changelog',
-          //   label: "What's New",
-          //   id: 'whats-new-link',
+          //   to: '/wiki',
+          //   label: 'Wiki',
           //   position: 'left',
           // },
+          // {
+          //   to: '/blog',
+          //   label: 'Blog',
+          //   position: 'left',
+          // },
+          {
+            to: 'https://community.dronahq.com/c/ask-community',
+            label: 'Forum',
+            position: 'left',
+          },
+          {
+            to: 'https://discord.gg/QfN8yq4mqM',
+            label: 'Discord',
+            position: 'left',
+          },
+          {
+            to: 'https://headwayapp.co/dronahq-changelog',
+            label: "What's New",
+            position: 'left',
+          },
           // {
           //   to: '/latest/hasura-cloud/overview',
           //   label: 'Hasura Cloud',
