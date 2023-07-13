@@ -24,6 +24,22 @@ Table Grid control accepts array of objects to display data. There are different
 
 ### Dynamic Data Option
 
+You can dynamically Bind options by fetching data from `Data queries`, `Sheets` or `Custom functions` by binding the response to the Data Bind option. For example: 
+
+Let's fetch data from a configured SQL connector."We have a predefined query, `getDetails`, that fetches data from the SQL database using the connector."  The SQL syntax for this query:
+
+```sql
+  SELECT * FROM orderdetails
+```
+
+In the Tbale Grid control, Bind Data Options, select the `Quick Select -> Connector Library -> SQL_Connector -> getDetails`
+
+<figure>
+  <Thumbnail src="/img/reference/controls/table-grid/dynamic.jpg" alt="Date Range Picker" />
+  <figcaption align = "center"><i>Binding Dynamic data from connector to Table Grid control.</i></figcaption>
+</figure>
+
+Real-time visualization of table grid control changes in the builder view, with updated data fetched from an SQL database.
 
 ## Server-Side Pagination
 
@@ -134,3 +150,10 @@ These outputs can be referenced in other controls, data queries, or JS functions
 ## Events
 
 
+| Trigger       | Description                                                                                       |
+|---------------|---------------------------------------------------------------------------------------------------|
+| row_select    | Occurs when a row in the table or a list is selected.                                               |
+| add_click     | Occurs when the add  button for adding new items is clicked.                                   |
+| update_click  | Occurs when the update button for updating existing items is clicked.                            |
+| delete_click  | Occurs when the delete button for deleting items is clicked.                                     |
+| save_changes  | Occurs when the save button for saving changes is clicked, typically after editing or updating.|
