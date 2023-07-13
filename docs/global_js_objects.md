@@ -82,7 +82,7 @@ JSOBJECTS_GLOBAL.functionName('test');
 Once you click on `Run Script`, the end result output will be showcased in `Output` area.
 
 ## JS Object Example
-JavaScript Code:
+### JavaScript Code:
 
 ```
 function calculateInsurancePremium(age, gender, coverageAmount, tobaccoUsage) {
@@ -163,5 +163,11 @@ Added the Global JS in JS Code action block.
   <Thumbnail src="/img/advanced-concepts/global-js-objects/global-js-objects-final-output.png" alt="Simple Database GUI" />
   <figcaption align='center'><i>Final output in preview.</i></figcaption>
 </figure>
+
+:::tip
+
+To see how to declare and use app specific functions in app we can use Resuseable JS Objects
+Reference :- [Resuseable JS Objects](/docs/app-scripting-and-code/reusable_js_objects.md)
+:::
 
 Docusaurus can manage multiple versions of your docs.
