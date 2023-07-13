@@ -10,7 +10,7 @@ The Table Grid control is a type of Display control that obtains data from a She
 
 
 <figure>
-  <Thumbnail src="/img/reference/controls/table-grid/preview.png" alt="Date Range Picker" />
+  <Thumbnail src="/img/reference/controls/table-grid/preview.png" alt="table Grid" />
   <figcaption align = "center"><i>Table Grid</i></figcaption>
 </figure>
 
@@ -20,7 +20,24 @@ Table Grid control accepts array of objects to display data. There are different
 
 ### Static Data Option
 
+To display static options in the Table Grid control, you can use the Bind Data option.
 
+The Bind Data option must be specified as an array of objects. For example:
+
+```js
+  [
+  {
+    "id": 1,
+    "name": "Carlyn Bartle",
+    "email": "Carlyn.Bartle@example.com"
+  },
+  {
+    "id": 2,
+    "name": "Murry Rowsel",
+    "email": "Murry.Rowsel@example.com"
+  }
+]
+```
 
 ### Dynamic Data Option
 
