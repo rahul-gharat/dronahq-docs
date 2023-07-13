@@ -28,13 +28,13 @@ There are times when you need more dynamic and interactive debugging with differ
 
 You need to follow the below steps to enable and debug at preview time:
 
-- Step 1: Add a breakpoint from the top bar of `Preview` to any event you want to debug on any screen.
-- Step 2: Whenever that event occurs, you will see a bottom panel open up
-- Step 3: You can do the following actions:
-    - Play: This will execute the whole actionflow and you can click on each step and check the whole footprint and details 
-    - Stepper: This will execute single block at a time which will let you debug each step before going to the next one
-    - Fast forward: This will execute the whole actionflow and move ahead
-    - Watchlist: You can view the data in each control, data query or keyword reflecting live at realtime as the action blocks progress
+- **Step 1**: Add a breakpoint from the top bar of `Preview` to any event you want to debug on any screen.
+- **Step 2**: Whenever that event occurs, you will see a bottom panel open up
+- **Step 3**: You can do the following actions:
+    - **Play**: This will execute the whole actionflow and you can click on each step and check the whole footprint and details 
+    - **Stepper**: This will execute single block at a time which will let you debug each step before going to the next one
+    - **Fast forward**: This will execute the whole actionflow and move ahead
+    - **Watchlist**: You can view the data in each control, data query or keyword reflecting live at realtime as the action blocks progress
 
 <figure>
   <Thumbnail src="/img/debugging-apps/breakpoint.png" alt="Breakpoint" width='100%'/>
