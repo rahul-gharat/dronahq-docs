@@ -22,10 +22,9 @@ To conveniently configure your OpenAI keys within the DronaHQ platform, follow t
 
 This action will open a sidebar, providing you with various operations to manage your OpenAI accounts. By accessing the "Configure Accounts" option in the OpenAI Accounts sidebar, you can easily manage your OpenAI accounts and perform the following tasks.
 
-- <a href="#add-new-openai-account">Add new OpenAI account</a>
-- <a href="#edit-key-for-existing-accounts">Edit key for exising accounts</a>
-- <a href="#see-list-of-all-accounts">See list of all accounts</a>
-
+- [Add new OpenAI account](./ai_configure_openai_keys.md/#add-new-openai-account)
+- [Edit key for exising accounts](./ai_configure_openai_keys.md/#edit-key-for-existing-accounts)
+- [See list of all accounts](./ai_configure_openai_keys.md/#see-list-of-all-accounts)
   - Delete accounts
   - Make any account default
 

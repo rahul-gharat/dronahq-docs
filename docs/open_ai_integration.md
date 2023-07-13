@@ -6,10 +6,10 @@ import Thumbnail from '@site/src/components/Thumbnail';
 
 # OpenAI Integration
 
-DronaHQ Studio offers preconfigured `OpenAI API` connectors that enable users to seamlessly incorporate OpenAI's advanced artificial intelligence capabilities into their applications. These connectors are designed to simplify the integration process and are available in two versions
+DronaHQ Studio offers preconfigured `OpenAI API` connectors that enable users to seamlessly incorporate OpenAI's advanced artificial intelligence capabilities into their applications. These connectors are designed to simplify the integration process and are available in two versions:
 
 - <a href="#openai-connector">OpenAI</a>
-- <a href="#openai-advance-connector">OpenAI Advance</a>
+- <a href="#openai-advance-connector">OpenAI Advanced</a>
 
 This guide will walk you through the setup and configuration process of these preconfigured OpenAI API connectors in DronaHQ Studio. By following the instructions provided, you'll be able to quickly add an account for the connectors and start leveraging OpenAI's powerful AI capabilities within your applications.
 
@@ -86,8 +86,8 @@ In the Data Queries section, you can utilize the connectors by using the Connect
 
 Alternatively, you can incorporate the connectors within the Action Flow of your application using the Server Side Action block. This grants you the ability to leverage the connectors' capabilities and functionalities more dynamically and interactively. You can utilize these connectors to process data and orchestrate complex workflows that can be triggered on any user actions.
 
-To delve deeper into the possibilities and benefits of employing AI-powered connectors, I recommend reading the comprehensive "Use cases using AI" article. This resource will provide you with valuable insights and real-world examples of how these connectors can be effectively harnessed to enhance your application's capabilities and deliver a superior user experience.
+To delve deeper into the possibilities and benefits of employing AI-powered connectors, I recommend reading the comprehensive [Use cases using AI](./ai_usecases.md) article. This resource will provide you with valuable insights and real-world examples of how these connectors can be effectively harnessed to enhance your application's capabilities and deliver a superior user experience.
 
-:::info Info
+:::caution Info
 OpenAI imposes rate limits on its APIs to ensure fair usage and maintain system stability. The specific rate limits may vary depending on the API or model you are using. OpenAI provides detailed documentation and guidelines on rate limits for each specific API or model, which you should refer to for accurate and up-to-date information. Exceeding the rate limits can result in errors or temporary blocks on API access.
 :::
