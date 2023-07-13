@@ -89,7 +89,13 @@ These outputs can be referenced in other controls, data queries, or JS functions
 
 :::info PLEASE NOTE
 
-Binding the `TYPEDTEXT` property in another control/data query will trigger its data evaluation with every single
-character inputted in the Typeahead control, ensuring real-time updates. 
+- Binding the `TYPEDTEXT` property in another control/data query will trigger its data evaluation with every single
+character entered in the Typeahead control, ensuring real-time updates. 
+:::
+
+:::caution PLEASE NOTE
+
+In case, you are calling an api using `TYPEDTEXT` property in the request parameters, it will unnecessary call your api multiple times. Instead, you can use `typeahead` control reference, so your api will be called only when user selects options from suggestions and optimize your app.
 
 :::
+
