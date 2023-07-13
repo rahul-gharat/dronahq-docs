@@ -10,7 +10,7 @@ The Table Grid control is a type of Display control that obtains data from a She
 
 
 <figure>
-  <Thumbnail src="/img/reference/controls/table-grid/preview.png" alt="Date Range Picker" />
+  <Thumbnail src="/img/reference/controls/table-grid/preview.png" alt="table Grid" />
   <figcaption align = "center"><i>Table Grid</i></figcaption>
 </figure>
 
