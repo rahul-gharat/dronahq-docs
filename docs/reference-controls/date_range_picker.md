@@ -39,6 +39,31 @@ End Date: "07/31/2023"
 
 ```
 
+Consider a scenario where you are developing a leave application system for your employees. As a requirement, employees are required to apply for leave at least 15 days in advance.
+
+To meet the requirement, the Date Range picker in the leave application system should dynamically disable the next 15 days.
+
+Go to Bind Data Option, `StartDate -> Quick Select -> Custom JS` and write a JavaScript function to retrieve a date that is 15 days ahead of the current date. Below is an example code that utilizes the Moment.js library:
+
+```js
+  function JSCode(output) {
+  var startDate = moment().add(15, 'days').format('LLL');
+  output = startDate;
+  return output;
+}
+```
+
+<figure>
+  <Thumbnail src="/img/reference/controls/date-range-picker/customjs.jpg" alt="Date Range Picker" />
+  <figcaption align = "center"><i>Writing Custom JavaScript for Static data bindng.</i></figcaption>
+</figure>
+
+<figure>
+  <Thumbnail src="/img/reference/controls/date-range-picker/example.jpeg" alt="Date Range Picker" />
+  <figcaption align = "center"><i>Range of dates.</i></figcaption>
+</figure>
+
+
 :::info
 
 When binding data to the Date Range Picker control, consider the format of the data: `DD/MM/YYYY` or `UNIX timestamp`. Choose the appropriate `Submit format` in the `Input Properties` of the control: `LOCAL` for `DD/MM/YYYY` format and `UTC` for `UNIX timestamp`. This ensures accurate handling of dates and times based on the data format.
