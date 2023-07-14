@@ -2,6 +2,9 @@
 sidebar_position: 1
 ---
 
+import Thumbnail from '@site/src/components/Thumbnail';
+
+
 # Configuring SSO with OIDC
 
 DronaHQ's OpenID Connect integration utilizes the [Authorization Code Flow](https://auth0.com/docs/flows/authorization-code-flow). When configuring SSO with OIDC in DronaHQ, it requires either an ID token or access token to be a JSON Web Token (JWT) containing the authenticated user's email.
@@ -31,6 +34,10 @@ For setting up OIDC SSO in DronaHQ, Go to `Manage Users -> SSO CONFIGURATION -> 
 
 Copy DronaHQ `OAuth Redirect URL` and paste it to your OAuth Client App's `redirect uri` configuration.
 
+<figure>
+  <Thumbnail src="/img/sso/sso-oauth-redirect.png" alt="DronaHQ OAuth Redirect URL" />
+  <figcaption align = "center"><i>DronaHQ OAuth Redirect URL</i></figcaption>
+</figure>
 
 Enter form with below fields -
 
@@ -56,11 +63,16 @@ Enter form with below fields -
 
 :::
 
-Steps:
+### Steps
 1. Fill above form.
 1. Once, above form is filled, click on `Save to draft` option to save your SSO Configuration.
 1. You will be able to view your recently saved SSO configuration in the list. You can click on `Test SSO` button and it will open SSO Login url in a popup. Once you login successfully and if everything is set up correctly, then finally you will see a success message at the bottom.
 1. Now, that testing is successful, you can click on the `more option` for above SSO configuration and click on `Activate` to make it live.
+
+<figure>
+  <Thumbnail src="/img/sso/sso-oauth-login-activate.png" alt="Activate SSO" />
+  <figcaption align = "center"><i>Activate SSO</i></figcaption>
+</figure>
 
 Once live, all your users belonging to above given domain will be redirected to your SSO login from both the `End User Portal` and `Creator Portal`.
 
