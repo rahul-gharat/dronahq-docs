@@ -2,9 +2,9 @@
 sidebar_position: 1
 ---
 
+import Thumbnail from '@site/src/components/Thumbnail';
+
 # Configuring SSO with SAML
-
-
 
 ## Prerequisites
 
@@ -16,6 +16,11 @@ To set up SAML SSO in DronaHQ, you will need:
     1. X509 public certificate info
     1. Binding type
 1. SAML Configuration setup at your SSO provider's portal with DronaHQ details. DronaHQ `Entity ID and Metadata URL` and `Redirect URL` can be located at  `Manage Users -> SSO CONFIGURATION -> + Add SSO -> SAML 2.0`.
+
+<figure>
+  <Thumbnail src="/img/sso/sso-saml-metadata-callback.png" alt="DronaHQ Metadata and Callback URL" />
+  <figcaption align = "center"><i>DronaHQ Metadata and Callback URL</i></figcaption>
+</figure>
 
 :::info PLEASE NOTE
 
@@ -50,12 +55,17 @@ Enter form with below fields -
 
 :::
 
-Steps:
+### Steps
 1. Setup SAML configuration similar to above, at your SAML SSO provider's portal.
 1. Fill the above form.
 1. Once, the form is filled, click on `Save to draft` option to save your SSO Configuration.
 1. You will be able to view your recently saved SSO configuration in the list. You can click on `Test SSO` button and it will open SSO Login url in a popup. Once you login successfully and if everything is set up correctly, then finally you will see a success message at the bottom.
 1. Now, that testing is successful, you can click on the `more option` for above SSO configuration and click on `Activate` to make it live.
+
+<figure>
+  <Thumbnail src="/img/sso/sso-saml-login-activate.png" alt="Activate SSO" />
+  <figcaption align = "center"><i>Activate SSO</i></figcaption>
+</figure>
 
 Once live, all your users belonging to above given domain will be redirected to your SSO login from both the `End User Portal` and `Creator Portal`.
 
