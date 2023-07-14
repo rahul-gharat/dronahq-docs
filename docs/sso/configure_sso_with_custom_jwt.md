@@ -186,6 +186,6 @@ var fnSuccess = function(apiResponse){
     }
 ```
 
-In the above code, On success we are calling `DronaHQ.user.setLoginDetails(fnSuccess, fnError, userCookie); ` which is a DronaHQ js sdk method and userCookie is the JWT Token sent by your backend server. This is log user into the DronaHQ Container app.
+In the above code, On success we are calling `DronaHQ.user.setLoginDetails(fnSuccess, fnError, userCookie); ` which is a `DronaHQ.js` sdk method and `userCookie` is the JWT Token sent by your backend server. This will log user into the DronaHQ Container app.
 
 For configuring this Custom Auth Login using JWT in DronaHQ, you can refer to [this](#configuring-sso-with-custom-jwt)
