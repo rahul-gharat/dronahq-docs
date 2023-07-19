@@ -102,7 +102,7 @@ The outputs from the Collapsible Menu control, represented by the placeholder `{
 | Output               | Description                                                                                                                                                                                                                |
 |----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | collapsible_menu     | The outputs from the Collapsible Menu control, represented by the placeholder `{{collapsible_menu}}`, can be referenced in other controls, data queries, or JavaScript functions using the control's unique name.                |
-| Value Attribute      | The data/value of the Value attribute in the JSON data is returned upon selecting its respective menu item. This value can be used in various operations or to track the user's selection within the Collapsible Menu control. |
+
 
 
 ## Events 
