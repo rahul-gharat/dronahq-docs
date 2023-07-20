@@ -3,6 +3,180 @@ sidebar_position: 1
 title: "Multiscreen apps"
 ---
 
+import Thumbnail from '@site/src/components/Thumbnail';
+
 # Multiscreen apps
 
-Docusaurus can manage multiple versions of your docs.
+DronaHQ Studio offers an intuitive platform that empowers you to effortlessly create multiscreen applications. With its extensive range of screen options, including sidebars, trays, menus, popups, and Headers screen, you have the flexibility to design applications that are not only visually appealing but also highly dynamic and interactive. This article will explain you in details about all the screens and theire propertis and how to use them.
+
+<figure>
+  <Thumbnail src="/img/ui-builder/multiscreen-apps/mutiscreen-apps-intro.png" alt="Adding new screen popup" />
+  <figcaption align = "center"><i>Adding new screen popup</i></figcaption>
+</figure>
+
+## Screens
+
+Studio offers a diverse range of screen options, each broadly classified into two types. By providing multiple types of screens, Studio ensures that customers have a variety of choices to suit their specific needs. Following are the two broad classification of screens
+
+- Freeflow Editor
+- Advance Editor
+
+The Freeflow Editor screen enables users to place and resize controls in a grid-like structure, leading to the creation of interactive and pixel-perfect UI designs.
+
+Advance Editor uses a layout control system to precisely arrange controls in relation to each other, providing complete screen layout control.
+
+:::info Info
+
+You can switch between Advance Editor Mode and Freeflow Editor Mode only when there are no controls placed inside the screen. The button to switch between the modes can be found at the bottom of the screen.
+
+:::
+
+
+## Sections in screens
+
+Each screen type is categorized into three sub sections, excluding the header type screen. These three sections further specify and delineate the screen's functionality and purpose.
+- Header
+- Body
+- Footer
+
+Depending upon the screen type these property are preconfigured, for example in popup screen, header is hidden by default and for all types of screen, the footer is hidden by default. Each sections of screen has its own configuration properties.
+ ### Header configuration
+
+| Attributes | Description |
+| ------------|--------------|
+| Visibility | Toggles screen header visibility |
+| Classic header | Toggles between classic Studio header and custom header created by user using controls. |
+| Background color | Configures Background color for header. |
+| Border color | Configures bottom bottom color of header |
+| Dark theme | Makes the classic header icons white |
+
+#### Classic Header Icon Configuration
+
+| Attributes | Description |
+| ------------|--------------|
+| Icon enabled | Toggles classic header icon visibility |
+| Icon color | Configures the icon color. |
+| Choose icon | Configures icon for header. |
+| Hide for | Configures for which screen resolution icon should be hidden. |
+| Action | Configures which action to perform on action icon click. |
+
+#### Classic Header Main and Sub Heading Configuration
+
+| Attributes | Description |
+|------------|--------------|
+| Text | Configures the text to display in heading. |
+| Font size | Configures font size of heading. |
+| Font weight | Configures font weight of heading. |
+| Font color | Configures font color of heading. |
+| Alignment | Configures allignment of heading. |
+
+ ### Body configuration
+
+| Attributes | Description |
+|------------|--------------|
+| Control spacing | Configures space between two different controls only applicable for advance editor screen. |
+| Padding | configures sereen body padding, only applicable for advance editor srceens. |
+| Background color | Configures Background color for body section of screen. |
+
+### Footer configuration
+
+| Attributes | Description |
+|------------|--------------|
+| Visibility | Toggles Footler visibiliy of screen |
+| Border visibility | Toggler border top visibility of footer |
+| Border color | Configures Border-top color for footer |
+| Control spacing | Configures space between two different controls only applicable for advance editor screen. |
+| Padding | Configures sereen body padding, only applicable for advance editor srceens. |
+| Background color | Configures Background color for body section of screen. |
+
+## Types of screen
+
+Studio offers multiple types of screen each with its own properties and use-case, following are the list of all different types of screens:
+- Page/Screen
+- Popup
+- Menu
+- Tray
+- Header
+
+### Screen / Page
+
+Screen/Page is The Primary Screen type in sutdio. All Other screens are either overlayed over Screen/Page or either stick to it. Following are the configuration provided by the Screens/Page.
+
+| Attribute | Description |
+| ---------------| -------------| 
+| Name | Configures display name of the screen |
+| id | Displays the navigation Id of the screen, it is non editable and autogenerated by studio |
+| Routing Url | Displays the Public link url for current screen of the app. only visible if routing is configured and public link is enable in the app |
+| Screen type | Allows you to change screen type, only available in the Advance Editor mode |
+| Sticky menu screen | Configures the Sticky header for screen, you can choose any header type screen in the value to be displayed as sticky header. |
+| Sticky menu screen | Configures the Sticky menu for screen, you can choose any menu type screen in the value to be displayed as sticky Menu. |
+
+:::info Info
+
+Only Screen/Page can be made as home screen any other screen as home screen will result in error in application.
+
+:::
+
+### Popup
+
+This Screem type allows user to configure their own popup screen with thire custom layout and ui. following are the different configuration available in the popup type screen.
+
+| Attribute | Description |
+| ---------------| -------------| 
+| Name | Configures display name of the screen |
+| id | Displays the navigation Id of the screen, it is non editable and autogenerated by studio |
+| Routing Url | Displays the Public link url for current screen of the app. only visible if routing is configured and public link is enable in the app |
+| Screen type | Allows you to change screen type, only available in the Advance Editor mode |
+| Click outside to close | Configures if the popup screen should close after user click / taps outside the popup. |
+| Max width | Configures maximum width of the popup screen. |
+
+:::info Info
+
+Height for popup screen is derived form the controls placed inside the popup screen, its maximum height is 80% of the screen
+
+:::
+
+### Menu
+
+Menu Screen type allows user to configure menu screeens for their application, only menu screen can be used as sticky menu for screen/page type screens. Following are the configuratoin provided by the menu type screen.
+
+| Attribute | Description |
+| ---------------| -------------| 
+| Name | Configures display name of the screen |
+| id | Displays the navigation Id of the screen, it is non editable and autogenerated by studio |
+| Screen type | Allows you to change screen type, only available in the Advance Editor mode |
+| Open from | Configures weather menu will open from left or from right, even if made stiky menu direction will remain same. |
+| Width on desktop | Configures width of menu sidebar if app is displyed on the desktop. default width is 90% for the other devices |
+
+
+### Tray
+
+Try type screens allows you to create sidebars into your application, tray type screen are displayed as overlay on all ther other screens. Following are the configuration availabe in the tray type screen.
+
+| Attribute | Description |
+| ---------------| -------------| 
+| Name | Configures display name of the screen |
+| id | Displays the navigation Id of the screen, it is non editable and autogenerated by studio |
+| Routing Url | Displays the Public link url for current screen of the app. only visible if routing is configured and public link is enable in the app |
+| Screen type | Allows you to change screen type, only available in the Advance Editor mode |
+| Open from | Configures weather tray will open from left / right / top / bottom  |
+| Click outside to close | Configures if the tray should close after user click / taps outside the tray. |
+| Width | Configues width for the tray if opening from left of right direction. |
+| Max width | Configues max width for the tray if opening from left or right direction. |
+| Height | Configues height for the tray if opening from top or bottom direction. |
+| Max height | Configues max height for the tray if opening from top or bottom direction. |
+
+### Header
+
+Header type screen is used in a very special use case in which if you want to use a single header screen through out the application then create a header screen and use it as stikcy header in all the screen/page type screens.
+
+| Attribute | Description |
+| ---------------| -------------| 
+| Name | Configures display name of the screen |
+| id | Displays the navigation Id of the screen, it is non editable and autogenerated by studio |
+
+:::info Info
+
+You can inherit header configuration to all the newly created screen if you configure a screen header as default header in `settings -> style -> default screen header`.
+
+:::
