@@ -1,6 +1,6 @@
 ---
 sidebar_position: 4
-title: "Visibility-Rules and Validations"
+title: "Rules and Validations"
 ---
 
 import Thumbnail from '@site/src/components/Thumbnail';

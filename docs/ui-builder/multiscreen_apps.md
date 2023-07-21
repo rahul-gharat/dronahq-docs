@@ -14,24 +14,6 @@ DronaHQ Studio offers an intuitive platform that empowers you to effortlessly cr
   <figcaption align = "center"><i>Adding new screen popup</i></figcaption>
 </figure>
 
-## Screens
-
-Studio offers a diverse range of screen options, each broadly classified into two types. By providing multiple types of screens, Studio ensures that customers have a variety of choices to suit their specific needs. Following are the two broad classifications of screens
-
-- Freeflow Editor
-- Advance Editor
-
-The Freeflow Editor screen enables users to place and resize controls in a grid-like structure, leading to the creation of interactive and pixel-perfect UI designs.
-
-Advance Editor uses a layout control system to precisely arrange controls in relation to each other, providing complete screen layout control.
-
-:::info Info
-
-You can switch between Advance Editor Mode and Freeflow Editor Mode only when there are no controls placed inside the screen. The button to switch between the modes can be found at the bottom of the screen.
-
-:::
-
-
 ## Sections in screens
 
 Each screen type is categorized into three sub-sections, excluding the header type screen. These three sections further specify and delineate the screen's functionality and purpose.
