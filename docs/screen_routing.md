@@ -64,6 +64,13 @@ You can find the routing URL including the friendly name as well as the screen n
 
 On the basis of the screen name present in the routing URL, the respective screen will open.
 
+### Routing URL explanation
+
+<figure>
+  <Thumbnail src="/img/advanced-concepts/screen-routing/screen-routing-url-explanation.png" alt="Simple Database GUI" />
+  <figcaption align='center'><i>Routing URL Explanation.</i></figcaption>
+</figure>
+
 ## Working with Routing Levels
 
 ### Setting up Routing Level

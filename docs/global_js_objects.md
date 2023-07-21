@@ -6,12 +6,12 @@ import Thumbnail from '@site/src/components/Thumbnail';
 
 # Global JS Objects
 
-DronaHQ provides a powerful extension of JS Objects. `JS Objects` provides users flexibility with writing functions, key-value pairs, stating variables, and more, which later can be accessed in the microapp easily and recurrently with the use of keywords. The most important part of JS Object Extension is that, once you save an object, it can be accessible from any app in the DronaHQ account, so we can say that it is globally provided.
+DronaHQ provides a powerful extension of JS Objects. `JS Objects` provides users flexibility with writing functions, key-value pairs, stating variables, and more, which later can be accessed in the app easily and recurrently with the use of keywords. The most important part of JS Object Extension is that, once you save an object, it can be accessible from any app in the DronaHQ account, so we can say that it is globally provided.
 
-We will know more about writing and using Global JS Objects in this article. You can export your JS functions and variables defined in Global JS Objects section that you can call globally in any microapp at any place.
+We will know more about writing and using Global JS Objects in this article. You can export your JS functions and variables defined in Global JS Objects section that you can call globally in any app at any place.
 
 ## Creating Global JS Objects
-Login to your DronaHQ account Go-to, `Profile > Extensions > JS Object Editor`.
+Login to your DronaHQ account Go-to, `Profile -> Extensions -> JS Object Editor`.
 
 <figure>
   <Thumbnail src="/img/advanced-concepts/global-js-objects/global-js-objects-config-screen.jpg" alt="Simple Database GUI" />
@@ -23,7 +23,7 @@ You will notice that a structure is maintained already in the JS Object with dum
 ### Global JS object Structure
 The JS Object of the DronaHQ follows this format, where user can write their own code, mention variables, write functions, and more, provided that their keywords should be made accessible under the `ExportModule` :
 
-```
+```javascript
 // Internal Variable  
 var myInternalVariable = "This is an Internal Variable";  
 // Variable Can be accessible outside  
@@ -73,7 +73,7 @@ Select one keyword from the dropdown, and the script will run for it particularl
 Test your JS functions by selecting from the above dropdown and passing test data to view its result output. Use the below syntax in your app to call this function.
 
 There is a specific syntax to call the global JS objects - 
-```
+```javascript
 JSOBJECTS_GLOBAL.functionName('test');
 ```
 
@@ -81,10 +81,10 @@ JSOBJECTS_GLOBAL.functionName('test');
 
 Once you click on `Run Script`, the end result output will be showcased in `Output` area.
 
-## JS Object Example
+## Using JS Object
 ### JavaScript Code:
 
-```
+```javascript
 function calculateInsurancePremium(age, gender, coverageAmount, tobaccoUsage) {
 // Base premium rates per $1,000 of coverage
 const basePremiumRates = {
@@ -131,16 +131,15 @@ calculateInsurancePremium: calculateInsurancePremium
 
 ### Script
 
-```
+```javascript
 JSOBJECTS_GLOBAL.calculateInsurancePremium(25, 'Female', 5000000, 'non-smoker');
 ```
 
 ### Output
 
-<figure>
-  <Thumbnail src="/img/advanced-concepts/global-js-objects/global-js-objects-example.jpg" alt="Simple Database GUI" />
-  <figcaption align='center'><i>Final output of example.</i></figcaption>
-</figure>
+```javascript
+66000
+```
 
 we can now Save it. using `Save` button.
 
@@ -148,14 +147,16 @@ we can now Save it. using `Save` button.
 
 Now, we can use the JS object from any app, with help of the keyword:
 
-` JSOBJECTS_GLOBAL.calculateInsurancePremium() `
+```javascript
+JSOBJECTS_GLOBAL.calculateInsurancePremium()
+```
 
 #### App Preview:
 
 Added the Global JS in JS Code action block.
 
 <figure>
-  <Thumbnail src="/img/advanced-concepts/global-js-objects/global-js-objects-functions-usage.jpg" alt="Simple Database GUI" />
+  <Thumbnail src="/img/advanced-concepts/global-js-objects/global-js-objects-functions-usage.png" alt="Simple Database GUI" />
   <figcaption align='center'><i>Using function JS Code action block.</i></figcaption>
 </figure>
 
