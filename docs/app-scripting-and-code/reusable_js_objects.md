@@ -1,12 +1,13 @@
 ---
 sidebar_position: 5
+title: Reusable JS Objects
 ---
 
 import Thumbnail from '@site/src/components/Thumbnail';
 
 # Reusable JS Objects
 
-With the help of JavaScript programming language, DronaHQ has the feature of `JS Objects` to provide users flexibility with writing functions, key-value pairs, stating variables, and more, which later can be accessed in the microapp easily and recurrently with the use of keywords.
+With the help of JavaScript programming language, DronaHQ has the feature of `JS Objects` to provide users flexibility with writing functions, key-value pairs, stating variables, and more, which later can be accessed in the app easily and recurrently with the use of keywords.
 
 We will know more about writing and using JS Objects in this article. You can export your JS functions and variables defined in JS Objects section that you can call at any place in your app.
 
@@ -24,7 +25,7 @@ You will notice that a structure is maintained already in the JS Object with dum
 
 The JS Object of the DronaHQ follows this format, where user can write their own code, mention variables, write functions, and more, provided that their keywords should be made accessible under the `ExportModule`:
 
-```
+```javascript
 // Internal Variable  
 var myInternalVariable = "This is an Internal Variable";  
 // Variable Can be accessible outside  
@@ -59,7 +60,7 @@ If you do not export the functions and variables with the export module, the JS 
 
 There is a dropdown provided just before the script where you can find all the exported keywords of functions and variables, which all are available to be used in the app.
 
-```
+```javascript
 JSOBJECTS.functionName('test');
 ```
 
@@ -73,12 +74,12 @@ Once you click on `Run Script`, the end result output will be showcased in `Outp
 ## JS Object Example
 ### JavaScript Code:
 
-```
+```javascript
 //required variables 
   
 var sum, percentage, grades; 
   
-//fucntion for total 
+//function for total 
   
 function getGradeFromScores (sci,math,eng,pe){ 
   sum = percentage = 0; 
@@ -102,7 +103,7 @@ ExportModule = {
 ```
 ### Script
 
-```
+```javascript
 JSOBJECTS.getGradeFromScores (90,80,85,60);
 ```
 
@@ -126,4 +127,3 @@ if we wish to use this functions across different applications then we can decla
 Reference :- [Global JS Objects](/docs/global_js_objects.md)
 :::
 
-Docusaurus can manage multiple versions of your docs.
