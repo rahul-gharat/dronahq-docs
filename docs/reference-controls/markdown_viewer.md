@@ -7,7 +7,7 @@ import Image from '@site/src/components/Image'; import VersionedLink from '@site
 Thumbnail from '@site/src/components/Thumbnail';
 
 
-The DronaHQ Studio provides a control known as the Markdown Viewer that allows you to compose and display formatted lightweight text using Markdown syntax.
+The DronaHQ provides a control known as the Markdown Viewer that allows you to compose and display formatted lightweight text using Markdown syntax.
 
 With the Markdown Viewer control, you can effortlessly write markdown syntax and preview the rendered output. The control generates a markdown string as its output, which can be seamlessly incorporated into your application.
 

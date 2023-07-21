@@ -1,5 +1,6 @@
 ---
 sidebar_position: 5
+title: Reusable JS Objects
 ---
 
 import Thumbnail from '@site/src/components/Thumbnail';
@@ -78,7 +79,7 @@ Once you click on `Run Script`, the end result output will be showcased in `Outp
   
 var sum, percentage, grades; 
   
-//fucntion for total 
+//function for total 
   
 function getGradeFromScores (sci,math,eng,pe){ 
   sum = percentage = 0; 
@@ -125,4 +126,3 @@ if we wish to use this functions across different applications then we can decla
 Reference :- [Global JS Objects](/docs/global_js_objects.md)
 :::
 
-Docusaurus can manage multiple versions of your docs.
