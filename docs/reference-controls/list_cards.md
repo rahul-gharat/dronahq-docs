@@ -15,6 +15,34 @@ Various card types are designed to present tabulated data in layouts according t
 
 ## Binding Data Options
 
+The List- Card controls accepts an array of objects in JSON format to display data. You can bind data to the List- Card controls in various ways, allowing for flexible customization and presentation of menu items.
+
+### Static Data Option
+
+To display static options in the List- Card controls, you can use the Bind Data option. The Bind Data option must be specified as an array of objects. For example:
+
+```js
+[
+	{
+		"fullname": "Maria Gerhold",
+		"email": "maria81@example.com",
+		"avatar": "https://dronamobilepublic.s3.amazonaws.com/DRONA5_Team2050/content/app/images/public/Maria_T4j7j.jpg",
+		"_isSelected": false
+	},
+	{
+		"fullname": "Fermin Schumm",
+		"email": "fermin.schumm51@example.com",
+		"avatar": "https://dronamobilepublic.s3.amazonaws.com/DRONA5_Team2050/content/app/images/public/Fermin_6ZIef.jpg",
+		"_isSelected": false
+	},
+	{
+		"fullname": "Jalyn Labadie",
+		"email": "jalyn.labadie@example.com",
+		"avatar": "https://dronamobilepublic.s3.amazonaws.com/DRONA5_Team2050/content/app/images/public/Mask%20Group%204_SsFFA.jpg",
+		"_isSelected": false
+	}
+]
+```
 
 ## Properties
 

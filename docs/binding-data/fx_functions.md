@@ -14,6 +14,8 @@ You can navigate to `control -> data section -> Fx` and click on `edit` to write
 
 You can refer to the list of supported [Fx formulae here.](../../reference_fx_formulas)
 
+You can also build your own [custom reusable Fx functions](../../custom_fx_ide) at the account level with an IDE in javascript which can be used across all apps.
+
 <figure>
   <Thumbnail src="/img/binding-data/fx-data.png" alt="Fx data" width='100%'/>
   <figcaption align = "center"><i>Fx section in data binding</i></figcaption>
@@ -23,6 +25,8 @@ You can refer to the list of supported [Fx formulae here.](../../reference_fx_fo
   <Thumbnail src="/img/binding-data/fx-formula.png" alt="Fx formula" width='100%'/>
   <figcaption align = "center"><i>Writing Fx formula</i></figcaption>
 </figure>
+
+
 
 :::caution Limitations
 
