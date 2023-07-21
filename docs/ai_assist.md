@@ -12,6 +12,10 @@ The AI Assistant feature in DronaHQ, powered by OpenAI, provides users with adva
 Any data you pass to a AI Assistant is sent to and processed by OpenAI. If you do not use the AI Assistant, no data is sent to AI Assistant.
 :::
 
+:::caution Info
+OpenAI imposes rate limits on its APIs to ensure fair usage and maintain system stability. Exceeding the rate limits can result in errors or temporary blocks on API access. To avoid such errors you can configure multiple OpenAI accounts and use them considering the rate-limits.
+:::
+
 ## Database Query Assistance
 The AI Assistant within DronaHQ provides intelligent support for generating database queries based on user input. By leveraging the power of OpenAI's natural language processing and machine learning, the AI Assistant can understand the user's intent and assist in constructing the appropriate database query.
 
