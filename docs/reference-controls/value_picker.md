@@ -57,7 +57,7 @@ The outputs from the Value Picker control, represented by the placeholder `{{val
 ## Events
 
 
-| Property     | Description                                                                                                                              |
+| Trigger     | Description                                                                                                                              |
 |--------------|------------------------------------------------------------------------------------------------------------------------------------------|
 | value_select | Occurs when there is a change in the value of the respective control, typically triggered by selecting another option or inputting a new value. |
 
