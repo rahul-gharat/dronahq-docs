@@ -54,4 +54,4 @@ The outputs from the Image Select Bar control, represented by the placeholder `{
 
 | Output       | Description                                                                                                  |
 |--------------|--------------------------------------------------------------------------------------------------------------|
-| imageselectbar    | Represents the user-selected value from the given path/trail of the Image Select Bar control.                        |
+| imageselectbar    | Represents the user-selected value from the given options of the Image Select Bar control.                        |
