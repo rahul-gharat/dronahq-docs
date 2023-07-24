@@ -17,9 +17,9 @@ DronaHQ Studio offers an intuitive platform that empowers you to effortlessly cr
 ## Sections in screens
 
 Each screen type is categorized into three sub-sections, excluding the header type screen. These three sections further specify and delineate the screen's functionality and purpose.
-- Header
-- Body
-- Footer
+- [Header](./multiscreen_apps.md/#header-configuration)
+- [Body](./multiscreen_apps.md/#body-configuration)
+- [Footer](./multiscreen_apps.md/#footer-configuration)
 
 Depending upon the screen type these properties are preconfigured, for example in a popup screen, the header is hidden by default and for all types of screen, the footer is hidden by default. Each section of the screen has its own configuration properties.
  ### Header configuration
@@ -74,11 +74,11 @@ Depending upon the screen type these properties are preconfigured, for example i
 ## Types of screen
 
 Studio offers multiple types of screen each with its own properties and use case, following are the list of all the different types of screens:
-- Page/Screen
-- Popup
-- Menu
-- Tray
-- Header
+- [Page/Screen](./multiscreen_apps.md/#screen--page)
+- [Popup](./multiscreen_apps.md/#popup)
+- [Menu](./multiscreen_apps.md/#menu)
+- [Tray](./multiscreen_apps.md/#tray)
+- [Header](./multiscreen_apps.md/#header)
 
 ### Screen / Page
 
