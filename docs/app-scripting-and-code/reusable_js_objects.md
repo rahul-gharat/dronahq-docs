@@ -71,7 +71,7 @@ Test your JS functions by selecting from the above dropdown and passing test dat
 
 Once you click on `Run Script`, the end result output will be showcased in `Output` area.
 
-## JS Object Example
+## Using JS Object
 ### JavaScript Code:
 
 ```javascript
@@ -109,10 +109,9 @@ JSOBJECTS.getGradeFromScores (90,80,85,60);
 
 ### Output
 
-<figure>
-  <Thumbnail src="/img/app-scripting-and-code/reuseable-js-objects/resuseable-js-objects-example-output.png" alt="Simple Database GUI" />
-  <figcaption align='center'><i>Final output of example.</i></figcaption>
-</figure>
+```javascript
+"B"
+```
 
 ### Using function
 
