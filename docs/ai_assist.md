@@ -29,11 +29,11 @@ AI assistance for generating queries is conveniently available within the Data Q
 </figure>
 
 ### Query Generation Process
-- User Input: Users can express their desired output from the database using natural language in the prompt visible after clicking on the `Ask AI` button.
-- NLP Analysis: The AI Assistant analyzes the user's query, extracting important keywords and understanding the underlying intent.
-- Query Construction: Based on the analysis, the AI Assistant constructs the appropriate database query, `considering the database schema and available data` as visible in the above screenshot.
-- Query Preview: The generated query is displayed to the user, allowing them to review and make any necessary adjustments.
-- Execution: Once the user confirms the query, it is inserted into the query input field and then the user can test the query.
+- **User Input**: Users can express their desired output from the database using natural language in the prompt visible after clicking on the `Ask AI` button.
+- **NLP Analysis**: The AI Assistant analyzes the user's query, extracting important keywords and understanding the underlying intent.
+- **Query Construction**: Based on the analysis, the AI Assistant constructs the appropriate database query, `considering the database schema and available data` as visible in the above screenshot.
+- **Query Preview**: The generated query is displayed to the user, allowing them to review and make any necessary adjustments.
+- **Execution**: Once the user confirms the query, it is inserted into the query input field and then the user can test the query.
 
 <figure>
   <Thumbnail src="/img/dronahq-ai/ai-assist-in-dronahq/ai-assistant-query-generation-result.png" alt="AI Assistant query generation Result" width='100%'/>
@@ -53,11 +53,11 @@ AI assistance for generating JavaScript code is conveniently available within th
 </figure>
 
 ### Code Generation Process
-- User Input: Users describe the `data manipulation` task they want to perform using natural language.
-- NLP Analysis: The AI Assistant analyzes the user's input, `extracting key requirements` and understanding the desired data transformation concerning `Input parameters` of the js block.
-- Code Generation: Based on the analysis, the AI Assistant generates the corresponding JavaScript code snippet, addressing the user's requirements.
-- Code Preview: The generated code snippet is presented to the user, who can review and modify it as needed.
-- Execution: Once the user confirms the code snippet, it is inserted in the js code block section and the user can run and test the code.
+- **User Input**: Users describe the `data manipulation` task they want to perform using natural language.
+- **NLP Analysis**: The AI Assistant analyzes the user's input, `extracting key requirements` and understanding the desired data transformation concerning `Input parameters` of the js block.
+- **Code Generation**: Based on the analysis, the AI Assistant generates the corresponding JavaScript code snippet, addressing the user's requirements.
+- **Code Preview**: The generated code snippet is presented to the user, who can review and modify it as needed.
+- **Execution**: Once the user confirms the code snippet, it is inserted in the js code block section and the user can run and test the code.
 
 <figure>
   <Thumbnail src="/img/dronahq-ai/ai-assist-in-dronahq/ai-assistant-javascript-result.png" alt="AI Assistant JavaScript code generation result" width='100%'/>

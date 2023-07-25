@@ -16,13 +16,13 @@ you to create dynamic and interactive experiences within your DronaHQ apps.
 
 The process of using controls in a studio environment involves five essential aspects that contribute to creating a functional and interactive user interface. These aspects are:
 
-- `Dragging and Dropping Controls on the Screen`: In this step, the developer selects and places various controls from the available control list onto the screen. These controls can include buttons, input fields, dropdown lists, checkboxes, and other interactive elements.
-- `Configuring Desired Properties`: Once the controls are placed on the screen, the next step is to configure their properties. This involves customizing each control's appearance, behaviour, and functionality. Commonly configured properties include size, position, colors, fonts, labels, default values, and placeholders. Additionally, developers can set specific properties related to how the control interacts with the user, such as enabling or disabling certain features or validation mechanisms. All Controls have their own set of properties which defines how the user will interact with the control.
-- `Binding Data`: Binding data is a crucial aspect of control usage as it establishes a connection between the user interface elements and the underlying data sources or business logic. This step involves linking the controls to relevant control or Data Queries, enabling real-time data display, and synchronization.
-- `Bind Actions`: Most of the controls in the studio have their own set of events on which users can configure action flows which will be executed if that event is triggered by user action. such as the focus out event of input control, and button click event of button control. This allows users to build interactive applications.
-- `Add Rules and Validation`: If necessary user can configure some rules and validations to ensure data integrity and enforce specific conditions or constraints, guiding the user through correct input and interactions.
+- [**Dragging and Dropping Controls on the Screen**](/category/controls/): In this step, the developer selects and places various controls from the available control list onto the screen. These controls can include buttons, input fields, dropdown lists, checkboxes, and other interactive elements.
+- [**Configure properties**](./controls.md/#control-properties): Once the controls are placed on the screen, the next step is to configure their properties. This involves customizing each control's appearance, behaviour, and functionality. Commonly configured properties include size, position, colors, fonts, labels, default values, and placeholders. Additionally, developers can set specific properties related to how the control interacts with the user, such as enabling or disabling certain features or validation mechanisms. All Controls have their own set of properties which defines how the user will interact with the control.
+- [**Bind data**](./controls.md/#bind-data-to-control): Binding data is a crucial aspect of control usage as it establishes a connection between the user interface elements and the underlying data sources or business logic. This step involves linking the controls to relevant control or Data Queries, enabling real-time data display, and synchronization.
+- [**Control events**](./controls.md/#control-events): Most of the controls in the studio have their own set of events on which users can configure action flows which will be executed if that event is triggered by user action. such as the focus out event of input control, and button click event of button control. This allows users to build interactive applications.
+- [**Add Rules and Validation**](/ui-builder/visibility_rules_validations/): If necessary user can configure some rules and validations to ensure data integrity and enforce specific conditions or constraints, guiding the user through correct input and interactions.
 
-## Configuration Properties
+## Control properties
 
 <figure>
   <Thumbnail src="/img/ui-builder/controls/control-properties.png" alt="Common property configuration for controls." width='150px'/>
@@ -64,7 +64,7 @@ The properties of Dynamic height, Hide on Mobile, Hide on Desktop, and Maintain 
 in the Freeflow Editor only. 
 
 :::
-## Data configuration in Control
+## Bind data to Control
 
 Each Control has its own data binding section where you can define the source of data for that control, it either can be a static js formula or referring data from other controls or data queries, there are various ways of binding data to a control as explain in <VersionedLink to="/category/binding-data/">Binding Data Articles </VersionedLink>.
 
