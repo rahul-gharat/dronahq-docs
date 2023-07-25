@@ -50,10 +50,19 @@ After setting up the number of iterations, the next is to set up the `actions` i
 
 :::
 
-## Iteration in Server-side action  
+## Iterating Server-side actions
  
-You can also add `server-side action` tasks to the iterate tasks. It would require a variable to store the data coming from the server. The order of data getting received from the server throughout the iteration might not be in the correct sequence due to the differences in request time. To make it sequentially correct, the user can use `custom JavaScript code block` block. 
+You can also add `server-side action` tasks to the iterate tasks. Each Iteration leg run `parallelly` and are mutually exclusive, so you can not use `output variables` of one task from `first iteration` into another task of `second iteration leg`.
 
 ## Nested Iteration 
  
 You can even add multiple iterations in a nested form. There might be cases where data is available in a multi-dimensional array of objects, requiring iteration in each object. In that case you can nest the iterations one inside another along with distinctive actions and tasks. 
+
+:::caution Tasks that are not supported in Iterate Tasks
+
+1. Branch
+1. End Action Flow
+1. Confirm
+1. Popup
+
+:::
