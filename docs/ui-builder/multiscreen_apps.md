@@ -14,30 +14,12 @@ DronaHQ Studio offers an intuitive platform that empowers you to effortlessly cr
   <figcaption align = "center"><i>Adding new screen popup</i></figcaption>
 </figure>
 
-## Screens
-
-Studio offers a diverse range of screen options, each broadly classified into two types. By providing multiple types of screens, Studio ensures that customers have a variety of choices to suit their specific needs. Following are the two broad classifications of screens
-
-- Freeflow Editor
-- Advance Editor
-
-The Freeflow Editor screen enables users to place and resize controls in a grid-like structure, leading to the creation of interactive and pixel-perfect UI designs.
-
-Advance Editor uses a layout control system to precisely arrange controls in relation to each other, providing complete screen layout control.
-
-:::info Info
-
-You can switch between Advance Editor Mode and Freeflow Editor Mode only when there are no controls placed inside the screen. The button to switch between the modes can be found at the bottom of the screen.
-
-:::
-
-
 ## Sections in screens
 
 Each screen type is categorized into three sub-sections, excluding the header type screen. These three sections further specify and delineate the screen's functionality and purpose.
-- Header
-- Body
-- Footer
+- [Header](./multiscreen_apps.md/#header-configuration)
+- [Body](./multiscreen_apps.md/#body-configuration)
+- [Footer](./multiscreen_apps.md/#footer-configuration)
 
 Depending upon the screen type these properties are preconfigured, for example in a popup screen, the header is hidden by default and for all types of screen, the footer is hidden by default. Each section of the screen has its own configuration properties.
  ### Header configuration
@@ -92,11 +74,11 @@ Depending upon the screen type these properties are preconfigured, for example i
 ## Types of screen
 
 Studio offers multiple types of screen each with its own properties and use case, following are the list of all the different types of screens:
-- Page/Screen
-- Popup
-- Menu
-- Tray
-- Header
+- [Page/Screen](./multiscreen_apps.md/#screen--page)
+- [Popup](./multiscreen_apps.md/#popup)
+- [Menu](./multiscreen_apps.md/#menu)
+- [Tray](./multiscreen_apps.md/#tray)
+- [Header](./multiscreen_apps.md/#header)
 
 ### Screen / Page
 
