@@ -6,99 +6,61 @@ pagination_prev: null
 
 import VideoEmbed from "@site/src/components/VideoEmbed";
 import Image from "@site/src/components/Image";
+import VersionedLink from '@site/src/components/VersionedLink';
+import ArrowRight from '@site/static/icons/arrow_right.svg';
+
 
 # What is DronaHQ
 
-Organizations build internal applications (also known as admin tools or internal tools) such as dashboards, database GUIs, admin panels, approval apps, customer support tools, and more to help their teams perform specific tasks. DronaHQ is an open source developer tool that helps the rapid creation of such internal tools.
+DronaHQ empowers you to rapidly develop custom applications and internal tools faster than ever. Seamlessly connect and query databases and APIs, design web or mobile apps with intuitive and feature-rich user interfaces, automate complex tasks, and create Approval flows within seconds. Unlock the full potential of your teams by enabling them to accomplish specific tasks efficiently and effectively
 
-You can drag and drop pre-built widgets to build UI on a grid-style canvas. DronaHQ simplifies front-end and back-end integration between the UI and the datasource to optimize building applications. It also supports JavaScript inside widgets, queries, and almost any other component to add logic, transform data, and define complex workflows.
 
-<figure>
-  <VideoEmbed host='youtube' videoId='Tl0Sd43dXDg' />
-</figure>
+With DronaHQ, constructing your user interface is effortless as you can simply drag and drop pre-built controls onto a grid-style canvas. Seamlessly integrating the front-end and back-end with your data source becomes a breeze, optimizing the application development process. Moreover, DronaHQ offers robust support for writing JavaScript within your App, allowing you to incorporate logic, data transformations, and define intricate actionflows with ease.
+
 
 ## Why DronaHQ
 
-DronaHQ makes it easy to build a UI that talks to any datasource. You can create anything from simple CRUD apps to complicated multi-step workflows with the simple steps below:
+DronaHQ simplifies the process of building a UI that seamlessly communicates with any datasource. With DronaHQ, you have the flexibility to create a wide range of applications, from simple CRUD apps to intricate multi-step actionflows, following these straightforward steps:
 
-- **Connect Datasource**: Integrate with a datasource such as a database or an API. DronaHQ has plug-and-play support for many databases and the RESTful API interface to connect with most tools seamlessly.
-- **Build UI**: Use customizable built-in widgets to build an app layout.
-- **Access Data**: Connect UI to the datasource by writing queries and binding the data to widgets. Control everything with JavaScript.
-- **Collaborate, Deploy, Share**: DronaHQ supports version control using Git to build apps in collaboration using branches to track and roll back changes. Deploy the app and share it with other users.
+- Connect Datasource: Integrate with a datasource, whether it's a database or an API. DronaHQ provides plug-and-play support for a variety of databases and a RESTful API interface, ensuring smooth connectivity with most tools.
+
+- Design UI: Utilize a diverse set of customizable built-in widgets to construct the perfect app layout that suits your requirements.
+
+- Access Data: Establish a seamless connection between the UI and the datasource by crafting queries and binding the data to controls. Take complete control of the application's behavior with JavaScript.
+
+- Test, Publish, Share: DronaHQ facilitates app development with the help of preview, debugger, connector logs, watchlist. Once your app is ready, publish it and easily share it with other users.
 
 ## Get started
 
 There are two ways of using DronaHQ:
 
 - [DronaHQ Cloud](https://www.dronahq.com/): Sign up for a free account and try DronaHQ.
-- [Self-Host DronaHQ](/getting-started/setup): Deploy and manage DronaHQ on your local machine or private server instance.
+- [Self-Host DronaHQ](/self_hosting_overview): Deploy and manage DronaHQ on your local machine or private server instance.
 
 ## First steps
 
 If you are new to DronaHQ, this is the place to start:
 
-<div class='containerGridSampleApp'>
-  <div class=' containerColumnSampleApp columnGrid column-one'>
-    <div class='containerCol'>
-      <Image
-        class='containerImage'
-        src='/img/quickstart.png'
-        alt='Build your first app'
-      />
+<div className="gallery">
+    <div className="card">
+      <div className="card-header">
+        <h4>Build your first app</h4>
+      </div>
+      <p>A quickstart guide to help you build an app using DronaHQ.</p>
+      <VersionedLink to="/getting-started/start-building">
+        See Building an App <ArrowRight className="arrow" />
+      </VersionedLink>
     </div>
-    <b>
-      <a href='/getting-started/start-building'>Build your first app</a>
-    </b>
-    <div class='containerDescription'>
-      A quickstart guide to help you build an app using DronaHQ
-    </div>
-  </div>
-  <div class=' containerColumnSampleApp columnGrid column-two'>
-    <div class='containerCol'>
-      <Image
-        class='containerImage'
-        src='/img/resources-icon.png'
-        alt='core concepts'
-      />
-    </div>
-    <b>
-      <a href='/core-concepts/connecting-to-data-sources'>
-        Learn core concepts
-      </a>
-    </b>
-    <div class='containerDescription'>
-      Everything you need to know about DronaHQ basics and its core features
+    <div className="card">
+      <div className="card-header">
+        <h4>Connecting Datasources</h4>
+      </div>
+      <p>Everything you need to know about DronaHQ datasources.</p>
+      <VersionedLink to="/datasource_overview">
+        See Datasources Overview <ArrowRight className="arrow" />
+      </VersionedLink>
     </div>
   </div>
-</div>
-
-## Resources
-
-Additional helpful documentation:
-
-<div class="containerGridSampleApp">
-   <div class=" containerColumnSampleApp columnGrid column-one">
-      <div class="containerCol">
-      <Image class="containerImage" src="/img/widget-icon.png" alt="widgets"/>
-      </div> 
-      <p><strong>Reference docs</strong></p><p><a href="/reference/widgets">Widgets<br/></a><a href="/reference/datasources">Datasources</a><br/><a href="/reference/DronaHQ-framework">Framework</a></p>  
-   </div>
-   
-   <div class="containerColumnSampleApp columnGrid column-two">
-      <div class="containerCol">
-      <Image class="containerImage" src="/img/framework-icon.png" alt="framework"/>
-      </div> 
-      <p><strong>Useful features</strong></p><p><a href="/advanced-concepts/version-control-with-git">Version control using Git</a><br/><a href="/getting-started/setup/instance-configuration/authentication">Single sign-on (SSO)</a><br/><a href="/advanced-concepts/granular-access-control">Granular access control</a></p>
-   </div>
-
-   <div class=" containerColumnSampleApp columnGrid column-three">
-  <div class="containerCol">
-         <Image class="containerImage" src="/img/support.png" alt="get help"/>
-      </div> 
-    <p><strong>Get help</strong></p><p><a href="/learning-and-resources/sample-apps">Sample apps</a><br/><a href="/learning-and-resources/integrations">Third-party integration</a><br/><a href="/help-and-support/troubleshooting-guide">Troubleshooting</a></p>
-   </div>
-  
-</div>
 
 :::info
 
