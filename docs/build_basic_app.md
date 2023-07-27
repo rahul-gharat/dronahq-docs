@@ -16,201 +16,203 @@ import Image from "@site/src/components/Image";
 ⏱️ **Time** - 15 minutes
 :::
 
-This tutorial guides you through the steps to create a simple database GUI using Dronahq. The application connects to a sample PostgreSQL database, allowing you to read and update user information. You'll learn to:
-* Create a new application
-* Connect to a database and fetch data 
-* Display the data in a Table widget
-* Build form to view user details
-* Edit and submit the user details
-* Deploy the application
+This tutorial guides you through the steps to create a simple database GUI using Dronahq. The application connects to a sample PostgreSQL database, allowing you to read and update customer information. You'll learn to:
+* Create a new application.
+* Connect to a database and fetch data.
+* Display the data in a Tablegrid control.
+* Build form to view customer details.
+* Edit and update the customer detail.
+* Publish the application
 
 Here's a screenshot of the final result:
 
 <figure>
-  <Thumbnail src="/img/dronahq-drag-drop-builder.png" alt="Simple Database GUI" />
-  <figcaption align = "center"><i>Simple Database GUI</i></figcaption>
+  <Thumbnail src="/img/getting-started/customer-management-app.png" alt="Customer Managment App" />
+  <figcaption align = "center"><i>Customer Managment App</i></figcaption>
 </figure>
 
 Let's get started!
 
 ## Prerequisites
 
-* An Dronahq account. If you don’t have one, sign up on [**Dronahq cloud**](https://www.dronahq.com/).
+* An Dronahq account. If you don’t have one, sign up on [Dronahq Cloud](https://www.dronahq.com/).
 
 ## Create a new application
 
-1. When you create a new account, Dronahq adds a workspace with an application titled **My first application** on the homepage by default. You need to create a new empty application for this tutorial. If you are inside an application and need to go to the homepage, click on the Dronahq logo at the top left of the screen to go to the homepage.
+1. When you login into DronaHQ, it opens `My Apps` on the homepage by default. You need to create a new empty application for this tutorial. To create a new app, click the `+` icon (which is usually the first icon on the screen). Select `Blank App -> Add App Name, Description, Logo -> CREATE APP`.
 
-2. On the homepage, click the **+ New** button to the right of the screen under the default workspace. You'll land on a new application in the *Edit* mode. 
+  Here, you can give App name as `Customer Management`, provide description as `App to manage customer info` and choose any logo.
 
 <figure>
-  <Image src="/img/dronahq-drag-drop-builder.png" style= {{width:"100%", height:"auto"}} alt="Create new application"/>
+  <Thumbnail src="/img/getting-started/create-app.png" style= {{width:"100%", height:"auto"}} alt="Create new application"/>
   <figcaption align = "center"><i>Create new application</i></figcaption>
 </figure>
 
-3. Click the **⌵** icon on the top left next to the default application name. Select the **Edit Name** option. Rename the app to `User Management`.
+2. Blank App will open in a new tab with default `Screen 1` added. 
 
-4. On the *Entity Explorer* to the left of the screen, you'll see that **Page 1** is the default page on the application. Hover over the page name and click the **︙** icon.  
+## Connect to a Datasource
 
-5. Select the **Edit Name** option. Rename the page to `User Information`.
+Here, we will connect to a `mysql` database. 
 
-<figure>
-  <Image src="/img/dronahq-drag-drop-builder.png" style= {{width:"100%", height:"auto"}} alt="Edit page name"/>
-  <figcaption align = "center"><i>Edit page name</i></figcaption>
-</figure>
-
-## Connect to a database
-
-1. On the *Entity Explorer* to the left of the screen, ensure you are in the **Explorer** tab.
-
-2. Click the **+** icon next to **Datasources** to add a new datasource.
-
-3. Select **PostgreSQL** under the **Databases** section. This opens the page where you can configure the fields to connect to your PostgreSQL database. 
+1. Go to `Connector Library -> + Connector -> MySQL`
 
 <figure>
-  <Image src="/img/dronahq-drag-drop-builder.png" style= {{width:"100%", height:"auto"}} alt="Connect to PostgreSQL database"/>
-  <figcaption align = "center"><i>Connect to PostgreSQL database</i></figcaption>
+  <Thumbnail src="/img/getting-started/select-connector.png" style= {{width:"100%", height:"auto"}} alt="Connect to MySQL database"/>
+  <figcaption align = "center"><i>Connect to MySQL database</i></figcaption>
 </figure>
 
-4. Click the pencil icon next to the default database name on the top left and rename the database to `usersTutorialDB`.
+2. Enter `Connector Name` as `customerTutorialDB`.
 
-5. Enter the following details in the connection parameter fields:<br/>
-  **Host Address**: `mockdb.internal.dronahq.com` <br/>
-  **Port**: `5432`<br/>
-  **Database Name**: `users`<br/>
-  **Username**: `users`<br/>
-  **Password**: `new-users-db-pass`<br/>
-
-6. Click the **Test** button to test the connection and ensure the database is valid.
-7. Click **Save** to create and save the database connection. You'll see the `usersTutorialDB` database page.
-
-🚩 You've successfully connected to the PostgreSQL database that contains user information.
-
-## Fetch user data
-
-1. Click the **+ New Query** button to the right of the screen.
-
-<figure>
-  <Image src="/img/dronahq-drag-drop-builder.png" style= {{width:"100%", height:"auto"}} alt="Create a new query on the datasource"/>
-  <figcaption align = "center"><i>Create a new query on the datasource</i></figcaption>
-</figure>
-
-2. Click the **Select** query template from the list of query commands. It loads the query editor with a fetch query to pull ten records from the `usersTutorialDB` database table. 
-
-3. Click the pencil icon to rename the query from **Query1** to `getUsers`.
-
-4. Click the **Run** button on the top right of the screen to execute the query and confirm that it returns data.
-
-5. Click the **Settings** tab. Switch on the **Run query on page load** option.
-
-<figure>
-  <Image src="/img/dronahq-drag-drop-builder.png" style= {{width:"100%", height:"auto"}} alt="Fetch data from database"/>
-  <figcaption align = "center"><i>Fetch data from database</i></figcaption>
-</figure>
-
-🚩 You've created your first query to fetch the list of users in the database.
-
-## Display user data on Table
-
-1. Click the **Widgets** tab on the *Entity Explorer* to the left of the screen.
-
-2. Drag a **Table** widget and drop it to the left of the canvas.
-
-3. A *Property Pane* appears to the right of the screen, which contains all the properties of the widget. On the top of the property pane, click on the default name **Table1** and rename it to `usersTable`.
-
-4. In the **Table Data** property box, delete the default JSON data. 
-
-5. To display the data from the **getUsers** query, type in the mustache template `{{}}`. Enter `getUsers.data` between the curly braces. This JavaScript expression connects the data from the **getUsers** query to the Table widget.
-
-:::info
-The mustache template `{{}}` is used to write JS code inside widgets and queries on Dronahq.
-:::
-
-<figure>
-  <Image src="/img/dronahq-drag-drop-builder.png" style= {{width:"100%", height:"auto"}} alt="Display data in table"/>
-  <figcaption align = "center"><i>Display data in table</i></figcaption>
-</figure>
-
-🚩 You've displayed the results from the **getUsers** query on the Table widget.
-
-## Build form to view user details
-
-1. From the **Widgets** tab, drag and drop a **Form** widget on the canvas to the right of the Table widget. 
-2. Select the title of the Form. On the property pane to the right of the screen, in the **Text** property box, change the title from **Form** to `User Details`.
-3. Now add widgets on the Form to view user details. For the user's name, drop an **Input** widget inside the Form. 
-    * On the property pane to the right, click on the default name **Input1** and rename it to `nameInput`. 
-    * In the **Text** property box, enter `Name`. 
-    * In the **Default Value** property box, type `{{usersTable.selectedRow.name}}`. This displays the user's name of the selected row on the **usersTable** Table widget.
-4. Let's do the same for the user's email. Drop another Input widget inside the Form. 
-    * Rename the widget to `emailInput`.
-    * Select **Email** from the list of options in the **Data Type** property.
-    * In the **Text** property box, enter `Email`.
-    * In the **Default Value** property box, type `{{usersTable.selectedRow.email}}`.
-5. You also need to view the user's date of birth. Drop a Datepicker widget inside the Form. 
-    * Rename the widget to `dobInput`.
-    * In the **Text** property box, enter `DOB`.
-    * Click the **JS** button next to the **Default Date** property to connect the Datepicker widget to the user's date of birth on the Table. 
-    * Type `{{usersTable.selectedRow.dob}}` in the **Default Date** property box.
-6. And finally to view the user's photo, drop an Image widget inside the Form. 
-    * In the **Image** property box, type `{{usersTable.selectedRow.image}}`.
-
-🚩 You've completed binding the data to the widgets on the Form. Select the rows on the Table to view the corresponding user details on the Form.
-
-<figure>
-  <Image src="/img/dronahq-drag-drop-builder.png" style= {{width:"100%", height:"auto"}} alt="Bind data to widgets"/>
-  <figcaption align = "center"><i>Bind data to widgets</i></figcaption>
-</figure>
-
-## Update user details
-
-1. Select the **Explorer** tab on the *Entity Explorer* to the screen's left. 
-
-2. Click the **+** icon next to **Queries/JS**. 
-
-3. Select **usersTutorialDB query** from the list of options. 
-
-3. Rename the query to `updateUsers`. Click the white space below the query name for a blank query editor.  
-
-4. Paste the below SQL update command in the query editor to update the `users` table in the database with the details modified in the Form.
+3. Enter following connector string.
 
   ```sql
-  UPDATE users 
-  SET name = {{nameInput.text}}, 
-  email = {{emailInput.text}}, 
-  dob = {{dobInput.selectedDate}}
-  WHERE id = {{usersTable.selectedRow.id}} 
+  mysql://admin:qwerty123@db-dhq.c8jniapv05hb.us-east-1.rds.amazonaws.com:3306/dbonbording
   ```
-5. Go back to the canvas by clicking on the **User Information** page on the *Entity Explorer*.
 
-6. To connect the **updateUsers** query to a button, select the default **Submit** button on the Form.
-    * On the property pane to the right of the screen, in the **Label** property box, change the label to `Update`.
-    * Click the **+** icon next to the **onClick** event. 
-    * In the **Action** list, select **Execute a query > updateUsers** to run the query on button click. 
-    * Click **Callbacks** right under the action selector.  
-    * Click the **+** icon next to the **onSuccess** callback. 
-    * Select **Execute a query > getUsers**. 
-    
-    The button is now configured to execute the **updateUsers** query to save any modified user details on the Form and to refresh the Table widget with the updated information. 
+4. Click the `Test connection` button to test the connection and ensure the database is valid.
+
+
+5. Click `SAVE` to create and save the database connection. You'll see the `customerTutorialDB` database in Connectors listing.
+
+
+🚩 You've successfully connected to the MySQL database that contains customer information.
+
+## Fetch customer data
+
+1. Select `Connector Library -> customerTutorialDB -> + New Query`.
+
 
 <figure>
-  <Image src="/img/dronahq-drag-drop-builder.png" style= {{width:"100%", height:"auto"}} alt="Run query on the button's onClick event"/>
-  <figcaption align = "center"><i>Run query on the button's onClick event</i></figcaption>
+  <Thumbnail src="/img/getting-started/add-query.png" style= {{width:"100%", height:"auto"}} alt="Add Query"/>
+  <figcaption align = "center"><i>Add Query</i></figcaption>
 </figure>
 
-7. Click the **Deploy** button on the top right of the screen to deploy the application and test it in the *View* mode. 
+2.  It loads the query editor which list all the tables of `customerTutorialDB` database. 
 
-8. Select the first row on the Table. Go ahead and modify the user's name on the Form and test the **Update** button to see how things work .
+3. Enter query name as `getCustomers`.
 
-  :::caution
-  The databases used in tutorials are public and shared by all Dronahq users, so ensure that you don't input confidential information during testing. The databases are automatically reset every day, so any updates made to these databases are temporary.
-  :::
+4. Enter below query under `Write Your Query` to get first 10 `customers`.
 
-🚩 Congratulations! You have built your first app that can display data from the database and save the updated data on the Form.
+```sql
+select * from Customers ORDER BY id asc LiMIT 10;
+```
+5. Click on `Test Query` and then `Save` this query once test is successful.
 
-In this tutorial, you explored a few different widgets and created a simple database GUI to view, query, and update data on a sample PostgreSQL database. You can use these skills to build your own app.
+🚩 You've created your first query to fetch the list of customers in the database.
 
-Happy App Building.
+## Display customer data in Table Grid
+
+1. Click the `Controls` option in navigation menu to the left of screen.
+
+2. Drag a `Table Grid` control and drop it to the on the canvas.
+
+3. Select `Table Grid` control and select `Data` option in navigation menu to the right of screen.
+
+4. Select `Quick Select -> Connector Lirary -> customerTutorialDB -> getCustomers query`. 
+
+<figure>
+  <Thumbnail src="/img/getting-started/use-getcustomers-query.png" style= {{width:"100%", height:"auto"}} alt="Bind GetCustomers Query"/>
+  <figcaption align = "center"><i>Bind GetCustomers Query</i></figcaption>
+</figure>
+
+
+5. Under `Transform Response -> Filter Keys` you can choose the list of keys that will be displayed in Table Grid control. If no keys are selected then all the Keys will be selected. 
+
+6. Click `Test & Save`. This will display customers list in Table Grid control. 
+
+🚩 You've displayed the results from the `getCustomers` query in the Table Grid control.
+
+## Build form to view customer details
+
+1. From the `Controls` option, drag and drop a `Container` control on the canvas to the right of the Table Grid control.
+
+2. Select `Container` control and on the `property` pane to the right of the Screen, under `Label` section, turn off the hidden toggle and rename the Text to `Customer Details` from Container.
+
+3. Now add `Image` control in the above container. Select `Image` control, on the `data` pane to the right of the Screen, type `{{tablegrid.avatar}}` and click `Save`.
+
+4. Now, add `Text Input` control in the above container, Select this `Text Input` control
+    1. On the `property` pane to the right of the Screen, under `Label` section, rename the Text to `Full Name` from Default value.
+    1. On the `data` pane to the right of the Screen, type `{{tablegrid.fullname}}` and click `Save`. 
+
+5. Now, Let's do the same for Customer's department. Add another `Text Input` control in the above container, Select this `Text Input` control
+    1. On the `property` pane to the right of the Screen, under `Label` section, rename the Text to `Department` from Default value.
+    1. On the `data` pane to the right of the Screen, type `{{tablegrid.department}}` and click `Save`. 
+
+6. Now, Let's do the same for Customer's email address. Add another `Text Input` control in the above container, Select this `Text Input` control
+    1. On the `property` pane to the right of the Screen, under `Label` section, rename the Text to `Email` from Default value.
+    1. On the `data` pane to the right of the Screen, type `{{tablegrid.email}}` and click `Save`.  
+
+7. And finally, for Customer's address, Add `Textarea` control in the above container, Select this `Textarea` control
+    1. On the `property` pane to the right of the Screen, under `Label` section, rename the Text to `Address` from Default value.
+    1. On the `data` pane to the right of the Screen, type `{{tablegrid.address}}` and click `Save`.  
+
+🚩 You've completed binding the data to the controls on the Form. Select the rows on the Table Grid to view the corresponding customer details on the Form.
+
+<figure>
+  <Thumbnail src="/img/getting-started/view-data-form.png" style= {{width:"100%", height:"auto"}} alt="View customer details Form"/>
+  <figcaption align = "center"><i>View customer details Form</i></figcaption>
+</figure>
+
+## Update customer details
+
+1. Select `Connector Library -> customerTutorialDB -> + New Query`.
+
+2.  It loads the query editor which list all the tables of `customerTutorialDB` database. 
+
+3. Enter query name as `updateCustomer`.
+
+4. Enter below query under `Write Your Query` to update `Customers` table.
+
+
+```sql
+ UPDATE Customers 
+  SET fullname = "{{CustomerFullName}}", 
+  department = "{{CustomerDepartment}}",
+  address = "{{CustomerAddress}}",
+  email = "{{CustomerEmail}}"
+  WHERE id = {{CustomerID}};
+```
+
+Provide Test values for `CustomerID` field as `100`. For other fields you can provide provide any test value or keep it empty.
+
+5. Click on `Test Query` and then `Save` this query once test is successful.
+
+6. Now, in our form, From the `Controls` option, drag and drop a `Button` control in our Container control.
+
+7. Select this `Button` control 
+    1. On the `property` pane to the right of the Screen, scroll down to the `PROPERTIES` accordion, rename the Text to `Update Customer` from Action.
+    1. On the `events` pane to the right of the Screen, select `button_click` event and follow below steps.
+
+8. Click ` + (Add) -> Server Side Actions -> customerTutorialDB -> updateCustomer`
+
+9. Click `Continue` and provide following query parameters with that of corresponding control.
+    1. For CustomerAddress, Add `{{address}}`
+    1. For CustomerDepartment, Add `{{department}}`
+    1. For CustomerEmail, Add `{{email}}`
+    1. For CustomerFullName, Add `{{fullname}}`
+    1. For CustomerID, Add `{{tablegrid.id}}`
+
+10. Click `Continue` and then `Finish`.
+11. In the success leg, we need to reload Tablegrid control's data to see the updated change. Click `+ (Add) -> Run Data Queries -> getCustomers`. Click `Continue` and then `Finish`.
+
+:::info PLEASE NOTE
+
+Tablegrid control is getting data from `getCustomers` data query. Thereby, triggering a change in `getCustomers` data query by re-running it, the result will be passed to Table Grid control automagically.
+
+:::
+
+12. Click on `Preview` button on the top right of the screen to `Test` the application and
+
+13. Finally, click on `Publish` and  `Enter Release Notes -> Publish` to deploy your application. You can click on `Share` option to view various sharing options using `Organizational access or Public URL access`.
+
+:::caution
+  The databases used in tutorials are public and shared by all Dronahq users, so ensure that you don't input confidential information during testing. The Test databases automatically resets, so any updates made to these databases are temporary
+:::
+
+🚩 Congratulations on successfully building your first app that can display data from the database and save the updated data back into the database using Form.
+
+In this tutorial, you explored a few different controls and created a simple database GUI to view, query, and update data on a sample MySQL database. You can use these skills to build your own app.
 
 ## Next steps
 
-[**Tutorials**](/learning-and-resources/tutorials/)<br />
+[Multiscreen Apps](/ui-builder/multiscreen_apps/)<br />
