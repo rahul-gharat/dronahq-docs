@@ -27,9 +27,9 @@ Navigate to `Config -> App Export` and click on `Export app json`.
 
 A sidebar will open which will list all the Connectors, Sheets, PDFs, Custom Controls and Widgets used within the application. Click on `Export app json` to save the app's json file on to your machine.
 
-:::info
+:::caution Dependencies with exact same name
 
-Make sure to create all the app dependencies like Connectors, Custom Controls, Widgets, etc. listed in the app summary with the exact same name in the account you are transfering the app to.
+Make sure to create all the app dependencies like Connectors, Custom Controls, Widgets, etc. listed in the app summary with the exact same name in the account you are transferring the app to.
 
 :::
 
@@ -50,7 +50,7 @@ To import an app, open the DronaHQ's home screen and navigate to `Apps -> My App
 
 A summary of all the dependencies used within the app will appear before DronaHQ imports/installs the app in the account. Now click on `Confirm and Install` to finish importing the app.
 
-:::info
+:::caution
 
 In case any of the connector is not present in the account, then you need to create that connector before importing the app. While importing the app, connector queries will either be added to the connector if missing or the existing queries will be overwritten by the queries present in the app.
 
