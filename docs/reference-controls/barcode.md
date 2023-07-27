@@ -47,6 +47,14 @@ For instance, if you are running a retail store, this functionality can help you
 | Action Buttons | The style of the action button, including the color, size, and weight of the text and barcode icon. |
 | Title Text style | The style of the title text, including the color, size, weight, and alignment.                      |
 
+## Control Outputs
+
+The outputs from the Barcode control, represented by the placeholder `{{barcode}}`, can be referenced in other controls, data queries, or JavaScript functions using the control's unique name.
+
+| Output       | Description                                                                                                  |
+|--------------|--------------------------------------------------------------------------------------------------------------|
+| barcode    | Represents the scanned details from a bar code, it can contain whatever the data is retrieved after scanning a bar code.                        |
+
 
 ## Events
 
