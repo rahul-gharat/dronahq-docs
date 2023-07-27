@@ -2,6 +2,7 @@
 sidebar_position: 1
 ---
 
+import Thumbnail from '@site/src/components/Thumbnail';
+
 # Dynamic Table
 
-Docusaurus can manage multiple versions of your docs.
