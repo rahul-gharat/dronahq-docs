@@ -6,7 +6,9 @@ import Thumbnail from '@site/src/components/Thumbnail';
 
 # Using Summary Variable
 
-In pdf template, a `summary` variable is used to pass the DronaHQ's `summary` control value to the pdf template which can then be displayed inside the template using `summary` component.
+Let us consider a scenario, where you want to embed summarized report inside a pdf. To make a summarized report within DronaHQ app, summary control can be used, which holds input field data from different pages. 
+
+Inside the pdf template, a `summary` variable and a `summary` component needs to be added. The `summary` variable will pass the `summary` control's data to the `summary` component. The `summary` component can then render that data in a tabular format.
 
 ## Building a sample app
 
