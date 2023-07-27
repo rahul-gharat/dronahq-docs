@@ -9,7 +9,7 @@ Thumbnail from '@site/src/components/Thumbnail';
 The Text Area control lets the maker accept multiple lines of text in a single field. It can hold an unlimited number of characters, and the text renders in a fixed-width font. 
 
 <figure>
-  <Thumbnail src="/img/reference/controls/textarea/preview.JPEG" alt="Textarea" />
+  <Thumbnail src="/img/reference/controls/textarea/preview.jpeg" alt="Textarea" />
   <figcaption align = "center"><i>Textarea</i></figcaption>
 </figure>
 
