@@ -29,23 +29,37 @@ Users can set font styles, colors, formats, and even introduce trend arrows or s
 
 ## Properties
 
+**Default Values**
+
 | Property          | Description                                                           |
 |-------------------|-----------------------------------------------------------------------|
-| Default Values    |                      |
 | Title             | Set the title of the statistics control.                              |
 | Primary Value     | Set the primary value of the statistics control.                      |
 | Secondary Value   | Set the secondary value of the statistics control.                    |
 | Footer            | Set the footer text of the statistics control.                         |
-| Icon UI options   |                                                                   |
+
+**Icon UI Option**
+
+| Property          | Description                                                           |
+|-------------------|-----------------------------------------------------------------------|
 | Font Size         | Set the font size of the icon.                                        |
 | Font Weight       | Set the font weight (boldness) of the icon.                            |
 | Font color        | Set the color of the icon.                                            |
 | Font Icon         | Select the icon to be featured.                                       |
-| Title             |                                                                   |
+
+**Title**
+
+| Property          | Description                                                           |
+|-------------------|-----------------------------------------------------------------------|
 | Font Size         | Set the font size of the title text.                                  |
 | Font Weight       | Set the font weight (boldness) of the title text.                      |
 | Font color        | Set the color of the title text.                                      |
-| Primary Value     |                                                                   |
+
+
+**Primary Value** 
+
+| Property          | Description                                                           |
+|-------------------|-----------------------------------------------------------------------|
 | Font Size         | Set the font size of the primary value.                               |
 | Font Weight       | Set the font weight (boldness) of the primary value.                   |
 | Font color        | Set the color of the primary value.                                   |
@@ -55,7 +69,12 @@ Users can set font styles, colors, formats, and even introduce trend arrows or s
 | Prefix            | Set the prefix for the primary value.                                 |
 | Suffix            | Set the suffix for the primary value.                                 |
 | Primary State     | Set the primary state of the value (positive or negative).            |
-| Secondary Value   |                                                                   |
+
+
+**Secondary Value**
+
+| Property          | Description                                                           |
+|-------------------|-----------------------------------------------------------------------|     
 | Font Size         | Set the font size of the secondary value.                             |
 | Font Weight       | Set the font weight (boldness) of the secondary value.                 |
 | Font color        | Set the color of the secondary value.                                 |
@@ -64,7 +83,12 @@ Users can set font styles, colors, formats, and even introduce trend arrows or s
 | Thousand Separator| Toggle to introduce a separator after the thousand’s position.         |
 | Prefix            | Set the prefix for the secondary value.                               |
 | Suffix            | Set the suffix for the secondary value.                               |
-| Footer            |                                                                   |
+
+
+**Footer** 
+
+| Property          | Description                                                           |
+|-------------------|-----------------------------------------------------------------------|
 | Font Size         | Set the font size of the footer text.                                 |
 | Font Weight       | Set the font weight (boldness) of the footer text.                     |
 | Font color        | Set the color of the footer text.                                     |
