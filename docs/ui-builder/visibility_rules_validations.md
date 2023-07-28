@@ -65,3 +65,7 @@ Validation is a crucial aspect of ensuring data accuracy and a smooth user exper
 - **Define the Validation Condition**: Set the validation condition that the user input must meet. This could be as simple as checking if a field is not empty, or it could involve more complex rules like validating email addresses, and phone numbers, or enforcing data formats. Choose the appropriate validation rule that aligns with the specific requirements of the input field.
 
 - **Error Message**: Provide a clear and concise error message to be displayed to the user if the validation condition is not satisfied. The error message should inform users of the validation criteria and guide them towards entering the correct data.
+
+## Custom validations and rules
+
+There are times when extremely custom rules and validations are to be applied which might not be possible in the our of the box configurations provided in in the above sections. You can use events like `value change` `value selected` or even on a `button click` before your queries. You can give alerts, toasts, modify control values, hide/show controls etc from the actionflows. 
