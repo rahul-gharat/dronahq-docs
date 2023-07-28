@@ -104,4 +104,4 @@ Choose the appropriate `Submit format` in the `Input Properties` of the control:
 
 | Trigger      | Description                                                                                                                                                                                       |
 | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| value_change | Occurs when there is a modification in the Typeahead control's value. To control the frequency or speed of the change event, you can utilize the `debounce` property associated with the control. |
+| value_change | Occurs when there is a modification in the Date range picker control's value. To control the frequency or speed of the change event, you can utilize the `debounce` property associated with the control. |

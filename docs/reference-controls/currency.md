@@ -64,6 +64,6 @@ The Currency control produces two distinct outputs, represented by the placehold
 
 | Trigger      | Description                                                                                                                                                                                       |
 | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| value_change | Occurs when there is a modification in the Typeahead control's value. To control the frequency or speed of the change event, you can utilize the `debounce` property associated with the control. |
+| value_change | Occurs when there is a modification in the Currency control's value. To control the frequency or speed of the change event, you can utilize the `debounce` property associated with the control. |
 | focus_out    | Occuts when the control loses focus, typically when the user clicks outside the control. It allows you to perform actions or handle specific behavior when the focus is no longer on the element. |
 | enter_press  | This event indicates the pressing of the Enter key when entering data into your Currency control.                                                                                                 |

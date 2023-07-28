@@ -26,7 +26,7 @@ The Dashboard control has different bind data options for `head_text`, `tag_text
 
 ## Properties
 
-### Card
+**Card**
 
 | Property        | Description                                         |
 |-----------------|-----------------------------------------------------|
@@ -38,7 +38,7 @@ The Dashboard control has different bind data options for `head_text`, `tag_text
 | Progress        | Toggles the visibility of the Progress Bar on the card.|
 
 
-### Progress Bar
+**Progress Bar**
 
 These properties can be seen if you have toggle switched ON the Progress Bar with the Progress property.
 
@@ -49,11 +49,12 @@ These properties can be seen if you have toggle switched ON the Progress Bar wit
 | Empty Color   | Defines the color of the empty area indicating pending progress.|
 
 
-### Default Text
+**Default Text**
 These are the default text labels for the Header, Title, Footer, and Tag.
 
 
-### Text Style
+
+**Text Style**
 
 | Property        | Description                                                                                           |
 |-----------------|-------------------------------------------------------------------------------------------------------|
@@ -63,7 +64,7 @@ These are the default text labels for the Header, Title, Footer, and Tag.
 | Text Alignment  | Specifies the alignment of the text within the card, including header, title, and footer sections.  |
 
 
-### Tag Style
+**Tag Style**
 
 These properties can be seen if you have toggle switched ON the Tag with the Tag property above.
 
@@ -82,5 +83,5 @@ These properties can be seen if you have toggle switched ON the Tag with the Tag
 
 | Trigger      | Description                                                                                                                                                                                       |
 | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| value_change | Occurs when there is a modification in the Typeahead control's value. To control the frequency or speed of the change event, you can utilize the `debounce` property associated with the control. |
+| value_change | Occurs when there is a modification in the dashboard control's value. To control the frequency or speed of the change event, you can utilize the `debounce` property associated with the control. |
 | focus_out    | Occuts when the control loses focus, typically when the user clicks outside the control. It allows you to perform actions or handle specific behavior when the focus is no longer on the element. |
