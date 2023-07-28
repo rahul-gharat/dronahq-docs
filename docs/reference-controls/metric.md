@@ -10,8 +10,8 @@ Metric control is a custom display control that is used to display a main headin
 
 
 <figure>
-  <Thumbnail src="/img/reference/controls/metrics/preview.jpeg" alt="Metrics" />
-  <figcaption align = "center"><i>Metrics</i></figcaption>
+  <Thumbnail src="/img/reference/controls/metrics/preview.jpeg" alt="Metric" />
+  <figcaption align = "center"><i>Metric</i></figcaption>
 </figure>
 
 

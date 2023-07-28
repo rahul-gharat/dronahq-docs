@@ -60,4 +60,4 @@ The outputs from the Barcode control, represented by the placeholder `{{barcode}
 
 | Trigger                   | Description                                                                             |
 |--------------------------|-----------------------------------------------------------------------------------------|
-| value_change                | Occurs when there is a modification in the Typeahead control's value. To control the frequency or speed of the change event, you can utilize the `debounce` property associated with the control. |
+| value_change                | Occurs when there is a modification in the respective control's value. To control the frequency or speed of the change event, you can utilize the `debounce` property associated with the control. |
