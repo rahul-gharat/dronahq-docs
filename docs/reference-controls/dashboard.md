@@ -26,7 +26,7 @@ The Dashboard control has different bind data options for `head_text`, `tag_text
 
 ## Properties
 
-### Card
+**Card**
 
 | Property        | Description                                         |
 |-----------------|-----------------------------------------------------|
@@ -38,7 +38,7 @@ The Dashboard control has different bind data options for `head_text`, `tag_text
 | Progress        | Toggles the visibility of the Progress Bar on the card.|
 
 
-### Progress Bar
+**Progress Bar**
 
 These properties can be seen if you have toggle switched ON the Progress Bar with the Progress property.
 
@@ -49,11 +49,12 @@ These properties can be seen if you have toggle switched ON the Progress Bar wit
 | Empty Color   | Defines the color of the empty area indicating pending progress.|
 
 
-### Default Text
+**Default Text**
 These are the default text labels for the Header, Title, Footer, and Tag.
 
 
-### Text Style
+
+**Text Style**
 
 | Property        | Description                                                                                           |
 |-----------------|-------------------------------------------------------------------------------------------------------|
@@ -63,7 +64,7 @@ These are the default text labels for the Header, Title, Footer, and Tag.
 | Text Alignment  | Specifies the alignment of the text within the card, including header, title, and footer sections.  |
 
 
-### Tag Style
+**Tag Style**
 
 These properties can be seen if you have toggle switched ON the Tag with the Tag property above.
 
