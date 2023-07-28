@@ -66,7 +66,7 @@ Here, we will connect to a `mysql` database.
 3. Enter following connector string.
 
   ```sql
-  mysql://admin:qwerty123@db-dhq.c8jniapv05hb.us-east-1.rds.amazonaws.com:3306/dbonbording
+  mysql://<username>:<pwd>@db-dhq.c8jniapv05hb.us-east-1.rds.amazonaws.com:3306/dbonbording
   ```
 
 4. Click the `Test connection` button to test the connection and ensure the database is valid.
