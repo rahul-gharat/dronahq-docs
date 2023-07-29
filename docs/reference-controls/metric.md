@@ -36,7 +36,6 @@ Description: "Information"
 
 In this example, the `Value` field is bound to the static value `72,` and the `Description` field is bound to the static value `Information.`
 
-Is there anything specific you would like to know or discuss about this binding data layout?
 
 
 
