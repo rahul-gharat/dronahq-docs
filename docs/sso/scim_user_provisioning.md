@@ -18,6 +18,7 @@ To enable SCIM user provisioning, follow these steps:
 2. Now enable SCIM User Provisioning.
    <figure>
     <Thumbnail src="/img/sso/scim-user-provisioning/scim-user-provisioning-enable.png" alt="Enable" />
+    <figcaption align = "center"><i>Enable SCIM User provisioning</i></figcaption>
    </figure>
 
 3. Generate the Authentication Token and copy the Auth Token.
@@ -34,6 +35,7 @@ Next, follow the steps below in your Okta Account:
 5. Enter SCIM Connector base URL: `https://<yourdomain.com>/api/scim/v2`, and select Supported provisioning actions. Also, enter the Auth token copied from DronaHQ.
    <figure>
     <Thumbnail src="/img/sso/scim-user-provisioning/scim-user-provisioning-connection.png" alt="Connection" />
+    <figcaption align = "center"><i>SCIM Connection</i></figcaption>
    </figure>
 6. Test and Save the Integration part.
 7. In Settings, go to the To App Section &#8594; Edit.
@@ -46,9 +48,11 @@ Next, follow the steps below in your Okta Account:
 3. Click `Assign` and then click `Done`. By performing these actions, it will replicate the creation of the user in DronaHQ. You can see their account added in the Manage User section.
    <figure>
     <Thumbnail src="/img/sso/scim-user-provisioning/scim-user-provisioning-assignpeople.png" alt="Assign People" />
+    <figcaption align = "center"><i>Okta Assign People</i></figcaption>
    </figure>
    <figure>
     <Thumbnail src="/img/sso/scim-user-provisioning/scim-user-provisioning-peopleoutput.png" alt="People Output" />
+    <figcaption align = "center"><i>DronaHQ Added User Output</i></figcaption>
    </figure>
 
 **How to Add a Group to Okta and DronaHQ:**
@@ -60,8 +64,10 @@ Next, follow the steps below in your Okta Account:
 5. One can see the push status, and it should turn to `Active` after a few seconds.
    <figure>
     <Thumbnail src="/img/sso/scim-user-provisioning/scim-user-provisioning-pushgroups.png" alt="Push Groups" />
+    <figcaption align = "center"><i>Okta Assign Group</i></figcaption>
    </figure>
 6. To check groups in DronaHQ, go to `Manage Users` section &#8594; `Manage Groups`, and it will list all the Groups.
    <figure>
     <Thumbnail src="/img/sso/scim-user-provisioning/scim-user-provisioning-groupoutput.png" alt="Group Output" />
+    <figcaption align = "center"><i>DronaHQ Added Group Output</i></figcaption>
    </figure>
