@@ -131,10 +131,10 @@ You can connect to databases by using environment variables, the raw connection 
 ## Tabs Usage
 
 <Tabs  groupId="user-preference">
-  <TabItem value="apple" label="Apple">
+  <TabItem value="content" label="Content">
     This is an apple 🍎
   </TabItem>
-  <TabItem value="orange" label="Orange">
+  <TabItem value="layout" label="Orange">
     This is an orange 🍊
   </TabItem>
   <TabItem value="banana" label="Banana">
