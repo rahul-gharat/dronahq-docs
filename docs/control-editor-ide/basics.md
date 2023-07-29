@@ -102,7 +102,7 @@ To Start with a new control click on the `+ NEW` button in the control editor.
 After that new control dialog will be visible like this
 <figure>
   <Thumbnail src="/img/advanced-concepts/custom-control-ide/basics/control-editor-add-control-click.png" alt="Simple Database GUI" />
-  <figcaption align='left'><i>Control Editor top pannel.</i></figcaption>
+  <figcaption align='left'><i>Add new control config screen.</i></figcaption>
 </figure>
 
 | Field | is_mandatory | Explanation | 
@@ -123,7 +123,7 @@ After that Edit control dialog will be visible like this
 
 <figure>
   <Thumbnail src="/img/advanced-concepts/custom-control-ide/basics/control-editor-edit-control-click.png" alt="Simple Database GUI" />
-  <figcaption align='left'><i>Control Editor top pannel.</i></figcaption>
+  <figcaption align='left'><i>Edit control config screen.</i></figcaption>
 </figure>
 
 | Field | Explanation  | 
