@@ -50,8 +50,10 @@ const config = {
   // },
   presets: [
     [
-      'classic',
-      /** @type {import('@docusaurus/preset-classic').Options} */
+      // 'classic',
+      // /** @type {import('@docusaurus/preset-classic').Options} */
+      "docusaurus-preset-openapi",
+      /** @type {import('docusaurus-preset-openapi').Options} */
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
@@ -74,11 +76,15 @@ const config = {
           //   },
           // },
         },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          // editUrl: 'https://github.com/rahul-gharat/dronahq-docs/tree/main/',
+        // blog: {
+        //   showReadingTime: true,
+        //   // Please change this to your repo.
+        //   // Remove this to remove the "edit this page" links.
+        //   // editUrl: 'https://github.com/rahul-gharat/dronahq-docs/tree/main/',
+        // },
+        api: {
+          path: "openapi.json",
+          routeBasePath: "/apidocs",
         },
         theme: {
           customCss: require.resolve('./src/css/custom.scss'),
@@ -88,23 +94,23 @@ const config = {
   ],
   plugins: [
     'docusaurus-plugin-sass',
-    [
-      'content-docs',
-      /** @type {import('@docusaurus/plugin-content-docs').Options} */
-      ({
-        id: 'wiki',
-        path: 'wiki',
-        routeBasePath: 'wiki',
-        // editUrl: ({ docPath }) => `https://github.com/rahul-gharat/dronahq-docs/blob/main/wiki/${docPath}`,
-        // editCurrentVersion: true,
-        docItemComponent: require.resolve('./src/components/CustomDocItem/CustomDocItemWiki.tsx'),
-        // disableVersioning: true,
-        breadcrumbs: false,
-        sidebarPath: require.resolve('./sidebarsWiki.js'),
-        showLastUpdateAuthor: false,
-        showLastUpdateTime: true,
-      }),
-    ],
+    // [
+    //   'content-docs',
+    //   /** @type {import('@docusaurus/plugin-content-docs').Options} */
+    //   ({
+    //     id: 'wiki',
+    //     path: 'wiki',
+    //     routeBasePath: 'wiki',
+    //     editUrl: ({ docPath }) => `https://github.com/rahul-gharat/dronahq-docs/blob/main/wiki/${docPath}`,
+    //     // editCurrentVersion: true,
+    //     docItemComponent: require.resolve('./src/components/CustomDocItem/CustomDocItemWiki.tsx'),
+    //     // disableVersioning: true,
+    //     breadcrumbs: false,
+    //     sidebarPath: require.resolve('./sidebarsWiki.js'),
+    //     showLastUpdateAuthor: true,
+    //     showLastUpdateTime: true,
+    //   }),
+    // ],
     // [
     //   path.resolve(__dirname, './src/plugins/docusaurus-plugin-segment-analytics'),
     //   {
@@ -211,6 +217,11 @@ const config = {
           {
             to: 'https://headwayapp.co/dronahq-changelog',
             label: "What's New",
+            position: 'left',
+          },
+          {
+            to: '/apidocs',
+            label: "API Docs",
             position: 'left',
           },
           // {

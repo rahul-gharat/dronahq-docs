@@ -1,0 +1,629 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "SCIM 2.0 API Documentation",
+    "version": "1.0.0"
+  },
+  "servers": [
+    {
+      "url": "https://studio.dronahq.com/api"
+    }
+  ],
+  "security": [
+    {
+      "BearerAuth": []
+    }
+  ],
+  "paths": {
+    "": {
+      "get": {
+        "tags": ["SCIM 2.0 API"],
+        "summary": "Overview",
+        "description": "System for Cross-domain Identity Management (SCIM) is an open standard protocol that simplifies user provisioning and management across different systems and applications. It provides a standardized approach for creating, retrieving, updating, and deleting user identities and associated attributes. SCIM allows organizations to streamline user management processes and maintain consistent user information across various platforms. \n By implementing a comprehensive subset of the SCIM 2.0 API, DronaHQ offers seamless integration with Identity Provider (IDP) vendors like Okta and Azure Active Directory. This integration enables efficient user and role management within applications built on the DronaHQ platform. Organizations can leverage SCIM capabilities to automate user provisioning, synchronization, and deprovisioning, reducing manual administrative tasks and ensuring consistent access control across their systems."
+      }
+    },
+    "/scim/v2/Users": {
+      "get": {
+        "tags": ["SCIM 2.0 API"],
+        "summary": "List Users",
+        "description": "Retrieve a list of users based on the provided email filter",
+        "parameters": [
+          {
+            "name": "filter",
+            "in": "query",
+            "description": "Filter users by email ID",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "startIndex",
+            "in": "query",
+            "description": "Index of the first user to be returned",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "count",
+            "in": "query",
+            "description": "Number of users to be returned",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "List of users",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ListUsersResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request"
+          }
+        },
+        "security": [
+          {
+            "BearerAuth": []
+          }
+        ]
+      },
+      "post": {
+        "tags": ["SCIM 2.0 API"],
+        "summary": "Create User",
+        "description": "Create a new user, checking if the user already exists before adding",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UserCreateRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "User created successfully",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/User"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request"
+          }
+        },
+        "security": [
+          {
+            "BearerAuth": []
+          }
+        ]
+      }
+    },
+    "/scim/v2/Users/{id}": {
+      "get": {
+        "tags": ["SCIM 2.0 API"],
+        "summary": "Retrieve User",
+        "description": "Retrieve a User by ID",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "User ID",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "User retrieved successfully",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/User"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request"
+          }
+        },
+        "security": [
+          {
+            "BearerAuth": []
+          }
+        ]
+      },
+      "patch": {
+        "tags": ["SCIM 2.0 API"],
+        "summary": "Enable or Disable User",
+        "description": "Enable or Disable a User by ID",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "User ID",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UserPatchRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "User updated successfully"
+          },
+          "400": {
+            "description": "Bad Request"
+          }
+        },
+        "security": [
+          {
+            "BearerAuth": []
+          }
+        ]
+      }
+    },
+    "/scim/v2/Groups": {
+      "get": {
+        "tags": ["SCIM 2.0 API"],
+        "summary": "List Groups",
+        "description": "Retrieve a list of Groups",
+        "parameters": [
+          {
+            "name": "startIndex",
+            "in": "query",
+            "description": "Index of the first group to be returned",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "count",
+            "in": "query",
+            "description": "Number of groups to be returned",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "List of groups",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ListGroupsResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request"
+          }
+        },
+        "security": [
+          {
+            "BearerAuth": []
+          }
+        ]
+      },
+      "post": {
+        "tags": ["SCIM 2.0 API"],
+        "summary": "Create Group",
+        "description": "Create a new group, checking if the group already exists before adding",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GroupCreateRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Group created successfully",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Group"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request"
+          }
+        },
+        "security": [
+          {
+            "BearerAuth": []
+          }
+        ]
+      }
+    },
+    "/scim/v2/Groups/{id}": {
+      "get": {
+        "tags": ["SCIM 2.0 API"],
+        "summary": "Retrieve Group",
+        "description": "Retrieve a Group by ID",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "Group ID",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Group retrieved successfully",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Group"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request"
+          }
+        },
+        "security": [
+          {
+            "BearerAuth": []
+          }
+        ]
+      },
+      "patch": {
+        "tags": ["SCIM 2.0 API"],
+        "summary": "Update Group",
+        "description": "Update an existing Group by adding or removing members",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "Group ID",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GroupUpdateRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Group updated successfully",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Group"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request"
+          }
+        },
+        "security": [
+          {
+            "BearerAuth": []
+          }
+        ]
+      },
+      "delete": {
+        "tags": ["SCIM 2.0 API"],
+        "summary": "Delete Group",
+        "description": "Delete a Group by ID",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "Group ID",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Group deleted successfully"
+          },
+          "400": {
+            "description": "Bad Request"
+          }
+        },
+        "security": [
+          {
+            "BearerAuth": []
+          }
+        ]
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "ListUsersResponse": {
+        "type": "object",
+        "properties": {
+          "schemas": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "startIndex": {
+            "type": "integer",
+            "format": "int32",
+            "description": "The starting index of the returned users"
+          },
+          "itemsPerPage": {
+            "type": "integer",
+            "format": "int32",
+            "description": "The number of users returned per page"
+          },
+          "totalResults": {
+            "type": "integer",
+            "format": "int32",
+            "description": "The total number of results available"
+          },
+          "Resources": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/User"
+            },
+            "description": "The list of user resources"
+          }
+        }
+      },
+      "UserCreateRequest": {
+        "type": "object",
+        "properties": {
+          "userName": {
+            "type": "string",
+            "description": "The username of the user"
+          },
+          "active": {
+            "type": "boolean",
+            "description": "Indicates if the user is active"
+          },
+          "emails": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Email"
+            },
+            "description": "The email addresses associated with the user"
+          },
+          "profileUrl": {
+            "type": "string",
+            "description": "The profile URL of the user"
+          }
+        }
+      },
+      "UserPatchRequest": {
+        "type": "object",
+        "properties": {
+          "Operations": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Operation"
+            },
+            "description": "The list of operations to be applied"
+          }
+        }
+      },
+      "User": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "The ID of the user"
+          },
+          "userName": {
+            "type": "string",
+            "description": "The username of the user"
+          },
+          "active": {
+            "type": "boolean",
+            "description": "Indicates if the user is active"
+          },
+          "emails": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Email"
+            },
+            "description": "The email addresses associated with the user"
+          },
+          "profileUrl": {
+            "type": "string",
+            "description": "The profile URL of the user"
+          }
+        }
+      },
+      "ListGroupsResponse": {
+        "type": "object",
+        "properties": {
+          "schemas": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "startIndex": {
+            "type": "integer",
+            "format": "int32",
+            "description": "The starting index of the returned groups"
+          },
+          "itemsPerPage": {
+            "type": "integer",
+            "format": "int32",
+            "description": "The number of groups returned per page"
+          },
+          "totalResults": {
+            "type": "integer",
+            "format": "int32",
+            "description": "The total number of results available"
+          },
+          "Resources": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Group"
+            },
+            "description": "The list of group resources"
+          }
+        }
+      },
+      "GroupCreateRequest": {
+        "type": "object",
+        "properties": {
+          "displayName": {
+            "type": "string",
+            "description": "The display name of the group"
+          },
+          "members": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Member"
+            },
+            "description": "The members of the group"
+          }
+        }
+      },
+      "GroupUpdateRequest": {
+        "type": "object",
+        "properties": {
+          "displayName": {
+            "type": "string",
+            "description": "The display name of the group"
+          },
+          "members": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Member"
+            },
+            "description": "The members of the group"
+          }
+        }
+      },
+      "Group": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "The ID of the group"
+          },
+          "displayName": {
+            "type": "string",
+            "description": "The display name of the group"
+          },
+          "members": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Member"
+            },
+            "description": "The members of the group"
+          }
+        }
+      },
+      "Email": {
+        "type": "object",
+        "properties": {
+          "value": {
+            "type": "string",
+            "description": "The email address"
+          },
+          "primary": {
+            "type": "boolean",
+            "description": "Indicates if the email is the primary address"
+          }
+        }
+      },
+      "Member": {
+        "type": "object",
+        "properties": {
+          "value": {
+            "type": "string",
+            "description": "The value of the member"
+          },
+          "display": {
+            "type": "string",
+            "description": "The display name of the member"
+          }
+        }
+      },
+      "Operation": {
+        "type": "object",
+        "properties": {
+          "op": {
+            "type": "string",
+            "enum": ["replace"],
+            "description": "The operation type"
+          },
+          "value": {
+            "$ref": "#/components/schemas/Member",
+            "description": "The value to be replaced"
+          }
+        }
+      }
+    },
+    "securitySchemes": {
+      "BearerAuth": {
+        "type": "http",
+        "scheme": "bearer",
+        "bearerFormat": "JWT"
+      }
+    }
+  },
+  "tags": [
+    { "name": "SCIM 2.0 API" }
+  ]
+}
