@@ -251,12 +251,12 @@ const config = {
           //   type: 'search',
           //   position: 'right',
           // },
-          {
-            to: 'https://github.com/rahul-gharat/dronahq-docs',
-            position: 'right',
-            className: 'header-github-link',
-            'aria-label': 'GitHub repository',
-          },
+          // {
+          //   to: 'https://github.com/rahul-gharat/dronahq-docs',
+          //   position: 'right',
+          //   className: 'header-github-link',
+          //   'aria-label': 'GitHub repository',
+          // },
           {
             to: 'https://studio.dronahq.com/login.aspx',
             label: 'Login',
