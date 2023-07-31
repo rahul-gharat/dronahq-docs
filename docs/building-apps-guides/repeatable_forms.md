@@ -24,19 +24,19 @@ DronaHQ's Form Repeat Control is a powerful feature that enables users to create
 ## Key Features
 
 ### Repeatable Form Section
-Users can identify a specific section of the form that they want to repeat, such as a set of questions, a group of fields, or a particular data entry block.
+- Users can identify a specific section of the form that they want to repeat, such as a set of questions, a group of fields, or a particular data entry block.
 
 ### Add and Remove Functionality
-The Form Repeat Control provides buttons or icons to add or remove repetitions of the identified form section dynamically.
+- The Form Repeat Control provides buttons or icons to add or remove repetitions of the identified form section dynamically.
 
 ### Data Binding
-Each repetition of the form section is bound to a separate data source, ensuring that the captured data is stored and processed accurately.
+- Each repetition of the form section is bound to a separate data source, ensuring that the captured data is stored and processed accurately.
 
 ### Validation and Error Handling
-Repeatable Forms support validation and error handling for each repetition, ensuring that data entered meets the required criteria.
+- Repeatable Forms support validation and error handling for each repetition, ensuring that data entered meets the required criteria.
 
 ### Responsive Design
-The Form Repeat Control is designed to be responsive, adapting to different screen sizes and orientations, ensuring a consistent user experience across devices.
+- The Form Repeat Control is designed to be responsive, adapting to different screen sizes and orientations, ensuring a consistent user experience across devices.
 
 ## Customizations in Form repeat control
 
@@ -83,16 +83,16 @@ Let's consider the same task management app but now we already know that we have
 So this can be achieved by using the `data section` of the form repeat control. we can bind the same JSON that was generated after form feeling as data. 
 ```json
 [
-    {		
-        "projectname": "abc",		
-        "projectdescription": "this is first project",		
-        "projectduedate": 1690675200000	
-    },	
-    {		
-        "projectname": "xyz",		
-        "projectdescription": "this is second project",		
-        "projectduedate": 1693353600000	
-    }
+  {		
+    "projectname": "abc",		
+    "projectdescription": "this is first project",		
+    "projectduedate": 1690675200000	
+  },	
+  {		
+    "projectname": "xyz",		
+    "projectdescription": "this is second project",		
+    "projectduedate": 1693353600000	
+  }
 ]
 ```
 After this to bind this data to individual controls with accurate values we have to set formulas of this child controls as 
