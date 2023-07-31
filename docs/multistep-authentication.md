@@ -19,9 +19,9 @@ import GenerateCardGallery from '@site/src/components/GenerateCardGallery';
 
 - DronaHQ Mobile App must be above `8.3.0` and above version for using multi-step `OAuth-type > Non-shared credentials connector`.
 
-## Configuring the third-party API connector
+## Configuring REST API connector
 
-To add third-party connectors, under `DronaHQ > Connectors`, click `(+) Connector`.
+To add third-party connectors, under `DronaHQ > Connectors`, click `(+) Connector > Connector`.
 
 <figure>
   <Thumbnail src="/img/connecting-datasource/restapi-inlist.png" alt="REST API connector" width='70%'/>
