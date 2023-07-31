@@ -6,7 +6,7 @@ title: Markdown Editor
 import Image from '@site/src/components/Image'; import VersionedLink from '@site/src/components/VersionedLink'; import
 Thumbnail from '@site/src/components/Thumbnail';
 
-The DronaHQ Studio offers a control called Markdown Editor, which enables the composition of formatted lightweight
+The DronaHQ offers a control called Markdown Editor, which enables the composition of formatted lightweight
 text. Markdown is a straightforward syntax used to format text as headers, lists, boldface, and more.
 
 With the Markdown Editor, you can easily write markdown syntax and preview the output if desired. The control generates
@@ -82,6 +82,6 @@ To know more about writing markdown, you can view the [markdown guide](https://w
 
 | Trigger                   | Description                                                                             |
 |--------------------------|-----------------------------------------------------------------------------------------|
-| value_change                | Occurs when there is a modification in the Typeahead control's value. To control the frequency or speed of the change event, you can utilize the `debounce` property associated with the control. |
+| value_change                | Occurs when there is a modification in the respective control's value. To control the frequency or speed of the change event, you can utilize the `debounce` property associated with the control. |
 
 

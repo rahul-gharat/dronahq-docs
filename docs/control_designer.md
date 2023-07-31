@@ -20,7 +20,7 @@ To create Designer control within the DronaHQ platform, you will need to navigat
 Once you open the control desgner you will see list off all controls that you created on designer, click on the first card with plus icon to create a new control. once you click on that card you will see a form with few input fields as visible in the image below.
 
 <figure>
-  <Thumbnail src="/img/designer/add-new-control-designer.png" alt="Add new Designer Control" />
+  <Thumbnail src="/img/advanced-concepts/designer/add-new-control-designer.png" alt="Add new Designer Control" />
   <figcaption align = "center"><i>Add new Designer control</i></figcaption>
 </figure>
 
@@ -36,7 +36,7 @@ Once you open the control desgner you will see list off all controls that you cr
 once you field all the field you can press add and new control will be created and you will  be navigated to the control building canvas.
 
 <figure>
-  <Thumbnail src="/img/designer/control-builder-canvas.png" alt="Conrol builder canvas" />
+  <Thumbnail src="/img/advanced-concepts/designer/control-builder-canvas.png" alt="Conrol builder canvas" />
   <figcaption align = "center"><i>control builder canvas</i></figcaption>
 </figure>
 
@@ -63,7 +63,7 @@ Above table explains the basic layout the the control builder canvas. let us und
 
 Blocks are components that are used to create the ui of control they are mainly divided in two section:
 <figure>
-  <Thumbnail src="/img/designer/block-designer.png" alt="Blocks" width="150px"/>
+  <Thumbnail src="/img/advanced-concepts/designer/block-designer.png" alt="Blocks" width="150px"/>
 </figure>
 Layout section has components that allows you to give structure to your control they have predefiend styles applied to them.
 
@@ -73,7 +73,7 @@ Basic section has components that are used to define content of your control lik
 Style manager allows you to apply css styles to blocks components through and interactive ui interface as potraied in the below image.
 
 <figure>
-  <Thumbnail src="/img/designer/styles-designer.png" alt="Blocks" width="200px"/>
+  <Thumbnail src="/img/advanced-concepts/designer/styles-designer.png" alt="Blocks" width="200px"/>
 </figure>
 
 you will get almost all the css property available here and we have added few extra custom properties like State. State allows you to configre differnet ui states of your control and then change those state of your control in studio using rules for example you can create a custom info control which wil have diffent states like warning, error, and info these states can be swithced uing rules on builder at runtime resulting id diffent ui in same control.
@@ -83,5 +83,5 @@ you will get almost all the css property available here and we have added few ex
 Mappoing Manager allows you to configure you control's block components for data binding and Actions to trigger action flows in studio 
 
 <figure>
-  <Thumbnail src="/img/designer/mapping-designer.png" alt="Blocks" width="200px"/>
+  <Thumbnail src="/img/advanced-concepts/designer/mapping-designer.png" alt="Blocks" width="200px"/>
 </figure>

@@ -51,7 +51,7 @@ To display static options in the Breadcrumbs control, you can use the Bind Data 
 | Selected Item Properties  | Enables the user to apply a distinct set of styling to the active, selected, or current trail of the navigation page for emphasis.     |
 | Separator Properties      | Enables the user to apply styling to the separator icons between each navigation state, allowing customization of the visual appearance. |
 
-### Data Mapping
+**Data Mapping**
 To bind data to the breadcrumbs control, you can map the distinctive properties of the data to their respective columns. The breadcrumbs control expects data in a specific format, so mapping the properties accordingly ensures a proper connection between the data and the control.
 
 | Property     | Description                                                      |
@@ -74,6 +74,6 @@ The outputs from the Breadcrumbs control, represented by the placeholder `{{brea
 ## Events
 
 
-| Property     | Description                                                                                                                              |
+| Trigger     | Description                                                                                                                              |
 |--------------|------------------------------------------------------------------------------------------------------------------------------------------|
 | value_select | Occurs when there is a change in the value of the respective control, typically triggered by selecting another option or inputting a new value. |

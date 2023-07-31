@@ -131,10 +131,10 @@ You can connect to databases by using environment variables, the raw connection 
 ## Tabs Usage
 
 <Tabs  groupId="user-preference">
-  <TabItem value="apple" label="Apple">
+  <TabItem value="content" label="Content">
     This is an apple 🍎
   </TabItem>
-  <TabItem value="orange" label="Orange">
+  <TabItem value="layout" label="Orange">
     This is an orange 🍊
   </TabItem>
   <TabItem value="banana" label="Banana">
@@ -161,7 +161,10 @@ sequenceDiagram
 	mermaid->>mermaidAPI: init
   ```
 
-## Card with Link
+## Cards with Link
+
+ ### Single Link Card
+
 <div className="gallery">
   <div className="card">
       <div className="card-header">
@@ -193,6 +196,32 @@ sequenceDiagram
     </div>
   </div>
   
+
+### Multiple Links Card
+
+<div class="containerGridSampleApp">
+   <div class=" containerColumnSampleApp columnGrid column-one">
+      <div class="containerCol">
+      <Image class="containerImage" src="/img/widget-icon.png" alt="widgets"/>
+      </div> 
+      <p><strong>Reference docs</strong></p><p><a href="/reference/widgets">Widgets<br/></a><a href="/reference/datasources">Datasources</a><br/><a href="/reference/DronaHQ-framework">Framework</a></p>  
+   </div>
+   
+   <div class="containerColumnSampleApp columnGrid column-two">
+      <div class="containerCol">
+      <Image class="containerImage" src="/img/framework-icon.png" alt="framework"/>
+      </div> 
+      <p><strong>Useful features</strong></p><p><a href="/advanced-concepts/version-control-with-git">Version control using Git</a><br/><a href="/getting-started/setup/instance-configuration/authentication">Single sign-on (SSO)</a><br/><a href="/advanced-concepts/granular-access-control">Granular access control</a></p>
+   </div>
+
+   <div class=" containerColumnSampleApp columnGrid column-three">
+  <div class="containerCol">
+         <Image class="containerImage" src="/img/support.png" alt="get help"/>
+      </div> 
+    <p><strong>Get help</strong></p><p><a href="/learning-and-resources/sample-apps">Sample apps</a><br/><a href="/learning-and-resources/integrations">Third-party integration</a><br/><a href="/help-and-support/troubleshooting-guide">Troubleshooting</a></p>
+   </div>
+  
+</div>
 
 ## Table
 
