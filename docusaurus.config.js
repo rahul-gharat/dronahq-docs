@@ -59,11 +59,11 @@ const config = {
           // Remove this to remove the "edit this page" links.
           // editUrl: 'https://github.com/rahul-gharat/dronahq-docs/tree/main/',
           routeBasePath: '/',
-          editUrl: ({ docPath }) => `https://github.com/rahul-gharat/dronahq-docs/blob/main/docs/${docPath}`,
+          // editUrl: ({ docPath }) => `https://github.com/rahul-gharat/dronahq-docs/blob/main/docs/${docPath}`,
           docItemComponent: require.resolve('./src/components/CustomDocItem/index.tsx'),
           exclude: ['**/*.wip'],
           breadcrumbs: true,
-          showLastUpdateAuthor: true,
+          showLastUpdateAuthor: false,
           showLastUpdateTime: true,
           // lastVersion: 'current',
           // versions: {
