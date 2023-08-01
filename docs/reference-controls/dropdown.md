@@ -10,8 +10,8 @@ The Dropdown control enables users to make a selection from a predefined list of
 
 
 <figure>
-  <Thumbnail src="/img/reference/controls/dropdown/preview.png" alt="Dropdown" />
-  <figcaption align = "center"><i>Dropdown</i></figcaption>
+  <Thumbnail src="/img/reference/controls/dropdown/preview.png" alt="Tray Dropdown" />
+  <figcaption align = "center"><i>Tray Dropdown</i></figcaption>
 </figure>
 
 ## Binding Data Options
@@ -79,6 +79,11 @@ If you want to have a default selected option in the Dropdown control, such as "
 Remember to include the necessary keys and values based on the Dropdown control's properties and the specific data you want to display.
 :::
 
+<figure>
+  <Thumbnail src="/img/reference/controls/dropdown/example.jpg" alt="Classic Tray Dropdown" />
+  <figcaption align = "center"><i>Classic - Dropdown</i></figcaption>
+</figure>
+
 
 ## Properties
 
@@ -112,3 +117,5 @@ The outputs from the Dropdown control, represented by the placeholder `{{dropdow
 | Trigger     | Description                                                                                                                              |
 |--------------|------------------------------------------------------------------------------------------------------------------------------------------|
 | value_select | Occurs when there is a change in the value of the respective control, typically triggered by selecting another option or inputting a new value. |
+
+

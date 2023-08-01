@@ -117,7 +117,6 @@ Before you can set the values for the X-axis and Y-axis you need to make sure th
 
 Aggregation Method allows you to perform various calculations on specific individual columns. Options include Sum, Count, Average, Median, Mode, Standard Deviation, Min Value, Max Value, First Value, and Last Value.
 
-Here's the information presented in a table format:
 
 | Aggregation Method   | Description                                                            |
 |----------------------|------------------------------------------------------------------------|
