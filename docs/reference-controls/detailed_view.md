@@ -45,7 +45,6 @@ By using the Bind Data option, you can dynamically display the data from the arr
 
 ## Properties
 
-Apologies for the oversight. Here's the corrected table without empty cells:
 
 | Property           | Description                                                                                                     |
 |--------------------|-----------------------------------------------------------------------------------------------------------------|

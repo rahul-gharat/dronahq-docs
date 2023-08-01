@@ -44,7 +44,6 @@ In this example, the `Value` field is bound to the static value `72,` and the `D
 
 ## Properties
 
-Certainly! Here's the table with the specified properties for Display Info:
 
 | Property               | Description                                                                                         |
 |------------------------|-----------------------------------------------------------------------------------------------------|
