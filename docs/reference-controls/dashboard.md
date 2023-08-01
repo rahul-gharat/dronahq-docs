@@ -3,8 +3,9 @@ sidebar_position: 1
 title: Dashboard
 ---
 
-import Image from '@site/src/components/Image'; import VersionedLink from '@site/src/components/VersionedLink'; import
-Thumbnail from '@site/src/components/Thumbnail';
+import Image from '@site/src/components/Image';
+import VersionedLink from '@site/src/components/VersionedLink';
+import Thumbnail from '@site/src/components/Thumbnail';
 
 The Dashboard Control is a composite control used to visually present data with tags and a progress bar. It's commonly employed for various scenarios, such as showing daily sales of a store, overall earnings, and ratings for a restaurant, or displaying aggregated data from different sources like Trivago. It allows users to see ratings represented as tags and track progress with a progress bar for specific parameters.
 

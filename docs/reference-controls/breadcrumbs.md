@@ -3,9 +3,9 @@ sidebar_position: 1
 title: Breadcrumbs
 ---
 
-import Image from '@site/src/components/Image'; import VersionedLink from '@site/src/components/VersionedLink'; import
-Thumbnail from '@site/src/components/Thumbnail';
-
+import Image from '@site/src/components/Image';
+import VersionedLink from '@site/src/components/VersionedLink';
+import Thumbnail from '@site/src/components/Thumbnail';
 
 Breadcrumbs serve as a navigational aid that visually represents the categorization or path a user has taken to reach the current page. You can keep track of the page from the provided graphical element on the user interface.
 

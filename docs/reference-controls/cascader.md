@@ -3,14 +3,13 @@ sidebar_position: 1
 title: Cascader
 ---
 
-import Image from '@site/src/components/Image'; import VersionedLink from '@site/src/components/VersionedLink'; import
-Thumbnail from '@site/src/components/Thumbnail';
-
+import Image from '@site/src/components/Image';
+import VersionedLink from '@site/src/components/VersionedLink';
+import Thumbnail from '@site/src/components/Thumbnail';
 
 The Cascader Control serves the purpose of defining the exact location or path of an element. By utilizing parent-child relationships, it enables users to navigate through the multi-level tree and determine the endpoint of the path.
 
 This control combines the functionality of a select and input field, allowing users to select values from the tree structure. It also supports direct input for searching values and includes validation for ensuring required fields are filled.
-
 
 <figure>
   <Thumbnail src="/img/reference/controls/cascader/preview.png" alt="Cascader" />

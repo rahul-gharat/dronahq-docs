@@ -3,8 +3,9 @@ sidebar_position: 1
 title: Date Picker
 ---
 
-import Image from '@site/src/components/Image'; import VersionedLink from '@site/src/components/VersionedLink'; import
-Thumbnail from '@site/src/components/Thumbnail';
+import Image from '@site/src/components/Image';
+import VersionedLink from '@site/src/components/VersionedLink';
+import Thumbnail from '@site/src/components/Thumbnail';
 
 A Date Picker control is used to accept dates into a microapp by selecting a date from a calendar widget. You can set User Device’s date as a default date or can keep the Date picker empty when the date control is displayed to the user. Date picker saves the Date in the Unix epoch time format. For example, it can be used for various purposes like setting due dates for tasks or Start and End dates for an event.
 

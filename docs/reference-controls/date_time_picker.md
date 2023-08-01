@@ -3,8 +3,9 @@ sidebar_position: 1
 title: Date Time Picker
 ---
 
-import Image from '@site/src/components/Image'; import VersionedLink from '@site/src/components/VersionedLink'; import
-Thumbnail from '@site/src/components/Thumbnail';
+import Image from '@site/src/components/Image';
+import VersionedLink from '@site/src/components/VersionedLink';
+import Thumbnail from '@site/src/components/Thumbnail';
 
 Date & Time Picker control is used to accept date and time into a microapp by selecting them from a calendar and clock widget respectively. You can set the user device’s date and time as a default or can keep the picker empty when the date and time control is displayed to the user. Date & Time picker saves the Date & Time in Unix epoch time format. It can be used for various purposes like accepting appointments.
 
@@ -12,6 +13,7 @@ Date & Time Picker control is used to accept date and time into a microapp by se
   <Thumbnail src="/img/reference/controls/date-time-picker/preview.jpeg" alt="Date Time Picker" />
   <figcaption align = "center"><i>Date Time Picker</i></figcaption>
 </figure>
+
 
 ## Binding Data Options
 

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import ReactDOM from 'react-dom';
 import Link from '@docusaurus/Link';
 import useBaseUrl from '@docusaurus/useBaseUrl';
-import ContributionPointer from './ContributionPointer';
+// import ContributionPointer from './ContributionPointer';
 import GithubIcon from '@site/static/icons/github.svg';
 import TwitterIcon from '@site/static/icons/twitter.svg';
 import DiscordIcon from '@site/static/icons/discord.svg';
@@ -25,7 +25,7 @@ const CustomFooter = () => {
     editMetaRow.style.position = 'relative';
     const div = document.createElement('div');
     editMetaRow.appendChild(div);
-    ReactDOM.render(<ContributionPointer element={element} />, div);
+    // ReactDOM.render(<ContributionPointer element={element} />, div);
   }, [element]);
 
   return (

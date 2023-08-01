@@ -3,8 +3,9 @@ sidebar_position: 1
 title: Timeline
 ---
 
-import Image from '@site/src/components/Image'; import VersionedLink from '@site/src/components/VersionedLink'; import
-Thumbnail from '@site/src/components/Thumbnail';
+import Image from '@site/src/components/Image';
+import VersionedLink from '@site/src/components/VersionedLink';
+import Thumbnail from '@site/src/components/Thumbnail';
 
 Timeline control consists of a vertical list, to display events along with date and time. It is a custom control for displaying list data in a timeline.
 

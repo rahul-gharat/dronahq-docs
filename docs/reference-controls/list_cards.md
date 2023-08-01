@@ -3,8 +3,9 @@ sidebar_position: 1
 title: List - Cards
 ---
 
-import Image from '@site/src/components/Image'; import VersionedLink from '@site/src/components/VersionedLink'; import
-Thumbnail from '@site/src/components/Thumbnail';
+import Image from '@site/src/components/Image';
+import VersionedLink from '@site/src/components/VersionedLink';
+import Thumbnail from '@site/src/components/Thumbnail';
 
 Various card types are designed to present tabulated data in layouts according to their specific purposes. For instance, the News Card is optimized for news feeds, displaying headlines in a reader-friendly format. On the other hand, the Single User Card provides lists such as contacts, employees, and task lists, offering a detailed view tailored to individual users. While each card may have unique attributes, they generally share common features, ensuring a consistent user experience.
 

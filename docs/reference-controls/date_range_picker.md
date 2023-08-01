@@ -3,8 +3,9 @@ sidebar_position: 1
 title: Date Range Picker
 ---
 
-import Image from '@site/src/components/Image'; import VersionedLink from '@site/src/components/VersionedLink'; import
-Thumbnail from '@site/src/components/Thumbnail';
+import Image from '@site/src/components/Image';
+import VersionedLink from '@site/src/components/VersionedLink';
+import Thumbnail from '@site/src/components/Thumbnail';
 
 The Date Range Picker control in DronaHQ is a composite control that provides two outputs: the start date and end date.
 It allows users to select a range of dates from a calendar widget in the app. This control offers several properties

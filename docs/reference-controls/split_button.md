@@ -3,8 +3,9 @@ sidebar_position: 1
 title: Split Button
 ---
 
-import Image from '@site/src/components/Image'; import VersionedLink from '@site/src/components/VersionedLink'; import
-Thumbnail from '@site/src/components/Thumbnail';
+import Image from '@site/src/components/Image';
+import VersionedLink from '@site/src/components/VersionedLink';
+import Thumbnail from '@site/src/components/Thumbnail';
 
 The Split Button control is a versatile dropdown menu that enables users to trigger queries and perform various actions. It supports manual configuration or mapped evaluation of options, and provides options for handling loading and disabled states. The Split Button control also offers solid and outline styles for customization, allowing for a visually appealing and interactive user experience.
 

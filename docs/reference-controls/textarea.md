@@ -3,8 +3,9 @@ sidebar_position: 1
 title: Textarea
 ---
 
-import Image from '@site/src/components/Image'; import VersionedLink from '@site/src/components/VersionedLink'; import
-Thumbnail from '@site/src/components/Thumbnail';
+import Image from '@site/src/components/Image';
+import VersionedLink from '@site/src/components/VersionedLink';
+import Thumbnail from '@site/src/components/Thumbnail';
 
 The Text Area control lets the maker accept multiple lines of text in a single field. It can hold an unlimited number of characters, and the text renders in a fixed-width font. 
 

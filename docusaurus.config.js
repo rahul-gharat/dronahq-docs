@@ -12,14 +12,14 @@ const config = {
     'Low code toolkit for developers to quickly build internal tools, digital journeys, operational apps on top of any data source or APIs.',
   favicon: 'img/dronahq-logo-32x32.png',
   // Set the production url of your site here
-  url: 'https://rahul-gharat.github.io',
+  url: 'https://dronahq.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/dronahq-docs/',
+  baseUrl: '/',
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'rahul-gharat', // Usually your GitHub org/user name.
-  projectName: 'dronahq-docs', // Usually your repo name.
+  organizationName: 'dronahq', // Usually your GitHub org/user name.
+  projectName: 'DronaHQDocs', // Usually your repo name.
   onBrokenLinks: 'warn', // 'throw',
   onBrokenMarkdownLinks: 'warn',
   trailingSlash: true,
@@ -50,20 +50,22 @@ const config = {
   // },
   presets: [
     [
-      'classic',
-      /** @type {import('@docusaurus/preset-classic').Options} */
+      // 'classic',
+      // /** @type {import('@docusaurus/preset-classic').Options} */
+      "docusaurus-preset-openapi",
+      /** @type {import('docusaurus-preset-openapi').Options} */
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          // editUrl: 'https://github.com/rahul-gharat/dronahq-docs/tree/main/',
+          // editUrl: 'https://github.com/dronahq/dronahq-docs/tree/main/',
           routeBasePath: '/',
-          editUrl: ({ docPath }) => `https://github.com/rahul-gharat/dronahq-docs/blob/main/docs/${docPath}`,
+          // editUrl: ({ docPath }) => `https://github.com/dronahq/dronahq-docs/blob/main/docs/${docPath}`,
           docItemComponent: require.resolve('./src/components/CustomDocItem/index.tsx'),
           exclude: ['**/*.wip'],
           breadcrumbs: true,
-          showLastUpdateAuthor: true,
+          showLastUpdateAuthor: false,
           showLastUpdateTime: true,
           // lastVersion: 'current',
           // versions: {
@@ -74,11 +76,15 @@ const config = {
           //   },
           // },
         },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          // editUrl: 'https://github.com/rahul-gharat/dronahq-docs/tree/main/',
+        // blog: {
+        //   showReadingTime: true,
+        //   // Please change this to your repo.
+        //   // Remove this to remove the "edit this page" links.
+        //   // editUrl: 'https://github.com/dronahq/dronahq-docs/tree/main/',
+        // },
+        api: {
+          path: "openapi.json",
+          routeBasePath: "/apidocs",
         },
         theme: {
           customCss: require.resolve('./src/css/custom.scss'),
@@ -88,23 +94,23 @@ const config = {
   ],
   plugins: [
     'docusaurus-plugin-sass',
-    [
-      'content-docs',
-      /** @type {import('@docusaurus/plugin-content-docs').Options} */
-      ({
-        id: 'wiki',
-        path: 'wiki',
-        routeBasePath: 'wiki',
-        editUrl: ({ docPath }) => `https://github.com/rahul-gharat/dronahq-docs/blob/main/wiki/${docPath}`,
-        // editCurrentVersion: true,
-        docItemComponent: require.resolve('./src/components/CustomDocItem/CustomDocItemWiki.tsx'),
-        // disableVersioning: true,
-        breadcrumbs: false,
-        sidebarPath: require.resolve('./sidebarsWiki.js'),
-        showLastUpdateAuthor: true,
-        showLastUpdateTime: true,
-      }),
-    ],
+    // [
+    //   'content-docs',
+    //   /** @type {import('@docusaurus/plugin-content-docs').Options} */
+    //   ({
+    //     id: 'wiki',
+    //     path: 'wiki',
+    //     routeBasePath: 'wiki',
+    //     editUrl: ({ docPath }) => `https://github.com/rahul-gharat/dronahq-docs/blob/main/wiki/${docPath}`,
+    //     // editCurrentVersion: true,
+    //     docItemComponent: require.resolve('./src/components/CustomDocItem/CustomDocItemWiki.tsx'),
+    //     // disableVersioning: true,
+    //     breadcrumbs: false,
+    //     sidebarPath: require.resolve('./sidebarsWiki.js'),
+    //     showLastUpdateAuthor: true,
+    //     showLastUpdateTime: true,
+    //   }),
+    // ],
     // [
     //   path.resolve(__dirname, './src/plugins/docusaurus-plugin-segment-analytics'),
     //   {
@@ -124,6 +130,7 @@ const config = {
     //     trackingID: 'GTM-PF5MQ2Z',
     //   },
     // ],
+    require.resolve("@cmfcmf/docusaurus-search-local")
   ],
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
@@ -149,12 +156,12 @@ const config = {
       },
       // algolia: {
       //   // If Algolia did not provide you any appId, use 'BH4D9OD16A'
-      //   appId: 'NS6GBGYACO',
+      //   appId: '625PS6760U',
       //   // Public API key: it is safe to commit it
-      //   apiKey: '8f0f11e3241b59574c5dd32af09acdc8',
-      //   indexName: 'hasura-graphql',
+      //   apiKey: '2438e3bfa6fb5b1d747b190998233d9a',
+      //   indexName: 'dev_dronahq',
       //   // Optional: see doc section below
-      //   // contextualSearch: true,
+      //   contextualSearch: false,
       //   // Optional: Specify domains where the navigation should occur through window.location instead on history.push. Useful when our Algolia config crawls multiple documentation sites and we want to navigate with window.location.href to them.
       //   // externalUrlRegex: 'external\\.com|domain\\.com',
       //   // Optional: Algolia search parameters
@@ -213,6 +220,11 @@ const config = {
             label: "What's New",
             position: 'left',
           },
+          {
+            to: '/apidocs',
+            label: "API Docs",
+            position: 'left',
+          },
           // {
           //   to: '/latest/hasura-cloud/overview',
           //   label: 'Hasura Cloud',
@@ -240,11 +252,15 @@ const config = {
           //   type: 'search',
           //   position: 'right',
           // },
+          // {
+          //   to: 'https://github.com/rahul-gharat/dronahq-docs',
+          //   position: 'right',
+          //   className: 'header-github-link',
+          //   'aria-label': 'GitHub repository',
+          // },
           {
-            to: 'https://github.com/rahul-gharat/dronahq-docs',
+            type: 'search',
             position: 'right',
-            className: 'header-github-link',
-            'aria-label': 'GitHub repository',
           },
           {
             to: 'https://studio.dronahq.com/login.aspx',
