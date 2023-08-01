@@ -13,6 +13,7 @@ Date & Time Picker control is used to accept date and time into a microapp by se
   <figcaption align = "center"><i>Date Time Picker</i></figcaption>
 </figure>
 
+
 ## Binding Data Options
 
 There are different ways to bind data to the Date Time Picker control. You can provide both the date and time using static data options in either UNIX timestamp format or the JavaScript `Date` object format.
