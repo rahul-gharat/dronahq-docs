@@ -3,8 +3,9 @@ sidebar_position: 1
 title: Barcode
 ---
 
-import Image from '@site/src/components/Image'; import VersionedLink from '@site/src/components/VersionedLink'; import
-Thumbnail from '@site/src/components/Thumbnail';
+import Image from '@site/src/components/Image';
+import VersionedLink from '@site/src/components/VersionedLink';
+import Thumbnail from '@site/src/components/Thumbnail';
 
 The Barcode Control is an advanced control that enables barcode scanning for mobile apps. Using the device's camera, the control scans barcodes and fetches the related code text.
 

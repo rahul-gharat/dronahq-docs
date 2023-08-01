@@ -2,6 +2,7 @@
 sidebar_label: 'Multistep Authentication'
 sidebar_position: 61
 ---
+
 import Thumbnail from '@site/src/components/Thumbnail';
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -46,7 +47,7 @@ In the Authentication section, select `Multistep Authentication`.
   <figcaption align = "center"><i>Select Multistep Authentication</i></figcaption>
 </figure>
 
-## Configure Cookies settings <span style={{"font-size": "20px", "font-weight": "600", "opacity": ".7"}}>(optional)</span>
+## Configure Cookies settings (optional)
 
   In Multistep Authentication, there are two cookie settings available: `Forward All Cookies` throughout the process, and `Follow double submit cookie pattern`.
 
@@ -54,7 +55,7 @@ In the Authentication section, select `Multistep Authentication`.
 
   Cookie forwarding is an essential feature in DronaHQ's backend functioning for cookie-based authentication. When a client makes an initial API request, the API responds with a cookie containing an authentication token or session ID, which is retrieved from the response header and stored. DronaHQ then automatically includes and forwards this cookie as a header in all subsequent requests made to that API or connector, ensuring a seamless authentication process.
 
-  <figure>
+<figure>
   <Thumbnail src="/img/advanced-concepts/multistep-auth/forward-all-cookies.png" alt="Forward all cookies" width='70%'/>
   <figcaption align = "center"><i>Select Forward all cookies</i></figcaption>
 </figure>
@@ -65,7 +66,7 @@ In the Authentication section, select `Multistep Authentication`.
 
   Here's how the process works in DronaHQ: When a session is created from an API request, the received cookie, derived from the session ID, is set in the user's browser. Simultaneously, another cookie containing the CSRF (Cross-Site Request Forgery) token is set. When the user submits a secure form, the token is extracted from the cookie and placed as a hidden input field in the HTML. During server-side processing, the received token in the form parameter is validated against the cookie value, granting authorization for the intended action to be completed. This ensures that the request is legitimate and not susceptible to CSRF attacks.
 
- <figure>
+<figure>
   <Thumbnail src="/img/advanced-concepts/multistep-auth/double-submit-cookie.png" alt="Follow double submit cookie pattern" width='70%'/>
   <figcaption align = "center"><i>Select Follow double submit cookie pattern</i></figcaption>
 </figure>
@@ -192,7 +193,6 @@ After configuring the authentication steps, you can proceed by clicking on `Test
 <figure>
   <Image
     src='/img/advanced-concepts/multistep-auth/allow-clipboard.png'
-    style={{ width: "60%", height: "auto" }}
     alt='allow clipboard.'
   />
   <figcaption align='center'> <i>Allow clipboard</i> </figcaption>
@@ -273,7 +273,7 @@ To add an Request parameter, simply click on `+ Add parameter`.
     <figcaption align = "center"><i>Request Parameter</i></figcaption>
   </figure>
 
-### Configure Sign-In Type <span style={{"font-size": "20px", "font-weight": "600", "opacity": ".7"}}>(optional)</span>
+### Configure Sign-In Type (optional)
 
 This allows to set the authentication type for the resource API. `Sign-In Type` supports 
   - NTLM Authentication.

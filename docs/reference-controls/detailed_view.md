@@ -3,8 +3,9 @@ sidebar_position: 1
 title: Detail View
 ---
 
-import Image from '@site/src/components/Image'; import VersionedLink from '@site/src/components/VersionedLink'; import
-Thumbnail from '@site/src/components/Thumbnail';
+import Image from '@site/src/components/Image';
+import VersionedLink from '@site/src/components/VersionedLink';
+import Thumbnail from '@site/src/components/Thumbnail';
 
 The Detail View control serves the purpose of retrieving data from a sheet and presenting it in an elaborate format, showcasing all selected fields for each entry in the sheet.
 

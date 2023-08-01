@@ -3,8 +3,9 @@ sidebar_position: 1
 title: Nav Bar
 ---
 
-import Image from '@site/src/components/Image'; import VersionedLink from '@site/src/components/VersionedLink'; import
-Thumbnail from '@site/src/components/Thumbnail';
+import Image from '@site/src/components/Image';
+import VersionedLink from '@site/src/components/VersionedLink';
+import Thumbnail from '@site/src/components/Thumbnail';
 
 The Nav Bar Control is a navigational tool that provides users with a set of menu items. Each menu item in the control is equipped with trigger action functionality, allowing users to perform specific actions such as executing queries or navigating to other pages or screens.
 

@@ -3,9 +3,9 @@ sidebar_position: 1
 title: Advance Map
 ---
 
-import Image from '@site/src/components/Image'; import VersionedLink from '@site/src/components/VersionedLink'; import
-Thumbnail from '@site/src/components/Thumbnail';
-
+import Image from '@site/src/components/Image';
+import VersionedLink from '@site/src/components/VersionedLink';
+import Thumbnail from '@site/src/components/Thumbnail';
 
 The Advanced Map Control in DronaHQ allows users to search for and navigate to specific locations, as well as mark and store coordinates. It provides an interactive map interface for enhanced location-based functionality in your applications.
 

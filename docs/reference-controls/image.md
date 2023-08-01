@@ -3,8 +3,9 @@ sidebar_position: 1
 title: Image
 ---
 
-import Image from '@site/src/components/Image'; import VersionedLink from '@site/src/components/VersionedLink'; import
-Thumbnail from '@site/src/components/Thumbnail';
+import Image from '@site/src/components/Image';
+import VersionedLink from '@site/src/components/VersionedLink';
+import Thumbnail from '@site/src/components/Thumbnail';
 
 The Image control serves the purpose of showcasing images within a microapp. As a Media control, it is solely dedicated to viewing and displaying images, devoid of any involvement in submission tasks.
 

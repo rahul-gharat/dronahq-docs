@@ -3,8 +3,9 @@ sidebar_position: 1
 title: Time Picker
 ---
 
-import Image from '@site/src/components/Image'; import VersionedLink from '@site/src/components/VersionedLink'; import
-Thumbnail from '@site/src/components/Thumbnail';
+import Image from '@site/src/components/Image';
+import VersionedLink from '@site/src/components/VersionedLink';
+import Thumbnail from '@site/src/components/Thumbnail';
 
 The Time Picker control allows users to input the desired time in a microapp by selecting it from a clock widget. You have the flexibility to either set the user's device time as the default time or leave the Time Picker empty when presenting it to the user. This versatile control can serve multiple purposes, such as setting meeting times or making reservations.
 

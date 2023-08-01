@@ -3,8 +3,9 @@ sidebar_position: 1
 title: Image Select Bar
 ---
 
-import Image from '@site/src/components/Image'; import VersionedLink from '@site/src/components/VersionedLink'; import
-Thumbnail from '@site/src/components/Thumbnail';
+import Image from '@site/src/components/Image';
+import VersionedLink from '@site/src/components/VersionedLink';
+import Thumbnail from '@site/src/components/Thumbnail';
 
 The Image Select Bar Control is a type of Selection control that visually presents a list of options and retrieves the corresponding text for additional actions.
 
