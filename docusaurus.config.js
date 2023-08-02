@@ -7,11 +7,11 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 // var gitUser = 'rahul-gharat';
 // var gitRepo = 'dronahq-docs';
-// var siteurl = 'https://docs.rahulgharat.online';
+// var cname = 'docs.rahulgharat.online';
 
 var gitUser = 'dronahq';
 var gitRepo = 'DronaHQDocs';
-var siteurl = 'https://docs.dronahq.com';
+var cname = 'docs.dronahq.com';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -20,7 +20,7 @@ const config = {
     'Low code toolkit for developers to quickly build internal tools, digital journeys, operational apps on top of any data source or APIs.',
   favicon: 'img/dronahq-logo-32x32.png',
   // Set the production url of your site here
-  url: `${siteurl}`,
+  url: `https://${cname}`,
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
