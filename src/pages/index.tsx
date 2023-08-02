@@ -7,6 +7,9 @@ import poster from '@site/static/img/dronahq-drag-drop-builder.png';
 import VersionedLink from '@site/src/components/VersionedLink';
 import styles from './index.module.scss';
 
+import { Redirect } from '@docusaurus/router';
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
   return (
@@ -47,6 +50,9 @@ function HomepageHeader() {
 
 export default function Home(): JSX.Element {
   const { siteConfig } = useDocusaurusContext();
+
+  return <Redirect to={useBaseUrl("/introduction/")} />;
+
   return (
     <Layout
       title={siteConfig.title}
