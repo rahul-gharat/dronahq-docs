@@ -95,7 +95,7 @@ Enter form with below fields -
 5. Now, that testing is successful, you can click on the more option for above SSO configuration and click on `Activate` to make it live.
 
 <figure>
-  <Thumbnail src="/img/sso/guides/sso-dronahq-okta-oauth-active.png" alt="OAuth SSO Actives" />
+  <Thumbnail src="/img/sso/guides/sso-dronahq-okta-oauth-active.png" alt="OAuth SSO Active" />
   <figcaption align = "center"><i>OAuth SSO Active</i></figcaption>
 </figure>
 
