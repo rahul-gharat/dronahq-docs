@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import ReactDOM from 'react-dom';
 import Link from '@docusaurus/Link';
 import useBaseUrl from '@docusaurus/useBaseUrl';
-// import ContributionPointer from './ContributionPointer';
 import GithubIcon from '@site/static/icons/github.svg';
 import TwitterIcon from '@site/static/icons/twitter.svg';
 import DiscordIcon from '@site/static/icons/discord.svg';
@@ -20,12 +19,27 @@ const CustomFooter = () => {
   }, []);
 
   useEffect(() => {
-    const editMetaRow = document.querySelector('.theme-doc-footer-edit-meta-row > .col');
-    setElement(editMetaRow);
-    editMetaRow.style.position = 'relative';
-    const div = document.createElement('div');
-    editMetaRow.appendChild(div);
+
+
+    // const editMetaRow = document.querySelector('.theme-doc-footer-edit-meta-row > .col');
+    // setElement(editMetaRow);
+    // editMetaRow.style.position = 'relative';
+    // const div = document.createElement('div');
+    // editMetaRow.appendChild(div);
     // ReactDOM.render(<ContributionPointer element={element} />, div);
+
+    // try {
+    //   var nextButtonElem = document.querySelector('.pagination-nav__link.pagination-nav__link--next');
+    //   var nextButtonLabelElem =  nextButtonElem.querySelector('.pagination-nav__label');
+    //   var nextButtonLabel = nextButtonLabelElem.textContent;
+    //   // alert(nextButtonLabel);
+  
+    //   var headerElem = document.querySelector('.sidebar_heading[headertext="' + nextButtonLabel + '"]');
+  
+    //   var nextLink = headerElem.nextSibling.firstChild.href;
+    //   nextButtonElem.href = nextLink;
+  
+    // } catch (ex){}
   }, [element]);
 
   return (
@@ -37,7 +51,7 @@ const CustomFooter = () => {
       <div className={styles['copyright']}>{`© ${new Date().getFullYear()} Deltecs Infotech Pvt Ltd. All rights reserved`}</div>
       <div className={styles['footerSocialIconsWrapper']}>
         <div className={styles['socialBrands']}>
-          <Link href={'https://github.com/dronahq/docs-latest'} rel="noopener noreferrer" aria-label={'Github'}>
+          <Link href={'https://github.com/dronahq/self-hosted'} rel="noopener noreferrer" aria-label={'Github'}>
             <GithubIcon />
           </Link>
         </div>
