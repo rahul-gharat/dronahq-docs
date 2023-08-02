@@ -61,7 +61,7 @@ const CustomFooter = () => {
           </Link>
         </div>
         <div className={styles['socialBrands']}>
-          <Link href={'https://discord.com/invite/dronahq'} rel="noopener noreferrer" aria-label={'Discord'}>
+          <Link href={'https://discord.com/invite/QfN8yq4mqM'} rel="noopener noreferrer" aria-label={'Discord'}>
             <DiscordIcon />
           </Link>
         </div>

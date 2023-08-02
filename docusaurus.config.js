@@ -174,7 +174,7 @@ const config = {
           alt: 'DronaHQ',
           src: 'img/dronahq-name-logo-light.svg',
           srcDark: 'img/dronahq-name-logo-dark.svg',
-          href: '/',
+          href: 'https://dronahq.com',
         },
         items: [
           // {
