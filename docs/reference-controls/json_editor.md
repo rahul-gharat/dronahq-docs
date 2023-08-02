@@ -13,7 +13,7 @@ The JSON Editor control allows you to visualize and manipulate JSON text or file
 The JSON Editor is particularly useful when you need to inspect and modify JSON data from files, such as in applications designed for online courses. It enables users to examine predefined sample code or code they are experimenting with independently.
 
 <figure>
-  <Thumbnail src="/img/reference/controls/json-editor/preview.jpg" alt="JSON viewer" />
+  <Thumbnail src="/img/reference/controls/json-editor/preview.jpeg" alt="JSON viewer" />
   <figcaption align = "center"><i>JSON viewer</i></figcaption>
 </figure>
 
