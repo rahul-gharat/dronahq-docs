@@ -5,6 +5,14 @@ const path = require('path');
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
+// var gitUser = 'rahul-gharat';
+// var gitRepo = 'dronahq-docs';
+// var cname = 'docs.rahulgharat.online';
+
+var gitUser = 'dronahq';
+var gitRepo = 'DronaHQDocs';
+var cname = 'docs.dronahq.com';
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Build stunning internal tools, blazing fast',
@@ -12,14 +20,14 @@ const config = {
     'Low code toolkit for developers to quickly build internal tools, digital journeys, operational apps on top of any data source or APIs.',
   favicon: 'img/dronahq-logo-32x32.png',
   // Set the production url of your site here
-  url: 'https://dronahq.github.io',
+  url: `https://${cname}`,
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'dronahq', // Usually your GitHub org/user name.
-  projectName: 'DronaHQDocs', // Usually your repo name.
+  organizationName: `${gitUser}`, // Usually your GitHub org/user name.
+  projectName: `${gitRepo}`, // Usually your repo name.
   onBrokenLinks: 'warn', // 'throw',
   onBrokenMarkdownLinks: 'warn',
   trailingSlash: true,
@@ -59,9 +67,9 @@ const config = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          // editUrl: 'https://github.com/dronahq/dronahq-docs/tree/main/',
+          // editUrl: `https://github.com/${gitUser}/${gitRepo}/tree/main/`,
           routeBasePath: '/',
-          // editUrl: ({ docPath }) => `https://github.com/dronahq/dronahq-docs/blob/main/docs/${docPath}`,
+          // editUrl: ({ docPath }) => `https://github.com/${gitUser}/${gitRepo}/blob/main/docs/${docPath}`,
           docItemComponent: require.resolve('./src/components/CustomDocItem/index.tsx'),
           exclude: ['**/*.wip'],
           breadcrumbs: true,
@@ -77,10 +85,10 @@ const config = {
           // },
         },
         // blog: {
-        //   showReadingTime: true,
+        //   // showReadingTime: true,
         //   // Please change this to your repo.
         //   // Remove this to remove the "edit this page" links.
-        //   // editUrl: 'https://github.com/dronahq/dronahq-docs/tree/main/',
+        //   // editUrl: `https://github.com/${gitUser}/${gitRepo}/tree/main/`,
         // },
         api: {
           path: "openapi.json",
@@ -94,42 +102,23 @@ const config = {
   ],
   plugins: [
     'docusaurus-plugin-sass',
-    // [
-    //   'content-docs',
-    //   /** @type {import('@docusaurus/plugin-content-docs').Options} */
-    //   ({
-    //     id: 'wiki',
-    //     path: 'wiki',
-    //     routeBasePath: 'wiki',
-    //     editUrl: ({ docPath }) => `https://github.com/rahul-gharat/dronahq-docs/blob/main/wiki/${docPath}`,
-    //     // editCurrentVersion: true,
-    //     docItemComponent: require.resolve('./src/components/CustomDocItem/CustomDocItemWiki.tsx'),
-    //     // disableVersioning: true,
-    //     breadcrumbs: false,
-    //     sidebarPath: require.resolve('./sidebarsWiki.js'),
-    //     showLastUpdateAuthor: true,
-    //     showLastUpdateTime: true,
-    //   }),
-    // ],
-    // [
-    //   path.resolve(__dirname, './src/plugins/docusaurus-plugin-segment-analytics'),
-    //   {
-    //     prodKey: 'RQXoHRpNcmBKllUDihjDjupGv4AHn5TB',
-    //     devKey: 'FRKElp5cyMax6GAdM8OVyNMIFVppgEgp',
-    //     // boolean (defaults to false) on whether you want
-    //     // to include analytics.page() automatically
-    //     trackPage: true,
-    //     // number (defaults to 50); time to wait after a route update before it should
-    //     // track the page change, to implement this, make sure your `trackPage` property is set to `true`
-    //     // trackPageDelay: 50,
-    //   },
-    // ],
-    // [
-    //   path.resolve(__dirname, './src/plugins/docusaurus-plugin-google-gtm'),
-    //   {
-    //     trackingID: 'GTM-PF5MQ2Z',
-    //   },
-    // ],
+    [
+      'content-docs',
+      /** @type {import('@docusaurus/plugin-content-docs').Options} */
+      ({
+        id: 'wiki',
+        path: 'wiki',
+        routeBasePath: 'wiki',
+        // editUrl: ({ docPath }) => `https://github.com/${gitUser}/${gitRepo}/blob/main/wiki/${docPath}`,
+        // editCurrentVersion: true,
+        docItemComponent: require.resolve('./src/components/CustomDocItem/CustomDocItemWiki.tsx'),
+        // disableVersioning: true,
+        // breadcrumbs: false,
+        sidebarPath: require.resolve('./sidebarsWiki.js'),
+        // showLastUpdateAuthor: true,
+        // showLastUpdateTime: true,
+      }),
+    ],
     require.resolve("@cmfcmf/docusaurus-search-local")
   ],
   themeConfig:
@@ -156,10 +145,10 @@ const config = {
       },
       // algolia: {
       //   // If Algolia did not provide you any appId, use 'BH4D9OD16A'
-      //   appId: '625PS6760U',
+      //   appId: 'CFO972H1IW',
       //   // Public API key: it is safe to commit it
-      //   apiKey: '2438e3bfa6fb5b1d747b190998233d9a',
-      //   indexName: 'dev_dronahq',
+      //   apiKey: '548cd0ac637d92542c157630f28cab72',
+      //   indexName: 'docsindex',
       //   // Optional: see doc section below
       //   contextualSearch: false,
       //   // Optional: Specify domains where the navigation should occur through window.location instead on history.push. Useful when our Algolia config crawls multiple documentation sites and we want to navigate with window.location.href to them.
@@ -169,7 +158,7 @@ const config = {
       // },
       // announcementBar: {
       //   id: 'announcementBar-3', // Increment on change
-      //   content: `⭐️ If you like Docusaurus, give it a star on <a target="_blank" rel="noopener noreferrer" href="https://github.com/facebook/docusaurus">GitHub</a> and follow us on <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/docusaurus" >Twitter</a> ${TwitterSvg}`,
+      //   content: `⭐️ If you like Docusaurus, give it a star on <a target="_blank" rel="noopener noreferrer" href="https://github.com/facebook/docusaurus">GitHub</a> and follow us on <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/docusaurus" >Twitter</a>`,
       // },
       // announcementBar: {
       //   id: 'announcement-bar-3',
@@ -185,16 +174,16 @@ const config = {
           alt: 'DronaHQ',
           src: 'img/dronahq-name-logo-light.svg',
           srcDark: 'img/dronahq-name-logo-dark.svg',
-          href: 'https://www.dronahq.com',
+          href: 'https://dronahq.com',
         },
         items: [
-          {
-            // type: 'docSidebar',
-            sidebarId: 'docSidebar',
-            position: 'left',
-            label: 'Docs',
-            to: '/introduction',
-          },
+          // {
+          //   // type: 'docSidebar',
+          //   sidebarId: 'docSidebar',
+          //   position: 'left',
+          //   label: 'Docs',
+          //   to: '/introduction',
+          // },
           // {
           //   to: '/wiki',
           //   label: 'Wiki',
@@ -253,7 +242,7 @@ const config = {
           //   position: 'right',
           // },
           // {
-          //   to: 'https://github.com/rahul-gharat/dronahq-docs',
+          //   to: `https://github.com/${gitUser}/${gitRepo}`,
           //   position: 'right',
           //   className: 'header-github-link',
           //   'aria-label': 'GitHub repository',
@@ -314,7 +303,7 @@ const config = {
       //         },
       //         {
       //           label: 'GitHub',
-      //           href: 'https://github.com/rahul-gharat/dronahq-docs/',
+      //           href: `https://github.com/${gitUser}/${gitRepo}/`,
       //         },
       //       ],
       //     },

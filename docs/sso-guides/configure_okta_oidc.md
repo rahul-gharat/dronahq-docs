@@ -23,7 +23,7 @@ To set up Okta OIDC SSO in DronaHQ, you will need:
 </figure>
 
 
-1. Select `Create App Integration` and configure the app with below field options -
+2. Select `Create App Integration` and configure the app with below field options -
 
 | Field | Description  | 
   | ----------------- |---------------- |
@@ -32,8 +32,7 @@ To set up Okta OIDC SSO in DronaHQ, you will need:
 | App Integration Name              | Give a suitable name to your application. Eg - `DronaHQ OKTA SSO`. |
 | Logo | (optional) you can provide a logo for your app.|
 | Grant type      | Under Client acting on behalf of a user, select `Refresh token`.|
-| Sign-in redirect URIs | https://YOUR_DRONAHQ_DOMAIN/callback/oauth . Go to `Manage Users -> SSO CONFIGURATION -> + Add SSO -> OIDC OpenID Connect`, locate
-DronaHQ `OAuth Redirect URL` and use that in OKTA Sign-in redirect URIs section.|
+| Sign-in redirect URIs | https://YOUR_DRONAHQ_DOMAIN/callback/oauth . Go to `Manage Users -> SSO CONFIGURATION -> + Add SSO -> OIDC OpenID Connect`, locate DronaHQ `OAuth Redirect URL` and use that in OKTA Sign-in redirect URIs section.|
 | Controlled access | Select the access option accordingly. For instance, if you want a specific group of people to access apps, you can get that done using the `Limit access to selected group` option. |
 
 <figure>
@@ -41,12 +40,19 @@ DronaHQ `OAuth Redirect URL` and use that in OKTA Sign-in redirect URIs section.
   <figcaption align = "center"><i>Create Application</i></figcaption>
 </figure>
 
-1. Click `Save`.
-1. After the app gets created, you can see `Client Credentials` having `Client ID` and `Client Secret`. Below this, you can see Okta domain. These will be useful in configuring OKTA OIDC in DronaHQ.
+3. Click `Save`.
+4. After the app gets created, you can see `Client Credentials` having `Client ID` and `Client Secret`. Below this, you can see Okta domain. These will be useful in configuring OKTA OIDC in DronaHQ.
+
+:::info NOTE
+
+Once, App is created, you can keep a note of `Client ID` and `Client Secret`.
+Also, make note of `Okta domain` shown below.
+
+:::
 
 ### Configure in DronaHQ
 
-Go to `Manage Users -> SSO Configuration -> + ADD SSO -> OIDC - OpenID Connect`
+1. Go to `Manage Users -> SSO Configuration -> + ADD SSO -> OIDC - OpenID Connect`
 
 Enter form with below fields -
 
@@ -65,4 +71,48 @@ Enter form with below fields -
 | Enable JIT user provisioning | Just in time (JIT) user provisioning enables DronaHQ to provision user accounts when users sign in via SSO for the `first time`. This means you won't have to manually invite each user to DronaHQ first. |
 
 
-1. Save the draft. Again navigate back to the SSO configuration option. You can see the newly created OAuth.
+2. Save the draft. Again navigate back to the SSO configuration option. You can see the newly created OAuth.
+
+<figure>
+  <Thumbnail src="/img/sso/guides/sso-dronahq-okta-oauth-draft.png" alt="OAuth in Draft state" />
+  <figcaption align = "center"><i>OAuth in Draft state</i></figcaption>
+</figure>
+
+3. You can click on `Test SSO` button and it will open SSO Login url in a popup window.
+
+<figure>
+  <Thumbnail src="/img/sso/guides/sso-dronahq-okta-oauth-signin-url.png" alt="OAuth Signin URL" />
+  <figcaption align = "center"><i>OAuth Signin URL</i></figcaption>
+</figure>
+
+4. Once you login successfully and if everything is set up correctly, then finally you will see a success message at the bottom.
+
+<figure>
+  <Thumbnail src="/img/sso/guides/sso-dronahq-okta-oauth-success.png" alt="OAuth Signin Success" />
+  <figcaption align = "center"><i>OAuth Signin Success</i></figcaption>
+</figure>
+
+5. Now, that testing is successful, you can click on the more option for above SSO configuration and click on `Activate` to make it live.
+
+<figure>
+  <Thumbnail src="/img/sso/guides/sso-dronahq-okta-oauth-active.png" alt="OAuth SSO Active" />
+  <figcaption align = "center"><i>OAuth SSO Active</i></figcaption>
+</figure>
+
+
+
+### OKTA OAuth in Action
+
+Now, since our OKTA OIDC SSO is live, we check in either DronaHQ End user portal - [Web](https://web.dronahq.io), [Android](https://play.google.com/store/apps/details?id=com.drona5) or [iOS](https://apps.apple.com/us/app/dronahq/id905354460) and see our configured okta oidc sso in action.
+
+Simply go to DronaHQ End user webapp and enter your email id with domain that matches the configured restricted domain specified in SSO configuration and Click `Continue`.
+
+<figure>
+  <Thumbnail src="/img/sso/guides/sso-dronahq-okta-oauth-webapp.png" alt="OAuth in WebApp" />
+  <figcaption align = "center"><i>OAuth in WebApp</i></figcaption>
+</figure>
+
+Instead of asking for password, it asks for Login via Okta OIDC SSO provide. Click on it and open a popup window of okta and the user can login with Okta login credentials.
+
+Go to `Manage User` section on DronaHQ and you will see the new user created since `JIT` was enabled.
+
