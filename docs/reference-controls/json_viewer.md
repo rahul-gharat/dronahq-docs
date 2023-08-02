@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-title: JSON viewer
+title: JSON Viewer
 ---
 
 import Image from '@site/src/components/Image';
