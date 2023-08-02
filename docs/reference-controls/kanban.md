@@ -3,8 +3,9 @@ sidebar_position: 1
 title: Kanban
 ---
 
-import Image from '@site/src/components/Image'; import VersionedLink from '@site/src/components/VersionedLink'; import
-Thumbnail from '@site/src/components/Thumbnail';
+import Image from '@site/src/components/Image';
+import VersionedLink from '@site/src/components/VersionedLink';
+import Thumbnail from '@site/src/components/Thumbnail';
 
 The Kanban control is a widely adopted lean workflow management method utilized for organizing and defining service workflows, aiding in service improvement. It consists of two main components: boards and cards. Data is stored in card format across multiple boards, with the number of boards determined by how the cards/data are grouped. Users can easily drag cards from one group to another on the board, facilitating seamless organization and management of tasks and information.
 

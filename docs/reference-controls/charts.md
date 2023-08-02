@@ -3,8 +3,9 @@ sidebar_position: 1
 title: Charts
 ---
 
-import Image from '@site/src/components/Image'; import VersionedLink from '@site/src/components/VersionedLink'; import
-Thumbnail from '@site/src/components/Thumbnail';
+import Image from '@site/src/components/Image';
+import VersionedLink from '@site/src/components/VersionedLink';
+import Thumbnail from '@site/src/components/Thumbnail';
 
 The Charts Control is used to provide users with an easy interface to create charts and graphs based on columnar, tabular, or JSON data. The Charts control enables full customization using the Plotly.js library for custom and complex charts. It can be utilized for creating and displaying dashboards or conducting comparative analysis of data.
 

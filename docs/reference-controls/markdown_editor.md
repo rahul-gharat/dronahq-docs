@@ -3,8 +3,9 @@ sidebar_position: 1
 title: Markdown Editor
 ---
 
-import Image from '@site/src/components/Image'; import VersionedLink from '@site/src/components/VersionedLink'; import
-Thumbnail from '@site/src/components/Thumbnail';
+import Image from '@site/src/components/Image';
+import VersionedLink from '@site/src/components/VersionedLink';
+import Thumbnail from '@site/src/components/Thumbnail';
 
 The DronaHQ offers a control called Markdown Editor, which enables the composition of formatted lightweight
 text. Markdown is a straightforward syntax used to format text as headers, lists, boldface, and more.

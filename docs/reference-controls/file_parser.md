@@ -3,8 +3,9 @@ sidebar_position: 1
 title: File Parser
 ---
 
-import Image from '@site/src/components/Image'; import VersionedLink from '@site/src/components/VersionedLink'; import
-Thumbnail from '@site/src/components/Thumbnail';
+import Image from '@site/src/components/Image';
+import VersionedLink from '@site/src/components/VersionedLink';
+import Thumbnail from '@site/src/components/Thumbnail';
 
 Welcome to the File Parser Control documentation. This guide will walk you through the features and capabilities of our versatile control, which empowers users to upload and parse data from files. The control efficiently returns the parsed data in a JSON format, opening up a plethora of use cases, from displaying data in tabular format to creating dynamic workflows for data manipulation and visualization.
 

@@ -3,8 +3,9 @@ sidebar_position: 1
 title: Markdown Viewer
 ---
 
-import Image from '@site/src/components/Image'; import VersionedLink from '@site/src/components/VersionedLink'; import
-Thumbnail from '@site/src/components/Thumbnail';
+import Image from '@site/src/components/Image';
+import VersionedLink from '@site/src/components/VersionedLink';
+import Thumbnail from '@site/src/components/Thumbnail';
 
 
 The DronaHQ provides a control known as the Markdown Viewer that allows you to compose and display formatted lightweight text using Markdown syntax.

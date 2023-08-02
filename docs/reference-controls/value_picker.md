@@ -4,8 +4,9 @@ title: Value Picker
 
 ---
 
-import Image from '@site/src/components/Image'; import VersionedLink from '@site/src/components/VersionedLink'; import
-Thumbnail from '@site/src/components/Thumbnail';
+import Image from '@site/src/components/Image';
+import VersionedLink from '@site/src/components/VersionedLink';
+import Thumbnail from '@site/src/components/Thumbnail';
 
 
 The Value Picker control is an advanced element that enables you to select a value along a slider, having predetermined minimum and maximum values.

@@ -3,8 +3,9 @@ sidebar_position: 1
 title: Text Input
 ---
 
-import Image from '@site/src/components/Image'; import VersionedLink from '@site/src/components/VersionedLink'; import
-Thumbnail from '@site/src/components/Thumbnail';
+import Image from '@site/src/components/Image';
+import VersionedLink from '@site/src/components/VersionedLink';
+import Thumbnail from '@site/src/components/Thumbnail';
 
 The Text Input Control enables users to input or modify text data within a Text column. It is utilized to gather a single line of text, such as a person's name, city, or job title in the case of an employee.
 

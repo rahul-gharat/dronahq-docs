@@ -3,8 +3,9 @@ sidebar_position: 1
 title: Statistics
 ---
 
-import Image from '@site/src/components/Image'; import VersionedLink from '@site/src/components/VersionedLink'; import
-Thumbnail from '@site/src/components/Thumbnail';
+import Image from '@site/src/components/Image';
+import VersionedLink from '@site/src/components/VersionedLink';
+import Thumbnail from '@site/src/components/Thumbnail';
 
 The Statistics control is a specialized display component designed for versatile applications. It enables the representation of different quantities along with their corresponding growth or decline trends, making it valuable for data visualization in various contexts.
 

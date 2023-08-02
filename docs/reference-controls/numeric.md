@@ -3,8 +3,9 @@ sidebar_position: 1
 title: Numeric
 ---
 
-import Image from '@site/src/components/Image'; import VersionedLink from '@site/src/components/VersionedLink'; import
-Thumbnail from '@site/src/components/Thumbnail';
+import Image from '@site/src/components/Image';
+import VersionedLink from '@site/src/components/VersionedLink';
+import Thumbnail from '@site/src/components/Thumbnail';
 
 The Numeric Control is a versatile tool used to gather numeric data or perform calculations based on user inputs. It can handle various numeric formats, such as whole numbers and decimals, making it suitable for a wide range of applications.
 

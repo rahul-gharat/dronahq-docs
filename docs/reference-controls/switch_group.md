@@ -3,8 +3,9 @@ sidebar_position: 1
 title: Switch Group
 ---
 
-import Image from '@site/src/components/Image'; import VersionedLink from '@site/src/components/VersionedLink'; import
-Thumbnail from '@site/src/components/Thumbnail';
+import Image from '@site/src/components/Image';
+import VersionedLink from '@site/src/components/VersionedLink';
+import Thumbnail from '@site/src/components/Thumbnail';
 
 Switch Group is used to select one or more options from the given list of choices. It is a small interactive box that can be toggled by the user to indicate an affirmative or negative choice. A user can toggle on/off multiple values in Switch Group control.
 

@@ -103,6 +103,7 @@ export default function DocSidebarItemLink({ item, onItemClick, activePath, leve
           styles[`sidebar_link_wrapper`]
         )}
         key={label}
+        headertext={label}
       >
         {label}
         {addIcons(className)}

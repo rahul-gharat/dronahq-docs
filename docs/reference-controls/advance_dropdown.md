@@ -3,8 +3,9 @@ sidebar_position: 1
 title: Advance Dropdown
 ---
 
-import Image from '@site/src/components/Image'; import VersionedLink from '@site/src/components/VersionedLink'; import
-Thumbnail from '@site/src/components/Thumbnail';
+import Image from '@site/src/components/Image';
+import VersionedLink from '@site/src/components/VersionedLink';
+import Thumbnail from '@site/src/components/Thumbnail';
 
 The Advanced Dropdown control is very similar to dropdown control but with additional extensive properties like image support, color property, return value selection, and more.
 

@@ -3,8 +3,9 @@ sidebar_position: 1
 title: Sortable
 ---
 
-import Image from '@site/src/components/Image'; import VersionedLink from '@site/src/components/VersionedLink'; import
-Thumbnail from '@site/src/components/Thumbnail';
+import Image from '@site/src/components/Image';
+import VersionedLink from '@site/src/components/VersionedLink';
+import Thumbnail from '@site/src/components/Thumbnail';
 
 
 The Sortable control is a display control that is used to display individual data in the form of a collection of cards or list. End users can also sort these cards by drag and drop method.

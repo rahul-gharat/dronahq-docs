@@ -3,8 +3,9 @@ sidebar_position: 1
 title: CheckBox Tree
 ---
 
-import Image from '@site/src/components/Image'; import VersionedLink from '@site/src/components/VersionedLink'; import
-Thumbnail from '@site/src/components/Thumbnail';
+import Image from '@site/src/components/Image';
+import VersionedLink from '@site/src/components/VersionedLink';
+import Thumbnail from '@site/src/components/Thumbnail';
 
 CheckBox Tree is a multi-level checkbox control with various elements having a parent-child relationship between them. Users can get many binary choices to make. It captures the user input from a specified list of permitted options, and these options can have child options within them. It captures multiple choices.
 
