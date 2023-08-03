@@ -6,7 +6,7 @@ title: Public and Embed Sharing options
 import Thumbnail from '@site/src/components/Thumbnail';
 import VersionedLink from '@site/src/components/VersionedLink';
 
-# Sharing options
+# Public and Embed Sharing options
 
 While sharing the apps built on DronaHQ you have the following broad options:
 - [Open public links](../public_and_embed_sharing_options/#open-public-links)
