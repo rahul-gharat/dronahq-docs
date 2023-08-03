@@ -12,6 +12,13 @@ You have to publish your App on DronaHQ in order to access Native actionblocks o
 
 :::
 
+
+
+## Allow offline
+
+When you are calling remote connector in actionflow, you have an option to call even if device is offline. To enable Offline option, `Select Allow offline toggle` present in last step of configuring server side action flow. This toggle will ensure that when device is offline, the connector call is cached locally in  device's `Storage` which leverages Native Mobile device's capability. So, when device is online next time and app is opened, the connector call will get called automatically thereby improving user experience of the app.
+
+
 ## Actionblocks List
 
 Following are the list of Native Mobile ActionFlow blocks that are supported by DronaHQ End user portal - Android and iOS Mobile App -
