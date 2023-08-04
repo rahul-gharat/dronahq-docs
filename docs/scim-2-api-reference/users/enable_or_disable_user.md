@@ -95,4 +95,9 @@ curl --location --request PATCH 'http://localhost:8080/api/scim/v2/Users/{id}' \
         <td>Internal server error</td>
         <td>empty</td>
     </tr>
+    <tr>
+        <td>401</td>
+        <td>Unauthorized</td>
+        <td>empty</td>
+    </tr>
 </table>

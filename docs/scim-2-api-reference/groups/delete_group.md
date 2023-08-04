@@ -54,4 +54,8 @@ curl --location --request DELETE 'http://localhost:8080/api/scim/v2/Groups/group
         <td>400</td>
         <td>Internal server error</td>
     </tr>
+    <tr>
+        <td>401</td>
+        <td>Unauthorized</td>
+    </tr>
 </table>
