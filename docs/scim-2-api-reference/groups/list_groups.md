@@ -57,7 +57,7 @@ Retrieve a list of Groups.
 #### Example cURL
 
 ```bash
-curl --location 'http://studio.dronahq.com/api/scim/v2/Groups?startIndex=0&count=10' \
+curl --location 'http://localhost:8080/api/scim/v2/Groups?startIndex=0&count=10' \
 --header 'Accept: application/json' \
 --header 'Authorization: Bearer XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX'
 ```
@@ -109,7 +109,7 @@ curl --location 'http://studio.dronahq.com/api/scim/v2/Groups?startIndex=0&count
                 }
             ],
             "meta": {
-                "location": "https://studio.dronahq.com/api/scim/v2/Groups/group-1",
+                "location": "http://localhost:8080/api/scim/v2/Groups/group-1",
                 "created": "2023-08-04T08:38:02.3732123Z"
             }
         },
@@ -123,7 +123,7 @@ curl --location 'http://studio.dronahq.com/api/scim/v2/Groups?startIndex=0&count
                 }
             ],
             "meta": {
-                "location": "https://studio.dronahq.com/api/scim/v2/Groups/group-2",
+                "location": "http://localhost:8080/api/scim/v2/Groups/group-2",
                 "created": "2023-08-04T08:38:02.3732123Z"
             }
         },
@@ -145,7 +145,7 @@ curl --location 'http://studio.dronahq.com/api/scim/v2/Groups?startIndex=0&count
                 }
             ],
             "meta": {
-                "location": "https://studio.dronahq.com/api/scim/v2/Groups/group-3",
+                "location": "http://localhost:8080/api/scim/v2/Groups/group-3",
                 "created": "2023-08-04T08:38:02.3732123Z"
             }
         }

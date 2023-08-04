@@ -37,7 +37,7 @@ Delete a Group by ID.
 #### Example cURL
 
 ```bash
-curl --location --request DELETE 'http://studio.dronahq.com/api/scim/v2/Groups/group-123' \
+curl --location --request DELETE 'http://localhost:8080/api/scim/v2/Groups/group-123' \
 --header 'Authorization: Bearer XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX'
 ```
 #### Responses

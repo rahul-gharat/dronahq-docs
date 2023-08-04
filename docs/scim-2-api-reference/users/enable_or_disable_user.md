@@ -62,7 +62,7 @@ To enable the user, set "active": true. To disable the user, set "active": false
 Replace {id} with the actual User ID you want to enable or disable:
 
 ```bash
-curl --location --request PATCH 'http://studio.dronahq.com/api/scim/v2/Users/{id}' \
+curl --location --request PATCH 'http://localhost:8080/api/scim/v2/Users/{id}' \
 --header 'Accept: application/json' \
 --header 'Content-Type: application/json' \
 --header 'Authorization: Bearer XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX' \

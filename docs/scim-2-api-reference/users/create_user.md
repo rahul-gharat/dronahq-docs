@@ -52,7 +52,7 @@ Create a new user, checking if the user already exists before adding.
 
 #### Example cURL
 ```bash
-curl --location --request POST 'http://studio.dronahq.com/api/scim/v2/Users' \
+curl --location --request POST 'http://localhost:8080/api/scim/v2/Users' \
 --header 'Content-Type: application/json' \
 --header 'Authorization: Bearer XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX' \
 --data-raw '{

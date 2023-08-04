@@ -58,7 +58,7 @@ The request body must contain an array of members to add or remove from the grou
 ```
 #### Example cURL
 ```bash
-curl --location --request PATCH 'http://studio.dronahq.com/api/scim/v2/Groups/group-123' \
+curl --location --request PATCH 'http://localhost:8080/api/scim/v2/Groups/group-123' \
 --header 'Content-Type: application/json' \
 --header 'Authorization: Bearer XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX' \
 --data-raw '{
@@ -108,7 +108,7 @@ curl --location --request PATCH 'http://studio.dronahq.com/api/scim/v2/Groups/gr
         }
     ],
     "meta": {
-        "location": "https://studio.dronahq.com/api/scim/v2/Groups/123",
+        "location": "http://localhost:8080/api/scim/v2/Groups/123",
         "created": "2023-08-04T08:38:02.3732123Z"
     }
 }

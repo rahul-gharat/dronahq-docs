@@ -41,7 +41,7 @@ Retrieve a User by ID.
 #### Example cURL
 
 ```bash
-curl --location 'http://studio.dronahq.com/api/scim/v2/Users/563505' \
+curl --location 'http://localhost:8080/api/scim/v2/Users/563505' \
 --header 'Accept: application/json' \
 --header 'Authorization: Bearer XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX'
 ```

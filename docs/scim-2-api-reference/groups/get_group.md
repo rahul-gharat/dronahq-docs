@@ -41,7 +41,7 @@ Retrieve a Group by ID.
 #### Example cURL
 
 ```bash
-curl --location 'http://studio.dronahq.com/api/scim/v2/Groups/group-123' \
+curl --location 'http://localhost:8080/api/scim/v2/Groups/group-123' \
 --header 'Accept: application/json' \
 --header 'Authorization: Bearer XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX'
 ```
@@ -82,7 +82,7 @@ curl --location 'http://studio.dronahq.com/api/scim/v2/Groups/group-123' \
         }
     ],
     "meta": {
-        "location": "https://studio.dronahq.com/api/scim/v2/Groups/group-123",
+        "location": "http://localhost:8080/api/scim/v2/Groups/group-123",
         "created": "2023-08-04T08:38:02.3732123Z"
     }
 }

@@ -64,7 +64,7 @@ Provide the properties of the User that you want to update.
 Replace {id} with the actual User ID you want to update:
 
 ```bash
-curl --location --request PATCH 'http://studio.dronahq.com/api/scim/v2/Users/{id}' \
+curl --location --request PATCH 'http://localhost:8080/api/scim/v2/Users/{id}' \
 --header 'Accept: application/json' \
 --header 'Content-Type: application/json' \
 --header 'Authorization: Bearer XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX' \

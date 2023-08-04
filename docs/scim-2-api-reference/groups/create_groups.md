@@ -59,7 +59,7 @@ The request body should contain the following parameters:
 ```
 #### Example cURL
 ```bash
-curl --location --request POST 'http://studio.dronahq.com/api/scim/v2/Groups' \
+curl --location --request POST 'http://localhost:8080/api/scim/v2/Groups' \
 --header 'Accept: application/json' \
 --header 'Authorization: Bearer XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX' \
 --header 'Content-Type: application/json' \
@@ -114,7 +114,7 @@ curl --location --request POST 'http://studio.dronahq.com/api/scim/v2/Groups' \
         }
     ],
     "meta": {
-        "location": "https://studio.dronahq.com/api/scim/v2/Groups/123",
+        "location": "http://localhost:8080/api/scim/v2/Groups/123",
         "created": "2023-08-04T08:38:02.3732123Z"
     }
 }

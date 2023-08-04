@@ -63,7 +63,7 @@ Retrieve a list of users based on the provided email filter
 ### Example cURL
 
 ```bash
-curl --location 'http://studio.dronahq.com/api/scim/v2/Users?filter=userEmail eq "user@example.com"&startIndex=0&count=10' \
+curl --location 'http://localhost:8080/api/scim/v2/Users?filter=userEmail eq "user@example.com"&startIndex=0&count=10' \
 --header 'Accept: application/json' \
 --header 'Authorization: Bearer XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX'
 ```
@@ -111,7 +111,7 @@ curl --location 'http://studio.dronahq.com/api/scim/v2/Users?filter=userEmail eq
                 }
             ],
             "meta": {
-                "location": "https://studio.dronahq.com/api/scim/v2/Users/563504",
+                "location": "http://localhost:8080/api/scim/v2/Users/563504",
                 "created": "2023-08-04T08:38:02.3732123Z"
             },
             "schemas": [
