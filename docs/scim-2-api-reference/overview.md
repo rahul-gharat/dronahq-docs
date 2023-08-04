@@ -21,10 +21,5 @@ To access the SCIM 2.0 API, you need to include the following authentication key
     </tr>
 </table>
 
-what should be value
-
-
-import DocCardList from '@theme/DocCardList';
-
 <DocCardList />
 
