@@ -44,9 +44,9 @@ The ideal case to build the action flow for offline submission is to maintain tw
 - Online Branch - This branch will be in action when the device is online. Below is the condition of this `ONLINE` branch:
 
 
-```js
+   ```js
     {{MODE=='online'}}
-```
+   ```
 
 <figure>
   <Thumbnail src="/img/mobile-apps/offline-apps-branch-online.png" alt="Online Branch" />
@@ -56,11 +56,9 @@ The ideal case to build the action flow for offline submission is to maintain tw
 - Offline Branch - This branch will be in action when the device is offline and device type isn't `web` i.e. either `Android` or `iOS`. Below is the condition of this `OFFLINE` branch:
 
 
-    ```js
-
-     {{MODE=='offline' && DEVICETYPE !== 'web'}}
-    
-    ```
+   ```js
+     {{MODE=='offline' && DEVICETYPE !== 'web'}} 
+   ```
 
 <figure>
   <Thumbnail src="/img/mobile-apps/offline-apps-branch-offline.png" alt="Offline Branch" />
@@ -91,7 +89,7 @@ You can add `Data Query` of type `Variable` which are `persistent`. To add Persi
 
 For example, you can add Persistent Variable to maintain the session id across multiple app launches, its value would not be reset, and they would get the last saved values.
 
-## Conclusion:
+## Conclusion
 
 Offline apps in DronaHQ empower businesses and organizations to create robust and reliable applications that work seamlessly even when disconnected from the internet. By ensuring data synchronization and providing uninterrupted access to critical features, offline apps enhance productivity and user satisfaction. Whether it's field service management, sales and order processing, data collection, or logistics, offline apps offer a valuable solution for users who require continuous access to the app's functionalities, regardless of their location or internet connectivity.
 
