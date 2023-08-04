@@ -11,7 +11,7 @@ Retrieve a list of users based on the provided email filter
     <div class="endpoint">/api/scim/v2/users</div>
 </div>
 
-#### Headers
+### Headers
 <table>
     <tr>
         <th>Key</th>
@@ -27,7 +27,7 @@ Retrieve a list of users based on the provided email filter
     </tr>
 </table>
 
-#### Query parameters
+### Query parameters
 
 <table>
     <tr>
@@ -52,7 +52,7 @@ Retrieve a list of users based on the provided email filter
     </tr>
 </table>
 
-#### Example cURL
+### Example cURL
 
 ```bash
 curl --location 'http://localhost/api/scim/v2/Users?filter=userEmail eq "pronghor@bears-rosessale.ru"&startIndex=0&count=10' \
@@ -60,7 +60,7 @@ curl --location 'http://localhost/api/scim/v2/Users?filter=userEmail eq "prongho
 --header 'Authorization: Bearer XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX'
 ```
 
-#### Responses
+### Responses
 <table>
     <tr>
         <th>Status Code</th>
@@ -79,7 +79,7 @@ curl --location 'http://localhost/api/scim/v2/Users?filter=userEmail eq "prongho
     </tr>
 </table>
 
-#### Sample response
+### Sample response
 
 200 : Success
 

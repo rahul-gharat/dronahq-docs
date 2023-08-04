@@ -28,7 +28,7 @@ const config = {
   // If you aren't using GitHub pages, you don't need these.
   organizationName: `${gitUser}`, // Usually your GitHub org/user name.
   projectName: `${gitRepo}`, // Usually your repo name.
-  onBrokenLinks: 'warn', // 'throw',
+  onBrokenLinks: 'throw', // 'throw',
   onBrokenMarkdownLinks: 'warn',
   trailingSlash: true,
   staticDirectories: ['static', 'public'],
@@ -217,11 +217,11 @@ const config = {
             label: "What's New",
             position: 'left',
           },
-          {
-            to: '/apidocs',
-            label: "API Docs",
-            position: 'left',
-          },
+          // {
+          //   to: '/apidocs',
+          //   label: "API Docs",
+          //   position: 'left',
+          // },
           // {
           //   to: '/latest/hasura-cloud/overview',
           //   label: 'Hasura Cloud',

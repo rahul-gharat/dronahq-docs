@@ -234,7 +234,7 @@ sequenceDiagram
 | Service Name      | The name of the application or service generating the log events.                                                                                                                                                                                                                                                                                                                        |
 
 
-# API Documentation
+### API Documentation
 
 <div class="apidocs-header">
     <div class="method get">GET</div>
@@ -271,7 +271,7 @@ sequenceDiagram
     <div class="endpoint">/scim/v2/users</div>
 </div>
 
-# Sample API Documentation
+### Sample API Documentation
 
 # List users
 
