@@ -20,6 +20,3 @@ To access the SCIM 2.0 API, you need to include the following authentication key
         <td>Bearer &lt;API Token&gt;</td>
     </tr>
 </table>
-
-<DocCardList />
-
