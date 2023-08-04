@@ -139,6 +139,8 @@ export default function DocSidebarItemCategory({ item, onItemClick, activePath, 
         },
         className
       )}
+      headerlink={href}
+      headertext={label}
     >
       <div
         className={clsx('menu__list-item-collapsible', {

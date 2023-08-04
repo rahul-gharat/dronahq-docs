@@ -74,6 +74,8 @@ export default function DocSidebarItemLink({ item, onItemClick, activePath, leve
           styles[`sidebar_link_wrapper`]
         )}
         key={label}
+        headerlink={href}
+        headertext={label}
       >
         <Link
           className={clsx('menu__link', !isInternalLink && styles.menuExternalLink, {
@@ -103,6 +105,7 @@ export default function DocSidebarItemLink({ item, onItemClick, activePath, leve
           styles[`sidebar_link_wrapper`]
         )}
         key={label}
+        headerlink={href}
         headertext={label}
       >
         {label}
