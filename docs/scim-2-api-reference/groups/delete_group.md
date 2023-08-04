@@ -9,13 +9,13 @@ Delete a Group by ID.
 `For DronaHQ Studio`
 <div class="apidocs-header">
     <div class="method delete">DELETE</div>
-    <div class="endpoint">/api/scim/v2/Groups/&lt;id&gt;</div>
+    <div class="endpoint">/api/scim/v2/Groups/&#123;id&#125;</div>
 </div>
 
 `For DronaHQ Self hosted`
 <div class="apidocs-header">
     <div class="method delete">DELETE</div>
-    <div class="endpoint">/sso/scim/v2/Groups/&lt;id&gt;</div>
+    <div class="endpoint">/sso/scim/v2/Groups/&#123;id&#125;</div>
 </div>
 
 #### Headers

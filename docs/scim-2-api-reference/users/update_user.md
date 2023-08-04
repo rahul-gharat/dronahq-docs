@@ -9,13 +9,13 @@ Update an existing User by ID.
 `For DronaHQ Studio`
 <div class="apidocs-header">
     <div class="method patch">PATCH</div>
-    <div class="endpoint">/api/scim/v2/Users/&lt;id&gt;</div>
+    <div class="endpoint">/api/scim/v2/Users/&#123;id&#125;</div>
 </div>
 
 `For DronaHQ Self hosted`
 <div class="apidocs-header">
     <div class="method patch">PATCH</div>
-    <div class="endpoint">/sso/scim/v2/Users/&lt;id&gt;</div>
+    <div class="endpoint">/sso/scim/v2/Users/&#123;id&#125;</div>
 </div>
 
 #### Headers

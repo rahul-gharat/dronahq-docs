@@ -9,13 +9,13 @@ Update an existing Group by adding or removing members.
 `For DronaHQ Studio`
 <div class="apidocs-header">
     <div class="method patch">PATCH</div>
-    <div class="endpoint">/api/scim/v2/Groups/&lt;id&gt;</div>
+    <div class="endpoint">/api/scim/v2/Groups/&#123;id&#125;</div>
 </div>
 
 `For DronaHQ Self hosted`
 <div class="apidocs-header">
     <div class="method patch">PATCH</div>
-    <div class="endpoint">/sso/scim/v2/Groups/&lt;id&gt;</div>
+    <div class="endpoint">/sso/scim/v2/Groups/&#123;id&#125;</div>
 </div>
 
 #### Headers
