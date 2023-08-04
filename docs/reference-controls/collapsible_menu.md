@@ -3,8 +3,9 @@ sidebar_position: 1
 title: Collapsible Menu
 ---
 
-import Image from '@site/src/components/Image'; import VersionedLink from '@site/src/components/VersionedLink'; import
-Thumbnail from '@site/src/components/Thumbnail';
+import Image from '@site/src/components/Image';
+import VersionedLink from '@site/src/components/VersionedLink';
+import Thumbnail from '@site/src/components/Thumbnail';
 
 The Collapsible Menu control, offered by the DronaHQ, enables the creation of an appealing and modern menu with
 collapsible functionality.

@@ -217,11 +217,11 @@ const config = {
             label: "What's New",
             position: 'left',
           },
-          {
-            to: '/apidocs',
-            label: "API Docs",
-            position: 'left',
-          },
+          // {
+          //   to: '/apidocs',
+          //   label: "API Docs",
+          //   position: 'left',
+          // },
           // {
           //   to: '/latest/hasura-cloud/overview',
           //   label: 'Hasura Cloud',

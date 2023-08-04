@@ -3,8 +3,9 @@ sidebar_position: 1
 title: Phone
 ---
 
-import Image from '@site/src/components/Image'; import VersionedLink from '@site/src/components/VersionedLink'; import
-Thumbnail from '@site/src/components/Thumbnail';
+import Image from '@site/src/components/Image';
+import VersionedLink from '@site/src/components/VersionedLink';
+import Thumbnail from '@site/src/components/Thumbnail';
 
 The Phone control is designed to receive phone numbers in a composite format, divided into two distinct fields. These fields can be stored in separate columns of a sheet, treating them as individual entities. The Phone control comprises two components - Country Code or Prefix and Phone number, providing unique accessibility for each part of the phone number.
 

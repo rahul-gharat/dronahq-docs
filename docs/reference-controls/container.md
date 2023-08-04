@@ -3,6 +3,9 @@ sidebar_position: 1
 title: Container
 ---
 
+import Image from '@site/src/components/Image';
+import VersionedLink from '@site/src/components/VersionedLink';
+import Thumbnail from '@site/src/components/Thumbnail';
 
 The Container control enables you to arrange your controls in a simple and easy-to-navigate layout. It is typically useful when you have large and complex forms that can be made easier by allowing absolute resizing in pixels within the parent Container size.
 

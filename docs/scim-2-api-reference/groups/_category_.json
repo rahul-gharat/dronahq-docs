@@ -1,6 +1,6 @@
 {
-  "label": "SCIM 2.0 API reference",
-  "position": 42,
+  "label": "Groups",
+  "position": 13,
   "link": {
     "type": "generated-index",
     "description": "5 minutes to learn the most important Docusaurus concepts."

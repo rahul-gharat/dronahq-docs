@@ -72,7 +72,7 @@ The outputs from the Select control, represented by the placeholder `{{select}}`
 
 | Output       | Description                                                                                                  |
 |--------------|--------------------------------------------------------------------------------------------------------------|
-| select    | Represents the user-selected value from given set of options in the the Select control.                        |
+| select    | Represents the user-selected value from given set of options in the Select control.                        |
 
 
 ## Events

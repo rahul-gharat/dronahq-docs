@@ -1,0 +1,43 @@
+.apidocs-header {
+    
+    display: flex;
+    border-radius: 4px;
+    padding: 8px 16px;
+    margin-bottom: 16px;
+    background-color: var(--dhq-nev-color);
+    color: var(--color-gray-74);
+
+    .method {
+
+        border-radius: 4px;
+        padding: 0 8px;
+        font-weight: 600;
+        margin-right: 16px;
+        color: rgb(255, 255, 255);
+        &.get {
+            background-color: #61affe;
+        }
+        &.post {
+            background-color: #49cc90;
+        }
+        &.put {
+            background-color: #fca130;
+        }
+        &.patch {
+            background-color: #50e3c2;
+        }
+        &.options {
+            background-color: #0d5aa7;
+        }
+        &.delete {
+            background-color: #f93e3e;
+        }
+        &.head {
+            background-color: #9012fe;
+        }
+    }
+    
+    .endpoint {
+        letter-spacing: 1px;
+    }
+}

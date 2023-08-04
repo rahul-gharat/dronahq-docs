@@ -3,6 +3,10 @@ sidebar_position: 1
 title: OTP
 ---
 
+import Image from '@site/src/components/Image';
+import VersionedLink from '@site/src/components/VersionedLink';
+import Thumbnail from '@site/src/components/Thumbnail';
+
 The OTP Control is an Advanced control that facilitates the process of accepting One-Time Passwords (OTPs) in a form. It allows users to enter the OTP, and the control captures and returns the OTP value, which can then be utilized for additional authentication purposes.
 
 <figure>
