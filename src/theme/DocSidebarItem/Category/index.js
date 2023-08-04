@@ -70,19 +70,19 @@ function CollapseButton({ categoryLabel, onClick }) {
 }
 export default function DocSidebarItemCategory({ item, onItemClick, activePath, level, index, ...props }) {
   const { items, label, collapsible, className, href } = item;
-  const { isDarkTheme } = useColorMode();
+  const { colorMode } = useColorMode();
 
   // Conditional rendering for sidebar icons
   function addIcons(className) {
     switch (className) {
       case 'enterprise-icon':
-        return isDarkTheme ? <EnterpriseDark /> : <EnterpriseLight />;
+        return colorMode === "dark" ? <EnterpriseDark /> : <EnterpriseLight />;
       case 'cloud-icon':
-        return isDarkTheme ? <CloudDark /> : <CloudLight />;
+        return colorMode === "dark" ? <CloudDark /> : <CloudLight />;
       case 'cloud-and-enterprise-icon':
         return (
           <div className={styles['cloud-ee-container']}>
-            {isDarkTheme ? (
+            {colorMode === "dark" ? (
               <>
                 <CloudDark /> <EnterpriseDark />{' '}
               </>
