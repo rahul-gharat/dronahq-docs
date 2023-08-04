@@ -19,7 +19,7 @@ const CustomDocItem = props => {
         codeBlocks.forEach(codeBlock => {
           codeBlock.innerHTML = codeBlock.innerHTML.replace(/_/g, '_<wbr>');
           codeBlock.innerHTML = codeBlock.innerHTML.replace(/\./g, '.<wbr>');
-          console.log(codeBlock.innerHTML);
+          // console.log(codeBlock.innerHTML);
         });
       });
     });

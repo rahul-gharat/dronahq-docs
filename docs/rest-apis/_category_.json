@@ -1,7 +1,4 @@
 {
   "label": "REST APIs",
-  "position": 14,
-  "customProps": {
-    "sidebar_subpathname": "configuring_apis"
-  }
+  "position": 14
 }

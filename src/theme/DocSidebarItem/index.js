@@ -8,9 +8,9 @@ export default function DocSidebarItem({ item, ...props }) {
   switch (item.type) {
     case 'category':
       if (item.customProps?.sidebar_open_firstchild) {
-        if (item.items && item.items.length) {
-          item.href = useBaseUrl(item.items[0].href);
-        }
+        // if (item.items && item.items.length) {
+        //   item.href = useBaseUrl(item.items[0].href);
+        // }
       } else if (item.customProps?.sidebar_subpathname) {
         item.href = useBaseUrl(`/${item.label.toLowerCase().replace(/\s/g, '-')}/${item.customProps.sidebar_subpathname}`);
       } else if (item.customProps?.sidebar_pathname) {
