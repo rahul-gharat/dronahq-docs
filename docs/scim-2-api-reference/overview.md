@@ -7,10 +7,24 @@ System for Cross-domain Identity Management (SCIM) is an open standard protocol 
 
 ## Authentication
 
-add some description about authentication
+To access the SCIM 2.0 API, you need to include the following authentication key in the header of your API requests:
 
-which key in header
+#### Headers
+<table>
+    <tr>
+        <th>Key</th>
+        <th>Value</th>
+    </tr>
+    <tr>
+        <td>Authorization</td>
+        <td>Bearer &lt;API Token&gt;</td>
+    </tr>
+</table>
 
 what should be value
 
-from where to get token
+
+import DocCardList from '@theme/DocCardList';
+
+<DocCardList />
+
