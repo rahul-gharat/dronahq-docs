@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# List users
+# List Users
 
 Retrieve a list of users based on the provided email filter
 

@@ -2,6 +2,6 @@
 sidebar_position: 3
 ---
 
-# get user
+# Get User
 
 Get a User by ID

@@ -2,6 +2,6 @@
 sidebar_position: 9
 ---
 
-# delete group
+# Delete Group
 
 Delete a Group by ID

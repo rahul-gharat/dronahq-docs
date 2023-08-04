@@ -2,6 +2,6 @@
 sidebar_position: 7
 ---
 
-# get group
+# Get Group
 
 get a Group by ID

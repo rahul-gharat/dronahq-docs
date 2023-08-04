@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# create users
+# Create User
 
 Create a new user, checking if the user already exists before adding
 
