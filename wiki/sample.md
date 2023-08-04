@@ -232,3 +232,222 @@ sequenceDiagram
 | Host              | The name of the originating host of the log and metrics.                                                                                                                                                                                                                                                                                                                                 |
 | Custom Attributes | Custom Attributes associated with your logs and metrics. A default source tag `dronahq-cloud-metrics` is added to all exported logs and metrics. Attributes `project_id` and `project_name` are added to all exported metrics.                                                                                                                                                            |
 | Service Name      | The name of the application or service generating the log events.                                                                                                                                                                                                                                                                                                                        |
+
+
+# API Documentation
+
+<div class="apidocs-header">
+    <div class="method get">GET</div>
+    <div class="endpoint">/scim/v2/users</div>
+</div>
+
+<div class="apidocs-header">
+    <div class="method post">POST</div>
+    <div class="endpoint">/scim/v2/users</div>
+</div>
+
+<div class="apidocs-header">
+    <div class="method put">PUT</div>
+    <div class="endpoint">/scim/v2/users</div>
+</div>
+
+<div class="apidocs-header">
+    <div class="method delete">DELETE</div>
+    <div class="endpoint">/scim/v2/users</div>
+</div>
+
+<div class="apidocs-header">
+    <div class="method patch">PATCH</div>
+    <div class="endpoint">/scim/v2/users</div>
+</div>
+
+<div class="apidocs-header">
+    <div class="method head">HEAD</div>
+    <div class="endpoint">/scim/v2/users</div>
+</div>
+
+<div class="apidocs-header">
+    <div class="method options">OPTIONS</div>
+    <div class="endpoint">/scim/v2/users</div>
+</div>
+
+# Sample API Documentation
+
+# List users
+
+Retrieve a list of users based on the provided email filter
+
+<div class="apidocs-header">
+    <div class="method get">GET</div>
+    <div class="endpoint">/api/scim/v2/users</div>
+</div>
+
+#### Headers
+<table>
+    <tr>
+        <th>Key</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td>Accept</td>
+        <td>application/json</td>
+    </tr>
+    <tr>
+        <td>Authorization</td>
+        <td>Bearer token</td>
+    </tr>
+</table>
+
+#### Path parameters
+
+<table>
+    <tr>
+        <th>Parameter</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td>filter (optional)</td>
+        <td>String</td>
+        <td>Filter users by email ID</td>
+    </tr>
+    <tr>
+        <td>startIndex (optional)</td>
+        <td>Integer</td>
+        <td>Index of the first user to be returned</td>
+    </tr>
+    <tr>
+        <td>count (optional)</td>
+        <td>Integer</td>
+        <td>Number of users to be returned</td>
+    </tr>
+</table>
+
+#### Query parameters
+
+<table>
+    <tr>
+        <th>Parameter</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td>filter (optional)</td>
+        <td>String</td>
+        <td>Filter users by email ID</td>
+    </tr>
+    <tr>
+        <td>startIndex (optional)</td>
+        <td>Integer</td>
+        <td>Index of the first user to be returned</td>
+    </tr>
+    <tr>
+        <td>count (optional)</td>
+        <td>Integer</td>
+        <td>Number of users to be returned</td>
+    </tr>
+</table>
+
+#### Body parameters
+
+<table>
+    <tr>
+        <th>Parameter</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td>filter (optional)</td>
+        <td>String</td>
+        <td>Filter users by email ID</td>
+    </tr>
+    <tr>
+        <td>startIndex (optional)</td>
+        <td>Integer</td>
+        <td>Index of the first user to be returned</td>
+    </tr>
+    <tr>
+        <td>count (optional)</td>
+        <td>Integer</td>
+        <td>Number of users to be returned</td>
+    </tr>
+</table>
+
+#### Example cURL
+
+```bash
+curl --location 'http://localhost:8080/api/scim/v2/users' \
+--header 'Accept: application/json' \
+--header 'Authorization: Bearer XXXXXXXXXXXXXXXX'
+```
+
+#### Responses
+<table>
+    <tr>
+        <th>Status Code</th>
+        <th>Description</th>
+        <th>Respomse</th>
+    </tr>
+    <tr>
+        <td>200</td>
+        <td>Success</td>
+        <td>application/json</td>
+    </tr>
+        <tr>
+        <td>401</td>
+        <td>Unauthorized</td>
+        <td>empty</td>
+    </tr>
+</table>
+
+#### Sample response
+
+200 : Success
+
+```json
+{
+    "schemas": [
+        "urn:ietf:params:scim:api:messages:2.0:ListResponse"
+    ],
+    "Resources": [
+        {
+            "groups": [
+                {
+                    "display": "Default",
+                    "value": 3966
+                }
+            ],
+            "emails": [
+                {
+                    "value": "pronghor@bears-rosessale.ru",
+                    "primary": true
+                }
+            ],
+            "meta": {
+                "location": "https://studio.dronahq.com/api/scim/v2/Users/563504",
+                "created": "2023-08-04T08:38:02.3732123Z"
+            },
+            "schemas": [
+                "urn:ietf:params:scim:schemas:core:2.0:User"
+            ],
+            "name": {
+                "givenName": null,
+                "familyName": null
+            },
+            "photos": [],
+            "nickName": null,
+            "userName": "pronghor@bears-rosessale.ru",
+            "displayName": "Rishabh Jain",
+            "externalId": null,
+            "timezone": null,
+            "title": null,
+            "active": true,
+            "profileUrl": "",
+            "id": "563504"
+        }
+    ],
+    "startIndex": 1,
+    "totalResults": 50,
+    "itemsPerPage": 1
+}
+```

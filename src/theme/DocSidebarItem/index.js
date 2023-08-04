@@ -7,10 +7,12 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 export default function DocSidebarItem({ item, ...props }) {
   switch (item.type) {
     case 'category':
-      if (item.customProps?.sidebar_pathname) {
+      if (item.customProps?.sidebar_subpathname) {
+        item.href = useBaseUrl(`/${item.label.toLowerCase().replace(/\s/g, '-')}/${item.customProps.sidebar_subpathname}`);
+      } else if (item.customProps?.sidebar_pathname) {
         // if there is a custom sidebar_pathname, use it
         // item.href = `/docs/latest/${item.customProps.sidebar_pathname}/overview/`;
-        item.href = useBaseUrl(`/${item.label.toLowerCase().replace(/\s/g, '-')}/${item.customProps.sidebar_pathname}`);
+        item.href = useBaseUrl(`/${item.customProps.sidebar_pathname}`);
       // } else if (item.href === undefined) {
       //   // if there is no custom sidebar_pathname, use the label with our regex
       //   // and apparently deal with the Wiki as a special case
