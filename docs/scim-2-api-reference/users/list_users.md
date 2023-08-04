@@ -6,12 +6,20 @@ sidebar_position: 1
 
 Retrieve a list of users based on the provided email filter
 
+`For DronaHQ Studio`
 <div class="apidocs-header">
     <div class="method get">GET</div>
-    <div class="endpoint">/api/scim/v2/users</div>
+    <div class="endpoint">/api/scim/v2/Users</div>
 </div>
 
-### Headers
+`For DronaHQ Self hosted`
+<div class="apidocs-header">
+    <div class="method get">GET</div>
+    <div class="endpoint">/sso/scim/v2/Users</div>
+</div>
+
+
+#### Headers
 <table>
     <tr>
         <th>Key</th>
@@ -55,7 +63,7 @@ Retrieve a list of users based on the provided email filter
 ### Example cURL
 
 ```bash
-curl --location 'http://localhost/api/scim/v2/Users?filter=userEmail eq "pronghor@bears-rosessale.ru"&startIndex=0&count=10' \
+curl --location 'http://studio.dronahq.com/api/scim/v2/Users?filter=userEmail eq "user@example.com"&startIndex=0&count=10' \
 --header 'Accept: application/json' \
 --header 'Authorization: Bearer XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX'
 ```
@@ -98,7 +106,7 @@ curl --location 'http://localhost/api/scim/v2/Users?filter=userEmail eq "prongho
             ],
             "emails": [
                 {
-                    "value": "pronghor@bears-rosessale.ru",
+                    "value": "user@example.com",
                     "primary": true
                 }
             ],
@@ -115,7 +123,7 @@ curl --location 'http://localhost/api/scim/v2/Users?filter=userEmail eq "prongho
             },
             "photos": [],
             "nickName": null,
-            "userName": "pronghor@bears-rosessale.ru",
+            "userName": "user@example.com",
             "displayName": "Rishabh Jain",
             "externalId": null,
             "timezone": null,
