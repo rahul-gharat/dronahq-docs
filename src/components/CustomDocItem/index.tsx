@@ -33,11 +33,11 @@ const CustomDocItem = props => {
 
   return (
     <div
-      className={
-        props.location.pathname === useBaseUrl(`/introduction/`)
-          ? `custom_doc_item_wrapper custom_doc_item_wrapper-x-wide`
-          : `custom_doc_item_wrapper ${styles['custom_doc_item_wrapper']}`
-      }
+      // className={
+      //   props.location.pathname === useBaseUrl(`/introduction/`)
+      //     ? `custom_doc_item_wrapper custom_doc_item_wrapper-x-wide`
+      //     : `custom_doc_item_wrapper ${styles['custom_doc_item_wrapper']}`
+      // }
     >
       <ActualDocItem {...props} />
       {/* <div className={props.location.pathname === `introduction` || props.location.pathname.includes('overview') ? `custom_doc_item_footer-x-wide` : styles['custom_doc_item_footer']}> */}
