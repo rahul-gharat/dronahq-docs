@@ -15,19 +15,19 @@ export default function DocSidebarItemLink({ item, onItemClick, activePath, leve
   const { href, label, className, autoAddBaseUrl } = item;
   const isActive = isActiveSidebarItem(item, activePath);
   const isInternalLink = isInternalUrl(href);
-  const { isDarkTheme } = useColorMode();
+  const { colorMode } = useColorMode();
 
   // Conditional rendering for sidebar icons
   function addIcons(className) {
     switch (className) {
       case 'enterprise-icon':
-        return isDarkTheme ? <EnterpriseDark /> : <EnterpriseLight />;
+        return colorMode === "dark" ? <EnterpriseDark /> : <EnterpriseLight />;
       case 'cloud-icon':
-        return isDarkTheme ? <CloudDark /> : <CloudLight />;
+        return colorMode === "dark" ? <CloudDark /> : <CloudLight />;
       case 'enterprise-icon-and-beta':
         return (
           <div className={styles['sidebar_link_wrapper']}>
-            {isDarkTheme ? (
+            {colorMode === "dark" ? (
               <>
                 <EnterpriseDark />{' '}<BetaTag/>
               </>
@@ -41,7 +41,7 @@ export default function DocSidebarItemLink({ item, onItemClick, activePath, leve
       case 'cloud-and-enterprise-icon':
         return (
           <div className={styles['cloud-ee-container']}>
-            {isDarkTheme ? (
+            {colorMode === "dark" ? (
               <>
                 <CloudDark /> <EnterpriseDark />{' '}
               </>
@@ -74,6 +74,8 @@ export default function DocSidebarItemLink({ item, onItemClick, activePath, leve
           styles[`sidebar_link_wrapper`]
         )}
         key={label}
+        headerlink={href}
+        headertext={label}
       >
         <Link
           className={clsx('menu__link', !isInternalLink && styles.menuExternalLink, {
@@ -103,6 +105,7 @@ export default function DocSidebarItemLink({ item, onItemClick, activePath, leve
           styles[`sidebar_link_wrapper`]
         )}
         key={label}
+        headerlink={href}
         headertext={label}
       >
         {label}

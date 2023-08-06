@@ -58,10 +58,10 @@ const config = {
   // },
   presets: [
     [
-      // 'classic',
-      // /** @type {import('@docusaurus/preset-classic').Options} */
-      "docusaurus-preset-openapi",
-      /** @type {import('docusaurus-preset-openapi').Options} */
+      'classic',
+      /** @type {import('@docusaurus/preset-classic').Options} */
+      // "docusaurus-preset-openapi",
+      // /** @type {import('docusaurus-preset-openapi').Options} */
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
@@ -84,16 +84,16 @@ const config = {
           //   },
           // },
         },
-        // blog: {
-        //   // showReadingTime: true,
-        //   // Please change this to your repo.
-        //   // Remove this to remove the "edit this page" links.
-        //   // editUrl: `https://github.com/${gitUser}/${gitRepo}/tree/main/`,
-        // },
-        api: {
-          path: "openapi.json",
-          routeBasePath: "/apidocs",
+        blog: {
+          // showReadingTime: true,
+          // Please change this to your repo.
+          // Remove this to remove the "edit this page" links.
+          // editUrl: `https://github.com/${gitUser}/${gitRepo}/tree/main/`,
         },
+        // api: {
+        //   path: "openapi.json",
+        //   routeBasePath: "/apidocs",
+        // },
         theme: {
           customCss: require.resolve('./src/css/custom.scss'),
         },
@@ -116,7 +116,7 @@ const config = {
         // breadcrumbs: false,
         sidebarPath: require.resolve('./sidebarsWiki.js'),
         // showLastUpdateAuthor: true,
-        // showLastUpdateTime: true,
+        showLastUpdateTime: true,
       }),
     ],
     // require.resolve("@cmfcmf/docusaurus-search-local")
@@ -217,11 +217,11 @@ const config = {
             label: "What's New",
             position: 'left',
           },
-          {
-            to: '/apidocs',
-            label: "API Docs",
-            position: 'left',
-          },
+          // {
+          //   to: '/apidocs',
+          //   label: "API Docs",
+          //   position: 'left',
+          // },
           // {
           //   to: '/latest/hasura-cloud/overview',
           //   label: 'Hasura Cloud',
