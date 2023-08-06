@@ -128,6 +128,18 @@ export default function DocSidebarItemCategory({ item, onItemClick, activePath, 
       setCollapsed(true);
     }
   }, [collapsible, expandedItem, index, setCollapsed, autoCollapseCategories]);
+
+  let catlink = href;
+  function getItemLink(item) {
+    if (!item) 
+      return "/";
+    else if (item.type == "link")
+      return item.href;
+    else if (item.type == "category")
+      return getItemLink(item.items?.[0]);
+  }
+  if (items?.[0]) catlink = getItemLink(items?.[0]);
+
   return (
     <li
       className={clsx(
@@ -139,7 +151,7 @@ export default function DocSidebarItemCategory({ item, onItemClick, activePath, 
         },
         className
       )}
-      headerlink={href}
+      headerlink={catlink}
       headertext={label}
     >
       <div
