@@ -79,7 +79,7 @@ There are a few crucial points to remember while updating the JSON file with oth
 - `Test half dynamic messages` -> this text can be changed to any local language.
 - `{{text_c25RoRppi1Fw2RJVK7XC}}` -> this part should not be changed for values part.
 
-For Example when above JSON is transalated to `Dutch Language`.
+For Example when above JSON is translated to `Dutch Language`.
 ```json
 {
   "Test static data": "Test statische gegevens",
@@ -117,7 +117,7 @@ For Example when above JSON is transalated to `Dutch Language`.
 }
 ```
 
-For Example when above JSON is transalated to `Hindi Language`.
+For Example when above JSON is translated to `Hindi Language`.
 ```json
 {
     "Test static data": "स्थिर डेटा परीक्षण",
