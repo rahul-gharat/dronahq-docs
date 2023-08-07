@@ -58,10 +58,10 @@ const config = {
   // },
   presets: [
     [
-      // 'classic',
-      // /** @type {import('@docusaurus/preset-classic').Options} */
-      "docusaurus-preset-openapi",
-      /** @type {import('docusaurus-preset-openapi').Options} */
+      'classic',
+      /** @type {import('@docusaurus/preset-classic').Options} */
+      // "docusaurus-preset-openapi",
+      // /** @type {import('docusaurus-preset-openapi').Options} */
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
@@ -84,16 +84,16 @@ const config = {
           //   },
           // },
         },
-        // blog: {
-        //   // showReadingTime: true,
-        //   // Please change this to your repo.
-        //   // Remove this to remove the "edit this page" links.
-        //   // editUrl: `https://github.com/${gitUser}/${gitRepo}/tree/main/`,
-        // },
-        api: {
-          path: "openapi.json",
-          routeBasePath: "/apidocs",
+        blog: {
+          // showReadingTime: true,
+          // Please change this to your repo.
+          // Remove this to remove the "edit this page" links.
+          // editUrl: `https://github.com/${gitUser}/${gitRepo}/tree/main/`,
         },
+        // api: {
+        //   path: "openapi.json",
+        //   routeBasePath: "/apidocs",
+        // },
         theme: {
           customCss: require.resolve('./src/css/custom.scss'),
         },
@@ -116,10 +116,10 @@ const config = {
         // breadcrumbs: false,
         sidebarPath: require.resolve('./sidebarsWiki.js'),
         // showLastUpdateAuthor: true,
-        // showLastUpdateTime: true,
+        showLastUpdateTime: true,
       }),
     ],
-    require.resolve("@cmfcmf/docusaurus-search-local")
+    // require.resolve("@cmfcmf/docusaurus-search-local")
   ],
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
@@ -142,6 +142,14 @@ const config = {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
         additionalLanguages: ['rest', 'http', 'haskell', 'plsql', 'docker', 'nginx', 'markdown', 'csharp'],
+      },
+      algolia: {
+        appId: 'ENIA2O0FH4',
+        apiKey: '9e218acfe9f0f3209afbbb26e03df22b',
+        indexName: 'dronahq',
+        insights: true, // Optional, automatically send insights when user interacts with search results
+        container: 'div', // ### REPLACE ME WITH A CONTAINER (e.g. div) ###',
+        debug: false // Set debug to true if you want to inspect the modal
       },
       // algolia: {
       //   // If Algolia did not provide you any appId, use 'BH4D9OD16A'
@@ -209,11 +217,11 @@ const config = {
             label: "What's New",
             position: 'left',
           },
-          {
-            to: '/apidocs',
-            label: "API Docs",
-            position: 'left',
-          },
+          // {
+          //   to: '/apidocs',
+          //   label: "API Docs",
+          //   position: 'left',
+          // },
           // {
           //   to: '/latest/hasura-cloud/overview',
           //   label: 'Hasura Cloud',

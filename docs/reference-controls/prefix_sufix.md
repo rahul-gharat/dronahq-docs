@@ -3,10 +3,9 @@ sidebar_position: 1
 title: Prefix and Suffix
 ---
 
-import Image from '@site/src/components/Image'; import VersionedLink from '@site/src/components/VersionedLink'; import
-Thumbnail from '@site/src/components/Thumbnail';
-
-
+import Image from '@site/src/components/Image';
+import VersionedLink from '@site/src/components/VersionedLink';
+import Thumbnail from '@site/src/components/Thumbnail';
 
 The Prefix and Suffix control allows users to add either a prefix or a suffix to the input value. A prefix is an affix that appears at the beginning of a word, while suffixes are letters or groups of letters added to the end of words. By utilizing this control, users can modify input values with desired prefixes or suffixes to suit their needs.
 

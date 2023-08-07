@@ -3,8 +3,9 @@ sidebar_position: 1
 title: Timer
 ---
 
-import Image from '@site/src/components/Image'; import VersionedLink from '@site/src/components/VersionedLink'; import
-Thumbnail from '@site/src/components/Thumbnail';
+import Image from '@site/src/components/Image';
+import VersionedLink from '@site/src/components/VersionedLink';
+import Thumbnail from '@site/src/components/Thumbnail';
 
 The Timer Control is a specialized custom component designed to offer a stopwatch-like feature within an application, allowing the use of various timer formats. By adjusting the ticker interval settings, you can create captivating functionalities, such as those found in quiz apps, online examination apps, Pomodoro technique timers, and more.
 
