@@ -29,7 +29,7 @@ With DronaHQ, creators can seamlessly integrate native device features such as c
 
 DronaHQ supports offline functionality, allowing users to access and use the app even when they are offline. Offline data synchronization ensures that data changes made offline are synced with the server when the device reconnects to the internet. For more info, refer [this](/mobile-apps/offline_apps).
 
-### DronaHQ App / White-labelled End-User Mobile App
+### DronaHQ / White-labelled End-User Mobile App
 
 You can have your own white-labelled apps on DronaHQ that can be published on your `Android Play Store` or `iOS AppStore` account. For more info, refer [this](/org-management/create_white_branded_mobile_apps). By default, you can access you published apps on `DronaHQ App` on [Android Playstore](https://play.google.com/store/apps/details?id=com.drona5) or [iOS Appstore](https://apps.apple.com/us/app/dronahq/id905354460).
 
