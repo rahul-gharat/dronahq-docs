@@ -62,6 +62,11 @@ curl --location 'http://localhost:8080/api/scim/v2/Users/563505' \
         <td>Internal server error</td>
         <td>empty</td>
     </tr>
+    <tr>
+        <td>401</td>
+        <td>Unauthorized</td>
+        <td>empty</td>
+    </tr>
 </table>
 
 #### Sample response

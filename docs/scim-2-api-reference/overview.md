@@ -20,3 +20,6 @@ To access the SCIM 2.0 API, you need to include the following authentication key
         <td>Bearer &lt;API Token&gt;</td>
     </tr>
 </table>
+
+You should obtain the API token from the DronaHQ platform from `Manage Users -> SSO Configuration -> Add SSO -> SAML 2.0`. The API token acts as a security mechanism to ensure that only authorized users can access the SCIM API.
+
