@@ -33,6 +33,10 @@ DronaHQ supports offline functionality, allowing users to access and use the app
 
 You can have your own white-labelled apps on DronaHQ that can be published on your `Android Play Store` or `iOS AppStore` account. For more info, refer [this](/org-management/create_white_branded_mobile_apps). By default, you can access you published apps on `DronaHQ App` on [Android Playstore](https://play.google.com/store/apps/details?id=com.drona5) or [iOS Appstore](https://apps.apple.com/us/app/dronahq/id905354460).
 
+### Push Notifications
+
+DronaHQ offers a powerful way to engage users and deliver real-time updates, alerts, and personalized messages directly to their mobile devices with the help of Push notifications. For more info, refer [this](/mobile-apps/push_notifications).
+
 
 ### Security and Compliance 
 
