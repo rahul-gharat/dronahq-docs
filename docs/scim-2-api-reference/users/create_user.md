@@ -84,6 +84,11 @@ curl --location --request POST 'http://localhost:8080/api/scim/v2/Users' \
         <td>Internal server error</td>
         <td>empty</td>
     </tr>
+    <tr>
+        <td>401</td>
+        <td>Unauthorized</td>
+        <td>empty</td>
+    </tr>
 </table>
 
 #### Sample response

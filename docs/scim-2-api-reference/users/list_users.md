@@ -80,7 +80,12 @@ curl --location 'http://localhost:8080/api/scim/v2/Users?filter=userEmail eq "us
         <td>Success</td>
         <td>application/json</td>
     </tr>
-        <tr>
+    <tr>
+        <td>400</td>
+        <td>Internal server error</td>
+        <td>empty</td>
+    </tr>
+    <tr>
         <td>401</td>
         <td>Unauthorized</td>
         <td>empty</td>
