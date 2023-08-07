@@ -20,8 +20,10 @@ When you are binding remote data to a control, you have an option to Cache that 
 
 Following are the list of Native Mobile controls that are supported by DronaHQ End user portal - Android and iOS Mobile App -
 
-- File Upload (Upload from -> Camera / Gallery, Annotation)
+- [File Upload](/reference-controls/file_upload) (Upload from -> Camera / Gallery, Annotation)
     - Upload from -> Camera / Gallery
     - Annotation
-- GPS
+- [GPS](/reference-controls/gps)
 - [NFC Reader](/reference-controls/nfc_reader) 
+- [Barcode Scanner](/reference-controls/barcode)
+- [Signature](/reference-controls/signature)
