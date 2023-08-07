@@ -33,7 +33,7 @@ The Form Repeat control offers a dynamic way to populate multiple forms using da
    Inside the Form Repeat control, bind the data properties to the form controls using the `{{formrepeat.this.property}}` notation. For example, to populate a text input control with the `name` property:
 
    ```
-   {{formrepeat.this.name}}
+   {{formrepeat.THIS.name}}
    ```
 
    As the Form Repeat control iterates through the data array, each form will be populated with the corresponding `name` property.
@@ -71,6 +71,7 @@ Utilizing `{{formrepeat.this.property}}` within the Form Repeat control streamli
 | {{formRepeat.THIS.JSON}}           | Represents the data in JSON format from the Form Repeat control.                                              |
 | {{formRepeat.THIS.INDEX}}          | Represents the index value of the current form group in the Form Repeat control.                             |
 | {{formRepeat.control_name}} | Represents the value of the specified control inside the Form Repeat control.                     |
+| {{formrepeat.this.property}} | Represents specific properties within the current iteration of the Form Repeat control.|
 
 In this updated version, you can use `{{formRepeat.control_name}}` to access and utilize the values of different controls or components inside the Form Repeat control individually. Each control/component can be referenced using the appropriate name inside the square brackets.
 
