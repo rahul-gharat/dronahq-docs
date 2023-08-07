@@ -9,9 +9,11 @@ import Thumbnail from '@site/src/components/Thumbnail';
 
 PostgreSQL stands as an open-source object-relational database system, providing a secure environment for storing and efficiently managing diverse data workloads. 
 
-## Pre-requisite
+## Configuring Connector
 
-1. Authentication Credentials:
+### Pre-requisite
+
+1. Authentication Credentials to connect to your postgres instance. You will need either of the below two credentials option:
    - PostgreSQL database username and password.
    - AWS IAM authentication (for AWS-hosted PostgreSQL databases).
 
@@ -21,22 +23,17 @@ PostgreSQL stands as an open-source object-relational database system, providing
    - Database name within the PostgreSQL host.
 
 3. Firewall Rules:
-   - Configure firewall settings to allow Retool access to your PostgreSQL host.
+   - Configure firewall settings to allow DronaHQ (ip whitelist) access to your PostgreSQL host.
 
 Ensuring you have these prerequisites ready will facilitate a smooth integration of PostgreSQL with DronaHQ, enabling effective data management and utilization.
 
 
 
-## Configuring Database Connector
+### Configuring Connector in DronaHQ
 
-Configure your database category by providing a name, description, and icon. Input vital Connection string details including Host, username, password, port, and database name. Choose between User and Password or AWS IAM Authentication. Validate the connection with `Test connection` and `Save` settings for secure and efficient database setup.
+Configure your database category by providing below details. Choose between `User and Password` or `AWS IAM` Authentication. Validate the connection with `Test connection` and `Save` settings for secure and efficient database setup.
 
-<figure>
-  <Thumbnail src="/img/reference/connectors/postgresql/details.png" alt="PostgreSQL with Sample details." />
-  <figcaption align = "center"><i>PostgreSQL with Sample details.</i></figcaption>
-</figure>
-
-### General 
+#### General 
 
 | Field                | Description                             |
 |----------------------|-----------------------------------------|
@@ -46,17 +43,23 @@ Configure your database category by providing a name, description, and icon. Inp
 | Authentication Type | Choose from User and Password or AWS IAM |
 | Username             | Enter the Username                      |
 | Password             | Enter the Password                      |
+| AWS Access Key             | Enter the Password        |
+| AWS Secret Key | Enter the Password                      |
+| AWS Region | Enter the Password                      |
+| Role to assume (ARN) | Enter the role to be used while accessing API. Example - arn:aws:iam::123456789012:role/RoleName
 
+ |
 
-### Admin
+<figure>
+  <Thumbnail src="/img/reference/connectors/postgresql/details.png" alt="PostgreSQL with Sample details." />
+  <figcaption align = "center"><i>PostgreSQL with Sample details.</i></figcaption>
+</figure>
 
-**Connection String**
+#### Admin
 
-The `key` and `value` connection options in PostgreSQL configuration refer to specific settings (keys) and their corresponding values that dictate how the application connects to the database
-
-
-| Toggle Option                            | Description                                                                               |
-|------------------------------------------|-------------------------------------------------------------------------------------------|
+| Advanced Option   | Description    |
+|--------------------|---------------------|
+| Connection Options | The `key` and `value` connection options in PostgreSQL configuration refer to specific settings (keys) and their corresponding values that dictate how the application connects to the database |
 | Use Dynamic Database Host                | Dynamically determine the host for the database connection.                               |
 | Use Dynamic Database Name                | Set the database name dynamically, allowing easy switching between databases.              |
 | Use Dynamic Database Credentials         | Enable dynamic database credentials for secure and convenient management.                  |
@@ -77,7 +80,7 @@ Connecting your PostgreSQL database to DronaHQ becomes a breeze with AWS. Just i
 
 
 ## Adding Database Queries
-After configuring the connector, access it in Custom Database connectors. 
+After configuring the connector, access it in your Connector Library. 
 To add queries, click `Add query` once the connection is ready. Create simple or complex queries, view tables and fields. Input Query name, run the query, and see results in Response.
 
 <figure>
@@ -89,18 +92,28 @@ To add queries, click `Add query` once the connection is ready. Create simple or
 Use double curly brackets for dynamic variables. Test with sample values before saving. Link variables to controls for runtime use. 
 :::
 
-Saved queries appear under your connector in Custom Database connectors.
+Saved queries appear under your connector in Connector Library.
 
 <figure>
   <Thumbnail src="/img/reference/connectors/postgresql/queries.jpeg" alt="Added Queries" />
   <figcaption align = "center"><i>Added Queries</i></figcaption>
 </figure>
 
+## Supported Query Operations
+
+| Operations   | Description    |
+|--------------------|---------------------|
+| Raw SQL Query | Various `select, insert, delete, update, join` operations which are supported by PostgresSQL query. e.g. - `select * from UserInfo;` |
+| Stored Procedure Call | You can call store procedure similar to that we call from workbench. e.g. - `CALL getUserInfo;` |
+
+
 ## Using PostgreSQL Connector
 
-### Read/Display Data Query: ### 
+### Data Bind using Data Query
 
-After configuring the PostgreSQL connector, locate it in Custom Database connectors. To retrieve data from the Supabase database, add a query to read the data.
+#### Read/Display Data Query: ### 
+
+After configuring the PostgreSQL connector, locate it in Connector Library. To retrieve data from the PostgreSQL database, add a query to read the data.
 
 **Query used:**
 
@@ -126,8 +139,9 @@ Place the Table grid control from the Controls section. Bind data by selecting t
 </figure>
 
 
+### Using in Actionflow blocks
 
-### Delete Data Query: ### 
+#### Delete Data Query: ### 
 
 For data deletion, create a query to remove details related to selected data.
 
@@ -155,7 +169,7 @@ After saving your query after successful configuration testing.
 
 
 
-### Update Data Query: ### 
+#### Update Data Query: 
 
 To update existing data, craft a query that selects details based on the ID and updates values.
 
@@ -198,7 +212,7 @@ Save the query after successful testing, ensuring a configuration test successfu
   <figcaption align = "center"><i>Updating data</i></figcaption>
 </figure>
 
-### Insert Data Query: ### 
+#### Insert Data Query:
 
 For data insertion, create a query that accepts user inputs and saves them.
 
