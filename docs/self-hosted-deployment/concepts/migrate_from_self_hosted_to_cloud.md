@@ -1,7 +1,7 @@
 ---
-sidebar_position: 1
+sidebar_position: 2
 ---
 
-# Migrate from cloud to self hosted
+# Migrate from self hosted to cloud
 
 Docusaurus can manage multiple versions of your docs.

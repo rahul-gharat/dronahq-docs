@@ -84,12 +84,13 @@ const config = {
           //   },
           // },
         },
-        blog: {
-          // showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          // editUrl: `https://github.com/${gitUser}/${gitRepo}/tree/main/`,
-        },
+        blog: false,
+        // {
+        //   showReadingTime: true,
+        //   // Please change this to your repo.
+        //   // Remove this to remove the "edit this page" links.
+        //   // editUrl: `https://github.com/${gitUser}/${gitRepo}/tree/main/`,
+        // },
         // api: {
         //   path: "openapi.json",
         //   routeBasePath: "/apidocs",
