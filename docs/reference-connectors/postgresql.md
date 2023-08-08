@@ -43,10 +43,10 @@ Configure your database category by providing below details. Choose between `Use
 | Authentication Type | Choose from User and Password or AWS IAM |
 | Username             | Enter the Username                      |
 | Password             | Enter the Password                      |
-| AWS Access Key             | Enter the Password        |
-| AWS Secret Key | Enter the Password                      |
-| AWS Region | Enter the Password                      |
-| Role to assume (ARN) | Enter the role to be used while accessing API. Example - arn:aws:iam::123456789012:role/RoleName
+| AWS Access Key             | Enter the AWS Access Key  of your database.      |
+| AWS Secret Key | Enter the AWS Secret Key of your database.                      |
+| AWS Region | Enter the AWS Region of your database.                   |
+| Role to assume (ARN) | Enter the role to be used while accessing API. Example - `arn:aws:iam::123456789012:role/RoleName`
 
  |
 
@@ -69,11 +69,9 @@ Configure your database category by providing below details. Choose between `Use
 
 
 :::tip
-**Effortless Configuration with Connection Strings:**
-Simplify your DronaHQ app's interaction with PostgreSQL databases using connection strings. A single structured line of configuration auto-fills all essential details, ensuring secure and error-free connectivity.
+Simplify PostgreSQL setup using a `connection string`, automating the filling of crucial data like host, name, password, and more.
 
-**Seamless PostgreSQL Setup with AWS Autofill:**
-Connecting your PostgreSQL database to DronaHQ becomes a breeze with AWS. Just input your AWS region and database choice (like Amazon RDS), and DronaHQ automatically retrieves all connection details and credentials. Enjoy a seamless setup process and efficient database connectivity.
+By saving your `IAM credentials` for database import beforehand, you can proceed to pick the Region and Database/collection, to autofill the necessary connection details.
 
 :::
 
@@ -89,7 +87,7 @@ To add queries, click `Add query` once the connection is ready. Create simple or
 </figure>
 
 :::tip
-Use double curly brackets for dynamic variables. Test with sample values before saving. Link variables to controls for runtime use. 
+Use double curly brackets for dynamic variables. Test with sample values before saving. Link dynamic variables to controls/actions and more for runtime use. 
 :::
 
 Saved queries appear under your connector in Connector Library.
@@ -111,19 +109,19 @@ Saved queries appear under your connector in Connector Library.
 
 ### Data Bind using Data Query
 
-#### Read/Display Data Query: ### 
+#### Read/Display Data Query: 
 
 After configuring the PostgreSQL connector, locate it in Connector Library. To retrieve data from the PostgreSQL database, add a query to read the data.
 
-**Query used:**
+Query used:
 
 ```sql
 select * from industry_role
 ```
 
-**Query explanation:**
+Query explanation:
 
-This query selects all details from the 'industry_role' schema's table, allowing you to display the data.
+This query selects all details from the `industry_role` schema's table, allowing you to display the data.
 
 <figure>
   <Thumbnail src="/img/reference/connectors/postgresql/get-data.png" alt="Get Data Query" />
@@ -145,20 +143,20 @@ Place the Table grid control from the Controls section. Bind data by selecting t
 
 For data deletion, create a query to remove details related to selected data.
 
-**Query used:**
+Query used:
 
 ```sql
 DELETE from industry_role WHERE id = {{id}};
 ```
 
-**Query explanation:**
+Query explanation:
 
-This query operates a delete action on the 'industry_role' table, targeting the user-selected ID (primary key) for removal.
+This query operates a delete action on the `industry_role` table, targeting the user-selected ID (primary key) for removal.
 
 
 After saving your query after successful configuration testing.
 
-1. In the table grid's Actions, choose delete_click.
+1. In the table grid's Actions, choose `delete_click`.
 
 2. Build the action flow:
    - Confirm task for user delete confirmation.
@@ -173,16 +171,16 @@ After saving your query after successful configuration testing.
 
 To update existing data, craft a query that selects details based on the ID and updates values.
 
-**Query used:**
+Query used:
 
 ```sql
 UPDATE industry_role
 SET position = '{{pos}}', location = '{{loc}}' where id = {{id}}
 ```
 
-**Query explanation:**
+Query explanation:
 
-This query identifies a specific row using the ID, then updates 'position' and 'location' based on values from 'pos' and 'loc' variables respectively.
+This query identifies a specific row using the ID, then updates `position` and `location` based on values from `pos` and `loc` variables respectively.
 
 Save the query after successful testing, ensuring a configuration test successful message.
 
@@ -216,13 +214,13 @@ Save the query after successful testing, ensuring a configuration test successfu
 
 For data insertion, create a query that accepts user inputs and saves them.
 
-**Query used:**
+Query used:
 
 ```sql
 INSERT into industry_role (position, location)
 VALUES ('{{pos}}', '{{loc}}')
 ```
 
-**Query explanation:**
+Query explanation:
 
-This query inserts values into the 'industry_role' table for 'position' and 'location' columns as provided by 'pos' and 'loc' variables.
+This query inserts values into the `industry_role` table for `position` and `location` columns as provided by `pos` and `loc` variables.
