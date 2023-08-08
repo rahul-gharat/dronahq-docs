@@ -85,7 +85,7 @@ curl --location --request POST 'http://localhost:8080/api/scim/v2/Groups' \
     </tr>
     <tr>
         <td>400</td>
-        <td>Bad Request</td>
+        <td>Invalid Request</td>
         <td>empty</td>
     </tr>
     <tr>

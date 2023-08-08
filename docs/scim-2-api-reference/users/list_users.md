@@ -74,7 +74,7 @@ curl --location 'http://localhost:8080/api/scim/v2/Users?filter=userEmail eq "us
     </tr>
     <tr>
         <td>400</td>
-        <td>Bad Request</td>
+        <td>Invalid Request</td>
         <td>empty</td>
     </tr>
     <tr>

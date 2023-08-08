@@ -2,6 +2,11 @@
 sidebar_position: 11
 title: Overview
 ---
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import VersionedLink from '@site/src/components/VersionedLink';
+import Basics from '@site/static/icons/features/basics.svg';
+import ArrowRight from '@site/static/icons/arrow_right.svg';
 
 System for Cross-domain Identity Management (SCIM) is an open standard protocol that simplifies user provisioning and management across different systems and applications. It provides a standardized approach for creating, retrieving, updating, and deleting user identities and associated attributes. SCIM allows organizations to streamline user management processes and maintain consistent user information across various platforms. By implementing a comprehensive subset of the SCIM 2.0 API, DronaHQ offers seamless integration with Identity Provider (IDP) vendors like Okta and Azure Active Directory. This integration enables efficient user and role management within applications built on the DronaHQ platform. Organizations can leverage SCIM capabilities to automate user provisioning, synchronization, and deprovisioning, reducing manual administrative tasks and ensuring consistent access control across their systems.
 
@@ -21,5 +26,25 @@ To access the SCIM 2.0 API, you need to include the following authentication key
     </tr>
 </table>
 
+- [Steps to setup SCIM with Auth Token](../sso/scim_user_provisioning.md)
 
-[Steps to setup SCIM with Auth Token](../sso/scim_user_provisioning.md)
+<div className="gallery">
+  <div className="card">
+      <div className="card-header">
+        👤 <h4>Users</h4>
+      </div>
+      <p>You can perform user provisioning by using api references</p>
+      <VersionedLink to="/scim-2-api-reference/users/list_users">
+        See List Users <ArrowRight className="arrow" />
+      </VersionedLink>
+    </div>
+    <div className="card">
+      <div className="card-header">
+        👥 <h4>Groups</h4>
+      </div>
+      <p>Perform Group operations by using api references</p>
+      <VersionedLink to="/scim-2-api-reference/groups/list_groups">
+        See List Groups <ArrowRight className="arrow" />
+      </VersionedLink>
+    </div>
+  </div>

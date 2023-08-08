@@ -68,7 +68,7 @@ curl --location 'http://localhost:8080/api/scim/v2/Groups?startIndex=0&count=10'
     </tr>
     <tr>
         <td>400</td>
-        <td>Bad Request</td>
+        <td>Invalid Request</td>
         <td>empty</td>
     </tr>
     <tr>
