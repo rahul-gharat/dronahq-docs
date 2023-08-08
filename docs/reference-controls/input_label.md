@@ -10,7 +10,7 @@ import Thumbnail from '@site/src/components/Thumbnail';
 An Input Label control consists of a Title and a data field. The text that is stored in the data field can be fetched from other controls or a sheet and can be submitted to a sheet when the submit button is pressed.
 
 <figure>
-  <Thumbnail src="/img/reference/controls/input-label/preview.jepg" alt="Input Label" />
+  <Thumbnail src="/img/reference/controls/input-label/preview.jpeg" alt="Input Label" />
   <figcaption align = "center"><i>Input Label</i></figcaption>
 </figure>
 

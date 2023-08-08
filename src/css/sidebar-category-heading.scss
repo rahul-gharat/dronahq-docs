@@ -1,0 +1,26 @@
+.theme-doc-sidebar-menu {
+    .sidebar_category_heading {
+        >.menu__list-item-collapsible {
+            &:hover {
+                background: unset !important;
+            }
+            >.menu__link {
+                font-size: 13px !important;
+                font-weight: 700 !important;
+                margin-bottom: 0!important;
+                margin-top: 18px!important;
+                color: var(--dhq-body-color);
+                padding-left: 0;
+            }
+            >.menu__link--active:hover {
+                color: unset !important;
+            }
+        }
+        >.menu__list {
+            padding-left: 0;
+        }
+        &.menu__list-item>.menu__list-item-collapsible>.menu__link--active {
+            background: unset !important;
+        }
+    }   
+}

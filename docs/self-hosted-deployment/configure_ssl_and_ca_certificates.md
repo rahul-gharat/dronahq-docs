@@ -1,7 +1,7 @@
 ---
-sidebar_position: 1
+sidebar_position: 94
 ---
 
-# Migrate from self hosted to cloud
+# Configure SSL and CA certificates
 
 Docusaurus can manage multiple versions of your docs.

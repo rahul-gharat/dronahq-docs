@@ -6,17 +6,11 @@ sidebar_position: 6
 
 Create a new group, checking if the group already exists before adding.
 
-`For DronaHQ Studio`
 <div class="apidocs-header">
     <div class="method post">POST</div>
     <div class="endpoint">/api/scim/v2/Groups</div>
 </div>
 
-`For DronaHQ Self hosted`
-<div class="apidocs-header">
-    <div class="method post">POST</div>
-    <div class="endpoint">/sso/scim/v2/Groups</div>
-</div>
 
 #### Headers
 <table>
@@ -91,12 +85,17 @@ curl --location --request POST 'http://localhost:8080/api/scim/v2/Groups' \
     </tr>
     <tr>
         <td>400</td>
-        <td>Internal server error</td>
+        <td>Invalid Request</td>
         <td>empty</td>
     </tr>
     <tr>
         <td>401</td>
         <td>Unauthorized</td>
+        <td>empty</td>
+    </tr>
+    <tr>
+        <td>500</td>
+        <td>Internal Server Error</td>
         <td>empty</td>
     </tr>
 </table>
