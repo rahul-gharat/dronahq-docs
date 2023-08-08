@@ -6,18 +6,10 @@ sidebar_position: 1
 
 Retrieve a list of users based on the provided email filter
 
-`For DronaHQ Studio`
 <div class="apidocs-header">
     <div class="method get">GET</div>
     <div class="endpoint">/api/scim/v2/Users</div>
 </div>
-
-`For DronaHQ Self hosted`
-<div class="apidocs-header">
-    <div class="method get">GET</div>
-    <div class="endpoint">/sso/scim/v2/Users</div>
-</div>
-
 
 #### Headers
 <table>
@@ -82,12 +74,17 @@ curl --location 'http://localhost:8080/api/scim/v2/Users?filter=userEmail eq "us
     </tr>
     <tr>
         <td>400</td>
-        <td>Internal server error</td>
+        <td>Invalid Request</td>
         <td>empty</td>
     </tr>
     <tr>
         <td>401</td>
         <td>Unauthorized</td>
+        <td>empty</td>
+    </tr>
+    <tr>
+        <td>500</td>
+        <td>Internal Server Error</td>
         <td>empty</td>
     </tr>
 </table>
