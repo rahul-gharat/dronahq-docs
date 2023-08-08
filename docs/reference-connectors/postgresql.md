@@ -9,29 +9,42 @@ import Thumbnail from '@site/src/components/Thumbnail';
 
 PostgreSQL stands as an open-source object-relational database system, providing a secure environment for storing and efficiently managing diverse data workloads. 
 
-## Configuring Connector
 
-### Pre-requisite
+## Pre-requisite
 
-1. Authentication Credentials to connect to your postgres instance. You will need either of the below two credentials option:
+### Authentication Credentials
+
+Authentication Credentials to connect to your postgres instance. You will need either of the below two credentials option:
    - PostgreSQL database username and password.
    - AWS IAM authentication (for AWS-hosted PostgreSQL databases).
 
-2. Connection Details:
+
+### Connection Details
+
    - Hostname of the PostgreSQL database.
    - Port number for database access.
    - Database name within the PostgreSQL host.
 
-3. Firewall Rules:
+### Allow DronaHQ to access PostgresSQL instance
+
    - Configure firewall settings to allow DronaHQ (IP whitelist) access to your PostgreSQL host.
 
 Ensuring you have these prerequisites ready will facilitate a smooth integration of PostgreSQL with DronaHQ, enabling effective data management and utilization.
 
 
 
-### Configuring Connector in DronaHQ
+## Configuring Connector in DronaHQ
+
+:::tip
+Simplify PostgreSQL setup using a `connection string`, automating the filling of crucial data like host, name, password, and more. --Add link--
+
+DronaHQ can Auto fill connection values from a PostgreSQL [connection string](https://www.postgresql.org/docs/current/libpq-connect.html#LIBPQ-CONNSTRING) or from a AWS IAM credentials using [AWS Import](/datasource-concepts/aws_import).
+
+:::
 
 Configure your database category by providing below details. Choose between `User and Password` or `AWS IAM` Authentication. Validate the connection with `Test connection` and `Save` settings for secure and efficient database setup.
+
+
 
 #### General 
 
@@ -68,15 +81,6 @@ Configure your database category by providing below details. Choose between `Use
 | <VersionedLink to = "../../datasource-concepts/whitelisting_dronahq_ip"> Whitelist IP                 </VersionedLink>            | Enhance security by restricting database access to specific whitelisted IP addresses.     |
 
 
-:::tip
-Simplify PostgreSQL setup using a `connection string`, automating the filling of crucial data like host, name, password, and more.
-
-By saving your `IAM credentials` for database import beforehand, you can proceed to pick the Region and Database/collection, to autofill the necessary connection details.
-
-:::
-
-
-
 ## Adding Database Queries
 After configuring the connector, access it in your Connector Library. 
 To add queries, click `Add query` once the connection is ready. Create simple or complex queries, view tables and fields. Input Query name, run the query, and see results in Response.
@@ -104,6 +108,11 @@ Saved queries appear under your connector in Connector Library.
 | Raw SQL Query | Various `select, insert, delete, update, join` operations which are supported by PostgresSQL query. e.g. - `select * from UserInfo;` |
 | Stored Procedure Call | You can call store procedure similar to that we call from workbench. e.g. - `CALL getUserInfo;` |
 
+:::caution UNSUPPORTED
+
+Add any specific operations which are unsupported. Remove this for Postgresql.
+
+:::
 
 ## Using PostgreSQL Connector
 
