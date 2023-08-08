@@ -23,7 +23,7 @@ PostgreSQL stands as an open-source object-relational database system, providing
    - Database name within the PostgreSQL host.
 
 3. Firewall Rules:
-   - Configure firewall settings to allow DronaHQ (ip whitelist) access to your PostgreSQL host.
+   - Configure firewall settings to allow DronaHQ (IP whitelist) access to your PostgreSQL host.
 
 Ensuring you have these prerequisites ready will facilitate a smooth integration of PostgreSQL with DronaHQ, enabling effective data management and utilization.
 
@@ -62,10 +62,10 @@ Configure your database category by providing below details. Choose between `Use
 | Connection Options | The `key` and `value` connection options in PostgreSQL configuration refer to specific settings (keys) and their corresponding values that dictate how the application connects to the database |
 | Use Dynamic Database Host                | Dynamically determine the host for the database connection.                               |
 | Use Dynamic Database Name                | Set the database name dynamically, allowing easy switching between databases.              |
-| Use Dynamic Database Credentials         | Enable dynamic database credentials for secure and convenient management.                  |
-| Enable Converting Queries to Prepared Statement | Opt for prepared statements to enhance database performance and security.          |
-| Enable SSH Tunneling                     | Securely access the database through encrypted SSH tunneling.                              |
-| Whitelist IP                             | Enhance security by restricting database access to specific whitelisted IP addresses.     |
+| <VersionedLink to = "../../datasource-concepts/dynamic_credentials"> Use Dynamic Database Credentials        </VersionedLink> | Enable dynamic database credentials for secure and convenient management.                  |
+| <VersionedLink to = "../../datasource-concepts/prepared_statements"> Enable Converting Queries to Prepared Statement </VersionedLink>| Opt for prepared statements to enhance database performance and security.          |
+| <VersionedLink to = "../../datasource-concepts/ssh_tunneling"> Enable SSH Tunneling          </VersionedLink>           | Securely access the database through encrypted SSH tunneling.                              |
+| <VersionedLink to = "../../datasource-concepts/whitelisting_dronahq_ip"> Whitelist IP                 </VersionedLink>            | Enhance security by restricting database access to specific whitelisted IP addresses.     |
 
 
 :::tip
