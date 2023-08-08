@@ -6,16 +6,9 @@ sidebar_position: 5
 
 Retrieve a list of Groups.
 
-`For DronaHQ Studio`
 <div class="apidocs-header">
     <div class="method get">GET</div>
     <div class="endpoint">/api/scim/v2/Groups</div>
-</div>
-
-`For DronaHQ Self hosted`
-<div class="apidocs-header">
-    <div class="method get">GET</div>
-    <div class="endpoint">/sso/scim/v2/Groups</div>
 </div>
 
 #### Headers
@@ -75,12 +68,17 @@ curl --location 'http://localhost:8080/api/scim/v2/Groups?startIndex=0&count=10'
     </tr>
     <tr>
         <td>400</td>
-        <td>Internal server error</td>
+        <td>Bad Request</td>
         <td>empty</td>
     </tr>
     <tr>
         <td>401</td>
         <td>Unauthorized</td>
+        <td>empty</td>
+    </tr>
+    <tr>
+        <td>500</td>
+        <td>Internal Server Error</td>
         <td>empty</td>
     </tr>
 </table>

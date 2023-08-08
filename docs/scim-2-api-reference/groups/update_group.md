@@ -6,16 +6,9 @@ sidebar_position: 9
 
 Update an existing Group by adding or removing members.
 
-`For DronaHQ Studio`
 <div class="apidocs-header">
     <div class="method patch">PATCH</div>
     <div class="endpoint">/api/scim/v2/Groups/&#123;id&#125;</div>
-</div>
-
-`For DronaHQ Self hosted`
-<div class="apidocs-header">
-    <div class="method patch">PATCH</div>
-    <div class="endpoint">/sso/scim/v2/Groups/&#123;id&#125;</div>
 </div>
 
 #### Headers
@@ -91,6 +84,10 @@ curl --location --request PATCH 'http://localhost:8080/api/scim/v2/Groups/group-
     <tr>
         <td>401</td>
         <td>Unauthorized</td>
+    </tr>
+    <tr>
+        <td>500</td>
+        <td>Internal Server Error</td>
     </tr>
 </table>
 

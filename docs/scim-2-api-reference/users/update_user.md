@@ -6,16 +6,9 @@ sidebar_position: 4
 
 Update an existing User by ID.
 
-`For DronaHQ Studio`
 <div class="apidocs-header">
     <div class="method patch">PATCH</div>
     <div class="endpoint">/api/scim/v2/Users/&#123;id&#125;</div>
-</div>
-
-`For DronaHQ Self hosted`
-<div class="apidocs-header">
-    <div class="method patch">PATCH</div>
-    <div class="endpoint">/sso/scim/v2/Users/&#123;id&#125;</div>
 </div>
 
 #### Headers
@@ -95,12 +88,17 @@ curl --location --request PATCH 'http://localhost:8080/api/scim/v2/Users/{id}' \
     </tr>
     <tr>
         <td>400</td>
-        <td>Internal server error</td>
+        <td>Bad Request</td>
         <td>empty</td>
     </tr>
     <tr>
         <td>401</td>
         <td>Unauthorized</td>
+        <td>empty</td>
+    </tr>
+    <tr>
+        <td>500</td>
+        <td>Internal Server Error</td>
         <td>empty</td>
     </tr>
 </table>

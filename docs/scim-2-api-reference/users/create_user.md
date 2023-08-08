@@ -6,16 +6,9 @@ sidebar_position: 2
 
 Create a new user, checking if the user already exists before adding.
 
-`For DronaHQ Studio`
 <div class="apidocs-header">
     <div class="method post">POST</div>
     <div class="endpoint">/api/scim/v2/Users</div>
-</div>
-
-`For DronaHQ Self hosted`
-<div class="apidocs-header">
-    <div class="method post">POST</div>
-    <div class="endpoint">/sso/scim/v2/Users</div>
 </div>
 
 #### Headers
@@ -81,12 +74,17 @@ curl --location --request POST 'http://localhost:8080/api/scim/v2/Users' \
     </tr>
     <tr>
         <td>400</td>
-        <td>Internal server error</td>
+        <td>Bad Request</td>
         <td>empty</td>
     </tr>
     <tr>
         <td>401</td>
         <td>Unauthorized</td>
+        <td>empty</td>
+    </tr>
+    <tr>
+        <td>500</td>
+        <td>Internal Server Error</td>
         <td>empty</td>
     </tr>
 </table>
