@@ -45,6 +45,18 @@ Following are list of all the static keywords:
 
 
 
-## Automation keywords
+## Automation Keywords
+
+Automation keywords provide essential functionalities for DronaHQ's automation builder, enabling users to interact with incoming data, access automation-related details, and efficiently manage tasks within their automated workflows.
+
+| Keyword                | Description                                                                                   |
+|------------------------|-----------------------------------------------------------------------------------------------|
+| AUTOMATION.version     | Retrieves the version of the running automation.                                              |
+| AUTOMATION.triggerTime | Retrieves the start time of the trigger for the automation.                                   |
+| AUTOMATION.logs        | Accesses the Run Logs within a task, storing preview task logs. Helps with debugging.         |
+| webhook.body           | Accesses the body of the webhook request. Useful for extracting data from incoming requests.  |
+| webhook.query          | Accesses the query parameters of the webhook request. Helps in processing URL parameters.     |
+| webhook.headers        | Accesses the headers of the webhook request. Useful for authentication and request details.   |
+| SELF                   | Refers to the current task. In the Logging section, use `SELF.output_variable_name` to access the task's output. Useful for data chaining between tasks. |
 
 ## BPM Flow keywords

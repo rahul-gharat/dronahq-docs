@@ -55,6 +55,10 @@ After selecting a trigger for your automation, you will need to add tasks or con
   <figcaption align = "center"><i>Select a task or connector</i></figcaption>
 </figure>
 
+:::info Automation keywords
+Learn about the automation keywords that offer enhanced feasibility within automation. Explore them [here](/reference_keywords#automation-keywords).
+:::
+
 ## Test and Publish
 
 Once you have configured your automation flow, you can click on the `Preview/Play button` at the top to execute the automation and test its functionality.

@@ -85,7 +85,11 @@ To explore and access previously published versions of the automation, click on 
 
 With the power of automation, you possess the flexibility to roll back to any previous version that was published earlier. This enables you to gracefully revert to a known state, ensuring smooth operation and easy recovery.
 
-To initiate a rollback, simply direct your attention to the 'Roll Back' column and click on the `arrow` next to the desired version. Alternatively, for a sneak peek at the structure of a specific version, click on the `eye` icon under the 'Preview' column.
+To initiate a rollback, simply direct your attention to the 'Roll Back' column and click on the `arrow` next to the desired version. 
+
+### Version Preview
+
+Alternatively, for a sneak peek at the structure of a specific version, click on the `eye` icon under the 'Preview' column.
 
 <figure>
   <Thumbnail src="/img/automation/test-publish-rollback/version-preview.png" alt="Version Preview" width='80%'/>
