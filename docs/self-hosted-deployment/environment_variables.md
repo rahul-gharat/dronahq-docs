@@ -1,5 +1,5 @@
 ---
-sidebar_position: 96
+sidebar_position: 95
 ---
 
 # Self-Hosted Environment Variables
