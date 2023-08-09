@@ -3,8 +3,9 @@ sidebar_position: 1
 title: Currency
 ---
 
-import Image from '@site/src/components/Image'; import VersionedLink from '@site/src/components/VersionedLink'; import
-Thumbnail from '@site/src/components/Thumbnail';
+import Image from '@site/src/components/Image';
+import VersionedLink from '@site/src/components/VersionedLink';
+import Thumbnail from '@site/src/components/Thumbnail';
 
 Currency Control facilitates the acceptance of monetary values, allowing users to specify both the payment amount and
 the currency. This feature consists of two essential components: Value and Unit. The Value component enables the input

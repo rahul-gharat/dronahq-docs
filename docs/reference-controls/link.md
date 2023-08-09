@@ -3,8 +3,9 @@ sidebar_position: 1
 title: Link
 ---
 
-import Image from '@site/src/components/Image'; import VersionedLink from '@site/src/components/VersionedLink'; import
-Thumbnail from '@site/src/components/Thumbnail';
+import Image from '@site/src/components/Image';
+import VersionedLink from '@site/src/components/VersionedLink';
+import Thumbnail from '@site/src/components/Thumbnail';
 
 The Link control is a Custom control designed to create links either from URLs or to different pages while enabling further actions. It proves useful when you want to incorporate links into your application and define specific actions triggered by clicking those links.
 

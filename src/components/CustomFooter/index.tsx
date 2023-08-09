@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import ReactDOM from 'react-dom';
+// import ReactDOM from 'react-dom';
 import Link from '@docusaurus/Link';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import GithubIcon from '@site/static/icons/github.svg';
@@ -10,7 +10,7 @@ import YoutubeIcon from '@site/static/icons/youtube.svg';
 import styles from './styles.module.scss';
 import { v4 as uuidv4 } from 'uuid';
 const CustomFooter = () => {
-  const [element, setElement] = useState(null);
+  // const [element, setElement] = useState(null);
   useEffect(() => {
     if (!localStorage.getItem('hasuraDocsUserID')) {
       const userID = uuidv4();
@@ -18,29 +18,14 @@ const CustomFooter = () => {
     }
   }, []);
 
-  useEffect(() => {
-
-
-    // const editMetaRow = document.querySelector('.theme-doc-footer-edit-meta-row > .col');
-    // setElement(editMetaRow);
-    // editMetaRow.style.position = 'relative';
-    // const div = document.createElement('div');
-    // editMetaRow.appendChild(div);
-    // ReactDOM.render(<ContributionPointer element={element} />, div);
-
-    // try {
-    //   var nextButtonElem = document.querySelector('.pagination-nav__link.pagination-nav__link--next');
-    //   var nextButtonLabelElem =  nextButtonElem.querySelector('.pagination-nav__label');
-    //   var nextButtonLabel = nextButtonLabelElem.textContent;
-    //   // alert(nextButtonLabel);
-  
-    //   var headerElem = document.querySelector('.sidebar_heading[headertext="' + nextButtonLabel + '"]');
-  
-    //   var nextLink = headerElem.nextSibling.firstChild.href;
-    //   nextButtonElem.href = nextLink;
-  
-    // } catch (ex){}
-  }, [element]);
+  // useEffect(() => {
+  //   const editMetaRow = document.querySelector('.theme-doc-footer-edit-meta-row > .col');
+  //   setElement(editMetaRow);
+  //   editMetaRow.style.position = 'relative';
+  //   const div = document.createElement('div');
+  //   editMetaRow.appendChild(div);
+  //   ReactDOM.render(<ContributionPointer element={element} />, div);
+  // }, [element]);
 
   return (
     <footer className={styles['custom-footer-wrapper']}>
