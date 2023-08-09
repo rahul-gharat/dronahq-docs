@@ -8,7 +8,7 @@ import ArrowRight from '@site/static/icons/arrow_right.svg';
 
 # Overview
 
-Self Hosted DronaHQ solution ensures that all access to your data is managed within your own cloud environment. It
+Self Hosted DronaHQ solution ensures that, all access to your data is managed within your own cloud environment. It
 also provides the flexibility to control how DronaHQ is setup within your infrastructure, the ability to configure logging, scaling, and access to enable custom SAML SSO using providers like Okta and Active Directory.
 
 ### Learn about deploying DronaHQ on your own infrastructure.
@@ -23,94 +23,20 @@ If you’re evaluating a large production use case or need any of our Enterprise
 
 ### Related Topics
 
-<div className="gallery">
-    <div className="card">
-        <div className="card-header">
-            <Basics />
-            <h4>Minimum requirements</h4>
-        </div>
-        <p>Learn about DronaHQ Self-hosted requirements then follow a deployment guide to get started.</p>
-        <VersionedLink to="./requirements">
-            Read More <ArrowRight className="arrow" />
-        </VersionedLink>
-    </div>
-    <div className="card">
-        <div className="card-header">
-            <Basics />
-            <h4>Deployment Options</h4>
-        </div>
-        <p>Learn about DronaHQ Self-hosted requirements then follow a deployment guide to get started.</p>
-        <VersionedLink to="./deployment-options/local_machine">
-            Read More <ArrowRight className="arrow" />
-        </VersionedLink>
-    </div>
-    <div className="card">
-        <div className="card-header">
-            <Basics />
-            <h4>Configure SSL and CA certificates</h4>
-        </div>
-        <p>Learn about DronaHQ Self-hosted requirements then follow a deployment guide to get started.</p>
-        <VersionedLink to="./configure_ssl_and_ca_certificates">
-            Read More <ArrowRight className="arrow" />
-        </VersionedLink>
-    </div>
-    <div className="card">
-        <div className="card-header">
-            <Basics />
-            <h4>Configure External Databases</h4>
-        </div>
-        <p>Learn about DronaHQ Self-hosted requirements then follow a deployment guide to get started.</p>
-        <VersionedLink to="./configure_external_databases">
-            Read More <ArrowRight className="arrow" />
-        </VersionedLink>
-    </div>
-    <div className="card">
-        <div className="card-header">
-            <Basics />
-            <h4>Environment Variables</h4>
-        </div>
-        <p>Learn about DronaHQ Self-hosted requirements then follow a deployment guide to get started.</p>
-        <VersionedLink to="./environment_variables">
-            Read More <ArrowRight className="arrow" />
-        </VersionedLink>
-    </div>
-    <div className="card">
-        <div className="card-header">
-            <Basics />
-            <h4>Horizontal Scaling</h4>
-        </div>
-        <p>Learn about DronaHQ Self-hosted requirements then follow a deployment guide to get started.</p>
-        <VersionedLink to="./horizontal_scaling">
-            Read More <ArrowRight className="arrow" />
-        </VersionedLink>
-    </div>
-    <div className="card">
-        <div className="card-header">
-            <Basics />
-            <h4>Update DronaHQ to Latest version</h4>
-        </div>
-        <p>Learn about DronaHQ Self-hosted requirements then follow a deployment guide to get started.</p>
-        <VersionedLink to="./update_dronahq_to_latest">
-            Read More <ArrowRight className="arrow" />
-        </VersionedLink>
-    </div>
-    <div className="card">
-        <div className="card-header">
-            <Basics />
-            <h4>Concepts</h4>
-        </div>
-        <p>Learn about DronaHQ Self-hosted requirements then follow a deployment guide to get started.</p>
-        <VersionedLink to="./concepts/migrate_from_cloud_to_self_hosted">
-            Read More <ArrowRight className="arrow" />
-        </VersionedLink>
-    </div>
-</div>
+- [Minimum requirements](./requirements.md)
+- [Deployment Options](./deployment-options/local_machine.md)
+- [Configure SSL and CA certificates](./configure_ssl_and_ca_certificates.md)
+- [Configure External Databases](./configure_external_databases.md)
+- [Environment Variables](./environment_variables.md)
+- [Horizontal Scaling](./horizontal_scaling.md)
+- [Update DronaHQ to Latest version](./update_dronahq_to_latest.md)
+- [Concepts](./concepts/migrate_from_cloud_to_self_hosted.md)
 
 ### Useful Links
 
-- [Github link](https://github.com/dronahq/self-hosted)
-- [sign up link](https://www.dronahq.com/self-hosted-signup/)
-- [selfhosted portal](https://studio.dronahq.com/selfhosted/login)
-- [pricing plans](https://www.dronahq.com/pricing/)
-- [schedule a demo](https://www.dronahq.com/self-hosted-demo-call)
+- [Github](https://github.com/dronahq/self-hosted)
+- [Sign Up](https://www.dronahq.com/self-hosted-signup/)
+- [Self-Hosted Portal](https://studio.dronahq.com/selfhosted/login)
+- [Pricing and Plans](https://www.dronahq.com/pricing/)
+- [Schedule a demo](https://www.dronahq.com/self-hosted-demo-call)
 - [Releases](https://community.dronahq.com/t/dronahq-self-hosted-releases/1177)
