@@ -6,17 +6,11 @@ sidebar_position: 10
 
 Delete a Group by ID.
 
-`For DronaHQ Studio`
 <div class="apidocs-header">
     <div class="method delete">DELETE</div>
     <div class="endpoint">/api/scim/v2/Groups/&#123;id&#125;</div>
 </div>
 
-`For DronaHQ Self hosted`
-<div class="apidocs-header">
-    <div class="method delete">DELETE</div>
-    <div class="endpoint">/sso/scim/v2/Groups/&#123;id&#125;</div>
-</div>
 
 #### Headers
 <table>
@@ -57,5 +51,10 @@ curl --location --request DELETE 'http://localhost:8080/api/scim/v2/Groups/group
     <tr>
         <td>401</td>
         <td>Unauthorized</td>
+    </tr>
+    <tr>
+        <td>500</td>
+        <td>Internal Server Error</td>
+        <td>empty</td>
     </tr>
 </table>

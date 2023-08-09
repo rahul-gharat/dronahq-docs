@@ -15,6 +15,33 @@ The Form Repeat control is a Container control that enables you to group multipl
   <figcaption align = "center"><i>Form Repeat</i></figcaption>
 </figure>
 
+## Binding Data Options
+
+The Form Repeat control is designed to handle arrays of objects as input, where each object represents a set of data to populate a form. 
+
+####  Dynamic Form Population with Form Repeat Control
+
+The Form Repeat control offers a dynamic way to populate multiple forms using data bindings. By leveraging the `{{formrepeat.this.property}}` syntax, you can effortlessly populate each form within the Form Repeat control with distinct data. Let's explore how to achieve this:
+
+1. **Data Source Setup:**
+   Prepare your data source, which should be an array of objects. Each object represents the data for a form, with properties like `name,` `email,` etc.
+
+2. **Form Repeat Control Integration:**
+   Integrate the Form Repeat control into your design. Configure the form fields, such as text input controls, checkboxes, etc., that you want to populate with data.
+
+3. **Data Binding for Dynamic Population:**
+   Inside the Form Repeat control, bind the data properties to the form controls using the `{{formrepeat.this.property}}` notation. For example, to populate a text input control with the `name` property:
+
+   ```
+   {{formrepeat.THIS.name}}
+   ```
+
+   As the Form Repeat control iterates through the data array, each form will be populated with the corresponding `name` property.
+
+4. **Automated Form Generation:**
+   If there are four `name` values in your data array, the Form Repeat control will automatically generate four forms, each populated with a unique `name` value.
+
+Utilizing `{{formrepeat.this.property}}` within the Form Repeat control streamlines the process of creating and populating multiple forms. It enables you to bind data dynamically, ensuring that each form displays the appropriate information, making it an efficient solution for scenarios where you need to handle repetitive form structures with distinct data.
 
 
 ## Properties
@@ -43,9 +70,10 @@ The Form Repeat control is a Container control that enables you to group multipl
 |------------------------------------|----------------------------------------------------------------------------------------------------------------|
 | {{formRepeat.THIS.JSON}}           | Represents the data in JSON format from the Form Repeat control.                                              |
 | {{formRepeat.THIS.INDEX}}          | Represents the index value of the current form group in the Form Repeat control.                             |
-| {{formRepeat.[keyword]}} | Represents the value of the specified control/component/attributes inside the Form Repeat control.                     |
+| {{formRepeat.control_name}} | Represents the value of the specified control inside the Form Repeat control.                     |
+| {{formrepeat.this.property}} | Represents specific properties within the current iteration of the Form Repeat control.|
 
-In this updated version, you can use `{{formRepeat.[keyword]}}` to access and utilize the values of different controls or components inside the Form Repeat control individually. Each control/component can be referenced using the appropriate name inside the square brackets.
+In this updated version, you can use `{{formRepeat.control_name}}` to access and utilize the values of different controls or components inside the Form Repeat control individually. Each control/component can be referenced using the appropriate name inside the square brackets.
 
 
 You can have a look at this video to understand how to use the Form repeat control and understand [how you can create repeatable forms.](https://community.dronahq.com/t/creating-repeatable-forms-using-form-repeat-control)
