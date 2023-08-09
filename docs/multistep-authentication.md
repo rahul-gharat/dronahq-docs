@@ -496,7 +496,7 @@ In addition to other methods of multistep authentication, you have the option to
 
 By selecting the SSO Token method, DronaHQ will automatically generate output variables based on the active SSO token in your current account. This streamlines the process and eliminates the need for manual setup.
 
-For a more in-depth understanding of SSO tokens and their usage, you can find detailed information in the provided link. Embracing the SSO token method can simplify your multistep authentication flow while ensuring seamless and secure access to your account resources.
+For a more in-depth understanding of SSO tokens and their usage, you can find detailed information in the provided [link](/sso/configuring_sso_with_saml). Embracing the SSO token method can simplify your multistep authentication flow while ensuring seamless and secure access to your account resources.
 
   <figure>
     <Thumbnail align = "center" src="/img/advanced-concepts/multistep-auth/sso-token.png" alt="Step SSO Token" width='70%'/>
@@ -510,7 +510,7 @@ In addition to other methods of multistep authentication, you have the option to
 
 By selecting the SSO Token method, DronaHQ will automatically generate output variables based on the active SSO token in your current account. This streamlines the process and eliminates the need for manual setup.
 
-For a more in-depth understanding of SSO tokens and their usage, you can find detailed information in the provided link. Embracing the SSO token method can simplify your multistep authentication flow while ensuring seamless and secure access to your account resources.
+For a more in-depth understanding of SSO tokens and their usage, you can find detailed information in the provided [link](/sso/configuring_sso_with_saml). Embracing the SSO token method can simplify your multistep authentication flow while ensuring seamless and secure access to your account resources.
 
   <figure>
     <Thumbnail align = "center" src="/img/advanced-concepts/multistep-auth/refresh-sso-token.png" alt="Step SSO Token" width='70%'/>
