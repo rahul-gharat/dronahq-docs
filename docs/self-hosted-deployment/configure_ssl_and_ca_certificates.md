@@ -1,5 +1,5 @@
 ---
-sidebar_position: 96
+sidebar_position: 94
 ---
 
 # Configure SSL and CA certificates
