@@ -6,6 +6,19 @@ sidebar_position: 1
 
 DronaHQ Self Hosted supports local installation on your Linux based OS or MacOS using [Docker](https://www.docker.com/).
 
+:::info Attention
+We recommend you to deploy DronaHQ Self Hosted on cloud hosted virtual machines such as [AWS EC2](./aws.md), [Azure VM](./azure.md), or [GCP Compute Engine](./gcp.md). Their hardware and operating systems are more standarsized make it best fit for production deployments. If you are deploying DronaHQ on a physical machine then verify that your system is matching minimum criteria for network and storage [requirements](./../requirements.md).
+:::
+
+### Prerequisite
+To deploy DronaHQ on your local machin you should have:
+- DronaHQ Self Hosted license key. you can get your license key from [Self Hosted Portal](https://studio.dronahq.com/selfhosted/login).
+- Working installation of [Docker Desktop](https://docs.docker.com/desktop/).
+
+### Download and Install DronaHQ
+
+1. Download `dronahq` repository and move your working directory to `dronahq`.
+
 1. Run the command `git clone https://github.com/dronahq/self-hosted.git`.
 1. Run the command `cd self-hosted` to enter the cloned repository's directory.
 1. Edit the `docker-compose.yml` file using VIM (or other text editor) to set the version of DronaHQ you want to install. To do this, replace `X.Y.Z` in `image:dronahq/self-hosted:X.Y.Z` with your desired version. See [Select a DronaHQ version number](#select-a-dronahq-version-number) to help you choose a version.

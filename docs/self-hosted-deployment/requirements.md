@@ -31,4 +31,4 @@ By default, all deployments include a containerized instance of MYSQL and MONGOD
 
 The minimum recommended version for the MYSQL database is version 8.0 and for MongoDB it is version 5.0.
 
-[Learn how to make your external databases DronaHQ ready](https://license.dronahq.com).
+[Learn how to make your external databases DronaHQ ready](./configure_external_databases.md).
