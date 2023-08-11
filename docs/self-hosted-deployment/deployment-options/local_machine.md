@@ -7,7 +7,7 @@ sidebar_position: 1
 DronaHQ Self Hosted supports local installation on your Linux based OS or MacOS using [Docker](https://www.docker.com/).
 
 :::info Attention
-We recommend you to deploy DronaHQ Self Hosted on cloud hosted virtual machines such as [AWS EC2](./aws.md), [Azure VM](./azure.md), or [GCP Compute Engine](./gcp.md). Their hardware and operating systems are more standarsized make it best fit for production deployments. If you are deploying DronaHQ on a physical machine then verify that your system is matching minimum criteria for network and storage [requirements](./../requirements.md).
+We recommend you to deploy DronaHQ Self Hosted on cloud hosted virtual machines such as [AWS EC2](./aws.md), [Azure VM](./azure.md), or [GCP Compute Engine](./gcp.md). Their hardware and operating systems are more standarsized make it best fit for production use cases. If you are deploying DronaHQ on a physical machine then verify that your system is matching minimum criteria for network and storage [requirements](./../requirements.md).
 :::
 
 ### Prerequisite
@@ -15,22 +15,106 @@ To deploy DronaHQ on your local machin you should have:
 - DronaHQ Self Hosted license key. you can get your license key from [Self Hosted Portal](https://studio.dronahq.com/selfhosted/login).
 - Working installation of [Docker Desktop](https://docs.docker.com/desktop/).
 
-### Download and Install DronaHQ
+### 1. Download DronaHQ Self Hosted
 
-1. Download `dronahq` repository and move your working directory to `dronahq`.
+There are two ways, you can download DronaHQ Self Hosted.
 
-1. Run the command `git clone https://github.com/dronahq/self-hosted.git`.
-1. Run the command `cd self-hosted` to enter the cloned repository's directory.
-1. Edit the `docker-compose.yml` file using VIM (or other text editor) to set the version of DronaHQ you want to install. To do this, replace `X.Y.Z` in `image:dronahq/self-hosted:X.Y.Z` with your desired version. See [Select a DronaHQ version number](#select-a-dronahq-version-number) to help you choose a version.
-1. Run `./install_sh.sh` to install  Docker and Docker Compose.
-1. In your `.env` (this file is only created after running `./install_sh.sh`) add the following:
+#### a. Cloning Git repository
 
-   ```docker
-   # License key granted to you by DronaHQ
-   LICENSE_KEY=YOUR_LICENSE_KEYs
-   ```
+To clone from git repository, run following command.
 
-1. Run `sudo docker-compose up -d` to start the DronaHQ server.
-1. Run `sudo docker-compose ps` to make sure all the containers are up and running.
-1. Navigate to your server's IP address in a web browser. DronaHQ should now be running on port `8080`.
-1. Click Activate, since we're starting from a clean slate. The first user to create an account on an instance becomes the administrator.
+```shell
+git clone https://github.com/dronahq/self-hosted.git dronahq-self-hosted
+```
+
+Above command will create new folder in your present working directory with name `dronahq-self-hosted`.
+
+#### b. Download and extract compressed package from DronaHQ
+
+To download compressed package from DronaHQ, run following command
+
+```shell
+curl -L -fsSL -o ./master.zip "https://license.dronahq.com/self-hosted/master.zip" && unzip master.zip && mv master dronahq-self-hosted
+```
+
+### 2. Change working directory
+
+We have to change working directory to `dronahq-self-hosted` for playing with DronaHQ.
+
+Use following command.
+
+```shell
+cd dronahq-self-hosted
+```
+
+### 3. Update resources
+
+This is recommended step by DronaHQ. Updating your resources periodically will help you stay aligned with DronaHQ.
+
+Run following command
+
+```shell
+/bin/bash -c "$(curl -fsSL https://license.dronahq.com/self-hosted/update_resources.sh)"
+```
+
+### 4. Update environment variables
+
+DronaHQ writes all configurable environment variables in file `dronahq.env`. Please make sure you have all mandatory variables are in place.
+
+#### i. `LICENSE_KEY`
+`LICENSE_KEY` is one of the mandatory and essential environment variable. please verify that you have it in `dronahq.env`.
+If not you can add this variable. Following is the example of how this variable should look like in environment file.
+
+```shell
+LICENSE_KEY='DRONAHQ-LICENSE-KEY'
+```
+
+If you dont have DronaHQ license key for self hosted, you can [sign up](https://www.dronahq.com/self-hosted-signup/) for DrobaHQ self hosted and get your license key by logging in to [self-hosted portal](https://studio.dronahq.com/selfhosted/login).
+
+#### ii. `BUILDER_URL`
+
+This variable specifies how do yo want to access DronaHQ.
+- Protocol [ http/ https]
+- Access domain [ Localhost/ IP address/ Domain Name] 
+
+Example 1. If you are using DronaHQ on local machine.
+
+```shell
+BULDER_URL='http://localhost'
+```
+Example 2. If you have configured DronaHQ on server and want to use it with server's public IP address.
+
+```shell
+# replace your ip address here
+BUILDER_URL='http://10.100.3.21'
+```
+
+Example 3. If you have mapped your domain name to server's IP address.
+
+```shell
+# replace your domain name
+BUILDER_URL='http://dronahq.example.com'
+```
+
+#### iii. Optional environment variables
+You can also checkout other optional [Environment Variables](./../environment_variables.md), which can enable advance options for you to use DronaHQ Self Hosted.
+
+### 5. Restart DronaHQ
+
+You can apply all new changes in configuration, and restart DronaHQ simply by running following command.
+
+```shell
+sudo docker-compose up -d
+```
+
+### 6. Verify that containers are running
+
+You can use following comand to check running docker containers.
+
+```shell
+sudo docker-compose ps
+```
+
+It should look something like this
+
+![sudo docker-compose ps](./sudo-docker-compose-ps.png "sudo docker-compose ps")
