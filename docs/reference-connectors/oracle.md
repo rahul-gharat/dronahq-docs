@@ -8,6 +8,7 @@ import Thumbnail from '@site/src/components/Thumbnail';
 
 
 Oracle is an open-source object-relational database system that allows you to safely store and scale the different data workloads.
+
 ## Configuring Connector
 
 ### Prerequisites
@@ -51,7 +52,7 @@ Configure your database category using the provided details.Validate connection 
 | Use Dynamic Database Host                | Dynamically determine the host for the database connection.                               |
 | Use Dynamic Database Name                | Set the database name dynamically, allowing easy switching between databases.              |
 | <VersionedLink to = "../../datasource-concepts/dynamic_credentials"> Use Dynamic Database Credentials        </VersionedLink> | Enable dynamic database credentials for secure and convenient management.                  |
-| <VersionedLink to = "../../datasource-concepts/ssh_tunneling"> Enable SSH Tunneling          </VersionedLink>           | Securely access the database through encrypted SSH tunneling.                              |
+| <VersionedLink to = "../../datasource-concepts/ssl_configurations"> Connect using SSL  </VersionedLink> | Securely access the database using an encrypted SSL connection, ensuring data integrity and confidentiality. |
 | <VersionedLink to = "../../datasource-concepts/whitelisting_dronahq_ip"> Whitelist IP                 </VersionedLink>            | Enhance security by restricting database access to specific whitelisted IP addresses.     |
 
 ## Adding Database Queries

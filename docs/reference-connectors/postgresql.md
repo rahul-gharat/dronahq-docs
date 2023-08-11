@@ -5,7 +5,7 @@ title: PostgreSQL
 import Image from '@site/src/components/Image';
 import VersionedLink from '@site/src/components/VersionedLink';
 import Thumbnail from '@site/src/components/Thumbnail';
-
+ 
 
 PostgreSQL stands as an open-source object-relational database system, providing a secure environment for storing and efficiently managing diverse data workloads. 
 
@@ -35,15 +35,11 @@ Ensuring you have these prerequisites ready will facilitate a smooth integration
 
 ## Configuring Connector in DronaHQ
 
-:::tip
-Simplify PostgreSQL setup using a `connection string`, automating the filling of crucial data like host, name, password, and more. --Add link--
-
-DronaHQ can Auto fill connection values from a PostgreSQL [connection string](https://www.postgresql.org/docs/current/libpq-connect.html#LIBPQ-CONNSTRING) or from a AWS IAM credentials using [AWS Import](/datasource-concepts/aws_import).
-
-:::
-
 Configure your database category by providing below details. Choose between `User and Password` or `AWS IAM` Authentication. Validate the connection with `Test connection` and `Save` settings for secure and efficient database setup.
 
+:::tip
+DronaHQ can Auto fill crucial connection values like host, name, password, and more from the connector's [connection string](https://www.postgresql.org/docs/current/libpq-connect.html#LIBPQ-CONNSTRING) or from a AWS IAM credentials using [AWS Import](/datasource-concepts/aws_import).
+:::
 
 
 #### General 
@@ -59,9 +55,7 @@ Configure your database category by providing below details. Choose between `Use
 | AWS Access Key             | Enter the AWS Access Key  of your database.      |
 | AWS Secret Key | Enter the AWS Secret Key of your database.                      |
 | AWS Region | Enter the AWS Region of your database.                   |
-| Role to assume (ARN) | Enter the role to be used while accessing API. Example - `arn:aws:iam::123456789012:role/RoleName`
-
- |
+| Role to assume (ARN) | Enter the role to be used while accessing API. Example - `arn:aws:iam::123456789012:role/RoleName`|
 
 <figure>
   <Thumbnail src="/img/reference/connectors/postgresql/details.png" alt="PostgreSQL with Sample details." />
@@ -77,6 +71,7 @@ Configure your database category by providing below details. Choose between `Use
 | Use Dynamic Database Name                | Set the database name dynamically, allowing easy switching between databases.              |
 | <VersionedLink to = "../../datasource-concepts/dynamic_credentials"> Use Dynamic Database Credentials        </VersionedLink> | Enable dynamic database credentials for secure and convenient management.                  |
 | <VersionedLink to = "../../datasource-concepts/prepared_statements"> Enable Converting Queries to Prepared Statement </VersionedLink>| Opt for prepared statements to enhance database performance and security.          |
+| <VersionedLink to = "../../datasource-concepts/ssl_configurations"> Connect using SSL  </VersionedLink> | Securely access the database using an encrypted SSL connection, ensuring data integrity and confidentiality. |
 | <VersionedLink to = "../../datasource-concepts/ssh_tunneling"> Enable SSH Tunneling          </VersionedLink>           | Securely access the database through encrypted SSH tunneling.                              |
 | <VersionedLink to = "../../datasource-concepts/whitelisting_dronahq_ip"> Whitelist IP                 </VersionedLink>            | Enhance security by restricting database access to specific whitelisted IP addresses.     |
 
@@ -175,61 +170,7 @@ After saving your query after successful configuration testing.
 3. Access id using Use Keywords for smooth action flow.
 
 
-
-#### Update Data Query: 
-
-To update existing data, craft a query that selects details based on the ID and updates values.
-
-Query used:
-
-```sql
-UPDATE industry_role
-SET position = '{{pos}}', location = '{{loc}}' where id = {{id}}
-```
-
-Query explanation:
-
-This query identifies a specific row using the ID, then updates `position` and `location` based on values from `pos` and `loc` variables respectively.
-
-Save the query after successful testing, ensuring a configuration test successful message.
-
-1. Create a Tray with text fields to receive user data. On button click, update selected Id's details.
-
-2. Bind data of the chosen id from the table grid to input text fields:
-   a. Go to the Bind section.
-   b. Select Controls.
-   c. Choose the screen where data is located.
-   d. Select the tablegrid component.
-   e. Pick the required field name for data binding.
-
-3. In the button's Actions, choose `button_click` action.
-   a. Add a Server-side action.
-   b. Select the query for data update.
-   c. Bind the necessary key connectors.
-
-4. Ensure proper key connectors binding for accurate data handling.
-
-5. Include an action to navigate to the Tray:
-   a. Add action to table grid's edit button.
-   b. Choose `Actions -> update_click`.
-   c. Add a task to Navigate to the Tray.
-
 <figure>
-  <Thumbnail src="/img/reference/connectors/postgresql/update.png" alt="Updating data" />
-  <figcaption align = "center"><i>Updating data</i></figcaption>
+  <Thumbnail src="/img/reference/connectors/postgresql/delete.png" alt="Actionflow for deleting data" />
+  <figcaption align = "center"><i>Actionflow for deleting data</i></figcaption>
 </figure>
-
-#### Insert Data Query:
-
-For data insertion, create a query that accepts user inputs and saves them.
-
-Query used:
-
-```sql
-INSERT into industry_role (position, location)
-VALUES ('{{pos}}', '{{loc}}')
-```
-
-Query explanation:
-
-This query inserts values into the `industry_role` table for `position` and `location` columns as provided by `pos` and `loc` variables.

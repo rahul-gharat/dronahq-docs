@@ -30,6 +30,12 @@ Ensuring these prerequisites are met will ensure a seamless integration of MS SQ
 
 Configure your database category by providing the details below. Validate the connection using `Test connection` and `Save` settings for a secure and efficient database setup.
 
+:::tip
+
+DronaHQ can Auto fill crucial connection values like host, name, password, and more from the AWS IAM credentials using [AWS Import](/datasource-concepts/aws_import).
+
+:::
+
 #### General 
 
 | Field                | Description                             |
@@ -64,14 +70,10 @@ In DronaHQ Studio's Microsoft SQL connector setup, the SQL server proxy host can
 | Use Dynamic Database Name                | Set the database name dynamically, allowing easy switching between databases.              |
 | <VersionedLink to = "../../datasource-concepts/dynamic_credentials"> Use Dynamic Database Credentials        </VersionedLink> | Enable dynamic database credentials for secure and convenient management.                  |
 | <VersionedLink to = "../../datasource-concepts/prepared_statements"> Enable Converting Queries to Prepared Statement </VersionedLink>| Opt for prepared statements to enhance database performance and security.          |
+| <VersionedLink to = "../../datasource-concepts/ssl_configurations"> Connect using SSL  </VersionedLink> | Securely access the database using an encrypted SSL connection, ensuring data integrity and confidentiality. |
 | <VersionedLink to = "../../datasource-concepts/ssh_tunneling"> Enable SSH Tunneling          </VersionedLink>           | Securely access the database through encrypted SSH tunneling.                              |
 | <VersionedLink to = "../../datasource-concepts/whitelisting_dronahq_ip"> Whitelist IP                 </VersionedLink>            | Enhance security by restricting database access to specific whitelisted IP addresses.     |
 
-
-:::tip
-By saving your `IAM credentials` for database import beforehand, you can proceed to pick the Region and Database/collection, to autofill the necessary connection details.
-
-:::
 
 ## Adding Database Queries
 
