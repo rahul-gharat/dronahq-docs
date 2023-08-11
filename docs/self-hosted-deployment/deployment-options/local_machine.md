@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Deploy on Linux or MacOS
+# Deploy on local Linux or MacOS machine
 
 DronaHQ Self Hosted supports local installation on your Linux based OS or MacOS using [Docker](https://www.docker.com/).
 
@@ -56,8 +56,19 @@ Run following command
 ```shell
 /bin/bash -c "$(curl -fsSL https://license.dronahq.com/self-hosted/update_resources.sh)"
 ```
+### 4. Setup DronaHQ Environment
 
-### 4. Update environment variables
+:::caution Warning
+Running this script will clear your existing installation if you have any. It will setup completely new environment. It will create back of your current environment and storage directory with time stamp followed by file/folder name.
+:::
+
+To setup dronahq environment, you have to run `./dronahq_setup` already present in your working directory.
+
+```shell
+./dronahq_setup
+```
+
+### 5. Update environment variables
 
 DronaHQ writes all configurable environment variables in file `dronahq.env`. Please make sure you have all mandatory variables are in place.
 
@@ -99,7 +110,7 @@ BUILDER_URL='http://dronahq.example.com'
 #### iii. Optional environment variables
 You can also checkout other optional [Environment Variables](./../environment_variables.md), which can enable advance options for you to use DronaHQ Self Hosted.
 
-### 5. Restart DronaHQ
+### 6. Restart DronaHQ
 
 You can apply all new changes in configuration, and restart DronaHQ simply by running following command.
 
@@ -107,7 +118,7 @@ You can apply all new changes in configuration, and restart DronaHQ simply by ru
 sudo docker-compose up -d
 ```
 
-### 6. Verify that containers are running
+### 7. Verify that containers are running
 
 You can use following comand to check running docker containers.
 
@@ -118,3 +129,5 @@ sudo docker-compose ps
 It should look something like this
 
 ![sudo docker-compose ps](./sudo-docker-compose-ps.png "sudo docker-compose ps")
+
+#### Hurray !!! Now you have working self hosted DronaHQ.

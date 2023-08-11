@@ -32,6 +32,12 @@ Ensuring these prerequisites are in place will ensure a seamless integration of 
 
 Configure your database category by providing the details below. Choose between `User and Password` or `AWS IAM` Authentication. Validate the connection using `Test connection` and `Save` settings for a secure and efficient database setup.
 
+:::tip
+
+DronaHQ can Auto fill crucial connection values like host, name, password, and more from the connector's [connection string](https://www.postgresql.org/docs/current/libpq-connect.html#LIBPQ-CONNSTRING) or from a AWS IAM credentials using [AWS Import](/datasource-concepts/aws_import).
+
+:::
+
 #### General 
 
 | Field                | Description                             |
@@ -63,15 +69,11 @@ Configure your database category by providing the details below. Choose between 
 | Use Dynamic Database Name                | Set the database name dynamically, allowing easy switching between databases.              |
 | <VersionedLink to = "../../datasource-concepts/dynamic_credentials"> Use Dynamic Database Credentials        </VersionedLink> | Enable dynamic database credentials for secure and convenient management.                  |
 | <VersionedLink to = "../../datasource-concepts/prepared_statements"> Enable Converting Queries to Prepared Statement </VersionedLink>| Opt for prepared statements to enhance database performance and security.          |
+| <VersionedLink to = "../../datasource-concepts/ssl_configurations"> Connect using SSL  </VersionedLink> | Securely access the database using an encrypted SSL connection, ensuring data integrity and confidentiality. |
 | <VersionedLink to = "../../datasource-concepts/ssh_tunneling"> Enable SSH Tunneling          </VersionedLink>           | Securely access the database through encrypted SSH tunneling.                              |
 | <VersionedLink to = "../../datasource-concepts/whitelisting_dronahq_ip"> Whitelist IP                 </VersionedLink>            | Enhance security by restricting database access to specific whitelisted IP addresses.     |
 
-:::tip
-Streamline MySQL setup using a `connection string`, automating the essential data filling like host, name, password, and more.
 
-By saving your `IAM credentials` for database import beforehand, proceed to select the Region and Database/collection, autofilling the necessary connection details.
-
-:::
 
 ## Adding Database Queries
 
