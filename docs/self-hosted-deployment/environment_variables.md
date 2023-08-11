@@ -13,7 +13,7 @@ You should only configure environment variables when needed. You must restart yo
 ## General
 General environment variables available for use with Self-hosted DronaHQ deployments.
 
-#### `BUILDER_URL` (depricated)
+#### `BUILDER_URL` (deprecated)
 
 The full URL of your DronaHQ deployment for accesing creators portal, End-user portal, user invitations and password resets. This also needs to be set if you dynamically set callback URLs on protected resources.
 

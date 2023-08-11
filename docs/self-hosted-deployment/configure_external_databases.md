@@ -4,17 +4,93 @@ sidebar_position: 97
 
 # Configure External Databases
 
-### Configure and/or migrate databases to an external ones.
+### Configure and migrate databases to an external ones.
 
 In Docker based self-hosted setup, user information, apps information, documents and other resources are stored in a [MYSQL](https://hub.docker.com/layers/library/mysql/oracle/images/sha256-4c718aac52c18fc65ff75012f486957c0215247592b36a263024bf458d92d51f?context=explore) and [MONGODB](https://hub.docker.com/layers/library/mongo/5.0.11/images/sha256-bd481f6d8847e307f512bb25d8834457e29f36c0fe1987b68db73c803d292d3a?context=explore) container with mapped [persistent storage volume](https://docs.docker.com/storage/volumes/). For production use cases, upi should host these databases on external managed databases services. managed databases are more maintainable, scalable and reliable.
 
 If you are installing DronaHQ self hosted on Kubernetes platform, then you should externalize your database. DronaHQ dont provide containerized databases suport by default for installation on kubernetes cluster.
 
-Use following steps to set up external databases for docker based installations.
-
 :::caution User rights and permissions
 Database user you will be using to import/export database files must have superuser/admin privillages to that database. These are necessary for some essential operations in database like downloading/installing updates.
 :::
+
+Use following steps to set up external databases for docker based installations.
+
+### Prerequisite
+
+To import data into your external database, you need to installa database clients on your machine.
+
+#### 1. MYSQL Client
+
+<!-- check [official documentation](https://dev.mysql.com/doc/mysql-shell/8.0/en/mysql-shell-install.html) for installing MYSQL shell. -->
+
+1.1 Update package information for the MySQL APT repository
+
+```shell
+sudo apt-get update
+```
+
+1.2 Install [mysql client package](https://packages.ubuntu.com/focal/mysql-client-core-8.0)
+
+```shell
+sudo apt install mysql-client-core-8.0
+```
+
+1.3 check that client is properly installed
+
+```shell
+mysql --version
+```
+
+you will get output for above command as follows
+
+```shell
+mysql  Ver 8.0.33-0ubuntu0.22.04.4 for Linux on x86_64 ((Ubuntu))
+```
+
+#### 2. MongoDB client and deleloper tools
+
+1.1 Download mongo shell package
+
+```shell
+wget https://downloads.mongodb.com/compass/mongodb-mongosh_1.10.1_amd64.deb
+```
+
+1.2 Install with `dpkg` and remove doqnloaded file
+
+```shell
+sudo dpkg -i mongodb-mongosh_1.10.1_amd64.deb && rm mongodb-mongosh_1.10.1_amd64.deb
+```
+
+1.3 Download momngo tools. Dont forget to update your linux distribution in command.
+
+```shell
+wget https://fastdl.mongodb.org/tools/db/mongodb-database-tools-ubuntu2204-x86_64-100.7.4.deb
+```
+
+1.4 Install with `dpkg` and remove package
+
+```shell
+sudo dpkg -i mongodb-database-tools-ubuntu2204-x86_64-100.7.4.deb \
+&& rm mongodb-database-tools-ubuntu2204-x86_64-100.7.4.deb
+```
+
+1.5 Check  if mongodb and mongodb tools are installed properly
+
+```shell
+mongosh --version && mongorestore --version
+```
+
+output:
+```
+1.10.1
+mongorestore version: 100.7.4
+git version: fb74684da15f56d40231ab04ded86c71c1d8f37c
+Go version: go1.19.11
+   os: linux
+   arch: amd64
+   compiler: gc
+```
 
 ## 1. Preparing data and files for migration
 
@@ -111,7 +187,7 @@ Replace variables encapsulated in `<% variable %>` with actual value.
 Run following command to restore data on external database
 
 ```shell
-sudo docker-compose exec -T mongodb sh -c 'mongorestore --host=<% host %> -u <% user %> -p <% password %> --db db5x_studio --authenticationDatabase admin --archive' < mongo-init.dump
+mongorestore --host=<% host %> -u <% user %> -p <% password %> --db db5x_studio --authenticationDatabase admin --archive=mongo-init.dump
 ```
 
 Replace variables encapsulated in `<% variable %>` with actual value.
