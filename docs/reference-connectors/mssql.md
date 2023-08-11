@@ -98,3 +98,33 @@ Saved queries appear under your connector in Connector Library.
 |----------------------|-------------------------------------------------|
 | Raw SQL Query        | Execute various SQL operations directly, e.g., `SELECT * FROM TableName;` |
 | Stored Procedure Call| Call stored procedures, e.g., `EXEC usp_GetInfo;` to perform specific tasks or retrieve data from the database. |
+
+## Using Microsoft SQL Connector
+
+### Data Bind using Data Query
+
+#### Read/Display Data Query for Microsoft SQL:
+
+Start by constructing an SQL query to retrieve data from your Microsoft SQL database. For instance, let's consider an example where you want to retrieve all data from the `auth_permission` table. The SQL query is:
+
+Query used:
+
+```sql
+SELECT * FROM auth_permission;
+```
+Query explanation:
+
+This SQL query retrieves all rows and columns from the `auth_permission` table.
+
+<figure>
+  <Thumbnail src="/img/reference/connectors/mssql/getall.jpeg" alt="Get all data query with added pagination." />
+  <figcaption align = "center"><i>Get all data query with added pagination.</i></figcaption>
+</figure>
+
+Integrate the fetched data into your application's interface.
+
+ a. Access the Controls section and introduce the Table grid control.
+
+ b. Navigate to `Data Bind Options -> Quick Select -> Database Queries`.
+
+ c. Opt for the Microsoft SQL connector and choose the query that aligns with your data presentation goals.

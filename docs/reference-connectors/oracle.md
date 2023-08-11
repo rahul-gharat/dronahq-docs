@@ -76,3 +76,36 @@ Saved queries appear under your connector in Connector Library.
 |----------------------|-------------------------------------------------|
 | Raw SQL Query        | Various `select, insert, delete, update`, join operations. |
 | Stored Procedure Call| Call stored procedures e.g., `CALL getUserInfo;` |
+
+## Using Oracle Connector
+
+### Data Bind using Data Query
+
+#### Read/Display Data Query for Oracle:
+
+Begin by crafting an SQL query to extract data from your Oracle database. For instance, let's consider an example where you want to retrieve all data from the `Authors` table. The SQL query is:
+
+Query used:
+
+```sql
+SELECT * FROM Authors;
+```
+
+Query explanation:
+
+This SQL query retrieves all rows and columns from the `Authors` table within the Oracle database.
+
+<figure>
+  <Thumbnail src="/img/reference/connectors/oracle/getall.jpeg" alt="Get all data query." />
+  <figcaption align = "center"><i>Get all data query.</i></figcaption>
+</figure>
+
+Integrate the fetched data into your application's interface.
+
+ a. Access the Controls section and introduce the Table grid control.
+
+ b. Navigate to `Data Bind Options -> Quick Select -> Database Queries`.
+
+ c. Opt for the Oracle connector and choose the query that aligns with your data presentation goals.
+
+By following these steps, you can seamlessly incorporate the retrieved data from the `Authors` table into your application's interface, enhancing its functionality and user experience.

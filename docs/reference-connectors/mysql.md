@@ -99,3 +99,35 @@ Saved queries appear under your connector in Connector Library.
 | Raw SQL Query        | Various `select, insert, delete, update`, join operations. |
 | Stored Procedure Call| Call stored procedures e.g., `CALL getUserInfo;` |
 
+## Using MySQL Connector
+
+### Data Bind using Data Query
+
+#### Read/Display Data Query for MySQL:
+
+Start by constructing an SQL query to extract data from your MySQL database. For instance, let's consider an example where you want to retrieve data from the `Authors` table based on specific initials. The SQL query is:
+
+Query used:
+
+```sql
+SELECT * FROM Authors WHERE initials = "{{SearchInitials}}";
+```
+
+Query explanation:
+
+This SQL query retrieves all rows and columns from the `Authors` table where the initials match the value provided through the dynamic variable `{{SearchInitials}}`.
+
+<figure>
+  <Thumbnail src="/img/reference/connectors/mysql/getall.jpeg" alt="Get data query with dynamic variable." />
+  <figcaption align = "center"><i>Get data query with dynamic variable.</i></figcaption>
+</figure>
+
+Integrate the fetched data into your application's interface.
+
+ a. Access the Controls section and introduce the Table grid control.
+
+ b. Navigate to `Data Bind Options -> Quick Select -> Database Queries`.
+
+ c. Opt for the MySQL connector and choose the query that aligns with your data presentation goals.
+
+By following these steps, you can seamlessly retrieve and display data from the `Authors` table based on specific initials using the MySQL Connector, enhancing your application's functionality and user experience.
