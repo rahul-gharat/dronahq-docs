@@ -12,21 +12,19 @@ PostgreSQL stands as an open-source object-relational database system, providing
 
 ## Pre-requisite
 
-### Authentication Credentials
 
-Authentication Credentials to connect to your postgres instance. You will need either of the below two credentials option:
+
+1. Authentication Credentials to connect to your postgres instance. You will need either of the below two credentials option:
    - PostgreSQL database username and password.
    - AWS IAM authentication (for AWS-hosted PostgreSQL databases).
 
 
-### Connection Details
-
+2. Connection Details:
    - Hostname of the PostgreSQL database.
    - Port number for database access.
    - Database name within the PostgreSQL host.
 
-### Allow DronaHQ to access PostgresSQL instance
-
+3. Firewall Rules:
    - Configure firewall settings to allow DronaHQ (IP whitelist) access to your PostgreSQL host.
 
 Ensuring you have these prerequisites ready will facilitate a smooth integration of PostgreSQL with DronaHQ, enabling effective data management and utilization.
@@ -66,7 +64,7 @@ DronaHQ can Auto fill crucial connection values like host, name, password, and m
 
 | Advanced Option   | Description    |
 |--------------------|---------------------|
-| Connection Options | The `key` and `value` connection options in PostgreSQL configuration refer to specific settings (keys) and their corresponding values that dictate how the application connects to the database |
+| Connection Options | The `key` and `value` connection options in database configuration refer to specific settings (keys) and their corresponding values that dictate how the application connects to the database |
 | Use Dynamic Database Host                | Dynamically determine the host for the database connection.                               |
 | Use Dynamic Database Name                | Set the database name dynamically, allowing easy switching between databases.              |
 | <VersionedLink to = "../../datasource-concepts/dynamic_credentials"> Use Dynamic Database Credentials        </VersionedLink> | Enable dynamic database credentials for secure and convenient management.                  |

@@ -12,20 +12,16 @@ SAP HANA stands as a memory-based, column-focused, relational database managemen
 
 ## Prerequisite
 
-### Authentication Requirements
-
-To establish a connection with your SAP HANA instance, you will require specific authentication credentials. You have the choice of either of the following two credential options:
+1. To establish a connection with your SAP HANA instance, you will require specific authentication credentials. You have the choice of either of the following two credential options:
    - SAP HANA database username and password.
    - Alternative authentication methods (excluding AWS IAM authentication).
 
-### Connection Information
-
+2. Connection Details:
    - Hostname of the SAP HANA database.
    - Port number for database communication.
    - The designated database name within the SAP HANA host.
 
-### Enabling DronaHQ Access to SAP HANA
-
+3. Firewall Rules:
    - Set up your firewall settings to permit DronaHQ's IP whitelist for access to your SAP HANA host.
 
 Having these essential prerequisites in place will ensure a seamless integration of SAP HANA with DronaHQ, facilitating efficient data management and utilization without the need for AWS credentials.
@@ -36,7 +32,7 @@ Having these essential prerequisites in place will ensure a seamless integration
 Configure your database category using the provided details.Validate connection with `Test connection` and `Save` settings for secure database setup.
 
 :::tip
-DronaHQ can Auto fill crucial connection values like host, name, password, and more from the connector's [connection string](https://www.postgresql.org/docs/current/libpq-connect.html#LIBPQ-CONNSTRING).
+DronaHQ can Auto fill crucial connection values like host, name, password, and more from the connector's [connection string](https://help.sap.com/docs/SAP_HANA_PLATFORM/0eec0d68141541d1b07893a39944924e/b250e7fef8614ea0a0973d58eb73bda8.html).
 
 :::
 
@@ -108,15 +104,16 @@ Query explanation:
 This SQL query targets the `auth_permission` table within the SAP HANA database. By utilizing `SELECT *`, you're retrieving all available data. This forms the foundation for displaying valuable information.
 
 <figure>
-  <Thumbnail src="/img/reference/connectors/postgresql/get-data.png" alt="Get Data Query" />
+  <Thumbnail src="/img/reference/connectors/saphana/data-query.png" alt="Get Data Query" />
   <figcaption align = "center"><i>Get Data Query</i></figcaption>
 </figure>
 
 
 Integrate the fetched data into your application's interface.
 
-   a. Access the Controls section and introduce the Table grid control.
-   b. Navigate to `Data Bind Options -> Quick Select -> Database Queries`.
-   c. Opt for the SAP HANA connector and choose the query that aligns with your data presentation goals.
+ a. Access the Controls section and introduce the Table grid control.
 
+ b. Navigate to `Data Bind Options -> Quick Select -> Database Queries`.
+
+ c. Opt for the SAP HANA connector and choose the query that aligns with your data presentation goals.
 
