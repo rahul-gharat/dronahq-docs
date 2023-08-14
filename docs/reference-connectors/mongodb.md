@@ -12,19 +12,19 @@ MongoDB revolutionizes data management with its innovative NoSQL approach, offer
 
 ## Prerequisite
 
-1. Authentication Requirements: To establish a connection with your SAP HANA instance, you will require specific authentication credentials. You have the choice of either of the following two credential options:
-   - SAP HANA database username and password.
+1. Authentication Requirements: To establish a connection with your MongoDB instance, you will require specific authentication credentials. You have the choice of either of the following two credential options:
+   - MongoDB database username and password.
    - Alternative authentication methods (excluding AWS IAM authentication).
 
 2. Connection Details:
-   - Hostname of the SAP HANA database.
+   - Hostname of the MongoDB database.
    - Port number for database communication.
-   - The designated database name within the SAP HANA host.
+   - The designated database name within the MongoDB host.
 
 3. Firewall Rules:
-   - Set up your firewall settings to permit DronaHQ's IP whitelist for access to your SAP HANA host.
+   - Set up your firewall settings to permit DronaHQ's IP whitelist for access to your MongoDB host.
 
-Having these essential prerequisites in place will ensure a seamless integration of SAP HANA with DronaHQ, facilitating efficient data management and utilization without the need for AWS credentials.
+Having these essential prerequisites in place will ensure a seamless integration of MongoDB with DronaHQ, facilitating efficient data management and utilization without the need for AWS credentials.
 
 
 ## Configuring Connector in DronaHQ

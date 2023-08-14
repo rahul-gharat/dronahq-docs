@@ -22,7 +22,7 @@ Snowflake is a cloud-based data warehousing platform that offers fast and flexib
 3. Firewall Rules:
    - Set up your firewall settings to permit DronaHQ's IP whitelist for access to your SAP HANA host.
 
-Having these essential prerequisites in place will ensure a seamless integration of SAP HANA with DronaHQ, facilitating efficient data management and utilization without the need for AWS credentials.
+Having these essential prerequisites in place will ensure a seamless integration of SAP HANA with DronaHQ, facilitating efficient data management and utilization.
 
 ## Configuring Connector in DronaHQ
 
