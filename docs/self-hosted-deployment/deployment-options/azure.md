@@ -15,7 +15,8 @@ To deploy DronaHQ on Azure Virtual Machine, you shoul have:
 
 Following are some references, which can help you sail through Azure Virtual Machine.
 - [Quickstart: Create a Linux virtual machine in the Azure portal](https://learn.microsoft.com/en-gb/azure/virtual-machines/linux/quick-create-portal?WT.mc_id=UI_empg&tabs=ubuntu)
-
+- [Connect to a Linux VM](https://learn.microsoft.com/en-us/azure/virtual-machines/linux-vm-connect?tabs=Linux)
+- [Troubleshoot SSH connections to an Azure Linux VM that fails, errors out, or is refused](https://learn.microsoft.com/en-us/troubleshoot/azure/virtual-machines/troubleshoot-ssh-connection)
 
 ### 1. Create Virtual Machine
 
