@@ -4,58 +4,71 @@ sidebar_position: 3
 
 # Deploy on Google Cloud Compute Engine
 
-Follow the instaructions in this guide to setup DronaHQ in self hosted environment on Google Cloud Compute Engine virtual machine.
+Follow the instructions in this guide to setup DronaHQ in self hosted environment on Google Cloud Compute Engine virtual machine.
 
 ### Prerequisite
 
-To deploy DronaHQ on Amazon EC2, you shoul have:
+To deploy DronaHQ on Google Cloud Compute Engine, you shoul have:
 - `DronaHQ License Key`, which you can get from DronaHQ [Self Hosted Portal](https://studio.dronahq.com/selfhosted/login).
 - Basic understanding of `GCP` and `Compute Engine Virtual Machine`.
 - Working [Google Cloud Platform account](https://console.cloud.google.com).
 
+Following are some references, which can help you sail through GCP Virtual Machine.
+- [Create and start a VM instance](https://cloud.google.com/compute/docs/instances/create-start-instance)
+- [Connect to Linux VMs](https://cloud.google.com/compute/docs/connect/standard-ssh)
+- [Troubleshooting SSH errors](https://cloud.google.com/compute/docs/troubleshooting/troubleshooting-ssh-errors)
+
 ### 1. Create VM instance
 
+1. On GCP [Compute engine dashboard](https://console.cloud.google.com/compute/instances), Click on **CREATE INSTANCE**.
 
+2. Optionally you can add some Labels and Tags (e.g. `app = dronahq`) in `MANAGE TAGS AND LABELS` section. This makes it easier to find if you have a lot of instances.
 
+3. Name your instance, to identify it later.
 
+4. Select appropriate VM configuration as per your requirement. Please make sure that you follow our [minimum requirements](./../requirements.md) guidelines.
 
----
+5. In `Boot Disk` section, Modify storage size to minimum of `60 GiB`. In operating system, Select `Ubuntu` AMI with ubuntu version `20.04` or higher and `64-bit (x84)` architecture.
 
-1. On GCP Dashboard, Click the Compute Engine Resource and select VM Instances
-1. select ‘Create Instance’ from the top menu
-1. Create a new VM to these Specs
-    - Ubuntu Operating System Version 20.04 LTS or higher
-    - Storage Size 60 GB or higher
-    - Ram 4 GB or Higher (e2-medium)
-    - Optionally add Labels (eg app = dronahq)
-1. Create Instance
-1. Navigate via search to the VPC Network Firewall settings and be sure to add the following ports set to`0.0.0.0/0` and `::/0`
-    - `80` (HTTP)
-    - `443` (HTTPS)
-    - `22` (SSH)
-    - `8080` (DronaHQ access in browser)
-1. If you're connecting to an internal database, be sure to whitelist the VPC’s ip address in your DB
-1. SSH into your instance, or use the Google SSH Button to open a VM Terminal in a browser window.
-1. Run Command `git clone https://github.com/dronahq/self-hosted.git`
-1. Run Command `cd self-hosted`
-1. Edit the Docker-Compose file using VIM (or other text editor) to specify your desired version number of DronaHQ. To do this, replace `X.Y.Z` in `image:dronahq/self-hosted:X.Y.Z` with your desired version. See [Select a DronaHQ version number](#select-a-dronahq-version-number) to help you choose a version.
-1. Run the command `git clone https://github.com/dronahq/self-hosted.git`.
-1. Run the command `cd self-hosted` to enter the cloned repository's directory.
-1. Edit the `docker-compose.yml` file using VIM (or other text editor) to set the version of DronaHQ you want to install. To do this, replace `X.Y.Z` in `image:dronahq/self-hosted:X.Y.Z` with your desired version. See [Select a DronaHQ version number](#select-a-dronahq-version-number) to help you choose a version.
-1. Run `./install_sh.sh` to install  Docker and Docker Compose.
-1. In your `.env` (this file is only created after running `./install_sh.sh`) add the following:
+6. In `Firewall`, allow `http` and `https` traffic.
 
-   ```docker
-   # License key granted to you by DronaHQ
-   LICENSE_KEY=YOUR_LICENSE_KEYs
-   ```
+7. In security section, you can add manually generated SSH keys. By default, when you connect to a VM using this console or gcloud, your SSH keys are generated automatically. [Learn more](https://cloud.google.com/compute/docs/instances/ssh)
 
-1. Run `sudo docker-compose up -d` to start the DronaHQ server.
-1. Run `sudo docker-compose ps` to make sure all the containers are up and running.
-1. Navigate to your server's IP address in a web browser. DronaHQ should now be running on port `8080`.
-1. Click Activate, since we're starting from a clean slate. The first user to create an account on an instance becomes the administrator.
+8. clik on **CREATE** button to start your instance.
 
----
+### 2. Connect to your Linux instance using an SSH client
+
+Use the following procedure to connect to your Linux instance using an SSH client. If you receive an error while attempting to connect to your instance, see [Troubleshoot connecting to your instance](https://cloud.google.com/compute/docs/troubleshooting/troubleshooting-ssh-errors).
+
+#### Connect to your instance using SSH
+
+1. In a terminal window, use the ssh command to connect to the instance. You specify the path and file name of the private key (.pem), the user name for your instance, and the public DNS name or IPv6 address for your instance. For more information about how to find the private key, the user name for your instance, and the DNS name or IPv6 address for an instance, see Locate the private key and set permissions and Get information about your instance. To connect to your instance, use one of the following commands.
+
+    - (Public DNS) To connect using your instance's public DNS name, enter the following command.
+        ```shell
+        ssh -i /path/key-pair-name.pem instance-user-name@instance-public-dns-name
+        ```
+    - (IPv6) Alternatively, if your instance has an IPv6 address, to connect using your instance's IPv6 address, enter the following command.
+        ```shell
+        ssh -i /path/key-pair-name.pem instance-user-name@instance-IPv6-address
+        ```
+
+    You see a response like the following:
+    ```
+    The authenticity of host '34.105.89.192 (34.105.89.192)' can't be established.
+    ED25519 key fingerprint is SHA256:gdEtnJ+kLJ1MzPnfCJNfdrstN5xb6s01lLlU1Xtz62g.
+    This key is not known by any other names
+    Are you sure you want to continue connecting (yes/no/[fingerprint])?
+    ```
+
+2. (Optional) Verify that the fingerprint in the security alert matches the fingerprint that you previously obtained while creating virtual machine. If these fingerprints don't match, someone might be attempting a man-in-the-middle attack. If they match, continue to the next step.
+
+3. Enter `yes`.
+
+    You see a response like the following:
+    ```
+    Warning: Permanently added '34.105.89.192' (ED25519) to the list of known hosts.
+    ```
 
 ### 3. Download DronaHQ Self Hosted
 
@@ -101,9 +114,9 @@ Run following command
 
 ### 6. Setup Externalize databases
 
-For deployment on `AWS EC2`, it is mandatory to setup external databases for both MYSQL and MONGODB. 
+For deployment on `GCP Virtual machine`, it is mandatory to setup external databases for both MYSQL and MONGODB. 
 
-Please follow our guide on [Configure external databases](./../configure_external_databases.md){:target="_blank"}.
+Please follow our guide on <a href="/self-hosted-deployment/configure_external_databases/" target="_blank">Configure external databases</a>.
 
 ### 6. Setup DronaHQ Environment
 
@@ -147,7 +160,7 @@ BULDER_URL='http://localhost'
 
 ```shell
 # replace your ip address here
-BUILDER_URL='http://10.100.3.21'
+BUILDER_URL='http://34.105.89.192'
 ```
 
 **Example 3**. If you have mapped your domain name to server's IP address.

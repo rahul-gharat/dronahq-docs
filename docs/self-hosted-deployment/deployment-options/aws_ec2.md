@@ -54,6 +54,7 @@ Following are some references, which can help you sail through AWS EC2.
 Use the following procedure to connect to your Linux instance using an SSH client. If you receive an error while attempting to connect to your instance, see [Troubleshoot connecting to your instance](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/TroubleshootingInstancesConnecting.html).
 
 #### Connect to your instance using SSH
+
 1. In a terminal window, use the ssh command to connect to the instance. You specify the path and file name of the private key (.pem), the user name for your instance, and the public DNS name or IPv6 address for your instance. For more information about how to find the private key, the user name for your instance, and the DNS name or IPv6 address for an instance, see Locate the private key and set permissions and Get information about your instance. To connect to your instance, use one of the following commands.
 
    - (Public DNS) To connect using your instance's public DNS name, enter the following command.
@@ -127,7 +128,7 @@ Run following command
 
 For deployment on `AWS EC2`, it is mandatory to setup external databases for both MYSQL and MONGODB. 
 
-Please follow our guide on [Configure external databases](./../configure_external_databases.md){:target="_blank"}.
+Please follow our guide on <a href="/self-hosted-deployment/configure_external_databases/" target="_blank">Configure external databases</a>.
 
 ### 6. Setup DronaHQ Environment
 
@@ -171,7 +172,7 @@ BULDER_URL='http://localhost'
 
 ```shell
 # replace your ip address here
-BUILDER_URL='http://10.100.3.21'
+BUILDER_URL='http://198.51.100.1'
 ```
 
 **Example 3**. If you have mapped your domain name to server's IP address.

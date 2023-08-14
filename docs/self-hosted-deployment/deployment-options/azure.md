@@ -4,33 +4,81 @@ sidebar_position: 4
 
 # Deploy on Azure Virtual Machine
 
-1. In the main Azure Portal, select Virtual Machine under Azure Services
-1. Click the Create button and select Virtual Machine 
-1. Select an image of Ubuntu 20.04 or higher
-1. For instance size, select `Standard_D2s_v3 - 2 vcpus, 8 GiB memory`
-1. Under the Networking tab, Ensure you select the same Virtual Network that also includes the Databases / API’s you will want to connect to and click **Next**.
-1. Under the Networking tab, configure your network security group to contain the following ports. You may need to create a new Security group that contains these 4 ports (`80`, `443`, `22` and `8080`): 
-    - `80` (http) and `443` (https) for connecting to the server from a browser 
-    - `22` (ssh) to allow you to ssh into the instance and configure it
-    - `8080` is the port that DronaHQ runs on by default
-1. From your command line tool, SSH into your Azure instance.
-1. Run the command `git clone https://github.com/dronahq/self-hosted.git`.
-1. Run the command `cd self-hosted` to enter the cloned repository's directory.
-1. Edit the `docker-compose.yml` file using VIM (or other text editor) to set the version of DronaHQ you want to install. To do this, replace `X.Y.Z` in `image:dronahq/self-hosted:X.Y.Z` with your desired version. See [Select a DronaHQ version number](#select-a-dronahq-version-number) to help you choose a version.
-1. Run `./install_sh.sh` to install  Docker and Docker Compose.
-1. In your `.env` (this file is only created after running `./install_sh.sh`) add the following:
+Follow the instaructions in this guide to setup DronaHQ in self hosted environment on Microsoft Azure Virtual Machine.
 
-   ```docker
-   # License key granted to you by DronaHQ
-   LICENSE_KEY=YOUR_LICENSE_KEYs
-   ```
+### Prerequisite
 
-1. Run `sudo docker-compose up -d` to start the DronaHQ server.
-1. Run `sudo docker-compose ps` to make sure all the containers are up and running.
-1. Navigate to your server's IP address in a web browser. DronaHQ should now be running on port `8080`.
-1. Click Activate, since we're starting from a clean slate. The first user to create an account on an instance becomes the administrator.
+To deploy DronaHQ on Azure Virtual Machine, you shoul have:
+- `DronaHQ License Key`, which you can get from DronaHQ [Self Hosted Portal](https://studio.dronahq.com/selfhosted/login).
+- Basic understanding of `Microsft Azure` and `Azure Virtual Machine`.
+- Working [Microdift Azure](https://azure.microsoft.com/en-in/get-started/azure-portal) account.
 
----
+Following are some references, which can help you sail through Azure Virtual Machine.
+- [Quickstart: Create a Linux virtual machine in the Azure portal](https://learn.microsoft.com/en-gb/azure/virtual-machines/linux/quick-create-portal?WT.mc_id=UI_empg&tabs=ubuntu)
+
+
+### 1. Create Virtual Machine
+
+1. On Azure [Virtual Machine](https://portal.azure.com/#view/HubsExtension/BrowseResource/resourceType/Microsoft.Compute%2FVirtualMachines) portal, Click **Create => Azure virtual machine**.
+
+2. Select or Create Resource group.
+
+3. Name your virtual machine, to identify it later.
+
+4. In `Image` section, select `Ubuntu server` with minimum version `20.04` with `x64` VM architecture.
+
+5. In `size` section, Select appropriate VM configuration as per your requirement. Please make sure that you follow our [minimum requirements](./../requirements.md) guidelines.
+
+6. Select appropriate `Authentication Type`. Choose `Username` for VM and select credentials options.
+
+7. In `Inbound port rules`, select `HTTP(80), HTTPS(443), SSH(22)` to enable use of these ports and protocols.
+
+8. In `Disk` section, select minimum of `60 GiB` of disk space.
+
+9. Optionally you can add some Tags (e.g. `app = dronahq`). This makes it easier to find if you have a lot of instances.
+
+10. You  can leave other options as default.
+
+11. Click on **Review + Create** to check summary of configuration you choose for your instance. If all looks good, click on **Create** to run the instance.
+
+12. If you choose to create new `SSH Key` then, `Generate new key pair` popup will apear. From that you can doenload your new key and save on your computer at safe place.
+
+13. In few minutes, your instamce will be ready to use.
+
+### 2. Connect to your Linux instance using an SSH client
+
+Use the following procedure to connect to your Linux instance using an SSH client. If you receive an error while attempting to connect to your instance, see [Troubleshoot connecting to your instance](https://learn.microsoft.com/en-us/troubleshoot/azure/virtual-machines/troubleshoot-ssh-connection).
+
+#### Connect to your instance using SSH
+
+1. In a terminal window, use the ssh command to connect to the instance. You specify the path and file name of the private key (.pem), the user name for your instance, and the public DNS name or IPv6 address for your instance. For more information about how to find the private key, the user name for your instance, and the DNS name or IPv6 address for an instance, see Locate the private key and set permissions and Get information about your instance. To connect to your instance, use one of the following commands.
+
+    - (Public DNS) To connect using your instance's public DNS name, enter the following command.
+        ```shell
+        ssh -i /path/key-pair-name.pem instance-user-name@instance-public-dns-name
+        ```
+
+    - (IPv6) Alternatively, if your instance has an IPv6 address, to connect using your instance's IPv6 address, enter the following command.
+        ```shell
+        ssh -i /path/key-pair-name.pem instance-user-name@instance-IPv6-address
+        ```
+
+    You see a response like the following:
+    ```
+    The authenticity of host '20.24.83.170 (20.24.83.170)' can't be established.
+    ED25519 key fingerprint is SHA256:9adjTqXUisZXGolCYHO8SUPhb8mwmlw08i4Gom8SC7A.
+    This key is not known by any other names
+    Are you sure you want to continue connecting (yes/no/[fingerprint])?
+    ```
+
+2. (Optional) Verify that the fingerprint in the security alert matches the fingerprint that you previously obtained while creating virtual machine. If these fingerprints don't match, someone might be attempting a man-in-the-middle attack. If they match, continue to the next step.
+
+3. Enter `yes`.
+
+    You see a response like the following:
+    ```
+    Warning: Permanently added '20.24.83.170' (ED25519) to the list of known hosts.
+    ```
 
 ### 3. Download DronaHQ Self Hosted
 
@@ -76,9 +124,9 @@ Run following command
 
 ### 6. Setup Externalize databases
 
-For deployment on `AWS EC2`, it is mandatory to setup external databases for both MYSQL and MONGODB. 
+For deployment on `Azure Virtual Machine`, it is mandatory to setup external databases for both MYSQL and MONGODB. 
 
-Please follow our guide on [Configure external databases](./../configure_external_databases.md){:target="_blank"}.
+Please follow our guide on <a href="/self-hosted-deployment/configure_external_databases/" target="_blank">Configure external databases</a>.
 
 ### 6. Setup DronaHQ Environment
 
@@ -122,7 +170,7 @@ BULDER_URL='http://localhost'
 
 ```shell
 # replace your ip address here
-BUILDER_URL='http://10.100.3.21'
+BUILDER_URL='http://20.24.83.170'
 ```
 
 **Example 3**. If you have mapped your domain name to server's IP address.
