@@ -161,26 +161,50 @@ This variable specifies how do yo want to access DronaHQ.
 - Protocol [ http/ https]
 - Access domain [ Localhost/ IP address/ Domain Name] 
 
-Example 1. If you are using DronaHQ on local machine.
+**Example 1**. If you are using DronaHQ on local machine.
 
 ```shell
 BULDER_URL='http://localhost'
 ```
-Example 2. If you have configured DronaHQ on server and want to use it with server's public IP address.
+
+**Example 2**. If you have configured DronaHQ on server and want to use it with server's public IP address.
 
 ```shell
 # replace your ip address here
 BUILDER_URL='http://10.100.3.21'
 ```
 
-Example 3. If you have mapped your domain name to server's IP address.
+**Example 3**. If you have mapped your domain name to server's IP address.
 
 ```shell
 # replace your domain name
 BUILDER_URL='http://dronahq.example.com'
 ```
 
-#### iii. Optional environment variables
+#### iii. Database configuration variables
+
+Configure variables for external MYSQL credentials
+
+`MYSQL_HOST`, `MYSQL_USER`, `MYSQL_PASSWORD`, `MYSQL_PORT`
+
+```shell
+MYSQL_HOST='mysql.example.com'
+MYSQL_USER='dronahq'
+MYSQL_PASSWORD='secret-password'
+MYSQL_PORT='3306'
+```
+Configure variables for external MONGODB credentials
+
+`MONGODB_HOST`, `MONGODB_USER`, `MONGODB_PASSWORD`, `MONGODB_PORT`
+
+```shell
+MONGODB_HOST='mongodb.example.com'
+MONGODB_USER='dronahq'
+MONGODB_PASSWORD='secret-password'
+MONGODB_PORT='27017'
+```
+
+#### iv. Optional environment variables
 You can also checkout other optional [Environment Variables](./../environment_variables.md), which can enable advance options for you to use DronaHQ Self Hosted.
 
 ### 8. Restart DronaHQ

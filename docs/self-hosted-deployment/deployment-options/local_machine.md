@@ -88,19 +88,19 @@ This variable specifies how do yo want to access DronaHQ.
 - Protocol [ http/ https]
 - Access domain [ Localhost/ IP address/ Domain Name] 
 
-Example 1. If you are using DronaHQ on local machine.
+**Example 1**. If you are using DronaHQ on local machine.
 
 ```shell
 BULDER_URL='http://localhost'
 ```
-Example 2. If you have configured DronaHQ on server and want to use it with server's public IP address.
+**Example 2**. If you have configured DronaHQ on server and want to use it with server's public IP address.
 
 ```shell
 # replace your ip address here
 BUILDER_URL='http://10.100.3.21'
 ```
 
-Example 3. If you have mapped your domain name to server's IP address.
+**Example 3**. If you have mapped your domain name to server's IP address.
 
 ```shell
 # replace your domain name
