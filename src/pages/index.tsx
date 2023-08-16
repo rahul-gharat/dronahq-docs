@@ -50,7 +50,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 export default function Home(): JSX.Element {
 
-  return <Redirect to={useBaseUrl("/")} />;
+  return <Redirect to={useBaseUrl("/introduction/")} />;
   
   // const { siteConfig } = useDocusaurusContext();
   // return (

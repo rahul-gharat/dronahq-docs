@@ -172,7 +172,7 @@ sequenceDiagram
         <h4>Basics</h4>
       </div>
       <p>You can get up and running with DronaHQ in minutes by following our Getting Started guide.</p>
-      <VersionedLink to="/getting-started/start-building">
+      <VersionedLink to="/docs/getting-started/start-building">
         See Getting Started <ArrowRight className="arrow" />
       </VersionedLink>
     </div>
@@ -181,7 +181,7 @@ sequenceDiagram
         <h4>GraphQL API</h4>
       </div>
       <p>We provide an instant GraphQL API by generating your GraphQL schema for you based on your data.</p>
-      <VersionedLink to="/getting-started/start-building">
+      <VersionedLink to="/docs/getting-started/start-building">
         See GraphQL Schema <ArrowRight className="arrow" />
       </VersionedLink>
     </div>
@@ -190,7 +190,7 @@ sequenceDiagram
         <h4>GraphQL API</h4>
       </div>
       <p>We provide an instant GraphQL API by generating your GraphQL schema for you based on your data.</p>
-      <VersionedLink to="/getting-started/start-building">
+      <VersionedLink to="/docs/getting-started/start-building">
         See GraphQL Schema <ArrowRight className="arrow" />
       </VersionedLink>
     </div>
