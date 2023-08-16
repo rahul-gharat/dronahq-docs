@@ -125,7 +125,7 @@ STRTODATE("03-12-2019 17:30","DD-MM-YYYY HH:mm")
 
 > 2019-12-02T18:30:00.000Z
 
-For More Info on Format - Refer [here](/reference_fx_formulas/#concept)
+For More Info on Format - Refer [here](#concept)
 
 ## STRTOUNIX
 
@@ -160,7 +160,7 @@ STRTOUNIX("03-12-2019","DD-MM-YYYY")
 > 1575331200000
 
 
-For More Info on Format - Refer [here](/reference_fx_formulas/#concept)
+For More Info on Format - Refer [here](/reference/fx_formulas/#concept)
 
 ## TIMEOFFSET
 
@@ -1228,7 +1228,7 @@ BINDAPI([connectorname.result.rows.columnname1, connectorname.result.rows.column
 Where,
 * `Connectorname.result.rows.columnname`: is the column whose data is to be fetched.
   * In case you need to fetch data from more than one column, then add the list of columns within the square [ ] brackets separated by comma as [Connectorname.result.rows.columnname1,Connectorname.result.rows.columnname2]
-* `[Filter](/reference_fx_formulas/#filter-truth-table)`: is the filter format to fetch data from the column. There are three components as Columns to be filtered, filter[ operator](https://intercom.help/dronahq-studio/formula/supported-operators-and-keywords/how-to-use-operators) & filter criteria. In case you need to state multiple filters you can use AND (for all filter criteria match) or OR (for any one of the filter criteria match).
+* `[Filter](/reference/fx_formulas/#filter-truth-table)`: is the filter format to fetch data from the column. There are three components as Columns to be filtered, filter[ operator](https://intercom.help/dronahq-studio/formula/supported-operators-and-keywords/how-to-use-operators) & filter criteria. In case you need to state multiple filters you can use AND (for all filter criteria match) or OR (for any one of the filter criteria match).
   * The condition will be taken as datastore.columnname1=""
 
 The parameters mentioned below are optional:

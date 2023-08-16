@@ -12,7 +12,7 @@ DronaHQ provides the non-developers also a way to bind data using Fx functions w
 
 You can navigate to `control -> data section -> Fx` and click on `edit` to write the Fx formula in a specific editor. Test and save it to see the expected value. 
 
-You can refer to the list of supported [Fx formulae here.](../../reference_fx_formulas)
+You can refer to the list of supported [Fx formulae here.](/reference/fx_formulas)
 
 You can also build your own [custom reusable Fx functions](../../custom_fx_ide) at the account level with an IDE in javascript which can be used across all apps.
 

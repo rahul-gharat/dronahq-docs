@@ -6,9 +6,9 @@ sidebar_position: 47
 
 Keywords are predefined variables in a studio that users can use in their applications. They provide important information about the logged-in user or the application's state, which is vital for building logical workflows. In the Studio, there are three different sets of keywords available, each serving different purposes and located in various locations within the studio.
 
-- [App builder keywords](./reference_keywords.md/#app-builder-keywords)
-- [Automation keywords](./reference_keywords.md/#automation-keywords)
-- [BPM Flow keywords](./reference_keywords.md/#bpm-flow-keywords)
+- [App builder keywords](/reference/keywords.md/#app-builder-keywords)
+- [Automation keywords](/reference/keywords.md/#automation-keywords)
+- [BPM Flow keywords](/reference/keywords.md/#bpm-flow-keywords)
 
 ## App builder keywords
 In app development, keywords play a crucial role as they are used during the app-building process and are also visible in the app's preview and final published version. Generally, two types of keywords are utilized: `Dynamically generated` and `Predefined or Static`.
