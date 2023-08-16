@@ -13,7 +13,6 @@ PostgreSQL stands as an open-source object-relational database system, providing
 ## Pre-requisite
 
 
-
 1. Authentication Credentials to connect to your postgres instance. You will need either of the below two credentials option:
    - PostgreSQL database username and password.
    - AWS IAM authentication (for AWS-hosted PostgreSQL databases).
@@ -27,7 +26,6 @@ PostgreSQL stands as an open-source object-relational database system, providing
 3. Firewall Rules:
    - Configure firewall settings to allow DronaHQ (IP whitelist) access to your PostgreSQL host.
 
-Ensuring you have these prerequisites ready will facilitate a smooth integration of PostgreSQL with DronaHQ, enabling effective data management and utilization.
 
 
 
@@ -101,11 +99,6 @@ Saved queries appear under your connector in Connector Library.
 | Raw SQL Query | Various `select, insert, delete, update, join` operations which are supported by PostgresSQL query. e.g. - `select * from UserInfo;` |
 | Stored Procedure Call | You can call store procedure similar to that we call from workbench. e.g. - `CALL getUserInfo;` |
 
-:::caution UNSUPPORTED
-
-Add any specific operations which are unsupported. Remove this for Postgresql.
-
-:::
 
 ## Using PostgreSQL Connector
 
