@@ -2,7 +2,7 @@
 sidebar_position: 98
 ---
 
-# Self-Hosted Environment Variables
+# Environment Variables
 
 Environment variables for Self-hosted DronaHQ deployments.
 

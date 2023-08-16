@@ -13,6 +13,7 @@ To deploy DronaHQ on Kubernetes, you need:
 - A domain you own, to which you can add a DNS record.
 - A Kubernetes cluster. To create a cluster, see documentation on [Google Cloud Platform](https://cloud.google.com/kubernetes-engine/docs/how-to/creating-a-zonal-cluster), [AWS](https://docs.aws.amazon.com/eks/latest/userguide/create-cluster.html), and [Azure](https://learn.microsoft.com/en-us/azure/aks/tutorial-kubernetes-deploy-cluster?tabs=azure-cli).
 - A working installation of kubectl. To install kubectl, see documentation on [Google Cloud Platform](https://cloud.google.com/kubernetes-engine/docs/how-to/cluster-access-for-kubectl#generate_kubeconfig_entry), [AWS](https://docs.aws.amazon.com/eks/latest/userguide/install-kubectl.html), and [Azure](https://learn.microsoft.com/en-us/azure/aks/learn/quick-kubernetes-deploy-cli#connect-to-the-cluster).
+- You can also deploy [Kubernetes Cluster on local VMs](/reference/deploy_kubernetes_on_macos/).
 
 ### Cluster size
 The cluster must have at least one node with 2x vCPUs and 4 GB of memory. Use the following command to retrieve the capacity of your nodes.
