@@ -28,7 +28,7 @@ const CustomDocItem = props => {
   // redirect them to the index if they attempt to directly navigate to a path with
   // _heading_ in it
   if (props.location.pathname.includes('_heading_')) {
-    return <Redirect to={useBaseUrl("/introduction/")} />;
+    return <Redirect to={useBaseUrl("/")} />;
   }
 
   return (

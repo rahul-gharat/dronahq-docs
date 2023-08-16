@@ -53,10 +53,10 @@ The DronaHQ queries with multiple bindings are translated into the number of par
 ### Prepared statement support
 
 Prepared statements can be utilized with the following data sources in DronaHQ:
-- [MS SQL](../reference-connectors/mssql)
-- [My SQL](../reference-connectors/mysql)
-- [PostgreSQL](../reference-connectors/postgresql)
-- [Oracle](../reference-connectors/oracle)
+- [MS SQL](/reference/connectors/mssql)
+- [My SQL](/reference/connectors/mysql)
+- [PostgreSQL](/reference/connectors/postgresql)
+- [Oracle](/reference/connectors/oracle)
 
 ### Enable prepared statement
 

@@ -38,7 +38,7 @@ DronaHQ's built-in Charts Control, integrated with the powerful Plotly.js librar
 - The charts and graphs created using DronaHQ and Plotly.js are designed to be responsive, delivering an optimal viewing experience across various devices and screen sizes.
 
 :::tip
-To check all the properties of charts control please refer to [Charts Control](./../reference-controls/charts.md/#properties)
+To check all the properties of charts control please refer to [Charts Control](./../reference/controls/charts.md/#properties)
 :::
 ## Use Case Scenario
 

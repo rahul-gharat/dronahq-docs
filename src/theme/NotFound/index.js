@@ -41,7 +41,7 @@ export default function NotFound() {
                   </Translate>
                 </p>
                 <div className={styles['homeLink']}>
-                  <Link to={useBaseUrl("/introduction/")}>DronaHQ Docs Home</Link>
+                  <Link to={useBaseUrl("/")}>DronaHQ Docs Home</Link>
                 </div>
               </div>
             </div>
