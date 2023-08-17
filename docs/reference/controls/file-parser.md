@@ -16,14 +16,14 @@ Welcome to the File Parser Control documentation. This guide will walk you throu
 
 In this documentation, we'll delve into various following aspects of the control.
 
-- [Differenet properties available in the control](./file-parser.md/#properties)
-- [Event provided by the control](./file-parser.md/#events)
-- [Data input](./file-parser.md/#data-input)
-- [Data output from control](./file-parser.md/#data-output-from-control)
-- [Supported files](./file-parser.md/#supported-files)
-- [Parsing and Data Transformation](./file-parser.md/#parsing-and-data-transformation)
-- [How to use](./file-parser.md/#how-to-use)
-- [Common issues and solutions with use cases](./file-parser.md/#common-issues-and-solutions-with-use-cases)
+- [Differenet properties available in the control](#properties)
+- [Event provided by the control](#events)
+- [Data input](#data-input)
+- [Data output from control](#data-output-from-control)
+- [Supported files](#supported-files)
+- [Parsing and Data Transformation](#parsing-and-data-transformation)
+- [How to use](#how-to-use)
+- [Common issues and solutions with use cases](#common-issues-and-solutions-with-use-cases)
 
 
 

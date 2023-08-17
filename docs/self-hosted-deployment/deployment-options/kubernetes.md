@@ -236,7 +236,7 @@ Apply changes to the manifest.
 kubectl apply -f dronahq-webapp.yaml
 ```
 
-### Configure SSL
+<!-- ### Configure SSL
 1. Get a domain for DronaHQ installation from your `name server`.
 
 2. Log in to `AWS Console`, and open `AWS Certificate Manager`. from here generate SSL certificate for your domain. To generate public certificate, you can follow [AWS ACM docs](https://docs.aws.amazon.com/acm/latest/userguide/gs-acm-request-public.html)
@@ -257,4 +257,4 @@ annotations:
 $ kubectl apply -f load-balancer.yaml
 ```
 
-5. After the configugration updates, you can access the page in your browser using TLS.
+5. After the configugration updates, you can access the page in your browser using TLS. -->
