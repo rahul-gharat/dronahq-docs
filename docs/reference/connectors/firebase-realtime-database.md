@@ -28,7 +28,7 @@ Firebase is a highly durable database that can scale automatically to handle you
    3. Opt for a JSON Key type and proceed to download the generated file. Ensure to keep this file accessible, as it will be required for configuring the connector.
 
 
-   ## Configuring Connector in DronaHQ
+## Configuring Connector in DronaHQ
 
 Configure your database category using the provided details.Validate connection with `Test connection` and `Save` settings for secure database setup.
 
@@ -80,6 +80,11 @@ After successfully configuring the Firebase Realtime Database connector, you can
        <figcaption align = "center"><i>Firebase Realtime Database with append query.</i></figcaption>
  </figure>
 
+:::tip
+Use double curly brackets for dynamic variables. Test with sample values before saving. Link dynamic variables to controls/actions and more for runtime use. 
+:::
+
+Saved queries appear under your connector in Connector Library.
 
 #### Supported Actions 
 

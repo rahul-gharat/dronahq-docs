@@ -10,17 +10,17 @@ import Thumbnail from '@site/src/components/Thumbnail';
 
 CouchDB is an open-source document-oriented NoSQL database that uses multiple formats and protocols to store, transfer, and process its data
 
-## Prerequisite for CouchDB Integration
+## Prerequisite
 
-1. **Authentication Requirements**: Before establishing a connection with your CouchDB instance, ensure you have the required authentication credentials, including:
+1. Authentication Requirements: Before establishing a connection with your CouchDB instance, ensure you have the required authentication credentials, including:
    - CouchDB database username.
    - Corresponding password for authentication.
 
-2. **Connection Details**:
+2. Connection Details:
    - Obtain the hostname or IP address of your CouchDB server.
    - Identify the port number used by CouchDB for communication.
 
-3. **Firewall and Network Configuration**:
+3. Firewall and Network Configuration:
    - Configure your firewall to allow communication between your application and the CouchDB server.
 
 Having these essential prerequisites in place will ensure a smooth integration of CouchDB with your applications, enabling efficient data management and utilization.
