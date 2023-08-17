@@ -168,7 +168,7 @@ Added the Global JS in JS Code action block.
 :::tip
 
 To see how to declare and use app specific functions in app we can use Resuseable JS Objects
-Reference :- [Resuseable JS Objects](/docs/app-scripting-and-code/reusable_js_objects.md)
+Reference :- [Resuseable JS Objects](/docs/app-scripting-and-code/reusable-js-objects.md)
 :::
 
 Docusaurus can manage multiple versions of your docs.
