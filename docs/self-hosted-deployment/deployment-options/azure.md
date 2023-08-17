@@ -127,7 +127,7 @@ Run following command
 
 For deployment on `Azure Virtual Machine`, it is mandatory to setup external databases for both MYSQL and MONGODB. 
 
-Please follow our guide on <a href="/self-hosted-deployment/configure_external_databases/" target="_blank">Configure external databases</a>.
+Please follow our guide on <a href="/self-hosted-deployment/configure-external-databases/" target="_blank">Configure external databases</a>.
 
 ### 6. Setup DronaHQ Environment
 
@@ -205,7 +205,7 @@ MONGODB_PORT='27017'
 ```
 
 #### iv. Optional environment variables
-You can also checkout other optional [Environment Variables](./../environment_variables.md), which can enable advance options for you to use DronaHQ Self Hosted.
+You can also checkout other optional [Environment Variables](./../environment-variables.md), which can enable advance options for you to use DronaHQ Self Hosted.
 
 ### 8. Restart DronaHQ
 

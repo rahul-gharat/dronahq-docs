@@ -110,7 +110,7 @@ export const authSteps = [
     title: 'Basic Auth',
     description:
       'Basic Auth is a simple authentication method. You just need to provide the username and password to complete authentication. On completion, it will return the auth token.',
-    link: '/rest-apis/api_authentication#basic-authentication',
+    link: '/rest-apis/api-authentication#basic-authentication',
   },
   {
     title: 'Callback Auth',
@@ -132,36 +132,36 @@ export const authSteps = [
     title: 'JWT Bearer',
     description:
       'This feature allows clients to securely authenticate and authorize their requests by leveraging JSON Web Tokens (JWT).',
-    link: '/rest-apis/api_authentication#jwt-bearer-authentication',
+    link: '/rest-apis/api-authentication#jwt-bearer-authentication',
   },
   {
     title: 'NTLM Authentication',
     description:
       'NTLM (Windows NT LAN Manager) authentication is a widely used authentication protocol for Windows-based systems. It is a challenge-response-based mechanism where the client and server exchange messages to establish authentication.',
-    link: '/rest-apis/api_authentication#ntlm-authentication',
+    link: '/rest-apis/api-authentication#ntlm-authentication',
   },
   {
     title: 'OAuth V1.0a',
     description:
       'OAuth V1.0a is a legacy authentication protocol that enables websites or applications (Consumers) to securely access Protected Resources from a web service (Service Provider) through an API. It ensures that Users do not have to disclose their Service Provider credentials to the Consumers.',
-    link: '/rest-apis/api_authentication#oauth---10',
+    link: '/rest-apis/api-authentication#oauth---10',
   },
   {
     title: 'OAuth V2',
     description:
       'OAuth V2 primarily focuses on authorization. Upon implementation, it provides an access token for use in authorizing requests within the DronaHQ integration.',
-    link: '/rest-apis/api_authentication#oauth---v2',
+    link: '/rest-apis/api-authentication#oauth---v2',
   },
   {
     title: 'OAuth v2 - Client Credentials',
     description:
       'With OAuth V2 Client Credentials, applications can request an access token specifically for accessing their own resources, without requiring user involvement.',
-    link: '/rest-apis/api_authentication#oauth---client-credentials',
+    link: '/rest-apis/api-authentication#oauth---client-credentials',
   },
   {
     title: 'OAuth v2 - PKCE',
     description: 'OAuth 2.0 with the PKCE method is an advanced security approach REST API configuration.',
-    link: '/rest-apis/api_authentication#oauth---pkce',
+    link: '/rest-apis/api-authentication#oauth---pkce',
   },
   {
     title: 'SSO Token',
@@ -221,7 +221,7 @@ export const refreshSteps = [
     title: 'OAuth V1.0a',
     description:
       'OAuth V1.0a is a legacy authentication protocol that enables websites or applications (Consumers) to securely access Protected Resources from a web service (Service Provider) through an API. It ensures that Users do not have to disclose their Service Provider credentials to the Consumers.',
-    link: '/rest-apis/api_authentication#oauth---10',
+    link: '/rest-apis/api-authentication#oauth---10',
   },
   {
     title: 'SSO Token',
@@ -496,7 +496,7 @@ In addition to other methods of multistep authentication, you have the option to
 
 By selecting the SSO Token method, DronaHQ will automatically generate output variables based on the active SSO token in your current account. This streamlines the process and eliminates the need for manual setup.
 
-For a more in-depth understanding of SSO tokens and their usage, you can find detailed information in the provided [link](/sso/configuring_sso_with_saml). Embracing the SSO token method can simplify your multistep authentication flow while ensuring seamless and secure access to your account resources.
+For a more in-depth understanding of SSO tokens and their usage, you can find detailed information in the provided [link](/sso/configuring-sso-with-saml). Embracing the SSO token method can simplify your multistep authentication flow while ensuring seamless and secure access to your account resources.
 
   <figure>
     <Thumbnail align = "center" src="/img/advanced-concepts/multistep-auth/sso-token.png" alt="Step SSO Token" width='70%'/>
@@ -510,7 +510,7 @@ In addition to other methods of multistep authentication, you have the option to
 
 By selecting the SSO Token method, DronaHQ will automatically generate output variables based on the active SSO token in your current account. This streamlines the process and eliminates the need for manual setup.
 
-For a more in-depth understanding of SSO tokens and their usage, you can find detailed information in the provided [link](/sso/configuring_sso_with_saml). Embracing the SSO token method can simplify your multistep authentication flow while ensuring seamless and secure access to your account resources.
+For a more in-depth understanding of SSO tokens and their usage, you can find detailed information in the provided [link](/sso/configuring-sso-with-saml). Embracing the SSO token method can simplify your multistep authentication flow while ensuring seamless and secure access to your account resources.
 
   <figure>
     <Thumbnail align = "center" src="/img/advanced-concepts/multistep-auth/refresh-sso-token.png" alt="Step SSO Token" width='70%'/>

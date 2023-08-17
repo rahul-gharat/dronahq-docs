@@ -34,7 +34,7 @@ MariaDB is open-source software. It is a form of relational database and it prov
 Configure your database category by providing below details. Choose between `User and Password` or `AWS IAM` Authentication. Validate the connection with `Test connection` and `Save` settings for secure and efficient database setup.
 
 :::tip
-DronaHQ can Auto fill crucial connection values like host, name, password, and more from the connector's [connection string](https://mariadb.com/kb/en/connecting-to-mariadb/) or from a AWS IAM credentials using [AWS Import](/datasource-concepts/aws_import).
+DronaHQ can Auto fill crucial connection values like host, name, password, and more from the connector's [connection string](https://mariadb.com/kb/en/connecting-to-mariadb/) or from a AWS IAM credentials using [AWS Import](/datasource-concepts/aws-import).
 :::
 
 #### General 
@@ -62,9 +62,9 @@ DronaHQ can Auto fill crucial connection values like host, name, password, and m
 | Advanced Option   | Description    |
 |--------------------|---------------------|
 | Connection Options | The `key` and `value` connection options in database configuration refer to specific settings (keys) and their corresponding values that dictate how the application connects to the database |
-| <VersionedLink to = "../../datasource-concepts/ssl_configurations"> Connect using SSL  </VersionedLink> | Securely access the database using an encrypted SSL connection, ensuring data integrity and confidentiality. |
-| <VersionedLink to = "../../datasource-concepts/ssh_tunneling"> Enable SSH Tunneling          </VersionedLink>           | Securely access the database through encrypted SSH tunneling.                              |
-| <VersionedLink to = "../../datasource-concepts/whitelisting_dronahq_ip"> Whitelist IP                 </VersionedLink>            | Enhance security by restricting database access to specific whitelisted IP addresses.     |
+| <VersionedLink to = "../../datasource-concepts/ssl-configurations"> Connect using SSL  </VersionedLink> | Securely access the database using an encrypted SSL connection, ensuring data integrity and confidentiality. |
+| <VersionedLink to = "../../datasource-concepts/ssh-tunneling"> Enable SSH Tunneling          </VersionedLink>           | Securely access the database through encrypted SSH tunneling.                              |
+| <VersionedLink to = "../../datasource-concepts/whitelisting-dronahq-ip"> Whitelist IP                 </VersionedLink>            | Enhance security by restricting database access to specific whitelisted IP addresses.     |
 
 
 ## Adding Database Queries

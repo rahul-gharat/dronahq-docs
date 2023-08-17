@@ -86,7 +86,7 @@ In the Data Queries section, you can utilize the connectors by using the Connect
 
 Alternatively, you can incorporate the connectors within the Action Flow of your application using the Server Side Action block. This grants you the ability to leverage the connectors' capabilities and functionalities more dynamically and interactively. You can utilize these connectors to process data and orchestrate complex workflows that can be triggered on any user actions.
 
-To delve deeper into the possibilities and benefits of employing AI-powered connectors, I recommend reading the comprehensive [Use cases using AI](./ai_usecases.md) article. This resource will provide you with valuable insights and real-world examples of how these connectors can be effectively harnessed to enhance your application's capabilities and deliver a superior user experience.
+To delve deeper into the possibilities and benefits of employing AI-powered connectors, I recommend reading the comprehensive [Use cases using AI](./ai-usecases.md) article. This resource will provide you with valuable insights and real-world examples of how these connectors can be effectively harnessed to enhance your application's capabilities and deliver a superior user experience.
 
 :::caution Info
 OpenAI imposes rate limits on its APIs to ensure fair usage and maintain system stability. The specific rate limits may vary depending on the API or model you are using. OpenAI provides detailed documentation and guidelines on rate limits for each specific API or model, which you should refer to for accurate and up-to-date information. Exceeding the rate limits can result in errors or temporary blocks on API access.

@@ -32,7 +32,7 @@ Configure your database category by providing the details below. Validate the co
 
 :::tip
 
-DronaHQ can Auto fill crucial connection values like host, name, password, and more from the AWS IAM credentials using [AWS Import](/datasource-concepts/aws_import).
+DronaHQ can Auto fill crucial connection values like host, name, password, and more from the AWS IAM credentials using [AWS Import](/datasource-concepts/aws-import).
 
 :::
 
@@ -68,11 +68,11 @@ In DronaHQ Studio's Microsoft SQL connector setup, the SQL server proxy host can
 | SQL Server Proxy Host | Specify the proxy host to route the MS SQL connection through a proxy server, if necessary. |
 | Use Dynamic Database Host                | Dynamically determine the host for the database connection.                               |
 | Use Dynamic Database Name                | Set the database name dynamically, allowing easy switching between databases.              |
-| <VersionedLink to = "../../datasource-concepts/dynamic_credentials"> Use Dynamic Database Credentials        </VersionedLink> | Enable dynamic database credentials for secure and convenient management.                  |
-| <VersionedLink to = "../../datasource-concepts/prepared_statements"> Enable Converting Queries to Prepared Statement </VersionedLink>| Opt for prepared statements to enhance database performance and security.          |
-| <VersionedLink to = "../../datasource-concepts/ssl_configurations"> Connect using SSL  </VersionedLink> | Securely access the database using an encrypted SSL connection, ensuring data integrity and confidentiality. |
-| <VersionedLink to = "../../datasource-concepts/ssh_tunneling"> Enable SSH Tunneling          </VersionedLink>           | Securely access the database through encrypted SSH tunneling.                              |
-| <VersionedLink to = "../../datasource-concepts/whitelisting_dronahq_ip"> Whitelist IP                 </VersionedLink>            | Enhance security by restricting database access to specific whitelisted IP addresses.     |
+| <VersionedLink to = "../../datasource-concepts/dynamic-credentials"> Use Dynamic Database Credentials        </VersionedLink> | Enable dynamic database credentials for secure and convenient management.                  |
+| <VersionedLink to = "../../datasource-concepts/prepared-statements"> Enable Converting Queries to Prepared Statement </VersionedLink>| Opt for prepared statements to enhance database performance and security.          |
+| <VersionedLink to = "../../datasource-concepts/ssl-configurations"> Connect using SSL  </VersionedLink> | Securely access the database using an encrypted SSL connection, ensuring data integrity and confidentiality. |
+| <VersionedLink to = "../../datasource-concepts/ssh-tunneling"> Enable SSH Tunneling          </VersionedLink>           | Securely access the database through encrypted SSH tunneling.                              |
+| <VersionedLink to = "../../datasource-concepts/whitelisting-dronahq-ip"> Whitelist IP                 </VersionedLink>            | Enhance security by restricting database access to specific whitelisted IP addresses.     |
 
 
 ## Adding Database Queries
