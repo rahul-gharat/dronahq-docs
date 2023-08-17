@@ -59,9 +59,9 @@ DronaHQ can Auto fill crucial connection values like host, name, password, and m
 | Connection Options | The `key` and `value` connection options in the database configuration refer to specific settings (keys) and their corresponding values that dictate how the application connects to the database |
 | Use Dynamic Database Host                | Dynamically determine the host for the database connection.                               |
 | Use Dynamic Database Name                | Set the database name dynamically, allowing easy switching between databases.              |
-| <VersionedLink to = "../../datasource-concepts/dynamic_credentials"> Use Dynamic Database Credentials        </VersionedLink> | Enable dynamic database credentials for secure and convenient management.                  |
-| <VersionedLink to = "../../datasource-concepts/ssl_configurations"> Connect using SSL  </VersionedLink> | Securely access the database using an encrypted SSL connection, ensuring data integrity and confidentiality. |
-| <VersionedLink to = "../../datasource-concepts/whitelisting_dronahq_ip"> Whitelist IP                 </VersionedLink>            | Enhance security by restricting database access to specific whitelisted IP addresses.     |
+| <VersionedLink to = "../../datasource-concepts/dynamic-credentials"> Use Dynamic Database Credentials        </VersionedLink> | Enable dynamic database credentials for secure and convenient management.                  |
+| <VersionedLink to = "../../datasource-concepts/ssl-configurations"> Connect using SSL  </VersionedLink> | Securely access the database using an encrypted SSL connection, ensuring data integrity and confidentiality. |
+| <VersionedLink to = "../../datasource-concepts/whitelisting-dronahq-ip"> Whitelist IP                 </VersionedLink>            | Enhance security by restricting database access to specific whitelisted IP addresses.     |
 
 ## Adding Database Queries
 
