@@ -15,21 +15,11 @@ Tables are a common way to view and interact with your data. You can sort, filte
 
 When you drag a `Table` component to the Builder screen, it automatically displays data from one of your queries. If you don't have any queries, DronaHQ initially populates the table with test data in JSON format. You can change the data displayed in a table by editing the Data property. `Select control -> Data section` From `Quick Select` you can select a query, use JavaScript (e.g., `data_1`), or input an array.
 
-### Change column types
-
-<figure>
-  <Image src="/img/guides/building-interactive-tables/building-interactive-tables-format-data.png" alt="Simple Database GUI" />
-  <figcaption align='left'><i>Format Data section.</i></figcaption>
-</figure>
-
-using format data in data section you can change column type of the data that is binded.
-by using different data types you can also set different look and feel for your data.
-
 ### Working with columns
 
 <figure>
-  <Image src="/img/guides/building-interactive-tables/building-interactive-tables-hide-show-rename.png" alt="Simple Database GUI" />
-  <figcaption align='left'><i>Column options after save.</i></figcaption>
+  <Image src="/img/guides/building-interactive-tables/building-interactive-tables-format-data-rearrange-hide-show.png" alt="Simple Database GUI" />
+  <figcaption align='left'><i>Column options after save and Format Data.</i></figcaption>
 </figure>
 
 - **sorting columns** :- using the first 3 dots you can sort the columns as per your requirements.
@@ -40,11 +30,22 @@ by using different data types you can also set different look and feel for your 
 
 - **Hide/show columns** :- by clicking on the `eye icon` we can hide those columns to be visible on table grid, but this columns will be available as data for any other references.
 
+### Change column types
+
+using format data in data section you can change column type of the data that is binded.
+by using different data types you can also set different look and feel for your data.
+
 ## Editable table columns
 
 To edit table data directly inside table grid control.
 
 ### Config in property section
+
+<figure>
+  <Image src="/img/guides/building-interactive-tables/building-interactive-tables-editable-property.png" alt="Simple Database GUI" />
+  <figcaption align='left'><i>Configure columns that will be editable.</i></figcaption>
+</figure>
+
 After binding data to table grid control, you can make columns `editable` and edit data on run time directly inside that cell.
 To do this in `Property section` we have a dropdown **Choose columns that will be editable** you need to choose columns that you want to make editable.
 
@@ -72,12 +73,16 @@ To add new data directly to table grid control.
 
 ### Config in property section
 
+<figure>
+  <Image src="/img/guides/building-interactive-tables/building-interactive-tables-add-row-property.png" alt="Simple Database GUI" />
+  <figcaption align='left'><i>Configure columns that will be editable when new row is added.</i></figcaption>
+</figure>
+
 Inside property section you have to toggle on **Add new Row** property, this will add a `+ Add Row` button to the bottom of the table.
 On click of this button ot will add a blank row to table grid with columns that are editable in new row.
 To specify `which columns will be editable` in this new row we have to Choose columns in **columns that will be editable in new rows** dropdown in property section.
 
 ### Config in Events section
-
 The event of `save_changes` will be used for both Editing as well as adding New data to table grid.
 After choosing columns that will be editable in new rows we have to configure the `save_changes` event of table grid control.
 same as Editable Table columns.
@@ -88,8 +93,36 @@ This will always return an array of objects.
 
 :::tip
 For smooth integration of both the features in single save_changes event you should use branches with respective conditions.
-[AutoGenerate CURD](../building-apps-concepts/autogenerate_forms_and_crud.md)
+[AutoGenerate CURD](../building-apps-concepts/autogenerate-forms-and-crud.md)
 :::
+
+## Format data options effect on Editable Columns
+
+<figure>
+  <Image src="/img/guides/building-interactive-tables/building-interactive-tables-format-data-types.png" alt="Simple Database GUI" />
+  <figcaption align='center'><i>Format Data available column types.</i></figcaption>
+</figure>
+
+Several types of formats such as email, rating, file, decimal, Textarea, and more are available for different types of input providing their respective validations.
+
+| column type | editor option while editing |
+| -------------- | --------------------------------- |
+| Text | `Text editor` – used for editing normal text type, will return data as `string`. |
+| Textarea | `Textarea box` for editing where data can be entered in multiple lines, will return data as `string`. |
+| Single Tag | `Dropdown` - it is used for providing dropdown like editing options as tags in `single select mode` with a clear option to make it empty, will return data as `string`. |
+| Multi Tag | `Dropdown` - it is used for providing dropdown like editing options as tags in `multi select mode` with a clear option to make it empty, will return data as `array of strings`. |
+| Toggle | `Checkbox` – it will show a checkbox like ui when editing is done, will return data as `boolean`. |
+| JSON | `JSON editor` - it will show a JSON Editor with capabilities to detect and show errors, it will have a expand button as well to show a bigger JSON editor for Large Data.|
+| Date | `Date Picker` - it will show a date picker with a text input where user can input date and it will be validated as per the format set for display. will return data as `Timestamp`. |
+| Time | `Time Picker` - it will show a time picker with a text input where user can input date and it will be validated as per the format set for display. will return data as `Timestamp`. |
+| DateTime | `Date and Time Picker` - it will show a combination of both date and time picker, will return data as `Timestamp`. |
+| Email | `Text editor` – used for editing normal text type, Email will be validated as per Email standards, will return data as `string`. |
+| Number | `Number Input` - a number input bix with small arrows to move numbers up and down , will return data as `Number` with all the validations. | 
+
+<figure>
+  <Image src="/img/guides/building-interactive-tables/building-interactive-tables-editable-dropdown-ui.png" alt="Simple Database GUI" />
+  <figcaption align='center'><i>Editable UI options in table grid.</i></figcaption>
+</figure>
 
 ## Toolbar
 Top section of table grid can have multiple different utilities with there respective functionality.
@@ -130,6 +163,12 @@ To use this feature it is not necessary to have checkbox on in the table grid, o
 To use this feature you need to toggle on `Fit Height To Screen` property, this property enables you to set Height of the Table grid to fit the screen. During pagination, the table fits the screen and you can scroll within the table within the area. also when working with small screen and table grid is not the only control screen the height calculation should not be affected so you can provide a minimum height to **Minimum Height** property this will prevent table grid from un-necessary shrinking in height.
 
 ### Aggregation footer
+
+<figure>
+  <Image src="/img/guides/building-interactive-tables/building-interactive-tables-aggrigation-footer.png" alt="Simple Database GUI" />
+  <figcaption align='center'><i>Aggregation footer in table grid.</i></figcaption>
+</figure>
+
 To use this feature you need to toggle on `Show Aggregation Footer` property, this property enables the end users to have some basic calculation operations like `Count all`, `Count values`, `Count unique values`, `Count empty`, `Count not empty` for basic text type columns and `Sum`, `Average`, `Min`, `Max`, `Median`, `Range` for number type columns.
 
 ### Pagination
