@@ -2,6 +2,6 @@
 sidebar_position: 153
 ---
 
-# Use Sheets in App
+# Analytics
 
 Docusaurus can manage multiple versions of your docs.
