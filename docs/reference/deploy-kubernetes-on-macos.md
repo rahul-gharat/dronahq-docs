@@ -36,7 +36,7 @@ These instructions follow the steps in the lecture videos fairly closely, howeve
 
 ### Step 1 - Provision VMs with Multipass
 
-Because we cannot use VirtualBox and are instead using Multipass, [a script is provided](./deploy-virtual-machines.sh) to create the three VMs.
+Because we cannot use VirtualBox and are instead using Multipass, [a script is provided](https://github.com/dronahq/self-hosted/blob/main/multipass/deploy-virtual-machines.sh) to create the three VMs.
 
 1. Run the VM deploy script from your Mac terminal
 

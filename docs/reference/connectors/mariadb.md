@@ -13,8 +13,6 @@ MariaDB is open-source software. It is a form of relational database and it prov
 
 ## Prerequisite
 
-
-
 1. Authentication Credentials: Obtain the necessary authentication credentials for connecting to your MariaDB instance. You have two options for credentials:
    - MariaDB database username and password.
    - AWS IAM authentication (applicable for AWS-hosted MariaDB databases).
