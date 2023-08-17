@@ -27,8 +27,6 @@ PostgreSQL stands as an open-source object-relational database system, providing
    - Configure firewall settings to allow DronaHQ (IP whitelist) access to your PostgreSQL host.
 
 
-
-
 ## Configuring Connector in DronaHQ
 
 Configure your database category by providing below details. Choose between `User and Password` or `AWS IAM` Authentication. Validate the connection with `Test connection` and `Save` settings for secure and efficient database setup.
