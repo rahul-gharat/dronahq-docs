@@ -199,4 +199,4 @@ Here user needs to pass the locale code in which they wish the app to be loaded.
 </figure>
 
 
-Docusaurus can manage multiple versions of your docs.
+Work in progress...

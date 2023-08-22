@@ -5,4 +5,4 @@ title: "HTTP Requests - cURL"
 
 # HTTP Requests - cURL
 
-Docusaurus can manage multiple versions of your docs.
+Work in progress...

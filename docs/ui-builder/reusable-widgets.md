@@ -5,4 +5,4 @@ title: "Reusable Widgets"
 
 # Reusable Widgets
 
-Docusaurus can manage multiple versions of your docs.
+Work in progress...
