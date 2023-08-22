@@ -53,6 +53,48 @@ Run following command to apply updates on  exteranal database.
 mysql --host=<% host %> --port=<% port %> --user=<% username %> --password=<% password %> < update.sql
 ```
 
-<!-- ### 6. Update DronaHQ version in service file.
+### 6. Update DronaHQ version in service file.
 
-In previous step, we  -->
+##### a. For Docker installation
+
+In `docker-compose.yaml`, change the image tag to indicate the version of DronaHQ to install. The following example specifies the image tag to install version `2.2.8`.
+
+```
+image: dronahq/self-hosted:2.2.8
+services:
+...
+  webapp:
+    image: dronahq/self-hosted:2.2.8
+...
+```
+##### b. For Kubernetes cluster installation
+
+In `dronahq-webapp.yaml`, change the image tag to indicate the version of DronaHQ to install. The following example specifies the image tag to install version `2.2.8`.
+
+```
+...
+spec:
+  template:
+    spec:
+      containers:
+        - image: dronahq/self-hosted:2.2.8
+...
+```
+
+### 7. Restart DronaHQ service
+
+Restart is mandatory for new updates to take effect.
+
+##### a. Restart Docker installation
+
+Restart DronaHQ docker container with following command
+```
+sudo docker-compose up -d webapp
+```
+
+##### b. Restart Kubernetes installation
+
+Apply mofified manifest file with followinf command
+```
+sudo kubectl apply -f dronahq-webapp.yaml
+```
