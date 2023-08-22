@@ -10,13 +10,20 @@ import Thumbnail from '@site/src/components/Thumbnail';
 
 Xano is a platform that simplifies backend developmentand workflows without complex coding. It enables rapid application development and integration, streamlining the process of building scalable and efficient web and mobile applications.
 
-## Prerequisites for Xano Integration
+## Prerequisites 
 
 Obtain the required authentication credentials from Xano, such as API keys or tokens, to securely access your APIs.Ensure that the API endpoints you're using have the appropriate access permissions configured in Xano.
+
+## Configuring API Connector in DronaHQ
+
+Add a `Account name`. Then add the `Meta Api Access Token` for the connector account. Once all details are added, click `Save`. Your connector configuration is now done.
 
 <figure>
   <Thumbnail src="/img/reference/connectors/xano/details.png" alt="Xano Fields" />
 </figure>
+
+After successfully configuring and saving the connector settings, you can easily access your newly connected account by navigating to the `connected accounts` list. You can find this option from the `Connector -> Manage Account` section. This centralized location allows you to conveniently monitor and manage your connected accounts.
+
 
 
 ## Suppoorted API endpoints

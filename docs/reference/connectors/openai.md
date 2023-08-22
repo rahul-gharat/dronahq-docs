@@ -34,6 +34,8 @@ You should have an account on [OpenAI](https://openai.com/) to get the API – k
 </figure>
 
 
+After successfully configuring and saving the connector settings, you can easily access your newly connected account by navigating to the `connected accounts` list. You can find this option from the `Connector -> Manage Account` section. This centralized location allows you to conveniently monitor and manage your connected accounts.
+
 ## Suppoorted API endpoints
 
 

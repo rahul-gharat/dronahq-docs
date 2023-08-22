@@ -22,6 +22,9 @@ The OpenAI Advanced Connector empowers you to seamlessly integrate OpenAI's adva
 Add a `Connector name`. Then add the `API key` for the connector account. Once all details are added, click `Finish`. Your connector configuration is now done.
 
 
+
+After successfully configuring and saving the connector settings, you can easily access your newly connected account by navigating to the `connected accounts` list. You can find this option from the `Connector -> Manage Account` section. This centralized location allows you to conveniently monitor and manage your connected accounts.
+
 ## Supported API endpoints
 
 | Action                   | Description                                                                                     |
