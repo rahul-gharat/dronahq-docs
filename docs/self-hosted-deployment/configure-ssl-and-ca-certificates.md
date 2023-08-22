@@ -4,7 +4,9 @@ sidebar_position: 94
 
 # Configure SSL and CA certificates
 
-## configure SSL for Docker based installation
+Work in progress...
+
+<!-- ## configure SSL for Docker based installation
 
 ### Configure self signed certificate
 
@@ -18,4 +20,4 @@ sidebar_position: 94
 
 ## configure ssl on load balancer for installation with multi-instance auto scaling
 
-
+ -->
