@@ -38,6 +38,21 @@ If not set, system will access above `DOMAIN` with `http` protocol. with this, y
 
     SECURE_HTTP='false'
 
+#### `PATHNAME`
+
+If you are deploying DronaHQ with custom webserver on `sub-path`, then this option will be useful.
+
+Example.
+```
+https://dronahq.example.com/studio
+```
+
+In this variable you only have to provide sub-path name following forward slash (`/`)
+
+```
+PATHNAME='/studio'
+```
+
 #### `LICENSE_KEY`
 This is a unique key assigned to you by DronaHQ. you can get by logging in to [Self-Hosted Portal](https://studio.dronahq.com/selfhosted/login).
 
@@ -90,13 +105,44 @@ if you are using DocumentDB or any other managed MongoDB service then you can se
 
 #### `MONGODB_PROTOCOL`
 
+You can use mongodb with `mongodb` or `mongodb+srv` protocol. In normal installtions we use `mongodb` as a protocol which is default value for this option. `mongo+srv` is useful we want to connect mongodb in cluster or replicaset configuration.
+
+```
+MONGODB_PROTOCOL='mongodb'
+```
+
 #### `MONGODB_PARAMS`
+
+Mongodb parameters are extra options or settings we use with mongodb for advanced functionality. We write params as `url search params` format.
+
+Example.
+```
+MONGODB_PARAMS='ssl=true&retryWrites=false'
+```
+
+#### `MONGODB_TLS`
+
+Specifies whether TLS is required for connections to the server.
+
+```
+MONGODB_TLS='true'
+```
+
+#### `MONGODB_CA_CERT_DIR`
+
+Specifies the path to a file with either a single or bundle of certificate authorities to trust when making a TLS connection.
+
+```
+MONGODB_CA_CERT_DIR='/private/global.bundle.pem'
+```
 
 #### `MONGODB_CONNECTION_STRING`
 
-#### `MONGODB_SSL`
+This is alternarte way for proviting mongodb credentials. Instead of providing credentials separately, you can provide it in single connection string
+```
+MONGODB_CONNECTION_STRING='mongodb://username:password@prod.mongodb.domain.com?ssl=true&retryWrites=false'
+```
 
-#### `MONGODB_SSL_CA_FILE`
 
 ## File Repository
 #### `FILE_UPLOAD_TYPE`
@@ -194,7 +240,6 @@ Authentication in MongoDB is fairly complex, so more complex user setup is expli
 This variable allows you to specify the name of a database to be used for creation scripts in /docker-entrypoint-initdb.d/*.js (see Initializing a fresh instance below). MongoDB is fundamentally designed for "create on first use", so if you do not insert data with your JavaScript files, then no database is created.
 
 #### `MONGO_INITDB_USER`, `MONGO_INITDB_PWD`
-
 These are custom variables added by DronaHQ. This will create application user in your database while initializing MongoDB container.
 DronaHQ runs following script while initializing container to create application users and and assign read/write access to them.
 
@@ -210,23 +255,40 @@ DronaHQ runs following script while initializing container to create application
         }]
     })
 
-## Other
-
-#### `SENDGRID_API_KEY`
-
-#### `MAILER_EMAIL`
-
-#### `MAILER_NAME`
-
-#### `SESSION_KEY_NAME`
-
-#### `SESSION_KEY_SECRET`
-
-#### `SSH_TUNNEL_USER`
-
-#### `LD_LIBRARY_PATH`
+## Other optional variables
 
 #### `SECRET_API_TOKEN_KEY`
+By default, DronaHQ uses its own secret token for authenticariton of internal APIs. You can add your custom token instead.
+
+```
+SECRET_API_TOKEN_KEY='some-random-secret-token'
+```
 
 #### `ENCRYPTION_KEY`
- 
+By default, DronaHQ user its own encryption key to encrypt credentials and secret informations flows in system. You can configure your own encryption key for added security. Also make sure to keep bakup of your key at secure location.
+```
+ENCRYPTION_KEY='some-random-secret-key'
+```
+
+#### `SESSION_KEY_NAME`, `SESSION_KEY_SECRET`
+By default, DronaHQ user its own session key and secret key. You can configure your own if you want to customise.
+```
+SESSION_KEY_NAME='cookie-name'
+SESSION_KEY_SECRET='secret-key-to-sign-cookie'
+```
+
+#### `SENDGRID_API_KEY`
+DronaHQ uses sendgrid as a mailing client. Configure your sendgrid key for activating activity mails.
+```
+SENDGRID_API_KEY='sendgrid api key'
+```
+
+#### `MAILER_EMAIL`, `MAILER_NAME`
+This is sender mailer name and email id for all the mails shoot from dronahq. You can configure your own mailer options as per your sendgrid account.
+```
+MAILER_EMAIL='no-reply@dronahq.com'
+MAILER_NAME='DronaHQ'
+```
+
+<!-- #### `SSH_TUNNEL_USER` -->
+<!-- #### `LD_LIBRARY_PATH` -->
