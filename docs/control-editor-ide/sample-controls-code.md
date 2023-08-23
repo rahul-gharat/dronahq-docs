@@ -1316,4 +1316,4 @@ BSCOMPONENTS["Button1"].prototype = BaseComponent;
 </script>
 ```
 
-Docusaurus can manage multiple versions of your docs.
+Work in progress...

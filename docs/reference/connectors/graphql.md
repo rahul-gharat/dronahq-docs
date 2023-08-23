@@ -73,7 +73,7 @@ Set up your API connector by entering the required details. Ensure Connector con
 Once the connector is configured, access it in your Connector Library. Click `Add query` after connection setup. Create queries, run them, and view responses.
 
 <figure>
-  <Thumbnail src="/img/reference/connectors/graphql/mission.png" alt="Write Queries" />
+  <Thumbnail src="/img/reference/connectors/graphql/mission.jpeg" alt="Write Queries" />
   <figcaption align = "center"><i>Write Queries</i></figcaption>
 </figure>
 

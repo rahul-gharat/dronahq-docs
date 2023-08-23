@@ -67,4 +67,4 @@ By doing this we can achieve a seamless experience for every one who is intended
 The Multiscreen Apps with Navigations use case in DronaHQ demonstrates the diverse navigation methods available to create intuitive and efficient app interfaces. By choosing the most appropriate navigation approach for their app, developers can enhance the user experience, encourage app exploration, and ensure smooth interactions between various app sections. This use case highlights how DronaHQ's navigation capabilities contribute to building engaging and user-friendly apps across diverse industries and use cases.
 
 
-Docusaurus can manage multiple versions of your docs.
+Work in progress...

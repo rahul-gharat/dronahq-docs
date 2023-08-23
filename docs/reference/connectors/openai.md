@@ -12,8 +12,7 @@ OpenAI is a company that focuses on advanced AI research and development to prov
 
 
 
-## Prerequisite for OpenAI Connector
-
+## Prerequisite 
 1. OpenAI API Key: Obtain an API key from OpenAI by signing up for an account and creating a new API key. This key is required to authenticate your requests when using the OpenAI Connector.
 
 2. Environment Setup: Ensure you have a development environment capable of making HTTP requests to external APIs. This could involve using programming languages like Python, JavaScript, or any language that supports HTTP requests.
@@ -33,6 +32,8 @@ You should have an account on [OpenAI](https://openai.com/) to get the API – k
   <figcaption align = "center"><i>OpenAI with configuration details.</i></figcaption>
 </figure>
 
+
+After successfully configuring and saving the connector settings, you can easily access your newly connected account by navigating to the `connected accounts` list. You can find this option from the `Connector -> Manage Account` section. This centralized location allows you to conveniently monitor and manage your connected accounts.
 
 ## Suppoorted API endpoints
 

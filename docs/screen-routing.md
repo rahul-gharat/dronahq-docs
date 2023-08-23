@@ -263,4 +263,4 @@ In the above image we have also added an action of show control depending upon t
   </figcaption>
 </figure>
 
-Docusaurus can manage multiple versions of your docs.
+Work in progress...

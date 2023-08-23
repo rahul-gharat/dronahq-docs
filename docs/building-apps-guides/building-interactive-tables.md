@@ -183,4 +183,4 @@ In Table grid control you can configure different set of actions like `row_selec
 In same fashion you can define custom actions for rows that can be made visible at different places like in `search bar` or as a `new column` or `onHover` based on properties that are configured and define action flow in their respective events. for eg:- `Action1` action flow should be configured in `action1_click`.
 
 
-Docusaurus can manage multiple versions of your docs.
+Work in progress...
