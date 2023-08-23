@@ -81,7 +81,7 @@ We will use text input control and bind its data to the What3Words connector and
 
 1. Put `GPS` control and `input text` in your app.
 
-2. Go to the `Bind Data Option -> Quick Select -> Connector`.
+2. Go to the `Bind Data Option -> Quick Select -> Connector Library`.
 
 3. Click the `Get3Words` endpoint and then select your environment.
 
