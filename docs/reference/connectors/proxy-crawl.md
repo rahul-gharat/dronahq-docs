@@ -7,9 +7,6 @@ import Image from '@site/src/components/Image';
 import VersionedLink from '@site/src/components/VersionedLink';
 import Thumbnail from '@site/src/components/Thumbnail';
 
-<<<<<<< Updated upstream
-Work in progress...
-=======
 
 ProxyCrawl Connector enables easy integration with ProxyCrawl's web scraping and data extraction services, providing efficient ways to fetch data from websites while bypassing CAPTCHAs and other blocks. 
 
@@ -29,4 +26,3 @@ Add a `Account name`. Then add the `Token` for the connector account. Once all d
 </figure>
 
 After successfully configuring and saving the connector settings, you can easily access your newly connected account by navigating to the `connected accounts` list. You can find this option from the `Connector -> Manage Account` section. This centralized location allows you to conveniently monitor and manage your connected accounts.
->>>>>>> Stashed changes
