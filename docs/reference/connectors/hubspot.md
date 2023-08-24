@@ -22,6 +22,7 @@ Add a `Account name`. Then click `Save`, it will open a pop-up window askinging 
 After successfully configuring and saving the connector settings, you can easily access your newly connected account by navigating to the `connected accounts` list. You can find this option from the `Connector -> Manage Account` section. This centralized location allows you to conveniently monitor and manage your connected accounts.
 
 
+## Supported API endpoints
 
 | Action          | Description                                                                                              |
 |-----------------|----------------------------------------------------------------------------------------------------------|
