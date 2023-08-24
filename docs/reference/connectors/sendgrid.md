@@ -15,7 +15,6 @@ SendGrid makes sending emails possible without the use of email servers.
 2. Environment Setup: Ensure you have a development environment capable of making HTTP requests to external APIs. This could involve using programming languages like Python, JavaScript, or any language that supports HTTP requests.
 
 
-
 ## Configuring API Connector in DronaHQ
 
 Add a `Account name`. Then add the `API key` for the connector account. Once all details are added, click `Save`. Your connector configuration is now done.
