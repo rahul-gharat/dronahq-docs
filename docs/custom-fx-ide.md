@@ -447,5 +447,3 @@ STUDIOACTIONS["EXITAPP"] = {
 :::info
 To reflect any change made in code of function or action it needs to be published again.
 :::
-
-Work in progress...
