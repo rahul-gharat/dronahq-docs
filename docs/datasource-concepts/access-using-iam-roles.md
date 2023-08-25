@@ -3,7 +3,7 @@ sidebar_position: 8
 ---
 import Thumbnail from '@site/src/components/Thumbnail';
 
-# Database authentication using IAM
+# IAM database authentication
 
 DronaHQ allows you to authenticate aws rds instance using AWS Identity and Access Management (IAM) database authentication. IAM database authentication works with MariaDB, MySQL, and PostgreSQL.
 
