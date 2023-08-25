@@ -100,7 +100,7 @@ The integration with Airtable allows you to seamlessly add new records to your d
 - Custom functions can be implemented to support column formats that aren't natively supported.
 :::
 
-## Finding Rows in Airtable
+### Finding Rows in Airtable
 
 In scenarios where you need to locate specific records for actions like updates or deletions, the `Find row/rows` feature comes in handy. This process involves searching for rows based on certain criteria and obtaining their record IDs, which can then be utilized for targeted actions.
 

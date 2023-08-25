@@ -22,3 +22,17 @@ Add a `Account name`. Then add the `API key` for the connector account. Once all
   <Thumbnail src="/img/reference/connectors/clearbit/details.png" alt="Clearbit configuration details" />
   <figcaption align = "center"><i>Clearbit configuration details</i></figcaption>
 </figure>
+
+
+## Supported API endpoints
+
+
+| Action Name            | Description                                          |
+|----------------------------|----------------------------------------------------------|
+| Lookup person by email     | Retrieves information about a person based on email.     |
+| Lookup company by domain    | Retrieves company details based on the domain name.     |
+| Lookup domain by company    | Retrieves domain information associated with a company. |
+| Company autocomplete by name| Provides company name suggestions as you type.          |
+| Company Logo by domain      | Fetches the logo of a company using its domain name.    |
+
+

@@ -28,3 +28,16 @@ Add a `Account name`. Then add the `API key`, `Auth Token` and `base URL` for th
 
 
 After successfully configuring and saving the connector settings, you can easily access your newly connected account by navigating to the `connected accounts` list. You can find this option from the `Connector -> Manage Account` section. This centralized location allows you to conveniently monitor and manage your connected accounts.
+
+
+## Supported API endpoints
+
+| Action                | Description                                     |
+|---------------------------|-----------------------------------------------------|
+| GetPaymentRequests        | Retrieves a list of payment requests.              |
+| CreatePaymentRequests     | Initiates the process to create a payment request. |
+| GetPaymentDetails         | Fetches details of a specific payment.             |
+| GetPaymentRequestDetails  | Retrieves detailed information about a payment request.|
+| InitiateRefund            | Starts the process to initiate a refund.           |
+| GetRefundList             | Retrieves a list of refunds.                       |
+| GetRefundDetails          | Fetches details of a specific refund.              |
