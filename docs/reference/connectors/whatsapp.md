@@ -2,6 +2,7 @@
 sidebar_position: 1
 title: WhatsApp
 ---
+
 import Image from '@site/src/components/Image';
 import VersionedLink from '@site/src/components/VersionedLink';
 import Thumbnail from '@site/src/components/Thumbnail';
@@ -10,7 +11,7 @@ WhatsApp is a widely used messaging app for text, voice, and video communication
 
 ## Prerequisites 
 
-1. Gupshup Account: Create an account on Gupshup platform (https://www.gupshup.io) to access their WhatsApp API services.
+1. Gupshup Account: Create an account on [Gupshup platform](https://www.gupshup.io) to access their WhatsApp API services.
 
 2. App Name: Register an App on Gupshup's platform and obtain the unique App Name. This identifies your application when interacting with their APIs.
 
@@ -25,7 +26,6 @@ Add a `Account name`. Then add the necessary details such as `App name`, `Sender
 <figure>
   <Thumbnail src="/img/reference/connectors/whatsapp/details.png" alt="WhatsApp Configuration feilds" />
   <figcaption align = "center"><i>WhatsApp Configuration feilds</i></figcaption>
-</figure
-
+</figure>
 
 After successfully configuring and saving the connector settings, you can easily access your newly connected account by navigating to the `connected accounts` list. You can find this option from the `Connector -> Manage Account` section. This centralized location allows you to conveniently monitor and manage your connected accounts.
