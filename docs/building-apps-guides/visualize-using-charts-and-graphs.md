@@ -57,4 +57,4 @@ Additionally, the app developers can include a pie chart to display the voluntar
 The integration of DronaHQ's Charts Control with the Plotly.js library enables users to create dynamic and interactive visualizations for their data. The "Visualize using charts and graphs" use case enhances data comprehension, supports data-driven decision-making, and improves user engagement with the application. By harnessing the power of data visualization, app developers can deliver impactful and informative visual representations for a wide range of industries and applications.
 
 
-Docusaurus can manage multiple versions of your docs.
+Work in progress...

@@ -27,7 +27,7 @@ Having these essential prerequisites in place will ensure a smooth integration o
 
 ## Configuring Connector in DronaHQ
 
-Configure your database category using the provided details.Validate connection with `Test connection` and `Save` settings for secure database setup.
+Configure your database category using the provided details. Validate connection with `Test connection` and `Save` settings for secure database setup.
 
 :::tip
 DronaHQ can Auto fill crucial connection values like host, name, password, and more from the connector's [connection string](https://docs.couchbase.com/java-sdk/current/howtos/managing-connections.html#connection-strings).
