@@ -110,5 +110,3 @@ To the respective controls and know this controls will load with this data and 2
 ## Conclusion
 
 DronaHQ's Form Repeat Control empowers users to create repeatable forms within their applications, providing a seamless and efficient way to capture multiple sets of data. This feature enhances user experience, simplifies data entry, and ensures data integrity. By incorporating Repeatable Forms, app developers can create flexible and versatile solutions for data collection, benefiting various industries and use cases.
-
-Work in progress...

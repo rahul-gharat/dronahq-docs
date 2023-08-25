@@ -197,6 +197,3 @@ Here user needs to pass the locale code in which they wish the app to be loaded.
   <Thumbnail src="/img/building-apps-concepts/localization/localization-final-output.png" alt="Simple Database GUI" />
   <figcaption align='center'><i>Final output after localization.</i></figcaption>
 </figure>
-
-
-Work in progress...

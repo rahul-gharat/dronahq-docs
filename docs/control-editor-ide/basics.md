@@ -857,5 +857,3 @@ We can hover mouse over variables to see what values they contain till this line
 ways to open inspect window pressing `F12 key` or `ctrl + i` on keyboard or right click inside builder or preview screen and click on last option inspect.
 :::
 
-
-Work in progress...

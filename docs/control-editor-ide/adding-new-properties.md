@@ -466,6 +466,3 @@ Default values of “disable_padding” and “disable_margin” are FALSE.
 Label position by default is TOP and can not be configurable.
 
 Width of the margin & padding template is “THREE_COL” and can not be configured.
-
-
-Work in progress...
