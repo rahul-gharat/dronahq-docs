@@ -33,7 +33,7 @@ This feature is only available in Public Apps which are published with routing h
     - `+ Add Level` – Click here to add a new level.
     - `- Remove Level` – Click here to remove the recent level.
 
-- **Testing Routing in Preview** - This toggle enables you to view how the URL will look like, on setting of routing levels, at the app preview level.
+- **Enable Routing Feature** - This toggle enables you to `Enable` or `Disable` routing feature and view how the URL will look like, on setting of routing levels, at the app preview level.
 
 <figure>
   <Thumbnail src="/img/advanced-concepts/screen-routing/screen-routing-config-screen.png" alt="Simple Database GUI" />
