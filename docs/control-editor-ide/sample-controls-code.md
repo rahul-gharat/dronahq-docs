@@ -1315,5 +1315,3 @@ BSCOMPONENTS["Button1"].prototype = BaseComponent;
 </div>
 </script>
 ```
-
-Work in progress...

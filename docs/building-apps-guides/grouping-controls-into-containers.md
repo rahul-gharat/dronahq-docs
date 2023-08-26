@@ -86,6 +86,3 @@ The use of containers in this scenario simplifies the logic of writing hide and 
 ## Conclusion
 
 The `grouping of controls in containers` feature in DronaHQ provides a powerful solution for organizing and managing controls within app interfaces. By effectively utilizing containers, developers can create more structured, user-friendly, and visually appealing apps, enhancing the overall user experience.
-
-
-Work in progress...

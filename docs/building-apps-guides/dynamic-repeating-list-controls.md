@@ -77,6 +77,3 @@ It also gives users the ability show large data with pagination and using search
 ## Conclusion
 
 DronaHQ's List Repeat Control empowers users to create dynamic repeating lists of  a control within their applications, providing flexibility and efficiency in data management. This feature enhances user experience, simplifies data entry, and ensures real-time updates for better usability. By incorporating the Dynamic Repeating List of a Control, app developers can create versatile and user-centric solutions for managing various types of data lists, benefiting a wide range of industries and use cases.
-
-
-Work in progress...

@@ -262,5 +262,3 @@ In the above image we have also added an action of show control depending upon t
     <i>Final output.</i>
   </figcaption>
 </figure>
-
-Work in progress...

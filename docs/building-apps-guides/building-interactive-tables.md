@@ -181,6 +181,3 @@ To use this feature you need to toggle on `Freeze columns` property, this featur
 In Table grid control you can configure different set of actions like `row_select`, `add_click`, `update_click`, `refresh_click`, etc. The First action here is `on Row click`, so what action will be performed on row click like `Select Row` will perform the action flow configured in `row_select` event,`Show Details` will open detail view, `Navigate with Selection` will navigate to screen that is configured.
 
 In same fashion you can define custom actions for rows that can be made visible at different places like in `search bar` or as a `new column` or `onHover` based on properties that are configured and define action flow in their respective events. for eg:- `Action1` action flow should be configured in `action1_click`.
-
-
-Work in progress...
