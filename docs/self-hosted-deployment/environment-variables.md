@@ -150,6 +150,7 @@ DronaHQ supports two options for storing your files.
 
 - `repository`: Use in-built 'Local file repository'
 - `aws`: Use AWS S3 as a file storage
+- `azure` Use Azure Storage Container as a file storage
 
 if unset, 'Local file repository' will be used.
 
@@ -178,6 +179,19 @@ This is your AWS region in which bucked it hosted/created.
 #### `AWS_S3_ACCESS_KEY_ID`, `AWS_S3_ACCESS_KEY_SECRET`
 `AccessKeyId` and `AccessKeySecret` is required to access your bucket and objects inside bucket.
 It is recomended that you provide complete read/write access of your bucket to this key pair.
+
+### Azure Storage Container configuration (Beta)
+
+You can use Azure storage container as a File storage with DronaHQ. DronaHQ will upload your uploaded files and other resources. Also your published applications will get served from Azure storage container.
+
+#### `AZURE_STORAGE_ACCOUNT_NAME`
+This is your Azure storage account name under which you have created your storage container.
+
+#### `AZURE_STORAGE_ACCOUNT_KEY`
+This is a secret key for your storage account. This key should have required permissions to read and write inside your storage container.
+
+#### `AZURE_STORAGE_CONTAINER_NAME`
+This is a container inside which DronaHQ will be uploading some resources and files uploaded by your application. Also this containmer will server some resources for your application.
 
 
 ## [MYSQL Container](https://hub.docker.com/_/mysql)
