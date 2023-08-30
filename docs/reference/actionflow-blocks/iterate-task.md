@@ -8,7 +8,7 @@ import Thumbnail from '@site/src/components/Thumbnail';
 
 The `Iterate Tasks` action empowers you to efficiently repeat actions based on specific data or inputs. Common development tasks often require repetition under certain conditions. To streamline this process, DronaHQ introduces the `Iterate Task`Action. With the Iterate task, you can group tasks together to be executed iteratively under defined conditions.
 
-## Setting up Iterate Tasks
+## Setting up the Iterate Tasks Action
 
 1. Access the Actions section of any control.
 

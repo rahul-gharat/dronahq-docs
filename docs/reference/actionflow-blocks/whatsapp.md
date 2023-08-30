@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3
+sidebar_position: 1
 title: WhatsApp Messages
 ---
 import Thumbnail from '@site/src/components/Thumbnail';
@@ -10,6 +10,8 @@ You can utilize Action Flows to send WhatsApp text messages to your contacts dir
 <Thumbnail src="/img/reference/actionflow-blocks/whatsapp/whatsapp.jpeg" alt="WhatsApp Message" />
 <figcaption align='center'><i>WhatsApp Message</i></figcaption>
 </figure>
+
+## Setting up the WhatsApp Messages Action
 
 To send a WhatsApp message, follow these steps:
 

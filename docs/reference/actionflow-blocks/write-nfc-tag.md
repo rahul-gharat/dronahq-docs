@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 1
 title: Write NFC Tag
 ---
 
@@ -19,7 +19,7 @@ Support is available only in Android and iOS apps. This action is not applicable
 </figure>
 
 
-## Setting up - Write NFC Tag
+## Setting up the Write NFC Tag
 
 1. Navigate to the Actions of any control and select an action.
 
