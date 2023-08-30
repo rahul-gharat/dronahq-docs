@@ -150,7 +150,8 @@ DronaHQ supports two options for storing your files.
 
 - `repository`: Use in-built 'Local file repository'
 - `aws`: Use AWS S3 as a file storage
-- `azure` Use Azure Storage Container as a file storage
+- `azure`: Use Azure Storage Container as a file storage
+- `gcloud`: Use Google Cloud Storage as a file storage
 
 if unset, 'Local file repository' will be used.
 
@@ -192,6 +193,19 @@ This is a secret key for your storage account. This key should have required per
 
 #### `AZURE_STORAGE_CONTAINER_NAME`
 This is a container inside which DronaHQ will be uploading some resources and files uploaded by your application. Also this containmer will server some resources for your application.
+
+### Google Cloud Storage configuration (Beta)
+
+You can use Google Cloud Storage as a File storage with DronaHQ. DronaHQ will upload your uploaded files and other resources. Also your published applications will get served from Google Cloud Storage.
+
+#### `GCLOUD_STORAGE_PROJECT_ID`
+This is id of your Google cloud project under which you have created your storage bucket.
+
+#### `GCLOUD_STORAGE_SERVICE_ACOUNT_KEY_FILE_PATH`
+This is a your Goocle clous service account's key file path inside your container or mapped volume. This key should have required permissions to read and write inside your storage container.
+
+#### `GCLOUD_STORAGE_BUCKET_NAME`
+This is a storage bucket inside which DronaHQ will be uploading some resources and files uploaded by your application. Also this containmer will server some resources for your application.
 
 
 ## [MYSQL Container](https://hub.docker.com/_/mysql)
