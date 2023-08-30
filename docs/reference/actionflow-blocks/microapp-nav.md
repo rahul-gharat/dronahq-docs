@@ -1,5 +1,5 @@
 ---
-sidebar_position: 8
+sidebar_position: 1
 title: Microapp Nav
 ---
 import Thumbnail from '@site/src/components/Thumbnail';
@@ -11,7 +11,7 @@ The `Microapp Nav` action provides you with the ability to define a navigation p
 <figcaption align='center'><i>Microapp Nav</i></figcaption>
 </figure>
 
-## Utilizing the Microapp Nav Action
+## Setting up the Microapp Nav Action
 
 To employ the `Microapp Nav` action, follow these steps:
 
