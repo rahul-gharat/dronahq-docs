@@ -26,7 +26,7 @@ Airtable is a spreadsheet-database hybrid, with the features of a database but t
 Add a `Account name`. Then add the `API key/Personal Access Token`, `Base ID` and `Table name` for the connector account. Once all details are added, click `Save`. Your connector configuration is now done.
 
 
-:::info NOTE
+:::caution
 API Keys are deprecated. Use `Personal Access Tokens` instead. 
 :::
 
