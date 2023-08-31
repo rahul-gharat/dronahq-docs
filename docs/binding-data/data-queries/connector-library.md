@@ -155,6 +155,31 @@ DQL or DronaHQ Query Language serves as an efficient query and transformation to
 
 [You can read more about it here](../data-queries/dronahq-query-language.md)
 
+
+<figure>
+  <Thumbnail src="/img/data-queries/dql-transform.png" alt="DQL in transformation" width='100%'/>
+  <figcaption align = "center"><i>DQL in transform section</i></figcaption>
+</figure>
+
+**DQL Expression**
+```json
+data.Player_name
+```
+
+**Transformed Response**
+```json
+[
+  "Raujesh Agarrwal",
+  "Kalpesh Jain",
+  "Vinod beriwal",
+  "Faraz",
+  "Abrar Kherani",
+  "Ruchir tiwari",
+  "Tanveer Madaan",
+]
+```
+
+
 ### Filter Objects
 
 You can define your conditions here in the following format to filter out the objects from your raw response. This will filter and get only those objects from the array which meet this defined criteria. 

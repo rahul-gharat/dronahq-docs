@@ -16,3 +16,13 @@ You can write DQL expressions in the following categories:
 - [Returning structured data](/reference/dronahq-query-language/returning-structured-data)
 - [Manipulating data](/reference/dronahq-query-language/manipulating-data)
 - [DQL functions](/reference/dronahq-query-language/dql-function-reference)
+
+<figure>
+  <Thumbnail src="/img/data-queries/dql.png" alt="DQL" width='100%'/>
+  <figcaption align = "center"><i>DQL</i></figcaption>
+</figure>
+
+<figure>
+  <Thumbnail src="/img/data-queries/dql-transform.png" alt="DQL in transformation" width='100%'/>
+  <figcaption align = "center"><i>DQL in transform section</i></figcaption>
+</figure>
