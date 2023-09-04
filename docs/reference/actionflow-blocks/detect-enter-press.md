@@ -12,7 +12,7 @@ The `Detect Enter Press` action provides a convenient way to identify when the E
 <figcaption align='center'><i>Detect Enter Press</i></figcaption>
 </figure>
 
-## Utilizing the Detect Enter Press Action
+## Setting up the Detect Enter Press Action
 
 To effectively utilize the `Detect Enter Press` action, follow these steps:
 

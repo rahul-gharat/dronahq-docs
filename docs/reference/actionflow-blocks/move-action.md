@@ -4,7 +4,7 @@ title: Move Action
 ---
 import Thumbnail from '@site/src/components/Thumbnail';
 
-## Move Action
+## Setting up the Move Action
 
 In the Action Flow, you have the flexibility to rearrange actions by moving them to different positions within the flow. This allows you to structure your workflows more efficiently and logically.
 

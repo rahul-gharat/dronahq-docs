@@ -4,7 +4,7 @@ title: Duplicate Action
 ---
 import Thumbnail from '@site/src/components/Thumbnail';
 
-## Duplicate Action
+## Setting up the Duplicate Action
 
 The Duplicate Action feature allows you to create a copy of a selected action and adds it to the Action Flow right after the current action. This feature is useful when you need to replicate an existing action with similar configurations.
 

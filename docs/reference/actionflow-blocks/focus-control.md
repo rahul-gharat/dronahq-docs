@@ -12,7 +12,7 @@ The `Focus Control` action empowers you to seamlessly guide user interactions wi
 <figcaption align='center'><i>Focus Control</i></figcaption>
 </figure>
 
-## Utilizing the Focus Control Action
+## Setting up the Focus Control Action
 
 To effectively utilize the `Focus Control` action, follow these steps:
 

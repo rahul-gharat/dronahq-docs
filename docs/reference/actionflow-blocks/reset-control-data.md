@@ -12,7 +12,7 @@ The `Reset Control Data` action offers a convenient method to reset the data of 
 <figcaption align='center'><i>Reset Control Data</i></figcaption>
 </figure>
 
-## Utilizing the Reset Control Data Action
+## Setting up the Reset Control Data Action
 
 To effectively utilize the `Reset Control Data` action, follow these steps:
 

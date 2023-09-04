@@ -12,7 +12,7 @@ The `Hide Control` action is a powerful tool that enables you to dynamically con
 <figcaption align='center'><i>Hide Control</i></figcaption>
 </figure>
 
-## Utilizing the Hide Control Action
+## Setting up the Hide Control Action
 
 To effectively utilize the `Hide Control` action, follow these steps:
 

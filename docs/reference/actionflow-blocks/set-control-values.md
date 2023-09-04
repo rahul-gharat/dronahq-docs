@@ -13,7 +13,7 @@ The `Set Controls Value` action provides you with the capability to dynamically 
 <figcaption align='center'><i>Set Controls value</i></figcaption>
 </figure>
 
-## Utilizing the Set Controls Value Action
+## Setting up the Set Controls Value Action
 
 To effectively utilize the `Set Controls Value` action, follow these steps:
 

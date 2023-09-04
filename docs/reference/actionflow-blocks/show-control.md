@@ -12,7 +12,7 @@ The `Show Control` action is a versatile tool that allows you to dynamically dis
 <figcaption align='center'><i>Show Control</i></figcaption>
 </figure>
 
-## Utilizing the Show Control Action
+## Setting up the Show Control Action
 
 To effectively employ the `Show Control` action, follow these steps:
 
