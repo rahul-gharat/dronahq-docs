@@ -4,7 +4,7 @@ title: Get Data from Sheets
 ---
 import Thumbnail from '@site/src/components/Thumbnail';
 
-## Setting up the Server-side Action - Get Data from Sheets
+## Setting up the Get Data from Sheets Action
 
 The `Get Data from Sheets` action allows you to retrieve data from spreadsheets or sheets within your application. This can be particularly useful when you need to access structured data from sheets for various purposes within your app.
 
