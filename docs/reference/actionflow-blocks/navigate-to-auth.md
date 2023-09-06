@@ -12,7 +12,7 @@ The `Navigate to Authentication Screen` action is designed to clear cached authe
 <figcaption align='center'><i>Navigate to Auth URL</i></figcaption>
 </figure>  
 
-## Setting up Navigate to Auth
+## Setting up the Navigate to Auth
 
 1. After successful authentication with a connector, you might want to reset cached token data. In this case, you can utilize the `Navigate to Authentication Screen` action.
 

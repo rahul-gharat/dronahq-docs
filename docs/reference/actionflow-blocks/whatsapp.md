@@ -4,7 +4,7 @@ title: WhatsApp Messages
 ---
 import Thumbnail from '@site/src/components/Thumbnail';
 
-You can utilize Action Flows to send WhatsApp text messages to your contacts directly from your app. To accomplish this, you can leverage the `WhatsApp Message` action located within the `Action Flows > Utility bloc`k.
+You can utilize Action Flows to send WhatsApp text messages to your contacts directly from your app. To accomplish this, you can leverage the `WhatsApp Message` action located within the `Action Flows > Utility block``.
 
 <figure>
 <Thumbnail src="/img/reference/actionflow-blocks/whatsapp/whatsapp.jpeg" alt="WhatsApp Message" />
