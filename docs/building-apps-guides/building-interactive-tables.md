@@ -146,6 +146,7 @@ this Filters by default persist when you use pagination so you wish to avoid thi
 - `Table Headers` you can set `Background`, `Font size`, `Font weight`, `Font color` and `Text alignment`.
 - `Table Data` you can set `Font size`, `Font weight` and `Text alignment`.
 - `Theme` you can set a color in `Theme` property and it will be applied to many places where color is applicable.
+- `Row Background colors` you can set different colors for odd and even rows of display them separately.
 - `columns widths` you can set `Column min width` and `Column max width` for the widths of individual columns.
 - `Checkboxes` you can set checkboxes to `Single select` or `Multi select` or `No` as per your requirements.
 - `Detail view` you can show some data in table and enable detail view to show more data, when user clicks on it a sidebar will be shown with all the data. You can also customize this as well using `Show Key Value Map` property and by toggling on `customize` you can choose which columns will be shown on detail view as well.

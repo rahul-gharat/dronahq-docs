@@ -411,15 +411,15 @@ There are also some system defined variables so we can use them for our control 
 
 **field_composition_type**
 
-- **single** :- in this Bind Data will look like the below image. It will always give data in string format. It is the default value for new control. Recommended to use when we are building controls that take strings as data input. 
-- **composite** :- in this Bind Data will look like the below image. It accepts data as string. 
-- **list** :- in this Bind Data will look like the below image. It accepts data as Array. Recommended to use with controls like dropdowns, checkbox, etc. 
+- **single** :- in this Bind Data will look like bind data in Text Input control. It will always give data in string format. It is the default value for new control. Recommended to use when we are building controls that take strings as data input. 
+- **composite** :- in this Bind Data will look like bind data in Address control. It accepts data as string. 
+- **list** :- in this Bind Data will look like bind data in Dropdown control. It accepts data as Array. Recommended to use with controls like dropdowns, checkbox, etc. 
 
 :::info
 if we use `attrs.field_composition_type = 'composite'` or `attrs.field_composition_type = 'list'` we have to add 1 more attribute as `attrs.field_datatypes = []` otherwise our control will give an error.
 :::
 
-- **composite_list** :- in this Bind Data will look like the below image. It accepts data as Array of objects / json objects. Recommended to use with Display / non_input controls.
+- **composite_list** :- in this Bind Data will look like Table Grid control. It accepts data as Array of objects / json objects. Recommended to use with Display / non_input controls.
 
 **action_items**
 We have to follow this structure for adding events :-
