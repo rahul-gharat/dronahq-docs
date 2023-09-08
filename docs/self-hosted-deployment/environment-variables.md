@@ -145,29 +145,43 @@ MONGODB_CONNECTION_STRING='mongodb://username:password@prod.mongodb.domain.com?s
 
 
 ## File Repository
+
+DronaHQ needs file storage to store files uploaded from apps and resources used in application. Also, when you publish your application, DronaHQ upload compressed files for youe application version and serve it from same repository.
+
 #### `FILE_UPLOAD_TYPE`
-DronaHQ supports two options for storing your files.
+
+DronaHQ supports following options for storing your files.
 
 - `repository`: Use in-built 'Local file repository'
 - `aws`: Use AWS S3 as a file storage
+- `azure`: Use Azure Storage Container as a file storage
+- `gcloud`: Use Google Cloud Storage as a file storage
 
 if unset, 'Local file repository' will be used.
 
     FILE_UPLOAD_TYPE='repository'
 
-### Local file repository configurations (optional)
+### Local file repository configurations
+To use DronaHQ managed file repository, you  need to set `FILE_UPLOAD_TYPE` as `repository` in environment variables.
+
+    FILE_UPLOAD_TYPE='repository'
+
 #### `FILEREPOSITORY_STORAGE_LOCATION`
 By default this is working directory for your installation. You can configure this location.
 
     FILEREPOSITORY_STORAGE_LOCATION=process.cwd()
 
 #### `FILEREPOSITORY_STORAGE_PREFIX`
-Prefix is like a file name. This will create a folder inside `FILEREPOSITORY_STORAGE_LOCATION`
+Prefix is like a folder name. This will create a folder inside `FILEREPOSITORY_STORAGE_LOCATION`
 
     FILEREPOSITORY_STORAGE_PREFIX='files'
 
 ### Amazon Simple Storage Service (S3) configuration
 You can use Amazon S3 as a File storage with DronaHQ. DronaHQ will upload your uploaded files and other resources. Also your published applications will get served from AWS S3.
+
+To use Amazon Simple Storage Service, you need to set following variables.
+
+    FILE_UPLOAD_TYPE='aws'
 
 #### `AWS_S3_BUCKET_NAME`
 This is your Bucket, in which you want to store you files.
@@ -178,6 +192,40 @@ This is your AWS region in which bucked it hosted/created.
 #### `AWS_S3_ACCESS_KEY_ID`, `AWS_S3_ACCESS_KEY_SECRET`
 `AccessKeyId` and `AccessKeySecret` is required to access your bucket and objects inside bucket.
 It is recomended that you provide complete read/write access of your bucket to this key pair.
+
+### Azure Storage Container configuration (Beta)
+
+You can use Azure storage container as a File storage with DronaHQ. DronaHQ will upload your uploaded files and other resources. Also your published applications will get served from Azure storage container.
+
+To use Azure Storage Container, you need to set following variables.
+
+    FILE_UPLOAD_TYPE='azure'
+
+#### `AZURE_STORAGE_ACCOUNT_NAME`
+This is your Azure storage account name under which you have created your storage container.
+
+#### `AZURE_STORAGE_ACCOUNT_KEY`
+This is a secret key for your storage account. This key should have required permissions to read and write inside your storage container.
+
+#### `AZURE_STORAGE_CONTAINER_NAME`
+This is a container inside which DronaHQ will be uploading some resources and files uploaded by your application. Also this containmer will server some resources for your application.
+
+### Google Cloud Storage configuration (Beta)
+
+You can use Google Cloud Storage as a File storage with DronaHQ. DronaHQ will upload your uploaded files and other resources. Also your published applications will get served from Google Cloud Storage.
+
+To use Azure Storage Container, you need to set following variables.
+
+    FILE_UPLOAD_TYPE='gcloud'
+
+#### `GCLOUD_STORAGE_PROJECT_ID`
+This is id of your Google cloud project under which you have created your storage bucket.
+
+#### `GCLOUD_STORAGE_SERVICE_ACOUNT_KEY_FILE_PATH`
+This is a your Goocle clous service account's key file path inside your container or mapped volume. This key should have required permissions to read and write inside your storage container.
+
+#### `GCLOUD_STORAGE_BUCKET_NAME`
+This is a storage bucket inside which DronaHQ will be uploading some resources and files uploaded by your application. Also this containmer will server some resources for your application.
 
 
 ## [MYSQL Container](https://hub.docker.com/_/mysql)

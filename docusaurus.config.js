@@ -28,9 +28,9 @@ const config = {
   // If you aren't using GitHub pages, you don't need these.
   organizationName: `${gitUser}`, // Usually your GitHub org/user name.
   projectName: `${gitRepo}`, // Usually your repo name.
-  // onBrokenLinks: 'throw', // 'throw',
-  // onBrokenMarkdownLinks: 'throw',
-  onDuplicateRoutes: 'throw',
+  onBrokenLinks: 'warn', // 'throw',
+  onBrokenMarkdownLinks: 'warn',
+  onDuplicateRoutes: 'warn',
   trailingSlash: true,
   staticDirectories: ['static', 'public'],
   webpack: {

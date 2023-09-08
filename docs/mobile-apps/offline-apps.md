@@ -27,6 +27,7 @@ All server side actionflow blocks has `Allow Offline` toggle. If you `enable` th
 When `Allow Offline` toggle is enabled:
 1. Output of the current block shouldn't be used in subsequent tasks.
 2. On-Screen actions will be skipped if actionflow gets executed when device is in offline mode.
+3. File upload using `upload file` action or `AWS S3` connector isn't supported in offline mode.
 
 :::
 

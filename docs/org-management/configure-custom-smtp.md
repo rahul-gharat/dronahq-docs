@@ -55,3 +55,10 @@ You need to follow the below steps to set up your SMTP server:
 Incase you decide to restore to default, on the DronaHQ cloud edition the emails will start going from DronaHQ email servers. If you are using the self-hosted version of DronaHQ - this restore will not work.
 
 :::
+
+
+:::tip NOTE
+DronaHQ provides you with the flexibility to tailor your system-generated email delivery. By default, the cloud edition uses our email servers, but you can customize this to your own SMTP server or popular cloud service SMTP servers like Google, Amazon SNS, SendGrid, and more.
+
+For step-by-step instructions on configuring SMTP for your system emails, refer to our [SMTP Email Configuration Guide](/building-apps-guides/guide-to-smtp-email-configuration-with-popular-email-providers). 
+:::
