@@ -14,6 +14,8 @@ The `Filter Object` on-screen action in Studio allows you to apply conditions to
 <figcaption align='center'><i>Filter Object Window</i></figcaption>
 </figure>
 
+
+
 ### Applying Filters
 
 Here's how to use the Filter Object action:
@@ -27,7 +29,7 @@ Here's how to use the Filter Object action:
 In the example above, we have a data source represented by an array of objects. By applying a filter condition, we can refine this data based on specific criteria. In this case, only the objects with an `active_user` value of 1 have been filtered.
 
 <figure>
-<Thumbnail src="/img/reference/actionflow-blocks/filter-object/field.png" alt="Filter Object Window" />
+<Thumbnail src="/img/reference/actionflow-blocks/filter-object/feild.png" alt="Filter Object Window" />
 </figure>
 
 ### Versatile Filtering

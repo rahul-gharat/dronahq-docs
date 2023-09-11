@@ -22,7 +22,9 @@ In your app, you might have set up a screen loader to provide feedback to users 
 4. Action Unique Name: Assigning a unique name to the action is important for easy identification within your Action Flow.
 
 <figure>
-<Thumbnail src="/img/reference/actionflow-blocks/hide-screen-loader/action.png" alt="hide-screen-loader" />
+<Thumbnail src="/img/reference/actionflow-blocks/hide-screen-loader/feild.png" alt="hide-screen-loader" />
 </figure>
 
 The `Hide Screen Loader` action is a valuable tool for managing the display of the screen loader in your app. It provides a more polished and responsive user experience by showing or hiding the loader at the right moments, enhancing the overall usability of your application.
+
+
