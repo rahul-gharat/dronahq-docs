@@ -57,6 +57,14 @@ DronaHQ allows to make use of all the three verification modes supported by SSL.
 MySQL only supports Verify CA Certificate and Skip CA Certificate verification.
 :::
 
+As of now, we are providing SSL (self signed certificate) connections for
+- MySQL
+- Postgres
+- MongoDB
+- ClickHouse
+- MariaDB
+- DocumentDB
+
 ## Conclusion
 For production databases, it’s necessary to use SSL as data is the most important asset to protect. Enabling SSL encryption increases the security of data transmitted across networks between instances of Database Server and Client. Thus, DronaHQ recommends configuring SSL to preserve data.
 
