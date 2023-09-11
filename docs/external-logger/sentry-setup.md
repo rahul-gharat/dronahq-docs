@@ -1,5 +1,5 @@
 ---
-sidebar_position: 6
+sidebar_position: 7
 title: "Sentry Logger Setup"
 description: Learn how to integrate Sentry Logger with DronaHQ.
 ---

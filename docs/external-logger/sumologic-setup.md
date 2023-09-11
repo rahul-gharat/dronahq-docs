@@ -1,5 +1,5 @@
 ---
-sidebar_position: 5
+sidebar_position: 6
 title: "Sumo Logic Setup"
 description: Learn how to integrate Sumo Logic Logger with DronaHQ.
 ---

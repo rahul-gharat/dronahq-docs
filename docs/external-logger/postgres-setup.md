@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 3
 title: "PostgreSQL Setup"
 description: Learn the basics of building an app on DronaHQ.
 ---
