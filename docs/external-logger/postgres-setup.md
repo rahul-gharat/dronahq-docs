@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 2
 title: "PostgreSQL Setup"
 description: Learn the basics of building an app on DronaHQ.
 ---
@@ -31,13 +31,7 @@ To get started with PostgreSQL integration, follow these steps:
 
 2. Go to your PostgreSQL Cluster and click on "Connect", then choose the connection method and copy the connection string.
 
-:::info PLEASE NOTE
-
-   The connection string may not contain the database in the connection string. Make sure the database is added in the connection string.
-
-:::
-
-   Example connection string: `postgresql://username:password@host:port/database`
+Example connection string: `postgresql://username:password@host:port/database`
 
 To configure PostgreSQL as your external logger, follow these steps:
 

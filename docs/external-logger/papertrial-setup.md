@@ -1,5 +1,5 @@
 ---
-sidebar_position: 6
+sidebar_position: 4
 title: "Papertrail Setup"
 description: Learn how to integrate Papertrail with DronaHQ.
 ---

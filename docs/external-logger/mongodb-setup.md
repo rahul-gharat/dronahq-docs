@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3
+sidebar_position: 1
 title: "MongoDB Setup"
 description: Learn the basics of building an app on DronaHQ.
 ---
