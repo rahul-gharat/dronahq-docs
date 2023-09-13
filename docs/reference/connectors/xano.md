@@ -30,7 +30,6 @@ After successfully configuring and saving the connector settings, you can easily
 
 | Action               | Description                                                  |
 |----------------------|--------------------------------------------------------------|
-| Auth                 | Authenticate your connection to Xano using API keys or tokens.|
 | GetAllInstances      | Retrieve a list of all instances within your Xano workspace.|
 | GetAllWorkspaces     | Fetch a list of all workspaces associated with your account. |
 | GetAllTables         | Obtain a list of all tables available within your project.  |
