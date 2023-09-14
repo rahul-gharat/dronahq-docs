@@ -77,30 +77,7 @@ Here, we will connect to a `mysql` database.
 
 🚩 You've successfully connected to the MySQL database that contains customer information.
 
-## Fetch customer data
-
-1. Select `Connector Library -> customerTutorialDB -> + New Query`.
-
-
-<figure>
-  <Thumbnail src="/img/getting-started/add-query.png" style= {{width:"100%", height:"auto"}} alt="Add Query"/>
-  <figcaption align = "center"><i>Add Query</i></figcaption>
-</figure>
-
-2.  It loads the query editor which list all the tables of `customerTutorialDB` database. 
-
-3. Enter query name as `getCustomers`.
-
-4. Enter below query under `Write Your Query` to get first 10 `customers`.
-
-```sql
-select * from Customers ORDER BY id asc LiMIT 10;
-```
-5. Click on `Test Query` and then `Save` this query once test is successful.
-
-🚩 You've created your first query to fetch the list of customers in the database.
-
-## Display customer data in Table Grid
+## Fetch customer data and Display in Table Grid
 
 1. Click the `Controls` option in navigation menu to the left of screen.
 
@@ -108,19 +85,30 @@ select * from Customers ORDER BY id asc LiMIT 10;
 
 3. Select `Table Grid` control and select `Data` option in navigation menu to the right of screen.
 
-4. Select `Quick Select -> Connector Lirary -> customerTutorialDB -> getCustomers query`. 
+4. Select `Quick Select -> Connector Query -> customerTutorialDB`. It loads the query editor which list all the tables of `customerTutorialDB` database. 
+
+5. Enter query name as `getCustomers`.
+
+6. Enter below query under `Write Your Query` to get first 10 `customers`.
+
+```sql
+select * from Customers ORDER BY id asc LiMIT 10;
+```
+
+7. Click on `Test Query` and then `Save` this query once test is successful.
 
 <figure>
   <Thumbnail src="/img/getting-started/use-getcustomers-query.png" style= {{width:"100%", height:"auto"}} alt="Bind GetCustomers Query"/>
   <figcaption align = "center"><i>Bind GetCustomers Query</i></figcaption>
 </figure>
 
+8. Under `Transform Response -> Filter Keys` you can choose the list of keys that will be displayed in Table Grid control. If no keys are selected then all the Keys will be selected. 
 
-5. Under `Transform Response -> Filter Keys` you can choose the list of keys that will be displayed in Table Grid control. If no keys are selected then all the Keys will be selected. 
+9. Click `Test & Save`. This will display customers list in Table Grid control. 
 
-6. Click `Test & Save`. This will display customers list in Table Grid control. 
 
-🚩 You've displayed the results from the `getCustomers` query in the Table Grid control.
+🚩 You've created your first query to fetch the list of customers in the database and displayed the results from getCustomers query to Table Grid control.
+
 
 ## Build form to view customer details
 
@@ -146,16 +134,21 @@ select * from Customers ORDER BY id asc LiMIT 10;
     1. On the `property` pane to the right of the Screen, under `Label` section, rename the Text to `Address` from Default value.
     1. On the `data` pane to the right of the Screen, type `{{tablegrid.address}}` and click `Save`.  
 
-🚩 You've completed binding the data to the controls on the Form. Select the rows on the Table Grid to view the corresponding customer details on the Form.
-
 <figure>
   <Thumbnail src="/img/getting-started/view-data-form.png" style= {{width:"100%", height:"auto"}} alt="View customer details Form"/>
   <figcaption align = "center"><i>View customer details Form</i></figcaption>
 </figure>
 
+🚩 You've completed binding the data to the controls on the Form. Select the rows on the Table Grid to view the corresponding customer details on the Form.
+
 ## Update customer details
 
 1. Select `Connector Library -> customerTutorialDB -> + New Query`.
+
+<figure>
+  <Thumbnail src="/img/getting-started/add-query.png" style= {{width:"100%", height:"auto"}} alt="Add Query"/>
+  <figcaption align = "center"><i>Add Query</i></figcaption>
+</figure>
 
 2.  It loads the query editor which list all the tables of `customerTutorialDB` database. 
 
