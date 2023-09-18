@@ -26,7 +26,7 @@ After successfully configuring and saving the connector settings, you can easily
 
 
 
-## Suppoorted API endpoints
+## Supported API endpoints
 
 | Action               | Description                                                  |
 |----------------------|--------------------------------------------------------------|
