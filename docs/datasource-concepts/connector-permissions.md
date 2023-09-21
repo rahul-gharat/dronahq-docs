@@ -8,7 +8,7 @@ import Thumbnail from '@site/src/components/Thumbnail';
 
 DronaHQ enforces granular access control over the connector resources, allowing you to assign roles to specific users and groups. This feature is particularly valuable for limiting unauthorized modifications to the configured resources. Please refer to the table below for an overview of the different roles and their respective purposes.
 
-| Role     | What it can do ?                                                                                                                                                                                          |
+| Role     | What it can do?                                                                                                                                                                                          |
 |----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Owner    | The creator of the connector holds the exclusive right to set up permissions for other users and groups. This role can edit or delete the connector and configure resources for various data environments. |
 | Editor   | This role can edit the connector and configure resources for various data environments.                                                                                                                               |
@@ -19,7 +19,9 @@ DronaHQ enforces granular access control over the connector resources, allowing 
 
 To set up permissions for a connector, navigate to the connector listing page and click on the three dots (more options) for the desired connector. Then, select 'Edit permissions' to assign roles to users or groups.
 
-When configuring individual or group permissions, the first entry is for 'All Users.' This option sets default permissions for all users. It's essential to keep in mind that permissions granted to all users take precedence over individual permissions when assigning permissions to connectors. For example, if a user is given a 'Preview Only' role for an app, but 'All Users' are granted an 'Editor' role, that individual user will end up with the permissions of the 'Editor' role. Hence, exercise caution to prevent unintended permission overriding. To be on the safe side, consider allowing limited permissions for all users by default.
+When configuring individual or group permissions, the first entry is for 'All Creators.' This option sets default permissions for all creators. It's essential to keep in mind that permissions granted to individual users take precedence over any other permissions when assigning permissions to connectors. For example, if a user is given a 'Preview Only' role for an app, but 'All Creators' are granted an 'Editor' role, that individual user will end up with the permissions of the 'Preview Only' role. 
+
+Permission hierarchy starts with `Individual permission -> Group Permission -> All Creators permission -> Default permission` representing the highest to lowest permission priority, i.e. if no individual permission is given then it will look for permissions in groups to which use is assigned to if not permission is set to groups then it will inherit all creators permission, if not other permission is configured then it will inherit the default permission.
 
 | Term  | Description                                                                                           |
 |-------|-------------------------------------------------------------------------------------------------------|
@@ -74,3 +76,14 @@ To set permissions for a group, click on the 'Manage Groups' option located at t
   <Thumbnail src="/img/connecting-datasource/concepts/connector-permissions/setting-connectors-permission-for-group.png" alt="Groups listing" />
   <figcaption align='center'><i>Groups listing</i></figcaption>
 </figure>
+
+<figure>
+  <Thumbnail src="/img/connecting-datasource/concepts/connector-permissions/editing-group-permission.png" alt="Groups listing" />
+  <figcaption align='center'><i>Editing Group Permission</i></figcaption>
+</figure>
+
+:::info Inherited permission
+
+Permissions which are inherited are highlighted using blue checkboxes
+
+:::
