@@ -81,7 +81,7 @@ You can transform the response in 4 different ways:
 - [Write Javascript](../connector-library/#write-javascript)
 - [Filter objects](../connector-library/#filter-objects)
 - [Filter keys](../connector-library/#filter-keys)
-- [Write DQL | DronaHQ Query Language](../../data-queries/dronahq-query-language) (Coming soon)
+- [Write DQL | DronaHQ Query Language](../../data-queries/dronahq-query-language)
 
 ### Write Javascript
 
