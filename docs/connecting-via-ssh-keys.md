@@ -83,7 +83,7 @@ After generating your SSH key, you can add it to various Git service providers' 
 A single generated SSH key can be used across different repositories, Git service providers, apps, and even by different users.
 :::
 
-You can know more about Git Sync [here](./git-sync).
+You can know more about Git Sync [here](/git-sync).
 
 
 ### SSH Keys for SSH Tunneling
