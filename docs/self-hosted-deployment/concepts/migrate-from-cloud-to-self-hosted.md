@@ -21,11 +21,11 @@ Before proceeding, ensure that your self-hosted instance is [upgraded to the lat
 
 ## Configure Self-Hosted premise for Applications
 
-1. Recreate Connectors and Resources
+1. Recreate Connectors and Environment Resources
 
    - Manually configure [Environments (prod, dev,etc.)](http://localhost:3000/binding-data/data-queries/connector-library/#environments) in Self-Hosted to use them according to your application for running efficiently.
    
-   - Migrate connectors and resources in your self-hosted instance, ensuring that both instances use the same connector and resource names. Differences in names may cause issues with imported applications.
+   - Migrate connectors and environment resources in your self-hosted instance, ensuring that both instances use the same connector and resource names. Differences in names may cause issues with imported applications.
       - [Export your connector](../../../datasource-concepts/migrating-between-accounts/#export) configuration as JSON files. These exports include queries and configuration options. 
       - [Import](../../../datasource-concepts/migrating-between-accounts/#import) these JSON exports into your self-hosted environment. 
 
@@ -34,7 +34,7 @@ Before proceeding, ensure that your self-hosted instance is [upgraded to the lat
    Sheets are not currently supported in the self-hosted version. If migrating from the cloud version, please consider alternative solutions for your sheet-related needs. Stay tuned for updates on sheet support in self-hosted.
    :::
 
-   Self-hosted instances can use environment variables or secrets managers to securely store sensitive credentials. Consider migrating credentials such as database passwords or API keys to one of these methods for enhanced security.
+   Self-hosted instances can use environment variables to securely store sensitive credentials. Consider migrating credentials such as database passwords or API keys to this method for enhanced security.
 
 
 2. Export and Import Applications 
@@ -45,7 +45,7 @@ Before proceeding, ensure that your self-hosted instance is [upgraded to the lat
 
    - [Export your applications](../../../building-apps-concepts/migrating-apps-between-accounts/#export-application) as JSON files. These exports include queries and configuration options.
    - Create individual exports for each application.
-   - [Import](../../../building-apps-concepts/migrating-apps-between-accounts/#import-application) these JSON exports into your self-hosted organization. To import, click Create new and select From JSON.
+   - [Import](../../../building-apps-concepts/migrating-apps-between-accounts/#import-application) these JSON exports into your self-hosted instance. To import, click Create new and select From JSON.
 
 3. Reconfigure SSO and Other Settings
 
@@ -75,10 +75,11 @@ After migrating your applications, update your self-hosted deployment settings a
 
 3. Copy Settings
 
-   - Copy [custom branding](../../../org-management/set-up-branding/), and any org-wide JavaScript from your Cloud instance to your self-hosted instance.
+   - Copy [custom branding](../../../org-management/set-up-branding/), and any org-wide settings from your Cloud instance to your self-hosted instance.
    - Check the Settings page for any other necessary settings.
 
 4. Usage Analytics
 
-   To set up usage analytics on your self-hosted instance, contact your DronaHQ account manager to obtain an access token. Follow the provided instructions to enable usage analytics.
-
+  :::info Usage Analytics
+   Usage Analytics are not currently available in the self-hosted version. Stay tuned for updates on Usage Analytics support in self-hosted.
+   :::
