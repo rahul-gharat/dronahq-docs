@@ -23,7 +23,7 @@ Before proceeding, ensure that your self-hosted instance is [upgraded to the lat
 
 1. Recreate Connectors and Environment Resources
 
-   - Manually configure [Environments (prod, dev,etc.)](http://localhost:3000/binding-data/data-queries/connector-library/#environments) in Self-Hosted to use them according to your application for running efficiently.
+   - Manually configure [Environments (prod, dev,etc.)](../../../binding-data/data-queries/connector-library/#environments) in Self-Hosted to use them according to your application for running efficiently.
    
    - Migrate connectors and environment resources in your self-hosted instance, ensuring that both instances use the same connector and resource names. Differences in names may cause issues with imported applications.
       - [Export your connector](../../../datasource-concepts/migrating-between-accounts/#export) configuration as JSON files. These exports include queries and configuration options. 
