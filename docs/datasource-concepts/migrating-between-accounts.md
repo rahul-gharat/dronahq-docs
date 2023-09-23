@@ -4,7 +4,7 @@ sidebar_position: 10
 
 import Thumbnail from '@site/src/components/Thumbnail';
 
-# Migrating Apps between accounts 
+# Migrating Connector between accounts 
 
 DronaHQ allows you to transfer connector between different accounts by making use of import and export connector option. This can be extremely helpful as you do not have to reconfigure the same connector in different accounts. The export option saves the connector file on to your local system/machine in JSON format. This file can then be imported by different accounts using the `import from json` option.
 
