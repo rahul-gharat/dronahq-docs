@@ -26,11 +26,11 @@ Before proceeding with the migration, it's essential to [upgrade your self-hoste
 
 ## Configure DronaHQ Cloud premise for Applications
 
-1. Recreate Connectors and Resources
+1. Recreate Connectors and Environment Resources
 
-   - Manually configure [Environments (prod, dev,etc.)](http://localhost:3000/binding-data/data-queries/connector-library/#environments) in Cloud to use them according to your application for running efficiently.
+   - Manually configure [Environments (prod, dev,etc.)](../../../binding-data/data-queries/connector-library/#environments) in Cloud to use them according to your application for running efficiently.
    
-   - Migrate connectors and resources in your cloud instance, ensuring that both instances use the same connector and resource names. Differences in names may cause issues with imported applications.
+   - Migrate connectors and Environment resources in your cloud instance, ensuring that both instances use the same connector and resource names. Differences in names may cause issues with imported applications.
       - [Export your connector](../../../datasource-concepts/migrating-between-accounts/#export) configuration as JSON files. These exports include queries and configuration options. 
       - [Import](../../../datasource-concepts/migrating-between-accounts/#import) these JSON exports into your cloud environment. 
 
@@ -61,7 +61,7 @@ After migrating apps, update your Cloud deployment to accommodate users and sett
 
 2. Copy Settings
 
-   - Recreate [custom branding](../../../org-management/set-up-branding/), and org-wide JavaScript from your self-hosted instance to your Cloud instance.
+   - Recreate [custom branding](../../../org-management/set-up-branding/), and any org-wide settings from your self-hosted instance to your Cloud instance.
 
-   - Manually recreate themes in your Cloud instance and check the Settings page for any other necessary configurations, including Beta feature flags.
+   - Manually check the Settings page for any other necessary configurations that needs to be updated from you self-hosted instance to cloud instance.
 
