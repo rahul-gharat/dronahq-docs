@@ -26,38 +26,30 @@ Before proceeding with the migration, it's essential to [upgrade your self-hoste
 
 ## Configure DronaHQ Cloud premise for Applications
 
-1. Recreate Resources
+1. Recreate Connectors and Resources
 
-   - Manually migrate connector configurations such as [environmental variables](../environment-variables.md) for credentials from your self-hosted instance to your Cloud instance.
+   - Manually configure [Environments (prod, dev,etc.)](http://localhost:3000/binding-data/data-queries/connector-library/#environments) in Cloud to use them according to your application for running efficiently.
+   
+   - Migrate connectors and resources in your cloud instance, ensuring that both instances use the same connector and resource names. Differences in names may cause issues with imported applications.
+      - [Export your connector](../../../datasource-concepts/migrating-between-accounts/#export) configuration as JSON files. These exports include queries and configuration options. 
+      - [Import](../../../datasource-concepts/migrating-between-accounts/#import) these JSON exports into your cloud environment. 
 
-   - Recreate all resources in your Cloud instance, ensuring resource names are identical between instances for proper app and workflow functionality.
 
-2. Migrate DronaHQ Database
 
-   - Manually export and import each table from your self-hosted instance to the Cloud instance, exporting each table as a CSV from your self-hosted instance.
+2. Export and Import Applications
 
-3. Copy Query Library Queries
-
-   - Since queries in the [Query Library](../../../binding-data/data-queries/dronahq-query-language/) are not synchronized, manually recreate any shared queries used in your self-hosted instance within your Cloud instance.
-
-4. Export Apps and Workflows
-
-   :::caution 
-   Workflow [webhook](../../../automations-webhook/) URLs may change during the migration, so ensure you update any webhooks referenced elsewhere in your stack.
-   :::
-
-   - [Export your applications](../../../building-apps-concepts/migrating-apps-between-accounts/#export-application) and workflows as JSON. Each app or workflow can be exported individually.
+   - [Export your applications](../../../building-apps-concepts/migrating-apps-between-accounts/#export-application) as JSON. Each app can be exported individually.
 
    - [Import](../../../building-apps-concepts/migrating-apps-between-accounts/#import-application) these JSON exports into your Cloud organization.
 
-5. Perform Application Testing
+3. Perform Application Testing
 
-   - Test the most critical apps and workflows in your Cloud instance to ensure they work correctly.
+   - Test the most critical apps in your Cloud instance to ensure they work correctly.
 
 
 ## Update Your Organization
 
-After migrating apps and workflows, update your Cloud deployment to accommodate users and settings.
+After migrating apps, update your Cloud deployment to accommodate users and settings.
 
 1. Invite Users
 
@@ -69,10 +61,7 @@ After migrating apps and workflows, update your Cloud deployment to accommodate 
 
 2. Copy Settings
 
-   - Transfer app themes, [custom branding](../../../org-management/set-up-branding/), and org-wide JavaScript from your self-hosted instance to your Cloud instance.
+   - Recreate [custom branding](../../../org-management/set-up-branding/), and org-wide JavaScript from your self-hosted instance to your Cloud instance.
 
    - Manually recreate themes in your Cloud instance and check the Settings page for any other necessary configurations, including Beta feature flags.
 
-## Downgrade Plan
-
-If you no longer need your self-hosted organization, downgrade it to the Free plan.
