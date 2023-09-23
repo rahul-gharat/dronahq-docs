@@ -1,5 +1,5 @@
 ---
-sidebar_position: 100
+sidebar_position: 99
 ---
 
 # Deploy Kubernetes Cluster on MacOS (M1/M2) with ubuntu virtual machines
