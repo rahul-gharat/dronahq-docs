@@ -163,7 +163,7 @@ DQL or DronaHQ Query Language serves as an efficient query and transformation to
 
 **DQL Expression**
 ```json
-data.Player_name
+$.Player_name
 ```
 
 **Transformed Response**
