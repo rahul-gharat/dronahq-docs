@@ -55,7 +55,7 @@ DNS changes may take up to 48 hours for the DNS cache to expire, although this t
 
 ## Setting up Custom domain
 
-You need to follow the following steps to set up yoour custom domain:
+You need to follow the following steps to set up your custom domain:
 - Navigate  to `Account Settings -> Domain & Branding`
 - Click on `Set up custom domain`
 - `Step1`: Enter your root domain (e.g: yourdomain.com), this will add both the root domain (e.g., yourdomain.com) and the www subdomain (e.g: www.yourdomain.com) at our end
