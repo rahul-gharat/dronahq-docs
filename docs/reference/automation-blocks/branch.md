@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-title: Automation block - Branch
+title: Branch
 ---
 
 import Image from '@site/src/components/Image';
