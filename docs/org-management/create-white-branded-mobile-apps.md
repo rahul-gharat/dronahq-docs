@@ -8,7 +8,7 @@ import VersionedLink from '@site/src/components/VersionedLink';
 
 # Create white branded mobile apps (beta)
 
-DronaHQ provides an automated way to create Mobile Apps for Android and iOS platforms from DronaHQ console.
+DronaHQ provides an automated way to create your own white branded Mobile Apps for Android and iOS platforms from DronaHQ console.
 
 :::info Please Note
 
