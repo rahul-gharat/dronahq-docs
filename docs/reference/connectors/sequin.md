@@ -44,7 +44,7 @@ For more detailed guidance on setting up a Sequin sync, refer to this [guide](ht
 
 
 
-### Connector Connector in DronaHQ
+### Setup Sequin Connector in DronaHQ
 
 
 Sequin uses a [Postgres Proxy](https://docs.sequin.io/writes#configuration) to interface with your Sequin-synced tables. The Proxy lets Sequin capture inserts, updates, and deletes you make in your database and commit them to the API.
@@ -186,4 +186,4 @@ In case Sequin encounters an error while applying a mutation to the upstream API
 
 With Sequin, you can seamlessly integrate third-party services into your DronaHQ app using SQL, making data management and utilization efficient and straightforward.
 
-For more details on writing queries and understanding how Sequin works, refer to our [documentation](https://docs.sequin.io/).
+For more details on writing queries and understanding how Sequin works, refer to their [documentation](https://docs.sequin.io/).
