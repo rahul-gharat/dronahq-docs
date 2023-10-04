@@ -15,7 +15,7 @@ The Logic Block provides you with tasks that are based on logical actions. You h
 
 <br/>
 
-The JS Code task allows you to add a block of JavaScript code to perform a custom action as part of the action flow. It thus enables interaction between different Studio components and tasks. 
+The JS Code task allows you to add a block of JavaScript code to perform a custom action as part of the action flow. It thus enables interaction between different DronaHQ components and tasks. 
 
 Let us take a simple example to generate a tax invoice for a product. The total tax needs to be computed based on a range. So in this case you need a JavaScript that checks the Taxable amount within the defined slabs and calculates the tax and the total invoice amount.
 

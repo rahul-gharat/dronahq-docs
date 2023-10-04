@@ -37,7 +37,7 @@ When the conditions are met, the corresponding branch is executed automatically.
 
 <figure>
 <Thumbnail src="/img/reference/automation-blocks/branch/branch-example.jpeg" alt="Branch" />
-<figcaption align='center'><i>Branch</i></figcaption>
+<figcaption align='center'><i>Branch Example</i></figcaption>
 </figure>
 
 In essence, the "Branch" automation block simplifies complex BPM Flows by automating decision-making processes, ensuring that your tasks are executed with precision and efficiency.
