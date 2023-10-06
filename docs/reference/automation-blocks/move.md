@@ -28,7 +28,7 @@ To insert or move an automation block:
 The selected block will be inserted or moved to the chosen location within your workflow, helping you customize your automation sequence.
 
 :::info NOTE
-The `Iterate Block` cannot be moved using the Move block due to its specialized functionality.
+The `Iterate Block` and `Branch Block` cannot be moved using the Move block due to its specialized functionality.
 :::
 
 ### Enhanced Efficiency

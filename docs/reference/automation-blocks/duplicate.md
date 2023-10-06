@@ -27,6 +27,10 @@ To duplicate an automation block:
 
 The selected block will be duplicated within your workflow, ready for further configuration.
 
+:::info NOTE
+The `Branch Block` cannot be duplicated using the Duplicate block due to its specialized functionality.
+:::
+
 ### Enhanced Efficiency
 
 By using the Duplicate block, you can significantly reduce the time and effort required to build automation workflows. It encourages a modular approach to workflow design, enabling you to assemble complex processes from reusable components.
