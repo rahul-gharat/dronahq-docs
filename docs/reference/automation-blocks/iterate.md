@@ -26,6 +26,11 @@ Imagine scenarios where you need to perform the same action on multiple items in
 
 With Iterate, you can configure the block to iterate through a list, collection, or data set, specifying the actions to be performed on each item. For example, you can automate the process of sending personalized emails to a list of recipients.
 
+<figure>
+<Thumbnail src="/img/reference/automation-blocks/iterate/iterate-config.png" alt="Iterate" />
+<figcaption align='center'><i>Iterate Configuration</i></figcaption>
+</figure>
+
 ### Precision in Repetition
 
 Iterate ensures precision in repetitive tasks by executing the specified actions on each item systematically. It minimizes manual effort and reduces the chances of errors when dealing with repetitive processes.
