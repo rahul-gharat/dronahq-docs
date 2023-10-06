@@ -22,6 +22,8 @@ Imagine scenarios where standard automation blocks fall short in handling your s
 <figcaption align='center'><i>JS Code</i></figcaption>
 </figure>
 
+Configure `Task Ouputs` by adding outputs for JS code, it's a resource you can use in other tasks or blocks to make decisions or perform actions based on that data.
+
 ### Flexibility and Control
 
 With the JS Code block, you have full control over the logic and data manipulation. Write code to process, transform, or validate data, and make decisions based on complex conditions. Interact with external APIs, databases, or services seamlessly.

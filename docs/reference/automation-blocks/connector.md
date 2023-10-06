@@ -22,6 +22,8 @@ Imagine scenarios where your automation tasks require interaction with external 
 <figcaption align='center'><i>Connector</i></figcaption>
 </figure>
 
+Configure `Task Ouputs` by adding outputs for Connector, it's a resource you can use in other tasks or blocks to make decisions or perform actions based on that data.
+
 ### Seamless Integration
 
 With Connector, you can configure connections to various external systems and services, including APIs, databases, cloud platforms, and more. This empowers you to retrieve data, trigger actions, and synchronize information between your automation BPM Flows and external sources.
