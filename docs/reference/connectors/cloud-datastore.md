@@ -34,7 +34,7 @@ Configure your database category using the provided details.Validate connection 
 
 | Field               | Description                                                                                   |
 |---------------------|-----------------------------------------------------------------------------------------------|
-| Private Key         | Paste the contents of the Private Key obtained from the Firebase console or GCP console.    |
+| Private Key         | Paste the contents of the Private Key obtained from the Firebase console or GCP console.      |
 
   <figure>
        <Thumbnail src="/img/reference/connectors/clouddata/details.jpeg" alt="Cloud Datastore Database with Sample details." />
@@ -93,10 +93,10 @@ Saved queries appear under your connector in Connector Library.
 
 | Action                  | Description                                                                                                  |
 |-------------------------|--------------------------------------------------------------------------------------------------------------|
-| Get Entity by Key       | Retrieve an entity from Cloud Datastore based on a specified key.                                          |
-| Save Entity by Key      | Add or update an entity in Cloud Datastore using a specified key.                                          |
-| Delete Entity by Key    | Remove an entity from Cloud Datastore using a specified key.                                              |
-| Query Datastore         | Retrieve data from Cloud Datastore based on specified criteria, such as filters, sorting, and projections. |
+| Get Entity by Key       | Retrieve an entity from Cloud Datastore based on a specified key.                                            |
+| Save Entity by Key      | Add or update an entity in Cloud Datastore using a specified key.                                            |
+| Delete Entity by Key    | Remove an entity from Cloud Datastore using a specified key.                                                 |
+| Query Datastore         | Retrieve data from Cloud Datastore based on specified criteria, such as filters, sorting, and projections.   |
 
 
 ## Using Cloud Datastore Connector
@@ -108,7 +108,7 @@ To retrieve an entity by key from Cloud Datastore using the Cloud Datastore Conn
 1. Access Data Management Section or Control Action:
    - Navigate to the data management section or control action where you intend to retrieve the entity.
 
-2. Select Cloud Datastore Connector from `Data Management Options -> Quick Select -> Data Queries`:
+2. Select Cloud Datastore Connector from `Data Options -> Quick Select -> Data Queries`:
    - Choose Cloud Datastore Connector from the available options.
    - Select the `Get entity by key` action to retrieve an entity using its key.
    - Click on `Continue` to proceed.
