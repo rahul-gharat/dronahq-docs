@@ -13,6 +13,11 @@ The Automation Block known as `HTTP Response` is a powerful addition to DronaHQâ
 <Thumbnail src="/img/reference/automation-blocks/http-response/http-response-image.jpeg" alt="HTTP Response" />
 </figure>
 
+:::info NOTE
+Http Response will only execute if the Trigger is set to Webhook mode.
+:::
+
+
 ### Customized Responses
 
 The `HTTP Response` block allows users to craft their own responses with precision. Users have the option to define the desired HTTP status code and a JSON response body to be returned. This flexibility enables you to include any data from the workflow as needed, providing a tailored and user-friendly experience.
