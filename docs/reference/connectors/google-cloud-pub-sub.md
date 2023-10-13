@@ -54,7 +54,7 @@ To publish a message to Google Cloud Pub/Sub or subscribe to messages, follow th
 
 1. Define Query Name: Assign a meaningful query name that represents the specific data retrieval operation you are performing. This name will be used as an identifier in your Connector Library.
 
-2. Select Action - Publish or Subscribe: In the Google Cloud Pub/Sub connector options, choose from ist of available actions. Choose the `Get Topic` action. This action allows you to fetch information about a specific topic within your Google Cloud Pub/Sub configuration.
+2. Select Action - Publish or Subscribe: In the Google Cloud Pub/Sub connector options, choose from list of available actions. Choose the `Get Topic` action. This action allows you to fetch information about a specific topic within your Google Cloud Pub/Sub configuration.
 
 3. Configure Action Inputs:
    - Specify the Topic or Subscription (for Subscribe): Select the topic or subscription you want to use for this action.
@@ -86,7 +86,7 @@ Utilize dynamic variables to make your messaging actions more flexible. Test wit
 
 Saved actions appear under your connector in Connector Library.
  
-#### Supported Actions
+### Supported Actions
 
 | Action                | Description                                                          |
 |-----------------------|----------------------------------------------------------------------|
