@@ -87,6 +87,7 @@ When the pagination is enabled your Filter and the Search features do not work o
 | Table Header | Specifies the font size and font weight for the table header. |
 | Table Data | Specifies the font size and font weight for the table data. |
 | Theme | Allows you to specify the theme for the table grid. |
+| Row Background Colors | Set the background color for odd and even rows distinctively |
 | Column Width | Allows you to specify the maximum and minimum width of the columns in the table. |
 
 ### Top Bar
@@ -175,3 +176,4 @@ These outputs can be referenced in other controls, data queries, or JS functions
 | update_click  | Occurs when the update button for updating existing items is clicked.                            |
 | delete_click  | Occurs when the delete button for deleting items is clicked.                                     |
 | save_changes  | Occurs when the save button for saving changes is clicked, typically after editing or updating.|
+| refresh_click | Occurs when  you click the refresh button of the table grid control |
