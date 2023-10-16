@@ -14,7 +14,11 @@ You have the option of applying conditional formatting or data type-specific for
 
 Typically conditional formatting involves providing the condition to check with the column data and then apply the selected formatting options.
 
-![Conditional Formatting Conditions](insert-image-url-here)
+<figure>
+  <Thumbnail src="/img/building-apps-guides/format-data/conditional-formatting.png" alt="Conditional Formatting Conditions" />
+  <figcaption align='center'><i>Conditional Formatting Conditions</i></figcaption>
+</figure>
+
 
 The conditions available are as follows:
 
@@ -41,10 +45,12 @@ You can use these conditions in the specific column. If the condition is true, t
 
 Text data types include conditional formatting based on filters/conditions applied to the respective data. The data of the column being formatted should be text or string type data.
 
-![Text Conditional Formatting](insert-image-url-here)
+<figure>
+  <Thumbnail src="/img/building-apps-guides/format-data/text.png" alt="Text Formatting Conditions" />
+  <figcaption align='center'><i>Text Formatting Conditions</i></figcaption>
+</figure>
 
-### Conditional formatting
-Specify the condition to check the text type data for a column, and if the condition is true, the specific formatting is applied.
+
 
 ## Number and Decimal
 
@@ -53,7 +59,11 @@ For Numeric and Decimal data, you can add either of the following format types: 
 ### Format
 Includes options to use the cell values as normal integers or use the Currency or Accounting format.
 
-![Number and Decimal Format](insert-image-url-here)
+<figure>
+  <Thumbnail src="/img/building-apps-guides/format-data/number.png" alt="Number and Decimal Formatting" />
+  <figcaption align='center'><i>Number and Decimal Formatting</i></figcaption>
+</figure>
+
 
 ### Prefix/Suffix
 You can add a Prefix or a Suffix to your numeric values, such as a currency symbol or a percentage symbol.
@@ -68,13 +78,21 @@ When you have toggle switches to indicate data, like/dislike, star rating, toggl
 ### Styles
 You can provide different styles of toggle symbols and use different colors for them.
 
-![Toggle Styles](insert-image-url-here)
+<figure>
+  <Thumbnail src="/img/building-apps-guides/format-data/toggle-style.png" alt="Toggle Styles" />
+  <figcaption align='center'><i>Toggle Styles</i></figcaption>
+</figure>
+
 
 ## Single Select and Multi-Select
 
 Both single and multi-select have formatting to define options and add colors to categorize each type of option.
 
-![Single Select and Multi-Select](insert-image-url-here)
+<figure>
+  <Thumbnail src="/img/building-apps-guides/format-data/single-tag.png" alt="Single Select and Multi-Select Tag" />
+  <figcaption align='center'><i>Single Select and Multi-Select Tag</i></figcaption>
+</figure>
+
 
 ## Percent
 
@@ -83,6 +101,10 @@ To format Percent type data, you can specify the limit between which the percent
 ### Limit
 Specify the minimum and maximum limit values. You can enable a progress bar to display in the column if the value is within the specified range.
 
+<figure>
+  <Thumbnail src="/img/building-apps-guides/format-column-types/percent.jpeg" alt="Import Formatting" />
+</figure>
+
 ## Rating
 
 For Rating, you can add different styles to express the kind of rating you are indicating.
@@ -90,17 +112,8 @@ For Rating, you can add different styles to express the kind of rating you are i
 ### Style
 You can set icons like a star, heart shape, and set the color for each of the types, and also provide the maximum number of icons to provide the rating degree.
 
-![Rating Styles](insert-image-url-here)
+<figure>
+  <Thumbnail src="/img/building-apps-guides/format-data/rating.png" alt="Import Formatting" />
+</figure>
 
-## URL, FileUpload, Email, TextArea, JSON Object, GeoLocation
 
-There would be no formats for these data types.
-
-You can refer to this article here to see how to use the data formatting for Connectors.
-
-Also, refer to this article to know more about using data formatting when using LOOKUP formula for a Table grid control.
-<div data-theme-toc="true"> </div>
-
----
-
-Please note that you need to replace the "insert-image-url-here" placeholders with the actual image URLs where the images should be included. If you have any further requests or need more assistance, feel free to ask.
