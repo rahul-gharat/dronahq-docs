@@ -22,14 +22,14 @@ When using a Detail View Control, you can format your data using the `Format Dat
 3. Click on `Bind Data`, then select `Format Data` to access the Column Format settings.
 
 <figure>
-  <Thumbnail src="/img/building-apps-guides/format-column-types/detail-view.png" alt="Bind Detail View Control" />
+  <Thumbnail src="/img/building-apps-concepts/format-column-types/detail-view.png" alt="Bind Detail View Control" />
   <figcaption align='center'><i>Bind Detail View Control</i></figcaption>
 </figure>
 
 4. In the Column Format settings, add the column names you want to format. 
 
 <figure>
-  <Thumbnail src="/img/building-apps-guides/format-column-types/formatdata1.png" alt="Format Data config" />
+  <Thumbnail src="/img/building-apps-concepts/format-column-types/formatdata1.png" alt="Format Data config" />
   <figcaption align='center'><i>Format Data config</i></figcaption>
 </figure>
 
@@ -48,7 +48,7 @@ The Format Data feature can also be used in Table Grid Controls to format data f
 2. Under the `Bind Data`, you'll find the `Format Data` button. Click on it to access Column and Row Formatting options.
 
 <figure>
-  <Thumbnail src="/img/building-apps-guides/format-column-types/table-grid.png" alt="Bind Table Grid Control" />
+  <Thumbnail src="/img/building-apps-concepts/format-column-types/table-grid.png" alt="Bind Table Grid Control" />
   <figcaption align='center'><i>Bind Table Grid Control</i></figcaption>
 </figure>
 
@@ -65,7 +65,7 @@ The Format Data feature can also be used in Table Grid Controls to format data f
 4. Conditional formatting can be applied based on the value of another column, allowing for dynamic formatting.
 
 <figure>
-  <Thumbnail src="/img/building-apps-guides/format-column-types/formatdata2.jpeg" alt="Format Data config" />
+  <Thumbnail src="/img/building-apps-concepts/format-column-types/formatdata2.jpeg" alt="Format Data config" />
   <figcaption align='center'><i>Format Data config</i></figcaption>
 </figure>
 
@@ -76,7 +76,7 @@ The Format Data feature can also be used in Table Grid Controls to format data f
 You can also apply conditional formatting to rows in a Table Grid Control. Specify conditions based on operators for different data types and change row colors based on the row values.
 
 <figure>
-  <Thumbnail src="/img/building-apps-guides/format-column-types/row-color.jpeg" alt="Row Color Formatting" />
+  <Thumbnail src="/img/building-apps-concepts/format-column-types/row-color.jpeg" alt="Row Color Formatting" />
   <figcaption align='center'><i>Row Color Formatting</i></figcaption>
 </figure>
 
@@ -89,7 +89,7 @@ To save time and effort, you can import formatting that you've applied in other 
 1. Click `Import` and select the control from which you want to import the format.
 
 <figure>
-  <Thumbnail src="/img/building-apps-guides/format-column-types/import.jpeg" alt="Import Formatting" />
+  <Thumbnail src="/img/building-apps-concepts/format-column-types/import.jpeg" alt="Import Formatting" />
   <figcaption align='center'><i>Import Formatting</i></figcaption>
 </figure>
 
@@ -116,7 +116,7 @@ Enhance your data presentation by adding a progress bar to percentage type data.
 2. Go to `Format Options` and specify the limit for formatting.
 
 <figure>
-  <Thumbnail src="/img/building-apps-guides/format-column-types/percent.jpeg" alt="Import Formatting" />
+  <Thumbnail src="/img/building-apps-concepts/format-column-types/percent.jpeg" alt="Import Formatting" />
 </figure>
 
 
@@ -128,7 +128,7 @@ Enhance your data presentation by adding a progress bar to percentage type data.
 By default, the progress bar's color indicates values below the minimum limit in red, within the range in blue, and above the maximum limit in green.
 
 <figure>
-  <Thumbnail src="/img/building-apps-guides/format-column-types/percent-view.jpeg" alt="Import Formatting" />
+  <Thumbnail src="/img/building-apps-concepts/format-column-types/percent-view.jpeg" alt="Import Formatting" />
 </figure>
 
 

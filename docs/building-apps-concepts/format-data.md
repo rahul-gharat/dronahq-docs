@@ -15,7 +15,7 @@ You have the option of applying conditional formatting or data type-specific for
 Typically conditional formatting involves providing the condition to check with the column data and then apply the selected formatting options.
 
 <figure>
-  <Thumbnail src="/img/building-apps-guides/format-data/conditional-formatting.png" alt="Conditional Formatting Conditions" />
+  <Thumbnail src="/img/building-apps-concepts/format-data/conditional-formatting.png" alt="Conditional Formatting Conditions" />
   <figcaption align='center'><i>Conditional Formatting Conditions</i></figcaption>
 </figure>
 
@@ -46,7 +46,7 @@ You can use these conditions in the specific column. If the condition is true, t
 Text data types include conditional formatting based on filters/conditions applied to the respective data. The data of the column being formatted should be text or string type data.
 
 <figure>
-  <Thumbnail src="/img/building-apps-guides/format-data/text.png" alt="Text Formatting Conditions" />
+  <Thumbnail src="/img/building-apps-concepts/format-data/text.png" alt="Text Formatting Conditions" />
   <figcaption align='center'><i>Text Formatting Conditions</i></figcaption>
 </figure>
 
@@ -60,7 +60,7 @@ For Numeric and Decimal data, you can add either of the following format types: 
 Includes options to use the cell values as normal integers or use the Currency or Accounting format.
 
 <figure>
-  <Thumbnail src="/img/building-apps-guides/format-data/number.png" alt="Number and Decimal Formatting" />
+  <Thumbnail src="/img/building-apps-concepts/format-data/number.png" alt="Number and Decimal Formatting" />
   <figcaption align='center'><i>Number and Decimal Formatting</i></figcaption>
 </figure>
 
@@ -79,7 +79,7 @@ When you have toggle switches to indicate data, like/dislike, star rating, toggl
 You can provide different styles of toggle symbols and use different colors for them.
 
 <figure>
-  <Thumbnail src="/img/building-apps-guides/format-data/toggle-style.png" alt="Toggle Styles" />
+  <Thumbnail src="/img/building-apps-concepts/format-data/toggle-style.png" alt="Toggle Styles" />
   <figcaption align='center'><i>Toggle Styles</i></figcaption>
 </figure>
 
@@ -89,7 +89,7 @@ You can provide different styles of toggle symbols and use different colors for 
 Both single and multi-select have formatting to define options and add colors to categorize each type of option.
 
 <figure>
-  <Thumbnail src="/img/building-apps-guides/format-data/single-tag.png" alt="Single Select and Multi-Select Tag" />
+  <Thumbnail src="/img/building-apps-concepts/format-data/single-tag.png" alt="Single Select and Multi-Select Tag" />
   <figcaption align='center'><i>Single Select and Multi-Select Tag</i></figcaption>
 </figure>
 
@@ -102,7 +102,7 @@ To format Percent type data, you can specify the limit between which the percent
 Specify the minimum and maximum limit values. You can enable a progress bar to display in the column if the value is within the specified range.
 
 <figure>
-  <Thumbnail src="/img/building-apps-guides/format-column-types/percent.jpeg" alt="Import Formatting" />
+  <Thumbnail src="/img/building-apps-concepts/format-column-types/percent.jpeg" alt="Import Formatting" />
 </figure>
 
 ## Rating
@@ -113,7 +113,7 @@ For Rating, you can add different styles to express the kind of rating you are i
 You can set icons like a star, heart shape, and set the color for each of the types, and also provide the maximum number of icons to provide the rating degree.
 
 <figure>
-  <Thumbnail src="/img/building-apps-guides/format-data/rating.png" alt="Import Formatting" />
+  <Thumbnail src="/img/building-apps-concepts/format-data/rating.png" alt="Import Formatting" />
 </figure>
 
 
