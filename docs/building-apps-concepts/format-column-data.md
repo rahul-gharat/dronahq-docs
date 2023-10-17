@@ -71,6 +71,29 @@ The Format Data feature can also be used in Table Grid Controls to format data f
 
 5. Once you've added formatting to your selected columns, click `Finish`.
 
+Certainly, here is the information about the Color Scale conditional formatting for Table Grid Controls presented in the requested format:
+
+### Color Scale Conditional Formatting 
+
+1. Source Column: In order to apply Color Scale conditional formatting, the data type of the source column must be a Number.
+
+2. Unique ID: This is the source column you want to apply the Color Scale formatting to.
+
+3. Preview: View the color gradients before saving.
+
+4. Format Rules:
+
+    - Min Value: 0
+    - Mid Value: 0
+    - Max Value: 100
+
+The Color Scale conditional formatting option allows you to visually represent numeric data variations using a gradient of colors. In this example, the "unique_id" column is used, and the color scale is configured to span from 0 to 100. The color assigned to each value within this range gradually changes, creating a visual representation of data distribution. This can be helpful for identifying data trends and patterns in your Table Grid Control.
+
+<figure>
+  <Thumbnail src="/img/building-apps-concepts/format-column-types/formatdata3.jpg" alt="Color Scale" />
+  <figcaption align='center'><i>Color Scale</i></figcaption>
+</figure>
+
 ### Row Color
 
 You can also apply conditional formatting to rows in a Table Grid Control. Specify conditions based on operators for different data types and change row colors based on the row values.
