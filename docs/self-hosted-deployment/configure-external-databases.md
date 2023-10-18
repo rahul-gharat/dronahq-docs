@@ -11,7 +11,7 @@ In Docker based self-hosted setup, user information, apps information, documents
 If you are installing DronaHQ self hosted on Kubernetes platform, then you should externalize your database. DronaHQ dont provide containerized databases suport by default for installation on kubernetes cluster.
 
 :::caution User rights and permissions
-Database user you will be using to import/export database files must have superuser/admin privillages to that database. These are necessary for some essential operations in database like downloading/installing updates.
+Database user you will be using to import/export database files must have superuser/admin privileges to that database. These are necessary for some essential operations in database like downloading/installing updates.
 :::
 
 Use following steps to set up external databases for docker based installations.
@@ -194,7 +194,7 @@ Replace variables encapsulated in `<% variable %>` with actual value.
 
 ## 3. Create application user in external database
 
-Considering importance of data security, privacy, and integrity, DronaHQ recommends creating and using application user with limited privillages defined for required scope.
+Considering importance of data security, privacy, and integrity, DronaHQ recommends creating and using application user with limited privileges defined for required scope.
 
 You can create application user in external database using following comands.
 
@@ -214,7 +214,7 @@ mysql -h<% host %> -u<% user %> -p<% password %> -e "CREATE USER '<% application
 mysql -h<% host %> -u<% user %> -p<% password %> -e "GRANT ALL PRIVILEGES ON *.* TO '<% application-user %>'@'%';"
 ```
 
-#### iii. Flush privillages for newly assigned privilleges to take effect immediately
+#### iii. Flush privileges for newly assigned privilleges to take effect immediately
 
 ```shell
 mysql -h<% host %> -u<% user %> -p<% password %> -e "FLUSH PRIVILEGES;"
