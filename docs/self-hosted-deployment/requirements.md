@@ -17,7 +17,7 @@ Learn about DronaHQ Self-hosted requirements then follow a deployment guide to g
 - `curl`, `wget`, `git`, `unzip`
 - Docker Engine `20.10.0`
 - Docker Compose `1.29.0`
-- Any text editor of your choise
+- Any text editor of your choice
 
 ### Networking requirements
 - Port `22`(ssh) To allow you to SSH into your instance and configure it.

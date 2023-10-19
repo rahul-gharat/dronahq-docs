@@ -196,7 +196,7 @@ Replace variables encapsulated in `<% variable %>` with actual value.
 
 Considering importance of data security, privacy, and integrity, DronaHQ recommends creating and using application user with limited privileges defined for required scope.
 
-You can create application user in external database using following comands.
+You can create application user in external database using following commands.
 
 ### 3.1 Create application user in MYSQL external database
 
