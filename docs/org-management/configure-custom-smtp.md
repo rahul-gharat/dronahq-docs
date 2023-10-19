@@ -52,7 +52,7 @@ You need to follow the below steps to set up your SMTP server:
 
 :::info Restoring to default
 
-Incase you decide to restore to default, on the DronaHQ cloud edition the emails will start going from DronaHQ email servers. If you are using the self-hosted version of DronaHQ - this restore will not work.
+In case you decide to restore to default, on the DronaHQ cloud edition the emails will start going from DronaHQ email servers. If you are using the self-hosted version of DronaHQ - this restore will not work.
 
 :::
 

@@ -186,7 +186,7 @@ For this scenario, we have a table with two fields: Email and Attachments.
 </figure>
 
 
-Inside the studio, we have a textfield for email input, a file upload control for attachment images, and an `Insert Record` button.
+Inside the DronaHQ, we have a textfield for email input, a file upload control for attachment images, and an `Insert Record` button.
 
 To set up the process:
 

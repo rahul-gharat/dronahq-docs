@@ -8,7 +8,7 @@ Follow the instructions in this guide to setup DronaHQ in self hosted environmen
 
 ### Prerequisite
 
-To deploy DronaHQ on Google Cloud Compute Engine, you shoul have:
+To deploy DronaHQ on Google Cloud Compute Engine, you should have:
 - `DronaHQ License Key`, which you can get from DronaHQ [Self Hosted Portal](https://studio.dronahq.com/selfhosted/login).
 - Basic understanding of `GCP` and `Compute Engine Virtual Machine`.
 - Working [Google Cloud Platform account](https://console.cloud.google.com).
@@ -34,7 +34,7 @@ Following are some references, which can help you sail through GCP Virtual Machi
 
 7. In security section, you can add manually generated SSH keys. By default, when you connect to a VM using this console or gcloud, your SSH keys are generated automatically. [Learn more](https://cloud.google.com/compute/docs/instances/ssh)
 
-8. clik on **CREATE** button to start your instance.
+8. click on **CREATE** button to start your instance.
 
 ### 2. Connect to your Linux instance using an SSH client
 
@@ -142,7 +142,7 @@ If not you can add this variable. Following is the example of how this variable 
 LICENSE_KEY='DRONAHQ-LICENSE-KEY'
 ```
 
-If you dont have DronaHQ license key for self hosted, you can [sign up](https://www.dronahq.com/self-hosted-signup/) for DrobaHQ self hosted and get your license key by logging in to [self-hosted portal](https://studio.dronahq.com/selfhosted/login).
+If you don't have DronaHQ license key for self hosted, you can [sign up](https://www.dronahq.com/self-hosted-signup/) for DronaHQ self hosted and get your license key by logging in to [self-hosted portal](https://studio.dronahq.com/selfhosted/login).
 
 #### ii. `BUILDER_URL`
 
@@ -206,7 +206,7 @@ sudo docker-compose up -d
 
 ### 9. Verify that containers are running
 
-You can use following comand to check running docker containers.
+You can use following command to check running docker containers.
 
 ```shell
 sudo docker-compose ps

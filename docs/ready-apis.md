@@ -61,7 +61,7 @@ Ready API connectors offer a versatile range of functionalities, serving multipl
 
 To begin integrating external services and APIs with DronaHQ, the first step is to install the API connector.
 
-To install third-party connectors in DronaHQ, simply navigate to `Studio -> Connectors` and click the `"+"` button to add a new connector. The On-Prem version offers a variety of options, including GraphQL, Airtable, Gmail, and more. Additionally, the REST API enables seamless integration with third-party APIs, granting access to external systems.
+To install third-party connectors in DronaHQ, simply navigate to `DronaHQ -> Connectors` and click the `"+"` button to add a new connector. The On-Prem version offers a variety of options, including GraphQL, Airtable, Gmail, and more. Additionally, the REST API enables seamless integration with third-party APIs, granting access to external systems.
 
 When installing third-party APIs, the Self-Hosted version provides robust authentication support. You can leverage major API authentication methods to ensure secure and reliable connections between DronaHQ and external services.
 

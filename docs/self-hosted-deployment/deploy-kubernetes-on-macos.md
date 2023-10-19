@@ -32,7 +32,7 @@ Additionally
 
 ## Install Cluster
 
-These instructions follow the steps in the lecture videos fairly closely, however we need to use versions of the various software to install that are compatible with ARM architecture. This means that whereever the lecture shows sofware downloads with `linux-amd64` in the name, we are going to choose the corresponding `linux-arm64` version.
+These instructions follow the steps in the lecture videos fairly closely, however we need to use versions of the various software to install that are compatible with ARM architecture. This means that whereever the lecture shows software downloads with `linux-amd64` in the name, we are going to choose the corresponding `linux-arm64` version.
 
 ### Step 1 - Provision VMs with Multipass
 

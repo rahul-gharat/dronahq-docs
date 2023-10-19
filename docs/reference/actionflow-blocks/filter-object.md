@@ -7,7 +7,7 @@ import Thumbnail from '@site/src/components/Thumbnail';
 
 ## Filtering Data Objects in Your Action Flow
 
-The `Filter Object` on-screen action in Studio allows you to apply conditions to filter data from a data source provided that it should be in the form of an array of objects. This powerful feature enables you to select and display specific data based on your defined criteria.
+The `Filter Object` on-screen action in DronaHQ allows you to apply conditions to filter data from a data source provided that it should be in the form of an array of objects. This powerful feature enables you to select and display specific data based on your defined criteria.
 
 <figure>
 <Thumbnail src="/img/reference/actionflow-blocks/filter-object/filter-object.png" alt="Filter Object Window" />

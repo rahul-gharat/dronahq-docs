@@ -17,7 +17,7 @@ DronaHQ has 5 sections in `Account Settings -> General & Security` settings:
 
 :::caution Please Note
 
-You you need to have admin or owner level priviledges to access or modify these configurations.
+You you need to have admin or owner level privileges to access or modify these configurations.
 
 :::
 

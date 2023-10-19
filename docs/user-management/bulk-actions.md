@@ -12,7 +12,7 @@ While your organization scales there might be needs to manage the users in bulk.
 
 :::caution Please Note
 
-You you need to have admin or owner level priviledges to access or modify these configurations.
+You you need to have admin or owner level privileges to access or modify these configurations.
 
 :::
 

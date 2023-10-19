@@ -48,4 +48,4 @@ The outputs from the Textarea control, represented by the placeholder `{{textare
 | Trigger                   | Description                                                                             |
 |--------------------------|-----------------------------------------------------------------------------------------|
 | value_change                | Occurs when there is a modification in the respective control's value. To control the frequency or speed of the change event, you can utilize the `debounce` property associated with the control. |
-| focus_out       | Occuts when the control loses focus, typically when the user clicks outside the control. It allows you to perform actions or handle specific behavior when the focus is no longer on the element. |
+| focus_out       | Occurs when the control loses focus, typically when the user clicks outside the control. It allows you to perform actions or handle specific behavior when the focus is no longer on the element. |

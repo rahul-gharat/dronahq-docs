@@ -43,7 +43,7 @@ Choose from SFTP and FTP, depending on it you will be asked to configure respect
 |Protocol Type | Select from `SFTP` and `FTP` Protocol types |
 | Host                 | Enter the Host Domain or IP             |
 | Port                 | Enter the Port number                   |
-| Authentication       | Selectr authentication method between `Username and Password` and `Private key`                 |
+| Authentication       | Select authentication method between `Username and Password` and `Private key`                 |
 | Username             | Enter the Username                      |
 | Password             | Enter the Password                      |
 

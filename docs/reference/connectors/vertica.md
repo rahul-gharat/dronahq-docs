@@ -27,7 +27,7 @@ Vertica gives a top-tier, unified analytics platform that will always be free of
 
 ## Configuring Connector in DronaHQ
 
-Configure your database category using the provided details.Validate connection with `Test connection` and `Save` settings for secure database setup.
+Configure your database category using the provided details. Validate connection with `Test connection` and `Save` settings for secure database setup.
 
 
 #### General 

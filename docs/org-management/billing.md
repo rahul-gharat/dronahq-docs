@@ -30,6 +30,6 @@ At DronaHQ, we understand the importance of providing transparent and tailored b
 
 Any upgrade of plans or addition of users, depending on the billing cycle (monthly/annual) will be charged on a pro-rata basis. Every Add-on will have its own different billing cycle and invoicing.
 ##
-Incase you have multiple instances of self-hosted DronaHQ edition installed on-premise, the user count will be the aggregation of all users distinct or unique across all instances.
+In case you have multiple instances of self-hosted DronaHQ edition installed on-premise, the user count will be the aggregation of all users distinct or unique across all instances.
 
 :::

@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-title: Twillio
+title: Twilio
 ---
 import Image from '@site/src/components/Image';
 import VersionedLink from '@site/src/components/VersionedLink';
@@ -22,8 +22,8 @@ Integrate Twilio to set up communication strategies and interact with your custo
 Add a `Account name`. Then add the `Account SID` and `Auth Token` for the connector account. Once all details are added, click `Save`. Your connector configuration is now done.
 
 <figure>
-  <Thumbnail src="/img/reference/connectors/twillio/details.png" alt="Twillio with configuration details." />
-  <figcaption align = "center"><i>Twillio with configuration details.</i></figcaption>
+  <Thumbnail src="/img/reference/connectors/twillio/details.png" alt="Twilio with configuration details." />
+  <figcaption align = "center"><i>Twilio with configuration details.</i></figcaption>
 </figure>
 
 ### Getting the API Key
@@ -65,7 +65,7 @@ The Twilio connector provides the `SendMessage` action to enable you to send a t
 Your number needs to be approved by Twilio before you can use it. Till that time you can use the Trial Number that can be purchased from Twilio for testing your app.
 
   <figure>
-    <Thumbnail src="/img/reference/connectors/twillio/dashboard.jpeg" alt="Twillio Dashboard" />
+    <Thumbnail src="/img/reference/connectors/twillio/dashboard.jpeg" alt="Twilio Dashboard" />
   </figure>
 
 Once your business number is approved by Twilio, you can then make use of the same for your further actions to send messages to your customers.
@@ -95,7 +95,7 @@ Till your number is approved you can use the Twilio sandbox to test your app. Yo
 2. Add `whatsapp:` before adding the sender’s and recipient’s numbers.
 
 <figure>
-    <Thumbnail src="/img/reference/connectors/twillio/keyword.jpeg" alt="Twillio Keyword config" />
+    <Thumbnail src="/img/reference/connectors/twillio/keyword.jpeg" alt="Twilio Keyword config" />
 </figure>
 
 :::info 
@@ -103,5 +103,5 @@ When any user sends your business a message you can send them a freeform outboun
 :::
 
 <figure>
-    <Thumbnail src="/img/reference/connectors/twillio/message.jpeg" alt="Twillio message sent to whatsaap number" />
+    <Thumbnail src="/img/reference/connectors/twillio/message.jpeg" alt="Twilio message sent to whatsaap number" />
 </figure>

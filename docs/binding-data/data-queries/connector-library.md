@@ -275,7 +275,7 @@ This tab shows the transformed response after the transformations have been run.
 
 ## Advanced
 
-In the advanced section you can write a condition when you dont want to execute this query. This is generally used in places where if there are dependant dynamic variables which send values like null on which you dont want to run the query. Also when you have JSON objects with keys which have special characters or emojis and you want to sanitize those keys you can toggle `ON` the `Sanitize keys` property. 
+In the advanced section you can write a condition when you don't want to execute this query. This is generally used in places where if there are dependant dynamic variables which send values like null on which you don't want to run the query. Also when you have JSON objects with keys which have special characters or emojis and you want to sanitize those keys you can toggle `ON` the `Sanitize keys` property. 
 
 <figure>
   <Thumbnail src="/img/data-queries/advanced.png" alt="Advanced" width='100%'/>

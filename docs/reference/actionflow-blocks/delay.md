@@ -7,7 +7,7 @@ import Thumbnail from '@site/src/components/Thumbnail';
 
 ## Introducing Delay in Your Action Flow
 
-The `Delay` action in Studio lets you introduce a time gap of a few milliseconds between two actions. This can be useful in various scenarios, such as creating pauses between actions to ensure a smoother user experience or managing specific timing requirements in your app's workflow.
+The `Delay` action in DronaHQ lets you introduce a time gap of a few milliseconds between two actions. This can be useful in various scenarios, such as creating pauses between actions to ensure a smoother user experience or managing specific timing requirements in your app's workflow.
 
 <figure>
 <Thumbnail src="/img/reference/actionflow-blocks/delay/delay.png" alt="Delay" />

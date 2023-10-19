@@ -13,7 +13,7 @@ DronaHQ enforces granular access control over the resources, allowing you to ass
 
 ## Permission hierarchy
 
-Granular permission in the studio follows a hierarchy which in the end decides which permission will be applied to which resources
+Granular permission in the DronaHQ follows a hierarchy which in the end decides which permission will be applied to which resources
 
 <figure>
   <Thumbnail src="/img/user-management/permission-hierarchy.png" alt="Setting permissions for multiple users" />
@@ -30,7 +30,7 @@ There are multiple ways you can edit permission for Apps and Connectors as displ
 
 <figure>
   <Thumbnail src="/img/user-management/all-creator-option.png" alt="Setting permissions for multiple users" />
-  <figcaption align='center'><i>All creator permssion option</i></figcaption>
+  <figcaption align='center'><i>All creator permission option</i></figcaption>
 </figure>
 
 <figure>

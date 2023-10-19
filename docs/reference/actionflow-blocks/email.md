@@ -6,7 +6,7 @@ title: Email Action
 
 import Thumbnail from '@site/src/components/Thumbnail';
 
-The Email action in Studio empowers your app to send emails directly. This feature is particularly useful when you need to confirm activities or communicate information via email.
+The Email action in DronaHQ empowers your app to send emails directly. This feature is particularly useful when you need to confirm activities or communicate information via email.
 
 <figure>
 <Thumbnail src="/img/reference/actionflow-blocks/email/email.png" alt="Email" />

@@ -1213,7 +1213,7 @@ Where,
 FILTER ([prod_datastore.result.rows.name, prod_datastore.result.rows.author_id] , prod_datastore.result.rows.author_id > 6,prod_datastore.result.rows.name, “DESC”)
 ```
 
-For More Info on using the funtion  - Refer the [article here](https://community.dronahq.com/t/using-the-filter-function).
+For More Info on using the function  - Refer the [article here](https://community.dronahq.com/t/using-the-filter-function).
 
 
 ## BINDAPI
@@ -1247,7 +1247,7 @@ BINDAPI( [userlist.members.id,userlist.members.name,userlist.members.profile.ema
 BINDAPI( [AuthorMongoDB.result.rows.author_id,AuthorMongoDB.result.rows.name,AuthorMongoDB.result.rows.last_name], AuthorMongoDB.result.rows.name $cn “A”, AuthorMongoDB.result.rows.last_name, “DESC”)
 ```
 
-For More Info on using the funtion  - Refer the `[article here](https://community.dronahq.com/t/using-the-bindapi-function)`.
+For More Info on using the function  - Refer the `[article here](https://community.dronahq.com/t/using-the-bindapi-function)`.
 
 
 ## STRINGTOJSON
@@ -1296,7 +1296,7 @@ Where,
 
 returns an array of JSON objects.
 
-For More Info on using the funtion  - Refer the `[article here](https://community.dronahq.com/t/using-mergejson-function)`.
+For More Info on using the function  - Refer the `[article here](https://community.dronahq.com/t/using-mergejson-function)`.
 
 ## GETKEYVALUE
 
@@ -1321,7 +1321,7 @@ Where,
 
 returns the value in the “name” key i.e. John in this case.
 
-For More Info on using the funtion - Refer the `[article here](https://community.dronahq.com/t/using-getkeyvalue-function)`.
+For More Info on using the function - Refer the `[article here](https://community.dronahq.com/t/using-getkeyvalue-function)`.
 
 ## ARRAYTOCSV
 

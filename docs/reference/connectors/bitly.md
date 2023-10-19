@@ -8,7 +8,7 @@ import VersionedLink from '@site/src/components/VersionedLink';
 import Thumbnail from '@site/src/components/Thumbnail';
 
 
-Bitly is a well-known URL shortener and link management platform and the Studio is providing users to experience and implement the features of the BItly platform in their micro apps with the help of Bitly Connector. You can now get groups and create shortened URLs.
+Bitly is a well-known URL shortener and link management platform and the DronaHQ is providing users to experience and implement the features of the BItly platform in their micro apps with the help of Bitly Connector. You can now get groups and create shortened URLs.
 
 ## Configuring API Connector in DronaHQ
  

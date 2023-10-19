@@ -6,9 +6,9 @@ sidebar_position: 97
 
 ### Configure and migrate databases to an external ones.
 
-In Docker based self-hosted setup, user information, apps information, documents and other resources are stored in a [MYSQL](https://hub.docker.com/layers/library/mysql/oracle/images/sha256-4c718aac52c18fc65ff75012f486957c0215247592b36a263024bf458d92d51f?context=explore) and [MONGODB](https://hub.docker.com/layers/library/mongo/5.0.11/images/sha256-bd481f6d8847e307f512bb25d8834457e29f36c0fe1987b68db73c803d292d3a?context=explore) container with mapped [persistent storage volume](https://docs.docker.com/storage/volumes/). For production use cases, upi should host these databases on external managed databases services. managed databases are more maintainable, scalable and reliable.
+In Docker based self-hosted setup, user information, apps information, documents and other resources are stored in a [MYSQL](https://hub.docker.com/layers/library/mysql/oracle/images/sha256-4c718aac52c18fc65ff75012f486957c0215247592b36a263024bf458d92d51f?context=explore) and [MONGODB](https://hub.docker.com/layers/library/mongo/5.0.11/images/sha256-bd481f6d8847e307f512bb25d8834457e29f36c0fe1987b68db73c803d292d3a?context=explore) container with mapped [persistent storage volume](https://docs.docker.com/storage/volumes/). For production use cases, you should host these databases on external managed databases services. managed databases are more maintainable, scalable and reliable.
 
-If you are installing DronaHQ self hosted on Kubernetes platform, then you should externalize your database. DronaHQ dont provide containerized databases suport by default for installation on kubernetes cluster.
+If you are installing DronaHQ self hosted on Kubernetes platform, then you should externalize your database. DronaHQ don't provide containerized databases support by default for installation on kubernetes cluster.
 
 :::caution User rights and permissions
 Database user you will be using to import/export database files must have superuser/admin privileges to that database. These are necessary for some essential operations in database like downloading/installing updates.
@@ -18,7 +18,7 @@ Use following steps to set up external databases for docker based installations.
 
 ### Prerequisite
 
-To import data into your external database, you need to installa database clients on your machine.
+To import data into your external database, you need to install database clients on your machine.
 
 #### 1. MYSQL Client
 
@@ -48,7 +48,7 @@ you will get output for above command as follows
 mysql  Ver 8.0.33-0ubuntu0.22.04.4 for Linux on x86_64 ((Ubuntu))
 ```
 
-#### 2. MongoDB client and deleloper tools
+#### 2. MongoDB client and developer tools
 
 1.1 Download mongo shell package
 
@@ -56,13 +56,13 @@ mysql  Ver 8.0.33-0ubuntu0.22.04.4 for Linux on x86_64 ((Ubuntu))
 wget https://downloads.mongodb.com/compass/mongodb-mongosh_1.10.1_amd64.deb
 ```
 
-1.2 Install with `dpkg` and remove doqnloaded file
+1.2 Install with `dpkg` and remove downloaded file
 
 ```shell
 sudo dpkg -i mongodb-mongosh_1.10.1_amd64.deb && rm mongodb-mongosh_1.10.1_amd64.deb
 ```
 
-1.3 Download momngo tools. Dont forget to update your linux distribution in command.
+1.3 Download mongo tools. Don't forget to update your linux distribution in command.
 
 ```shell
 wget https://fastdl.mongodb.org/tools/db/mongodb-database-tools-ubuntu2204-x86_64-100.7.4.deb
@@ -102,7 +102,7 @@ There are two possible ways by which you can export MYSQL data.
 
 #### a. Export data from MYSQL container
 
-To export data from MYSQL container, run the following command in DronaHQ installation directory. Use this option, if you want to migrate your MYSQL containarized database to external database.
+To export data from MYSQL container, run the following command in DronaHQ installation directory. Use this option, if you want to migrate your MYSQL containerized database to external database.
 
 ```shell
 sudo docker-compose exec -T mysqldb sh -c 'exec mysqldump -u <% user %> --password=<% password %> \
@@ -124,7 +124,7 @@ There are two possible ways by which you can export MONGODB data.
 
 #### a. Export data from MONGODB container
 
-To export data from MONGODB container, run the following command in DronaHQ installation directory. Use this option, if you want to migrate your MONGODB containarized database to external database.
+To export data from MONGODB container, run the following command in DronaHQ installation directory. Use this option, if you want to migrate your MONGODB containerized database to external database.
 
 ```shell
 sudo docker-compose exec -T mongodb sh -c 'mongodump -d db5x_studio -u <% user %> -p <% password %> --authenticationDatabase admin  --archive' > mongo-init.dump
@@ -208,13 +208,13 @@ Replace variables encapsulated in `<% variable %>` with actual value.
 mysql -h<% host %> -u<% user %> -p<% password %> -e "CREATE USER '<% application-user %>'@'%' IDENTIFIED BY '<% application-password %>';"
 ```
 
-#### ii. Grant privilleges to new user
+#### ii. Grant privileges to new user
 
 ```shell
 mysql -h<% host %> -u<% user %> -p<% password %> -e "GRANT ALL PRIVILEGES ON *.* TO '<% application-user %>'@'%';"
 ```
 
-#### iii. Flush privileges for newly assigned privilleges to take effect immediately
+#### iii. Flush privileges for newly assigned privileges to take effect immediately
 
 ```shell
 mysql -h<% host %> -u<% user %> -p<% password %> -e "FLUSH PRIVILEGES;"

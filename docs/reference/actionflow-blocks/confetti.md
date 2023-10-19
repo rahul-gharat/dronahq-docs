@@ -6,7 +6,7 @@ import Thumbnail from '@site/src/components/Thumbnail';
 
 ## Setting up the Confetti Action
 
-The Confetti action in Studio can be a delightful addition to your app when you want to celebrate achievements or positive interactions. Whether it's receiving high ratings, successfully completing a form, or any other milestone, you can trigger a confetti celebration within your action flow.
+The Confetti action in DronaHQ can be a delightful addition to your app when you want to celebrate achievements or positive interactions. Whether it's receiving high ratings, successfully completing a form, or any other milestone, you can trigger a confetti celebration within your action flow.
 
 To use the Confetti action, follow these steps:
 

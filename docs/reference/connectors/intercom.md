@@ -11,7 +11,7 @@ The Intercom connector facilitates seamless integration with the Intercom custom
 
 ## Configuring API Connector in DronaHQ
 
-Add a `Account name`. Then click `Save`, it will open a pop-up window askinging you to sign-in into your Intercom account. Continue with the steps and give access to DronaHQ to connect with your Intercom ID and its information.
+Add a `Account name`. Then click `Save`, it will open a pop-up window asking you to sign-in into your Intercom account. Continue with the steps and give access to DronaHQ to connect with your Intercom ID and its information.
 
 <figure>
   <Thumbnail src="/img/reference/connectors/intercom/details.png" alt="Sign-in to your Intercom account" />

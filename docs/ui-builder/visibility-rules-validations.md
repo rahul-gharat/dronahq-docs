@@ -8,7 +8,7 @@ import Thumbnail from '@site/src/components/Thumbnail';
 # Rules and Validations
 
 
-`Rules`  in DronaHQ is a powerful feature that empowers users to `dynamically manipulate the state` of controls within their applications. This capability is achieved by defining rules that respond to specific conditions based on values provided by other controls, keywords, or data queries. Using DronaHQ Rules, users can create intuitive and interactive user interfaces by setting up conditional logic. When certain conditions are met, the state of controls, such as enabling or disabling, showing or hiding, required or not reqired, set ui state or remove ui state.
+`Rules`  in DronaHQ is a powerful feature that empowers users to `dynamically manipulate the state` of controls within their applications. This capability is achieved by defining rules that respond to specific conditions based on values provided by other controls, keywords, or data queries. Using DronaHQ Rules, users can create intuitive and interactive user interfaces by setting up conditional logic. When certain conditions are met, the state of controls, such as enabling or disabling, showing or hiding, required or not required, set ui state or remove ui state.
 
 `Validation` in DronaHQ Studio empowers developers to ensure the accuracy of data provided by users within input fields. This powerful feature enables the creation of `custom validation rules` and allows the display of `personalized error messages` when users submit incorrect or incomplete information.
 
@@ -58,7 +58,7 @@ Validation is a crucial aspect of ensuring data accuracy and a smooth user exper
 
 #### Configuring validation:
 
-- **Select the Target Screen**: Begin by selecting the appropriate screen where you want to apply validation from the dropdown available on the left side below the validation tab as visible in the example image above. This could be any screen you created in the studio, by default current screen is selected when you open the validation tab.
+- **Select the Target Screen**: Begin by selecting the appropriate screen where you want to apply validation from the dropdown available on the left side below the validation tab as visible in the example image above. This could be any screen you created in the DronaHQ, by default current screen is selected when you open the validation tab.
 
 - **Choose Input Control**: Once you've identified the target screen, proceed to select the specific input control from the list where you wish to add validation. Common input controls include text fields, dropdown lists, radio buttons, checkboxes, and more.
 

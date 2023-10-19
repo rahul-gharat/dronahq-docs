@@ -7,7 +7,7 @@ import Thumbnail from '@site/src/components/Thumbnail';
 
 ## Conditional Task Execution with Branch
 
-The `Branch` feature in Studio empowers you to create conditional tasks effortlessly, without the need to write a single line of code. This powerful capability allows you to define rules or conditions for different tasks and then execute actions based on whether those conditions are met.
+The `Branch` feature in DronaHQ empowers you to create conditional tasks effortlessly, without the need to write a single line of code. This powerful capability allows you to define rules or conditions for different tasks and then execute actions based on whether those conditions are met.
 
 <figure>
 <Thumbnail src="/img/reference/actionflow-blocks/branch/branch.png" alt="Branch" />

@@ -26,7 +26,7 @@ There are different ways in which you can bind data to the Markdown Editor contr
 
 ### Static Data Options
 
-To display static data alredy in a Markdown Editor control, you can use the Bind Data option.
+To display static data already in a Markdown Editor control, you can use the Bind Data option.
 
 The Bind Data option must be specified as markdown formatted string. For example:
 

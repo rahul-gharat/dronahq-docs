@@ -59,7 +59,7 @@ You can use the DronaHQ Query Language (DQL) to perform math functions, manipula
 - [Get the day of the week from a date](../manipulating-data/#get-the-day-of-the-week-from-a-date)
 - [Compare two dates](../manipulating-data/#compare-two-dates)
 - [Increase a date by one day](../manipulating-data/#increase-a-date-by-one-day)
-- [Get the difference betwen two dates](../manipulating-data/#get-the-difference-betwen-two-dates)
+- [Get the difference between two dates](../manipulating-data/#get-the-difference-between-two-dates)
 - [Time and Date formatting](../manipulating-data/#time-and-date-formatting)
 
 ## Working with logic and arrays
@@ -577,7 +577,7 @@ $datePlus("2023-02-07", 1, "days")
 1675814400000
 ```
 
-## Get the difference betwen two dates
+## Get the difference between two dates
 The $diffDate() function accepts two dates (formatted as YYYY-MM-DD or milliseconds since epoch) and a component of each date (years, months, days, hours, minutes, seconds, or milliseconds), then returns the difference between the two dates' component.
 
 ##### DQL

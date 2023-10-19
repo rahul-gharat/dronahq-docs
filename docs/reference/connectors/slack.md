@@ -12,7 +12,7 @@ Integrate Slack and DronaHQ to achieve the flexibility to connect with your cust
 
 ## Configuring API Connector in DronaHQ
 
-Add a `Account name`. Then click `Save`, it will open a pop-up window askinging you to sign-in into your Slack account. Continue with the steps and give access to DronaHQ to connect with your Slack ID and its information.
+Add a `Account name`. Then click `Save`, it will open a pop-up window asking you to sign-in into your Slack account. Continue with the steps and give access to DronaHQ to connect with your Slack ID and its information.
 
 
 <figure>

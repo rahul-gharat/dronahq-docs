@@ -10,7 +10,7 @@ The Gmail Connector facilitates seamless integration with your Gmail account, en
 
 ## Configuring API Connector in DronaHQ
 
-Add a `Account name`. Then click `Save`, it will open a pop-up window askinging you to sign-in into your Google account. Continue with the steps and give access to DronaHQ to connect with your Google ID and its information.
+Add a `Account name`. Then click `Save`, it will open a pop-up window asking you to sign-in into your Google account. Continue with the steps and give access to DronaHQ to connect with your Google ID and its information.
 
 <figure>
   <Thumbnail src="/img/reference/connectors/gmail/signin.png" alt="Sign-in to your Google account" />

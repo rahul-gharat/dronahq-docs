@@ -10,7 +10,7 @@ Google Sheets and DronaHQ integration is an easy and assured go-to solution to b
 
 ## Configuring API Connector in DronaHQ
 
-Add a `Account name`. Then click `Save`, it will open a pop-up window askinging you to sign-in into your Google account. Continue with the steps and give access to DronaHQ to connect with your Google for its Sheets ID and information.
+Add a `Account name`. Then click `Save`, it will open a pop-up window asking you to sign-in into your Google account. Continue with the steps and give access to DronaHQ to connect with your Google for its Sheets ID and information.
 
 <figure>
   <Thumbnail src="/img/reference/connectors/googlesheet/signin.png" alt="Sign-in to your Google account" />

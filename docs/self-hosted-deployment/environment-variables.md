@@ -15,7 +15,7 @@ General environment variables available for use with Self-hosted DronaHQ deploym
 
 #### `BUILDER_URL` (deprecated)
 
-The full URL of your DronaHQ deployment for accesing creators portal, End-user portal, user invitations and password resets. This also needs to be set if you dynamically set callback URLs on protected resources.
+The full URL of your DronaHQ deployment for accessing creators portal, End-user portal, user invitations and password resets. This also needs to be set if you dynamically set callback URLs on protected resources.
 
     BUILDER_URL='https://dronahq.example.com'
 
@@ -68,7 +68,7 @@ Provide your database credentials for DronaHQ self hosted. Your installation wil
 
 #### `MYSQL_HOST`, `MYSQL_PORT`, `MYSQL_USER`, `MYSQL_PASSWORD`
 
-If you are using Docker container for mysql, then you should set these variables as folows
+If you are using Docker container for mysql, then you should set these variables as follows
 
     MYSQL_HOST='dronahq-self-hosted-mysqldb'
     MYSQL_USER='<application user>'
@@ -82,7 +82,7 @@ if you are using RDS or any other managed MySQL service then you can set variabl
 
 This are optional variables. If not set, DronaHQ will use same credentials you provided in above variables.
 
-If you are using Docker container for mysql, then you should set these variables as folows
+If you are using Docker container for mysql, then you should set these variables as follows
 
     AUDIT_LOG_MYSQL_HOST='dronahq-self-hosted-mysqldb'
     AUDIT_LOG_MYSQL_USER='<application user>'
@@ -94,7 +94,7 @@ if you are using RDS or any other managed MySQL service then you can set variabl
 ## Connectivity to MongoDB
 #### `MONGODB_HOST`, `MONGODB_PORT`, `MONGODB_USER`, `MONGODB_PASSWORD`
 
-If you are using Docker container for MongoDB, then you should set these variables as folows
+If you are using Docker container for MongoDB, then you should set these variables as follows
 
     MONGODB_HOST='dronahq-self-hosted-mongodb'
     MONGODB_USER='<application user>'
@@ -105,7 +105,7 @@ if you are using DocumentDB or any other managed MongoDB service then you can se
 
 #### `MONGODB_PROTOCOL`
 
-You can use mongodb with `mongodb` or `mongodb+srv` protocol. In normal installtions we use `mongodb` as a protocol which is default value for this option. `mongo+srv` is useful we want to connect mongodb in cluster or replicaset configuration.
+You can use mongodb with `mongodb` or `mongodb+srv` protocol. In normal installations we use `mongodb` as a protocol which is default value for this option. `mongo+srv` is useful we want to connect mongodb in cluster or replicaset configuration.
 
 ```
 MONGODB_PROTOCOL='mongodb'
@@ -138,7 +138,7 @@ MONGODB_CA_CERT_DIR='/private/global.bundle.pem'
 
 #### `MONGODB_CONNECTION_STRING`
 
-This is alternarte way for proviting mongodb credentials. Instead of providing credentials separately, you can provide it in single connection string
+This is alternate way for providing mongodb credentials. Instead of providing credentials separately, you can provide it in single connection string
 ```
 MONGODB_CONNECTION_STRING='mongodb://username:password@prod.mongodb.domain.com?ssl=true&retryWrites=false'
 ```
@@ -146,7 +146,7 @@ MONGODB_CONNECTION_STRING='mongodb://username:password@prod.mongodb.domain.com?s
 
 ## File Repository
 
-DronaHQ needs file storage to store files uploaded from apps and resources used in application. Also, when you publish your application, DronaHQ upload compressed files for youe application version and serve it from same repository.
+DronaHQ needs file storage to store files uploaded from apps and resources used in application. Also, when you publish your application, DronaHQ upload compressed files for your application version and serve it from same repository.
 
 #### `FILE_UPLOAD_TYPE`
 
@@ -191,7 +191,7 @@ This is your AWS region in which bucked it hosted/created.
 
 #### `AWS_S3_ACCESS_KEY_ID`, `AWS_S3_ACCESS_KEY_SECRET`
 `AccessKeyId` and `AccessKeySecret` is required to access your bucket and objects inside bucket.
-It is recomended that you provide complete read/write access of your bucket to this key pair.
+It is recommended that you provide complete read/write access of your bucket to this key pair.
 
 ### Azure Storage Container configuration (Beta)
 
@@ -208,7 +208,7 @@ This is your Azure storage account name under which you have created your storag
 This is a secret key for your storage account. This key should have required permissions to read and write inside your storage container.
 
 #### `AZURE_STORAGE_CONTAINER_NAME`
-This is a container inside which DronaHQ will be uploading some resources and files uploaded by your application. Also this containmer will server some resources for your application.
+This is a container inside which DronaHQ will be uploading some resources and files uploaded by your application. Also this container will server some resources for your application.
 
 ### Google Cloud Storage configuration (Beta)
 
@@ -222,10 +222,10 @@ To use Azure Storage Container, you need to set following variables.
 This is id of your Google cloud project under which you have created your storage bucket.
 
 #### `GCLOUD_STORAGE_SERVICE_ACOUNT_KEY_FILE_PATH`
-This is a your Goocle clous service account's key file path inside your container or mapped volume. This key should have required permissions to read and write inside your storage container.
+This is a your Google cloud service account's key file path inside your container or mapped volume. This key should have required permissions to read and write inside your storage container.
 
 #### `GCLOUD_STORAGE_BUCKET_NAME`
-This is a storage bucket inside which DronaHQ will be uploading some resources and files uploaded by your application. Also this containmer will server some resources for your application.
+This is a storage bucket inside which DronaHQ will be uploading some resources and files uploaded by your application. Also this container will server some resources for your application.
 
 
 ## [MYSQL Container](https://hub.docker.com/_/mysql)
@@ -306,20 +306,20 @@ DronaHQ runs following script while initializing container to create application
 ## Other optional variables
 
 #### `SECRET_API_TOKEN_KEY`
-By default, DronaHQ uses its own secret token for authenticariton of internal APIs. You can add your custom token instead.
+By default, DronaHQ uses its own secret token for authentication of internal APIs. You can add your custom token instead.
 
 ```
 SECRET_API_TOKEN_KEY='some-random-secret-token'
 ```
 
 #### `ENCRYPTION_KEY`
-By default, DronaHQ user its own encryption key to encrypt credentials and secret informations flows in system. You can configure your own encryption key for added security. Also make sure to keep bakup of your key at secure location.
+By default, DronaHQ user its own encryption key to encrypt credentials and secret information flows in system. You can configure your own encryption key for added security. Also make sure to keep backup of your key at secure location.
 ```
 ENCRYPTION_KEY='some-random-secret-key'
 ```
 
 #### `SESSION_KEY_NAME`, `SESSION_KEY_SECRET`
-By default, DronaHQ user its own session key and secret key. You can configure your own if you want to customise.
+By default, DronaHQ user its own session key and secret key. You can configure your own if you want to customize.
 ```
 SESSION_KEY_NAME='cookie-name'
 SESSION_KEY_SECRET='secret-key-to-sign-cookie'

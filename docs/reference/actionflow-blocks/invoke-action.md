@@ -6,7 +6,7 @@ import Thumbnail from '@site/src/components/Thumbnail';
 
 ## Trigger Actions Across Different Controls
 
-The Invoke ActionFlow feature in Studio is a client-side action that empowers you to trigger events of different controls from within an action flow. This powerful functionality allows you to create interactive and dynamic user experiences by synchronizing actions across various parts of your app.
+The Invoke ActionFlow feature in DronaHQ is a client-side action that empowers you to trigger events of different controls from within an action flow. This powerful functionality allows you to create interactive and dynamic user experiences by synchronizing actions across various parts of your app.
 
 <figure>
 <Thumbnail src="/img/reference/actionflow-blocks/invoke-action/invoke-action.png" alt="Invoke Action Window" />

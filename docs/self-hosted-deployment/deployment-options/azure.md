@@ -4,14 +4,14 @@ sidebar_position: 4
 
 # Deploy on Azure Virtual Machine
 
-Follow the instaructions in this guide to setup DronaHQ in self hosted environment on Microsoft Azure Virtual Machine.
+Follow the instructions in this guide to setup DronaHQ in self hosted environment on Microsoft Azure Virtual Machine.
 
 ### Prerequisite
 
-To deploy DronaHQ on Azure Virtual Machine, you shoul have:
+To deploy DronaHQ on Azure Virtual Machine, you should have:
 - `DronaHQ License Key`, which you can get from DronaHQ [Self Hosted Portal](https://studio.dronahq.com/selfhosted/login).
 - Basic understanding of `Microsft Azure` and `Azure Virtual Machine`.
-- Working [Microdift Azure](https://azure.microsoft.com/en-in/get-started/azure-portal) account.
+- Working [Microsoft Azure](https://azure.microsoft.com/en-in/get-started/azure-portal) account.
 
 Following are some references, which can help you sail through Azure Virtual Machine.
 - [Quickstart: Create a Linux virtual machine in the Azure portal](https://learn.microsoft.com/en-gb/azure/virtual-machines/linux/quick-create-portal?WT.mc_id=UI_empg&tabs=ubuntu)
@@ -42,9 +42,9 @@ Following are some references, which can help you sail through Azure Virtual Mac
 
 11. Click on **Review + Create** to check summary of configuration you choose for your instance. If all looks good, click on **Create** to run the instance.
 
-12. If you choose to create new `SSH Key` then, `Generate new key pair` popup will apear. From that you can doenload your new key and save on your computer at safe place.
+12. If you choose to create new `SSH Key` then, `Generate new key pair` popup will appear. From that you can download your new key and save on your computer at safe place.
 
-13. In few minutes, your instamce will be ready to use.
+13. In few minutes, your instance will be ready to use.
 
 ### 2. Connect to your Linux instance using an SSH client
 
@@ -153,7 +153,7 @@ If not you can add this variable. Following is the example of how this variable 
 LICENSE_KEY='DRONAHQ-LICENSE-KEY'
 ```
 
-If you dont have DronaHQ license key for self hosted, you can [sign up](https://www.dronahq.com/self-hosted-signup/) for DrobaHQ self hosted and get your license key by logging in to [self-hosted portal](https://studio.dronahq.com/selfhosted/login).
+If you don't have DronaHQ license key for self hosted, you can [sign up](https://www.dronahq.com/self-hosted-signup/) for DronaHQ self hosted and get your license key by logging in to [self-hosted portal](https://studio.dronahq.com/selfhosted/login).
 
 #### ii. `BUILDER_URL`
 
@@ -217,7 +217,7 @@ sudo docker-compose up -d
 
 ### 9. Verify that containers are running
 
-You can use following comand to check running docker containers.
+You can use following command to check running docker containers.
 
 ```shell
 sudo docker-compose ps

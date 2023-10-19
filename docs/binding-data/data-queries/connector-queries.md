@@ -17,7 +17,7 @@ Lets say you can set your Tablegrid's data to be ``{{data_query1.data}}`` where 
   <figcaption align = "center"><i>Connector Query</i></figcaption>
 </figure>
 
-## Pre-requisites
+## Prerequisites
 
 To start using direct connector queries in your app builder, you need a connector in place already. It could be a Database or an API connector. Once the connector is in place, you can query into it with a choice of editors depending on what type of a connector is configured. 
 
@@ -29,7 +29,7 @@ To start using direct connector queries in your app builder, you need a connecto
 
 :::caution Querying into an API
 
-We also consider adding an API endpoint as a data query. The pre-requisite being that the connector category needs to be already configured.
+We also consider adding an API endpoint as a data query. The prerequisite being that the connector category needs to be already configured.
 
 :::
 
@@ -58,7 +58,7 @@ While building your queries the schema of your tables (in case of SQL) comes han
 
 :::caution Empty schema
 
-There are times when some type of data sources dont allow fetching of schemas or the added credentials dont have the privilege of fetching schemas. In this case the section will be empty.
+There are times when some type of data sources don't allow fetching of schemas or the added credentials don't have the privilege of fetching schemas. In this case the section will be empty.
 
 :::
 

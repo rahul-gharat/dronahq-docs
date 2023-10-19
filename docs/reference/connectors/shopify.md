@@ -27,7 +27,7 @@ Add a `Account name`. Then add the `API key and password` and `Subdomain` for th
 2. Go to `Configuration` Tab, Click on Configure Button under `Admin Api Integration` Section & provide scopes for your app & Click Save
 
 :::info NOTE
-Add atleast `read_products` scope. For consuming other Api’s for Customers, Price Rules, Discounts, you will to add `read_customers` or `write_customers`, `read_price_rules` or `write_price_rules` and `read_discounts` or `write_discounts` respectively.
+Add at least `read_products` scope. For consuming other Api’s for Customers, Price Rules, Discounts, you will to add `read_customers` or `write_customers`, `read_price_rules` or `write_price_rules` and `read_discounts` or `write_discounts` respectively.
 :::
 
 3.  Go to Api Credentials Tab and click on Install app

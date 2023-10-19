@@ -534,7 +534,7 @@ BSCOMPONENTS["sample"] = function() {
         return true;
   };
   this.setValue = function (obj) {
-      //Your control will get data from Studio here.
+      //Your control will get data from DronaHQ here.
       let $valueWrapper = this.$el.find('.label');
       if(obj){
           $valueWrapper.text(obj);
@@ -546,14 +546,14 @@ BSCOMPONENTS["sample"] = function() {
       //Reset your control here.
   };
   this.getValue = function (forSubmit) {
-      //Your control should return value to Studio here.
+      //Your control should return value to DronaHQ here.
       let $valueWrapper = this.$el.find('.label');
       let response = $valueWrapper.text() || "";
       //the data should be returned in the following structure with your data inside the "response" key
       return { 'question': this.model.label, 'value': response, id: this.model.field_key_name, name: this.model.field_display_key_name };
   };
   this.gridLayoutUpdated = function(model,$el){
-      // this callback funtion will trigger once the layout of a freeflow page updated
+      // this callback function will trigger once the layout of a freeflow page updated
       // you can get control availble height on free flow page by using the following function 
       //getAvailableControlHeight(model) 
   }

@@ -22,10 +22,10 @@ Integrate Zendesk to transform your customer service workflow to efficiently man
 
 ## Configuring API Connector in DronaHQ
 
-Add a `Account name`. Then add the neccessary details like `API Token`, `Subdomain`, and `Agent Email` for the connector account. Once all details are added, click `Save`. Your connector configuration is now done.
+Add a `Account name`. Then add the necessary details like `API Token`, `Subdomain`, and `Agent Email` for the connector account. Once all details are added, click `Save`. Your connector configuration is now done.
 
 <figure>
-  <Thumbnail src="/img/reference/connectors/zendesk/details.jpeg" alt="Zendesk to befilled configuration details." />
+  <Thumbnail src="/img/reference/connectors/zendesk/details.jpeg" alt="Zendesk to be filled configuration details." />
   <figcaption align = "center"><i>Zendesk to befilled configuration details.</i></figcaption>
 </figure>
 

@@ -50,7 +50,7 @@ Let's fetch data from a configured SQL connector."We have a predefined query, `g
   SELECT * FROM orderdetails
 ```
 
-In the Tbale Grid control, Bind Data Options, select the `Quick Select -> Connector Library -> SQL_Connector -> getDetails`
+In the Table Grid control, Bind Data Options, select the `Quick Select -> Connector Library -> SQL_Connector -> getDetails`
 
 <figure>
   <Thumbnail src="/img/reference/controls/table-grid/dynamic.jpg" alt="Date Range Picker" />
@@ -113,7 +113,7 @@ When the pagination is enabled your Filter and the Search features do not work o
 |---|---|
 | Map | Toggle on or off the Map view to display data like the co-ordinates on a Map. |
 | Default view | This allows you to select the default view as Map or List. |
-| Show Thumbnails | Enable Show Thambnails when you want your Images to be displayed as thumbnails. The column would be of type File. If it contains PDFs the PDF file icon would be shown. |
+| Show Thumbnails | Enable Show Thumbnails when you want your Images to be displayed as thumbnails. The column would be of type File. If it contains PDFs the PDF file icon would be shown. |
 | Detailed view | This allows you to switch ON or OFF to show data in the Detailed view of your sheet data. Whenever you click any of the records it would display the row data as a detailed view. |
 | Show Key Value Map | This would display the selected row as a key-value map instead of the default grid (as seen in above screenshot). |
 | Customize | By switching on Customize, you can customize the columns shown in the detailed view. By default all columns are shown, however, you can select a limited number as well if you want to give a quick look at the data. |

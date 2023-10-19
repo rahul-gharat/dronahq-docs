@@ -29,7 +29,7 @@ Having these essential prerequisites in place will ensure a seamless integration
 
 ## Configuring Connector in DronaHQ
 
-Configure your database category using the provided details.Validate connection with `Test connection` and `Save` settings for secure database setup.
+Configure your database category using the provided details. Validate connection with `Test connection` and `Save` settings for secure database setup.
 
 :::tip
 DronaHQ can Auto fill crucial connection values like host, name, password, and more from the connector's [connection string](https://help.sap.com/docs/SAP_HANA_PLATFORM/0eec0d68141541d1b07893a39944924e/b250e7fef8614ea0a0973d58eb73bda8.html).

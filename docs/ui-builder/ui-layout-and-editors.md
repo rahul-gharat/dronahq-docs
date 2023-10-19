@@ -45,7 +45,7 @@ The Panel control is available in both editors and serves as a valuable tool for
 
 #### Key Features:
 
-- **Grouping controls**: Usefull in grouping multiple controls and displaying them as blocks in UI by using panel styling properties.
+- **Grouping controls**: Useful in grouping multiple controls and displaying them as blocks in UI by using panel styling properties.
 - **Rules for groups**: The user can apply visibility rules to the panel thus affecting the entire control group placed inside the panel. Useful if the user wants to display a set of control in one case and another in a different case.
 - **Clean UI**: Helps in creating clean ui by grouping closely related controls together and with UI styling properties available in the panel.
 

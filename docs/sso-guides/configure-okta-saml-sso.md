@@ -96,13 +96,13 @@ Enter form with below fields -
 | Name            | Provide Friendly Name of this SSO configuration  |
 | Entity ID     |   The entity ID is present on Okta metadata file. Copy the ID and paste it. |
 | Login URL / SSO URL | Enter the details of location of `singlesignonservice` from Okta metadata file for POST method. |
-| X509 public certificate      | X509Certificate file in `.cer` format. This file we have downloaded from OKTA in previus step can be used here. |
+| X509 public certificate      | X509Certificate file in `.cer` format. This file we have downloaded from OKTA in previous step can be used here. |
 | Binding type | Enter `HTTP POST`. |
 | Restricted Domain           | Enter domain name for which you want your users to login with for this SSO Configuration. You can add multiple domain names as well. eg - `domain1.com , domain2.com`. DronaHQ will automatically redirect to SSO url when we encounter any user’s sign in request with an email id belonging to the given restricted domain. |
 | Want Auth request signed |  Keep this default setting as `False`. |
 | Add Claim List | We have already assigned Email and Name on Okta while integrating SAML. We will now enter same key name - `email` and `name` and map it to `DHQ User Name` and `DHQ User Email` respectively. |
 | Enable JIT user provisioning | Toggle this `ON` so that you won’t have to manually invite each user to DronaHQ first. |
-| Enable SCIM User Provisioning | Enable this in case you want to create, update and deactivate User accounts at your OKTA portal and sync it with DronaHQ user managemnt. |
+| Enable SCIM User Provisioning | Enable this in case you want to create, update and deactivate User accounts at your OKTA portal and sync it with DronaHQ user management. |
 
 2. Save the draft. Again navigate back to the SSO configuration option. You can see the newly created SAML.
 

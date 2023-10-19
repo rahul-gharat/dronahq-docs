@@ -7,7 +7,7 @@ import Thumbnail from '@site/src/components/Thumbnail';
 
 ## Setting up Routing Levels
 
-Setting up routing levels involves generating a shareable URL for your screen using the Studio and your app. This URL is the public URL of the screen with an added routing level value. The purpose of setting up routing levels is to create a URL with additional routing level values.
+Setting up routing levels involves generating a shareable URL for your screen using the DronaHQ and your app. This URL is the public URL of the screen with an added routing level value. The purpose of setting up routing levels is to create a URL with additional routing level values.
 
 A routing URL with added levels follows this structure: `https://domain.com/microappname/screen/ROUTING_LEVEL1`
 

@@ -14,7 +14,7 @@ This page provides instructions on how to establish a connection between your ap
 
 <figure>
   <Thumbnail src="/img/connecting-datasource/restapi-auth-types.png" style= {{width:"100%", height:"auto"}} alt="Authetication methods"/>
-  <figcaption align = "center"><i>You can select from different Authentication tyes for REST API configuration</i></figcaption>
+  <figcaption align = "center"><i>You can select from different Authentication types for REST API configuration</i></figcaption>
 </figure>
 
 

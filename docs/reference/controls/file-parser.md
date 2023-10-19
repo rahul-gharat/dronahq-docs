@@ -53,13 +53,13 @@ In this documentation, we'll delve into various following aspects of the control
 ## Data input
 
 File parser control accepts data in two ways:
-- **Through data binding**: A satandard way to bind data to control in DronaHQ, you can read more about it [here.](/category/binding-data/)
+- **Through data binding**: A standard way to bind data to control in DronaHQ, you can read more about it [here.](/category/binding-data/)
 
 - **Uploading files**: Apart from binding data to file parser control, you can also provide data to this control by uploading the data supported data files to the control, and control will read data from file and convert it to JSON object so it can be used inside DronaHQ to create plethora of usecases.
 
 ## Data output from control
 
-The outputs from the File Parser control, represented by the placeholder `{{fileparser}}`, can be referenced in other controls, data queries, or JavaScript functions using the control's unique name. If used in `strict mode` you can also get access to the columns of data directly anywhere in DronaHQ app builder. for example lets say your controls unique name is `fileparser` and you uploaded file which has patient data withe columns name, age, address then you can refer these columns individually by syntax like `{{fileparser.name}}` or `{{fileparser.age}}`. this same case is not possible for `Dynamic mode` beause control is not aware of structure so you can use control's uniqe name only to refer the data present in it.
+The outputs from the File Parser control, represented by the placeholder `{{fileparser}}`, can be referenced in other controls, data queries, or JavaScript functions using the control's unique name. If used in `strict mode` you can also get access to the columns of data directly anywhere in DronaHQ app builder. for example lets say your controls unique name is `fileparser` and you uploaded file which has patient data withe columns name, age, address then you can refer these columns individually by syntax like `{{fileparser.name}}` or `{{fileparser.age}}`. this same case is not possible for `Dynamic mode` because control is not aware of structure so you can use control's unique name only to refer the data present in it.
 
 | Output                   | Description                                                                                                  |
 |--------------------------|--------------------------------------------------------------------------------------------------------------|
@@ -75,10 +75,10 @@ File parser control supports three file formats which are widely used for sharin
 
 ## Parsing and data transformation
 
-File parser control has two working modes ons is `Strict Checking` and another one is `Dynamic Data`, Let's understnad how control works in each mode. 
+File parser control has two working modes ons is `Strict Checking` and another one is `Dynamic Data`, Let's understand how control works in each mode. 
 Remember these two modes works similarly for both [Data input](./file-parser.md/#data-input) method.
 
-- **Strict Checking**: Once you upload a sample file while configuring the control on app builder, the File Parser Control intelligently analyzes the structure of the data. It then leverages this sample file as a reference to ensure strict adherence to the data structure of subsequent uploads or Data comming out of binded data formula at runtime. This strict mode is beneficial when dealing with consistent data formats, enabling you to create powerful data flows in the DronaHQ with confidence.
+- **Strict Checking**: Once you upload a sample file while configuring the control on app builder, the File Parser Control intelligently analyzes the structure of the data. It then leverages this sample file as a reference to ensure strict adherence to the data structure of subsequent uploads or Data coming out of binded data formula at runtime. This strict mode is beneficial when dealing with consistent data formats, enabling you to create powerful data flows in the DronaHQ with confidence.
 
 :::info Info
 Sample file is compulsory for strict mode.
@@ -102,15 +102,15 @@ Using the File Parser Control is a straightforward process:
 
 ## Common issues and solutions with use cases
 
-In this section we will understnad about typical problems faced by users when trying to use this control in its differnet configutations. Following are typical problems encountered when utilizing this control.
+In this section we will understand about typical problems faced by users when trying to use this control in its differnet configutations. Following are typical problems encountered when utilizing this control.
 
 - **Problem**: While using strict mode when user has fixed data structure as provided in the sample file but the files uploaded at run time has some columns missing in the data which causes control to reject the data and show error.
-  - **Solution**: you can use dymamic data mode and then pass the data of the file parser control to `Data Queries -> Custom JavaScript` and you can make sure all your columns are always returned from Data Query and you can use Data Query to bind data to other conrols just as you would do with file parser.
+  - **Solution**: you can use dymamic data mode and then pass the data of the file parser control to `Data Queries -> Custom JavaScript` and you can make sure all your columns are always returned from Data Query and you can use Data Query to bind data to other controls just as you would do with file parser.
 
 
 - **Problem**: How to use the file parser control to parse data from the file URL that is hosted on internet.
   - **Solution**: If you have URL of file that you want to parse then you can use the [FX](/binding-data/fx-functions/) section of data binding and use the function [FILEPARSER](#) in the control with the url.
 
 
-- **Problem**: What if you want to give both the input options of the file parser control to the end user, but when you allows both option you may encounter a problem that you don't have control over when control formula is evaluated because whenever conrol that you will refer to get url is changed it will update the data inside file parser conrol. so if you had data in file parser control through file upload it will cahnged.
+- **Problem**: What if you want to give both the input options of the file parser control to the end user, but when you allows both option you may encounter a problem that you don't have control over when control formula is evaluated because whenever control that you will refer to get url is changed it will update the data inside file parser control. so if you had data in file parser control through file upload it will changed.
     - **Solution**: To solve this you can have a button associated with a form and on click of that button you can use `COMPUTE` action block and inside that block you can use the `FILEPARSER` function to parse the data and then set the output to the file parser control. allowing you full control when your file is parsed through formula.

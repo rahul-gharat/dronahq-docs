@@ -4,11 +4,11 @@ sidebar_position: 2
 
 # Deploy on Amazon Elastic Compute Cloud
 
-Follow the instaructions in this guide to setup DronaHQ in self hosted environment on Amazon elastic conputing cloud (EC2).
+Follow the instructions in this guide to setup DronaHQ in self hosted environment on Amazon elastic computing cloud (EC2).
 
 ### Prerequisite
 
-To deploy DronaHQ on Amazon EC2, you shoul have:
+To deploy DronaHQ on Amazon EC2, you should have:
 - `DronaHQ License Key`, which you can get from DronaHQ [Self Hosted Portal](https://studio.dronahq.com/selfhosted/login).
 - Basic understanding of `AWS` and `Amazon EC2`.
 - Working [AWS account](https://signin.aws.amazon.com/console) with [permissions](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/ec2-api-permissions.html) to manage EC2.
@@ -45,7 +45,7 @@ Following are some references, which can help you sail through AWS EC2.
 
    We need to open ports `80` (http) and `443` (https) so you can connect to the server from a browser, as well as port `22` (ssh) so that you can ssh into the instance to configure it and run DronaHQ. By default on a vanilla EC2, DronaHQ will run on port `8080`.
 
-9. Configure the storage volume to have atleast `60 GiB` of general purpose SSD.
+9. Configure the storage volume to have at least `60 GiB` of general purpose SSD.
 
 10. In the **Summary** section, click on **Launch Instance** to start your instance.
 
@@ -154,7 +154,7 @@ If not you can add this variable. Following is the example of how this variable 
 LICENSE_KEY='DRONAHQ-LICENSE-KEY'
 ```
 
-If you dont have DronaHQ license key for self hosted, you can [sign up](https://www.dronahq.com/self-hosted-signup/) for DrobaHQ self hosted and get your license key by logging in to [self-hosted portal](https://studio.dronahq.com/selfhosted/login).
+If you don't have DronaHQ license key for self hosted, you can [sign up](https://www.dronahq.com/self-hosted-signup/) for DronaHQ self hosted and get your license key by logging in to [self-hosted portal](https://studio.dronahq.com/selfhosted/login).
 
 #### ii. `BUILDER_URL`
 
@@ -218,7 +218,7 @@ sudo docker-compose up -d
 
 ### 9. Verify that containers are running
 
-You can use following comand to check running docker containers.
+You can use following command to check running docker containers.
 
 ```shell
 sudo docker-compose ps

@@ -13,7 +13,7 @@ By leveraging this feature, you can augment your application with external capab
 Adding custom script tags to your application via DronaHQ is a seamless and straightforward process that adds a layer of flexibility and customization. all you need to do is follow these easy steps
 
 
-- Open studio app builder
+- Open DronaHQ app builder
 - Hover over Config icon also known as settings icon on the top right corner just before share button.
 - From popup menu select the custom script option and it will open settings modal.
 - Make sure `tag scripting` tab is selected if not select it. 

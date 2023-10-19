@@ -127,5 +127,5 @@ To find rows in Airtable using the connector, follow these steps:
 
 
 :::info
-Keep in mind that the Airtable API returns only keys of rows with present values, which might differ from Studio's expectation of consistent keys. To overcome this, ensure cells are filled or create a custom JavaScript function for consistent output.
+Keep in mind that the Airtable API returns only keys of rows with present values, which might differ from DronaHQ's expectation of consistent keys. To overcome this, ensure cells are filled or create a custom JavaScript function for consistent output.
 :::

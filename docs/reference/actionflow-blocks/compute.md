@@ -7,7 +7,7 @@ import Thumbnail from '@site/src/components/Thumbnail';
 
 ## Utilizing Compute in Your Action Flow
 
-The `Compute` block in Studio allows you to set formula variables and utilize formulas to calculate and assign values to these variables. This feature is particularly useful when you need to perform dynamic calculations based on your app's data.
+The `Compute` block in DronaHQ allows you to set formula variables and utilize formulas to calculate and assign values to these variables. This feature is particularly useful when you need to perform dynamic calculations based on your app's data.
 
 <figure>
 <Thumbnail src="/img/reference/actionflow-blocks/compute/compute.png" alt="Compute" />

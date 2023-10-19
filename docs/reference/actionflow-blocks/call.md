@@ -6,7 +6,7 @@ title: Call Action
 import Thumbnail from '@site/src/components/Thumbnail';
 
 
-The `Call` action in Studio empowers your app to initiate phone calls directly. This feature is particularly useful when you need to enable users to call a configured phone number, which can either be a default number or dynamically fetched from an input control or sheet column.
+The `Call` action in DronaHQ empowers your app to initiate phone calls directly. This feature is particularly useful when you need to enable users to call a configured phone number, which can either be a default number or dynamically fetched from an input control or sheet column.
 
 <figure>
 <Thumbnail src="/img/reference/actionflow-blocks/call/call.png" alt="Call" />

@@ -4,7 +4,7 @@ sidebar_position: 47
 
 # Keywords
 
-Keywords are predefined variables in a studio that users can use in their applications. They provide important information about the logged-in user or the application's state, which is vital for building logical workflows. In the Studio, there are three different sets of keywords available, each serving different purposes and located in various locations within the studio.
+Keywords are predefined variables in a DronaHQ that users can use in their applications. They provide important information about the logged-in user or the application's state, which is vital for building logical workflows. In the Studio, there are three different sets of keywords available, each serving different purposes and located in various locations within the DronaHQ.
 
 - [App builder keywords](/reference/keywords.md/#app-builder-keywords)
 - [Automation keywords](/reference/keywords.md/#automation-keywords)
@@ -15,7 +15,7 @@ In app development, keywords play a crucial role as they are used during the app
 
 Dynamically generated keywords, such as Routing Keywords and Querystring Keywords, are generated dynamically based on configuration, allowing for more flexibility and customization.
 
-On the other hand, Predefined or static keywords are pre-initialized during the app initialisation process. These keywords values may change if modified using actions or on some system events.
+On the other hand, Predefined or static keywords are pre-initialized during the app initialization process. These keywords values may change if modified using actions or on some system events.
 
 Following are list of all the static keywords:
 

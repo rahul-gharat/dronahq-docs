@@ -8,7 +8,7 @@ import VersionedLink from '@site/src/components/VersionedLink';
 
 For Connectors and when using the output of the Lookup formula, you would get different types of data from the respective sources. Typically, when presenting data in a Table grid control or any card control, you would prefer to make it visually appealing.
 
-You have the option of applying conditional formatting or data type-specific formatting in Studio using the Format Data feature or property available for the table grid control, the detail view control, and the different card controls like compact card, single-user card, long card, and so on. The formatting options would differ based on the type of data. At times you may also apply formatting based on a condition. Now let's see the different types of formatting available.
+You have the option of applying conditional formatting or data type-specific formatting in DronaHQ using the Format Data feature or property available for the table grid control, the detail view control, and the different card controls like compact card, single-user card, long card, and so on. The formatting options would differ based on the type of data. At times you may also apply formatting based on a condition. Now let's see the different types of formatting available.
 
 ## Conditional Formatting - Conditions
 

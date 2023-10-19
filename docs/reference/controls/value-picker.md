@@ -52,7 +52,7 @@ The outputs from the Value Picker control, represented by the placeholder `{{val
 
 | Output       | Description                                                                                                  |
 |--------------|--------------------------------------------------------------------------------------------------------------|
-| valuepicker    | Represents the user-selected value from the given path/trail of the valuebpicker control.                        |
+| valuepicker    | Represents the user-selected value from the given path/trail of the valuepicker control.                        |
 
 
 ## Events

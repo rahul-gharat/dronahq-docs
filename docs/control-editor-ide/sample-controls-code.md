@@ -294,7 +294,7 @@ So we have to write this logic in the javascript file. We have to write this log
 
 ```javascript
 this.setValue = function (obj) {
-    //Your control will get data from Studio here.
+    //Your control will get data from DronaHQ here.
     if(obj){
         this.$el.find('.header_body').text(obj);
     }

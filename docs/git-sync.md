@@ -22,7 +22,7 @@ To connect your apps on DronaHQ Studio with Git, you must have a GitHub account,
 
 1. Begin by creating a Git repository on your preferred Git service account.
 
-2. In the repository, locate and copy the `SSH URL` provided. This URL is essential for connecting your app in the studio to the Git repository.
+2. In the repository, locate and copy the `SSH URL` provided. This URL is essential for connecting your app in the DronaHQ to the Git repository.
 
    * GitHub SSH URL -
 
@@ -58,7 +58,7 @@ To connect your apps on DronaHQ Studio with Git, you must have a GitHub account,
 
 6. The SSH key, which serves as an authentication mechanism, will be generated on the screen. Be sure to copy the SSH key.
 
-7. Add the SSH key to your Git repository following the steps outlined in the [Adding SSH Keys to Git Service Accounts](./#adding-ssh-keys-to-git-service-accounts) guide. Afterward, return to the app in the studio and click `Test & Save Connection`.
+7. Add the SSH key to your Git repository following the steps outlined in the [Adding SSH Keys to Git Service Accounts](./#adding-ssh-keys-to-git-service-accounts) guide. Afterward, return to the app in the DronaHQ and click `Test & Save Connection`.
 
 Your connection is now successfully established and ready to leverage other features.
 
@@ -69,7 +69,7 @@ Your connection is now successfully established and ready to leverage other feat
 1. To add this SSH key to your GitHub account, navigate to `GitHub > Settings > SSH and GPG Keys > New SSH key`.
 
 
-2. Provide the required details, including a Title, and paste the SSH key copied from the app in Studio. Click `Add SSH key`. Confirmation and a password prompt may follow.
+2. Provide the required details, including a Title, and paste the SSH key copied from the app in DronaHQ. Click `Add SSH key`. Confirmation and a password prompt may follow.
 
 
 :::info 
@@ -82,7 +82,7 @@ The default branch for the connection is Master for GitHub.
 
 
 
-2. Provide the necessary details, such as Title and Expiry date, and paste the SSH key copied from the app in Studio. Click `Add key`.
+2. Provide the necessary details, such as Title and Expiry date, and paste the SSH key copied from the app in DronaHQ. Click `Add key`.
 
   
 
@@ -91,13 +91,13 @@ The default branch for the connection is Master for GitHub.
 1. To add this SSH key to your Bitbucket account, visit `Bitbucket > Settings > SSH Keys (under security) > Add key`. Note that you need to add the key at the account level, not the repository level.
 
 
-2. Provide the necessary details, including the Label, and paste the SSH key copied from the app in Studio. Click `Add key`.
+2. Provide the necessary details, including the Label, and paste the SSH key copied from the app in DronaHQ. Click `Add key`.
 
 
 
 ## Using Git in Action
 
-Working with Git in the Studio is similar to using Git itself. After connecting to the Git repository, you can commit changes and push them to the remote branch. You can also pull changes from the repository. Two additional tabs, Push and Pull, enable these operations.
+Working with Git in the DronaHQ is similar to using Git itself. After connecting to the Git repository, you can commit changes and push them to the remote branch. You can also pull changes from the repository. Two additional tabs, Push and Pull, enable these operations.
 
 ### Push to the Repository
 

@@ -8,11 +8,11 @@ import Thumbnail from '@site/src/components/Thumbnail';
 
 
 
-Xano is a platform that simplifies backend developmentand workflows without complex coding. It enables rapid application development and integration, streamlining the process of building scalable and efficient web and mobile applications.
+Xano is a platform that simplifies backend development and workflows without complex coding. It enables rapid application development and integration, streamlining the process of building scalable and efficient web and mobile applications.
 
 ## Prerequisites 
 
-Obtain the required authentication credentials from Xano, such as API keys or tokens, to securely access your APIs.Ensure that the API endpoints you're using have the appropriate access permissions configured in Xano.
+Obtain the required authentication credentials from Xano, such as API keys or tokens, to securely access your APIs. Ensure that the API endpoints you're using have the appropriate access permissions configured in Xano.
 
 ## Configuring API Connector in DronaHQ
 

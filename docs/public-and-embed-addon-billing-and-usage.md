@@ -20,7 +20,7 @@ You can see the usage of the views in the Public and embed apps section of each 
 
 Any upgrade of views, depending on the billing cycle (monthly/annual) will be charged on a pro-rata basis. Every Add-on will have its own different billing cycle and invoicing.
 
-Incase you have multiple instances of self-hosted DronaHQ edition installed on-premise, the view count will be the aggregation of all users distinct or unique across all instances.
+In case you have multiple instances of self-hosted DronaHQ edition installed on-premise, the view count will be the aggregation of all users distinct or unique across all instances.
 
 :::
 
