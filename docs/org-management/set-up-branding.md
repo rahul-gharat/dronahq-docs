@@ -18,7 +18,7 @@ Branding is only available on [Business plan](https://www.dronahq.com/pricing) 
 
 :::caution Please Note
 
-You you need to have admin or owner level privileges to access or modify these configurations.
+You need to have admin or owner level privileges to access or modify these configurations.
 
 :::
 
