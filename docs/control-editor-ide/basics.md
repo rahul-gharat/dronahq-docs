@@ -397,7 +397,7 @@ There are also some system defined variables so we can use them for our control 
 | Attribute | Explanation |
 | ------------ | --------------- |
 | field_composition_type | this variable is used to define what kind of data our control will accept . possible values for this variable are `single, composite, list, composite_list`. Bind Data will change according to different values. |
-| feild_datatypes | this variable is used to provide default values in case of dropdown in properties section. |
+| field_datatypes | this variable is used to provide default values in case of dropdown in properties section. |
 | is_master_control | this variable accepts only boolean values `(true or false)`. If we wish to bind data from different controls like DataStore with multiple columns then we have to make our control as master control. `Recommended for Display/non_input Controls`. |
 | allowSchemaFormatting | this variable accepts only boolean values `(true or false)`. If we wish to provide this option in bind data then we have to set this variable to true. To enable this we have to make our control as master control and we get schema from the second variable of `setValue(obj,schema,datasource)` method. We have to handle all the cases of schema to make this feature working. |
 | action_items | this variable is used to provide bindable events to our control. |
