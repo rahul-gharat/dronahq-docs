@@ -28,13 +28,17 @@ Set up your API connector by entering the required details. Ensure Connector con
 #### General
 
 
+| Field                      | Description                                                                        |
+|----------------------------|------------------------------------------------------------------------------------|
+| Host                       | The host address (IP or domain) where the gRPC server is located.                 |
+| Port                       | The port number on which the gRPC server is listening for incoming connections.  |
+| Meta Data                  | Key-value pairs that you can add as headers for each API call, if needed.       |
+| Proto File                 | Information about the Protocol Buffers (Proto) type file that defines the service methods and message types for communication. |
+| Service Definition Source   | Specifies the method to connect to gRPC using Server Reflection, which allows dynamically discovering and using gRPC services, or import a .proto file from a URL, providing the service definition directly from a remote location. This field determines how your gRPC client locates and accesses the service methods and message types for effective communication with the gRPC server. |
+| Maximum Incoming Message Size (bytes) | The maximum size, in bytes, for incoming gRPC messages that the client can receive without error. This setting ensures that the client can handle large incoming messages without any issues. |
+| Maximum Outgoing Message Size (bytes) | The maximum size, in bytes, for outgoing gRPC messages that the client can send to the server. This setting helps control the size of messages sent to the server and ensures they comply with server-side constraints and capabilities. |
 
-| Field        | Description |
-|--------------|-------------|
-| Host         | The host address (IP or domain) where the gRPC server is located. |
-| Port         | The port number on which the gRPC server is listening for incoming connections. |
-| Meta Data    | Key-value pairs that you can add as headers for each API call, if needed. |
-| Proto File   | Information about the Protocol Buffers (Proto) type file that defines the service methods and message types for communication. |
+
 
 <figure>
   <Thumbnail src="/img/reference/connectors/grpc/details.png" alt="gRPC with Sample details." />
