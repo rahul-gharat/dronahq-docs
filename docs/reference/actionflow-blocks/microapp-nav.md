@@ -2,35 +2,44 @@
 sidebar_position: 1
 title: Microapp Nav
 ---
+
 import Thumbnail from '@site/src/components/Thumbnail';
 
-The `Microapp Nav` action provides you with the ability to define a navigation path from the current micro-app to a specified target micro-app. This feature is particularly useful when you want to seamlessly guide users to another micro-app within your ecosystem.
+# Microapp Nav Action
+
+The `Microapp Nav` action is a powerful feature that allows you to create seamless navigation paths between micro-apps within your ecosystem. This enhances user experience and facilitates smooth transitions between different micro-apps, all within your DronaHQ environment.
 
 <figure>
-<Thumbnail src="/img/reference/actionflow-blocks/microappnav/microappnav.png" alt="Microapp Nav" />
-<figcaption align='center'><i>Microapp Nav</i></figcaption>
+  <Thumbnail src="/img/reference/actionflow-blocks/microappnav/microappnav.png" alt="Microapp Nav" />
+  <figcaption align='center'><i>Microapp Nav</i></figcaption>
 </figure>
 
 ## Setting up the Microapp Nav Action
 
-To employ the `Microapp Nav` action, follow these steps:
+To set up the `Microapp Nav` action, follow these steps:
 
-1. Under the `Navigate` block, select `Microapp Nav`.
+1. Under the `Navigate` block in your action flow, select `Microapp Nav`.
 
-2. Click `Continue` to proceed with setting up the Microapp Nav action.
+2. Click `Continue` to proceed with configuring the Microapp Nav action.
 
-3. In the `Action button ID` section, select the specific micro-app you wish to navigate to from the current micro-app.
+3. Select App: Choose the target micro-app that you want to navigate to from the current micro-app. This selection defines the destination of the navigation.
 
-4. You can also specify conditions under which the action should be executed, as well as the specific environment in which it should take place.
+4. Dynamic Fields - `Querystring Key` and `Querystring Value`: Here's where the real power of the `Microapp Nav` action comes into play. You can dynamically pass key-value pairs as query parameters to the target micro-app. For instance, you can send user-specific data or context information.
 
-5. Assigning a unique name to the action using the Action Unique Name field is essential. This helps you to identify and manage tasks within the flow.
+:::info NOTE
+Make sure this Querystring key is created in the target microapp.
+:::
 
-6. Click `Finish` to complete the setup.
+5. You can specify conditions under which the action should be executed, as well as the specific environment in which it should take place.
 
-By using the `Microapp Nav` action, you can seamlessly connect different micro-apps within your ecosystem. This enhances user experience and enables users to smoothly transition between related micro-apps without interruption.
+6. It's essential to assign a unique name to the action using the Action Unique Name field. This helps you identify and manage tasks within your action flow.
+
+7. Click `Finish` to complete the setup.
+
+With the ability to pass dynamic query parameters, the `Microapp Nav` action opens up a world of possibilities for creating interactive and context-aware user experiences across your micro-apps.
 
 <figure>
-<Thumbnail src="/img/reference/actionflow-blocks/microappnav/feild.png" alt="Microapp Nav" />
+  <Thumbnail src="/img/reference/actionflow-blocks/microappnav/feild.png" alt="Microapp Nav" />
 </figure>
 
-Whether you're aiming to provide comprehensive features across multiple micro-apps, guide users through a sequence of tasks, or create a consistent user journey, the `Microapp Nav` action is a valuable tool for enhancing the interactivity of your micro-apps.
+Whether you're guiding users through a sequence of tasks, providing context-aware content, or ensuring a consistent user journey, the `Microapp Nav` action empowers you to create rich, interconnected experiences within your DronaHQ ecosystem.
