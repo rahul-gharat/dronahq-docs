@@ -65,4 +65,4 @@ For instance, you can integrate the SMTP connector to send emails based on user 
 
 ### Additional Reading
 
-For a more detailed understanding of these features and their functionalities, click [here](link_here).
+For a more detailed understanding of these features and their functionalities, click [here](../../../sheets-concepts/using-action-button/).
