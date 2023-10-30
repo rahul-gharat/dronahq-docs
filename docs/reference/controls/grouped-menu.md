@@ -41,7 +41,7 @@ The Grouped Menu is mainly a navigation control and does not have any data bindi
 | Icon Style            | Set the size and color of the icon of each menu item.                                             |
 | Icon                  | Toggle switch to display or hide the icon of each menu item.                                      |
 
-**Hover**
+#### Hover
 
 | Property            | Description                                                                                     |
 |---------------------|-------------------------------------------------------------------------------------------------|
@@ -49,7 +49,7 @@ The Grouped Menu is mainly a navigation control and does not have any data bindi
 | Icon Color          | The color of the icons that appears when you hover on a menu item.                               |
 | Text Color          | The color of the text that appears when you hover on a menu item.                                |
 
-**Selected**
+#### Selected
 
 
 | Property          | Description                                                         |
@@ -58,7 +58,7 @@ The Grouped Menu is mainly a navigation control and does not have any data bindi
 | Background Color  | The background color that appears for the selected text.            |
 | Icon Color        | The color of the icon for the selected text.                         |
 
-**Item List**
+#### Item List
 
 
 | Property             | Description                                                                                     |

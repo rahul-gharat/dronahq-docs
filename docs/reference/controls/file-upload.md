@@ -35,7 +35,7 @@ The File Upload control is used to upload files like documents, pictures, audio 
 | Allowed Magic Numbers  | Specify numeric or string constants representing file types.                                                  |
 
 
-**Style**
+#### Style
 
 | Property               | Description                                                                                                     |
 |------------------------|-----------------------------------------------------------------------------------------------------------------|
