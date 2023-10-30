@@ -5,7 +5,6 @@ title: Microapp Nav
 
 import Thumbnail from '@site/src/components/Thumbnail';
 
-# Microapp Nav Action
 
 The `Microapp Nav` action is a powerful feature that allows you to create seamless navigation paths between micro-apps within your ecosystem. This enhances user experience and facilitates smooth transitions between different micro-apps, all within your DronaHQ environment.
 
