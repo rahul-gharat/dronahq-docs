@@ -86,7 +86,7 @@ Set the following values in `dronahq-secrets.yaml`:
 | mongodb_password | base64 encoded mongodb password for selected user |
 | aws_s3_region | base64 encoded s3 bucket name you want to use |
 | aws_s3_access_key_id | base64 encoded access key id to use selected bucket |
-| aws_s3_access_key_secret | base64 encoded sectret key pair for selected access key |
+| aws_s3_access_key_secret | base64 encoded secret key pair for selected access key |
 | aws_s3_bucket_name | base64 encoded aws s3 bucket name |
 
 ## 4. Install DronaHQ

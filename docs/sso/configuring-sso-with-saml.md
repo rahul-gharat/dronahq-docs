@@ -45,7 +45,7 @@ Enter form with below fields -
 | Want Auth request signed |  It refers to digitally signing the AuthnRequest message when enabled. Digital signing adds a layer of security and ensures the integrity and authenticity of the message. |
 | Add Claim List | You can map your `User's ID, Name, Email and Group` with corresponding values in DronaHQ. Here, you need to provide exact path of corresponding key present in SAML assertion received from your SSO provider. For eg - Add `email` to map against `DHQ User Email`, this will refer to `email` key present in `SAML Assertion`.|
 | Enable JIT user provisioning | Just in time (JIT) user provisioning enables DronaHQ to provision user accounts when users sign in via SSO for the `first time`. This means you won't have to manually invite each user to DronaHQ first. |
-| Enable SCIM User Provisioning | Enable this in case you want to create, update and deactivate User accounts at your SAML provider portal and sync it with DronaHQ user managemnt. Once enabled, you can Configure `DronaHQ SCIM API URL` and `Authenticate` the requests using given `Bearer Token` at your SSO provider's portal. For more info [refer this](./scim-user-provisioning.md)  |
+| Enable SCIM User Provisioning | Enable this in case you want to create, update and deactivate User accounts at your SAML provider portal and sync it with DronaHQ user management. Once enabled, you can Configure `DronaHQ SCIM API URL` and `Authenticate` the requests using given `Bearer Token` at your SSO provider's portal. For more info [refer this](./scim-user-provisioning.md)  |
 
 :::tip TIP
 

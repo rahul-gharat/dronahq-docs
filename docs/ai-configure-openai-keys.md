@@ -39,7 +39,7 @@ To add a new OpenAI account, all you need to do is provide a `Name` for the acco
 
 :::info Info
 
-The first OpenAI account added to Studio will be made as `Default` and will be used in all the integrated AI tools.
+The first OpenAI account added to DronaHQ will be made as `Default` and will be used in all the integrated AI tools.
 
 :::
 
@@ -54,7 +54,7 @@ To `Edit/Update` keys for existing `OpenAI Accounts` you will need to click on t
 
 ### See list of all accounts
 
-`All Accounts` tab provides a centralized view of all the configured accounts for easy access and administration. Studio user can conveniently view the listt all all OpenAI accounts configured in the studio, If you want to Delete certain account or make it Default you can utilize the `Delete` and `Make Default` button associated with each entry in the All Accounts tab.
+`All Accounts` tab provides a centralized view of all the configured accounts for easy access and administration. DronaHQ user can conveniently view the listt all all OpenAI accounts configured in the studio, If you want to Delete certain account or make it Default you can utilize the `Delete` and `Make Default` button associated with each entry in the All Accounts tab.
 
 <figure>
   <Thumbnail src="/img/dronahq-ai/configure-openai-keys/list-all-accounts.png" alt="All configured OpenAI accounts list" width='100%'/>

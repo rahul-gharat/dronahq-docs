@@ -10,14 +10,14 @@ Learn about DronaHQ Self-hosted requirements then follow a deployment guide to g
 - `Linux` based os or Virtual machine / `MacOS`
 - `2` vCPUs
 - `8 GiB` Memory
-- `60 GiB` Stotage
+- `60 GiB` Storage
 - Active internet connection for downloading resources.
 
 ### Software requirements
 - `curl`, `wget`, `git`, `unzip`
 - Docker Engine `20.10.0`
 - Docker Compose `1.29.0`
-- Any text editor of your choise
+- Any text editor of your choice
 
 ### Networking requirements
 - Port `22`(ssh) To allow you to SSH into your instance and configure it.

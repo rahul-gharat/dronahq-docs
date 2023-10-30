@@ -16,7 +16,7 @@ White branded mobile apps creation is only available on [Business plan](https:/
 
 We will soon enable this feature on Self-hosted dashboard as well  for [Business plan](https://www.dronahq.com/pricing) users.
 
-Contact us [here](https://www.dronahq.com/contact/) incase you would want to try out the beta for your organization.
+Contact us [here](https://www.dronahq.com/contact/) in case you would want to try out the beta for your organization.
 
 :::
 

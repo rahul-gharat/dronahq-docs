@@ -29,7 +29,7 @@ To effectively utilize the `Change State` action, follow these steps:
 
 
 <figure>
-<Thumbnail src="/img/reference/actionflow-blocks/change-state/feild.png" alt="feild" />
+<Thumbnail src="/img/reference/actionflow-blocks/change-state/feild.png" alt="field" />
 </figure>
 
 By using the `Change State` action, you unlock the ability to create dynamic and interactive user interfaces. This enhances user experience by visually representing the changing states of designer controls in response to user interactions or specific actions. Whether you're indicating selection, interaction, or data status, the `Change State` action empowers you to design micro-apps that offer real-time visual feedback.

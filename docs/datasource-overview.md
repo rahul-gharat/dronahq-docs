@@ -298,7 +298,7 @@ With DronaHQ, you can seamlessly connect with a diverse array of tools and platf
   </VersionedLink><VersionedLink to="#">
     <div className="card-wrapper">
       <div className="card">
-         <Image src="/img/connecting-datasource/twillio-logo.png"  title="Twillio" alt="Connect Twillio to DronaHQ" />
+         <Image src="/img/connecting-datasource/twillio-logo.png"  title="Twilio" alt="Connect Twilio to DronaHQ" />
       </div>
       <h5>Twillio</h5>
     </div>

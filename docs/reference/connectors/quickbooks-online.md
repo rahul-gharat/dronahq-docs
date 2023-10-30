@@ -10,7 +10,7 @@ QuickBooks Online is a cloud-based accounting software that helps businesses man
 
 ## Configuring API Connector in DronaHQ
 
-Add a `Account name`. Then click `Save`, it will open a pop-up window askinging you to sign-in into your QuickBooks Online account. Continue with the steps and give access to DronaHQ to connect with your QuickBooks Online ID and its information.
+Add a `Account name`. Then click `Save`, it will open a pop-up window asking you to sign-in into your QuickBooks Online account. Continue with the steps and give access to DronaHQ to connect with your QuickBooks Online ID and its information.
 
 
 <figure>

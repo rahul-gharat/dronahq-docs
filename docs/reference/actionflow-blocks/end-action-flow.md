@@ -6,7 +6,7 @@ title: End Action Flow
 import Thumbnail from '@site/src/components/Thumbnail';
 
 
-The End Action Flow is a native block within the Studio's on-screen action category. It serves the critical role of terminating an entire action flow when certain conditions are met.
+The End Action Flow is a native block within the DronaHQ's on-screen action category. It serves the critical role of terminating an entire action flow when certain conditions are met.
 
 ### Setting up the End Action Flow Action
 

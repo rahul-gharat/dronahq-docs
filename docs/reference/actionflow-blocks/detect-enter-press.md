@@ -33,7 +33,7 @@ To effectively utilize the `Detect Enter Press` action, follow these steps:
 8. Click `Finish` to complete the setup.
 
 <figure>
-<Thumbnail src="/img/reference/actionflow-blocks/detect-enter-press/feild.png" alt="feild" />
+<Thumbnail src="/img/reference/actionflow-blocks/detect-enter-press/feild.png" alt="field" />
 </figure>
 
 By using the `Detect Enter Press` action, you provide users with an alternative way to initiate actions within your micro-app by utilizing the Enter key. This enhances user experience by offering a seamless interaction flow that caters to users who prefer keyboard shortcuts.

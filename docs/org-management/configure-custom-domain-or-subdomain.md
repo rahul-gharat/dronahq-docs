@@ -32,7 +32,7 @@ You you need to have admin or owner level privileges to access or modify these c
 ## Setting up Subdomain
 For `DronaHQ cloud edition`, you can simply type the subdomain of your choice which will be checked for its uniqueness and once its unique, you can go ahead and save the configurations. Your `end-user portal` will be accessible on your_subdomain.dronahq.io
 
-## Pre-requisites for Custom Domain
+## Prerequisites for Custom Domain
 Before you get started, make sure you: 
 
 - Have `admin/owner` level access to your DronaHQ account
@@ -62,7 +62,7 @@ You need to follow the following steps to set up your custom domain:
 - `Step 2`: You need to validate SSL certificate by creating a CNAME record with the host as the  `name` field and value as the `value` field. 
 - Once the SSL is issued and verified you can move to the next step of domain verification
 - `Step 3`: You need to verify the domain by creating a CNAME record with host as @ and value as the field `generated domain name`
-- Incase you want to set up a subdomain, you will have to create a CNAME record with host as `your subdomain` and value as the field `generated domain name`
+- In case you want to set up a subdomain, you will have to create a CNAME record with host as `your subdomain` and value as the field `generated domain name`
 - Every DNS provider has their own process for updating DNS records. We recommend that you read the help documentation of your DNS provider, and contact their support for help
 - `Step 4`: You will be able to see the status of your custom domain here. There are 3 statuses namely: `pending` `in progress` and `deployed`
 

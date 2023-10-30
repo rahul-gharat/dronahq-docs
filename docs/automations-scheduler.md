@@ -51,7 +51,7 @@ Define when to repeat the automation-triggered action using the available prompt
 
 ### Configure a CRON Schedule
 
-For more precise scheduling, you can use the CRON syntax in Studio Automation. The interface provides a human-readable representation of the CRON values you enter, and tooltips with syntax references appear when you hover over each input label.
+For more precise scheduling, you can use the CRON syntax in DronaHQ Automation. The interface provides a human-readable representation of the CRON values you enter, and tooltips with syntax references appear when you hover over each input label.
 
 <figure>
   <Thumbnail src="/img/automation/scheduler/cron.png" alt="Scheduler Cron" width='70%'/>

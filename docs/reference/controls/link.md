@@ -48,7 +48,7 @@ In the Link control, Bind Data Options, select the `Quick Select -> Data Queries
 
 By selecting the `getCountryLink` data query, the Link control will fetch the link URL from your database based on the selected country, creating a dynamic hyperlink for the user to follow.
 
-## Propertiea
+## Properties
 
 | Property   | Description                                                                                           |
 |------------|-------------------------------------------------------------------------------------------------------|

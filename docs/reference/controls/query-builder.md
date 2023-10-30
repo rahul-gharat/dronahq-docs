@@ -91,7 +91,7 @@ And here's an example of the Schema for a Product data use case:
 
 **Dynamic Operators**
 
-The Dynamic Operators feature in the Query Builder control allows you to add custom operators that are not available by default. This enables you to define specific operators for different types of data you use in your application. You can easily customize the operators to support String type data within Studio.
+The Dynamic Operators feature in the Query Builder control allows you to add custom operators that are not available by default. This enables you to define specific operators for different types of data you use in your application. You can easily customize the operators to support String type data within DronaHQ.
 
 Key Points:
 
@@ -99,7 +99,7 @@ Key Points:
 
 2. For other data types, you must provide a value that is supported in your NoSQL parameter. For instance, the $all operator expects an array type in the value field, so it's essential to provide an array value in the query control.
 
-To add your specific operators, go to the Dynamic Operator section under Properties, and customize the operators to support String type data in Studio.
+To add your specific operators, go to the Dynamic Operator section under Properties, and customize the operators to support String type data in DronaHQ.
 
 <figure>
   <Thumbnail src="/img/reference/controls/query-builder/example-1.jpeg" alt="Dynamic Operator" />

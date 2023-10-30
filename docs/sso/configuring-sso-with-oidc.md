@@ -51,8 +51,8 @@ Enter form with below fields -
 | Scope      | OAuth scopes values seperated with a comma or space that you want DronaHQ to access data. For eg - `openid email` |
 | Authorization Request | Authorization endpoint for your OpenID provider |
 | Access Token Request | Token endpoint for your OpenID provider. Modify request parameters if required. |
-| Refresh Token Request | Token endpoint for your OpenID provider. Modify request parameters if required. This will be called, when using current access token retunrs `401 status code` response |
-| Add Claim List | You can map your `User's ID, Name, Email and Group` with corresponding values in DronaHQ. Here, you need to provide exact path of corresponding key present in JWT Token received from Token endpoint. For eg - Add `{{idToken.email}}` to map against `DHQ User Email`, this will refer to `email` key present in `idToken` parameter. Similarly you can use `{{accessToken.email}}` incase `Email` is received in `Access Token` key's value.|
+| Refresh Token Request | Token endpoint for your OpenID provider. Modify request parameters if required. This will be called, when using current access token returns `401 status code` response |
+| Add Claim List | You can map your `User's ID, Name, Email and Group` with corresponding values in DronaHQ. Here, you need to provide exact path of corresponding key present in JWT Token received from Token endpoint. For eg - Add `{{idToken.email}}` to map against `DHQ User Email`, this will refer to `email` key present in `idToken` parameter. Similarly you can use `{{accessToken.email}}` in case `Email` is received in `Access Token` key's value.|
 | Enable JIT user provisioning | Just in time (JIT) user provisioning enables DronaHQ to provision user accounts when users sign in via SSO for the `first time`. This means you won't have to manually invite each user to DronaHQ first. |
 
 :::tip TIP

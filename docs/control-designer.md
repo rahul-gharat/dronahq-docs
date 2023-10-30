@@ -24,7 +24,7 @@ Once you open the control desgner you will see list off all controls that you cr
   <figcaption align = "center"><i>Add new Designer control</i></figcaption>
 </figure>
 
-- Unique name: unique name of the control taht should not conflict with other controls including the onces provided by the studio, and also should not contains special character and space.
+- Unique name: unique name of the control taht should not conflict with other controls including the onces provided by the DronaHQ, and also should not contains special character and space.
 
  | Fields | Description |
  | ------------------ | -------------------- |
@@ -36,7 +36,7 @@ Once you open the control desgner you will see list off all controls that you cr
 once you field all the field you can press add and new control will be created and you will  be navigated to the control building canvas.
 
 <figure>
-  <Thumbnail src="/img/advanced-concepts/designer/control-builder-canvas.png" alt="Conrol builder canvas" />
+  <Thumbnail src="/img/advanced-concepts/designer/control-builder-canvas.png" alt="Control builder canvas" />
   <figcaption align = "center"><i>control builder canvas</i></figcaption>
 </figure>
 
@@ -76,11 +76,11 @@ Style manager allows you to apply css styles to blocks components through and in
   <Thumbnail src="/img/advanced-concepts/designer/styles-designer.png" alt="Blocks" width="200px"/>
 </figure>
 
-you will get almost all the css property available here and we have added few extra custom properties like State. State allows you to configre differnet ui states of your control and then change those state of your control in studio using rules for example you can create a custom info control which wil have diffent states like warning, error, and info these states can be swithced uing rules on builder at runtime resulting id diffent ui in same control.
+you will get almost all the css property available here and we have added few extra custom properties like State. State allows you to configre differnet ui states of your control and then change those state of your control in DronaHQ using rules for example you can create a custom info control which wil have diffent states like warning, error, and info these states can be swithced uing rules on builder at runtime resulting id diffent ui in same control.
 
 ### Mapping Manager
 
-Mappoing Manager allows you to configure you control's block components for data binding and Actions to trigger action flows in studio 
+Mappoing Manager allows you to configure you control's block components for data binding and Actions to trigger action flows in DronaHQ 
 
 <figure>
   <Thumbnail src="/img/advanced-concepts/designer/mapping-designer.png" alt="Blocks" width="200px"/>

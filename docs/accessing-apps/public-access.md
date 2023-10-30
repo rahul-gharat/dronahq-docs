@@ -31,3 +31,25 @@ You can follow the following steps to open public access of your app:
 </figure>
 
 
+
+
+## Progressive Web Apps (PWAs) 
+
+Progressive Web Apps (PWAs) are a game-changer in the world of public applications. They offer a modern approach to delivering an engaging user experience without the need for users to install and manage traditional apps. PWAs are websites that act like native mobile applications, providing fast performance, offline access, and seamless interactions.
+
+<figure>
+  <Thumbnail src="/img/building-apps-concepts/pwa-apps/install2.jpg" alt="Install option on mobile-view" />
+  <figcaption align='center'><i>Install option on mobile-view</i></figcaption>
+</figure>
+
+Dive into the concepts of PWAs and learn how they are transforming the way we engage with web applications.
+
+   <figure>
+    <Thumbnail src="/img/building-apps-concepts/pwa-apps/settings.png" alt="Embed Settings -> PWA " />
+    <figcaption align='center'><i>Embed Settings -> PWA </i></figcaption>
+   </figure>
+
+Click here to [read More](../../building-apps-concepts/pwa-apps/)
+
+
+

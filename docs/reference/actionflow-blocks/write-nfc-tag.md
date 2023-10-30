@@ -5,7 +5,7 @@ title: Write NFC Tag
 
 import Thumbnail from '@site/src/components/Thumbnail';
 
-The `Write NFC Tag` action provides an easy and simple no-code way to build code logic within the Action flow. In the Studio, you have the ability to program/write NFC tags. This dedicated action enables you to create NFC tags for passive NFC devices.
+The `Write NFC Tag` action provides an easy and simple no-code way to build code logic within the Action flow. In the DronaHQ, you have the ability to program/write NFC tags. This dedicated action enables you to create NFC tags for passive NFC devices.
 
 This action can be triggered to reprogram NFC tags from devices. By using this action on button controls, you can transform your microapp into an NFC writer.
 

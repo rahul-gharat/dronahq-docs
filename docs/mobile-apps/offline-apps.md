@@ -10,7 +10,7 @@ Offline apps in DronaHQ provide the ability for users to access and interact wit
 
 ## Caching Data
  
-When you are binding remote data to a control, you have an option to Cache that data at control level. To enable caching, `Select Control -> Property -> Under Generic, Enable Caching`. This toggle will ensure that when remote data is fecthed to a control, it will get cached in local device's `KV Storage` which leverages Native Mobile device's capability. It is important that atleast once, the data should be return when online. So, when device is offline next time, the control will load data from previously stored local data thereby improving performance of the app.
+When you are binding remote data to a control, you have an option to Cache that data at control level. To enable caching, `Select Control -> Property -> Under Generic, Enable Caching`. This toggle will ensure that when remote data is fecthed to a control, it will get cached in local device's `KV Storage` which leverages Native Mobile device's capability. It is important that at least once, the data should be return when online. So, when device is offline next time, the control will load data from previously stored local data thereby improving performance of the app.
 
 ## Offline support in Actionflow blocks
 

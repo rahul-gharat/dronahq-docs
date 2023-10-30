@@ -26,7 +26,7 @@ Every time you publish the app in the beta or production goes in the history. Yo
 
 ### Version rollback
 
-Clicking on this option will replace the working copy with the released version. Make sure you dont have any changes that you have made in the working copy that you need after the roll back. 
+Clicking on this option will replace the working copy with the released version. Make sure you don't have any changes that you have made in the working copy that you need after the roll back. 
 
 <figure>
   <Thumbnail src="/img/common/rollback.png" alt="Version rollback" width='100%'/>

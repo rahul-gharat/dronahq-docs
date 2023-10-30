@@ -145,7 +145,7 @@ Everytime you open this New Configuration page, a new Secret Key and ID will be 
 
 Once you are now through with the API response, on the frontend side we will parse the response.
 
-#### Pre-requisite 
+#### Prerequisite 
 - You must import dronahq.js in your Login HTML or if you are re-directing user to different URL then import it in that HTML page.
 
 Latest `DronaHQ JS SDK v7.3.3` is available at [this link](https://drive.google.com/file/d/1BBHHcPBSKISWOqsxOXFkOg2uZolvmH3R/view?usp=drive_link). 

@@ -32,7 +32,7 @@ Additionally
 
 ## Install Cluster
 
-These instructions follow the steps in the lecture videos fairly closely, however we need to use versions of the various software to install that are compatible with ARM architecture. This means that whereever the lecture shows sofware downloads with `linux-amd64` in the name, we are going to choose the corresponding `linux-arm64` version.
+These instructions follow the steps in the lecture videos fairly closely, however we need to use versions of the various software to install that are compatible with ARM architecture. This means that wherever the lecture shows software downloads with `linux-amd64` in the name, we are going to choose the corresponding `linux-arm64` version.
 
 ### Step 1 - Provision VMs with Multipass
 
@@ -242,7 +242,7 @@ Connect to each VM in turn and perform the following steps
     For each worker node
 
     1. Connect to the worker node
-    1. Paste the join command you copied from the final step of configuring the control plane to the command prompt and run it. Put `sudo` on the command line first, then passte the join command after sudo so it looks like
+    1. Paste the join command you copied from the final step of configuring the control plane to the command prompt and run it. Put `sudo` on the command line first, then paste the join command after sudo so it looks like
 
         ```
         sudo kubeadm join 192.168.64.4:6443 --token whd8v4.EXAMPLE --discovery-token-ca-cert-hash sha256:9537c57af216775e26ffa7ad3e495-5EXAMPLE`
@@ -282,7 +282,7 @@ Connect to each VM in turn and perform the following steps
     multipass list
     ```
 
-1.  Multipass allocates IP addresses from the Mac's DHCP server to assign to VMs. When the VMs are deleted, it does not release them. If you build and tear down this a few times, you will run out of addresses on the network used for this purpose. Reclaiming them is a manaul operation. To do this, you must remove the spent addresses from the file `/var/db/dhcpd_leases` This file looks like this:
+1.  Multipass allocates IP addresses from the Mac's DHCP server to assign to VMs. When the VMs are deleted, it does not release them. If you build and tear down this a few times, you will run out of addresses on the network used for this purpose. Reclaiming them is a manual operation. To do this, you must remove the spent addresses from the file `/var/db/dhcpd_leases` This file looks like this:
 
     ```json
     {

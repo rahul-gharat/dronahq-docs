@@ -6,7 +6,7 @@ import Thumbnail from '@site/src/components/Thumbnail';
 
 ## Setting up the Import ActionFlow
 
-The `Import ActionFlow` feature in the Studio allows you to copy and import the action flow from one trigger event to another. This simplifies the process of reusing complex action flows across different trigger events of a control.
+The `Import ActionFlow` feature in the DronaHQ allows you to copy and import the action flow from one trigger event to another. This simplifies the process of reusing complex action flows across different trigger events of a control.
 
 To import an action flow from one trigger event to another:
 

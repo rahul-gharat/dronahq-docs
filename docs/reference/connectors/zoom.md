@@ -10,7 +10,7 @@ Zoom Connector allows you to seamlessly interact with Zoom's features. You can l
 
 ## Configuring API Connector in DronaHQ
 
-Add a `Account name`. Then click `Save`, it will open a pop-up window askinging you to sign-in into your Zoom account. Continue with the steps and give access to DronaHQ to connect with your Zoom ID and its information.
+Add a `Account name`. Then click `Save`, it will open a pop-up window asking you to sign-in into your Zoom account. Continue with the steps and give access to DronaHQ to connect with your Zoom ID and its information.
 
 
 <figure>

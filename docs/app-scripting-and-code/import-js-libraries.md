@@ -12,7 +12,7 @@ Examples of such JavaScript libraries include, but are not limited to, Crypto.js
 
 Importing Library in DronaHQ Studio is a seamless and straightforward process, all you need to do is follow these easy steps
 
-- Open studio app builder.
+- Open DronaHQ app builder.
 - Hover over Config icon also known as settings icon on the top right corner just before share button.
 - From popup menu select the custom script option and it will open settings modal.
 - Make sure `Library Import` tab is selected if not select it. 
@@ -25,4 +25,4 @@ once you are done with these two simple step you will see the modal visible in t
 </figure>
 
 
-The process of importing a library in DronaHQ Studio is straightforward. You simply need to provide the CDN link of the library you wish to import and then press the `Import` button. Once you press this button, the importation process begins. Once the importing process is finished you will be able access the library method in studio.
+The process of importing a library in DronaHQ Studio is straightforward. You simply need to provide the CDN link of the library you wish to import and then press the `Import` button. Once you press this button, the importation process begins. Once the importing process is finished you will be able access the library method in DronaHQ.

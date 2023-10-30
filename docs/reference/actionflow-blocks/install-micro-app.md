@@ -6,7 +6,7 @@ title: Install MicroApps
 import Thumbnail from '@site/src/components/Thumbnail';
 
 
-The `Install Microapps` action in Studio empowers you to install microapps directly through your app's action flow. This feature is particularly useful when you need conditional installations or require dynamic installation based on user interactions or specific scenarios.
+The `Install Microapps` action in DronaHQ empowers you to install microapps directly through your app's action flow. This feature is particularly useful when you need conditional installations or require dynamic installation based on user interactions or specific scenarios.
 
 <figure>
 <Thumbnail src="/img/reference/actionflow-blocks/install-micro-app/install-micro-app.png" alt="Install MicroApps" />

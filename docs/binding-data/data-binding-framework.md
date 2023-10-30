@@ -21,7 +21,7 @@ DronaHQ enables your controls to interact with various data sources by using dat
 Lets say you can set your Tablegrid's data to be ``{{data_query1.data}}`` where your data query is selecting data from an SQL, and the Tablegrid will then display data from data_query1. Also you can run a data query on click of a Button to trigger a specific action, such as {{update_data}}, which can initiate an API POST request.
 
 ### Basics
-Queries that do not alter data like SELECT SQL statements or GET API requests, automatically run when the screen on which the Tablegrid exists opens. Incase this data query is not used or referenced anywhere, the server call will not happen. Subsequently, if the dynamic variables in these read-only queries change (e.g., select * from products where id = {{dropdown}}), they will automatically re-run to fetch updated information if the `run query on` property is set to `automatically run when variables change`.
+Queries that do not alter data like SELECT SQL statements or GET API requests, automatically run when the screen on which the Tablegrid exists opens. In case this data query is not used or referenced anywhere, the server call will not happen. Subsequently, if the dynamic variables in these read-only queries change (e.g., select * from products where id = {{dropdown}}), they will automatically re-run to fetch updated information if the `run query on` property is set to `automatically run when variables change`.
 
 If there are queries that modify data like INSERT SQL statements or POST API requests they should only run when explicitly triggered. Lets say you have a table of products and an UPDATE statement that updates the products quantity, if you set the `run query on` property `manually trigger`, you will have to configure an actionflow with the `Run data query` block typically on click of a Button. This approach prevents accidental data overwriting.
 
@@ -78,7 +78,7 @@ At any point of time in the apps lifecycle if the referenced control or keywords
 
 :::caution Trigger dependents
 
-Incase you are referencing a control across multiple screens and its adding a substantial lag in auto evaluating each time a value changes, you can switch `OFF` the property `trigger dependents` on that particular control.
+In case you are referencing a control across multiple screens and its adding a substantial lag in auto evaluating each time a value changes, you can switch `OFF` the property `trigger dependents` on that particular control.
 
 :::
 

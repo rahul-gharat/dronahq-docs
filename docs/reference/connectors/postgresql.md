@@ -10,7 +10,7 @@ import Thumbnail from '@site/src/components/Thumbnail';
 PostgreSQL stands as an open-source object-relational database system, providing a secure environment for storing and efficiently managing diverse data workloads. 
 
 
-## Pre-requisite
+## Prerequisite
 
 
 1. Authentication Credentials to connect to your postgres instance. You will need either of the below two credentials option:

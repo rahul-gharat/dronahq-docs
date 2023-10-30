@@ -6,11 +6,11 @@ import Thumbnail from '@site/src/components/Thumbnail';
 
 # Secure Embed
 
-Secure Embed is a powerful feature that enables seamless integration of studio app within your application while ensuring utmost security and user access control. By leveraging a Single Sign-On (SSO) token mechanism, this functionality restricts application access to authorized users only, safeguarding sensitive data and providing a smooth, secure user experience.
+Secure Embed is a powerful feature that enables seamless integration of DronaHQ app within your application while ensuring utmost security and user access control. By leveraging a Single Sign-On (SSO) token mechanism, this functionality restricts application access to authorized users only, safeguarding sensitive data and providing a smooth, secure user experience.
 
 To securely embed the app inside your application you need to do the following steps:
 
-- Open the app in the studio that you want to embed.
+- Open the app in the DronaHQ that you want to embed.
 - Make sure the application is published.
 - Click on the Share button on the right top corner of the screen.
 - Look for the `Public URL and Embed Apps` section in that click on `Embed configuration ->`
@@ -40,7 +40,7 @@ This is the first step where your server makes an API Request to get the SSO tok
 | token | Token to authenticate the user making the call, will be provided to you by default in the curl request |
 | email | End users email address for which you want to generate the SSO token. |
 | type | pass SSO in the value |
-| properties | Stores object, with each key representing query parameters of your application, if you want to pass some extra data to handle multi-tenant applications you can pass these data by configuring `query strings` in the studio. and value for those parameters will be passed here |
+| properties | Stores object, with each key representing query parameters of your application, if you want to pass some extra data to handle multi-tenant applications you can pass these data by configuring `query strings` in the DronaHQ. and value for those parameters will be passed here |
 
 The result of the API call will be the SSO token which will be used for embedding the app in the third step.
 
@@ -63,7 +63,7 @@ As you can see in the `Query string configuration image` that we have configured
 
 ## Embed app
 
-This is the last step, in this step you need to add the script tag provided to you in the config modal to your applications head section and place the custom DroanHQ microapp tag inside your application's html page where you want to embed it, set the token value that you got from step one and you are finished with the secure embed configuration. all you need to do is fire up the application and test.
+This is the last step, in this step you need to add the script tag provided to you in the config modal to your applications head section and place the custom DronaHQ microapp tag inside your application's html page where you want to embed it, set the token value that you got from step one and you are finished with the secure embed configuration. all you need to do is fire up the application and test.
 
 <figure>
   <Thumbnail src="/img/advanced-concepts/secure-embed/embed-microapp.png" alt="Embed app" />

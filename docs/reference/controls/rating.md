@@ -95,7 +95,7 @@ The outputs from the Rating control, represented by the placeholder `{{rating}}`
 
 | Output       | Description                                                                                                  |
 |--------------|--------------------------------------------------------------------------------------------------------------|
-| rating    | Represents the rating available cuurently in the Rating control.                        |
+| rating    | Represents the rating available currently in the Rating control.                        |
 
 ## Events
 

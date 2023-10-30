@@ -64,8 +64,8 @@ Depending upon the screen type these properties are preconfigured, for example i
 
 | Attributes | Description |
 |------------|--------------|
-| Visibility | Toggles Footler visibility of screen |
-| Border visibility | Toggler border-top visibility of footer |
+| Visibility | Toggles Footer visibility of screen |
+| Border visibility | Toggle border-top visibility of footer |
 | Border color | Configures Border-top color for footer |
 | Control spacing | Configures space between two different controls only applicable for advance editor screen. |
 | Padding | Configures screen body padding, only applicable for advanced editor screens. |
@@ -82,7 +82,7 @@ Studio offers multiple types of screen each with its own properties and use case
 
 ### Screen / Page
 
-Screen/Page is The Primary Screen type in Sutdio. All Other screens are either overlayed over Screen/Page or either stick to it. Following are the configuration provided by the Screens/Page.
+Screen/Page is The Primary Screen type in DronaHQ. All Other screens are either overlaid over Screen/Page or either stick to it. Following are the configuration provided by the Screens/Page.
 
 | Attribute | Description |
 | ---------------| -------------| 
@@ -143,14 +143,14 @@ Try-type screens allow you to create sidebars in your application, tray-type scr
 | Screen type | Allows you to change screen type, only available in the Advance Editor mode |
 | Open from | Configures weather tray will open from left/right / top/bottom |
 | Click outside to close | Configures if the tray should close after the user clicks / taps outside the tray. |
-| Width | Configues width for the tray if opening from the left or right direction. |
-| Max width | Configues max width for the tray if opening from the left or right direction. |
-| Height | Configues height for the tray if opening from the top or bottom direction. |
-| Max height | Configues max height for the tray if opening from the top or bottom direction. |
+| Width | Configures width for the tray if opening from the left or right direction. |
+| Max width | Configures max width for the tray if opening from the left or right direction. |
+| Height | Configures height for the tray if opening from the top or bottom direction. |
+| Max height | Configures max height for the tray if opening from the top or bottom direction. |
 
 ### Header
 
-Header type screen is used in a very special use case in which if you want to use a single header screen throughout the application then create a header screen and use it as a stikcy header in all the screen/page type screens.
+Header type screen is used in a very special use case in which if you want to use a single header screen throughout the application then create a header screen and use it as a sticky header in all the screen/page type screens.
 
 | Attribute | Description |
 | ---------------| -------------| 

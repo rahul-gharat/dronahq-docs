@@ -25,7 +25,7 @@ You can follow the following steps to give an organizational access of your app 
 
 ## Access in the End-user portal
 
-All the apps that you publish will be available on the DronaHQ `end-user portal`. You can define different catalogs for your apps for different user groups incase you want to restrict access to specific apps to defined user groups. 
+All the apps that you publish will be available on the DronaHQ `end-user portal`. You can define different catalogs for your apps for different user groups in case you want to restrict access to specific apps to defined user groups. 
 
 <figure>
   <Thumbnail src="/img/accessing-apps/end-user-portal.png" alt="End user portal" width='100%'/>

@@ -21,7 +21,7 @@ The AI Assistant within DronaHQ provides intelligent support for generating data
 
 ### Using AI assistant for database query generation
 
-AI assistance for generating queries is conveniently available within the Data Queries module of the studio. To access this feature, simply navigate to `Data Queries -> Add New` and then select the `Database Query` option from the dropdown menu on the right-hand side. Next, choose the appropriate pre-configured database connector from the second dropdown in the studio to access the required data through query writing. Within the query tab, just above the input block where you write your queries, an `Ask AI` button is provided. By clicking on this button, you can prompt the AI to assist you with query generation.
+AI assistance for generating queries is conveniently available within the Data Queries module of the DronaHQ. To access this feature, simply navigate to `Data Queries -> Add New` and then select the `Database Query` option from the dropdown menu on the right-hand side. Next, choose the appropriate pre-configured database connector from the second dropdown in the DronaHQ to access the required data through query writing. Within the query tab, just above the input block where you write your queries, an `Ask AI` button is provided. By clicking on this button, you can prompt the AI to assist you with query generation.
 
 <figure>
   <Thumbnail src="/img/dronahq-ai/ai-assist-in-dronahq/ai-assistant-query-generation.png" alt="AI Assistant for query generation" width='100%'/>
@@ -41,11 +41,11 @@ AI assistance for generating queries is conveniently available within the Data Q
 </figure>
 
 ## JavaScript Code Assistance
-The AI Assistant in DronaHQ also provides support for writing JavaScript code to manipulate data in various places in the studio. It assists users in generating code snippets for common data manipulation tasks, simplifying the development process, one such place is the `Custom JavaScript` section of `Data Queries`
+The AI Assistant in DronaHQ also provides support for writing JavaScript code to manipulate data in various places in the DronaHQ. It assists users in generating code snippets for common data manipulation tasks, simplifying the development process, one such place is the `Custom JavaScript` section of `Data Queries`
 
 ### Using AI Assistant for JavaScript code generation
 
-AI assistance for generating JavaScript code is conveniently available within the Data Queries module of the studio. To access this feature, simply navigate to `Data Queries -> Add New` and then select the `Custom JavaScript` option from the dropdown menu on the right-hand side. Just above the input block where you write your JS code, an `Ask AI` button is provided. By clicking on this button, you can prompt the AI to assist you with your code snippet.
+AI assistance for generating JavaScript code is conveniently available within the Data Queries module of the DronaHQ. To access this feature, simply navigate to `Data Queries -> Add New` and then select the `Custom JavaScript` option from the dropdown menu on the right-hand side. Just above the input block where you write your JS code, an `Ask AI` button is provided. By clicking on this button, you can prompt the AI to assist you with your code snippet.
 
 <figure>
   <Thumbnail src="/img/dronahq-ai/ai-assist-in-dronahq/ai-assistant-java-script.png" alt="AI Assistant for JavaScript code generation" width='100%'/>

@@ -87,7 +87,7 @@ Configure its components, such as the `sender's email, receiver's email, subject
 With the SMTP connector now in action, your email has been successfully sent to the receiver's address, complete with the attached image. The email body showcases styled and formatted text, achieved by utilizing the HTML message type.
 
 <figure>
-  <Thumbnail src="/img/reference/connectors/smtp/mail.png" alt="Recieved mail via SMTP connector from DronaHQ app - preview." />
-  <figcaption align = "center"><i>Recieved mail via SMTP connector from DronaHQ app - preview.</i></figcaption>
+  <Thumbnail src="/img/reference/connectors/smtp/mail.png" alt="Received mail via SMTP connector from DronaHQ app - preview." />
+  <figcaption align = "center"><i>Received mail via SMTP connector from DronaHQ app - preview.</i></figcaption>
 </figure>
 

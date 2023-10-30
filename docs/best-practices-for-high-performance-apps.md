@@ -41,5 +41,5 @@ Even after breaking down into multiple screen, the app is an extremely large app
 In the debug tools, check for connector logs and see if you have long running or slow queries and if they can be optimized at your end. Dependency chains on these queries can slow down the app considerably. 
 
 ### Deploy DronaHQ on-premise
-Deploying DronaHQ on-premise closer to your data sources can reduce the latency as well. Incase you are using SSH tunneling to your data sources you will see a considerable improvement in the query time.
+Deploying DronaHQ on-premise closer to your data sources can reduce the latency as well. In case you are using SSH tunneling to your data sources you will see a considerable improvement in the query time.
 

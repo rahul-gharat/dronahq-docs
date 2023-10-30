@@ -4,7 +4,7 @@ sidebar_position: 96
 
 # Update DronaHQ version
 
-while updating DronaHQ, users might need downtime. Its a good practice to always notify users about downtimes and newly installed updates. Also create backup of your instance and databbases regularly before update. DronaHQ provide incremental updates for database. it should be performed in sequence. If you wish to downgrade your installation, you do not need to downgrade database.
+while updating DronaHQ, users might need downtime. Its a good practice to always notify users about downtimes and newly installed updates. Also create backup of your instance and databases regularly before update. DronaHQ provide incremental updates for database. it should be performed in sequence. If you wish to downgrade your installation, you do not need to downgrade database.
 
 ### 1. Notify users about downtime
 
@@ -14,7 +14,7 @@ Its always helpful to send announcements before performing any activity slightly
 
 Create backup of your server instance before upgrading so that you can restore them if needed.
 
-If you are using any cloud service like AWS, GCP, Azure, the cloud provider might have a convinient way to backup and restore state of your instance.
+If you are using any cloud service like AWS, GCP, Azure, the cloud provider might have a convenient way to backup and restore state of your instance.
 
 - Backup your MySQL and Mongo database. If you have setup your databases with a managed service like AWS, they provide a managed way to take periodic backup of your databases. You can also take snapshots of your database to restore is faster in case of any failure.
 
@@ -28,7 +28,7 @@ It is highly recommended for you to frequently check updates and always be on la
 
 ### 4. Download database updates for target version.
 
-Following is a interactive shell script, which will help you download the database updates for the upgrade version nyou choose.
+Following is a interactive shell script, which will help you download the database updates for the upgrade version you choose.
 
 ```shell
 /bin/bash -c "$(curl -fsSL https://license.dronahq.com/self-hosted/master/scripts/get-database-updates.sh)"
@@ -38,7 +38,7 @@ Above line will download an update file with name `update.sql` in your working d
 
 ### 5. Apply updates on your database
 
-##### a. Apply updates on containarized database
+##### a. Apply updates on containerized database
 
 Run following command to apply updates on  containerized database.
 
@@ -47,7 +47,7 @@ sudo docker exec dronahq-self-hosted-mysqldb /bin/sh -c "mysql -u root -p<% root
 ```
 ##### b. Apply updates on external database
 
-Run following command to apply updates on  exteranal database.
+Run following command to apply updates on  external database.
 
 ```shell
 mysql --host=<% host %> --port=<% port %> --user=<% username %> --password=<% password %> < update.sql
@@ -94,7 +94,7 @@ sudo docker-compose up -d webapp
 
 ##### b. Restart Kubernetes installation
 
-Apply mofified manifest file with followinf command
+Apply modified manifest file with following command
 ```
 sudo kubectl apply -f dronahq-webapp.yaml
 ```

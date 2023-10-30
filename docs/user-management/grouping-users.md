@@ -15,7 +15,7 @@ With DronaHQ you can group your users in a single or multiple groups. This becom
 
 :::caution Please Note
 
-You you need to have admin or owner level priviledges to access or modify these configurations.
+You you need to have admin or owner level privileges to access or modify these configurations.
 
 :::
 
@@ -28,6 +28,6 @@ You can navigate to `Manage Users -> Manage Groups` to Add, Edit and Manage your
 
 :::info Please Note
 
-You can assign groups to users while inviting them or edit them later as well. Incase your account has SSO configured, you can pass claims and configure DronaHQ to auto detect and assign the groups to users while they are added. You can seamlessly sync groups from your IDP using SCIM as well.
+You can assign groups to users while inviting them or edit them later as well. In case your account has SSO configured, you can pass claims and configure DronaHQ to auto detect and assign the groups to users while they are added. You can seamlessly sync groups from your IDP using SCIM as well.
 
 :::

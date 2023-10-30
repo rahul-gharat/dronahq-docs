@@ -53,5 +53,5 @@ The outputs from the Phone control, represented by the placeholder `{{phone}}`, 
 | Trigger                   | Description                                                                             |
 |--------------------------|-----------------------------------------------------------------------------------------|
 | value_change                | Occurs when there is a modification in the Advance Map control's value. To control the frequency or speed of the change event, you can utilize the `debounce` property associated with the control. |
-| focus_out       | Occuts when the control loses focus, typically when the user clicks outside the control. It allows you to perform actions or handle specific behavior when the focus is no longer on the element. |
+| focus_out       | Occurs when the control loses focus, typically when the user clicks outside the control. It allows you to perform actions or handle specific behavior when the focus is no longer on the element. |
 | enter_press  | This event indicates the pressing of the Enter key when entering data into your Currency control.                                                                                                 |

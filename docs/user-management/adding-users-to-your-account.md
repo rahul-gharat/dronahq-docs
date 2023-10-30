@@ -17,7 +17,7 @@ You can add users in DronaHQ using the following 4 ways:
 
 :::caution Please Note
 
-You you need to have admin or owner level priviledges to access or modify these configurations.
+You you need to have admin or owner level privileges to access or modify these configurations.
 
 :::
 
@@ -39,7 +39,7 @@ You need the following details to invite users:
 
 :::info Please Note
 
-Incase the invite email doesn't reach the user for whatever reasons, the admin can check the invited user in the `Manage Users` section and click on `Activate Link` to view it and manually send the user the activation link.
+In case the invite email doesn't reach the user for whatever reasons, the admin can check the invited user in the `Manage Users` section and click on `Activate Link` to view it and manually send the user the activation link.
 
 :::
 

@@ -63,7 +63,7 @@ Here, we will connect to a `mysql` database.
 
 2. Enter `Connector Name` as `customerTutorialDB`.
 
-3. Enter following connector string.
+3. Enter connector string which will be in a format represented below.
 
   ```sql
   mysql://<username>:<pwd>@db-dhq.c8jniapv05hb.us-east-1.rds.amazonaws.com:3306/dbonbording

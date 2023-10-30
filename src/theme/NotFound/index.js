@@ -2,10 +2,10 @@ import React from 'react';
 import Layout from '@theme/Layout';
 import Translate, { translate } from '@docusaurus/Translate';
 import { PageMetadata } from '@docusaurus/theme-common';
-import ThemedImage from '@theme/ThemedImage';
+// import ThemedImage from '@theme/ThemedImage';
 import styles from './styles.module.scss';
-import Light404 from '@site/static/img/light-404.png';
-import Dark404 from '@site/static/img/dark-404.png';
+// import Light404 from '@site/static/img/light-404.png';
+// import Dark404 from '@site/static/img/dark-404.png';
 import Link from "@docusaurus/Link";
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
@@ -22,13 +22,14 @@ export default function NotFound() {
         <main className='container margin-vert--xl'>
           <div className='row'>
             <div className={styles['content']}>
-              <ThemedImage
+              {/* <ThemedImage
                 sources={{
                   light: Light404,
                   dark: Dark404,
                 }}
                 alt='404'
-              />
+              /> */}
+              <img src='/img/disconnected.svg' style={{ width: "60%", height: "auto" }} alt='404' />
               <div>
                 <h1>
                   <Translate id='theme.NotFound.title' description='The title of the 404 page'>

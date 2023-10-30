@@ -11,7 +11,7 @@ Google Calendar connector in the DronaHQ helps you to connect with your Google-a
 
 ## Configuring API Connector in DronaHQ
 
-Add a `Account name`. Then click `Save`, it will open a pop-up window askinging you to sign-in into your Google account. Continue with the steps and give access to DronaHQ to connect with your Google Calendar ID and its information.
+Add a `Account name`. Then click `Save`, it will open a pop-up window asking you to sign-in into your Google account. Continue with the steps and give access to DronaHQ to connect with your Google Calendar ID and its information.
 
 After successfully configuring and saving the connector settings, you can easily access your newly connected account by navigating to the `connected accounts` list. You can find this option from the `Connector -> Manage Account` section. This centralized location allows you to conveniently monitor and manage your connected accounts.
 

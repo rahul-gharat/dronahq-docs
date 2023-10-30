@@ -16,7 +16,7 @@ While sharing the apps built on DronaHQ you have the following broad options:
 
 ## Open public links
 
-This feature is useful for usecases where you dont need the end user authentication like, delivery tracking, feedback forms, registration forms etc. You need to navigate to `Share -> Public URLs and embed apps` and Enable the public access.
+This feature is useful for usecases where you don't need the end user authentication like, delivery tracking, feedback forms, registration forms etc. You need to navigate to `Share -> Public URLs and embed apps` and Enable the public access.
 
 :::caution Add-ons
 
@@ -143,7 +143,7 @@ Though you can set up query params and pass data to the iframes using it, there 
 
 :::caution Query params
 
-Everytime this code runs, the iframe will reload. Incase you want realtime data passing between the parent and embed app, you can use the real time message passing framework. 
+Everytime this code runs, the iframe will reload. In case you want realtime data passing between the parent and embed app, you can use the real time message passing framework. 
 
 :::
 

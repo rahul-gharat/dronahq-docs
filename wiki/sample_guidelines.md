@@ -25,4 +25,4 @@ hide_table_of_contents: false
 - Use width property when you don't want image to display full width.
 - Use `Image` component to use image instead of img tag for displaying images without clickable.
 - Use `Thumbnail` component to use image instead which you want to make it clickable.
-- For Images beloning to same roup, Create a `Group Specific Folder` inside `static/img/` folder and place images inside that.
+- For Images belonging to same group, Create a `Group Specific Folder` inside `static/img/` folder and place images inside that.
