@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 1
 title: Button 
 ---
 
@@ -47,3 +47,22 @@ The Button Control is a user-interactive element primarily utilized to trigger s
 |----------------|-----------------------------------------------------------------------------------------|
 | button_click   | Occurs upon clicking the button, triggering a specific action.                           |
 
+## Using Button Control with DronaHQ
+
+The Button control in DronaHQ is a powerful tool for triggering specific events and actions within your application. By configuring Button controls, you can initiate various actions, from simple on-screen interactions to complex server-side operations, facilitating a wide range of functionalities.
+
+### Enhancing User Experience
+
+Buttons in DronaHQ offer an array of capabilities to elevate the user experience. They can be customized to perform actions such as navigating between screens, updating sheets, retrieving data, and implementing custom API actions and database operations.
+
+### Configuring Actions
+
+By utilizing the Button control's properties, particularly the button_click event, you can configure actions like calling workflows, updating sheets, retrieving sheet data, implementing custom API actions, and performing database operations.
+
+### Use Cases
+
+For instance, you can integrate the SMTP connector to send emails based on user feedback or support requests. Leveraging database actions, you can seamlessly manage customer orders using the PostgreSQL database or configure on-screen actions, such as navigating to specific app screens.
+
+### Additional Reading
+
+For a more detailed understanding of these features and their functionalities, click [here](link_here).
