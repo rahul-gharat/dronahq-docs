@@ -44,7 +44,7 @@ The Timer Control is a specialized custom component designed to offer a stopwatc
 The outputs from the Timer control, represented by the placeholder `{{timer}}`, can be referenced in other controls, data queries, or JavaScript functions using the control's unique name.
 
 | Output       | Description                                                                                                  |
-|--------------|--------------------------------------------------------------------------------------------------------------|
+|-----------------|--------------------------------------------------------------------------------------------------------------------------------------------|
 | timer    | Represents the time available in the Timer control.                        |
 
 ## Events

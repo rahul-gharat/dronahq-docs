@@ -31,7 +31,7 @@ true
 ## Properties
 
 | Property      | Description                                         |
-|---------------|-----------------------------------------------------|
+|-----------------|--------------------------------------------------------------------------------------------------------------------------------------------|
 | Style         | Configures the theme of the toggle control.          |
 
 ## Control Outputs
@@ -39,5 +39,14 @@ true
 The outputs from the Toggle control, represented by the placeholder `{{toggle}}`, can be referenced in other controls, data queries, or JavaScript functions using the control's unique name.
 
 | Output   | Description                                 |
-|----------|---------------------------------------------|
+|-----------------|--------------------------------------------------------------------------------------------------------------------------------------------|
 | toggle   | Represents the binary state of the toggle.  |
+
+
+
+## Events
+
+
+| Trigger     | Description                                                                                                                              |
+|-----------------|--------------------------------------------------------------------------------------------------------------------------------------------|
+| value_select | Occurs when there is a toggle the value of the respective control, from Yes to No or True to False. |
