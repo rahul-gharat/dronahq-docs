@@ -33,6 +33,9 @@ The Image Choice control serves as a selection interface providing visual repres
 This  pertains to the layout of the Image Choice control concerning different devices. Here, the numerical values indicate a grid or layout system that is applied to each type of device orientation, specifying the relative size or layout space that the control would occupy within the device screen.
 
 ### Image data
+
+| Property         | Description                                                                                                     |
+|------------------|-----------------------------------------------------------------------------------------------------------------|
 | Text         | Refer to the display text associated with an image.      
 | Select Image | Choose the image you want to put in the control from here  |
 | Selected | The image option can be made selected by default if toggled ON |
