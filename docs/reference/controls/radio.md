@@ -1,6 +1,3 @@
-Certainly! Here's an article structure for the Radio control:
-
-```markdown
 ---
 sidebar_position: 1
 title: Radio
