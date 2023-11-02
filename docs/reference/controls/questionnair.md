@@ -3,6 +3,10 @@ sidebar_position: 1
 title: Questionnaire
 ---
 
+import Image from '@site/src/components/Image';
+import VersionedLink from '@site/src/components/VersionedLink';
+import Thumbnail from '@site/src/components/Thumbnail';
+
 The Questionnaire control allows users to respond to a set of questions, typically in a tabular format. It includes properties for Input Theme, Input Background, Border Color, Selection, Rows, Columns, Row Style, Column Style, and Table Label.
 
 <figure>
