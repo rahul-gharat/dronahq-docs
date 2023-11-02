@@ -24,7 +24,7 @@ Using the Bind Data option, you can set an initial state for the control. For ex
 
 ```json
 false
-```
+``` 
 
 ## Properties
 
