@@ -27,10 +27,8 @@ Utilize the Bind Data option to set predefined minimum and maximum values for th
 #### Min_Value
 
 ```json
-{
+
    50
-  
-}
 
 ```
 
@@ -38,10 +36,8 @@ Utilize the Bind Data option to set predefined minimum and maximum values for th
 
 
 ```json
-{
+
    500
-  
-}
 
 ```
 
