@@ -47,10 +47,6 @@ You can set a default selected option in the Radio control using the Bind Data -
 Remember to provide the exact string representing the specific selected option based on the Radio control's properties.
 :::
 
-<figure>
-  <Thumbnail src="/img/reference/controls/radio/example.jpg" alt="Classic Radio Control" />
-  <figcaption align="center"><i>Classic - Radio</i></figcaption>
-</figure>
 
 ## Properties
 
