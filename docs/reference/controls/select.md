@@ -57,7 +57,7 @@ By using the data binding options for the Select control, you can dynamically po
 | Text Style       | Customize the text style by changing the text size, weight (Light, Normal, Bold, Extra Bold, X Extra Bold), alignment (Left, Center, Right, Justified), and color of the label. |
 
 
-**Selected**
+#### Selected
 
 | Property           | Description                                                                                                                     |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------|
