@@ -10,7 +10,7 @@ import Thumbnail from '@site/src/components/Thumbnail';
 The Select Bar control is a unique interface designed to facilitate selection from a list of items arranged in a bar format. It offers a visually appealing and user-friendly way to present a range of selectable items.
 
 <figure>
-  <Thumbnail src="/img/reference/controls/select-bar/preview.png" alt="Select Bar Control" />
+  <Thumbnail src="/img/reference/controls/select-bar/preview.jpeg" alt="Select Bar Control" />
   <figcaption align="center"><i>Select Bar Control</i></figcaption>
 </figure>
 
