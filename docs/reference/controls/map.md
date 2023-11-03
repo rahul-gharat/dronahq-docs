@@ -61,12 +61,11 @@ To set a default selected location on the Map control, you can use the Bind Data
 
 ## Control Outputs
 
-The outputs from the Map control, represented by the placeholders `{{map_location}}` and `{{map_name}}`, can be referenced in other controls, data queries, or JavaScript functions using the control's unique name.
+The output from the Map control is represented by the placeholder `{{map}}` and can be referenced in other controls, data queries, or JavaScript functions using the control's unique name.
 
 | Output         | Description                                    |
 |----------------|------------------------------------------------|
-| map_location   | Selected location on the map.                   |
-| map_name       | Name associated with the selected location.     |
+| map            | Represents the selected location on the map.                |
 
 ## Events
 
