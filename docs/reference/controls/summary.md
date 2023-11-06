@@ -27,7 +27,7 @@ The primary property of the Summary control is:
 The `Pages` property is pivotal in extracting and displaying summarized data from the selected pages, enabling users to tailor the summary content based on specific pages.
 
 <figure>
-  <Thumbnail src="/img/reference/controls/summary/usecae.png" alt="Tray Dropdown" />
+  <Thumbnail src="/img/reference/controls/summary/usecase.png" alt="Tray Dropdown" />
 </figure>
 
 The Summary control empowers users to efficiently handle and display data summaries from multiple pages, simplifying the workflow and streamlining the process of referencing input data from different sources.
