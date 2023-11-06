@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-title: Back Next Control
+title: Back Next 
 ---
 
 import Image from '@site/src/components/Image';
