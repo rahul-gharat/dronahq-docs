@@ -2,6 +2,7 @@
 sidebar_position: 1
 title: reCAPTCHA
 ---
+import Image from '@site/src/components/Image';
 
 The reCAPTCHA control is an advanced mechanism used to safeguard websites from fraudulent activities and spam by bots. It serves as a preventive measure against unauthorized access and malicious automated interactions.
 
