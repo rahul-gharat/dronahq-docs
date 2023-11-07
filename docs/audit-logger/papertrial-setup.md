@@ -9,11 +9,11 @@ import VersionedLink from '@site/src/components/VersionedLink';
 
 # Papertrail Integration
 
-This documentation provides step-by-step instructions on how to integrate Papertrail as an external logger within the DronaHQ platform.
+This documentation provides step-by-step instructions on how to integrate Papertrail as an audit logger within the DronaHQ platform.
 
 ## Introduction
 
-Papertrail integration allows you to capture and manage logs efficiently in your DronaHQ modules. Follow the steps below to set up Papertrail as your external logger.
+Papertrail integration allows you to capture and manage logs efficiently in your DronaHQ modules. Follow the steps below to set up Papertrail as your audit logger.
 
 ### Prerequisites
 
@@ -32,19 +32,19 @@ To get started with Papertrail integration, follow these steps:
 2. Obtain the Papertrail endpoint URL and the corresponding port. You will need this information to configure the integration.
 
 <figure>
-  <Thumbnail src="/img/external-logger/connection-papertrail.png" alt="Hostname and Port Papertrail" width='100%'/>
+  <Thumbnail src="/img/audit-logger/connection-papertrail.png" alt="Hostname and Port Papertrail" width='100%'/>
   <figcaption align="center"><i>Hostname and Port Papertrail</i></figcaption>
 </figure>
 
-To configure Papertrail as your external logger, follow these steps:
+To configure Papertrail as your audit logger, follow these steps:
 
-1. Under the `External Logger` section, click on `Setup External Logging.`
+1. Under the `Audit Logger` section, click on `Setup External Logging.`
 
 2. In the "Select Logger Configuration" dropdown, choose "Papertrail."
 
 <figure>
-  <Thumbnail src="/img/external-logger/dropdown-logger.png" alt="External logger Dropdown select" width='100%'/>
-  <figcaption align="center"><i>External logger Dropdown select</i></figcaption>
+  <Thumbnail src="/img/audit-logger/dropdown-logger.png" alt="Audit logger Dropdown select" width='100%'/>
+  <figcaption align="center"><i>Audit logger Dropdown select</i></figcaption>
 </figure>
 
 3. Provide the Papertrail endpoint URL and port in the appropriate fields.
@@ -54,14 +54,14 @@ To configure Papertrail as your external logger, follow these steps:
 5. Once the integration is successful, you will see a `Logger Initialized` message.
 
 <figure>
-  <Thumbnail src="/img/external-logger/external-logger-setup.png" alt="External Logger Setup" width='100%'/>
-  <figcaption align="center"><i>External Logger Setup</i></figcaption>
+  <Thumbnail src="/img/audit-logger/audit-logger-setup.png" alt="Audit Logger Setup" width='100%'/>
+  <figcaption align="center"><i>Audit Logger Setup</i></figcaption>
 </figure>
 
 ## Expected log in Papertrail:
 
 <figure>
-  <Thumbnail src="/img/external-logger/output-papertrail.png" alt="External log Output" width='100%'/>
+  <Thumbnail src="/img/audit-logger/output-papertrail.png" alt="External log Output" width='100%'/>
   <figcaption align = "center"><i>External log Output</i></figcaption>
 </figure>
 
@@ -73,6 +73,6 @@ You can test the Papertrail integration to ensure it's functioning as expected:
 
 2. Log specific details such as event names, user information, organization ID, and more. This data will be useful for monitoring and analysis.
 
-By following these steps, you can seamlessly integrate Papertrail as an external logger in your DronaHQ account, enhancing your log management capabilities.
+By following these steps, you can seamlessly integrate Papertrail as an audit logger in your DronaHQ account, enhancing your log management capabilities.
 
 *Note: Ensure that you provide accurate Papertrail connection details for a smooth integration experience.*
