@@ -9,11 +9,11 @@ import VersionedLink from '@site/src/components/VersionedLink';
 
 # MongoDB Integration
 
-This documentation provides step-by-step instructions on how to integrate MongoDB as an external logger within the DronaHQ platform.
+This documentation provides step-by-step instructions on how to integrate MongoDB as an audit logger within the DronaHQ platform.
 
 ## Introduction
 
-MongoDB integration allows you to capture and manage logs efficiently in your DronaHQ modules. Follow the steps below to set up MongoDB as your external logger.
+MongoDB integration allows you to capture and manage logs efficiently in your DronaHQ modules. Follow the steps below to set up MongoDB as your audit logger.
 
 ### Prerequisites
 
@@ -39,15 +39,15 @@ To get started with MongoDB integration, follow these steps:
 
    Example connection string: `mongodb://username:password@host:port/database`
 
-To configure MongoDB as your external logger, follow these steps:
+To configure MongoDB as your audit logger, follow these steps:
 
-1. Under the `External Logger` section, click on `Setup External Logging.`
+1. Under the `Audit Logger` section, click on `Setup External Logging.`
 
 2. In the "Select Logger Configuration" dropdown, choose "MongoDB."
 
 <figure>
-  <Thumbnail src="/img/external-logger/dropdown-logger.png" alt="External logger Dropdown select" width='100%'/>
-  <figcaption align = "center"><i>External logger Dropdown select</i></figcaption>
+  <Thumbnail src="/img/audit-logger/dropdown-logger.png" alt="Audit logger Dropdown select" width='100%'/>
+  <figcaption align = "center"><i>Audit logger Dropdown select</i></figcaption>
 </figure>
 
 
@@ -58,14 +58,14 @@ To configure MongoDB as your external logger, follow these steps:
 5. Once the integration is successful, you will see a `Logger Initialized` message.
 
 <figure>
-  <Thumbnail src="/img/external-logger/external-logger-setup.png" alt="External Logger Setup" width='100%'/>
-  <figcaption align = "center"><i>External logger Dropdown select</i></figcaption>
+  <Thumbnail src="/img/audit-logger/audit-logger-setup.png" alt="Audit Logger Setup" width='100%'/>
+  <figcaption align = "center"><i>Audit logger Dropdown select</i></figcaption>
 </figure>
 
 ## Expected log in MongoDB:
 
 <figure>
-  <Thumbnail src="/img/external-logger/output-mongodb.png" alt="External log Output" width='100%'/>
+  <Thumbnail src="/img/audit-logger/output-mongodb.png" alt="External log Output" width='100%'/>
   <figcaption align = "center"><i>External log Output</i></figcaption>
 </figure>
 
@@ -77,6 +77,6 @@ You can test the MongoDB integration to ensure it's functioning as expected:
 
 2. Log specific details such as event names, user information, organization ID, and more. This data will be useful for monitoring and analysis.
 
-By following these steps, you can seamlessly integrate MongoDB as an external logger in your DronaHQ account, enhancing your log management capabilities.
+By following these steps, you can seamlessly integrate MongoDB as an audit logger in your DronaHQ account, enhancing your log management capabilities.
 
 *Note: Ensure that you provide accurate MongoDB connection details for a smooth integration experience.*

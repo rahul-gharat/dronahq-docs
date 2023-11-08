@@ -1,5 +1,5 @@
 {
-    "label": "External Logger",
+    "label": "Audit Logger",
     "position": 62,
     "link": {
       "type": "generated-index",
