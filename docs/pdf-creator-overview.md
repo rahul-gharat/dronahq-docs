@@ -8,9 +8,9 @@ import Thumbnail from '@site/src/components/Thumbnail';
 
 PDF Creator allows you to create custom document templates suited for your business needs like sales invoices, offer letters, summary reports, and so on. You get the option to design your templates from scratch or make use of ready templates.
 
-DronaHQ offers a very powerful in-browser `WYSIWYG editor` which can be used to  design/edit the templates using ready components like containers, columns, heading types to name a few. You can add multiple pages, change thier `orientation` from potrait to landscape and vice versa, set custom `page margins`, and also choose from over 18 unique `page sizes` to work on. You can make pdf content dynamic by supplying values from APIs, Databases or DronaHQ controls using `text and image variables`. 
+DronaHQ offers a very powerful in-browser `WYSIWYG editor` which can be used to  design/edit the templates using ready components like containers, columns, heading types to name a few. You can add multiple pages, change their `orientation` from portrait to landscape and vice versa, set custom `page margins`, and also choose from over 18 unique `page sizes` to work on. You can make pdf content dynamic by supplying values from APIs, Databases or DronaHQ controls using `text and image variables`. 
 
-If the pdf holds some senstive business information or confidential data, it can be password-protected and distributed securely.
+If the pdf holds some sensitive business information or confidential data, it can be password-protected and distributed securely.
 
 
 :::info

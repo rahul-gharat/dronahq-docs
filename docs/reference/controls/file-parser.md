@@ -16,7 +16,7 @@ Welcome to the File Parser Control documentation. This guide will walk you throu
 
 In this documentation, we'll delve into various following aspects of the control.
 
-- [Differenet properties available in the control](#properties)
+- [Different properties available in the control](#properties)
 - [Event provided by the control](#events)
 - [Data input](#data-input)
 - [Data output from control](#data-output-from-control)
