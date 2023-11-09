@@ -43,9 +43,7 @@ The Data Store control accepts an array of objects for data storage. For example
 | Default Selected Item Index | Specifies the selected row by setting an index value. Assigning a value of 0 sets the default selected value for the control. |
 | Value                   | Defines the data to be stored within the Data Store in JSON array format.                          |
 
-## Control Outputs
 
-The Data Store control is primarily for data storage and retrieval and doesn't directly produce specific outputs that can be displayed or utilized.
 
 ## Events
 
