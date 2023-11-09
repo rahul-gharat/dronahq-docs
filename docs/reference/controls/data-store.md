@@ -45,11 +45,3 @@ The Data Store control accepts an array of objects for data storage. For example
 
 
 
-## Events
-
-| Trigger      | Description                                                                                            |
-|--------------|--------------------------------------------------------------------------------------------------------|
-| value_change | Triggers when changing the value in the Data Store control, initiating actions within the microapp.     |
-| enter_press  | Activates when the Enter key is pressed after inputting data into the Data Store control.               |
-| focus_out    | Triggers when the control loses focus, typically when the user clicks outside the control.            |
-
