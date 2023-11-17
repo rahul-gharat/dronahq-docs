@@ -2,6 +2,9 @@
 sidebar_position: 1
 title: Spacer
 ---
+import Image from '@site/src/components/Image';
+import VersionedLink from '@site/src/components/VersionedLink';
+import Thumbnail from '@site/src/components/Thumbnail';
 
 The Spacer control is a crucial visual tool used to create distinct visual gaps between various sections or elements within a microapp. It provides flexibility in managing the layout by offering customizable empty spaces.
 

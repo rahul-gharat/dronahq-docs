@@ -4,8 +4,7 @@ title: MariaDB
 ---
 
 import Image from '@site/src/components/Image';
-import VersionedLink from '@site/src/components/VersionedLink';
-import Thumbnail from '@site/src/components/Thumbnail';
+
 
 
 
@@ -51,7 +50,7 @@ DronaHQ can Auto fill crucial connection values like host, name, password, and m
 | Role to assume (ARN) | Enter the role to be used while accessing API. Example - `arn:aws:iam::123456789012:role/RoleName`|
 
 <figure>
-  <Thumbnail src="/img/reference/connectors/mariadb/details.jpeg" alt="MariaDB with Sample details." />
+  <Thumbnail src="/img/reference/connectors/mariadb/details.png" alt="MariaDB with Sample details." />
   <figcaption align = "center"><i>MariaDB with Sample details.</i></figcaption>
 </figure>
 
