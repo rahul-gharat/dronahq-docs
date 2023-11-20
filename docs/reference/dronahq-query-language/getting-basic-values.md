@@ -8,15 +8,15 @@ DQL uses location path syntax to extract values from JSON structures. The follow
 
 ## Contents
 
-- [Example JSON](../getting-basic-values#example-json)
-- [Get a top-level field](../getting-basic-values#get-a-top-level-field)
-- [Get a nested field](../getting-basic-values#get-a-nested-field)
-- [Get an entire object](../getting-basic-values#get-an-entire-object)
-- [Select a specific index in an array](../getting-basic-values#select-a-specific-index-in-an-array)
-- [Select an entire array](../getting-basic-values#select-an-entire-array)
-- [Return one field of every object in an array](../getting-basic-values#return-one-field-of-every-object-in-an-array)
-- [Return fields that contain special characters in the key name](../getting-basic-values#return-fields-that-contain-special-characters-in-an-array)
-- [Get the number of elements in the list](../getting-basic-values#get-the-number-of-elements-in-the-list)
+- [Example JSON](#example-json)
+- [Get a top-level field](#get-a-top-level-field)
+- [Get a nested field](#get-a-nested-field)
+- [Get an entire object](#get-an-entire-object)
+- [Select a specific index in an array](#select-a-specific-index-in-an-array)
+- [Select an entire array](#select-an-entire-array)
+- [Return one field of every object in an array](#return-one-field-of-every-object-in-an-array)
+- [Return fields that contain special characters in the key name](#return-fields-that-contain-special-characters-in-an-array)
+- [Get the number of elements in the list](#get-the-number-of-elements-in-the-list)
 
 ## Example JSON
 The examples below use this JSON data:
