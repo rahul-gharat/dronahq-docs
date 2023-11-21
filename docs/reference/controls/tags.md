@@ -9,7 +9,7 @@ import Thumbnail from '@site/src/components/Thumbnail';
 The Tags Control is used to display a set of tags within a specified height. Users can presedifine tags or insert them in various color options.
 
 <figure>
-  <Thumbnail src="/img/reference/controls/tag/preview.jpeg" alt="Tags Control Preview" />
+  <Thumbnail src="/img/reference/controls/tags/preview.jpeg" alt="Tags Control Preview" />
   <figcaption align="center"><i>Tags Control Preview</i></figcaption>
 </figure>
 
