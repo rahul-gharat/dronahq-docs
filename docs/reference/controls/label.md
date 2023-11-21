@@ -6,8 +6,8 @@ title: Label
 The Label control serves as a display-only control that showcases titles, subtitles, and actionable icons, facilitating quick actions directly from the displayed information.
 
 <figure>
-  <Thumbnail src="/img/reference/controls/label/preview.png" alt="Label Control Preview" />
-  <figcaption align="center"><i>Label Control Preview</i></figcaption>
+  <Thumbnail src="/img/reference/controls/label/preview.png" alt="Label Preview" />
+  <figcaption align="center"><i>Label Preview</i></figcaption>
 </figure>
 
 ## Binding Data Options
