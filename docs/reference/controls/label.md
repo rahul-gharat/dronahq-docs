@@ -2,6 +2,9 @@
 sidebar_position: 1
 title: Label 
 ---
+import Image from '@site/src/components/Image';
+import VersionedLink from '@site/src/components/VersionedLink';
+import Thumbnail from '@site/src/components/Thumbnail';
 
 The Label control serves as a display-only control that showcases titles, subtitles, and actionable icons, facilitating quick actions directly from the displayed information.
 

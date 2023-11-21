@@ -2,6 +2,9 @@
 sidebar_position: 1
 title: Progress Bar
 ---
+import Image from '@site/src/components/Image';
+import VersionedLink from '@site/src/components/VersionedLink';
+import Thumbnail from '@site/src/components/Thumbnail';
 
 The Progress Bar Control serves as a visual indicator, showcasing the percentage progress of various actions or activities within a microapp. It's particularly useful for tracking completion progress, such as filling out forms or monitoring course registrations online.
 
