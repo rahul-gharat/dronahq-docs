@@ -73,3 +73,73 @@ The Chat control offers an output placeholder `{{chat}}`, which captures the use
 | Event Name    | Description                                                   |
 |---------------|---------------------------------------------------------------|
 | on_user_input | Occurs when a user sends a message or input in the chat.     |
+
+
+## Using Chat Control
+
+### Inbuilt Integration
+
+In the Chat control properties, users can toggle on `Use Inbuilt Integration` and select from the `Account` dropdown. 
+
+This dropdown contains all the configured `OpenAI Account` integrated in DronaHQ.
+
+#### Configuring OpenAi Account on DronaHQ
+
+Go to `Account Settings > Integrations > OpenAI account`. One can `ADD`, `EDIT` and view `ALL ACCOUNTS` from here.
+
+
+<figure>
+  <Thumbnail src="/img/reference/controls/chat/configure-openAI.jpeg" alt="Chat Control" />
+  <figcaption align="center"><i>OpenAI Acount Integration</i></figcaption>
+</figure>
+
+
+### Using Third-Party Integration
+
+Now, let's explore integrating a third-party solution into our chat control. It's a simple process requiring the creation of a REST API connector for our third-party AI integration.
+
+Once the connector is set up, we'll connect it in the Action flow through server-side actions triggered by the `on_user_input` event.
+
+#### Providing Connector Input from Chat Control
+
+The chat control supplies data through the `{{chat}}` keyword in a `JSON Array` format containing `role` and `content`.
+
+For example:
+
+```json
+[
+    { 
+        "role": "user", 
+        "content": "Where is India?" 
+    }
+]
+```
+
+Ensure that we carefully pass the `content` carefully in the connector, for that we can use `JS Code` block action to do a transformation.
+
+
+<figure>
+  <Thumbnail src="/img/reference/controls/chat/transformation.jpeg" alt="JS Code Blocl" />
+  <figcaption align="center"><i>JS Code Block</i></figcaption>
+</figure>
+
+#### Maintaing chat history
+
+There's a possibility that the connector might not return the chat history, which could disrupt the chat display. To counter this, we can maintain chat history using a `JS Code` block action to append a new JSON Array into the previous one. Here's an example code snippet:
+
+```json
+let curr_response = { 
+    "role": "assistant",
+    "content": reply
+}
+curr_history.push(curr_response)
+output = curr_history
+```
+
+
+<figure>
+  <Thumbnail src="/img/reference/controls/chat/history.jpeg" alt="JS Code Blocl" />
+  <figcaption align="center"><i>JS Code Block</i></figcaption>
+</figure>
+
+Now, the third-party integration is set up for use in the chat control. Simply display the new history with the updated response from the connector.
