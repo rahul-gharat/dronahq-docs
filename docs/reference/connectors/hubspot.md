@@ -31,3 +31,6 @@ After successfully configuring and saving the connector settings, you can easily
 | GetOwners       | Fetch a list of owners associated with HubSpot contacts, aiding in assigning ownership and tracking.  |
 | SearchContacts  | Utilize search functionality to find specific contacts based on criteria, enhancing targeted marketing.|
 | GetDeals        | Retrieve information about deals from HubSpot, facilitating effective management of sales processes.  |
+| GetProducts     | Obtain a list of products available in the system, enabling insights into available merchandise.        |
+| GetProductsById | Retrieve specific product details using unique identifiers, allowing detailed information retrieval.    |
+| UpdateProduct   | Modify existing product information, facilitating updates and alterations to product data.            |
