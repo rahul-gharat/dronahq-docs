@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-title: Heading Control
+title: Heading 
 ---
 
 import Image from '@site/src/components/Image';
