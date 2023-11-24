@@ -1,6 +1,3 @@
-Certainly! Here's an article template for the Media Player:
-
-```markdown
 ---
 sidebar_position: 1
 title: Media Player Control
@@ -48,12 +45,5 @@ For Video:
 For Audio:
 - Loop: Enables looping playback for audio files.
 
-## Control Outputs
-
-The Media Player Control output, represented by the placeholder `{{media-player}}`, handles the playback of the provided media content. This output can be utilized in other controls, data queries, or JavaScript functions using the control's unique name.
-
-| Output         | Description                                                       |
-|----------------|-------------------------------------------------------------------|
-| media-player   | Manages the playback of the specified video or audio content.      |
 
 
