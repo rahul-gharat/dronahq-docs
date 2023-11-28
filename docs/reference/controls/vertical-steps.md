@@ -10,8 +10,8 @@ import Thumbnail from '@site/src/components/Thumbnail';
 The Vertical Steps control is an advanced display element designed to facilitate vertical, multi-step navigation within forms, providing a visual representation of the form's status. It's particularly useful when indicating progress or stages within a form.
 
 <figure>
-  <Thumbnail src="/img/reference/controls/vertical-steps/preview.jpeg" alt="Progress Bar Control Preview" />
-  <figcaption align="center"><i>Progress Bar Control Preview</i></figcaption>
+  <Thumbnail src="/img/reference/controls/vertical-steps/preview.jpeg" alt="Vertical Steps" />
+  <figcaption align="center"><i>Vertical Steps</i></figcaption>
 </figure>
 
 The Vertical Steps control serves as a valuable addition to various form types, including registrations for online shopping, hotel reservations, travel bookings, and more, allowing users to comprehend their progress through a series of steps.
