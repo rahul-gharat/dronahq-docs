@@ -26,7 +26,14 @@ Once you do the above-mentioned steps you will be able to see the following scre
 
 ## Generate SSO token
 
-This is the first step where your server makes an API Request to get the SSO token using the CURL request provided in the secure embed config modal. 
+This is the first step where your server makes an API Request to get the SSO token using the CURL request provided in the secure embed 
+config modal. 
+
+:::danger Call from Backend
+The SSO token should be requested from your backend each time a specific end-user of your application wants to see an embedded 
+App. 
+
+:::
 
 <figure>
   <Thumbnail src="/img/advanced-concepts/secure-embed/curl-request-to-generate-sso.png" alt="CURL request to generate SSO token" />
