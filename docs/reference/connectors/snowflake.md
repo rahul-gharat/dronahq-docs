@@ -11,22 +11,22 @@ handling of large-scale data while providing advanced data sharing and processin
 
 ## Prerequisite
 
-1. Authentication Requirements: To establish a connection with your SAP HANA instance, you will require specific
+1. Authentication Requirements: To establish a connection with your Snowflake instance, you will require specific
    authentication credentials. You have the choice of either of the following two credential options:
 
-   - SAP HANA database username and password.
+   - Snowflake database username and password.
    - Alternative authentication methods (excluding AWS IAM authentication).
 
 2. Connection Details:
 
-   - Hostname of the SAP HANA database.
+   - Hostname of the Snowflake database.
    - Port number for database communication.
-   - The designated database name within the SAP HANA host.
+   - The designated database name within the Snowflake host.
 
 3. Firewall Rules:
-   - Set up your firewall settings to permit DronaHQ's IP whitelist for access to your SAP HANA host.
+   - Set up your firewall settings to permit DronaHQ's IP whitelist for access to your Snowflake host.
 
-Having these essential prerequisites in place will ensure a seamless integration of SAP HANA with DronaHQ, facilitating
+Having these essential prerequisites in place will ensure a seamless integration of Snowflake with DronaHQ, facilitating
 efficient data management and utilization.
 
 ## Configuring Connector in DronaHQ
@@ -97,8 +97,7 @@ To begin the process, you must first whitelist DronaHQ Studio. Follow these step
 | Password        | Enter the Password                                                      |
 | Data Warehouse  | Enter the Data Warehouse name                                           |
 | User Role       | Enter the User Role                                                     |
-| Private Key     | Enter the private encrypted key.     |
-
+| Private Key     | Enter the private encrypted key.                                        |
 
 <figure>
   <Thumbnail src="/img/reference/connectors/snowflake/details.jpeg" alt="Snowflake with Sample details." />
@@ -123,8 +122,10 @@ Click `Add query` once the connection is established. Create queries, run them, 
   <figcaption align = "center"><i>Write Queries</i></figcaption>
 </figure>
 
-:::tip Use double curly brackets for dynamic variables. Test with sample values before saving. Link dynamic variables to
-controls/actions for runtime use. :::
+:::tip 
+Use double curly brackets for dynamic variables. Test with sample values before saving. Link dynamic variables to
+controls/actions for runtime use. 
+:::
 
 Saved queries appear under your connector in Connector Library.
 
