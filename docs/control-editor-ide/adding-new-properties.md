@@ -4,7 +4,7 @@ sidebar_position: 2
 
 import Image from '@site/src/components/Image';
 
-# Addning new properties in Coffee file's edit section 
+# Adding new properties in Coffee file's edit section 
 
 All the properties need to be written inside
 
