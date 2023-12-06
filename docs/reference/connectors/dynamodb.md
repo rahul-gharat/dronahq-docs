@@ -15,7 +15,7 @@ DynamoDB is a key-value and document database that delivers single-digit millise
    - Create a new user in your AWS account and enable "Programmatic access" for the user.
    - Configure the necessary permissions for the user to access DynamoDB resources.
     <figure>
-      <Thumbnail src="/img/reference/connectors/dynamodb/users.jpeg" alt="Acoount Credentials" />
+      <Thumbnail src="/img/reference/connectors/dynamodb/users.jpeg" alt="Acount Credentials" />
     </figure>
 
 3. Connection Details:
@@ -40,8 +40,8 @@ To connect to DynamoDB, you'll need to acquire AWS Access and Secret Keys. Follo
 3. Safely store the AWS Access Key ID and AWS Secret Access Key for future reference. If you can't locate them, generate a new pair of keys through the AWS console `Access AWS Console > My Security Credentials > Access Keys > Create New Access Key`.
 
 <figure>
-  <Thumbnail src="/img/reference/connectors/dynamodb/creds.jpeg" alt="Acoount Credentials" />
-  <figcaption align = "center"><i>Acoount Credentials</i></figcaption>
+  <Thumbnail src="/img/reference/connectors/dynamodb/creds.jpeg" alt="Acount Credentials" />
+  <figcaption align = "center"><i>Acount Credentials</i></figcaption>
 </figure>
 
 

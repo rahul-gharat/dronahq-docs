@@ -69,6 +69,8 @@ To publish a message to Google Cloud Pub/Sub or subscribe to messages, follow th
 | Topic | The name of the topic to which the message will be published. |
 | Subscription (for Subscribe) | The name of the subscription from which you want to receive messages. |
 | Message | The content of the message to be published. |
+| Attributes | To provide  additional information and context for processing |
+| Ordering Key | Provide the key of the message you want to be delivered to subscribers. |
 
 
 4. Execute and View Response:

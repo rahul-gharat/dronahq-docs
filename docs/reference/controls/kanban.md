@@ -101,7 +101,7 @@ Under this section, we get to edit display properties related to height, width, 
 On grid layout if you have stretched the control height more than page than fit to height will leave some extra wight space before starting the next control.
 
 :::info
-When fit height to screen is is toggled on, Kanban control will cover the whole screen and if the device height is less than the heigth specified above, Kanban control will not shrink and maintain the above defined height as minimum height
+When fit height to screen is is toggled on, Kanban control will cover the whole screen and if the device height is less than the height specified above, Kanban control will not shrink and maintain the above defined height as minimum height
 :::
 
 **Card**

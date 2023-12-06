@@ -123,7 +123,7 @@ Ensure that we carefully pass the `content` carefully in the connector, for that
   <figcaption align="center"><i>JS Code Block</i></figcaption>
 </figure>
 
-#### Maintaing chat history
+#### Maintaining chat history
 
 There's a possibility that the connector might not return the chat history, which could disrupt the chat display. To counter this, we can maintain chat history using a `JS Code` block action to append a new JSON Array into the previous one. Here's an example code snippet:
 

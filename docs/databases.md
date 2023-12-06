@@ -40,6 +40,18 @@ Here you will learn how to connect to a database on DronaHQ.
 
 7. Click `Save` to create and save the database connection.
 
+:::tip
+
+We offer AI-powered suggestions in the test connection phase for all database connectors.  
+This support is helpful when encountering errors during configuration and testing, aiding in understanding errors and presenting common troubleshooting causes for easier resolution.
+
+<figure>
+  <Thumbnail src="/img/connecting-datasource/ai-suggestion.png" alt="AI providing error information and cause while configuring MySQL databse connector." />
+  <figcaption align="center"><i>AI providing information and cause on the error faced during MySQL databse connector configuration.</i></figcaption>
+</figure>
+
+:::
+
 ## Writing Queries
 
 The information you want to present in any application is spread across multiple tables in a database. Queries play a

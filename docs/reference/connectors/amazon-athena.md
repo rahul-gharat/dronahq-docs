@@ -45,8 +45,8 @@ In the `Access Keys` section, click `Create New Access Key` and provide a name (
 Remember to securely store the provided AWS Access Key ID and AWS Secret Access Key and avoid sharing them openly. These keys are essential for authorized access to Amazon Athena.
 
 <figure>
-  <Thumbnail src="/img/reference/connectors/amazon-athena/account-creds.jpeg" alt="Acoount Credentials" />
-  <figcaption align = "center"><i>Acoount Credentials</i></figcaption>
+  <Thumbnail src="/img/reference/connectors/amazon-athena/account-creds.jpeg" alt="Acount Credentials" />
+  <figcaption align = "center"><i>Acount Credentials</i></figcaption>
 </figure>
 
 
