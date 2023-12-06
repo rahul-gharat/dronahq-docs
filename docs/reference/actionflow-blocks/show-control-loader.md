@@ -32,9 +32,6 @@ Follow these steps to effectively utilize the `Show Control Loader` action:
 
 8. Click `Finish` to complete the setup.
 
-<figure>
-  <Thumbnail src="/img/reference/actionflow-blocks/show-control-loader/field.jpg" alt="Field" />
-</figure>
 
 The `Show Control Loader` action empowers your micro-app to convey loading states effectively, enhancing user experience by providing visual cues during ongoing processes. This feature aids in maintaining user engagement by offering transparency regarding control-specific loading activities.
 
