@@ -59,7 +59,7 @@ To configure MongoDB as your audit logger, follow these steps:
 
 <figure>
   <Thumbnail src="/img/audit-logger/audit-logger-setup.png" alt="Audit Logger Setup" width='100%'/>
-  <figcaption align = "center"><i>Audit logger Dropdown select</i></figcaption>
+  <figcaption align = "center"><i>Audit Logger Setup</i></figcaption>
 </figure>
 
 ## Expected log in MongoDB:

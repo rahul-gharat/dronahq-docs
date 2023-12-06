@@ -14,7 +14,7 @@ To view the Tab index, drag and drop the tab index supported controls and view t
 text, textarea, typeahead, numeric 
 quantity, currency, address, phone 
 timepicker,  name, datetime, datetime 
-button, bpm submit, file upload, togglebutton
+button, bpm submit, file upload, togglebutton, dropdown
 
 :::
 

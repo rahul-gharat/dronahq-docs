@@ -83,24 +83,26 @@ By following these simple steps, you can seamlessly enable, configure, and test 
 {
   "level": "info",
   "msg": "DB Connector Query Execute",
-  "time": 1698747079624,
-  "organization-id": "DRONA5_Team1809",
-  "environment": "Production",
-  "user-email": "test@studio.com",
-  "resource-id": 20253,
-  "resource-name": "getAuthor",
-  "resource-type": "mysql",
-  "resource-action": "runapi",
-  "parent-name": "Login",
-  "parent-type": "mysql",
-  "resource-meta": {
-    "env_id": 1,
-    "env_name": "Production",
-  },
-  "event-id": "db_query",
-  "source": "automation",
-  "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
-  "resource-group-id": 6625,
+  "meta":{
+    "time": 1698747079624,
+    "organization-id": "DRONA5_Team1809",
+    "environment": "Production",
+    "user-email": "test@studio.com",
+    "resource-id": 20253,
+    "resource-name": "getAuthor",
+    "resource-type": "mysql",
+    "resource-action": "runapi",
+    "parent-name": "Login",
+    "parent-type": "mysql",
+    "resource-meta": {
+      "env_id": 1,
+      "env_name": "Production",
+    },
+    "event-id": "db_query",
+    "source": "automation",
+    "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+    "resource-group-id": 6625,
+  }
 }
 
 ```
@@ -122,6 +124,7 @@ By following these simple steps, you can seamlessly enable, configure, and test 
 | App Permission Updated | ``app_permission_updated``  |
 | App Config Updated | ``app_config_updated`` |
 | Template Created | ``template_created`` |
+| Catalog Created | ``catalog_created`` |
 | CONNECTOR Added | ``connectors_added`` |
 | CONNECTOR Deleted | ``connectors_deleted`` |
 | CONNECTOR API Added | ``connectors_api_added`` |
