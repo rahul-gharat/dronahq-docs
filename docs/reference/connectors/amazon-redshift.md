@@ -26,7 +26,7 @@ By ensuring these prerequisites are met, you can seamlessly integrate Amazon Red
 
 ## Configuring Connector in DronaHQ
 
-Configure your database category using the provided details.Validate connection with `Test connection` and `Save` settings for secure database setup.
+Configure your database category using the provided details. Validate connection with `Test connection` and `Save` settings for secure database setup.
 
 #### General 
 

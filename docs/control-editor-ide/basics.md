@@ -11,7 +11,7 @@ import Image from '@site/src/components/Image';
 
 To Start with any new control in Dronahq you should first focus on 2 sections: Builder section and preview section.
 
-To create a new control we use control editor , so everytime we create a new control we get a ready made basic structure for our control
+To create a new control we use control editor , so every time we create a new control we get a ready made basic structure for our control
 
 ### Builder Screen
 
@@ -68,7 +68,7 @@ This is how the control editor looks.
 
 <figure>
   <Thumbnail src="/img/advanced-concepts/custom-control-ide/basics/control-editor-top-bar.png" alt="Simple Database GUI" />
-  <figcaption align='center'><i>Control Editor top pannel.</i></figcaption>
+  <figcaption align='center'><i>Control Editor top panel.</i></figcaption>
 </figure>
 
 | Button | Explanation  | 
@@ -710,7 +710,7 @@ this.show = function () {
 };
 ```
 
-- **this.showError(msg)** :- In the handlebars and Coffee file view section we have an fb-field-error-message class to show error messages.we just need to call this function and pass the error message we want to show in the parameter.
+- **this.showError(msg)** :- In the handlebars and Coffee file view section we have an fb-field-error-message class to show error messages. We just need to call this function and pass the error message we want to show in the parameter.
 
 If we wish to have code for this directly in control than we can add this code :-
 ```javascript

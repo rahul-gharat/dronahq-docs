@@ -28,7 +28,7 @@ Firebase is a highly durable database that can scale automatically to handle you
 
 ## Configuring Connector in DronaHQ
 
-Configure your database category using the provided details.Validate connection with `Test connection` and `Save` settings for secure database setup.
+Configure your database category using the provided details. Validate connection with `Test connection` and `Save` settings for secure database setup.
 
 #### General
 

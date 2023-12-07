@@ -184,7 +184,7 @@ STUDIOACTIONS["Test"] = {
 | dual_output_action | for dual_output_action key value has be to `Boolean` i.e `true` or `false`. This will decide whether our action will have dual outputs as `positive` and `negative`. |
 | positive_actions_text | for positive_actions_text key value can have any string value, as it will be the text displayed on the right side of the action. Not necessary if `dual_output_action` is `false`. |
 | negative_actions_text | for negative_actions_text key value can have any string value, as it will be the text displayed on the left side of the action. Not necessary if `dual_output_action` is `false`. |
-| fields | for fields key value has to be `array of object` this will help to define ui elements in our action like dropdown or singline js as per our requirements. refer [Structure for fields key](#fields) here. |
+| fields | for fields key value has to be `array of object` this will help to define ui elements in our action like dropdown or single line js as per our requirements. refer [Structure for fields key](#fields) here. |
 | outputs | for outputs key value has to be `array of object` this will help to define outputs in our action as per our requirements. refer [Structure for outputs key](#outputs) here. |
 | definition | for definition key value has to be function with 2 parameters as `function (actionInput, output = {})` with the help of first parameter we can access the fields that we have configured as `actionInput.fields.<fileld_name>` and if we have more than 1 one field then we can loop through `actionInput.fields` array. |
 
@@ -215,7 +215,7 @@ for fields key we have to follow this specific structure to display our ui compo
 | key | for key value will be string which has to be unique and it will be used to access the values in definition section. |
 | label | for label key value will be string which will be visible as label UI for configuring this action. |
 | showHelpText | for showHelpText key value has to boolean `true` or `false`. |
-| helptext | for helptext key value will be string and It will be visible as description below the dropdoen or input box as per requirement. |
+| helptext | for helptext key value will be string and It will be visible as description below the dropdown or input box as per requirement. |
 | placeholder | for placeholder key value will be string and it will be shown as placeholder for input or dropdown as per requirement. |
 | data_type | for data_type key value can be `string` or `boolean` as per requirement. |
 | field_type | for field_type key value can be `singleline_text`, `multiline_text`, `singleLine_js`, `multiLine_js`, `sql_editor`, `single_select`, `multi_select`, `toggle`, `richtext` and according to this field_type key different UI will be available for taking inputs while configuring the action. |
@@ -408,7 +408,7 @@ STUDIOACTIONS["Test"] = {
 }
 ```
 
-Basically it will be a combination of both function as well as action syntax and functions logix will be similar to actions definition key.
+Basically it will be a combination of both function as well as action syntax and functions logic will be similar to actions definition key.
 
 **Example**
 

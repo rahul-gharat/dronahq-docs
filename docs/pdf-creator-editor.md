@@ -14,7 +14,7 @@ PDF Editor supports several components to add content like text, images, or tabl
 
 The look and feel of specific pages can be changed by adding headers, footers, background colors, or images to it. Additionally, you can modify the page size, orientation, and margins to meet your design expectations. Miscellaneous settings like Zoom In, Zoom Out, and Page Reset make the design experience a breeze.
 
-It is possible to create multiple versions of the same template. A new version of the template is created everytime you publish and you can switch to any version using the rollback feature.
+It is possible to create multiple versions of the same template. A new version of the template is created every time you publish and you can switch to any version using the rollback feature.
 
 ## PDF Editor Elements
 
@@ -28,7 +28,7 @@ Global settings applies to all the pages at once and has the following fields as
 
 | Field       | Description                                                                                                                                                                                    |
 |-------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Page Size   | A dropdown to choose from over 18 page sizes, which includes A4, Legal, Letter, Tabloid, to name a few. By deafult, the page size is A4.                                                       |
+| Page Size   | A dropdown to choose from over 18 page sizes, which includes A4, Legal, Letter, Tabloid, to name a few. By default, the page size is A4.                                                       |
 | Orientation | You can either choose Portrait or Landscape mode to work on. By default, the page orientation is Portrait.                                                                                     |
 | Margin      | The margin for each side can be configured separately. Page dpi has a fixed value of `96`, so this means `1 cm` is equivalent to `37.8 pixels` and `1 inch` is equivalent to `96 pixels`.  |
 
@@ -91,7 +91,7 @@ Page settings are only visible if a page is focused and has the following fields
 | Heading 1     | Used to add main heading to the page                                                                                                                    |
 | Heading 2     | Used to add small heading to the page                                                                                                                   |
 | Table         | Used to add table data to the page, best suited when you have fixed number of rows in your dataset.                                                     |
-| Dynamic Table | Used to add table data to the page, where number of rows can expand depeneding upon the dataset.                                                        |
+| Dynamic Table | Used to add table data to the page, where number of rows can expand depending upon the dataset.                                                        |
 | Image         | Used to add jpeg or png images to the page. You can add a fixed image by selecting the file from your system or add an image at runtime using variable. Dimensions can be made fixed by specifying the width and height. |
 | Summary       | Used to display summary report in a tabular manner. A summary variable is needed to pass DronaHQ's Summary Control output to this component.            |
 

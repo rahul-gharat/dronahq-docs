@@ -50,7 +50,7 @@ Once your changes are done and the preview on the right side looks good, click t
 
 :::info Self-hosted exclusive
 
-For the self-hosted instance the `Creator Portal` is also custom branded in the similar fasion as the `End-user Portal`. In the cloud version only the `End-user Portal` will be custom branded.
+For the self-hosted instance the `Creator Portal` is also custom branded in the similar fashion as the `End-user Portal`. In the cloud version only the `End-user Portal` will be custom branded.
 
 :::
 

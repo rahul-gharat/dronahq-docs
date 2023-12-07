@@ -35,7 +35,7 @@ To establish a connection with Google BigQuery as a connector, follow these step
 
 ## Configuring Connector in DronaHQ
 
-Configure your database category using the provided details.Validate connection with `Test connection` and `Save` settings for secure database setup.
+Configure your database category using the provided details. Validate connection with `Test connection` and `Save` settings for secure database setup.
 
 
 #### General

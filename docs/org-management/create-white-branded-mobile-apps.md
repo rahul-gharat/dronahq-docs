@@ -90,7 +90,7 @@ You can either create only Android App or only iOS App or both App types while i
 | Field | Description  | 
 | --- |--- |
 | App name | Provide App Name which you want to provide for your App.  |
-| Bundle Identifier | Please enter unique identifier for your app.Should be same for both android and ios. Bundle identifier or Package name once set, cannot be updated later. eg - `com.company.appname`. |
+| Bundle Identifier | Please enter unique identifier for your app. Should be same for both android and ios. Bundle identifier or Package name once set, cannot be updated later. eg - `com.company.appname`. |
 | About the App | Enter your App description. |
 | Support Email ID | Provide support email id that will be displayed to your end users in case they face any issues in app signin. |
 | Url Scheme  | It should be a unique text without any space or special characters, that can be used by any other app to invoke this App. For example, if you enter `helloworld` then `dhq-helloworld` will be your App's url scheme to invoke this app. |
@@ -130,7 +130,7 @@ You can either create only Android App or only iOS App or both App types while i
 | Apple Distribution certificate  | Apple Distribution certificate file with .p12 extension of your Apple account. |
 | Distribution Certificate Password | Password for importing your Apple distribution certificate. |
 | Upload iPA to App Store Connect | Enable this to upload this iPA to Appstore connect. |
-| Key ID, API Key (.p8) and Issuer ID | Check [prerequisites](#ios-prerequisites) on how to get this id and file which is required by DronaHQ to upload the App on your Apple Appstoreconnect acocunt. |
+| Key ID, API Key (.p8) and Issuer ID | Check [prerequisites](#ios-prerequisites) on how to get this id and file which is required by DronaHQ to upload the App on your Apple Appstoreconnect account.. |
 
 
 Once, you submit the form successfully, your request for creating apps will be queued and you will receive an email once your individual Android or iOS App is generated. 

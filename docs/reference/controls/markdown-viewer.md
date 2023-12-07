@@ -19,7 +19,7 @@ With the Markdown Viewer control, you can effortlessly write markdown syntax and
 
 ## Binding Data Option
 
-Markdown Viewer control is a display type control. So, you have to provide it data from various options avaiable in its bind Data option. 
+Markdown Viewer control is a display type control. So, you have to provide it data from various options available in its bind Data option. 
 
 The Bind Data option must be specified as markdown formatted string. For example:
 

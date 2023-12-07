@@ -20,8 +20,8 @@ Importing Library in DronaHQ Studio is a seamless and straightforward process, a
 once you are done with these two simple step you will see the modal visible in the image below.
 
 <figure>
-  <Thumbnail src="/img/app-scripting-and-code/import-js-libraries/importing-library.png" alt="Add Custom Scipt modal" />
-  <figcaption align = "center"><i>Add Custom Scipt modal</i></figcaption>
+  <Thumbnail src="/img/app-scripting-and-code/import-js-libraries/importing-library.png" alt="Add Custom Script modal" />
+  <figcaption align = "center"><i>Add Custom Script modal</i></figcaption>
 </figure>
 
 

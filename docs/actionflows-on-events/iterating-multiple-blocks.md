@@ -6,7 +6,7 @@ import Thumbnail from '@site/src/components/Thumbnail';
 
 # Iterating multiple blocks
 
-We can use `Iterate Tasks` in action flow, to execute multiple set of repeated actions on array of data. Below are the various ways in which you can iterate mutiple blocks
+We can use `Iterate Tasks` in action flow, to execute multiple set of repeated actions on array of data. Below are the various ways in which you can iterate multiple blocks
 
  
 ## Setting up Iterate Tasks 
@@ -30,7 +30,7 @@ MAX `100` iterations can be performed.
 
 ## OUTPUT Keywords of Iterate Tasks
 
-The outputs from the `Iterate Tasks`, represented by the placeholder {{ITERATETASKS}}, can be referenced in other action blocks inside  `Iterate Tasks`, whhere `ITERATETASKS` is name of the Iterate Tasks.
+The outputs from the `Iterate Tasks`, represented by the placeholder {{ITERATETASKS}}, can be referenced in other action blocks inside  `Iterate Tasks`, where `ITERATETASKS` is name of the Iterate Tasks.
     
  | Output | Description  | 
   | ----------------- |---------------------------- |
@@ -45,8 +45,8 @@ After setting up the number of iterations, the next is to set up the `actions` i
 
 :::info PLEASE NOTE
 
-- You will get Single value when you use `OUTPUT` variable of one action block in subequent action block within `ITERATE TASKS`
-- You will get Array of value when you use `OUTPUT` variable of one action block in subequent action block outside `ITERATE TASKS`
+- You will get Single value when you use `OUTPUT` variable of one action block in subsequent action block within `ITERATE TASKS`
+- You will get Array of value when you use `OUTPUT` variable of one action block in subsequent action block outside `ITERATE TASKS`
 
 :::
 

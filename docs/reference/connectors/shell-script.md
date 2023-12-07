@@ -23,7 +23,7 @@ The Shell Script connector enables you to execute a list of shell commands on a 
 
 ## Configuring Connector in DronaHQ
 
-Configure your database category using the provided details.Validate connection with `Test connection` and `Save` settings for secure database setup.
+Configure your database category using the provided details. Validate connection with `Test connection` and `Save` settings for secure database setup.
 
 #### General 
 

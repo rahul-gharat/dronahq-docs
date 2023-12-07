@@ -10,7 +10,7 @@ import Thumbnail from '@site/src/components/Thumbnail';
 
 You can work with CSV data inside DronaHQ with the help of File Parser Control, which lets you upload CSV file from your system and converts it into the JSON format. This can be very useful in cases, you want to validate or modify CSV data before binding it to table grid control or make bulk record insertion into databases. 
 
-By deafult `strict checking` is enabled for the File Parser Control which is useful to enforce schema validation (checking for certain number of columns and header names present) upon upload. You can enable/disable the `strict checking` feature from the properties section of the File Parser control.
+By default `strict checking` is enabled for the File Parser Control which is useful to enforce schema validation (checking for certain number of columns and header names present) upon upload. You can enable/disable the `strict checking` feature from the properties section of the File Parser control.
 
 :::info
 

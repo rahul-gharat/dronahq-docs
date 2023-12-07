@@ -34,7 +34,7 @@ Suppose you have an array of options for a user to select their preferred mode o
 ["Car", "Bus", "Bicycle", "Walk"].
 ```
 
-You want to display these options as switches and allow the user to choose one.The switches will be displayed with the labels "Car", "Bus", "Bicycle", and "Walk", and the user can select one of them by toggling the switches on or off.
+You want to display these options as switches and allow the user to choose one. The switches will be displayed with the labels "Car", "Bus", "Bicycle", and "Walk", and the user can select one of them by toggling the switches on or off.
 
 
 ## Properties

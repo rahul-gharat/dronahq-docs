@@ -80,7 +80,7 @@ The Compact Card control accepts data in an array of objects, each representing 
 | Quick Filter     | Option to enable quick filter.                      |
 | Sorting          | Option to enable sorting.                           |
 | On Card Click     | Action to perform when a card is clicked.           |
-| Select Card      | Option to enable single card selection or mulitple or navigation with selection.             |
+| Select Card      | Option to enable single card selection or multiple or navigation with selection.             |
 | Action   | Options to show or hide specific action buttons.    |
 
 

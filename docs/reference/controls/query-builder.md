@@ -17,7 +17,7 @@ The Query Builder control empowers you to create custom queries for situations r
 
 ## Binding Data Options
 
-The Query Builder control offers two data binding options to display.There are different ways in which you can bind data to the Query Builder control.
+The Query Builder control offers two data binding options to display. There are different ways in which you can bind data to the Query Builder control.
 
 ### RAW_JSON
 

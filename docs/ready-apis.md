@@ -67,7 +67,7 @@ When installing third-party APIs, the Self-Hosted version provides robust authen
 
 Let's dive into the process of installing a Ready API connector on the Self-Hosted version of DronaHQ. Start by selecting the desired connector and providing a name for it.
 
-Next, each Ready API connector has thwir own specific requirements for configuration on the Self-Hosted version. To illustrate, let's explore the example of installing the HackerRank Ready API on the Self-Hosted version of DronaHQ.
+Next, each Ready API connector has their own specific requirements for configuration on the Self-Hosted version. To illustrate, let's explore the example of installing the HackerRank Ready API on the Self-Hosted version of DronaHQ.
 
 <figure>
   <Thumbnail src="/img/connecting-datasource/hacker-onprem.jpeg" width='100%' alt="Hackerrank On-Prem Installing"/>

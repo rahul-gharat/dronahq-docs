@@ -69,7 +69,7 @@ Continue and add a variable which will hold the generated pdf's link
   <figcaption align='center'><i>Generate PDF Action Configuration</i></figcaption>
 </figure>
 
-Now add `Open URL` action on to the succes branch of `Generate PDF` action, and in the URL field give reference to the link variable we created inside the `Generate PDF` action.
+Now add `Open URL` action on to the success branch of `Generate PDF` action, and in the URL field give reference to the link variable we created inside the `Generate PDF` action.
 
 <figure>
   <Thumbnail src="/img/pdf-creator-concepts/using-summary-variables/open-url-action-configuration.png" alt="Open PDF Link using Open URL action" />
@@ -78,7 +78,7 @@ Now add `Open URL` action on to the succes branch of `Generate PDF` action, and 
 
 ### App Preview
 
-Enter the candidate details and click on the `Submit` button. Now click on the `Generate Report` button, this will open the generated pdf in a new broswer tab.
+Enter the candidate details and click on the `Submit` button. Now click on the `Generate Report` button, this will open the generated pdf in a new browser tab.
 
 <figure>
   <Thumbnail src="/img/pdf-creator-concepts/using-summary-variables/app-preview.png" alt="Summary control shows candidate details" />

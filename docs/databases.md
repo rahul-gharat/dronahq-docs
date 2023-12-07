@@ -46,8 +46,8 @@ We offer AI-powered suggestions in the test connection phase for all database co
 This support is helpful when encountering errors during configuration and testing, aiding in understanding errors and presenting common troubleshooting causes for easier resolution.
 
 <figure>
-  <Thumbnail src="/img/connecting-datasource/ai-suggestion.png" alt="AI providing error information and cause while configuring MySQL databse connector." />
-  <figcaption align="center"><i>AI providing information and cause on the error faced during MySQL databse connector configuration.</i></figcaption>
+  <Thumbnail src="/img/connecting-datasource/ai-suggestion.png" alt="AI providing error information and cause while configuring MySQL database connector." />
+  <figcaption align="center"><i>AI providing information and cause on the error faced during MySQL database connector configuration.</i></figcaption>
 </figure>
 
 :::
@@ -87,14 +87,14 @@ ensuring efficient and precise data manipulation. :::
 effortlessly using natural language prompts. This exceptional functionality allows users to generate database queries
 with ease, making the process much faster and more user-friendly. :::
 
-3. Write a query, let's say to fetch all the details from a table in the databsase. After that, click `Test Quey`.
+3. Write a query, let's say to fetch all the details from a table in the database. After that, click `Test Quey`.
 
 <figure>
   <Thumbnail src="/img/connecting-datasource/query-res.jpeg" alt="Query Response" />
   <figcaption align = "center"><i>Query response.</i></figcaption>
 </figure>
 
-4. Click `Save` and your query will be added to the databse connector.
+4. Click `Save` and your query will be added to the database connector.
 
 <figure>
   <Thumbnail src="/img/connecting-datasource/query-added.jpeg" alt="Query added to the database connector." />

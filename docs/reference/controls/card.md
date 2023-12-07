@@ -4,7 +4,7 @@ title: Card controls
 ---
 
 
-In the ever-evolving digital sphere, card controls serve as the backbone of content presentation within interfaces like DroaHQ. These controls, ranging from sleek and minimalistic designs to immersive and interactive showcases, redefine how information is shared and engaged with. Exploring these different card types opens doors to a world of creative possibilities, shaping the way we organize and interact with content online.
+In the ever-evolving digital sphere, card controls serve as the backbone of content presentation within interfaces like DronaHQ. These controls, ranging from sleek and minimalistic designs to immersive and interactive showcases, redefine how information is shared and engaged with. Exploring these different card types opens doors to a world of creative possibilities, shaping the way we organize and interact with content online.
 
 ## Types of Card control
 
@@ -108,7 +108,7 @@ The Gallery Card control accepts data structured in an array of objects, each re
 ]
 ``` 
 
-### Galler card with Actions
+### Gallery card with Actions
 
 Similar to Gallery Card but with the addition of the action buttons.
 

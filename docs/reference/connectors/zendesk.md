@@ -26,7 +26,7 @@ Add a `Account name`. Then add the necessary details like `API Token`, `Subdomai
 
 <figure>
   <Thumbnail src="/img/reference/connectors/zendesk/details.jpeg" alt="Zendesk to be filled configuration details." />
-  <figcaption align = "center"><i>Zendesk to befilled configuration details.</i></figcaption>
+  <figcaption align = "center"><i>Zendesk to be filled configuration details.</i></figcaption>
 </figure>
 
 After successfully configuring and saving the connector settings, you can easily access your newly connected account by navigating to the `connected accounts` list. You can find this option from the `Connector -> Manage Account` section. This centralized location allows you to conveniently monitor and manage your connected accounts.

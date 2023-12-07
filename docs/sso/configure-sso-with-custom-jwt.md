@@ -137,7 +137,7 @@ These keys will allow you to securely generate and validate JWT tokens for seaml
 
 :::info NOTE
 
-Everytime you open this New Configuration page, a new Secret Key and ID will be generated.
+Every time you open this New Configuration page, a new Secret Key and ID will be generated.
 
 :::
 

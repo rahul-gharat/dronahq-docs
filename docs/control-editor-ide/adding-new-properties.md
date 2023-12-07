@@ -85,7 +85,7 @@ If we wish to show a particular property div if toggle is on (toggles value is a
 
 6. **"inside_repeat"** : true/false
 
-- Set as true if we are using the template inside a repat using rv-each
+- Set as true if we are using the template inside a repeat using rv-each
 - Default is false
 
 7. **"placeholder"** : "write your placeholder here",
@@ -113,7 +113,7 @@ If we wish to show a particular property div if toggle is on (toggles value is a
 - Default value is false (False means enabled and True means disabled)
 
 :::info
-For units we just need to add this “attrs.font_size_unit” in defaultAttributes no need to add anything in properties specificly.
+For units we just need to add this “attrs.font_size_unit” in defaultAttributes no need to add anything in properties specifically.
 :::
 
 ## Font Weight
@@ -282,7 +282,7 @@ For units we just need to add this “attrs.font_size_unit” in defaultAttribut
 
 - Works only for multiselect dropdown
 - Allows a limited number of selection
-- Does not work for 0 or -ve numbers
+- Does not work for 0 or negative numbers
 
 **rv-each-part**
 ```javascript

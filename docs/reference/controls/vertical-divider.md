@@ -20,5 +20,5 @@ The Vertical Divider control is used to visually separate sections within a micr
 |--------------|-----------------------------------------------------------------------|
 | Width         | Set the width of the divider. |
 | Border Type   | Select from a range of border types such as `double`, `dashed`, `solid` and more. |
-| Font Color  | Set the color of the vwertical border.                  |
+| Font Color  | Set the color of the vertical border.                  |
 

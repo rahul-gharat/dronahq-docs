@@ -75,7 +75,7 @@ File parser control supports three file formats which are widely used for sharin
 
 ## Parsing and data transformation
 
-File parser control has two working modes ons is `Strict Checking` and another one is `Dynamic Data`, Let's understand how control works in each mode. 
+File parser control has two working modes one is `Strict Checking` and another one is `Dynamic Data`, Let's understand how control works in each mode. 
 Remember these two modes works similarly for both [Data input](./file-parser.md/#data-input) method.
 
 - **Strict Checking**: Once you upload a sample file while configuring the control on app builder, the File Parser Control intelligently analyzes the structure of the data. It then leverages this sample file as a reference to ensure strict adherence to the data structure of subsequent uploads or Data coming out of binded data formula at runtime. This strict mode is beneficial when dealing with consistent data formats, enabling you to create powerful data flows in the DronaHQ with confidence.
@@ -84,7 +84,7 @@ Remember these two modes works similarly for both [Data input](./file-parser.md/
 Sample file is compulsory for strict mode.
 :::
 
-- **Dynamic Data**: For cases where your data may have varying or dynamic structures, the strict mode can be turned off from property. In this mode, the control allows for more flexibility, and you need not provide a sample file. While data flows cannot be created in the DronaHQ without a defined structure, you can still visualize and display the dynamic data in a table grid. Furthermore, the control offers the ability to transform such dynamic data using data queries and custom JavaScript, providing a meaningful and interactive representation to enhance data understanding. there are ways to use Dynamic data mode efficienly in DronaHQ you can understand better about it in [this](./file-parser.md/#common-issues-and-solutions-with-use-cases) section
+- **Dynamic Data**: For cases where your data may have varying or dynamic structures, the strict mode can be turned off from property. In this mode, the control allows for more flexibility, and you need not provide a sample file. While data flows cannot be created in the DronaHQ without a defined structure, you can still visualize and display the dynamic data in a table grid. Furthermore, the control offers the ability to transform such dynamic data using data queries and custom JavaScript, providing a meaningful and interactive representation to enhance data understanding. there are ways to use Dynamic data mode efficiently in DronaHQ you can understand better about it in [this](./file-parser.md/#common-issues-and-solutions-with-use-cases) section
 
 ## How to use
 
@@ -94,7 +94,7 @@ Using the File Parser Control is a straightforward process:
 
 - **Strict Mode (Optional)**: Choose whether to enable strict mode or not. Strict mode enforces data structure checks, ensuring consistent data formats for data flows.
 
-- **Data Visualization**: Display the parsed data in a table grid or use data querie's custom JavaScript to represent the data in desired format.
+- **Data Visualization**: Display the parsed data in a table grid or use data queries custom JavaScript to represent the data in desired format.
 
 - **Data Manipulation**: If you enabled strict mode, create data flows in the DronaHQ to manipulate and update the data easily.
 
@@ -102,10 +102,10 @@ Using the File Parser Control is a straightforward process:
 
 ## Common issues and solutions with use cases
 
-In this section we will understand about typical problems faced by users when trying to use this control in its differnet configutations. Following are typical problems encountered when utilizing this control.
+In this section we will understand about typical problems faced by users when trying to use this control in its different configurations. Following are typical problems encountered when utilizing this control.
 
 - **Problem**: While using strict mode when user has fixed data structure as provided in the sample file but the files uploaded at run time has some columns missing in the data which causes control to reject the data and show error.
-  - **Solution**: you can use dymamic data mode and then pass the data of the file parser control to `Data Queries -> Custom JavaScript` and you can make sure all your columns are always returned from Data Query and you can use Data Query to bind data to other controls just as you would do with file parser.
+  - **Solution**: you can use dynamic data mode and then pass the data of the file parser control to `Data Queries -> Custom JavaScript` and you can make sure all your columns are always returned from Data Query and you can use Data Query to bind data to other controls just as you would do with file parser.
 
 
 - **Problem**: How to use the file parser control to parse data from the file URL that is hosted on internet.

@@ -23,7 +23,7 @@ Click on the control or drag it to the builder view and see the output.
 
 <figure>
   <Image src="/img/advanced-concepts/custom-control-ide/sample-controls/sample-controls-header-output-1.png" alt="Simple Database GUI" />
-  <figcaption align='left'><i>new controls initail output.</i></figcaption>
+  <figcaption align='left'><i>new controls initial output.</i></figcaption>
 </figure>
 
 Please check the output on the preview screen as well and in properties we are able to see only one property edit value of that property and see the changes on both screens.
@@ -360,7 +360,7 @@ Now we have completed our control and will work perfectly for the preview screen
 So now we can bring the same look and feel of the preview screen to the builder screen as well.
 
 :::info
-we should never bring our event logics to the builder screen.
+we should never bring our event's logic to the builder screen.
 So let’s first build the same UI for the builder screen.
 :::
 

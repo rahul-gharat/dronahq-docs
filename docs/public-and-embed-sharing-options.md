@@ -116,7 +116,7 @@ It is a 2 step process:
 
 :::info Message passing in secure embeds
 
-You can also the realtime message passing framework even with secure embeds. You just need to be sure of using the iframe DOM reference that gets initialized for the web component thats used.
+You can also the realtime message passing framework even with secure embeds. You just need to be sure of using the iframe DOM reference that gets initialized for the web component that's used.
 
 :::
 
@@ -143,7 +143,7 @@ Though you can set up query params and pass data to the iframes using it, there 
 
 :::caution Query params
 
-Everytime this code runs, the iframe will reload. In case you want realtime data passing between the parent and embed app, you can use the real time message passing framework. 
+Every time this code runs, the iframe will reload. In case you want realtime data passing between the parent and embed app, you can use the real time message passing framework. 
 
 :::
 

@@ -21,8 +21,8 @@ Adding custom script tags to your application via DronaHQ is a seamless and stra
 once you are done with these two simple step you will see the modal visible in the image below.
 
 <figure>
-  <Thumbnail src="/img/app-scripting-and-code/script-tags/script-config-modal.png" alt="Add Custom Scipt modal" />
-  <figcaption align = "center"><i>Add Custom Scipt modal</i></figcaption>
+  <Thumbnail src="/img/app-scripting-and-code/script-tags/script-config-modal.png" alt="Add Custom Script modal" />
+  <figcaption align = "center"><i>Add Custom Script modal</i></figcaption>
 </figure>
 
 you can see two input blocks:

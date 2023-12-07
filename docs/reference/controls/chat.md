@@ -90,7 +90,7 @@ Go to `Account Settings > Integrations > OpenAI account`. One can `ADD`, `EDIT` 
 
 <figure>
   <Thumbnail src="/img/reference/controls/chat/configure-openAI.jpeg" alt="Chat Control" />
-  <figcaption align="center"><i>OpenAI Acount Integration</i></figcaption>
+  <figcaption align="center"><i>OpenAI Account Integration</i></figcaption>
 </figure>
 
 

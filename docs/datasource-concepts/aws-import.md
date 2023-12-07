@@ -6,11 +6,11 @@ import Thumbnail from '@site/src/components/Thumbnail';
 
 # AWS Import
 
-You can connect your Amazon RDS to DronaHQ by using the `AWS Import` feature which supports creation of data sources with major DB Engines like MySQL, PostgreSQL, Microsoft SQL Sever and MariaDB. This feature automaticaly fetches the connections details like hostname, database name, port number, and username from Amazon RDS, thus removing the need to manually fill them while setting up a new data source.
+You can connect your Amazon RDS to DronaHQ by using the `AWS Import` feature which supports creation of data sources with major DB Engines like MySQL, PostgreSQL, Microsoft SQL Sever and MariaDB. This feature automatically fetches the connections details like hostname, database name, port number, and username from Amazon RDS, thus removing the need to manually fill them while setting up a new data source.
 
 ## Prerequisite
 
-In order to use the `AWS Import` feature, you need to have IAM Credentials and ensure that RDS is steup and you have access to it. Refer the articles below on setting up IAM user and RDS.
+In order to use the `AWS Import` feature, you need to have IAM Credentials and ensure that RDS is setup and you have access to it. Refer the articles below on setting up IAM user and RDS.
 
 - [How to create/manage AWS creds on AWS console](https://docs.aws.amazon.com/keyspaces/latest/devguide/access.credentials.html)
 - [How to give RDS permission to existing IAM credentials user](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/security_iam_id-based-policy-examples.html)

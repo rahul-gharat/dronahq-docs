@@ -8,10 +8,10 @@ import Thumbnail from '@site/src/components/Thumbnail';
 
 Below are the Various App configurations can be set on DronaHQ which are only applicable to DronaHQ End user portal - Android and iOS Mobile App. These setting can be located in `DronaHQ -> Open Any App -> Settings -> All Settings`
 
-## App Setttings
+## App Settings
  | Field | Description  | 
   | ----------------- |---------------------------- |
-| Display App Icon            | To show/hide App icon from Homescreen Apps listing. Enabled by default. Disable this setting, if you want to hide this App's icon from Homescreen Apps listing. Useful in cases you want to invoke this App from Another App and don't want it bo be accessible by default.  |
+| Display App Icon            | To show/hide App icon from Homescreen Apps listing. Enabled by default. Disable this setting, if you want to hide this App's icon from Homescreen Apps listing. Useful in cases you want to invoke this App from Another App and don't want it to be accessible by default.  |
 | Display Close Button (iOS and web Only)           | To show/hide Close App button. Enabled by default. Disable this setting, if you want to hide this App's Close button and you are alternatively exiting app from some other UI element.  |
 | Close Button Colour              | Hex color code to be set as close button's background color. |
 
@@ -19,8 +19,8 @@ Below are the Various App configurations can be set on DronaHQ which are only ap
 
  | Field | Description  | 
   | ----------------- |---------------------------- |
-| Display App Icon            | To show/hide App icon from Homescreen Apps listing. Enabled by default. Disable this setting, if you want to hide this App's icon from Homescreen Apps listing. Useful in cases you want to invoke this App from Another App and don't want it bo be accessible by default.  |
-| Display Close Button (iOS and web Only)           | To show/hide Close App button. Enabled by default. Disable this setting, if you want to hide this App's Close button and you are alternatively exiting app from some other UI element. Applicable only for iOS and web platform as for Android default back button is overriden to exit an App.  |
+| Display App Icon            | To show/hide App icon from Homescreen Apps listing. Enabled by default. Disable this setting, if you want to hide this App's icon from Homescreen Apps listing. Useful in cases you want to invoke this App from Another App and don't want it to be accessible by default.  |
+| Display Close Button (iOS and web Only)           | To show/hide Close App button. Enabled by default. Disable this setting, if you want to hide this App's Close button and you are alternatively exiting app from some other UI element. Applicable only for iOS and web platform as for Android default back button is overridden to exit an App.  |
 | Close Button Colour              | Hex color code to be set as close button's background color. Applicable only if Display Close Button is enabled. |
 
 ### UI Customization
@@ -48,14 +48,14 @@ You can enable/disable individual platform to be accessible for your App. By def
 
 ### Orientation Support
 
-You can enable/disable individual orientation mode supoprt for your App. By default, both orientation support is enabled, you can individual disable if your app isn't supported/designed for any orientation. This is applicable to App opened in DronaHQ End user portal - Android and iOS Mobile App.
+You can enable/disable individual orientation mode support for your App. By default, both orientation support is enabled, you can individual disable if your app isn't supported/designed for any orientation. This is applicable to App opened in DronaHQ End user portal - Android and iOS Mobile App.
 
  | Field | Description  | 
   | ----------------- |---------------------------- |
-| Allow Phone Portrait            | Portait mode support of the current App for all mobile devices.  |
+| Allow Phone Portrait            | Portrait mode support of the current App for all mobile devices.  |
 | Allow Phone Landscape           | Landscape mode support of the current App for all mobile devices. |
 | Phone Landscape Safe Area For Notch           | iOS specific only - When Enabled, App gets space of Notch area  as well in Landscape mode. By Default its disabled, so that App content is loaded next to notch area when in landscape mode. If this is enabled, then App needs to handle Notch Area in UI as to avoid app UI getting blocked by notch area. |
-| Allow Tablet Portrait | Portait mode support of the current App for all tablet devices. |
+| Allow Tablet Portrait | Portrait mode support of the current App for all tablet devices. |
 | Allow Tablet Landscape | Landscape mode support of the current App for all tablet devices. |
 
 :::info Please Note

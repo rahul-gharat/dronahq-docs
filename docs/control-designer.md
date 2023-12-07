@@ -17,14 +17,14 @@ To create Designer control within the DronaHQ platform, you will need to navigat
 - Within the `Extensions` section, navigate to the `Control Designer`.
 - Once you click on the `Control Designer` it will open Control Designer in new tab.
 
-Once you open the control desgner you will see list off all controls that you created on designer, click on the first card with plus icon to create a new control. once you click on that card you will see a form with few input fields as visible in the image below.
+Once you open the control designer you will see list off all controls that you created on designer, click on the first card with plus icon to create a new control. once you click on that card you will see a form with few input fields as visible in the image below.
 
 <figure>
   <Thumbnail src="/img/advanced-concepts/designer/add-new-control-designer.png" alt="Add new Designer Control" />
   <figcaption align = "center"><i>Add new Designer control</i></figcaption>
 </figure>
 
-- Unique name: unique name of the control taht should not conflict with other controls including the onces provided by the DronaHQ, and also should not contains special character and space.
+- Unique name: unique name of the control that should not conflict with other controls including the one's provided by the DronaHQ, and also should not contains special character and space.
 
  | Fields | Description |
  | ------------------ | -------------------- |
@@ -42,7 +42,7 @@ once you field all the field you can press add and new control will be created a
 
  | Components | Description |
  | ---------------- | -----------------|
- | Edit Components Meta | This will open a popup which will allow you to edit controls metada which you defined at the time of creating the control as well as switch control between live and draft mode.
+ | Edit Components Meta | This will open a popup which will allow you to edit controls meta data which you defined at the time of creating the control as well as switch control between live and draft mode.
  | Controls | Opens the list of all controls list created on the designer. |
  | Resolution | Allows you to configure how your controls will look on each devices sizes. |
  | Edit Code | Control UI generated in the canvas is converted automatically to a html and css code which can be edited using this option, editing code will affect the ui and vice versa. |
@@ -51,13 +51,13 @@ once you field all the field you can press add and new control will be created a
  | Publish | Publishes the current control. |
  | Style Manager | Allows you the apply css styles to components of your controls. |
  | Mapping Manager | Allows you to map which component is actionable and which can have its own formula box for dynamic data binding inside your control. |
- | Layers Manager | Allows you to navigate between components and see heirarcy of the components based on how they are placed inside canvas to create control. |
+ | Layers Manager | Allows you to navigate between components and see hierarchy of the components based on how they are placed inside canvas to create control. |
  | Blocks | Blocks are the basic building block components using which user can create their desired ui for their controls. |
  | View Lines | Toggles the outline of the components on the canvas. |
  | Preview | Preview The control ui created on the canvas. |
  | Fullscreen | Makes the editor in fullscreen mode. |
 
-Above table explains the basic layout the the control builder canvas. let us understand in deatil about how control is created using blocks, how style manager helps us to style our control and how mapping mangers help us define how data will be binded to control and what action will be available.
+Above table explains the basic layout the the control builder canvas. let us understand in detail about how control is created using blocks, how style manager helps us to style our control and how mapping mangers help us define how data will be binded to control and what action will be available.
 
 ### Blocks
 
@@ -65,22 +65,22 @@ Blocks are components that are used to create the ui of control they are mainly 
 <figure>
   <Thumbnail src="/img/advanced-concepts/designer/block-designer.png" alt="Blocks" width="150px"/>
 </figure>
-Layout section has components that allows you to give structure to your control they have predefiend styles applied to them.
+Layout section has components that allows you to give structure to your control they have predefined styles applied to them.
 
-Basic section has components that are used to define content of your control like text block, image, button, they also have some styles pre applied to them 
+Basic section has components that are used to define content of your control like text block, image, button, they also have some styles pre-applied to them 
 ### Style Manager
 
-Style manager allows you to apply css styles to blocks components through and interactive ui interface as potraied in the below image.
+Style manager allows you to apply css styles to blocks components through and interactive ui interface as portrayed in the below image.
 
 <figure>
   <Thumbnail src="/img/advanced-concepts/designer/styles-designer.png" alt="Blocks" width="200px"/>
 </figure>
 
-you will get almost all the css property available here and we have added few extra custom properties like State. State allows you to configre differnet ui states of your control and then change those state of your control in DronaHQ using rules for example you can create a custom info control which wil have diffent states like warning, error, and info these states can be swithced uing rules on builder at runtime resulting id diffent ui in same control.
+you will get almost all the css property available here and we have added few extra custom properties like State. State allows you to configure different ui states of your control and then change those state of your control in DronaHQ using rules for example you can create a custom info control which will have different states like warning, error, and info these states can be switched using rules on builder at runtime resulting id different ui in same control.
 
 ### Mapping Manager
 
-Mappoing Manager allows you to configure you control's block components for data binding and Actions to trigger action flows in DronaHQ 
+Mapping Manager allows you to configure you control's block components for data binding and Actions to trigger action flows in DronaHQ 
 
 <figure>
   <Thumbnail src="/img/advanced-concepts/designer/mapping-designer.png" alt="Blocks" width="200px"/>

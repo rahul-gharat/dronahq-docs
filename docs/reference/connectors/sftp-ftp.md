@@ -25,7 +25,7 @@ SFTP (SSH File Transfer Protocol) and FTP (File Transfer Protocol) are connector
 
 ## Configuring Connector in DronaHQ
 
-Configure your database category using the provided details.Validate connection with `Test connection` and `Save` settings for secure database setup.
+Configure your database category using the provided details. Validate connection with `Test connection` and `Save` settings for secure database setup.
 
 
 :::info
@@ -48,7 +48,7 @@ Choose from SFTP and FTP, depending on it you will be asked to configure respect
 | Password             | Enter the Password                      |
 
 :::info NOTE
-`Authentication` feild is available for SFTP protocol type.
+`Authentication` field is available for SFTP protocol type.
 :::
 
 <figure>

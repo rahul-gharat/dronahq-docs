@@ -43,7 +43,7 @@ DronaHQ has broadly 2 types of events and the rest are categorized inside these 
 ## Types of action blocks
 
 - **On-Screen actions** - These are actions which get executed on the screen itself without consuming any server-side resources.
-    - **Edit** - Options related to the app builder to duplicate or move actions or import whe whole actionflow from some other event.
+    - **Edit** - Options related to the app builder to duplicate or move actions or import the whole actionflow from some other event.
     - **Logic** - All actions where you an write logic are grouped in this category. You will see branching, Iterations, JS code etc. here.
     - **Navigate** - All actions related to navigating to screens, apps etc. are grouped in this category.
     - **Native** - All mobile related native actions are here.

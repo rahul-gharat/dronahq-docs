@@ -23,7 +23,7 @@ To conveniently configure your OpenAI keys within the DronaHQ platform, follow t
 This action will open a sidebar, providing you with various operations to manage your OpenAI accounts. By accessing the "Configure Accounts" option in the OpenAI Accounts sidebar, you can easily manage your OpenAI accounts and perform the following tasks.
 
 - [Add new OpenAI account](./ai-configure-openai-keys.md/#add-new-openai-account)
-- [Edit key for exising accounts](./ai-configure-openai-keys.md/#edit-key-for-existing-accounts)
+- [Edit key for existing accounts](./ai-configure-openai-keys.md/#edit-key-for-existing-accounts)
 - [See list of all accounts](./ai-configure-openai-keys.md/#see-list-of-all-accounts)
   - Delete accounts
   - Make any account default
@@ -54,7 +54,7 @@ To `Edit/Update` keys for existing `OpenAI Accounts` you will need to click on t
 
 ### See list of all accounts
 
-`All Accounts` tab provides a centralized view of all the configured accounts for easy access and administration. DronaHQ user can conveniently view the listt all all OpenAI accounts configured in the studio, If you want to Delete certain account or make it Default you can utilize the `Delete` and `Make Default` button associated with each entry in the All Accounts tab.
+`All Accounts` tab provides a centralized view of all the configured accounts for easy access and administration. DronaHQ user can conveniently view the list of all OpenAI accounts configured in the studio, If you want to Delete certain account or make it Default you can utilize the `Delete` and `Make Default` button associated with each entry in the All Accounts tab.
 
 <figure>
   <Thumbnail src="/img/dronahq-ai/configure-openai-keys/list-all-accounts.png" alt="All configured OpenAI accounts list" width='100%'/>

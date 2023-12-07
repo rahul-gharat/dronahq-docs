@@ -33,11 +33,11 @@ SELECT * FROM products WHERE id = {{dropdown}}
 
 :::caution Auto evaluating Data queries on variable change
 
-Running data queries has 2 options namely: `Everytime variables change` and `Manual trigger`.
+Running data queries has 2 options namely: `Every time variables change` and `Manual trigger`.
 Queries that write data ideally should not run automatically when their parameters change and the `Manual trigger` needs to be set.
 
 Imagine your query pulls in the value from a TextInput, every time you entered a keystroke in the TextInput, the query would get called once. So you would find multiple rows inserted in your database. The best way is to add a button that triggers the INSERTS or POST.
-If you are using any dynamic referencing to any control, keyword or another data query and it changes, DronaHQ auto evaluates the Data Query again if the run query value is set to `Everytime variables change`.
+If you are using any dynamic referencing to any control, keyword or another data query and it changes, DronaHQ auto evaluates the Data Query again if the run query value is set to `Every time variables change`.
 
 :::
 
@@ -68,7 +68,7 @@ sequenceDiagram
 
 ## Controls or keywords to controls
 
-There are times when one control is dependant on another control or keyword, you can reference the same using `{{control_unique_name}}` or `{{keyword}}` in the JS section of the control data binding. You can use any of the output variables that the specific control provides. For e.g. `{{tablegrid.column}}`
+There are times when one control is dependent on another control or keyword, you can reference the same using `{{control_unique_name}}` or `{{keyword}}` in the JS section of the control data binding. You can use any of the output variables that the specific control provides. For e.g. `{{tablegrid.column}}`
 
 :::info Please Note
 

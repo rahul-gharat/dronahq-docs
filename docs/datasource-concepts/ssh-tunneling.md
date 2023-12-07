@@ -29,11 +29,11 @@ Once SSH config is enabled, user will be prompt with few additional fields.
 | SSH Keys | Private key used for SSH authentication. |
 
 :::info NOTE
-If you need very safe communication, change the default SSH port number.It will help you not to face the brute force attack.
+If you need very safe communication, change the default SSH port number. It will help you not to face the brute force attack.
 :::
 
 ## Manage SSH keys
-To manage ssh keys for SSH tuneeling, Go to `Account Settings -> SSH Key management`.
+To manage ssh keys for SSH tunneling, Go to `Account Settings -> SSH Key management`.
 
 <figure>
   <Thumbnail src="/img/connecting-datasource/concepts/ssh-tunnel/manage_sshkey.png" alt="Manage SSH key" width='75%' />
@@ -49,7 +49,7 @@ Go to `Account Settings -> SSH Key management -> +Add Key`.
 </figure>
 
 ## Conclusion
-Secure access to databases is one of the primary use cases in the DevOps world. Exposing critical databases to the internet directly increases risk.Thus, SSH tunnels are recommended.
+Secure access to databases is one of the primary use cases in the DevOps world. Exposing critical databases to the internet directly increases risk. Thus, SSH tunnels are recommended.
 
 
 

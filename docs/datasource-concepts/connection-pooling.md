@@ -9,13 +9,13 @@ Connection pooling is a way to reduce the cost of opening and closing connection
 DronaHQ uses connection pooling to improve application performance.
 
 ## How DronaHQ uses connection pooling
-DronaHQ achieves concurrency with the usage of connection pooling. Whenever a database query is triggred, DronaHQ opens a connection, sends the query, fetches data and closes the connection.
+DronaHQ achieves concurrency with the usage of connection pooling. Whenever a database query is triggered, DronaHQ opens a connection, sends the query, fetches data and closes the connection.
 
 Let's consider a case where connection pooling doesn't exist and only single connection is being used by DronaHQ to serve requests.
-Now, assume Case where multiple requests comes concurrently to same connector. DronaHQ will pick one request and serves it but rest of the requests will fail since there is no other connection are available. That's why DronaHQ keeps a minimal size pool so that when a query is trigged it can serve the concurrent request for the same connector and kills the pool and frees the connections once done.
+Now, assume Case where multiple requests comes concurrently to same connector. DronaHQ will pick one request and serves it but rest of the requests will fail since there is no other connection are available. That's why DronaHQ keeps a minimal size pool so that when a query is triggered it can serve the concurrent request for the same connector and kills the pool and frees the connections once done.
 
-## Configure connection ppoling
-DronaHQ allows you to configure pool settings according to the requests that your database recieves. For example, pool size can be increased, wait time can be configured etc.
+## Configure connection pooling
+DronaHQ allows you to configure pool settings according to the requests that your database receives. For example, pool size can be increased, wait time can be configured etc.
 
 To achieve this you can make use of connection options, while adding connector. Go to `Connectors -> + CONNECTOR -> Select Supported DB`, in this case MySQL and go to `Connection Options` and add required fields and their values.
 

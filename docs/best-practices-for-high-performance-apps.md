@@ -26,13 +26,13 @@ When building apps, it is common to have a deep and complex chain of references 
 DronaHQ has an effective multi screen experience which is not only great for the user user experience but it also helps you divide the connector or data calls across different screens. The way DronaHQ is architected is that only when a particular control gets initialized on a particular screen does the referenced `Data Query` gets resolved or evaluated. Which effectively means those API calls will happen only when a user visits that screen.
 
 ### Use paging in large datasets
-While working with large sets of data, its always advisable to use paging wherever possible while binding to table grid control etc. DronaHQ supports server-side paging in tablegrid and all oher similar controls. While showing aggregate information like analytics, its advisable to run these aggregations on the API or Database side before fetching the data. 
+While working with large sets of data, its always advisable to use paging wherever possible while binding to table grid control etc. DronaHQ supports server-side paging in tablegrid and all other similar controls. While showing aggregate information like analytics, its advisable to run these aggregations on the API or Database side before fetching the data. 
 
 ### Use control caching
 Slower data loading times are a major performance barrier when working with multiple datasets. You can find the Caching property for all the controls. It helps ensure that large datasets are fetched from the cache before making the actual connector call and also if the user is offline. 
 
 ### Restrict the number of queries on page load
-It is always advisable to restrict the number of queries on home page load and only work with data thats required for the home-screen. 
+It is always advisable to restrict the number of queries on home page load and only work with data that's required for the home-screen. 
 
 ### Break the app into multiple apps
 Even after breaking down into multiple screen, the app is an extremely large app (running into 20-30+ screens) you should break the app into multiple apps. DronaHQ supports navigating between apps seamlessly and this sort of an architecture will only reduce the app load time as the app size becomes smaller.

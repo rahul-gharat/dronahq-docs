@@ -21,7 +21,7 @@ It consists of three parts -
   | ----------------- |------- |:----:|
 | Failure Condition        | It accepts the inline js code within `{{}}` and should output either `true/false`. For eg - `{{OUTPUT.RESP == 1}}` | - |
 | Failure Message | Custom failure message that can be displayed to your end user | FAILURE_MESSAGE |
-| Failure/Error code |  Custom Error Code that you can define to identify the failure condition.  For eg - `LICENSE_ERR`, `NOT_FOUND`. No space or special charaters are allowed except underscore. | FAILURE_CODE |
+| Failure/Error code |  Custom Error Code that you can define to identify the failure condition.  For eg - `LICENSE_ERR`, `NOT_FOUND`. No space or special characters are allowed except underscore. | FAILURE_CODE |
 
 :::info PLEASE NOTE
 - You can define multiple failure conditions based on your use case.

@@ -28,7 +28,7 @@ InfluxDB is a high-performance Time Series Database that can store data ranging 
 
 ## Configuring Connector in DronaHQ
 
-Configure your database category using the provided details.Validate connection with `Test connection` and `Save` settings for secure database setup.
+Configure your database category using the provided details. Validate connection with `Test connection` and `Save` settings for secure database setup.
 
 
 

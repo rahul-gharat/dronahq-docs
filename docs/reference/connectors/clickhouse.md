@@ -28,7 +28,7 @@ Of course, here's the prerequisite information for connecting to ClickHouse in t
 
 ## Configuring Connector in DronaHQ
 
-Configure your database category using the provided details.Validate connection with `Test connection` and `Save` settings for secure database setup.
+Configure your database category using the provided details. Validate connection with `Test connection` and `Save` settings for secure database setup.
 
 
 #### General 
@@ -38,7 +38,7 @@ Configure your database category using the provided details.Validate connection 
 | ClickHouse database URL | Please enter clickhouse db url e.g.`https://play-api.clickhouse.com:8443` |
 | Username             | Enter the Username                      |
 | Password             | Enter the Password                      |
-| Database | Database name will help in poulating schema in query editor |
+| Database | Database name will help in populating schema in query editor |
 
 <figure>
   <Thumbnail src="/img/reference/connectors/clickhouse/fields.png" alt="ClickHouse with Sample details." />

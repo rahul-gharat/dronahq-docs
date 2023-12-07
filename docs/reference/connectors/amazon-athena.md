@@ -29,7 +29,7 @@ Amazon Athena: Query data in Amazon S3 using SQL. Serverless and cost-effective,
 
 ## Configuring Connector in DronaHQ
 
-Configure your database category using the provided details.Validate connection with `Test connection` and `Save` settings for secure database setup.
+Configure your database category using the provided details. Validate connection with `Test connection` and `Save` settings for secure database setup.
 
 
 ### Get AWS Credentials
@@ -45,8 +45,8 @@ In the `Access Keys` section, click `Create New Access Key` and provide a name (
 Remember to securely store the provided AWS Access Key ID and AWS Secret Access Key and avoid sharing them openly. These keys are essential for authorized access to Amazon Athena.
 
 <figure>
-  <Thumbnail src="/img/reference/connectors/amazon-athena/account-creds.jpeg" alt="Acount Credentials" />
-  <figcaption align = "center"><i>Acount Credentials</i></figcaption>
+  <Thumbnail src="/img/reference/connectors/amazon-athena/account-creds.jpeg" alt="Account Credentials" />
+  <figcaption align = "center"><i>Account Credentials</i></figcaption>
 </figure>
 
 

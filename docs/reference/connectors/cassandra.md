@@ -21,7 +21,7 @@ Apache Cassandra is an open-source, distributed NoSQL database management system
 
 ## Configuring Connector in DronaHQ
 
-Configure your database category using the provided details.Validate connection with `Test connection` and `Save` settings for secure database setup.
+Configure your database category using the provided details. Validate connection with `Test connection` and `Save` settings for secure database setup.
 
 #### General 
 

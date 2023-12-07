@@ -27,7 +27,7 @@ Ensure these prerequisites are met for a smooth Oracle integration with DronaHQ,
 
 ### Connector Setup in DronaHQ
 
-Configure your database category using the provided details.Validate connection with `Test connection` and `Save` settings for secure database setup.
+Configure your database category using the provided details. Validate connection with `Test connection` and `Save` settings for secure database setup.
 
 #### General 
 

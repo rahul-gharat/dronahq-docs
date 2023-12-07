@@ -79,7 +79,7 @@ To add new data directly to table grid control.
 </figure>
 
 Inside property section you have to toggle on **Add new Row** property, this will add a `+ Add Row` button to the bottom of the table.
-On click of this button ot will add a blank row to table grid with columns that are editable in new row.
+On click of this button it will add a blank row to table grid with columns that are editable in new row.
 To specify `which columns will be editable` in this new row we have to Choose columns in **columns that will be editable in new rows** dropdown in property section.
 
 ### Config in Events section
@@ -93,7 +93,7 @@ This will always return an array of objects.
 
 :::tip
 For smooth integration of both the features in single save_changes event you should use branches with respective conditions.
-[AutoGenerate CURD](../building-apps-concepts/autogenerate-forms-and-crud.md)
+[AutoGenerate CRUD](../building-apps-concepts/autogenerate-forms-and-crud.md)
 :::
 
 ## Format data options effect on Editable Columns
@@ -117,7 +117,7 @@ Several types of formats such as email, rating, file, decimal, Textarea, and mor
 | Time | `Time Picker` - it will show a time picker with a text input where user can input date and it will be validated as per the format set for display. will return data as `Timestamp`. |
 | DateTime | `Date and Time Picker` - it will show a combination of both date and time picker, will return data as `Timestamp`. |
 | Email | `Text editor` – used for editing normal text type, Email will be validated as per Email standards, will return data as `string`. |
-| Number | `Number Input` - a number input bix with small arrows to move numbers up and down , will return data as `Number` with all the validations. | 
+| Number | `Number Input` - a number input with small arrows to move numbers up and down , will return data as `Number` with all the validations. | 
 
 <figure>
   <Image src="/img/guides/building-interactive-tables/building-interactive-tables-editable-dropdown-ui.png" alt="Simple Database GUI" />
@@ -161,7 +161,7 @@ To use this feature you need to toggle on **Column Reorder and Visibility** prop
 To use this feature it is not necessary to have checkbox on in the table grid, on row selection what action flow needs to be executed can be configured in `row_select` event. you can also decide background color for selected row by setting **Selected Row Color** property. You can also configure which row will be by default selected when table is loaded or after refresh by setting **Default Selected Row** property.
 
 ### Fit to Screen
-To use this feature you need to toggle on `Fit Height To Screen` property, this property enables you to set Height of the Table grid to fit the screen. During pagination, the table fits the screen and you can scroll within the table within the area. also when working with small screen and table grid is not the only control screen the height calculation should not be affected so you can provide a minimum height to **Minimum Height** property this will prevent table grid from un-necessary shrinking in height.
+To use this feature you need to toggle on `Fit Height To Screen` property, this property enables you to set Height of the Table grid to fit the screen. During pagination, the table fits the screen and you can scroll within the table within the area. also when working with small screen and table grid is not the only control screen the height calculation should not be affected so you can provide a minimum height to **Minimum Height** property this will prevent table grid from unnecessary shrinking in height.
 
 ### Aggregation footer
 
@@ -176,7 +176,7 @@ To use this feature you need to toggle on `Show Aggregation Footer` property, th
 To use this feature you need to toggle on `Allow` in pagination group, to use this feature your api should support pagination. There are 2 types of pagination's supported by DronaHQ `limit offset based` and `cursor based`. you can also decide the position where this pagination bar will be displayed by setting `Pagination Bar Location` property.
 
 ### Freeze columns
-To use this feature you need to toggle on `Freeze columns` property, this feature enables you to freeze columns when you are scrolling horizontally the number of columns freezed will not move from there position.
+To use this feature you need to toggle on `Freeze columns` property, this feature enables you to freeze columns when you are scrolling horizontally the number of columns froze will not move from there position.
 
 ## Actions
 In Table grid control you can configure different set of actions like `row_select`, `add_click`, `update_click`, `refresh_click`, etc. The First action here is `on Row click`, so what action will be performed on row click like `Select Row` will perform the action flow configured in `row_select` event,`Show Details` will open detail view, `Navigate with Selection` will navigate to screen that is configured.

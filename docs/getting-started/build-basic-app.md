@@ -27,8 +27,8 @@ This tutorial guides you through the steps to create a simple database GUI using
 Here's a screenshot of the final result:
 
 <figure>
-  <Thumbnail src="/img/getting-started/customer-management-app.png" alt="Customer Managment App" />
-  <figcaption align = "center"><i>Customer Managment App</i></figcaption>
+  <Thumbnail src="/img/getting-started/customer-management-app.png" alt="Customer Management App" />
+  <figcaption align = "center"><i>Customer Management App</i></figcaption>
 </figure>
 
 Let's get started!

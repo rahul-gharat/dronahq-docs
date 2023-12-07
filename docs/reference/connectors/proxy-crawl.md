@@ -21,8 +21,8 @@ ProxyCrawl Connector enables easy integration with ProxyCrawl's web scraping and
 Add a `Account name`. Then add the `Token` for the connector account. Once all details are added, click `Save`. Your connector configuration is now done.
 
 <figure>
-  <Thumbnail src="/img/reference/connectors/proxycrawl/details.png" alt="Proxy Crawl with configuration feilds." />
-  <figcaption align = "center"><i>Proxy Crawl with configuration feilds.</i></figcaption>
+  <Thumbnail src="/img/reference/connectors/proxycrawl/details.png" alt="Proxy Crawl with configuration fields." />
+  <figcaption align = "center"><i>Proxy Crawl with configuration fields.</i></figcaption>
 </figure>
 
 After successfully configuring and saving the connector settings, you can easily access your newly connected account by navigating to the `connected accounts` list. You can find this option from the `Connector -> Manage Account` section. This centralized location allows you to conveniently monitor and manage your connected accounts.

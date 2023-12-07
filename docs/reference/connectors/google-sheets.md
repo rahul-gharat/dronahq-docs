@@ -52,7 +52,7 @@ In this example shown below, will first fetch all the rows matching the Search V
 
 1. Use variables to fetch the data from column `B` for the searched rows. You can see here that we have also used the Row number as well as a return value. These Row number values can be used in other use cases or scenarios like updating rows, deleting rows based on certain conditions, and so on.
 <figure>
-  <Thumbnail src="/img/reference/connectors/googlesheet/getall1.jpeg" alt="Configuring feilds to do multiple row clearing." />
+  <Thumbnail src="/img/reference/connectors/googlesheet/getall1.jpeg" alt="Configuring fields to do multiple row clearing." />
 </figure>
 
 2. While using `GetAll Rows` in Google Sheets the response had fixed keys values.A and values.B and so on. DronaHQ has introduced a new enhanced feature Use `Header Rows` option that replaces the fixed keys with headings in your sheets.
@@ -60,7 +60,7 @@ In this example shown below, will first fetch all the rows matching the Search V
 3. For the `GetAll Rows` option, you provide the required inputs, and view the result with fixed keys `B` and `C`.
 
 <figure>
-  <Thumbnail src="/img/reference/connectors/googlesheet/getall2.png" alt="Configuring feilds to do multiple row clearing." />
+  <Thumbnail src="/img/reference/connectors/googlesheet/getall2.png" alt="Configuring fields to do multiple row clearing." />
 </figure>
 
 In the above example we can view fixed keys `B` and `C` whereas the headings of the google sheets action-name, type and so on are viewed as rows.
@@ -68,7 +68,7 @@ In the above example we can view fixed keys `B` and `C` whereas the headings of 
 3. Now change the Use Header Row in Response to `True/Yes`. Click Refresh Response you will be able to view this screen.
 
 <figure>
-  <Thumbnail src="/img/reference/connectors/googlesheet/getall3.png" alt="Configuring feilds to do multiple row clearing." />
+  <Thumbnail src="/img/reference/connectors/googlesheet/getall3.png" alt="Configuring fields to do multiple row clearing." />
 </figure>
 
 
@@ -78,14 +78,14 @@ To fetch the row details of a specific row number provided by the user can be do
 You just have to select the subcategory and provide the sheet details such as the spreadsheet name and sheet ID along with the row number. These details will be used to fetch the row details of a specific row number from a certain spreadsheet.
 
 <figure>
-  <Thumbnail src="/img/reference/connectors/googlesheet/getsingle.png" alt="Configuring feilds to do multiple row clearing." />
+  <Thumbnail src="/img/reference/connectors/googlesheet/getsingle.png" alt="Configuring fields to do multiple row clearing." />
 </figure>
 
 You can add this connector in the data bind section or action of any control. Select the columns to bind in the control as keys. We will be using table grid control to view the data received by the API subcategory.
 
 
 <figure>
-  <Thumbnail src="/img/reference/connectors/googlesheet/table.png" alt="Configuring feilds to do multiple row clearing." />
+  <Thumbnail src="/img/reference/connectors/googlesheet/table.png" alt="Configuring fields to do multiple row clearing." />
 </figure>
 
 
@@ -96,8 +96,8 @@ The Clear multiple rows option comes to help when you want to clear multiple row
 Pass an array of rows’ numbers in the method along with the spreadsheet name and its sheet name.
 
 <figure>
-  <Thumbnail src="/img/reference/connectors/googlesheet/clearmulti.jpeg" alt="Configuring feilds to do multiple row clearing." />
-  <figcaption align = "center"><i>Configuring feilds to do multiple row clearing.</i></figcaption>
+  <Thumbnail src="/img/reference/connectors/googlesheet/clearmulti.jpeg" alt="Configuring fields to do multiple row clearing." />
+  <figcaption align = "center"><i>Configuring fields to do multiple row clearing.</i></figcaption>
 </figure>
 
 

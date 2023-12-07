@@ -7,7 +7,7 @@ import Image from '@site/src/components/Image'; import VersionedLink from '@site
 Thumbnail from '@site/src/components/Thumbnail';
 
 The Multi Image control is a versatile media tool designed to present a grid of multiple images within a microapp,
-enabling an organized display of visual content.4
+enabling an organized display of visual content.
 
 <figure>
   <Thumbnail src="/img/reference/controls/multi-image/preview.jpeg" alt="Chat Control" />

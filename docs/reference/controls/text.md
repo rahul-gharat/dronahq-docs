@@ -38,7 +38,7 @@ Consider an example where you want to display an introductory paragraph:
 | Property                  | Description                                                                                   |
 |---------------------------|-----------------------------------------------------------------------------------------------|
 | Paragraph                 | Provide static text to be displayed in the Text control using this property. |
-| Properties                | Specifies properties like text font-size, weight and allignment.                                    |
+| Properties                | Specifies properties like text font-size, weight and alignment.                                    |
 | Letter Spacing            | Configures the space between characters.                                                     |
 | Line Height               | Sets the height of each line of text.                                                       |
 

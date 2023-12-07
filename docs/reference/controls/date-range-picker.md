@@ -64,7 +64,7 @@ function JSCode(output) {
 
 <figure>
   <Thumbnail src="/img/reference/controls/date-range-picker/customjs.jpg" alt="Date Range Picker" />
-  <figcaption align = "center"><i>Writing Custom JavaScript for Static data bindng.</i></figcaption>
+  <figcaption align = "center"><i>Writing Custom JavaScript for Static data binding.</i></figcaption>
 </figure>
 
 <figure>

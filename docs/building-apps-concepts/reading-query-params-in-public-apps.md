@@ -19,7 +19,7 @@ Navigate to `Config Options -> Query String`. Click on `Add query string` and de
 
 ## Accessing Query String Values
 
-The query string paramter values can be accessed through the `QUERYSTRING("paramName")` function where `paramName` is the name of the query string parameter you want to access. The query string value can be statically binded to any control using the Formula Box available in Data Bind Section or can be accessed in the Actionflow using the Compute action block.
+The query string parameter values can be accessed through the `QUERYSTRING("paramName")` function where `paramName` is the name of the query string parameter you want to access. The query string value can be statically binded to any control using the Formula Box available in Data Bind Section or can be accessed in the Actionflow using the Compute action block.
 
 ### Using Data Bind Section
 

@@ -25,7 +25,7 @@ DronaHQ allows users to create multi screen apps with seamless navigation capabi
 ## Key Navigation Methods
 
 ### NavigateTo Dropdowns in properties
-- This feature in DronaHQ is available at many places like `Left` or `Right` icons in `Header section`, as well as many controls alos have this in there properties section to configure navigation flow.
+- This feature in DronaHQ is available at many places like `Left` or `Right` icons in `Header section`, as well as many controls also have this in there properties section to configure navigation flow.
 
 ### Options available for Navigation
 - `NavigateTo (with validation)` Basically while navigating to the desired screen current screen will be validated for all type to validation conditions configured by the app creator.

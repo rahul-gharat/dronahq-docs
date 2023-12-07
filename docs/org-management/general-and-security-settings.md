@@ -35,7 +35,7 @@ In this section you can configure the following properties
     - **Enforce Passcode Policy** - You can enable mpin based passcode policy for the end-users. They will be asked to set up an mpin at the start.
         - **Passcode Timeout Interval (In Minutes)** - This allows end-users to access the app without the mpin for specified minutes in a session.
         - **Enable Biometric** - This allows end-users to access the end-user portal mobile app without a custom mpin and via a choice of biometrics.
-- **Screnshot restrictions**
+- **Screenshot restrictions**
     - **Allow Screenshot (Android)** - This will restrict your end-users from taking a screenshot on their android mobile app.
     - **Enable Logging** - Screenshot attempts are logged at DronaHQ end (available on request)
     - **Capture Screenshot** - Screenshots taken on iOS devices can be captured at DronaHQ end (available on request)

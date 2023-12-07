@@ -23,5 +23,5 @@ You can go to `Settings -> App Settings -> Prevent resource request spoofing` an
 
 <figure>
   <Thumbnail src="/img/building-apps-concepts/prevent-request-spoofing/network-request.png" alt="Network Requests" width='100%'/>
-  <figcaption align = "center"><i>Netword request</i></figcaption>
+  <figcaption align = "center"><i>Network request</i></figcaption>
 </figure>
