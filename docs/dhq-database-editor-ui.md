@@ -29,14 +29,34 @@ You can create a table by specifying its name and adding necessary fields, confi
 
 You can add a row by either clicking the `+ Row` option or by directly typing in the last row and pressing 'Tab' or 'Enter' to create a new row. To modify any field value, simply click on the cell, edit its content, and upon focusing out from that field, the modified value will be automatically reflected to the database if it's a valid entry.
 
+<video width="100%" controls preload="metadata">
+  <source src="/videos/dhq-database/add-edit-record.mp4"/>
+</video>
+
 ## Create, edit and delete fields
 
 To add fields to the table, simply click on the `+ Column` option. Specify the name, data type, and configure advanced properties such as nullable, unique, and default values for the field type. Additionally, you can rename, modify the data type, or adjust properties of any field by clicking on the chevron icon located to the right of the field name. If any field is no longer needed, it can also be deleted.
+
+<video width="100%" controls preload="metadata">
+  <source src="/videos/dhq-database/fields-showcase.mp4"/>
+</video>
+
+<video width="100%" controls preload="metadata">
+  <source src="/videos/dhq-database/add-edit-delete-field.mp4"/>
+</video>
 
 ## Customize which fields to show
 
 Manage field visibility using the `Hide` option. Very useful when working with extensive tables, you can hide fields that are not currently required. Simply toggle the switch located to the right of a field's name to show or hide specific fields. When fields are hidden, the 'Hide' option stays active and indicates the number of hidden fields.
 
+<video width="100%" controls preload="metadata">
+  <source src="/videos/dhq-database/hide-unhide-fields.mp4"/>
+</video>
+
 ## Customize row height to work with extensive field values
 
 The `Row Height` option allows you to adjust the row size, enabling comfortable viewing of extensive field values without the need of manual field resizing. By default, the row height is set to 'small,' but you can easily switch to 'medium,' 'large,' or 'extra large' options from the dropdown menu.
+
+<video width="100%" controls preload="metadata">
+  <source src="/videos/dhq-database/row-height-toggle.mp4"/>
+</video>
