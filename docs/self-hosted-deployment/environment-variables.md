@@ -221,7 +221,7 @@ To use Azure Storage Container, you need to set following variables.
 #### `GCLOUD_STORAGE_PROJECT_ID`
 This is id of your Google cloud project under which you have created your storage bucket.
 
-#### `GCLOUD_STORAGE_SERVICE_ACCOUNT_KEY_FILE_PATH`
+#### `GCLOUD_STORAGE_SERVICE_ACOUNT_KEY_FILE_PATH`
 This is a your Google cloud service account's key file path inside your container or mapped volume. This key should have required permissions to read and write inside your storage container.
 
 #### `GCLOUD_STORAGE_BUCKET_NAME`
