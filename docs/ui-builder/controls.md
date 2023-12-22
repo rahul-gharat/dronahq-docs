@@ -39,7 +39,7 @@ The process of using controls in a studio environment involves five essential as
 | Hide Label  | This option enables the hiding of the control's label from view.                                                 |
 | Tooltip     | You can add a Tooltip text that provides users with hints or additional information for input. The Tooltip icon becomes visible when the "Show tooltip icon" toggle property is enabled.                                                                                                                              |
 | Description | The description allows you to provide additional information or instructions for the control. The Description is visible when the "Show Description" toggle property is enabled.                                                                                                                                                                                                                                     |
-| External CSS | This property enables the application of custom CSS to the controls. You can customize the appearance of the control by selecting the appropriate class or ID. Further information can be found [here](#). |
+| External CSS | This property enables the application of custom CSS to the controls. You can customize the appearance of the control by selecting the appropriate class or ID. Further information can be found [here](/building-apps-concepts/modify-css-of-controls). |
 
 ### Generic
 
