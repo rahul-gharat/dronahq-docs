@@ -112,70 +112,71 @@ Columns For Database Loggers:
 | id | level | message | meta | timestamp |
 |------|------|------|------|------|
 
-## List of events logged
-| Events | Event ID |
-|------|------|
-| User Invited | ``user_invited`` |
-| User Activated | ``user_activated`` |
-| User Deactivated | ``user_deactivated`` |
-| User Password Reset | ``user_password_reset`` |
-| User Password Forgot | ``user_password_forgot`` |
-| User Updated | ``user_updated`` |
-| Group Created | ``group_created`` |
-| Admin Logged In | ``admin_logged_in`` |
-| Admin Logged Out | ``admin_logged_out`` |
-| Sheet Created | ``sheet_created`` |
-| Sheet Deleted | ``sheet_deleted`` |
-| Sheet Rename | ``sheet_rename`` |
-| Sheet Permission Updated | ``sheet_permission_updated`` |
-| App Opened | ``app_opened`` |
-| App Saved | ``app_saved`` |
-| App Created | ``app_created`` |
-| App Deleted | ``app_deleted`` |
-| App Published | ``app_published`` |
-| App Unpublished | ``app_unpublished`` |
-| App Permission Updated | ``app_permission_updated`` |
-| App Config Updated | ``app_config_updated`` |
-| Template Created | ``template_created`` |
-| Catalog Created | ``catalog_created`` |
-| Connectors Added | ``connectors_added`` |
-| Connectors Updated | ``connectors_updated`` |
-| Connectors Deleted | ``connectors_deleted`` |
-| Connectors API Added | ``connectors_api_added`` |
-| Connectors API Updated | ``connectors_api_updated`` |
-| Connectors API Deleted | ``connectors_api_deleted`` |
-| Connectors Environment Update | ``connectors_env_update`` |
-| Connectors Environment Delete | ``connectors_env_delete`` |
-| Environment Added | ``environment_added`` |
-| Environment Updated | ``environment_updated`` |
-| Environment Deleted | ``environment_deleted`` |
-| Db Query | ``db_query`` |
-| API Call | ``api_call`` |
-| PDF Creation | ``pdf_creation`` |
-| Lookup | ``lookup`` |
-| Insert Row | ``insert_row`` |
-| Update Row | ``update_row`` |
-| Delete Row | ``delete_row`` |
-| User Logged In | ``user_logged_in`` |
-| User Logged Out | ``user_logged_out`` |
-| User Password Forgot | ``user_password_forgot`` |
-| User Password Reset Requested | ``user_password_reset_requested`` |
-| Settings Updated | ``settings_updated`` |
-| Public Access Enabled | ``public_access_enabled`` |
-| Public Access Disabled | ``public_access_disabled`` |
-| Organizational Access Enabled | ``organizational_access_enabled`` |
-| Organizational Access Disabled | ``organizational_access_disabled`` |
-| Secrets Added | ``secrets_added`` |
-| Secrets Edited | ``secrets_edited`` |
-| Secrets Deleted | ``secrets_deleted`` |
-| Stripe Keys Saved | ``stripe_keys_saved`` |
-| Automation Added | ``automation_added`` |
-| Automation Deleted | ``automation_deleted`` |
-| Automation Enabled | ``automation_enabled`` |
-| Automation Disabled | ``automation_disabled`` |
-| Automation Rollback | ``automation_rollback`` |
-| Automation Publish | ``automation_publish`` |
-| Automation Updated | ``automation_updated`` |
+## List of events logged and Availblity 
+| Events | Event ID | Self Hosted | Cloud |
+|------|------|----|------|
+| User Invited | ``user_invited`` | ✔️ | ✔️ |
+| User Activated | ``user_activated`` | ✔️ | ✔️ |
+| User Deactivated | ``user_deactivated`` | ✔️ | ✔️ |
+| User Password Reset | ``user_password_reset`` | ✔️ | ✔️ |
+| User Password Forgot | ``user_password_forgot`` |✔️ | ✔️ |
+| User Updated | ``user_updated`` |✔️ | ✔️ |
+| Group Created | ``group_created`` |✔️ | ✔️ |
+| Admin Logged In | ``admin_logged_in`` |✔️ | ✔️ |
+| Admin Logged Out | ``admin_logged_out`` |✔️ | ✔️ |
+| App Saved | ``app_saved`` | ✔️ | ✔️ |
+| App Created | ``app_created`` | ✔️ | ✔️ |
+| App Deleted | ``app_deleted`` | ✔️ | ✔️ |
+| App Published | ``app_published`` | ✔️ | ✔️ |
+| App Unpublished | ``app_unpublished`` |✔️ | ✔️ |
+| App Permission Updated | ``app_permission_updated`` |✔️ | ✔️ |
+| App Config Updated | ``app_config_updated`` |✔️ | ✔️ |
+| Template Created | ``template_created`` |✔️ | ✔️ |
+| Catalog Created | ``catalog_created`` |✔️ | ✔️ |
+| Connectors Added | ``connectors_added`` |✔️ | ✔️ |
+| Connectors Updated | ``connectors_updated`` |✔️ | ✔️ |
+| Connectors Deleted | ``connectors_deleted`` |✔️ | ✔️ |
+| Connectors API Added | ``connectors_api_added`` |✔️ | ✔️ |
+| Connectors API Updated | ``connectors_api_updated`` |✔️ | ✔️ |
+| Connectors API Deleted | ``connectors_api_deleted`` |✔️ | ✔️ |
+| Connectors Environment Update | ``connectors_env_update`` |✔️ | ✔️ |
+| Connectors Environment Delete | ``connectors_env_delete`` |✔️ | ✔️ |
+| Environment Added | ``environment_added`` |✔️ | ✔️ |
+| Environment Updated | ``environment_updated`` |✔️ | ✔️ |
+| Environment Deleted | ``environment_deleted`` |✔️ | ✔️ |
+| Db Query | ``db_query`` |✔️ | ✔️ |
+| API Call | ``api_call`` |✔️ | ✔️ |
+| User Logged In | ``user_logged_in`` |✔️ | ✔️ |
+| User Logged Out | ``user_logged_out`` |✔️ | ✔️ |
+| User Password Forgot | ``user_password_forgot`` | ✔️ | ✖️ |
+| User Password Reset Requested | ``user_password_reset_requested`` | ✔️ | ✖️ |
+| Settings Updated | ``settings_updated`` | ✔️ | ✖️ |
+| Public Access Enabled | ``public_access_enabled`` | ✔️ | ✔️ |
+| Public Access Disabled | ``public_access_disabled`` | ✔️ | ✔️ |
+| Organizational Access Enabled | ``organizational_access_enabled`` | ✔️ | ✔️ |
+| Organizational Access Disabled | ``organizational_access_disabled`` | ✔️ | ✔️ |
+
+<!-- 
+| Stripe Keys Saved | ``stripe_keys_saved`` | ✖️ | ✖️ |
+| Sheet Created | ``sheet_created`` | ✖️ | ✖️ |
+| Sheet Deleted | ``sheet_deleted`` | ✖️ | ✖️ |
+| Sheet Rename | ``sheet_rename`` | ✖️ | ✖️ |
+| Sheet Permission Updated | ``sheet_permission_updated`` | ✖️ | ✖️ |
+| PDF Creation | ``pdf_creation`` | ✖️ | ✖️ |
+| Lookup | ``lookup`` | ✖️ | ✖️ |
+| Insert Row | ``insert_row`` | ✖️ | ✖️ |
+| Update Row | ``update_row`` | ✖️ | ✖️ |
+| Delete Row | ``delete_row`` | ✖️ | ✖️ | 
+| Secrets Added | ``secrets_added`` | ✖️ | ✖️ |
+| Secrets Edited | ``secrets_edited`` | ✖️ | ✖️ |
+| Secrets Deleted | ``secrets_deleted`` | ✖️ | ✖️ | 
+| Automation Added | ``automation_added`` | ✖️ | ✖️ |
+| Automation Deleted | ``automation_deleted`` | ✖️ | ✖️ |
+| Automation Enabled | ``automation_enabled`` | ✖️ | ✖️ |
+| Automation Disabled | ``automation_disabled`` | ✖️ | ✖️ |
+| Automation Rollback | ``automation_rollback`` | ✖️ | ✖️ |
+| Automation Publish | ``automation_publish`` | ✖️ | ✖️ |
+| Automation Updated | ``automation_updated`` | ✖️ | ✖️ | -->
 
 ---
 
