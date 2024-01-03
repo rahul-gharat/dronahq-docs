@@ -112,7 +112,7 @@ Columns For Database Loggers:
 | id | level | message | meta | timestamp |
 |------|------|------|------|------|
 
-## List of events logged and Availblity 
+## List of events logged and Availability 
 | Events | Event ID | Self Hosted | Cloud |
 |------|------|----|------|
 | User Invited | ``user_invited`` | ✔️ | ✔️ |
