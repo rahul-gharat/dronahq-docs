@@ -96,7 +96,7 @@ To scale DronaHQ Self-Hosted, you'll need to set up a managed remote database fo
    - DHQ_MONGODB_DATABASE
    - DHQ_MONGODB_PORT
 
-   - FILE_UPLOAD_TYPE=”aws”
+   - FILE_UPLOAD_TYPE= ”aws”
 
    - DHQ_AWS_REGION
    - DHQ_AWS_ACCESS_KEY_ID

@@ -22,8 +22,8 @@ Within the platform, there's a functionality that streamlines this process. It a
 2. Now go to `Configuration > Styling > Headers`. Here you can choose the screen from the `Select Screen Header` dropdown, this is to use as the base header for other screens. These header configurations will be applicable for new screens only.
 
 <figure>
-  <Thumbnail src="/img/building-apps-concepts/reusable-header/header-setting.png" alt="Reuable Header Configuration" />
-  <figcaption align = "center"><i>Reuable Header Configuration</i></figcaption>
+  <Thumbnail src="/img/building-apps-concepts/reusable-header/header-setting.png" alt="Reusable Header Configuration" />
+  <figcaption align = "center"><i>Reusable Header Configuration</i></figcaption>
 </figure>
 
 :::info NOTE

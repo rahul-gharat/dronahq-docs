@@ -5,7 +5,7 @@ title: HTTP Requests - REST API
 import Thumbnail from '@site/src/components/Thumbnail';
 import VersionedLink from '@site/src/components/VersionedLink';
 
-DronaHQ facilitates seamless interaction with external services and resources through HTTP requests, enabling integration with RESTful APIs.The combination of HTTP requests and REST API integration within DronaHQ empowers users to effectively manage data, interact with external services, and create dynamic applications that cater to specific data handling needs.
+DronaHQ facilitates seamless interaction with external services and resources through HTTP requests, enabling integration with RESTful APIs. The combination of HTTP requests and REST API integration within DronaHQ empowers users to effectively manage data, interact with external services, and create dynamic applications that cater to specific data handling needs.
 
 <figure>
   <Thumbnail src="/img/data-queries/restapi-dataquery.jpeg" alt="REST API"/>
@@ -47,7 +47,7 @@ Specifies the endpoint to be queried.
 
 ### Handling Response/failure
 
-While configuring Rest API/GraphQL Api/Database Query, there might be scenario where you want your connector response to execute failure flow instead of success flow on certain conditions, in such cases, you can define failure conditions. Know more about Faliure conditions from [here](/datasource-concepts/configuring-failure-conditions/)
+While configuring Rest API/GraphQL Api/Database Query, there might be scenario where you want your connector response to execute failure flow instead of success flow on certain conditions, in such cases, you can define failure conditions. Know more about Failure conditions from [here](/datasource-concepts/configuring-failure-conditions/)
 
 
 
