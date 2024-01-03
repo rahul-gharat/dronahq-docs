@@ -41,10 +41,10 @@ Configure your SurrealDB database category using the provided connection details
 | Username             | Enter the Username                      |
 | Password             | Enter the Password                      |
 
-<!-- <figure>
-  <Thumbnail src="/img/reference/connectors/surrealdb/details.png" alt="SurrealDB with Sample details." />
+<figure>
+  <Thumbnail src="/img/reference/connectors/surrealdb/details.jpeg" alt="SurrealDB with Sample details." />
   <figcaption align = "center"><i>SurrealDB with Sample details.</i></figcaption>
-</figure> -->
+</figure>
 
 #### Advanced Settings
 
@@ -56,10 +56,10 @@ Configure your SurrealDB database category using the provided connection details
 
 Once the SurrealDB connector is configured, access it in your Connector Library. Add queries, execute them, and view responses.
 
-<!-- <figure>
+<figure>
   <Thumbnail src="/img/reference/connectors/surrealdb/data-query.jpeg" alt="Write Queries" />
   <figcaption align = "center"><i>Write Queries</i></figcaption>
-</figure> -->
+</figure>
 
 :::tip
 Use dynamic variables enclosed in double curly brackets. Test with sample values before saving. Link dynamic variables to controls/actions for runtime use.
@@ -91,10 +91,5 @@ SELECT * FROM Customers;
 Query explanation:
 
 This SQL query retrieves all rows and columns from the `Customers` table within the SurrealDB database.
-
-<!-- <figure>
-  <Thumbnail src="/img/reference/connectors/surrealdb/getall.jpeg" alt="Get all data query." />
-  <figcaption align = "center"><i>Get all data query.</i></figcaption>
-</figure> -->
 
 Integrate the fetched data into your application's interface for enhanced functionality and user experience.
