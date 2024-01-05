@@ -72,7 +72,7 @@ Implementing pagination on database connectors. Lets see how to implement and us
 
 Make sure you have your connector configured. Go to the `table grid` control and from its `bind data > quick select > connector query`. 
 
-Lets write our query here to perform pagination on data retriveal.
+Lets write our query here to perform pagination on data retrieval.
 
 
 Query:
