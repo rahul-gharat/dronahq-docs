@@ -37,7 +37,7 @@ Configure your SurrealDB database category using the provided connection details
 | Host                 | Enter the Host Domain or IP             |
 | Port                 | Enter the Port number                   |
 | Database Name        | Enter the Database name                 |
-| Namespace            | Enter the Namespace (if applicable)     |
+| Namespace            | Enter the Namespace for full data access for all databases under a specific namespace.     |
 | Username             | Enter the Username                      |
 | Password             | Enter the Password                      |
 
