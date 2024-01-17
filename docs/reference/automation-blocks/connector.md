@@ -17,12 +17,29 @@ The Automation Block known as `Connector` serves as a pivotal component in your 
 
 Imagine scenarios where your automation tasks require interaction with external databases, web services, or third-party applications. The Connector automation block bridges this gap by facilitating communication between your automation BPM Flows and external entities like databases and APIs.
 
+
 <figure>
 <Thumbnail src="/img/reference/automation-blocks/connector/connector-visual.jpeg" alt="Connector" />
 <figcaption align='center'><i>Connector</i></figcaption>
 </figure>
 
 Configure `Task Ouputs` by adding outputs for Connector, it's a resource you can use in other tasks or blocks to make decisions or perform actions based on that data.
+
+### Connector Query - Tailored Queries
+
+Opt for `Connector Query` to handcraft your queries by selecting from available connectors and writing your custom queries. This option empowers you with flexibility and precision in data retrieval and manipulation.
+
+<figure>
+<Thumbnail src="/img/reference/automation-blocks/connector/connector-visual.jpeg" alt="Connector" />
+</figure>
+
+### Connector Library - Reusable Queries
+
+Choose `Connector Library` to access pre-existing queries within the library. Select from a range of connectors and already-added queries, streamlining your integration process and saving time in query formulation.
+
+<figure>
+<Thumbnail src="/img/reference/automation-blocks/connector/library.jpeg" alt="Connector" />
+</figure>
 
 ### Seamless Integration
 
