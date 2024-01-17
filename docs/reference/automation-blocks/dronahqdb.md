@@ -14,7 +14,7 @@ In automation, the `DronaHQ DB` serves as a linchpin, delivering a robust soluti
 <Thumbnail src="/img/reference/automation-blocks/dronahqdb/dronahqdb.jpeg" alt="DronaHQ DB" />
 </figure>
 
-## DronahqDB Data Management
+## DronaHQ DB Data Management
 
 Consider a scenario where your automation tasks demand meticulous handling of substantial data volumes. DronaHQ DB steps up to the plate, providing a centralized hub for efficient data storage and management within your automation BPM Flows.
 
