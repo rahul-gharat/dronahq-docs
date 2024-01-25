@@ -164,19 +164,20 @@ Columns For Database Loggers:
 | Automation Updated | ``automation_updated`` | ✔️ | ✔️ |
 | Automation Created | ``automation_created`` | ✔️ | ✔️ |
 | Logger Deleted | ``logger_deleted`` | ✔️ | ✔️ |
-| Openai Account Added | ``openai_account_added`` | ✔️ | ❌ |
-| Openai Account Updated | ``openai_account_updated`` | ✔️ | ❌ |
-| Openai Account Deleted | ``openai_account_deleted`` | ✔️ | ❌ |
-| Openai Account Set Default | ``openai_account_enabled`` | ✔️ | ❌ |
-| Email Config Created | ``email_config_created`` | ✔️ | ❌ |
-| Email Config Saved | ``email_config_saved`` | ✔️ | ❌ |
-| Email Config Deleted | ``email_config_deleted`` | ✔️ | ❌ |
-| SSH Key Added | ``ssh_key_added`` | ✔️ | ❌ |
-| SSH Key Updated | ``ssh_key_updated`` | ✔️ | ❌ |
-| SSH Key Deleted | ``ssh_key_deleted`` | ✔️ | ❌ |
-| SSO Enabled | ``sso_enabled`` | ✔️ | ❌ |
-| SSO Disabled | ``sso_disabled`` | ✔️ | ❌ |
-| SCIM User Added | ``scim_user_added`` | ✔️ | ❌ |
+| Openai Account Added | ``openai_account_added`` | ✔️ | ✔️ |
+| Openai Account Updated | ``openai_account_updated`` | ✔️ | ✔️ |
+| Openai Account Deleted | ``openai_account_deleted`` | ✔️ | ✔️ |
+| Openai Account Set Default | ``openai_account_enabled`` | ✔️ | ✔️ |
+| Email Config Created | ``email_config_created`` | ✔️ | ✔️ |
+| Email Config Saved | ``email_config_saved`` | ✔️ | ✔️ |
+| Email Config Deleted | ``email_config_deleted`` | ✔️ | ✔️ |
+| Email Template Saved | ``email_template_saved`` | ✔️ | ✔️ |
+| SSH Key Added | ``ssh_key_added`` | ✔️ | ✔️ |
+| SSH Key Updated | ``ssh_key_updated`` | ✔️ | ✔️ |
+| SSH Key Deleted | ``ssh_key_deleted`` | ✔️ | ✔️ |
+| SSO Enabled | ``sso_enabled`` | ✔️ | ✔️ |
+| SSO Disabled | ``sso_disabled`` | ✔️ | ✔️ |
+| SCIM User Added | ``scim_user_added`` | ✔️ | ✔️ |
 | SCIM User Deactivated | ``scim_user_deactivated`` | ✔️ | ❌ |
 | SCIM User Updated | ``scim_user_updated`` | ✔️ | ❌ |
 | SCIM Group Added | ``scim_group_added`` | ✔️ | ❌ |
@@ -185,6 +186,7 @@ Columns For Database Loggers:
 | User Bulk Deactivated | ``user_bulk_deactivate`` | ✔️ | ✔️ |
 | User Bulk Activate | ``user_bulk_activate`` | ✔️ | ✔️ |
 | User Group Bulk Mapping | ``manage_user_groups_bulk`` | ✔️ | ✔️ |
+| New Theme Created | ``new_theme_created` | ❌ | ✔️ |
 | Logger Deleted | ``logger_deleted`` | ✔️ | ✔️ |
 <!-- some remaining -->
 <!-- 
