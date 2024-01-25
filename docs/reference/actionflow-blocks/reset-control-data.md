@@ -26,6 +26,12 @@ To effectively utilize the `Reset Control Data` action, follow these steps:
 
 5. Under the Configure Connector’s Field, you will need to select the controls that you want to reset the values for. This step ensures that only the specified controls will be affected.
 
+
+    - Trigger Dependent Data Query: When activated, this toggle ensures that resetting the selected control with values triggers the execution of a data query associated with that control. In scenarios involving nested data queries, forming a chain-like structure, the process commences from the final dependent data query and systematically executes each one in reverse order.
+
+    - Maintain Pagination (Table Grid Control Only): Enabling this toggle is a straightforward yet impactful action. Upon resetting the data in a Table Grid, it preserves the existing pagination state. For instance, if the user is on the second page, the Table Grid will maintain this position post-reset. This functionality significantly reduces the necessity for users to frequently navigate through pages while observing or implementing changes within the Table Grid.
+
+
 6. You can also specify conditions under which the action should be executed, as well as the specific environment in which it should take place.
 
 7. Assigning a unique name to the action using the Action Unique Name field is essential for effective identification and management of tasks within the flow.
@@ -33,7 +39,7 @@ To effectively utilize the `Reset Control Data` action, follow these steps:
 8. Click `Finish` to complete the setup.
 
 <figure>
-<Thumbnail src="/img/reference/actionflow-blocks/reset-control-data/feild.png" alt="feild" />
+<Thumbnail src="/img/reference/actionflow-blocks/reset-control-data/feild.jpeg" alt="feild" />
 </figure>
 
 By using the `Reset Control Data` action, you empower users with the ability to easily restore controls to their default values or initial states. This enhances user experience by offering a safety net for data modifications and simplifying the process of reverting changes.

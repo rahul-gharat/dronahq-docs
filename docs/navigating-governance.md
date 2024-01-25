@@ -9,7 +9,7 @@ In the dynamic landscape of modern business operations, maintaining robust contr
 
   
 
-## Exploring Organisational Access 
+## Exploring Organizational Access 
 
 
 #### Streamlined Authentication with SSO 
@@ -100,7 +100,7 @@ From tailored access based on individual requirements to centralized access mana
 
 ## Multiple Data Environments for Testing and Development 
 
-DronaHQ facilitates the creation of multiple [data environments](/datasource-concepts/data-environments/). These environments are given defalut name such as Production, Staging, and Development, but users an create with their own specified name. These environments enable isolated testing and development without affecting live data, ensuring seamless transitions. 
+DronaHQ facilitates the creation of multiple [data environments](/datasource-concepts/data-environments/). These environments are given default name such as Production, Staging, and Development, but users an create with their own specified name. These environments enable isolated testing and development without affecting live data, ensuring seamless transitions. 
 
  
 
