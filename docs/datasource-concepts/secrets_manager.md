@@ -11,8 +11,12 @@ Resource configuration in DronaHQ involves managing critical information like da
 DronaHQ, prioritizing data security is fundamental, ensuring the safeguarding of sensitive information. However, some
 users prefer storing such data externally for added security layers.
 
-DronaHQ's Secret Manager feature, accessible through - `Account Settings > Integrations > Secret Manager`, empowers
+DronaHQ's Secret Manager feature, accessible through - `ccount Settings > General & Security > Secret Manager`, empowers
 users to manage and retrieve sensitive data from external sources like HashiCorp Vault.
+
+<figure>
+  <Thumbnail src="/img/connecting-datasource/concepts/secrets-manager/loc.png" alt="Adding a new vault" />
+</figure>
 
 This feature offers increased flexibility, enabling users to maintain control over their sensitive information while
 utilizing DronaHQ's cloud platform.
