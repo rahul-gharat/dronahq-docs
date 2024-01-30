@@ -28,7 +28,7 @@ Configuring a theme is a straightforward task.
 Two studio keywords are associated with the themes
 * AVAILABLETHEMES: 
   * All the themes configured in the app are added to this list of available themes keyword.
-  * This can be used as data source for any control which will allow user to choose theme and then use it to provide value in the set theme action.
+  * This can be used as a data source for any control which will allow the user to choose the theme and then use it to provide value in the set theme action.
   
 * STUDIOTHEMEMODE: 
   * The current active theme name is stored in this keyword.
