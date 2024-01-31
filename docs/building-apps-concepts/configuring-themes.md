@@ -13,7 +13,7 @@ DronaHQ Studio allows users to customize the appearance and style of their appli
 Configuring themes in the studio is a straightforward process. Utilizing our theme creator interface, users can generate an unlimited number of themes. The platform comes equipped with two predefined theme configurations: one for default light and another for default dark. Users have the flexibility to designate any custom themes they create as the default for either light or dark mode. Additionally, they can select a single theme to serve as the default for both dark and light modes. Themes marked as defaults will automatically be applied to any newly created applications.
 
 ### Creating Themes
-** Below is a walkthrough of creating themes: **
+** Below is a walk-through of creating themes: **
 
 <div style={{ position: 'relative', paddingBottom: 'calc(46.33333333333333% + 41px)', height: 0 }}> 
     <iframe 
@@ -38,7 +38,7 @@ Configuring themes in the studio is a straightforward process. Utilizing our the
 
 The themes generated in the studio are applicable within the application through the adjustment of the application's theme settings. Each application is equipped with its own theme configuration, providing users with the capability to manage the visual presentation of individual applications.
 
-** Below is a walkthrough of how to use themes: **
+** Below is a walk-through of how to use themes: **
 <div style={{ position: 'relative', paddingBottom: 'calc(46.33333333333333% + 41px)', height: 0 }}> 
     <iframe 
         src="https://demo.arcade.software/JAQDxU3RPTsjFcAkq631?embed" 
