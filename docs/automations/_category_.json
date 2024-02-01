@@ -1,0 +1,11 @@
+{
+    "label": "Add-on: DronaHQ Automations",
+    "position": 110,
+    "link": {
+      "type": "generated-index",
+      "description": "5 minutes to learn the most important Docusaurus concepts."
+    },
+    "className": "sidebar_category_heading",
+    "collapsed": false,
+    "collapsible": false
+  }
