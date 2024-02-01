@@ -127,7 +127,7 @@ public IHttpActionResult DoLoginWork(Payload payload)
 }
 ```
 
-To obtain the `DHQ_JWT_KEY` and `DHQ_JWT_SECRET`, in DronaHQ Studio, Go to `Manage Users -> SSO Configuration -> Select JWT - Custom Login` Option and Locate `DronaHQ SecretKey` and `DronaHQ SecretID` respectively.
+To obtain the `DHQ_JWT_KEY` and `DHQ_JWT_SECRET`, in DronaHQ, Go to `Manage Users -> SSO Configuration -> Select JWT - Custom Login` Option and Locate `DronaHQ SecretKey` and `DronaHQ SecretID` respectively.
 <figure>
   <Thumbnail src="/img/sso/sso-custom-secret-keys.png" alt="DronaHQ SecretKey and SecretID" />
   <figcaption align = "center"><i>DronaHQ SecretKey and SecretID</i></figcaption>

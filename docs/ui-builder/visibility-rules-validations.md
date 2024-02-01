@@ -10,7 +10,7 @@ import Thumbnail from '@site/src/components/Thumbnail';
 
 `Rules`  in DronaHQ is a powerful feature that empowers users to `dynamically manipulate the state` of controls within their applications. This capability is achieved by defining rules that respond to specific conditions based on values provided by other controls, keywords, or data queries. Using DronaHQ Rules, users can create intuitive and interactive user interfaces by setting up conditional logic. When certain conditions are met, the state of controls, such as enabling or disabling, showing or hiding, required or not required, set ui state or remove ui state.
 
-`Validation` in DronaHQ Studio empowers developers to ensure the accuracy of data provided by users within input fields. This powerful feature enables the creation of `custom validation rules` and allows the display of `personalized error messages` when users submit incorrect or incomplete information.
+`Validation` in DronaHQ empowers developers to ensure the accuracy of data provided by users within input fields. This powerful feature enables the creation of `custom validation rules` and allows the display of `personalized error messages` when users submit incorrect or incomplete information.
 
 <figure>
   <Thumbnail src="/img/ui-builder/rules-and-validation/rules-and-validation-sidebar.png" alt="rules and validation sidebar" />
@@ -19,7 +19,7 @@ import Thumbnail from '@site/src/components/Thumbnail';
 
 ## Working with rules
 
- Adding rules in DronaHQ Studio is a user-friendly and intuitive process that allows developers to define conditions and corresponding actions, enabling dynamic behaviour and interactivity within the application. Rules serve as a powerful mechanism to respond to user input and system events, making it possible to control the visibility, state, and properties of controls based on specific conditions.
+ Adding rules in DronaHQ is a user-friendly and intuitive process that allows developers to define conditions and corresponding actions, enabling dynamic behaviour and interactivity within the application. Rules serve as a powerful mechanism to respond to user input and system events, making it possible to control the visibility, state, and properties of controls based on specific conditions.
 
 <figure>
   <Thumbnail src="/img/ui-builder/rules-and-validation/working-with-rules.png" alt="working with rules" />
@@ -29,13 +29,13 @@ import Thumbnail from '@site/src/components/Thumbnail';
 :::info Info
 To ensure predictable and intended behaviour, it is essential to consistently include the reverse actions for true conditions and vice versa. This practice helps prevent unintended consequences and improves overall reliability.
 :::
-#### Key Features of Adding Rules in DronaHQ Studio:
+#### Key Features of Adding Rules in DronaHQ:
 
-- **Simple Configuration**: Defining rules in DronaHQ Studio is straightforward. Developers can specify conditions using UI that evaluate to either true or false based on user input, system variables, or other data sources configured in condition UI, as visible in the above example image.
+- **Simple Configuration**: Defining rules in DronaHQ is straightforward. Developers can specify conditions using UI that evaluate to either true or false based on user input, system variables, or other data sources configured in condition UI, as visible in the above example image.
 
 - **Conditional Actions**: Once the condition is set, developers can configure actions to be performed when the condition is met `true` or not met `false`. These actions dictate how the application behaves in response to user actions, creating a dynamic user experience.
 
-- **Types of Actions**: DronaHQ Studio supports various action types that can be triggered on conditions:
+- **Types of Actions**: DronaHQ supports various action types that can be triggered on conditions:
     - **Hide Control**: Allows developers to hide specific controls (e.g., fields, buttons) on the user interface when certain conditions are satisfied, streamlining the user experience by presenting only relevant information.
     - **Show Control**: The opposite of hiding controls, this action displays specific controls when the associated condition becomes true, enabling progressive disclosure of information.
     - **Set State and Remove State**: Developers can define custom states for controls and dynamically change their state based on conditions. these states are configured in controls while they are built, these states are usually present in controls built by the designer. for example, an info control can have three states info, warning and error.
@@ -43,9 +43,9 @@ To ensure predictable and intended behaviour, it is essential to consistently in
 
 - **Real-Time Rule Evaluation**: Rules are evaluated in real-time as users interact with the application. This ensures immediate responsiveness to user actions, creating a smooth and interactive user experience.
 
-- **Cross-Control Interactions**: Rules in DronaHQ Studio are not limited to controlling individual controls. Developers can create complex interactions between multiple controls to implement intricate business logic and achieve dynamic behaviour across the application.
+- **Cross-Control Interactions**: Rules in DronaHQ are not limited to controlling individual controls. Developers can create complex interactions between multiple controls to implement intricate business logic and achieve dynamic behaviour across the application.
 
-- **Error Handling**: DronaHQ Studio provides error handling and validation mechanisms to detect and resolve rule-related issues during the design phase, ensuring that the application functions as intended and minimizing potential errors.
+- **Error Handling**: DronaHQ provides error handling and validation mechanisms to detect and resolve rule-related issues during the design phase, ensuring that the application functions as intended and minimizing potential errors.
 
 ## Working with validations
 

@@ -6,12 +6,12 @@ import Thumbnail from '@site/src/components/Thumbnail';
 
 # OpenAI Integration
 
-DronaHQ Studio offers preconfigured `OpenAI API` connectors that enable users to seamlessly incorporate OpenAI's advanced artificial intelligence capabilities into their applications. These connectors are designed to simplify the integration process and are available in two versions:
+DronaHQ offers preconfigured `OpenAI API` connectors that enable users to seamlessly incorporate OpenAI's advanced artificial intelligence capabilities into their applications. These connectors are designed to simplify the integration process and are available in two versions:
 
 - <a href="#openai-connector">OpenAI</a>
 - <a href="#openai-advance-connector">OpenAI Advanced</a>
 
-This guide will walk you through the setup and configuration process of these preconfigured OpenAI API connectors in DronaHQ Studio. By following the instructions provided, you'll be able to quickly add an account for the connectors and start leveraging OpenAI's powerful AI capabilities within your applications.
+This guide will walk you through the setup and configuration process of these preconfigured OpenAI API connectors in DronaHQ. By following the instructions provided, you'll be able to quickly add an account for the connectors and start leveraging OpenAI's powerful AI capabilities within your applications.
 
 <figure>
   <Thumbnail src="/img/dronahq-ai/open-ai-integration/integrated-connector.png" alt="Integrated OpenAI Connetors" width='100%'/>
