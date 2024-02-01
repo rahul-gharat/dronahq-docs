@@ -17,10 +17,10 @@ On DronaHQ Cloud, the underlying database is managed by DronaHQ.
 ## Features
 DronaHQ Database enables you to:
 
-- [Securely store and access tables of data](/dhq-database-editor-ui/#manage-tables) in a PostgreSQL database that's only accessible as a resource within your DronaHQ organization.
-- [Interact visually with data](/dhq-database-editor-ui/#create-edit-and-delete-fields) through a spreadsheet-style interface, enabling record addition, editing, deletion, and search functionalities.
-- [Export table data in CSV format](/dhq-database-access-data-externally).
-- [Create apps and write queries](/dhq-database-use-in-app) to interact with DronaHQ Database like any other resource.
+- [Securely store and access tables of data](/dronahq-database/dhq-database-editor-ui/#manage-tables) in a PostgreSQL database that's only accessible as a resource within your DronaHQ organization.
+- [Interact visually with data](/dronahq-database/dhq-database-editor-ui/#create-edit-and-delete-fields) through a spreadsheet-style interface, enabling record addition, editing, deletion, and search functionalities.
+- [Export table data in CSV format](/dronahq-database/dhq-database-access-data-externally).
+- [Create apps and write queries](/dronahq-database/dhq-database-use-in-app) to interact with DronaHQ Database like any other resource.
 
 ## Getting Started
 On Cloud, DronaHQ Database is available for all users and can be located within the DronaHQ Managed section by navigating to the Connector's tab. You can view and manage your data within the database using the Database editor UI. 

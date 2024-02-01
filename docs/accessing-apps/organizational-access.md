@@ -15,7 +15,7 @@ You can follow the following steps to give an organizational access of your app 
 
 - Step 1: Navigate to `Share` in your app builder
 - Step 2: Enable `Organizational access`
-- Step 3: [Invite users](../user-management/adding-users-to-your-account) to your account
+- Step 3: [Invite users](/user-management/adding-users-to-your-account) to your account
 - Login to the DronaHQ `end-user portal` (For DronaHQ cloud edition it will be: https://your_subdomain.dronahq.io or your custom domain)
 
 <figure>

@@ -23,14 +23,14 @@ If you’re evaluating a large production use case or need any of our Enterprise
 
 ### Related Topics
 
-- [Minimum requirements](./requirements.md)
-- [Deployment Options](./deployment-options/local-machine.md)
-- [Configure SSL and CA certificates](./configure-ssl-and-ca-certificates.md)
-- [Configure External Databases](./configure-external-databases.md)
-- [Environment Variables](./environment-variables.md)
-- [Horizontal Scaling](./horizontal-scaling.md)
-- [Update DronaHQ to Latest version](./update-dronahq-to-latest.md)
-- [Concepts](./concepts/migrate-from-cloud-to-self-hosted.md)
+- [Minimum requirements](/self-hosted-deployment/requirements)
+- [Deployment Options](/self-hosted-deployment/deployment-options/local-machine)
+- [Configure SSL and CA certificates](/datasource-concepts/ssl-configurations/)
+- [Configure External Databases](/self-hosted-deployment/configure-external-databases)
+- [Environment Variables](/self-hosted-deployment/environment-variables)
+- [Horizontal Scaling](/self-hosted-deployment/horizontal-scaling)
+- [Update DronaHQ to Latest version](/self-hosted-deployment/update-dronahq-to-latest)
+- [Concepts](/self-hosted-deployment/concepts/migrate-from-cloud-to-self-hosted)
 
 ### Useful Links
 

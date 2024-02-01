@@ -93,7 +93,7 @@ This will always return an array of objects.
 
 :::tip
 For smooth integration of both the features in single save_changes event you should use branches with respective conditions.
-[AutoGenerate CRUD](../building-apps-concepts/autogenerate-forms-and-crud.md)
+[AutoGenerate CRUD](/building-apps-concepts/autogenerate-forms-and-crud.md)
 :::
 
 ## Format data options effect on Editable Columns

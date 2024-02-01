@@ -25,6 +25,6 @@ All these roles are fixed and have a particular definition which can't be modifi
 
 :::info Granular permissions
 
-Since these roles are pre-defined and can't be modified at the account level, mostly granular permissions are required at app, connector or automation level for creators which are handled through [DronaHQ granular permissions for Creators](/user-management/granular-creator-permissions)
+Since these roles are pre-defined and can't be modified at the account level, mostly granular permissions are required at app, connector or automation level for creators which are handled through [DronaHQ granular permissions for Creators](/user-management/all-creator-permissions/)
 
 :::

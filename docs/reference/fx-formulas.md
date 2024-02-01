@@ -1195,7 +1195,7 @@ FILTER([datastore.columnname1, datastore.columnname2,…], Filter or Condition, 
 ```
 
 Where,
-* [datastore](/reference/controls/data-store-control) : is the name of the datastore created earlier to fetch data from a sheet or API.
+* [datastore](/reference/controls/data-store/) : is the name of the datastore created earlier to fetch data from a sheet or API.
 * `Columnname` : is the column whose data is to be fetched.
   * In case you need to fetch data from more than one column, then add the list of columns within the square [ ] brackets separated by comma as [datastore.columnname1,datastore.columnname2]
 * Filter:  is the filter format to fetch data from the column.
