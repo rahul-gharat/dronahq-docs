@@ -10,7 +10,7 @@ import VersionedLink from '@site/src/components/VersionedLink';
 
 With DronaHQ you can group your users in a single or multiple groups. This becomes important as your organizational users scale and it categorically is the first steps you would take towards:
 
-- [Creator Permissions](/granular-creator-permissions)
+- [Creator Permissions](/user-management/all-creator-permissions/)
 - App catalogs for provisioning different apps for end-users
 
 :::caution Please Note

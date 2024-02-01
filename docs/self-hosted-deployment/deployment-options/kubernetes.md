@@ -13,7 +13,7 @@ To deploy DronaHQ on Kubernetes, you need:
 - A domain you own, to which you can add a DNS record.
 - A Kubernetes cluster. To create a cluster, see documentation on [Google Cloud Platform](https://cloud.google.com/kubernetes-engine/docs/how-to/creating-a-zonal-cluster), [AWS](https://docs.aws.amazon.com/eks/latest/userguide/create-cluster.html), and [Azure](https://learn.microsoft.com/en-us/azure/aks/tutorial-kubernetes-deploy-cluster?tabs=azure-cli).
 - A working installation of kubectl. To install kubectl, see documentation on [Google Cloud Platform](https://cloud.google.com/kubernetes-engine/docs/how-to/cluster-access-for-kubectl#generate_kubeconfig_entry), [AWS](https://docs.aws.amazon.com/eks/latest/userguide/install-kubectl.html), and [Azure](https://learn.microsoft.com/en-us/azure/aks/learn/quick-kubernetes-deploy-cli#connect-to-the-cluster).
-- You can also deploy [Kubernetes Cluster on local VMs](/reference/deploy-kubernetes-on-macos/).
+- You can also deploy [Kubernetes Cluster on local VMs](/self-hosted-deployment/deploy-kubernetes-on-macos/).
 
 ### Cluster size
 The cluster must have at least one node with 2x vCPUs and 4 GB of memory. Use the following command to retrieve the capacity of your nodes.
@@ -46,7 +46,7 @@ $ kubectl get storageclass
 Reference your cloud provider's documentation to verify that this storage class supports the ReadWriteMany access mode.
 
 ## 1. Clone manifests
-DronaHQ's Kubernetes deployment is configured using a [set of manifests](https://github.com/dronahq/self-hosted/kubernetes). To retrieve a copy of the manifests, download the dronahq-self-hosted repository to your local machine. Open the kubernetes directory in an IDE to follow along the steps below.
+DronaHQ's Kubernetes deployment is configured using a [set of manifests](https://github.com/dronahq/self-hosted/tree/main/kubernetes). To retrieve a copy of the manifests, download the dronahq-self-hosted repository to your local machine. Open the kubernetes directory in an IDE to follow along the steps below.
 ```
 curl -L -O https://license.dronahq.com/self-hosted/master.zip && unzip master.zip
 cd master/kubernetes
@@ -195,7 +195,7 @@ webapp-63452e7643-si4g5     1/1     Running     1 (8h ago)  8h
 There are several use cases which require the use of [volumes](https://kubernetes.io/docs/concepts/storage/volumes/). For example, when configuring a gRPC resource, you need to mount a volume containing the protos files to the DronaHQ deployment. Follow these instructions to create a persistent volume and copy files from your local machine to the volume.
 
 #### 1. Set security context
-In a later step, you use [kubectl cp](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#cp) to copy files from your local machine to the Kubernetes cluster, which requires the pod to run with root privileges. Modify your deployment so the pods run as root by adding the `securityContext` in your `dronahq-webapp.yaml` file:
+In a later step, you use [kubectl cp](https://kubernetes.io/docs/self-hosted-deployment/generated/kubectl/kubectl-commands#cp) to copy files from your local machine to the Kubernetes cluster, which requires the pod to run with root privileges. Modify your deployment so the pods run as root by adding the `securityContext` in your `dronahq-webapp.yaml` file:
 ```
 spec:
     securityContext:

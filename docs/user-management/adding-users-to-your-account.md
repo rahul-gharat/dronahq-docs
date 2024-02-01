@@ -30,7 +30,7 @@ You need the following details to invite users:
 - Email
 - Password (Optional - only if `Auto-activate` is selected)
 - User Group
-- [User Role](../user_roles)
+- [User Role](/user-management/user-roles/)
 
 <figure>
   <Thumbnail src="/img/user-management/add-users-wo-password.png" alt="Inviting users" width='100%'/>
@@ -62,11 +62,11 @@ Since these users are `Auto-activated` you will need to manually inform them or 
 
 DronaHQ supports SSO on both cloud and self-hosted editions. You can configure any of the following types of SSOs with the IDP of your choice like Okta. 
 
-- [SSO using OIDC](../sso/configuring-sso-with-oidc)
-- [SSO using SAML](../sso/configuring-sso-with-saml)
-- [SSO using custom JWT](../sso/configure-sso-with-custom-jwt)
-- [SSO using Google OIDC](../sso/configuring-sso-for-google-oidc) 
-- [Sign in using Google](../sso-guides/configure-sign-in-with-google) (`DronaHQ Cloud edition` only)
+- [SSO using OIDC](/sso/configuring-sso-with-oidc)
+- [SSO using SAML](/sso/configuring-sso-with-saml)
+- [SSO using custom JWT](/sso/configure-sso-with-custom-jwt)
+- [SSO using Google OIDC](/sso/configuring-sso-for-google-oidc) 
+- Sign in using Google (`DronaHQ Cloud edition` only)
 
 Once the SSO is configured the users can login directly without having a separate email and password for DronaHQ. 
 
@@ -79,4 +79,4 @@ Once the SSO is configured the users can login directly without having a separat
 
 DronaHQ supports SCIM, known as the groundbreaking System for Cross-domain Identity Management, has emerged as the undisputed industry leader in effortlessly provisioning user accounts. This invaluable solution proves its worth, especially in scenarios where enterprises entrust third-party SSO providers like Okta or Azure Active Directory to oversee employee authentication. Thanks to SCIM's extraordinary capabilities, user accounts undergo automatic creation, seamless updates, and streamlined deactivation across various applications, revolutionizing the way organizations manage their workforce access.
 
-[Read more about SCIM](../sso/scim-user-provisioning)
+[Read more about SCIM](/sso/scim-user-provisioning)

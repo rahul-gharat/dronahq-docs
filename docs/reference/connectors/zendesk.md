@@ -15,7 +15,7 @@ Integrate Zendesk to transform your customer service workflow to efficiently man
 
 2. API Token: Zendesk's API requires an API token for authentication. Generate an API token by logging in to your Zendesk account and navigating to "Admin" > "Channels" > "API" > "Add API Token." Provide a name for the token and select the appropriate permissions.
 
-3. Subdomain: Identify your Zendesk subdomain, which is the unique URL prefix used to access your Zendesk account. For example, if your Zendesk URL is "https://example.zendesk.com," your subdomain is "example."
+3. Subdomain: Identify your Zendesk subdomain, which is the unique URL prefix used to access your Zendesk account. For example, if your Zendesk URL is "https://example.zendesk.com", your subdomain is "example."
 
 4. Connector Configuration: When setting up the Zendesk connector in your integration platform, you will need to input your API token and subdomain to establish a secure connection.
 

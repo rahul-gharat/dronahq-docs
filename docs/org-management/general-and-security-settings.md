@@ -13,7 +13,7 @@ DronaHQ has 5 sections in `Account Settings -> General & Security` settings:
 - [Builder and API IP restrictions](../general-and-security-settings/#creator-portal-and-api-level-ip-restrictions) - You can whitelist IP addresses for accessing DronaHQ `creator portal` and admin level APIs.
 - [Customize end user portal homescreen](../general-and-security-settings/#customizing-end-user-portal-homescreen) - You can customize the homescreen of the `end-user portal` and toggle ON/OFF different features.
 - [Account settings](../general-and-security-settings/#general-account-settings) - You can configure account level settings like timezone, support URLs and emails and other privacy urls.
-- [Audit logging](../audit-logs/) - You can turn ON/OFF audit logging features in DronaHQ. 
+- [Audit logging](/audit-logger/overview/) - You can turn ON/OFF audit logging features in DronaHQ. 
 
 :::caution Please Note
 

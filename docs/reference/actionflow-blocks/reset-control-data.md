@@ -39,7 +39,7 @@ To effectively utilize the `Reset Control Data` action, follow these steps:
 8. Click `Finish` to complete the setup.
 
 <figure>
-<Thumbnail src="/img/reference/actionflow-blocks/reset-control-data/feild.jpeg" alt="feild" />
+<Thumbnail src="/img/reference/actionflow-blocks/reset-control-data/feild.png" alt="feild" />
 </figure>
 
 By using the `Reset Control Data` action, you empower users with the ability to easily restore controls to their default values or initial states. This enhances user experience by offering a safety net for data modifications and simplifying the process of reverting changes.

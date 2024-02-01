@@ -65,7 +65,7 @@ Below are the prerequisites you will need to create your white branded mobile ap
 1. Key ID, API Key (.p8) and Issuer ID (Optional)
     Required, if you want to upload App directly on Appstore.
     - Create an App on [Appstore Connect](https://appstoreconnect.apple.com/) with same bundle id used above.
-    - Refer this [link](../org-user-management-concepts/creating-appstore-connect-api-key/) for Creating App Store Connect API key
+    - Refer this [link](/org-user-management-concepts/creating-appstore-connect-api-key/) for Creating App Store Connect API key
 
 :::tip TIP
 
