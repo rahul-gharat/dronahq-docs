@@ -65,4 +65,4 @@ For instance, you can integrate the SMTP connector to send emails based on user 
 
 ### Additional Reading
 
-For a more detailed understanding of these features and their functionalities, click [here](../../../sheets-concepts/using-action-button/).
+For a more detailed understanding of Button control features and their functionalities, to trigger actions, both on-screen and on the server side, refer to the article  click [here](/actionflows-on-events/visual-actionflow-builder).
