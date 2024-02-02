@@ -15,7 +15,8 @@ var cname = 'docs.dronahq.com';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Build stunning internal tools, blazing fast',
+  title: ' ',
+  titleDelimiter: ' ',
   tagline:
     'Low code toolkit for developers to quickly build internal tools, digital journeys, operational apps on top of any data source or APIs.',
   favicon: 'img/dronahq-logo-32x32.png',
