@@ -27,7 +27,7 @@ After successful execution, you will find the `Run logs` section appearing below
 
 ### Run logs
 
-The Logs feature enables users to analyze the entire automation process, displaying the date/time and running status of each task within the flow. For further insights on the run logs, kindly refer [here](/automations-run-logs).
+The Logs feature enables users to analyze the entire automation process, displaying the date/time and running status of each task within the flow. For further insights on the run logs, kindly refer [here](/automations/run-logs).
 
 <figure>
   <Thumbnail src="/img/automation/test-publish-rollback/log-panel.png" alt="Run Logs Panel" width='80%'/>
