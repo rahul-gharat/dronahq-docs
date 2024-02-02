@@ -155,6 +155,6 @@ While pulling from a branch, you can also select a specific Git tag. This allows
 
 
 :::tip 
-When pulling files from the repository, ensure that the same connectors and APIs with the same name are present in the account. This works similarly to the functionality when importing files; you can refer [here](../building-apps-concepts/migrating-apps-between-accounts)
+When pulling files from the repository, ensure that the same connectors and APIs with the same name are present in the account. This works similarly to the functionality when importing files; you can refer [here](/building-apps-concepts/migrating-apps-between-accounts)
 
 :::

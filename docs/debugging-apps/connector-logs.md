@@ -10,10 +10,10 @@ import VersionedLink from '@site/src/components/VersionedLink';
 
 A lot of times while building apps, you would need to check all the API calls and DB calls and understand if there are errors and other things like the request that was sent, the response, response times, response status etc. DronaHQ provides the whole connector logs in the preview section. You will be able to check the following there:
 
-- [List of all connector calls](../connector-logs/#list-of-all-connector-calls)
-- [Timeline view of all connector calls](../connector-logs/#timeline-view)
-- [Details of each call](../connector-logs/#detail-view)
-- [Watchlist of data, controls, keywords and data queries](../connector-logs/#watchlist)
+- [List of all connector calls](#list-of-all-connector-calls)
+- [Timeline view of all connector calls](#timeline-view)
+- [Details of each call](#detail-view)
+- [Watchlist of data, controls, keywords and data queries](#watchlist)
 
 ## List of all connector calls
 

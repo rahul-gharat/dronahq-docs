@@ -8,11 +8,11 @@ The following examples demonstrate how to use DQL to return structured data from
 
 ## Contents
 
-- [Example JSON](../returning-structured-data/#example-json)
-- [Return multiple objects as an array](../returning-structured-data/#return-multiple-objects-as-an-array)
-- [Return an array of a single field from multiple objects](../returning-structured-data/#return-an-array-of-a-single-field-from-multiple-objects)
-- [Collapse multiple objects into a single key-value pair](../returning-structured-data/#collapse-multiple-objects-into-a-single-key-value-pair)
-- [Collapse and group results by a shared field value](../returning-structured-data/#collapse-and-group-results-by-a-shared-field-value)
+- [Example JSON](#example-json)
+- [Return multiple objects as an array](#return-multiple-objects-as-an-array)
+- [Return an array of a single field from multiple objects](#return-an-array-of-a-single-field-from-multiple-objects)
+- [Collapse multiple objects into a single key-value pair](#collapse-multiple-objects-into-a-single-key-value-pair)
+- [Collapse and group results by a shared field value](#collapse-and-group-results-by-a-shared-field-value)
 
 
 ## Example JSON

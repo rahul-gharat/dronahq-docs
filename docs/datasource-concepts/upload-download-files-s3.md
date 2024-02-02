@@ -8,7 +8,7 @@ import VersionedLink from '@site/src/components/VersionedLink';
 import Thumbnail from '@site/src/components/Thumbnail';
 
 
-Uploading and downloading files to an Amazon S3 bucket offers various practical use cases, from storing supporting documentation to backing up crucial files. Leveraging the S3 connector's `UploadFile` action streamlines this process. To know about the configuration and connection details of the S3 connector enabling these operations, refer to the comprehensive guide available in the <VersionedLink to = "../../reference/connectors/aws-s3/"> AWS S3 connector article</VersionedLink>.
+Uploading and downloading files to an Amazon S3 bucket offers various practical use cases, from storing supporting documentation to backing up crucial files. Leveraging the S3 connector's `UploadFile` action streamlines this process. To know about the configuration and connection details of the S3 connector enabling these operations, refer to the comprehensive guide available in the <VersionedLink to = "/reference/connectors/aws-s3/"> AWS S3 connector article</VersionedLink>.
 
 ## Uploading Files to AWS S3
 

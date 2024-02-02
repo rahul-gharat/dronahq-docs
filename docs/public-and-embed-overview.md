@@ -14,7 +14,7 @@ You can share DronaHQ apps publicly with a Public access link. You can share thi
 
 To create a Public access link, open an app in the App editor and click the Share button in the top right and enable the public access toggle.
 
-[Check out the different sharing options](../public-and-embed-sharing-options)
+[Check out the different sharing options](/public-and-embed-sharing-options)
 
 <figure>
   <Thumbnail src="/img/public-embed/share-public.png" alt="Public sharing" width='100%'/>

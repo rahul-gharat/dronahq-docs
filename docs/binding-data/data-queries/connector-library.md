@@ -21,13 +21,13 @@ You can navigate and click on `Data queries -> + -> Connector library` to add a 
 
 You can select any of the query added in the library and you will see a model with the following sections:
 
-- [Meta](../connector-library/#meta) - Details of the data query including the name using which it can be referenced.
-- [Environments](../connector-library/#environments) - For ready APIs provided by DronaHQ you can configure different accounts for different environments.
-- [Variables](../connector-library/#variables) - All dynamic variables are here which can be configured with the value that you want to pass.
-- [Transform response](../connector-library/#transform-response) - Different options to transform the response received from the connector query.
-- [Response Raw](../connector-library/#raw-response) - Raw response received from the connector query.
-- [Response Transformed](../connector-library/#transformed-response) - Response after the transformation is run on the raw data.
-- [Advanced](../connector-library/#advanced) - Advanced configurations while running this data query.
+- [Meta](#meta) - Details of the data query including the name using which it can be referenced.
+- [Environments](#environments) - For ready APIs provided by DronaHQ you can configure different accounts for different environments.
+- [Variables](#variables) - All dynamic variables are here which can be configured with the value that you want to pass.
+- [Transform response](#transform-response) - Different options to transform the response received from the connector query.
+- [Response Raw](#raw-response) - Raw response received from the connector query.
+- [Response Transformed](#transformed-response) - Response after the transformation is run on the raw data.
+- [Advanced](#advanced) - Advanced configurations while running this data query.
 
 <figure>
   <Thumbnail src="/img/data-queries/configure-library.png" alt="Connector library" width='100%'/>
@@ -69,7 +69,7 @@ You can refresh the raw response with the test values and check the response tha
 
 ## Transform response
 
-This section allows you to transform the raw data received from the server and manipulate it to get it in the format of your choice. You can make use of the [JS libraries](../../../app-scripting-and-code/import-js-libraries) and [JS objects](../../../app-scripting-and-code/import-js-libraries) here as well. The output of this transformation will be seen in the transformed response section and will be the final output of the Data query for the rest of the app. 
+This section allows you to transform the raw data received from the server and manipulate it to get it in the format of your choice. You can make use of the [JS libraries](/app-scripting-and-code/import-js-libraries) and [JS objects](/app-scripting-and-code/import-js-libraries) here as well. The output of this transformation will be seen in the transformed response section and will be the final output of the Data query for the rest of the app. 
 
 <figure>
   <Thumbnail src="/img/data-queries/transform-response.png" alt="Transform response" width='100%'/>
@@ -78,10 +78,10 @@ This section allows you to transform the raw data received from the server and m
 
 You can transform the response in 4 different ways:
 
-- [Write Javascript](../connector-library/#write-javascript)
-- [Filter objects](../connector-library/#filter-objects)
-- [Filter keys](../connector-library/#filter-keys)
-- [Write DQL | DronaHQ Query Language](../../data-queries/dronahq-query-language)
+- [Write Javascript](#write-javascript)
+- [Filter objects](#filter-objects)
+- [Filter keys](#filter-keys)
+- [Write DQL | DronaHQ Query Language](/binding-data/data-queries/dronahq-query-language)
 
 ### Write Javascript
 
@@ -153,7 +153,7 @@ return data;
 
 DQL or DronaHQ Query Language serves as an efficient query and transformation tool for JSON data, drawing inspiration from the 'location path' concepts found in XPath 3.1. This connection enables the formulation of complex queries through a condensed and user-friendly notation. The language includes a comprehensive assortment of pre-established operators and functions that facilitate the manipulation and amalgamation of the extracted information. Furthermore, the results of these queries can be molded into any desired JSON output arrangement, utilizing well-known JSON object and array constructs. Along with the capability to formulate user-specific functions, this allows for the crafting of advanced expressions designed to handle any conceivable JSON query or transformation challenge.
 
-[You can read more about it here](../data-queries/dronahq-query-language.md)
+[You can read more about it here](/binding-data/data-queries/dronahq-query-language.md)
 
 
 <figure>

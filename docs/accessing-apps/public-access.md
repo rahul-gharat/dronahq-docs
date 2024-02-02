@@ -49,7 +49,7 @@ Dive into the concepts of PWAs and learn how they are transforming the way we en
     <figcaption align='center'><i>Embed Settings -> PWA </i></figcaption>
    </figure>
 
-Click here to [read More](../../building-apps-concepts/pwa-apps/)
+Click here to [Read More](/building-apps-concepts/pwa-apps/)
 
 
 

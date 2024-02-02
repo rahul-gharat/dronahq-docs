@@ -23,7 +23,7 @@ To add an Input Task to your Workflow, follow these steps:
 
 3. You can set a condition/criteria in `WHEN TO EXECUTE`, which will be evaluated by the workflow engine to determine whether to execute the current tasks or not. The condition/criteria need to be evaluated to TRUE (boolean TRUE) to execute the task. If you leave the criteria blank, the task will always execute.
 
-4. You can use dynamic data when workflows are executed. For example, to display the email address of the user who initiated the workflow, use [Workflow Keyword](../reference/keywords/#app-builder-keywords) `INITIATED.INPUTBYEMAIL` which has to be put within double curly braces {{}}. This will display the user’s email address in the Status App when the workflow is executed.
+4. You can use dynamic data when workflows are executed. For example, to display the email address of the user who initiated the workflow, use [Workflow Keyword](/reference/keywords/#app-builder-keywords) `INITIATED.INPUTBYEMAIL` which has to be put within double curly braces {{}}. This will display the user’s email address in the Status App when the workflow is executed.
 
 5. The Input Task workflow will trigger a different screen you created for input from the specific user. So click `Next`, and `Select screen` to be used for the input task, and then select the `Submit button from the screen`/form that would represent the input action.
 

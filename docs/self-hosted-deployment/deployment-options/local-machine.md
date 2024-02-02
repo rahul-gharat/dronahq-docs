@@ -7,7 +7,7 @@ sidebar_position: 1
 DronaHQ Self Hosted supports local installation on your Linux based OS or MacOS using [Docker](https://www.docker.com/).
 
 :::info Attention
-We recommend you to deploy DronaHQ Self Hosted on cloud hosted virtual machines such as [AWS EC2](./aws-ec2.md), [Azure VM](./azure.md), or [GCP Compute Engine](./gcp.md). Their hardware and operating systems are more standardized make it best fit for production use cases. If you are deploying DronaHQ on a physical machine then verify that your system is matching minimum criteria for network and storage [requirements](./../requirements.md).
+We recommend you to deploy DronaHQ Self Hosted on cloud hosted virtual machines such as [AWS EC2](./aws-ec2.md), [Azure VM](./azure.md), or [GCP Compute Engine](./gcp.md). Their hardware and operating systems are more standardized make it best fit for production use cases. If you are deploying DronaHQ on a physical machine then verify that your system is matching minimum criteria for network and storage [requirements](/self-hosted-deployment/requirements.md).
 :::
 
 ### Prerequisite
@@ -108,7 +108,7 @@ BUILDER_URL='http://dronahq.example.com'
 ```
 
 #### iii. Optional environment variables
-You can also checkout other optional [Environment Variables](./../environment-variables.md), which can enable advance options for you to use DronaHQ Self Hosted.
+You can also checkout other optional [Environment Variables](/self-hosted-deployment/environment-variables.md), which can enable advance options for you to use DronaHQ Self Hosted.
 
 ### 6. Restart DronaHQ
 

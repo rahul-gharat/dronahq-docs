@@ -9,10 +9,10 @@ import VersionedLink from '@site/src/components/VersionedLink';
 # Public and Embed Sharing options
 
 While sharing the apps built on DronaHQ you have the following broad options:
-- [Open public links](../public-and-embed-sharing-options/#open-public-links)
-- [Secure public links (with auth)](../public-and-embed-sharing-options/#secure-public-links-for-verified-users)
-- [Open public embeds](../public-and-embed-sharing-options/#open-public-embeds)
-- [Secure embeds (with sso token)](../public-and-embed-sharing-options/#secure-embeds)
+- [Open public links](/public-and-embed-sharing-options/#open-public-links)
+- [Secure public links (with auth)](/public-and-embed-sharing-options/#secure-public-links-for-verified-users)
+- [Open public embeds](/public-and-embed-sharing-options/#open-public-embeds)
+- [Secure embeds (with sso token)](/public-and-embed-sharing-options/#secure-embeds)
 
 ## Open public links
 
@@ -112,7 +112,7 @@ It is a 2 step process:
 - **Generate an SSO token** - Make a cURL request into DronaHQ to generate a unique access token for each user
 - **Embed the app web component** - Embed the web-component in any of your login walled portal
 
-[Detailed step by step guide to using secure embed](../secure-embed)
+[Detailed step by step guide to using secure embed](/secure-embed)
 
 :::info Message passing in secure embeds
 
@@ -134,8 +134,8 @@ You can also the realtime message passing framework even with secure embeds. You
 
 DronaHQ provides 2 ways in which the parent app can pass data to the embedded app.
 
-- [Auto-relay query params](../public-and-embed-sharing-options/#auto-relay-query-params-to-public-embeds) - Uses the query params and app will auto-reload
-- [Real-time message passing framework](../public-and-embed-sharing-options/#real-time-message-passing-framework) - Uses the postMessage way to pass data
+- [Auto-relay query params](/public-and-embed-sharing-options/#auto-relay-query-params-to-public-embeds) - Uses the query params and app will auto-reload
+- [Real-time message passing framework](/public-and-embed-sharing-options/#real-time-message-passing-framework) - Uses the postMessage way to pass data
 
 ### Auto-relay query params to public embeds 
 

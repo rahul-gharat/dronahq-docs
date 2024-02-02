@@ -8,73 +8,73 @@ You can use the DronaHQ Query Language (DQL) to perform math functions, manipula
 
 ## Contents
 
-- [Example JSON](../manipulating-data/#example-json)
+- [Example JSON](#example-json)
 
 ## Working with strings
 
-- [Insert strings then group and sum results by description](../manipulating-data/#insert-strings-then-group-and-sum-results-by-description)
-- [Return the length of a string](../manipulating-data/#return-the-length-of-a-string)
-- [Return part of a string](../manipulating-data/#return-part-of-a-string)
-- [Get the string before the first occurrence of a pattern](../manipulating-data/#get-the-string-before-the-first-occurrence-of-a-pattern)
-- [Get the string after the first occurrence of a pattern](../manipulating-data/#get-the-string-after-the-first-occurrence-of-a-pattern)
-- [Transform a string to all uppercase](../manipulating-data/#transform-a-string-to-all-uppercase)
-- [Transform a string to all lowercase](../manipulating-data/#transform-a-string-to-all-lowercase)
-- [Trim a string](../manipulating-data/#trim-a-string)
-- [Pad a string](../manipulating-data/#pad-a-string)
-- [Split a string into an array of components](../manipulating-data/#split-a-string-into-an-array-of-components)
-- [Join an array of strings into a single string](../manipulating-data/#join-an-array-of-strings-into-a-single-string)
-- [Replace one string with another string](../manipulating-data/#replace-one-string-with-another-string)
-- [Base64 encode a string](../manipulating-data/#base64-encode-a-string)
-- [Base64 decode a string](../manipulating-data/#base64-decode-a-string)
-- [Convert a string into JSON](../manipulating-data/#convert-a-string-into-json)
-- [Convert a string into number](../manipulating-data/#convert-a-string-into-a-number)
+- [Insert strings then group and sum results by description](#insert-strings-then-group-and-sum-results-by-description)
+- [Return the length of a string](#return-the-length-of-a-string)
+- [Return part of a string](#return-part-of-a-string)
+- [Get the string before the first occurrence of a pattern](#get-the-string-before-the-first-occurrence-of-a-pattern)
+- [Get the string after the first occurrence of a pattern](#get-the-string-after-the-first-occurrence-of-a-pattern)
+- [Transform a string to all uppercase](#transform-a-string-to-all-uppercase)
+- [Transform a string to all lowercase](#transform-a-string-to-all-lowercase)
+- [Trim a string](#trim-a-string)
+- [Pad a string](#pad-a-string)
+- [Split a string into an array of components](#split-a-string-into-an-array-of-components)
+- [Join an array of strings into a single string](#join-an-array-of-strings-into-a-single-string)
+- [Replace one string with another string](#replace-one-string-with-another-string)
+- [Base64 encode a string](#base64-encode-a-string)
+- [Base64 decode a string](#base64-decode-a-string)
+- [Convert a string into JSON](#convert-a-string-into-json)
+- [Convert a string into number](#convert-a-string-into-a-number)
 
 ## Working with numbers
 
-- [Sum numerical values](../manipulating-data/#sum-numerical-values)
-- [Get the absolute difference between two numbers](../manipulating-data/#get-the-absolute-difference-between-two-numbers)
-- [Round up a number](../manipulating-data/#round-up-a-number)
-- [Round down a number](../manipulating-data/#round-down-a-number)
-- [Raise a number to a power](../manipulating-data/#raise-a-number-to-a-power)
-- [Get the square root of a number](../manipulating-data/#get-the-square-root-of-a-number)
-- [Convert a number to hex or binary](../manipulating-data/#convert-a-number-to-hex-or-binary)
-- [Generate a new random invoice number](../manipulating-data/#generate-a-new-random-invoice-number)
-- [Convert a number into a string](../manipulating-data/#convert-a-number-into-a-string)
+- [Sum numerical values](#sum-numerical-values)
+- [Get the absolute difference between two numbers](#get-the-absolute-difference-between-two-numbers)
+- [Round up a number](#round-up-a-number)
+- [Round down a number](#round-down-a-number)
+- [Raise a number to a power](#raise-a-number-to-a-power)
+- [Get the square root of a number](#get-the-square-root-of-a-number)
+- [Convert a number to hex or binary](#convert-a-number-to-hex-or-binary)
+- [Generate a new random invoice number](#generate-a-new-random-invoice-number)
+- [Convert a number into a string](#convert-a-number-into-a-string)
 
 ## Working with URLs
 
-- [Encode a URL component](../manipulating-data/#encode-a-url-component)
-- [Decode a URL component](../manipulating-data/#decode-a-url-component)
-- [Encode an entire URL](../manipulating-data/#encode-an-entire-url)
-- [Decode an entire URL](../manipulating-data/#decode-an-entire-url)
+- [Encode a URL component](#encode-a-url-component)
+- [Decode a URL component](#decode-a-url-component)
+- [Encode an entire URL](#encode-an-entire-url)
+- [Decode an entire URL](#decode-an-entire-url)
 
 ## Working with date and time
 
-- [Get the current time in ISO 8601 format](../manipulating-data/#get-the-current-time-in-iso-8601-format)
-- [Get the current time in Unix milliseconds since the epoch](../manipulating-data/#get-the-current-time-in-unix-milliseconds-since-the-epoch)
-- [Convert from a specific date format into Unix epoch time](../manipulating-data/#convert-from-a-specific-date-format-into-unix-epoch-time)
-- [Convert from Unix epoch time into a specific date format](../manipulating-data/#convert-from-unix-epoch-time-into-a-specific-date-format)
-- [Get the day/month/year from a date](../manipulating-data/#get-the-daymonthyear-from-a-date)
-- [Get the time from a date](../manipulating-data/#get-the-time-from-a-date)
-- [Get the day of the week from a date](../manipulating-data/#get-the-day-of-the-week-from-a-date)
-- [Compare two dates](../manipulating-data/#compare-two-dates)
-- [Increase a date by one day](../manipulating-data/#increase-a-date-by-one-day)
-- [Get the difference between two dates](../manipulating-data/#get-the-difference-between-two-dates)
-- [Time and Date formatting](../manipulating-data/#time-and-date-formatting)
+- [Get the current time in ISO 8601 format](#get-the-current-time-in-iso-8601-format)
+- [Get the current time in Unix milliseconds since the epoch](#get-the-current-time-in-unix-milliseconds-since-the-epoch)
+- [Convert from a specific date format into Unix epoch time](#convert-from-a-specific-date-format-into-unix-epoch-time)
+- [Convert from Unix epoch time into a specific date format](#convert-from-unix-epoch-time-into-a-specific-date-format)
+- [Get the day/month/year from a date](#get-the-daymonthyear-from-a-date)
+- [Get the time from a date](#get-the-time-from-a-date)
+- [Get the day of the week from a date](#get-the-day-of-the-week-from-a-date)
+- [Compare two dates](#compare-two-dates)
+- [Increase a date by one day](#increase-a-date-by-one-day)
+- [Get the difference between two dates](#get-the-difference-between-two-dates)
+- [Time and Date formatting](#time-and-date-formatting)
 
 ## Working with logic and arrays
 
-- [Append to an array](../manipulating-data/#append-to-an-array)
-- [If-then-else](../manipulating-data/#if-then-else)
-- [Partition an array](../manipulating-data/#partition-an-array)
-- [Perform an action on each value in an array](../manipulating-data/#perform-an-action-on-each-value-in-an-array)
-- [Filter for values](../manipulating-data/#filter-for-values)
-- [Collapse an array to a single value](../manipulating-data/#collapse-an-array-to-a-single-value)
-- [Sort an array](../manipulating-data/#sort-an-array)
+- [Append to an array](#append-to-an-array)
+- [If-then-else](#if-then-else)
+- [Partition an array](#partition-an-array)
+- [Perform an action on each value in an array](#perform-an-action-on-each-value-in-an-array)
+- [Filter for values](#filter-for-values)
+- [Collapse an array to a single value](#collapse-an-array-to-a-single-value)
+- [Sort an array](#sort-an-array)
 
 ## Working with objects
 
-- [Perform an action on each value in an object](../manipulating-data/#perform-an-action-on-each-value-in-an-object)
+- [Perform an action on each value in an object](#perform-an-action-on-each-value-in-an-object)
 
 ## Example JSON
 The examples below use this JSON data:

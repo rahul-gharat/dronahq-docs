@@ -121,7 +121,7 @@ Typical example would be:
 
 ### Transform
 
-This sections is exactly same as the one in the [connector library.](../connector-library/#transform-response)
+This sections is exactly same as the one in the [connector library.](/binding-data/data-queries/connector-library/#transform-response)
 
 <figure>
   <Thumbnail src="/img/data-queries/transform-section.png" alt="Transform response" width='100%'/>

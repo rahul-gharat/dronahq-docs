@@ -176,7 +176,7 @@ Run the app, select the GraphQL IDs to load data from, and click `Display Data.`
 
 ## Inserting Multiple Attachments into the AirTable Table
 
-This use case demonstrates inserting multiple attachments into an Airtable table. Ensure you have set up your [Airtable Connector](../reference/connectors/airtable) in DronaHQ.
+This use case demonstrates inserting multiple attachments into an Airtable table. Ensure you have set up your [Airtable Connector](/reference/connectors/airtable) in DronaHQ.
 
 For this scenario, we have a table with two fields: Email and Attachments.
 

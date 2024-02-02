@@ -27,7 +27,7 @@ You can access control and screen events by clicking on the lightning action on 
 DronaHQ has broadly 2 types of events and the rest are categorized inside these types:
 
 - **Screen events**
-    - **Screen_routing** - This event fires when a routing change in the URL (For public apps) is detected. This fires before the screen_open event. Read more about it in [screen routing.](../../screen-routing)
+    - **Screen_routing** - This event fires when a routing change in the URL (For public apps) is detected. This fires before the screen_open event. Read more about it in [screen routing.](/screen-routing)
     - **Screen_open** - This event fires every time the screen opens. It can happen multiple times while using the app even when navigation to this screen happens. 
     - **Screen_close** - This event is the opposite of screen_open. It fires every time you navigate away from this screen.
 

@@ -10,8 +10,8 @@ import VersionedLink from '@site/src/components/VersionedLink';
 
 There are times that you would want to debug specific actionflows while building robust apps on DronaHQ. Consider that you have written a long detailed flow on a button click which might have multiple blocks and you want to check the request response of each block and the handoff along with the conditions that get evaluated. DronaHQ provides a comprehensive toolkit to debug the actionflows step by step in 2 modes:
 
-- [Build time debugging](../connector-logs/#build-time-debugging)
-- [Preview time debugging](../connector-logs/#build-time-debugging)
+- [Build time debugging](/debugging-apps/connector-logs/#build-time-debugging)
+- [Preview time debugging](/debugging-apps/connector-logs/#build-time-debugging)
 
 ## Build time debugging
 
@@ -48,6 +48,6 @@ You need to follow the below steps to enable and debug at preview time:
 
 :::caution Please Note
 
-There are times that you would not be able to debug Nesting of blocks using branches for more than 1 level, which is because your blocks might run in parallel at the exact same time and the debugger stops execution serially. It is advisable to use [Build time debugging](../connector-logs/#build-time-debugging) in this case.
+There are times that you would not be able to debug Nesting of blocks using branches for more than 1 level, which is because your blocks might run in parallel at the exact same time and the debugger stops execution serially. It is advisable to use [Build time debugging](/debugging-apps/connector-logs/#build-time-debugging) in this case.
 
 :::
