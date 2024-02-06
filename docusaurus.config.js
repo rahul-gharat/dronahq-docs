@@ -224,6 +224,27 @@ const config = {
             position: 'left',
           },
           // {
+          //   to: '/changelog',
+          //   label: "Changelog",
+          //   position: 'left',
+          // },
+          {
+            // to: '/changelog2',
+            label: "Changelog",
+            position: 'left',
+            items: [
+              {
+                label: 'Cloud',
+                to: '/changelog',
+              },
+              {
+                label: 'Self hosted',
+                to: '/changelog2',
+              },
+              // Add more items as needed
+            ],
+          },
+          // {
           //   to: '/apidocs',
           //   label: "API Docs",
           //   position: 'left',
