@@ -96,9 +96,9 @@ Click on the preview button to run the automation and view its logs to check for
 ## Test and Publish
 
 Once you have configured your automation flow, simply click the `Preview/Play button` at the top to execute the automation and thoroughly evaluate its functionality.
-For comprehensive information regarding the testing process, kindly refer [here](/automation-test-publish-rollback#testing-automation).
+For comprehensive information regarding the testing process, kindly refer [here](/automations/test-publish-rollback#testing-automation).
 
 Upon successful testing, you may proceed with the `publishing` of the automation, thereby making it live and automatically operational in accordance with the defined triggers.
-For further insights on the publishing procedure, please access [here](/automation-test-publish-rollback#publish-the-automation).
+For further insights on the publishing procedure, please access [here](/automations/test-publish-rollback#publish-the-automation).
 
 By leveraging the Scheduler Automation in DronaHQ, you can automate repetitive tasks with precision and ensure timely execution of important actions. This powerful feature enhances productivity and allows you to focus on more strategic tasks.

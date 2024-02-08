@@ -7,7 +7,7 @@ import VersionedLink from '@site/src/components/VersionedLink';
 import VideoEmbed from "@site/src/components/VideoEmbed";
 
 
-Microapp controls' appearance and behavior customization is a crucial aspect of creating engaging user interfaces. The External CSS property within the microapp studio allows for extensive customization by enabling the application of tailored CSS directly onto individual controls.
+Microapp controls' appearance and behavior customization is a crucial aspect of creating engaging user interfaces. The External CSS property within the microapp DronaHQ allows for extensive customization by enabling the application of tailored CSS directly onto individual controls.
 
 To understand how the External CSS property enhances control customization, watch this insightful tutorial:
 

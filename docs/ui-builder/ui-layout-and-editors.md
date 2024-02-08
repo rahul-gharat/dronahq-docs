@@ -5,7 +5,7 @@ title: "UI Layout & editors"
 
 # UI Layout & editors
 
-Studio offers two distinct types of screen editors: the `Freeflow Editor` and the `Advanced Editor`. By default, any new screen created in the studio is set to the Freeflow Editor mode. However, users have the flexibility to choose which screen editor they want to use for each screen they are working on.
+DronaHQ offers two distinct types of screen editors: the `Freeflow Editor` and the `Advanced Editor`. By default, any new screen created in the DronaHQ is set to the Freeflow Editor mode. However, users have the flexibility to choose which screen editor they want to use for each screen they are working on.
 
 :::info Info
 

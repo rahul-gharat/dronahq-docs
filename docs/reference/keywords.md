@@ -4,7 +4,7 @@ sidebar_position: 47
 
 # Keywords
 
-Keywords are predefined variables in a DronaHQ that users can use in their applications. They provide important information about the logged-in user or the application's state, which is vital for building logical workflows. In the Studio, there are three different sets of keywords available, each serving different purposes and located in various locations within the DronaHQ.
+Keywords are predefined variables in a DronaHQ that users can use in their applications. They provide important information about the logged-in user or the application's state, which is vital for building logical workflows. In the DronaHQ, there are three different sets of keywords available, each serving different purposes and located in various locations within the DronaHQ.
 
 - [App builder keywords](/reference/keywords.md/#app-builder-keywords)
 - [Automation keywords](/reference/keywords.md/#automation-keywords)

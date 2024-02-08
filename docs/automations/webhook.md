@@ -96,9 +96,9 @@ Click on the preview button to run the automation.
 ## Test and Publish
 
 Once you have configured your automation flow, simply click the `Preview/Play button` at the top to execute the automation and thoroughly evaluate its functionality.
-For comprehensive information regarding the testing process, kindly refer [here](/automation-test-publish-rollback#testing-automation).
+For comprehensive information regarding the testing process, kindly refer [here](/automations/test-publish-rollback#testing-automation).
 
 Upon successful testing, you may proceed with the `publishing` of the automation, thereby making it live and automatically operational in accordance with the defined triggers.
-For further insights on the publishing procedure, please access [here](/automation-test-publish-rollback#publish-the-automation).
+For further insights on the publishing procedure, please access [here](/automations/test-publish-rollback#publish-the-automation).
 
 By leveraging the Webhook Automation in DronaHQ, you can seamlessly integrate external services and automate workflows based on incoming events, empowering your applications with real-time data and actions. This versatile feature opens up endless possibilities for process automation and data exchange between different systems.

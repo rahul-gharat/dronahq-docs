@@ -8,7 +8,7 @@ import VersionedLink from '@site/src/components/VersionedLink';
 
 # Custom JS
 
-DronaHQ gives a way to write custom Javascript on any data in the app to transform or generate data in the format that you need. You can make use of the [JS libraries](../../../app-scripting-and-code/import-js-libraries) and [JS objects](../../../app-scripting-and-code/import-js-libraries) here as well. The output of this JS will be seen in the transformed response section and will be the final output of the Data query for the rest of the app. 
+DronaHQ gives a way to write custom Javascript on any data in the app to transform or generate data in the format that you need. You can make use of the [JS libraries](/app-scripting-and-code/import-js-libraries) and [JS objects](/app-scripting-and-code/import-js-libraries) here as well. The output of this JS will be seen in the transformed response section and will be the final output of the Data query for the rest of the app. 
 
 
 <figure>

@@ -10,9 +10,9 @@ import VersionedLink from '@site/src/components/VersionedLink';
 
 DronaHQ has a very unique data binding framework which lets you as a creator to quickly start building data apps without worrying about the lifecycle of the data and its changes. Primarily you can bind data into controls using the following ways:
 
-- [Data queries to controls](../data-binding-framework/#data-queries-to-controls)
-- [Controls or keywords to controls](../data-binding-framework/#controls-or-keywords-to-controls)
-- [Actionflows to controls](../data-binding-framework/#actionflows-to-controls)
+- [Data queries to controls](/binding-data/data-binding-framework/#data-queries-to-controls)
+- [Controls or keywords to controls](/binding-data/data-binding-framework/#controls-or-keywords-to-controls)
+- [Actionflows to controls](/binding-data/data-binding-framework/#actionflows-to-controls)
 
 ## Data queries to controls
 
@@ -43,13 +43,13 @@ If you are using any dynamic referencing to any control, keyword or another data
 
 This is the most basic way of connecting data to your controls. You can get data into your data queries using the following methods:
 
-- [Connector library](../data-queries/connector-library) - All the database queries or API calls that are configured at the account level as a library.
-- [Connector queries](../data-queries/connector-queries) - Raw database queries or API calls that are configured in the apps.
-- [HTTP requests](../data-queries/http-requests-curl) - Recommended only for non authenticated API calls.
-- [Custom Javascript](../data-queries/custom-js) - Configure input params and write custom javascript to build your data.
-- [Variable](../data-queries/variable) - Static data which might be required.
-- [Query JSON using SQL](../data-queries/query-json-using-sql) - Write your SQL queries to query any JSON object.
-- [DQL](../data-queries/dronahq-query-language) - Write your own DronaHQ Query Language to query any JSON object and build your data.
+- [Connector library](/binding-data/data-queries/connector-library) - All the database queries or API calls that are configured at the account level as a library.
+- [Connector queries](/binding-data/data-queries/connector-queries) - Raw database queries or API calls that are configured in the apps.
+- [HTTP requests](/binding-data/data-queries/http-requests-curl) - Recommended only for non authenticated API calls.
+- [Custom Javascript](/binding-data/data-queries/custom-js) - Configure input params and write custom javascript to build your data.
+- [Variable](/binding-data/data-queries/variable) - Static data which might be required.
+- [Query JSON using SQL](/binding-data/data-queries/query-json-using-sql) - Write your SQL queries to query any JSON object.
+- [DQL](/binding-data/data-queries/dronahq-query-language) - Write your own DronaHQ Query Language to query any JSON object and build your data.
 
 
 

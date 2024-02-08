@@ -10,7 +10,7 @@ DronaHQ offers a powerful Automation feature that allows you to automate tasks b
 
 ## Accessing Automations
 
-To access the Automation section, navigate to the left-side navigation bar on your DronaHQ Studio homepage and click on `DronaHQ > Automations`.
+To access the Automation section, navigate to the left-side navigation bar on your DronaHQ homepage and click on `DronaHQ > Automations`.
 
 <figure>
   <Thumbnail src="/img/automation/automation-dashboard.png" alt="Automation Dashboard" width='70%'/>

@@ -61,13 +61,13 @@ DronaHQ can Auto fill crucial connection values like host, name, password, and m
 
 #### Microsoft SQL – TDS Version
 
-When configuring the Microsoft SQL connector in DronaHQ Studio, users can choose the Tabular Data Stream (TDS) protocol
+When configuring the Microsoft SQL connector in DronaHQ, users can choose the Tabular Data Stream (TDS) protocol
 version. TDS facilitates communication between clients and database servers. DronaHQ DronaHQ provides multiple TDS
 versions for compatibility, allowing users to select as needed.
 
 #### SQL Server Proxy Host
 
-In DronaHQ Studio's Microsoft SQL connector setup, the SQL server proxy host can be specified. This feature establishes
+In DronaHQ's Microsoft SQL connector setup, the SQL server proxy host can be specified. This feature establishes
 a secure gateway between the client and the target SQL server, enabling access to external SQL resources using distinct
 credentials. It offers controlled execution of Windows shell commands and SQL Server Agent jobs to enhance security and
 operational control.

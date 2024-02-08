@@ -41,7 +41,7 @@ settings for secure database setup.
 
 ### Whitelisting DronaHQ
 
-To begin the process, you must first whitelist DronaHQ Studio. Follow these steps meticulously:
+To begin the process, you must first whitelist DronaHQ. Follow these steps meticulously:
 
 1. Set Admin Privileges for User Role: Initiate the procedure by granting yourself administrative privileges by assuming
    the role of "securityadmin." Employ the following command within the worksheets:

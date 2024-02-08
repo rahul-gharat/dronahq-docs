@@ -26,7 +26,7 @@ Following are some references, which can help you sail through GCP Virtual Machi
 
 3. Name your instance, to identify it later.
 
-4. Select appropriate VM configuration as per your requirement. Please make sure that you follow our [minimum requirements](./../requirements.md) guidelines.
+4. Select appropriate VM configuration as per your requirement. Please make sure that you follow our [minimum requirements](/self-hosted-deployment/requirements.md) guidelines.
 
 5. In `Boot Disk` section, Modify storage size to minimum of `60 GiB`. In operating system, Select `Ubuntu` AMI with ubuntu version `20.04` or higher and `64-bit (x84)` architecture.
 
@@ -194,7 +194,7 @@ MONGODB_PORT='27017'
 ```
 
 #### iv. Optional environment variables
-You can also checkout other optional [Environment Variables](./../environment-variables.md), which can enable advance options for you to use DronaHQ Self Hosted.
+You can also checkout other optional [Environment Variables](/self-hosted-deployment/environment-variables.md), which can enable advance options for you to use DronaHQ Self Hosted.
 
 ### 8. Restart DronaHQ
 

@@ -16,7 +16,7 @@ For Git sync to work the user needs Git hosting service which supports SSH proto
 
 ## Prerequisite
 
-To connect your apps on DronaHQ Studio with Git, you must have a GitHub account, or any other version control accounts such as GitLab, Bitbucket, etc., and must have basic knowledge of git operations.
+To connect your apps on DronaHQ with Git, you must have a GitHub account, or any other version control accounts such as GitLab, Bitbucket, etc., and must have basic knowledge of git operations.
 
 ## Setting up Git Repository
 
@@ -45,7 +45,7 @@ To connect your apps on DronaHQ Studio with Git, you must have a GitHub account,
     <figcaption align = "center"><i>Bitbucket SSH URL</i></figcaption>
    </figure>
 
-3. Log in to your DronaHQ Studio account and create an app or open an existing one.
+3. Log in to your DronaHQ account and create an app or open an existing one.
 
 4. Navigate to `Publish > Git Operation`.
 
@@ -155,6 +155,6 @@ While pulling from a branch, you can also select a specific Git tag. This allows
 
 
 :::tip 
-When pulling files from the repository, ensure that the same connectors and APIs with the same name are present in the account. This works similarly to the functionality when importing files; you can refer [here](../building-apps-concepts/migrating-apps-between-accounts)
+When pulling files from the repository, ensure that the same connectors and APIs with the same name are present in the account. This works similarly to the functionality when importing files; you can refer [here](/building-apps-concepts/migrating-apps-between-accounts)
 
 :::

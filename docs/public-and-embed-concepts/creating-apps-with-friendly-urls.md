@@ -10,4 +10,4 @@ import VersionedLink from '@site/src/components/VersionedLink';
 
 You can set up friendly URLs for all your public apps. 
 
-[Read more about it in detail and check the step by step guide here](../../public-and-embed-sharing-options/#friendly-urls)
+[Read more about it in detail and check the step by step guide here](/public-and-embed-sharing-options/#friendly-urls)

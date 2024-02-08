@@ -25,6 +25,6 @@ This utility action may appear simple, but it is exceptionally powerful. It allo
 <Thumbnail src="/img/reference/actionflow-blocks/query-json-using-sql/feild.png" alt="Query JSON using SQL" />
 </figure>
 
-For comprehensive guidance and examples on querying JSON using SQL in DronaHQ, you can refer to our dedicated article on this topic [here](../../../binding-data/data-queries/query-json-using-sql/).
+For comprehensive guidance and examples on querying JSON using SQL in DronaHQ, you can refer to our dedicated article on this topic [here](/binding-data/data-queries/query-json-using-sql/).
 
 The Query JSON using SQL action provides a seamless way to interact with your JSON data sources, enabling you to retrieve and process data efficiently using familiar SQL commands.

@@ -115,7 +115,7 @@ You need to externalize your database to a remote host. DronaHQ strongly recomme
 ### Externalize database
 By default, the DronaHQ Kubernetes installation uses remotely hosted managed database instances of MySQL and MongoDB to make it more maintainable, scalable and reliable.
 
-[Learn how to make your external databases DronaHQ ready.](./../configure-external-databases.md)
+[Learn how to make your external databases DronaHQ ready.](/self-hosted-deployment/configure-external-databases.md)
 
 #### Once your external databases are ready, update its credentials in Kubernetes environment files as follows.
 

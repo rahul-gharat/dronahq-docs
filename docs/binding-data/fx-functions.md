@@ -14,7 +14,7 @@ You can navigate to `control -> data section -> Fx` and click on `edit` to write
 
 You can refer to the list of supported [Fx formulae here.](/reference/fx-formulas)
 
-You can also build your own [custom reusable Fx functions](../../custom-fx-ide) at the account level with an IDE in javascript which can be used across all apps.
+You can also build your own [custom reusable Fx functions](/custom-fx-ide) at the account level with an IDE in javascript which can be used across all apps.
 
 <figure>
   <Thumbnail src="/img/binding-data/fx-data.png" alt="Fx data" width='100%'/>

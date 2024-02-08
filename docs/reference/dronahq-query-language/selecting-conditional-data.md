@@ -8,12 +8,12 @@ You can use DronaHQ Query Language (DQL) to filter for specific data in your res
 
 ## Contents
 
-- [Example JSON](../selecting-conditional-data/#example-json)
-- [Filter query results for objects with specific key-value pairs](../selecting-conditional-data#filter-query-results-for-objects-with-specific-key-value-pairs)
-- [Navigate your filtered results](../selecting-conditional-data/#navigate-your-filtered-results)
-- [Return a single record](../selecting-conditional-data/#return-a-single-record)
-- [Check if a field has a specific value](../selecting-conditional-data/#check-if-a-field-has-a-specific-value)
-- [Get only unique payment amounts](../selecting-conditional-data/#get-only-unique-payment-amounts)
+- [Example JSON](#example-json)
+- [Filter query results for objects with specific key-value pairs](#filter-query-results-for-objects-with-specific-key-value-pairs)
+- [Navigate your filtered results](#navigate-your-filtered-results)
+- [Return a single record](#return-a-single-record)
+- [Check if a field has a specific value](#check-if-a-field-has-a-specific-value)
+- [Get only unique payment amounts](#get-only-unique-payment-amounts)
 
 ## Example JSON
 The examples below use this JSON data:

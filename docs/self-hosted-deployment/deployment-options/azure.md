@@ -28,7 +28,7 @@ Following are some references, which can help you sail through Azure Virtual Mac
 
 4. In `Image` section, select `Ubuntu server` with minimum version `20.04` with `x64` VM architecture.
 
-5. In `size` section, Select appropriate VM configuration as per your requirement. Please make sure that you follow our [minimum requirements](./../requirements.md) guidelines.
+5. In `size` section, Select appropriate VM configuration as per your requirement. Please make sure that you follow our [minimum requirements](/self-hosted-deployment/requirements.md) guidelines.
 
 6. Select appropriate `Authentication Type`. Choose `Username` for VM and select credentials options.
 
@@ -205,7 +205,7 @@ MONGODB_PORT='27017'
 ```
 
 #### iv. Optional environment variables
-You can also checkout other optional [Environment Variables](./../environment-variables.md), which can enable advance options for you to use DronaHQ Self Hosted.
+You can also checkout other optional [Environment Variables](/self-hosted-deployment/environment-variables.md), which can enable advance options for you to use DronaHQ Self Hosted.
 
 ### 8. Restart DronaHQ
 

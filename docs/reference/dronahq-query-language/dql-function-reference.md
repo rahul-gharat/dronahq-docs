@@ -9,10 +9,10 @@ DQL function reference
 All DronaHQ Query Language (DQL) functions are documented below.
 
 ## Contents
-- [General functions](../dql-function-reference/#general-functions)
-- [Array functions](../dql-function-reference/#array-functions)
-- [Numeric functions](../dql-function-reference/#numeric-functions)
-- [Date and time functions](../dql-function-reference/#date-and-time-functions)
+- [General functions](#general-functions)
+- [Array functions](#array-functions)
+- [Numeric functions](#numeric-functions)
+- [Date and time functions](#date-and-time-functions)
 
 ## General functions
 ### assert

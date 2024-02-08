@@ -90,7 +90,7 @@ You can know more about Git Sync [here](/git-sync).
 
 SSH tunneling is a secure method of transporting data over an encrypted SSH connection, making it invaluable for accessing databases hosted within private networks. 
 
-To configure SSH tunneling in DronaHQ, you can leverage your SSH keys for secure connections. Ensure that your SSH keys are available in your DronaHQ account for this purpose. [Click here](../datasource-concepts/ssh-tunneling) to learn more about SSH tunneling.
+To configure SSH tunneling in DronaHQ, you can leverage your SSH keys for secure connections. Ensure that your SSH keys are available in your DronaHQ account for this purpose. [Click here](/datasource-concepts/ssh-tunneling) to learn more about SSH tunneling.
 
 ### SSH Keys for Shell Script Connector
 
@@ -98,5 +98,5 @@ The Shell Script connector empowers you to execute shell commands on remote serv
 
 To utilize SSH keys with the Shell Script Connector, make sure you have SSH keys associated with your DronaHQ account. You can then configure your Shell Script connector to use these keys for secure and authenticated connections. 
 
-[Redirect here](../reference/connectors/shell-script) to dive deeper into the Shell Script Connector.
+[Redirect here](/reference/connectors/shell-script) to dive deeper into the Shell Script Connector.
 

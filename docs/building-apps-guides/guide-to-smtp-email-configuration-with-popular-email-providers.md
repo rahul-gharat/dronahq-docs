@@ -8,7 +8,7 @@ import VersionedLink from '@site/src/components/VersionedLink';
 For sending and receiving emails, Simple Mail Transfer Protocol (SMTP) plays a crucial role. SMTP is a set of rules governing the interaction between the sender's email client and the recipient's email server. In this guide, we'll delve into SMTP email configuration with popular email providers.
 
 :::info NOTE
- For a comprehensive step-by-step guide on SMTP configuration, please refer to [this detailed article](../../org-management/configure-custom-smtp/).
+ For a comprehensive step-by-step guide on SMTP configuration, please refer to [this detailed article](/org-management/configure-custom-smtp/).
 :::
 
 ## Configuring Gmail SMTP with DronaHQ System-Generated Emails
