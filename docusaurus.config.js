@@ -223,26 +223,17 @@ const config = {
             label: "What's New",
             position: 'left',
           },
-          // {
-          //   to: '/changelog',
-          //   label: "Changelog",
-          //   position: 'left',
-          // },
           {
-            // to: '/changelog2',
             label: "Changelog",
             position: 'left',
-            items: [
-              {
-                label: 'Cloud',
-                to: '/changelog',
-              },
-              {
-                label: 'Self hosted',
-                to: '/changelog2',
-              },
-              // Add more items as needed
-            ],
+            to: '/all-changelog',
+            // items: [
+            //   {
+            //     label:'All',
+            //     to: '/all-changelog'
+            //   }
+            //   // Add more items as needed
+            // ],
           },
           // {
           //   to: '/apidocs',

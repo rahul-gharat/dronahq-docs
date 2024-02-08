@@ -1,23 +1,48 @@
 [
-  {
-    "id":1,
-    "title": "January 2022",
-    "cardTitle": "Event 1",
-    "cardSubtitle": "Event 1 Subtitle",
-    "cardDetailedText": "This is the first event on the timeline.What is Lorem Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem IpsumThis is the first event on the timeline.What is Lorem Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem IpsumThis is the first event on the timeline.What is Lorem Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem IpsumThis is the first event on the timeline.What is Lorem Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem IpsumThis is the first event on the timeline.What is Lorem Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem IpsumThis is the first event on the timeline.What is Lorem Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum"
-  },
-  {
-    "id":2,
-    "title": "February 2022",
-    "cardTitle": "Event 2",
-    "cardSubtitle": "Event 2 Subtitle",
-    "cardDetailedText": "This is the first event on the timeline.What is Lorem Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum"
-  },
-  {
-    "id":3,
-    "title": "March 2022",
-    "cardTitle": "Event 3",
-    "cardSubtitle": "Event 3 Subtitle",
-    "cardDetailedText": "This is the first event on the timeline.What is Lorem Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum"
-  }
-]
+    {
+      "timestamp": 1706631570000,
+      "version": "1.0.0",
+      "tags": ["CloudHost"],
+      "heading": "Build experiences using Actionflows on events (Title)",
+      "title": "Connect to any data source",
+      "embed": "video/image",
+      "descriptions": [
+        "Add-on empowers both developers and non-developers to effortlessly create custom automation solutions. Whether it's handling cron jobs, executing ETL tasks, setting up custom alerts, or automating processes like data retrieval and automatic response emails, this platform offers a comprehensive range of capabilities.",
+        "Workflows can be triggered on a recurring schedule or based on specific event-based triggers, providing a fast and efficient way for developers to design custom automation (Link) recipes tailored to their unique requirements."
+      ]
+    },
+    {
+      "timestamp": 1706631570000,
+      "version": "1.0.0",
+      "tags": ["CloudHost"],
+      "heading": "Build experiences using Actionflows on events (Title)",
+      "title": "Connect to any data source",
+      "embed": "video/image",
+      "descriptions": [
+        "Add-on empowers both developers and non-developers to effortlessly create custom automation solutions."
+      ],
+      "cards": [
+        {
+          "title": "Connect to any data source",
+          "icon": "icon",
+          "color": "green",
+          "descriptions": ["Add-on empowers both developers and non-developers to effortlessly create custom automation solutions."],
+          "points": ["Add-on empowers both developers and non-developers to effortlessly create custom automation solutions."]
+        },
+        {
+          "title": "Connect to any data source",
+          "icon": "icon",
+          "color": "blue",
+          "descriptions": [
+            "Add-on empowers both developers and non-developers to effortlessly create custom automation solutions.",
+            "Add-on empowers both developers and non-developers to effortlessly create custom automation solutions."
+        ],
+          "points": [
+            "Add-on empowers both developers and non-developers to effortlessly create custom automation solutions.",
+            "Add-on empowers both developers and non-developers to effortlessly create custom automation solutions."
+          ]
+        }
+      ]
+    }
+  ]
+  

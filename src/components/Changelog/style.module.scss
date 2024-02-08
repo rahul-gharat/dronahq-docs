@@ -1,0 +1,148 @@
+[data-theme='dark'] {
+    --ifm-hq-tags-green: #303030;
+    --ifm-alert-card-green: #303030;
+}
+
+.changelog-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    // margin-top: 20px;
+    margin-bottom: 20px;
+}
+.changelog-main{
+    --ifm-hq-tags-green:#E2FFEF;
+    --ifm-alert-card-green: #E2FFEF;
+}
+
+.changelog-card {
+    display: flex;
+}
+li{
+    list-style: none;
+}
+.card-descriptions{
+    font-size: 13px;
+}
+  .left-changelogcard{
+    padding-right: 24px;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    border-right: 2px solid var(--dhq-border-color);
+  }
+//   .left-changelogcard child css
+.left-changelogcard > *{
+    // direction: rtl;
+    width: fit-content;
+    align-self: flex-end;
+}
+.right-changelogcard{
+    width: 50%;
+    padding-left: 20px;
+    padding-top: 24px !important;
+}   
+.right-changelogcard ul{
+    padding: 0px;
+}
+.changelogcard-date{
+    color: var(--dhq-header-color) !important;
+}
+.changelogcard-date::after{
+    color: var(--ifm-color-primary);
+    content: "";
+    font-size: 11px;
+    margin-top: -22px;
+    margin-left: 158px;
+    display: flex;
+    width: 12px;
+    height: 12px;
+    border: 2px solid;
+    border-radius: 25px;
+    background: #e2ffef;
+    position: absolute;
+}
+.changelogcard-title{
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--ifm-color-primary);
+}
+.changelogcard-heading{
+    font-size: 24px !important;
+    font-weight: 700;
+    color: var(--dhq-header-color);
+}
+.changelogcard-tag{
+    background: var(--ifm-hq-tags-green) !important;
+}
+.alert-card{
+    display: flex;
+    flex-direction: column;
+    // background: #E2FFEF;
+    background-color: var(--ifm-alert-card-green);
+    border: 1px solid #d1d2db;
+    justify-content: space-between;
+    border-radius: 6px;
+    position: relative;
+    max-width: 100%;
+    min-width: 100px;
+    word-wrap: break-word;
+    padding: 12px;
+    
+}
+.alert-card.blue{
+    background: #f6f6ff;
+    border: 1px solid #d1d2db;
+}
+
+.alert-card-header{
+    display: flex;
+    align-items: center;
+}
+.alert-card-title{
+    color: var(--dhq-header-color);
+    font-weight: 700;
+    font-size: 16px;
+}
+.alert-card-descriptions, .alert-card-points{
+    font-weight: 500;
+    font-size: 13px;
+    color: var(--ifm-blockquote-color);
+}
+.alert-card-points{
+    margin-left:18px;
+    margin-top: 12px;
+}
+
+.alert-card-points li{
+    list-style-type: disc;
+}
+.alert-card-points li::marker{
+    font-size:18px
+}
+@media screen and (max-width: 768px) {    
+    .changelog-main{
+        padding: 0 20px;
+    }
+    .changelogcard-date::after {
+        display: none; /* Remove the ::after pseudo-element */
+    }
+    .changelog-card {
+        flex-direction: column;
+    }
+
+    .left-changelogcard {
+        display: block;
+        border-right: none;
+        width: 100%;
+        padding-right: 0;
+        margin-bottom: 0px; /* Add margin between left and right divs */
+    }
+
+    .right-changelogcard {
+        width: 100%;
+        padding-left: 0;
+        padding-top: 24px !important;
+    }
+}
