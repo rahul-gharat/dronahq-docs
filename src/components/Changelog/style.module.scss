@@ -1,6 +1,15 @@
-[data-theme='dark'] {
+.changelog-main[data-theme=dark] {
     --ifm-hq-tags-green: #303030;
-    --ifm-alert-card-green: #303030;
+    --ifm-alert-card-green: #263427;
+    --ifm-alert-card-blue: #293c4c;
+    --ifm-alert-card-grey: #2d2d2d;
+}
+
+.changelog-main{
+    --ifm-hq-tags-green:#E2FFEF;
+    --ifm-alert-card-green: #E2FFEF;
+    --ifm-alert-card-blue: #f6f6ff;
+    --ifm-alert-card-grey: #eaeaea;
 }
 
 .changelog-main{
@@ -10,10 +19,6 @@
     justify-content: center;
     // margin-top: 20px;
     margin-bottom: 20px;
-}
-.changelog-main{
-    --ifm-hq-tags-green:#E2FFEF;
-    --ifm-alert-card-green: #E2FFEF;
 }
 
 .changelog-card {
@@ -25,13 +30,16 @@ li{
 .card-descriptions{
     font-size: 13px;
 }
-  .left-changelogcard{
+.left-changelogcard{
     padding-right: 24px;
     width: 35%;
     display: flex;
     flex-direction: column;
+    
+}
+.left-changelogcard.br-right{
     border-right: 2px solid var(--dhq-border-color);
-  }
+}
 //   .left-changelogcard child css
 .left-changelogcard > *{
     // direction: rtl;
@@ -49,7 +57,7 @@ li{
 .changelogcard-date{
     color: var(--dhq-header-color) !important;
 }
-.changelogcard-date::after{
+.changelogcard-date.after::after{
     color: var(--ifm-color-primary);
     content: "";
     font-size: 11px;
@@ -88,14 +96,18 @@ li{
     max-width: 100%;
     min-width: 100px;
     word-wrap: break-word;
-    padding: 12px;
+    padding: 12px 14px;
     
 }
-.alert-card.blue{
-    background: #f6f6ff;
-    border: 1px solid #d1d2db;
+.alert-card.green{
+    background: var(--ifm-alert-card-green) !important;
 }
-
+.alert-card.blue{
+    background: var(--ifm-alert-card-blue) !important;
+}
+.alert-card.grey{
+    background: var(--ifm-alert-card-grey) !important;
+}
 .alert-card-header{
     display: flex;
     align-items: center;
@@ -121,6 +133,9 @@ li{
 .alert-card-points li::marker{
     font-size:18px
 }
+.alert-card-icon{
+    width: 20px;
+}
 @media screen and (max-width: 768px) {    
     .changelog-main{
         padding: 0 20px;
@@ -144,5 +159,11 @@ li{
         width: 100%;
         padding-left: 0;
         padding-top: 24px !important;
+    }
+    .left-changelogcard.br-right{
+        border:none;
+    }
+    .changelogcard-date.after::after{
+        display: none;
     }
 }

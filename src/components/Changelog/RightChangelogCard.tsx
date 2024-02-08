@@ -2,9 +2,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styles from "./style.module.scss";
-import AlertCard from './AlertCard'; // Import the new component
+import AlertCard from './AlertCard';
 
-const RightChangelogCard = ({ title, heading, descriptions, cards,isDarkTheme=false }) => {
+const RightChangelogCard = ({ title, heading, descriptions, cards, isDarkTheme = false }) => {
 
   const renderDescriptions = () => {
     if (descriptions && Array.isArray(descriptions)) {
@@ -21,14 +21,24 @@ const RightChangelogCard = ({ title, heading, descriptions, cards,isDarkTheme=fa
           </ul>
         </div>
       ));
+    } else if (descriptions) {
+      // If it's a single string, render it as a single item in a list
+      return (
+        <div className={`${styles['changelog-category']} changelog-category`}>
+          <ul className={styles['changelog-category-list']}>
+            <li className={styles['changelog-category-item']}>{descriptions}</li>
+          </ul>
+        </div>
+      );
     }
+    return null;
   };
 
   const renderCards = () => {
     if (cards && Array.isArray(cards)) {
-      return cards.map((card, index) => {
-        return <AlertCard key={index} card={card} isDarkTheme={isDarkTheme} />
-      });
+      return cards.map((card, index) => (
+        <AlertCard key={index} card={card} isDarkTheme={isDarkTheme} />
+      ));
     } else {
       return null;
     }
@@ -47,7 +57,10 @@ const RightChangelogCard = ({ title, heading, descriptions, cards,isDarkTheme=fa
 RightChangelogCard.propTypes = {
   version: PropTypes.string,
   title: PropTypes.string.isRequired,
-  descriptions: PropTypes.arrayOf(PropTypes.array),
+  descriptions: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.arrayOf(PropTypes.oneOfType([PropTypes.string, PropTypes.arrayOf(PropTypes.string)])),
+  ]),
   cards: PropTypes.arrayOf(PropTypes.object),
   isDarkTheme: PropTypes.bool, // Make isDarkTheme optional
 };

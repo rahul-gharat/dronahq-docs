@@ -9,7 +9,30 @@
       "descriptions": [
         "Add-on empowers both developers and non-developers to effortlessly create custom automation solutions. Whether it's handling cron jobs, executing ETL tasks, setting up custom alerts, or automating processes like data retrieval and automatic response emails, this platform offers a comprehensive range of capabilities.",
         "Workflows can be triggered on a recurring schedule or based on specific event-based triggers, providing a fast and efficient way for developers to design custom automation (Link) recipes tailored to their unique requirements."
+      ],
+      "cards": [
+        {
+          "title": "Connect to any data source",
+          "icon": "cloud-hover.svg",
+          "color": "green",
+          "descriptions": ["Add-on empowers both developers and non-developers to effortlessly create custom automation solutions."],
+          "points": ["Add-on empowers both developers and non-developers to effortlessly create custom automation solutions."]
+        },
+        {
+          "title": "Connect to any data source",
+          "icon": "cloud-hover.svg",
+          "color": "blue",
+          "descriptions": [
+            "Add-on empowers both developers and non-developers to effortlessly create custom automation solutions.",
+            "Add-on empowers both developers and non-developers to effortlessly create custom automation solutions."
+        ],
+          "points": [
+            "Add-on empowers both developers and non-developers to effortlessly create custom automation solutions.",
+            "Add-on empowers both developers and non-developers to effortlessly create custom automation solutions."
+          ]
+        }
       ]
+
     },
     {
       "timestamp": 1706631570000,
@@ -24,15 +47,15 @@
       "cards": [
         {
           "title": "Connect to any data source",
-          "icon": "icon",
+          "icon": "cloud-hover.svg",
           "color": "green",
           "descriptions": ["Add-on empowers both developers and non-developers to effortlessly create custom automation solutions."],
           "points": ["Add-on empowers both developers and non-developers to effortlessly create custom automation solutions."]
         },
         {
           "title": "Connect to any data source",
-          "icon": "icon",
-          "color": "blue",
+          "icon": "cloud-hover.svg",
+          "color": "grey",
           "descriptions": [
             "Add-on empowers both developers and non-developers to effortlessly create custom automation solutions.",
             "Add-on empowers both developers and non-developers to effortlessly create custom automation solutions."

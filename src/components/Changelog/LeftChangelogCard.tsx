@@ -9,8 +9,8 @@ const LeftChangelogCard = ({ timestamp, tags,isDarkTheme = false  }) => {
   const formattedTimestamp = timestampObj.toLocaleDateString('en-US', { day: 'numeric', month: 'long', year: 'numeric' });
 
   return (
-    <div className={`${styles['left-changelogcard']} left-changelogcard pt-4 ${isDarkTheme ? styles['dark-mode'] : ''}`}>
-      <div className={`${styles['changelogcard-date']} changelogcard-date hq-modal-title`}>{formattedTimestamp}</div>
+    <div className={`${styles['left-changelogcard']} ${styles['br-right']} left-changelogcard pt-4 ${isDarkTheme ? styles['dark-mode'] : ''}`}>
+      <div className={`${styles['changelogcard-date']} ${styles['after']} changelogcard-date hq-modal-title`}>{formattedTimestamp}</div>
       <Tags tags={tags} />
     </div>
   );

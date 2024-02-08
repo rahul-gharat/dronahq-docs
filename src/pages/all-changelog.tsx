@@ -7,7 +7,7 @@ import styles from '../components/Changelog/style.module.scss';
 const AllChangelog = () => {
   const { isDarkTheme } = useDocusaurusContext();
   const [changelogData, setChangelogData] = useState([]);
-  const [searchQuery, setSearchQuery] = useState('');
+  // const [searchQuery, setSearchQuery] = useState('');
 
   useEffect(() => {
     fetch('/files/changelogdata.json')
@@ -25,10 +25,34 @@ const AllChangelog = () => {
         console.error('Error fetching data:', error);
       });
   }, []);
+  useEffect(() => {
+    // Access the changelog-main div
+    const changelogMainDiv = document.querySelector('.changelog-main');
+
+    const updateTheme = () => {
+      const htmlTheme = document.querySelector('html').getAttribute('data-theme');
+      // Set the data-theme attribute of changelog-main based on the htmlTheme
+      if (changelogMainDiv && htmlTheme) {
+        changelogMainDiv.setAttribute('data-theme', htmlTheme);
+      }
+    };
+
+    // Use MutationObserver to watch for changes in attributes
+    const observer = new MutationObserver(updateTheme);
+    observer.observe(document.querySelector('html'), { attributes: true });
+
+    // Initial update when the component mounts
+    updateTheme();
+
+    // Clean up the observer when the component unmounts
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
 
   return (
     <Layout title="Changelog">
-      <div className={`${styles['changelog-main']} changelog-main m-left-right-auto nocode `} data-theme={isDarkTheme ? 'dark' : 'light'}>
+      <div className={`${styles['changelog-main']} changelog-main m-left-right-auto nocode `} data-theme={!isDarkTheme ? '' : 'dark'}>
         <div className={`${styles['mx-auto']} mx-auto ${styles['changelog-comp-div']} changelog-comp-div`}>
           {changelogData.map((item, index) => (
             <ChangelogCard

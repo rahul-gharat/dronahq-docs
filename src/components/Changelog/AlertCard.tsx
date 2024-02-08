@@ -9,8 +9,8 @@ const AlertCard = ({ card, isDarkTheme }) => {
   return (
     <div className={cardClassName}>
       <div className={`${styles['alert-card-header']} alert-card-header`}>
-        <img src={card.icon} />
-        <div className={`${styles['alert-card-title']} alert-card-title ml-2`}>{card.title}</div>
+        <img src={`../icons/${card.icon}`} className='alert-card-icon'/>
+        <div className={`${styles['alert-card-title']} alert-card-title ml-1`}>{card.title}</div>
       </div>
       <div className={`${styles['alert-card-descriptions']} alert-card-descriptions`}>
         {card.descriptions.map((desc, i) => (
