@@ -5,7 +5,7 @@ import styles from "./style.module.scss";
 
 const Tags = ({ tags,isDarkTheme=false }) => {
   return (
-    <div className={`${isDarkTheme ? styles['dark-mode'] : ''}`} >
+    <div className={`${styles['tags-container']} tags-container`}  >
       {tags.map((tag, index) => (
         <div key={index} className={`${styles['changelogcard-tag']} hq-tags border small green d-flex align-center pointer justify-center mt-2`}>
           {tag}

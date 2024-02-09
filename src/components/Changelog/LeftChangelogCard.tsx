@@ -10,8 +10,10 @@ const LeftChangelogCard = ({ timestamp, tags,isDarkTheme = false  }) => {
 
   return (
     <div className={`${styles['left-changelogcard']} ${styles['br-right']} left-changelogcard pt-4 ${isDarkTheme ? styles['dark-mode'] : ''}`}>
-      <div className={`${styles['changelogcard-date']} ${styles['after']} changelogcard-date hq-modal-title`}>{formattedTimestamp}</div>
-      <Tags tags={tags} />
+      <div className={`${styles['stickycard']} stickycard`}>
+        <div className={`${styles['changelogcard-date']} ${styles['after']} changelogcard-date hq-modal-title`}>{formattedTimestamp}</div>
+        <Tags tags={tags} />
+      </div>
     </div>
   );
 };

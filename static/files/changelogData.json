@@ -66,6 +66,39 @@
           ]
         }
       ]
+    },
+    {
+      "timestamp": 1706631570000,
+      "version": "1.0.0",
+      "tags": ["CloudHost"],
+      "heading": "Build experiences using Actionflows on events (Title)",
+      "title": "Connect to any data source",
+      "embed": "video/image",
+      "descriptions": [
+        "Add-on empowers both developers and non-developers to effortlessly create custom automation solutions."
+      ],
+      "cards": [
+        {
+          "title": "Connect to any data source",
+          "icon": "cloud-hover.svg",
+          "color": "green",
+          "descriptions": ["Add-on empowers both developers and non-developers to effortlessly create custom automation solutions."],
+          "points": ["Add-on empowers both developers and non-developers to effortlessly create custom automation solutions."]
+        },
+        {
+          "title": "Connect to any data source",
+          "icon": "cloud-hover.svg",
+          "color": "grey",
+          "descriptions": [
+            "Add-on empowers both developers and non-developers to effortlessly create custom automation solutions.",
+            "Add-on empowers both developers and non-developers to effortlessly create custom automation solutions."
+        ],
+          "points": [
+            "Add-on empowers both developers and non-developers to effortlessly create custom automation solutions.",
+            "Add-on empowers both developers and non-developers to effortlessly create custom automation solutions."
+          ]
+        }
+      ]
     }
   ]
   
