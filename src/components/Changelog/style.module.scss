@@ -156,6 +156,10 @@ li{
     max-width: 300px;
     justify-content: flex-start;
 }
+.right-changelogcard .date-tag-container{
+    display: none;
+}
+
 @media screen and (max-width: 768px) {    
     .changelog-main{
         padding: 0 20px;
@@ -199,5 +203,22 @@ li{
     .changelogcard-tag{
         margin-left: 0px !important;
         margin-right: 4px !important;
+    }
+    .right-changelogcard .changelogcard-date{
+        align-self: center;
+        font-size: 12px !important;
+    }
+    .right-changelogcard .changelogcard-tag{
+        font-size: 10px !important;
+        margin-top: 0px !important;
+        margin-bottom: 2px !important;
+        align-self: center;
+    }
+    .right-changelogcard .date-tag-container{
+        display: flex;
+        place-content: space-between;
+    }
+    .left-changelogcard{
+        display: none;
     }
 }

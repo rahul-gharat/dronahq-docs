@@ -37,7 +37,7 @@
     {
         "timestamp": 1704672000000,
         "version": "2.3.8",
-        "tags": ["Ehancement"],
+        "tags": ["Self-hosted","beta"],
         "heading": "SurrealDB: IP Whitelisting, Audit Logging, and App Performance Optimization",
         "title": "Enhancement and Additions to platform",
         "embed": "video/image",
