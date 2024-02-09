@@ -160,7 +160,7 @@ li{
     .changelog-main{
         padding: 0 20px;
     }
-    .stickycard::after {
+    .stickycard.after::after {
         display: none; /* Remove the ::after pseudo-element */
     }
     .changelog-card {
