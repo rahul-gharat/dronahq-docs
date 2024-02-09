@@ -3,6 +3,7 @@
     --ifm-alert-card-green: #263427;
     --ifm-alert-card-blue: #293c4c;
     --ifm-alert-card-grey: #2d2d2d;
+    --ifm-alert-card-yellow: #4d3800;
 }
 
 .changelog-main{
@@ -10,6 +11,7 @@
     --ifm-alert-card-green: #E2FFEF;
     --ifm-alert-card-blue: #f6f6ff;
     --ifm-alert-card-grey: #eaeaea;
+    --ifm-alert-card-yellow: #ffba0026;
 }
 
 .changelog-main{
@@ -57,12 +59,12 @@ li{
 .changelogcard-date{
     color: var(--dhq-header-color) !important;
 }
-.changelogcard-date.after::after{
+.stickycard.after::after{
     color: var(--ifm-color-primary);
     content: "";
     font-size: 11px;
-    margin-top: -22px;
-    margin-left: 158px;
+    margin-top: 6px;
+    margin-right: -31px;
     display: flex;
     width: 12px;
     height: 12px;
@@ -110,6 +112,9 @@ li{
 .alert-card.grey{
     background: var(--ifm-alert-card-grey) !important;
 }
+.alert-card.yellow{
+    background: var(--ifm-alert-card-yellow) !important;
+}
 .alert-card-header{
     display: flex;
     align-items: center;
@@ -126,7 +131,6 @@ li{
 }
 .alert-card-points{
     margin-left:18px;
-    margin-top: 12px;
 }
 
 .alert-card-points li{
@@ -156,7 +160,7 @@ li{
     .changelog-main{
         padding: 0 20px;
     }
-    .changelogcard-date::after {
+    .stickycard::after {
         display: none; /* Remove the ::after pseudo-element */
     }
     .changelog-card {
@@ -178,9 +182,6 @@ li{
     }
     .left-changelogcard.br-right{
         border:none;
-    }
-    .changelogcard-date.after::after{
-        display: none;
     }
     .stickycard{
         position: relative;

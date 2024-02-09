@@ -54,7 +54,7 @@ const AllChangelog = () => {
     <Layout title="Changelog">
       <div className={`${styles['changelog-main']} changelog-main m-left-right-auto nocode `} data-theme={!isDarkTheme ? '' : 'dark'}>
         <div className={`${styles['mx-auto']} mx-auto ${styles['changelog-comp-div']} changelog-comp-div`}>
-          {changelogData.map((item, index) => (
+          {changelogData && changelogData.map((item, index) => (
             <ChangelogCard
               key={`${item.timestamp}_${index}`}              
               timestamp={item.timestamp}

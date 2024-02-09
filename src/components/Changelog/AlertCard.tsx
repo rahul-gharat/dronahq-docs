@@ -8,12 +8,12 @@ const AlertCard = ({ card, isDarkTheme }) => {
 
   return (
     <div className={cardClassName}>
-      <div className={`${styles['alert-card-header']} alert-card-header`}>
+      <div className={`${styles['alert-card-header']} alert-card-header mb-1`}>
         <img src={`../icons/${card.icon}`} className='alert-card-icon'/>
-        <div className={`${styles['alert-card-title']} alert-card-title ml-1`}>{card.title}</div>
+        <div className={`${styles['alert-card-title']} alert-card-title ml-2`}>{card.title}</div>
       </div>
       <div className={`${styles['alert-card-descriptions']} alert-card-descriptions`}>
-        {card.descriptions.map((desc, i) => (
+        {card.descriptions && card.descriptions.map((desc, i) => (
           <div key={i}>{desc}</div>
         ))}
         {card.points && (
@@ -33,7 +33,7 @@ AlertCard.propTypes = {
     icon: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
     color: PropTypes.string, // Assuming color is optional
-    descriptions: PropTypes.arrayOf(PropTypes.string).isRequired,
+    descriptions: PropTypes.arrayOf(PropTypes.string),
     points: PropTypes.arrayOf(PropTypes.string), // Assuming points is optional
   }).isRequired,
   isDarkTheme: PropTypes.bool, // Make isDarkTheme optional

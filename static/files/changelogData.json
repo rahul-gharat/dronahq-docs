@@ -1,104 +1,112 @@
 [
     {
-      "timestamp": 1706631570000,
-      "version": "1.0.0",
-      "tags": ["CloudHost"],
-      "heading": "Build experiences using Actionflows on events (Title)",
-      "title": "Connect to any data source",
-      "embed": "video/image",
-      "descriptions": [
-        "Add-on empowers both developers and non-developers to effortlessly create custom automation solutions. Whether it's handling cron jobs, executing ETL tasks, setting up custom alerts, or automating processes like data retrieval and automatic response emails, this platform offers a comprehensive range of capabilities.",
-        "Workflows can be triggered on a recurring schedule or based on specific event-based triggers, providing a fast and efficient way for developers to design custom automation (Link) recipes tailored to their unique requirements."
-      ],
-      "cards": [
-        {
-          "title": "Connect to any data source",
-          "icon": "cloud-hover.svg",
-          "color": "green",
-          "descriptions": ["Add-on empowers both developers and non-developers to effortlessly create custom automation solutions."],
-          "points": ["Add-on empowers both developers and non-developers to effortlessly create custom automation solutions."]
-        },
-        {
-          "title": "Connect to any data source",
-          "icon": "cloud-hover.svg",
-          "color": "blue",
-          "descriptions": [
-            "Add-on empowers both developers and non-developers to effortlessly create custom automation solutions.",
-            "Add-on empowers both developers and non-developers to effortlessly create custom automation solutions."
+        "timestamp": 1706631570000,
+        "version": "1.3.0",
+        "tags": ["Self-Hosted"],
+        "heading": "Build experiences using Actionflows on events (Title)",
+        "title": "Connect to any data source",
+        "embed": "video/image",
+        "descriptions": [
+          "Add-on empowers both developers and non-developers to effortlessly create custom automation solutions. Whether it's handling cron jobs, executing ETL tasks, setting up custom alerts, or automating processes like data retrieval and automatic response emails, this platform offers a comprehensive range of capabilities.",
+          "Workflows can be triggered on a recurring schedule or based on specific event-based triggers, providing a fast and efficient way for developers to design custom automation (Link) recipes tailored to their unique requirements."
         ],
-          "points": [
-            "Add-on empowers both developers and non-developers to effortlessly create custom automation solutions.",
-            "Add-on empowers both developers and non-developers to effortlessly create custom automation solutions."
-          ]
-        }
-      ]
-
+        "cards": [
+          {
+              "title": "Added",
+              "icon": "cloud-hover.svg",
+              "color": "green",
+              "descriptions":["Ex editor id now replaced with JSEditor for action parameters and connectors in actionflow."],
+              "points": ["On the air updates for Controls and Functions","Iteration Action added in Actionflow."]
+            },
+          {
+            "title": "Fixed",
+            "icon": "cloud-hover.svg",
+            "color": "blue",
+            "points": ["Minor fixes in app git sync","Add user with SSO user login fixed."]
+          },
+          {
+            "title": "Changed",
+            "icon": "cloud-hover.svg",
+            "color": "yellow",
+            "points": [
+              "Ex editor id now replaced with JSEditor for action parameters and connectors in actionflow.",
+              "Ex editor id now replaced with JSEditor for branch action condition in actionflow."
+            ]
+          }
+        ]
     },
     {
-      "timestamp": 1706631570000,
-      "version": "1.0.0",
-      "tags": ["CloudHost"],
-      "heading": "Build experiences using Actionflows on events (Title)",
-      "title": "Connect to any data source",
-      "embed": "video/image",
-      "descriptions": [
-        "Add-on empowers both developers and non-developers to effortlessly create custom automation solutions."
-      ],
-      "cards": [
-        {
-          "title": "Connect to any data source",
-          "icon": "cloud-hover.svg",
-          "color": "green",
-          "descriptions": ["Add-on empowers both developers and non-developers to effortlessly create custom automation solutions."],
-          "points": ["Add-on empowers both developers and non-developers to effortlessly create custom automation solutions."]
-        },
-        {
-          "title": "Connect to any data source",
-          "icon": "cloud-hover.svg",
-          "color": "grey",
-          "descriptions": [
-            "Add-on empowers both developers and non-developers to effortlessly create custom automation solutions.",
-            "Add-on empowers both developers and non-developers to effortlessly create custom automation solutions."
+        "timestamp": 1706631570000,
+        "version": "1.3.0",
+        "tags": ["Self-Hosted"],
+        "heading": "Build experiences using Actionflows on events (Title)",
+        "title": "Connect to any data source",
+        "embed": "video/image",
+        "descriptions": [
+          "Add-on empowers both developers and non-developers to effortlessly create custom automation solutions. Whether it's handling cron jobs, executing ETL tasks, setting up custom alerts, or automating processes like data retrieval and automatic response emails, this platform offers a comprehensive range of capabilities.",
+          "Workflows can be triggered on a recurring schedule or based on specific event-based triggers, providing a fast and efficient way for developers to design custom automation (Link) recipes tailored to their unique requirements."
         ],
-          "points": [
-            "Add-on empowers both developers and non-developers to effortlessly create custom automation solutions.",
-            "Add-on empowers both developers and non-developers to effortlessly create custom automation solutions."
-          ]
-        }
-      ]
+        "cards": [
+          {
+              "title": "Added",
+              "icon": "cloud-hover.svg",
+              "color": "green",
+              "descriptions":["Ex editor id now replaced with JSEditor for action parameters and connectors in actionflow."],
+              "points": ["On the air updates for Controls and Functions","Iteration Action added in Actionflow."]
+            },
+          {
+            "title": "Fixed",
+            "icon": "cloud-hover.svg",
+            "color": "blue",
+            "points": ["Minor fixes in app git sync","Add user with SSO user login fixed."]
+          },
+          {
+            "title": "Changed",
+            "icon": "cloud-hover.svg",
+            "color": "yellow",
+            "points": [
+              "Ex editor id now replaced with JSEditor for action parameters and connectors in actionflow.",
+              "Ex editor id now replaced with JSEditor for branch action condition in actionflow."
+            ]
+          }
+        ]
     },
     {
-      "timestamp": 1706631570000,
-      "version": "1.0.0",
-      "tags": ["CloudHost"],
-      "heading": "Build experiences using Actionflows on events (Title)",
-      "title": "Connect to any data source",
-      "embed": "video/image",
-      "descriptions": [
-        "Add-on empowers both developers and non-developers to effortlessly create custom automation solutions."
-      ],
-      "cards": [
-        {
-          "title": "Connect to any data source",
-          "icon": "cloud-hover.svg",
-          "color": "green",
-          "descriptions": ["Add-on empowers both developers and non-developers to effortlessly create custom automation solutions."],
-          "points": ["Add-on empowers both developers and non-developers to effortlessly create custom automation solutions."]
-        },
-        {
-          "title": "Connect to any data source",
-          "icon": "cloud-hover.svg",
-          "color": "grey",
-          "descriptions": [
-            "Add-on empowers both developers and non-developers to effortlessly create custom automation solutions.",
-            "Add-on empowers both developers and non-developers to effortlessly create custom automation solutions."
+        "timestamp": 1704672000000,
+        "version": "2.3.8",
+        "tags": ["Self-Hosted"],
+        "heading": "SurrealDB: IP Whitelisting, Audit Logging, and App Performance Optimization",
+        "title": "Enhancement and Additions to platform",
+        "embed": "video/image",
+        "descriptions": [
+            "Enhance your system's security and accessibility by whitelisting IPs and ensuring their reachability seamlessly.",
+            "Dive into comprehensive audit logs that trace every event, providing insights into database activities and ensuring compliance with ease.",
+            "Experience lightning-fast load times with optimized caching algorithms, reducing network stress and backend API load for improved app performance."
         ],
-          "points": [
-            "Add-on empowers both developers and non-developers to effortlessly create custom automation solutions.",
-            "Add-on empowers both developers and non-developers to effortlessly create custom automation solutions."
-          ]
-        }
-      ]
+        "cards": [
+          {
+              "title": "Added",
+              "icon": "cloud-hover.svg",
+              "color": "green",
+              "descriptions":["Ex editor id now replaced with JSEditor for action parameters and connectors in actionflow."],
+              "points": ["On the air updates for Controls and Functions","Iteration Action added in Actionflow."]
+            },
+          {
+            "title": "Fixed",
+            "icon": "cloud-hover.svg",
+            "color": "blue",
+            "points": ["Minor fixes in app git sync","Add user with SSO user login fixed."]
+          },
+          {
+            "title": "Changed",
+            "icon": "cloud-hover.svg",
+            "color": "yellow",
+            "points": [
+              "Ex editor id now replaced with JSEditor for action parameters and connectors in actionflow.",
+              "Ex editor id now replaced with JSEditor for branch action condition in actionflow."
+            ]
+          }
+        ]
     }
-  ]
+]
   
