@@ -7,7 +7,7 @@ import Thumbnail from '@site/src/components/Thumbnail';
 
 # Overview
 
-You can now use DronaHQ's managed file storage build on top of Amazon web services's simple secure storage (AWS S3). DronaHQ File Storage comes with build in File explorer for storing and managing your files in simple and friendly way. You can also interact with File storage using dedicate conenctor which allows you to upload file(s), get list of uploaded objects, get signed url of files, also get contents of file.
+You can now use DronaHQ's managed file storage build on top of Amazon web services's simple secure storage (AWS S3). DronaHQ File Storage comes with build in File explorer for storing and managing your files in simple and friendly way. You can also interact with File storage using dedicate connector which allows you to upload file(s), get list of uploaded objects, get signed url of files, also get contents of file.
 
 
 # Getting started
