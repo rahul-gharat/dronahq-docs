@@ -14,7 +14,12 @@ const AlertCard = ({ card, isDarkTheme }) => {
       </div>
       <div className={`${styles['alert-card-descriptions']} alert-card-descriptions`}>
         {card.descriptions && card.descriptions.map((desc, i) => (
-          <div key={i}>{desc}</div>
+          // Check if description is HTML content
+          desc.includes('href=') ? (
+            <div key={i} dangerouslySetInnerHTML={{ __html: desc }} />
+          ) : (
+            <div key={i}>{desc}</div>
+          )
         ))}
         {card.points && (
           <ul className={styles['alert-card-points']}>

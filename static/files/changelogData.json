@@ -5,16 +5,18 @@
         "tags": ["Self-Hosted"],
         "heading": "DronaHQ Platform Update: Enhanced Editor, On-the-Air Updates, and Iteration Action",
         "title": "Latest DronaHQ Platform Enhancements",
-        "embed": "video/image",
+        "embed": "/videos/dhq-database/add-edit-record.mp4",
         "descriptions": [
-            "Experience the latest advancements in the DronaHQ platform with a range of exciting updates. The Ex editor is now replaced with JSEditor for action parameters and connectors in actionflow, offering improved functionality and ease of use. Enjoy on-the-air updates for Controls and Functions, ensuring seamless integration and enhanced performance. Additionally, the introduction of Iteration Action in Actionflow provides greater flexibility and efficiency in workflow management. Alongside these enhancements, minor fixes have been implemented in app git sync, while user login via SSO has been resolved. Embrace these changes and elevate your development experience with DronaHQ."
+            "Experience the latest advancements in the DronaHQ platform with a range of exciting updates. <a href='/reference/automation-blocks/js-code/'>JSEditor</a> The Ex editor is now replaced with JSEditor for action parameters and connectors in actionflow, offering improved functionality and ease of use. Enjoy on-the-air updates for Controls and Functions, ensuring seamless integration and enhanced performance. Additionally, the introduction of Iteration Action in Actionflow provides greater flexibility and efficiency in workflow management. Alongside these enhancements, minor fixes have been implemented in app git sync, while user login via SSO has been resolved. Embrace these changes and elevate your development experience with DronaHQ."
         ],
         "cards": [
           {
               "title": "Added",
               "icon": "cloud-hover.svg",
               "color": "green",
-              "descriptions":["Ex editor id now replaced with JSEditor for action parameters and connectors in actionflow."],
+              "descriptions": [
+                  "Ex editor is now replaced with <a href='#'>JSEditor</a> for action parameters and connectors in actionflow."
+                ],  
               "points": ["On the air updates for Controls and Functions","Iteration Action added in Actionflow."]
             },
           {
@@ -37,10 +39,10 @@
     {
         "timestamp": 1704672000000,
         "version": "2.3.8",
-        "tags": ["Self-hosted","beta"],
+        "tags": ["Self-Hosted","beta"],
         "heading": "SurrealDB: IP Whitelisting, Audit Logging, and App Performance Optimization",
         "title": "Enhancement and Additions to platform",
-        "embed": "video/image",
+        "embed": "/img/getting-started/customer-management-app.png",
         "descriptions": [
             "Welcome to SurrealDB, the future of data handling. Our cutting-edge distributed NoSQL database system stands tall as an ecosystem engineered for unparalleled scalability, high availability, and fault tolerance across diverse data workloads. Empower your systems with seamless functionality, ensuring IP reachability and fortifying network security. Dive into comprehensive audit logs, accessible in databases or chosen logging tools, to trace every step and celebrate every event.",
             "We've turbocharged your experience with SurrealDB. The DronaHQ App Builder is now armed with caching algorithms, slashing network stress and backend API load. Say goodbye to lag and hello to lightning-fast load times. Experience the power of SurrealDB and unlock a new level of efficiency and performance for your data management needs."],
@@ -71,7 +73,7 @@
         "tags": ["New Addition"],
         "heading": "Dive into new realms of connectivity! With the Rest API in Data Query",
         "title": "New Option in Data Query → Rest API",
-        "embed": "video/image",
+        "embed": "/assets/images/js-code-55de0aca89be47acc3fa16b8e7600d56.jpeg",
         "descriptions": [
             "Dive into new realms of connectivity! With the Rest API in Data Query, unlock a treasure trove of possibilities. Basic authentication seamlessly connects you to public APIs, be it weather updates, dummy data, or IP-based information. Not to mention, the proxy toggle that swoops in to handle CORS issues like a hero."
         ]        
@@ -82,7 +84,7 @@
         "tags": ["New Addition"],
         "heading": "Introducing DronaHQ DB: The Future of Managed PostgreSQL Platforms",
         "title": "DronaHQ Managed Database (Beta)",
-        "embed": "video/image",
+        "embed": "/assets/images/js-code-55de0aca89be47acc3fa16b8e7600d56.jpeg",
         "descriptions": [
             "Prepare for the revolution! Introducing DronaHQ DB, a marvel in managed PostgreSQL platforms. Imagine a world where managing data feels as intuitive as handling spreadsheets, within your very apps! It’s tailored for efficiency, empowered by SQL queries, and wrapped in a user-friendly interface, ensuring seamless data handling.            "
         ]        

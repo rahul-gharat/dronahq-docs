@@ -10,7 +10,7 @@ const ChangelogCard = ({ timestamp, version, tags, heading, title, embed, descri
   return (
     <div className={`${styles['changelog-card']} changelog-card ${isDarkTheme ? styles['dark-mode'] : ''}`}>
       <LeftChangelogCard timestamp={timestamp} tags={tags} isDarkTheme={isDarkTheme}/>
-      <RightChangelogCard title={title} heading={heading} descriptions={descriptions} cards={cards} timestamp={timestamp} tags={tags} isDarkTheme={isDarkTheme} />
+      <RightChangelogCard title={title} heading={heading} descriptions={descriptions} cards={cards} timestamp={timestamp} tags={tags} embed={embed} isDarkTheme={isDarkTheme} />
     </div>
   );
 };

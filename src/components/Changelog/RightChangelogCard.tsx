@@ -1,11 +1,12 @@
 // RightChangelogCard.js
-import React from 'react';
+import React,{useRef,useState} from 'react';
 import PropTypes from 'prop-types';
 import styles from "./style.module.scss";
 import AlertCard from './AlertCard';
 import Tags from './Tags';
+import EmbedComponent from './EmbedComponent';
 
-const RightChangelogCard = ({ title, heading, descriptions, cards,timestamp,tags, isDarkTheme = false }) => {
+const RightChangelogCard = ({ title, heading, descriptions, cards,timestamp,tags,embed, isDarkTheme = false }) => {
   const timestampObj = new Date(timestamp);
   const formattedTimestamp = timestampObj.toLocaleDateString('en-US', { day: 'numeric', month: 'long', year: 'numeric' });
 
@@ -16,10 +17,26 @@ const RightChangelogCard = ({ title, heading, descriptions, cards,timestamp,tags
           <ul className={styles['changelog-category-list']}>
             {Array.isArray(desc) ? (
               desc.map((description, i) => (
-                <li key={i} className={styles['changelog-category-item']}>{description}</li>
+                <li key={i} className={styles['changelog-category-item']}>
+                  {/* Check if the description contains a link */}
+                  {description.includes('href=') ? (
+                    <span dangerouslySetInnerHTML={{ __html: description }} />
+                  ) : (
+                    // If not, render as regular text
+                    <span>{description}</span>
+                  )}
+                </li>
               ))
             ) : (
-              <li className={styles['changelog-category-item']}>{desc}</li>
+              <li className={styles['changelog-category-item']}>
+                {/* Check if the description contains a link */}
+                {desc.includes('href=') ? (
+                  <span dangerouslySetInnerHTML={{ __html: desc }} />
+                ) : (
+                  // If not, render as regular text
+                  <span>{desc}</span>
+                )}
+              </li>
             )}
           </ul>
         </div>
@@ -29,13 +46,21 @@ const RightChangelogCard = ({ title, heading, descriptions, cards,timestamp,tags
       return (
         <div className={`${styles['changelog-category']} changelog-category`}>
           <ul className={styles['changelog-category-list']}>
-            <li className={styles['changelog-category-item']}>{descriptions}</li>
+            <li className={styles['changelog-category-item']}>
+              {/* Check if the description contains a link */}
+              {descriptions.includes('href=') ? (
+                <span dangerouslySetInnerHTML={{ __html: descriptions }} />
+              ) : (
+                // If not, render as regular text
+                <span>{descriptions}</span>
+              )}
+            </li>
           </ul>
         </div>
       );
     }
     return null;
-  };
+  };  
 
   const renderCards = () => {
     if (cards && Array.isArray(cards)) {
@@ -46,6 +71,7 @@ const RightChangelogCard = ({ title, heading, descriptions, cards,timestamp,tags
       return null;
     }
   };
+
   let card_id="id"+timestamp;
   return (
     <div className={`${styles['right-changelogcard']} right-changelogcard mb-5 pt-4 ${isDarkTheme ? styles['dark-mode'] : ''}`} id={card_id}>
@@ -54,6 +80,9 @@ const RightChangelogCard = ({ title, heading, descriptions, cards,timestamp,tags
       <div className={`d-flex ${styles['date-tag-container']}`}>
         <div className={`${styles['changelogcard-date']} changelogcard-date hq-modal-title`}>{formattedTimestamp}</div>
         <Tags tags={tags} />
+      </div>
+      <div className={`${styles['embed']}`}>
+        <EmbedComponent embed={embed} title={title} />
       </div>
       <div className={`${styles['card-descriptions']} card-descriptions mt-2`}>{renderDescriptions()}</div>
       <div className={`${styles['cards-alert']} cards-alert mt-2`}>{renderCards()}</div>
