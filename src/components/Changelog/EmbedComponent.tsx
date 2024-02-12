@@ -31,21 +31,30 @@ const EmbedComponent = ({ embed, title }) => {
     } else if (embed.endsWith('.png') || embed.endsWith('.jpg') || embed.endsWith('.jpeg') || embed.endsWith('.gif')) {
       return <img src={embed} alt={title} className={styles['embed-image']} />;
     } else if (embed.startsWith('http')) {
-      return (
-        <div>
-          {embed.endsWith('.png') || embed.endsWith('.jpg') || embed.endsWith('.jpeg') || embed.endsWith('.gif') ? (
-            <img src={embed} alt={title} className={styles['embed-image']} />
-          ) : (
-            <video
-              ref={videoRef}
-              className={`${styles['embed-video']} ${showControls ? styles['show-controls'] : ''}`}
-              onClick={togglePlayPause}
-              src={embed}
-            ></video>
-          )}
-        </div>
-      );
-    }
+        // Assume it's a link to an image or video
+        if (embed.endsWith('.png') || embed.endsWith('.jpg') || embed.endsWith('.jpeg') || embed.endsWith('.gif')) {
+          return <img src={embed} alt={title} className={styles['embed-image']} />;
+        } else if(embed.endsWith('.mp4') || embed.endsWith('.webm') || embed.endsWith('.ogg')){
+            return (
+                <video
+                  ref={videoRef}
+                  className={`${styles['embed-video']} ${showControls ? styles['show-controls'] : ''}`}
+                  onClick={togglePlayPause}
+                  src={embed}
+                ></video>
+            );
+        }
+        else {
+            return (
+                <iframe
+                  ref={videoRef}
+                  className={`${styles['embed-video']} ${showControls ? styles['show-controls'] : ''}`}
+                  onClick={togglePlayPause}
+                  src={embed}
+                ></iframe>
+              );
+        }
+      }
   }
   return null;
 };

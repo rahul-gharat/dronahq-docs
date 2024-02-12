@@ -5,7 +5,7 @@ import styles from "./style.module.scss";
 import LeftChangelogCard from './LeftChangelogCard'; // Import the new component
 import RightChangelogCard from './RightChangelogCard'; 
 
-const ChangelogCard = ({ timestamp, version, tags, heading, title, embed, descriptions, cards, isDarkTheme = false }) => {
+const ChangelogCard = ({ timestamp, tags, heading, title, embed, descriptions, cards, isDarkTheme = false }) => {
 
   return (
     <div className={`${styles['changelog-card']} changelog-card ${isDarkTheme ? styles['dark-mode'] : ''}`}>
@@ -17,7 +17,6 @@ const ChangelogCard = ({ timestamp, version, tags, heading, title, embed, descri
 
 ChangelogCard.propTypes = {  
   timestamp: PropTypes.number.isRequired,
-  version: PropTypes.string,
   tags: PropTypes.arrayOf(PropTypes.string).isRequired,
   heading: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,

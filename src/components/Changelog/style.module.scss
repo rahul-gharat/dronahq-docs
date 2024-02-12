@@ -4,6 +4,8 @@
     --ifm-alert-card-blue: #293c4c;
     --ifm-alert-card-grey: #2d2d2d;
     --ifm-alert-card-yellow: #4d3800;
+    --ifm-blue-button-text: #5468ff;
+    --ifm-blue-btn-background: #4e5367
 }
 
 .changelog-main{
@@ -12,6 +14,9 @@
     --ifm-alert-card-blue: #f6f6ff;
     --ifm-alert-card-grey: #eaeaea;
     --ifm-alert-card-yellow: #ffba0026;
+    --ifm-blue-button-text: #ffffff;
+    --ifm-blue-btn-background: #5468ff
+    
 }
 
 .changelog-main{
@@ -184,6 +189,28 @@ li{
 .right-changelogcard .date-tag-container{
     display: none;
 }
+.coming-soon{
+    margin-top: 100px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.coming-soon .title{
+    color: var(--docsearch-logo-color);
+    font-weight: 600;
+    font-size: 22px;
+}
+.coming-soon .redirect-doc{
+    margin-top: 20px;
+    background: var(--ifm-blue-btn-background);
+    color: var(--ifm-color-white);
+    border-radius: 4px;
+    padding: 10px;
+    width: fit-content;
+    align-self: center;
+    align-items: center;
+}
+
 
 @media screen and (max-width: 768px) {    
     .changelog-main{

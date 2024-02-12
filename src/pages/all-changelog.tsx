@@ -7,24 +7,31 @@ import styles from '../components/Changelog/style.module.scss';
 const AllChangelog = () => {
   const { isDarkTheme } = useDocusaurusContext();
   const [changelogData, setChangelogData] = useState([]);
-  // const [searchQuery, setSearchQuery] = useState('');
 
   useEffect(() => {
     fetch('/files/changelogdata.json')
-      .then(response => response.json())
+      .then(response => response.text()) // Use response.text() to handle empty responses
       .then(data => {
         console.log('Fetched Data:', data);
-        if (Array.isArray(data)) {
-          const sortedData = data.sort((a, b) => b.timestamp - a.timestamp);
-          setChangelogData(sortedData);
+
+        // Check if data is not empty before parsing
+        if (data.trim() !== '') {
+          const jsonData = JSON.parse(data);
+          if (Array.isArray(jsonData)) {
+            const sortedData = jsonData.sort((a, b) => b.timestamp - a.timestamp);
+            setChangelogData(sortedData);
+          } else {
+            console.error('Invalid data structure. Expected an array.');
+          }
         } else {
-          console.error('Invalid data structure. Expected an array.');
+          console.error('Fetched data is empty.');
         }
       })
       .catch(error => {
         console.error('Error fetching data:', error);
       });
   }, []);
+
   useEffect(() => {
     // Access the changelog-main div
     const changelogMainDiv = document.querySelector('.changelog-main');
@@ -54,20 +61,32 @@ const AllChangelog = () => {
     <Layout title="Changelog">
       <div className={`${styles['changelog-main']} changelog-main m-left-right-auto nocode `} data-theme={!isDarkTheme ? '' : 'dark'}>
         <div className={`${styles['mx-auto']} mx-auto ${styles['changelog-comp-div']} changelog-comp-div`}>
-          {changelogData && changelogData.map((item, index) => (
-            <ChangelogCard
-              key={`${item.timestamp}_${index}`}              
-              timestamp={item.timestamp}
-              version={item.version}
-              tags={item.tags}
-              heading={item.heading}
-              title={item.title}
-              embed={item.embed}
-              descriptions={item.descriptions}
-              cards={item.cards}
-              isDarkTheme={isDarkTheme}
-            />
-          ))}
+          {changelogData.length > 0 ? (
+            changelogData.map((item, index) => (
+              <ChangelogCard
+                key={`${item.timestamp}_${index}`}              
+                timestamp={item.timestamp}
+                tags={item.tags}
+                heading={item.heading}
+                title={item.title}
+                embed={item.embed}
+                descriptions={item.descriptions}
+                cards={item.cards}
+                isDarkTheme={isDarkTheme}
+              />
+            ))
+          ) : (
+            <div className={`${styles['coming-soon']}`}>
+              <div className={`${styles['title']}`}>Great things Coming Soon</div>
+              <a className={`${styles['redirect-doc']} d-flex`} href='/'>
+                <div>Checkout Docs</div>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" className='ml-2'>
+                  <path d="M3 8L12 8" stroke="#ffffff" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M8.16797 12.4999L12.668 7.99983L8.16797 3.49978" stroke="#ffffff" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+              </a>
+            </div>
+          )}
         </div>
       </div>
     </Layout>
