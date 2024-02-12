@@ -34,3 +34,4 @@ After successfully configuring and saving the connector settings, you can easily
 | GetProducts     | Obtain a list of products available in the system, enabling insights into available merchandise.        |
 | GetProductsById | Retrieve specific product details using unique identifiers, allowing detailed information retrieval.    |
 | UpdateProduct   | Modify existing product information, facilitating updates and alterations to product data.            |
+| UpdateContact | Update contact details, ensuring efficient management and maintenance of customer information. |
