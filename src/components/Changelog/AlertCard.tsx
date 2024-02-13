@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import styles from './style.module.scss';
 
 const AlertCard = ({ card, isDarkTheme }) => {
-  const cardClassName = `${styles['alert-card']} alert-card ${styles[card.color] || ''} mb-3`;
+  const cardClassName = `${styles['alert-card']} alert-card ${styles[card.class] || ''} mb-3`;
 
   return (
     <div className={cardClassName}>
