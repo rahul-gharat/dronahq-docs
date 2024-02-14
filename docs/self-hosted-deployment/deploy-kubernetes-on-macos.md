@@ -108,7 +108,7 @@ Connect to each VM in turn, and run the following scripts:
 
     <!-- curl -LO https://raw.githubusercontent.com/containerd/containerd/main/containerd.service -->
     ```bash
-    curl -LO https://license.dronahq.com/self-hosted/containerd.service
+    curl -LO https://license.dronahq.com/self-hosted/master/init/containerd.service
     sudo mkdir -p /usr/lib/systemd/system
     sudo mv containerd.service /usr/lib/systemd/system/
     ```

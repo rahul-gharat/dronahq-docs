@@ -31,7 +31,7 @@ It is highly recommended for you to frequently check updates and always be on la
 Following is a interactive shell script, which will help you download the database updates for the upgrade version you choose.
 
 ```shell
-/bin/bash -c "$(curl -fsSL https://license.dronahq.com/self-hosted/master/scripts/get-database-updates.sh)"
+/bin/bash -c "$(curl -fsSL https://license.dronahq.com/self-hosted/master/get-database-updates.sh)"
 ```
 
 Above line will download an update file with name `update.sql` in your working directory.
