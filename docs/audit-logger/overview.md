@@ -163,7 +163,6 @@ Columns For Database Loggers:
 | Automation Publish | ``automation_publish`` | ✔️ | ✔️ |
 | Automation Updated | ``automation_updated`` | ✔️ | ✔️ |
 | Automation Created | ``automation_created`` | ✔️ | ✔️ |
-| Logger Deleted | ``logger_deleted`` | ✔️ | ✔️ |
 | Openai Account Added | ``openai_account_added`` | ✔️ | ✔️ |
 | Openai Account Updated | ``openai_account_updated`` | ✔️ | ✔️ |
 | Openai Account Deleted | ``openai_account_deleted`` | ✔️ | ✔️ |

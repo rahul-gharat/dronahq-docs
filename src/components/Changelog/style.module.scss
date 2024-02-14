@@ -1,276 +1,554 @@
-.changelog-main[data-theme=dark] {
-    --ifm-hq-tags-green: #303030;
-    --ifm-alert-card-green: #263427;
-    --ifm-alert-card-blue: #293c4c;
-    --ifm-alert-card-grey: #2d2d2d;
-    --ifm-alert-card-yellow: #4d3800;
-    --ifm-blue-button-text: #5468ff;
-    --ifm-green-btn-background: #264232;
-}
+// .changelog-main[data-theme=dark] {
+//     --ifm-hq-tags-green: #303030;
+//     --ifm-alert-card-green: #263427;
+//     --ifm-alert-card-blue: #293c4c;
+//     --ifm-alert-card-grey: #2d2d2d;
+//     --ifm-alert-card-yellow: #4d3800;
+//     --ifm-blue-button-text: #5468ff;
+//     --ifm-green-btn-background: #264232;
+// }
 
-.changelog-main{
-    --ifm-hq-tags-green:#E2FFEF;
-    --ifm-alert-card-green: #E2FFEF;
-    --ifm-alert-card-blue: #f6f6ff;
-    --ifm-alert-card-grey: #eaeaea;
-    --ifm-alert-card-yellow: #ffba0026;
-    --ifm-blue-button-text: #ffffff;
-    --ifm-green-btn-background: #26bc6a
+// .changelog-main{
+//     --ifm-hq-tags-green:#E2FFEF;
+//     --ifm-alert-card-green: #E2FFEF;
+//     --ifm-alert-card-blue: #f6f6ff;
+//     --ifm-alert-card-grey: #eaeaea;
+//     --ifm-alert-card-yellow: #ffba0026;
+//     --ifm-blue-button-text: #ffffff;
+//     --ifm-green-btn-background: #26bc6a
     
-}
+// }
 
-.changelog-main{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    // margin-top: 20px;
-    margin-bottom: 20px;
-}
+// .changelog-main{
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     justify-content: center;
+//     // margin-top: 20px;
+//     margin-bottom: 20px;
+// }
 
-.changelog-card {
-    display: flex;
-}
-li{
-    list-style: none;
-}
-.card-descriptions{
-    font-size: 13px;
-}
-.card-descriptions .changelog-category-item{
-    text-align: justify;
-}
-.left-changelogcard{
-    padding-right: 24px;
-    width: 32%;
-    display: flex;
-    flex-direction: column;
+// .changelog-card {
+//     display: flex;
+// }
+// li{
+//     list-style: none;
+// }
+// .card-descriptions{
+//     font-size: 13px;
+// }
+// .card-descriptions .changelog-category-item{
+//     text-align: justify;
+// }
+// .left-changelogcard{
+//     padding-right: 24px;
+//     width: 32%;
+//     display: flex;
+//     flex-direction: column;
     
-}
-.left-changelogcard.br-right{
-    border-right: 2px solid var(--dhq-border-color);
-}
-//   .left-changelogcard child css
-.left-changelogcard > *{
-    // direction: rtl;
-    width: fit-content;
-    align-self: flex-end;
-}
-.right-changelogcard{
-    width: 50%;
-    padding-left: 20px;
-    padding-top: 24px !important;
-    .embed {
-        margin-top: 10px; /* Adjust the margin as needed */
+// }
+// .left-changelogcard.br-right{
+//     border-right: 2px solid var(--dhq-border-color);
+// }
+// //   .left-changelogcard child css
+// .left-changelogcard > *{
+//     // direction: rtl;
+//     width: fit-content;
+//     align-self: flex-end;
+// }
+// .right-changelogcard{
+//     width: 50%;
+//     padding-left: 20px;
+//     padding-top: 24px !important;
+//     .embed {
+//         margin-top: 10px; /* Adjust the margin as needed */
+//     }
+
+//     .embed-video {
+//         width: 100%; /* Set the width of the video to 100% of its container */
+//         height: auto; /* Maintain the video's aspect ratio */
+//         display: block; /* Remove default inline-block spacing */
+//         margin: 0 auto; /* Center the video horizontally */
+//         max-width: 100%; /* Ensure the video doesn't exceed its container */
+//         outline: none; /* Remove the default focus outline */
+//         border: 1px solid #ddd; /* Add a border for aesthetics */
+//         border-radius: 8px; /* Add border-radius for rounded corners */
+//         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+//       }
+
+//     .embed-image {
+//         max-width: 100%; /* Ensure the image doesn't exceed its container */
+//         height: auto; /* Maintain the aspect ratio */
+//         display: block; /* Remove default inline-block spacing */
+//         margin: 0 auto; /* Center the image horizontally */
+//     }
+// }   
+// .right-changelogcard ul{
+//     padding: 0px;
+// }
+// .changelogcard-date{
+//     color: var(--dhq-header-color) !important;
+// }
+// .stickycard.after::after{
+//     color: var(--ifm-color-primary);
+//     content: "";
+//     font-size: 11px;
+//     margin-top: 6px;
+//     margin-right: -31px;
+//     display: flex;
+//     width: 12px;
+//     height: 12px;
+//     border: 2px solid;
+//     border-radius: 25px;
+//     background: #e2ffef;
+//     position: absolute;
+// }
+// .changelogcard-title{
+//     font-size: 16px;
+//     font-weight: 600;
+//     color: var(--ifm-color-primary);
+// }
+// .changelogcard-heading{
+//     font-size: 24px !important;
+//     font-weight: 700;
+//     color: var(--dhq-header-color);
+// }
+// .changelogcard-tag{
+//     margin-left: 4px !important;
+//     margin-right: 0px !important;
+//     background: var(--ifm-hq-tags-green) !important;
+// }
+// .alert-card{
+//     display: flex;
+//     flex-direction: column;
+//     // background: #E2FFEF;
+//     background-color: var(--ifm-alert-card-green);
+//     border: 1px solid #d1d2db;
+//     justify-content: space-between;
+//     border-radius: 6px;
+//     position: relative;
+//     max-width: 100%;
+//     min-width: 100px;
+//     word-wrap: break-word;
+//     padding: 12px 14px;
+    
+// }
+// .alert-card.green{
+//     background: var(--ifm-alert-card-green) !important;
+// }
+// .alert-card.blue{
+//     background: var(--ifm-alert-card-blue) !important;
+// }
+// .alert-card.grey{
+//     background: var(--ifm-alert-card-grey) !important;
+// }
+// .alert-card.yellow{
+//     background: var(--ifm-alert-card-yellow) !important;
+// }
+// .alert-card-header{
+//     display: flex;
+//     align-items: center;
+// }
+// .alert-card-title{
+//     color: var(--dhq-header-color);
+//     font-weight: 700;
+//     font-size: 16px;
+// }
+// .alert-card-descriptions, .alert-card-points{
+//     font-weight: 500;
+//     font-size: 13px;
+//     color: var(--ifm-blockquote-color);
+// }
+// .alert-card-points{
+//     margin-left:18px;
+// }
+
+// .alert-card-points li{
+//     list-style-type: disc;
+// }
+// .alert-card-points li::marker{
+//     font-size:18px
+// }
+// .alert-card-icon{
+//     width: 20px;
+// }
+// .stickycard{
+//     position: sticky;
+//     top: 82px;
+//     display: flex;
+//     flex-direction: column;
+//     align-items: flex-end;
+
+// }
+// .tags-container{
+//     display: flex;
+//     flex-wrap: wrap;
+//     max-width: 300px;
+//     justify-content: flex-start;
+// }
+// .right-changelogcard .date-tag-container{
+//     display: none;
+// }
+// .coming-soon{
+//     margin-top: 100px;
+//     text-align: center;
+//     display: flex;
+//     flex-direction: column;
+// }
+// .coming-soon .title{
+//     color: #26bc6a;
+//     font-weight: 600;
+//     font-size: 22px;
+// }
+// .coming-soon .redirect-doc{
+//     margin-top: 20px;
+//     background: var(--ifm-green-btn-background);
+//     color: var(--ifm-color-white);
+//     border-radius: 4px;
+//     padding: 10px;
+//     width: fit-content;
+//     align-self: center;
+//     align-items: center;
+// }
+
+
+// @media screen and (max-width: 768px) {    
+//     .changelog-main{
+//         padding: 0 20px;
+//     }
+//     .stickycard.after::after {
+//         display: none; /* Remove the ::after pseudo-element */
+//     }
+//     .changelog-card {
+//         flex-direction: column;
+//     }
+
+//     .left-changelogcard {
+//         display: block;
+//         border-right: none;
+//         width: 100%;
+//         padding-right: 0;
+//         margin-bottom: 0px; /* Add margin between left and right divs */
+//     }
+
+//     .right-changelogcard {
+//         width: 100%;
+//         padding-left: 0;
+//         padding-top: 24px !important;
+//     }
+//     .left-changelogcard.br-right{
+//         border:none;
+//     }
+//     .stickycard{
+//         position: relative;
+//         top: 0px;
+//         display: flex;
+//         flex-direction: column;
+//         align-items: flex-start;
+//     }
+//     .tags-container{
+//         display: flex;
+//         flex-wrap: wrap;
+//         max-width: 300px;
+//         justify-content: flex-end;
+//     }
+//     .changelogcard-tag{
+//         margin-left: 0px !important;
+//         margin-right: 4px !important;
+//     }
+//     .right-changelogcard .changelogcard-date{
+//         align-self: center;
+//         font-size: 12px !important;
+//     }
+//     .right-changelogcard .changelogcard-tag{
+//         font-size: 10px !important;
+//         margin-top: 0px !important;
+//         margin-bottom: 2px !important;
+//         align-self: center;
+//     }
+//     .right-changelogcard .date-tag-container{
+//         display: flex;
+//         place-content: space-between;
+//     }
+//     .left-changelogcard{
+//         display: none;
+//     }
+// }
+
+.changelog-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+
+  --ifm-hq-tags-green: #E2FFEF;
+  --ifm-alert-card-green: #E2FFEF;
+  --ifm-alert-card-blue: #f6f6ff;
+  --ifm-alert-card-grey: #eaeaea;
+  --ifm-alert-card-yellow: #ffba0026;
+  --ifm-blue-button-text: #ffffff;
+  --ifm-green-btn-background: #26bc6a;
+
+  &[data-theme='dark'] {
+    --ifm-hq-tags-green: #303030 !important;
+    --ifm-alert-card-green: #263427 !important;
+    --ifm-alert-card-blue: #293c4c !important;
+    --ifm-alert-card-grey: #2d2d2d !important;
+    --ifm-alert-card-yellow: #4d3800 !important;
+    --ifm-blue-button-text: #5468ff !important;
+    --ifm-green-btn-background: #264232 !important;
+  }
+  
+  .changelog-card {
+    display: flex;
+
+    .left-changelogcard {
+      padding-right: 24px;
+      width: 32%;
+      display: flex;
+      flex-direction: column;
+    
+      &.br-right {
+        border-right: 2px solid var(--dhq-border-color);
+      }
+    
+      > * {
+        width: fit-content;
+        align-self: flex-end;
+      }
+      .stickycard {
+        position: sticky;
+        top: 82px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        &.after::after {
+          color: var(--ifm-color-primary);
+          content: "";
+          font-size: 11px;
+          margin-top: 6px;
+          margin-right: -31px;
+          display: flex;
+          width: 12px;
+          height: 12px;
+          border: 2px solid;
+          border-radius: 25px;
+          background: #e2ffef;
+          position: absolute;
+        }
+      }
     }
+    
+    .right-changelogcard {
+      width: 50%;
+      padding-left: 20px;
+      padding-top: 24px !important;
 
-    .embed-video {
-        width: 100%; /* Set the width of the video to 100% of its container */
-        height: auto; /* Maintain the video's aspect ratio */
-        display: block; /* Remove default inline-block spacing */
-        margin: 0 auto; /* Center the video horizontally */
-        max-width: 100%; /* Ensure the video doesn't exceed its container */
-        outline: none; /* Remove the default focus outline */
-        border: 1px solid #ddd; /* Add a border for aesthetics */
-        border-radius: 8px; /* Add border-radius for rounded corners */
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+      .date-tag-container {
+        display: none;
+      }
+      .embed {
+        margin-top: 10px;
+        .embed-video {
+          width: 100%;
+          height: auto;
+          display: block;
+          margin: 0 auto;
+          max-width: 100%;
+          outline: none;
+          border: 1px solid #ddd;
+          border-radius: 8px;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+      
+        .embed-image {
+          max-width: 100%;
+          height: auto;
+          display: block;
+          margin: 0 auto;
+        }
+      }
+      ul {
+        padding: 0;
+      }
+      .card-descriptions {
+        font-size: 13px;
+      
+        .changelog-category-item {
+          text-align: justify;
+        }
+        
+      }
+      .changelogcard-title {
+        font-size: 16px;
+        font-weight: 600;
+        color: var(--ifm-color-primary);
       }
 
-    .embed-image {
-        max-width: 100%; /* Ensure the image doesn't exceed its container */
-        height: auto; /* Maintain the aspect ratio */
-        display: block; /* Remove default inline-block spacing */
-        margin: 0 auto; /* Center the image horizontally */
+      .changelogcard-heading {
+        font-size: 24px !important;
+        font-weight: 700;
+        color: var(--dhq-header-color);
+      }
     }
-}   
-.right-changelogcard ul{
-    padding: 0px;
-}
-.changelogcard-date{
-    color: var(--dhq-header-color) !important;
-}
-.stickycard.after::after{
-    color: var(--ifm-color-primary);
-    content: "";
-    font-size: 11px;
-    margin-top: 6px;
-    margin-right: -31px;
-    display: flex;
-    width: 12px;
-    height: 12px;
-    border: 2px solid;
-    border-radius: 25px;
-    background: #e2ffef;
-    position: absolute;
-}
-.changelogcard-title{
-    font-size: 16px;
-    font-weight: 600;
-    color: var(--ifm-color-primary);
-}
-.changelogcard-heading{
-    font-size: 24px !important;
-    font-weight: 700;
-    color: var(--dhq-header-color);
-}
-.changelogcard-tag{
-    margin-left: 4px !important;
-    margin-right: 0px !important;
-    background: var(--ifm-hq-tags-green) !important;
-}
-.alert-card{
-    display: flex;
-    flex-direction: column;
-    // background: #E2FFEF;
-    background-color: var(--ifm-alert-card-green);
-    border: 1px solid #d1d2db;
-    justify-content: space-between;
-    border-radius: 6px;
-    position: relative;
-    max-width: 100%;
-    min-width: 100px;
-    word-wrap: break-word;
-    padding: 12px 14px;
-    
-}
-.alert-card.green{
-    background: var(--ifm-alert-card-green) !important;
-}
-.alert-card.blue{
-    background: var(--ifm-alert-card-blue) !important;
-}
-.alert-card.grey{
-    background: var(--ifm-alert-card-grey) !important;
-}
-.alert-card.yellow{
-    background: var(--ifm-alert-card-yellow) !important;
-}
-.alert-card-header{
-    display: flex;
-    align-items: center;
-}
-.alert-card-title{
-    color: var(--dhq-header-color);
-    font-weight: 700;
-    font-size: 16px;
-}
-.alert-card-descriptions, .alert-card-points{
-    font-weight: 500;
-    font-size: 13px;
-    color: var(--ifm-blockquote-color);
-}
-.alert-card-points{
-    margin-left:18px;
-}
+    .tags-container {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 300px;
+      justify-content: flex-start;
+    }
+    ul {
+      list-style: none;
+    }
+    .changelogcard-date {
+      color: var(--dhq-header-color) !important;
+    }
 
-.alert-card-points li{
-    list-style-type: disc;
-}
-.alert-card-points li::marker{
-    font-size:18px
-}
-.alert-card-icon{
-    width: 20px;
-}
-.stickycard{
-    position: sticky;
-    top: 82px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+    .changelogcard-tag {
+      margin-left: 4px !important;
+      margin-right: 0px !important;
+      background: var(--ifm-hq-tags-green) !important;
+    }
 
-}
-.tags-container{
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 300px;
-    justify-content: flex-start;
-}
-.right-changelogcard .date-tag-container{
-    display: none;
-}
-.coming-soon{
+    .alert-card {
+      display: flex;
+      flex-direction: column;
+      background-color: var(--ifm-alert-card-green);
+      border: 1px solid #d1d2db;
+      justify-content: space-between;
+      border-radius: 6px;
+      position: relative;
+      max-width: 100%;
+      min-width: 100px;
+      word-wrap: break-word;
+      padding: 12px 14px;
+
+      &.green {
+        background: var(--ifm-alert-card-green) !important;
+      }
+      &.blue {
+        background: var(--ifm-alert-card-blue) !important;
+      }
+      &.grey {
+        background: var(--ifm-alert-card-grey) !important;
+      }
+      &.yellow {
+        background: var(--ifm-alert-card-yellow) !important;
+      }
+  
+      .alert-card-header {
+        display: flex;
+        align-items: center;
+      }
+      .alert-card-title {
+        color: var(--dhq-header-color);
+        font-weight: 700;
+        font-size: 16px;
+      }
+      
+      .alert-card-descriptions,
+      .alert-card-points {
+        font-weight: 500;
+        font-size: 13px;
+        color: var(--ifm-blockquote-color);
+      }
+      
+      .alert-card-points {
+        margin-left: 18px;
+      }
+      
+      .alert-card-points li {
+        list-style-type: disc;
+      }
+      
+      .alert-card-points li::marker {
+        font-size: 18px;
+      }
+      
+      .alert-card-icon {
+        width: 20px;
+      }
+    }
+  }
+  .coming-soon {
     margin-top: 100px;
     text-align: center;
     display: flex;
     flex-direction: column;
-}
-.coming-soon .title{
-    color: #26bc6a;
-    font-weight: 600;
-    font-size: 22px;
-}
-.coming-soon .redirect-doc{
-    margin-top: 20px;
-    background: var(--ifm-green-btn-background);
-    color: var(--ifm-color-white);
-    border-radius: 4px;
-    padding: 10px;
-    width: fit-content;
-    align-self: center;
-    align-items: center;
+    
+    .title {
+      color: #26bc6a;
+      font-weight: 600;
+      font-size: 22px;
+    }
+    .redirect-doc {
+      margin-top: 20px;
+      background: var(--ifm-green-btn-background);
+      color: var(--ifm-color-white);
+      border-radius: 4px;
+      padding: 10px;
+      width: fit-content;
+      align-self: center;
+      align-items: center;
+    }
+  }  
+  
 }
 
+@media screen and (max-width: 768px) {
+  .changelog-main {
+    padding: 0 20px;
 
-@media screen and (max-width: 768px) {    
-    .changelog-main{
-        padding: 0 20px;
+    .stickycard{
+      position: relative;
+      top: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+      &.after::after {
+        display: none;
+      }
     }
-    .stickycard.after::after {
-        display: none; /* Remove the ::after pseudo-element */
-    }
+
     .changelog-card {
-        flex-direction: column;
-    }
+      flex-direction: column;
 
-    .left-changelogcard {
-        display: block;
-        border-right: none;
-        width: 100%;
-        padding-right: 0;
-        margin-bottom: 0px; /* Add margin between left and right divs */
-    }
-
-    .right-changelogcard {
+      .left-changelogcard {
+        display: none;
+        .br-right{
+            border:none;
+        }
+      }
+      
+      .right-changelogcard {
         width: 100%;
         padding-left: 0;
         padding-top: 24px !important;
-    }
-    .left-changelogcard.br-right{
-        border:none;
-    }
-    .stickycard{
-        position: relative;
-        top: 0px;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    .tags-container{
-        display: flex;
-        flex-wrap: wrap;
-        max-width: 300px;
+        .changelogcard-date {
+          align-self: center;
+          font-size: 12px !important;
+        }
+        .changelogcard-tag {
+          font-size: 10px !important;
+          margin-bottom: 2px !important;
+          align-self: center;
+        }
+        .date-tag-container {
+          display: flex;
+          justify-content: space-between;
+        }
+      }
+
+      .tags-container {
         justify-content: flex-end;
+        .changelogcard-tag {
+          margin-left: 0 !important;
+          margin-right: 4px !important;
+        }
+      }
     }
-    .changelogcard-tag{
-        margin-left: 0px !important;
-        margin-right: 4px !important;
-    }
-    .right-changelogcard .changelogcard-date{
-        align-self: center;
-        font-size: 12px !important;
-    }
-    .right-changelogcard .changelogcard-tag{
-        font-size: 10px !important;
-        margin-top: 0px !important;
-        margin-bottom: 2px !important;
-        align-self: center;
-    }
-    .right-changelogcard .date-tag-container{
-        display: flex;
-        place-content: space-between;
-    }
-    .left-changelogcard{
-        display: none;
-    }
+  }
 }
+
