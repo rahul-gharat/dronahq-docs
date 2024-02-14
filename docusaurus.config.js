@@ -224,6 +224,24 @@ const config = {
             label: "What's New",
             position: 'left',
           },
+          {
+            label: "Changelog",
+            position: 'left',
+            items: [
+              {
+                label:'All',
+                to: '/all-changelog'
+              },
+              {
+                label:'Cloud-Hosted',
+                to:'/cloud-changelog'
+              },
+              {
+                label:'Self-Hosted',
+                to:'/self-changelog'
+              }
+            ],
+          },
           // {
           //   to: '/apidocs',
           //   label: "API Docs",

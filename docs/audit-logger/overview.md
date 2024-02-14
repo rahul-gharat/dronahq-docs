@@ -148,35 +148,62 @@ Columns For Database Loggers:
 | API Call | ``api_call`` |✔️ | ✔️ |
 | User Logged In | ``user_logged_in`` |✔️ | ✔️ |
 | User Logged Out | ``user_logged_out`` |✔️ | ✔️ |
-| User Password Forgot | ``user_password_forgot`` | ✔️ | ✖️ |
-| User Password Reset Requested | ``user_password_reset_requested`` | ✔️ | ✖️ |
-| Settings Updated | ``settings_updated`` | ✔️ | ✖️ |
+| User Password Forgot | ``user_password_forgot`` | ✔️ | ❌ |
+| User Password Reset Requested | ``user_password_reset_requested`` | ✔️ | ❌ |
+| Settings Updated | ``settings_updated`` | ✔️ | ❌ |
 | Public Access Enabled | ``public_access_enabled`` | ✔️ | ✔️ |
 | Public Access Disabled | ``public_access_disabled`` | ✔️ | ✔️ |
 | Organizational Access Enabled | ``organizational_access_enabled`` | ✔️ | ✔️ |
 | Organizational Access Disabled | ``organizational_access_disabled`` | ✔️ | ✔️ |
-
+| Stripe Keys Saved | ``stripe_keys_saved`` | ✔️ | ✔️ |
+| Automation Deleted | ``automation_deleted`` | ✔️ | ✔️ |
+| Automation Enabled | ``automation_enabled`` | ✔️ | ✔️ |
+| Automation Disabled | ``automation_disabled`` | ✔️ | ✔️ |
+| Automation Rollback | ``automation_rollback`` | ✔️ | ✔️ |
+| Automation Publish | ``automation_publish`` | ✔️ | ✔️ |
+| Automation Updated | ``automation_updated`` | ✔️ | ✔️ |
+| Automation Created | ``automation_created`` | ✔️ | ✔️ |
+| Openai Account Added | ``openai_account_added`` | ✔️ | ✔️ |
+| Openai Account Updated | ``openai_account_updated`` | ✔️ | ✔️ |
+| Openai Account Deleted | ``openai_account_deleted`` | ✔️ | ✔️ |
+| Openai Account Set Default | ``openai_account_enabled`` | ✔️ | ✔️ |
+| Email Config Created | ``email_config_created`` | ✔️ | ✔️ |
+| Email Config Saved | ``email_config_saved`` | ✔️ | ✔️ |
+| Email Config Deleted | ``email_config_deleted`` | ✔️ | ✔️ |
+| Email Template Saved | ``email_template_saved`` | ✔️ | ✔️ |
+| SSH Key Added | ``ssh_key_added`` | ✔️ | ✔️ |
+| SSH Key Updated | ``ssh_key_updated`` | ✔️ | ✔️ |
+| SSH Key Deleted | ``ssh_key_deleted`` | ✔️ | ✔️ |
+| SSO Enabled | ``sso_enabled`` | ✔️ | ✔️ |
+| SSO Disabled | ``sso_disabled`` | ✔️ | ✔️ |
+| SCIM User Added | ``scim_user_added`` | ✔️ | ✔️ |
+| SCIM User Deactivated | ``scim_user_deactivated`` | ✔️ | ❌ |
+| SCIM User Updated | ``scim_user_updated`` | ✔️ | ❌ |
+| SCIM Group Added | ``scim_group_added`` | ✔️ | ❌ |
+| SCIM Group Updated | ``scim_group_updated`` | ✔️ | ❌ |
+| User Bulk Upload | ``user_bulk_upload`` | ✔️ | ✔️ |
+| User Bulk Deactivated | ``user_bulk_deactivate`` | ✔️ | ✔️ |
+| User Bulk Activate | ``user_bulk_activate`` | ✔️ | ✔️ |
+| User Group Bulk Mapping | ``manage_user_groups_bulk`` | ✔️ | ✔️ |
+| New Theme Created | ``new_theme_created` | ❌ | ✔️ |
+| Logger Deleted | ``logger_deleted`` | ✔️ | ✔️ |
+<!-- some remaining -->
 <!-- 
-| Stripe Keys Saved | ``stripe_keys_saved`` | ✖️ | ✖️ |
-| Sheet Created | ``sheet_created`` | ✖️ | ✖️ |
-| Sheet Deleted | ``sheet_deleted`` | ✖️ | ✖️ |
-| Sheet Rename | ``sheet_rename`` | ✖️ | ✖️ |
-| Sheet Permission Updated | ``sheet_permission_updated`` | ✖️ | ✖️ |
-| PDF Creation | ``pdf_creation`` | ✖️ | ✖️ |
-| Lookup | ``lookup`` | ✖️ | ✖️ |
-| Insert Row | ``insert_row`` | ✖️ | ✖️ |
-| Update Row | ``update_row`` | ✖️ | ✖️ |
-| Delete Row | ``delete_row`` | ✖️ | ✖️ | 
-| Secrets Added | ``secrets_added`` | ✖️ | ✖️ |
-| Secrets Edited | ``secrets_edited`` | ✖️ | ✖️ |
-| Secrets Deleted | ``secrets_deleted`` | ✖️ | ✖️ | 
-| Automation Added | ``automation_added`` | ✖️ | ✖️ |
-| Automation Deleted | ``automation_deleted`` | ✖️ | ✖️ |
-| Automation Enabled | ``automation_enabled`` | ✖️ | ✖️ |
-| Automation Disabled | ``automation_disabled`` | ✖️ | ✖️ |
-| Automation Rollback | ``automation_rollback`` | ✖️ | ✖️ |
-| Automation Publish | ``automation_publish`` | ✖️ | ✖️ |
-| Automation Updated | ``automation_updated`` | ✖️ | ✖️ | -->
+
+| Sheet Created | ``sheet_created`` | ❌ | ❌ |
+| Sheet Deleted | ``sheet_deleted`` | ❌ | ❌ |
+| Sheet Rename | ``sheet_rename`` | ❌ | ❌ |
+| Sheet Permission Updated | ``sheet_permission_updated`` | ❌ | ❌ |
+| PDF Creation | ``pdf_creation`` | ❌ | ❌ |
+| Lookup | ``lookup`` | ❌ | ❌ |
+| Insert Row | ``insert_row`` | ❌ | ❌ |
+| Update Row | ``update_row`` | ❌ | ❌ |
+| Delete Row | ``delete_row`` | ❌ | ❌ | 
+| Secrets Added | ``secrets_added`` | ❌ | ❌ |
+| Secrets Edited | ``secrets_edited`` | ❌ | ❌ |
+| Secrets Deleted | ``secrets_deleted`` | ❌ | ❌ | 
+| Automation Added | ``automation_added`` | ❌ | ❌ |
+ -->
 
 ---
 
