@@ -14,13 +14,13 @@
   --ifm-green-btn-background: #26bc6a;
 
   &[data-theme='dark'] {
-    --ifm-hq-tags-green: #303030;
-    --ifm-alert-card-green: #263427;
-    --ifm-alert-card-blue: #293c4c;
-    --ifm-alert-card-grey: #2d2d2d;
-    --ifm-alert-card-yellow: #4d3800;
-    --ifm-blue-button-text: #5468ff;
-    --ifm-green-btn-background: #264232;
+    --ifm-hq-tags-green: #303030 !important;
+    --ifm-alert-card-green: #263427 !important;
+    --ifm-alert-card-blue: #293c4c !important;
+    --ifm-alert-card-grey: #2d2d2d !important;
+    --ifm-alert-card-yellow: #4d3800 !important;
+    --ifm-blue-button-text: #5468ff !important;
+    --ifm-green-btn-background: #264232 !important;
   }
   
   .changelog-card {
@@ -146,16 +146,17 @@
       min-width: 100px;
       word-wrap: break-word;
       padding: 12px 14px;
-      .green {
+
+      &.green {
         background: var(--ifm-alert-card-green) !important;
       }
-      .blue {
+      &.blue {
         background: var(--ifm-alert-card-blue) !important;
       }
-      .grey {
+      &.grey {
         background: var(--ifm-alert-card-grey) !important;
       }
-      .yellow {
+      &.yellow {
         background: var(--ifm-alert-card-yellow) !important;
       }
   
