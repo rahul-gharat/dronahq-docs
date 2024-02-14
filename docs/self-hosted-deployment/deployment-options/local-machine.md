@@ -54,7 +54,7 @@ This is recommended step by DronaHQ. Updating your resources periodically will h
 Run following command
 
 ```shell
-/bin/bash -c "$(curl -fsSL https://license.dronahq.com/self-hosted/update_resources.sh)"
+/bin/bash -c "$(curl -fsSL https://license.dronahq.com/self-hosted/master/update_resources.sh)"
 ```
 ### 4. Setup DronaHQ Environment
 
