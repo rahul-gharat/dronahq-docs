@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Layout from '@theme/Layout';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import ChangelogCard from '../components/Changelog';
+import ComingSoon from '../components/Changelog/ComingSoon';
 import styles from '../components/Changelog/style.module.scss';
 
 const AllChangelog = () => {
@@ -71,28 +72,7 @@ const AllChangelog = () => {
         <div className={`${styles['mx-auto']} mx-auto ${styles['changelog-comp-div']} changelog-comp-div`}>
           {/* Check if there was an error during fetch */}
           {fetchError ? (
-            <div className='container margin-vert--xl'>
-              <div className='row'>
-                <div className={styles['coming-soon-content']}>
-                  <img src='../icons/empty.svg' style={{ width: "60%", height: "auto" }} alt='404' />
-                  <div>
-                    <h1>
-                      <div>
-                        Great things Coming Soon
-                      </div>
-                    </h1>
-                    <div>
-                      <p>
-                        Our team is working on it.
-                      </p>
-                    </div>
-                    <div className={styles['homeLink']}>
-                      <a href='/'>DronaHQ Docs Home</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <ComingSoon />
           ) : (
             // Continue with the rest of the rendering logic
             dataFetched ? (
@@ -111,28 +91,7 @@ const AllChangelog = () => {
                   />
                 ))
               ) : (
-                <div className='container margin-vert--xl'>
-                  <div className='row'>
-                    <div className={styles['coming-soon-content']}>
-                      <img src='../icons/empty.svg' style={{ width: "60%", height: "auto" }} alt='404' />
-                      <div>
-                        <h1>
-                          <div>
-                            Great things Coming Soon
-                          </div>
-                        </h1>
-                        <div>
-                          <p>
-                            Our team is working on it.
-                          </p>
-                        </div>
-                        <div className={styles['homeLink']}>
-                          <a href='/'>DronaHQ Docs Home</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                <ComingSoon />
               )
             ) : (
               <div></div>
