@@ -71,15 +71,27 @@ const AllChangelog = () => {
         <div className={`${styles['mx-auto']} mx-auto ${styles['changelog-comp-div']} changelog-comp-div`}>
           {/* Check if there was an error during fetch */}
           {fetchError ? (
-            <div className={`${styles['coming-soon']}`}>
-              <div className={`${styles['title']}`}>Great things Coming Soon</div>
-              <a className={`${styles['redirect-doc']} d-flex`} href='/'>
-                <div>Checkout Docs</div>
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" className='ml-2'>
-                  <path d="M3 8L12 8" stroke="#ffffff" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                  <path d="M8.16797 12.4999L12.668 7.99983L8.16797 3.49978" stroke="#ffffff" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>
-              </a>
+            <div className='container margin-vert--xl'>
+              <div className='row'>
+                <div className={styles['coming-soon-content']}>
+                  <img src='../icons/empty.svg' style={{ width: "60%", height: "auto" }} alt='404' />
+                  <div>
+                    <h1>
+                      <div>
+                        Great things Coming Soon
+                      </div>
+                    </h1>
+                    <div>
+                      <p>
+                        Our team is working on it.
+                      </p>
+                    </div>
+                    <div className={styles['homeLink']}>
+                      <a href='/'>DronaHQ Docs Home</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           ) : (
             // Continue with the rest of the rendering logic
@@ -99,15 +111,27 @@ const AllChangelog = () => {
                   />
                 ))
               ) : (
-                <div className={`${styles['coming-soon']}`}>
-                  <div className={`${styles['title']}`}>Great things Coming Soon</div>
-                  <a className={`${styles['redirect-doc']} d-flex`} href='/'>
-                    <div>Checkout Docs</div>
-                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" className='ml-2'>
-                      <path d="M3 8L12 8" stroke="#ffffff" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                      <path d="M8.16797 12.4999L12.668 7.99983L8.16797 3.49978" stroke="#ffffff" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                    </svg>
-                  </a>
+                <div className='container margin-vert--xl'>
+                  <div className='row'>
+                    <div className={styles['coming-soon-content']}>
+                      <img src='../icons/empty.svg' style={{ width: "60%", height: "auto" }} alt='404' />
+                      <div>
+                        <h1>
+                          <div>
+                            Great things Coming Soon
+                          </div>
+                        </h1>
+                        <div>
+                          <p>
+                            Our team is working on it.
+                          </p>
+                        </div>
+                        <div className={styles['homeLink']}>
+                          <a href='/'>DronaHQ Docs Home</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               )
             ) : (

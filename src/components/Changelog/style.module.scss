@@ -496,6 +496,19 @@
   
 }
 
+.coming-soon-content{
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  padding: 2rem;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.homeLink {
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
 @media screen and (max-width: 768px) {
   .changelog-main {
     padding: 0 20px;
@@ -549,6 +562,11 @@
         }
       }
     }
+  }
+}
+@media (max-width: 900px) {
+  .coming-soon-content {
+    flex-direction: column;
   }
 }
 
