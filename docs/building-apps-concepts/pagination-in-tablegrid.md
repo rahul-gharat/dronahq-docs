@@ -1,174 +1,139 @@
 ---
 sidebar_position: 1
-title: Pagination in Tablegrid Control 
+title: Pagination in Tablegrid Control
 ---
 
-import Image from '@site/src/components/Image';
-import Thumbnail from '@site/src/components/Thumbnail'; 
+import Image from '@site/src/components/Image'; import Thumbnail from '@site/src/components/Thumbnail';
 
+## Pagination Overview
 
-
-## Pagination Overview 
-
-The Tablegrid control within DronaHQ serves as an effective tool to fetch and display tabular data from sheets. Pagination, a crucial feature for managing large datasets, requires specific configurations and API support. Understanding the fundamentals is key to leveraging this functionality effectively. 
-
+The Tablegrid control within DronaHQ serves as an effective tool to fetch and display tabular data from sheets.
+Pagination, a crucial feature for managing large datasets, requires specific configurations and API support.
+Understanding the fundamentals is key to leveraging this functionality effectively.
 
 <figure>
   <Thumbnail src="/img/building-apps-concepts/pagination-tablegrid/pagination.jpeg" alt="property pagination" />
 </figure>
 
-### Understanding Pagination 
+### Understanding Pagination
 
-The core purpose of pagination within Tablegrid is to manage data display in a tabular format, especially when dealing with a substantial amount of information. Enabling pagination is contingent upon toggling the "Allow Pagination" option within the control's properties. 
+The core purpose of pagination within Tablegrid is to manage data display in a tabular format, especially when dealing
+with a substantial amount of information. Enabling pagination is contingent upon toggling the "Allow Pagination" option
+within the control's properties.
 
+#### Pagination Types
 
-#### Pagination Types 
+DronaHQ supports two primary types of pagination:
 
-DronaHQ supports two primary types of pagination:  
+- Limit Offset: Suitable for simpler pagination needs, displaying data based on defined limits and offsets.
 
-- Limit Offset: Suitable for simpler pagination needs, displaying data based on defined limits and offsets. 
+- Cursor-Based: Utilizes cursor keys for pagination, often necessary when handling more complex datasets.
 
-- Cursor-Based: Utilizes cursor keys for pagination, often necessary when handling more complex datasets. 
+#### Configuration Properties
 
+- Pagination Bar Location: Choose between placing the pagination bar at the top or bottom of the table grid control.
 
-#### Configuration Properties 
+- Pagination Type: Select the appropriate type, either Limit Offset or Cursor-Based.
 
+- Default Cursor and Rows per Page: Define the initial record to display and the maximum records per page, respectively
+  and cursor value in case of cursor based pagination.
 
-- Pagination Bar Location: Choose between placing the pagination bar at the top or bottom of the table grid control. 
+## Pagination Feature
 
-- Pagination Type: Select the appropriate type, either Limit Offset or Cursor-Based. 
+The pagination feature is an essential component of the Tablegrid control, allowing for efficient page-wise data
+display. However, its activation comes with certain limitations, notably affecting the functioning of other features
+like Search and Filter.
 
-- Default Cursor and Rows per Page: Define the initial record to display and the maximum records per page, respectively and cursor value in case of cursor based pagination.  
+### Key Aspects
 
+- Functionality: Enables the division of data into pages for better user interaction and handling of large datasets.
 
+- Search and Filter Limitation: When pagination is active, the Search and Filter features within columns are disabled
+  for better performance.
 
+NOTE: When the pagination is enabled your Filter and the Search features do not work on the columns. However, if you
+disable pagination you would note that the search provides you with the rows matching the search text. The Filter
+feature would also allow you specify the filter conditions.
 
-## Pagination Feature 
+## Pagination on data
 
+### MySQL Database Connectors and Pagination
 
-The pagination feature is an essential component of the Tablegrid control, allowing for efficient page-wise data display. However, its activation comes with certain limitations, notably affecting the functioning of other features like Search and Filter. 
+Implementing pagination on database connectors. Lets see how to implement and use pagination for MySQL DB connector.
 
-
-### Key Aspects 
-
-- Functionality: Enables the division of data into pages for better user interaction and handling of large datasets. 
-
-- Search and Filter Limitation: When pagination is active, the Search and Filter features within columns are disabled for better performance. 
-
- 
-
-NOTE: When the pagination is enabled your Filter and the Search features do not work on the columns. However, if you disable pagination you would note that the search provides you with the rows matching the search text. The Filter feature would also allow you specify the filter conditions. 
-
- 
-
- 
-
-## Pagination on data 
-
-### MySQL Database Connectors and Pagination 
-
-  
-Implementing pagination on database connectors. Lets see how to implement and use pagination for MySQL DB connector. 
-
-Make sure you have your connector configured. Go to the `table grid` control and from its `bind data > quick select > connector query`. 
+Make sure you have your connector configured. Go to the `table grid` control and from its
+`bind data > quick select > connector query`.
 
 Lets write our query here to perform pagination on data retrieval.
 
-
-Query:
-`SELECT * FROM author LIMIT {{limit}} OFFSET {{offset}}`
-
+Query: `SELECT * FROM author LIMIT {{limit}} OFFSET {{offset}}`
 
 <figure>
   <Thumbnail src="/img/building-apps-concepts/pagination-tablegrid/mysql.jpeg" alt="MySQL Query with pagination" />
   <figcaption align='center'><i>MySQL Query with pagination</i></figcaption>
 </figure>
 
-
 Now `Test and Save`, your table grid control will update its data as per paginated response.
 
-### Paginating GraphQL Data 
+### Paginating GraphQL Data
 
-Implementing pagination for GraphQL data retrieval involves creating a GraphQL connector to use data from the SpaceX API. 
+Implementing pagination for GraphQL data retrieval involves creating a GraphQL connector to use data from the SpaceX
+API.
 
-#### Creating GraphQL Connector 
+#### Creating GraphQL Connector
 
-1. Connector Setup: 
+1. Connector Setup:
 
-   - Create a GraphQL connector and define a query named `getData`. 
+   - Create a GraphQL connector and define a query named `getData`.
 
-   - Add a custom query with variables for Limit and Skip, such as: 
+   - Add a custom query with variables for Limit and Skip, such as:
 
-    ``` 
+   ```
 
-    { launchesPast(limit: 10) { mission_name launch_site { site_name } rocket { rocket_name } ships { image name } } } 
+   { launchesPast(limit: 10) { mission_name launch_site { site_name } rocket { rocket_name } ships { image name } } }
 
-    ``` 
+   ```
 
- 
-2. Testing and Saving: 
+2. Testing and Saving:
 
-   - Test and save the connector named `Tesla_data`. 
+   - Test and save the connector named `Tesla_data`.
 
-   - Test the query using sample limit and offset values to retrieve data successfully. 
+   - Test the query using sample limit and offset values to retrieve data successfully.
 
-  
+3. Configuring Tablegrid with Connector:
 
-3. Configuring Tablegrid with Connector: 
+   - Select `tablegrid > bind data > Quick Select > connector Library` and choose the `getData` API from the configured
+     connector library.
 
-   - Select `tablegrid > bind data > Quick Select > connector Library` and choose the `getData` API from the configured connector library. 
+   - Configure connector fields, assigning values from `tablegrid.PROPERTIES.LIMIT` to the Limit field and
+     `tablegrid.PROPERTIES.OFFSET` to the Skip field.
 
-   - Configure connector fields, assigning values from `tablegrid.PROPERTIES.LIMIT` to the Limit field and `tablegrid.PROPERTIES.OFFSET` to the Skip field. 
+### Paginating Data from HTTP Request - REST API
 
-  
+When working with data from a REST API, pagination is crucial for managing large datasets efficiently. We can add REST
+API data query from `Data Queries -> REST API` and implementing pagination.
 
- 
+Below are the steps to enable pagination using query string parameters `_page` and `_limit` and apply it to a table grid
+for viewing the end result:
 
-   
+#### Enabling Pagination
 
-### Paginating Sheets Data Using LOOKUP Formula 
+1. Initial Setup:
 
-  
+   - Begin with your HTTP request to the REST API endpoint. By default, you might receive all data without pagination.
 
-To retrieve data from the `CityMaster_docs` sheet and display it in a table grid, the LOOKUP formula is utilized. Initially, the table grid displays all rows from the sheet on a single page. Enabling pagination enhances data presentation by dividing it into manageable chunks. 
+2. Integrate Pagination Parameters:
 
-  
+   - Amend your API request to include the `_page` and `_limit` parameters.
+   - For instance, your URL might look like this: `https://api.example.com/data?_page=1&_limit=10`. 
+   - Here, `_page` represents the page number, and `_limit` indicates the number of items per page.
+      <figure>
+      <Thumbnail src="/img/building-apps-concepts/pagination-tablegrid/restapi.jpeg" alt="Pagination on Data from REST API." />
+      <figcaption align='center'><i>Pagination on Data from REST API.</i></figcaption>
+      </figure>
 
-#### Enabling Pagination 
+3. Pagination Implementation: With the parameters set, your API response will return data in paginated chunks.
+4. Apply Pagination to Table Grid:
 
-  
-
-1. Initial Configuration: 
-
-   - The default LOOKUP formula: `LOOKUP([Citymaster_docs.City,Citymaster_docs.State,Citymaster_docs.Postal_code,Citymaster_docs.Abbreviation])` 
-
-   - Toggle "Allow Pagination" on and set Visible Rows and Page Limit according to your requirements. For instance, setting Visible Rows as 6 and Page Limit as 10 for this example. 
-
-  
-
-2. Adjusting LOOKUP Formula: 
-
-   - Modify the LOOKUP formula to incorporate pagination values: 
-
-     ``` 
-
-     LOOKUP([Citymaster_docs.City,Citymaster_docs.State,Citymaster_docs.Postal_code,Citymaster_docs.Abbreviation], "", tablegrid7.PROPERTIES.LIMIT, tablegrid7.PROPERTIES.OFFSET) 
-
-     ``` 
-
-     - `tablegrid7`: Unique name of the table grid. 
-
-     - `PROPERTIES.LIMIT`: Represents the Page Limit property. 
-
-     - `PROPERTIES.OFFSET`: Represents the OFFSET property set in table grid properties. 
-
-  
-
-3. Pagination Implementation: 
-
-   - With this setup, the table grid displays 6 rows at a time starting from the 6th record due to OFFSET set at 5 (indexing starts from 0). While 10 records are scrolled vertically, only 6 rows are visible due to the Visible Rows set as 6. 
-
-  
-
-
-  
+   - Once you've retrieved paginated data from the API, integrate it into a table grid for visualization.
+   - Populate the table grid with the paginated data fetched from the API response.
