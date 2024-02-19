@@ -48,7 +48,7 @@ const EmbedComponent = ({ embed, title }) => {
             return (
                 <iframe
                   ref={videoRef}
-                  className={`${styles['embed-video']} ${showControls ? styles['show-controls'] : ''}`}
+                  className={`${styles['embed-iframe']} ${showControls ? styles['show-controls'] : ''}`}
                   onClick={togglePlayPause}
                   src={embed}
                 ></iframe>

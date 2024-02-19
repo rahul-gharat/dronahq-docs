@@ -92,7 +92,7 @@ const RightChangelogCard = ({ title, heading, descriptions, cards,timestamp,tags
 
 RightChangelogCard.propTypes = {
   version: PropTypes.string,
-  title: PropTypes.string.isRequired,
+  title: PropTypes.string,
   descriptions: PropTypes.oneOfType([
     PropTypes.string,
     PropTypes.arrayOf(PropTypes.oneOfType([PropTypes.string, PropTypes.arrayOf(PropTypes.string)])),
