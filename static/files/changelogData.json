@@ -81,6 +81,7 @@
         "descriptions": [
           "<a href='/reference/automation-blocks/connector/#connector-query---tailored-queries'>Connector Query – Tailored Queries </a>: Take control of your data retrieval and manipulation with custom queries tailored to your exact specifications.",
            "<a href='/reference/automation-blocks/connector/#connector-library---reusable-queries'>Connector Library – Reusable Queries </a>: Save time and streamline your integration process by accessing pre-existing queries within the library. With a range of connectors and pre-added queries at your fingertips, integration has never been easier."
+          "<a href='/reference/automation-blocks/connector/#connector-library---reusable-queries'>Connector Library – Reusable Queries </a>: Save time and streamline your integration process by accessing pre-existing queries within the library. With a range of connectors and pre-added queries at your fingertips, integration has never been easier."
         ]
       }
     ]
