@@ -9,7 +9,7 @@ const AlertCard = ({ card, isDarkTheme }) => {
   return (
     <div className={cardClassName}>
       <div className={`${styles['alert-card-header']} alert-card-header mb-1`}>
-        <img src={`../icons/${card.icon}`} className='alert-card-icon'/>
+        <img src={`../icons/${card.icon}`} className={`${styles['alert-card-icon']}`}/>
         <div className={`${styles['alert-card-title']} alert-card-title ml-2`}>{card.title}</div>
       </div>
       <div className={`${styles['alert-card-descriptions']} alert-card-descriptions`}>
