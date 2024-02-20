@@ -24,7 +24,11 @@ const AlertCard = ({ card, isDarkTheme }) => {
         {card.points && (
           <ul className={styles['alert-card-points']}>
             {card.points.map((point, index) => (
-              <li key={index}>{point}</li>
+              point.includes('href=') ? (
+                <li key={index} dangerouslySetInnerHTML={{ __html: point }} />
+              ) : (
+                <li key={index}>{point}</li>
+              )
             ))}
           </ul>
         )}
