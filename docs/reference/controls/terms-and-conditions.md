@@ -31,7 +31,7 @@ false
 | Property        | Description                                                                                                            |
 |-----------------|------------------------------------------------------------------------------------------------------------------------|
 | Declaration     | Represents the declaration text, indicating user agreement with the terms and conditions.                              |
-| Terms URL       | Defines the URL where the detailed terms and conditions can be found.                                                   |
+| Terms URL       | Defines the URL where the detailed terms and conditions can be found. Including the `http://` or `https://` protocol is essential, as it ensures proper interpretation by the browser, guiding it on how to resolve the URL relative to the current page.        |
 | Error Message   | Displays a message when the user fails to agree to the terms and conditions, requesting agreement to proceed.         |
 | Theme           | Sets the theme or color scheme for the Terms and Conditions control.                                                    |
 

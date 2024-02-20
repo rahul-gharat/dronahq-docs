@@ -7,7 +7,7 @@
     "cards": [
       {
         "title": "Added",
-        "icon": "cloud-hover.svg",
+        "icon": "added.svg",
         "class": "green",
         "descriptions": [
           "Imagine a seamless bridge connecting your workflows to external systems, web services, and APIs. That's precisely what our new Automation Block, REST API, offers. It's your go-to for effortless data exchange, action triggering, and integration with online platforms. Get ready to streamline your processes like never before! Read more <a href='/reference/automation-blocks/rest-api/'> here. </a> "
@@ -23,7 +23,7 @@
     "cards": [
       {
         "title": "Added",
-        "icon": "cloud-hover.svg",
+        "icon": "added.svg",
         "class": "green",
         "descriptions": [
           "Need a robust solution for data management within your BPM Flows? Look no further than the DronaHQ DB. This essential block is your ticket to streamlined data storage, retrieval, and manipulation, ensuring your workflows are as versatile as they are precise. Read more <a href='/reference/automation-blocks/dronahqdb/'> here. </a> "
@@ -39,7 +39,7 @@
     "cards": [
       {
         "title": "Added",
-        "icon": "cloud-hover.svg",
+        "icon": "added.svg",
         "class": "green",
         "descriptions": [
           "Getting Started: Dive into the world of theme customization effortlessly with our intuitive interface. Whether you prefer the default light and dark configurations or want to unleash your creativity with custom themes, the possibilities are endless. Read more about it <a href='/building-apps-concepts/configuring-themes/#applying-themes'>here. </a>"
@@ -60,7 +60,7 @@
     "cards": [
       {
         "title": "Added",
-        "icon": "cloud-hover.svg",
+        "icon": "added.svg",
         "class": "green",
         "descriptions": [
           "Discover seamless file management with our new service, powered by AWS S3. Use our intuitive explorer and dedicated connector for effortless file handling. Cloud users can find it in the DronaHQ Managed section. Don't miss out—activate your free trial for 1 GB storage today! Read more about it <a href='/file-storage/overview/'>here. </a>"
@@ -76,8 +76,8 @@
     "cards": [
       {
         "title": "Enhanced",
-        "icon": "cloud-hover.svg",
-        "class": "blue",
+        "icon": "improved.svg",
+        "class": "yellow",
         "descriptions": [
           "<a href='/reference/automation-blocks/connector/#connector-query---tailored-queries'>Connector Query – Tailored Queries </a>: Take control of your data retrieval and manipulation with custom queries tailored to your exact specifications.",
            "<a href='/reference/automation-blocks/connector/#connector-library---reusable-queries'>Connector Library – Reusable Queries </a>: Save time and streamline your integration process by accessing pre-existing queries within the library. With a range of connectors and pre-added queries at your fingertips, integration has never been easier."
