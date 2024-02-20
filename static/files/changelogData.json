@@ -3,14 +3,15 @@
     "timestamp": 1707696000000,
     "tags": ["Cloud-Hosted"],
     "heading": "Automation support - REST API",
-    "embed": "/img/reference/automation-blocks/rest-api/rest-api-image.jpeg",
     "cards": [
       {
         "title": "Added",
         "icon": "added.svg",
         "class": "green",
         "descriptions": [
-          "Imagine a seamless bridge connecting your workflows to external systems, web services, and APIs. That's precisely what our new Automation Block, REST API, offers. It's your go-to for effortless data exchange, action triggering, and integration with online platforms. Get ready to streamline your processes like never before! Read more <a href='/reference/automation-blocks/rest-api/'> here. </a> "
+         
+          "<b>Automation - REST API :</b> Discover effortless integration with external systems, web services, and APIs through our new Automation Block, REST API. Simplify data exchange, trigger actions, and seamlessly integrate with online platforms. Explore more <a href='/reference/automation-blocks/rest-api/' target='_blank'>here</a>.",
+          "<b>Automation - DronaHQ DB :</b> Discover effortless integration with external systems, web services, and APIs through our new Automation Block, REST API. Simplify data exchange, trigger actions, and seamlessly integrate with online platforms. Explore more <a href='/reference/automation-blocks/rest-api/' target='_blank'>here</a>."
         ]
       }
     ]
