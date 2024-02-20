@@ -9,9 +9,9 @@
         "icon": "added.svg",
         "class": "green",
         "points": [
-          "<b>Automation - REST API :</b> Discover effortless integration with external systems, web services, and APIs through our new Automation Block, REST API. Simplify data exchange, trigger actions, and seamlessly integrate with online platforms. Explore more <a href='/reference/automation-blocks/rest-api/' target='_blank'>here</a>.",
-          "<b>Automation - DronaHQ DB :</b> Explore DronaHQ DB for robust data management in BPM Flows. Efficient storage, retrieval, and manipulation. Enhance workflow precision. Learn more <a href='/reference/automation-blocks/dronahqdb/' target='_blank'>here</a>.",
-          "<b>DronaHQ Theme :</b> Start customizing themes effortlessly with our intuitive interface. Choose from default light/dark options or unleash creativity with custom themes. Explore more <a href='/building-apps-concepts/configuring-themes/#applying-themes' target='_blank'>here</a>."
+          "<b>Automation - REST API :</b> Discover effortless integration with external systems, web services, and APIs through our new Automation Block, REST API. Simplify data exchange, trigger actions, and seamlessly integrate with online platforms. <a href='/reference/automation-blocks/rest-api/' target='_blank'> Explore more</a>.",
+          "<b>Automation - DronaHQ DB :</b> Explore DronaHQ DB for robust data management in BPM Flows. Efficient storage, retrieval, and manipulation. Enhance workflow precision. Learn more <a href='/reference/automation-blocks/dronahqdb/' target='_blank'>Explore more</a>.",
+          "<b>DronaHQ Theme :</b> Start customizing themes effortlessly with our intuitive interface. Choose from default light/dark options or unleash creativity with custom <a href='/building-apps-concepts/configuring-themes/#applying-themes' target='_blank'>themes</a>."
         ]
       },
       {
@@ -38,7 +38,7 @@
         "class": "green",
         "descriptions": [ "File Storage"],
         "points" : [
-          "Discover seamless file management with our new service, powered by AWS S3. Use our intuitive explorer and dedicated connector for effortless file handling. Cloud users can find it in the DronaHQ Managed section. Don't miss out—activate your free trial for 1 GB storage today! Read more about it <a href='/file-storage/overview/'>here. </a>"
+          "Discover seamless file management with our new service, powered by AWS S3. Use our intuitive explorer and dedicated connector for effortless file handling. Cloud users can find it in the DronaHQ Managed section. Don't miss out—activate your free trial for 1 GB storage today! <a href='/file-storage/overview/'>Read more about it. </a>"
         ]
       }
     ]
