@@ -15,7 +15,7 @@ const AlertCard = ({ card, isDarkTheme }) => {
       <div className={`${styles['alert-card-descriptions']} alert-card-descriptions`}>
         {card.descriptions && card.descriptions.map((desc, i) => (
           // Check if description is HTML content
-          desc.includes('href=') ? (
+          desc.includes('</') ? (
             <div key={i} dangerouslySetInnerHTML={{ __html: desc }} />
           ) : (
             <div key={i}>{desc}</div>
@@ -24,7 +24,7 @@ const AlertCard = ({ card, isDarkTheme }) => {
         {card.points && (
           <ul className={styles['alert-card-points']}>
             {card.points.map((point, index) => (
-              point.includes('href=') ? (
+              point.includes('</') ? (
                 <li key={index} dangerouslySetInnerHTML={{ __html: point }} />
               ) : (
                 <li key={index}>{point}</li>
