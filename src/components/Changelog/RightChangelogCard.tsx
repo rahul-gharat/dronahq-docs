@@ -75,17 +75,17 @@ const RightChangelogCard = ({ title, heading, descriptions, cards,timestamp,tags
   let card_id="id"+timestamp;
   return (
     <div className={`${styles['right-changelogcard']} right-changelogcard mb-5 pt-4 ${isDarkTheme ? styles['dark-mode'] : ''}`} id={card_id}>
-      <div className={`${styles['changelogcard-title']} changelogcard-title`}><a href={`#${card_id}`}>{title}</a></div>
-      <div className={`${styles['changelogcard-heading']} changelogcard-heading mt-2`}>{heading}</div>
+      {title && (<div className={`${styles['changelogcard-title']} changelogcard-title mb-2`}><a href={`#${card_id}`}>{title}</a></div>)}
+      {heading &&(<div className={`${styles['changelogcard-heading']} changelogcard-heading `}>{heading}</div>)}
       <div className={`d-flex ${styles['date-tag-container']}`}>
         <div className={`${styles['changelogcard-date']} changelogcard-date hq-modal-title`}>{formattedTimestamp}</div>
         <Tags tags={tags} />
       </div>
-      <div className={`${styles['embed']}`}>
+      {embed && (<div className={`${styles['embed']}`}>
         <EmbedComponent embed={embed} title={title} />
-      </div>
-      <div className={`${styles['card-descriptions']} card-descriptions mt-2`}>{renderDescriptions()}</div>
-      <div className={`${styles['cards-alert']} cards-alert mt-2`}>{renderCards()}</div>
+      </div>)}
+      {descriptions && (<div className={`${styles['card-descriptions']} card-descriptions mt-2`}>{renderDescriptions()}</div>)}
+      {cards && (<div className={`${styles['cards-alert']} cards-alert mt-2`}>{renderCards()}</div>)}
     </div>
   );
 };
