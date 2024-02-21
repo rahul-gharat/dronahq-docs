@@ -1,44 +1,83 @@
 [
   {
-    "timestamp": 1705276800000,
-    "tags": ["Cloud-Hosted"],
-    "heading": "January Updates - V01.24.00",
-    "cards": [
-      {
-        "title": "Added",
-        "icon": "added.svg",
-        "class": "green",
-        "points": [
-          "<b>Automation - REST API :</b> Discover effortless integration with external systems, web services, and APIs through our new Automation Block, REST API. Simplify data exchange, trigger actions, and seamlessly integrate with online platforms. <a href='/reference/automation-blocks/rest-api/' target='_blank'> Explore more</a>.",
-          "<b>Automation - DronaHQ DB :</b> Explore DronaHQ DB for robust data management in BPM Flows. Efficient storage, retrieval, and manipulation. Enhance workflow precision. Learn more <a href='/reference/automation-blocks/dronahqdb/' target='_blank'>Explore more</a>.",
-          "<b>DronaHQ Theme :</b> Start customizing themes effortlessly with our intuitive interface. Choose from default light/dark options or unleash creativity with custom <a href='/building-apps-concepts/configuring-themes/#applying-themes' target='_blank'>themes</a>."
-        ]
-      },
-      {
-        "title": "Enhanced",
-        "icon": "improved.svg",
-        "class": "yellow",
-        "descriptions": [ "Automation - REST API :" ],
-        "points": [
-          "<a href='/reference/automation-blocks/connector/#connector-query---tailored-queries'  target='_blank'>Connector Query – Tailored Queries </a>: Take control of your data retrieval and manipulation with custom queries tailored to your exact specifications.",
-          "<a href='/reference/automation-blocks/connector/#connector-library---reusable-queries'  target='_blank'>Connector Library – Reusable Queries </a>: Save time and streamline your integration process by accessing pre-existing queries within the library. With a range of connectors and pre-added queries at your fingertips, integration has never been easier."
-        ]
-      }
-    ]
-  },
-  {
-    "timestamp": 1707091200000,
+    "timestamp": 1705708800000,
     "tags": ["Cloud-Hosted", "Beta"],
-    "heading": "January Updates - V01.24.01",
+    "heading": "File Storage",
     "embed": "https://demo.arcade.software/E0Uc0lZONX57s8WmnmaM?embed",
     "cards": [
       {
         "title": "Added",
         "icon": "added.svg",
         "class": "green",
-        "descriptions": [ "File Storage"],
-        "points" : [
+        "points": [
           "Discover seamless file management with our new service, powered by AWS S3. Use our intuitive explorer and dedicated connector for effortless file handling. Cloud users can find it in the DronaHQ Managed section. Don't miss out—activate your free trial for 1 GB storage today! <a href='/file-storage/overview/'>Read more about it. </a>"
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1704844800000,
+    "tags": ["Cloud-Hosted"],
+    "heading": "Automation support - REST API",
+    "cards": [
+      {
+        "title": "Added",
+        "icon": "added.svg",
+        "class": "green",
+        "descriptions": [
+          "Discover effortless integration with external systems, web services, and APIs through our new Automation Block, REST API. Simplify data exchange, trigger actions, and seamlessly integrate with online platforms. <a href='/reference/automation-blocks/rest-api/' target='_blank'> Explore more</a>."
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1704844800000,
+    "tags": ["Cloud-Hosted"],
+    "heading": "Automation support - DronaHQ DB",
+    "cards": [
+      {
+        "title": "Added",
+        "icon": "added.svg",
+        "class": "green",
+        "descriptions": [
+          "<b>Automation - DronaHQ DB :</b> Explore DronaHQ DB for robust data management in BPM Flows. Efficient storage, retrieval, and manipulation. Enhance workflow precision. Learn more <a href='/reference/automation-blocks/dronahqdb/' target='_blank'>Explore more</a>. "
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1704844800000,
+    "tags": ["Cloud-Hosted"],
+    "heading": "DronaHQ Theme",
+    "embed": "https://demo.arcade.software/SjFZuYRtHBe3oAbLLyZR?embed",
+    "cards": [
+      {
+        "title": "Added",
+        "icon": "added.svg",
+        "class": "green",
+        "descriptions": [
+          "Start customizing themes effortlessly with our intuitive interface. Choose from default light/dark options or unleash creativity with custom <a href='/building-apps-concepts/configuring-themes/#applying-themes' target='_blank'>themes</a>."
+        ],
+        "points": [
+          "Craft visual masterpieces that reflect your unique style and brand identity with ease.",
+          "Each application gets its own theme playground, allowing you to fine-tune the visual presentation to your heart's content.",
+          "Want to switch up the vibe on the fly? Our dynamic theme modification feature lets you do just that, even after your app is live. Say goodbye to static visuals and hello to endless flexibility!"
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1704844800000,
+    "tags": ["Cloud-Hosted"],
+    "heading": "Automation - REST API",
+    "cards": [
+      {
+        "title": "Enhanced",
+        "icon": "improved.svg",
+        "class": "yellow",
+        "points": [
+          "<a href='/reference/automation-blocks/connector/#connector-query---tailored-queries'  target='_blank'>Connector Query – Tailored Queries </a>: Take control of your data retrieval and manipulation with custom queries tailored to your exact specifications.",
+          "<a href='/reference/automation-blocks/connector/#connector-library---reusable-queries'  target='_blank'>Connector Library – Reusable Queries </a>: Save time and streamline your integration process by accessing pre-existing queries within the library. With a range of connectors and pre-added queries at your fingertips, integration has never been easier."
         ]
       }
     ]
