@@ -81,5 +81,146 @@
         ]
       }
     ]
+  },
+  {
+    "timestamp": 1703030400000,
+    "tags": ["Cloud-Hosted", "Beta"],
+    "heading": "DronaHQ Managed DB",
+    "embed": "https://demo.arcade.software/B1S3Tb2n8Jqd4OCTKMWP?embed",
+    "cards": [
+      {
+        "title": "Added",
+        "icon": "added.svg",
+        "class": "green",
+        "descriptions": [
+          "Prepare for the revolution! Introducing DronaHQ DB, a marvel in managed PostgreSQL platforms. Imagine a world where managing data feels as intuitive as handling spreadsheets, within your very apps! It’s tailored for efficiency, empowered by SQL queries, and wrapped in a user-friendly interface, ensuring seamless data handling. Learn more about <a href='/dronahq-database/dhq-database-overview/' target='_blank'>DronaHQ Database.</a>"
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1702166400000,
+    "tags": ["Cloud-Hosted"],
+    "heading": "Show Control Loader",
+    "embed": "/img/reference/actionflow-blocks/show-control-loader/showcontrolloader.jpg",
+    "cards": [
+      {
+        "title": "Added",
+        "icon": "added.svg",
+        "class": "green",
+        "descriptions": [
+          "Enhance user interaction in micro-applications with the Show Control Loader action, enabling the integration of dynamic loading indicators and spinners. This feature ensures smoother navigation and active user engagement by providing real-time feedback during ongoing processes. Dive deeper into its technical capabilities <a href='/reference/actionflow-blocks/show-control-loader/' target = '_blank'>here</a> to optimize your application's user experience."
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1702166400000,
+    "tags": ["Cloud-Hosted"],
+    "heading": "Hide Screen Loader",
+    "embed": "/img/reference/actionflow-blocks/hide-control-loader/hidecontrolloader.jpg",
+    "cards": [
+      {
+        "title": "Added",
+        "icon": "added.svg",
+        "class": "green",
+        "descriptions": [
+          "It effortlessly conceals loading indicators within micro-apps, ensuring a polished interface. With processes completed, watch these loading states gracefully fade away, elevating your application's sophistication. Explore its capabilities <a href='/reference/actionflow-blocks/hide-screen-loader/' target='_blank'>here</a>."
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1702166400000,
+    "tags": ["Cloud-Hosted"],
+    "heading": "Data Query - REST API",
+    "embed": "/img/data-queries/restapi-dataquery.jpeg",
+    "cards": [
+      {
+        "title": "Added",
+        "icon": "added.svg",
+        "class": "green",
+        "descriptions": [
+          "Embark on a journey of enhanced connectivity with the <a href='/binding-data/data-queries/http-requests-curl/' target='_blank'>Rest API in Data Query </a>, delving into a myriad of possibilities. Leveraging basic authentication, seamlessly interface with public APIs, accessing diverse data sets such as weather updates, dummy data, or IP-based information. Additionally, utilize the proxy toggle feature to adeptly manage CORS issues."
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1702166400000,
+    "tags": ["Cloud-Hosted"],
+    "heading": "DronaHQ App Builder and Landing Page Load Time Optimization",
+    "cards": [
+      {
+        "title": "Enhanced",
+        "icon": "improved.svg",
+        "class": "yellow",
+        "descriptions": [
+          "We’ve turbocharged your experience! The DronaHQ App Builder is now armed with caching algorithms, slashing network stress and backend API load. Say goodbye to lag and hello to lightning-fast load times!"
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1702166400000,
+    "tags": ["Cloud-Hosted"],
+    "heading": "DronaHQ Save API Optimization",
+    "cards": [
+      {
+        "title": "Enhanced",
+        "icon": "improved.svg",
+        "class": "yellow",
+        "descriptions": [
+          "Speed, precision, efficiency - amplified! Our enhancements to the app save API make building applications a breeze. Get ready for save times that scale with your app’s size, delivering a staggering 10% - 70% boost in efficiency."
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1702166400000,
+    "tags": ["Cloud-Hosted"],
+    "heading": "Audit Logging 2.0 Live",
+    "embed": "/img/audit-logger/audit-logging.png",
+    "cards": [
+      {
+        "title": "Enhanced",
+        "icon": "improved.svg",
+        "class": "yellow",
+        "descriptions": [
+          "Trace every step, celebrate every event! Our configurable audit logs are now at your fingertips, seamlessly accessible in databases or chosen audit logging tools. For a deeper dive, check out our <a href='/audit-logger/overview/' target='_blank'>Detailed article</a> encompassing log formats, events, and more."
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1702166400000,
+    "tags": ["Cloud-Hosted"],
+    "heading": "Whitelist IP - Check Reachability",
+    "cards": [
+      {
+        "title": "Enhanced",
+        "icon": "improved.svg",
+        "class": "yellow",
+        "descriptions": [
+          "Empower your systems! Ensure IP reachability with our seamless functionality, fortifying your network’s security and accessibility."
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1702166400000,
+    "tags": ["Cloud-Hosted"],
+    "heading": "SurrealDB",
+    "embed": "/img/reference/connectors/surrealdb/details.jpeg",
+    "cards": [
+      {
+        "title": "Added",
+        "icon": "added.svg",
+        "class": "green",
+        "descriptions": [
+          "Welcome to the future of data handling! <a href='/reference/connectors/surrealdb/' target='_blank'> SurrealDB </a> stands tall as a cutting-edge distributed NoSQL database system. It’s not just a database; it’s an ecosystem engineered for unparalleled scalability, high availability, and unwavering fault tolerance across diverse data workloads."
+        ]
+      }
+    ]
   }
 ]
