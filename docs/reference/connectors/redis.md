@@ -33,7 +33,8 @@ applications, facilitating efficient data management and utilization.
 Configure your database category using the provided details. Validate connection with `Test connection` and `Save`
 settings for secure database setup.
 
-:::tip DronaHQ can Auto fill crucial connection values like host, name, password, and more from the connector's
+:::tip 
+DronaHQ can Auto fill crucial connection values like host, name, password, and more from the connector's
 [connection string](https://stackexchange.github.io/StackExchange.Redis/Configuration).
 
 :::
@@ -85,8 +86,10 @@ settings for secure database setup.
       <figcaption align = "center"><i>Redis Get Value by Key action.</i></figcaption>
 </figure>
 
-:::tip Use double curly brackets for dynamic variables. Test with sample values before saving. Link dynamic variables to
-controls/actions and more for runtime use. :::
+:::tip 
+Use double curly brackets for dynamic variables. Test with sample values before saving. Link dynamic variables to
+controls/actions and more for runtime use. 
+:::
 
 Saved queries appear under your connector in Connector Library.
 

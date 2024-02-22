@@ -94,8 +94,10 @@ To publish a message to Google Cloud Pub/Sub or subscribe to messages, follow th
        <figcaption align="center"><i>Google Cloud Pub/Sub Actions</i></figcaption>
    </figure>
 
-:::tip Utilize dynamic variables to make your messaging actions more flexible. Test with sample data before saving. Link
-dynamic variables to controls/actions and more for runtime use. :::
+:::tip 
+Utilize dynamic variables to make your messaging actions more flexible. Test with sample data before saving. Link
+dynamic variables to controls/actions and more for runtime use. 
+:::
 
 Saved actions appear under your connector in Connector Library.
 

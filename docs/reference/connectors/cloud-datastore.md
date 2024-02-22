@@ -86,8 +86,10 @@ To retrieve an entity from Google Cloud Datastore using the `Get Entity by Key` 
        <figcaption align = "center"><i>Cloud Datastore with Get query.</i></figcaption>
  </figure>
 
-:::tip Use double curly brackets for dynamic variables. Test with sample values before saving. Link dynamic variables to
-controls/actions and more for runtime use. :::
+:::tip 
+Use double curly brackets for dynamic variables. Test with sample values before saving. Link dynamic variables to
+controls/actions and more for runtime use. 
+:::
 
 Saved queries appear under your connector in Connector Library.
 

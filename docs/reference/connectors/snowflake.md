@@ -34,7 +34,8 @@ efficient data management and utilization.
 Configure your database category using the provided details. Validate connection with `Test connection` and `Save`
 settings for secure database setup.
 
-:::tip DronaHQ can Auto fill crucial connection values like host, name, password, and more from the connector's
+:::tip 
+DronaHQ can Auto fill crucial connection values like host, name, password, and more from the connector's
 [connection string](https://docs.snowflake.com/en/developer-guide/odbc/odbc-parameters#connection-parameters).
 
 :::
@@ -122,8 +123,10 @@ Click `Add query` once the connection is established. Create queries, run them, 
   <figcaption align = "center"><i>Write Queries</i></figcaption>
 </figure>
 
-:::tip Use double curly brackets for dynamic variables. Test with sample values before saving. Link dynamic variables to
-controls/actions for runtime use. :::
+:::tip 
+Use double curly brackets for dynamic variables. Test with sample values before saving. Link dynamic variables to
+controls/actions for runtime use. 
+:::
 
 Saved queries appear under your connector in Connector Library.
 

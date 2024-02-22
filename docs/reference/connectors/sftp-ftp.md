@@ -33,7 +33,9 @@ server on a network.
 Configure your database category using the provided details. Validate connection with `Test connection` and `Save`
 settings for secure database setup.
 
-:::info Choose from SFTP and FTP, depending on it you will be asked to configure respective required fields. :::
+:::info 
+Choose from SFTP and FTP, depending on it you will be asked to configure respective required fields. 
+:::
 
 ### Protocol Type - SFTP configuration
 
@@ -48,7 +50,9 @@ settings for secure database setup.
 | Username       | Enter the Username                                                             |
 | Password       | Enter the Password                                                             |
 
-:::info NOTE `Authentication` field is available for SFTP protocol type. :::
+:::info NOTE 
+`Authentication` field is available for SFTP protocol type. 
+:::
 
 <figure>
   <Thumbnail src="/img/reference/connectors/sftpftp/details.png" alt="SFTP protocol with Sample details." />
@@ -85,8 +89,10 @@ file directories. Here's how you can create and handle list directory queries fo
   <figcaption align = "center"><i>Add Query</i></figcaption>
 </figure>
 
-:::tip Utilize double curly brackets for incorporating dynamic variables. Prior to saving, test with sample values.
-Associate dynamic variables with controls/actions for real-time utilization. :::
+:::tip 
+Utilize double curly brackets for incorporating dynamic variables. Prior to saving, test with sample values.
+Associate dynamic variables with controls/actions for real-time utilization. 
+:::
 
 Your saved queries will be visible beneath your connector within the Connector Library.
 

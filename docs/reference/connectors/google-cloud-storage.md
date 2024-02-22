@@ -90,7 +90,7 @@ The Google Cloud Storage connector provides a convenient way to upload files to 
 7. Add a suitable action name and specify the variable to capture the returned URL after the upload is complete.
    :::info NOTE
     The Media link accessibility may vary based on access rights. You can also consider using the GetPre-signed URL action for access.
-    ::::
+    :::
 
 8. If desired, you can display the URL in a text control for better understanding and visibility of the uploaded file's location within the selected bucket.
 

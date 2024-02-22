@@ -80,8 +80,10 @@ Focus on adding queries that involve the "Append data to the list" action:
        <figcaption align = "center"><i>Firebase Realtime Database with append query.</i></figcaption>
  </figure>
 
-:::tip Use double curly brackets for dynamic variables. Test with sample values before saving. Link dynamic variables to
-controls/actions and more for runtime use. :::
+:::tip 
+Use double curly brackets for dynamic variables. Test with sample values before saving. Link dynamic variables to
+controls/actions and more for runtime use. 
+:::
 
 Saved queries appear under your connector in Connector Library.
 

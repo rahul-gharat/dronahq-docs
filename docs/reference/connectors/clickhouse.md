@@ -69,8 +69,10 @@ results in Response.
   <figcaption align = "center"><i>Write Queries</i></figcaption>
 </figure>
 
-:::tip Use double curly brackets for dynamic variables. Test with sample values before saving. Link dynamic variables to
-controls/actions and more for runtime use. :::
+:::tip 
+Use double curly brackets for dynamic variables. Test with sample values before saving. Link dynamic variables to
+controls/actions and more for runtime use. 
+:::
 
 Saved queries appear under your connector in Connector Library.
 

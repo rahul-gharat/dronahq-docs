@@ -67,9 +67,11 @@ connection details in the connector configuration:
 
 5. Test the connection to ensure it's working correctly, then click `Save.`
 
-:::tip DronaHQ can Auto fill crucial connection values like host, name, password, and more from the connector's
+:::tip 
+DronaHQ can Auto fill crucial connection values like host, name, password, and more from the connector's
 [connection string](https://www.postgresql.org/docs/current/libpq-connect.html#LIBPQ-CONNSTRING) or from a AWS IAM
-credentials using [AWS Import](/datasource-concepts/aws-import). :::
+credentials using [AWS Import](/datasource-concepts/aws-import). 
+:::
 
 #### General
 
@@ -115,8 +117,10 @@ results in Response.
   <figcaption align = "center"><i>Write Queries</i></figcaption>
 </figure>
 
-:::tip Use double curly brackets for dynamic variables. Test with sample values before saving. Link dynamic variables to
-controls/actions and more for runtime use. :::
+:::tip 
+Use double curly brackets for dynamic variables. Test with sample values before saving. Link dynamic variables to
+controls/actions and more for runtime use.
+:::
 
 Saved queries appear under your connector in Connector Library.
 

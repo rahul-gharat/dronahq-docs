@@ -32,7 +32,8 @@ facilitating efficient data management and utilization.
 Configure your database category using the provided details. Validate connection with `Test connection` and `Save`
 settings for secure database setup.
 
-:::tip DronaHQ can Auto fill crucial connection values like host, name, password, and more from the connector's
+:::tip 
+DronaHQ can Auto fill crucial connection values like host, name, password, and more from the connector's
 [connection string](https://www.elastic.co/guide/en/elasticsearch/reference/current/sql-odbc-setup.html#sql-odbc-setup).
 
 :::
@@ -84,8 +85,10 @@ application's user management capabilities.
   <figcaption align = "center"><i>Add query</i></figcaption>
 </figure>
 
-:::tip Utilize double curly brackets for incorporating dynamic variables. Prior to saving, test with sample values.
-Associate dynamic variables with controls/actions for real-time utilization. :::
+:::tip 
+Utilize double curly brackets for incorporating dynamic variables. Prior to saving, test with sample values.
+Associate dynamic variables with controls/actions for real-time utilization.
+ :::
 
 Your saved queries will be visible beneath your connector within the Connector Library.
 

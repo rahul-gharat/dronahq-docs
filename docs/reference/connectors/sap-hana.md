@@ -69,16 +69,17 @@ settings for secure database setup.
 
 ## Adding Database Queries
 
-Once the connector is configured, access it in your Connector Library. Click `Add query` after connection setup. Create
-queries, run them, and view responses.
+Once the connector is configured, access it in your Connector Library. Click `Add query` after connection setup. Create queries, run them, and view responses.
 
 <figure>
   <Thumbnail src="/img/reference/connectors/saphana/data-query.png" alt="Write Queries" />
   <figcaption align = "center"><i>Write Queries</i></figcaption>
 </figure>
 
-:::tip Use double curly brackets for dynamic variables. Test with sample values before saving. Link dynamic variables to
-controls/actions for runtime use. :::
+:::tip 
+Use double curly brackets for dynamic variables. Test with sample values before saving. Link dynamic variables to
+controls/actions for runtime use. 
+:::
 
 Saved queries appear under your connector in Connector Library.
 

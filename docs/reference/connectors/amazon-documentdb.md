@@ -33,7 +33,9 @@ operations including querying and inserting and updating details.
 Configure your database category using the provided details. Validate connection with `Test connection` and `Save`
 settings for secure database setup.
 
-:::tip DronaHQ can Auto fill crucial connection values like host, name, password, and more from the connector's
+:::tip 
+
+DronaHQ can Auto fill crucial connection values like host, name, password, and more from the connector's
 [connection string](https://docs.aws.amazon.com/documentdb/latest/developerguide/endpoints-connecting.html#endpoints-connecting-mongodb).
 
 :::
@@ -103,8 +105,10 @@ Connector Library. Follow these steps to create and manage queries for your Amaz
   <figcaption align = "center"><i>Add Query</i></figcaption>
 </figure>
 
-:::tip Utilize double curly brackets for incorporating dynamic variables. Prior to saving, test with sample values.
-Associate dynamic variables with controls/actions for real-time utilization. :::
+:::tip 
+Utilize double curly brackets for incorporating dynamic variables. Prior to saving, test with sample values.
+Associate dynamic variables with controls/actions for real-time utilization. 
+:::
 
 Your saved queries will be visible beneath your connector within the Connector Library.
 
