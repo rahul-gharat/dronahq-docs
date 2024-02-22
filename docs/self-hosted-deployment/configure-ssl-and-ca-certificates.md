@@ -114,7 +114,7 @@ certificate:
 
 
 
-Work in progress...
+<!-- Work in progress... -->
 
 <!-- ## configure SSL for Docker based installation
 
