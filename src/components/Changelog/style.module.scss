@@ -282,11 +282,12 @@
   justify-content: center;
   margin-bottom: 20px;
 
-  --ifm-a-tag-yellow:#bcb526;
-  --ifm-a-tag-orange:#bc6726;
-  --ifm-a-tag-red:#d12626;
-  --ifm-a-tag-purple:#bb26bc;
-  --ifm-a-tag-blue:#2672bc;  
+  --ifm-a-tag-green:#26BC6A;
+  --ifm-a-tag-yellow:#B8A923;
+  --ifm-a-tag-orange:#E59906;
+  --ifm-a-tag-red:#DF5031;
+  --ifm-a-tag-purple:#BB6BD9;
+  --ifm-a-tag-blue:#4083D5;  
 
   --ifm-hq-tags-green: #E2FFEF;
   --ifm-alert-card-green: #E4FFEA;  
@@ -297,17 +298,19 @@
   --ifm-alert-card-blue: #E4F0FF;
   --ifm-blue-button-text: #ffffff;
   --ifm-green-btn-background: #26bc6a;
+  --ifm-alert-card-border: #d1d2db;
 
   &[data-theme='dark'] {
     --ifm-hq-tags-green: #303030 !important;
-    --ifm-alert-card-green: #05340F;  
-    --ifm-alert-card-yellow: #36350D;
-    --ifm-alert-card-orange: #342314;
-    --ifm-alert-card-red: #310606;
-    --ifm-alert-card-purple: #2F0936;
-    --ifm-alert-card-blue: #09203C;
+    --ifm-alert-card-green: #03260B;  
+    --ifm-alert-card-yellow: #282704;
+    --ifm-alert-card-orange: #2B1806;
+    --ifm-alert-card-red: #270303;
+    --ifm-alert-card-purple: #27042D;
+    --ifm-alert-card-blue: #071B32;
     --ifm-blue-button-text: #5468ff !important;
     --ifm-green-btn-background: #264232 !important;
+    --ifm-alert-card-border: #1f333A;
   }
   
   .changelog-card {
@@ -434,8 +437,8 @@
     .alert-card {
       display: flex;
       flex-direction: column;
-      background-color: var(--ifm-alert-card-green);
-      border: 1px solid #d1d2db;
+      background-color: var(--ifm-alert-card-blue);
+      border: 1px solid var(--ifm-alert-card-border);
       justify-content: space-between;
       border-radius: 6px;
       position: relative;
@@ -446,10 +449,16 @@
 
       &.green {
         background: var(--ifm-alert-card-green) !important;
+        a,.alert-card-title{
+          color: var(--ifm-a-tag-green);
+          :hover{
+            color: var(--ifm-a-tag-green);
+          }
+        }
       }
       &.yellow {
         background: var(--ifm-alert-card-yellow) !important;
-        a{
+        a,.alert-card-title{
           color: var(--ifm-a-tag-yellow);
           :hover{
             color: var(--ifm-a-tag-yellow);
@@ -458,7 +467,7 @@
       }
       &.orange {
         background: var(--ifm-alert-card-orange) !important;
-        a{
+        a,.alert-card-title{
           color: var(--ifm-a-tag-orange);
           :hover{
             color: var(--ifm-a-tag-orange);
@@ -467,7 +476,7 @@
       }
       &.red {
         background: var(--ifm-alert-card-red) !important;
-        a{
+        a,.alert-card-title{
           color: var(--ifm-a-tag-red);
           :hover{
             color: var(--ifm-a-tag-red);
@@ -476,7 +485,7 @@
       }
       &.purple {
         background: var(--ifm-alert-card-purple) !important;
-        a{
+        a,.alert-card-title{
           color: var(--ifm-a-tag-purple);
           :hover{
             color: var(--ifm-a-tag-purple);
@@ -485,7 +494,7 @@
       }
       &.blue {
         background: var(--ifm-alert-card-blue) !important;
-        a{
+        a,.alert-card-title{
           color: var(--ifm-a-tag-blue);
           :hover{
             color: var(--ifm-a-tag-blue);
