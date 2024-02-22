@@ -25,7 +25,7 @@ If you’re evaluating a large production use case or need any of our Enterprise
 
 - [Minimum requirements](/self-hosted-deployment/requirements)
 - [Deployment Options](/self-hosted-deployment/deployment-options/local-machine)
-- [Configure SSL and CA certificates](/datasource-concepts/ssl-configurations/)
+- [Configure SSL and CA certificates](/self-hosted-deployment/configure-ssl-and-ca-certificates)
 - [Configure External Databases](/self-hosted-deployment/configure-external-databases)
 - [Environment Variables](/self-hosted-deployment/environment-variables)
 - [Horizontal Scaling](/self-hosted-deployment/horizontal-scaling)
