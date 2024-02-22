@@ -50,8 +50,8 @@ settings for secure database setup.
 
 | Field          | Description                                                                                                                  |
 | -------------- | ---------------------------------------------------------------------------------------------------------------------------- |
-| Authentication | Choose the authentication method. For example, select `Service Account` for Google Cloud Service Account key authentication. |
 | Private Key    | If using a Service Account key, provide the JSON key file obtained during Service Account creation.                          |
+| Region Qualifier | Mention the region to specify the geographic location where the data resides.|
 
 <figure>
   <Thumbnail src="/img/reference/connectors/bigquery/details.jpeg" alt="BigQuery with Sample details." />

@@ -37,8 +37,9 @@ Configure your database category by providing the details below. Validate the co
 
 :::tip
 
-DronaHQ can Auto fill crucial connection values like host, name, password, and more from the AWS IAM credentials using
-[AWS Import](/datasource-concepts/aws-import).
+DronaHQ can Auto fill crucial connection values like host, name, password, and more from the connector's
+[connection string](https://www.postgresql.org/docs/current/libpq-connect.html#LIBPQ-CONNSTRING) or from a AWS IAM
+credentials using [AWS Import](/datasource-concepts/aws-import).
 
 :::
 
