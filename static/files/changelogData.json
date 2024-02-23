@@ -106,8 +106,8 @@
         "icon": "improved.svg",
         "class": "yellow",
         "points": [
-          "<b>App Builder and Landing Page Load Time :</b> We’ve turbocharged your experience! The DronaHQ App Builder is now armed with caching algorithms, slashing network stress and backend API load. Say goodbye to lag and hello to lightning-fast load times!<a href=''></a>",
-          "<b>Save API Optimization: </b> Speed, precision, efficiency - amplified! Our enhancements to the app save API make building applications a breeze. Get ready for save times that scale with your app’s size, delivering a staggering 10% - 70% boost in efficiency.<a href=''></a>"
+          "<b>App Builder and Landing Page Load Time :</b> We’ve turbocharged your experience! The DronaHQ App Builder is now armed with caching algorithms, slashing network stress and backend API load. Say goodbye to lag and hello to lightning-fast load times!",
+          "<b>Save API Optimization: </b> Speed, precision, efficiency - amplified! Our enhancements to the app save API make building applications a breeze. Get ready for save times that scale with your app’s size, delivering a staggering 10% - 70% boost in efficiency."
         ]
       }
     ]
