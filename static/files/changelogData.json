@@ -10,18 +10,21 @@
   },
   {
     "timestamp": 1704844800000,
-    "tags": ["Cloud-Hosted"],
-    "heading": "Automation support - REST API",
+    "tags": ["Cloud-Hosted", "Automations"],
+    "heading": "REST API | DronaHQ DB",
     "descriptions": [
-      "Discover effortless integration with external systems, web services, and APIs through our new Automation Block, REST API. Simplify data exchange, trigger actions, and seamlessly integrate with online platforms. <a href='/reference/automation-blocks/rest-api/' target='_blank'> Explore more</a>."
-    ]
-  },
-  {
-    "timestamp": 1704844800000,
-    "tags": ["Cloud-Hosted"],
-    "heading": "Automation support - DronaHQ DB",
-    "descriptions": [
-      "<b>Automation - DronaHQ DB :</b> Explore DronaHQ DB for robust data management in BPM Flows. Efficient storage, retrieval, and manipulation. Enhance workflow precision. Learn more <a href='/reference/automation-blocks/dronahqdb/' target='_blank'>Explore more</a>. "
+      ""
+    ],
+    "cards": [
+      {
+        "title": "Added",
+        "icon": "added.svg",
+        "class": "green",
+        "points": [
+          "<b>Automation - REST API :</b> Discover effortless integration with external systems, web services, and APIs through our new Automation Block, REST API. Simplify data exchange, trigger actions, and seamlessly integrate with online platforms. <a href='/reference/automation-blocks/rest-api/' target='_blank'> Read more about it.</a>.",
+          "<b>Automation - DronaHQ DB :</b> Explore DronaHQ DB for robust data management in BPM Flows. Efficient storage, retrieval, and manipulation. Enhance workflow precision. <a href='/reference/automation-blocks/dronahqdb/' target='_blank'>Read more about it.</a>."
+        ]
+      }
     ]
   },
   {
@@ -39,14 +42,14 @@
   },
   {
     "timestamp": 1704844800000,
-    "tags": ["Cloud-Hosted"],
-    "heading": "",
+    "tags": ["Cloud-Hosted", "Automations"],
+    "heading": "REST API",
     "cards": [
       {
-        "title": "Automation - REST API",
+        "title": "Enhancements",
         "icon": "improved.svg",
         "class": "yellow",
-        "descriptions": [
+        "points": [
           "<a href='/reference/automation-blocks/connector/#connector-query---tailored-queries'  target='_blank'>Connector Query – Tailored Queries </a>: Take control of your data retrieval and manipulation with custom queries tailored to your exact specifications.",
           "<a href='/reference/automation-blocks/connector/#connector-library---reusable-queries'  target='_blank'>Connector Library – Reusable Queries </a>: Save time and streamline your integration process by accessing pre-existing queries within the library. With a range of connectors and pre-added queries at your fingertips, integration has never been easier."
         ]
@@ -65,7 +68,7 @@
   },
   {
     "timestamp": 1702166400000,
-    "tags": ["Cloud-Hosted"],
+    "tags": ["Cloud-Hosted","Actions"],
     "heading": "Show Control Loader",
     "embed": "/img/reference/actionflow-blocks/show-control-loader/showcontrolloader.jpg",
 
@@ -75,7 +78,7 @@
   },
   {
     "timestamp": 1702166400000,
-    "tags": ["Cloud-Hosted"],
+    "tags": ["Cloud-Hosted","Actions"],
     "heading": "Hide Screen Loader",
     "embed": "/img/reference/actionflow-blocks/hide-control-loader/hidecontrolloader.jpg",
 
@@ -96,27 +99,15 @@
   {
     "timestamp": 1702166400000,
     "tags": ["Cloud-Hosted"],
+    "heading": "DronaHQ Optimizations",
     "cards": [
       {
-        "title": "DronaHQ App Builder and Landing Page Load Time Optimization",
+        "title": "Enhancements",
         "icon": "improved.svg",
         "class": "yellow",
-        "descriptions": [
-          "We’ve turbocharged your experience! The DronaHQ App Builder is now armed with caching algorithms, slashing network stress and backend API load. Say goodbye to lag and hello to lightning-fast load times!"
-        ]
-      }
-    ]
-  },
-  {
-    "timestamp": 1702166400000,
-    "tags": ["Cloud-Hosted"],
-    "cards": [
-      {
-        "title": "DronaHQ Save API Optimization",
-        "icon": "improved.svg",
-        "class": "yellow",
-        "descriptions": [
-          "Speed, precision, efficiency - amplified! Our enhancements to the app save API make building applications a breeze. Get ready for save times that scale with your app’s size, delivering a staggering 10% - 70% boost in efficiency."
+        "points": [
+          "<b>App Builder and Landing Page Load Time :</b> We’ve turbocharged your experience! The DronaHQ App Builder is now armed with caching algorithms, slashing network stress and backend API load. Say goodbye to lag and hello to lightning-fast load times!<a href=''></a>",
+          "<b>Save API Optimization: </b> Speed, precision, efficiency - amplified! Our enhancements to the app save API make building applications a breeze. Get ready for save times that scale with your app’s size, delivering a staggering 10% - 70% boost in efficiency.<a href=''></a>"
         ]
       }
     ]
@@ -125,9 +116,10 @@
     "timestamp": 1702166400000,
     "tags": ["Cloud-Hosted"],
     "embed": "/img/audit-logger/audit-logging.png",
+    "heading": "Audit Logging 2.0",
     "cards": [
       {
-        "title": "Audit Logging 2.0 Live",
+        "title": "Enhancements",
         "icon": "improved.svg",
         "class": "yellow",
         "descriptions": [
@@ -138,10 +130,11 @@
   },
   {
     "timestamp": 1702166400000,
-    "tags": ["Cloud-Hosted"],
+    "tags": ["Cloud-Hosted","Connectors"],
+    "heading": "Whitelist IP - Check Reachability",
     "cards": [
       {
-        "title": "Whitelist IP - Check Reachability",
+        "title": "Enhancements",
         "icon": "improved.svg",
         "class": "yellow",
         "descriptions": [
@@ -152,7 +145,7 @@
   },
   {
     "timestamp": 1702166400000,
-    "tags": ["Cloud-Hosted"],
+    "tags": ["Cloud-Hosted","Connectors"],
     "heading": "SurrealDB",
     "embed": "/img/reference/connectors/surrealdb/details.jpeg",
 
