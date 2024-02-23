@@ -4,45 +4,24 @@
     "tags": ["Cloud-Hosted", "Beta"],
     "heading": "File Storage",
     "embed": "https://demo.arcade.software/E0Uc0lZONX57s8WmnmaM?embed",
-    "cards": [
-      {
-        "title": "Added",
-        "icon": "added.svg",
-        "class": "green",
-        "points": [
-          "Discover seamless file management with our new service, powered by AWS S3. Use our intuitive explorer and dedicated connector for effortless file handling. Cloud users can find it in the DronaHQ Managed section. Don't miss out—activate your free trial for 1 GB storage today! <a href='/file-storage/overview/'>Read more about it. </a>"
-        ]
-      }
+    "descriptions": [
+      "Discover seamless file management with our new service, powered by AWS S3. Use our intuitive explorer and dedicated connector for effortless file handling. Cloud users can find it in the DronaHQ Managed section. Don't miss out—activate your free trial for 1 GB storage today! <a href='/file-storage/overview/'>Read more about it. </a>"
     ]
   },
   {
     "timestamp": 1704844800000,
     "tags": ["Cloud-Hosted"],
     "heading": "Automation support - REST API",
-    "cards": [
-      {
-        "title": "Added",
-        "icon": "added.svg",
-        "class": "green",
-        "descriptions": [
-          "Discover effortless integration with external systems, web services, and APIs through our new Automation Block, REST API. Simplify data exchange, trigger actions, and seamlessly integrate with online platforms. <a href='/reference/automation-blocks/rest-api/' target='_blank'> Explore more</a>."
-        ]
-      }
+    "descriptions": [
+      "Discover effortless integration with external systems, web services, and APIs through our new Automation Block, REST API. Simplify data exchange, trigger actions, and seamlessly integrate with online platforms. <a href='/reference/automation-blocks/rest-api/' target='_blank'> Explore more</a>."
     ]
   },
   {
     "timestamp": 1704844800000,
     "tags": ["Cloud-Hosted"],
     "heading": "Automation support - DronaHQ DB",
-    "cards": [
-      {
-        "title": "Added",
-        "icon": "added.svg",
-        "class": "green",
-        "descriptions": [
-          "<b>Automation - DronaHQ DB :</b> Explore DronaHQ DB for robust data management in BPM Flows. Efficient storage, retrieval, and manipulation. Enhance workflow precision. Learn more <a href='/reference/automation-blocks/dronahqdb/' target='_blank'>Explore more</a>. "
-        ]
-      }
+    "descriptions": [
+      "<b>Automation - DronaHQ DB :</b> Explore DronaHQ DB for robust data management in BPM Flows. Efficient storage, retrieval, and manipulation. Enhance workflow precision. Learn more <a href='/reference/automation-blocks/dronahqdb/' target='_blank'>Explore more</a>. "
     ]
   },
   {
@@ -50,32 +29,24 @@
     "tags": ["Cloud-Hosted"],
     "heading": "DronaHQ Theme",
     "embed": "https://demo.arcade.software/SjFZuYRtHBe3oAbLLyZR?embed",
-    "cards": [
-      {
-        "title": "Added",
-        "icon": "added.svg",
-        "class": "green",
-        "descriptions": [
-          "Start customizing themes effortlessly with our intuitive interface. Choose from default light/dark options or unleash creativity with custom <a href='/building-apps-concepts/configuring-themes/#applying-themes' target='_blank'>themes</a>."
-        ],
-        "points": [
-          "Craft visual masterpieces that reflect your unique style and brand identity with ease.",
-          "Each application gets its own theme playground, allowing you to fine-tune the visual presentation to your heart's content.",
-          "Want to switch up the vibe on the fly? Our dynamic theme modification feature lets you do just that, even after your app is live. Say goodbye to static visuals and hello to endless flexibility!"
-        ]
-      }
+
+    "descriptions": [
+      "Start customizing themes effortlessly with our intuitive interface. Choose from default light/dark options or unleash creativity with custom <a href='/building-apps-concepts/configuring-themes/#applying-themes' target='_blank'>themes</a>.",
+      "Craft visual masterpieces that reflect your unique style and brand identity with ease.",
+      "Each application gets its own theme playground, allowing you to fine-tune the visual presentation to your heart's content.",
+      "Want to switch up the vibe on the fly? Our dynamic theme modification feature lets you do just that, even after your app is live. Say goodbye to static visuals and hello to endless flexibility!"
     ]
   },
   {
     "timestamp": 1704844800000,
     "tags": ["Cloud-Hosted"],
-    "heading": "Automation - REST API",
+    "heading": "",
     "cards": [
       {
-        "title": "Enhanced",
+        "title": "Automation - REST API",
         "icon": "improved.svg",
         "class": "yellow",
-        "points": [
+        "descriptions": [
           "<a href='/reference/automation-blocks/connector/#connector-query---tailored-queries'  target='_blank'>Connector Query – Tailored Queries </a>: Take control of your data retrieval and manipulation with custom queries tailored to your exact specifications.",
           "<a href='/reference/automation-blocks/connector/#connector-library---reusable-queries'  target='_blank'>Connector Library – Reusable Queries </a>: Save time and streamline your integration process by accessing pre-existing queries within the library. With a range of connectors and pre-added queries at your fingertips, integration has never been easier."
         ]
@@ -87,15 +58,9 @@
     "tags": ["Cloud-Hosted", "Beta"],
     "heading": "DronaHQ Managed DB",
     "embed": "https://demo.arcade.software/B1S3Tb2n8Jqd4OCTKMWP?embed",
-    "cards": [
-      {
-        "title": "Added",
-        "icon": "added.svg",
-        "class": "green",
-        "descriptions": [
-          "Prepare for the revolution! Introducing DronaHQ DB, a marvel in managed PostgreSQL platforms. Imagine a world where managing data feels as intuitive as handling spreadsheets, within your very apps! It’s tailored for efficiency, empowered by SQL queries, and wrapped in a user-friendly interface, ensuring seamless data handling. Learn more about <a href='/dronahq-database/dhq-database-overview/' target='_blank'>DronaHQ Database.</a>"
-        ]
-      }
+
+    "descriptions": [
+      "Prepare for the revolution! Introducing DronaHQ DB, a marvel in managed PostgreSQL platforms. Imagine a world where managing data feels as intuitive as handling spreadsheets, within your very apps! It’s tailored for efficiency, empowered by SQL queries, and wrapped in a user-friendly interface, ensuring seamless data handling. Learn more about <a href='/dronahq-database/dhq-database-overview/' target='_blank'>DronaHQ Database.</a>"
     ]
   },
   {
@@ -103,15 +68,9 @@
     "tags": ["Cloud-Hosted"],
     "heading": "Show Control Loader",
     "embed": "/img/reference/actionflow-blocks/show-control-loader/showcontrolloader.jpg",
-    "cards": [
-      {
-        "title": "Added",
-        "icon": "added.svg",
-        "class": "green",
-        "descriptions": [
-          "Enhance user interaction in micro-applications with the Show Control Loader action, enabling the integration of dynamic loading indicators and spinners. This feature ensures smoother navigation and active user engagement by providing real-time feedback during ongoing processes. Dive deeper into its technical capabilities <a href='/reference/actionflow-blocks/show-control-loader/' target = '_blank'>here</a> to optimize your application's user experience."
-        ]
-      }
+
+    "descriptions": [
+      "Enhance user interaction in micro-applications with the Show Control Loader action, enabling the integration of dynamic loading indicators and spinners. This feature ensures smoother navigation and active user engagement by providing real-time feedback during ongoing processes. Dive deeper into its technical capabilities <a href='/reference/actionflow-blocks/show-control-loader/' target = '_blank'>here</a> to optimize your application's user experience."
     ]
   },
   {
@@ -119,15 +78,9 @@
     "tags": ["Cloud-Hosted"],
     "heading": "Hide Screen Loader",
     "embed": "/img/reference/actionflow-blocks/hide-control-loader/hidecontrolloader.jpg",
-    "cards": [
-      {
-        "title": "Added",
-        "icon": "added.svg",
-        "class": "green",
-        "descriptions": [
-          "It effortlessly conceals loading indicators within micro-apps, ensuring a polished interface. With processes completed, watch these loading states gracefully fade away, elevating your application's sophistication. Explore its capabilities <a href='/reference/actionflow-blocks/hide-screen-loader/' target='_blank'>here</a>."
-        ]
-      }
+
+    "descriptions": [
+      "It effortlessly conceals loading indicators within micro-apps, ensuring a polished interface. With processes completed, watch these loading states gracefully fade away, elevating your application's sophistication. Explore its capabilities <a href='/reference/actionflow-blocks/hide-screen-loader/' target='_blank'>here</a>."
     ]
   },
   {
@@ -135,24 +88,17 @@
     "tags": ["Cloud-Hosted"],
     "heading": "Data Query - REST API",
     "embed": "/img/data-queries/restapi-dataquery.jpeg",
-    "cards": [
-      {
-        "title": "Added",
-        "icon": "added.svg",
-        "class": "green",
-        "descriptions": [
-          "Embark on a journey of enhanced connectivity with the <a href='/binding-data/data-queries/http-requests-curl/' target='_blank'>Rest API in Data Query </a>, delving into a myriad of possibilities. Leveraging basic authentication, seamlessly interface with public APIs, accessing diverse data sets such as weather updates, dummy data, or IP-based information. Additionally, utilize the proxy toggle feature to adeptly manage CORS issues."
-        ]
-      }
+
+    "descriptions": [
+      "Embark on a journey of enhanced connectivity with the <a href='/binding-data/data-queries/http-requests-curl/' target='_blank'>Rest API in Data Query </a>, delving into a myriad of possibilities. Leveraging basic authentication, seamlessly interface with public APIs, accessing diverse data sets such as weather updates, dummy data, or IP-based information. Additionally, utilize the proxy toggle feature to adeptly manage CORS issues."
     ]
   },
   {
     "timestamp": 1702166400000,
     "tags": ["Cloud-Hosted"],
-    "heading": "DronaHQ App Builder and Landing Page Load Time Optimization",
     "cards": [
       {
-        "title": "Enhanced",
+        "title": "DronaHQ App Builder and Landing Page Load Time Optimization",
         "icon": "improved.svg",
         "class": "yellow",
         "descriptions": [
@@ -164,10 +110,9 @@
   {
     "timestamp": 1702166400000,
     "tags": ["Cloud-Hosted"],
-    "heading": "DronaHQ Save API Optimization",
     "cards": [
       {
-        "title": "Enhanced",
+        "title": "DronaHQ Save API Optimization",
         "icon": "improved.svg",
         "class": "yellow",
         "descriptions": [
@@ -179,11 +124,10 @@
   {
     "timestamp": 1702166400000,
     "tags": ["Cloud-Hosted"],
-    "heading": "Audit Logging 2.0 Live",
     "embed": "/img/audit-logger/audit-logging.png",
     "cards": [
       {
-        "title": "Enhanced",
+        "title": "Audit Logging 2.0 Live",
         "icon": "improved.svg",
         "class": "yellow",
         "descriptions": [
@@ -195,10 +139,9 @@
   {
     "timestamp": 1702166400000,
     "tags": ["Cloud-Hosted"],
-    "heading": "Whitelist IP - Check Reachability",
     "cards": [
       {
-        "title": "Enhanced",
+        "title": "Whitelist IP - Check Reachability",
         "icon": "improved.svg",
         "class": "yellow",
         "descriptions": [
@@ -212,15 +155,9 @@
     "tags": ["Cloud-Hosted"],
     "heading": "SurrealDB",
     "embed": "/img/reference/connectors/surrealdb/details.jpeg",
-    "cards": [
-      {
-        "title": "Added",
-        "icon": "added.svg",
-        "class": "green",
-        "descriptions": [
-          "Welcome to the future of data handling! <a href='/reference/connectors/surrealdb/' target='_blank'> SurrealDB </a> stands tall as a cutting-edge distributed NoSQL database system. It’s not just a database; it’s an ecosystem engineered for unparalleled scalability, high availability, and unwavering fault tolerance across diverse data workloads."
-        ]
-      }
+
+    "descriptions": [
+      "Welcome to the future of data handling! <a href='/reference/connectors/surrealdb/' target='_blank'> SurrealDB </a> stands tall as a cutting-edge distributed NoSQL database system. It’s not just a database; it’s an ecosystem engineered for unparalleled scalability, high availability, and unwavering fault tolerance across diverse data workloads."
     ]
   }
 ]
