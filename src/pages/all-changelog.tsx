@@ -77,19 +77,24 @@ const AllChangelog = () => {
             // Continue with the rest of the rendering logic
             dataFetched ? (
               changelogData.length > 0 ? (
-                changelogData.map((item, index) => (
-                  <ChangelogCard
-                    key={`${item.timestamp}_${index}`}              
-                    timestamp={item.timestamp}
-                    tags={item.tags}
-                    heading={item.heading}
-                    title={item.title}
-                    embed={item.embed}
-                    descriptions={item.descriptions}
-                    cards={item.cards}
-                    isDarkTheme={isDarkTheme}
-                  />
-                ))
+                <>
+                  <div className={`${styles['header']}`}>
+                    <h1 className={`${styles['title']}`}>Changelog</h1>
+                    <div className={`${styles['description']}`}>Keep up with the latest changes to the project.</div>
+                  </div>
+                  {changelogData.map((item, index) => (
+                    <ChangelogCard
+                      key={`${item.timestamp}_${index}`}              
+                      timestamp={item.timestamp}
+                      tags={item.tags}
+                      heading={item.heading}
+                      title={item.title}
+                      descriptions={item.descriptions}
+                      cards={item.cards}
+                      isDarkTheme={isDarkTheme}
+                    />
+                  ))}
+                </>
               ) : (
                 <ComingSoon />
               )
@@ -97,9 +102,10 @@ const AllChangelog = () => {
               <div></div>
             )
           )}
-        </div>
+        </div>        
       </div>
     </Layout>
+
   );
 };
 
