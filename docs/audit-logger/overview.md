@@ -185,8 +185,8 @@ Columns For Database Loggers:
 | User Bulk Deactivated | ``user_bulk_deactivate`` | ✔️ | ✔️ |
 | User Bulk Activate | ``user_bulk_activate`` | ✔️ | ✔️ |
 | User Group Bulk Mapping | ``manage_user_groups_bulk`` | ✔️ | ✔️ |
-| New Theme Created | ``new_theme_created` | ❌ | ✔️ |
-| Logger Deleted | ``logger_deleted`` | ✔️ | ✔️ |
+| New Theme Created | ``new_theme_created`` | ❌ | ✔️ |
+| Logger Deleted | `` logger_deleted `` | ✔️ | ✔️ |
 <!-- some remaining -->
 <!-- 
 

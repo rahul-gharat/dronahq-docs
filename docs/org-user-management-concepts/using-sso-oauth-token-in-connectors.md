@@ -65,7 +65,7 @@ To add request parameters, simply navigate to the respective configuration secti
   <figcaption align = "center"><i>Provide the SSO token as parameter for query.</i></figcaption>
 </figure>
 
-Since the keyword for my SSO token is `{{sso1.accessToken}}`, therefore I am passing it as parameter of the query as header. This will check the SSO token while hitting the request to perform autorization.
+Since the keyword for my SSO token is `{{sso1.accessToken}}`, therefore I am passing it as parameter of the query as header. This will check the SSO token while hitting the request to perform authorization.
 
 ## Configure Test API
 

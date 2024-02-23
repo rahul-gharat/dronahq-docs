@@ -12,14 +12,11 @@
     "timestamp": 1704844800000,
     "tags": ["Cloud-Hosted", "Automations"],
     "heading": "REST API | DronaHQ DB",
-    "descriptions": [
-      ""
-    ],
+    "descriptions": [""],
     "cards": [
       {
         "title": "Added",
-        "icon": "added.svg",
-        "class": "green",
+        "type": "added",
         "points": [
           "<b>Automation - REST API :</b> Discover effortless integration with external systems, web services, and APIs through our new Automation Block, REST API. Simplify data exchange, trigger actions, and seamlessly integrate with online platforms. <a href='/reference/automation-blocks/rest-api/' target='_blank'> Read more about it.</a>.",
           "<b>Automation - DronaHQ DB :</b> Explore DronaHQ DB for robust data management in BPM Flows. Efficient storage, retrieval, and manipulation. Enhance workflow precision. <a href='/reference/automation-blocks/dronahqdb/' target='_blank'>Read more about it.</a>."
@@ -47,11 +44,10 @@
     "cards": [
       {
         "title": "Enhancements",
-        "icon": "improved.svg",
-        "class": "yellow",
+        "type": "improved",
         "points": [
           "<a href='/reference/automation-blocks/connector/#connector-query---tailored-queries'  target='_blank'>Connector Query – Tailored Queries </a>: Take control of your data retrieval and manipulation with custom queries tailored to your exact specifications.",
-          "<a href='/reference/automation-blocks/connector/#connector-library---reusable-queries'  target='_blank'>Connector Library – Reusable Queries </a>: Save time and streamline your integration process by accessing pre-existing queries within the library. With a range of connectors and pre-added queries at your fingertips, integration has never been easier."
+          "<a href='/reference/automation-blocks/connector/#connector-library---reusable-queries'  target='_blank'>Connector Library – Reusable Queries </a>: Save time and streamline your integration process by accessing pre-existing queries within the library. With a range of connectors and preadded queries at your fingertips, integration has never been easier."
         ]
       }
     ]
@@ -68,7 +64,7 @@
   },
   {
     "timestamp": 1702166400000,
-    "tags": ["Cloud-Hosted","Actions"],
+    "tags": ["Cloud-Hosted", "Actions"],
     "heading": "Show Control Loader",
     "embed": "/img/reference/actionflow-blocks/show-control-loader/showcontrolloader.jpg",
 
@@ -78,7 +74,7 @@
   },
   {
     "timestamp": 1702166400000,
-    "tags": ["Cloud-Hosted","Actions"],
+    "tags": ["Cloud-Hosted", "Actions"],
     "heading": "Hide Screen Loader",
     "embed": "/img/reference/actionflow-blocks/hide-control-loader/hidecontrolloader.jpg",
 
@@ -103,8 +99,7 @@
     "cards": [
       {
         "title": "Enhancements",
-        "icon": "improved.svg",
-        "class": "yellow",
+        "type": "improved",
         "points": [
           "<b>App Builder and Landing Page Load Time :</b> We’ve turbocharged your experience! The DronaHQ App Builder is now armed with caching algorithms, slashing network stress and backend API load. Say goodbye to lag and hello to lightning-fast load times!",
           "<b>Save API Optimization: </b> Speed, precision, efficiency - amplified! Our enhancements to the app save API make building applications a breeze. Get ready for save times that scale with your app’s size, delivering a staggering 10% - 70% boost in efficiency."
@@ -120,8 +115,7 @@
     "cards": [
       {
         "title": "Enhancements",
-        "icon": "improved.svg",
-        "class": "yellow",
+        "type": "improved",
         "descriptions": [
           "Trace every step, celebrate every event! Our configurable audit logs are now at your fingertips, seamlessly accessible in databases or chosen audit logging tools. For a deeper dive, check out our <a href='/audit-logger/overview/' target='_blank'>Detailed article</a> encompassing log formats, events, and more."
         ]
@@ -130,13 +124,12 @@
   },
   {
     "timestamp": 1702166400000,
-    "tags": ["Cloud-Hosted","Connectors"],
+    "tags": ["Cloud-Hosted", "Connectors"],
     "heading": "Whitelist IP - Check Reachability",
     "cards": [
       {
         "title": "Enhancements",
-        "icon": "improved.svg",
-        "class": "yellow",
+        "type": "improved",
         "descriptions": [
           "Empower your systems! Ensure IP reachability with our seamless functionality, fortifying your network’s security and accessibility."
         ]
@@ -145,7 +138,7 @@
   },
   {
     "timestamp": 1702166400000,
-    "tags": ["Cloud-Hosted","Connectors"],
+    "tags": ["Cloud-Hosted", "Connectors"],
     "heading": "SurrealDB",
     "embed": "/img/reference/connectors/surrealdb/details.jpeg",
 

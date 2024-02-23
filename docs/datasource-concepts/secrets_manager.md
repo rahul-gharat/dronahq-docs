@@ -60,7 +60,7 @@ provided, ensuring a secure setup tailored to your organization's needs.
 | Namespace | Enter Namespace | `my-namespace` |
 | Engine name | Enter Engine Name | `dhqkv` |
 | Engine type | KV (version 2) or Database (MySQL/MariaDB, PostgreSQL, MongoDB) | ` KV (version 2)` |
-| Path to secret | Path to Secret within Vault | `secret/data/example` |
+| Path to secret | Path to Secret within Vault | ` secret/data/example ` |
 | Database role | Provide role required for the database. | `readOnlyData`|
 | Connection Name | Enter Connection Name | `shibam_postgres` |
 
