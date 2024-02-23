@@ -78,19 +78,28 @@ const CloudChangelog = () => {
             // Continue with the rest of the rendering logic
             dataFetched ? (
               changelogData.length > 0 ? (
-                changelogData.map((item, index) => (
-                  <ChangelogCard
-                    key={`${item.timestamp}_${index}`}              
-                    timestamp={item.timestamp}
-                    tags={item.tags}
-                    heading={item.heading}
-                    title={item.title}
-                    embed={item.embed}
-                    descriptions={item.descriptions}
-                    cards={item.cards}
-                    isDarkTheme={isDarkTheme}
-                  />
-                ))
+                <>
+                  <div className={`${styles['header']}`}>
+                    <h1 className={`${styles['title']}`}>Changelog</h1>
+                    <div className='d-flex align-center f-wrap'>
+                      <div className={`${styles['description']}`}>Keep up with the latest changes to </div>
+                      <div className={`${styles['product-tag']} hq-tags border green d-flex align-center pointer justify-center`}>Cloud-Hosted</div>
+                    </div>
+                  </div>
+                  {changelogData.map((item, index) => (
+                    <ChangelogCard
+                      key={`${item.timestamp}_${index}`}              
+                      timestamp={item.timestamp}
+                      tags={item.tags}
+                      heading={item.heading}
+                      title={item.title}
+                      embed={item.embed}
+                      descriptions={item.descriptions}
+                      cards={item.cards}
+                      isDarkTheme={isDarkTheme}
+                    />
+                  ))}
+                </>
               ) : (
                 <ComingSoon />
               )
@@ -98,7 +107,7 @@ const CloudChangelog = () => {
               <div></div>
             )
           )}
-        </div>
+        </div>        
       </div>
     </Layout>
   );
