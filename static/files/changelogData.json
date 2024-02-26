@@ -1,10 +1,28 @@
 [
   {
+    "timestamp": 1707561138000000,
+    "tags": ["Cloud-Hosted", "Automations"],
+    "heading": "REST API",
+    "cards": [
+      {
+        "title": "Enhancements",
+        "type": "improved",
+        "points": [
+          "<b> Database Reachability Analysis: </b> Gain insights into your database's accessibility by providing the host URL or host port via the whitelisting IP toggle.",
+          "<b>Case Insensitive Name Search: </b>Bid farewell to case sensitivity! Searches for connector database names are now case insensitive, offering a smoother and more intuitive user experience.",
+          "<b>Schema-independent Database Connection Testing: </b>Testing connections to your database is now schema-independent, ensuring a diverse range of connection checks. This enhancement allows for a basic level validation of database permissions, providing comprehensive testing capabilities.",
+          "<b>Schema-independent Database Connection Testing: </b> Enjoy a refined query building experience! The query builder now loads instantly, providing immediate access to crafting your queries. Additionally, the schema segment dynamically loads all available schemas, ensuring a hassle-free browsing experience even with a large number of schemas. Simply scroll through the schema window, and your schemas will continue to load effortlessly.",
+          "<b>Support for AlloyDB via Postgres Connector: </b>Seamlessly connect to AlloyDB using the Postgres connector, with added support for SSH tunneling. "
+        ]
+      }
+    ]
+  },
+  {
     "timestamp": 1705708800000,
     "tags": ["Cloud-Hosted", "Beta"],
     "heading": "File Storage",
-    "embed": "https://demo.arcade.software/E0Uc0lZONX57s8WmnmaM?embed",
     "descriptions": [
+      "<div style=\"position: relative; padding-bottom: 56.25%; height: 0; width: 100%;\"><iframe src=\"https://demo.arcade.software/E0Uc0lZONX57s8WmnmaM?embed\" loading=\"lazy\" webkitallowfullscreen mozallowfullscreen allowfullscreen allow=\"clipboard-write\" style=\"position: absolute; top: 0; left: 0; width: 100%; height: 100%;color-scheme: light;\"></iframe></div>",
       "Discover seamless file management with our new service, powered by AWS S3. Use our intuitive explorer and dedicated connector for effortless file handling. Cloud users can find it in the DronaHQ Managed section. Don't miss out—activate your free trial for 1 GB storage today! <a href='/file-storage/overview/'>Read more about it. </a>"
     ]
   },
@@ -12,7 +30,6 @@
     "timestamp": 1704844800000,
     "tags": ["Cloud-Hosted", "Automations"],
     "heading": "REST API | DronaHQ DB",
-    "descriptions": [""],
     "cards": [
       {
         "title": "Added",
@@ -28,9 +45,9 @@
     "timestamp": 1704844800000,
     "tags": ["Cloud-Hosted"],
     "heading": "DronaHQ Theme",
-    "embed": "https://demo.arcade.software/SjFZuYRtHBe3oAbLLyZR?embed",
 
     "descriptions": [
+      "<div style=\"position: relative; padding-bottom: 56.25%; height: 0; width: 100%;\"><iframe src=\"https://demo.arcade.software/SjFZuYRtHBe3oAbLLyZR?embed\" loading=\"lazy\" webkitallowfullscreen mozallowfullscreen allowfullscreen allow=\"clipboard-write\" style=\"position: absolute; top: 0; left: 0; width: 100%; height: 100%;color-scheme: light;\"></iframe></div>",
       "Start customizing themes effortlessly with our intuitive interface. Choose from default light/dark options or unleash creativity with custom <a href='/building-apps-concepts/configuring-themes/#applying-themes' target='_blank'>themes</a>.",
       "Craft visual masterpieces that reflect your unique style and brand identity with ease.",
       "Each application gets its own theme playground, allowing you to fine-tune the visual presentation to your heart's content.",
@@ -56,9 +73,9 @@
     "timestamp": 1703030400000,
     "tags": ["Cloud-Hosted", "Beta"],
     "heading": "DronaHQ Managed DB",
-    "embed": "https://demo.arcade.software/B1S3Tb2n8Jqd4OCTKMWP?embed",
 
     "descriptions": [
+      "<div style=\"position: relative; padding-bottom: 56.25%; height: 0; width: 100%;\"><iframe src=\"https://demo.arcade.software/B1S3Tb2n8Jqd4OCTKMWP?embed\" loading=\"lazy\" webkitallowfullscreen mozallowfullscreen allowfullscreen allow=\"clipboard-write\" style=\"position: absolute; top: 0; left: 0; width: 100%; height: 100%;color-scheme: light;\"></iframe></div>",
       "Prepare for the revolution! Introducing DronaHQ DB, a marvel in managed PostgreSQL platforms. Imagine a world where managing data feels as intuitive as handling spreadsheets, within your very apps! It’s tailored for efficiency, empowered by SQL queries, and wrapped in a user-friendly interface, ensuring seamless data handling. Learn more about <a href='/dronahq-database/dhq-database-overview/' target='_blank'>DronaHQ Database.</a>"
     ]
   },
@@ -66,9 +83,9 @@
     "timestamp": 1702166400000,
     "tags": ["Cloud-Hosted", "Actions"],
     "heading": "Show Control Loader",
-    "embed": "/img/reference/actionflow-blocks/show-control-loader/showcontrolloader.jpg",
 
     "descriptions": [
+      "<img src=\"/img/reference/actionflow-blocks/show-control-loader/showcontrolloader.jpg\" alt=\"insect-bee\"/ width=\"100%\">",
       "Enhance user interaction in micro-applications with the Show Control Loader action, enabling the integration of dynamic loading indicators and spinners. This feature ensures smoother navigation and active user engagement by providing real-time feedback during ongoing processes. Dive deeper into its technical capabilities <a href='/reference/actionflow-blocks/show-control-loader/' target = '_blank'>here</a> to optimize your application's user experience."
     ]
   },
@@ -76,9 +93,10 @@
     "timestamp": 1702166400000,
     "tags": ["Cloud-Hosted", "Actions"],
     "heading": "Hide Screen Loader",
-    "embed": "/img/reference/actionflow-blocks/hide-control-loader/hidecontrolloader.jpg",
+    "embed": "",
 
     "descriptions": [
+      "<img src=\"/img/reference/actionflow-blocks/hide-control-loader/hidecontrolloader.jpg\" alt=\"insect-bee\"/ width=\"100%\">",
       "It effortlessly conceals loading indicators within micro-apps, ensuring a polished interface. With processes completed, watch these loading states gracefully fade away, elevating your application's sophistication. Explore its capabilities <a href='/reference/actionflow-blocks/hide-screen-loader/' target='_blank'>here</a>."
     ]
   },
@@ -86,9 +104,9 @@
     "timestamp": 1702166400000,
     "tags": ["Cloud-Hosted"],
     "heading": "Data Query - REST API",
-    "embed": "/img/data-queries/restapi-dataquery.jpeg",
 
     "descriptions": [
+      "<img src=\"/img/data-queries/restapi-dataquery.jpeg\" alt=\"insect-bee\"/ width=\"100%\">",
       "Embark on a journey of enhanced connectivity with the <a href='/binding-data/data-queries/http-requests-curl/' target='_blank'>Rest API in Data Query </a>, delving into a myriad of possibilities. Leveraging basic authentication, seamlessly interface with public APIs, accessing diverse data sets such as weather updates, dummy data, or IP-based information. Additionally, utilize the proxy toggle feature to adeptly manage CORS issues."
     ]
   },
@@ -110,13 +128,14 @@
   {
     "timestamp": 1702166400000,
     "tags": ["Cloud-Hosted"],
-    "embed": "/img/audit-logger/audit-logging.png",
+    "embed": "",
     "heading": "Audit Logging 2.0",
     "cards": [
       {
         "title": "Enhancements",
         "type": "improved",
         "descriptions": [
+          "<img src=\"/img/audit-logger/audit-logging.png\" alt=\"insect-bee\"/ width=\"100%\">",
           "Trace every step, celebrate every event! Our configurable audit logs are now at your fingertips, seamlessly accessible in databases or chosen audit logging tools. For a deeper dive, check out our <a href='/audit-logger/overview/' target='_blank'>Detailed article</a> encompassing log formats, events, and more."
         ]
       }
@@ -140,9 +159,9 @@
     "timestamp": 1702166400000,
     "tags": ["Cloud-Hosted", "Connectors"],
     "heading": "SurrealDB",
-    "embed": "/img/reference/connectors/surrealdb/details.jpeg",
 
     "descriptions": [
+      "<img src=\"/img/reference/connectors/surrealdb/details.jpeg\" alt=\"insect-bee\"/ width=\"60%\" height=\"10%\">",
       "Welcome to the future of data handling! <a href='/reference/connectors/surrealdb/' target='_blank'> SurrealDB </a> stands tall as a cutting-edge distributed NoSQL database system. It’s not just a database; it’s an ecosystem engineered for unparalleled scalability, high availability, and unwavering fault tolerance across diverse data workloads."
     ]
   }
