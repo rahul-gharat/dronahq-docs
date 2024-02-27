@@ -35,7 +35,7 @@
         "title": "Added",
         "type": "added",
         "points": [
-          "<b>Automation - REST API :</b> Discover effortless integration with external systems, web services, and APIs through our new Automation Block, REST API. Simplify data exchange, trigger actions, and seamlessly integrate with online platforms. <a href='/reference/automation-blocks/rest-api/' target='_blank'> Read more about it.</a>.",
+          "<b>Automation - REST API :</b> Discover effortless integration with external systems, web services, and APIs through our new Automation Block, REST API. Simplify data exchange, trigger actions, and seamlessly integrate with online platforms. <a href='/reference/automation-blocks/rest-api/' target='_blank'> Read more about it.</a>",
           "<b>Automation - DronaHQ DB :</b> Explore DronaHQ DB for robust data management in BPM Flows. Efficient storage, retrieval, and manipulation. Enhance workflow precision. <a href='/reference/automation-blocks/dronahqdb/' target='_blank'>Read more about it.</a>."
         ]
       }
