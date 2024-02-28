@@ -210,6 +210,11 @@ const config = {
           //   position: 'left',
           // },
           {
+            to: '/',
+            label: 'Docs',
+            position: 'left',
+          },
+          {
             to: 'https://community.dronahq.com/c/ask-community',
             label: 'Forum',
             position: 'left',
