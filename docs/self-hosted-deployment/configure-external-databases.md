@@ -165,7 +165,7 @@ Replace variables encapsulated in `<% variable %>` with actual value.
 Run following command to restore data on external database
 
 ```shell
-mysql --host=<% host %> --user=<% user %> --password=<% password %> mysql-init.sql
+mysql --host=<% host %> --user=<% user %> --password=<% password %> < mysql-init.sql
 ```
 
 Replace variables encapsulated in `<% variable %>` with actual value.
