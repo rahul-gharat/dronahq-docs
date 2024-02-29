@@ -21,6 +21,11 @@ Each screen type is categorized into three sub-sections, excluding the header ty
 - [Body](./multiscreen-apps.md/#body-configuration)
 - [Footer](./multiscreen-apps.md/#footer-configuration)
 
+<figure>
+  <Thumbnail src="/img/ui-builder/multiscreen-apps/sections.jpeg" alt="Screen Configuration" />
+  <figcaption align = "center"><i>Screen Configuration</i></figcaption>
+</figure>
+
 Depending upon the screen type these properties are preconfigured, for example in a popup screen, the header is hidden by default and for all types of screen, the footer is hidden by default. Each section of the screen has its own configuration properties.
  ### Header configuration
 
@@ -83,6 +88,10 @@ Depending upon the screen type these properties are preconfigured, for example i
 
 Screen/Page is The Primary Screen type in DronaHQ. All Other screens are either overlaid over Screen/Page or either stick to it. Following are the configuration provided by the Screens/Page.
 
+<figure>
+  <Thumbnail src="/img/ui-builder/multiscreen-apps/screen.jpeg" alt="Screen Configuration" />
+</figure>
+
 | Attribute | Description |
 | ---------------| -------------| 
 | Name | Configures display name of the screen |
@@ -101,6 +110,10 @@ Only Screen/Page can be made as the home screen any other screen as the home scr
 ### Popup
 
 This Screen type allows user to configure their own popup screen with their custom layout and UI. following are the different configurations available in the popup type screen.
+
+<figure>
+  <Thumbnail src="/img/ui-builder/multiscreen-apps/popup.jpeg" alt="Screen Configuration" />
+</figure>
 
 | Attribute | Description |
 | ---------------| -------------| 
@@ -121,6 +134,10 @@ The height for the popup screen is derived from the controls placed inside the p
 
 Menu Screen type allows users to configure menu screens for their application, only menu screen can be used as a sticky menu for screen/page type screens. Following are the configurations provided by the menu type screen.
 
+<figure>
+  <Thumbnail src="/img/ui-builder/multiscreen-apps/menu.jpeg" alt="Screen Configuration" />
+</figure>
+
 | Attribute | Description |
 | ---------------| -------------| 
 | Name | Configures display name of the screen |
@@ -133,6 +150,10 @@ Menu Screen type allows users to configure menu screens for their application, o
 ### Tray
 
 Try-type screens allow you to create sidebars in your application, tray-type screens are displayed as an overlay on all the other screens. Following are the configurations available in the tray-type screen.
+
+<figure>
+  <Thumbnail src="/img/ui-builder/multiscreen-apps/tray.jpeg" alt="Screen Configuration" />
+</figure>
 
 | Attribute | Description |
 | ---------------| -------------| 
@@ -150,6 +171,10 @@ Try-type screens allow you to create sidebars in your application, tray-type scr
 ### Header
 
 Header type screen is used in a very special use case in which if you want to use a single header screen throughout the application then create a header screen and use it as a sticky header in all the screen/page type screens.
+
+<figure>
+  <Thumbnail src="/img/ui-builder/multiscreen-apps/header.jpeg" alt="Screen Configuration" />
+</figure>
 
 | Attribute | Description |
 | ---------------| -------------| 
