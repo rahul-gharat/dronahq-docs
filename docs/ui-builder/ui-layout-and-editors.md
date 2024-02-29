@@ -3,6 +3,10 @@ sidebar_position: 2
 title: "UI Layout & editors"
 ---
 
+import Image from '@site/src/components/Image';
+import Thumbnail from '@site/src/components/Thumbnail';
+
+
 # UI Layout & editors
 
 DronaHQ offers two distinct types of screen editors: the `Freeflow Editor` and the `Advanced Editor`. By default, any new screen created in the DronaHQ is set to the Freeflow Editor mode. However, users have the flexibility to choose which screen editor they want to use for each screen they are working on.
@@ -16,6 +20,13 @@ You can switch between Advance Editor Mode and Freeflow Editor Mode only when th
 ## Freeflow Editor
 
 The Freeflow Editor provides users with a straightforward approach to designing screens. Controls can be placed on the screen in a grid-like fashion, making it easy to align and position elements precisely. The editor's grid is composed of 24 columns, enabling users to create responsive and organized layouts. Each row has a fixed height of 10 pixels, maintaining consistency throughout the design.
+
+<figure>
+  <Thumbnail src="/img/ui-builder/ui-layout-editor/freeflow.jpeg" alt="Freeflowd Editor"/>
+  <figcaption align = "center">Freeflowd Editor</figcaption>
+</figure>
+
+
 #### Key Features:
 
 - **Grid-based Layout**: Users can easily snap controls to the grid, simplifying alignment and maintaining a structured appearance.
@@ -27,6 +38,11 @@ The Freeflow Editor provides users with a straightforward approach to designing 
 ## Advanced Editor
 
 The Advanced Editor empowers users to create more complex and flexible screen layouts. Controls are positioned relative to each other, allowing for controlled placement of the layout of the control. The editor comes equipped with advanced layout controls, such as Layout, Rows, and Columns, which enhance the user's ability to design intricate and responsive screens.
+
+<figure>
+  <Thumbnail src="/img/ui-builder/ui-layout-editor/advance.jpeg" alt="Advanced Editor"/>
+  <figcaption align = "center">Advanced Editor</figcaption>
+</figure>
 
 #### Key Features
 
