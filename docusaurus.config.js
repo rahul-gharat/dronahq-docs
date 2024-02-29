@@ -210,7 +210,7 @@ const config = {
           //   position: 'left',
           // },
           {
-            to: '/',
+            to: '/getting-started/introduction/',
             label: 'Docs',
             position: 'left',
           },
