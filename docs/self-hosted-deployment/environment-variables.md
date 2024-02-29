@@ -227,6 +227,35 @@ This is a your Google cloud service account's key file path inside your containe
 #### `GCLOUD_STORAGE_BUCKET_NAME`
 This is a storage bucket inside which DronaHQ will be uploading some resources and files uploaded by your application. Also this container will server some resources for your application.
 
+## Automation
+
+To run Automation on AWS, you will need to utilize two AWS services: [`Lambda`](https://docs.aws.amazon.com/lambda/) and [`EventBridge`](https://docs.aws.amazon.com/eventbridge/). Ensure the following environment variables are properly configured before running automation tasks:
+
+    RUN_AUTOMATION_ON_AWS=true
+
+To access Lambda and EventBridge, you must provide the following credentials:
+
+#### `AWS_ACCESS_KEY_ID`, `AWS_ACCESS_KEY_SECRET`
+**AccessKeyId** and **AccessKeySecret** is required to access your lambda and EventBridge(scheduler).
+It is recommended that you provide complete read/write access of your scheduler to this key pair.
+
+#### `AWS_REGION`
+Specify the AWS region where Lambda and EventBridge (scheduler) are hosted or created.
+
+### AWS Lambda Configuration
+Configure the following variables related to AWS Lambda:
+
+#### `AUTOMATION_AWS_LAMBDA_FUNCTION_NAME`
+This is the name of your Lambda function.
+
+#### `AUTOMATION_AWS_LAMBDA_FUNCTION_ARN`
+This is the Amazon Resource Name (ARN) of your Lambda function. It is used to trigger automation tasks within Lambda.
+
+### AWS EventBridge (Scheduler) Configuration
+Configure the following variable related to AWS EventBridge:
+
+#### `AUTOMATION_AWS_SCHEDULER_LAMBDA_EXECUTE_ROLE_ARN`
+This is the Role ARN of your Lambda function, which EventBridge utilizes to trigger automation tasks. Ensure proper permissions are granted to this role for seamless execution.
 
 ## [MYSQL Container](https://hub.docker.com/_/mysql)
 
