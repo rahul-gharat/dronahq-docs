@@ -2,6 +2,8 @@
 sidebar_position: 98
 ---
 
+import Thumbnail from '@site/src/components/Thumbnail';
+
 # Environment Variables
 
 Environment variables for Self-hosted DronaHQ deployments.
@@ -229,33 +231,61 @@ This is a storage bucket inside which DronaHQ will be uploading some resources a
 
 ## Automation
 
-To run Automation on AWS, you will need to utilize two AWS services: [`Lambda`](https://docs.aws.amazon.com/lambda/) and [`EventBridge`](https://docs.aws.amazon.com/eventbridge/). Ensure the following environment variables are properly configured before running automation tasks:
-
-    RUN_AUTOMATION_ON_AWS=true
-
-To access Lambda and EventBridge, you must provide the following credentials:
+To streamline automation tasks on AWS, you'll be leveraging two core AWS services: [`Lambda`](https://docs.aws.amazon.com/lambda/) and [`EventBridge`](https://docs.aws.amazon.com/eventbridge/). Before initiating any automation procedures, ensure the correct configuration of the following environment variables:
+```shell
+    RUN_AUTOMATION_ON_AWS='true'
+```
+To interact with Lambda and EventBridge seamlessly, you need to set up the appropriate credentials:
 
 #### `AWS_ACCESS_KEY_ID`, `AWS_ACCESS_KEY_SECRET`
-**AccessKeyId** and **AccessKeySecret** is required to access your lambda and EventBridge(scheduler).
-It is recommended that you provide complete read/write access of your scheduler to this key pair.
+These are essential for accessing your Lambda functions and EventBridge scheduler. It's advisable to grant complete read/write access to the scheduler using these credentials..
 
 #### `AWS_REGION`
-Specify the AWS region where Lambda and EventBridge (scheduler) are hosted or created.
+Specify the AWS region where your Lambda functions and EventBridge scheduler are hosted or deployed.
 
 ### AWS Lambda Configuration
 Configure the following variables related to AWS Lambda:
 
+#### `AUTOMATION_AWS_LAMBDA_ACCESS_KEY_ID` (optional)
+You have the option to provide a specific **AccessKeyId** for Lambda, If not provided, the [`AWS_ACCESS_KEY_ID`](#aws_access_key_id-aws_access_key_secret) will be utilized.
+
+#### `AUTOMATION_AWS_LAMBDA_SECRET_ACCESS_KEY` (optional)
+You have the option to provide a specific **SecretAccessKey** for Lambda, If not provided, the [`AWS_ACCESS_KEY_SECRET`](#aws_access_key_id-aws_access_key_secret) will be utilized.
+
+#### `AUTOMATION_AWS_LAMBDA_REGION` (optional)
+You have the option to provide a specific **Region** for Lambda, If not provided, the [`AWS_REGION`](#aws_region) will be utilized.
+
+
 #### `AUTOMATION_AWS_LAMBDA_FUNCTION_NAME`
-This is the name of your Lambda function.
+This denotes the name of your Lambda function.
 
 #### `AUTOMATION_AWS_LAMBDA_FUNCTION_ARN`
-This is the Amazon Resource Name (ARN) of your Lambda function. It is used to trigger automation tasks within Lambda.
+This represents the Amazon Resource Name (ARN) of your Lambda function, which is crucial for triggering automation tasks within Lambda.
+
+#### `AUTOMATION_API_KEY`
+This API key facilitates communication between AWS Lambda and DronaHQ Automation. You can assign a custom secret to this variable. Ensure the same secret is provided in the AWS Lambda environment variables. To configure, navigate to `AWS Lambda` > `Functions` > `<function_name>` > `Configuration` > `Environment variables`. For detailed instructions, refer to the screenshot below (Figure: AWS Lambda Environment variable settings).
+#### `BUILDER_URL`
+This URL points to your DronaHQ Instances, facilitating communication between AWS Lambda and DronaHQ Automation. It should be added to the AWS Lambda environment variables. For setup guidance, refer to the screenshot below (Figure: AWS Lambda Environment variable settings).
+
+<figure>
+  <Thumbnail src="/img/self-hosted-deployment/lambda-env-variables-settings.png" alt="AWS Lambda Environment variable settings" width='80%'/>
+  <figcaption align = "center"><i>AWS Lambda Environment variable settings</i></figcaption>
+</figure>
 
 ### AWS EventBridge (Scheduler) Configuration
 Configure the following variable related to AWS EventBridge:
 
+#### `AUTOMATION_AWS_SCHEDULER_ACCESS_KEY_ID` (optional)
+You have the option to provide a specific **AccessKeyId** for EventBridge, If not provided, the [`AWS_ACCESS_KEY_ID`](#aws_access_key_id-aws_access_key_secret) will be utilized.
+
+#### `AUTOMATION_AWS_SCHEDULER_SECRET_ACCESS_KEY` (optional) 
+You have the option to provide a specific **SecretAccessKey** for EventBridge, If not provided, the [`AWS_ACCESS_KEY_SECRET`](#aws_access_key_id-aws_access_key_secret) will be utilized.
+
+#### `AUTOMATION_AWS_SCHEDULER_REGION` (optional)
+You have the option to provide a specific **Region** for EventBridge, If not provided, the [`AWS_REGION`](#aws_region) will be utilized.
+
 #### `AUTOMATION_AWS_SCHEDULER_LAMBDA_EXECUTE_ROLE_ARN`
-This is the Role ARN of your Lambda function, which EventBridge utilizes to trigger automation tasks. Ensure proper permissions are granted to this role for seamless execution.
+This denotes the Role ARN of your Lambda function, utilized by EventBridge to trigger automation tasks. Ensure appropriate permissions are granted to this role for seamless execution.
 
 ## [MYSQL Container](https://hub.docker.com/_/mysql)
 
@@ -295,6 +325,7 @@ These variables, used in conjunction, create a new user and set that user's pass
 
 The following is an example of using these two variables to create a MongoDB instance and then using the mongosh cli (use mongo with 4.x versions) to connect against the admin authentication database.
 
+```shell
     $ docker run -d --network some-network --name some-mongo \
         -e MONGO_INITDB_ROOT_USERNAME=mongoadmin \
         -e MONGO_INITDB_ROOT_PASSWORD=secret \
@@ -308,6 +339,7 @@ The following is an example of using these two variables to create a MongoDB ins
             some-db
     > db.getName();
     some-db
+```
 
 Both variables are required for a user to be created. If both are present then MongoDB will start with authentication enabled (mongod --auth).
 

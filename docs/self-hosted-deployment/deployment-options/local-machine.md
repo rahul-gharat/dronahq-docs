@@ -91,7 +91,7 @@ This variable specifies how do yo want to access DronaHQ.
 **Example 1**. If you are using DronaHQ on local machine.
 
 ```shell
-BULDER_URL='http://localhost'
+BUILDER_URL='http://localhost'
 ```
 **Example 2**. If you have configured DronaHQ on server and want to use it with server's public IP address.
 
