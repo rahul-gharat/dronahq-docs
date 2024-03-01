@@ -56,6 +56,18 @@ To connect your apps on DronaHQ with Git, you must have a GitHub account, or any
   <figcaption align = "center"><i>Configuration window</i></figcaption>
 </figure>
 
+:::note
+
+You can also toggle-on the `Use Existing Key`, this will allow you to select from existing keys. After toggling it on, you'll have a dropdown menu to select from existing keys stored on your system. This is particularly useful if you already have SSH keys generated and want to use one of them for this configuration. Select the appropriate key from the dropdown menu, and it will be used for authentication purposes when interacting with the specified SSH URL.
+
+<figure>
+  <Thumbnail src="/img/git-sync/use-existing.png" alt="Use from existing SSH key." />
+  <figcaption align = "center"><i>Use from existing SSH key.</i></figcaption>
+</figure>
+
+:::
+
+
 6. The SSH key, which serves as an authentication mechanism, will be generated on the screen. Be sure to copy the SSH key.
 
 7. Add the SSH key to your Git repository following the steps outlined in the [Adding SSH Keys to Git Service Accounts](./#adding-ssh-keys-to-git-service-accounts) guide. Afterward, return to the app in the DronaHQ and click `Test & Save Connection`.
