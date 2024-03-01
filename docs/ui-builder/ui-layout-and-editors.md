@@ -22,8 +22,8 @@ You can switch between Advance Editor Mode and Freeflow Editor Mode only when th
 The Freeflow Editor provides users with a straightforward approach to designing screens. Controls can be placed on the screen in a grid-like fashion, making it easy to align and position elements precisely. The editor's grid is composed of 24 columns, enabling users to create responsive and organized layouts. Each row has a fixed height of 10 pixels, maintaining consistency throughout the design.
 
 <figure>
-  <Thumbnail src="/img/ui-builder/ui-layout-editor/freeflow.jpeg" alt="Freeflowd Editor"/>
-  <figcaption align = "center">Freeflowd Editor</figcaption>
+  <Thumbnail src="/img/ui-builder/ui-layout-editor/freeflow.jpeg" alt="Freeflow Editor"/>
+  <figcaption align = "center">Freeflow Editor</figcaption>
 </figure>
 
 
