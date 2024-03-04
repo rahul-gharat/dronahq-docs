@@ -21,10 +21,20 @@ You can switch between Advance Editor Mode and Freeflow Editor Mode only when th
 
 The Freeflow Editor provides users with a straightforward approach to designing screens. Controls can be placed on the screen in a grid-like fashion, making it easy to align and position elements precisely. The editor's grid is composed of 24 columns, enabling users to create responsive and organized layouts. Each row has a fixed height of 10 pixels, maintaining consistency throughout the design.
 
-<figure>
-  <Thumbnail src="/img/ui-builder/ui-layout-editor/freeflow.jpeg" alt="Freeflow Editor"/>
-  <figcaption align = "center">Freeflow Editor</figcaption>
-</figure>
+
+
+<div style={{ position: 'relative', paddingBottom: 'calc(46.33333333333333% + 41px)', height: 0 }}>
+  <iframe
+    src="https://app.arcade.software/share/zHZ0S93YM18h2lfm61wH"
+    title="Freeflow Editor"
+    frameBorder="0"
+    loading="lazy"
+    allowFullScreen
+    style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', colorScheme: 'light' }}
+    webkitallowfullscreen
+    mozallowfullscreen
+  ></iframe>
+</div>
 
 
 #### Key Features:
@@ -39,10 +49,20 @@ The Freeflow Editor provides users with a straightforward approach to designing 
 
 The Advanced Editor empowers users to create more complex and flexible screen layouts. Controls are positioned relative to each other, allowing for controlled placement of the layout of the control. The editor comes equipped with advanced layout controls, such as Layout, Rows, and Columns, which enhance the user's ability to design intricate and responsive screens.
 
-<figure>
-  <Thumbnail src="/img/ui-builder/ui-layout-editor/advance.jpeg" alt="Advanced Editor"/>
-  <figcaption align = "center">Advanced Editor</figcaption>
-</figure>
+
+<div style={{ position: 'relative', paddingBottom: 'calc(46.33333333333333% + 41px)', height: 0 }}>
+  <iframe
+    src="https://app.arcade.software/share/2V52vPMxGEIBxKHdAFCD"
+    title="Advanced Editor"
+    frameBorder="0"
+    loading="lazy"
+    allowFullScreen
+    style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', colorScheme: 'light' }}
+    webkitallowfullscreen
+    mozallowfullscreen
+  ></iframe>
+</div>
+
 
 #### Key Features
 
