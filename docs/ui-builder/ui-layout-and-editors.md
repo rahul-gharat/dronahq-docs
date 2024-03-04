@@ -3,9 +3,6 @@ sidebar_position: 2
 title: "UI Layout & editors"
 ---
 
-import Image from '@site/src/components/Image';
-import Thumbnail from '@site/src/components/Thumbnail';
-
 
 # UI Layout & editors
 
@@ -26,7 +23,6 @@ The Freeflow Editor provides users with a straightforward approach to designing 
 <div style={{ position: 'relative', paddingBottom: 'calc(46.33333333333333% + 41px)', height: 0 }}>
   <iframe
     src="https://app.arcade.software/share/zHZ0S93YM18h2lfm61wH"
-    title="Freeflow Editor"
     frameBorder="0"
     loading="lazy"
     allowFullScreen
