@@ -66,7 +66,7 @@ Make sure you have your connector configured. Go to the `table grid` control and
 
 Lets write our query here to perform pagination on data retrieval.
 
-Query: `SELECT * FROM author LIMIT {{limit}} OFFSET {{offset}}`
+Query: `SELECT * FROM author LIMIT {{tablegrid.PROPERTIES.LIMIT}} OFFSET {{tablegrid.PROPERTIES.OFFSET}}`
 
 <figure>
   <Thumbnail src="/img/building-apps-concepts/pagination-tablegrid/mysql.jpeg" alt="MySQL Query with pagination" />
