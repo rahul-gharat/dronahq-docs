@@ -88,9 +88,17 @@ Depending upon the screen type these properties are preconfigured, for example i
 
 Screen/Page is The Primary Screen type in DronaHQ. All Other screens are either overlaid over Screen/Page or either stick to it. Following are the configuration provided by the Screens/Page.
 
-<figure>
-  <Thumbnail src="/img/ui-builder/multiscreen-apps/screen.jpeg" alt="Screen Configuration" />
-</figure>
+<div style={{ position: 'relative', paddingBottom: 'calc(46.33333333333333% + 41px)', height: 0 }}>
+  <iframe
+    src="https://app.arcade.software/share/3fi3t33T7UjqEcl19Kis"
+    frameBorder="0"
+    loading="lazy"
+    allowFullScreen
+    style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', colorScheme: 'light' }}
+    webkitallowfullscreen
+    mozallowfullscreen
+  ></iframe>
+</div>
 
 | Attribute | Description |
 | ---------------| -------------| 
@@ -111,9 +119,17 @@ Only Screen/Page can be made as the home screen any other screen as the home scr
 
 This Screen type allows user to configure their own popup screen with their custom layout and UI. following are the different configurations available in the popup type screen.
 
-<figure>
-  <Thumbnail src="/img/ui-builder/multiscreen-apps/popup.jpeg" alt="Screen Configuration" />
-</figure>
+<div style={{ position: 'relative', paddingBottom: 'calc(46.33333333333333% + 41px)', height: 0 }}>
+  <iframe
+    src="https://app.arcade.software/share/qEKxnnDmvh547SAqRxdW"
+    frameBorder="0"
+    loading="lazy"
+    allowFullScreen
+    style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', colorScheme: 'light' }}
+    webkitallowfullscreen
+    mozallowfullscreen
+  ></iframe>
+</div>
 
 | Attribute | Description |
 | ---------------| -------------| 
@@ -134,9 +150,17 @@ The height for the popup screen is derived from the controls placed inside the p
 
 Menu Screen type allows users to configure menu screens for their application, only menu screen can be used as a sticky menu for screen/page type screens. Following are the configurations provided by the menu type screen.
 
-<figure>
-  <Thumbnail src="/img/ui-builder/multiscreen-apps/menu.jpeg" alt="Screen Configuration" />
-</figure>
+<div style={{ position: 'relative', paddingBottom: 'calc(46.33333333333333% + 41px)', height: 0 }}>
+  <iframe
+    src="https://app.arcade.software/share/2HidA2r25Q0BKQpK8FJa"
+    frameBorder="0"
+    loading="lazy"
+    allowFullScreen
+    style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', colorScheme: 'light' }}
+    webkitallowfullscreen
+    mozallowfullscreen
+  ></iframe>
+</div>
 
 | Attribute | Description |
 | ---------------| -------------| 
@@ -151,9 +175,17 @@ Menu Screen type allows users to configure menu screens for their application, o
 
 Try-type screens allow you to create sidebars in your application, tray-type screens are displayed as an overlay on all the other screens. Following are the configurations available in the tray-type screen.
 
-<figure>
-  <Thumbnail src="/img/ui-builder/multiscreen-apps/tray.jpeg" alt="Screen Configuration" />
-</figure>
+<div style={{ position: 'relative', paddingBottom: 'calc(46.33333333333333% + 41px)', height: 0 }}>
+  <iframe
+    src="https://app.arcade.software/share/EXsz7ZbiQoAMHTykClug"
+    frameBorder="0"
+    loading="lazy"
+    allowFullScreen
+    style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', colorScheme: 'light' }}
+    webkitallowfullscreen
+    mozallowfullscreen
+  ></iframe>
+</div>
 
 | Attribute | Description |
 | ---------------| -------------| 
@@ -172,9 +204,17 @@ Try-type screens allow you to create sidebars in your application, tray-type scr
 
 Header type screen is used in a very special use case in which if you want to use a single header screen throughout the application then create a header screen and use it as a sticky header in all the screen/page type screens.
 
-<figure>
-  <Thumbnail src="/img/ui-builder/multiscreen-apps/header.jpeg" alt="Screen Configuration" />
-</figure>
+<div style={{ position: 'relative', paddingBottom: 'calc(46.33333333333333% + 41px)', height: 0 }}>
+  <iframe
+    src="https://app.arcade.software/share/VN3jMai5gSN7YaiyIcm5"
+    frameBorder="0"
+    loading="lazy"
+    allowFullScreen
+    style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', colorScheme: 'light' }}
+    webkitallowfullscreen
+    mozallowfullscreen
+  ></iframe>
+</div>
 
 | Attribute | Description |
 | ---------------| -------------| 
