@@ -58,12 +58,28 @@ To connect your apps on DronaHQ with Git, you must have a GitHub account, or any
 
 :::note
 
-You can also toggle-on the `Use Existing Key`, this will allow you to select from existing keys. After toggling it on, you'll have a dropdown menu to select from existing keys stored on your system. This is particularly useful if you already have SSH keys generated and want to use one of them for this configuration. Select the appropriate key from the dropdown menu, and it will be used for authentication purposes when interacting with the specified SSH URL.
+You can toggle-on the `Use Existing Key`, this will allow you to select from existing keys. After toggling it on, you'll have a dropdown menu to select from existing keys stored on your system. This is particularly useful if you already have SSH keys generated and want to use one of them for this configuration. Select the appropriate key from the dropdown menu, and it will be used for authentication purposes when interacting with the specified SSH URL.
 
 <figure>
   <Thumbnail src="/img/git-sync/use-existing.png" alt="Use from existing SSH key." />
   <figcaption align = "center"><i>Use from existing SSH key.</i></figcaption>
 </figure>
+
+
+
+Alternatively, toggle-on `Manually enter key` to manually generate and use SSH key pairs.
+
+<figure>
+  <Thumbnail src="/img/git-sync/manualenter.png" alt="Configuration window" />
+</figure>
+
+To generate a key pair, run the command `ssh-keygen -t ed25519 -C "xyz@email.com"`.
+
+<figure>
+  <Thumbnail src="/img/git-sync/generate.png" alt="Configuration window" />
+</figure>
+
+Copy and enter the private key (mandatory) and public key (optional) in the shown fields.
 
 :::
 
