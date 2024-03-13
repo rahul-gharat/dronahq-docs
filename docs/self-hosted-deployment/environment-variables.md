@@ -191,7 +191,7 @@ This is your Bucket, in which you want to store you files.
 #### `AWS_S3_REGION`
 This is your AWS region in which bucked it hosted/created.
 
-#### `AWS_S3_ACCESS_KEY_ID`, `AWS_S3_ACCESS_KEY_SECRET`
+#### `AWS_S3_ACCESS_KEY_ID`, `AWS_S3_SECRET_ACCESS_KEY`
 `AccessKeyId` and `AccessKeySecret` is required to access your bucket and objects inside bucket.
 It is recommended that you provide complete read/write access of your bucket to this key pair.
 
