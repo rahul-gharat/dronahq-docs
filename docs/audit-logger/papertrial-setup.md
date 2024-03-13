@@ -54,6 +54,7 @@ To configure Papertrail as your audit logger, follow these steps:
 5. Once the integration is successful, you will see a `Logger Initialized` message.
 
 <figure>
+  <Thumbnail src="/img/audit-logger/papertrail-setup.png" alt="Papertrail Setup" width='100%'/>
   <Thumbnail src="/img/audit-logger/audit-logger-setup.png" alt="Audit Logger Setup" width='100%'/>
   <figcaption align="center"><i>Audit Logger Setup</i></figcaption>
 </figure>
