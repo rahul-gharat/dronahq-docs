@@ -22,7 +22,7 @@ The Freeflow Editor provides users with a straightforward approach to designing 
 
 <div style={{ position: 'relative', paddingBottom: 'calc(46.33333333333333% + 41px)', height: 0 }}>
   <iframe
-    src="https://app.arcade.software/share/zHZ0S93YM18h2lfm61wH"
+    src="https://demo.arcade.software/zHZ0S93YM18h2lfm61wH?embed&show_copy_link=true"
     frameBorder="0"
     loading="lazy"
     allowFullScreen
@@ -48,8 +48,7 @@ The Advanced Editor empowers users to create more complex and flexible screen la
 
 <div style={{ position: 'relative', paddingBottom: 'calc(46.33333333333333% + 41px)', height: 0 }}>
   <iframe
-    src="https://app.arcade.software/share/2V52vPMxGEIBxKHdAFCD"
-    title="Advanced Editor"
+    src="https://demo.arcade.software/2V52vPMxGEIBxKHdAFCD?embed&show_copy_link=true"
     frameBorder="0"
     loading="lazy"
     allowFullScreen

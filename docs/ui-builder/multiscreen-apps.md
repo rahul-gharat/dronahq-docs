@@ -90,7 +90,7 @@ Screen/Page is The Primary Screen type in DronaHQ. All Other screens are either 
 
 <div style={{ position: 'relative', paddingBottom: 'calc(46.33333333333333% + 41px)', height: 0 }}>
   <iframe
-    src="https://app.arcade.software/share/3fi3t33T7UjqEcl19Kis"
+    src="https://demo.arcade.software/3fi3t33T7UjqEcl19Kis?embed&show_copy_link=true"
     frameBorder="0"
     loading="lazy"
     allowFullScreen
@@ -121,7 +121,7 @@ This Screen type allows user to configure their own popup screen with their cust
 
 <div style={{ position: 'relative', paddingBottom: 'calc(46.33333333333333% + 41px)', height: 0 }}>
   <iframe
-    src="https://app.arcade.software/share/qEKxnnDmvh547SAqRxdW"
+    src="https://demo.arcade.software/qEKxnnDmvh547SAqRxdW?embed&show_copy_link=true"
     frameBorder="0"
     loading="lazy"
     allowFullScreen
@@ -152,7 +152,7 @@ Menu Screen type allows users to configure menu screens for their application, o
 
 <div style={{ position: 'relative', paddingBottom: 'calc(46.33333333333333% + 41px)', height: 0 }}>
   <iframe
-    src="https://app.arcade.software/share/2HidA2r25Q0BKQpK8FJa"
+    src="https://demo.arcade.software/2HidA2r25Q0BKQpK8FJa?embed&show_copy_link=true"
     frameBorder="0"
     loading="lazy"
     allowFullScreen
@@ -177,7 +177,7 @@ Try-type screens allow you to create sidebars in your application, tray-type scr
 
 <div style={{ position: 'relative', paddingBottom: 'calc(46.33333333333333% + 41px)', height: 0 }}>
   <iframe
-    src="https://app.arcade.software/share/EXsz7ZbiQoAMHTykClug"
+    src="https://demo.arcade.software/EXsz7ZbiQoAMHTykClug?embed&show_copy_link=true"
     frameBorder="0"
     loading="lazy"
     allowFullScreen
@@ -206,7 +206,7 @@ Header type screen is used in a very special use case in which if you want to us
 
 <div style={{ position: 'relative', paddingBottom: 'calc(46.33333333333333% + 41px)', height: 0 }}>
   <iframe
-    src="https://app.arcade.software/share/VN3jMai5gSN7YaiyIcm5"
+    src="https://demo.arcade.software/VN3jMai5gSN7YaiyIcm5?embed&show_copy_link=true"
     frameBorder="0"
     loading="lazy"
     allowFullScreen
