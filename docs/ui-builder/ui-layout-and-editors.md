@@ -31,6 +31,7 @@ The Freeflow Editor provides users with a straightforward approach to designing 
     mozallowfullscreen
   ></iframe>
 </div>
+<br/>
 
 
 #### Key Features:
@@ -57,6 +58,7 @@ The Advanced Editor empowers users to create more complex and flexible screen la
     mozallowfullscreen
   ></iframe>
 </div>
+<br/>
 
 
 #### Key Features

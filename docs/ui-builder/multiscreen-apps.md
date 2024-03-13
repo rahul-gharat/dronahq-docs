@@ -90,7 +90,7 @@ Screen/Page is The Primary Screen type in DronaHQ. All Other screens are either 
 
 <div style={{ position: 'relative', paddingBottom: 'calc(46.33333333333333% + 41px)', height: 0 }}>
   <iframe
-    src="https://demo.arcade.software/3fi3t33T7UjqEcl19Kis?embed&show_copy_link=true"
+    src="https://demo.arcade.software/3fi3t33T7UjqEcl19Kis?embed"
     frameBorder="0"
     loading="lazy"
     allowFullScreen
@@ -99,6 +99,7 @@ Screen/Page is The Primary Screen type in DronaHQ. All Other screens are either 
     mozallowfullscreen
   ></iframe>
 </div>
+<br/>
 
 | Attribute | Description |
 | ---------------| -------------| 
@@ -130,6 +131,7 @@ This Screen type allows user to configure their own popup screen with their cust
     mozallowfullscreen
   ></iframe>
 </div>
+<br/>
 
 | Attribute | Description |
 | ---------------| -------------| 
@@ -161,6 +163,7 @@ Menu Screen type allows users to configure menu screens for their application, o
     mozallowfullscreen
   ></iframe>
 </div>
+<br/>
 
 | Attribute | Description |
 | ---------------| -------------| 
@@ -186,6 +189,7 @@ Try-type screens allow you to create sidebars in your application, tray-type scr
     mozallowfullscreen
   ></iframe>
 </div>
+<br/>
 
 | Attribute | Description |
 | ---------------| -------------| 
@@ -215,6 +219,7 @@ Header type screen is used in a very special use case in which if you want to us
     mozallowfullscreen
   ></iframe>
 </div>
+<br/>
 
 | Attribute | Description |
 | ---------------| -------------| 
