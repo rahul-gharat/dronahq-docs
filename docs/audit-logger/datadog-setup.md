@@ -52,6 +52,7 @@ To get started with Datadog integration, follow these steps:
 6. Once the integration is successful, you will see a `Logger Initialized` message.
 
 <figure>
+  <Thumbnail src="/img/audit-logger/datadog-setup.png" alt="Datadog Setup" width='100%'/>
   <Thumbnail src="/img/audit-logger/audit-logger-setup.png" alt="Audit Logger Setup" width='100%'/>
   <figcaption align = "center"><i>Audit Logger Setup</i></figcaption>
 </figure>
