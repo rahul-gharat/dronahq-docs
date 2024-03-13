@@ -79,7 +79,7 @@ If you are using Docker container for mysql, then you should set these variables
 
 if you are using RDS or any other managed MySQL service then you can set variables accordingly.
 
-### Connectivity to MySQL (for Audit Logs - optional)
+<!-- ### Connectivity to MySQL (for Audit Logs - optional)
 #### `AUDIT_LOG_MYSQL_HOST`, `AUDIT_LOG_MYSQL_PORT`, `AUDIT_LOG_MYSQL_USER`, `AUDIT_LOG_MYSQL_PASSWORD`
 
 This are optional variables. If not set, DronaHQ will use same credentials you provided in above variables.
@@ -91,7 +91,7 @@ If you are using Docker container for mysql, then you should set these variables
     AUDIT_LOG_MYSQL_PASSWORD='<password>'
     AUDIT_LOG_MYSQL_PORT='3306'
 
-if you are using RDS or any other managed MySQL service then you can set variables accordingly.
+if you are using RDS or any other managed MySQL service then you can set variables accordingly. -->
 
 ## Connectivity to MongoDB
 #### `MONGODB_HOST`, `MONGODB_PORT`, `MONGODB_USER`, `MONGODB_PASSWORD`
