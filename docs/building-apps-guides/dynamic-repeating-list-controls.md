@@ -11,6 +11,11 @@ import Image from '@site/src/components/Image';
 ## Overview
 DronaHQ's List Repeat Control is a powerful feature that allows users to create dynamic repeating lists of control within their applications. This functionality enables users to generate lists of items with varying properties, quantities, or data dynamically. It is particularly useful in scenarios where users need to manage multiple items, such as to-do lists, shopping lists.
 
+<figure>
+  <Thumbnail src="/img/building-apps-guides/list-repeat/list-repeat.jpeg" alt="Adding new screen popup" />
+  <figcaption align = "center"><i>Adding new screen popup</i></figcaption>
+</figure>
+
 :::info
 List repeat control has some restrictions on controls that can be added to it. we can drop input or controls that are created using `Control Designer`. It is most preferred for controls created using `Control Designer`.
 :::
@@ -41,6 +46,19 @@ List repeat control has some restrictions on controls that can be added to it. w
 
 ### Responsive Design
 - The List Repeat Control is designed to be responsive, ensuring a consistent user experience across various devices.
+
+<div style={{ position: 'relative', paddingBottom: 'calc(46.33333333333333% + 41px)', height: 0 }}>
+  <iframe
+    src="https://demo.arcade.software/8yQ2GvV6JfX4pBW5qkC6?embed&show_copy_link=true"
+    frameBorder="0"
+    loading="lazy"
+    allowFullScreen
+    style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', colorScheme: 'light' }}
+    webkitallowfullscreen
+    mozallowfullscreen
+  ></iframe>
+</div>
+<br/>
 
 ## Customizations in List repeat control
 
