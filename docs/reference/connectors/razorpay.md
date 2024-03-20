@@ -31,9 +31,10 @@ After successfully configuring and saving the connector settings, you can easily
 
 | Action                    | Description                                                        |
 |---------------------------|--------------------------------------------------------------------|
+| Create Payment Link       | Generate a payment link for collecting payment.             |
 | List All Plans            | View all available plans for subscription.                         |
 | Create Subscription Link  | Generate a subscription link to sign up for a plan.                |
-| Subscribe to a Plan       | Initiate the subscription process for a selected plan.             |
+
 
 
 ## Using Razorpay Connector
