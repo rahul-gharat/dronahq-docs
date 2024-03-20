@@ -22,12 +22,9 @@ title: File Storage Management
 
 The File Storage interface offers various options for uploading files and folders:
 
-- New Folder: Users can create a new folder directly within the interface. Selecting this option prompts users to enter
-  a desired name for the folder.
-- Add File(s): This option allows users to upload individual or multiple files simultaneously. Selecting this option
-  opens a pop-up window where users can browse and select files from their local systems.
-- Add Folder: Similar to uploading files, users can also upload entire folders. Selecting this option opens a pop-up
-  window where users can choose the desired folder from their local systems.
+- New Folder: Users can create a new folder directly within the interface. Selecting this option prompts users to enter a desired name for the folder.
+- Add File(s): This option allows users to upload individual or multiple files simultaneously. Selecting this option opens a pop-up window where users can browse and select files from their local systems.
+- Add Folder: Similar to uploading files, users can also upload entire folders. Selecting this option opens a pop-up window where users can choose the desired folder from their local systems.
 
 :::tip
 Users can create folders within other folders, enabling hierarchical organization of files and data.
