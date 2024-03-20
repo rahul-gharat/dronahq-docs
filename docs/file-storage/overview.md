@@ -33,7 +33,7 @@ You can use this feature for free by activating trial license which offers 1 GB 
   ></iframe>
 </div>
 
-## File Storage Dashoard Layout
+## File Storage Dashboard Layout
 
 The DronaHQ File Storage dashboard is a streamlined command center for keeping your data organized and accessible. 
 
