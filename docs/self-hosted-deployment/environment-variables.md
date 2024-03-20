@@ -364,6 +364,52 @@ DronaHQ runs following script while initializing container to create application
         }]
     })
 
+## Global GIT Sync configuration
+
+Below are the environment variables to be configured when you want to enable [Git Sync globally](/git-sync-global).
+
+### GIT_SYNC_IS_GLOBAL
+
+This variable specifies if you want to enable Global Git Sync feature.
+
+By default it is set to `false`, GIT Sync Global feature is disabled
+If set `true`, GIT Sync Global feature is enabled and you need to configure git repo and other configuration variables listed below 
+
+    GIT_SYNC_IS_GLOBAL='true'
+
+### GIT_SYNC_SSH_REPO_URL
+
+SSH Url of the Git Repo which you want all your apps to be checked into. Mandatory if GIT_SYNC_IS_GLOBAL is set to true.
+
+    GIT_SYNC_SSH_REPO_URL='git@github.com:UserName/RepoName.git'
+
+
+### GIT_SYNC_BRANCH_NAME
+
+Branch name of the above repo url which this instance should be synced with. For production instance, ideally use `main` branch. For development instance, you can create `dev` branch and so on. Mandatory if GIT_SYNC_IS_GLOBAL is set to true.
+
+    GIT_SYNC_BRANCH_NAME='main'
+
+
+### GIT_SYNC_AUTH_SSH_KEY_FRIENDLY_NAME
+
+Friendly Key name you have used for creating SSH key from SSH Key management. The public key of this friendly key should be added in your GIT repo with read/write rights to above GIT Sync repo. Mandatory if GIT_SYNC_IS_GLOBAL is set to true.
+
+    GIT_SYNC_AUTH_SSH_KEY_FRIENDLY_NAME='MyGitSyncKey'
+
+
+### GIT_SYNC_IS_AUTO_SAVE
+
+Enable this to automatically save your app changes to your GIT repo.
+
+    GIT_SYNC_IS_AUTO_SAVE='true'
+
+### GIT_SYNC_IS_LOCK_APP_EDIT
+
+Enable this to disable editing of you app that is added to GIT. Ideally, you should set to `true` for your production instance and set it to `false` for your development instance.
+
+    GIT_SYNC_IS_LOCK_APP_EDIT='false'
+
 ## Other optional variables
 
 #### `SECRET_API_TOKEN_KEY`
