@@ -14,7 +14,14 @@ Before creating your own custom control, please have a look at DronaHQ provided 
 
 :::
 
-When user wants to create a custom control which will allow him to write his own code and should work with other components as well which isn't already available in our control and should be capable of doing the following tasks.
+
+Custom control allows you to design your own UI and have your own Actions defined. Creating Custom control requires following things -
+1. [Define BIND Data for your control]((#define-input-type))
+1. [Define Input type to your control]
+1. Write HTML Code for your control.
+1. An interface for passing data back and forth between the DronaHQ app and the custom control code.
+1. Defining your own Custom Actions
+
 
 - [Define Input Type](#define-input-type)
 - [Define Output Type](#define-output-type)
