@@ -6,15 +6,16 @@ sidebar_position: 50
 
 # Helper Methods
 
-`HELPER` methods can help with data manipulation and transformation operations. These methods can be used to manipulate or tranform data in String, Array and Object formats.
+:::info
+Helper methods are currently available only on Self-Hosted version > 2.4.2
+:::
+
+`HELPER` methods can help with data manipulation and transformation operations. These methods can be used to manipulate or transform data in String, Array and Object formats.
 
 ## TRANSFORMDATATOARRAY()
 
 `HELPER.TRANSFORMDATATOARRAY()` method can be used to transform an object to an array of objects. This method is useful when the data object has key-value pairs that represent the columns of a table. 
 
-:::info
-Please make sure every key's value array should have the same number of elements.
-:::
 
 <span style={{fontSize: 24}}>Usage</span>
 
@@ -44,32 +45,34 @@ HELPER.TRANSFORMDATATOARRAY({
 
 ## TRANSFORMDATATOOBJECT()
 
-`HELPER.TRANSFORMDATATOOBJECT()` method can be used to transform an array to an object. This method is useful when the data array is an *array of objects* where each object has same set of keys.
+`HELPER.TRANSFORMDATATOOBJECT()` method can be used to transform an array to an object. This method is useful when the data is an *array of objects* where each object has same set of keys.
 
 <span style={{fontSize: 24}}>Usage</span>
 
 ```
-HELPER.TRANSFORMDATATOARRAY(inputObject);
+HELPER.TRANSFORMDATATOOBJECT(inputArray);
 ```
 
 <span style={{fontSize: 24}}>Example</span>
 
 ```
-HELPER.TRANSFORMDATATOARRAY({
-    id: [1, 2, 3],
-    name: ['Jack', 'James', 'John'],
-    location: ['New York', 'London', 'Sydney']
-});
+HELPER.TRANSFORMDATATOOBJECT(
+    [
+        { id: 1, name: 'Jack', location: 'New york' },
+        { id: 2, name: 'James', location: 'London' },
+        { id: 3, name: 'John' , location: 'Sydney' }
+    ]
+);
 ```
 
 <span style={{fontSize: 24}}>Result</span>
 
 ```
-[
-    { id: 1, name: 'Jack', location: 'New york' },
-    { id: 2, name: 'James', location: 'London' },
-    { id: 3, name: 'John' , location: 'Sydney' }
-]
+{
+    id: [1, 2, 3],
+    name: ['Jack', 'James', 'John'],
+    location: ['New York', 'London', 'Sydney']
+}
 ```
 
 ## INTERCHANGE()

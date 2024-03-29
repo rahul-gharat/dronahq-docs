@@ -4,14 +4,15 @@ title: Utility Methods
 sidebar_position: 49
 ---
 
+
 # Utility Methods
+
+:::info
+Utility methods are currently available only on Self-Hosted version > 2.4.2
+:::
 
 
 `UTILITY` is a Javascript API provided by DronaHQ to perform various actions directly from your javascript code. It enables you to use actions which are present in actionflow builder directly from the code giving you more control on the behaviour of your application. 
-
-:::info
-Utility methods should only be used inside Custom Javascript / JS Code.
-:::
 
 
 ## TOAST()
@@ -311,7 +312,7 @@ UTILITY.NAVIGATE(screenId,transition,resetTargetPage,withValidation);
 
 | Parameter   | Accepts | Possible values                                   |
 |-------------|---------|---------------------------------------------------|
-| `screenId`| string | 'Screen Id' present in right properties panel of page|
+| `screenId`| string | 'Screen Id' present in properties panel on the builder  |
 | `transition`| string | 0 or 1 in string value                             |
 | `resetTargetPage`| boolean | true/false                                   |
 | `withValidation`| boolean | true/false                                    |
@@ -324,7 +325,7 @@ UTILITY.NAVIGATE('screen-2','1',false,false);
 
 ## CONFETTI()
 
-`UTILITY.CONFETTI()` method can be used to trigger conffetti action.
+`UTILITY.CONFETTI()` method can be used to trigger confetti action.
 
 <span style={{fontSize: 24}}>Usage</span>
 

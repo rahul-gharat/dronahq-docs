@@ -12,6 +12,10 @@ import ArrowRight from '@site/static/icons/arrow_right.svg';
 # Global Methods
 The following Global Methods are provided by DronaHQ which can be used in the Javascript Code:
 
+:::info
+Global methods are currently available only on Self-Hosted version > 2.4.2
+:::
+
 ## UTILITY 
 
 `UTILITY` can be used to perform various actions directly from your JavaScript code. It enables you to use actions present in ActionFlow Builder directly from the code, giving you more control over the behavior of your application.
@@ -23,6 +27,10 @@ The following Global Methods are provided by DronaHQ which can be used in the Ja
 ## HELPER 
 
 `HELPER` methods can help with data manipulation and transformation operations. These methods can be used to manipulate or transform data in String, Array, and Object formats.
+
+:::info
+Global methods should only be used inside Custom Javascript / JS Code.
+:::
 
 <div className="gallery">
     <div className="card">

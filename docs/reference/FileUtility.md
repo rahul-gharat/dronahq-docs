@@ -6,50 +6,25 @@ sidebar_position: 50
 
 # File Utility Methods
 
+:::info
+File Utility methods are currently available only on Self-Hosted version > 2.4.2
+:::
+
 `FILEUTILITY` contains methods which are helpful for parsing data from file formats like CSV and JSON. These methods return the parsed data in JSON format which is suitable to be used with controls on the UI builder.
 
-## PARSECSV()
+## FILEPARSER()
 
-`FILEUTILITY.PARSECSV()` method can be used to parse csv files and get output into JSON format. This method returns a `Promise`.
-
-<span style={{fontSize: 24}}>Usage</span>
-
-```
-FILEUTILITY.PARSECSV(url);
-```
-
-<span style={{fontSize: 24}}>Parameters</span>
-
-| Parameter   | Accepts | Possible values                                   |
-|-------------|---------|---------------------------------------------------|
-| `url`      | string  | online csv file link in string format              |
-
-
-<span style={{fontSize: 24}}>Example</span>
-
-```
-await FILEUTILITY.PARSECSV("https://dronamobilepublic.s3.amazonaws.com/DRONA5_Team19020/content/app/images/UiFhDLxjT5.csv");
-```
-
-## PARSEJSON()
-
-`FILEUTILITY.PARSEJSON()` method can be used to parse json files and get the json data. This method returns a `Promise`.
+`FILEUTILITY.FILEPARSER` method can be used to parse files of multiple different formats and get output into JSON format. This method returns a `Promise`. The accepted file formats include `csv` , `xml` and `json`.
 
 <span style={{fontSize: 24}}>Usage</span>
 
 ```
-FILEUTILITY.PARSEJSON(url);
+FILEUTILITY.FILEPARSER(url);
 ```
-
-<span style={{fontSize: 24}}>Parameters</span>
-
-| Parameter   | Accepts | Possible values                                   |
-|-------------|---------|---------------------------------------------------|
-| `url`      | string  | online json file link in string format             |
-
 
 <span style={{fontSize: 24}}>Example</span>
 
 ```
-await FILEUTILITY.PARSEJSON("https://dronamobilepublic.s3.amazonaws.com/DRONA5_Team19020/content/app/images/9bKKOHYvD6.json");
+await FILEUTILITY.FILEPARSER("https://dronamobilepublic.s3.amazonaws.com/DRONA5_Team19020/content/app/images/UiFhDLxjT5.csv");
 ```
+
