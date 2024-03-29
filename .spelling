@@ -1400,3 +1400,17 @@ GIT_SYNC_AUTH_SSH_KEY_FRIENDLY_NAME
 GIT_SYNC_IS_AUTO_SAVE
 GIT_SYNC_IS_LOCK_APP_EDIT
 ReadFile
+cdn
+CI.init
+CI.returnValue
+CI.triggerChange
+CI.showError
+CI.clearError
+CI.triggerAction
+actionName
+focusout
+CI.runValidationResult
+booleanValue
+runValidation
+CI.runValidation
+
