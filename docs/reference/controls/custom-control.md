@@ -7,7 +7,12 @@ import Image from '@site/src/components/Image';
 import VersionedLink from '@site/src/components/VersionedLink';
 import Thumbnail from '@site/src/components/Thumbnail';
 
-# Why we need?
+# Custom Control
+
+:::info Please Note
+Before creating your own custom control, please have a look at DronaHQ provided [Controls Library](https://www.dronahq.com/controls/) that you can readily use.
+
+:::
 
 When user wants to create a custom control which will allow him to write his own code and should work with other components as well which isn't already available in our control and should be capable of doing the following tasks.
 
