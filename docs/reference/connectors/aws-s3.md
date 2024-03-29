@@ -55,6 +55,9 @@ After successfully configuring and saving the connector settings, you can easily
 | ListObjects       | List objects (files) within a specified S3 bucket, along with their details.                        |
 | DeleteObjects     | Delete multiple objects from an S3 bucket using their keys.                                         |
 | CopyObject        | Copy an object from one S3 bucket or location to another, retaining metadata and access permissions. |
+| ReadFile        | Read contents from specified file from s3 bucket using their key. For binary file it returns base64 value. |
+| DownloadFile        | Downloads the specified file from s3 bucket using their key. This works in actionflow only by keeping Download as File toggle on. |
+
 
 ## Using AWS S3 connector
 
@@ -90,4 +93,24 @@ Let us assume that we have a form where we select the Bucket name, the folder na
 
 <figure>
   <Thumbnail src="/img/reference/connectors/awss3/res.jpeg" alt="Listing Objects" />
+</figure>
+
+### Downloading file from the bucket
+
+Let us assume that we have a form where we specify the Bucket name, file key. Let us add an action button that triggers the action flow to download file.
+
+1. On the `button_click` event of the action button, add the `Server-side action > AWS S3 connector` and choose the action `DownloadFile`.
+
+2. Select the Connected account and click Continue.
+
+3. Provide Bucket name, add the folder name (which is optional), and file key. Click `Continue`.
+
+<figure>
+  <Thumbnail src="/img/reference/connectors/awss3/downloadFileDetails.png" alt="Download File" />
+</figure>
+
+4. Turn Download as File toggle on and click on finish.
+
+<figure>
+  <Thumbnail src="/img/reference/connectors/awss3/downloadFile.png" alt="Download as a File toggle" />
 </figure>
