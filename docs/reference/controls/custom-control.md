@@ -305,7 +305,3 @@ Below are the limitations currently when building your Custom Control -
 1. You can not trigger other control's/screen's Events.
 1. You can not invoke DronaHQ JS Objects directly in your html code.
 1. You can not use THEME variables for your custom control.
-
-## Constraints
-
-1. **CI** is the only interface that your custom control can use to interact with other controls and DronaHQ feature..
