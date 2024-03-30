@@ -19,13 +19,13 @@ Before creating your own custom control, please have a look at DronaHQ provided 
 ## Steps
 
 Custom control allows you to design your own UI and have your own Actions defined. Creating Custom control requires following things -
-1. [An interface for passing data back and forth between the DronaHQ app and the custom control code.](#dronahq-control-interface)
+1. [An interface for passing data back and forth between the DronaHQ app and the custom control code.](#dronahq-control-interface-ci)
 1. [Define BIND Data for your control](#bind-data-to-control)
 1. [Define Input type to your control](#define-input-type)
 1. [Write HTML Code for your control.](#write-html-code)
 1. [Defining your own Custom Events](#adding-custom-events)
 
-## DronaHQ Control Interface
+## DronaHQ Control Interface (CI)
 DronaHQ provides control interface for your custom control to pass data back and forth from your control. For this `CI` is the interface object that you need to call with methods listed below based on your needs.
 
 | Function           | Explanation      |
@@ -111,7 +111,7 @@ Input type defines whether your control has only single BIND data option or mult
 
 ## Write HTML Code
 
-In `property->Wrtie your code` section, you can put the HTML, CSS, and JavaScript code which handles the appearance and behavior of the custom control. DronaHQ places this code in an iFrame within your DronaHQ app.
+In `property->Write your code` section, you can put the HTML, CSS, and JavaScript code which handles the appearance and behavior of the custom control. DronaHQ places this code in an iFrame within your DronaHQ app.
 
 <figure>
   <Thumbnail src="/img/reference/controls/custom-control/html_code.png" alt="html code" />
@@ -194,7 +194,7 @@ In `property->Wrtie your code` section, you can put the HTML, CSS, and JavaScrip
   
   Here is the example of Sample Custom Component using React
 
-  ```[html,max-height=200]
+  ```html
   <html>
     <style>
         input[type=text] {
@@ -295,3 +295,17 @@ For triggering any event, you should call `CI.triggerAction("event_name");` , wh
   <Thumbnail src="/img/reference/controls/custom-control/custom-events-added.png" alt="Custom Events Added" />
   <figcaption align="center"><i>Custom Events Added</i></figcaption>
 </figure>
+
+## Limitations
+
+Below are the limitations currently when building your Custom Control -
+1. You can not directly run any DATAQUERY variable.
+1. You can not call DronaHQ Custom functions ([Fx formulas](/reference/fx-formulas), UTILITY, HELPER, DATAQUERY).
+1. You can not access other controls data, data query variable and [keywords](/reference/keywords) unless you pass it in DATA BIND section.
+1. You can not trigger other control's/screen's Events.
+1. You can not invoke DronaHQ JS Objects directly in your html code.
+1. You can not use THEME variables for your custom control.
+
+## Constraints
+
+1. **CI** is the only interface that your custom control can use to interact with other controls and DronaHQ feature..
