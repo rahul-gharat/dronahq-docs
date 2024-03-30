@@ -410,6 +410,12 @@ Enable this to disable editing of you app that is added to GIT. Ideally, you sho
 
     GIT_SYNC_IS_LOCK_APP_EDIT='false'
 
+### GIT_SYNC_CREATE_REPO_ON_APP_ADD
+
+Enable this to automatically add new apps to git. Ideally, you should set to `true` for your development instance if you want all apps to be automatically added to git and set it to `false` for your production instance. By default, it is set to `false`.
+
+    GIT_SYNC_CREATE_REPO_ON_APP_ADD='true'
+
 ## Other optional variables
 
 #### `SECRET_API_TOKEN_KEY`
