@@ -5,8 +5,8 @@ title: Git Sync (Deprecated)
 import Image from '@site/src/components/Image';
 import Thumbnail from '@site/src/components/Thumbnail';
 
-:::warning
-Git Sync feature with Single Git Repo for each App has been deprecated. It is recommended to use to [Git Sync Global](/git-sync-global) feature.
+:::caution DEPRECATED
+Git Sync feature with Single Git Repo for each App has been deprecated. It is recommended to use [Git Sync Global](/git-sync-global) feature.
 :::
 
 Git Sync enables you to effectively manage version control for your apps on DronaHQ by linking them to a Git hosting provider, like GitHub, GitLab, Bitbucket, and others. This integration simplifies the process of monitoring changes, facilitating rollbacks, and promoting collaborative work via git branches. Moreover, it allows for seamless connectivity to any app, whether it resides within the same account or another, enabling users to effortlessly transition between diverse environments.
