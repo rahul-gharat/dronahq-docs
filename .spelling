@@ -1415,3 +1415,6 @@ runValidation
 CI.runValidation
 GIT_SYNC_CREATE_REPO_ON_APP_ADD
 Gitlab
+screen_close
+app_open
+recurring_events
