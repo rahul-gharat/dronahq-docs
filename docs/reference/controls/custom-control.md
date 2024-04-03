@@ -145,7 +145,7 @@ In `property->Write your code` section, you can put the HTML, CSS, and JavaScrip
         <input id="in1" type="text" placeholder="Your name">
         <script>
             let input = document.getElementById('in1');
-            const fn = function (payload) {
+            const callback = function (payload) {
                 if (payload.type == "initComponent") {
                 }
                 if (payload.type == "setValue") {
@@ -164,7 +164,7 @@ In `property->Write your code` section, you can put the HTML, CSS, and JavaScrip
                     }
                 }
             }
-            CI.init(fn);
+            CI.init(callback);
             input.addEventListener("input", function (e) {
                 let errorMessages = [];
                 if (!isNaN(input.value)) {
@@ -222,7 +222,7 @@ In `property->Write your code` section, you can put the HTML, CSS, and JavaScrip
           const { useState } = React;
           const App = () => {
             const [inputValue, setInputValue] = useState('');
-            const fn = function (payload) {
+            const callback = function (payload) {
               if (payload.type == "setValue") {
                 setInputValue(payload.value);
               }
@@ -237,11 +237,11 @@ In `property->Write your code` section, you can put the HTML, CSS, and JavaScrip
                 }
               }
             };
-            CI.init(fn);
+            CI.init(callback);
             const handleInputChange = (e) => {
               setInputValue(e.target.value);
               let errorMessages = [];
-              if (!isNaN(input.value)) {
+              if (!isNaN(e.target.value)) {
                 errorMessages.push("Accepts strings only!");
               }
               if (e.target.value.includes('@')) {
