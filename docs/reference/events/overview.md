@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-title: "Exploring Application Events' guide"
+title: "Overview"
 ---
 
 

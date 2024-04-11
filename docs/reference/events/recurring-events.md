@@ -1,5 +1,5 @@
 ---
-sidebar_position: 43
+sidebar_position: 2
 title: Recurring Events
 ---
 import Image from "@site/src/components/Image";
