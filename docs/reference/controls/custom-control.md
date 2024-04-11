@@ -150,6 +150,14 @@ In `property->Write your code` section, you can put the HTML, CSS, and JavaScrip
                 }
                 if (payload.type == "setValue") {
                     input.value = payload.value;
+                    let errorList = [];
+                    if (input.value.includes('@')) {
+                      errorList.push("does not accept special character");
+                      CI.showError(errorList);
+                    }
+                    else{
+                      CI.clearError();
+                    }
                 }
                 if (payload.type == "getValue") {
                     let val = input.value;               
@@ -166,10 +174,7 @@ In `property->Write your code` section, you can put the HTML, CSS, and JavaScrip
             }
             CI.init(callback);
             input.addEventListener("input", function (e) {
-                let errorMessages = [];
-                if (!isNaN(input.value)) {
-                    errorMessages.push("Accepts strings only!");
-                }   
+                let errorMessages = []; 
                 if (input.value.includes('@')) {
                     errorMessages.push("Does not accept special character!");
                 }
@@ -196,7 +201,7 @@ In `property->Write your code` section, you can put the HTML, CSS, and JavaScrip
 
   ```html
   <html>
-    <style>
+      <style>
         input[type=text] {
           width: 100%;
           border: 2px solid #aaa;
@@ -216,10 +221,11 @@ In `property->Write your code` section, you can put the HTML, CSS, and JavaScrip
       <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin=""></script>
       <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin=""></script>
       <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-      </head><body>
+    <body>
         <div id="root"></div>
         <script type="text/babel">
-          const { useState } = React;
+          const { useState , useEffect} = React;
+
           const App = () => {
             const [inputValue, setInputValue] = useState('');
             const callback = function (payload) {
@@ -230,21 +236,22 @@ In `property->Write your code` section, you can put the HTML, CSS, and JavaScrip
                 CI.returnValue(inputValue);
               }
               if (payload.type == "runValidation") {
-                if (isNaN(inputValue) || inputValue.includes('@')) {
+                if (inputValue.includes('@')) {
                   CI.returnValidationResult(false);
                 } else {
                   CI.returnValidationResult(true);
                 }
               }
             };
-            CI.init(callback);
-            const handleInputChange = (e) => {
-              setInputValue(e.target.value);
+          CI.init(callback);
+          const handleInputChange = (e) => {
+              let value = e.target.value;
+              setInputValue(value);
+          };
+          useEffect(() => {
+              // This effect will execute after every state update of inputValue
               let errorMessages = [];
-              if (!isNaN(e.target.value)) {
-                errorMessages.push("Accepts strings only!");
-              }
-              if (e.target.value.includes('@')) {
+              if (inputValue.includes('@')) {
                 errorMessages.push("Does not accept special character!");
               }
               if (errorMessages.length > 0) {
@@ -258,7 +265,7 @@ In `property->Write your code` section, you can put the HTML, CSS, and JavaScrip
                 // TODO: You can add Custom Event named - on_change
                 CI.triggerAction("on_change");
               }
-            };
+          }, [inputValue]);
             return (
               <div>
                 <h1>Input</h1>
@@ -273,7 +280,6 @@ In `property->Write your code` section, you can put the HTML, CSS, and JavaScrip
           };
           ReactDOM.render(<App />, document.getElementById('root'));
         </script>
-      
     </body>
   </html>
   ```
