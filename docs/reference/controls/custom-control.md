@@ -16,14 +16,15 @@ Before creating your own custom control, please have a look at DronaHQ provided 
 
 :::
 
-## Steps
+## Overview
 
 Custom control allows you to design your own UI and have your own Actions defined. Creating Custom control requires following things -
 1. [An interface for passing data back and forth between the DronaHQ app and the custom control code.](#dronahq-control-interface-ci)
-1. [Define BIND Data for your control](#bind-data-to-control)
+1. [Pass Data to your Custom Control](#pass-data-to-your-custom-control)
+1. [Pass data to your app from your custom control](#pass-data-to-your-app-from-your-custom-control)
 1. [Define Input type to your control](#define-input-type)
 1. [Write HTML Code for your control.](#write-html-code)
-1. [Defining your own Custom Events](#adding-custom-events)
+1. [Defining your own Custom Events](#custom-events)
 
 ## DronaHQ Control Interface (CI)
 DronaHQ provides control interface for your custom control to pass data back and forth from your control. For this `CI` is the interface object that you need to call with methods listed below based on your needs.
@@ -45,7 +46,7 @@ Syntax:
 callback(payload)
 ```
 
-In callback function, payload is passed in the parameter from DronaHQ. payload is a json object with type and value key with below sample format-
+Callback function will be automatically called by DronaHQ App whenever it needs to interact with your Custom Control. It could be for Initializing your control, Getting its value for other dependent controls/queries on your control and other interactions listed below. In callback function, payload is passed in the parameter from DronaHQ. payload is a json object with type and value key with below sample format-
 
 ```json
   {type:"setValue",value:"xyz"}
@@ -68,7 +69,7 @@ Example:
               
             }
             if (payload.type == "setValue") {
-                // your control will get the data from Studio, so you can have your logic acc to your value
+                // your control will get the data from app, so you can have your logic acc to your value
                 let input = document.getElementById('in1');
                 input.value = payload.value;
             }
@@ -91,7 +92,7 @@ Example:
 ```
 
 
-## Bind Data to Control
+## Pass Data to your Custom Control
 
 You can define input data that you want your Custom Control to be initialized with. You can get this data in your `callback` method with type as `setValue` and `value` in `payload.value`. It can either be another control, keyword, data query variable or any json object.
 
@@ -99,6 +100,62 @@ You can define input data that you want your Custom Control to be initialized wi
   <Thumbnail src="/img/reference/controls/custom-control/bind-data-custom-control.png" alt="html code" />
   <figcaption align="center"><i>BIND DATA</i></figcaption>
 </figure>
+
+In the following example code, you are initializing the `input` control of html with `{{USEREMAIL}}` keyword passed in `user` key.
+
+Example: 
+```html
+<html>
+  <body>
+      <h1>Input</h1>
+      <input id="in1" type="text" placeholder="Your name">
+      <script>
+          const callback = function (payload) {
+              if (payload.type == "setValue") {
+                  // your control will get the data from BIND DATA, so you can have your logic acc to your value
+                  let inputPayload = payload.value;
+
+                  // getting the input element and setting it to 
+                  let input = document.getElementById('in1');
+                  // setting the input element with user email
+                  input.value = inputPayload.user;
+              }
+          }
+          CI.init(callback);
+      </script>
+  </body>
+</html>
+```
+
+## Pass data to your app from your custom control
+
+You can also access data from your custom control in other controls and data queries in your app. In the following example code, `addEventListener` method on `input` control notifies DronaHQ of change in controls value, which then calls `callback` method of type `getValue` to get the updated value from the custom control. This value can be accessed in your app using `{{customcontrol}}` where `customcontrol` is unique name of your Custom Control.
+
+ ```html
+  <html>
+    <body>
+        <h1>Input</h1>
+        <input id="in1" type="text" placeholder="Your name">
+        <script>
+            let input = document.getElementById('in1');
+            const callback = function (payload) {
+                if (payload.type == "getValue") {
+                    let val = input.value;               
+                    CI.returnValue(val);
+                }
+            }
+            CI.init(callback);
+            input.addEventListener("input", function (e) {
+                    // Notify change to any other control or data query variable
+                    CI.triggerChange();
+            });
+        </script>
+    </body>
+  </html>
+  ```
+
+
+
 
 ## Define Input Type
 
@@ -120,7 +177,7 @@ In `property->Write your code` section, you can put the HTML, CSS, and JavaScrip
 
 ### Javascript Sample
 
-  Here is the example of Sample Custom Component using Javascript
+  Here is the example of Sample Custom Control using Javascript
 
   ```html
   <html>
@@ -197,7 +254,7 @@ In `property->Write your code` section, you can put the HTML, CSS, and JavaScrip
 
   ### React Sample
   
-  Here is the example of Sample Custom Component using React
+  Here is the example of Sample Custom Control using React
 
   ```html
   <html>
@@ -284,8 +341,11 @@ In `property->Write your code` section, you can put the HTML, CSS, and JavaScrip
   </html>
   ```
 
+## Custom Events
 
-## Adding Custom Events
+Custom Events allow to have a predefined list of events that your custom control provides. Using Custom Events, user can build their Action flow which will get triggered when your custom control triggers the event. For example, you can define a `button_click` event which will be fired whenever a user presses the button in your Custom Control.
+
+### Adding Custom Events
 
 In the property section, you have an option to add one or more custom events that you want in your Custom Control. You can add custom events using `ADD MORE` option and provide a friendly name. You can also update the event name and delete any event using `delete` action.
 
@@ -294,7 +354,9 @@ In the property section, you have an option to add one or more custom events tha
   <figcaption align="center"><i>Add Custom Event</i></figcaption>
 </figure>
 
-For triggering any event, you should call `CI.triggerAction("event_name");` , where `event_name` should be the friendly name you provided when adding the event. For example, you can have custom event named - `on_change` to call whenever user is inputting data to any Input control in your Custom Control using `CI.triggerAction("on_change");` method call.
+### Trigger Custom Event
+
+For triggering any custom event of your control, you should call `CI.triggerAction("event_name");` , where `event_name` should be the friendly name you provided when adding the event. For example, you can have custom event named - `on_change` to call whenever user is inputting data to any Input control in your Custom Control using `CI.triggerAction("on_change");` method call.
 
 
 <figure>
