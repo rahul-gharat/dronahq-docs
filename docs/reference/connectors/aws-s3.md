@@ -49,6 +49,8 @@ After successfully configuring and saving the connector settings, you can easily
 
 | Action            | Description                                                                                           |
 |-------------------|-------------------------------------------------------------------------------------------------------|
+|ReadFile	  | Read the contents of a file stored in a specific S3 bucket.|
+|DownloadFile	 | Download a file from a specific S3 bucket to your local system. |
 | GetPreSignedUrl   | Generate a pre-signed URL for a specified S3 object, providing temporary access to the object.     |
 | UploadFile        | Upload a file to a specific S3 bucket, allowing you to store files within your S3 storage.          |
 | ListBuckets       | Retrieve a list of all S3 buckets associated with your AWS account.                                 |
