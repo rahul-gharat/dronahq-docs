@@ -1,6 +1,9 @@
 ---
-title: Self-Hosted Architecture
+title: Architecture
+sidebar_position: 1
 ---
+
+# Self-Hosted DronaHQ Architecture
 
 import Thumbnail from '@site/src/components/Thumbnail';
 
