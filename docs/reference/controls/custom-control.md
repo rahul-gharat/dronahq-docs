@@ -22,12 +22,21 @@ Custom control allows you to design your own UI and have your own Actions define
 1. [An interface for passing data back and forth between the DronaHQ app and the custom control code.](#dronahq-control-interface-ci)
 1. [Pass Data to your Custom Control](#pass-data-to-your-custom-control)
 1. [Pass data to your app from your custom control](#pass-data-to-your-app-from-your-custom-control)
-1. [Define Input type to your control](#define-input-type)
 1. [Write HTML Code for your control.](#write-html-code)
 1. [Defining your own Custom Events](#custom-events)
 
+<figure>
+  <Thumbnail src="/img/reference/controls/custom-control/custom-control-sequence.png" alt="Control Control Flow" />
+  <figcaption align="center"><i>Control Control Flow</i></figcaption>
+</figure>
+
 ## DronaHQ Control Interface (CI)
 DronaHQ provides control interface for your custom control to pass data back and forth from your control. For this `CI` is the interface object that you need to call with methods listed below based on your needs.
+
+<figure>
+  <Thumbnail src="/img/reference/controls/custom-control/control-interface.png" alt="Control Interface (CI)" />
+  <figcaption align="center"><i>Control Interface (CI)</i></figcaption>
+</figure>
 
 | Function           | Explanation      |
 |------------------------|-------------------------------------|
@@ -90,6 +99,15 @@ Example:
             }
         }
 ```
+
+### Define Input Type
+
+Input type defines whether your control has only single BIND data option or multiple BIND data option (Options and Selected Options).
+
+| Input Type  | Explanation    |
+|------------------------|-----------------------------------------|
+| single                 | If `single` is selected, then you can directly provide data under `BIND DATA` option. This is default option selected for a new control. |
+| select                   | If `select` is selected, then your control will have 2 BIND DATA options - `Options` and `Selected Options`.  Recommended to use with controls like dropdowns, checkbox, etc. |
 
 
 ## Pass Data to your Custom Control
@@ -154,19 +172,7 @@ You can also access data from your custom control in other controls and data que
   </html>
   ```
 
-
-
-
-## Define Input Type
-
-Input type defines whether your control has only single BIND data option or multiple BIND data option (Options and Selected Options).
-
-| Input Type  | Explanation    |
-|------------------------|-----------------------------------------|
-| single                 | If `single` is selected, then you can directly provide data under `BIND DATA` option. This is default option selected for a new control. |
-| select                   | If `select` is selected, then your control will have 2 BIND DATA options - `Options` and `Selected Options`.  Recommended to use with controls like dropdowns, checkbox, etc. |
-
-## Write HTML Code
+#### Write HTML Code
 
 In `property->Write your code` section, you can put the HTML, CSS, and JavaScript code which handles the appearance and behavior of the custom control. DronaHQ places this code in an iFrame within your DronaHQ app.
 
@@ -175,7 +181,7 @@ In `property->Write your code` section, you can put the HTML, CSS, and JavaScrip
   <figcaption align="left"><i>Html Code</i></figcaption>
 </figure>
 
-### Javascript Sample
+## Javascript Example
 
   Here is the example of Sample Custom Control using Javascript
 
@@ -252,7 +258,7 @@ In `property->Write your code` section, you can put the HTML, CSS, and JavaScrip
   </html>
   ```
 
-  ### React Sample
+  ## React Example
   
   Here is the example of Sample Custom Control using React
 
