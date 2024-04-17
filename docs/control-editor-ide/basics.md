@@ -5,7 +5,16 @@ sidebar_position: 1
 import Thumbnail from '@site/src/components/Thumbnail';
 import Image from '@site/src/components/Image';
 
-# Custom Control IDE
+
+
+# Custom Control IDE (Deprecated)
+
+In DronaHQ, users have various options to customize and build controls. 
+1. Custom Control IDE
+2. the `Custom Control` feature stands out as a powerful tool.
+  - The custom control feature in DronaHQ empowers users to design their own UI elements and define corresponding actions. 
+  - Learn how to integrate your controls using DronaHQ's Control Interface (CI), with practical examples in both JavaScript and React.
+  - Create and trigger custom events which you can build with [Custom Control](https://docs.dronahq.com/reference/controls/custom-control/)
 
 ## Basics
 
