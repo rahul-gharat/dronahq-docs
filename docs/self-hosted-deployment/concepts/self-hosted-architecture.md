@@ -30,8 +30,7 @@ specific functions:
 |-----------------------|-------------------------------------------------------------------------------------------------|
 | DronaHQ Server        | Central entity responsible for core functionalities such as user management and licensing.      |
 | Creator Portal        | Interface empowering creators with content and application management capabilities.             |
-|DronaHQ Licensing Server | Manages the licensing process, ensuring proper authorization and access control, including URL whitelisting.
-|
+|DronaHQ Licensing Server | Manages the licensing process, ensuring proper authorization and access control, including URL whitelisting.|
 | Web Server            | Backbone delivering content seamlessly to end-users.                                             |
 | File Storage System   | Repository for securely storing critical data and files. Supported file systems: S3, local, Azure.                                        |
 | Run API System        | Efficiently manages the execution of diverse applications within the ecosystem.                 |
