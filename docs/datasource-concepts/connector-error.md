@@ -103,7 +103,7 @@ Error messages from databases can be cryptic, but they often contain valuable cl
 
 ### No Database Found (ER_NO_DB_ERROR | ER_BAD_DB_ERROR)
 
-* Error De* scription: No database or unknown database selected.
+* Error Description: No database or unknown database selected.
 * Solutions:
     * Double-check the database name for typos.
     * Verify the user has the necessary permissions to access the database. 
