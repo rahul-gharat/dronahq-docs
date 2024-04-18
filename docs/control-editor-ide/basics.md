@@ -9,13 +9,10 @@ import Image from '@site/src/components/Image';
 
 # Custom Control IDE (Deprecated)
 
-In DronaHQ, users have various options to customize and build controls. 
-1. Custom Control IDE
-2. the `Custom Control` feature stands out as a powerful tool.
-  - The custom control feature in DronaHQ empowers users to design their own UI elements and define corresponding actions. 
-  - Learn how to integrate your controls using DronaHQ's Control Interface (CI), with practical examples in both JavaScript and React.
-  - Create and trigger custom events which you can build with [Custom Control](https://docs.dronahq.com/reference/controls/custom-control/)
-
+In DronaHQ, we have the following two methods for building custom controls: 
+1. Using Custom Control IDE (Deprecated)
+2. Using [Custom Control](https://docs.dronahq.com/reference/controls/custom-control/) in an Iframe. (Recommended)
+    1. Your custom control’s code runs in a separate iframe which provide complete flexibility to use React or vanilla javascript as per your needs.
 ## Basics
 
 To Start with any new control in Dronahq you should first focus on 2 sections: Builder section and preview section.
