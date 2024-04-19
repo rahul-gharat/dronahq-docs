@@ -108,7 +108,7 @@ BUILDER_URL='http://dronahq.example.com'
 ```
 
 #### iii. Other environment variables
-You can also checkout other optional [Environment Variables](/self-hosted-deployment/environment-variables.md), which can enable advance options for you to use DronaHQ Self Hosted.
+You can also checkout other [Environment Variables](/self-hosted-deployment/environment-variables.md), which can enable advance options for you to use DronaHQ Self Hosted.
 
 ### 6. Restart DronaHQ
 

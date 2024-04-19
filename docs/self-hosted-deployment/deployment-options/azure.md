@@ -205,7 +205,7 @@ MONGODB_PORT='27017'
 ```
 
 #### iv. Other environment variables
-You can also checkout other optional [Environment Variables](/self-hosted-deployment/environment-variables.md), which can enable advance options for you to use DronaHQ Self Hosted.
+You can also checkout other [Environment Variables](/self-hosted-deployment/environment-variables.md), which can enable advance options for you to use DronaHQ Self Hosted.
 
 ### 8. Restart DronaHQ
 
