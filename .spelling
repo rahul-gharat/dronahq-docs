@@ -1438,3 +1438,13 @@ uptime
 Supabase
 app.supabase.io
 cyber
+SheetJs
+report.xlsx
+book_append_sheet
+book_new
+json_to_sheet
+wb
+ws
+writeFile
+filename
+min.js
