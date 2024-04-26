@@ -108,7 +108,6 @@ Filtering JSON data enables extraction of specific subsets of information, tailo
 
 #### Code
 
-
     function filterDesignation(record) {
         return record.Designation.includes('Intern');
     }
