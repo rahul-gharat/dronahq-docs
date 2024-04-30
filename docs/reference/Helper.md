@@ -12,7 +12,7 @@ Helper methods are currently available only on Self-Hosted version > 2.4.2
 
 `HELPER` methods can help with data manipulation and transformation operations. These methods can be used to manipulate or transform data in String, Array and Object formats.
 
-## TRANSFORMDATATOARRAY()
+## TRANSFORMDATATOARRAY
 
 `HELPER.TRANSFORMDATATOARRAY()` method can be used to transform an object to an array of objects. This method is useful when the data object has key-value pairs that represent the columns of a table. 
 
@@ -43,7 +43,7 @@ HELPER.TRANSFORMDATATOARRAY({
 ]
 ```
 
-## TRANSFORMDATATOOBJECT()
+## TRANSFORMDATATOOBJECT
 
 `HELPER.TRANSFORMDATATOOBJECT()` method can be used to transform an array to an object. This method is useful when the data is an *array of objects* where each object has same set of keys.
 
@@ -75,7 +75,7 @@ HELPER.TRANSFORMDATATOOBJECT(
 }
 ```
 
-## INTERCHANGE()
+## INTERCHANGE
 
 `HELPER.INTERCHANGE()` method can be used to swap the position of two elements in an array.
 
@@ -106,7 +106,7 @@ HELPER.INTERCHANGE(["apple", "banana", "orange", "grape", "kiwi"],0,4);
 ["kiwi", "banana", "orange", "grape", "apple"]
 ```
 
-## MERGEARRAYS()
+## MERGEARRAYS
 
 `HELPER.MERGEARRAYS()` method can be used to merge two arrays into one.
 
@@ -128,7 +128,7 @@ HELPER.MERGEARRAYS(["apple", "banana", "orange"], ["grapes", "pineapple"]);
 ["apple", "banana", "orange","grapes", "pineapple"]
 ```
 
-## CONCATENATE()
+## CONCATENATE
 
 `HELPER.CONCATENATE()` method can be used to merge two or more strings into one.
 
@@ -150,7 +150,7 @@ HELPER.CONCATENATE("hi ", "hello ", "How are you?");
 "hi hello How are you?"
 ```
 
-## FLATTEN()
+## FLATTEN
 
 `HELPER.FLATTEN()` method can be used to convert a multi dimensional array into a single dimension array.
 
@@ -172,7 +172,7 @@ HELPER.FLATTEN([1, [2, 3], [[4, 5], 6], [7, 8, [9, 10]]]);
 [1,2,3,4,5,6,7,8,9,10]
 ```
 
-## RANGE()
+## RANGE
 
 `HELPER.RANGE()` method can be used to create an array of numbers for a specified range.
 
@@ -194,7 +194,7 @@ HELPER.RANGE(5,10);
 [5,6,7,8,9,10]
 ```
 
-## GETKEYVALUE()
+## GETKEYVALUE
 
 `HELPER.GETKEYVALUE()` method can be used to get value of a specified key from object.
 
@@ -223,7 +223,7 @@ HELPER.GETKEYVALUE(
 DRONA
 ```
 
-## ARRAYTOCSV()
+## ARRAYTOCSV
 
 `HELPER.ARRAYTOCSV()` method can be used to convert an array of arrays into csv format.
 

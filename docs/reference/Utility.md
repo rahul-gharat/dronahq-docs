@@ -15,7 +15,7 @@ Utility methods are currently available only on Self-Hosted version > 2.4.2
 `UTILITY` is a Javascript API provided by DronaHQ to perform various actions directly from your javascript code. It enables you to use actions which are present in actionflow builder directly from the code giving you more control on the behaviour of your application. 
 
 
-## TOAST()
+## TOAST
 
 `UTILITY.TOAST()` method can be used to show toast messages.
 
@@ -42,7 +42,7 @@ UTILITY.TOAST(type,title,message,position,closeButton,timeout);
 UTILITY.TOAST('success','Toast says','Hello','toast-top-right',true,5000);
 ```
 
-## CONFIRM()
+## CONFIRM
 
 `UTILITY.CONFIRM()` method can be used to show a prompt message to the user and get input such as ok and cancel. This method returns a `Promise` so the response needs to be captured using `await` keyword.
 
@@ -76,7 +76,7 @@ When the `Promise` resolves, the user input will be received in the `action` key
 }
 ```
 
-## ALERT()
+## ALERT
 
 `UTILITY.ALERT()` method can be used to show a alert message to the user. This method returns a `Promise` so the response needs to be captured using `await` keyword.
 
@@ -108,7 +108,7 @@ When the `Promise` resolves, the user input will be received as a boolean value:
 true
 ```
 
-## EMAIL()
+## EMAIL
 
 `UTILITY.EMAIL()` method can be used to send emails.
 
@@ -132,7 +132,7 @@ UTILITY.EMAIL(subject,body,recipients);
 UTILITY.EMAIL('This is subject','Hello','user1@mail.com,user2@mail.com');
 ```
 
-## CALL()
+## CALL
 
 `UTILITY.CALL()` method can be used to make calls.
 
@@ -155,7 +155,7 @@ UTILITY.CALL(phoneNumber);
 UTILITY.CALL(9699194532);
 ```
 
-## SMS()
+## SMS
 
 `UTILITY.SMS()` method can be used to send sms.
 
@@ -178,7 +178,51 @@ UTILITY.SMS(phoneNumbers,message);
 UTILITY.SMS('9699194532,9619723541','Hello');
 ```
 
-## SETCTRLVALUE()
+
+
+## CALLRESTAPI
+
+`UTILITY.CALLRESTAPI()` method can be used to communicate with api servers using various HTTP methods like GET, POST, PUT, PATCH, and DELETE. This method returns a `promise` and to get the repsonse use `await` keyword.
+<span style={{fontSize: 24}}>Usage</span>
+
+```
+UTILITY.CALLRESTAPI(url, method, headers, data, useProxy, timeout);
+```
+
+<span style={{fontSize: 24}}>Parameters</span>
+
+| Parameter   | Accepts | Possible values                                   |
+|-------------|---------|---------------------------------------------------|
+| `url`      | string  | endpoint url to send the request                   |
+| `method`     | string  | 'GET', 'POST', 'PUT', 'PATCH', 'DELETE' |
+| `headers`     | object  | json data to send in request headers |
+| `data`     | object  | json data to send in request body |
+| `useProxy`     | boolean  | true/false to use proxy |
+| `timeout`     | number  | any numerical value in milliseconds |
+
+
+<span style={{fontSize: 24}}>Example GET Request</span>
+
+```
+await UTILITY.CALLRESTAPI('https://exampleapi.com/api/users/','GET');
+```
+
+:::info
+headers, data, useProxy and timeout are optional parameters, incase you don't want to specify any of them, put an empty string ('') instead while calling the method.
+:::
+
+<span style={{fontSize: 24}}>Example POST Request</span>
+
+```
+await UTILITY.CALLRESTAPI(
+  'https://exampleapi.com/api/users/',
+  'POST',
+  '',
+  {'name':'morpheus','job':'leader'}
+);
+```
+
+## SETCTRLVALUE
 
 `UTILITY.SETCTRLVALUE()` method can be used to set the value of a control. The method takes an *array of objects* as input and each object has two keys called `name` and `value`. The `name` key takes control's
 unique name which can be found in the right side properties panel on the builder screen.
@@ -231,7 +275,7 @@ UTILITY.SETCTRLVALUE(
 );
 ```
 
-## HIDECTRL()
+## HIDECTRL
 
 `UTILITY.HIDECTRL()` method can be used to trigger hide action on a visible control. The method takes an *array of strings* which contains unique names of the controls.
 
@@ -253,7 +297,7 @@ UTILITY.HIDECTRL(controlUniqueNameArray);
 UTILITY.HIDECTRL(['textinput','textinput1']);
 ```
 
-## SHOWCTRL()
+## SHOWCTRL
 
 `UTILITY.SHOWCTRL()` method can be used to trigger show action on a hidden control. The method takes an *array of strings* which contains unique names of the controls.
 
@@ -275,7 +319,7 @@ UTILITY.SHOWCTRL(controlUniqueNameArray);
 UTILITY.SHOWCTRL(['textinput','textinput1']);
 ```
 
-## SETVARIABLE()
+## SETVARIABLE
 
 `UTILITY.SETVARIABLE()` method can be used to overwrite the value returned by a Custom Javascript code. The method takes an *array of objects* as input and returns a `promise`. Each object has two keys called `name` and `value`. The name key takes variable name and value takes any string value which needs to be set.
 
@@ -298,7 +342,7 @@ UTILITY.SHOWCTRL(['textinput','textinput1']);
 await UTILITY.SETVARIABLE([{name: 'js_script_1' , value: 'value1'},{name: 'js_script_2' , value: 'value2'}]);
 ```
 
-## NAVIGATE()
+## NAVIGATE
 
 `UTILITY.NAVIGATE()` method can be used to navigate from one screen to another screen.
 
@@ -323,7 +367,7 @@ UTILITY.NAVIGATE(screenId,transition,resetTargetPage,withValidation);
 UTILITY.NAVIGATE('screen-2','1',false,false);
 ```
 
-## CONFETTI()
+## CONFETTI
 
 `UTILITY.CONFETTI()` method can be used to trigger confetti action.
 
@@ -349,7 +393,7 @@ UTILITY.CONFETTI(spread,particleCount,originX,originY);
 UTILITY.CONFETTI(70,400,0.5,0.5);
 ```
 
-## SHOWCTRLLOADER()
+## SHOWCTRLLOADER
 
 `UTILITY.SHOWCTRLLOADER()` method can be used to show a loader on a particular control. 
 
@@ -371,7 +415,7 @@ UTILITY.SHOWCTRLLOADER(controlUniqueNameArray);
 UTILITY.SHOWCTRLLOADER(['dashboard','dashboard1']);
 ```
 
-## HIDECTRLLOADER()
+## HIDECTRLLOADER
 
 `UTILITY.HIDECTRLLOADER()` method can be used to hide the loader which is running on particular control.
 
@@ -393,7 +437,7 @@ UTILITY.HIDECTRLLOADER(controlUniqueNameArray);
 UTILITY.HIDECTRLLOADER(['dashboard','dashboard1']);
 ```
 
-## EXITAPP()
+## EXITAPP
 
 `UTILITY.EXITAPP()` method can be used to trigger exit app action.
 
@@ -403,7 +447,7 @@ UTILITY.HIDECTRLLOADER(['dashboard','dashboard1']);
 UTILITY.EXITAPP();
 ```
 
-## LOGOUT()
+## LOGOUT
 
 `UTILITY.LOGOUT()` method can be used to trigger logout action.
 
@@ -413,7 +457,7 @@ UTILITY.EXITAPP();
 UTILITY.LOGOUT();
 ```
 
-## REFRESHCTRLDATA()
+## REFRESHCTRLDATA
 
 `UTILITY.REFRESHCTRLDATA()` method can be used to reset the value of a control. The method takes an *array of strings* as input which have unique names of the controls that need to be reset. 
 
@@ -439,7 +483,7 @@ UTILITY.REFRESHCTRLDATA(ctrlUniqueNames, triggerDependentDataQuery, tableGridPag
 UTILITY.REFRESHCTRLDATA(['textinput','textinput1'],false,false);
 ```
 
-## INVOKEACTIONFLOW()
+## INVOKEACTIONFLOW
 
 `UTILITY.INVOKEACTIONFLOW()` method can be used to invoke an actionflow which set on any event of a control. The value for the `event_name` parameter is visible in the heading part of the actionflow builder screen.
 
@@ -464,7 +508,7 @@ UTILITY.INVOKEACTIONFLOW('controlUniqueName','event_name');
 UTILITY.INVOKEACTIONFLOW('button','button_click');
 ```
 
-## COPYTOCLIPBOARD()
+## COPYTOCLIPBOARD
 
 `UTILITY.COPYTOCLIPBOARD()` method can be used to trigger the copy to clipboard action. 
 
@@ -487,7 +531,7 @@ UTILITY.COPYTOCLIPBOARD(text);
 UTILITY.COPYTOCLIPBOARD('DronaHQ'); 
 ```
 
-## OPENURL()
+## OPENURL
 
 `UTILITY.OPENURL()` method can be used to open a url in a new tab. 
 
@@ -513,7 +557,7 @@ Please make sure that the url entered should always start with "https://"
 UTILITY.OPENURL('https://www.google.com/');
 ```
 
-## PLAYSOUND()
+## PLAYSOUND
 
 `UTILITY.PLAYSOUND()` method can be used to play any mp3 file by passing url. 
 
@@ -536,7 +580,7 @@ UTILITY.PLAYSOUND(url);
 UTILITY.PLAYSOUND('https://dronamobilepublic.s3.amazonaws.com/DRONA5_Team19020/content/app/images/Qg7Zwtep6a.mp3');
 ```
 
-## NAVIGATETOAUTHSCREEN()
+## NAVIGATETOAUTHSCREEN
 
 `UTILITY.NAVIGATETOAUTHSCREEN()` method can be used to trigger the Navigate to Authentication Screen action. 
 
@@ -560,7 +604,7 @@ UTILITY.NAVIGATETOAUTHSCREEN(maintainCredentials,resetLogin);
 UTILITY.NAVIGATETOAUTHSCREEN(false,false);
 ```
 
-## MICROAPPNAV()
+## MICROAPPNAV
 
 `UTILITY.MICROAPPNAV()` method can be used to trigger the MicroApp Navigation action. It is also possible to pass key value pairs to the app we wish to navigate to in the form of an *array of objects*. The `appId` can be obtained from the actionflow builder in Microapp nav action.
 
