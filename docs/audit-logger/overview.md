@@ -12,10 +12,38 @@ import VersionedLink from '@site/src/components/VersionedLink';
 
 Audit Logs is a powerful feature within the DronaHQ platform that allows you to seamlessly integrate various loggers to capture events and activities from your modules, such as RunAPI. This feature enhances your ability to monitor, analyze, and manage logs efficiently. This documentation provides step-by-step instructions on how to enable and configure Audit Logging in your DronaHQ account.
 
+## DronaHQ Managed Audit Logging
+DronaHQ managed audit logging enables you to capture events and activities from your modules without any external logger setup. This can be an alternative to any external logger that one may want to set up.
+:::info
+- This is currently supported in self hosted version of DronaHQ.
+:::
 
-## Enabling Audit Logging
+To enable this feature you need to configure this environment variable on your server
 
-To enable Audit Logging, follow these steps:
+    DHQ_MANAGED_AUDIT_LOG_ENABLED=’true’
+
+Once this is enabled, your audit logs will be saved in the "dhq_managed_audit_log" collection
+Inside your configured `DHQ_MONGODB_HOST` server and database will be `DHQ_MONGODB_DATABASE`.
+ The above variables are configured while setting up self-hosted instance.
+
+ Once this is set up, go to Account Settings > General & Security > Audit Logging
+section, you will find "DronaHQ managed Audit Logging is Enabled" message and to View Audit logs you can click on `View Audit Logs` button
+
+<figure>
+  <Thumbnail src="/img/audit-logger/dhq-managed-auditLog.png" alt="DHQ managed audit logging" width='100%'/>
+  <figcaption align = "center"><i>DHQ managed audit log setting</i></figcaption>
+</figure>
+
+Easily access and manage your audit logs with advanced filtering options, including date ranges, specific events, connectors, apps, and automation filters, and search by user email. Navigate seamlessly with pagination, ensuring efficient tracking and oversight of your logs
+
+<figure>
+  <Thumbnail src="/img/audit-logger/view-audit-log.png" alt="View audit logs" width='100%'/>
+  <figcaption align = "center"><i>View audit logs</i></figcaption>
+</figure>
+
+## Enabling External Audit Logging
+
+To enable external Audit Logging, follow these steps:
 
 Log in to your DronaHQ account and navigate to the "Account Settings" section > "General & Security" 
 Under the "Audit Logger" section, you will find the option to set up Audit Logging. Click on "Setup External Logging."
@@ -208,3 +236,6 @@ Columns For Database Loggers:
 ---
 
 *Note: Ensure that you provide accurate connection details for the Audit logger to ensure smooth integration.*
+
+## Purging older audit logs data to free up storage
+If your self-hosted MongoDB database's "dhq_managed_audit_log collection" starts accumulating too much data, it's a good practice to ease the storage burden by taking backups and removing older audit logs, generally those older than 2-3 months.
