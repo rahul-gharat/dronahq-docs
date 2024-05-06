@@ -63,8 +63,19 @@ From `Tags > New > Tag Configuration > Custom HTML (custom)`:
 </script>
 ```
 
+
+<figure>
+  <Thumbnail src="/img/building-apps-guides/google-tag-manager/google-tag-manager-tag1.jpeg" alt="Custom HTML Tag" />
+  <figcaption align = "center"><i>Custom HTML Tag</i></figcaption>
+</figure>
+
 #### Custom Event Trigger:
 Next, we'll establish a trigger to activate our custom event. We'll utilize a trigger type of Custom Events with the event name `btn_click`, set to fire on all custom events.
+
+<figure>
+  <Thumbnail src="/img/building-apps-guides/google-tag-manager/google-tag-manager-trigger1.jpeg" alt="Custom Event Trigger" />
+  <figcaption align = "center"><i>Custom Event Trigger</i></figcaption>
+</figure>
 
 #### Practical Implementation in DronaHQ:
 Now, let's apply this custom event within the DronaHQ lead generation app. Suppose we've incorporated a JavaScript code block action tied to a button click event:
@@ -78,7 +89,70 @@ function JSCode(output) {
 }
 ```
 
+<figure>
+  <Thumbnail src="/img/building-apps-guides/google-tag-manager/google-tag-manager-action1.jpeg" alt="Adding action flow" />
+  <figcaption align = "center"><i>Adding action flow</i></figcaption>
+</figure>
+
 #### Bringing It All Together:
 Imagine a user interacts with the lead generation app, triggering the button click action. This event then activates the custom HTML tag configuration within GTM, prompting the "Mail Sent!" alert. Simultaneously, the custom event trigger is fired, capturing the event data and allowing for further analysis of user interactions.
 
 
+### Data Insights from the app to Google Analytics
+
+Now that you've integrated GTM with your DronaHQ app, let's explore how to track specific user interactions using custom events. This allows you to analyze valuable data about how users engage with your app.
+
+#### Google Analytics GA4 Event: Tag Configuration
+
+
+To create the required tag, we'll start by crafting a tag configuration of Google Analytics GA4 Event in Google Tag Manager.
+From `Tags > New > Tag Configuration > Google Analytics GA4 Event`:
+
+Configure the Tag:
+   - Measurement ID: Enter your GA4 property's Measurement ID (found in your GA4 settings).
+   - Event Name: Give your custom event a clear and descriptive name (e.g., `button_click`). This helps you understand what the event represents in your reports.
+   - Event Parameters (Optional): Add additional details to enrich your data. For instance, if the event tracks a button click, you could include a parameter like `button_text` with the actual button text.
+
+
+<figure>
+  <Thumbnail src="/img/building-apps-guides/google-tag-manager/google-tag-manager-ga4.jpeg" alt="Adding Google Analytics GA4 Event" />
+  <figcaption align = "center"><i>Adding Google Analytics GA4 Event</i></figcaption>
+</figure>
+
+
+:::caution IMPORTANT
+
+Ensure that you've established a data stream from Google Analytics via its administrative section. During the setup process for the data stream, you'll be prompted to furnish the website link corresponding to your DronaHQ app.
+
+To procure this link, first, `Publish` your app, and then retrieve its public URL. Navigate to the console of your app where you'll discover an `iframe` tag containing a URL similar to: `https://microapp.dronahq.com/prod/your_app_name/index.html`
+
+
+
+<figure>
+  <Thumbnail src="/img/building-apps-guides/google-tag-manager/google-tag-manager-analyticsDetails.jpeg" alt="Google Analytics Data Stream Details" />
+  <figcaption align = "center"><i>Google Analytics Data Stream Details</i></figcaption>
+</figure>
+
+Simply copy this URL and designate it as the `Stream URL` for your Google Analytics data stream.
+:::
+
+#### Custom Event Trigger:
+
+Next, we'll establish a trigger to activate our custom event. We'll utilize a trigger type of Custom Events with the event name `send_info`, set to fire on all custom events.
+
+
+#### Practical Implementation in DronaHQ:
+Now, let's apply this custom event within the DronaHQ lead generation app. Suppose we've incorporated a JavaScript code block action tied to a button click event:
+
+```javascript
+function JSCode(output) {
+  if (window.dataLayer) {
+    window.dataLayer.push({'event': 'send_info'});
+  }
+  return output;
+}
+```
+
+#### Bringing It All Together:
+
+Imagine a scenario where a user engages with a travel website, specifically interacting with a form labeled "send_info." Upon completing and submitting this form, the website processes the provided information, potentially sending an email confirmation to the user. Concurrently, a custom event is triggered, capturing the user's interaction with the "send_info" form. This captured event data serves as valuable insight, enabling analysis of user engagement patterns and preferences on the travel website.
