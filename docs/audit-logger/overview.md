@@ -12,26 +12,28 @@ import VersionedLink from '@site/src/components/VersionedLink';
 
 Audit Logs is a powerful feature within the DronaHQ platform that allows you to seamlessly integrate various loggers to capture events and activities from your modules, such as RunAPI. This feature enhances your ability to monitor, analyze, and manage logs efficiently. This documentation provides step-by-step instructions on how to enable and configure Audit Logging in your DronaHQ account.
 
+DronaHQ Support following 2 types of Audit Logging -
+1. [DronaHQ Managed Audit Logging](#dronahq-managed-audit-logging) (Available only on Self-hosted version)
+1. [External Audit Logging](#external-audit-logging)
+
 ## DronaHQ Managed Audit Logging
 DronaHQ managed audit logging enables you to capture events and activities from your modules without any external logger setup. This can be an alternative to any external logger that one may want to set up.
 :::info
-- This is currently supported in self hosted version of DronaHQ.
+DronaHQ Managed Audit Logging is supported only on self hosted version.
 :::
 
-To enable this feature you need to configure this environment variable on your server
+To enable this feature you need to configure this environment variable on your self-hosted environment file
 
     DHQ_MANAGED_AUDIT_LOG_ENABLED=’true’
 
-Once this is enabled, your audit logs will be saved in the "dhq_managed_audit_log" collection
-Inside your configured `DHQ_MONGODB_HOST` server and database will be `DHQ_MONGODB_DATABASE`.
- The above variables are configured while setting up self-hosted instance.
+Once this is enabled, your audit logs will be saved in the `dhq_managed_audit_log` collection which will be auto-created in your configured `DHQ_MONGODB_HOST` server with database name `DHQ_MONGODB_DATABASE`.
+The above variables are configured while setting up self-hosted instance.
 
- Once this is set up, go to Account Settings > General & Security > Audit Logging
-section, you will find "DronaHQ managed Audit Logging is Enabled" message and to View Audit logs you can click on `View Audit Logs` button
+ Once this is set up, go to `Account Settings -> General & Security -> Audit Logging` section, you will find `DronaHQ managed Audit Logging is Enabled` message and to View Audit logs you can click on `View Audit Logs` button
 
 <figure>
   <Thumbnail src="/img/audit-logger/dhq-managed-auditLog.png" alt="DHQ managed audit logging" width='100%'/>
-  <figcaption align = "center"><i>DHQ managed audit log setting</i></figcaption>
+  <figcaption align = "center"><i>DronaHQ managed audit log setting</i></figcaption>
 </figure>
 
 Easily access and manage your audit logs with advanced filtering options, including date ranges, specific events, connectors, apps, and automation filters, and search by user email. Navigate seamlessly with pagination, ensuring efficient tracking and oversight of your logs
@@ -41,7 +43,7 @@ Easily access and manage your audit logs with advanced filtering options, includ
   <figcaption align = "center"><i>View audit logs</i></figcaption>
 </figure>
 
-## Enabling External Audit Logging
+## External Audit Logging
 
 To enable external Audit Logging, follow these steps:
 
@@ -53,7 +55,7 @@ Under the "Audit Logger" section, you will find the option to set up Audit Loggi
   <figcaption align = "center"><i>Audit logger</i></figcaption>
 </figure>
 
-## Configuring Audit Loggers
+### Configuring Audit Loggers
 
 After clicking on "Setup External Logging," you will be prompted to configure the logger. Follow these steps:
 
