@@ -74,7 +74,7 @@ accessed from the REST API, we are using the TableGrid Control.
 
    - Create a variable (e.g., `newAuthToken`) to store the newly acquired authentication token received in the API
      response.
-   - Ensure you select `output.authToken` during variable assignment. This step destructures the response and extracts
+   - Ensure you select `output.authToken` during variable assignment. This step de-structures the response and extracts
      only the `authToken` value.
     <figure>
     <Thumbnail src="/img/app-scripting-and-code/javascript-jwt-token-expiry/javascript-jwt-token-expiry-authtoken.png" alt="variable" />

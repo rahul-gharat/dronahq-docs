@@ -108,7 +108,6 @@ Now that you've integrated GTM with your DronaHQ app, let's explore how to track
 To create the required tag, we'll start by crafting a tag configuration of Google Analytics GA4 Event in Google Tag Manager.
 From `Tags > New > Tag Configuration > Google Analytics GA4 Event`:
 
-Configure the Tag:
    - Measurement ID: Enter your GA4 property's Measurement ID (found in your GA4 settings).
    - Event Name: Give your custom event a clear and descriptive name (e.g., `button_click`). This helps you understand what the event represents in your reports.
    - Event Parameters (Optional): Add additional details to enrich your data. For instance, if the event tracks a button click, you could include a parameter like `button_text` with the actual button text.
