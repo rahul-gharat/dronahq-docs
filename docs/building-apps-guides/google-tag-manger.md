@@ -54,12 +54,12 @@ GTM presents an array of tags tailored to specific tracking needs. GTM like a to
 
 DronaHQ supports both custom and default events of GTM, enhancing its versatility for various tracking requirements.
 
-### Triggering Default Event from the App
+## Triggering Default Event from the App
 
 This example demonstrates setting up a Custom HTML tag in Google Tag Manager (GTM) to display a simple message on every page load. The tag will be triggered by the built-in All Pages trigger.
 
 #### Tag Configuration:
-From `Tags > New > Tag Configuration > Custom HTML (custom)`:
+From `Tags > New > Tag Configuration > Custom HTML (custom)`, add below script and save.
 
 ```html
 <script>
@@ -86,7 +86,8 @@ This pre-configured trigger automatically fires whenever a page loads on your we
 
 
 :::info NOTE
-Make sure to Submit your GTM changes to be made effective in the app.
+- Make sure to Submit your GTM changes to be made effective in the app.
+- Publish your DronaHQ App and Check it on Public App link or End user portal to see your changes in Action.
 :::
 
 ####  Bringing It All Together:
@@ -98,12 +99,12 @@ Make sure to Submit your GTM changes to be made effective in the app.
 
 With the Custom HTML tag and All Pages trigger configured, whenever a dashboard page loads or updates in real-time, the tag will be triggered, and your chosen notification method will be displayed.
 
-### Triggering a Custom Event from the App
+## Triggering a Custom Event from the App
 
 Let's explore the process of triggering a custom GTM tag directly from the DronaHQ App. We'll set up a Custom HTML tag within GTM and configure it with a Custom Event trigger, ensuring it activates from within our application.
 
 #### Tag Configuration:
-From `Tags > New > Tag Configuration > Custom HTML (custom)`:
+From `Tags -> New -> Tag Configuration -> Custom HTML (custom)`, Add below script and save.
 
 ```html
 <script>
@@ -143,7 +144,8 @@ function JSCode(output) {
 </figure>
 
 :::info NOTE
-Make sure to publish your app after applying any changes.
+- Make sure to Submit your GTM changes to be made effective in the app.
+- Publish your DronaHQ App and Check it on Public App link or End user portal to see your changes in Action.
 :::
 
 #### Bringing It All Together:
