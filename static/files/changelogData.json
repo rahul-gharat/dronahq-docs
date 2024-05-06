@@ -2,6 +2,21 @@
   {
     "timestamp": 1710460800000,
     "tags": ["Cloud-Hosted"],
+    "heading": "SSH Key - IMPORT",
+    "cards": [
+      {
+        "title": "Enhancements",
+        "type": "improved",
+        "descriptions": [
+          "<img src=\"/img/advanced-concepts/connecting-via-ssh-keys/import-key.png\" alt=\"insect-bee\"/ width=\"100%\">",
+          " Now you also have the option to add an existing SSH key from your system. Simply toggle the Import Key option and choose a `.pem` file from the system."
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1710460800000,
+    "tags": ["Cloud-Hosted"],
     "heading": "Razorpay Endpoints",
     "cards": [
       {
