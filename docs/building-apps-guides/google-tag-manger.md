@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-title: Data Insights with DronaHQ and Google Tag Manager Integration
+title: Google Tag Manager Integration
 ---
 
 import Image from '@site/src/components/Image'; import VersionedLink from '@site/src/components/VersionedLink'; import
@@ -8,9 +8,9 @@ Thumbnail from '@site/src/components/Thumbnail';
 
 In today's data-driven world, understanding user behavior is crucial for success. For low-code app developers using DronaHQ, integrating with Google Tag Manager (GTM) unlocks a treasure trove of user insights. This dynamic duo empowers you to track user interactions, optimize app experiences, and gain valuable data for informed decision-making.
 
-## Getting Started
 
-### Creating account in Google Tag Manger
+
+## Creating account in Google Tag Manger
 
 1. Visit [Google Tag Manager](https://tagmanager.google.com/) and Sign in with your Google account.
 2. If you're new to GTM, you'll see a button to `Create Account.` Click that.
@@ -31,7 +31,7 @@ That's it! Once you have your account and container set up, you can start adding
 </figure>
 
 
-### Integrating Google Tag Manager with DronaHQ Apps 
+## Integrating Google Tag Manager with DronaHQ Apps 
 
 Adding Google Tag Manager (GTM) to your DronaHQ app is a straightforward process:
 
@@ -45,16 +45,64 @@ Adding Google Tag Manager (GTM) to your DronaHQ app is a straightforward process
   <figcaption align = "center"><i>Installing GTM scripts in a DronaHQ App</i></figcaption>
 </figure>
 
-## Understanding Tags and Triggers Google Tag Manager
+#### Tags and Triggers (GTM)
 
 GTM presents an array of tags tailored to specific tracking needs. GTM like a toolbox for website/app tracking.
 * Tags: These are the tools themselves. GTM offers various tags for different tracking needs, such as Google Analytics, Google Ads, or custom HTML tags.
 * Triggers: These act like the triggers on those tools. They define when a specific tag fires (activates) to collect data. Common triggers track events like page views, app initialization, button clicks, form submissions, or video plays.
 
-### Triggering a Custom HTML tag from the App
 
-#### Custom HTML Tag Configuration:
-To initiate this custom event, we'll start by crafting a tag configuration with a custom HTML snippet in Google Tag Manager.
+DronaHQ supports both custom and default events of GTM, enhancing its versatility for various tracking requirements.
+
+### Triggering Default Event from the App
+
+This example demonstrates setting up a Custom HTML tag in Google Tag Manager (GTM) to display a simple message on every page load. The tag will be triggered by the built-in All Pages trigger.
+
+#### Tag Configuration:
+From `Tags > New > Tag Configuration > Custom HTML (custom)`:
+
+```html
+<script>
+  alert("The changes made will be in real-time affect")
+</script>
+```
+
+<figure>
+  <Thumbnail src="/img/building-apps-guides/google-tag-manager/google-tag-manager-tag2.jpeg" alt="Custom HTML Tag" />
+  <figcaption align = "center"><i>Custom HTML Tag</i></figcaption>
+</figure>
+
+#### All Pages Trigger:
+Next, we'll establish a trigger to ensure our custom HTML tag fires on every page load. We'll leverage the built-in trigger type of All Pages.
+
+In GTM, navigate to Triggers and click New, and under Trigger Configuration, select All Pages.
+This pre-configured trigger automatically fires whenever a page loads on your website, making it ideal for tracking events that occur on all pages.
+
+
+<figure>
+  <Thumbnail src="/img/building-apps-guides/google-tag-manager/google-tag-manager-trigger2.jpeg" alt="Custom Event Trigger" />
+  <figcaption align = "center"><i>Custom Event Trigger</i></figcaption>
+</figure>
+
+
+:::info NOTE
+Make sure to Submit your GTM changes to be made effective in the app.
+:::
+
+####  Bringing It All Together:
+
+<figure>
+  <Thumbnail src="/img/building-apps-guides/google-tag-manager/google-tag-manager-example2.png" alt="GTM tag in use." />
+  <figcaption align = "center"><i>GTM tag in use.</i></figcaption>
+</figure>
+
+With the Custom HTML tag and All Pages trigger configured, whenever a dashboard page loads or updates in real-time, the tag will be triggered, and your chosen notification method will be displayed.
+
+### Triggering a Custom Event from the App
+
+Let's explore the process of triggering a custom GTM tag directly from the DronaHQ App. We'll set up a Custom HTML tag within GTM and configure it with a Custom Event trigger, ensuring it activates from within our application.
+
+#### Tag Configuration:
 From `Tags > New > Tag Configuration > Custom HTML (custom)`:
 
 ```html
@@ -70,7 +118,7 @@ From `Tags > New > Tag Configuration > Custom HTML (custom)`:
 </figure>
 
 #### Custom Event Trigger:
-Next, we'll establish a trigger to activate our custom event. We'll utilize a trigger type of Custom Events with the event name `btn_click`, set to fire on all custom events.
+Next, we'll establish a trigger to activate our custom event. We'll utilize a trigger type of Custom Events with the event name `sent_mail`, set to fire on all custom events.
 
 <figure>
   <Thumbnail src="/img/building-apps-guides/google-tag-manager/google-tag-manager-trigger1.jpeg" alt="Custom Event Trigger" />
@@ -83,7 +131,7 @@ Now, let's apply this custom event within the DronaHQ lead generation app. Suppo
 ```javascript
 function JSCode(output) {
   if (window.dataLayer) {
-    window.dataLayer.push({'event': 'btn_click'});
+    window.dataLayer.push({'event': 'sent_mail'});
   }
   return output;
 }
@@ -94,64 +142,16 @@ function JSCode(output) {
   <figcaption align = "center"><i>Adding action flow</i></figcaption>
 </figure>
 
-#### Bringing It All Together:
-Imagine a user interacts with the lead generation app, triggering the button click action. This event then activates the custom HTML tag configuration within GTM, prompting the "Mail Sent!" alert. Simultaneously, the custom event trigger is fired, capturing the event data and allowing for further analysis of user interactions.
-
-
-### Data Insights from the app to Google Analytics
-
-Now that you've integrated GTM with your DronaHQ app, let's explore how to track specific user interactions using custom events. This allows you to analyze valuable data about how users engage with your app.
-
-#### Google Analytics GA4 Event: Tag Configuration
-
-
-To create the required tag, we'll start by crafting a tag configuration of Google Analytics GA4 Event in Google Tag Manager.
-From `Tags > New > Tag Configuration > Google Analytics GA4 Event`:
-
-   - Measurement ID: Enter your GA4 property's Measurement ID (found in your GA4 settings).
-   - Event Name: Give your custom event a clear and descriptive name (e.g., `button_click`). This helps you understand what the event represents in your reports.
-   - Event Parameters (Optional): Add additional details to enrich your data. For instance, if the event tracks a button click, you could include a parameter like `button_text` with the actual button text.
-
-
-<figure>
-  <Thumbnail src="/img/building-apps-guides/google-tag-manager/google-tag-manager-ga4.jpeg" alt="Adding Google Analytics GA4 Event" />
-  <figcaption align = "center"><i>Adding Google Analytics GA4 Event</i></figcaption>
-</figure>
-
-
-:::caution IMPORTANT
-
-Ensure that you've established a data stream from Google Analytics via its administrative section. During the setup process for the data stream, you'll be prompted to furnish the website link corresponding to your DronaHQ app.
-
-To procure this link, first, `Publish` your app, and then retrieve its public URL. Navigate to the console of your app where you'll discover an `iframe` tag containing a URL similar to: `https://microapp.dronahq.com/prod/your_app_name/index.html`
-
-
-
-<figure>
-  <Thumbnail src="/img/building-apps-guides/google-tag-manager/google-tag-manager-analyticsDetails.jpeg" alt="Google Analytics Data Stream Details" />
-  <figcaption align = "center"><i>Google Analytics Data Stream Details</i></figcaption>
-</figure>
-
-Simply copy this URL and designate it as the `Stream URL` for your Google Analytics data stream.
+:::info NOTE
+Make sure to publish your app after applying any changes.
 :::
 
-#### Custom Event Trigger:
-
-Next, we'll establish a trigger to activate our custom event. We'll utilize a trigger type of Custom Events with the event name `send_info`, set to fire on all custom events.
-
-
-#### Practical Implementation in DronaHQ:
-Now, let's apply this custom event within the DronaHQ lead generation app. Suppose we've incorporated a JavaScript code block action tied to a button click event:
-
-```javascript
-function JSCode(output) {
-  if (window.dataLayer) {
-    window.dataLayer.push({'event': 'send_info'});
-  }
-  return output;
-}
-```
-
 #### Bringing It All Together:
 
-Imagine a scenario where a user engages with a travel website, specifically interacting with a form labeled "send_info." Upon completing and submitting this form, the website processes the provided information, potentially sending an email confirmation to the user. Concurrently, a custom event is triggered, capturing the user's interaction with the "send_info" form. This captured event data serves as valuable insight, enabling analysis of user engagement patterns and preferences on the travel website.
+<figure>
+  <Thumbnail src="/img/building-apps-guides/google-tag-manager/google-tag-manager-example1.png" alt="GTM tag in use." />
+  <figcaption align = "center"><i>GTM tag in use.</i></figcaption>
+</figure>
+
+Imagine a user interacts with the lead generation app, triggering the button click action. This event then activates the custom HTML tag configuration within GTM, prompting the "Mail Sent!" alert. 
+
