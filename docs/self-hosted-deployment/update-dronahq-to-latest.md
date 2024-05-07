@@ -60,7 +60,6 @@ mysql --host=<% host %> --port=<% port %> --user=<% username %> --password=<% pa
 In `docker-compose.yaml`, change the image tag to indicate the version of DronaHQ to install. The following example specifies the image tag to install version `2.2.8`.
 
 ```
-image: dronahq/self-hosted:2.2.8
 services:
 ...
   webapp:
