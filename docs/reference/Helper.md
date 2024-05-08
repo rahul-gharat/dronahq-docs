@@ -6,10 +6,6 @@ sidebar_position: 50
 
 # Helper Methods
 
-:::info
-Helper methods are currently available only on Self-Hosted version > 2.4.2
-:::
-
 `HELPER` methods can help with data manipulation and transformation operations. These methods can be used to manipulate or transform data in String, Array and Object formats.
 
 ## TRANSFORMDATATOARRAY

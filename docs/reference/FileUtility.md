@@ -6,10 +6,6 @@ sidebar_position: 50
 
 # File Utility Methods
 
-:::info
-File Utility methods are currently available only on Self-Hosted version > 2.4.2
-:::
-
 `FILEUTILITY` contains methods which are helpful for parsing data from file formats like CSV and JSON. These methods return the parsed data in JSON format which is suitable to be used with controls on the UI builder.
 
 ## FILEPARSER

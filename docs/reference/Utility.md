@@ -8,7 +8,7 @@ sidebar_position: 49
 # Utility Methods
 
 :::info
-Utility methods are currently available only on Self-Hosted version > 2.4.2
+Utility methods which do not return any value work only on preview screen
 :::
 
 
