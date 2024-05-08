@@ -182,7 +182,7 @@ UTILITY.SMS('9699194532,9619723541','Hello');
 
 ## CALLRESTAPI
 
-`UTILITY.CALLRESTAPI()` method can be used to communicate with api servers using various HTTP methods like GET, POST, PUT, PATCH, and DELETE. This method returns a `promise` and to get the repsonse use `await` keyword.
+`UTILITY.CALLRESTAPI()` method can be used to communicate with api servers using various HTTP methods like GET, POST, PUT, PATCH, and DELETE. This method returns a `promise` and to get the response use `await` keyword.
 <span style={{fontSize: 24}}>Usage</span>
 
 ```
@@ -208,7 +208,7 @@ await UTILITY.CALLRESTAPI('https://exampleapi.com/api/users/','GET');
 ```
 
 :::info
-headers, data, useProxy and timeout are optional parameters, incase you don't want to specify any of them, put an empty string ('') instead while calling the method.
+headers, data, useProxy and timeout are optional parameters, in case you don't want to specify any of them, put an empty string ('') instead while calling the method.
 :::
 
 <span style={{fontSize: 24}}>Example POST Request</span>
