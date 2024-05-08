@@ -1,6 +1,9 @@
 ---
-title: Self-Hosted Architecture
+title: Architecture
+sidebar_position: 1
 ---
+
+# Self-Hosted DronaHQ Architecture
 
 import Thumbnail from '@site/src/components/Thumbnail';
 
@@ -25,15 +28,15 @@ specific functions:
 
 | Component             | Description                                                                                     |
 |-----------------------|-------------------------------------------------------------------------------------------------|
-| DronaHQ Server        | Central entity responsible for core functionalities such as user management and licensing.      |
+| DronaHQ Server        | Central entity responsible for core functionalities such as user management and licensing. You must whitelist License server URL - https://license.dronahq.com.      |
 | Creator Portal        | Interface empowering creators with content and application management capabilities.             |
+| End User Portal       | Gateway for users to access content and applications conveniently.                               |
 | Web Server            | Backbone delivering content seamlessly to end-users.                                             |
-| File Storage System   | Repository for securely storing critical data and files.                                         |
-| Run API System        | Efficiently manages the execution of diverse applications within the ecosystem.                 |
+| File Storage System   | Repository for securely storing critical data and files. Supported file systems: S3, local, Azure.                                        |
+| Run API System        | Efficiently manages the execution of diverse Connector queries calls from the App.                 |
+| Meta API System       | Facilitates programmatic access to the DronaHQ platform, enabling seamless integration.         |
 | Audit Logs System     | Provides comprehensive oversight by tracking user activities and system events.                 |
 | WAF (Web Application Firewall) | Shields the architecture against cyber threats, ensuring robust security.                    |
-| End User Portal       | Gateway for users to access content and applications conveniently.                               |
-| Meta API System       | Facilitates programmatic access to the DronaHQ platform, enabling seamless integration.         |
 
 ### Data Flow 
 

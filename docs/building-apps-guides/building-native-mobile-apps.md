@@ -14,11 +14,11 @@ DronaHQ allows creators to build native mobile apps that are compatible with bot
 
 ### Mobile Resolution Support 
 
-DronaHQ's intuitive drag-and-drop Mobile interface makes it easy for creators to design the app's user interface (UI) with pre-built widgets and components specific to Mobile Screen resolutions. This simplifies the app creation process, reducing development time and effort. For more info, refer [this](mobile-apps/responsive-ui).
+DronaHQ's intuitive drag-and-drop Mobile interface makes it easy for creators to design the app's user interface (UI) with pre-built widgets and components specific to Mobile Screen resolutions. This simplifies the app creation process, reducing development time and effort. For more info, refer [this](/mobile-apps/responsive-ui).
 
 ### Mobile App Settings
 
-DronaHQ provides various App configurations which are only applicable to DronaHQ End user portal - Android and iOS Mobile App. For more info, refer [this](mobile-apps/mobile-configurations).
+DronaHQ provides various App configurations which are only applicable to DronaHQ End user portal - Android and iOS Mobile App. For more info, refer [this](/mobile-apps/mobile-configurations).
 
 
 ### Native Device Features

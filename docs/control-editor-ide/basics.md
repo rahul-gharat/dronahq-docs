@@ -5,8 +5,14 @@ sidebar_position: 1
 import Thumbnail from '@site/src/components/Thumbnail';
 import Image from '@site/src/components/Image';
 
-# Custom Control IDE
 
+
+# Custom Control IDE (Deprecated)
+
+In DronaHQ, we have the following two methods for building custom controls: 
+1. Using Custom Control IDE (Deprecated)
+2. Using [Custom Control](https://docs.dronahq.com/reference/controls/custom-control/) in an Iframe. (Recommended)
+    1. Your custom control’s code runs in a separate iframe which provide complete flexibility to use React or vanilla javascript as per your needs.
 ## Basics
 
 To Start with any new control in Dronahq you should first focus on 2 sections: Builder section and preview section.

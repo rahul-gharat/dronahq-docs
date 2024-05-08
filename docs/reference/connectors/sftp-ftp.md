@@ -110,3 +110,13 @@ Your saved queries will be visible beneath your connector within the Connector L
 | rename       | Rename a file or directory in the remote location.          |
 | downloadfile | Download a file from the remote location.                   |
 | uploadfile   | Upload a local file to the remote location.                 |
+
+### Downloading file from the remote location
+
+Let us assume that we have a form where we specify the source path of file. Let us add an action button that triggers the action flow to download file.
+
+On the `button_click` event of the action button, add the `Server-side action` and choose configured SFTP connector and select query whose action is downloadfile. Turn Download as File toggle on and click on finish.
+
+<figure>
+  <Thumbnail src="/img/reference/connectors/sftpftp/downloadasFileSFTP.png" alt="Download as a File toggle in SFTP" />
+</figure>
