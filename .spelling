@@ -1399,6 +1399,13 @@ GIT_SYNC_BRANCH_NAME
 GIT_SYNC_AUTH_SSH_KEY_FRIENDLY_NAME
 GIT_SYNC_IS_AUTO_SAVE
 GIT_SYNC_IS_LOCK_APP_EDIT
+ok
+mp3
+appId
+sms
+readOnlyData
+xml
+useProxy
 ReadFile
 cdn
 CI.init
@@ -1452,3 +1459,4 @@ Cloudflare
 SHA-256
 dhq_managed_audit_log
 send_info.
+
