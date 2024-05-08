@@ -6,7 +6,7 @@ import Thumbnail from '@site/src/components/Thumbnail';
 
 # Mobile configurations
 
-Below are the Various App configurations can be set on DronaHQ which are only applicable to DronaHQ End user portal - Android and iOS Mobile App. These setting can be located in `DronaHQ -> Open Any App -> Settings -> All Settings`
+Below are the Various App configurations can be set on DronaHQ which are only applicable to DronaHQ End user portal - Android and iOS Mobile App. These settings can be located at `DronaHQ -> Open Any App -> Settings -> All Settings`.
 
 ## App Settings
  | Field | Description  | 

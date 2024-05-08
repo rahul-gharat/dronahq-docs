@@ -143,11 +143,12 @@ To enable filters in table grid you have to toggle on **Filters** property this 
 this Filters by default persist when you use pagination so you wish to avoid this behavior you can toggle off **Persist Filter** property.
 
 ### Customize UI for Table
-- `Table Headers` you can set `Background`, `Font size`, `Font weight`, `Font color` and `Text alignment`.
-- `Table Data` you can set `Font size`, `Font weight` and `Text alignment`.
-- `Theme` you can set a color in `Theme` property and it will be applied to many places where color is applicable.
-- `Row Background colors` you can set different colors for odd and even rows of display them separately.
-- `columns widths` you can set `Column min width` and `Column max width` for the widths of individual columns.
+- `Table Headers:` you can set `Background`, `Font size`, `Font weight`, `Font color` and `Text alignment`.
+- `Table Data:` you can set `Font size`, `Font weight` and `Text alignment`.
+- `Hide Vertical Lines:` Enable the option to hide vertical lines between table cells for a cleaner appearance.
+- `Row Background colors:` you can set different colors for odd and even rows of display them separately.
+- `Theme:` you can set a color in `Theme` property and it will be applied to many places where color is applicable.
+- `Column Width:` By default, you can specify `Column min width` and `Column max width` in pixels. However, if `Enable custom column width` toggled on, you can provide numeric arrays of widths in sequence to customize column widths dynamically.
 - `Checkboxes` you can set checkboxes to `Single select` or `Multi select` or `No` as per your requirements.
 - `Detail view` you can show some data in table and enable detail view to show more data, when user clicks on it a sidebar will be shown with all the data. You can also customize this as well using `Show Key Value Map` property and by toggling on `customize` you can choose which columns will be shown on detail view as well.
 
@@ -173,7 +174,8 @@ To use this feature you need to toggle on `Fit Height To Screen` property, this 
 To use this feature you need to toggle on `Show Aggregation Footer` property, this property enables the end users to have some basic calculation operations like `Count all`, `Count values`, `Count unique values`, `Count empty`, `Count not empty` for basic text type columns and `Sum`, `Average`, `Min`, `Max`, `Median`, `Range` for number type columns.
 
 ### Pagination
-To use this feature you need to toggle on `Allow` in pagination group, to use this feature your api should support pagination. There are 2 types of pagination's supported by DronaHQ `limit offset based` and `cursor based`. you can also decide the position where this pagination bar will be displayed by setting `Pagination Bar Location` property.
+
+To use this feature, toggle on `Allow` in the pagination group. Your API must support pagination. DronaHQ supports two pagination types: `limit offset-based` and `cursor-based.` Additionally, you can customize the position of the pagination bar by setting the `Pagination Bar Location` property. For connectors that support cursor-based pagination, like Airtable, select `Cursor Based Pagination` as the type and use the OFFSET key from the respective connector.
 
 ### Freeze columns
 To use this feature you need to toggle on `Freeze columns` property, this feature enables you to freeze columns when you are scrolling horizontally the number of columns froze will not move from there position.

@@ -16,7 +16,7 @@ The Detail View control serves the purpose of retrieving data from a sheet and p
 
 ## Binding Data Options
 
-The Detail View control accepts an array of objects in JSON format to display data. You can bind data to the control using the following methods:
+The Detail View control accepts an object in JSON format to display data. You can bind data to the control using the following methods:
 
 ### Static Data Option
 

@@ -4,7 +4,7 @@ sidebar_position: 96
 
 # Update DronaHQ version
 
-while updating DronaHQ, users might need downtime. Its a good practice to always notify users about downtimes and newly installed updates. Also create backup of your instance and databases regularly before update. DronaHQ provide incremental updates for database. it should be performed in sequence. If you wish to downgrade your installation, you do not need to downgrade database.
+While updating DronaHQ, users might need downtime. Its a good practice to always notify users about downtimes and newly installed updates. Also create backup of your instance and databases regularly before update. DronaHQ provide incremental updates for database. it should be performed in sequence. If you wish to downgrade your installation, you do not need to downgrade database.
 
 ### 1. Notify users about downtime
 
@@ -60,7 +60,6 @@ mysql --host=<% host %> --port=<% port %> --user=<% username %> --password=<% pa
 In `docker-compose.yaml`, change the image tag to indicate the version of DronaHQ to install. The following example specifies the image tag to install version `2.2.8`.
 
 ```
-image: dronahq/self-hosted:2.2.8
 services:
 ...
   webapp:
@@ -98,3 +97,13 @@ Apply modified manifest file with following command
 ```
 sudo kubectl apply -f dronahq-webapp.yaml
 ```
+
+### 8. Clear cache from your content delivery partner
+
+If you are using a CDN - Content Delivery Network, you should know that it also caches content (pages/ scripts/ images/ videos) in servers that are located closer to the users than the origin servers. 
+
+This way, when a request is made on a website that is using a content delivery network, the CDN will deliver it faster, as the server storing the cached content will be situated closer to the user making the request. However, this content needs to be flushed after updating DronaHQ so that users will get the latest updated files. This cached content can be removed, by clearing/purging/flushing the CDN cache.
+
+For **Cloudflare** : You can refer [this article](https://developers.cloudflare.com/cache/how-to/purge-cache/) on clearing cache.
+
+Depending on your content delivery partner, you may refer to their respective configuration for clearing cache.

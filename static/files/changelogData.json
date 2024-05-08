@@ -1,7 +1,53 @@
 [
   {
-    "timestamp": 1707523200000,
+    "timestamp": 17126874000000,
+    "tags": ["Cloud-Hosted"],
+    "heading": "SSH Key - IMPORT",
+    "cards": [
+      {
+        "title": "Enhancements",
+        "type": "improved",
+        "descriptions": [
+          "<img src=\"/img/advanced-concepts/connecting-via-ssh-keys/import-key.png\" alt=\"insect-bee\"/ width=\"100%\">",
+          " Now you also have the option to add an existing SSH key from your system. Simply toggle the Import Key option and choose a `.pem` file from the system."
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1710460800000,
+    "tags": ["Cloud-Hosted"],
+    "heading": "Razorpay Endpoints",
+    "cards": [
+      {
+        "title": "Enhancements",
+        "type": "improved",
+        "points": [
+          "<b>List All Plans: </b> View all available plans for subscription.",
+          "<b>Create Subscription Link: </b> Generate a subscription link to sign up for a plan."
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1709251200000,
     "tags": ["Cloud-Hosted", "Automations"],
+    "heading": "Enhancements for Task Output and Visualization",
+    "cards": [
+      {
+        "title": "Enhancements",
+        "type": "improved",
+        "points": [
+          "<b>Enhanced Task Output Dropdown: </b> Now, in the task output dropdown for REST API connections, you can view response headers alongside the output. This enhancement provides more comprehensive information for debugging and analysis.",
+          "<b>Improved Individual Task Run Display: </b> Individual task responses now include not only the output but also the response headers. This addition facilitates better debugging by providing more context and details.",
+          "<b>JSON Tree Integration in Raw Output View: </b> In the raw output view of individual task runs, a new tab has been introduced for JSON Tree visualization. This UI enhancement offers a more user-friendly way to visualize the raw request, response, and output, improving the overall user experience."
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1707523200000,
+    "tags": ["Cloud-Hosted"],
     "heading": "Database Connectivity Features",
     "cards": [
       {
@@ -11,7 +57,7 @@
           "<b> Database Reachability Analysis: </b> Gain insights into your database's accessibility by providing the host URL or host port via the whitelisting IP toggle.",
           "<b>Case Insensitive Name Search: </b>Bid farewell to case sensitivity! Searches for connector database names are now case insensitive, offering a smoother and more intuitive user experience.",
           "<b>Schema-independent Database Connection Testing: </b>Testing connections to your database is now schema-independent, ensuring a diverse range of connection checks. This enhancement allows for a basic level validation of database permissions, providing comprehensive testing capabilities.",
-          "<b>Schema-independent Database Connection Testing: </b> Enjoy a refined query building experience! The query builder now loads instantly, providing immediate access to crafting your queries. Additionally, the schema segment dynamically loads all available schemas, ensuring a hassle-free browsing experience even with a large number of schemas. Simply scroll through the schema window, and your schemas will continue to load effortlessly.",
+          "<b>Optimized Schema listing: </b> Enjoy a refined query building experience! The query builder now loads instantly, providing immediate access to crafting your queries. Additionally, the schema segment dynamically loads all available schemas, ensuring a hassle-free browsing experience even with a large number of schemas. Simply scroll through the schema window, and your schemas will continue to load effortlessly.",
           "<b>Support for AlloyDB via Postgres Connector: </b>Seamlessly connect to AlloyDB using the Postgres connector, with added support for SSH tunneling. "
         ]
       }
