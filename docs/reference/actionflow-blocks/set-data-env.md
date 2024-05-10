@@ -26,6 +26,6 @@ In the process of creating and [managing data environments](/datasource-concepts
 <Thumbnail src="/img/reference/actionflow-blocks/set-data-env/feild.jpeg" alt="set-data-env" />
 </figure>
 
-The `Set Data Environment` action effectively changes the data environment to the one you've selected. You can conveniently use the [keyword](/reference/keywords/#app-builder-keywords) `DATAENV` to check the current data environment.
+The `Set Data Environment` action effectively changes the data environment to the one you've selected. You can conveniently use the [keyword](/reference/keywords-js-utilities/keywords/#app-builder-keywords) `DATAENV` to check the current data environment.
 
 Important Note: When you update the data environment using the action flow, any controls that use `DATAENV` in their formulas will automatically re-evaluate based on the new data environment. This dynamic capability ensures that your app adapts to changing data requirements seamlessly.

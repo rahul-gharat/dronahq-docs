@@ -56,7 +56,7 @@ After selecting a trigger for your automation, you will need to add tasks or con
 </figure>
 
 :::info Automation keywords
-Learn about the automation keywords that offer enhanced feasibility within automation. Explore them [here](/reference/keywords#automation-keywords).
+Learn about the automation keywords that offer enhanced feasibility within automation. Explore them [here](/reference/keywords-js-utilities/keywords#automation-keywords).
 :::
 
 ## Test and Publish

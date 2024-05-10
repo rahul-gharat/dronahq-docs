@@ -374,8 +374,8 @@ For triggering any custom event of your control, you should call `CI.triggerActi
 
 Below are the limitations currently when building your Custom Control -
 1. You can not directly run any DATAQUERY variable.
-1. You can not call DronaHQ Custom functions ([Fx formulas](/reference/fx-formulas), UTILITY, HELPER, DATAQUERY).
-1. You can not access other controls data, data query variable and [keywords](/reference/keywords) unless you pass it in DATA BIND section.
+1. You can not call DronaHQ Custom functions ([Fx formulas](/reference/keywords-js-utilities/fx-formulas), UTILITY, HELPER, DATAQUERY).
+1. You can not access other controls data, data query variable and [keywords](/reference/keywords-js-utilities/keywords) unless you pass it in DATA BIND section.
 1. You can not trigger other control's/screen's Events.
 1. You can not invoke DronaHQ JS Objects directly in your html code.
 1. You can not use THEME variables for your custom control.

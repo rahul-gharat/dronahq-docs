@@ -1224,11 +1224,12 @@ The `BINDAPI()` function is used to fetch data from a connector data source and 
 
 ```js
 BINDAPI([connectorname.result.rows.columnname1, connectorname.result.rows.columnname2,…], Filter Condition, Sort column,Order)
+```
 
 Where,
 * `Connectorname.result.rows.columnname`: is the column whose data is to be fetched.
   * In case you need to fetch data from more than one column, then add the list of columns within the square [ ] brackets separated by comma as [Connectorname.result.rows.columnname1,Connectorname.result.rows.columnname2]
-* `[Filter](/reference/fx-formulas/#filter-truth-table)`: is the filter format to fetch data from the column. There are three components as Columns to be filtered, filter[ operator](https://intercom.help/dronahq-studio/formula/supported-operators-and-keywords/how-to-use-operators) & filter criteria. In case you need to state multiple filters you can use AND (for all filter criteria match) or OR (for any one of the filter criteria match).
+* [`Filter`](#filter-truth-table): is the filter format to fetch data from the column. There are three components as Columns to be filtered, filter [operator](https://intercom.help/dronahq-studio/formula/supported-operators-and-keywords/how-to-use-operators) & filter criteria. In case you need to state multiple filters you can use AND (for all filter criteria match) or OR (for any one of the filter criteria match).
   * The condition will be taken as datastore.columnname1=""
 
 The parameters mentioned below are optional:
