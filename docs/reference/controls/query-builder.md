@@ -15,38 +15,39 @@ The Query Builder control empowers you to create custom queries for situations r
   <figcaption align = "center"><i>Query Builder</i></figcaption>
 </figure>
 
-## Binding Data Options
+## Define Schema
 
-The Query Builder control provides two methods to initialize a query from the start:
-1. RAW JSON
-2. Query
-
-Additionally, you can define the schema structure during initialization using:
-- Schema
-
-
-### Schema Defining
-
-Schema binding in properties allows you to specify the structure of your data, similar to data binding but focusing on the format and type of data expected right at the intialization. This approach allows for schema definition of queries to be set from the very beginning of the app initialization.
+You can define your Query Builder schema either statically using `Properties` section or dynamically using `Bind Data -> Schema` option. Schema binding allows you to specify the structure of your query that can be build using Query Builder control keeping data type of the data as defined in schema.This allows Query Builder to provide options in rules according to data defined in Schema.
 
 Here's how you can use schema binding:
 
 Use JSON notation to define the structure of your data. Include key-value pairs to represent each field along with its data type. For example:
-     ```json
-     {
-       "ProductName": "string",
-       "ProductID": "string",
-       "Price": "number",
-       "Quantity": "number"
-     }
-     ```
+```json
+{
+  "ProductName": "string",
+  "ProductID": "string",
+  "Price": "number",
+  "Quantity": "number"
+}
+```
 
-You can use the Bind Data Section to bind the schema to the control. This allows the control to fetch data dynamically from data queries, sheets, or custom functions and display it according to the specified schema.
+You can alternatively use the Bind Data Section to bind the schema to the control with above format. This allows the control to fetch data dynamically from data queries, sheets, or custom functions and display it according to the specified schema.
+
+## Binding Data Options
+
+The Query Builder control provides either of the two methods to initialize a query from the start:
+1. [RAW JSON](#raw_json)
+2. [Query](#query)
+
+Additionally, you can define the schema structure during initialization using:
+- [Schema](#define-schema)
+
 
 ### RAW_JSON
 
-This allows for precise control over the query structure, enabling you to define complex filter conditions in detail right at the initialization of the app.
+Provide a RAW JSON in below format to initialize the Query Control with preset rules and orderBy clauses. This allows for precise control over the query structure, enabling you to define complex filter conditions in detail right at the initialization of the control.
 
+Sample RAW JSON:
 ```json
 {
 	"id": "g-RQpZdXIWdZhAmFoJO",
@@ -65,7 +66,12 @@ This allows for precise control over the query structure, enabling you to define
 However, you can also dynamically fetch this data using Bind options by retrieving information from `Data queries`, `Sheets`, or `Custom functions` and binding the response to the Data Bind option.
 
 ### Query
-The Query option provides a more user-friendly approach to initialize queries. This simplifies the overall process to directly provide query to the control when it gets start. So whatever query the user put in the data bind section, it will reflect in the control as pre-provided conditions/query.
+You can also, alternatively provide Query option instead of RAW JSON to initialize the Query Control with preset rules and orderBy clauses. It provides a more user-friendly approach to initialize querie control. This simplifies the overall process to directly provide query to the control when it gets start. So whatever query the user put in the data bind section, it will reflect in the control as pre-provided conditions/query.
+
+Sample Query:
+```sql
+WHERE `username` IS NOT NULL
+```
 
 Suppose you have a database with a table named `employees` containing information about employees such as `id`, `name`, `age`, and `department`. You want to create a query using the Query Builder control to filter employees based on their department and age.
 
