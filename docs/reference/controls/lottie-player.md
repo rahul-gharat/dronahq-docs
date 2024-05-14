@@ -19,6 +19,19 @@ Lottie animations serve as an excellent tool for creating visually engaging and 
 
 The Lottie Player control accepts a string URL format as the binding data option. Provide the URL pointing to the desired animation file.
 
+There are two ways to define the URL of your Lottie animation:
+
+1. Static Value:  Provide the URL directly in the `Bind Data` section. This is suitable if the URL remains constant.
+2. Dynamic URL:  Fetch the URL using a Data Query. This approach allows for retrieving the URL from external sources.
+
+Additionally, if the URL resides within another control or variable, you can reference it dynamically using the `{{keyword}}` syntax within the `Bind Data` section. This enables you to leverage existing data sources for flexible animation control.
+
+
+<figure>
+  <Thumbnail src="/img/reference/controls/lottie-player/variable.jpeg" alt="Lottie Player Control" />
+</figure>
+
+
 ### Properties
 
 The Lottie Player control provides customization through various properties:
