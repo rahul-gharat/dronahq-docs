@@ -23,6 +23,26 @@ The Query Builder control provides two methods to initialize a query from the st
 
 Additionally, you can define the schema structure during initialization using:
 - Schema
+
+
+### Schema Defining
+
+Schema binding in properties allows you to specify the structure of your data, similar to data binding but focusing on the format and type of data expected right at the intialization. This approach allows for schema definition of queries to be set from the very beginning of the app initialization.
+
+Here's how you can use schema binding:
+
+Use JSON notation to define the structure of your data. Include key-value pairs to represent each field along with its data type. For example:
+     ```json
+     {
+       "ProductName": "string",
+       "ProductID": "string",
+       "Price": "number",
+       "Quantity": "number"
+     }
+     ```
+
+You can use the Bind Data Section to bind the schema to the control. This allows the control to fetch data dynamically from data queries, sheets, or custom functions and display it according to the specified schema.
+
 ### RAW_JSON
 
 This allows for precise control over the query structure, enabling you to define complex filter conditions in detail right at the initialization of the app.
@@ -78,23 +98,6 @@ Suppose you have a database with a table named `employees` containing informatio
    - Bind data from the connector to the TableGrid control by selecting `TableGrid control > Quick Select > Connector Library`.
    - Choose the `employees` table from the connector.
 
-### Schema Defining
-
-Schema binding in properties allows you to specify the structure of your data, similar to data binding but focusing on the format and type of data expected right at the intialization. This approach allows for schema definition of queries to be set from the very beginning of the app initialization.
-
-Here's how you can use schema binding:
-
-Use JSON notation to define the structure of your data. Include key-value pairs to represent each field along with its data type. For example:
-     ```json
-     {
-       "ProductName": "string",
-       "ProductID": "string",
-       "Price": "number",
-       "Quantity": "number"
-     }
-     ```
-
-You can use the Bind Data Section to bind the schema to the control. This allows the control to fetch data dynamically from data queries, sheets, or custom functions and display it according to the specified schema.
 
 
 
