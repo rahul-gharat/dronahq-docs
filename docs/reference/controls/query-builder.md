@@ -17,11 +17,15 @@ The Query Builder control empowers you to create custom queries for situations r
 
 ## Binding Data Options
 
-The Query Builder control offers two data binding options to display. There are different ways in which you can bind data to the Query Builder control.
+The Query Builder control provides two methods to initialize a query from the start:
+1. RAW JSON
+2. Query
 
+Additionally, you can define the schema structure during initialization using:
+- Schema
 ### RAW_JSON
 
-With the RAW_JSON option, you can directly input the query in RAW_JSON format. This allows for precise control over the query structure, enabling you to define complex filter conditions in detail.
+This allows for precise control over the query structure, enabling you to define complex filter conditions in detail right at the initialization of the app.
 
 ```json
 {
@@ -41,7 +45,7 @@ With the RAW_JSON option, you can directly input the query in RAW_JSON format. T
 However, you can also dynamically fetch this data using Bind options by retrieving information from `Data queries`, `Sheets`, or `Custom functions` and binding the response to the Data Bind option.
 
 ### Query
-The Query option provides a more intuitive and user-friendly approach to constructing queries. Utilizing the control's visual interface, you can interactively build queries. This visual representation simplifies the process, making it easier to understand and troubleshoot complex queries.
+The Query option provides a more user-friendly approach to initialize queries. This simplifies the overall process to directly provide query to the control when it gets start. So whatever query the user put in the data bind section, it will reflect in the control as pre-provided conditions/query.
 
 Suppose you have a database with a table named `employees` containing information about employees such as `id`, `name`, `age`, and `department`. You want to create a query using the Query Builder control to filter employees based on their department and age.
 
@@ -74,13 +78,13 @@ Suppose you have a database with a table named `employees` containing informatio
    - Bind data from the connector to the TableGrid control by selecting `TableGrid control > Quick Select > Connector Library`.
    - Choose the `employees` table from the connector.
 
-### Schema Binding (Structure building)
+### Schema Defining
 
-Schema binding in properties allows you to specify the structure of your data, similar to data binding but focusing on the format and type of data expected. This approach provides clarity and organization, enabling seamless integration and manipulation within your application.
+Schema binding in properties allows you to specify the structure of your data, similar to data binding but focusing on the format and type of data expected right at the intialization. This approach allows for schema definition of queries to be set from the very beginning of the app initialization.
 
 Here's how you can use schema binding:
 
-1. Define the Schema: Use JSON notation to define the structure of your data. Include key-value pairs to represent each field along with its data type. For example:
+Use JSON notation to define the structure of your data. Include key-value pairs to represent each field along with its data type. For example:
      ```json
      {
        "ProductName": "string",
@@ -90,9 +94,7 @@ Here's how you can use schema binding:
      }
      ```
 
-2. Apply the Schema: Apply the schema to relevant controls such as TableGrid, Form, or List controls. This ensures that the controls align with the specified data structure.
-
-3. Bind the Schema: Use the Bind Data Section to bind the schema to the control. This allows the control to fetch data dynamically from data queries, sheets, or custom functions and display it according to the specified schema.
+You can use the Bind Data Section to bind the schema to the control. This allows the control to fetch data dynamically from data queries, sheets, or custom functions and display it according to the specified schema.
 
 
 
