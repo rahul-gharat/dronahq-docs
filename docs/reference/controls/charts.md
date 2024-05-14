@@ -78,6 +78,26 @@ Example using Plotly JSON:
 
 By utilizing these data binding options, you can create dynamic and informative charts in your microapp, representing data effectively.
 
+
+:::tip
+
+Plotly JSON charts support dynamic values using double curly braces (`{{variable_name}}`). This allows referencing variables that hold the actual data to be plotted.
+
+#### Example: 
+
+```json
+{
+  "data": [
+    {
+      "y": ["Leads", "Qualified", "Closed Deals"],
+      "values": [{{leadsSum}}, {{qualifiedLeadsCount}}, {{closedDealsCount}}]
+    }
+  ]
+}
+```
+:::
+
+
 ## Properties
 
 The Charts Control allows you to define properties for the dataset or choose the data source based on the chart type. Bar and line graphs utilize the X-axis, while Pie charts display aggregated values as labels for each slice.
@@ -91,7 +111,7 @@ You can source your data from various options such as Static Data, Sheets, Custo
 The Charts Control offers options for Line, Bar, Scatter, and Pie Charts using the UI Form. For more advanced customization and the use of other chart types, you can leverage the Plotly JSON format. This empowers you to create custom and complex charts tailored to your specific needs.
 :::
 
-**UI Form**
+#### UI Form 
 Once you select the data source, DronaHQ parses the data and enables you to populate it to the selected chart type using the UI Form type.
 
 :::tip 
@@ -100,7 +120,7 @@ Before you can set the values for the X-axis and Y-axis you need to make sure th
 
 - Chart type: Select the type of chart. It can be a Bar chart, Line Chart, Scatter Chart, or Pie Chart.
 
-**Properties for Chart Type: Bar / Line / Scatter Chart**
+#### Properties for Chart Type: Bar / Line / Scatter Chart 
 
 | Property                | Description                                                                                                                                                                           |
 |-------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -118,6 +138,7 @@ Before you can set the values for the X-axis and Y-axis you need to make sure th
 
 Aggregation Method allows you to perform various calculations on specific individual columns. Options include Sum, Count, Average, Median, Mode, Standard Deviation, Min Value, Max Value, First Value, and Last Value.
 
+:::
 
 | Aggregation Method   | Description                                                            |
 |----------------------|------------------------------------------------------------------------|
@@ -134,7 +155,7 @@ Aggregation Method allows you to perform various calculations on specific indivi
 
 :::
 
-**Properties for Chart Type: Pie Chart**
+#### Properties for Chart Type: Pie Chart 
 
 
 | Property  | Description                                                                |
@@ -143,7 +164,7 @@ Aggregation Method allows you to perform various calculations on specific indivi
 | Values    | Column to be aggregated based on the labels.                                |
 | Color     | Define colors for each section of the pie chart. Default colors if not set. |
 
-**Plotly JSON**
+#### Plotly JSON#### 
 
 For users seeking advanced chart options, the Charts control offers the flexibility to utilize Plotly.js charts. By working with Plotly JSON data and layout attributes, you can customize and extend your chart capabilities.
 
@@ -192,7 +213,7 @@ Links: [Plotly Data Attributes](https://plotly.com/python/reference/index/) and 
 
 Customizing the chart layout is possible with Layout properties, which adapt according to the selected chart type. For Bar Chart or Line Chart, customization focuses on X and Y-Axis data, whereas for Pie Chart, it centers around slices and labels. Furthermore, you can include the Layout attribute in Plotly JSON by specifying the layouts attribute for the respective charts.
 
-**Layout for the Bar, Line and Scatter Chart**
+#### Layout for the Bar, Line and Scatter Chart 
 
 | Property      | Description                                                                                                           |
 |---------------|-----------------------------------------------------------------------------------------------------------------------|
@@ -211,7 +232,7 @@ Customizing the chart layout is possible with Layout properties, which adapt acc
 | Y Position    | Position of the legends with reference to the Y-axis.                                                               |
 | Angle         | Angle at which the legend is positioned, horizontal or vertical.                                                     |
 
-**Layout for Pie Chart**
+#### Layout for Pie Chart#### 
 
 For Legends - 
 
@@ -223,7 +244,7 @@ For Legends -
 | Y Position    | Position of the legends with reference to the Y-axis.                                                            |
 | Angle         | Angle at which the legend is positioned, horizontal or vertical.                                                  |
 
-**Layout for Plotly JSON**
+#### Layout for Plotly JSON 
 
 The chart's layout can be customized using the Plotly.js Layout attribute. To configure the layout based on Plotly, switch to Plotly JSON in the Layout properties. These attributes allow you to control the positioning and configuration of chart items, including title, axes, colors, and legend.
 
@@ -235,7 +256,7 @@ You can utilize Plotly JSON Layout to customize charts with various available la
 
 ### Configuration
 
-**Size**
+#### Size 
 
 | Property | Description                                                                                                   |
 |----------|---------------------------------------------------------------------------------------------------------------|
@@ -244,7 +265,7 @@ You can utilize Plotly JSON Layout to customize charts with various available la
 | Width    | Set the width to the selected number of units to maintain a fixed size on all devices.                       |
 
 
-**Spacing**
+#### Spacing 
 
 | Property       | Description                                                                                             |
 |----------------|---------------------------------------------------------------------------------------------------------|
