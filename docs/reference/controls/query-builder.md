@@ -17,7 +17,7 @@ The Query Builder control empowers you to create custom queries for situations r
 
 ## Define Schema
 
-You can define your Query Builder schema either statically using `Properties` section or dynamically using `Bind Data -> Schema` option. Schema binding allows you to specify the structure of your query that can be build using Query Builder control keeping data type of the data as defined in schema.This allows Query Builder to provide options in rules according to data defined in Schema.
+You can define your Query Builder schema either statically using `Properties` section or dynamically using `Bind Data -> Schema` option. Schema binding allows you to specify the structure of your query that can be build using Query Builder control keeping data type of the data as defined in schema. This allows Query Builder to provide options in rules according to data defined in Schema.
 
 Here's how you can use schema binding:
 
@@ -66,7 +66,7 @@ Sample RAW JSON:
 However, you can also dynamically fetch this data using Bind options by retrieving information from `Data queries`, `Sheets`, or `Custom functions` and binding the response to the Data Bind option.
 
 ### Query
-You can also, alternatively provide Query option instead of RAW JSON to initialize the Query Control with preset rules and orderBy clauses. It provides a more user-friendly approach to initialize querie control. This simplifies the overall process to directly provide query to the control when it gets start. So whatever query the user put in the data bind section, it will reflect in the control as pre-provided conditions/query.
+You can also, alternatively provide Query option instead of RAW JSON to initialize the Query Control with preset rules and orderBy clauses. It provides a more user-friendly approach to initialize query control. This simplifies the overall process to directly provide query to the control when it gets start. So whatever query the user put in the data bind section, it will reflect in the control as pre-provided conditions/query.
 
 Sample Query:
 ```sql
