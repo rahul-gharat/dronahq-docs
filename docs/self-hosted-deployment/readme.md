@@ -5,6 +5,8 @@ sidebar_position: 91
 import VersionedLink from '@site/src/components/VersionedLink';
 import Basics from '@site/static/icons/features/basics.svg';
 import ArrowRight from '@site/static/icons/arrow_right.svg';
+import Image from '@site/src/components/Image'; 
+import Thumbnail from '@site/src/components/Thumbnail';
 
 # Overview
 
@@ -19,6 +21,70 @@ You can deploy DronaHQ locally as well as on several cloud infrastructure provid
 
 :::info
 If you’re evaluating a large production use case or need any of our Enterprise plan features, please [schedule a demo](https://www.dronahq.com/self-hosted-demo-call).
+:::
+
+
+## Deploying Self-Hosted DronaHQ
+
+
+### TL;DR: DronaHQ Self-Hosted Installation Steps
+
+1. Create an Account: Visit the [Self-hosted DronaHQ](https://www.dronahq.com/self-hosted/) portal and sign up.
+2. Get the Bash Command: After logging in, you'll receive a bash command.
+3. Run the Command: Copy and paste the command into your terminal.
+4. Download and Extract: The command will download and extract the necessary files and libraries.
+5. Launch DronaHQ: Your self-hosted version will start running on `localhost:8080`.
+6. Activate: Complete the activation process to start using DronaHQ.
+
+#### Prerequisites
+
+Ensure your system meets the following Docker requirements:
+
+- Docker Engine: Version 20.10.0 or higher. Verify with `$ sudo docker version`
+- Docker Compose: Version 1.29.0 or higher. Verify with `$ sudo docker-compose version`
+
+<figure>
+  <Thumbnail src="/img/self-hosted-deployment/overview/version.png" alt="version" />
+</figure>
+
+If Docker is not installed, our scripts will automatically set up the appropriate versions.
+
+#### Hosting DronaHQ On-Premises
+
+1. Visit the Portal: Go to [Self-hosted DronaHQ](https://www.dronahq.com/self-hosted/) and click Get Started.
+2. Follow Instructions: Complete the sign-up and verification process.
+3. Login: Access your self-hosted portal and locate your license key and instructions.
+
+<figure>
+  <Thumbnail src="/img/self-hosted-deployment/overview/portal.png" alt="DronaHQ self hosted key" />
+</figure>
+
+#### Setting Up on Ubuntu
+
+1. Run the Command: Copy the provided bash command from the portal, paste it into your terminal, and hit enter.
+2. Enable Communication: Ensure your server can communicate with `license.dronahq.com` by whitelisting this endpoint if necessary.
+3. Launch DronaHQ: The command will download files, install dependencies, and start DronaHQ on `localhost:8080`.
+
+<figure>
+  <Thumbnail src="/img/self-hosted-deployment/overview/ubuntu.jpeg" alt="DronaHQ self hosted key" />
+</figure>
+
+:::caution 
+It may take 3-5 minutes to fully initialize. If there’s a delay, navigate to `localhost:8080` manually.
+:::
+
+4. Activate: Provide your user details to activate the server. Ensure the email matches your sign-up email.
+
+:::tip NOTE
+Since you are accessing the DronaHQ using an IP address, you will have to update the IP address in your .env file.
+
+Open `dronahq.env` file in your Installation directory -
+
+- Locate this - `BUILDER_URL= http://localhost:8080`
+- Update it to - `BUILDER_URL= http://your-ip-address:8080`
+
+Save and close the above file and finally restart the web app using the below command-
+sudo docker-compose restart webapp
 :::
 
 ### Related Topics
