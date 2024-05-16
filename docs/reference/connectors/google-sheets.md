@@ -27,7 +27,6 @@ After successfully configuring and saving the connector settings, you can easily
 |--------------------|----------------------------------------------------------------------------|
 | GetAllRowsV2       | Retrieve all rows from a specific sheet in a Google Sheets document.       |
 | FindRowsV2         | Search and retrieve rows from a specific sheet based on specified criteria. |
-| GetAllSheets       | Get a list of all sheets within a Google Sheets document.                   |
 | GetSheetDetails    | Retrieve details and properties of a specific sheet.                         |
 | CreateSheet        | Create a new sheet within a Google Sheets document.                         |
 | GetAllRows         | Retrieve all rows from a specific sheet in a Google Sheets document.        |
@@ -37,10 +36,11 @@ After successfully configuring and saving the connector settings, you can easily
 | Clear Row          | Clear the content of a specific row in a Google Sheets document.            |
 | Find a Row         | Search and retrieve rows from a specific sheet based on specified criteria. |
 | AddMultipleRows    | Add multiple rows to a specific sheet in a Google Sheets document.          |
-| FindDriveFiles     | Search and retrieve Google Drive files related to Google Sheets.            |
 | GetSingleRow       | Retrieve a single row from a specific sheet based on row number.            |
 | ClearMultipleRows  | Clear content from multiple rows in a Google Sheets document.               |
 | UpdateMultipleRows | Update content in multiple rows within a Google Sheets document.            |
+| GetAllSheets       | Deprecated. Get a list of all sheets within a Google Sheets document.                   |
+| FindDriveFiles     | Deprecated. Search and retrieve Google Drive files related to Google Sheets.            |
 
 ## Using Google Sheets Connector
 
@@ -101,5 +101,44 @@ Pass an array of rows’ numbers in the method along with the spreadsheet name a
 </figure>
 
 
+## Locating Spreadsheet ID
 
+A Google Sheets spreadsheet ID is a unique identifier used by Google Sheets to distinguish each spreadsheet. This ID is part of the URL of the spreadsheet when you open it in your web browser.
+
+‍For example, in the URL:
+
+>https://docs.google.com/spreadsheets/d/23ASDS1A2B3CWEM4N5O6P7Q8R9S0T1U2V/edit
+
+the spreadsheet ID is the string of characters between /d/ and /edit, which in this case is:
+
+> 23ASDS1A2B3CWEM4N5O6P7Q8R9S0T1U2V
+
+This ID is used in various Google Sheets API requests to specify which spreadsheet you want to access or modify. 
+
+**Follow the steps below to find your spreadsheet ID in Google Sheets:**
+
+#### 1. Open the Google Sheets Spreadsheet and View the URL
+Open your Google Sheets spreadsheet and identify the browser’s address bar where the URL of the spreadsheet is displayed.
+
+<figure>
+  <Thumbnail src="/img/reference/connectors/googlesheet/google-sheet-id-1.png" alt="Locate Spreadsheet URL" />
+  <figcaption align = "center"><i>Locate Spreadsheet URL</i></figcaption>
+</figure>
+
+#### 2. Locate the Unique Spreadsheet ID Within the URL
+Find the spreadsheet ID in the URL. It is the long sequence of characters located between "/d/" and "/edit".
+<figure>
+  <Thumbnail src="/img/reference/connectors/googlesheet/google-sheet-id-2.png" alt="Locate Spreadsheet ID" />
+  <figcaption align = "center"><i>Locate Spreadsheet ID</i></figcaption>
+</figure>
+
+#### 3. Highlight and Copy the Spreadsheet ID from the URL
+Highlight and copy the ID portion from the URL. Use shortcuts like Ctrl+C (Windows) or Cmd+C (Mac) to copy.
+<figure>
+  <Thumbnail src="/img/reference/connectors/googlesheet/google-sheet-id-3.png" alt="Copy Spreadsheet ID" />
+  <figcaption align = "center"><i>Copy Spreadsheet ID</i></figcaption>
+</figure>
+
+#### 4. Use the Copied Spreadsheet ID for Your Required Purpose
+With the spreadsheet ID copied, you can now use it for various purposes, such as accessing the spreadsheet through the Google Sheets API on DronaHQ.
 
