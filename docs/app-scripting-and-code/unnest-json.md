@@ -96,6 +96,11 @@ We'll use a sample JSON dataset stored in a MongoDB collection and loaded onto t
 }
 ```
 
+<figure>
+  <Thumbnail src="/img/app-scripting-and-code/unnest-json/unnest-json-raw.png" alt="Nested data." />
+  <figcaption align = "center"><i>Nested data.</i></figcaption>
+</figure>
+
 ### Unnesting JSON Data into Multiple Rows
 
 The first method involves transforming nested JSON data into multiple rows, where each subject entry appears as a separate row in the Tablegrid.
@@ -188,6 +193,11 @@ data = output;
 ]
 ```
 
+<figure>
+  <Thumbnail src="/img/app-scripting-and-code/unnest-json/unnest-json-unnest1.png" alt="Unnested data." />
+  <figcaption align = "center"><i>Unnested data.</i></figcaption>
+</figure>
+
 ### Unnesting JSON Data into Multiple Columns
 
 The second method reduces redundancy by unnesting the JSON data into multiple columns, where each subject's details are displayed in separate columns.
@@ -258,6 +268,11 @@ data = output;
   }
 ]
 ```
+<figure>
+  <Thumbnail src="/img/app-scripting-and-code/unnest-json/unnest-json-unnest2.png" alt="Unnested data." />
+  <figcaption align = "center"><i>Unnested data.</i></figcaption>
+</figure>
+
 
 ### Unnesting JSON Data into Columns with Field Values as Column Names
 
@@ -306,5 +321,9 @@ data = output;
   }
 ]
 ```
+<figure>
+  <Thumbnail src="/img/app-scripting-and-code/unnest-json/unnest-json-unnest3.png" alt="Unnested data." />
+  <figcaption align = "center"><i>Unnested data.</i></figcaption>
+</figure>
 
  By unnesting JSON data into multiple rows, multiple columns, or using field values as column names, you can optimize the data presentation for various use cases. Implement these techniques to transform your complex JSON data into a structured and intuitive format, making it easier for users to interact with and understand the information.

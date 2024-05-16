@@ -27,7 +27,6 @@ After successfully configuring and saving the connector settings, you can easily
 |--------------------|----------------------------------------------------------------------------|
 | GetAllRowsV2       | Retrieve all rows from a specific sheet in a Google Sheets document.       |
 | FindRowsV2         | Search and retrieve rows from a specific sheet based on specified criteria. |
-| GetAllSheets       | Get a list of all sheets within a Google Sheets document.                   |
 | GetSheetDetails    | Retrieve details and properties of a specific sheet.                         |
 | CreateSheet        | Create a new sheet within a Google Sheets document.                         |
 | GetAllRows         | Retrieve all rows from a specific sheet in a Google Sheets document.        |
@@ -37,7 +36,6 @@ After successfully configuring and saving the connector settings, you can easily
 | Clear Row          | Clear the content of a specific row in a Google Sheets document.            |
 | Find a Row         | Search and retrieve rows from a specific sheet based on specified criteria. |
 | AddMultipleRows    | Add multiple rows to a specific sheet in a Google Sheets document.          |
-| FindDriveFiles     | Search and retrieve Google Drive files related to Google Sheets.            |
 | GetSingleRow       | Retrieve a single row from a specific sheet based on row number.            |
 | ClearMultipleRows  | Clear content from multiple rows in a Google Sheets document.               |
 | UpdateMultipleRows | Update content in multiple rows within a Google Sheets document.            |
