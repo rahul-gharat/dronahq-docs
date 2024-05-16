@@ -74,7 +74,7 @@ Let's walk through creating a query to fetch data from a MySQL employees table w
      ```sql
      SELECT * FROM employees {{condition}}
      ```
-     In the aboove, query we are ahiving a variable of `condition` which will eventually hold the codition of our Query Builder control
+     In the above, query we are having a variable of `condition` which will eventually hold the condition of our Query Builder control
 2. Configure Control data with the query to passed
    - 
      ```sql
