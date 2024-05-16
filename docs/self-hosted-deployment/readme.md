@@ -24,7 +24,7 @@ If you’re evaluating a large production use case or need any of our Enterprise
 :::
 
 
-## Deploying Self-Hosted DronaHQ
+## DronaHQ Self-Hosted Quickstart
 
 
 ### TL;DR: DronaHQ Self-Hosted Installation Steps
@@ -36,20 +36,11 @@ If you’re evaluating a large production use case or need any of our Enterprise
 5. Launch DronaHQ: Your self-hosted version will start running on `localhost:8080`.
 6. Activate: Complete the activation process to start using DronaHQ.
 
-#### Prerequisites
+### Prerequisites
 
-Ensure your system meets the following Docker requirements:
+Ensure that the minimum requirements listed [here](/self-hosted-deployment/requirements) are satisfied.
 
-- Docker Engine: Version 20.10.0 or higher. Verify with `$ sudo docker version`
-- Docker Compose: Version 1.29.0 or higher. Verify with `$ sudo docker-compose version`
-
-<figure>
-  <Thumbnail src="/img/self-hosted-deployment/overview/version.png" alt="version" />
-</figure>
-
-If Docker is not installed, our scripts will automatically set up the appropriate versions.
-
-#### Hosting DronaHQ On-Premises
+### DronaHQ Self-Hosted Portal
 
 1. Visit the Portal: Go to [Self-hosted DronaHQ](https://www.dronahq.com/self-hosted/) and click Get Started.
 2. Follow Instructions: Complete the sign-up and verification process.
@@ -59,7 +50,7 @@ If Docker is not installed, our scripts will automatically set up the appropriat
   <Thumbnail src="/img/self-hosted-deployment/overview/portal.png" alt="DronaHQ self hosted key" />
 </figure>
 
-#### Setting Up on Ubuntu
+### Setting Up on your local Ubuntu instance
 
 1. Run the Command: Copy the provided bash command from the portal, paste it into your terminal, and hit enter.
 2. Enable Communication: Ensure your server can communicate with `license.dronahq.com` by whitelisting this endpoint if necessary.
@@ -73,7 +64,13 @@ If Docker is not installed, our scripts will automatically set up the appropriat
 It may take 3-5 minutes to fully initialize. If there’s a delay, navigate to `localhost:8080` manually.
 :::
 
-4. Activate: Provide your user details to activate the server. Ensure the email matches your sign-up email.
+4. Activate: An activation window will open where you need to give your details like user name, email ID, and password, to activate the self-hosted installation. Ensure the email matches your sign-up email.
+
+<figure>
+  <Thumbnail src="/img/self-hosted-deployment/overview/activation.png" alt="Activate DronaHQ Self-hosted" />
+</figure>
+
+Click on Activate now and you will be redirected to the homepage of your self-hosted DronaHQ on-prem version in your system’s localhost.
 
 :::tip NOTE
 Since you are accessing the DronaHQ using an IP address, you will have to update the IP address in your .env file.
@@ -87,7 +84,7 @@ Save and close the above file and finally restart the web app using the below co
 sudo docker-compose restart webapp
 :::
 
-### Related Topics
+## Related Topics
 
 - [Minimum requirements](/self-hosted-deployment/requirements)
 - [Deployment Options](/self-hosted-deployment/deployment-options/local-machine)
@@ -98,7 +95,7 @@ sudo docker-compose restart webapp
 - [Update DronaHQ to Latest version](/self-hosted-deployment/update-dronahq-to-latest)
 - [Concepts](/self-hosted-deployment/concepts/migrate-from-cloud-to-self-hosted)
 
-### Useful Links
+## Useful Links
 
 - [Github](https://github.com/dronahq/self-hosted)
 - [Sign Up](https://www.dronahq.com/self-hosted-signup/)
