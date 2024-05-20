@@ -105,3 +105,91 @@ When any user sends your business a message you can send them a freeform outboun
 <figure>
     <Thumbnail src="/img/reference/connectors/twillio/message.jpeg" alt="Twilio message sent to whatsaap number" />
 </figure>
+
+
+---
+
+### Using Twilio for Verification
+
+DronaHQ  enables integration with Twilio through ready-made connectors to send WhatsApp text and media messages to your customers and prospects. The Twilio integration also supports user verification using one-time passcodes or verification codes via SMS or Email. For email verification, Twilio integrates effectively with SendGrid, allowing you to harness its power for substitution. With the Twilio Connector in , you can easily set up a secure authentication system to protect user identity and site access.
+ector. Specify the code length and set validations as needed, then click Save.
+
+
+
+##### Sending Verification Code via SMS
+
+To send a verification code via SMS, you’ll need to set up the Twilio Connector:
+
+1. In `Action Flow > Server Side Actions`, select Twilio Connector and click Continue.
+2. Choose `SendVerify` from the Twilio Actions and click Continue.
+3. Select the authenticated account. 
+4. Configure the Connector fields:
+   - Copy the Service ID from your Twilio Verify Service and paste it in the connector field.
+   - Select SMS as the channel.
+   - Add the recipient’s phone number with the correct country code.
+   - Use the CONCATENATE(control.countrycode, control.mobilenumber) function for dynamic values.
+5. Add the Action Unique Name and any response variables from the output values.
+
+<figure>
+    <Thumbnail src="/img/reference/connectors/twillio/sendVerify.jpeg" alt="Twilio message sent to whatsaap number" />
+</figure>
+
+##### Verifying the Code
+
+Now to verify the code you may have a `OTP Control` where the user enters the code and sends it for verification.
+
+1. Use the `VerifyCode` action from the Twilio Integration.
+2. Select the authenticated account.
+3. Configure the connector with the Service ID, recipient’s phone number, and the received code.
+4. Add the Action Unique Name and any response variables. Use the `output.status` response, which returns `approved` or `pending` status.
+
+#### Email Verification Using Twilio SendGrid
+
+Twilio's integration with SendGrid allows you to send OTP via email. Here’s how to set it up:
+
+1. In your Twilio Account, under Verify Service, select Email Integration.
+2. Click Create Email Integration, name the service, and click Continue.
+3. Configure the properties:
+   - SendGrid API Key: Obtain this from your SendGrid account.
+   - Default Template ID: Create a new template in SendGrid and include necessary variables like `{{twilio_code}}`.
+   - Default From Email and Name: Set these as per your requirement.
+4. Save the configuration.
+
+<figure>
+    <Thumbnail src="/img/reference/connectors/twillio/emailvery.jpeg" alt="Twilio message sent to whatsaap number" />
+</figure>
+
+##### Sending Verification Code via Email
+
+1. In Action Flow > Server Side Actions, select Twilio Connector and click Continue.
+2. Choose `SendVerify` from the Twilio Actions and click Continue.
+3. Select the authenticated account.
+4. Copy the Service ID from your Twilio Verify Service and paste it in the connector field.
+5. Select `Email` as the channel and add the recipient’s email address.
+6. Add the Action Unique Name and any response variables.
+
+<figure>
+    <Thumbnail src="/img/reference/connectors/twillio/email1.jpeg" alt="Twilio message sent to whatsaap number" />
+</figure>
+
+##### Sending Code via Email with Substitution
+
+For dynamic email content:
+
+1. Select `SendVerifyWithConfiguration` from the Twilio Actions.
+2. Choose the authenticated account.
+3. Copy the Service ID from your Verify Service and paste it in the connector field.
+4. Under Channel, select `Email`.
+5. Enter the recipient’s email address.
+6. Add Channel Configuration with `JSON Key-Value pairs` for substitution.
+7. Add the Action Unique Name and click `Finish`.
+
+
+<figure>
+    <Thumbnail src="/img/reference/connectors/twillio/subs.jpeg" alt="Twilio message sent to whatsaap number" />
+</figure>
+
+<figure>
+    <Thumbnail src="/img/reference/connectors/twillio/email2.jpeg" alt="Twilio message sent to whatsaap number" />
+</figure>
+
