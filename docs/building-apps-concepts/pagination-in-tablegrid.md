@@ -137,3 +137,22 @@ for viewing the end result:
 
    - Once you've retrieved paginated data from the API, integrate it into a table grid for visualization.
    - Populate the table grid with the paginated data fetched from the API response.
+
+
+### Using JavaScript Transformation
+While the previous methods leverage built-in pagination functionalities or connector properties, DronaHQ also allows for implementing custom pagination logic using JavaScript transformation.
+
+Here's a general idea:
+
+- Data Access: Within your JavaScript code, you'll likely use methods or properties provided by DronaHQ to access the original (unpaginated) data from your data source.
+
+- Pagination Logic: Implement the core pagination logic using JavaScript. This might involve:
+  - Extracting the current page number and number of items per page from relevant DronaHQ properties (e.g., table grid properties).
+  - Performing calculations to determine the starting index (offset) for the desired page based on the current page number and items per page.
+  - Slicing or filtering the original data to extract the specific subset of items that correspond to the current
+
+      <figure>
+         <Thumbnail src="/img/building-apps-concepts/pagination-tablegrid/js.png" alt="Pagination on Data using javaScript" />
+        <figcaption align='center'><i> Pagination on Data using javaScript </i></figcaption>
+      </figure>
+
