@@ -35,7 +35,7 @@ After successfully configuring and saving the connector settings, you can easily
 | CaptureWebsiteJob      | Creates a job to capture a screenshot of a website.         |
 
 
-## Self-Hosted Installation for CloudConvert
+## Self-Hosted Installation
 
 To use the CloudConvert Connector on the on-prem version, follow these steps:
 

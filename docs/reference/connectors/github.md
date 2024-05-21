@@ -35,3 +35,24 @@ After successfully configuring and saving the connector settings, you can easily
 | UpdateIssue      | Update the details of an existing issue. |
 | CreateComment    | Add a new comment to an issue or pull request. |
 
+## Self-Hosted Installation 
+
+To use the GitHub Connector on the on-prem version, follow these steps:
+
+1. Select the Connector: Choose the GitHub Connector from the list.
+
+2. Provide the Necessary Details:
+
+- Environment/Account Name: The name can contain alphanumeric characters, must start with an alphabet, and can include `_` as a special character, but should not contain spaces.
+
+- API Base URL: Enter `https://api.github.com` as the base URL of your API endpoint.
+
+- OAuth Redirect URL: Copy the following URL. Use this link in your app's API or developer settings to create a new integration or app to use with DronaHQ. If required, go to your app's admin console and add it to the allowed list.
+
+### Obtaining GitHub API Credentials
+
+1. Client ID and Client Secret: Obtain these unique credentials by registering your application in the [GitHub Developer Console](https://github.com/settings/developers).
+
+2. Scope: Define the specific functionalities your application needs access to within GitHub. Choose appropriate scopes from the [GitHub documentation](https://docs.github.com/en/developers/apps/building-oauth-apps/scopes-for-oauth-apps).
+
+3. Authorization URLs: Refer to the [GitHub OAuth documentation](https://docs.github.com/en/developers/apps/building-oauth-apps/authorizing-oauth-apps) for the Authorization Request URL, Access Token Request URL, and Refresh Token Request URL.
