@@ -90,3 +90,18 @@ The AWS Lambda connector enables you to effectively invoke your customized funct
   <Thumbnail src="/img/reference/connectors/awslambda/result.jpeg" alt="Binding Connector Data" />
 </figure>
 
+## Self-Hosted Installation 
+
+To use the AWS Lambda Connector on the on-prem version, follow these steps:
+
+1. Select the Connector: Choose the AWS Lambda Connector from the list.
+
+2. Provide the Necessary Details: Enter the required information, including the Environment/Account Name (alphanumeric, must start with an alphabet, and can include `_` but no spaces), API Base URL (`https://lambda.us-east-2.amazonaws.com`), Access Key, Secret Key, and AWS Region (e.g., `us-east-1`). 
+
+3. Use EC2 IAM Access Role: Type 'Yes' if you are using an EC2 IAM Access Role.
+
+1. Access Key and Secret Key: Copy these from your AWS account and enter them into the respective fields.
+
+2. API Base URL: Ensure the URL is a valid domain name followed by the http/https protocol (e.g., `https://lambda.us-east-2.amazonaws.com`).
+
+3. AWS Region: Specify the region for the AWS account you will use (e.g., `us-east-1`).

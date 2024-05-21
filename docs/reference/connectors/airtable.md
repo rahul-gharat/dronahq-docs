@@ -129,3 +129,22 @@ To find rows in Airtable using the connector, follow these steps:
 :::info
 Keep in mind that the Airtable API returns only keys of rows with present values, which might differ from DronaHQ's expectation of consistent keys. To overcome this, ensure cells are filled or create a custom JavaScript function for consistent output.
 :::
+
+
+## Self-Hosted Installation
+
+To use the Airtable Connector on the on-prem version, follow these steps:
+
+1. Select the Connector: Choose the Airtable Connector from the list.
+
+2. Provide the Necessary Details: 
+
+   - Environment/Account Name: The name can contain alphanumeric characters, must start with an alphabet, and can only contain `_` as a special character without spaces.
+
+   - API Base URL: Enter the base URL of your API endpoint for the given environment. This should be a valid domain name followed by the http/https protocol (e.g., `https://studio.dronahq.com`).
+
+   - Personal Access Token: Enter your personal access token.
+
+:::caution
+You can add multiple APIs, but you cannot edit them later. If changes are needed, you must redo the process from adding the API.
+:::

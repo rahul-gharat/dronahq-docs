@@ -68,3 +68,25 @@ Next, it will ask you to choose the project from your account, to where you want
 <figure>
   <Thumbnail src="/img/reference/connectors/asana/key2.jpeg" alt="Sign-in to your Asana account" />
 </figure>
+
+## Self-Hosted Installation 
+
+To use the Asana Connector on the on-prem version, follow these steps:
+
+1. Select the Connector: Choose the Asana Connector from the list.
+
+2. Provide the Necessary Details: Enter the required information, including the Environment/Account Name (alphanumeric, must start with an alphabet, and can include `_` but no spaces), API Base URL (`https://app.asana.com`), and the OAuth Redirect URL (`https://qa-selfhosted.dronahq.ai/oauth_callback`). Use this URL in your app's API or developer settings and add it to the allowed list if required.
+
+### Obtaining Asana API Credentials
+
+1. Register Your Application: Visit the [Asana Developer Console](https://asana.com/developers) and create a new application. This sets up your application within Asana's system.
+
+2. Find Your Client ID and Secret: After registering your application, go to the application details section to find your Client ID and Client Secret.
+
+3. Define Your Scope: Choose the specific functionalities your application can access within Asana. Refer to the [Asana documentation](https://developers.asana.com/docs/oauth) to select the appropriate scopes.
+
+4. Authorization URLs: Asana uses the OAuth 2.0 authorization flow. Refer to [Asana's OAuth documentation](https://developers.asana.com/docs/oauth) for the Authorization Request URL, Access Token Request URL, and Refresh Token Request URL, depending on the chosen OAuth flow.
+
+<figure>
+  <Thumbnail src="/img/reference/connectors/asana/self.jpeg" alt="Sign-in to your Asana account" />
+</figure>

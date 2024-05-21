@@ -116,3 +116,31 @@ Let us assume that we have a form where we specify the Bucket name, file key. Le
 <figure>
   <Thumbnail src="/img/reference/connectors/awss3/downloadFile.png" alt="Download as a File toggle" />
 </figure>
+
+
+## Self-Hosted Installation
+
+To use the AWS S3 Connector on the on-prem version, follow these steps:
+
+1. Select the Connector: Choose the AWS S3 Connector from the list.
+
+2. Provide the Necessary Details: Enter the required information, including the Environment/Account Name (alphanumeric, must start with an alphabet, and can include `_` but no spaces), Access Key, Secret Key, AWS Region (e.g., `us-east-1`), and additional optional settings.
+
+###  Fields
+
+- Environment/Account Name: The name can contain alphanumeric characters, must start with an alphabet, and can include `_` but no spaces.
+  
+- Access Key: Copy the Access Key from your AWS account and enter it here.
+
+- Secret Key: Copy the Secret Key from your AWS account and enter it here.
+
+- AWS Region: Enter the region for the AWS account you're going to use (e.g., `us-east-1`).
+
+- Use EC2 IAM Access Role: Type "Yes" if you want to use an AWS EC2 IAM Role for authentication. If this option is selected, the Access Key and Secret Key fields can be left blank.
+
+- Role to Assume (ARN): Enter the role to be used while accessing the API.
+
+- Force S3 URLs to Use Path Style: Type "yes" if you want to force S3 URLs to use the path style.
+
+- API Base URL: Ensure the URL is a valid domain name followed by the http/https protocol.
+

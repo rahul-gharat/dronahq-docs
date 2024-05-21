@@ -64,3 +64,31 @@ Do a refresh response, then bind the keys as columns for the control and click `
   <Thumbnail src="/img/reference/connectors/bitly/getgroup.png" alt="Get group details" />
   <figcaption align = "center"><i>Get group details</i></figcaption>
 </figure>
+
+## Self-Hosted Installation 
+
+To use the Bitly Connector on the on-prem version, follow these steps:
+
+1. Select the Connector: Choose the Bitly Connector from the list.
+
+2. Provide the Necessary Details: Enter the required information, including Environment/Account Name, API Base URL, OAuth Redirect URL, Client ID, Client Secret, Scope, Authorization Request URL, Access Token Request URL, and Refresh Token Request URL.
+
+### Required Fields
+
+- Environment/Account Name: The name can contain alphanumeric characters, must start with an alphabet, and can include `_` as a special character, but should not contain spaces.
+  
+- API Base URL: Enter `https://api-ssl.bitly.com` as the base URL of your API endpoint.
+
+- OAuth Redirect URL: Copy the following URL: `https://qa-selfhosted.dronahq.ai/oauth_callback`. Use this link in your app's API or developer settings to create a new integration or app to use with DronaHQ. If required, go to your app's admin console and add it to the allowed list.
+
+### Obtaining Bitly API Credentials
+
+1. Client ID and Client Secret: These unique credentials identify your application to Bitly's API. Obtain them by registering your application in the [Bitly Developer Console](https://dev.bitly.com/).
+
+2. Scope: Define the specific functionalities your application needs access to within Bitly. Choose appropriate scopes from the [Bitly documentation](https://dev.bitly.com/).
+
+3. Authorization URLs: These URLs are involved in the OAuth flow used to obtain access tokens for your application. Refer to the [Bitly OAuth documentation](https://dev.bitly.com/authentication.html) for details.
+
+4. Access Token Request URL: Provide the access token request URL.
+
+5. Refresh Token Request URL: Provide the refresh token request URL.
