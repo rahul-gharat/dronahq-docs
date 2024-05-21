@@ -34,3 +34,25 @@ After successfully configuring and saving the connector settings, you can easily
 | ListJobs               | Lists all the active and completed jobs.                    |
 | CaptureWebsiteJob      | Creates a job to capture a screenshot of a website.         |
 
+
+## Self-Hosted Installation for CloudConvert
+
+To use the CloudConvert Connector on the on-prem version, follow these steps:
+
+1. Select the Connector: Choose the CloudConvert Connector from the list.
+
+2. Provide the Necessary Details: 
+
+- Environment/Account Name: The name can contain alphanumeric characters, must start with an alphabet, and can include `_` as a special character, but should not contain spaces.
+
+- API Base URL: Enter `https://api.cloudconvert.com` as the base URL of your API endpoint.
+
+- OAuth Redirect URL: Copy the following URL. Use this link in your app's API or developer settings to create a new integration or app to use with DronaHQ. If required, go to your app's admin console and add it to the allowed list.
+
+### Obtaining CloudConvert API Credentials
+
+1. Client ID and Client Secret: Obtain these unique credentials by registering your application in the [CloudConvert Developer Console](https://cloudconvert.com/developers).
+
+2. Scope: Define the specific functionalities your application needs access to within CloudConvert. Choose appropriate scopes from the [CloudConvert documentation](https://cloudconvert.com/api/).
+
+3. Authorization URLs: Refer to the [CloudConvert OAuth documentation](https://cloudconvert.com/api/v2#authentication) for the Authorization Request URL, Access Token Request URL, and Refresh Token Request URL.

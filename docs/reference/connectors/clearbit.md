@@ -34,5 +34,3 @@ Add a `Account name`. Then add the `API key` for the connector account. Once all
 | Lookup domain by company    | Retrieves domain information associated with a company. |
 | Company autocomplete by name| Provides company name suggestions as you type.          |
 | Company Logo by domain      | Fetches the logo of a company using its domain name.    |
-
-
