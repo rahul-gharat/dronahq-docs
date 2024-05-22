@@ -111,8 +111,7 @@ When any user sends your business a message you can send them a freeform outboun
 
 ### Using Twilio for Verification
 
-DronaHQ  enables integration with Twilio through ready-made connectors to send WhatsApp text and media messages to your customers and prospects. The Twilio integration also supports user verification using one-time passcodes or verification codes via SMS or Email. For email verification, Twilio integrates effectively with SendGrid, allowing you to harness its power for substitution. With the Twilio Connector in , you can easily set up a secure authentication system to protect user identity and site access.
-ector. Specify the code length and set validations as needed, then click Save.
+DronaHQ  enables integration with Twilio through ready-made connectors to send WhatsApp text and media messages to your customers and prospects. The Twilio integration also supports user verification using one-time passcodes or verification codes via SMS or Email. For email verification, Twilio integrates effectively with SendGrid, allowing you to harness its power for substitution. With the Twilio Connector, you can easily set up a secure authentication system to protect user identity and site access.
 
 
 
