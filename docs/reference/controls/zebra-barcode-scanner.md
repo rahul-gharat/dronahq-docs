@@ -17,29 +17,25 @@ The Zebra Barcode Scanner control is designed to facilitate barcode scanning usi
 
 <figure>
   <Thumbnail src="/img/reference/controls/zebra-barcode-scanner/test.jpg" alt="Zebra Barcode Scanner" height="400em"/>
-  <figcaption align="center"><i>Zebra Barcode in use.</i></figcaption>
+  <figcaption align="left"><i>Zebra Barcode in use</i></figcaption>
 </figure>
-
-
 
 ## Prerequisite
 
-For security purposes, Zebra controls access to the DataWedge Intents APIs. Zebra administrators must first create a Zebra DataWedge profile. You can create this profile on the Zebra DataWedge setup screen within the Settings menu. Open the top left menu when viewing the DronaHQ Mobile app on a Zebra device and select `Settings > Zebra DataWedge setup` to get started.
+For security purposes, Zebra Barcode Scanner control access to the DataWedge Intents APIs. Zebra administrators must first create a Zebra DataWedge profile. You can create this profile on the Zebra DataWedge App. Open the top right menu when viewing the Zebra DataWedge App on a Zebra device and create a `New DataWedge Profile` to get started.
 
-Alternatively, administrators can create a Zebra DataWedge profile with the following configuration to add the Retool Mobile app as an approved DataWedge application.
+Create a Zebra DataWedge profile with the following configuration to add the DronaHQ Mobile app as an approved DataWedge application.
 
 | Setting          | Value                             |
 |------------------|-----------------------------------|
-| Associated app   | com.dronahq5                      |
+| Associated app   | com.drona5                      |
 | Activity         | *                                 |
 | Intent output    | Enabled                           |
 | Intent action    | com.dronahq.zebra.ACTION          |
 | Intent category  | Clear or leave unset              |
 | Intent delivery  | Broadcast intent                  |
 
-Once configured, the DronaHQ Mobile app is able to receive captured data and provide it to your mobile apps. Refer to the Zebra DataWedge APIs documentation for more information on approved apps and profiles.
-
-This screen contains information for debugging your DataWedge profile, as well as a button to automatically configure a profile for Retool and an output of events.
+Once configured, the DronaHQ Mobile app is able to receive captured data and provide it to your DronaHQ apps. Refer to the [Zebra DataWedge documentation](https://techdocs.zebra.com/datawedge/6-3/guide/createprofile/) for more information on adding profiles.
 
 ## Binding Data Options
 
@@ -47,17 +43,17 @@ The Zebra Barcode Scanner control captures scanned barcode data and binds it to 
 
 ### BarcodeData
 
-The BarcodeData field captures the actual data retrieved from the barcode scan. This data is processed and stored as a string.
+The BarcodeData field captures the actual data retrieved from the barcode scan. This data is processed and stored as a string. You can use this option to initialize the scanner with default value;
 
 ### Type
 
-The Type field specifies the type of barcode that was scanned. It provides information about the format or standard of the scanned barcode.
+The Type field specifies the type of barcode that was scanned. It provides information about the format or standard of the scanned barcode. You can use this option to initialize the scanner with default value;
 
 
 ## Properties
 
-| Property              | Description                                                                                 |
-|-----------------------|---------------------------------------------------------------------------------------------|
+| Property              | Description     |
+|-----------------------|-----------------|
 | Theme                 | Allows you to choose the color of the scanner input box. You can enter a custom hex code or use one of the available themes in the builder. |
 | Placeholder           | A prompt that gives a hint to the user about the expected input in the Scanner field. It appears in the field and is overridden when the user scans a barcode. |
 | Debounce Time (In ms) | The delay in milliseconds between events, controlling the frequency of action triggers on value changes. |
@@ -71,32 +67,14 @@ The Type field specifies the type of barcode that was scanned. It provides infor
 
 The outputs from the Zebra Barcode Scanner control, represented by the placeholder `{{barcode}}`, can be referenced in other controls, data queries, or JavaScript functions using the control's unique name.
 
-| Output           | Description                                                                                          |
-|------------------|------------------------------------------------------------------------------------------------------|
-| {{barcode}}      | Represents the barcode data available in the Zebra Barcode Scanner control.                          |
-| {{barcode.BarcodeData}} | Contains the actual data captured from the barcode scan.                                        |
-| {{barcode.Type}} | Specifies the type of barcode that was scanned.               
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+| Output           | Description       |
+|------------------|------------------------|
+| {{barcode.BarcodeData}} | Contains the barcode data captured from the barcode scan.                                        |
+| {{barcode.Type}} | Specifies the type of barcode that was scanned.              |
 
 
 ## Events
 
-| Trigger                   | Description                                                                             |
-|---------------------------|-----------------------------------------------------------------------------------------|
-| value_change              | Occurs when there is a modification in the Zebra Barcode Scanner control's value. To control the frequency or speed of the change event, you can utilize the `debounce` property associated with the control. |
+| Trigger    | Description  |
+|---------------------------|------------------|
+| value_change              | Occurs when this control detects scanning a barcode by Zebra device. This will get called whenever there is a change/update in the value of this control. |
