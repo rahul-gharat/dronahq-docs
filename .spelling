@@ -1496,3 +1496,7 @@ DD-MM-YYYY
 control.countrycode
 control.mobilenumber
 passcodes
+DataWedge
+com.drona5
+com.dronahq.zebra.ACTION
+BarcodeData
