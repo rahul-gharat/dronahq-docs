@@ -17,13 +17,13 @@ The goal is to showcase a customer journey within DronaHQ that empowers users to
 
 ## Key Roles
 
-- #### DronaHQ Administrator: 
+### DronaHQ Administrator
     Responsible for managing user access permissions and configurations within the DronaHQ environment. This role ensures the smooth operation of the platform by setting up and maintaining environments tailored to the organization's needs, thereby optimizing performance and usability.
-- #### DronaHQ Developer: 
+### DronaHQ Developer
     Tasked with utilizing the features of DronaHQ to build internal tools efficiently. Developers leverage the platform's drag-and-drop interface to design applications, employ data binding techniques to link data sources to the application interface, and implement custom logic to enhance functionality according to business requirements.
-- #### DronaHQ Maintainer: 
+### DronaHQ Maintainer
     This role focuses on ensuring the health and stability of the DronaHQ system. Maintainers monitor system performance, diagnose and resolve issues, and implement preventative measures to mitigate potential disruptions, thereby ensuring uninterrupted service for users.
-- #### DronaHQ End-user: 
+### DronaHQ End-user
     As the beneficiary of the applications developed within DronaHQ, end-users interact with these tools to automate processes and streamline workflows. They utilize the functionalities provided by developers to accomplish tasks more efficiently, thereby enhancing productivity and driving organizational success.
 
 ## Enhancing the DronaHQ Experience
@@ -40,7 +40,10 @@ The goal is to showcase a customer journey within DronaHQ that empowers users to
 - Centralized Administration: For large-scale deployments, offer centralized administration tools for managing users, environments, and access control across the organization. This functionality will simplify DronaHQ management for IT teams.
 
 
-## Customer Journey:
+## Customer Journey
+
+The following Customer Journey would be representative of an Enterprise-wide adoption of the DronaHQ Platform. This is an example customer journey for enterprises where initial work is performed by Administrators to define the resources, installation, and configuration of the DronaHQ Platform. DronaHQ Developers are onboarded to the application and given permission to the appropriate resources to support their development. Working with the organization, a business usecase is identified, and the developer starts creation of the application. As the application is released, end-users can onboard, test the application and provide feedback. Finally, DronaHQ Maintainer will monitor the applications created.
+
 
 ```mermaid
 graph TD
@@ -55,23 +58,6 @@ graph TD
     I --> J[Deploy App to Prod]
     J --> K[Monitoring & Maintenance]
     J -- Iterate to \n create new app  --> E 
-
-```
-```mermaid
-graph TD
-    A[DronaHQ Introduction] --> B[Architecture Review]
-    B --> C[Platform Setup & Configuration]
-    C --> D[Developer Onboarding]
-    D --> E[Identify Business Usecase]
-    E --> F[Connect Data Sources]
-    F --> G[Develop DronaHQ App]
-    G --> H[End-user Onboarding]
-    H --> I[DronaHQ App Testing]
-    I --> J[Deploy App to Prod]
-    J --> K[Monitoring & Maintenance]
-    J --> L{Iterate to \n create new app}
-    L -- Yes --> E
-    L -- No --> K
 
 ```
 <!-- 
