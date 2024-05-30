@@ -1,10 +1,10 @@
 ---
 sidebar_position: 3
-title: "DronaHQ Customer on-boarding Experience"
+title: "DronaHQ Customer Onboarding Experience"
 pagination_prev: null
 ---
 
-The goal is to showcase a customer journey within DronaHQ that empowers users to uderstand DronaHQ adoption with various roles at different stages, to build internal tools efficiently.
+The goal is to showcase a customer journey within DronaHQ that empowers users to understand DronaHQ adoption with various roles at different stages, to build internal tools efficiently.
 
 ## Different Adoption Stages
 
@@ -42,7 +42,7 @@ The goal is to showcase a customer journey within DronaHQ that empowers users to
 
 ## Customer Journey
 
-The following Customer Journey would be representative of an Enterprise-wide adoption of the DronaHQ Platform. This is an example customer journey for enterprises where initial work is performed by Administrators to define the resources, installation, and configuration of the DronaHQ Platform. DronaHQ Developers are onboarded to the application and given permission to the appropriate resources to support their development. Working with the organization, a business usecase is identified, and the developer starts creation of the application. As the application is released, end-users can onboard, test the application and provide feedback. Finally, DronaHQ Maintainer will monitor the applications created.
+The following Customer Journey would be representative of an Enterprise-wide adoption of the DronaHQ Platform. This is an example customer journey for enterprises where initial work is performed by Administrators to define the resources, installation, and configuration of the DronaHQ Platform. DronaHQ Developers are onboarded to the application and given permission to the appropriate resources to support their development. Working with the organization, a business use case is identified, and the developer starts creation of the application. As the application is released, end-users can onboard, test the application and provide feedback. Finally, DronaHQ Maintainer will monitor the applications created.
 
 
 ```mermaid
@@ -50,7 +50,7 @@ graph TD
     A[DronaHQ Introduction] --> B[Architecture Review]
     B --> C[Platform Setup & Configuration]
     C --> D[Developer Onboarding]
-    D --> E[Identify Business Usecase]
+    D --> E[Identify Business Use case]
     E --> F[Connect Data Sources]
     F --> G[Develop DronaHQ App]
     G --> H[End-user Onboarding]
@@ -131,7 +131,7 @@ Stages:
      - Participate in onboarding programs.
      - Collaborate to identify use cases.
 
-### Identify Business Usecase
+### Identify Business Use Case
 Role: Developer
 
 Focus: Determining the specific business requirements and use cases for the application.
