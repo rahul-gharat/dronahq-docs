@@ -249,6 +249,22 @@ With the above configurations in the filter objects and keys we can transform th
 ]
 ```
 
+## Cursor Based Pagination
+In cursor based pagination, your API response should have a key which points to the next page offset. It might also have a `has More Data` key which denotes if there is more data to come or not. 
+It needs to have TRUE/FALSE or 0/1 as values. Do enable the below toggle in case your API supports cursor based pagination.
+
+Cursor Based Pagination
+Offset Key : Specify the key name used in your API response that contains the offset value for the next page. This key helps the pagination mechanism know where to start fetching the next set of records.
+
+Has More Key : Configure this key if your connector responds with a key which indicates whether we have reached the last page. If not configured, by default, a missing offset key in the response or an empty string value of the offset key in the response will be considered for detecting the last page.
+
+<figure>
+  <Thumbnail src="/img/data-queries/cursor-pagination.jpeg" alt="Cursor Pagination" width='100%'/>
+  <figcaption align = "center"><i>Cursor Based Pagination.</i></figcaption>
+</figure>
+
+
+
 ## Raw Response
 
 This tab will save and show you the actual response received from the API or Database query. 
