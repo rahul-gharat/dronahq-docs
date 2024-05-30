@@ -98,7 +98,8 @@ including ordering, filtering, limiting, and targeting specific documents.
 :::tip 
 Utilize double curly brackets for incorporating dynamic variables. Prior to saving, test with sample values.
 Associate dynamic variables with controls/actions for real-time utilization.
- :::
+
+:::
 
 Your saved queries will be visible beneath your connector within the Connector Library.
 
