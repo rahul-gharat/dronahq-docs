@@ -192,6 +192,7 @@ The Detailed Card control generates detailed information about a selected entity
 | Output       | Description                                      |
 |--------------|--------------------------------------------------|
 | detailedcard | Represents the detailed information displayed within the card. |
+| detailedcard.PROPERTIES.SELECTEDCARDS | Represents the detailed information about the selected card's data, including fullname, email, avatar, etc. |
 
 ## Events
 

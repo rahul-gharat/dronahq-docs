@@ -91,6 +91,7 @@ The output from the Compact Card control is represented in the following table:
 
 | Output      | Description                                      |
 |-------------|--------------------------------------------------|
+| compactcard | Data associated with the whole list in the control. |
 | compactcard | Selected card's data, including fullname, email, avatar, etc. |
 
 

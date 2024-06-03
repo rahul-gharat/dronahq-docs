@@ -60,7 +60,8 @@ The Short Card control accepts data in the form of a single object representing 
 
 | Output      | Description                                      |
 |-------------|--------------------------------------------------|
-| shortcard   | Data associated with the selected individual.     |
+| shortcard   | Data associated with the whole list in the control.     |
+| shortcard.PROPERTIES.SELECTEDCARDS   | Represents the detailed information about the selected card's data.     |
 
 ## Events
 
