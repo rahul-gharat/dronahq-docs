@@ -1,0 +1,80 @@
+---
+sidebar_position: 1
+title: Creating Your First Dashboard on DronaHQ
+---
+ 
+Creating dashboards in DronaHQ allows you to visualize and manage data effectively. This section equips you, the data analyst, business analyst, or data scientist, to leverage DronaHQ's intuitive interface for in-depth data exploration and visualization. We'll guide you through creating powerful dashboards in minutes, no coding required!
+
+Follow these steps to create your first dashboard:
+
+## Creating a New Dashboard
+1. Login to DronaHQ:
+   Open DronaHQ and log in with your credentials.
+
+2. Navigate to Dashboards:
+   In the main menu, click on `Dashboards` to enter the dashboard section.
+
+3. Create New Dashboard:
+   Click on the `Create New` button to start a new dashboard. This will open the `New Dashboard` wizard.
+
+## Setting Up Data Sources
+1. Choose Data Source:
+   In the `New Dashboard` wizard, you need to select a data source. DronaHQ supports various data sources like databases, APIs, and file uploads.
+   
+2. Configure Data Source:
+   Enter the necessary details to connect to your data source. This might include database credentials, API keys, or file uploads depending on your choice.
+
+## Designing Your Dashboard
+1. Dashboard Layout:
+   Choose a layout for your dashboard. You can select from pre-defined templates or create a custom layout.
+
+2. Adding Charts:
+   - Select      Type:
+     Click on the `Add Widget` button and choose the type of widget you want to add (e.g., charts, tables, forms).
+   - Configure Widget:
+     For each widget, configure the data source, display settings, and any filters or conditions. This ensures your widget displays the correct data.
+
+3. Widget Customization:
+   Customize the appearance of your Charts using the settings panel. You can adjust colors, labels, and other visual elements to match your preferences.
+
+## Setting Up Interactivity
+1. Filters and Parameters:
+   Add filters and parameters to your dashboard to allow users to interact with the data. For example, date pickers or dropdowns can help users filter data dynamically.
+
+2. Linking Charts:
+   Link Charts together to create an interactive experience. For example, selecting a bar in a chart could update the data in a table.
+
+## Publishing and Sharing
+1. Preview Dashboard:
+   Before publishing, preview your dashboard to ensure everything looks and works as expected. Make any necessary adjustments.
+
+2. Publish Dashboard:
+   Once satisfied, click the `Publish` button. Choose the sharing settings: you can keep it private, share with specific users, or make it public.
+
+3. Embedding Dashboards:
+   If needed, you can embed the dashboard in other applications or websites using the provided embed code.
+
+## Example: Creating a Sales Dashboard
+
+#### Step-by-Step:
+1. Create New Dashboard:
+   Name your dashboard “Sales Overview” and choose a blank layout.
+
+2. Add Data Source:
+   Connect to your sales database.
+
+3. Add Charts:
+   - Sales Chart:
+     Add a bar chart to display monthly sales. Configure it to use the sales data source and set the X-axis to months and Y-axis to sales figures.
+   - Top Products Table:
+     Add a table widget to list the top-selling products. Configure it to sort products by sales volume.
+
+4. Filters:
+   Add a date range filter to allow users to view sales data for specific periods.
+
+5. Interactivity:
+   Link the sales chart to the top products table. Selecting a bar in the chart filters the table to show products sold in that month.
+
+6. Publish:
+   Preview the dashboard, make any final tweaks, and publish it. Share the link with your sales team.
+
