@@ -1,6 +1,36 @@
-[
+[{
+  "timestamp": 1715711400000,
+  "tags": ["Cloud-Hosted","Database"],
+  "heading": "Database Connector",
+  "cards": [
+    {
+      "title": "Enhancements",
+      "type": "improved",
+      "points": [
+        "<b>TDS 8.0 Support for MSSQL Connector: </b> The MSSQL connector now supports TDS 8.0 version, enhancing compatibility and performance for SQL Server integrations.",
+        "<b>Improved SQL Database Handling: </b> When prepared statement configuration is enabled, dynamic variables no longer require wrapping inside quotes, simplifying SQL query execution.",
+        "<b>Firebase Wrapper Service : Firebase Connector: </b> A new Firebase wrapper service has been introduced, consolidating Firebase services such as Firebase Auth (User Management), Firebase Realtime Database, and Firestore under DronaHQ."
+      ]
+    }
+  ]
+},{
+    "timestamp": 1714501800000,
+    "tags": ["Cloud-Hosted", "Controls"],
+    "heading": "Zebra Barcode Scanner",
+    "cards": [
+      {
+        "title": "Added",
+        "type": "added",
+        "descriptions": [
+          "The Zebra Barcode Scanner control is designed to facilitate barcode scanning using Zebra devices. It integrates with data entry forms, allowing users to scan and input barcode data directly into specified fields.",
+           "<img src=\"/img/reference/controls/zebra-barcode-scanner/preview.jpeg\" alt=\"Zebra Scanner\"/ width=\"70%\">",
+           "<a href='//reference/controls/zebra-barcode-scanner/'>Read more about it. </a>"
+        ]
+      }
+    ]
+  },
   {
-    "timestamp": 17126874000000,
+    "timestamp": 1711305000000,
     "tags": ["Cloud-Hosted"],
     "heading": "SSH Key - IMPORT",
     "cards": [
@@ -9,7 +39,7 @@
         "type": "improved",
         "descriptions": [
           "<img src=\"/img/advanced-concepts/connecting-via-ssh-keys/import-key.png\" alt=\"insect-bee\"/ width=\"100%\">",
-          " Now you also have the option to add an existing SSH key from your system. Simply toggle the Import Key option and choose a `.pem` file from the system."
+          "Now you also have the option to add an existing SSH key from your system. Simply toggle the Import Key option and choose a `.pem` file from the system."
         ]
       }
     ]
