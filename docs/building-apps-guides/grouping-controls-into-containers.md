@@ -15,13 +15,13 @@ DronaHQ offers a versatile container control feature that enables users to group
 
 ## Benefits
 
-1. **Enhanced Organization**: Containers allow users to visually organize controls into logical groups. This simplifies app design and improves the app's usability.
+1. Enhanced Organization: Containers allow users to visually organize controls into logical groups. This simplifies app design and improves the app's usability.
 
-2. **Streamlined User Interface**: By grouping controls within containers, the user interface becomes more structured and intuitive, helping end-users navigate the app with ease.
+2. Streamlined User Interface: By grouping controls within containers, the user interface becomes more structured and intuitive, helping end-users navigate the app with ease.
 
-3. **Simplified Control Management**: Containers make it easier to manage and manipulate multiple controls simultaneously, reducing development time and effort.
+3. Simplified Control Management: Containers make it easier to manage and manipulate multiple controls simultaneously, reducing development time and effort.
 
-4. **Improved User Experience**: The use of containers creates a more cohesive and visually appealing app layout, enhancing the overall user experience.
+4. Improved User Experience: The use of containers creates a more cohesive and visually appealing app layout, enhancing the overall user experience.
 
 ## Key Features
 

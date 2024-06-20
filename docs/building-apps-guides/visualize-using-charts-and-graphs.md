@@ -12,13 +12,13 @@ DronaHQ's built-in Charts Control, integrated with the powerful Plotly.js librar
 
 ## Benefits
 
-1. **Data Insights**: Charts and graphs provide a visually intuitive representation of data, enabling users to quickly grasp patterns, trends, and relationships in complex datasets.
+1. Data Insights: Charts and graphs provide a visually intuitive representation of data, enabling users to quickly grasp patterns, trends, and relationships in complex datasets.
 
-2. **Interactive Data Exploration**: Users can interact with the visualizations, such as zooming, panning, and hovering over data points, allowing for deeper exploration and better understanding of the data.
+2. Interactive Data Exploration: Users can interact with the visualizations, such as zooming, panning, and hovering over data points, allowing for deeper exploration and better understanding of the data.
 
-3. **Real-time Data Updates**: The integration supports real-time data streaming, ensuring that the charts are continuously updated with the latest information for dynamic and up-to-date visualizations.
+3. Real-time Data Updates: The integration supports real-time data streaming, ensuring that the charts are continuously updated with the latest information for dynamic and up-to-date visualizations.
 
-4. **Customizability**: Users can easily customize the appearance, colors, labels, and other visual elements of the charts to match their app's branding and design preferences.
+4. Customizability: Users can easily customize the appearance, colors, labels, and other visual elements of the charts to match their app's branding and design preferences.
 
 ## Key Features
 

@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-title: Charts
+title: Charts & Graphs
 ---
 
 import Image from '@site/src/components/Image';
@@ -13,6 +13,8 @@ The Charts Control is used to provide users with an easy interface to create cha
   <Thumbnail src="/img/reference/controls/charts/preview.jpeg" alt="Charts" />
   <figcaption align = "center"><i>Charts</i></figcaption>
 </figure>
+
+This document contains all the elements for every available chart control in DronaHQ.
 
 ## Binding Data Options
 
@@ -153,7 +155,7 @@ Aggregation Method allows you to perform various calculations on specific indivi
 | First Value          | The first numeric value in the specific column.                         |
 | Last Value           | The last numeric value in the specific column.                          |
 
-:::
+
 
 #### Properties for Chart Type: Pie Chart 
 
@@ -164,7 +166,7 @@ Aggregation Method allows you to perform various calculations on specific indivi
 | Values    | Column to be aggregated based on the labels.                                |
 | Color     | Define colors for each section of the pie chart. Default colors if not set. |
 
-#### Plotly JSON#### 
+#### Plotly JSON 
 
 For users seeking advanced chart options, the Charts control offers the flexibility to utilize Plotly.js charts. By working with Plotly JSON data and layout attributes, you can customize and extend your chart capabilities.
 
@@ -213,7 +215,7 @@ Links: [Plotly Data Attributes](https://plotly.com/python/reference/index/) and 
 
 Customizing the chart layout is possible with Layout properties, which adapt according to the selected chart type. For Bar Chart or Line Chart, customization focuses on X and Y-Axis data, whereas for Pie Chart, it centers around slices and labels. Furthermore, you can include the Layout attribute in Plotly JSON by specifying the layouts attribute for the respective charts.
 
-#### Layout for the Bar, Line and Scatter Chart 
+#### Layout for the UI FORM
 
 | Property      | Description                                                                                                           |
 |---------------|-----------------------------------------------------------------------------------------------------------------------|
@@ -232,19 +234,9 @@ Customizing the chart layout is possible with Layout properties, which adapt acc
 | Y Position    | Position of the legends with reference to the Y-axis.                                                               |
 | Angle         | Angle at which the legend is positioned, horizontal or vertical.                                                     |
 
-#### Layout for Pie Chart#### 
 
-For Legends - 
 
-| Property      | Description                                                                                                      |
-|---------------|------------------------------------------------------------------------------------------------------------------|
-| Visibility    | Toggle switch to set the Legends to be displayed.                                                                |
-| Alignment     | Set the alignment of the Legend as top, bottom, left, or right.                                                  |
-| X Position    | Position of the legends with reference to the X-axis.                                                            |
-| Y Position    | Position of the legends with reference to the Y-axis.                                                            |
-| Angle         | Angle at which the legend is positioned, horizontal or vertical.                                                  |
-
-#### Layout for Plotly JSON 
+#### Layout for the Plotly JSON 
 
 The chart's layout can be customized using the Plotly.js Layout attribute. To configure the layout based on Plotly, switch to Plotly JSON in the Layout properties. These attributes allow you to control the positioning and configuration of chart items, including title, axes, colors, and legend.
 
