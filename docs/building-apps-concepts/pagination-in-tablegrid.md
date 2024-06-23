@@ -25,15 +25,15 @@ within the control's properties.
 
 DronaHQ supports three primary types of pagination:
 
-- Server Side: Manages pagination on the server, fetching data as needed.
-- Client Side: Handles pagination on the client, loading data at once and paginating locally.
-- Cursor-Based: Uses cursor keys for pagination, ideal for managing large and complex datasets.
+-   Server Side : Manages pagination on the server, fetching data as needed.
+-   Client Side : Handles pagination on the client, loading data at once and paginating locally.
+-   Cursor-Based  : Uses cursor keys for pagination, ideal for managing large and complex datasets.
 
 ### Configuration Properties
 
-- Pagination Bar Location: Choose to place the pagination bar at the top or bottom of the table grid control.
-- Pagination Type: Select the desired type: Server Side, Client Side, or Cursor-Based.
-- Default Cursor and Rows per Page: Define the initial record to display, the maximum records per page, and the cursor value for cursor-based pagination.
+-   Pagination Bar Location : Choose to place the pagination bar at the top or bottom of the table grid control.
+-   Pagination Type : Select the desired type: Server Side, Client Side, or Cursor-Based.
+-   Default Cursor and Rows per Page  : Define the initial record to display, the maximum records per page, and the cursor value for cursor-based pagination.
 ## Pagination Feature
 
 The pagination feature is an essential component of the Tablegrid control, allowing for efficient page-wise data
