@@ -21,23 +21,19 @@ The core purpose of pagination within Tablegrid is to manage data display in a t
 with a substantial amount of information. Enabling pagination is contingent upon toggling the "Allow Pagination" option
 within the control's properties.
 
-#### Pagination Types
+### Pagination Types
 
-DronaHQ supports two primary types of pagination:
+DronaHQ supports three primary types of pagination:
 
-- Limit Offset: Suitable for simpler pagination needs, displaying data based on defined limits and offsets.
+- Server Side: Manages pagination on the server, fetching data as needed.
+- Client Side: Handles pagination on the client, loading data at once and paginating locally.
+- Cursor-Based: Uses cursor keys for pagination, ideal for managing large and complex datasets.
 
-- Cursor-Based: Utilizes cursor keys for pagination, often necessary when handling more complex datasets.
+### Configuration Properties
 
-#### Configuration Properties
-
-- Pagination Bar Location: Choose between placing the pagination bar at the top or bottom of the table grid control.
-
-- Pagination Type: Select the appropriate type, either Limit Offset or Cursor-Based.
-
-- Default Cursor and Rows per Page: Define the initial record to display and the maximum records per page, respectively
-  and cursor value in case of cursor based pagination.
-
+- Pagination Bar Location: Choose to place the pagination bar at the top or bottom of the table grid control.
+- Pagination Type: Select the desired type: Server Side, Client Side, or Cursor-Based.
+- Default Cursor and Rows per Page: Define the initial record to display, the maximum records per page, and the cursor value for cursor-based pagination.
 ## Pagination Feature
 
 The pagination feature is an essential component of the Tablegrid control, allowing for efficient page-wise data

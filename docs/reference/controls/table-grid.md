@@ -59,15 +59,32 @@ In the Table Grid control, Bind Data Options, select the `Quick Select -> Connec
 
 Real-time visualization of table grid control changes in the builder view, with updated data fetched from an SQL database.
 
+---
+
 ## Server-Side Pagination
 
 Server-side pagination is a technique for displaying large data sets in a web application by dividing the data into pages and only sending the current page to the browser. This can improve performance and make the data easier to manage.
 
-Pagination is enabled in the table grid control by toggling on the `Allow Pagination` option. When pagination is enabled, you can set three properties for the table grid control: `LIMIT`, `OFFSET`, and `ROWS PER PAGE`.
 
-`LIMIT` defines the number of records fetched for a single page. `ROWS PER PAGE` sets the number of rows visible per page. `OFFSET` is used to skip the first n rows.
+#### Key Benefits
 
-For connectors that support cursor-based pagination, such as Airtable, you must select `Cursor Based Pagination` as the type and use the `OFFSET key` from the respective connector.
+- By only fetching the required data for the current page, server-side pagination reduces the load on both the client and server, leading to faster response times.
+- This method handles large data sets efficiently, as it doesn't require loading all data at once.
+- Improves the user experience by ensuring quick data retrieval and display, even with extensive data sets.
+
+## Client-Side Pagination
+
+Client-side pagination is another method used to manage large data sets in web applications. Unlike server-side pagination, where only the necessary data for the current page is fetched from the server, client-side pagination involves fetching the entire data set upfront and then dividing it into pages locally in the DronaHQ.
+
+
+#### Key Benifits
+
+- ince all data is loaded at once, client-side pagination is best suited for smaller data sets. For very large data sets, this can lead to performance issues such as slow loading times and high memory usage.
+- Implementation is simpler as it doesn't require server-side changes or multiple requests to fetch data.
+- Once the data is loaded, navigation between pages is instant, providing a smooth user experience without additional server requests.
+
+---
+
 
 | Property | Description |
 |---|---|
