@@ -136,10 +136,17 @@ curr_history.push(curr_response)
 output = curr_history
 ```
 
-
 <figure>
   <Thumbnail src="/img/reference/controls/chat/history.jpeg" alt="JS Code Blocl" />
   <figcaption align="center"><i>JS Code Block</i></figcaption>
 </figure>
+
+```js
+  function JSCode( output, chat_input){
+    lastArray = chat_input[chat_input.length - 1]
+    output  = lastArray.content
+    return output
+  }
+```
 
 Now, the third-party integration is set up for use in the chat control. Simply display the new history with the updated response from the connector.
