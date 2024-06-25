@@ -1,19 +1,38 @@
-[{
-  "timestamp": 1715711400000,
-  "tags": ["Cloud-Hosted","Database"],
-  "heading": "Database Connector",
+[
+  {
+  "timestamp": 1718409600000,
+  "tags": ["Cloud-Hosted", "Database"],
+  "heading": "Cursor Based Pagination",
   "cards": [
     {
-      "title": "Enhancements",
-      "type": "improved",
-      "points": [
-        "<b>TDS 8.0 Support for MSSQL Connector: </b> The MSSQL connector now supports TDS 8.0 version, enhancing compatibility and performance for SQL Server integrations.",
-        "<b>Improved SQL Database Handling: </b> When prepared statement configuration is enabled, dynamic variables no longer require wrapping inside quotes, simplifying SQL query execution.",
-        "<b>Firebase Wrapper Service : Firebase Connector: </b> A new Firebase wrapper service has been introduced, consolidating Firebase services such as Firebase Auth (User Management), Firebase Realtime Database, and Firestore under DronaHQ."
-      ]
+      "title": "Added",
+      "type": "added",
+       "descriptions": [
+          "We've added a new feature: a toggle for cursor-based pagination, which ensures smooth and efficient data retrieval. It uses cursor keys for pagination, ideal for managing large and complex datasets.",
+          "<img src='/img/building-apps-guides/cursor-pagination/cursor.jpeg' alt='Cursor Pagination Toggle' width='70%'>",
+          "<a href='/building-apps-guides/connector-lib-cursor-pagination/'>Read more about implementing cursor-based pagination in connector.</a>"
+        ]
     }
   ]
-},{
+}
+,
+  {
+    "timestamp": 1715711400000,
+    "tags": ["Cloud-Hosted", "Database"],
+    "heading": "Database Connector",
+    "cards": [
+      {
+        "title": "Enhancements",
+        "type": "improved",
+        "points": [
+          "<b>TDS 8.0 Support for MSSQL Connector: </b> The MSSQL connector now supports TDS 8.0 version, enhancing compatibility and performance for SQL Server integrations.",
+          "<b>Improved SQL Database Handling: </b> When prepared statement configuration is enabled, dynamic variables no longer require wrapping inside quotes, simplifying SQL query execution.",
+          "<b>Firebase Wrapper Service : Firebase Connector: </b> A new Firebase wrapper service has been introduced, consolidating Firebase services such as Firebase Auth (User Management), Firebase Realtime Database, and Firestore under DronaHQ."
+        ]
+      }
+    ]
+  },
+  {
     "timestamp": 1714501800000,
     "tags": ["Cloud-Hosted", "Controls"],
     "heading": "Zebra Barcode Scanner",
@@ -23,8 +42,8 @@
         "type": "added",
         "descriptions": [
           "The Zebra Barcode Scanner control is designed to facilitate barcode scanning using Zebra devices. It integrates with data entry forms, allowing users to scan and input barcode data directly into specified fields.",
-           "<img src=\"/img/reference/controls/zebra-barcode-scanner/preview.jpeg\" alt=\"Zebra Scanner\"/ width=\"70%\">",
-           "<a href='//reference/controls/zebra-barcode-scanner/'>Read more about it. </a>"
+          "<img src=\"/img/reference/controls/zebra-barcode-scanner/preview.jpeg\" alt=\"Zebra Scanner\"/ width=\"70%\">",
+          "<a href='//reference/controls/zebra-barcode-scanner/'>Read more about it. </a>"
         ]
       }
     ]
