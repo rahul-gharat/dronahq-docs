@@ -43,7 +43,7 @@
         "descriptions": [
           "The Zebra Barcode Scanner control is designed to facilitate barcode scanning using Zebra devices. It integrates with data entry forms, allowing users to scan and input barcode data directly into specified fields.",
           "<img src=\"/img/reference/controls/zebra-barcode-scanner/preview.jpeg\" alt=\"Zebra Scanner\"/ width=\"70%\">",
-          "<a href='//reference/controls/zebra-barcode-scanner/'>Read more about it. </a>"
+          "<a href='/reference/controls/zebra-barcode-scanner/'>Read more about it. </a>"
         ]
       }
     ]
