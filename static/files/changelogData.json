@@ -1,21 +1,37 @@
 [
   {
-  "timestamp": 1718409600000,
-  "tags": ["Cloud-Hosted", "Database"],
-  "heading": "Cursor Based Pagination",
-  "cards": [
-    {
-      "title": "Added",
-      "type": "added",
-       "descriptions": [
+    "timestamp": 1717200000000,
+    "tags": ["Cloud-Hosted", "Database"],
+    "heading": "Database Connector",
+    "cards": [
+      {
+        "title": "Enhancements",
+        "type": "improved",
+        "points": [
+          "<b>Command action for MongoDB: </b> Command action is available for MongoDB to execute raw commands using extended JSON.",
+          "<b>createCustomToken action in FirebaseAuth: </b> createCustomToken action is added to FirebaseAuth.",
+          "<b>SSH Tunneling Flexibility: </b> Flexibility to use existing SSH user while SSH tunneling is now available. (Previously, user needed to create an SSH user named dronahq)",
+          "<b>Informative MongoDB Exception Messages: </b> For MongoDB queries, more informative messages are shown in case of exceptions."
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1718409600000,
+    "tags": ["Cloud-Hosted", "Database"],
+    "heading": "Cursor Based Pagination",
+    "cards": [
+      {
+        "title": "Added",
+        "type": "added",
+        "descriptions": [
           "We've added a new feature: a toggle for cursor-based pagination, which ensures smooth and efficient data retrieval. It uses cursor keys for pagination, ideal for managing large and complex datasets.",
           "<img src='/img/building-apps-guides/cursor-pagination/cursor.jpeg' alt='Cursor Pagination Toggle' width='70%'>",
           "<a href='/building-apps-guides/connector-lib-cursor-pagination/'>Read more about implementing cursor-based pagination in connector.</a>"
         ]
-    }
-  ]
-}
-,
+      }
+    ]
+  },
   {
     "timestamp": 1715711400000,
     "tags": ["Cloud-Hosted", "Database"],

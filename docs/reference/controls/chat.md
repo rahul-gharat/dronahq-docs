@@ -117,6 +117,13 @@ For example:
 
 Ensure that we carefully pass the `content` carefully in the connector, for that we can use `JS Code` block action to do a transformation.
 
+```js
+  function JSCode( output, chat_input){
+    lastArray = chat_input[chat_input.length - 1]
+    output  = lastArray.content
+    return output
+  }
+```
 
 <figure>
   <Thumbnail src="/img/reference/controls/chat/transformation.jpeg" alt="JS Code Blocl" />
@@ -141,12 +148,6 @@ output = curr_history
   <figcaption align="center"><i>JS Code Block</i></figcaption>
 </figure>
 
-```js
-  function JSCode( output, chat_input){
-    lastArray = chat_input[chat_input.length - 1]
-    output  = lastArray.content
-    return output
-  }
-```
+
 
 Now, the third-party integration is set up for use in the chat control. Simply display the new history with the updated response from the connector.
