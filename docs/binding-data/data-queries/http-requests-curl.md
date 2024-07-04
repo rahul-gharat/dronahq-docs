@@ -1,5 +1,5 @@
 ---
-sidebar_position: 7
+sidebar_position: 1
 title: HTTP Requests - REST API
 ---
 import Thumbnail from '@site/src/components/Thumbnail';
