@@ -177,6 +177,10 @@ To use this feature you need to toggle on `Show Aggregation Footer` property, th
 
 To use this feature, toggle on `Allow` in the pagination group. Your API must support pagination. DronaHQ supports two pagination types: `limit offset-based` and `cursor-based.` Additionally, you can customize the position of the pagination bar by setting the `Pagination Bar Location` property. For connectors that support cursor-based pagination, like Airtable, select `Cursor Based Pagination` as the type and use the OFFSET key from the respective connector.
 
+:::info
+To know about implementing pagination in Tablegrid control within DronaHQ, explore the various types: server-side, client-side, and cursor-based. Configure properties such as pagination bar location and default cursor values for optimal performance. Learn how to apply pagination for MySQL, GraphQL, and REST API data sources. For more details, you can read the [Pagination in Tablegrid Control](https://docs.dronahq.com/building-apps-concepts/pagination-in-tablegrid/) article.
+:::
+
 ### Freeze columns
 To use this feature you need to toggle on `Freeze columns` property, this feature enables you to freeze columns when you are scrolling horizontally the number of columns froze will not move from there position.
 

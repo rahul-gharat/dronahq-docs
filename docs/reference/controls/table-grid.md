@@ -83,6 +83,12 @@ Client-side pagination is another method used to manage large data sets in web a
 - Implementation is simpler as it doesn't require server-side changes or multiple requests to fetch data.
 - Once the data is loaded, navigation between pages is instant, providing a smooth user experience without additional server requests.
 
+
+
+:::info
+To know about implementing pagination in Tablegrid control within DronaHQ, understand the types and configurations necessary for efficient data management. Pagination types include server-side, client-side, and cursor-based, each with unique benefits. Configure properties like pagination bar location and default cursor values to enhance functionality. Additionally, explore how to implement pagination for MySQL, GraphQL, and REST API data sources. For a comprehensive guide, you can read the [Pagination in Tablegrid Control](https://docs.dronahq.com/building-apps-concepts/pagination-in-tablegrid/) article.
+:::
+
 ---
 
 
@@ -94,11 +100,16 @@ Client-side pagination is another method used to manage large data sets in web a
 | Height | This allows you to set the height for the table grid control. |
 | Visible | By default you can set the visible rows and columns to specify the height of the control. |
 
-:::info
+:::caution NOTE
 When the pagination is enabled your Filter and the Search features do not work on the columns. However, if you disable pagination you would note that the search provides you with the rows matching the search text. The Filter feature would also allow you specify the filter conditions
 :::
 
 ## Properties
+
+:::info 
+To know about the various functionalities of interactive tables in DronaHQ, you can explore features such as data loading, column customization, and editable table columns. Additionally, learn how to handle events, pagination, and grouping data for a comprehensive table management experience. With options for row selection, dynamic UI customization, and aggregation footers. For an in-depth understanding, you can read the [Building Interactive tables](https://docs.dronahq.com/building-apps-guides/building-interactive-tables/) article.
+:::
+
 | Property | Description |
 | --- | --- |
 | Table Header | Specifies the font size and font weight for the table header. |
