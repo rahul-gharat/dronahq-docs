@@ -77,9 +77,9 @@ Server-side pagination is a technique for displaying large data sets in a web ap
 Client-side pagination is another method used to manage large data sets in web applications. Unlike server-side pagination, where only the necessary data for the current page is fetched from the server, client-side pagination involves fetching the entire data set upfront and then dividing it into pages locally in the DronaHQ.
 
 
-#### Key Benifits
+#### Key Benefits
 
-- ince all data is loaded at once, client-side pagination is best suited for smaller data sets. For very large data sets, this can lead to performance issues such as slow loading times and high memory usage.
+- Since all data is loaded at once, client-side pagination is best suited for smaller data sets. For very large data sets, this can lead to performance issues such as slow loading times and high memory usage.
 - Implementation is simpler as it doesn't require server-side changes or multiple requests to fetch data.
 - Once the data is loaded, navigation between pages is instant, providing a smooth user experience without additional server requests.
 
