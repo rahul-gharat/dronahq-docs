@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-title: Data Query Trigger - Method
+title: Using JavaScript to Trigger Data Queries
 ---
 
 import Image from '@site/src/components/Image'; import VersionedLink from '@site/src/components/VersionedLink'; import
