@@ -23,7 +23,7 @@ steps:
 
 2. Set the Query Parameters:
 
-   - Set the `Run Query` option to "Everytime variables change".
+   - Set the `Run Query` option to "Every time variables change".
 
 3. Define Input Parameters:
 
