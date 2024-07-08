@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-title: Using JavaScript to Trigger Data Queries
+title: Trigger Data Queries using JavaScript
 ---
 
 import Image from '@site/src/components/Image'; import VersionedLink from '@site/src/components/VersionedLink'; import
@@ -13,8 +13,7 @@ your application.
 
 ## How to Use It
 
-To utilize the `DATAQUERY._data-query-name_.trigger()` method in your custom JavaScript data queries, follow these
-steps:
+To utilize the `DATAQUERY._data-query-name_.trigger()` method in your custom JavaScript code, follow these steps:
 
 1. Create a New Data Query:
 
