@@ -1413,4 +1413,7 @@ CI.runValidationResult
 booleanValue
 runValidation
 CI.runValidation
+onReload
+returnData
+formulaData
 
