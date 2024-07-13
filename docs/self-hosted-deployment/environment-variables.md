@@ -202,7 +202,7 @@ To enable IAM role access, set following variable in your environment and add re
 
     AWS_IAM_ROLE_ACCESS=true
 
-### Azure Storage Container configuration (Beta)
+### Azure Storage Container configuration
 
 You can use Azure storage container as a File storage with DronaHQ. DronaHQ will upload your uploaded files and other resources. Also your published applications will get served from Azure storage container.
 
@@ -219,7 +219,7 @@ This is a secret key for your storage account. This key should have required per
 #### `AZURE_STORAGE_CONTAINER_NAME`
 This is a container inside which DronaHQ will be uploading some resources and files uploaded by your application. Also this container will server some resources for your application.
 
-### Google Cloud Storage configuration (Beta)
+### Google Cloud Storage configuration
 
 You can use Google Cloud Storage as a File storage with DronaHQ. DronaHQ will upload your uploaded files and other resources. Also your published applications will get served from Google Cloud Storage.
 
