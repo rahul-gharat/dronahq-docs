@@ -46,7 +46,7 @@ DronaHQ provides control interface for your custom control to pass data back and
 | `CI.showError(errorMessages)`                    | Call this method when you want DronaHQ to display error in default control's error space. Here `errorMessages` in argument represents array of strings with one or more error messages which you want to display it to user. This should be usually called when `callback` function is called with type `runValidation`. |
 | `CI.clearError()`                         | Call this method when you want to remove all the error messaged previously displayed by DronaHQ. This should be usually called when valid data is inputted by the user for your control. |
 | `CI.triggerAction(eventName)`            | Call this method when you want to trigger a particular event which you have pre-defined in your Custom Events section. Here `eventName` in argument represents event name he wants to trigger which he has created eg focusout, change, button_click etc;
-| `CI.runValidationResult(booleanValue)`    | You must call this method when `callback` function is called with type `runValidation` with either `true` or `false` value based on your control's data which is valid or not. |
+| `CI.returnValidationResult(booleanValue)`    | You must call this method when `callback` function is called with type `runValidation` with either `true` or `false` value based on your control's data which is valid or not. |
 
 ### Callback Function
 
@@ -68,6 +68,7 @@ Callback function will be automatically called by DronaHQ App whenever it needs 
 | setValue        | `BIND DATA` value | This will get called whenever your control data needs to be refreshed. If you're binding some data through data binding, you will have to write logic to set value to your visual elements to reflect the corresponding data set from BIND DATA section in your control. In case, you have selected `select` type for `Input Type` option in your control, then in `value` field, you will get json object in `[{"name": "<BIND Data value 1>", "selected": false},{"name": "<BIND Data value 2>", "selected": true}]` format, where value in `name` key will be based on your `OPTIONS` BIND DATA value and value in `selected` key will be based on your `SELECTED OPTIONS` BIND DATA value. |
 | getValue         | empty          | This method will get called whenever your control's data is required by any other control or data query in your App that you have referenced. You must return the expected output your control want's to return. For example, in case of Text Input control, you should return the value of Text input control which user has inputted. |
 | runValidation    | empty         | This method will get called whenever a validation needs to be performed for this control. In this case, you should validate your control with the current data that it has and show any error message in case of validation is failed so that will be noticed by end user. |
+| onReload         | object        | This method will get called whenever iframe reloads i.e on navigation ,resulting in a loss of state . So to preserve the state we provide you 2 values `returnData` and `formulaData` , here returnData will be last saved value in control and formulaData will be the data which is binded through data binding section. The value will be `{returnData: "xyz",formulaData: "xyz@email.com"}`
 
 Example: 
 
@@ -87,6 +88,13 @@ Example:
                 let input = document.getElementById('in1');
                 let val = input.value;               
                 CI.returnValue(val);
+            }
+            if (payload.type == "onReload"){
+                // here you can reset the state of your control
+                let fmlValue = payload.value.formulaData;
+                let returnData = payload.value.returnData;
+                let input = document.getElementById('in1');
+                input.value = fmlValue;
             }
             if (payload.type == "runValidation") {
                 // checks whether your control is valid or not
@@ -226,6 +234,11 @@ In `property->Write your code` section, you can put the HTML, CSS, and JavaScrip
                     let val = input.value;               
                     CI.returnValue(val);
                 }
+                 if (payload.type == "onReload"){
+                    let fmlValue = payload.value.formulaData;
+                    let returnData = payload.value.returnData;
+                    input.value = fmlValue;
+                }
                 if (payload.type == "runValidation") {
                     if (isNaN(input.value) || input.value.includes('@')) {
                         CI.returnValidationResult(false);
@@ -297,6 +310,9 @@ In `property->Write your code` section, you can put the HTML, CSS, and JavaScrip
               }
               if (payload.type == "getValue") {
                 CI.returnValue(inputValue);
+              }
+              if (payload.type == "onReload"){
+                setInputValue(payload.value.formulaData)              
               }
               if (payload.type == "runValidation") {
                 if (inputValue.includes('@')) {

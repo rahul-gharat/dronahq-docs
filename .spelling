@@ -1534,3 +1534,7 @@ FirebaseAuth
 createCustomToken
 toolset
 key.txt
+onReload
+returnData
+formulaData
+
