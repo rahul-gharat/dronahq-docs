@@ -3,9 +3,11 @@ sidebar_position: 1
 title: Exploring Datasets on DronaHQ Dashboard
 ---
 
-import VersionedLink from '@site/src/components/VersionedLink'; import Basics from
-'@site/static/icons/features/basics.svg'; import ArrowRight from '@site/static/icons/arrow_right.svg'; import Image from
-'@site/src/components/Image'; import Thumbnail from '@site/src/components/Thumbnail';
+import VersionedLink from '@site/src/components/VersionedLink'; 
+import Basics from '@site/static/icons/features/basics.svg'; 
+import ArrowRight from '@site/static/icons/arrow_right.svg'; 
+import Image from '@site/src/components/Image'; 
+import Thumbnail from '@site/src/components/Thumbnail';
 
 In this tutorial, we will introduce key concepts in DronaHQ Dashboard by exploring a comprehensive dataset containing
 COVID-19 vaccination data from around the world. This tutorial aims to familiarize you with the process of creating and
