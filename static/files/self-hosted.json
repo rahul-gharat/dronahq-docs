@@ -1,6 +1,6 @@
 [
   {
-    "timestamp": 1719532800000,
+    "timestamp": 1721174400000,
     "tags": [
       "Self-Hosted",
       "3.0.1"
@@ -11,23 +11,59 @@
         "title": "Added",
         "type": "added",
         "points": [
-          "DronaHQ managed Remote Procedure Call (RPC) connector",
-          "SQLCURD Prepared statement support for bulk-insert action"
+          "<b>DHQ RPC: </b> Using DronaHQ managed Remote Procedure Call (RPC) connector, you can connect directly to your codebase. Once enabled, you can define functions in your backend and use them within DronaHQ apps and automations.",
+          "Prepared statement support for bulk insert in SQLCRUD"
         ]
       },
       {
         "title": "Enhancements",
         "type": "improved",
         "points": [
-          "Export Automation process redesigned",
+          "<b>Automation export: </b> New Improved User experience.",
+          "Manual push option added for git sync",
+          "Restructuring error handling in Mongodb connector",
+          "<b>DataQuery - DronaHQ Database : </b> Skip Test and Save Query option for Insert, Update, Delete support.",
           "Data Query user interface improved",
-          "Manual push option added for git sync"
+          "Creating headers for all unique keys in array in data binding section",
+          "<b>DronaHQ Database : </b> No Primary Key Flow & Timezone support",
+          "Default scheme for response and failure in Sub cat api json"
+
+        ]
+      },
+      {
+        "title": "Fixes",
+        "type": "fixed",
+        "points": [
+          "Permission sidebar not opening.",
+          "Footer not showing in controls properly.",
+          "Dataqeury UI was not showing properly on some screen resolutions.",
+          "DataQuery: \"{{unique_id}}\" value show in test variables fixed.",
+          "DataQuery: String value replace with \"[object Object]\" fixed.",
+          "Connector list in sidebar not refreshing after adding new connector or subcategory.",
+          "Tooltip css margin for controls issue fixed.",
+          "MongoDB: dynamic collection dropdown not working fixed.",
+          "Property section minor fixes",
+          "Connection options value in connector fixed.",
+          "Timepicker Control: 24 hour format issue fixed.",
+          "DataQuery: Connector Query in MongoDB render issue for <b>Option</b> type field fixed.",
+          "Disable edit option for global cat & sub cat inside the app builder",
+          "Css fix for control loader for published app.",
+          "Tabbed Container related fixes.",
+          "DB Connector: prepared statement bug fix for table grid.",
+          "DronaHQ Database related fixes."
+        ]
+      },
+      {
+        "title": "Removed",
+        "type": "removed",
+        "points": [
+          "Pagination UI from SQLCRUD Sidebar."
         ]
       }
     ]
   },
   {
-    "timestamp": 1719532800000,
+    "timestamp": 1715817600000,
     "tags": [
       "Self-Hosted",
       "3.0.0"
@@ -59,7 +95,7 @@
     ]
   },
   {
-    "timestamp": 1719532800000,
+    "timestamp": 1713398400000,
     "tags": [
       "Self-Hosted",
       "2.4.7"
