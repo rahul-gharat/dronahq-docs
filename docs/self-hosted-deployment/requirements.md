@@ -14,10 +14,10 @@ Learn about DronaHQ Self-hosted requirements then follow a deployment guide to g
 - Active internet connection for downloading resources.
 
 ### Software requirements
-- `curl`, `wget`, `git`, `unzip`
-- Docker Engine `20.10.0`
-- Docker Compose `1.29.0`
-- Any text editor of your choice
+- linux packages - `curl`, `wget`, `git`, `unzip`
+- Docker Engine
+- Docker Compose
+- Text editor of your choice
 
 ### Networking requirements
 - Port `22`(ssh) To allow you to SSH into your instance and configure it.
@@ -27,8 +27,8 @@ Learn about DronaHQ Self-hosted requirements then follow a deployment guide to g
 
 ### Storage database
 
-By default, all deployments include a containerized instance of `MYSQL` and `MONGODB` along with `DronaHQ` and `NGINX` (web server). But, it is possible and highly recommended to externalize the database, to support a stateless deployment. Externalizing databases helps you make your installation more maintainable, scalable and reliable.
+By default, all deployments include a containerized instance of `MYSQL` and `MONGODB` along with `DronaHQ` and `NGINX` (web server). But, it is recommended to externalize the database, to support a stateless deployment. Externalizing databases helps you make your installation more maintainable, scalable and reliable.
 
-The minimum recommended version for the MYSQL database is version 8.0 and for MongoDB it is version 5.0.
+The minimum recommended version for the MYSQL database is version 8.0.36 and for MongoDB it is version 5.0.11
 
 [Learn how to make your external databases DronaHQ ready](./configure-external-databases.md).

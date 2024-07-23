@@ -21,6 +21,12 @@ There are two ways, you can download DronaHQ Self Hosted.
 
 #### a. Cloning Git repository
 
+Prevent Git from automatically converting line endings between CRLF and LF, ensuring consistent handling across different platforms.
+
+```shell
+git config --global core.autocrlf false
+```
+
 To clone from git repository, run following command.
 
 ```shell

@@ -105,6 +105,14 @@ If you are using Docker container for MongoDB, then you should set these variabl
 
 if you are using DocumentDB or any other managed MongoDB service then you can set variables accordingly.
 
+#### `MONGODB_ENCODE_CREDENTIALS`
+
+If your credentials (username, password) has special characters, you will need to set `MONGODB_ENCODE_CREDENTIALS` as `true`. Enabling this option will encode your credentials before forming connection string.
+
+```
+MONGODB_ENCODE_CREDENTIALS=true
+```
+
 #### `MONGODB_PROTOCOL`
 
 You can use mongodb with `mongodb` or `mongodb+srv` protocol. In normal installations we use `mongodb` as a protocol which is default value for this option. `mongo+srv` is useful we want to connect mongodb in cluster or replicaset configuration.
