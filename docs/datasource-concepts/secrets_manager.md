@@ -55,6 +55,7 @@ provided, ensuring a secure setup tailored to your organization's needs.
 | Field | Description | Example |
 |---------------------------|--------------------------------------------|--------------------------------|
 | Vault URL & Port | URL and port of your Vault server | `https://vault.dronahq.com:8200` |
+| Approle Mount | Provide the mount point for authentication methods and secrets engines to be enabled from, the default mount point for the AppRole authentication method is approle.| `auth/approle` |
 | Role Id | Enter Role ID from the Vault | `40481de9-8281-cf4d-2056-tyt5c738e789` |
 | Secret Id | Enter Secret ID from the Vault | `56789d5a-ead6-5f9f-c683-a571ad716668` |
 | Namespace | Enter Namespace | `my-namespace` |
@@ -69,7 +70,7 @@ provided, ensuring a secure setup tailored to your organization's needs.
 
  
 
-Cache TTL (Time To Live) determines the duration data remains valid in the cache before expiration. This reduces API calls to your secrets manager, which keeps queries fast and reduces costs. 
+Cache TTL (Time To Live) determines the duration data remains valid in the cache before expiration. This reduces API calls to your secrets manager, which keeps queries fast and reduces costs. You can  toggle on `TLS` (Transport Layer Security) for securing connections between the client and the server. 
 
 Ideal for improving performance, set a suitable Cache TTL to balance data freshness and system load. 
 
