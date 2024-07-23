@@ -1,0 +1,91 @@
+[
+  {
+    "timestamp": 1719532800000,
+    "tags": [
+      "Self-Hosted",
+      "3.0.1"
+    ],
+    "heading": "Version 3.0.1",
+    "cards": [
+      {
+        "title": "Added",
+        "type": "added",
+        "points": [
+          "DronaHQ managed Remote Procedure Call (RPC) connector",
+          "SQLCURD Prepared statement support for bulk-insert action"
+        ]
+      },
+      {
+        "title": "Enhancements",
+        "type": "improved",
+        "points": [
+          "Export Automation process redesigned",
+          "Data Query user interface improved",
+          "Manual push option added for git sync"
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1719532800000,
+    "tags": [
+      "Self-Hosted",
+      "3.0.0"
+    ],
+    "heading": "Version 3.0.0",
+    "cards": [
+      {
+        "title": "Added",
+        "type": "added",
+        "points": [
+          "AWS Secret Manager support added",
+          "DronaHQ managed PDF creator introduced",
+          "DronaHQ managed Audit logs introduced",
+          "Folders introduced for app management",
+          "Mark app as favourite while building",
+          "static file versioning to prevent update caching",
+          "Form auto-generation with CURD operations added"
+        ]
+      },
+      {
+        "title": "Enhancements",
+        "type": "improved",
+        "points": [
+          "New experience for app, connectors, users listing",
+          "Single login page for Creator and End user",
+          "Themes sidebar improvements"
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1719532800000,
+    "tags": [
+      "Self-Hosted",
+      "2.4.7"
+    ],
+    "heading": "Version 2.4.7",
+    "cards": [
+      {
+        "title": "Added",
+        "type": "added",
+        "points": [
+          "AWS Lambda connector support added",
+          "SSO group override option added",
+          "Approle Mount and TLS added to Hashicorp Vault",
+          "Hashicorp wrapping secret id support added"
+        ]
+      },
+      {
+        "title": "Enhancements",
+        "type": "improved",
+        "points": [
+          "User-Agent set as dronahq for internal api calls to third party",
+          "Connector health check improved",
+          "Caching in IndexDB optimized",
+          "XSS vulnerability fixed"
+        ]
+      }
+    ]
+  }
+]

@@ -12,7 +12,7 @@ const SelfChangelog = () => {
   const [fetchError, setFetchError] = useState(false);
 
   useEffect(() => {
-    fetch('/files/changelogData.json')
+    fetch('/files/self-hosted.json')
       .then(response => {
         if (!response.ok) {
           throw new Error('File not found or other fetch error');
