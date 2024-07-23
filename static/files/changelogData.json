@@ -1,5 +1,51 @@
 [
   {
+    "timestamp": 1719532800000,
+    "tags": ["Cloud-Hosted", "Actions"],
+    "heading": "Clear Multistep Auth Credentials",
+    "cards": [
+      {
+        "title": "Added",
+        "type": "added",
+        "descriptions": [
+          "A new action to clear your connector's multistep credential(s) from the system on trigger of an event.",
+          "<img src='/img/reference/actionflow-blocks/clear-credentials/clear-credentials.png' alt='Cursor Pagination Toggle' width='70%'>",
+          "<a href='/reference/actionflow-blocks/clear-multistep-auth-credentials/'>Read more about it.</a>"
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1719532800000,
+    "tags": ["Cloud-Hosted"],
+    "heading": "Security Manager",
+    "cards": [
+      {
+        "title": "Enhancements",
+        "type": "improved",
+        "points": [
+          "<b>Secret manager - Hashicorp Vault: </b> We have now added two more attributes to connect to the vault one is Approle mount and one is toogle to connect via TLS."
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1719532800000,
+    "tags": ["Cloud-Hosted", "Automation"],
+    "heading": "Automation Features and UI",
+    "cards": [
+      {
+        "title": "Enhancements",
+        "type": "improved",
+        "points": [
+          "<b>Connector Usage Permission: </b> We have now implemented a restriction system where users can only access connectors for which they have explicit permissions. This adheres to the connector permission guidelines.",
+          "<b>Automation Export/Import Revamp: </b> When importing automation, any APIs or queries that are not already present in the channel will be automatically added, similar to the app import process.",
+          "<b>Enhanced UI: </b> The user interface has been improved to allow drag-and-drop functionality for importing JSON files."
+        ]
+      }
+    ]
+  },
+  {
     "timestamp": 1717200000000,
     "tags": ["Cloud-Hosted", "Database"],
     "heading": "Database Connector",
