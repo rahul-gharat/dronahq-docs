@@ -42,7 +42,7 @@ In the Form setup tab, select `From database` to direct responses to an establis
    </iframe>
 </div>
 
-<div></div>
+<br/>
 
 When using `From Scratch` to store responses in the DronaHQ Database, create your custom fields in the form builder. These fields will automatically appear in your DronaHQ Database upon publishing.
 <div style={{ position: 'relative', paddingBottom: 'calc(46.33333333333333% + 41px)', height: 0 }}> 
@@ -114,7 +114,7 @@ You can access form responses in the Responses tab. Responses are exclusively av
    </iframe>
 </div>
 
-## Preview Publish and Embed
+## Preview, Publish, Share and Embed
 Preview using the upper-right icon. Publish to obtain a unique URL for public access and copy embed URL form embed configuration.
 <div style={{ position: 'relative', paddingBottom: 'calc(46.33333333333333% + 41px)', height: 0 }}> 
    <iframe 
@@ -127,5 +127,7 @@ Preview using the upper-right icon. Publish to obtain a unique URL for public ac
       mozallowfullscreen >
    </iframe>
 </div>
+
+<br/>
 
 This guide covers the basics of creating and managing standalone forms with DronaHQ. For detailed setup and customization, refer to the [DronaHQ Documentation](https://docs.DronaHQ.com/).
