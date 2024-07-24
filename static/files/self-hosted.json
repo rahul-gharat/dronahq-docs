@@ -1,0 +1,127 @@
+[
+  {
+    "timestamp": 1721174400000,
+    "tags": [
+      "Self-Hosted",
+      "3.0.1"
+    ],
+    "heading": "Version 3.0.1",
+    "cards": [
+      {
+        "title": "Added",
+        "type": "added",
+        "points": [
+          "<b>DHQ RPC: </b> Using DronaHQ managed Remote Procedure Call (RPC) connector, you can connect directly to your codebase. Once enabled, you can define functions in your backend and use them within DronaHQ apps and automations.",
+          "Prepared statement support for bulk insert in SQLCRUD"
+        ]
+      },
+      {
+        "title": "Enhancements",
+        "type": "improved",
+        "points": [
+          "<b>Automation export: </b> New Improved User experience.",
+          "Manual push option added for git sync",
+          "Restructuring error handling in Mongodb connector",
+          "<b>DataQuery - DronaHQ Database : </b> Skip Test and Save Query option for Insert, Update, Delete support.",
+          "Data Query user interface improved",
+          "Creating headers for all unique keys in array in data binding section",
+          "<b>DronaHQ Database : </b> No Primary Key Flow & Timezone support",
+          "Default scheme for response and failure in Sub cat api json"
+
+        ]
+      },
+      {
+        "title": "Fixes",
+        "type": "fixed",
+        "points": [
+          "Permission sidebar not opening.",
+          "Footer not showing in controls properly.",
+          "Dataqeury UI was not showing properly on some screen resolutions.",
+          "DataQuery: \"{{unique_id}}\" value show in test variables fixed.",
+          "DataQuery: String value replace with \"[object Object]\" fixed.",
+          "Connector list in sidebar not refreshing after adding new connector or subcategory.",
+          "Tooltip css margin for controls issue fixed.",
+          "MongoDB: dynamic collection dropdown not working fixed.",
+          "Property section minor fixes",
+          "Connection options value in connector fixed.",
+          "Timepicker Control: 24 hour format issue fixed.",
+          "DataQuery: Connector Query in MongoDB render issue for <b>Option</b> type field fixed.",
+          "Disable edit option for global cat & sub cat inside the app builder",
+          "Css fix for control loader for published app.",
+          "Tabbed Container related fixes.",
+          "DB Connector: prepared statement bug fix for table grid.",
+          "DronaHQ Database related fixes."
+        ]
+      },
+      {
+        "title": "Removed",
+        "type": "removed",
+        "points": [
+          "Pagination UI from SQLCRUD Sidebar."
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1715817600000,
+    "tags": [
+      "Self-Hosted",
+      "3.0.0"
+    ],
+    "heading": "Version 3.0.0",
+    "cards": [
+      {
+        "title": "Added",
+        "type": "added",
+        "points": [
+          "AWS Secret Manager support added",
+          "DronaHQ managed PDF creator introduced",
+          "DronaHQ managed Audit logs introduced",
+          "Folders introduced for app management",
+          "Mark app as favourite while building",
+          "static file versioning to prevent update caching",
+          "Form auto-generation with CURD operations added"
+        ]
+      },
+      {
+        "title": "Enhancements",
+        "type": "improved",
+        "points": [
+          "New experience for app, connectors, users listing",
+          "Single login page for Creator and End user",
+          "Themes sidebar improvements"
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1713398400000,
+    "tags": [
+      "Self-Hosted",
+      "2.4.7"
+    ],
+    "heading": "Version 2.4.7",
+    "cards": [
+      {
+        "title": "Added",
+        "type": "added",
+        "points": [
+          "AWS Lambda connector support added",
+          "SSO group override option added",
+          "Approle Mount and TLS added to Hashicorp Vault",
+          "Hashicorp wrapping secret id support added"
+        ]
+      },
+      {
+        "title": "Enhancements",
+        "type": "improved",
+        "points": [
+          "User-Agent set as dronahq for internal api calls to third party",
+          "Connector health check improved",
+          "Caching in IndexDB optimized",
+          "XSS vulnerability fixed"
+        ]
+      }
+    ]
+  }
+]
