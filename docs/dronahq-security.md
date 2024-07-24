@@ -15,7 +15,7 @@ DronaHQ supports SSH key-based authentication for enhanced server access securit
 
 ### Whitelisting
 
-DronaHQ establishes connections with databases and API endpoints exclusively through whitelisted IP addresses. This approach restricts access to only trusted sources, further securing your data.DronaHQ restricts database and API connections to pre-approved IP addresses, `54.164.199.220` and `34.233.152.191` functioning like a firewall whitelist. This ensures that only authorized sources can access your data.
+DronaHQ establishes connections with databases and API endpoints exclusively through whitelisted IP addresses. This approach restricts access to only trusted sources, further securing your data. DronaHQ restricts database and API connections to pre-approved IP addresses, `54.164.199.220` and `34.233.152.191` functioning like a firewall whitelist. This ensures that only authorized sources can access your data.
 
 ### Audit Log
 
@@ -95,7 +95,7 @@ DronaHQ identifies and restricts access from jailbroken (iOS) or rooted (Android
 
 ### Screenshot Restrictions
 
-DronaHQ offers granular control over screenshots on Android devices. You can completely prevent users from capturing screenshots and protecting sensitive information displayed within the app by disabling screenshot feature.Along with this one can track attempts to capture screenshots, allowing you to investigate potential security incidents by enabling Screenshot Logging.
+DronaHQ offers granular control over screenshots on Android devices. You can completely prevent users from capturing screenshots and protecting sensitive information displayed within the app by disabling screenshot feature. Along with this one can track attempts to capture screenshots, allowing you to investigate potential security incidents by enabling Screenshot Logging.
 
 
 These security implementations demonstrate DronaHQ's commitment to maintaining a secure environment for developers and users alike. By following the guidelines provided, you can contribute to creating secure applications on the DronaHQ platform.
