@@ -21,11 +21,6 @@ users to manage and retrieve sensitive data from external sources like HashiCorp
 This feature offers increased flexibility, enabling users to maintain control over their sensitive information while
 utilizing DronaHQ's cloud platform.
 
-:::info NOTE
-
-We also plan to provide the AWS Secret Manager Support, which is slated for an upcoming release.
-
-:::
 
 The primary purpose of the Secret Manager is to offer users a centralized and secure space within DronaHQ, allowing
 seamless integration with external secret management systems. This integration ensures that users can tailor their
@@ -37,18 +32,18 @@ Click on `+ Vault` and you'll be prompted to input a name and choose the vault t
 labeled 'Select Vault`.
 
 <figure>
-  <Thumbnail src="/img/connecting-datasource/concepts/secrets-manager/adding-vault.jpg" alt="Adding a new vault" />
+  <Thumbnail src="/img/connecting-datasource/concepts/secrets-manager/adding-vault.png" alt="Adding a new vault" />
   <figcaption align='center'><i>Adding a new vault</i></figcaption>
 </figure>
 
 ### Hashicorp vault
 
-HashiCorp Vault is a powerful tool for safeguarding sensitive data, managing secrets, and ensuring secure access control
+[HashiCorp Vault](https://developer.hashicorp.com/vault/tutorials/get-started-hcp-vault-dedicated/vault-introduction) is a powerful tool for safeguarding sensitive data, managing secrets, and ensuring secure access control
 across diverse environments. To configure your Vault, essential details and authentication credentials need to be
 provided, ensuring a secure setup tailored to your organization's needs.
 
 <figure>
-  <Thumbnail src="/img/connecting-datasource/concepts/secrets-manager/hashicorp-secret.jpg" alt="Configuring Hashicorp Vault for Secrets Manager" />
+  <Thumbnail src="/img/connecting-datasource/concepts/secrets-manager/hashicorp-secret.png" alt="Configuring Hashicorp Vault for Secrets Manager" />
   <figcaption align='center'><i>Configuring Hashicorp Vault for Secrets Manager</i></figcaption>
 </figure>
 
@@ -58,21 +53,83 @@ provided, ensuring a secure setup tailored to your organization's needs.
 | Approle Mount | Provide the mount point for authentication methods and secrets engines to be enabled from, the default mount point for the AppRole authentication method is approle.| `auth/approle` |
 | Role Id | Enter Role ID from the Vault | `40481de9-8281-cf4d-2056-tyt5c738e789` |
 | Secret Id | Enter Secret ID from the Vault | `56789d5a-ead6-5f9f-c683-a571ad716668` |
+| Wrapped Secret Id location | Enter wrapped Secret Id location from the self hosted instance (only for self hosted) | `/app/vault_wrapped_token.json` |
 | Namespace | Enter Namespace | `my-namespace` |
 | Engine name | Enter Engine Name | `dhqkv` |
 | Engine type | KV (version 2) or Database (MySQL/MariaDB, PostgreSQL, MongoDB) | ` KV (version 2)` |
 | Path to secret | Path to Secret within Vault | ` secret/data/example ` |
-| Database role | Provide role required for the database. | `readOnlyData`|
-| Connection Name | Enter Connection Name | `shibam_postgres` |
+| Database role | Provide role required for the database. | ` readOnlyData ` |
+| Connection Name | Enter Connection Name | ` shibam_postgres ` |
 
+#### Hashicorp sample policy
+```
+# Following paths are require for Dronahq to read secrets
+
+# Below two paths require for kv engine:
+path "<YOUR-ENGINE-NAME>/data/*" {
+  capabilities = ["read"]
+}
+path "<YOUR-ENGINE-NAME>/subkeys/*" {
+  capabilities = ["read"]
+}
+
+# Below two paths require for database engine:
+path "<YOUR-ENGINE-NAME>/config/*" {
+  capabilities = ["read"]
+}
+path "<YOUR-ENGINE-NAME>/creds/*" {
+  capabilities = ["read"]
+}
+```
+
+:::tip How to add wrapped secret id in self hosted instance
+  <figure>
+    <Thumbnail src="/img/connecting-datasource/concepts/secrets-manager/wrapped-secret-id-location.jpg" alt="docker-compose.yml file" width="50%" />
+    <figcaption align='center'><i>docker-compose.yml file</i></figcaption>
+  </figure>
+
+  You will need to add volume mapping in the docker-compose.yaml file. The underlined path represents the path inside the container that you need to add to the secret manager's configuration. The path on the left side of the ':' is the path on your host machine where your file is located. After making these changes, run the following command to restart the web application:
+
+  ```shell
+  sudo docker-compose restart webapp
+  ```
+  sample vault_wrapped_token.json
+  ```json
+  # /app/vault_wrapped_token.json
+  {
+    "request_id": "",
+    "lease_id": "",
+    "lease_duration": 0,
+    "renewable": false,
+    "data": null,
+    "warnings": null,
+    "wrap_info": {
+      "token": "hvs.CAESIPESvKmm00MDzT********************",
+      "accessor": "********************",
+      "ttl": 21600,
+      "creation_time": "2024-07-10T09:30:21.328855679Z",
+      "creation_path": "auth/products/role/developer/secret-id",
+      "wrapped_accessor": "*******-****-****-****-***********"
+    }
+  }
+```
+:::
 
 #### Advance 
 
- 
+  <figure>
+    <Thumbnail src="/img/connecting-datasource/concepts/secrets-manager/hashicorp-advance.png" alt="Hashicorp Vault's Advance section" />
+    <figcaption align='center'><i>Hashicorp Vault's Advance section</i></figcaption>
+  </figure>
 
-Cache TTL (Time To Live) determines the duration data remains valid in the cache before expiration. This reduces API calls to your secrets manager, which keeps queries fast and reduces costs. You can  toggle on `TLS` (Transport Layer Security) for securing connections between the client and the server. 
+- **Cache TTL (Time To Live):** determines the duration data remains valid in the cache before expiration. This reduces API calls to your secrets manager, which keeps queries fast and reduces costs. You can  toggle on `TLS` (Transport Layer Security) for securing connections between the client and the server. 
 
-Ideal for improving performance, set a suitable Cache TTL to balance data freshness and system load. 
+    Ideal for improving performance, set a suitable Cache TTL to balance data freshness and system load.
+- **Use TLS to Connect:** To connect to your HashiCorp Vault over HTTPS, you need TLS certificates. Ensure you have added the required certificates such as the CA certificate, client key, and client certificate.
+    <figure>
+      <Thumbnail src="/img/connecting-datasource/concepts/secrets-manager/hashicorp-tls.png" alt="Configuring TLS for Hashicorp Vault" />
+      <figcaption align='center'><i>Configuring TLS for Hashicorp Vault</i></figcaption>
+    </figure>
 
 
 Click on `Test` and `Save` 
