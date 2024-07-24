@@ -214,29 +214,29 @@ const config = {
             label: 'Docs',
             position: 'left',
           },
-          {
-            to: 'https://community.dronahq.com/c/ask-community',
-            label: 'Forum',
-            position: 'left',
-          },
+          // {
+          //   to: 'https://community.dronahq.com/c/ask-community',
+          //   label: 'Forum',
+          //   position: 'left',
+          // },
           {
             to: 'https://discord.gg/QfN8yq4mqM',
             label: 'Discord',
             position: 'left',
           },
-          {
-            to: 'https://headwayapp.co/dronahq-changelog',
-            label: "What's New",
-            position: 'left',
-          },
+          // {
+          //   to: 'https://headwayapp.co/dronahq-changelog',
+          //   label: "What's New",
+          //   position: 'left',
+          // },
           {
             label: "Changelog",
             position: 'left',
             items: [
-              {
-                label:'All',
-                to: '/all-changelog'
-              },
+              // {
+              //   label:'All',
+              //   to: '/all-changelog'
+              // },
               {
                 label:'Cloud-Hosted',
                 to:'/cloud-changelog'
