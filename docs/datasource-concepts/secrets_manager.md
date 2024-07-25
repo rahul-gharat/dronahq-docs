@@ -139,6 +139,72 @@ Click on `Test` and `Save`
   <figcaption align='center'><i>Hashicorp Vault Added</i></figcaption>
 </figure>
 
+### AWS Secrets Manager
+
+AWS Secrets Manager is a powerful tool for safeguarding sensitive data, managing secrets, and ensuring secure access control
+across diverse environments. To configure AWS Secrets Manager, essential details and authentication credentials need to be
+provided, ensuring a secure setup tailored to your organization's needs.
+
+<figure>
+  <Thumbnail src="/img/connecting-datasource/concepts/secrets-manager/aws-secrets.PNG" alt="Configuring AWS Secrets Manager for Secrets Manager" />
+  <figcaption align='center'><i>Configuring AWS Secrets Manager for Secrets Manager</i></figcaption>
+</figure>
+
+| Field | Description | Example |
+|---------------------------|--------------------------------------------|--------------------------------|
+| Authentication Type | Access Key and Secret Access Key or IAM Access Role | ` Access Key and Secret Access Key ` |
+| AWS Region | Region where your Secrets exists.| ` us-east-1 ` |
+| Access Key Id | Enter Access Key Id | ` AKIAIOSFODNN7EXAMPLE ` |
+| Secret Access Key | Enter Secret Access Key | ` wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY ` |
+| Secret Name | Enter Secret Name | ` my-secret ` |
+| Engine type | Key Value Pair or Database | ` Database ` |
+| Database Type | MySQL, MariaDB, PostreSQL, SQL Server and Oracle  | ` MySQL ` |
+#### Advance 
+
+ 
+
+- **Cache TTL (Time To Live)** determines the duration data remains valid in the cache before expiration. This reduces API calls to your secrets manager, which keeps queries fast and reduces costs.
+
+  Ideal for improving performance, set a suitable Cache TTL to balance data freshness and system load. 
+
+
+Click on ` Test ` and ` Save `
+
+<figure>
+  <Thumbnail src="/img/connecting-datasource/concepts/secrets-manager/aws-secrets-added.PNG" alt="AWS Secrets Manager Added" />
+  <figcaption align='center'><i>AWS Secrets Manager Added</i></figcaption>
+</figure>
+
+### Connecting using IAM Role Access
+
+#### 1. Create IAM policy for DronaHQ
+In AWS, create an IAM policy to grant DronaHQ access to your secrets. The following is an example policy you might use.
+
+```json
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": [
+        "secretsmanager:GetSecretValue",
+        "secretsmanager:DescribeSecret"
+      ],
+      "Resource": ["arn:aws:secretsmanager:Region:AccountId:secretname:*"]
+    },
+    {
+      "Effect": "Allow",
+      "Action": ["secretsmanager:ListSecrets"],
+      "Resource": "*"
+    }
+  ]
+}
+```
+
+#### 2. Attach IAM policy to your principal
+Next, attach the policy to the principal associated with your DronaHQ workload. For example, if you deploy DronaHQ on EC2, attach this policy to the instance profile for the DronaHQ instance.
+
+
 ## Update & Delete Vaults 
 
 
@@ -166,10 +232,15 @@ For configuring a database connector, there is an option of `Secrets Manager` fr
 The available options in the Secret Manager dropdown consist of vaults categorized as KV Engines or specific database engines. 
 
 List of Database Engine Types which supports secrets manager: 
-- Mysql 
-- MariaDB 
-- Postgres 
-- MongoDB 
+
+| Database | Hashicorp Vault | AWS Secrets Manager |
+|---------------------------|--------------------------------------------|--------------------------------|
+| MySQL | ✅ | ✅ |
+| MariaDB | ✅ | ✅ |
+| Postgres | ✅ | ✅ |
+| MongoDB | ✅ |  |
+| Oracle |  | ✅ |
+| SQL Server |  | ✅ |
 
 <figure>
   <Thumbnail src="/img/connecting-datasource/concepts/secrets-manager/connector.jpg" alt="DB Secret vault" />
