@@ -50,8 +50,13 @@ DronaHQ Dashboard is a powerful and easy-to-use solution for data visualization 
 </figure>
 
 <figure>
-  <Thumbnail src="/img/dhq-dashboard/dhq-dashboard-nocodeeditor.jpeg" alt="Low-Code Query Building " />
-  <figcaption align="center"><i>Low-Code Query Building </i></figcaption>
+  <Thumbnail src="/img/dhq-dashboard/dhq-dashboard-datasetbuilding.jpeg" alt="No-Code Chart Designing" />
+  <figcaption align="center"><i>Drag and Drop / Low-Code dataset Building</i></figcaption>
+</figure>
+
+<figure>
+  <Thumbnail src="/img/dhq-dashboard/dhq-dashboard-nocodeeditor.jpeg" alt="Low-Code SQL Query building " />
+  <figcaption align="center"><i>Low-Code SQL Query building </i></figcaption>
 </figure>
 
 
@@ -95,6 +100,11 @@ In the Charts section, you can create new charts to visualize your data effectiv
 
 In the Datasets section, you can manage all your data sources efficiently. Each dataset in your list is provided with detailed information including name, type, database, schema, owners, last modified date, and available actions. You can create new datasets, view and navigate through existing ones, and perform various actions such as exporting, importing, and deleting datasets, ensuring that your data repository is always organized and current.
 
+### SQL Labs and Query Management
+
+
+The SQL Labs section allows you to create, test, and manage your SQL queries in a dedicated environment. You can write new SQL queries, run them to retrieve results, and save queries for future use. This section provides a list of all your saved queries along with details such as query name, associated database, last modified date, and available actions. Additionally, you can export your queries for external use, import queries created by others, and delete queries that are no longer needed, making it easy to keep your query library organized and up-to-date.
+
 
 ---
 
@@ -102,20 +112,17 @@ In the Datasets section, you can manage all your data sources efficiently. Each 
 
 DronaHQ Dashboard supports a wide range of databases, making it easy to connect to your existing data infrastructure. Some of the supported databases include:
 
-1. MySQL
-2. PostgreSQL
-3. Microsoft SQL Server
-4. SQLite
-5. Oracle Database
-6. IBM Db2
-7. MariaDB
-8. Amazon Aurora
-9. Google Cloud SQL
-10. Microsoft Azure SQL Database
-11. Apache Hive
-12. Apache HBase
-13. SAP HANA
-14. Teradata
-15. IBM Informix
+1. Apache druid
+2. Apache Hive
+3. Apache Sparl SQL
+4. Aurora MySQL (Data API)
+6. Aurora PostgreSQL (Data API)
+7. Google Sheet
+8. MySQL
+9. PostgreSQL
+10. Presto
+11. Shillelagh
+12. SQLite
+13. Trino
 
 *For a complete list of supported databases, refer to the DronaHQ documentation.*
