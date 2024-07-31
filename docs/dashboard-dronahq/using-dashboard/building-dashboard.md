@@ -39,6 +39,20 @@ Datasets can be created from database tables or SQL queries. Once the schema is 
 
 After creating the dataset, you will be redirected to the Chart Creation section, where your newly created dataset will already be selected. Alternatively, you can manually click `+ Chart`, then choose the dataset you created.
 
+<div style={{ position: 'relative', paddingBottom: 'calc(46.33333333333333% + 41px)', height: 0 }}> 
+    <iframe 
+        src="https://demo.arcade.software/hVt4zPVfJsspSIQrLn9W?embed" 
+        title="Theme Creation" 
+        frameborder="0" 
+        loading="lazy" 
+        webkitallowfullscreen 
+        mozallowfullscreen 
+        allowfullscreen 
+        style= {{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', colorScheme: 'light' }} >
+    </iframe>
+</div>
+
+
 DronaHQ Dashboard offers a wide variety of charts and tags for users to choose from. Select the chart type you want to use for your dataset, then click `Create New Chart`.
 
 
