@@ -42,6 +42,13 @@ After successfully configuring and saving the connector settings, you can easily
 | GetAllSheets       | Deprecated. Get a list of all sheets within a Google Sheets document.                   |
 | FindDriveFiles     | Deprecated. Search and retrieve Google Drive files related to Google Sheets.            |
 
+
+:::caution
+- It is important to remember that when you are updating any row and you do not want to update some of the columns then in that case you should Use Keywords as `{{NULL}}`. This ensures that the column is not overwritten. The original value is retained. Only the column/s with specified inputs are updated.
+
+- You can query several columns at a time (A:AZ). Once you configure a connector on DronaHQ and you add Column to your Google Sheet, then your existing configured Google Sheet connector will have to be updated/refreshed in order to reflect the new column added in your Google Sheet.
+:::
+
 ## Using Google Sheets Connector
 
 ### Get all rows
@@ -100,6 +107,44 @@ Pass an array of rows’ numbers in the method along with the spreadsheet name a
   <figcaption align = "center"><i>Configuring fields to do multiple row clearing.</i></figcaption>
 </figure>
 
+
+### Add Rows
+
+To add rows to your Google Sheets, you can use the AddRows connector. To configure fields, you can provide dynamic values using keywords. Several output values are returned, which can be used as required.
+
+In the example shown below, rows are added to the specified range in the Google Sheets.
+
+
+:::tip
+Ensure that the range matches exactly with the one present in your Google Sheets column names. This is crucial for the data to be appended correctly.
+:::
+
+Here’s the process and the response you can expect:
+
+
+For more details, refer to the [Google Sheets API documentation](https://developers.google.com/sheets/api/reference/rest/v4/spreadsheets.values/append).
+
+<figure>
+  <Thumbnail src="/img/reference/connectors/googlesheet/addrows.jpeg" alt="Configuring fields to add rows." />
+  <figcaption align = "center"><i>Configuring fields to add rows.</i></figcaption>
+</figure>
+
+
+### Update Multiple Rows
+
+The Update Multiple Rows option is useful when you want to update multiple rows in Google Sheets. You can use data from the tablegrid control, for instance, to update data in your Google Sheet.
+
+<figure>
+  <Thumbnail src="/img/reference/connectors/googlesheet/updaterows.jpeg" alt="Configuring fields to update rows."  style={{ width: '70%' }} />
+  <figcaption align = "center"><i>Configuring fields to update rows.</i></figcaption>
+</figure>
+
+In the above image, you can see that for multiple row numbers, you can provide multiple data entries for updating. The starting row number is taken into account, and based on the array size, the corresponding number of rows below will be affected. For example, if the row number is 4 and the array size is 2, then rows 4 and 5 will be updated.
+
+When updating any row and you do not want to update some of the columns, use Keywords as NULL. This ensures that the column is not overwritten, and the original value is retained. Only the columns with specified inputs are updated.
+
+
+---
 
 ## Locating Spreadsheet ID
 

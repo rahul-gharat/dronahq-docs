@@ -57,10 +57,11 @@ DronaHQ can Auto fill crucial connection values like host, name, password, and m
 
 #### Admin
 
-| Advanced Option                                                                                    | Description                                                                                                                                                                                   |
-| -------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --- | ----------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
+| Advanced Option     | Description                |
+| ------------------ | -------------------------- | 
 | Connection Options                                                                                 | The `key` and `value` connection options in database configuration refer to specific settings (keys) and their corresponding values that dictate how the application connects to the database |
-| <VersionedLink to = "/datasource-concepts/ssl-configurations/"> Connect using SSL </VersionedLink> | Securely access the database using an encrypted SSL connection, ensuring data integrity and confidentiality.                                                                                  |     | Use a Self-Signed Certificate | Implement secure authentication and encryption using a self-signed certificate along with the CA, client key, and client certificate options. |
+| <VersionedLink to = "/datasource-concepts/ssl-configurations/"> Connect using SSL </VersionedLink> | Securely access the database using an encrypted SSL connection, ensuring data integrity and confidentiality.                                                                                  |     
+| Use a Self-Signed Certificate | Implement secure authentication and encryption using a self-signed certificate along with the CA, client key, and client certificate options. |
 | <VersionedLink to = "/datasource-concepts/ssh-tunneling/"> Enable SSH Tunneling </VersionedLink>   | Securely access the database through encrypted SSH tunneling.                                                                                                                                 |
 | <VersionedLink to = "/datasource-concepts/whitelisting-dronahq-ip/"> Whitelist IP </VersionedLink> | Enhance security by restricting database access to specific whitelisted IP addresses.                                                                                                         |
 
