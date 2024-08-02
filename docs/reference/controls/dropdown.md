@@ -7,6 +7,12 @@ import Image from '@site/src/components/Image';
 import VersionedLink from '@site/src/components/VersionedLink';
 import Thumbnail from '@site/src/components/Thumbnail';
 
+
+:::caution DEPRICATED
+
+We have merged the dropdown and advanced dropdown control, kindly refer to the [Advance Dropdown control](/reference/controls/advance-dropdown/) document for further information.
+
+:::
 The Dropdown control enables users to make a selection from a predefined list of options, allowing them to choose one or more items. For instance, it can be utilized to facilitate the selection of all necessary cities from a given list of choices.
 
 
