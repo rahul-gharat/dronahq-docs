@@ -134,10 +134,10 @@ Your saved queries will be visible beneath your connector within the Connector L
 
    - Navigate to the data bind section of the control.
 
-2. Select Amazon DocumentDB Connector from `Data Bind Options -> Quick Select -> Database Queries`:
+2. Select Amazon DocumentDB Connector from `Data Bind Options -> Quick Select -> Connector Library`:
    - Choose Amazon DocumentDB Connector from the available options.
    - Select the specific connector query that will retrieve the desired data.
-   - Click on "Continue" to proceed.
+   - Click on "Save and Continue" to proceed.
 
 <figure>
   <Thumbnail src="/img/reference/connectors/awsDocDB/find.png" alt="Find query" />

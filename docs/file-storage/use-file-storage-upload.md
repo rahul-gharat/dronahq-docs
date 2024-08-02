@@ -1,5 +1,5 @@
 ---
-sidebar_position: 153
+sidebar_position: 3
 title: Using File Storage
 ---
 
