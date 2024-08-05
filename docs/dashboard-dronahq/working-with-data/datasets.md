@@ -3,6 +3,12 @@ sidebar_position: 1
 title: Creating Datasets
 ---
 
+import VersionedLink from '@site/src/components/VersionedLink'; 
+import Basics from '@site/static/icons/features/basics.svg'; 
+import ArrowRight from '@site/static/icons/arrow_right.svg'; 
+import Image from '@site/src/components/Image'; 
+import Thumbnail from '@site/src/components/Thumbnail';
+
 Datasets in DronaHQ Dashboard are curated representations of data from your database. They enable the creation of charts with unified metric definitions, ensuring consistency and accuracy. Datasets are crucial as every chart in DronaHQ Dashboard is created from a dataset. They offer flexibility in modeling data, allowing you to present information tailored to specific audiences in charts or dashboards.
 
 In this article, we will explore how DronaHQ Dashboard works with your data to create and manage datasets effectively.

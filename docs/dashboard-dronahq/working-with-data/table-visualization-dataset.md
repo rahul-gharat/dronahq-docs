@@ -3,7 +3,11 @@ sidebar_position: 1
 title: Table Visualization for Dataset
 ---
 
-
+import VersionedLink from '@site/src/components/VersionedLink'; 
+import Basics from '@site/static/icons/features/basics.svg'; 
+import ArrowRight from '@site/static/icons/arrow_right.svg'; 
+import Image from '@site/src/components/Image'; 
+import Thumbnail from '@site/src/components/Thumbnail';
 
 This document provides a detailed guide on creating a Table Visualization on a dataset using DronaHQ Dashboard. Let's see a dashboard setup for visualizing the highest degree held by respondents from the FCC 2018 survey dataset. This guide will walk you through setting up a similar table visualization.
 
@@ -65,7 +69,7 @@ To customize the appearance and behavior of your table, follow these steps:
 
 ### Chart Preview
 
-The chart preview section allows you to see a visual representation of your data. In this example, we can see represention of the number of respondents holding each degree type. Each bar's length corresponds to the count of respondents for each degree.
+The chart preview section allows you to see a visual representation of your data. In this example, we can see representation of the number of respondents holding each degree type. Each bar's length corresponds to the count of respondents for each degree.
 
 
 

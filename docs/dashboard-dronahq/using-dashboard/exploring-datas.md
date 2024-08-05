@@ -75,7 +75,7 @@ navigate and understand.
 Follow these steps to use elements:
 
 - Navigate to `Layout Elements`.
-- Within elements, drag and drop `Header` and `Text` elemets onto the dashboard. Look for the blue lines indicating where the box will go.
+- Within elements, drag and drop `Header` and `Text` elements onto the dashboard. Look for the blue lines indicating where the box will go.
 - Select the element to edit the text. Use Markdown format (see this Markdown Cheatsheet for more information).
 - Toggle between Edit and Preview using the menu on top of the box.
 - To exit editing mode, select any other part of the dashboard. Remember to save your changes using Save changes.
@@ -88,15 +88,14 @@ Follow these steps to use elements:
 
 
 ## Creating Charts for Dashboard
+
 ### Pie Chart
 
 To visualize vaccine candidates per phase, start by creating a pie chart using the `covid_vaccine` dataset. Begin by selecting the Pie Chart option in the chart creation section. In the Query section, you can define dimensions by choosing from saved dimensions, simple dimensions, or by writing custom SQL queries. For metrics, count the clinical stages to represent the data accurately.
 
-Now put these into as feilds
+Now put these into as fields
 
 Here's the table based on the new query:
-
-
 
 Dimension : Custom SQL 
 
@@ -120,6 +119,20 @@ In the Customize section, you can configure various options to enhance your char
 
 Finally, you can modify the pie shape by adjusting the outer radius or converting it into a donut chart by setting the inner radius. These customizations will help you create a visually appealing and informative pie chart that clearly illustrates the distribution of vaccine candidates across different phases.
 
+<div style={{ position: 'relative', paddingBottom: 'calc(46.33333333333333% + 41px)', height: 0 }}> 
+    <iframe 
+        src="https://demo.arcade.software/rERFn9UEPWtwvuZDjUgY?embed" 
+        title="Theme Creation" 
+        frameborder="0" 
+        loading="lazy" 
+        webkitallowfullscreen 
+        mozallowfullscreen 
+        allowfullscreen 
+        style= {{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', colorScheme: 'light' }} >
+    </iframe>
+</div>
+<br></br>
+
 Click `Create Chart`. Then click `Add to dashboard`. This chart will be added top dashboard. We are going to repeat this for every chart or table we create.
 
 ### World Map Chart
@@ -130,24 +143,22 @@ In the Customize section, you can configure various options to enhance your char
 
 Hit `Create Chart` and, you'll create a World Map chart that clearly illustrates the distribution of vaccine candidates across different countries. This chart will provide a visual overview, making it easier to identify regions with significant vaccine development activity.
 
-### Sunburst Chart
+<figure>
+  <Thumbnail src="/img/dhq-dashboard/using-dashboard/exploring-data/worldmap.jpeg" alt="World Map setup" />
+  <figcaption align="center"><i>World Map setup</i></figcaption>
+</figure>
 
-To create a Sunburst chart that visually represents the hierarchy of vaccine candidates based on product category and clinical stage using the `covid_vaccine` dataset, begin by navigating to the chart creation section where you can select the `Sunburst Chart` option. 
-Next, define the query structure: 
-set the hierarchy levels with `product_category` as the primary level and `clinical_stage` as the secondary level. 
-
-Use `COUNT(*)` as the primary metric to quantify the number of entries within each level.
-
-Customize the chart in the next step by adjusting visual settings to enhance clarity and impact. Optimize color schemes and other display options to improve the chart's intuitiveness and informativeness.
-
-Apply relevant filters to focus on specific subsets of data, and adjust row limits and other chart settings as needed. Finally, click on `Create Chart` to generate the Sunburst chart and review the results for accuracy and clarity. 
 
 
 ## Publishing Stage Essentials
 
 Once you've finished building your dashboard, click "Save" at the top. Your dashboard will resemble something like this:
 
-Great job on creating your dashboard! Before publishing, let's review some essential steps. Click on `Edit` and then `---`, and select "Edit Properties".
+<figure>
+  <Thumbnail src="/img/dhq-dashboard/using-dashboard/exploring-data/dashboardcomplete.jpeg" alt="World Map setup" />
+</figure>
+
+Great job on creating your dashboard! Before publishing, let's review some essential steps. Click on `Edit` and then `---`, and select `Edit Properties`.
 
 
 
@@ -173,3 +184,7 @@ This JSON object is generated dynamically when you click "Save" or "Overwrite" i
 
 
 Hit `Appy`, now your Dashboard is ready to be published. Click `Save` and then `Publish` with provided release note and versioning.
+
+<figure>
+  <Thumbnail src="/img/dhq-dashboard/using-dashboard/exploring-data/publish.jpeg" alt="World Map setup" />
+</figure>
