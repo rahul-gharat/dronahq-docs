@@ -20,59 +20,63 @@ The Advanced Dropdown control helps users to view much more details in the dropd
 
 Advance Dropdown control accepts array of objects in JSON format to display data. There are different ways in which you can bind data to the Advance Dropdown control.
 
+
 ### Static Data Option
 
-To display static options in the Advance Dropdown control, you can use the Bind Data option. The Bind Data option must be specified as an array of objects. 
+To display static options in the Advanced Dropdown control, use the Bind Data option, which must be specified as either an array of strings or an array of objects.
 
-### Options- Data binding
-The Bind Data- Option section contains the data with all the options which are to be displayed in the dropdown list. Since advanced dropdown control is very customizable with various available properties, we have to make sure that we pass the right keys and values in the data-bind section.
+#### Options - Data Binding
+The Bind Data option contains the data for all the options to be displayed in the dropdown list. The advanced dropdown control is highly customizable with various properties, so it is important to pass the correct keys and values in the data-bind section.
 
-You can bind data through various options available such as controls, connectors, variables and keywords, and more.
+You can bind data through various sources such as controls, connectors, variables, keywords, and more.
 
-Let us have a look at binding static JSON data to understand the right format to be used in advanced dropdown control.
+##### Array of Strings Example
 
-```js
- [
+```json
+[
+    "File",
+    "Folder",
+    "Control"
+]
+```
+
+##### Array of Objects Example
+
+```json
+[
     {
-    "name": "Approve",
-    "description": "John@studio.com",
-    "value": "approve",
-    "color": "#26bc6a",
-    "image": "https://dronamobilepublic.s3.amazonaws.com/DRONA5_Team108/content/app/images/public/Tick_c5Abe.svg"
-},
-    {
-    "name": "Reject",
-    "description": "Dave@studio.com",
-    "value": "reject",
-    "color": "#FF5656",
-    "image": https://dronamobilepublic.s3.amazonaws.com/DRONA5_Team108/content/app/images/public/Close_jCmgk.svg"
+        "name": "Approve",
+        "description": "John@studio.com",
+        "value": "approve",
+        "color": "#26bc6a",
+        "image": "https://dronamobilepublic.s3.amazonaws.com/DRONA5_Team108/content/app/images/public/Tick_c5Abe.svg"
     },
     {
-    "name": "None",
-    "description": "Doe@studio.com",
-    "value": "none",
-    "color": "#F5AB00",
-    "image": "https://dronamobilepublic.s3.amazonaws.com/DRONA5_Team108/content/app/images/public/Info_BCFfd.svg"
+        "name": "Reject",
+        "description": "Dave@studio.com",
+        "value": "reject",
+        "color": "#FF5656",
+        "image": "https://dronamobilepublic.s3.amazonaws.com/DRONA5_Team108/content/app/images/public/Close_jCmgk.svg"
+    },
+    {
+        "name": "None",
+        "description": "Doe@studio.com",
+        "value": "none",
+        "color": "#F5AB00",
+        "image": "https://dronamobilepublic.s3.amazonaws.com/DRONA5_Team108/content/app/images/public/Info_BCFfd.svg"
     }
 ]
 ```
 
-The JSON format data for the advanced dropdown control requires specific keys like "name" and "value" for proper mapping. Optional keys like "color" and "image" can be used with the corresponding property to map color and image data. Ensure correct data format to avoid errors in binding and mapping properties.
+The JSON format for the advanced dropdown control requires specific keys like "name" and "value" for proper mapping. Optional keys like "color" and "image" can be used to map color and image data. Ensure the correct data format to avoid errors in binding and mapping properties.
 
-### Selected Options- Data binding
+#### Selected Options - Data Binding
+The Bind Data - Selected Option section contains data for the default selected options in the advanced dropdown control. For proper functionality, provide the correct keys and values in the data-bind section, considering the control's customizable properties.
 
-The Bind Data - Selected Option section contains data for default selected options in the advanced dropdown control. To ensure proper functionality, we must provide the correct keys and values in the data-bind section, considering the control's customizable properties. Data binding options include controls, connectors, variables, and keywords. Let's explore binding static JSON data to understand the correct format for the advanced dropdown control.
+Example of binding a static string for the selected option:
 
-```js
-[
-    {
-    "name": "None",
-    "description": "Doe@studio.com",
-    "value": "none",
-    "color": "#F5AB00",
-    "image": "https://dronamobilepublic.s3.amazonaws.com/DRONA5_Team108/content/app/images/public/Info_BCFfd.svg"
-    }
-]
+```json
+"approve"
 ```
 
 :::info
@@ -85,11 +89,14 @@ The value and name keys are compulsory along with other keys like color and imag
 
 | Property                | Description                                                                                                                                     |
 |-------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| Title Column            | Decides the title of every option to be shown in the dropdown menu from bounded data columns.                                                 |
-| Description Column      | Helpful when you want to show data of a column from an array of object data as a description right under the title.                            |
+| Searchable	          | Allows users to search through the options.                                                                                                     |
 | Value Column            | Helpful when you want to return the value of a specific column from an array of object data, from the selected dropdown option.              |
+| Label Column            | Helpful when you want to return the label of a specific column from an array of object data, from the selected dropdown option.              |
+| Description Column      | Helpful when you want to show data of a column from an array of object data as a description right under the title.                            |
 | Color Column            | Helps you select a column with color properties or the color key from an array of objects to apply color/theme to each option in the dropdown. |
 | Image Column            | Helps you select a column with image details or the image key from an array of objects to show images for each option in the dropdown.        |
+| Prefix Column            | Helps you select a column with prefix key from an array of objects for each option in the dropdown.        |
+| Icon Column            | Helps you select a column with icon details or the icon key from an array of objects to show icons for each option in the dropdown.        |
 | Selection Type          | Defines if the user can select just one or multiple options in the Dropdown.                                                                   |
 | Placeholder             | A prompt that gives a hint to the user about what needs to be done. It appears in the Dropdown container and is overridden when an option is selected.        |
 | Border Radius (Image)   | Provides border-radius to images selected in the options.                                                                                       |

@@ -26,11 +26,10 @@ DronaHQ Dashboard is a powerful and easy-to-use solution for data visualization 
 
 ## Dashboard Visuals
 
-### Video Overview
 
-*Embed a video overview of the DronaHQ Dashboard here.*
+<!-- 
+*Embed a video overview of the DronaHQ Dashboard here.* -->
 
-### Image Gallery
 
 
 <figure>
@@ -63,11 +62,11 @@ DronaHQ Dashboard is a powerful and easy-to-use solution for data visualization 
 ---
 
 
-## Proposed Features
+## Dashboard Features
 
 <div style={{ position: 'relative', paddingBottom: 'calc(46.33333333333333% + 41px)', height: 0 }}> 
     <iframe 
-        src="https://demo.arcade.software/UbRwviMmnKHYYLWoNbrN?embed" 
+        src="https://demo.arcade.software/RgbpxLKt1R9hPq8cBnTW?embed" 
         title="Theme Creation" 
         frameborder="0" 
         loading="lazy" 
@@ -77,6 +76,7 @@ DronaHQ Dashboard is a powerful and easy-to-use solution for data visualization 
         style= {{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', colorScheme: 'light' }} >
     </iframe>
 </div>
+
 
 
 ### Home Screen Overview
@@ -114,7 +114,7 @@ DronaHQ Dashboard supports a wide range of databases, making it easy to connect 
 
 1. Apache druid
 2. Apache Hive
-3. Apache Sparl SQL
+3. Apache Spark SQL
 4. Aurora MySQL (Data API)
 6. Aurora PostgreSQL (Data API)
 7. Google Sheet
@@ -126,3 +126,53 @@ DronaHQ Dashboard supports a wide range of databases, making it easy to connect 
 13. Trino
 
 *For a complete list of supported databases, refer to the DronaHQ documentation.*
+
+
+## Dashboard Publishing and Sharing
+
+#### Publish
+
+A dashboard built in DronaHQ is eligible for publishing, an essential step in its deployment. Users can manage different versions of a dashboard, allowing them to set a version with each publish. This enables reverting to a previous version whenever needed. 
+
+Publishing a dashboard is straightforward: once the setup is complete, click `Save` and then the `Publish` button at the top. You will be prompted to provide release notes before hitting `Publish` to finalize the publication.
+
+<div style={{ position: 'relative', paddingBottom: 'calc(46.33333333333333% + 41px)', height: 0 }}> 
+    <iframe 
+        src="https://demo.arcade.software/GBx8qdF8oemT6x8bZul8?embed" 
+        title="Theme Creation" 
+        frameborder="0" 
+        loading="lazy" 
+        webkitallowfullscreen 
+        mozallowfullscreen 
+        allowfullscreen 
+        style= {{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', colorScheme: 'light' }} >
+    </iframe>
+</div>
+
+
+#### Share
+
+After the database is ready and published, it is common to think that sharing it is a necessary next step. In DronaHQ, sharing a dashboard can be done in several ways.
+
+:::note
+Note that publishing the dashboard is mandatory before sharing it.
+:::
+
+The first method is to click the `Share` button, which provides options to enable public access and generate a public URL (after the application is published). 
+
+For more options, go to `Options > Share,` where you can either 
+- copy the permalink to the clipboard or 
+- share the permalink via email.
+
+<div style={{ position: 'relative', paddingBottom: 'calc(46.33333333333333% + 41px)', height: 0 }}> 
+    <iframe 
+        src="https://demo.arcade.software/NzzItfg9PWCsnSxpEt3i?embed" 
+        title="Theme Creation" 
+        frameborder="0" 
+        loading="lazy" 
+        webkitallowfullscreen 
+        mozallowfullscreen 
+        allowfullscreen 
+        style= {{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', colorScheme: 'light' }} >
+    </iframe>
+</div>

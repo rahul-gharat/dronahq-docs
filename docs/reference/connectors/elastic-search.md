@@ -33,6 +33,7 @@ Configure your database category using the provided details. Validate connection
 settings for secure database setup.
 
 :::tip 
+
 DronaHQ can Auto fill crucial connection values like host, name, password, and more from the connector's
 [connection string](https://www.elastic.co/guide/en/elasticsearch/reference/current/sql-odbc-setup.html#sql-odbc-setup).
 

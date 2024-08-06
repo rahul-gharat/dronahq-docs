@@ -112,7 +112,7 @@ To retrieve an entity by key from Cloud Datastore using the Cloud Datastore Conn
 
    - Navigate to the data management section or control action where you intend to retrieve the entity.
 
-2. Select Cloud Datastore Connector from `Data Options -> Quick Select -> Data Queries`:
+2. Select Cloud Datastore Connector from `Data Options -> Quick Select -> Connector Library`:
 
    - Choose Cloud Datastore Connector from the available options.
    - Select the `Get entity by key` action to retrieve an entity using its key.

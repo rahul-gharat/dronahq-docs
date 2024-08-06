@@ -57,10 +57,11 @@ DronaHQ can Auto fill crucial connection values like host, name, password, and m
 
 #### Admin
 
-| Advanced Option                                                                                    | Description                                                                                                                                                                                   |
-| -------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --- | ----------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
+| Advanced Option     | Description                |
+| ------------------ | -------------------------- | 
 | Connection Options                                                                                 | The `key` and `value` connection options in database configuration refer to specific settings (keys) and their corresponding values that dictate how the application connects to the database |
-| <VersionedLink to = "/datasource-concepts/ssl-configurations/"> Connect using SSL </VersionedLink> | Securely access the database using an encrypted SSL connection, ensuring data integrity and confidentiality.                                                                                  |     | Use a Self-Signed Certificate | Implement secure authentication and encryption using a self-signed certificate along with the CA, client key, and client certificate options. |
+| <VersionedLink to = "/datasource-concepts/ssl-configurations/"> Connect using SSL </VersionedLink> | Securely access the database using an encrypted SSL connection, ensuring data integrity and confidentiality.                                                                                  |     
+| Use a Self-Signed Certificate | Implement secure authentication and encryption using a self-signed certificate along with the CA, client key, and client certificate options. |
 | <VersionedLink to = "/datasource-concepts/ssh-tunneling/"> Enable SSH Tunneling </VersionedLink>   | Securely access the database through encrypted SSH tunneling.                                                                                                                                 |
 | <VersionedLink to = "/datasource-concepts/whitelisting-dronahq-ip/"> Whitelist IP </VersionedLink> | Enhance security by restricting database access to specific whitelisted IP addresses.                                                                                                         |
 
@@ -133,10 +134,10 @@ Your saved queries will be visible beneath your connector within the Connector L
 
    - Navigate to the data bind section of the control.
 
-2. Select Amazon DocumentDB Connector from `Data Bind Options -> Quick Select -> Database Queries`:
+2. Select Amazon DocumentDB Connector from `Data Bind Options -> Quick Select -> Connector Library`:
    - Choose Amazon DocumentDB Connector from the available options.
    - Select the specific connector query that will retrieve the desired data.
-   - Click on "Continue" to proceed.
+   - Click on "Save and Continue" to proceed.
 
 <figure>
   <Thumbnail src="/img/reference/connectors/awsDocDB/find.png" alt="Find query" />
