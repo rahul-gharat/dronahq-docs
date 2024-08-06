@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1
+sidebar_position: 2
 title: Creating Your First Dashboard on DronaHQ
 ---
 

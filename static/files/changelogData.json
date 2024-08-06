@@ -24,7 +24,7 @@
         "title": "Enhancements",
         "type": "improved",
         "points": [
-          "<b>Secret manager - Hashicorp Vault: </b> We have now added two more attributes to connect to the vault one is Approle mount and one is toogle to connect via TLS."
+          "<b>Secret manager - Hashicorp Vault: </b> We have now added two more attributes to connect to the vault one is Approle mount and one is toggle to connect via TLS."
         ]
       }
     ]

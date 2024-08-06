@@ -26,11 +26,10 @@ DronaHQ Dashboard is a powerful and easy-to-use solution for data visualization 
 
 ## Dashboard Visuals
 
-### Video Overview
 
-*Embed a video overview of the DronaHQ Dashboard here.*
+<!-- 
+*Embed a video overview of the DronaHQ Dashboard here.* -->
 
-### Image Gallery
 
 
 <figure>
@@ -63,7 +62,7 @@ DronaHQ Dashboard is a powerful and easy-to-use solution for data visualization 
 ---
 
 
-## Proposed Features
+## Dashboard Features
 
 <div style={{ position: 'relative', paddingBottom: 'calc(46.33333333333333% + 41px)', height: 0 }}> 
     <iframe 

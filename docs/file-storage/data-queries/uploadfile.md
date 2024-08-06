@@ -16,7 +16,7 @@ DronaHQ File Storage provides a convenient way to manage file uploads within you
 
 ## Structuring the Query
 
-This query, requires a destination and location of uploaded file to work. This is quite simple, start by providing a name and opt the option when the query should run. Then coonfigure the details
+This query, requires a destination and location of uploaded file to work. This is quite simple, start by providing a name and opt the option when the query should run. Then configure the details
 
 <figure>
   <Thumbnail src="/img/file-storage/queries/uploadfile.jpeg" alt="UploadFile Query" />

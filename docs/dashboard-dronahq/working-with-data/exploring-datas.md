@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-title: Exploring Data on DronaHQ Dashboard
+title: Overview
 ---
 
 import VersionedLink from '@site/src/components/VersionedLink'; 
