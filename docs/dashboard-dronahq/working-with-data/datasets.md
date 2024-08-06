@@ -11,6 +11,9 @@ import Thumbnail from '@site/src/components/Thumbnail';
 
 Datasets in DronaHQ Dashboard are curated representations of data from your database. They enable the creation of charts with unified metric definitions, ensuring consistency and accuracy. Datasets are crucial as every chart in DronaHQ Dashboard is created from a dataset. They offer flexibility in modeling data, allowing you to present information tailored to specific audiences in charts or dashboards.
 
+
+
+
 In this article, we will explore how DronaHQ Dashboard works with your data to create and manage datasets effectively.
 
 A dataset in DronaHQ Dashboard is an abstraction that points to data in your database. This data is then used to create charts.
@@ -22,11 +25,18 @@ The primary purpose of a dataset is to enable chart creation. You can create a c
 1. Using the Chart Gallery:
    - Select a dataset and a chart type from the Chart Gallery screen.
    - Configure the chart accordingly.
+   
+  <figure>
+    <Thumbnail src="/img/dhq-dashboard/working-with-data/dataset/chartdataset.jpeg" alt="Dataset select from chart" />
+  </figure>
 
 2. Using the Explore Interface:
    - Select a dataset from the Datasets screen.
    - Use the Explore interface to configure your chart.
 
+  <figure>
+    <Thumbnail src="/img/dhq-dashboard/working-with-data/dataset/explore.jpeg" alt="explore" />
+  </figure>
 
 ## Physical Datasets
 
@@ -38,6 +48,21 @@ Physical datasets are tables in your connected database. Adding a physical datas
 2. Select + Dataset.
 3. In the drop-down lists, select a database, schema, and a table.
 4. Click Add.
+
+
+<div style={{ position: 'relative', paddingBottom: 'calc(46.33333333333333% + 41px)', height: 0 }}> 
+    <iframe 
+        src="https://demo.arcade.software/J7y6PbQH6HpzcWGXRjDi?embed" 
+        title="Theme Creation" 
+        frameborder="0" 
+        loading="lazy" 
+        webkitallowfullscreen 
+        mozallowfullscreen 
+        allowfullscreen 
+        style= {{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', colorScheme: 'light' }} >
+    </iframe>
+</div>
+<br></br>
 
 Your dataset is now ready for chart creation.
 
@@ -53,8 +78,25 @@ Virtual datasets are views of data created within DronaHQ Dashboard using SQL La
 
 1. Hover over SQL Lab in the Toolbar and select SQL Editor.
 2. Compose your SQL query and run it.
-3. In the Results tab, select Explore to view your query in the Chart Builder.
+3. Click Save and then Save dataset, followed by providing a name for our new virtual dataset.
+3. Select Save & Explore to view your query in the Chart Builder.
 4. Save your data view as a virtual dataset.
+
+
+<div style={{ position: 'relative', paddingBottom: 'calc(46.33333333333333% + 41px)', height: 0 }}> 
+    <iframe 
+        src="https://demo.arcade.software/5pqP51Ir3QEhutxFMzW1?embed" 
+        title="Theme Creation" 
+        frameborder="0" 
+        loading="lazy" 
+        webkitallowfullscreen 
+        mozallowfullscreen 
+        allowfullscreen 
+        style= {{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', colorScheme: 'light' }} >
+    </iframe>
+</div>
+<br></br>
+
 
 ### Accessing Virtual Datasets
 
@@ -71,6 +113,10 @@ Datasets added to DronaHQ Dashboard can be customized to align with your specifi
 1. Hover over a dataset row and select the pencil Edit icon under the Actions column.
 2. The Edit Dataset panel will appear.
 
+  <figure>
+    <Thumbnail src="/img/dhq-dashboard/working-with-data/dataset/edit.png" alt="explore" />
+  </figure>
+
 #### Source Tab
 
 - Manage the source powering your dataset.
@@ -83,6 +129,10 @@ Datasets added to DronaHQ Dashboard can be customized to align with your specifi
 
 Metrics perform operations on a set of data and are used for calculations based on aggregation or pivoting rows to columns.
 
+  <figure>
+    <Thumbnail src="/img/dhq-dashboard/working-with-data/dataset/metric.jpeg" alt="explore" />
+  </figure>
+
 #### Adding a Metric
 
 1. Select the Metrics tab in the Edit Dataset panel.
@@ -93,6 +143,10 @@ Metrics perform operations on a set of data and are used for calculations based 
 ### Columns
 
 The Columns tab displays all column data within the dataset.
+
+  <figure>
+    <Thumbnail src="/img/dhq-dashboard/working-with-data/dataset/column.jpeg" alt="explore" />
+  </figure>
 
 #### Editing Columns
 
@@ -108,4 +162,6 @@ The Sync Columns from Source button fetches updated metadata from the dataset so
 
 Calculated columns refine raw data into a more meaningful format for end-users. They are created using SQL expressions and are not available in SQL Lab.
 
-
+  <figure>
+    <Thumbnail src="/img/dhq-dashboard/working-with-data/dataset/calcolumn.jpeg" alt="explore" />
+  </figure>
