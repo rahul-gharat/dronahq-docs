@@ -177,7 +177,7 @@ Replace variables encapsulated in `<% variable %>` with actual value.
 Run the following command in your DronaHQ installation directory to restore data on external database.
 
 ```shell
-sudo docker-compose exec -T mongodb sh -c 'mongorestore --host=localhost -u root -p qwertyuiop --db db5x_studio --authenticationDatabase admin --archive' < mongo-init.dump
+sudo docker-compose exec -T mongodb sh -c 'mongorestore --host=localhost -u <% user %> -p <% password %> --db db5x_studio --authenticationDatabase admin --archive' < mongo-init.dump
 ```
 
 Replace variables encapsulated in `<% variable %>` with actual value.
