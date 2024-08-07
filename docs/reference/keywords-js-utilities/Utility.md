@@ -628,3 +628,69 @@ UTILITY.MICROAPPNAV('appId',[{queryKey: 'yourkey', queryValue: 'yourvalue'}]);
 UTILITY.MICROAPPNAV('4139',[{queryKey: 'key1', queryValue: 'value1'}]);
 ```
 
+## SETKEYVAL
+
+`UTILITY.SETKEYVAL()` method can be used to store key value pairs locally. This method returns a `Promise`, so make sure to use the `await` keyword to successfully complete the operation.
+
+<span style={{fontSize: 24}}>Usage</span>
+
+```
+UTILITY.SETKEYVAL(key, value);
+```
+
+<span style={{fontSize: 24}}>Parameters</span>
+
+| Parameter   | Accepts | Possible values                                   |
+|-------------|---------|---------------------------------------------------|
+| `key`      | string  | any string value          |
+| `value`     | string  | any string value                                  |
+
+<span style={{fontSize: 24}}>Example</span>
+
+```
+UTILITY.SETKEYVAL('dronahq', {Name:John,Age:25})
+```
+
+## GETKEYVAL
+
+`UTILITY.GETKEYVAL()` method can be used to retrived the locally stored value using its unique key. This method returns a `Promise`, so make sure to use the `await` keyword to successfully complete the operation.
+
+<span style={{fontSize: 24}}>Usage</span>
+
+```
+UTILITY.GETKEYVAL(key);
+```
+
+<span style={{fontSize: 24}}>Parameters</span>
+
+| Parameter   | Accepts | Possible values                                   |
+|-------------|---------|---------------------------------------------------|
+| `key`      | string  | any string value           |
+
+<span style={{fontSize: 24}}>Example</span>
+
+```
+UTILITY.GETKEYVAL('dronahq');
+```
+
+## REMOVEKEYVAL
+
+`UTILITY.REMOVEKEYVAL()` method can be used to remove the locally stored key value pairs. This method returns a `Promise`, so make sure to use the `await` keyword to successfully complete the operation.
+
+<span style={{fontSize: 24}}>Usage</span>
+
+```
+UTILITY.REMOVEKEYVAL(key)
+```
+
+<span style={{fontSize: 24}}>Parameters</span>
+
+| Parameter   | Accepts | Possible values                                   |
+|-------------|---------|---------------------------------------------------|
+| `key`      | string  | any string value           |
+
+<span style={{fontSize: 24}}>Example</span>
+
+```
+UTILITY.REMOVEKEYVAL(key)
+```
