@@ -216,7 +216,7 @@ Additional settings provide further customization options:
 - Version: Specify the database version number. This is important for databases like Presto for query cost estimation and Dremio for syntax changes.
 
 
-## Import & Export a Databse
+## Import & Export a Database
 
 
 ### Import a Database
@@ -251,7 +251,7 @@ If you are importing a file for a database that already exists, you will be prom
 
 ### Export a Database
 
-Go to the list of connectors already connected in dashbaord and select the export option to export the particular database in an archived database connection file (e.g., ZIP).
+Go to the list of connectors already connected in dashboard and select the export option to export the particular database in an archived database connection file (e.g., ZIP).
 
 <div style={{ position: 'relative', paddingBottom: 'calc(46.33333333333333% + 41px)', height: 0 }}> 
     <iframe 
