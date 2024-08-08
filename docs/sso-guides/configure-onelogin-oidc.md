@@ -4,6 +4,8 @@ sidebar_position: 1
 
 # Configure OneLogin OIDC  
 
+import Thumbnail from '@site/src/components/Thumbnail';
+
 Use this guide to configure OneLogin SSO with OpenID Connect (OIDC) on DronaHQ. Once configured, users can log in to DronaHQ with their OneLogin credentials.
 
 ## Prerequisites
@@ -31,7 +33,7 @@ In OneLogin, create a new application for DronaHQ. Follow the steps in the [OneL
 
 Save the `Client ID` and `Client secret` to use in DronaHQ.
 
-### Adding SSO Configuration
+## Configure in DronaHQ
 
 For setting up OIDC SSO in DronaHQ, Go to `Manage Users -> SSO CONFIGURATION -> + Add SSO -> OIDC OpenID Connect`
 

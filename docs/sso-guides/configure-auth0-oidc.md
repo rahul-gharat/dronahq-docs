@@ -4,6 +4,8 @@ sidebar_position: 1
 
 # Configure Auth0 OIDC SSO
 
+import Thumbnail from '@site/src/components/Thumbnail';
+
 Use this guide to configure Auth0 SSO with OpenID Connect (OIDC) on DronaHQ. Once configured, users can log in to DronaHQ with their Auth0 credentials.
 
 ## Prerequisites
@@ -27,7 +29,7 @@ Go to `Manage Users -> SSO CONFIGURATION -> + Add SSO -> OIDC OpenID Connect` an
   <figcaption align = "center"><i>DronaHQ OAuth Redirect URL</i></figcaption>
 </figure>
 
-### Adding SSO Configuration
+## Configure in DronaHQ
 
 For setting up OIDC SSO in DronaHQ, Go to `Manage Users -> SSO CONFIGURATION -> + Add SSO -> OIDC OpenID Connect`
 
