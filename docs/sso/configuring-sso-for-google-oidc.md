@@ -28,7 +28,7 @@ Go to your [Google Developer Console](https://developers.google.com/identity/gsi
 
 If you are asked to configure an `OAuth consent screen`, select `Internal` and add scope. For SSO you can add these three basic scopes - `email, profile, openid`.
 
-Configure the OAuth Client ID as a `Web application` and enter `Redirect URL`(for eg- https://your-self-hosted-domain.com//sso/callback/googleoauth) under `Authorized redirect URIs -> + URIs`. DronaHQ `Redirect URL` can be located at  `Manage Users -> SSO CONFIGURATION -> + Add SSO -> Google - OAuth`.
+Configure the OAuth Client ID as a `Web application` and enter `Redirect URL`(for eg- https://your-self-hosted-domain.com/sso/callback/googleoauth) under `Authorized redirect URIs -> + URIs`. DronaHQ `Redirect URL` can be located at  `Manage Users -> SSO CONFIGURATION -> + Add SSO -> Google - OAuth`.
 
 
 When you `create` OAuth Client, you will get `Client ID` and `Client Secret` that you can keep a note of that will be needed later to configure it in DronaHQ. 
