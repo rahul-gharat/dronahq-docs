@@ -1,5 +1,70 @@
 [
   {
+    "timestamp": 1723161600000,
+    "tags": ["Cloud-Hosted", "Connectors"],
+    "heading": "Connector Updates",
+    "cards": [
+      {
+        "title": "Added",
+        "type": "added",
+        "points": [
+          "Introduced New Connector: DronaHQ RPC is now available in Beta. This connector allows direct integration with your codebase using Remote Procedure Calls.",
+          "Added New Connector: JDBC Connector is now available, providing seamless database connectivity through the JDBC protocol.",
+          "Introduced JSON Tree for Schema Display: A JSON tree structure is now available to display the schema of connectors with multi-level hierarchy, making it easier to navigate complex schemas."
+        ]
+      },
+      {
+        "title": "Enhancements",
+        "type": "improved",
+        "points": [
+          "Improved Exception Handling in Schema Block: Exceptions in the schema block now include an 'Ask AI' option for the query editor, offering additional assistance.",
+          "MongoDB Schema Listing Enhancement: In addition to collections, keys are now also listed in the schema, providing more comprehensive insights into your MongoDB structure."
+        ]
+      },
+      {
+        "title": "Removed",
+        "type": "removed",
+        "points": [
+          "Deprecated Fx Option in Data Binding: This option is now deprecated but remains backward compatible for any existing controls where it has been used.",
+          "Deprecated SQL Option in Data Binding: This option is also deprecated but remains backward compatible for any existing controls where it has been used."
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1723161600000,
+    "tags": ["Cloud-Hosted", "Data Queries"],
+    "heading": "Data Queries",
+    "cards": [
+      {
+        "title": "Added",
+        "type": "added",
+        "points": [
+          "Introduced an Error State Indicator: Now, if a data query is saved with an error, it will be highlighted in red within the listing, helping you quickly spot and resolve issues.",
+          "Added Visual Indicators for Editable State: When you start editing a data query, a green dot will appear along with a count indicator on the left menu, making it easier to keep track of active edits.",
+          "Enabled Editing of Multiple Data Queries Simultaneously: With the new Tabs feature, you can open and edit multiple data queries at once, enhancing your workflow."
+        ]
+      },
+      {
+        "title": "Enhancements",
+        "type": "improved",
+        "points": [
+          "Enhanced Data Type Visibility in Test Values: You can now see the exact data type of your dynamic variables that will be sent to the destination connector. This update makes it easier to identify issues and apply parse methods for the correct data type. (For example, data types like {{NULL}} are now more prominently displayed.)"
+        ]
+      },
+      {
+        "title": "Fixes",
+        "type": "fixed",
+        "points": [
+          "Resolved an Issue with {{NULL}} in Data Queries: Fixed an issue where {{NULL}} and other data types were not properly handled when data queries were triggered using action blocks.",
+          "Corrected JS Expression Evaluation: JS expressions that were previously not being evaluated when data queries were triggered via action blocks are now functioning as expected.",
+          "Fixed Discrepancies in Request Payload Formation: The inconsistencies between Test and Save in data queries have been addressed, ensuring a more consistent experience.",
+          "Resolved MSSQL Prepared Statement Query Issues: Fixed a bug where MSSQL prepared statement queries were not executing correctly via the connector query."
+        ]
+      }
+    ]
+  },
+  {
     "timestamp": 1719532800000,
     "tags": ["Cloud-Hosted", "Actions"],
     "heading": "Clear Multistep Auth Credentials",
