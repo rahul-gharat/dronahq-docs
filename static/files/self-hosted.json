@@ -1,28 +1,61 @@
 [
   {
-    "timestamp": 1721820608276,
-    "tags": [
-      "Self-Hosted",
-      "3.0.2"
-    ],
-    "heading": "Version 3.0.2",
+    "timestamp": 1722470400000,
+    "tags": ["Self-Hosted", "3.0.3"],
+    "heading": "Version 3.0.3",
     "cards": [
       {
-        "title": "Added",
-        "type": "added",
+        "title": "Fixes",
+        "type": "fixed",
         "points": [
-          "IAM Role based access support for AWS Secret Manager",
-          "Configure multiple audit logs"
+          "Fixed call_external_logger message, UI, and typos.",
+          "Resolved recursive call issue for setting data to header screen controls; addressed an edge case found on PROD.",
+          "Minor bug fix for required key in UI section.",
+          "Fixed data query preview bug.",
+          "Added support for Tabbed container in Autogens and Validation screen for forms."
         ]
       }
     ]
   },
   {
+    "timestamp": 1723075200000,
+    "tags": ["Self-Hosted", "3.0.4"],
+    "heading": "Version 3.0.4",
+    "cards": [
+      {
+        "title": "Added",
+        "type": "added",
+        "points": ["New feature added in DataQuery along with bug fixes.", "Added support for widget in Autogen."]
+      },
+      {
+        "title": "Fixes",
+        "type": "fixed",
+        "points": [
+          "Removed extra getauditlog call.",
+          "Fixed indentation syntax.",
+          "Handled non-stringified null case while replacing dynamic variables in query.",
+          "Fixed issue where delete option was not visible inside apps under certain conditions.",
+          "Code-level fixes for assigning the right variable.",
+          "Updated UI/UX for DataQuery to display the trigger data query code with the correct datatype."
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1721820608276,
+    "tags": ["Self-Hosted", "3.0.2"],
+    "heading": "Version 3.0.2",
+    "cards": [
+      {
+        "title": "Added",
+        "type": "added",
+        "points": ["IAM Role based access support for AWS Secret Manager", "Configure multiple audit logs"]
+      }
+    ]
+  },
+  {
     "timestamp": 1721174400000,
-    "tags": [
-      "Self-Hosted",
-      "3.0.1"
-    ],
+    "tags": ["Self-Hosted", "3.0.1"],
     "heading": "Version 3.0.1",
     "cards": [
       {
@@ -73,18 +106,13 @@
       {
         "title": "Removed",
         "type": "removed",
-        "points": [
-          "Pagination UI from SQLCRUD Sidebar."
-        ]
+        "points": ["Pagination UI from SQLCRUD Sidebar."]
       }
     ]
   },
   {
     "timestamp": 1715817600000,
-    "tags": [
-      "Self-Hosted",
-      "3.0.0"
-    ],
+    "tags": ["Self-Hosted", "3.0.0"],
     "heading": "Version 3.0.0",
     "cards": [
       {
@@ -113,10 +141,7 @@
   },
   {
     "timestamp": 1713398400000,
-    "tags": [
-      "Self-Hosted",
-      "2.4.7"
-    ],
+    "tags": ["Self-Hosted", "2.4.7"],
     "heading": "Version 2.4.7",
     "cards": [
       {
@@ -143,18 +168,13 @@
   },
   {
     "timestamp": 1712188800000,
-    "tags": [
-      "Self-Hosted",
-      "2.4.6"
-    ],
+    "tags": ["Self-Hosted", "2.4.6"],
     "heading": "Version 2.4.6",
     "cards": [
       {
         "title": "Added",
         "type": "added",
-        "points": [
-          "Dynamic credentials fields for NoSQL databases in the data query section."
-        ]
+        "points": ["Dynamic credentials fields for NoSQL databases in the data query section."]
       },
       {
         "title": "Enhancements",
@@ -179,27 +199,19 @@
   },
   {
     "timestamp": 1711756800000,
-    "tags": [
-      "Self-Hosted",
-      "2.4.5"
-    ],
+    "tags": ["Self-Hosted", "2.4.5"],
     "heading": "Version 2.4.5",
     "cards": [
       {
         "title": "Fixes",
         "type": "fixed",
-        "points": [
-          "Updated and fixed issues with git synchronization."
-        ]
+        "points": ["Updated and fixed issues with git synchronization."]
       }
     ]
   },
   {
     "timestamp": 1711497600000,
-    "tags": [
-      "Self-Hosted",
-      "2.4.4"
-    ],
+    "tags": ["Self-Hosted", "2.4.4"],
     "heading": "Version 2.4.4",
     "cards": [
       {
@@ -219,49 +231,35 @@
       {
         "title": "Enhancements",
         "type": "improved",
-        "points": [
-          "Updated the runapi feature."
-        ]
+        "points": ["Updated the runapi feature."]
       },
       {
         "title": "Fixes",
         "type": "fixed",
-        "points": [
-          "Resolved issues with traceroute functionality."
-        ]
+        "points": ["Resolved issues with traceroute functionality."]
       }
     ]
   },
   {
     "timestamp": 1710720000000,
-    "tags": [
-      "Self-Hosted",
-      "2.4.2"
-    ],
+    "tags": ["Self-Hosted", "2.4.2"],
     "heading": "Version 2.4.2",
     "cards": [
       {
         "title": "Added",
         "type": "added",
-        "points": [
-          "New feature: global git sync"
-        ]
+        "points": ["New feature: global git sync"]
       },
       {
         "title": "Fixes",
         "type": "fixed",
-        "points": [
-          "Issues in Rest API proxy"
-        ]
+        "points": ["Issues in Rest API proxy"]
       }
     ]
   },
   {
     "timestamp": 1710633600000,
-    "tags": [
-      "Self-Hosted",
-      "2.4.1"
-    ],
+    "tags": ["Self-Hosted", "2.4.1"],
     "heading": "Version 2.4.1",
     "cards": [
       {
@@ -287,30 +285,19 @@
       {
         "title": "Fixes",
         "type": "fixed",
-        "points": [
-          "Bugs on builder page view and tutorial",
-          "Separated save and test button for connectors"
-        ]
+        "points": ["Bugs on builder page view and tutorial", "Separated save and test button for connectors"]
       }
     ]
   },
   {
     "timestamp": 1710288000000,
-    "tags": [
-      "Self-Hosted",
-      "2.4.0"
-    ],
+    "tags": ["Self-Hosted", "2.4.0"],
     "heading": "Version 2.4.0",
     "cards": [
       {
         "title": "Added",
         "type": "added",
-        "points": [
-          "Themes",
-          "Recurring actionflow",
-          "Fetch subcat data",
-          "x-remote-ip and user-agent header"
-        ]
+        "points": ["Themes", "Recurring actionflow", "Fetch subcat data", "x-remote-ip and user-agent header"]
       },
       {
         "title": "Enhancements",
@@ -342,10 +329,7 @@
   },
   {
     "timestamp": 1695945600000,
-    "tags": [
-      "Self-Hosted",
-      "2.3.0"
-    ],
+    "tags": ["Self-Hosted", "2.3.0"],
     "heading": "Version 2.3.0",
     "cards": [
       {
@@ -405,10 +389,7 @@
   },
   {
     "timestamp": 1699574400000,
-    "tags": [
-      "Self-Hosted",
-      "2.3.1"
-    ],
+    "tags": ["Self-Hosted", "2.3.1"],
     "heading": "Version 2.3.1",
     "cards": [
       {
@@ -454,27 +435,19 @@
   },
   {
     "timestamp": 1704499200000,
-    "tags": [
-      "Self-Hosted",
-      "2.3.2"
-    ],
+    "tags": ["Self-Hosted", "2.3.2"],
     "heading": "Version 2.3.2",
     "cards": [
       {
         "title": "Fixes",
         "type": "fixed",
-        "points": [
-          "Fixed issues in Rest API proxy."
-        ]
+        "points": ["Fixed issues in Rest API proxy."]
       }
     ]
   },
   {
     "timestamp": 1704672000000,
-    "tags": [
-      "Self-Hosted",
-      "2.3.3"
-    ],
+    "tags": ["Self-Hosted", "2.3.3"],
     "heading": "Version 2.3.3",
     "cards": [
       {
@@ -493,9 +466,7 @@
       {
         "title": "Enhancements",
         "type": "improved",
-        "points": [
-          "Optimization for the database connector to enhance performance."
-        ]
+        "points": ["Optimization for the database connector to enhance performance."]
       },
       {
         "title": "Fixes",
@@ -511,18 +482,13 @@
   },
   {
     "timestamp": 1705276800000,
-    "tags": [
-      "Self-Hosted",
-      "2.3.4"
-    ],
+    "tags": ["Self-Hosted", "2.3.4"],
     "heading": "Version 2.3.4",
     "cards": [
       {
         "title": "Enhancements",
         "type": "improved",
-        "points": [
-          "Machine identification for Kubernetes moved to the database for better management."
-        ]
+        "points": ["Machine identification for Kubernetes moved to the database for better management."]
       },
       {
         "title": "Fixes",
@@ -536,18 +502,13 @@
   },
   {
     "timestamp": 1705449600000,
-    "tags": [
-      "Self-Hosted",
-      "2.3.5"
-    ],
+    "tags": ["Self-Hosted", "2.3.5"],
     "heading": "Version 2.3.5",
     "cards": [
       {
         "title": "Enhancements",
         "type": "improved",
-        "points": [
-          "Change made to the process of renaming subcategories for better organization."
-        ]
+        "points": ["Change made to the process of renaming subcategories for better organization."]
       },
       {
         "title": "Fixes",
@@ -561,18 +522,13 @@
   },
   {
     "timestamp": 1706054400000,
-    "tags": [
-      "Self-Hosted",
-      "2.3.6"
-    ],
+    "tags": ["Self-Hosted", "2.3.6"],
     "heading": "Version 2.3.6",
     "cards": [
       {
         "title": "Enhancements",
         "type": "improved",
-        "points": [
-          "Unnecessary logs removed to streamline performance."
-        ]
+        "points": ["Unnecessary logs removed to streamline performance."]
       },
       {
         "title": "Fixes",
@@ -586,18 +542,13 @@
   },
   {
     "timestamp": 1706745600000,
-    "tags": [
-      "Self-Hosted",
-      "2.3.7"
-    ],
+    "tags": ["Self-Hosted", "2.3.7"],
     "heading": "Version 2.3.7",
     "cards": [
       {
         "title": "Enhancements",
         "type": "improved",
-        "points": [
-          "New version of the Secret Manager introduced with additional features."
-        ]
+        "points": ["New version of the Secret Manager introduced with additional features."]
       },
       {
         "title": "Fixes",
@@ -613,10 +564,7 @@
   },
   {
     "timestamp": 1709164800000,
-    "tags": [
-      "Self-Hosted",
-      "2.3.8"
-    ],
+    "tags": ["Self-Hosted", "2.3.8"],
     "heading": "Version 2.3.8",
     "cards": [
       {
@@ -631,9 +579,7 @@
       {
         "title": "Enhancements",
         "type": "improved",
-        "points": [
-          "Updated connector-health-check."
-        ]
+        "points": ["Updated connector-health-check."]
       },
       {
         "title": "Fixes",
@@ -650,18 +596,13 @@
   },
   {
     "timestamp": 1710115200000,
-    "tags": [
-      "Self-Hosted",
-      "2.3.9"
-    ],
+    "tags": ["Self-Hosted", "2.3.9"],
     "heading": "Version 2.3.9",
     "cards": [
       {
         "title": "Added",
         "type": "added",
-        "points": [
-          "AWS services IAM role-based access added."
-        ]
+        "points": ["AWS services IAM role-based access added."]
       },
       {
         "title": "Fixes",
