@@ -93,7 +93,7 @@ To connect a database, start by selecting `+ Database` on the DronaHQ Dashboard.
 
 | Field                  | Description                                                                                      |
 |------------------------|--------------------------------------------------------------------------------------------------|
-| Display Name           | Google Sheets. Pick a nickname for how the database will display in Superset.                    |
+| Display Name           | Google Sheets. Pick a nickname for how the database will display in dashbaord.                    |
 | Type of Google Sheets allowed | Connect Google Sheets as tables to this database                                         |
 | Google Sheet Name and URL | Enter a name for this sheet. Paste the shareable Google Sheet URL here.                    |
 
