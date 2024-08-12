@@ -20,7 +20,7 @@ To create an Microsoft Entra ID Enterprise application, follow the steps in [thi
 
 1. In the `Microsoft Entra ID portal`, add a new `Enterprise application`.
 
-1. DronaHQ is not listed in the Microsoft Entra ID Gallery, so you must select `Create your own application`.
+1. DronaHQ is not listed in the Microsoft Entra ID Gallery, so select `Create your own application`.
 
 1. Give User friendly Name for the application to identify SSO for DronaHQ.
 
