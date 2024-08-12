@@ -133,24 +133,29 @@ Example:
 ```html
 <html>
   <body>
-      <h1>Input</h1>
-      <input id="in1" type="text" placeholder="Your name">
-      <script>
-          const callback = function (payload) {
-              if (payload.type == "setValue") {
-                  // your control will get the data from BIND DATA, so you can have your logic acc to your value
-                  let inputPayload = payload.value;
+    <h1>Input</h1>
+    <input id="in1" type="text" placeholder="Your name">
+    <script>
+      const callback = function (payload) {
+        if (payload.type == "setValue") {
+          try {
+            // Parse the payload value as JSON if it has been stringified
+            let inputPayload = JSON.parse(payload.value);
 
-                  // getting the input element and setting it to 
-                  let input = document.getElementById('in1');
-                  // setting the input element with user email
-                  input.value = inputPayload.user;
-              }
+            // Get the input element
+            let input = document.getElementById('in1');
+            // Set the input element with the user's email from the parsed JSON
+            input.value = inputPayload.user;
+          } catch (error) {
+            console.error("Error processing the payload:", error);
           }
-          CI.init(callback);
-      </script>
+        }
+      };
+      CI.init(callback);
+    </script>
   </body>
 </html>
+
 ```
 
 ## Pass data to your app from your custom control
