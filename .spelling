@@ -1564,3 +1564,12 @@ SQLAlchemy
 Walkthrough
 Dremio
 OneLogin
+Entra
+user.givenname
+user.userprincipalname
+user.mail
+firstName
+given_name
+idp
+adfs
+1.x
