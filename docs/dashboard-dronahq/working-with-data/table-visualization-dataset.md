@@ -19,25 +19,35 @@ Ensure you have access to uploaded dataset. Navigate to the DronaHQ dashboard, s
 
 ### Data
 
-3. Setting Up the Query:
+<figure>
+  <Thumbnail src="/img/dhq-dashboard/working-with-data/table-visualization/data.jpeg" alt="Configure the table details" />
+  <figcaption align="center"><i>Configure the table details</i></figcaption>
+</figure>
+
+1. Setting Up the Query:
     - Query Mode: Set the query mode to `AGGREGATE`.
     - Dimensions: Drag and drop the column `School_degree` to the Dimensions section. This column contains the different degrees held by respondents.
     - Metrics: Drag and drop `COUNT(*)` to the Metrics section. This will count the number of records for each degree.
     - Percentage Metrics: Add a percentage metric to show the proportion of each degree. Use the formula `COUNT(School_degree) / TOTAL COUNT(School_degree)` to calculate the percentage.
 
-4. Applying Filters:
+2. Applying Filters:
     - Filter by Software Developers: To filter out records where the respondent is not a software developer, set the filter `is_software_dev = 0`.
     - Time Filter: You can apply a time filter if needed. In this example, there is no specific time filter applied (`time_start (No Filter)`).
 
-5. Sorting the Data:
+3. Sorting the Data:
     - Sort the data by the count of degrees in descending order to display the degrees with the highest counts at the top.
 
-6. Server Pagination:
+4. Server Pagination:
     - Enable server pagination if your dataset is large to enhance performance.
 
 
 
 ### Customize
+
+<figure>
+  <Thumbnail src="/img/dhq-dashboard/working-with-data/table-visualization/custom.jpeg" alt="Customize the table" />
+  <figcaption align="center"><i>Customize the table</i></figcaption>
+</figure>
 
 To customize the appearance and behavior of your table, follow these steps:
 
@@ -71,10 +81,15 @@ To customize the appearance and behavior of your table, follow these steps:
 
 The chart preview section allows you to see a visual representation of your data. In this example, we can see representation of the number of respondents holding each degree type. Each bar's length corresponds to the count of respondents for each degree.
 
-
+<figure>
+  <Thumbnail src="/img/dhq-dashboard/working-with-data/table-visualization/preview.jpeg" alt="Preview the table after configuration and customization" />
+  <figcaption align="center"><i>Preview the table after configuration and customization</i></figcaption>
+</figure>
 
 ### Results/Samples
 
 The results/samples section displays the actual data in a tabular format. It shows the degree types in one column and the count of respondents for each degree in another column. The table also includes a percentage column to represent the proportion of each degree type.
 
-
+<figure>
+  <Thumbnail src="/img/dhq-dashboard/working-with-data/table-visualization/result.jpeg" alt="Preview the table after configuration and customization" />
+</figure>
