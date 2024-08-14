@@ -19,8 +19,8 @@
   },
   {
     "timestamp": 1723075200000,
-    "tags": ["Self-Hosted", "3.0.4"],
-    "heading": "Version 3.0.4",
+    "tags": ["Self-Hosted", "3.1-stable"],
+    "heading": "Version 3.1-stable",
     "cards": [
       {
         "title": "Added",
