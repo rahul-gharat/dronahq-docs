@@ -8,8 +8,8 @@
         "title": "Added",
         "type": "added",
         "points": [
-          "Introduced New Connector: DronaHQ RPC is now available in Beta. This connector allows direct integration with your codebase using Remote Procedure Calls.",
-          "Added New Connector: JDBC Connector is now available, providing seamless database connectivity through the JDBC protocol.",
+          "Introduced DronaHQ RPC Connector in Beta. This connector allows direct integration with your codebase using Remote Procedure Calls.",
+          "Added JDBC Connector, providing seamless database connectivity through the JDBC protocol.",
           "Introduced JSON Tree for Schema Display: A JSON tree structure is now available to display the schema of connectors with multi-level hierarchy, making it easier to navigate complex schemas."
         ]
       },
