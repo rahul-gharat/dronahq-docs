@@ -1,5 +1,20 @@
 [
   {
+    "timestamp": 1723593600000,
+    "tags": "Dashboard",
+    "heading": "DronaHQ Dynamic - Dashboards",
+    "descriptions": [
+      "<div style=\"position: relative; padding-bottom: calc(46.33333333333333% + 41px); height: 0;\"><iframe src=\"https://demo.arcade.software/RgbpxLKt1R9hPq8cBnTW?embed\" title=\"DronaHQ Dashboard\" frameBorder=\"0\" loading=\"lazy\" allowFullScreen style=\"position: absolute; top: 0; left: 0; width: 100%; height: 100%; color-scheme: light;\" webkitallowfullscreen mozallowfullscreen></iframe></div>",
+      "DronaHQ now offers a powerful and user-friendly Dashboard feature, designed to streamline data visualization and business intelligence tasks. With this update, users can create dynamic, customizable dashboards that enable in-depth data exploration, advanced analytics, and collaborative insights.",
+      "Key enhancements include:",
+      "<b>Home Screen Overview:</b> Quickly access recently edited items, dashboards, charts, datasets, and connectors through an intuitive navigation menu.<br></br><b>Dashboard Management:</b> Create, navigate, and manage your dashboards efficiently, ensuring an organized workspace.",
+      "<b>Chart Builder:</b> Visualize your data with ease using a wide range of chart options and low-code design capabilities.",
+      "<b>SQL Labs:</b> A dedicated environment for creating, testing, and managing SQL queries, with support for saving and organizing queries.",
+      "These improvements empower users to leverage data-driven insights, drive business growth, and maintain a secure, organized data environment.",
+      "For more information, visit our <a href='https://docs.dronahq.com/getting-started/introduction/'>DronaHQ Documentation</a>."
+    ]
+  },
+  {
     "timestamp": 1723161600000,
     "tags": ["Cloud-Hosted", "Connectors"],
     "heading": "Connector Updates",

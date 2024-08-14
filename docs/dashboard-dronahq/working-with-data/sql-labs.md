@@ -9,15 +9,15 @@ import ArrowRight from '@site/static/icons/arrow_right.svg';
 import Image from '@site/src/components/Image'; 
 import Thumbnail from '@site/src/components/Thumbnail';
 
-DronaHQ dashboard provides a dedicated workspace for user to work with data using SQL queries. This primary usage of SQL Labs is to create virtaul datasets. This enables the combining of different schemas from different connectors avaiable in the dashbaord. User gets the freedom of populating data according to their need while using sql queries. Alomgside, there are other benifits provided like:
+DronaHQ dashboard provides a dedicated workspace for user to work with data using SQL queries. This primary usage of SQL Labs is to create virtual datasets. This enables the combining of different schemas from different connectors available in the dashboard. User gets the freedom of populating data according to their need while using SQL queries. Alongside, there are other benefits provided like:
 
-- Browse the metadata of the databse,
-- Running mulitple queries with multi-tab feature,
+- Browse the metadata of the database,
+- Running multiple queries with multi-tab feature,
 - A search engine to find queries executed in the past,
-- Provind parameters to the query,
+- Provide parameters to the query,
 - Direct access to chart building, download as CSV, and more.
 
-While the most of the work happes in `SQL Labs` and `Saved Queries`, we can acces to all the past queries from `Query History`.
+While the most of the work happens in `SQL Labs` and `Saved Queries`, we can access to all the past queries from `Query History`.
 
 <figure>
   <Thumbnail src="/img/dhq-dashboard/working-with-data/sql-labs/sql-labs.jpeg" alt="Expose database in SQL Lab toggle." />
@@ -66,7 +66,7 @@ Write in the SQL Editor panel which allows different data source semantics / com
 
 ## Query manager tab
 
-Right under the SQL editor there are several option which user can explore to have a profopund experience with SQL editor:
+Right under the SQL editor there are several option which user can explore to have a profound experience with SQL editor:
 
 <figure>
   <Thumbnail src="/img/dhq-dashboard/working-with-data/sql-labs/manage-query.jpeg" alt="manage your SQL query" />
@@ -79,20 +79,20 @@ Right under the SQL editor there are several option which user can explore to ha
 4. Save: Click `Save` to store the query. You'll be prompted to provide a name and description. You can also save the query as a dataset from this menu.
 5. Copy Link: Copy the link to the query, provided it has been saved already, for easy sharing or later use.
 6. Further Options:
-   - Parameters: This allows you to assign a set of parameters asJSON, and they become available in your SQL by using Jinja templating syntax.
+   - Parameters: This allows you to assign a set of parameters as JSON, and they become available in your SQL by using Jinja Templating syntax.
    - Auto-completion: Toggle this feature to enable or disable SQL code auto-completion.
    - Format SQL: Automatically format your SQL code for better readability.
    - Keyboard Shortcuts: Access and utilize various keyboard shortcuts for more efficient SQL editing.
 
-## Sql Editor Tabs
+## SQL Editor Tabs
 
 ### Results tab
 
-View the results of your queries here. There are mulitple tools provided in this tab.
+View the results of your queries here. There are multiple tools provided in this tab.
 
-- Create Chart: Once the query is ready and saved, user can directly swicth to building a chart using the query, by clicking `Create Chart`.
+- Create Chart: Once the query is ready and saved, user can directly switch to building a chart using the query, by clicking `Create Chart`.
 - Download to CSV: The SQL queries can be used to create datasets and this can be obtained in system by downloading to CSV format.
-- Copy to Clipboard: Copy data to your systen's clipboard.
+- Copy to Clipboard: Copy data to your system's clipboard.
 
 <figure>
   <Thumbnail src="/img/dhq-dashboard/working-with-data/sql-labs/result-tab.jpeg" alt="Different tools in Results Tab" />
