@@ -1578,3 +1578,5 @@ templating
 pluggable
 backends
 validators
+bg-color
+tag-bg-color
