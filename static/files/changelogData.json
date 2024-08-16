@@ -23,7 +23,7 @@
         "title": "Added",
         "type": "added",
         "points": [
-          "Introduced DronaHQ RPC Connector in Beta. This connector allows direct integration with your codebase using Remote Procedure Calls.",
+          "Add a new DronaHQ RPC connector in Beta. This connector allows direct integration with your codebase using Remote Procedure Calls.",
           "Added JDBC Connector, providing seamless database connectivity through the JDBC protocol.",
           "Introduced JSON Tree for Schema Display: A JSON tree structure is now available to display the schema of connectors with multi-level hierarchy, making it easier to navigate complex schemas."
         ]
@@ -40,8 +40,8 @@
         "title": "Removed",
         "type": "removed",
         "points": [
-          "Deprecated Fx Option in Data Binding: This option is now deprecated but remains backward compatible for any existing controls where it has been used.",
-          "Deprecated SQL Option in Data Binding: This option is also deprecated but remains backward compatible for any existing controls where it has been used."
+          "Deprecated Fx option in data binding - Backward compatible if this option is already used in any control.",
+          "Deprecated SQL option in data binding - Backward compatible if this option is already used in any control."
         ]
       }
     ]
@@ -55,9 +55,9 @@
         "title": "Added",
         "type": "added",
         "points": [
-          "Introduced an Error State Indicator: Now, if a data query is saved with an error, it will be highlighted in red within the listing, helping you quickly spot and resolve issues.",
+          "Added a Error State Indicator. Now, if a data query is saved with an error, it will be highlighted in red within the listing, helping you quickly spot and resolve issues.",
           "Added Visual Indicators for Editable State: When you start editing a data query, a green dot will appear along with a count indicator on the left menu, making it easier to keep track of active edits.",
-          "Enabled Editing of Multiple Data Queries Simultaneously: With the new Tabs feature, you can open and edit multiple data queries at once, enhancing your workflow."
+          "Added tabs to let you edit multiple dataqueries parallelly."
         ]
       },
       {
@@ -71,10 +71,10 @@
         "title": "Fixes",
         "type": "fixed",
         "points": [
-          "Resolved an Issue with {{NULL}} in Data Queries: Fixed an issue where {{NULL}} and other data types were not properly handled when data queries were triggered using action blocks.",
-          "Corrected JS Expression Evaluation: JS expressions that were previously not being evaluated when data queries were triggered via action blocks are now functioning as expected.",
-          "Fixed Discrepancies in Request Payload Formation: The inconsistencies between Test and Save in data queries have been addressed, ensuring a more consistent experience.",
-          "Resolved MSSQL Prepared Statement Query Issues: Fixed a bug where MSSQL prepared statement queries were not executing correctly via the connector query."
+          "Fixed an issue where {{NULL}} in data queries which when triggered using actionblocks was sent stringified. Similarly other datatypes have also been covered in this fix.",
+          "Fixed an issue where JS expressions were not getting evaluated when the data query was triggered using action blocks.",
+          "Fixed discrepancies in the Request payload formation of Test and Save in the data queries.",
+          "Fixed an issue in MSSql connector where prepared statement queries are not working via connector query."
         ]
       }
     ]

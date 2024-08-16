@@ -25,18 +25,22 @@
       {
         "title": "Added",
         "type": "added",
-        "points": ["New feature added in DataQuery along with bug fixes.", "Added support for widget in Autogen."]
+        "points": [
+          "Added option to switch between multiple dataqueries without saving.", 
+          "Added tabs to let you edit multiple dataqueries parallelly.", 
+          "Added support for widget in Autogen."
+        ]
       },
       {
         "title": "Fixes",
         "type": "fixed",
         "points": [
-          "Removed extra getauditlog call.",
+          "Fixed extra getauditlog call.",
           "Fixed indentation syntax.",
-          "Handled non-stringified null case while replacing dynamic variables in query.",
+          "Fixed non-stringified null case handling while replacing dynamic variables in query.",
           "Fixed issue where delete option was not visible inside apps under certain conditions.",
-          "Code-level fixes for assigning the right variable.",
-          "Updated UI/UX for DataQuery to display the trigger data query code with the correct datatype."
+          "Fixed continuous loader issue on saving a Connector Library.",
+          "Fixed UI for DataQuery to display the trigger data query code with the correct datatype."
         ]
       }
     ]
