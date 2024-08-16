@@ -163,8 +163,40 @@ Styling Fonts provides options for selecting and configuring fonts used in the a
    |----------------|---------------------------------------------------------------------|
    | Upload Fonts   | Option to upload custom font files.                                 |
 
+#### Custom Theme
 
-At last there is the Button to save the custom font configuration after uploading fonts. 
+Custom Theme is a flexible block within the application where users can provide their own theme configurations in JSON format. The custom themes are designed to allow users to easily adjust various CSS variables for styling their applications.
+
+The custom theme should be provided in the following JSON format:
+```json
+{
+  "--css-var-font-size": "16px",
+  "--css-var-font-weight": "400",
+  "--css-var-font-color": "#333333",
+  "--css-var-bg-color": "#ffffff",
+  "--application-tag-font-color": "#666666",
+  "--application-tag-bg-color": "#f0f0f0"
+}
+```
+
+**Key:** Represents the name of the CSS variable.  
+**Value:** Represents the corresponding value for the CSS theme variable.
+
+##### Configurable Variables
+
+Each configurable variable will be visible in the properties section based on the suffix of the variable name:
+
+- **-font-size:** Appears under Font Size.
+- **-font-weight:** Appears under Font Weight.
+- **-font-color:** Appears under Font Color.
+- **-bg-color:** Appears under Background Color.
+- **-tag-font-color** and **-tag-bg-color:** These should have the same prefix to act as corresponding pairs (e.g., `--studio-tag-font-color` and `--studio-tag-bg-color`). This ensures that the tag font and background colors are applied consistently.
+
+:::info NOTE
+The variable names must start with `--`.
+:::
+
+At the end, there is a button to save the custom font configuration after uploading fonts.
 ## Applying Themes
 
 The themes generated in the DronaHQ are applicable within the application through the adjustment of the application's theme settings. Each application is equipped with its own theme configuration, providing users with the capability to manage the visual presentation of individual applications.
