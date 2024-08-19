@@ -1,4 +1,20 @@
-[
+[ {
+  "timestamp": 1723766400000,
+  "tags":  ["Cloud-Hosted"],
+  "heading": "Build Standalone Forms with DronaHQ",
+  "descriptions": [
+    "<div style=\"position: relative; padding-bottom: calc(46.33333333333333% + 41px); height: 0;\"><iframe src=\"https://demo.arcade.software/DrEDlmOHMJ8hRzcFqhgj?embed\" title=\"DronaHQ Dashboard\" frameBorder=\"0\" loading=\"lazy\" allowFullScreen style=\"position: absolute; top: 0; left: 0; width: 100%; height: 100%; color-scheme: light;\" webkitallowfullscreen mozallowfullscreen></iframe></div>",
+    "DronaHQ introduces a robust Forms feature that lets you create standalone, customizable forms and record responses directly into your connected SQL databases like MySQL, PostgreSQL, and more. These forms are publicly accessible via a unique URL, making it easy to gather responses.",
+    "Key features include:",
+    "<b>Effortless Form Creation:</b> Start by navigating to the Create tab, where selecting 'Form' automatically generates a new form in a separate tab.<br></br><b>Database Integration:</b> Direct form responses to your existing SQL database by connecting it as a Connector within DronaHQ.",
+    "<b>Custom Field Synchronization:</b> Add custom fields while building your form, and they will be automatically synchronized with your DronaHQ Database upon publishing.",
+    "<b>Visual Customization:</b> Enhance your forms with text, images, and dividers, and customize controls with options like hide, required, or swap before publishing.",
+    "<b>Post-Submission Actions:</b> Set up additional actions such as sending emails or Slack notifications that trigger upon form submission.",
+    "<b>Response Management:</b> Access all form responses in the Responses tab, with the ability to download them as CSV files for further analysis.",
+    "<b>Preview, Publish, and Share:</b> Before making your form public, preview it, then publish to receive a unique URL. You can also embed the form on your website.",
+    "This update empowers you to create and manage forms efficiently, ensuring seamless data collection and integration. For more details, visit our <a href='https://docs.dronahq.com/forms/'>DronaHQ Forms Documentation</a>."
+  ]
+},
   {
     "timestamp": 1723766400000,
     "tags": ["Cloud-Hosted"],
@@ -20,7 +36,7 @@
         "points": [
           "Added option to switch between multiple dataqueries without saving.",
           "Enhanced homescreen for apps, connectors and other sections with listing view introduced.",
-          "Enhanced the experience in Action Flow with the following updates: </br><span>&#8226;</span> All actionblocks except connectors and JS now open in a pop up instead of a tray.</br><span>&#8226;</span> Connectors and JS actionblocks now open in a bottom panel similar to dataqueries.</br><span>&#8226;</span> Older configured actionblocks like JSCODE that emit a output has to be used with trigger data query or new js block should be added for further use.",
+          "Enhanced the experience in Action Flow with the following updates: </br><span>&#8226;</span> All actionblocks except connectors and JS now open in a pop up instead of a tray.</br><span>&#8226;</span> Connectors and JS actionblocks now open in a bottom panel similar to dataqueries.</br><span>&#8226;</span> Older configured actionblocks like JSCODE that emit a output has to be used with trigger data query or new JS block should be added for further use.",
           "Enhanced Themes to include fonts and loaders to be set up at the account level in themes."
         ]
       },
