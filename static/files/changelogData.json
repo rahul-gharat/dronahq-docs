@@ -1,5 +1,41 @@
 [
   {
+    "timestamp": 1723766400000,
+    "tags": ["Cloud-Hosted"],
+    "heading": "",
+    "cards": [
+      {
+        "title": "Added",
+        "type": "added",
+        "points": [
+          "Added PDF Creator option in Data Queries. It Allows you to generate a PDF by selecting a published PDF template. You can enter a name for the PDF, add a password to protect it, and also pass dynamic data from your controls or other data queries into the populated variable list. The variable list is refreshed once you select a PDF template from the templates dropdown. ",
+          "Added an option to declare css variables while configuring Theme with some suffix defined by DronaHQ which will help to identify the the css variable and make it available for selection in there respective sidebars. <a href='https://docs.dronahq.com/building-apps-concepts/configuring-themes/#custom-theme'>Read More</a>",
+          "Added tabs to let you edit multiple dataqueries parallelly.",
+          "Added option to switch between multiple dataqueries without saving."
+        ]
+      },
+      {
+        "title": "Enhancements",
+        "type": "improved",
+        "points": [
+          "Added option to switch between multiple dataqueries without saving.",
+          "Enhanced homescreen for apps, connectors and other sections with listing view introduced.",
+          "Enhanced the experience in Action Flow with the following updates: </br><span>&#8226;</span> All actionblocks except connectors and JS now open in a pop up instead of a tray.</br><span>&#8226;</span> Connectors and JS actionblocks now open in a bottom panel similar to dataqueries.</br><span>&#8226;</span> Older configured actionblocks like JSCODE that emit a output has to be used with trigger data query or new js block should be added for further use.",
+          "Enhanced Themes to include fonts and loaders to be set up at the account level in themes."
+        ]
+      },
+      {
+        "title": "Fixes",
+        "type": "fixed",
+        "points": [
+          "Fixed an issue where user email mismatched in the {{USEREMAIL}} keyword.",
+          "Fixed continuous loader issue on saving a Connector Library.",
+          "Fixed an issue where dropdowns in control properties stopped working in some Chrome versions."
+        ]
+      }
+    ]
+  },
+  {
     "timestamp": 1723593600000,
     "tags": "Dashboard",
     "heading": "DronaHQ Dynamic - Dashboards",
