@@ -98,7 +98,7 @@ Follow these steps to use elements:
 
 ### Pie Chart
 
-To visualize peak Electricity Demand by Building Type, start by creating a pie chart using the `energy_consumption` dataset. Begin by selecting the Pie Chart option in the chart creation section. In the Query section, you can define dimensions by choosing from saved dimensions, simple dimensions, or by writing custom SQL queries. For metrics, summation of the peak electric demand is requoired to represent the data accurately.
+To visualize peak Electricity Demand by Building Type, start by creating a pie chart using the `energy_consumption` dataset. Begin by selecting the Pie Chart option in the chart creation section. In the Query section, you can define dimensions by choosing from saved dimensions, simple dimensions, or by writing custom SQL queries. For metrics, summation of the peak electric demand is required to represent the data accurately.
 
 Now put these into as fields
 

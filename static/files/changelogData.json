@@ -26,17 +26,17 @@
         "points": [
           "Added PDF Creator option in Data Queries. It Allows you to generate a PDF by selecting a published PDF template. You can enter a name for the PDF, add a password to protect it, and also pass dynamic data from your controls or other data queries into the populated variable list. The variable list is refreshed once you select a PDF template from the templates dropdown. ",
           "Added an option to declare css variables while configuring Theme with some suffix defined by DronaHQ which will help to identify the the css variable and make it available for selection in there respective sidebars. <a href='https://docs.dronahq.com/building-apps-concepts/configuring-themes/#custom-theme'>Read More</a>",
-          "Added tabs to let you edit multiple dataqueries parallelly.",
-          "Added option to switch between multiple dataqueries without saving."
+          "Added tabs to let you edit multiple dataq ueries parallelly.",
+          "Added option to switch between multiple data queries without saving."
         ]
       },
       {
         "title": "Enhancements",
         "type": "improved",
         "points": [
-          "Added option to switch between multiple dataqueries without saving.",
+          "Added option to switch between multiple data queries without saving.",
           "Enhanced homescreen for apps, connectors and other sections with listing view introduced.",
-          "Enhanced the experience in Action Flow with the following updates: </br><span>&#8226;</span> All actionblocks except connectors and JS now open in a pop up instead of a tray.</br><span>&#8226;</span> Connectors and JS actionblocks now open in a bottom panel similar to dataqueries.</br><span>&#8226;</span> Older configured actionblocks like JSCODE that emit a output has to be used with trigger data query or new JS block should be added for further use.",
+          "Enhanced the experience in Action Flow with the following updates: </br><span>&#8226;</span> All actionblocks except connectors and JS now open in a pop up instead of a tray.</br><span>&#8226;</span> Connectors and JS actionblocks now open in a bottom panel similar to data queries.</br><span>&#8226;</span> Older configured actionblocks like JSCODE that emit a output has to be used with trigger data query or new JS block should be added for further use.",
           "Enhanced Themes to include fonts and loaders to be set up at the account level in themes."
         ]
       },
@@ -107,7 +107,7 @@
         "points": [
           "Added a Error State Indicator. Now, if a data query is saved with an error, it will be highlighted in red within the listing, helping you quickly spot and resolve issues.",
           "Added Visual Indicators for Editable State: When you start editing a data query, a green dot will appear along with a count indicator on the left menu, making it easier to keep track of active edits.",
-          "Added tabs to let you edit multiple dataqueries parallelly."
+          "Added tabs to let you edit multiple data queries parallelly."
         ]
       },
       {
@@ -121,10 +121,10 @@
         "title": "Fixes",
         "type": "fixed",
         "points": [
-          "Fixed an issue where {{NULL}} in data queries which when triggered using actionblocks was sent stringified. Similarly other datatypes have also been covered in this fix.",
+          "Fixed an issue where {{NULL}} in data queries which when triggered using actionblocks was sent stringified. Similarly other data types have also been covered in this fix.",
           "Fixed an issue where JS expressions were not getting evaluated when the data query was triggered using action blocks.",
           "Fixed discrepancies in the Request payload formation of Test and Save in the data queries.",
-          "Fixed an issue in MSSql connector where prepared statement queries are not working via connector query."
+          "Fixed an issue in MSSQL connector where prepared statement queries are not working via connector query."
         ]
       }
     ]

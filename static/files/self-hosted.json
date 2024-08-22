@@ -26,8 +26,8 @@
         "title": "Added",
         "type": "added",
         "points": [
-          "Added option to switch between multiple dataqueries without saving.", 
-          "Added tabs to let you edit multiple dataqueries parallelly.", 
+          "Added option to switch between multiple data queries without saving.", 
+          "Added tabs to let you edit multiple data queries parallelly.", 
           "Added support for widget in Autogen."
         ]
       },
