@@ -234,6 +234,10 @@ Select the expansion arrow on the left side of the column row to define addition
 
 The Sync Columns from Source button fetches updated metadata from the dataset source, reflecting changes to the columns.
 
+  <figure>
+    <Thumbnail src="/img/dhq-dashboard/working-with-data/dataset/column-sync.jpeg" alt="explore" />
+  </figure>
+
 ### Calculated Columns
 
 Calculated columns refine raw data into a more meaningful format for end-users. They are created using SQL expressions
