@@ -15,9 +15,9 @@ Uploading and downloading files to an Amazon S3 bucket offers various practical 
 Consider a scenario where a form allows selection of the `Bucket name` from a dropdown, specifies the folder for file
 upload, and utilizes the `File upload` control for uploading files. An action button triggers the upload operation.
 
-1. On the button click event, add a `Server-side action > AWS S3 connector` and select `UploadFile`.
+1. On the button click event, add a `Connector > Library` and select `UploadFile`.
 
-2. Choose the `Connected account` and proceed.
+2. Choose the `Connected account` for the environment and proceed.
 3. Utilize the `Dropdown control` as the `Bucket` and include the folder name (optional). Use the Fileupload control’s
    name for adding files. Proceed.
 
@@ -44,7 +44,7 @@ You can initiate the download action using a button or trigger in your applicati
 
 1. Obtain the link or URL from the upload action after a successful file upload to the S3 bucket.
 
-2. Implement this URL in the action flow by configuring an `On-Screen Actions > Download Files` action. Pass the obtained link as a parameter within this action.
+2. Implement this URL in the action flow by configuring an `Utility tasks > Download Files` action. Pass the obtained link as a parameter within this action.
 
 By implementing this configuration, users interacting with your application can download the respective file from the S3 bucket by triggering the designated action, ensuring seamless retrieval of uploaded content.
 

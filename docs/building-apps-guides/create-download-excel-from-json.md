@@ -116,8 +116,8 @@ This method is also similar to the previous ones. Instead of putting up a compon
 
 1. Start with adding a button.
 2. Create an action flow, to the button control.
-3. Add a server-side action of whichever database connector you want to use to call the data. Select or write the query to get the data.
-4. After selecting connector, and query, save the output in a variable, so that it can be used for referencing the data later on.
+3. Add a Connector action of whichever database connector you want to use to call the data. Select or write the query to get the data.
+4. After selecting connector, and query, test and save to create a variable for the output, so that the query's variable name can be used for referencing the data later on.
     <figure>
     <Thumbnail src="/img/building-apps-guides/excel-json/excel-json-var.png" alt="Adding Variable" />
     <figcaption align='center'><i>Adding Variable </i></figcaption>

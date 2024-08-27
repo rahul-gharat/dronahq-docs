@@ -42,22 +42,27 @@ DronaHQ has broadly 2 types of events and the rest are categorized inside these 
 
 ## Types of action blocks
 
-- **On-Screen actions** - These are actions which get executed on the screen itself without consuming any server-side resources.
-    - **Edit** - Options related to the app builder to duplicate or move actions or import the whole actionflow from some other event.
-    - **Logic** - All actions where you an write logic are grouped in this category. You will see branching, Iterations, JS code etc. here.
-    - **Navigate** - All actions related to navigating to screens, apps etc. are grouped in this category.
-    - **Native** - All mobile related native actions are here.
-    - **App** - All app and screen related actions are here.
-    - **Dialogs** - All kinds of dialogs including toasts, confirmation pop ups etc. are categorized in this group.
-    - **Controls** - All control relates data manipulations and other actions are here.
-    - **Utility** - All utilities like download files, confetti etc. are here.
-    - **Data and Keywords** - All data and keyword manipulation related actions are here.
+- Logic and Flow Control - This segment is dedicated to actions that define the logic and flow of the application.
+    - Javascript (JS Code) - For writing custom JavaScript code to manipulate data or control flow.
+    - Branch - To create conditional branches, enabling the app to take different actions based on specific conditions.
+    - Iterate - To perform iterative operations, such as looping through data sets.
 
-- **Server side actions** - These are actions which get executed at the server-side like connector API calls, DB queries.
-    - **DronaHQ Services** - All DronaHQ services like PDF creator, in-built file upload etc. are categorized in this category.
-    - **Custom API connectors** - All custom connected APIs will be grouped in this category.
-    - **Custom DB connectors** - All custom connected Databases will be grouped in this category.
-    - **Ready third-party connectors** - All ready third-party services' APIs provided by DronaHQ will be grouped in this category.
+- On-Screen Actions - These actions are executed directly on the screen without consuming any server-side resources.
+    - Logic - This category includes actions where you can write logic. It contains options like Branch, Iterate, and JS Code.
+    - Navigate - All actions related to navigating to different screens, apps, etc., are grouped in this category.
+    - Native - This category includes actions related to mobile-specific native functionalities.
+    - Dialogs - Actions related to dialogs, including toasts, confirmation pop-ups, etc., are categorized here.
+    - App - All app and screen-related actions fall under this category.
+    - Data and Keywords - Actions related to data and keyword manipulation are grouped here.
+    - Controls - This category includes actions for control-related data manipulations and other control-specific operations.
+    - Utility - All utility actions, such as downloading files, showing confetti, etc., are included in this category.
+
+- Server-Side Actions - These actions are executed on the server-side, involving resources like API calls and database queries.
+
+    - DronaHQ Services - This category includes all DronaHQ-specific services like PDF creation, in-built file upload, etc.
+    - Connector
+        - Query - Actions related to querying data from a connected source.
+        - Library - Actions for managing and utilizing pre-defined libraries.
 
 :::info Please Note
 
@@ -67,10 +72,6 @@ For cases where you need to insert or update into Databases or POST into an API 
 
 <figure>
   <Thumbnail src="/img/actionflows-on-events/on-screen.png" alt="On screen actions" width='100%'/>
-  <figcaption align = "center"><i>Example: On-screen actions</i></figcaption>
+  <figcaption align = "center"><i>All Actions</i></figcaption>
 </figure>
 
-<figure>
-  <Thumbnail src="/img/actionflows-on-events/server-side.png" alt="Server-side actions" width='100%'/>
-  <figcaption align = "center"><i>Example: Server-side actions</i></figcaption>
-</figure>
