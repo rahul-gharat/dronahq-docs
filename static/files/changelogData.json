@@ -1,4 +1,19 @@
 [ {
+    "timestamp": 1724803200000,
+    "tags": ["Cloud-Hosted"],
+    "heading": "",
+    "cards": [
+      {
+        "title": "Fixes",
+        "type": "fixed",
+        "points": [
+          "Fixed an issue when sending Test message for corresponding logger in Audit logs",
+          "Fixed an issue where Prepared statement queries for MSSql connector were not sent correctly when configured in data query.",
+          "Fixed an issue where Dynamic collection option is not visible for MongoDB Connector"
+        ]
+      }
+    ]
+  },{
   "timestamp": 1723766400000,
   "tags":  ["Cloud-Hosted"],
   "heading": "Build Standalone Forms with DronaHQ",
@@ -26,7 +41,7 @@
         "points": [
           "Added PDF Creator option in Data Queries. It Allows you to generate a PDF by selecting a published PDF template. You can enter a name for the PDF, add a password to protect it, and also pass dynamic data from your controls or other data queries into the populated variable list. The variable list is refreshed once you select a PDF template from the templates dropdown. ",
           "Added an option to declare css variables while configuring Theme with some suffix defined by DronaHQ which will help to identify the the css variable and make it available for selection in there respective sidebars. <a href='https://docs.dronahq.com/building-apps-concepts/configuring-themes/#custom-theme'>Read More</a>",
-          "Added tabs to let you edit multiple dataq ueries parallelly.",
+          "Added tabs to let you edit multiple data queries parallelly.",
           "Added option to switch between multiple data queries without saving."
         ]
       },
