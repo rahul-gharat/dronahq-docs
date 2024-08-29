@@ -242,8 +242,20 @@ const config = {
                 to:'/cloud-changelog'
               },
               {
-                label:'Self-Hosted',
+                label:'Self-Hosted (deprecated)',
                 to:'/self-changelog'
+              },
+              {
+                label:'Self-Hosted (Stable)',
+                to:'/selfhosted-stable'
+              },
+              {
+                label:'Self-Hosted (Edge)',
+                to:'/selfhosted-edge'
+              },
+              {
+                label:'Controls and Actions',
+                to:'/controls-actions'
               }
             ],
           },
