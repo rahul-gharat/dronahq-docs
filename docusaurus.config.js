@@ -182,6 +182,14 @@ const config = {
       //   backgroundColor: '#511AAA',
       //   textColor: '#fff',
       // },
+      announcementBar: {
+        id: 'anouncement',
+        content:
+          'We are looking to revamp our docs, please fill <a target="_blank" rel="noopener noreferrer" href="#">this survey</a>',
+        backgroundColor: '#fafbfc',
+        textColor: '#091E42',
+        isCloseable: true,
+      },
       navbar: {
         hideOnScroll: false,
         title: '',
