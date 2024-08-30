@@ -47,9 +47,15 @@ To get started with Datadog integration, follow these steps:
   <figcaption align = "center"><i>Datadog Choose Log Source</i></figcaption>
 </figure>
 
-5. In DronaHQ, Click the "Create Integration" button to initiate the integration process.
+6. Copy the Base URL of your Datadog.
+<figure>
+  <Thumbnail src="/img/audit-logger/datadog-baseurl.png" alt="Regional Base URL" width='100%'/>
+  <figcaption align = "center"><i>Datadog Choose Log Source</i></figcaption>
+</figure>
 
-6. Once the integration is successful, you will see a `Logger Initialized` message.
+7. In DronaHQ, Click the "Create Integration" button to initiate the integration process.
+
+8. Once the integration is successful, you will see a `Logger Initialized` message.
 
 <figure>
   <Thumbnail src="/img/audit-logger/datadog-setup.png" alt="Datadog Setup" width='100%'/>
