@@ -12,7 +12,7 @@ const SelfChangelog = () => {
   const [fetchError, setFetchError] = useState(false);
 
   useEffect(() => {
-    fetch('/files/self-hosted.json')
+    fetch('/files/controls-actions.json')
       .then(response => {
         if (!response.ok) {
           throw new Error('File not found or other fetch error');
@@ -23,7 +23,7 @@ const SelfChangelog = () => {
         // Check if data is not empty before parsing
         if (data.trim() !== '') {
           const jsonData = JSON.parse(data);
-          const filteredData = jsonData.filter(item => item.tags && item.tags.includes("Self-Hosted"));
+          const filteredData = jsonData.filter(item => item.tags && (item.tags.includes("Control") || item.tags.includes("Action")));
           if (Array.isArray(filteredData)) {
             const sortedData = filteredData.sort((a, b) => b.timestamp - a.timestamp);
             setChangelogData(sortedData);
@@ -83,7 +83,7 @@ const SelfChangelog = () => {
                     <h1 className={`${styles['title']}`}>Changelog</h1>
                     <div className='d-flex align-center f-wrap'>
                       <div className={`${styles['description']}`}>Keep up with the latest changes to </div>
-                      <div className={`${styles['product-tag']} hq-tags border green d-flex align-center pointer justify-center`}>Self-Hosted (Deprecated)</div>
+                      <div className={`${styles['product-tag']} hq-tags border green d-flex align-center pointer justify-center`}>Controls and Actions</div>
                     </div>
                   </div>
                   {changelogData.map((item, index) => (
