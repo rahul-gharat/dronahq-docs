@@ -65,9 +65,9 @@ After successfully configuring and saving the connector settings, you can easily
 
 ### List Objects in a Bucket
 
-1. Add a `Tablegrid` control and then Bind Data. Add a connector and select the action as `ListObjects`. Select the Configured account.
+1. Add a `Tablegrid` control and then Bind Data. after adding a connector, select the action as `ListObjects` from the `Connector Library`. Select the Configured account.
 
-2. Provide the Bucket name from where you would list out the objects. 
+2. Provide the Bucket name and other details from where you would list out the objects. 
 
 <figure>
   <Thumbnail src="/img/reference/connectors/awss3/listobj.jpeg" alt="Listing Objects" />
@@ -81,7 +81,7 @@ After successfully configuring and saving the connector settings, you can easily
 
 Let us assume that we have a form where we select the Bucket name, the folder name to upload the files to, and the `File upload` control to enable uploading of the file/s. Let us add an action button that triggers the action flow to upload files.
 
-1. On the `button_click` event of the action button, add the `Server-side action > AWS S3 connector` and choose the action `UploadFile`.
+1. On the `button_click` event of the action button, add the `Connector > Library > AWS S3 connector` and choose the action `UploadFile`.
 
 2. Select the Connected account and click Continue.
 
@@ -111,11 +111,7 @@ Let us assume that we have a form where we specify the Bucket name, file key. Le
   <Thumbnail src="/img/reference/connectors/awss3/downloadFileDetails.png" alt="Download File" />
 </figure>
 
-4. Turn Download as File toggle on and click on finish.
 
-<figure>
-  <Thumbnail src="/img/reference/connectors/awss3/downloadFile.png" alt="Download as a File toggle" />
-</figure>
 
 
 ## Self-Hosted Installation
