@@ -4,12 +4,31 @@
     "heading": "",
     "cards": [
       {
+        "title": "Added",
+        "type": "added",
+        "points": [
+          "Added support to manually edit Control’s Unique Name"
+        ]
+      },
+      {
+        "title": "Enhancements",
+        "type": "improved",
+        "points": [
+          "Improved Concurrent App access behavior to handle the same logged-in user editing apps on multiple devices."
+        ]
+      },
+      {
         "title": "Fixes",
         "type": "fixed",
         "points": [
           "Fixed an issue when sending Test message for corresponding logger in Audit logs",
           "Fixed an issue where Prepared statement queries for MSSql connector were not sent correctly when configured in data query.",
-          "Fixed an issue where Dynamic collection option is not visible for MongoDB Connector"
+          "Fixed an issue where Dynamic collection option is not visible for MongoDB Connector",
+          "Fixed an issue where footer was getting hidden on navigating back to current screen",
+          "Fixed an issue when swapping Controls",
+          "Fixed an issue with edit state not showing up when editing Rest Api type of Data Query",
+          "Fixed an issue in Data Query tabs where changing Data query name, corresponding Tab name was not changed.",
+          "Fixed an issue where ACTIVESCREEN keyword was giving incorrect value on Screen navigation"
         ]
       }
     ]
