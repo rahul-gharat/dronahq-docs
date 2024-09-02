@@ -47,7 +47,7 @@ After successfully configuring and saving the connector settings, you can easily
 ### Predicting image
 You can predict various features and attributes of objects present in an image URL by the means of different existing models of Clarifai used for image prediction.
 
-Simply integrate the server-side action or the data-bind option of the Clarifai connector and select the `PredictImage` endpoint. Provide the required details such as `Model` and `image URL`.
+Simply integrate the `Connector > Library` action or the data-bind option of the Clarifai connector and select the `PredictImage` endpoint. Provide the required details such as `Model` and `image URL`.
 
 We have selected `Image Recognition (General Image recognition) `as the model and used a cat image URL.
 
