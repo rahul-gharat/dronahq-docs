@@ -97,7 +97,7 @@ Integrate the fetched data into your application's interface.
 
 a. Access the Controls section and introduce the appropriate control for displaying the data.
 
-b. Navigate to `Data Bind Options -> Quick Select -> Database Queries`.
+b. Navigate to `Data Bind Options -> Quick Select -> Connector Library.`.
 
 c. Opt for the Shell Script connector and choose the command that aligns with your data retrieval goals.
 

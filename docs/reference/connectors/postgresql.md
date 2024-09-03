@@ -126,7 +126,7 @@ This query selects all details from the `industry_role` schema's table, allowing
 </figure>
 
 Place the Table grid control from the Controls section. Bind data by selecting the PostgreSQL connector from
-` Data Bind Options -> Quick Select -> Database Queries` . Choose the relevant query for displaying data and bind the
+` Data Bind Options -> Quick Select -> Connector Library.` . Choose the relevant query for displaying data and bind the
 preferred columns.
 
 <figure>

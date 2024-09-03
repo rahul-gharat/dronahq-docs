@@ -56,8 +56,6 @@ Utilizing the Google Cloud Storage connector, you can easily interact with your 
 
 5. Perform a Refresh Response to populate the response fields from the connector.
 
-6. Bind the response fields to the relevant controls in your app's interface for displaying the retrieved data.
-
 7. Click on Test & Finish to finalize the connector configuration.
 
 
@@ -73,9 +71,9 @@ The Google Cloud Storage connector provides a convenient way to upload files to 
 
 1. Set up your application interface with relevant controls, such as a dropdown for selecting the bucket name (and optionally, a folder name) and a file upload control to facilitate file uploading.
 
-2. Create an action button in your app that triggers the upload process when clicked. Configure the `button_click` event to initiate a Server-side action.
+2. Create an action button in your app that triggers the upload process when clicked. Configure the `button_click` event to initiate a Server-side Connector action.
 
-3. Within the Server-side action, select the Google Cloud Storage connector and choose the `UploadFile` action. Proceed by clicking `Continue`.
+3. Within the `Connector > Library`, select the Google Cloud Storage connector and choose the `UploadFile` action. Proceed by clicking `Continue`.
 
 4. Select the connected Google Cloud Storage account associated with your application and proceed by clicking `Continue`.
 
@@ -87,12 +85,11 @@ The Google Cloud Storage connector provides a convenient way to upload files to 
   <Thumbnail src="/img/reference/connectors/googlecloud/upload-config.jpeg" alt="Upload Configuration" />
 </figure>
 
-7. Add a suitable action name and specify the variable to capture the returned URL after the upload is complete.
    :::info NOTE
     The Media link accessibility may vary based on access rights. You can also consider using the GetPre-signed URL action for access.
     :::
 
-8. If desired, you can display the URL in a text control for better understanding and visibility of the uploaded file's location within the selected bucket.
+7. If desired, you can display the URL in a text control for better understanding and visibility of the uploaded file's location within the selected bucket.
 
 
 <figure>
