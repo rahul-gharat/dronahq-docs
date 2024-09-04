@@ -249,10 +249,10 @@ const config = {
                 label:'Cloud-Hosted',
                 to:'/cloud-changelog'
               },
-              {
-                label:'Self-Hosted (deprecated)',
-                to:'/self-changelog'
-              },
+              // {
+              //   label:'Self-Hosted (deprecated)',
+              //   to:'/self-changelog'
+              // },
               {
                 label:'Self-Hosted (Stable)',
                 to:'/selfhosted-stable'
