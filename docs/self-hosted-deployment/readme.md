@@ -102,4 +102,5 @@ sudo docker-compose restart webapp
 - [Self-Hosted Portal](https://studio.dronahq.com/selfhosted/login)
 - [Pricing and Plans](https://www.dronahq.com/pricing/)
 - [Schedule a demo](https://www.dronahq.com/self-hosted-demo-call)
-- [Releases](https://docs.dronahq.com/self-changelog/)
+- [Stable Releases](https://docs.dronahq.com/selfhosted-stable/)
+- [Edge Releases](https://docs.dronahq.com/selfhosted-edge/)

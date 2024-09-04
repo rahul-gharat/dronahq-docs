@@ -146,7 +146,7 @@ kubectl apply -f dronahq-webapp.yaml
 ### Update DronaHQ
 1. Back up your database. If you use a managed database service, your database provider may have a feature to take snapshots or otherwise back up your database. 
 
-2. Identify the appropriate release version on [Docker Hub](https://hub.docker.com/r/dronahq/self-hosted). See DronaHQ's self-hosted [release notes](https://docs.dronahq.com/self-changelog/) to learn about version-specific features.
+2. Identify the appropriate release version on [Docker Hub](https://hub.docker.com/r/dronahq/self-hosted). See DronaHQ's self-hosted [stable release notes](https://docs.dronahq.com/selfhosted-stable/) to learn about version-specific features.
 
 4. Take database updates for selected version from DronaHQ. Get inside directory `external-database` and run `db-update.sh` file. This is interactive shell and will help you get database updates for selected version.
 

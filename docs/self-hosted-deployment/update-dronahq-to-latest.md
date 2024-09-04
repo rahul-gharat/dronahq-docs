@@ -22,7 +22,7 @@ If you are using any cloud service like AWS, GCP, Azure, the cloud provider migh
 
 ### 3. Choose DronaHQ version
 
-Check [Releases](https://docs.dronahq.com/self-changelog/) page to see available DronaHQ updates and its changelogs. always read changelogs between your current version and the version you are upgrading to. It may also include notification and instructions for managing deprecated features.
+Check [Stable Releases](https://docs.dronahq.com/selfhosted-stable/) page to see available DronaHQ updates and its changelogs. always read changelogs between your current version and the version you are upgrading to. It may also include notification and instructions for managing deprecated features.
 
 It is highly recommended for you to frequently check updates and always be on latest version.
 
