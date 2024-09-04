@@ -1,1 +1,82 @@
-[]
+[{
+  "timestamp": 1725321600000,
+  "tags": ["Self-Hosted", "3.1.2-stable"],
+  "heading": "Version 3.1.2-stable",
+  "cards": [
+    {
+      "title": "Additions",
+      "type": "added",
+      "points": [
+        "Added support to modify controls' unique name."
+      ]
+    },
+    {
+      "title": "Fixes",
+      "type": "fixed",
+      "points": [
+        "Fixed connector response issue after edit in actionflow.",
+        "Fixed issues with concurrent access.",
+        "Fixed MSSQL prepared statement connector query preparation.",
+        "Fixed GitSync bug with connector in action flow (showing deleted in iterate task).",
+        "Fixed minor bugs."
+      ]
+    }
+  ]
+},
+{
+  "timestamp": 1724976000000,
+  "tags": ["Self-Hosted", "3.1.1-stable"],
+  "heading": "Version 3.1.1-stable",
+  "cards": [
+      {
+      "title": "Added",
+      "type": "added",
+      "points": [
+        "Added fallback icon for app.",
+        "Added multi-region support for Data-dog (External Logger).",
+        "Added support for control (Tabbed-container)."
+      ]
+    },
+    {
+      "title": "Fixes",
+      "type": "fixed",
+      "points": [
+        "Fixed bug in Sync-license for decrypting task_reset_date.",
+        "Fixed user email logging in widgets creation and updation.",
+        "Fixed default service name to dynamic in Datadog configuration.",
+        "Fixed focusout issue for dropdown property in settings.",
+        "Fixed dependency generation in screen header for formula evaluation."
+      ]
+    }
+    
+  ]
+},
+  {
+    "timestamp": 1723593600000,
+    "tags": ["Self-Hosted", "3.1.0-stable"],
+    "heading": "Version 3.1.0-stable",
+    "cards": [
+      {
+        "title": "Added",
+        "type": "added",
+        "points": [
+          "Added option to switch between multiple data queries without saving.",
+          "Added tabs to let you edit multiple data queries parallelly.",
+          "Added support for widget in Autogen."
+        ]
+      },
+      {
+        "title": "Fixes",
+        "type": "fixed",
+        "points": [
+          "Fixed extra getauditlog call.",
+          "Fixed indentation syntax.",
+          "Fixed non-stringified null case handling while replacing dynamic variables in query.",
+          "Fixed issue where delete option was not visible inside apps under certain conditions.",
+          "Fixed continuous loader issue on saving a Connector Library.",
+          "Fixed UI for DataQuery to display the trigger data query code with the correct datatype."
+        ]
+      }
+    ]
+  }
+]
