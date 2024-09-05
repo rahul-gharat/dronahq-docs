@@ -143,12 +143,12 @@ between filters. This configuration turns an existing filter into a sub-filter o
 
 :::tip INFORMATION
 
-| Feature                     | Value | Numerical Range | Time Range | Time Column | Time Grain |
-| --------------------------- | ----- | --------------- | ---------- | ----------- | ---------- |
-| Parent-child                | ✔     |                 |            |             |            |
-| Pre-filter available values | ✔     | ✔               |            |             |            |
-| Sort filter values          | ✔     |                 | ✔          | ✔           | ✔          |
-| Single value                |       | ✔               |            |             |            |
+| Feature                       | Value | Numerical Range | Time Range | Time Column | Time Grain |
+| ----------------------------- | ----- | --------------- | ---------- | ----------- | ---------- |
+| Parent-child                  | ✔     |                 |            |             |            |
+| Pre - Filter available values | ✔     | ✔               |            |             |            |
+| Sort filter values            | ✔     |                 | ✔          | ✔           | ✔          |
+| Single value                  |       | ✔               |            |             |            |
 
 :::
 
@@ -186,14 +186,14 @@ parent filter and then click `Save`.
 </div>
 <br></br>
 
-## Pre-Filter Data
+## Pre - Filter Data
 
 What if you want to limit the available values in a filter based on specific criteria before users interact with it?
-That's where the `Pre-Filter Available Values` option comes in.
+That's where the `Pre - Filter Available Values` option comes in.
 
 <figure>
-  <Thumbnail src="/img/dhq-dashboard/working-with-data/filter-drill/pre-filter.jpeg" alt=" Pre-filter available values - Configuration" />
-  <figcaption align="center"><i> Pre-filter available values - Configuration</i></figcaption>
+  <Thumbnail src="/img/dhq-dashboard/working-with-data/filter-drill/pre-filter.jpeg" alt=" Pre - Filter available values - Configuration" />
+  <figcaption align="center"><i> Pre - Filter available values - Configuration</i></figcaption>
 </figure>
 
 This option is used to limit the available values in a filter based on a pre-defined condition. In this example, we will
@@ -240,8 +240,7 @@ ascending or descending order. Additionally, you have the option to sort by a me
 
 ## Single Value data filter
 
-:::info NOTE
-Option is available for this Filter Type: Numerical Range
+:::info NOTE Option is available for this Filter Type: Numerical Range
 
 :::
 
@@ -263,59 +262,79 @@ To use this feature, check the `Single Value` box, and then select one of the fo
 This configuration is useful when you want to enforce that only one specific value is used in the filter, ensuring
 clarity and precision.
 
-
 ## Filter Settings
-
 
 <figure>
   <Thumbnail src="/img/dhq-dashboard/working-with-data/filter-drill/filter-settings.jpeg" alt=" Different filter setting options" />
   <figcaption align="center"><i> Different filter setting options</i></figcaption>
 </figure>
 
-
 Here's the table with the available settings for each filter type:
 
-| Setting                    | Value | Numerical Range | Time Range | Time Column | Time Grain |
-|----------------------------|-------|-----------------|------------|-------------|------------|
-| Description                | ✔     | ✔               | ✔          | ✔           | ✔          |
-| Default values             | ✔     | ✔               | ✔          | ✔           | ✔          |
-| Value required             | ✔     | ✔               | ✔          | ✔           | ✔          |
-| Select first value by default | ✔   |                 |            |             |            |
-| Select multiple values     | ✔     |                 |            |             |            |
-| Dynamic search             | ✔     |                 |            |             |            |
-| Inverse selection          | ✔     |                 |            |             |            |
-
-
+| Setting                       | Value | Numerical Range | Time Range | Time Column | Time Grain |
+| ----------------------------- | ----- | --------------- | ---------- | ----------- | ---------- |
+| Description                   | ✔     | ✔               | ✔          | ✔           | ✔          |
+| Default values                | ✔     | ✔               | ✔          | ✔           | ✔          |
+| Value required                | ✔     | ✔               | ✔          | ✔           | ✔          |
+| Select first value by default | ✔     |                 |            |             |            |
+| Select multiple values        | ✔     |                 |            |             |            |
+| Dynamic search                | ✔     |                 |            |             |            |
+| Inverse selection             | ✔     |                 |            |             |            |
 
 #### Description
-The "Description" setting allows you to add explanatory text or labels to filters, helping users understand the purpose or function of each filter. This can enhance usability by providing context or guidance on what kind of values are expected or what the filter will accomplish.
+
+The "Description" setting allows you to add explanatory text or labels to filters, helping users understand the purpose
+or function of each filter. This can enhance usability by providing context or guidance on what kind of values are
+expected or what the filter will accomplish.
 
 #### Filter has Default Value(s)
-The `Filter has default value` setting enables you to pre-select a default value for a filter when it is first applied. This is useful when you want certain values to be automatically chosen by the filter, saving users from having to manually select them. For example, if you have a filter for `Department Type` and set `Human Services` as a default value, users will see `Human Services` selected by default when they first interact with the filter.
 
+The `Filter has default value` setting enables you to pre-select a default value for a filter when it is first applied.
+This is useful when you want certain values to be automatically chosen by the filter, saving users from having to
+manually select them. For example, if you have a filter for `Department Type` and set `Human Services` as a default
+value, users will see `Human Services` selected by default when they first interact with the filter.
 
 #### Filter Value is Required
-When the `Filter value is required` option is enabled, users must specify a value for the filter before they can apply it. This setting helps prevent incomplete queries and ensures that users provide necessary input, which can improve the accuracy and performance of data retrieval. It’s particularly useful for avoiding large or unintended queries that might result from missing filter criteria.
+
+When the `Filter value is required` option is enabled, users must specify a value for the filter before they can apply
+it. This setting helps prevent incomplete queries and ensures that users provide necessary input, which can improve the
+accuracy and performance of data retrieval. It’s particularly useful for avoiding large or unintended queries that might
+result from missing filter criteria.
 
 #### Select First Filter Value by Default
-The `Select first filter value by default` option automatically chooses the first item in a column’s data as the default filter value. This setting is useful when you want to ensure that a default value is always selected without manual intervention. For example, if the first item in your `Department Type` filter is `Arts,` enabling this option will pre-select `Arts` by default, simplifying the user experience.
+
+The `Select first filter value by default` option automatically chooses the first item in a column’s data as the default
+filter value. This setting is useful when you want to ensure that a default value is always selected without manual
+intervention. For example, if the first item in your `Department Type` filter is `Arts,` enabling this option will
+pre-select `Arts` by default, simplifying the user experience.
 
 :::info NOTE
 
-The `Select first filter value by default` setting helps avoid accidentally triggering expensive queries on your dashboard.
+The `Select first filter value by default` setting helps avoid accidentally triggering expensive queries on your
+dashboard.
 
-For instance, if you’re managing a dataset of flight schedules that are frequently updated, this setting will automatically select the first available flight option. This prevents you from running new queries every time the data changes, saving time and resources.
-:::
+For instance, if you’re managing a dataset of flight schedules that are frequently updated, this setting will
+automatically select the first available flight option. This prevents you from running new queries every time the data
+changes, saving time and resources. :::
 
 #### Can Select Multiple Values
-The `Can select multiple values` setting allows users to choose more than one value from the filter. This option is beneficial when you want to offer flexibility in filtering, enabling users to select several criteria at once. For example, in a `Tags` filter, enabling this setting would allow users to select multiple tags, such as `Technology` and `Innovation,` simultaneously.
+
+The `Can select multiple values` setting allows users to choose more than one value from the filter. This option is
+beneficial when you want to offer flexibility in filtering, enabling users to select several criteria at once. For
+example, in a `Tags` filter, enabling this setting would allow users to select multiple tags, such as `Technology` and
+`Innovation,` simultaneously.
 
 #### Dynamically Search All Filter Values
 
-:::caution
-Please be aware that using this option may add stress to your database.
-:::
-The `Dynamically search all filter values` option enables real-time searching within the filter values as users type. This feature is particularly useful for large datasets with many values, making it easier for users to find and select the values they need. For example, if you have a filter with hundreds of categories, enabling this setting will allow users to quickly locate the desired category by typing part of its name.
+:::caution Please be aware that using this option may add stress to your database. ::: The
+`Dynamically search all filter values` option enables real-time searching within the filter values as users type. This
+feature is particularly useful for large datasets with many values, making it easier for users to find and select the
+values they need. For example, if you have a filter with hundreds of categories, enabling this setting will allow users
+to quickly locate the desired category by typing part of its name.
 
 #### Inverse Selection
-The `Inverse Selection` setting allows you to exclude specific values from the filter results. Instead of including certain values, this option lets you filter out the selected ones, showing all other values. For instance, if you select `Arts` and `Convection` genres with inverse selection enabled, the filter will display all genres except these two. This can be useful for scenarios where excluding a few items is more practical than selecting many.
+
+The `Inverse Selection` setting allows you to exclude specific values from the filter results. Instead of including
+certain values, this option lets you filter out the selected ones, showing all other values. For instance, if you select
+`Arts` and `Convection` genres with inverse selection enabled, the filter will display all genres except these two. This
+can be useful for scenarios where excluding a few items is more practical than selecting many.
