@@ -141,16 +141,12 @@ between:
 By using the `Values are dependent on other filters` configuration option we can apply a parent-child type relationship
 between filters. This configuration turns an existing filter into a sub-filter of a parent.
 
-:::tip INFORMATION
-
 | Feature                       | Value | Numerical Range | Time Range | Time Column | Time Grain |
 | ----------------------------- | ----- | --------------- | ---------- | ----------- | ---------- |
 | Parent-child                  | ✔     |                 |            |             |            |
 | Pre - Filter available values | ✔     | ✔               |            |             |            |
 | Sort filter values            | ✔     |                 | ✔          | ✔           | ✔          |
 | Single value                  |       | ✔               |            |             |            |
-
-:::
 
 ### Values are dependent on other filters
 
@@ -315,7 +311,9 @@ dashboard.
 
 For instance, if you’re managing a dataset of flight schedules that are frequently updated, this setting will
 automatically select the first available flight option. This prevents you from running new queries every time the data
-changes, saving time and resources. :::
+changes, saving time and resources.
+
+:::
 
 #### Can Select Multiple Values
 
@@ -326,12 +324,14 @@ example, in a `Tags` filter, enabling this setting would allow users to select m
 
 #### Dynamically Search All Filter Values
 
-:::caution Please be aware that using this option may add stress to your database. ::: 
+:::caution 
+Please be aware that using this option may add stress to your database. 
+:::
 
-The `Dynamically search all filter values` option enables real-time searching within the filter values as users type. This
-feature is particularly useful for large datasets with many values, making it easier for users to find and select the
-values they need. For example, if you have a filter with hundreds of categories, enabling this setting will allow users
-to quickly locate the desired category by typing part of its name.
+The `Dynamically search all filter values` option enables real-time searching within the filter values as users type.
+This feature is particularly useful for large datasets with many values, making it easier for users to find and select
+the values they need. For example, if you have a filter with hundreds of categories, enabling this setting will allow
+users to quickly locate the desired category by typing part of its name.
 
 #### Inverse Selection
 

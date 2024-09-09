@@ -24,7 +24,11 @@
       "title": "Fixes",
       "type": "fixed",
       "points": [
-        "Enhanced the experience in Action Flow with the following updates: </br><span>&#8226;</span> Fixed an issue in the PDF creator task in Actionflow to display the correct tag. </br><span>&#8226;</span> Fixed an issue in the 'Use Keywords' dropdown in Actionflow where Connector Query output variables were not visible under the Action Output section. </br><span>&#8226;</span> Fixed help text for searching Actionflow blocks. </br><span>&#8226;</span> Fixed an issue with extra horizontal scrolling in Actionflow when adding tasks in some cases. </br><span>&#8226;</span> Fixed a UI issue where lines connecting Actionflow tasks would disappear when any popup was shown while adding a task in Actionflow.",
+        "Fixed an issue in the PDF creator task in Actionflow to display the correct tag.",
+        " Fixed an issue in the 'Use Keywords' dropdown in Actionflow where Connector Query output variables were not visible under the Action Output section.",
+        " Fixed help text for searching Actionflow blocks.",
+        " Fixed an issue with extra horizontal scrolling in Actionflow when adding tasks in some cases.",
+        " Fixed a UI issue where lines connecting Actionflow tasks would disappear when any popup was shown while adding a task in Actionflow.",
         "Fixed an issue where Data Queries created using Autogen were not showing the editable state correctly.",
         "Fixed a UI issue in the Connector Query sidebar where the environment text was positioned upside down.",
         "Fixed an issue with the 'When to Execute' condition in Data Queries.",
