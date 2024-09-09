@@ -339,3 +339,129 @@ The `Inverse Selection` setting allows you to exclude specific values from the f
 certain values, this option lets you filter out the selected ones, showing all other values. For instance, if you select
 `Arts` and `Convection` genres with inverse selection enabled, the filter will display all genres except these two. This
 can be useful for scenarios where excluding a few items is more practical than selecting many.
+
+
+## Scoping Filters 
+
+Scoping in dashboards allows you to control how filters are applied to specific charts, offering precise management over your data views. To access scoping options, navigate to the Filter Bar, select `Add/Edit Filters,` and choose the filter you want to modify. From there, go to the Scoping tab.
+
+By default, filters like 
+- Time Grain apply to all charts, while 
+- Value, Numerical Range, Time Column, and Time Range filters apply to charts powered by the same dataset. 
+
+Scoping enables you to extend filter effects across multiple datasets if they share a common column, such as applying a filter across energy consumption and solar usage data that share a `Building_Type` field.
+
+Additionally, you can customize scoping by applying filters to specific charts or tabs. Simply select the charts you want filtered, or deselect those you want to exclude from the filtering process. This level of control ensures that your filters are tailored to display exactly the data you need in various sections of your dashboard.
+
+<div style={{ position: 'relative', paddingBottom: 'calc(46.33333333333333% + 41px)', height: 0 }}> 
+    <iframe 
+        src="https://demo.arcade.software/znXtoRysLk8e6rkjT0s3?embed" 
+        title="Theme Creation" 
+        frameborder="0" 
+        loading="lazy" 
+        webkitallowfullscreen 
+        mozallowfullscreen 
+        allowfullscreen 
+        style= {{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', colorScheme: 'light' }} >
+    </iframe>
+</div>
+<br></br>
+
+## Cross-Filtering Data
+
+Cross-filtering in dashboard enables interactive filtering across multiple charts by allowing data selections from one chart to act as filters for others. 
+
+
+For example, when users interact with a chart, such as selecting a particular department from the "Table Building Energy Metrics by Department," that selection can be applied as a filter across all charts that are compatible with cross-filtering. 
+
+Selecting a specific department like `Aviation` will update the related metrics such as "Current Solar Usage" or "Peak Electricity Demand by Building Type" pie chart. This creates a synchronized view across the dashboard, highlighting data relevant to the selected department, building, or metric.
+
+
+
+#### Eligible Charts for Cross-Filtering
+
+- Table Chart (e.g., energy usage by building)
+- Pie Chart (e.g., peak electricity demand)
+- Bar Chart (e.g., energy consumption by department)
+- Line Chart
+- Pivot Table
+- Area Chart
+- Scatter Plot
+- Smooth Line Chart
+- Stepped Line Chart
+- World Maps
+- All charts built with ECharts
+
+
+
+### Applying Cross-Filters
+
+Applying cross-filters is intuitive. Once you select a data point—such as a row in a table or a slice in a pie chart—the cross-filter is automatically applied across the entire dashboard. For instance, selecting the `Office` category in the pie chart will update the table of energy metrics to display only the energy consumption data for buildings classified under `Office.`
+
+In the example image, when you select `Office` as a building type from the pie chart, the table displaying "Building Energy Metrics" and the current solar usage figures will immediately reflect only the `Office` buildings, providing a focused view of data related to this category.
+
+ <figure>
+  <Thumbnail src="/img/dhq-dashboard/working-with-data/filter-drill/cross-filter.jpeg" alt=" Result after appying Cross - Filteration" />
+  <figcaption align="center"><i> Result after appying Cross - Filteration</i></figcaption>
+</figure>
+
+Further, let's suppose you want to provide more filtering based on the department type `Aviation` of the `building_type` from the table itself, So. simply click on the `Avation` department type from the table and you will see the result that both of the cross-filters are implement and a new result is showcased on each chart.
+
+ <figure>
+  <Thumbnail src="/img/dhq-dashboard/working-with-data/filter-drill/cross-filter2.jpeg" alt=" Result after appying two Cross - Filteration" />
+  <figcaption align="center"><i> Result after appying two Cross - Filteration</i></figcaption>
+</figure>
+
+You can check which cross-filters are active in the dashboard filter bar. 
+
+ <figure>
+  <Thumbnail src="/img/dhq-dashboard/working-with-data/filter-drill/cross-filter-bar.jpeg" alt=" Result after appying two Cross - Filteration" />
+</figure>
+
+
+:::note 
+Each chart can only emit one cross-filter. 
+If you wish to apply a filter for multiple values, use the dashboard filter bar. 
+:::
+
+### Disabling Cross-Filters
+In some situations, you may want to prevent dashboard consumers from using cross-filtering. 
+
+To disable cross-filtering, click on the Gear icon in the dashboard filter bar, and uncheck the `Enable cross-filtering` box.
+
+ <figure>
+  <Thumbnail src="/img/dhq-dashboard/working-with-data/filter-drill/cross-filter-enable.jpeg" alt=" Result after appying two Cross - Filteration" />
+</figure>
+
+
+## Drilling into Chart Data 
+
+For users with the Viewer Workspace Role and above, accessing detailed data on a chart is made easy with the `Drill to Detail` feature. If you don’t see this feature, you may need to contact your Workspace Admin. Note: Embedded viewers currently don’t have access to this functionality.
+
+The `Drill to Detail` feature allows you to explore the underlying data or specific metrics behind a chart in your dashboard, providing a more in-depth look at the information presented.
+
+There are two primary ways provided to use the `Drill to Detail` feature:
+
+<div style={{ position: 'relative', paddingBottom: 'calc(46.33333333333333% + 41px)', height: 0 }}> 
+    <iframe 
+        src="https://demo.arcade.software/hxJbkg5g6M03r2HHcW8D?embed" 
+        title="Theme Creation" 
+        frameborder="0" 
+        loading="lazy" 
+        webkitallowfullscreen 
+        mozallowfullscreen 
+        allowfullscreen 
+        style= {{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', colorScheme: 'light' }} >
+    </iframe>
+</div>
+<br></br>
+
+1. Using the Drop-Down Menu  
+2. Drilling into Specific Values on a Chart  
+  
+
+#### Additional Tips
+- `Drill to Detail` will show data that is filtered based on the dashboard’s active filters, reflecting only the relevant data.
+- You can view up to 50 rows per page in the table.
+- When applicable, the table will show formatted data by default, but you can revert to the original values by adjusting the settings via the gear icon. 
+
