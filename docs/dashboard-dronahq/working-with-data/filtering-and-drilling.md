@@ -326,8 +326,9 @@ example, in a `Tags` filter, enabling this setting would allow users to select m
 
 #### Dynamically Search All Filter Values
 
-:::caution Please be aware that using this option may add stress to your database. ::: The
-`Dynamically search all filter values` option enables real-time searching within the filter values as users type. This
+:::caution Please be aware that using this option may add stress to your database. ::: 
+
+The `Dynamically search all filter values` option enables real-time searching within the filter values as users type. This
 feature is particularly useful for large datasets with many values, making it easier for users to find and select the
 values they need. For example, if you have a filter with hundreds of categories, enabling this setting will allow users
 to quickly locate the desired category by typing part of its name.

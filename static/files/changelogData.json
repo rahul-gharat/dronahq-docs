@@ -1,4 +1,58 @@
-[ {
+[{
+  "timestamp": 1725494400000,
+  "tags": ["Cloud-Hosted"],
+  "heading": "",
+  "cards": [
+    {
+      "title": "Added",
+      "type": "added",
+      "points": [
+        "Added support for creating new apps using DronaHQ-AI by providing prompts."
+      ]
+    },
+    {
+      "title": "Enhancements",
+      "type": "improved",
+      "points": [
+        "Enhanced the Datadog logger in Audit Logging to input specific region base URLs.",
+        "Enhanced DataQuery: Rest API & Connector Query to have a default 'Time-Out' value of 5000ms.",
+        "Enhanced the UI for app listing to include a dashboard, updated folder icons, and updated tag colors.",
+        "Enhanced the property section experience."
+      ]
+    },
+    {
+      "title": "Fixes",
+      "type": "fixed",
+      "points": [
+        "Enhanced the experience in Action Flow with the following updates: </br><span>&#8226;</span> Fixed an issue in the PDF creator task in Actionflow to display the correct tag. </br><span>&#8226;</span> Fixed an issue in the 'Use Keywords' dropdown in Actionflow where Connector Query output variables were not visible under the Action Output section. </br><span>&#8226;</span> Fixed help text for searching Actionflow blocks. </br><span>&#8226;</span> Fixed an issue with extra horizontal scrolling in Actionflow when adding tasks in some cases. </br><span>&#8226;</span> Fixed a UI issue where lines connecting Actionflow tasks would disappear when any popup was shown while adding a task in Actionflow.",
+        "Fixed an issue where Data Queries created using Autogen were not showing the editable state correctly.",
+        "Fixed a UI issue in the Connector Query sidebar where the environment text was positioned upside down.",
+        "Fixed an issue with the 'When to Execute' condition in Data Queries.",
+        "Fixed an issue related to uploading files in Managed Storage from Data Queries or Actionflow.",
+        "Fixed an issue where importing an Actionflow used the same Data Query instead of creating a duplicate.",
+        "Fixed an issue where Data Queries created from an Action block were getting triggered on app load or screen reset.",
+        "Fixed an issue where the preview button was disabled when using DronaHQ Database in a Connector Query.",
+        "Fixed a UI issue in Actionflow where the plus icon of the branch was appearing above the 'Add Action' popup.",
+        "Fixed an issue in storing dynamic variables for corresponding account environments in REST API connectors.",
+        "Fixed an issue where REST API in Data Queries was showing a note of Body Configuration present for GET requests even if no Body was configured.",
+        "Fixed an issue where modifying a Connector Query in Actionflow and minimizing it without saving caused changes to be lost.",
+        "Fixed an issue where older actions configured in the previous Actionflow update were not opening.",
+        "Fixed an issue where Quick Select items were visible in 'Bind Data' for Forms.",
+        "Fixed an issue when searching for apps in folders.",
+        "Fixed issues related to the new UI listing for apps and connectors.",
+        "Fixed MySQL query syntax for Autogen forms.",
+        "Fixed minor issues in Data Queries.",
+        "Fixed an issue where dynamic table rows in PDFs were breaking into multiple pages when overflowing."
+      ]
+    }, {
+      "title": "Removed",
+      "type": "removed",
+      "points": [
+        "Deprecated Compute and Create dynamic text action blocks"
+      ]
+    }
+  ]
+},{
     "timestamp": 1724803200000,
     "tags": ["Cloud-Hosted"],
     "heading": "",
