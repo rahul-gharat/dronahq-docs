@@ -231,3 +231,32 @@ Header type screen is used in a very special use case in which if you want to us
 You can inherit header configuration to all the newly created screens if you configure a screen header as the default header in `settings -> style -> default screen header`.
 
 :::
+
+
+## Screen - Options
+
+We have covered different screen options above, now let's see options available on each screen.
+
+<figure>
+  <Thumbnail src="/img/ui-builder/multiscreen-apps/options.jpeg" alt="Screen options" />
+  <figcaption align = "center"><i>Screen options</i></figcaption>
+</figure>
+
+
+#### Make Home
+
+(Only avaiable for type: Screen)
+
+Select this option to make the current screen as home screen, this will ensure that whenever the application is loaded, it will open the selected screen first as the home screen.
+
+#### Duplicate
+
+Select this option to create a replica of the current screen (tray, menu, popup and all others). This will ensure to duplicate the UI as well as integrated data and action flow.
+
+#### Copy Screen
+
+Well this is quite similar to duplicating a screen, provided that only the UI elemets will get copied, and to paste it, we have to click on `+ADD` and select `Paste Screen` from the advance options.
+
+#### Delete Screen
+
+Select this option to delete the respective screen.

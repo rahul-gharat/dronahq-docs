@@ -98,34 +98,6 @@
     ]
   },
   {
-    "timestamp": 1723593600000,
-    "tags": ["Self-Hosted", "3.1.0-stable"],
-    "heading": "Version 3.1.0-stable",
-    "cards": [
-      {
-        "title": "Added",
-        "type": "added",
-        "points": [
-          "Added option to switch between multiple data queries without saving.", 
-          "Added tabs to let you edit multiple data queries parallelly.", 
-          "Added support for widget in Autogen."
-        ]
-      },
-      {
-        "title": "Fixes",
-        "type": "fixed",
-        "points": [
-          "Fixed extra getauditlog call.",
-          "Fixed indentation syntax.",
-          "Fixed non-stringified null case handling while replacing dynamic variables in query.",
-          "Fixed issue where delete option was not visible inside apps under certain conditions.",
-          "Fixed continuous loader issue on saving a Connector Library.",
-          "Fixed UI for DataQuery to display the trigger data query code with the correct datatype."
-        ]
-      }
-    ]
-  },
-  {
     "timestamp": 1721820608276,
     "tags": ["Self-Hosted", "3.0.2"],
     "heading": "Version 3.0.2",

@@ -17,11 +17,11 @@ you to create dynamic and interactive experiences within your DronaHQ apps.
 
 The process of using controls in a DronaHQ environment involves five essential aspects that contribute to creating a functional and interactive user interface. These aspects are:
 
-- [**Dragging and Dropping Controls on the Screen**](/category/controls/): In this step, the developer selects and places various controls from the available control list onto the screen. These controls can include buttons, input fields, dropdown lists, checkboxes, and other interactive elements.
-- [**Configure properties**](./controls.md/#control-properties): Once the controls are placed on the screen, the next step is to configure their properties. This involves customizing each control's appearance, behaviour, and functionality. Commonly configured properties include size, position, colors, fonts, labels, default values, and placeholders. Additionally, developers can set specific properties related to how the control interacts with the user, such as enabling or disabling certain features or validation mechanisms. All Controls have their own set of properties which defines how the user will interact with the control.
-- [**Bind data**](./controls.md/#bind-data-to-control): Binding data is a crucial aspect of control usage as it establishes a connection between the user interface elements and the underlying data sources or business logic. This step involves linking the controls to relevant control or Data Queries, enabling real-time data display, and synchronization.
-- [**Control events**](./controls.md/#control-events): Most of the controls in the DronaHQ have their own set of events on which users can configure action flows which will be executed if that event is triggered by user action. such as the focus out event of input control, and button click event of button control. This allows users to build interactive applications.
-- [**Add Rules and Validation**](/ui-builder/visibility-rules-validations/): If necessary user can configure some rules and validations to ensure data integrity and enforce specific conditions or constraints, guiding the user through correct input and interactions.
+- [Dragging and Dropping Controls on the Screen](/category/controls/): In this step, the developer selects and places various controls from the available control list onto the screen. These controls can include buttons, input fields, dropdown lists, checkboxes, and other interactive elements.
+- [Configure properties](./controls.md/#control-properties): Once the controls are placed on the screen, the next step is to configure their properties. This involves customizing each control's appearance, behaviour, and functionality. Commonly configured properties include size, position, colors, fonts, labels, default values, and placeholders. Additionally, developers can set specific properties related to how the control interacts with the user, such as enabling or disabling certain features or validation mechanisms. All Controls have their own set of properties which defines how the user will interact with the control.
+- [Bind data](./controls.md/#bind-data-to-control): Binding data is a crucial aspect of control usage as it establishes a connection between the user interface elements and the underlying data sources or business logic. This step involves linking the controls to relevant control or Data Queries, enabling real-time data display, and synchronization.
+- [Control events](./controls.md/#control-events): Most of the controls in the DronaHQ have their own set of events on which users can configure action flows which will be executed if that event is triggered by user action. such as the focus out event of input control, and button click event of button control. This allows users to build interactive applications.
+- [Add Rules and Validation](/ui-builder/visibility-rules-validations/): If necessary user can configure some rules and validations to ensure data integrity and enforce specific conditions or constraints, guiding the user through correct input and interactions.
 
 ## Control properties
 
@@ -52,7 +52,7 @@ The process of using controls in a DronaHQ environment involves five essential a
 
 ### Grid Configuration
 
-| **Property**               | **Description**                                                                                                 |
+| Property               | Description                                                                                                 |
 |------------------------|-------------------------------------------------------------------------------------------------------------|
 | Hide on desktop        | This option hides the selected control in the desktop view.                                                 |
 | Hide on Mobile         | This option hides the selected control in the mobile view.                                                  |
@@ -101,3 +101,11 @@ Every Control has its own set of events which users can use to set up a workflow
 
 
 
+## Control Options
+
+Thanks for the clarification! Here’s the corrected explanation:
+
+1. Duplicate control : This icon duplicates the current control, creating an exact copy of it on the builder. This is useful when you want to replicate a control within the same screen.
+2. Copy control : This copies the control's configuration or settings, allowing you to reuse them elsewhere.
+3. Paste control : This pastes a previously copied control or its settings onto the builder.
+4. Delete control : This icon deletes the current control from the builder.
