@@ -50,7 +50,6 @@ After successfully configuring and saving the connector settings, you can easily
 | Action            | Description                                                                                           |
 |-------------------|-------------------------------------------------------------------------------------------------------|
 |ReadFile	  | Read the contents of a file stored in a specific S3 bucket.|
-|DownloadFile	 | Download a file from a specific S3 bucket to your local system. |
 | GetPreSignedUrl   | Generate a pre-signed URL for a specified S3 object, providing temporary access to the object.     |
 | UploadFile        | Upload a file to a specific S3 bucket, allowing you to store files within your S3 storage.          |
 | ListBuckets       | Retrieve a list of all S3 buckets associated with your AWS account.                                 |
@@ -58,8 +57,7 @@ After successfully configuring and saving the connector settings, you can easily
 | DeleteObjects     | Delete multiple objects from an S3 bucket using their keys.                                         |
 | CopyObject        | Copy an object from one S3 bucket or location to another, retaining metadata and access permissions. |
 | ReadFile        | Read contents from specified file from s3 bucket using their key. For binary file it returns base64 value. |
-| DownloadFile        | Downloads the specified file from s3 bucket using their key. This works in actionflow only by keeping Download as File toggle on. |
-
+| DownloadFile (Deprecated)      | Downloads the specified file from s3 bucket using their key to your local system. This works in actionflow only by keeping Download as File toggle on. For Alternative check [note below](#downloading-file-from-the-bucket-deprecated) |
 
 ## Using AWS S3 connector
 
@@ -97,7 +95,25 @@ Let us assume that we have a form where we select the Bucket name, the folder na
   <Thumbnail src="/img/reference/connectors/awss3/res.jpeg" alt="Listing Objects" />
 </figure>
 
-### Downloading file from the bucket
+### Downloading file from the bucket (Deprecated)
+
+:::info ALTERNATIVE
+Since, DownloadFile is deprecated, you can use GetPresignedURL Api to get the Url Link for your File from S3 bucket. And, provide this URL to `Download Files` Action available under `Utility` in ActionFlow. Also, in your S3 bucket policy, you will have to provide CORS permission to be able to download file from your Browser. Below is sample `CORS` configuration for your bucket -
+```
+[
+    {
+        "AllowedHeaders": [],
+        "AllowedMethods": [
+            "GET"
+        ],
+        "AllowedOrigins": [
+            "*"
+        ],
+        "ExposeHeaders": []
+    }
+]
+```
+:::
 
 Let us assume that we have a form where we specify the Bucket name, file key. Let us add an action button that triggers the action flow to download file.
 
