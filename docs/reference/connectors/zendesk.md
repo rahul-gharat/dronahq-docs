@@ -55,7 +55,7 @@ Leverage the Zendesk connector's capabilities by creating support tickets seamle
 
 1. Incorporate an Action Flow in your app to initiate the ticket creation process.
 
-2. Navigate to Server Side Actions and select the Zendesk connector from the list of available connectors.
+2. Navigate to `Connector > Library` and select the Zendesk connector from the list of available connectors.
 
 3. Choose the `CreateTicket` action to create new support tickets.
 
