@@ -103,7 +103,6 @@ Every Control has its own set of events which users can use to set up a workflow
 
 ## Control Options
 
-Thanks for the clarification! Here’s the corrected explanation:
 
 1. Duplicate control : This icon duplicates the current control, creating an exact copy of it on the builder. This is useful when you want to replicate a control within the same screen.
 2. Copy control : This copies the control's configuration or settings, allowing you to reuse them elsewhere.
