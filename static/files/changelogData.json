@@ -22,7 +22,7 @@
         "title": "Fixes",
         "type": "fixed",
         "points": [
-          "Fixed issue related to action block note waiting till completion of an block and also success branch was not being executed.",
+          "Fixed issue related to action block not waiting till completion of an block and also success branch was not being executed.",
           "Fixed issue related to file upload control breaking in DQ and Actionflow in packaged apps."
         ]
       }
