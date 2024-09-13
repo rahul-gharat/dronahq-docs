@@ -1,62 +1,90 @@
-[{
-  "timestamp": 1725494400000,
-  "tags": ["Cloud-Hosted"],
-  "heading": "",
-  "cards": [
-    {
-      "title": "Added",
-      "type": "added",
-      "points": [
-        "Added support for creating new apps using DronaHQ-AI by providing prompts."
-      ]
-    },
-    {
-      "title": "Enhancements",
-      "type": "improved",
-      "points": [
-        "Enhanced the Datadog logger in Audit Logging to input specific region base URLs.",
-        "Enhanced DataQuery: Rest API & Connector Query to have a default 'Time-Out' value of 5000ms.",
-        "Enhanced the UI for app listing to include a dashboard, updated folder icons, and updated tag colors.",
-        "Enhanced the property section experience."
-      ]
-    },
-    {
-      "title": "Fixes",
-      "type": "fixed",
-      "points": [
-        "Fixed an issue in the PDF creator task in Actionflow to display the correct tag.",
-        " Fixed an issue in the 'Use Keywords' dropdown in Actionflow where Connector Query output variables were not visible under the Action Output section.",
-        " Fixed help text for searching Actionflow blocks.",
-        " Fixed an issue with extra horizontal scrolling in Actionflow when adding tasks in some cases.",
-        " Fixed a UI issue where lines connecting Actionflow tasks would disappear when any popup was shown while adding a task in Actionflow.",
-        "Fixed an issue where Data Queries created using Autogen were not showing the editable state correctly.",
-        "Fixed a UI issue in the Connector Query sidebar where the environment text was positioned upside down.",
-        "Fixed an issue with the 'When to Execute' condition in Data Queries.",
-        "Fixed an issue related to uploading files in Managed Storage from Data Queries or Actionflow.",
-        "Fixed an issue where importing an Actionflow used the same Data Query instead of creating a duplicate.",
-        "Fixed an issue where Data Queries created from an Action block were getting triggered on app load or screen reset.",
-        "Fixed an issue where the preview button was disabled when using DronaHQ Database in a Connector Query.",
-        "Fixed a UI issue in Actionflow where the plus icon of the branch was appearing above the 'Add Action' popup.",
-        "Fixed an issue in storing dynamic variables for corresponding account environments in REST API connectors.",
-        "Fixed an issue where REST API in Data Queries was showing a note of Body Configuration present for GET requests even if no Body was configured.",
-        "Fixed an issue where modifying a Connector Query in Actionflow and minimizing it without saving caused changes to be lost.",
-        "Fixed an issue where older actions configured in the previous Actionflow update were not opening.",
-        "Fixed an issue where Quick Select items were visible in 'Bind Data' for Forms.",
-        "Fixed an issue when searching for apps in folders.",
-        "Fixed issues related to the new UI listing for apps and connectors.",
-        "Fixed MySQL query syntax for Autogen forms.",
-        "Fixed minor issues in Data Queries.",
-        "Fixed an issue where dynamic table rows in PDFs were breaking into multiple pages when overflowing."
-      ]
-    }, {
-      "title": "Removed",
-      "type": "removed",
-      "points": [
-        "Deprecated Compute and Create dynamic text action blocks"
-      ]
-    }
-  ]
-},{
+[
+  {
+    "timestamp": 1726185600000,
+    "tags": ["Cloud-Hosted"],
+    "heading": "",
+    "cards": [
+      {
+        "title": "Fixes",
+        "type": "fixed",
+        "points": [
+          "Fixed an issue with GraphQL multistep authentication."
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1726099200000,
+    "tags": ["Cloud-Hosted"],
+    "heading": "",
+    "cards": [
+      {
+        "title": "Fixes",
+        "type": "fixed",
+        "points": [
+          "Fixed issue related to action block note waiting till completion of an block and also success branch was not being executed.",
+          "Fixed issue related to file upload control breaking in DQ and Actionflow in packaged apps."
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1725494400000,
+    "tags": ["Cloud-Hosted"],
+    "heading": "",
+    "cards": [
+      {
+        "title": "Added",
+        "type": "added",
+        "points": ["Added support for creating new apps using DronaHQ-AI by providing prompts."]
+      },
+      {
+        "title": "Enhancements",
+        "type": "improved",
+        "points": [
+          "Enhanced the Datadog logger in Audit Logging to input specific region base URLs.",
+          "Enhanced DataQuery: Rest API & Connector Query to have a default 'Time-Out' value of 5000ms.",
+          "Enhanced the UI for app listing to include a dashboard, updated folder icons, and updated tag colors.",
+          "Enhanced the property section experience."
+        ]
+      },
+      {
+        "title": "Fixes",
+        "type": "fixed",
+        "points": [
+          "Fixed an issue in the PDF creator task in Actionflow to display the correct tag.",
+          " Fixed an issue in the 'Use Keywords' dropdown in Actionflow where Connector Query output variables were not visible under the Action Output section.",
+          " Fixed help text for searching Actionflow blocks.",
+          " Fixed an issue with extra horizontal scrolling in Actionflow when adding tasks in some cases.",
+          " Fixed a UI issue where lines connecting Actionflow tasks would disappear when any popup was shown while adding a task in Actionflow.",
+          "Fixed an issue where Data Queries created using Autogen were not showing the editable state correctly.",
+          "Fixed a UI issue in the Connector Query sidebar where the environment text was positioned upside down.",
+          "Fixed an issue with the 'When to Execute' condition in Data Queries.",
+          "Fixed an issue related to uploading files in Managed Storage from Data Queries or Actionflow.",
+          "Fixed an issue where importing an Actionflow used the same Data Query instead of creating a duplicate.",
+          "Fixed an issue where Data Queries created from an Action block were getting triggered on app load or screen reset.",
+          "Fixed an issue where the preview button was disabled when using DronaHQ Database in a Connector Query.",
+          "Fixed a UI issue in Actionflow where the plus icon of the branch was appearing above the 'Add Action' popup.",
+          "Fixed an issue in storing dynamic variables for corresponding account environments in REST API connectors.",
+          "Fixed an issue where REST API in Data Queries was showing a note of Body Configuration present for GET requests even if no Body was configured.",
+          "Fixed an issue where modifying a Connector Query in Actionflow and minimizing it without saving caused changes to be lost.",
+          "Fixed an issue where older actions configured in the previous Actionflow update were not opening.",
+          "Fixed an issue where Quick Select items were visible in 'Bind Data' for Forms.",
+          "Fixed an issue when searching for apps in folders.",
+          "Fixed issues related to the new UI listing for apps and connectors.",
+          "Fixed MySQL query syntax for Autogen forms.",
+          "Fixed minor issues in Data Queries.",
+          "Fixed an issue where dynamic table rows in PDFs were breaking into multiple pages when overflowing."
+        ]
+      },
+      {
+        "title": "Removed",
+        "type": "removed",
+        "points": ["Deprecated Compute and Create dynamic text action blocks"]
+      }
+    ]
+  },
+  {
     "timestamp": 1724803200000,
     "tags": ["Cloud-Hosted"],
     "heading": "",
@@ -64,9 +92,7 @@
       {
         "title": "Added",
         "type": "added",
-        "points": [
-          "Added support to manually edit Control’s Unique Name"
-        ]
+        "points": ["Added support to manually edit Control’s Unique Name"]
       },
       {
         "title": "Enhancements",
@@ -90,23 +116,24 @@
         ]
       }
     ]
-  },{
-  "timestamp": 1723766400000,
-  "tags":  ["Cloud-Hosted"],
-  "heading": "Build Standalone Forms with DronaHQ",
-  "descriptions": [
-    "<div style=\"position: relative; padding-bottom: calc(46.33333333333333% + 41px); height: 0;\"><iframe src=\"https://demo.arcade.software/DrEDlmOHMJ8hRzcFqhgj?embed\" title=\"DronaHQ Dashboard\" frameBorder=\"0\" loading=\"lazy\" allowFullScreen style=\"position: absolute; top: 0; left: 0; width: 100%; height: 100%; color-scheme: light;\" webkitallowfullscreen mozallowfullscreen></iframe></div>",
-    "DronaHQ introduces a robust Forms feature that lets you create standalone, customizable forms and record responses directly into your connected SQL databases like MySQL, PostgreSQL, and more. These forms are publicly accessible via a unique URL, making it easy to gather responses.",
-    "Key features include:",
-    "<b>Effortless Form Creation:</b> Start by navigating to the Create tab, where selecting 'Form' automatically generates a new form in a separate tab.<br></br><b>Database Integration:</b> Direct form responses to your existing SQL database by connecting it as a Connector within DronaHQ.",
-    "<b>Custom Field Synchronization:</b> Add custom fields while building your form, and they will be automatically synchronized with your DronaHQ Database upon publishing.",
-    "<b>Visual Customization:</b> Enhance your forms with text, images, and dividers, and customize controls with options like hide, required, or swap before publishing.",
-    "<b>Post-Submission Actions:</b> Set up additional actions such as sending emails or Slack notifications that trigger upon form submission.",
-    "<b>Response Management:</b> Access all form responses in the Responses tab, with the ability to download them as CSV files for further analysis.",
-    "<b>Preview, Publish, and Share:</b> Before making your form public, preview it, then publish to receive a unique URL. You can also embed the form on your website.",
-    "This update empowers you to create and manage forms efficiently, ensuring seamless data collection and integration. For more details, visit our <a href='https://docs.dronahq.com/forms/'>DronaHQ Forms Documentation</a>."
-  ]
-},
+  },
+  {
+    "timestamp": 1723766400000,
+    "tags": ["Cloud-Hosted"],
+    "heading": "Build Standalone Forms with DronaHQ",
+    "descriptions": [
+      "<div style=\"position: relative; padding-bottom: calc(46.33333333333333% + 41px); height: 0;\"><iframe src=\"https://demo.arcade.software/DrEDlmOHMJ8hRzcFqhgj?embed\" title=\"DronaHQ Dashboard\" frameBorder=\"0\" loading=\"lazy\" allowFullScreen style=\"position: absolute; top: 0; left: 0; width: 100%; height: 100%; color-scheme: light;\" webkitallowfullscreen mozallowfullscreen></iframe></div>",
+      "DronaHQ introduces a robust Forms feature that lets you create standalone, customizable forms and record responses directly into your connected SQL databases like MySQL, PostgreSQL, and more. These forms are publicly accessible via a unique URL, making it easy to gather responses.",
+      "Key features include:",
+      "<b>Effortless Form Creation:</b> Start by navigating to the Create tab, where selecting 'Form' automatically generates a new form in a separate tab.<br></br><b>Database Integration:</b> Direct form responses to your existing SQL database by connecting it as a Connector within DronaHQ.",
+      "<b>Custom Field Synchronization:</b> Add custom fields while building your form, and they will be automatically synchronized with your DronaHQ Database upon publishing.",
+      "<b>Visual Customization:</b> Enhance your forms with text, images, and dividers, and customize controls with options like hide, required, or swap before publishing.",
+      "<b>Post-Submission Actions:</b> Set up additional actions such as sending emails or Slack notifications that trigger upon form submission.",
+      "<b>Response Management:</b> Access all form responses in the Responses tab, with the ability to download them as CSV files for further analysis.",
+      "<b>Preview, Publish, and Share:</b> Before making your form public, preview it, then publish to receive a unique URL. You can also embed the form on your website.",
+      "This update empowers you to create and manage forms efficiently, ensuring seamless data collection and integration. For more details, visit our <a href='https://docs.dronahq.com/forms/'>DronaHQ Forms Documentation</a>."
+    ]
+  },
   {
     "timestamp": 1723766400000,
     "tags": ["Cloud-Hosted"],
