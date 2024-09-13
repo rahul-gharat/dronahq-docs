@@ -62,7 +62,7 @@ You can also use the `GetChannelList` action in a similar manner.
 A very simple example to send a message to a specific user of Slack. Add a `Text input` control to your form to accept the message to send and a `dropdown` control to list out the Slack users. Also, add an Action `button` that would trigger the action to send the message. So now you need to use the Connector action from the Action flow.
 
 1. Select the button and configure its action flow on `on_click` trigger.
-2. From the Server Side actions select the Slack Connector and click Continue. 
+2. From the `Connector > Library` select the Slack Connector and click Continue. 
    - From the list of actions select `SendMessage` Action.
    - Select the Account to authenticate Slack.
 

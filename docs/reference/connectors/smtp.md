@@ -45,7 +45,7 @@ After successfully configuring and saving the connector settings, you can easily
 
 Configure its components, such as the `sender's email, receiver's email, subject`, and more, directly from the action flow.
 
-1. Navigate to the action flow where you wish to set up the SMTP action, specifically the server-side action.
+1. Navigate to the action flow where you wish to set up the SMTP action, specifically the `Connector > Library` action.
 
 2. Choose the SMTP action to send mail.
 
