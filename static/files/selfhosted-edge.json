@@ -1,1 +1,40 @@
-[]
+[
+  {
+    "timestamp": 1725926400000,
+    "tags": ["Self-Hosted", "3.2.0-edge"],
+    "heading": "Version 3.2.0-edge",
+    "cards": [
+      {
+        "title": "Added",
+        "type": "added",
+        "points": [
+          "Added Managed File Storage support.",
+          "Added health check option for default local file repository.",
+          "Added editable option for Autogen CRUD."
+        ]
+      },
+      {
+        "title": "Enhancements",
+        "type": "improved",
+        "points": [
+          "Enhanced schema viewer for MongoDB in connectors and data query.",
+          "Enhancement in tag options for Single Tag and Multi Tag.",
+          "Enhanced with function addition to make Filestorage Object public/private.",
+          "Enhanced the theme features like font, loader, and customization with CSS.",
+          "Enhancement in JsonTreeView with AskAI button for Error card."
+        ]
+      },
+      {
+        "title": "Fixes",
+        "type": "fixed",
+        "points": [
+          "Fixed issue with connector response refresh in data query.",
+          "Fixed editable status of autogen form and added support for dashboard.",
+          "Fixed proxy parameters in data query.",
+          "Fixed scrolling issue (only first time) in form setup.",
+          "Fixed bug for sending body in REST GET data query and added a warning for using proxy."
+        ]
+      }
+    ]
+  }
+]
