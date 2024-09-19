@@ -245,7 +245,7 @@ We have covered different screen options above, now let's see options available 
 
 #### Make Home
 
-(Only avaiable for type: Screen)
+(Only available for type: Screen)
 
 Select this option to make the current screen as home screen, this will ensure that whenever the application is loaded, it will open the selected screen first as the home screen.
 
@@ -255,7 +255,7 @@ Select this option to create a replica of the current screen (tray, menu, popup 
 
 #### Copy Screen
 
-Well this is quite similar to duplicating a screen, provided that only the UI elemets will get copied, and to paste it, we have to click on `+ADD` and select `Paste Screen` from the advance options.
+Well this is quite similar to duplicating a screen, provided that only the UI elements will get copied, and to paste it, we have to click on `+ADD` and select `Paste Screen` from the advance options.
 
 #### Delete Screen
 
