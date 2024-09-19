@@ -8,7 +8,7 @@ import Thumbnail from '@site/src/components/Thumbnail';
 
 :::caution
 
-This Action block has been deprecated. Please use the 'Set Data Queries Values' action instead. You can read the documentation [here](../set-data-queries).
+This Action block has been deprecated. Please use the 'Set Data Queries Values' action instead. You can read the documentation [here](../set-data-queries-value).
 
 :::
 
