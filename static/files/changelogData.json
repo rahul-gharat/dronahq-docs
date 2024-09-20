@@ -1,4 +1,15 @@
-[
+[{
+    "timestamp": 1726704000000,
+    "tags": ["Cloud-Hosted"],
+    "heading": "",
+    "cards": [
+      {
+        "title": "Added",
+        "type": "added",
+        "points": ["Added PDF Common Headers & Footers."]
+      }
+    ]
+  },
   {
     "timestamp": 1726185600000,
     "tags": ["Cloud-Hosted"],
