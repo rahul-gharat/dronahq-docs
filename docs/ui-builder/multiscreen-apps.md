@@ -148,6 +148,8 @@ The height for the popup screen is derived from the controls placed inside the p
 
 :::
 
+Under the Body Property, you will find the toggle for `Enable Overflow`, which allows content that exceeds the designated area to be displayed beyond the normal boundaries.
+
 ### Menu
 
 Menu Screen type allows users to configure menu screens for their application, only menu screen can be used as a sticky menu for screen/page type screens. Following are the configurations provided by the menu type screen.
@@ -203,6 +205,8 @@ Try-type screens allow you to create sidebars in your application, tray-type scr
 | Max width | Configures max width for the tray if opening from the left or right direction. |
 | Height | Configures height for the tray if opening from the top or bottom direction. |
 | Max height | Configures max height for the tray if opening from the top or bottom direction. |
+
+Under the Body Property, you will find the toggle for `Enable Overflow`, which allows content that exceeds the designated area to be displayed beyond the normal boundaries.
 
 ### Header
 
