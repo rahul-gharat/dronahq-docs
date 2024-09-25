@@ -76,12 +76,8 @@ Let's break down the process:
 <figcaption align='center'><i>JS Code</i></figcaption>
 </figure>
 
-Capture the output of the JS Code Block into a variable to pass it to the REST API Connector, in our case the variable is `authToken`.
+Capture the output of the JS Code Block by saving the task, to pass it to the REST API Connector.
 
-<figure>
-<Thumbnail src="/img/building-apps-guides/rest-api-jwt/rest-api-jwt-var.png" alt="Variable Added" />
-<figcaption align='center'><i>Variable Added</i></figcaption>
-</figure>
 
 Now add the REST API Connector we created earlier, and in the field of Authorization select the JS Code Block output.
 
@@ -89,7 +85,7 @@ Now add the REST API Connector we created earlier, and in the field of Authoriza
 <Thumbnail src="/img/building-apps-guides/rest-api-jwt/rest-api-jwt.png" alt="JS Code" />
 </figure>
 
-Add a variable which will hold the response sent by the REST API, in our case the variable is `data`.
+Save the query, this will hold the response sent by the REST API, in our case the query name is `GetUsersData`.
 
 The final step involves integrating the response data from the REST API with the TableGrid Control. 
 

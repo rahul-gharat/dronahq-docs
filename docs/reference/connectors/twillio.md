@@ -119,7 +119,7 @@ DronaHQ  enables integration with Twilio through ready-made connectors to send W
 
 To send a verification code via SMS, you’ll need to set up the Twilio Connector:
 
-1. In `Action Flow > Server Side Actions`, select Twilio Connector and click Continue.
+1. In `Connector > Library` of Action, select Twilio Connector and,
 2. Choose `SendVerify` from the Twilio Actions and click Continue.
 3. Select the authenticated account. 
 4. Configure the Connector fields:
@@ -160,8 +160,7 @@ Twilio's integration with SendGrid allows you to send OTP via email. Here’s ho
 
 ##### Sending Verification Code via Email
 
-1. In Action Flow > Server Side Actions, select Twilio Connector and click Continue.
-2. Choose `SendVerify` from the Twilio Actions and click Continue.
+1. Choose `SendVerify` from the Twilio Actions and click Continue.
 3. Select the authenticated account.
 4. Copy the Service ID from your Twilio Verify Service and paste it in the connector field.
 5. Select `Email` as the channel and add the recipient’s email address.

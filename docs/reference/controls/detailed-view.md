@@ -51,3 +51,14 @@ By using the Bind Data option, you can dynamically display the data from the arr
 |--------------------|-----------------------------------------------------------------------------------------------------------------|
 | Show Key Value Map | Toggle switch to enable or disable the Key Value Map view for JSON type data.  |
 | Default View       | You can set the default view for JSON type data when the Key Value Map is disabled. The default view can be set as Table or JSON. |
+| Choose Fields that will be Editable	| Select the fields in the data that will be available for editing.|
+| Edited Field Indicator Color |	The color used to indicate fields that have been edited.|
+|Header Font Options |	Options to customize the font for the header section.|
+|Value Font Options	| Options to customize the font for the values or data content.|
+
+## Events
+
+
+| Trigger       | Description                                                                                       |
+|---------------|---------------------------------------------------------------------------------------------------|
+| save_changes  | Occurs when the save button for saving changes is clicked, typically after editing or updating.|

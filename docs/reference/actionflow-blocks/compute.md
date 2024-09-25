@@ -5,6 +5,13 @@ title: Compute
 
 import Thumbnail from '@site/src/components/Thumbnail';
 
+
+:::caution
+
+This Action block has been deprecated. Please use the 'Set Data Queries Values' action instead. You can read the documentation [here](../set-data-queries-value).
+
+:::
+
 ## Utilizing Compute in Your Action Flow
 
 The `Compute` block in DronaHQ allows you to set formula variables and utilize formulas to calculate and assign values to these variables. This feature is particularly useful when you need to perform dynamic calculations based on your app's data.

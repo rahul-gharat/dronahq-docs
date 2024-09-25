@@ -119,6 +119,6 @@ Integrate the fetched data into your application's interface.
 
 a. Access the Controls section and introduce the Table grid control.
 
-b. Navigate to `Data Bind Options -> Quick Select -> Database Queries`.
+b. Navigate to `Data Bind Options -> Quick Select -> Connector Library.`.
 
 c. Opt for the SAP HANA connector and choose the query that aligns with your data presentation goals.

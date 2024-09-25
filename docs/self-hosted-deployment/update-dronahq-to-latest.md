@@ -22,7 +22,7 @@ If you are using any cloud service like AWS, GCP, Azure, the cloud provider migh
 
 ### 3. Choose DronaHQ version
 
-Check [Releases](https://community.dronahq.com/t/dronahq-self-hosted-releases/1177) page to see available DronaHQ updates and its changelogs. always read changelogs between your current version and the version you are upgrading to. It may also include notification and instructions for managing deprecated features.
+Check [Stable Releases](https://docs.dronahq.com/selfhosted-stable/) page to see available DronaHQ updates and its changelogs. always read changelogs between your current version and the version you are upgrading to. It may also include notification and instructions for managing deprecated features.
 
 It is highly recommended for you to frequently check updates and always be on latest version.
 
@@ -43,14 +43,14 @@ Above line will download an update file with name `update.sql` in your working d
 Run following command to apply updates on  containerized database.
 
 ```shell
-sudo docker exec dronahq-self-hosted-mysqldb /bin/sh -c "mysql -u root -p<% root password %>" < update.sql
+sudo docker exec dronahq-self-hosted-mysqldb /bin/sh -c "mysql -u root -p<% root password %> <%db name%>" < update.sql
 ```
 ##### b. Apply updates on external database
 
 Run following command to apply updates on  external database.
 
 ```shell
-mysql --host=<% host %> --port=<% port %> --user=<% username %> --password=<% password %> < update.sql
+mysql --host=<% host %> --port=<% port %> --user=<% username %> --password=<% password %> <%db name%> < update.sql
 ```
 
 ### 6. Update DronaHQ version in service file.

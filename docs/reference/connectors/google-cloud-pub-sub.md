@@ -121,7 +121,7 @@ To send and receive messages using the Google Cloud Pub/Sub Connector, follow th
 
 1. Access the messaging section or control action where you intend to publish or subscribe to messages.
 
-2. Select Google Cloud Pub/Sub Connector from `Data Options -> Quick Select -> Message Actions`:
+2. Select Google Cloud Pub/Sub Connector from `Data Bind Options -> Quick Select -> Connector Library`:
 
    - Choose Google Cloud Pub/Sub Connector from the available options.
    - Select the configured query action depending on whether you want to send or receive messages.

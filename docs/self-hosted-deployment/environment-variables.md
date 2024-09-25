@@ -203,7 +203,7 @@ This is your AWS region in which bucked it hosted/created.
 `AccessKeyId` and `AccessKeySecret` is required to access your bucket and objects inside bucket.
 It is recommended that you provide complete read/write access of your bucket to this key pair.
 
-### `AWS_IAM_ROLE_ACCESS`
+#### `AWS_IAM_ROLE_ACCESS`
 You can grant aws bucket access to your instance by adding a Aws IAM Role to that instance. This allows a key-secret less access to your bucket from your instance.
 
 To enable IAM role access, set following variable in your environment and add respected role to your instance

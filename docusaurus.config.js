@@ -182,6 +182,14 @@ const config = {
       //   backgroundColor: '#511AAA',
       //   textColor: '#fff',
       // },
+      announcementBar: {
+        id: 'anouncement',
+        content:
+          '<span class="badge badge--success announcement-badge margin-right--sm">What\'s new</span> <a target="_blank" rel="noopener noreferrer" href="/forms">DronaHQ Forms: Connect to DB and generate forms</a>',
+        backgroundColor: '#fafbfc',
+        textColor: '#091E42',
+        isCloseable: true,
+      },
       navbar: {
         hideOnScroll: false,
         title: '',
@@ -241,9 +249,21 @@ const config = {
                 label:'Cloud-Hosted',
                 to:'/cloud-changelog'
               },
+              // {
+              //   label:'Self-Hosted (deprecated)',
+              //   to:'/self-changelog'
+              // },
               {
-                label:'Self-Hosted',
-                to:'/self-changelog'
+                label:'Self-Hosted (Stable)',
+                to:'/selfhosted-stable'
+              },
+              {
+                label:'Self-Hosted (Edge)',
+                to:'/selfhosted-edge'
+              },
+              {
+                label:'Controls and Actions',
+                to:'/controls-actions'
               }
             ],
           },

@@ -134,7 +134,7 @@ Save the query after testing with a configuration test successful message.
 To display the data, drag and drop the `Table grid` Control from the sidebar to the created app.
 
 Bind data by selecting the PostgreSQL connector from
-` Data Bind Options -> Quick Select -> Database Queries` . Choose the relevant query for displaying data and bind the
+` Data Bind Options -> Quick Select -> Data Queries` . Choose the relevant query for displaying data and bind the
 
 ### Delete Data Query
 
@@ -157,7 +157,7 @@ Save the query after testing with a configuration test successful message.
 
 1. Next is to put the query into the action flow of the table grid. Go to the `Actions` of the table grid and select `delete_click`.
 2. Action flow will open, add tasks. The first task of `Confirm` will give a pop-up to the user to confirm their action of delete.
-3. Next, add the task of `Server-side` `action`, select the query of delete data along with binding the `id connector key`. This will enable us to get the selected row id from the table grid row using `tablegrid.result.rows.id`, which can be found under the `Use Keywords` option.
+3. Next, add the task of `Connector - Library`, select the query of delete data along with binding the `id connector key`. This will enable us to get the selected row id from the table grid row using `tablegrid.result.rows.id`, which can be found under the `Use Keywords` option.
 
    <figure>
      <Thumbnail src="/img/reference/connectors/supabase/supabase-action1.png" alt="Connector" />
@@ -187,7 +187,7 @@ Here binding of data of the selected id from the table grid to the input text is
 
 Select the screen from where the data is located, then select the component that is `tablegrid`, from where we will bind the data, and then select the field name, of which data is needed.
 
-Go to `Actions` of the button and select `button_click` action. Add a task of `Server-side action` with selecting the query created to update the data.
+Go to `Actions` of the button and select `button_click` action. Add a task of `Connector > Library` with selecting the query created to update the data.
 
 Bind the key connectors properly.
 
@@ -211,7 +211,7 @@ Save the query after testing with a configuration test successful message.
 
 To insert the values, we have to get it first from the user as input. For this I have created another `tray` with input texts and a button of insert.
 
-Go to `Actions` of the button and select `button_click` action. Add a task of `Server-side action` with selecting the query created to insert the data.
+Go to `Actions` of the button and select `button_click` action. Add a task of `Connector > Library` with selecting the query created to insert the data.
 
 Bind the key connectors properly.
 

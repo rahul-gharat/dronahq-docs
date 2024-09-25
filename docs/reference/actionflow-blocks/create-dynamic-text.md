@@ -5,6 +5,11 @@ title: Create Dynamic Text
 
 import Thumbnail from '@site/src/components/Thumbnail';
 
+:::caution
+
+This Action block has been deprecated. Please use the 'Set Data Queries Values' action instead. You can read the documentation [here](../set-data-queries-value).
+
+:::
 
 The `Create Dynamic Text` action is a versatile tool within your DronaHQ application that allows you to generate text dynamically based on specific criteria. With this action, you can create both plain and rich text content, all driven by variables and data, making your application interactions more dynamic and engaging.
 

@@ -44,7 +44,7 @@ After successfully configuring and saving the connector settings, you can easily
 
 1. Integrate essential interface components in your application, such as buttons or input fields, to initiate actions associated with AWS Lambda.
 
-2. Navigate to `Bind Data Option -> Quick Select -> Connector Library`.
+2. Navigate to `Connector -> Library`.
 
 3. Select the appropriate endpoint according to your needs, like `GetFunctionDetails`, `InvokeFunction`, or `ListFunctions`. Ensure you choose the relevant environment.
 
@@ -70,7 +70,7 @@ The AWS Lambda connector enables you to effectively invoke your customized funct
 - DryRun is used to validate parameter values and verify that the user has permission to invoke the function.
 
 
-1. On the `button_click` event of the action button, you would add the `Server-side action > AWS Lambda connector` and choose the action `InvokeFunction`.
+1. On the `button_click` event of the action button, you would add the  AWS Lambda connector action `InvokeFunction`.
 
 2. Select the connected account and click `Continue`.
 
@@ -81,7 +81,7 @@ The AWS Lambda connector enables you to effectively invoke your customized funct
 </figure>
 
 
-4. Add the action name and provide the variable that returns the response code for the action completed. If you want you can use this variable to display the URL in a text area control for the sake of understanding.
+4.  If you want you can use the action name to display the URL in a text area control for the sake of understanding.
 
 
 5. Now, you can see the function invocation and the response status code whenever you run the form.

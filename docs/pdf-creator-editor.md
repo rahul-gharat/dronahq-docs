@@ -31,11 +31,21 @@ Global settings applies to all the pages at once and has the following fields as
 | Page Size   | A dropdown to choose from over 18 page sizes, which includes A4, Legal, Letter, Tabloid, to name a few. By default, the page size is A4.                                                       |
 | Orientation | You can either choose Portrait or Landscape mode to work on. By default, the page orientation is Portrait.                                                                                     |
 | Margin      | The margin for each side can be configured separately. Page dpi has a fixed value of `96`, so this means `1 cm` is equivalent to `37.8 pixels` and `1 inch` is equivalent to `96 pixels`.  |
+| Show Common Header For All Pages  | Enable this feature to display a consistent header across all PDF pages. This header will repeat on every page, including those pages with overflowing content. This overcomes the limitation of in-page headers, ensuring your header remains visible throughout. You can add/edit content to the common header from the first page of the pdf only.|
+|  Show Common Footer For All Pages  |  Enable this feature to display a consistent footer across all PDF pages. This footer will repeat on every page, including those pages with overflowing content. This overcomes the limitation of in-page footers, ensuring your footer remains visible throughout. You can add/edit content to the common footer from the first page of the pdf only. |
+
+:::note
+
+ It is recommended to use common header and common footer together for better design experience. When common header is used with in-page footers, this may cause alignment issues in the generated PDF.
+
+:::
 
 <figure>
     <Thumbnail src="/img/pdf_creator/pdf-editor/pdf-creator-global-configuration.png" alt="Global configuration" />
     <figcaption align='center'><i>Global configuration</i></figcaption>
 </figure>
+
+
 
   </TabItem>
 
@@ -46,7 +56,9 @@ Page settings are only visible if a page is focused and has the following fields
 
 | Field              | Description                                                                                                                                                                                                                                                                                                    |   |
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| Header / Footer    | The header/footer component can be added or removed from the page by switching the toggle switch. The dimensions are not configurable and takes up the entire page width and has a fixed height of 100px. All the content components like Text, Image, Table are supported inside the header/footer component. |   |
+| Header | Add a custom header to a specific page and design it independently. This feature allows you to create unique headers for each page.|   
+|  Footer | Add a custom footer to a specific page and design it independently. This feature allows you to create unique footers for each page. |
+|Allow Content Overflow |Enable this feature to allow dynamic content to seamlessly continue onto subsequent pages in the PDF. When toggled on, content that exceeds the first page's capacity, such as dynamic tables with numerous rows, will automatically spill over onto the next page(s) until all content is rendered. Conversely, disabling this feature will truncate the content to fit within the first page only.|
 | Background Color   | This field takes up all the values that is supported by a [css color property](https://developer.mozilla.org/en-US/docs/Web/CSS/color#syntax) like `white`, `#fff`, `rgb(255, 255, 255)`, `rgba(255, 255, 255, 0.5)`, and so on. By default, the background color is set to `white`.                           |   |
 | Background Picture | Any jpeg or png image can be used. Image options includes horizontal and vertical alignment, repeat and fill types.                                                                                                                                                                                            |   |
 
@@ -74,6 +86,17 @@ Page settings are only visible if a page is focused and has the following fields
 </figure>
   </TabItem>
 </Tabs>
+
+### Converting Between Header/Footer Types in PDF Templates
+
+When working with PDF templates, you may need to switch between in-page and common headers/footers. 
+
+#### Converting In-Page Header/Footer to Common Header/Footer  
+To convert an in-page header or footer to a common header or footer, specify the page number of the header/footer you want to apply as common. If you prefer to discard all in-page headers and footers, leave the field blank to create a new common header or footer.
+
+#### Converting Common Header/Footer to In-Page Header/Footer  
+If your PDF template currently uses a common header or footer, you can convert them to in-page headers or footers by selecting the option to disable common headers/footers while preserving the existing content. Alternatively, you can remove all headers and footers entirely for a cleaner layout.
+
 
 ### Components
 

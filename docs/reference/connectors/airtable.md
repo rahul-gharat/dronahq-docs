@@ -55,27 +55,33 @@ Click on `Create Token`. You will be shown Newly created Token. You can use this
  To find your Airtable Base ID, open the [Airtable API page](https://airtable.com/developers/web) and click the Base that you want to use.
 You will find the ID of your base in the Introduction section.
 
-## Supported API endpoints
 
-| Action Name   | Description                                                                                         |
-|---------------|-----------------------------------------------------------------------------------------------------|
-| Find Rows     | Retrieve a list of rows from a specified table based on certain conditions or filters.            |
-| Find a Row    | Fetch a single row from a table based on specific criteria or field values.                       |
-| Create Row    | Add a new row to the specified table, filling in the required field values.                        |
-| Update Row    | Modify the values of a row in the table using specific field updates or changes.                   |
-| Delete Row    | Remove a row from the table based on unique identifiers or field values.                            |
-| FindRowById   | Locate a row in the table using a unique identifier, such as a record ID or primary key.            |
 
-Here is the structured information about using the Airtable connector:
+## Available API Endpoints
+
+| Action Name       | Description                                                                                       |
+|-------------------|---------------------------------------------------------------------------------------------------|
+| ListBases         | Retrieve a list of all bases available in the system.                                             |
+| ListBaseSchema    | Fetch the schema of a specified base, including tables and fields.                                |
+| FindRows          | Retrieve multiple rows from a specific table using filters or conditions.                         |
+| FindRowById       | Fetch a row from a table using its unique identifier, such as a record ID or primary key.         |
+| CreateRow         | Insert a new row into a table, filling in the necessary fields.                                   |
+| UpdateRow         | Update existing data in a row with specified field changes.                                       |
+| DeleteRow         | Remove a row from a table using unique identifiers or specific criteria.                          |
+| FindARow          | Access a single row from a table based on specified criteria or field values.                     |
+
+---
+
+
 
 ## Using Airtable Connector
 
 ### Adding Airtable Connector to an Action Flow
 
 1. Navigate to the Action flow section.
-2. Under `Server-side actions > Ready Third-party` connectors, choose the `Airtable` connector.
+2. Under `Connectors > Library` connectors, choose the `Airtable` connector.
 3. Select a specific action from the available options and click `Continue`.
-4. Authenticate the account and proceed by clicking Continue.
+4. Authenticate the account or select the environment you want to continue with.
 
 ### Creating a New Row in Airtable
 
@@ -102,12 +108,11 @@ The integration with Airtable allows you to seamlessly add new records to your d
 
 ### Finding Rows in Airtable
 
-In scenarios where you need to locate specific records for actions like updates or deletions, the `Find row/rows` feature comes in handy. This process involves searching for rows based on certain criteria and obtaining their record IDs, which can then be utilized for targeted actions.
+In scenarios where you need to locate specific records for actions like updates or deletions, the `Find a row/ Findrows` feature comes in handy. This process involves searching for rows based on certain criteria and obtaining their record IDs, which can then be utilized for targeted actions.
 
 To find rows in Airtable using the connector, follow these steps:
 
-1. Choose the appropriate connector for your requirement.
-2. Select the connected Airtable account and proceed by clicking Continue.
+1. Select the connected Airtable account and proceed by clicking Continue.
 3. Specify the Column to search: Enter the name or use a keyword of the column to be searched.
 4. Provide the Value to search: Enter the value to be searched in the specified column. This can also be a dynamic value.
 5. Determine the Search Direction: Select whether to search from top to bottom or bottom to top in the table.
@@ -123,7 +128,7 @@ To find rows in Airtable using the connector, follow these steps:
 </figure>
 
 
-11. Add the unique Action name and ensure you set a Variable to return values. Depending on the action used (find row or find rows), the record IDs will be available as `output.records.id`. This response can be used in subsequent connectors.
+11. Depending on the action used (find row or find rows), the record IDs will be available as `FindARoq.records.id`. This response can be used in subsequent connectors.
 
 
 :::info
