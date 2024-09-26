@@ -1,4 +1,29 @@
 [{
+    "timestamp": 1726790400000,
+    "tags": ["Cloud-Hosted"],
+    "heading": "",
+    "cards": [
+      {
+      "title": "Enhancements",
+      "type": "improved",
+      "points": [
+        "Enhanced Actionflow to provide output suggestions created in older versions of Actionblock, making them available in newer versions."
+      ]
+    },
+       {
+         "title": "Fixes",
+         "type": "fixed",
+         "points": [
+           "Fixed UI-related issues while creating apps using DronaHQ AI.",
+           "Fixed an issue where data queries were triggered multiple times in some edge cases.",
+           "Fixed an issue where the push notification action block was not visible in the New Actionflow UI.",
+           "Fixed a UI issue where the validation option for Composite control inside Rules & Validations was not showing correctly for the UI and JS tabs.",
+           "Fixed a UI issue in the query builder where the environment text was positioned upside down."
+         ]
+       }
+    ]
+  },
+  {
     "timestamp": 1726704000000,
     "tags": ["Cloud-Hosted"],
     "heading": "",
@@ -7,7 +32,40 @@
         "title": "Added",
         "type": "added",
         "points": ["Added PDF Common Headers & Footers."]
-      }
+      },
+       {
+      "title": "Enhancements",
+      "type": "improved",
+      "points": [
+        "Enhanced the property settings for popup and tray-type pages with the addition of an 'Enable Overflow' option, allowing content to extend beyond default boundaries when necessary.",
+        "Enhanced the functionality to dynamically update the URL based on the environment selected in the dropdown, along with code optimization.",
+        "Enhanced support by adding suggestion and binding capabilities for data queries that output JSON.",
+        "Enhanced GraphQL by moving multistep auth refresh flow handling inside the success callback.",
+        "Enhanced server-side pagination for database connectors."
+      ]
+      
+    }, {
+      "title": "Fixes",
+      "type": "fixed",
+      "points": [
+        "Fixed schema rendering for SQL queries to avoid longer load times and prevent schema fetch failures due to large response sizes.",
+        "Fixed DataQuery & ActionFlow breaking when using File Upload Control.",
+        "Fixed an issue with adding multistep Auth values for GraphQL in the query sidebar.",
+        "Fixed a loader edge case for importing Actionflow.",
+        "Fixed an issue where the form setup schema was not scrollable during the first-time setup.",
+        "Fixed various UI-level bugs in DataQuery.",
+        "Fixed an issue where deleting a non-active tab in Data Queries would not remove it or update the edited state count.",
+        "Fixed an issue where RestAPI body configuration was incorrectly sent via the 'GET' method without displaying a 'PROXY' info message.",
+        "Fixed an issue with editing app names in the Edit App sidebar for widgets and Forms.",
+        "Fixed an issue where the Autogen CRUD operation select was not working for MSSQL connectors.",
+        "Fixed syntax error in fetching schema for Postgres.",
+        "Fixed an issue where the Action block did not wait for task completion.",
+        "Fixed a bug in DataQuery where test value rendering for SQL Connector Queries was incorrect.",
+        "Fixed bug where batches added during lazy loading didn't expand properly in server-side pagination.",
+        "Fixed removed 'Edit Name' option for Widgets.",
+        "Fixed an issue in Add Query where the endpoint was not populating for GraphQL queries."
+      ]
+    }
     ]
   },
   {
