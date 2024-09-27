@@ -2,7 +2,7 @@
 sidebar_position: 97
 ---
 
-# Configure DocumentDB storage
+# Configure DocumentDB
 
 DronaHQ needs mongodb compatible storage to store data about apps and connectors. Using mongodb compatible storage makes it easy and faster to access all this stored data.
 
@@ -14,13 +14,13 @@ Follow the steps mentioned below for configuring DocumentDB with DronaHQ:
 Create DocumentDB cluster using `AWS Management Console`. Also, create user credentials with necessary permissions for DronaHQ using `MongoDb Client`
 
 #### 2. Restore required data into DocumentDB
-Download pre-required data dump from DronaHQ and restore it onto DocumentDB.
+Download prerequisite data dump from DronaHQ and restore it onto DocumentDB.
 
 Refer [Configure External Databases](http://localhost:3000/self-hosted-deployment/configure-external-databases/)
 
 #### 3. Copy certificate file to the host machine
 
-Download certificate file onto host machine. You can find link and download command on `Amazon Managment Console`. Once you download the file, place it at your desired location.
+Download certificate file onto host machine. You can find the download link on `Amazon Managment Console`. Once you download the file, place it at your desired location.
 
 Example: Move file from `Home` directory to `/certificates`
 
@@ -35,10 +35,10 @@ mv ~/global.bundle.pem /certificates/global.bundle.pem
 Go to `DronaHQ` installation directory and Open file `docker-compose.yml`.
 
 ```
-nano dronahq/docker-compose.yml
+nano docker-compose.yml
 ```
 
-Add volume mapping for youe certificate file with `webapp` service.
+Add volume mapping for your certificate file with `webapp` service.
 
 ```
 services:
@@ -53,7 +53,7 @@ services:
       - ./storage/files:/app/files:rw
       - ./storage/private:/app/private:rw
 
-      - /certificates/documentdb.pem:/private/global.bundle.pem:ro
+      - /certificates/global.bundle.pem:/private/global.bundle.pem:ro
 
     ports:
       - 8080:8080
@@ -61,7 +61,7 @@ services:
 ...
 ```
 
-In above example, we added mapping as `/certificates/documentdb.pem:/app/certificates/documentdb.pem:ro`. Notice thee values are present in this line separated by collen (:). First value is path of file on host machine. Second parameter is desired path of file on container. And thirs parameter talks about reqd-only directive.
+In above example, we added mapping as `/certificates/global.bundle.pem:/private/global.bundle.pem:ro`. Notice the values are present in this line separated by colon (:). First value is path of file on host machine. Second parameter is desired path of file on container. And third parameter talks about read-only directive.
 
 #### 5. Add environment variables
 
