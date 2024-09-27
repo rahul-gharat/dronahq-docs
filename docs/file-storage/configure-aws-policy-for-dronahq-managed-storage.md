@@ -58,3 +58,15 @@ Note: replace `<bucket-name>` with your bucket name.
         - Go to EC2 Dashboard > Select Instance > `Actions` > `Security` > `Modify IAM Role`.
         - select the role you want to attach and Click `Update IAM Role`.
 
+## AWS permission description
+| Action              | Description                                                                                     |
+|---------------------|-------------------------------------------------------------------------------------------------|
+| s3:ListBucket | Allows listing the contents (objects) of an S3 bucket. |
+| s3:GetObject | Grants permission to retrieve objects from an S3 bucket. |
+| s3:PutObject | Allows uploading or adding new objects to an S3 bucket. |
+| s3:GetObjectAcl | Grants permission to retrieve the access control list (ACL) of an object to check if the object is public or private in file storage. |
+| s3:DeleteObject | Allows deleting objects from an S3 bucket. |
+| s3:GetBucketOwnershipControls | Allows retrieving the ownership control settings of a bucket (who owns the bucket, and any associated rules). This is required to check ACL is enabled or not. |
+| s3:PutBucketOwnershipControls | Allows modifying or setting ownership controls for a bucket. This is required to enable ACL. |
+| s3:PutObjectAcl | Allows changing the access control list (ACL) of an object (who can access the object). This is required to make the object public or private. |
+| s3:PutBucketPublicAccessBlock | Grants permission to block public access at the bucket level to prevent public ACLs or policies. This is required to make Public access block setting to turn it off to make object public or private change reflect. |
