@@ -244,6 +244,7 @@ UTILITY.SETCTRLVALUE(
 |-------------|---------|---------------------------------------------------|
 | `name`      | string  | Control's unique name                             |
 | `value`     | string or object  | any string value for single value controls and object for composite controls |
+| `selected_value`     | string or array | any string value or array of strings for list type controls |
 
 <span style={{fontSize: 24}}>Example for single value controls</span>
 
@@ -273,6 +274,28 @@ UTILITY.SETCTRLVALUE(
     }
   ]
 );
+```
+
+<span style={{fontSize: 24}}>Example for list controls</span>
+
+```
+let dd_data = [
+  {
+    "name": "test1",
+    "value": "test1"
+  },
+  {
+    "name": "test",
+    "value": "test"
+  }
+]
+UTILITY.SETCTRLVALUE([
+  {
+    name: "advanceddropdown",
+    value: dd_data,
+    selected_value: "test"
+  }
+])
 ```
 
 ## HIDECTRL
@@ -653,7 +676,7 @@ UTILITY.SETKVDATA('dronahq', {Name:John,Age:25})
 
 ## GETKVDATA
 
-`UTILITY.GETKVDATA()` method can be used to retrived the locally stored value using its unique key. This method returns a `Promise`, so make sure to use the `await` keyword to successfully complete the operation.
+`UTILITY.GETKVDATA()` method can be used to retrieved the locally stored value using its unique key. This method returns a `Promise`, so make sure to use the `await` keyword to successfully complete the operation.
 
 <span style={{fontSize: 24}}>Usage</span>
 

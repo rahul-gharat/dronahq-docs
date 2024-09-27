@@ -26,7 +26,7 @@ Here are the key components of the `Get KV Data` action:
 
 - Key: Provide the key whose value needs to be retrieved.
 
-## Accesing the output
+## Accessing the output
 
 The output data returned by Get KV data action can be accessed using the following syntax:
 ```

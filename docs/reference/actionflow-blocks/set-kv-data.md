@@ -16,7 +16,7 @@ The `Set KV Data` action allows you to store a key-value pair in the KV store. T
 
 ## Parameters for Set KV Data
 
-Here are the key components of the `Set KV Data` action:
+The following parameters are expected by the `Set KV Data` action:
 
 | Parameter   | Accepts | Possible values                                   |
 |-------------|---------|---------------------------------------------------|

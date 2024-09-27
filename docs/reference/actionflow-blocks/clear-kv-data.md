@@ -5,6 +5,11 @@ title: Clear KV Data
 import Thumbnail from '@site/src/components/Thumbnail';
 
 ## Introduction to Clear KV Data
+
+:::info
+It is recommended that the keys which are set globally ie. accessible via multiple microapps should only be cleared by the apps which set them.
+:::
+
 The Clear KV Data action deletes a key-value pair stored in KV Store. This is useful when you need to clear specific data, such as when a user logs out or changes a setting. By removing unnecessary data, this function helps manage storage space and maintain data relevance. In case of web, this action utilizes localstorage to access and clear the data.
 
 

@@ -56,6 +56,18 @@ By using the Bind Data option, you can dynamically display the data from the arr
 |Header Font Options |	Options to customize the font for the header section.|
 |Value Font Options	| Options to customize the font for the values or data content.|
 
+## Control Outputs
+
+
+These outputs can be referenced in other controls, data queries, or JS functions using the control's unique name.
+
+
+| Property | Description |
+|---|---|
+| {{detailview.PROPERTIES.EDITEDDATA}} | All the data in detailview including edited fields. |
+| {{detailview.PROPERTIES.EDITEDFIELDS}} | The fields that have been edited |
+
+
 ## Events
 
 
