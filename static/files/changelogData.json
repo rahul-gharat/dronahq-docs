@@ -1,4 +1,32 @@
 [{
+  "timestamp": 1727308800000,
+  "tags": ["Cloud-Hosted"],
+  "heading": "",
+  "cards": [
+    {
+      "title": "Enhancements",
+      "type": "improved",
+      "points": [
+        "Enhanced Actionflow to set Data Query to manual on creation.",
+        "Enhanced Screen ID functionality to allow changes."
+      ]
+    },
+    {
+      "title": "Fixes",
+      "type": "fixed",
+      "points": [
+        "Fixed inconsistent behavior in kvstore actions in web view.",
+        "Fixed an issue where users were unable to select an image from file storage in the collapsible menu control.",
+        "Fixed an issue where the info popup was not visible when clicking the info icon.",
+        "Fixed minor UI issues in the new property section.",
+        "Fixed the issue with connector version dropdown which was not changing fields while switching to secret manager tab.",
+        "Fixed a bug in the ActionFlow popup UI related to the multi-select dropdown.",
+        "Fixed the issue where the last metric control inside the grid panel appeared slightly larger than the others."
+      ]
+    }
+  ]
+}
+,{
     "timestamp": 1726790400000,
     "tags": ["Cloud-Hosted"],
     "heading": "",
