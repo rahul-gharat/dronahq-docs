@@ -59,7 +59,7 @@ Note: replace `<bucket-name>` with your bucket name.
         - select the role you want to attach and Click `Update IAM Role`.
 
 ## AWS permission description
-| Action              | Description                                                                                     |
+| Permission              | Description                                                                                     |
 |---------------------|-------------------------------------------------------------------------------------------------|
 | s3:ListBucket | Allows listing the contents (objects) of an S3 bucket. |
 | s3:GetObject | Grants permission to retrieve objects from an S3 bucket. |
