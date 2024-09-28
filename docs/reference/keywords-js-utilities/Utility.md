@@ -651,14 +651,14 @@ UTILITY.MICROAPPNAV('appId',[{queryKey: 'yourkey', queryValue: 'yourvalue'}]);
 UTILITY.MICROAPPNAV('4139',[{queryKey: 'key1', queryValue: 'value1'}]);
 ```
 
-## SETKVDATA
+## SETLOCALSTORAGE
 
-`UTILITY.SETKVDATA()` method can be used to store key value pairs locally. This method returns a `Promise`, so make sure to use the `await` keyword to successfully complete the operation.
+`UTILITY.SETLOCALSTORAGE()` method can be used to store key value pairs locally. This method returns a `Promise`, so make sure to use the `await` keyword to successfully complete the operation.
 
 <span style={{fontSize: 24}}>Usage</span>
 
 ```
-UTILITY.SETKVDATA(key, value);
+UTILITY.SETLOCALSTORAGE(key, value);
 ```
 
 <span style={{fontSize: 24}}>Parameters</span>
@@ -671,17 +671,17 @@ UTILITY.SETKVDATA(key, value);
 <span style={{fontSize: 24}}>Example</span>
 
 ```
-UTILITY.SETKVDATA('dronahq', {Name:John,Age:25})
+UTILITY.SETLOCALSTORAGE('dronahq', {Name:John,Age:25})
 ```
 
-## GETKVDATA
+## GETLOCALSTORAGE
 
-`UTILITY.GETKVDATA()` method can be used to retrieved the locally stored value using its unique key. This method returns a `Promise`, so make sure to use the `await` keyword to successfully complete the operation.
+`UTILITY.GETLOCALSTORAGE()` method can be used to retrieved the locally stored value using its unique key. This method returns a `Promise`, so make sure to use the `await` keyword to successfully complete the operation.
 
 <span style={{fontSize: 24}}>Usage</span>
 
 ```
-UTILITY.GETKVDATA(key);
+UTILITY.GETLOCALSTORAGE(key);
 ```
 
 <span style={{fontSize: 24}}>Parameters</span>
@@ -693,17 +693,17 @@ UTILITY.GETKVDATA(key);
 <span style={{fontSize: 24}}>Example</span>
 
 ```
-UTILITY.GETKVDATA('dronahq');
+UTILITY.GETLOCALSTORAGE('dronahq');
 ```
 
-## CLEARKVDATA
+## CLEARLOCALSTORAGE
 
-`UTILITY.CLEARKVDATA()` method can be used to remove the locally stored key value pairs. This method returns a `Promise`, so make sure to use the `await` keyword to successfully complete the operation.
+`UTILITY.CLEARLOCALSTORAGE()` method can be used to remove the locally stored key value pairs. This method returns a `Promise`, so make sure to use the `await` keyword to successfully complete the operation.
 
 <span style={{fontSize: 24}}>Usage</span>
 
 ```
-UTILITY.CLEARKVDATA(key)
+UTILITY.CLEARLOCALSTORAGE(key)
 ```
 
 <span style={{fontSize: 24}}>Parameters</span>
@@ -715,5 +715,5 @@ UTILITY.CLEARKVDATA(key)
 <span style={{fontSize: 24}}>Example</span>
 
 ```
-UTILITY.CLEARKVDATA(key)
+UTILITY.CLEARLOCALSTORAGE(key)
 ```
