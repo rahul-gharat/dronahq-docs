@@ -5,7 +5,7 @@ title: Get From LocalStorage
 import Thumbnail from '@site/src/components/Thumbnail';
 
 ## Introduction to Get From LocalStorage
-The Get From LocalStorage action retrieves a value which is stored in the KV store mapped to the provided key. If the key exists, it returns the associated value, which can be parsed back to its original form if necessary. If the key does not exist, it returns an empty string. This function is ideal for accessing data which is stored using `Set To LocalStorage` action. In case of web, this action utilizes localstorage to access and get the data.
+The Get From LocalStorage action retrieves a value which is stored in the localstorage mapped to the provided key. If the key exists, it returns the associated value, which can be parsed back to its original form if necessary. If the key does not exist, it returns an empty string. This function is ideal for accessing data which is stored using `Set To LocalStorage` action. In case of web, this action utilizes localstorage to access and get the data.
 
 <figure>
 <Thumbnail src="/img/reference/actionflow-blocks/get-key-val/getkeyval-1.png" alt="Get From LocalStorage 1" />
@@ -33,9 +33,9 @@ The output data returned by Get From LocalStorage action can be accessed using t
 {{action_unique_name.output}}
 ```
 
-For example if the action unique name is `Getkvdata_2`, then the output can be accessed as follows:
+For example if the action unique name is `Getlocalstorage_2`, then the output can be accessed as follows:
 ```
-{{Getkvdata_2.output}}
+{{Getlocalstorage_2.output}}
 ```
 <figure>
 <Thumbnail src="/img/reference/actionflow-blocks/get-key-val/getkeyval-3.png" alt="Get From LocalStorage 3" />
