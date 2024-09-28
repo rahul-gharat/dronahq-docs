@@ -1,1 +1,20 @@
-[]
+[{
+  "timestamp": 1726790400000,
+  "tags": ["Control","Action"],
+  "heading": "",
+  "cards": [
+    {
+      "title": "Enhancements",
+      "type": "improved",
+      "points": [
+        "Enhanced the On Validate Screen Action to focus on the first invalid control when any validation fails.",
+        "Enhanced the DetailView Control to include an editable option for selected fields."
+      ]
+    }, 
+    {
+      "title": "Fixes",
+      "type": "fixed",
+      "points": ["Fixed an issue where the Change State Actionblock did not show the states to be set or removed."]
+    }
+  ]
+}]

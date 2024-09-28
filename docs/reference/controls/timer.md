@@ -14,8 +14,8 @@ The Timer Control is a specialized custom component designed to offer a stopwatc
   <figcaption align = "center"><i>Timer</i></figcaption>
 </figure>
 
-:::cautiion
-Usecase of Timer control should be limited to short span of time for active usage. OS/Browser restricts the app/web when it goes into inactive state for better battery usage and performance. Also, for longer timeframes, they can leverage device time and calculate difference between start time and current time to display it.
+:::caution
+Usecase of Timer control should be limited to short span of time for active usage. OS/Browser restricts the app/web when it goes into inactive state for better battery usage and performance. Also, for longer timeframes, you can leverage device time and calculate difference between start time and current time to display it accordingly.
 :::
 
 
