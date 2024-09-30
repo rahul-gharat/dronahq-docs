@@ -19,6 +19,11 @@ The End Action Flow is a native block within the DronaHQ's on-screen action cate
 1. Conditions for Termination: In a typical use case, End Action Flow is employed within an action flow with specific conditions. When these conditions are satisfied or evaluate as true, the entire subsequent action flow is terminated immediately.
 
 
+<figure>
+<Thumbnail src="/img/reference/actionflow-blocks/end-action-flow/feild.jpeg" alt="End Action Flow" />
+</figure>
+
+
 2. Enhancing Control Flow: End Action Flow significantly enhances control flow within your app's action flow logic. It allows you to build dynamic and conditional workflows, ensuring that actions proceed or halt based on specific criteria.
 
 :::info NOTE

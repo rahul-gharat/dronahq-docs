@@ -13,10 +13,14 @@ In various scenarios, you might need to allow users to download files, such as g
 <figcaption align='center'><i>Download File</i></figcaption>
 </figure>
 
-1. Configure File Source: In your action flow, navigate to `On-screen Actions` and select the `Download File` task. Here, you can set up the file source by using Keywords to provide the URL or path of the file you want to download.
+1. Configure File Source: In your action flow, navigate to `Utility` and select the `Download File` task. Here, you can set up the file source by using Keywords to provide the URL or path of the file you want to download.
 
 
-2. Action Unique Name: Provide a unique name for this action to easily identify it within your action flow.
+2.  Provide a unique name for this action to easily identify it within your action flow.
+
+<figure>
+<Thumbnail src="/img/reference/actionflow-blocks/download-file/feild.jpeg" alt="Download File" />
+</figure>
 
 3. Conditions and Environment: Define when and where this action should execute by specifying conditions and the target environment.
 

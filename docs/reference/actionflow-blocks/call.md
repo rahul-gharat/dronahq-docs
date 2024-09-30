@@ -15,6 +15,11 @@ The `Call` action in DronaHQ empowers your app to initiate phone calls directly.
 
 ### Setting up the Call Action
 
+
+<figure>
+<Thumbnail src="/img/reference/actionflow-blocks/call/call-feild.jpeg" alt="Call" />
+</figure>
+
 1. Phone Number (Mandatory Field): Start by specifying the phone number in a valid format that you want to call. You can enter a single number, multiple numbers separated by commas, or even fetch the number dynamically using keywords or variables.
 
    > Example: `123-456-7890` or `123-456-7890, 987-654-3210`

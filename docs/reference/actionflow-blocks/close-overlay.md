@@ -16,11 +16,14 @@ The `Close Overlay Screens` action allows you to effectively close any overlayin
 
 To utilize the `Close Overlay Screens` action, follow these steps:
 
+
 1. Under the `Navigate` block, select `Close Overlay Screens`.
 
-2. Click `Continue` to proceed with setting up the action. This will effectively remove any overlaying screens that are currently displayed on the form.
+<figure>
+<Thumbnail src="/img/reference/actionflow-blocks/closeoverlay/feild.jpeg" alt="Close Overlay Screens" />
+</figure>
 
-3. You can also specify conditions under which the action should be executed, as well as the specific environment in which it should take place.
+2. You can also specify conditions under which the action should be executed, as well as the specific environment in which it should take place.
 
 4. Assigning a unique name to the action using the Action Unique Name field is essential. This helps you to identify and manage tasks within the flow.
 
