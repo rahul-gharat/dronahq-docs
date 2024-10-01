@@ -244,6 +244,7 @@ UTILITY.SETCTRLVALUE(
 |-------------|---------|---------------------------------------------------|
 | `name`      | string  | Control's unique name                             |
 | `value`     | string or object  | any string value for single value controls and object for composite controls |
+| `selected_value`     | string or array | any string value or array of strings for list type controls |
 
 <span style={{fontSize: 24}}>Example for single value controls</span>
 
@@ -273,6 +274,28 @@ UTILITY.SETCTRLVALUE(
     }
   ]
 );
+```
+
+<span style={{fontSize: 24}}>Example for list controls</span>
+
+```
+let dd_data = [
+  {
+    "name": "test1",
+    "value": "test1"
+  },
+  {
+    "name": "test",
+    "value": "test"
+  }
+]
+UTILITY.SETCTRLVALUE([
+  {
+    name: "advanceddropdown",
+    value: dd_data,
+    selected_value: "test"
+  }
+])
 ```
 
 ## HIDECTRL
@@ -628,3 +651,69 @@ UTILITY.MICROAPPNAV('appId',[{queryKey: 'yourkey', queryValue: 'yourvalue'}]);
 UTILITY.MICROAPPNAV('4139',[{queryKey: 'key1', queryValue: 'value1'}]);
 ```
 
+## SETLOCALSTORAGE
+
+`UTILITY.SETLOCALSTORAGE()` method can be used to store key value pairs locally. This method returns a `Promise`, so make sure to use the `await` keyword to successfully complete the operation.
+
+<span style={{fontSize: 24}}>Usage</span>
+
+```
+UTILITY.SETLOCALSTORAGE(key, value);
+```
+
+<span style={{fontSize: 24}}>Parameters</span>
+
+| Parameter   | Accepts | Possible values                                   |
+|-------------|---------|---------------------------------------------------|
+| `key`      | string  | any string value          |
+| `value`     | string  | any string value                                  |
+
+<span style={{fontSize: 24}}>Example</span>
+
+```
+UTILITY.SETLOCALSTORAGE('dronahq', {Name:John,Age:25})
+```
+
+## GETLOCALSTORAGE
+
+`UTILITY.GETLOCALSTORAGE()` method can be used to retrieved the locally stored value using its unique key. This method returns a `Promise`, so make sure to use the `await` keyword to successfully complete the operation.
+
+<span style={{fontSize: 24}}>Usage</span>
+
+```
+UTILITY.GETLOCALSTORAGE(key);
+```
+
+<span style={{fontSize: 24}}>Parameters</span>
+
+| Parameter   | Accepts | Possible values                                   |
+|-------------|---------|---------------------------------------------------|
+| `key`      | string  | any string value           |
+
+<span style={{fontSize: 24}}>Example</span>
+
+```
+UTILITY.GETLOCALSTORAGE('dronahq');
+```
+
+## CLEARLOCALSTORAGE
+
+`UTILITY.CLEARLOCALSTORAGE()` method can be used to remove the locally stored key value pairs. This method returns a `Promise`, so make sure to use the `await` keyword to successfully complete the operation.
+
+<span style={{fontSize: 24}}>Usage</span>
+
+```
+UTILITY.CLEARLOCALSTORAGE(key)
+```
+
+<span style={{fontSize: 24}}>Parameters</span>
+
+| Parameter   | Accepts | Possible values                                   |
+|-------------|---------|---------------------------------------------------|
+| `key`      | string  | any string value           |
+
+<span style={{fontSize: 24}}>Example</span>
+
+```
+UTILITY.CLEARLOCALSTORAGE(key)
+```
