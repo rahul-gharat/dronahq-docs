@@ -15,6 +15,10 @@ The SMS action in DronaHQ empowers your app to send text messages directly. This
 
 ### Setting up the SMS Action
 
+<figure>
+<Thumbnail src="/img/reference/actionflow-blocks/sms/feild.jpeg" alt="SMS" />
+</figure>
+
 1. Phone Number (Mandatory Field): Start by specifying the phone number in a valid format to which you want to send the SMS. You can enter a single number, multiple numbers separated by commas, or even fetch the number dynamically using keywords or variables.
 
    > Example: `123-456-7890` or `123-456-7890, 987-654-3210`

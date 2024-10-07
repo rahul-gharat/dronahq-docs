@@ -21,6 +21,10 @@ With the Invoke ActionFlow action, you can add triggers for actions associated w
 
 To use the Invoke ActionFlow action:
 
+<figure>
+<Thumbnail src="/img/reference/actionflow-blocks/invoke-action/feild.jpeg" alt="Invoke Action Window" />
+</figure>
+
 1. Select the control that should trigger the action and navigate to its Action Flow.
 
 2. Add the Invoke ActionFlow action block.

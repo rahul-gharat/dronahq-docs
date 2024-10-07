@@ -19,9 +19,11 @@ The Set Data Queries Value action enables you to configure and assign values to 
 
 ### Configuration Fields
 
-1. Dynamic Data Field (e.g., dataUser.cust_id): In this field, you specify the target data query where you want to set a value. This could be a data query related to user information, customer data, or any other data source within your app.
+<figure>
+<Thumbnail src="/img/reference/actionflow-blocks/set-data-queries-value/feild.jpeg" alt="Set Data Queries Values" />
+</figure>
 
-2. Select Data Query: Choose the specific data query you want to work with. Data queries are essential for fetching, updating, or managing data in your app.
+1.  Select Data Query: Choose the specific data query you want to work with. Data queries are essential for fetching, updating, or managing data in your app.
 
 3. Enter Value (Use Keywords for Dynamic Values): Here, you can set the value you want to assign to the selected data query. You have the flexibility to use keywords to dynamically fetch values from form controls, variables, or other sources.
 
