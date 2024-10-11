@@ -140,7 +140,7 @@ As shown in the image above, you can provide multiple data entries for different
 
 
 If you wish to update a row but retain certain column values, use NULL as a keyword. This prevents those columns from being overwritten, ensuring the original values remain intact. Only the columns with specified inputs will be updated.
-You can read more about updating mulitple rows using Table Grid from this [guide](docs/building-apps-guides/update-multiplerows-google-sheet.md).
+You can read more about updating multiple rows using Table Grid from this [guide](docs/building-apps-guides/update-multiplerows-google-sheet.md).
 
 
 

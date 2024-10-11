@@ -25,7 +25,7 @@ To begin, you need to connect the Google Sheet to your TableGrid control in Dron
 
 
 Select the TableGrid control and navigate to its properties.
-Select the coumns which you want to make editable, which will allow users to edit more than one row at a time.
+Select the columns which you want to make editable, which will allow users to edit more than one row at a time.
 You can check out the [Building Interactive table](https://docs.dronahq.com/building-apps-guides/building-interactive-tables/#editable-table-columns) article to know about editable columns in table grid control.
 <figure>
 <Thumbnail src="/img/building-apps-guides/google-sheet-multiupdaterows/google-sheet-multiupdaterows-edit.jpeg" alt="Make Columns Editable." />
@@ -66,7 +66,7 @@ Now, we need to prepare JS Code which return array of edited values for each col
 You want to update these rows in Google Sheets starting from **row 2**, but you only want to update specific fields while leaving others as `null`. For example, you might want to update only the `cust_name` and `cust_email`, while keeping other fields as they are or null.
 
 
-Now in the action flow, we need to add a `JS Code action block`, for a simple trasformation of the edited data from a tablegrid control. 
+Now in the action flow, we need to add a `JS Code action block`, for a simple transformation of the edited data from a tablegrid control. 
 
 #### JS CODE
 
@@ -124,7 +124,7 @@ output = {
 
 ## 4:  Map JavaScript Output to Google Sheets Update Action
 
-Now we can add the Google Sheet connector in the actionflow and send the output of the JavaScript functionto the Google Sheets update query along with the other details. Here’s how the variables would be mapped in DronaHQ:
+Now we can add the Google Sheet connector in the actionflow and send the output of the JavaScript Action block to the Google Sheets update query along with the other details. Here’s how the variables would be mapped in DronaHQ:
 
 `cust_ID: {{edited.cust_IDs}}`
 
@@ -135,8 +135,8 @@ Now we can add the Google Sheet connector in the actionflow and send the output 
 `active_user: {{edited.active_users}}`
 
 <figure>
-  <Thumbnail src="/img/reference/connectors/googlesheet/nulledit.jpeg" alt="Setting up the Google Sheet conecctor library action block." />
-  <figcaption align = "center"><i>Setting up the Google Sheet conecctor library action block.</i></figcaption>
+  <Thumbnail src="/img/reference/connectors/googlesheet/nulledit.jpeg" alt="Setting up the Google Sheet connector library action block." />
+  <figcaption align = "center"><i>Setting up the Google Sheet connector library action block.</i></figcaption>
 </figure>
 
 
