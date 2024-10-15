@@ -176,8 +176,6 @@ Columns For Database Loggers:
 | Environment Deleted | ``environment_deleted`` |✔️ | ✔️ |
 | Db Query | ``db_query`` |✔️ | ✔️ |
 | API Call | ``api_call`` |✔️ | ✔️ |
-| User Logged In | ``user_logged_in`` |✔️ | ✔️ |
-| User Logged Out | ``user_logged_out`` |✔️ | ✔️ |
 | User Password Forgot | ``user_password_forgot`` | ✔️ | ❌ |
 | User Password Reset Requested | ``user_password_reset_requested`` | ✔️ | ❌ |
 | Settings Updated | ``settings_updated`` | ✔️ | ❌ |
