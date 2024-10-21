@@ -1,5 +1,56 @@
 [
   {
+    "timestamp": 1729209600000,
+    "tags": ["Cloud-Hosted"],
+    "heading": "",
+    "cards": [
+      {
+        "title": "Enhancements",
+        "type": "improved",
+        "points": [
+          "Enhancement done to add a hyperlink in connection string field description of a connector.",
+          "Enhanced the Builder UI, with revamp in Header, Footer and Sidebars."
+        ]
+      },
+      {
+        "title": "Fixes",
+        "type": "fixed",
+        "points": [
+          "Fixed the app crash caused by the Connector Library. The test button used to load endlessly and crash the app."
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1728950400000,
+    "tags": ["Cloud-Hosted"],
+    "heading": "",
+    "cards": [
+      {
+        "title": "Fixes",
+        "type": "fixed",
+        "points": [
+          "Fixed issue for the new app KEYWORDS.DATAENV is undefined.",
+          "Fixed suggestions for JavaScript when returns array of object.",
+          "Fixes in Rules and validation CSS",
+          "Fixed the issue with data-query block in the branch not deleting the main variable while deletion."
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1727395200000,
+    "tags": ["Cloud-Hosted"],
+    "heading": "",
+    "cards": [
+      {
+        "title": "Fixes",
+        "type": "fixed",
+        "points": ["Fixed the issed with JS data query not providing correct suggestions."]
+      }
+    ]
+  },
+  {
     "timestamp": 1727308800000,
     "tags": ["Cloud-Hosted"],
     "heading": "",
@@ -31,7 +82,8 @@
           "Fixed minor UI issues in the new property section.",
           "Fixed the issue with connector version dropdown which was not changing fields while switching to secret manager tab.",
           "Fixed a bug in the ActionFlow popup UI related to the multi-select dropdown.",
-          "Fixed the issue where the last metric control inside the grid panel appeared slightly larger than the others."
+          "Fixed the issue where the last metric control inside the grid panel appeared slightly larger than the others.",
+          "Fixed the missing code related to data query used under - when to execute condition."
         ]
       }
     ]
