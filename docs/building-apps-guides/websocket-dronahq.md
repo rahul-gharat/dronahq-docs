@@ -12,7 +12,7 @@ connection, create real-time data streams, and trigger events within your DronaH
 The provided steps demonstrate how to build a dynamic WebSocket interface that interacts with Binance’s API, but the
 methodology can be adapted to other WebSocket API.
 
-## Integrating Websocket into Custom Control
+## Integrating WebSocket into Custom Control
 
 DronaHQ’s [Custom Control](https://docs.dronahq.com/reference/controls/custom-control/) allows developers to embed
 custom HTML, JavaScript, and CSS inside the DronaHQ platform using an iframe. With this setup, you can pass data between
@@ -40,7 +40,7 @@ DronaHQ controls and the custom logic embedded within your HTML.
 ### Create a Custom Control in DronaHQ
 
 1. Drag and drop Custom Controls in the DronaHQ interface.
-2. Go to its property and put the code uder `Write your code`.
+2. Go to its property and put the code under `Write your code`.
 
 <figure>
   <Thumbnail src="/img/building-apps-guides/websocket/websocket-app-code.jpeg" alt="Code section for the Custom Control." />
@@ -297,19 +297,9 @@ document.getElementById('clearBtn').addEventListener('click', () => {
 ## Conclusion
 
 This project showcases how to stream live cryptocurrency prices using WebSocket connections from Binance. It provides an
-easy way to manage connections—allowing users to enter a crypto pair, view real-time updates, and close the connection
-anytime.
+easy way to manage connections—allowing users to enter a crypto pair, view real-time updates, and close the connection anytime.
 
-<!-- <div style={{ position: 'relative', paddingBottom: 'calc(46.33333333333333% + 41px)', height: 0 }}> 
-    <iframe 
-        class="studio-embed" 
-        src="https://demoapp.dronahq.io/NMIn7GBmu5odO4JqE5GosfN7gN4MMggO33p8guILO9boU?type=emd" 
-        frameborder="0"  
-        style="background: transparent;" 
-        width="100%" 
-        height="533" >
-    </iframe>
-</div> -->
+
 
 <div style={{ position: 'relative', paddingBottom: 'calc(46.33333333333333% + 41px)', height: 0 }}> 
     <iframe 
