@@ -46,7 +46,7 @@
       {
         "title": "Fixes",
         "type": "fixed",
-        "points": ["Fixed the issed with JS data query not providing correct suggestions."]
+        "points": ["Fixed an issue with JS data query not providing correct suggestions."]
       }
     ]
   },
@@ -80,9 +80,9 @@
           "Fixed an issue where users were unable to select an image from file storage in the collapsible menu control.",
           "Fixed an issue where the info popup was not visible when clicking the info icon.",
           "Fixed minor UI issues in the new property section.",
-          "Fixed the issue with connector version dropdown which was not changing fields while switching to secret manager tab.",
+          "Fixed an issue with connector version dropdown which was not changing fields while switching to secret manager tab.",
           "Fixed a bug in the ActionFlow popup UI related to the multi-select dropdown.",
-          "Fixed the issue where the last metric control inside the grid panel appeared slightly larger than the others.",
+          "Fixed an issue where the last metric control inside the grid panel appeared slightly larger than the others.",
           "Fixed the missing code related to data query used under - when to execute condition."
         ]
       }
