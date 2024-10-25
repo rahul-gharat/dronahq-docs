@@ -37,15 +37,6 @@ You also have the option to add an existing SSH key from your system. Simply tog
 
 :::
 
-### On the Self-hosted Version
-
-To generate an SSH key in the self-hosted version, follow these steps:
-
-1. Go to `Account Settings > Integrations`.
-
-2. Under `SSH Key Management`, click `Add Key` to create a new key. Provide a name and click `Generate Key & Save`.
-
-You can also edit the SSH key name once it's generated.
 
 ## Editing SSH Keys
 
@@ -62,28 +53,34 @@ You also have the option to edit the name of the SSH key once it's generated. Si
 
 Using SSH keys for secure access to various services is a crucial part of the process. Here are some scenarios for using SSH keys:
 
-### SSH Keys for Git Sync
+### SSH Keys for Git Sync (Self-Hosted)
 
-Git Sync is a powerful feature that enables efficient version control for your apps on DronaHQ.
 
-After generating your SSH key, you can add it to various Git service providers' settings to connect your app to a Git repository. Follow these steps:
+To enable Git Sync in self-hosted DronaHQ instances, you'll need to generate an SSH key and configure specific environment variables for secure and efficient version control. Follow these steps:
 
-1. Open your app and go to `Publish > Git Operation`.
+#### 1. Generate an SSH Key in DronaHQ
+Each self-hosted instance requires an SSH key for secure connections with your Git repository:
+1. Navigate to` Profile > Account Settings > Integrations > SSH Key Management`.
+2. Click `+ Add Key`, provide a friendly name, and select Generate & Save Key.
+3. Make a note of the friendly name and the generated public key, as these will be needed for configuring environment variables and setting up the Git repository.
 
-2. In the `Configure` window, paste the SSH URL of the repository. Toggle on the `Use existing key` option and select the SSH key you generated earlier from SSH Management.
+#### 2. Configure Git Sync Environment Variables
+You must set the following environment variable to enable Git Sync:
 
-3. Click on `Test & Save Connection` to establish a successful connection.
+| Environment Variable       | Description                                                                                       |
+|----------------------------|---------------------------------------------------------------------------------------------------|
+| `GIT_SYNC_IS_GLOBAL`       | Specifies if the Global Git Sync feature should be enabled (default is `false`).                  |
 
-<figure>
-  <Thumbnail src="/img/git-sync/dronahq-url.png" alt="Configuration window" />
-  <figcaption align = "center"><i>Configuration window</i></figcaption>
-</figure>
+:::caution
+ Ensure that the name used in the environment variable matches the SSH key’s friendly name exactly for a successful connection.
+:::
 
 :::tip 
 A single generated SSH key can be used across different repositories, Git service providers, apps, and even by different users.
 :::
 
-You can know more about Git Sync [here](/git-sync).
+For further details, please refer to the [DronaHQ Git Sync Documentation](https://docs.dronahq.com/git-sync-global/).
+
 
 
 ### SSH Keys for SSH Tunneling
