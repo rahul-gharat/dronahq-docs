@@ -1,56 +1,120 @@
 [{
-  "timestamp": 1725321600000,
-  "tags": ["Self-Hosted", "3.1.2-stable"],
-  "heading": "Version 3.1.2-stable",
+  "timestamp": 1729814400000,
+  "tags": ["Self-Hosted", "3.1.5-stable"],
+  "heading": "Version 3.1.5-stable",
   "cards": [
     {
       "title": "Added",
       "type": "added",
       "points": [
-        "Added support to modify controls' unique name."
+        "Added icons for localStorage actions."
+      ]
+    },
+    {
+      "title": "Enhancements",
+      "type": "improved",
+      "points": [
+        "Enhanced configuration file with automation webhook listening variables."
       ]
     },
     {
       "title": "Fixes",
       "type": "fixed",
       "points": [
-        "Fixed connector response issue after edit in actionflow.",
-        "Fixed issues with concurrent access.",
-        "Fixed MSSQL prepared statement connector query preparation.",
-        "Fixed GitSync bug with connector in action flow (showing deleted in iterate task).",
-        "Fixed minor bugs."
+        "Fixed issue with DHQ Database CSV import.",
+        "Fixed issue where the presigned URL copy failed due to expiration time exceeding one week (SigV4 limitation).",
+        "Fixed Actionflow opening in a minimized window.",
+        "Fixed connection issue with Redshift.",
+        "Fixed bug causing a 500 error when saving a MongoDB query with variable referencing.",
+        "Fixed alert positioning issue behind the tray on bottom-opening trays.",
+        "Fixed controls for attached menu and header where drag and resize were disabled.",
+        "Fixed broken delete icon on the manage user screen.",
+        "Fixed issue with routing variables not displaying values correctly.",
+        "Fixed dropdown visibility issue for language selection after uploading a new language.",
+        "Fixed missing tab index for Advanced Dropdown.",
+        "Fixed bug where the sticky menu was hidden on app launch."
       ]
     }
   ]
 },
-{
-  "timestamp": 1724976000000,
-  "tags": ["Self-Hosted", "3.1.1-stable"],
-  "heading": "Version 3.1.1-stable",
-  "cards": [
+  {
+    "timestamp": 1727222400000,
+    "tags": ["Self-Hosted", "3.1.4-stable"],
+    "heading": "Version 3.1.4-stable",
+    "cards": [
       {
-      "title": "Added",
-      "type": "added",
-      "points": [
-        "Added fallback icon for app.",
-        "Added multi-region support for Data-dog (External Logger).",
-        "Added support for control (Tabbed-container)."
-      ]
-    },
-    {
-      "title": "Fixes",
-      "type": "fixed",
-      "points": [
-        "Fixed bug in Sync-license for decrypting task_reset_date.",
-        "Fixed user email logging in widgets creation and updation.",
-        "Fixed default service name to dynamic in Datadog configuration.",
-        "Fixed focusout issue for dropdown property in settings.",
-        "Fixed dependency generation in screen header for formula evaluation."
-      ]
-    }
-    
-  ]
-},
+        "title": "Added",
+        "type": "added",
+        "points": [
+          "Added support for key ‘IdPResponse’ in multistep SAML based auth."
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1726790400000,
+    "tags": ["Self-Hosted", "3.1.3-stable"],
+    "heading": "Version 3.1.3-stable",
+    "cards": [
+      {
+        "title": "Added",
+        "type": "added",
+        "points": [
+          "Added support for configurable JSON field size in connector with ‘MAX_FILE_UPLOAS_SIZE_MB’ variable."
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1725321600000,
+    "tags": ["Self-Hosted", "3.1.2-stable"],
+    "heading": "Version 3.1.2-stable",
+    "cards": [
+      {
+        "title": "Added",
+        "type": "added",
+        "points": ["Added support to modify controls' unique name."]
+      },
+      {
+        "title": "Fixes",
+        "type": "fixed",
+        "points": [
+          "Fixed connector response issue after edit in actionflow.",
+          "Fixed issues with concurrent access.",
+          "Fixed MSSQL prepared statement connector query preparation.",
+          "Fixed GitSync bug with connector in action flow (showing deleted in iterate task).",
+          "Fixed minor bugs."
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1724976000000,
+    "tags": ["Self-Hosted", "3.1.1-stable"],
+    "heading": "Version 3.1.1-stable",
+    "cards": [
+      {
+        "title": "Added",
+        "type": "added",
+        "points": [
+          "Added fallback icon for app.",
+          "Added multi-region support for Data-dog (External Logger).",
+          "Added support for control (Tabbed-container)."
+        ]
+      },
+      {
+        "title": "Fixes",
+        "type": "fixed",
+        "points": [
+          "Fixed bug in Sync-license for decrypting task_reset_date.",
+          "Fixed user email logging in widgets creation and updation.",
+          "Fixed default service name to dynamic in Datadog configuration.",
+          "Fixed focusout issue for dropdown property in settings.",
+          "Fixed dependency generation in screen header for formula evaluation."
+        ]
+      }
+    ]
+  },
   {
     "timestamp": 1723593600000,
     "tags": ["Self-Hosted", "3.1.0-stable"],
