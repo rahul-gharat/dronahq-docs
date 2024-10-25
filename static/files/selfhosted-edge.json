@@ -1,4 +1,48 @@
-[
+[{
+  "timestamp": 1726704000000,
+  "tags": ["Self-Hosted", "3.2.1-edge"],
+  "heading": "Version 3.2.1-edge",
+  "cards": [
+    {
+      "title": "Added",
+      "type": "added",
+      "points": [
+        "Added bulk import/export for branding, jsObject, and theme configuration.",
+        "Added sort and filtering options in Data Query.",
+        "Added option to enable overflow for screen types 'tray' and 'popup'."
+      ]
+    },
+    {
+      "title": "Enhancements",
+      "type": "improved",
+      "points": [
+        "Enhanced Data Query experience by adding indication (green dot) for unsaved queries.",
+        "Enhanced Data Query experience by adding unsaved query count in the left menu.",
+        "Enhanced Data Query experience by adding a Query tab.",
+        "Enhanced message for concurrent access when the same user logs in from multiple locations.",
+        "Enhanced automation webhook configuration sidebar view and made minor improvements.",
+        "Changed JS code block saving in automation to save without testing."
+      ]
+    },
+    {
+      "title": "Fixes",
+      "type": "fixed",
+      "points": [
+        "Fixed AWS IAM activation for Managed File Storage.",
+        "Fixed minor UI issues in REST API field’s placeholder.",
+        "Fixed dropdown icon alignment for long texts in REST API fields.",
+        "Fixed minor UI issues when configuring Managed Storage and Managed PDF connectors in Data Query.",
+        "Fixed action addition for button clicks.",
+        "Fixed bug in validation tab when switching from UI to JS tab.",
+        "Fixed a bug in Add Query sidebar for adding multistep auth variables.",
+        "Fixed bug in REST API loader if dynamic variable is not present.",
+        "Fixed issue with populating endpoint in GraphQL Connector.",
+        "Fixed UI issue in Query Builder where environment dropdown test-icon was misaligned.",
+        "Fixed bug in JS code block where a comment on the last line affected the result."
+      ]
+    }
+  ]
+},
   {
     "timestamp": 1725926400000,
     "tags": ["Self-Hosted", "3.2.0-edge"],
