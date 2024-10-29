@@ -5,18 +5,38 @@
     "heading": "",
     "cards": [
       {
+        "title": "Added",
+        "type": "added",
+        "points": [
+          "Added JDBC Connector to enable database queries via JDBC protocol with drivers available for IBM DB2, Presto, Trino, and more."
+        ]
+      },
+      {
         "title": "Enhancements",
         "type": "improved",
         "points": [
           "Enhancement done to add a hyperlink in connection string field description of a connector.",
-          "Enhanced the Builder UI, with revamp in Header, Footer and Sidebars."
+          "Enhanced the Builder UI, with revamp in Header, Footer and Sidebars.",
+          "Enhanced tag configuration functionality."
         ]
       },
       {
         "title": "Fixes",
         "type": "fixed",
         "points": [
-          "Fixed the app crash caused by the Connector Library. The test button used to load endlessly and crash the app."
+          "Fixed the app crash caused by the Connector Library. The test button used to load endlessly and crash the app.",
+          "Fixed missing code for package 'When to Execute' condition.",
+          "Fixed incomplete content rendering in PDF common headers.",
+          "Fixed issue where 'Data Query' saved with a time-interval configuration did not display interval input on reopening.",
+          "Fixed icon for import API option.",
+          "Fixed missing tab index for Advanced Dropdown.",
+          "Fixed file upload control reference issue in data query within Action Flow.",
+          "Fixed issue where 'Save' was not triggered when changes were made in headers.",
+          "Fixed the manual tags by adding rearrangement functionality.",
+          "Fixed an issue where schema table incorrectly displayed an expand arrow for Firebase and Firestore.",
+          "Fixed Incomplete content rendered for pdf in common headers.",
+          "Fixed automatic saving of header names upon edit.",
+          "Fixed multistep authentication issue with SAML-based SSO."
         ]
       }
     ]
