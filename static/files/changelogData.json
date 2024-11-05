@@ -52,7 +52,7 @@
         "points": [
           "Fixed issue for the new app KEYWORDS.DATAENV is undefined.",
           "Fixed suggestions for JavaScript when returns array of object.",
-          "Fixes in Rules and validation CSS",
+          "Fixes in Rules and validation CSS.",
           "Fixed the issue with data-query block in the branch not deleting the main variable while deletion."
         ]
       }
