@@ -1,4 +1,78 @@
-[{
+[ {
+    "timestamp": 1730937600000,
+    "tags": ["Self-Hosted", "3.3.1-edge"],
+    "heading": "Version 3.3.1-edge",
+    "cards": [
+      {
+        "title": "Added",
+        "type": "added",
+        "points": [
+          "Added Airgap module for self-hosted environments."
+        ]
+      },
+      {
+        "title": "Enhancements",
+        "type": "improved",
+        "points": [
+          "Enhancement done by moving 'underscore' and 'moment-timezone' modules to the add-on project's configuration.js file."
+        ]
+      },
+      {
+        "title": "Fixes",
+        "type": "fixed",
+        "points": [
+          "Fixed broken UI in Automation modal.",
+          "Fixed issue with app import failing.",
+          "Fixed multistep authentication issue in Actionflow where connector returned error but ran success flow instead.",
+          "Fixed assumeRole flow in cases where no security tokens are provided.",
+          "Fixed broken image problem in the create dropdown on the App Listing page.",
+          "Fixes made for app export not opening in settings.",
+          "Fixed bug related to syncing isomorphic.",
+          "Fixed SSO cookie domain issue."
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1730160000000,
+    "tags": ["Self-Hosted", "3.3.0-edge"],
+    "heading": "Version 3.3.0-edge",
+    "cards": [
+      {
+        "title": "Added",
+        "type": "added",
+        "points": [
+          "Added support for key ‘IdPResponse’ in multistep SAML-based authentication."
+        ]
+      },
+      {
+        "title": "Enhancements",
+        "type": "improved",
+        "points": [
+          "Enhanced automation webhook with JSON pooling screen.",
+          "Enhanced Oracle Connector.",
+          "Enhanced tag configuration in Format Option.",
+          "Improved handling of file storage permissions."
+        ]
+      },
+      {
+        "title": "Fixes",
+        "type": "fixed",
+        "points": [
+          "Fixed minor indentation mismatch in code.",
+          "Fixed delete API response issue in managed storage.",
+          "Fixed issue with DHQ Database checkbox selections persisting when navigating between tables.",
+          "Fixed bug where table name placeholder maintained its highlighted state even after closing the sidebar.",
+          "Fixed bug related to bulk import/export of domain and branding when uploading images.",
+          "Fixed rules and validation issues.",
+          "Fixed the missing icon for import API option.",
+          "Fixed issue with DHQ Managed License fetching and settings.",
+          "Fixed activation screen reappearing after creating new automation."
+        ]
+      }
+    ]
+  },
+  {
   "timestamp": 1726704000000,
   "tags": ["Self-Hosted", "3.2.1-edge"],
   "heading": "Version 3.2.1-edge",

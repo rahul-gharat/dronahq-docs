@@ -1,4 +1,24 @@
-[{
+[ {
+    "timestamp": 1730937600000,
+    "tags": ["Self-Hosted", "3.1.6-stable"],
+    "heading": "Version 3.1.6-stable",
+    "cards": [
+      {
+        "title": "Fixes",
+        "type": "fixed",
+        "points": [
+          "Fixed broken UI in Automation modal.",
+          "Fixed issue with app import failing.",
+          "Fixed multistep authentication issue in Actionflow where connector returned error but ran success flow instead.",
+          "Fixed the assumeRole flow in cases where no security tokens are provided.",
+          "Fixed broken image problem in the create dropdown on the App Listing page.",
+          "Fixes made for app export not opening in settings.",
+          "Fixed SSO cookie domain issue."
+        ]
+      }
+    ]
+  },
+  {
   "timestamp": 1729814400000,
   "tags": ["Self-Hosted", "3.1.5-stable"],
   "heading": "Version 3.1.5-stable",
