@@ -14,7 +14,7 @@ SSH keys are a powerful authentication method for secure access to various servi
 
 Generating SSH keys and managing them efficiently is crucial for secure and seamless access to various services.
 
-### On the Cloud
+
 
 To generate an SSH key in the cloud version, follow these steps:
 
@@ -22,9 +22,6 @@ To generate an SSH key in the cloud version, follow these steps:
 
 2. Click on `Add Key` to create a new key. Provide a name, passphrase (if needed), select the key pair type (RSA or ED25519), and click `Generate Key & Save`.
 
-:::info
-DronaHQ will use `DronaHQ` as default paraphrase if not provided from the user while generating SSH Key.
-:::
 
 :::tip
 
@@ -37,23 +34,87 @@ You also have the option to add an existing SSH key from your system. Simply tog
 
 :::
 
+## Setting Up SSH Key Access on Host Server
 
-## Editing SSH Keys
+To successfully establish a connection between DronaHQ and your host server, a user named `dronahq` needs to be created on the server. Additionally, the `public SSH key` should be added to the host server's `authorized_keys` file. The process differs slightly for Ubuntu and Windows Server. Below are the steps for Ubuntu.
 
-Editing SSH keys can be helpful when you need to make changes or updates.
+### 1. Create a User on Ubuntu
 
-You also have the option to edit the name of the SSH key once it's generated. Simply click on the three dots for options and select `Edit`. Make the desired changes to the Key Name and click `Save`.
+Run the following command to add a new user, let say the name is `dronahq`; without a password:
 
+```bash
+sudo adduser dronahq --disabled-password
+```
+
+Output:
+
+```
+Adding user `dronahq` ...
+Adding new group `dronahq` (1003) ...
+Adding new user `dronahq` (1002) with group `dronahq` ...
+Creating home directory `/home/dronahq` ...
+Copying files from `/etc/skel` ...
+Changing the user information for `dronahq`
+Enter the new value, or press ENTER for the default
+Full Name :
+Room Number :
+Work Phone :
+Home Phone :
+Other :
+Is the information correct? [Y/n] y
+```
+### 2. Add Public Key to `authorized_keys`
+
+To enable SSH key-based authentication for the `dronahq` user, follow the steps below:
+
+#### Step 2.1: Switch to Root User
+
+```bash
+sudo su
+```
+
+#### Step 2.2: Create the `.ssh` Directory for `dronahq` User
+
+```bash
+mkdir -p /home/dronahq/.ssh
+```
+
+#### Step 2.3: Add DronaHQ Public Key to `authorized_keys`
+
+1. Open the `authorized_keys` file using a text editor (e.g., `vi` or `nano`):
+
+   ```bash
+   vi /home/dronahq/.ssh/authorized_keys
+   ```
+
+2. Copy the public key from the `Manage SSH Key` section in your DronaHQ account.
 <figure>
-  <Thumbnail src="/img/advanced-concepts/connecting-via-ssh-keys/edit-key.png" alt="Edit SSH Key" />
-  <figcaption align = "center"><i>Edit SSH Key</i></figcaption>
+  <Thumbnail src="/img/advanced-concepts/connecting-via-ssh-keys/public.png" alt="Copy the public key." />
+  <figcaption align = "center"><i>Copy the public key.</i></figcaption>
 </figure>
+
+3. Paste the copied key into the `authorized_keys` file and save the changes.
+
+#### Step 2.4: Set Appropriate File Permissions
+
+```bash
+chmod 644 /home/dronahq/.ssh/authorized_keys
+```
+
+#### Step 2.5: Change Ownership of the `authorized_keys` File
+
+```bash
+chown dronahq:dronahq /home/dronahq/.ssh/authorized_keys
+```
+
+This completes the setup of the SSH key for the `dronahq` user, allowing secure, key-based access to the server.
+
 
 ## Using Generated SSH Keys
 
 Using SSH keys for secure access to various services is a crucial part of the process. Here are some scenarios for using SSH keys:
 
-### SSH Keys for Git Sync (Self-Hosted)
+### SSH Keys for Git Sync (Self-Hosted) - Depricated
 
 
 To enable Git Sync in self-hosted DronaHQ instances, you'll need to generate an SSH key and configure specific environment variables for secure and efficient version control. Follow these steps:
