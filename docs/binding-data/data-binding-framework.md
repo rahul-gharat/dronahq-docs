@@ -87,6 +87,26 @@ In case you are referencing a control across multiple screens and its adding a s
   <figcaption align = "center"><i>Bind data to controls</i></figcaption>
 </figure>
 
+### META - keyword
+
+When making API requests or running queries in DronaHQ (via Connector Library, Connector Query, or REST API), along with the main response, the additional data also matters. Metadata—such as response status codes, headers, or request execution details—plays a crucial role in understanding and handling the results effectively.
+
+You can access metadata of a query using a special keyword format:` {{_queryName_.META._propertyName_}}`. 
+
+For example:
+
+- `{{query_name.META.statusCode}}` might return the HTTP status code of the request.
+- `{{query_name.META.headers}}` could provide the response headers.
+
+<figure>
+  <Thumbnail src="/img/binding-data/meta.png" alt="Bind to controls" width='100%'/>
+  <figcaption align = "center"><i>Bind data with META keyword; to controls</i></figcaption>
+</figure>
+
+This feature simplifies handling response data and accessing useful metadata directly.
+
+
+
 ## Actionflows to controls
 
 DronaHQ also provides a way in which you can bind data to controls using actionflows, only at particular events like a button click. You can use the `Set control value` action to bind data to a control at runtime. 
