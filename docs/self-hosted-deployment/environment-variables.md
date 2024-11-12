@@ -187,7 +187,7 @@ Prefix is like a folder name. This will create a folder inside `FILEREPOSITORY_S
     FILEREPOSITORY_STORAGE_PREFIX='files'
 
 ### Amazon Simple Storage Service (S3) configuration
-You can use Amazon S3 as a File storage with DronaHQ. DronaHQ will upload your uploaded files and other resources. Also your published applications will get served from AWS S3.
+You can use Amazon S3 as a File storage with DronaHQ. DronaHQ will upload your uploaded files and other resources. Also your published applications will get served from AWS S3. You will need to set required permission/policy for your bucket so files can get accessed on the browser.
 
 To use Amazon Simple Storage Service, you need to set following variables.
 
@@ -209,6 +209,16 @@ You can grant aws bucket access to your instance by adding a Aws IAM Role to tha
 To enable IAM role access, set following variable in your environment and add respected role to your instance
 
     AWS_IAM_ROLE_ACCESS=true
+
+#### `AWS_S3_ACL`
+By default, dronahq uses S3 buckets with ACL. You can turn ACl off by setting this variable as false.
+
+    AWS_S3_ACL=false
+
+#### `AWS_S3_BUCKET_PROXY_URL`
+If you want to keep your bucket private, you can setup authentication middleware (AWS Cloudfront) or any other service and provide its proxy url in this variable.
+
+    AWS_S3_BUCKET_PROXY_URL=https://dronahq.example-proxy.com
 
 ### Azure Storage Container configuration
 
