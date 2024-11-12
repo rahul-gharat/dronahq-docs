@@ -38,9 +38,9 @@ You also have the option to add an existing SSH key from your system. Simply tog
 
 To successfully establish a connection between DronaHQ and your host server, a user named `dronahq` needs to be created on the server. Additionally, the `public SSH key` should be added to the host server's `authorized_keys` file. The process differs slightly for Ubuntu and Windows Server. Below are the steps for Ubuntu.
 
-### 1. Create `dronahq` User on Ubuntu
+### 1. Create a User on Ubuntu
 
-Run the following command to add a new user named `dronahq` without a password:
+Run the following command to add a new user, let say the name is `dronahq`; without a password:
 
 ```bash
 sudo adduser dronahq --disabled-password
