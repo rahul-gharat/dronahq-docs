@@ -1,8 +1,34 @@
 [ {
-    "timestamp": 1730937600000,
+  "timestamp": 1731369600000,
+  "tags": ["Self-Hosted", "3.1.7-stable"],
+  "heading": "Version 3.1.7-stable",
+  "cards": [
+    {
+      "title": "Added",
+      "type": "added",
+      "points": ["Added SSH Key Management.", "Added SSH tunneling for databases."]
+    },
+    {
+      "title": "Fixes",
+      "type": "fixed",
+      "points": ["Fixed issue with Addon sync where tasks were not resetting."]
+    }
+  ]
+},{
+    "timestamp": 1731024000000,
     "tags": ["Self-Hosted", "3.1.6-stable"],
     "heading": "Version 3.1.6-stable",
     "cards": [
+      {
+        "title": "Added",
+        "type": "added",
+        "points": ["Added ListObjectsAdvanced and SDK handling in AWS S3 connector."]
+      },
+      {
+        "title": "Enhancements",
+        "type": "improved",
+        "points": ["Default messages created for localization in HTML."]
+      },
       {
         "title": "Fixes",
         "type": "fixed",
@@ -13,7 +39,14 @@
           "Fixed the assumeRole flow in cases where no security tokens are provided.",
           "Fixed broken image problem in the create dropdown on the App Listing page.",
           "Fixes made for app export not opening in settings.",
-          "Fixed SSO cookie domain issue."
+          "Fixed SSO cookie domain issue.",
+          "Fixed connector account selection for managed services.",
+          "Fixed installed global connector sync (id clashing with other service).",
+          "Fixed error handling in AWS S3 ReadFile.",
+          "Fixed an issue where IDP initiated login was throwing an exception.",
+          "Fixed an issue preventing the app export panel from opening correctly.",
+          "Fixed an issue regarding activation of File Storage addon.",
+          "Fixed an issue where output of selected tab was not bindable on tabbed containers."
         ]
       }
     ]

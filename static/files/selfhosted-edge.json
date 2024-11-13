@@ -7,7 +7,8 @@
         "title": "Added",
         "type": "added",
         "points": [
-          "Added Airgap module for self-hosted environments."
+          "Added Airgap module for self-hosted environments.",
+           "Added ListObjectsAdvanced and SDK handling in AWS S3 connector."
         ]
       },
       {
@@ -28,7 +29,11 @@
           "Fixed broken image problem in the create dropdown on the App Listing page.",
           "Fixes made for app export not opening in settings.",
           "Fixed bug related to syncing isomorphic.",
-          "Fixed SSO cookie domain issue."
+          "Fixed SSO cookie domain issue.",
+          "Fixed connector account selection for managed services.",
+          "Fixed installed global connector sync (id clashing with other service).",
+          "Fixed error handling in AWS S3 ReadFile.",
+          "Fixed incomplete code in SSO SAML."
         ]
       }
     ]
