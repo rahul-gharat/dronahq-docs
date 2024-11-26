@@ -35,8 +35,11 @@ setup.
 :::tip 
 DronaHQ can Auto fill crucial connection values like host, name, password, and more from the connector's
 [connection string](https://www.postgresql.org/docs/current/libpq-connect.html#LIBPQ-CONNSTRING) or from a AWS IAM
-credentials using [AWS Import](/datasource-concepts/aws-import). 
+credentials using [AWS Import](/datasource-concepts/aws-import). Additionally, with [Secrets Manager Enterprise](/datasource-concepts/secrets_manager/), users can select a vault, and for KV-type vaults, fields are auto-populated with key values.
 :::
+
+
+
 
 #### General
 
@@ -83,8 +86,7 @@ results in Response.
 </figure>
 
 :::tip 
-Use double curly brackets for dynamic variables. Test with sample values before saving. Link dynamic variables to
-controls/actions and more for runtime use. 
+Use double curly brackets for dynamic variables. Test with sample values before saving. Link dynamic variables to controls/actions and more for runtime use. 
 :::
 
 Saved queries appear under your connector in Connector Library.
