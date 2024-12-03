@@ -211,6 +211,7 @@ These outputs can be referenced in other controls, data queries, or JS functions
 | {{tablegrid.PROPERTIES.NEWROWS}}      | The number of rows that have been newly created in the table grid.                                                                                                                                          |
 | {{tablegrid.PROPERTIES.SELECTEDROWS}} | The number of rows that are currently selected in the table grid.                                                                                                                                           |
 | {{tablegrid.PROPERTIES.EDITEDTABLE}}  | This property allows users to edit data in a table grid without making any changes to the underlying data source. The altered data can be used by the table grid itself or exported to another data source. |
+| {{tablegrid.PROPERTIES.isediting}}	  | A property that checks whether the table grid is in an editing state. It returns true if any row or cell is being edited. |
 
 ## Events
 
