@@ -20,8 +20,8 @@ Its Query Builder allows you to connect your DronaHQ application to server-side 
 </figure>
 
 1. Request Initiation: A query is created in DronaHQ that makes a request to execute a specific action or method on your server.
-2. Request Handling: DronaHQ Worker Pushes the request into the Request Queue.Then Runapi fetches the request and forwards it to the configured RPC Agent running on your server.
-3. Response Management: Your RPC Agent processes the request using the action/method and arguments provided. The result is sent back to the Response Queue, where it is fetched by DronaHQ and displayed.
+2. Request Handling: DronaHQ pushes the request into Request Queue. Then request is fetched by the active RPC agent at fixed intervals.
+3. Response Management: RPC Agent processes the request using the action/method and arguments provided. The result is logged in Response Queue, where it is fetched by DronaHQ and sent to browser.
 
 
 ## Prerequisites

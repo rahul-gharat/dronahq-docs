@@ -17,7 +17,7 @@ In application building, when working with data queries, it is often necessary t
 
 ## META - Keyword Implementation
 
-To leverage metadata, you simply use the `{{query_name.META.<Properties>}}` format within a fucntion of logic, or data-bind section of a control and more. Here’s a basic example:
+To leverage metadata, you simply use the `{{query_name.META.<Properties>}}` format within a function of logic, or data-bind section of a control and more. Here’s a basic example:
 
 #### Displaying Response Code
 
@@ -33,7 +33,7 @@ This expression retrieves the HTTP response code of the executed query, which yo
 
 ## META - supported properties
 
-This metadata that we recieve after making a query request or an API call, often offers valuable insights into the context, performance, and status of the call. Below, we’ll explore some of these common metadata properties and how they can be put to use.
+This metadata that we receive after making a query request or an API call, often offers valuable insights into the context, performance, and status of the call. Below, we’ll explore some of these common metadata properties and how they can be put to use.
 
 <figure>
   <Thumbnail src="/img/building-apps-concepts/meta-keyword/meta-keyword-properties.png" alt="Common properties of META - Keyword" width='100%'/>
