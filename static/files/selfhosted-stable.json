@@ -1,4 +1,28 @@
 [ {
+  "timestamp": 1731628800000,
+  "tags": ["Self-Hosted", "3.4.0-stable"],
+  "heading": "Version 3.4.0-stable",
+  "cards": [
+    {
+      "title": "Added",
+      "type": "added",
+      "points": ["Enhanced Git Sync module authentication - authentication method changed to personal access token (PAT) and UI Enhancements",
+        "Added Airgap compatibility for DronaHQ Self-Hosted."]
+    },
+    {
+      "title": "Fixes",
+      "type": "fixed",
+      "points": [
+        "Fixed an issue with import/export app and added support for custom functions.",
+        "Fixed an issue in IndexDB for clearing unwanted records.",
+        "Fixed issues with Classic headers for supporting controls inside it.",
+        "Fixed refresh token flow for salesforce and fixed minor library issues.",
+        "Fixed an issue where Multistep auth screen not working as expected in end user portal.",
+        "Fixed an issue with File Storage connector where api list was broken in DataQuery."
+      ]
+    }
+  ]
+},{
   "timestamp": 1731369600000,
   "tags": ["Self-Hosted", "3.1.7-stable"],
   "heading": "Version 3.1.7-stable",
