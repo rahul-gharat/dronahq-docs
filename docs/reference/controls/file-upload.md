@@ -26,7 +26,7 @@ The File Upload control is used to upload files like documents, pictures, audio 
 | Multiple Files         | Toggle ON to allow multiple files to be uploaded.                                                              |
 | No. of Files           | Specify the maximum number of files that can be uploaded.                                                      |
 | Upload from            | Choose File Manager or Camera as the upload source.                                                            |
-| Upload                 | Specify whether files are uploaded on selection or on form submission.                                         |
+| Upload                 | Specify whether files are uploaded on selection or on form submission.     Files can be uploaded on selection (immediate upload to DronaHQ's S3). All files are uploaded in DronaHQ’s S3 bucket and are publicly accessible via their URLs. Users cannot delete files directly from the S3 bucket through the UI.                                    |
 | File Type              | Choose the type of files that can be uploaded.                                                                 |
 | Size Per File          | Set a limit on the size of uploaded files.                                                                     |
 | Whitelist File Type    | Toggle ON to specify specific file types, extensions, and magic numbers.                                      |
