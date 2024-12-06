@@ -33,9 +33,23 @@
       "points": ["Added SSH Key Management.", "Added SSH tunneling for databases."]
     },
     {
+      "title": "Enhancements",
+      "type": "improved",
+      "points": [
+        "Enhanced API response in aws-import where getusercredentials was returning 500 code for data not found.",
+        "Enhanced error handling in Salesforce connector when dynamic data is missing.",
+        "Enhanced IndexDB usage for deleting item from cache when category is deleted."
+      ]
+    },
+    {
       "title": "Fixes",
       "type": "fixed",
       "points": ["Fixed issue with Addon sync where tasks were not resetting."]
+    },
+    {
+      "title": "Removed",
+      "type": "removed",
+      "points": ["Removed 'Hide whitelist IP' option from connector configuration."]
     }
   ]
 },{
@@ -46,7 +60,8 @@
       {
         "title": "Added",
         "type": "added",
-        "points": ["Added ListObjectsAdvanced and SDK handling in AWS S3 connector."]
+        "points": ["Added ListObjectsAdvanced and SDK handling in AWS S3 connector."
+        ]
       },
       {
         "title": "Enhancements",
