@@ -33,13 +33,13 @@ You can use this feature for free by activating trial license which offers 1 GB 
   ></iframe>
 </div>
 
-## File Storage Dashboard Layout
+## File Storage Explorer Layout
 
-The DronaHQ File Storage dashboard is a streamlined command center for keeping your data organized and accessible. 
+The DronaHQ File Storage Explorer is a streamlined command center for keeping your data organized and accessible. 
 
 <figure>
-  <Thumbnail src="/img/file-storage/file-storage-dashboard.jpeg" alt="File Storage Dashboard" />
-  <figcaption align = "center"><i>File Storage Dashboard</i></figcaption>
+  <Thumbnail src="/img/file-storage/file-storage-dashboard.jpeg" alt="File Storage explorer" />
+  <figcaption align = "center"><i>File Storage Explorer</i></figcaption>
 </figure>
 
 | Feature | Description |
