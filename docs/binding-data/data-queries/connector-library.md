@@ -94,7 +94,7 @@ You can write your own JS script here which can utilize the JS Libraries (inbuil
 
 The following example is of a raw response and the JS written to transform it into the required JSON output in the transformed section. 
 
-**Raw Response**
+Raw Response
 ```json
 {
   "range": "Sheet1!A2:Z10",
@@ -123,7 +123,7 @@ The following example is of a raw response and the JS written to transform it in
 ```
 
 
-**JS code**
+JS code
 ```javascript
 function transform( data ) {
  data = data.values.map(value => {
@@ -136,7 +136,7 @@ function transform( data ) {
 return data;
 ```
 
-**Transformed Response**
+Transformed Response
 ```json
 [
   {
@@ -161,12 +161,12 @@ DQL or DronaHQ Query Language serves as an efficient query and transformation to
   <figcaption align = "center"><i>DQL in transform section</i></figcaption>
 </figure>
 
-**DQL Expression**
+DQL Expression
 ```json
 $.Player_name
 ```
 
-**Transformed Response**
+Transformed Response
 ```json
 [
   "Raujesh Agarrwal",
@@ -214,7 +214,7 @@ There are times when the keys might not be present while testing and you would s
 
 With the above configurations in the filter objects and keys we can transform the Raw response below to the required transformed response:
 
-**Raw Response**
+Raw Response
 ```json
 [
     {
@@ -238,7 +238,7 @@ With the above configurations in the filter objects and keys we can transform th
   ]
 ```
 
-**Transformed Response**
+Transformed Response
 ```json
 [
   {
@@ -291,9 +291,21 @@ This tab shows the transformed response after the transformations have been run.
 
 ## Advanced
 
-In the advanced section you can write a condition when you don't want to execute this query. This is generally used in places where if there are dependent dynamic variables which send values like null on which you don't want to run the query. Also when you have JSON objects with keys which have special characters or emojis and you want to sanitize those keys you can toggle `ON` the `Sanitize keys` property. 
-
 <figure>
   <Thumbnail src="/img/data-queries/advanced.png" alt="Advanced" width='100%'/>
   <figcaption align = "center"><i>Advanced</i></figcaption>
 </figure>
+
+The Advanced Section of Data Query allows you to control specific behaviors such as pagination, conditional execution, error handling, and file management. Below is a comprehensive table explaining each setting and its purpose.
+
+| Property                   | Description                                                                                                                                                                                                                                                                           |
+|--------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Cursor-Based Pagination    | This feature enables pagination by fetching data in chunks. Use this when your API provides data in paginated responses. You must define: - Offset Key: The key in the API response that indicates the offset or pointer to the next page. - Has More Key: A key that specifies if more data is available (TRUE/FALSE or 0/1). |
+| When to Execute            | This setting allows conditional execution of the query based on a logical condition. For example, you can define a condition like `{{USERNAME == "John"}}`, which ensures that the query only runs if the condition evaluates to `TRUE`. This is useful for dynamic query control.                                              |
+| Error Message              | You can specify a custom error message to display when the condition in the "When to Execute" field fails. For instance, if the condition is not met, the error message "Invalid username" can inform users about the issue, enhancing the clarity of the process.                                                             |
+| Sanitize Special Characters| This option cleans special characters from response data keys to ensure compatibility with downstream processes or integrations. By toggling this ON, you can prevent issues that might arise from unsupported characters in response keys.                                                                                       |
+| Allow Offline Submission   | Enabling this feature ensures the query runs even in offline mode. While offline, certain on-screen actions are skipped, and data submission becomes possible. However, some functionalities, such as file uploads and output variables from previous actions, may not work in this mode.                                       |
+| Download as File           | If the API returns a file or attachment, enabling this setting ensures it is automatically downloaded. For example, when an API response includes a document or an image, the system will download it directly. Note that this applies only to file attachments, not JSON responses.                                         |
+
+
+

@@ -1,8 +1,9 @@
 ---
 sidebar_position: 1
+title: Connection Pooling for enhanced performance
 ---
+import Thumbnail from '@site/src/components/Thumbnail';
 
-# Connection Pooling for enhanced performance
 
 Connection pooling is a way to reduce the cost of opening and closing connections by maintaining a “pool” of open connections that can be passed from database operation to database operation as needed.
 
@@ -23,6 +24,7 @@ To achieve this you can make use of connection options, while adding connector. 
   <Thumbnail src="/img/connecting-datasource/concepts/connection_pooling.png" alt="Connection pooling" width='75%' />
   <figcaption align = "center"><i>Connection pooling</i></figcaption>
 </figure>
+
 
 Pools accept all the same options as a [connection](https://github.com/mysqljs/mysql#connection-options). When creating a new connection, the options are simply passed to the connection constructor. In addition to those options pools accept a few extras:
 
