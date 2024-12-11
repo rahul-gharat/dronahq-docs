@@ -164,6 +164,21 @@ customization, and aggregation footers. For an in-depth understanding, you can r
 | Editable Columns for New Rows | Choose columns that will be editable when adding new rows to the table grid.                                                                                                     |
 | Custom Label                  | Lets you set a custom label for buttons or input fields.                                                                                                                         |
 
+### Properties 
+
+| Property                       | Description                                                                                                                                                                    |
+|--------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Dynamic Headers                | Toggle ON/OFF to enable dynamic adjustments to the table headers based on data or conditions.                                                                                 |
+| Background                     | Allows you to set a background color or style for the table header.                                                                                                           |
+| Text Alignment                 | Align the text in the table header (options: Left, Center, or Right).                                                                                                         |
+| Table Data                 | Section for configuring the appearance of the table's content rows.                                                                                                           |
+| Dynamic Text for No Data       | Customize the message displayed when the table contains no data (e.g., "No Data Present!").                                                                                   |
+| Dynamic Text While Loading Data| Set a custom message displayed while data is being loaded (e.g., "Working...").                                                                                                |
+| Hide Vertical Lines            | Toggle ON/OFF to hide the vertical grid lines within the table.                                                                                                                |
+| Row Background Colors      | Configure alternating background colors for table rows (odd and even).                                                                                                                        |
+| Theme                          | Choose a predefined theme for the table (e.g., Brand).                                                                                                                         |
+| Enable Custom Column Width     | Toggle ON/OFF to allow custom widths for columns.                                                                                                                              |
+| Custom Column Widths           | Specify custom widths for individual columns, represented as an array (e.g., `[220, 176, 221, 293, 140, 122, 101]`).                                                           |
 
 ### Display
 
