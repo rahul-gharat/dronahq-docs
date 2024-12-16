@@ -1,5 +1,54 @@
 [
   {
+    "timestamp": 1729900800000,
+    "tags": ["1.1.0","Cloud-Hosted"],
+    "heading": "",
+    "cards": [
+      {
+        "title": "Added",
+        "type": "added",
+        "points": [
+          "Added a toggle Download as file in Data-Query to automatically download a file or attachment got as response.",
+          "Added folder structuring for data queries to easily navigate and manage.",
+          "Added functionality to fetch parameters from connection string and set it in connection options before sending the request."
+        ]
+      },
+      {
+        "title": "Enhanced",
+        "type": "improved",
+        "points": [
+          "Enhanced the Connector Query/Library information for the user by including meta-data info with timeline.",
+          "Enhancement made with notification system for deleted controls.",
+          "Enhanced Sandbox DQ UI provided so the DataQuery bottom panel and bottom panel in actions can be opened simultaneously.",
+          "Enhanced the delete PDF template & template versions operation."
+        ]
+      },
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed an issue where the test connection in connectors was not showing the proper error message.",
+          "Fix sort manual tag.",
+          "Fixed an issue where DataQuery custom JS was triggering simultaneously without clicking test or save.",
+          "Fixed an issue where table name suggestions were missing while writing queries for tables loaded after clicking 'Load More' in the schema.",
+          "Fixes for multiple stacked notifications.",
+          "Fixed themes announcement will now be visible only once.",
+          "Fixed null content type is now handled on the export app.",
+          "Fix dropdown to change languages was not visible after uploading a language.",
+          "Fixed updated screen references when page_nav_url changes.",
+          "Bug Fix routing variables were not showing values properly.",
+          "Bug Fix the system was unable to auto-switch to raw and transformed.",
+          "Bug Fix controls in the attached menu and header had drag and resize disabled.",
+          "Fixes for the control undo notification issue where the same control could not be deleted again after an undo action.",
+          "Fixed DataQuery creating empty connector queries or libraries that were triggered or bound, showing as pending in connector logs.",
+          "Fixed multi-step authentication screen was not working as expected in the end-user portal.",
+          "Fixed export app JSON modal close button was not visible.",
+          "Fix added sync references for the header and menu attached."
+        ]
+      }
+    ]
+  },
+  {
     "timestamp": 1729209600000,
     "tags": ["Cloud-Hosted"],
     "heading": "",
