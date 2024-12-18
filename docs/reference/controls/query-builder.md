@@ -136,11 +136,84 @@ And here's an example of the Schema for a Product data use case:
     "type": "number"
   },
   {
-    "label": "Prod Quantity",
+    "label": "Product Quantity",
     "value": "Quantity"
-  }
+  },
+  {
+    "label":"Product Stock",
+    "value":"ProductInStock",
+    "type":"boolean"
+  },
+  {
+    "label":"Created", 
+    "value":"create", 
+    "type":"date",
+    "date_format": "MM/DD/YYYY",
+    "submit_format": "UTC"
+  },
+  {
+    "label":"Updated",
+    "value":"update", 
+    "type":"datetime",
+    "date_format": "DD/MM/YYYY",
+    "submit_format": "LOCAL"
+  },
+  {
+    "label":"Delivered",
+    "value":"DeleiveryTime", 
+    "type":"time",
+    "date_format": "TIMESTAMP",
+    "submit_format": "UTC"
+  } 
 ]
 ```
+Schema Explanation
+
+  The given schema is a structured representation of fields that describe product-related information. Each field in the schema contains a label (the display name) and a value (the key or identifier for the field). Depending on the field's nature, it may include additional metadata like type, date_format, submit_format, and enum options.
+  - **Label**
+    - This is the display name for the field.
+    - It is typically shown to user, to describe what the field it represents.
+  - **Value**
+    - This is the unique identifier for the field.
+    - Unlike the label, this is not typically displayed to end users.
+  - **type**
+    - This specifies the data format for the field.
+    - eg: string, number, boolean, date, datetime, time.
+  - **Enum**
+    - The enum key in a schema is used to define a list of predefined, fixed values that a field can accept. It acts as a constraint to restrict the input to only the allowed options.
+    - Ensures the value for the field is selected from a predefined list.
+    - Useful for any scenario where the input must be restricted to a specific set of choices.
+  
+  - **Note** : label and value are required keys, as they define the display name and unique identifier for the field.Whereas type and enum are optional keys
+
+  - **Date Types**
+
+    There are 3 valid types for date fields:
+    - date: Only the calendar date without time (e.g., 2024-06-17).
+    - datetime: Both date and time (e.g., 2024-06-17 14:00).
+    - time: Only the time in 24-hour format (HH:mm), e.g., 14:30.
+    - **Note**: "time" Time fields always follow the 24-hour format (HH:mm).
+
+  - **Date Formats**
+
+    In date, time, datetime types, we additionally require 2 more keys date_format and submit format.
+    The date_format can only have 4 types:
+    - ISO: Standard ISO 8601 format, e.g., 2024-06-17T14:00:00Z.
+    - European: Date in DD/MM/YYYY format.
+    - US: Date in MM/DD/YYYY format.
+    - Friendly: Month DD, YYYY User-friendly human-readable formats like "June 17, 2024".
+    - Timestamp: Represents UNIX timestamp in seconds or milliseconds.
+    - If the date_format is timestamp, the time will be converted to a UNIX timestamp for submission.
+    - **Note** :If no date_format is explicitly provided for a date_format key, it defaults to the ISO standard format YYYY-MM-DD. This ensures consistency and standardization across systems when no specific date format is specified.
+    
+  - **Submit Formats**
+
+    The submit_format determines how date/time data is sent or stored. It has only 2 options.
+    - UTC: Coordinated Universal Time, independent of the local timezone.
+    - LOCAL: Time data is submitted in the local system's timezone.
+    - For UTC format data provided will be considered in UTC TIMEZONE
+    - **Note** :If no submit_format is explicitly provided for a submit_format key, it defaults to the LOCAL format.
+
 
 Dynamic Operators
 
