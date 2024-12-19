@@ -49,11 +49,7 @@
 }
 ,{
   "timestamp": 1731456000000,
-<<<<<<< HEAD
-  "tags": ["1.1.0", "Cloud-Hosted"],
-=======
   "tags": ["Cloud-Hosted"],
->>>>>>> 11fdc486fb847241be389156f8ff6dc41f2c5c62
   "heading": "",
   "cards": [
     {
