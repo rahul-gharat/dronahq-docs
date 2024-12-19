@@ -12,14 +12,15 @@
         "Added a suggestion feature for showing suggestions for function parameters in the JavaScript code editors in the studio.",
         "Added a new Custom Library Import feature with conflict detection and recovery to show early errors if libraries conflict with studio functionality.",
         "Added a Docking feature for managing multiple panels and enhancing user experience.",
-        "Enhanced DataQuery to handle release and draft versions of the created data queries.",
         "Added a new feature named Dependency Tree, allowing users to visualize the formula reference tree of any data query."
       ]
     },
     {
       "title": "Enhanced",
       "type": "improved",
-      "points": []
+      "points": [
+        "Enhanced DataQuery to handle release and draft version of the created data queries. Now, editing a dataquery in your App will not affect DataQuery of the published version of the App."
+      ]
     },
     {
       "title": "Fixed",
