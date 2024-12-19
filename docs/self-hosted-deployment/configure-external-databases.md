@@ -106,7 +106,7 @@ To export data from MYSQL container, run the following command in DronaHQ instal
 
 ```shell
 sudo docker-compose exec -T mysqldb sh -c 'exec mysqldump -u <% user %> --password=<% password %> \
---databases dhq_audit_log db5x --add-drop-database --routines' > mysql-init.sql && sed -i 's/ DEFINER=[^ |\*]*//g' mysql-init.sql
+--databases dhq_audit_log db5x --add-drop-database --routines --triggers --events --single-transaction' > mysql-init.sql && sed -i 's/ DEFINER=[^ |\*]*//g' mysql-init.sql
 ```
 Replace variables encapsulated in `<% variable %>` with actual value. 
 
