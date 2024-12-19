@@ -1,6 +1,6 @@
 [{
   "timestamp": 1731456000000,
-  "tags": ["1.1.0", "Fix"],
+  "tags": ["Cloud-Hosted"],
   "heading": "",
   "cards": [
     {
@@ -22,7 +22,7 @@
 },
   {
     "timestamp": 1729900800000,
-    "tags": ["1.1.0","Cloud-Hosted"],
+    "tags": ["Cloud-Hosted"],
     "heading": "",
     "cards": [
       {
