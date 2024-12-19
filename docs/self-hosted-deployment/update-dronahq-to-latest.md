@@ -43,7 +43,7 @@ Above line will download an update file with name `update.sql` in your working d
 Run following command to apply updates on  containerized database.
 
 ```shell
-sudo docker exec -i dronahq-self-hosted-mysqldb /usr/bin/mysql -u root --password=<% root password %> <%db name%> < update.sql
+sudo docker exec -i dronahq-self-hosted-mysqldb /usr/bin/mysql -u root --password=<% root password %> <%db name%> --comments < update.sql
 ```
 ##### b. Apply updates on external database
 
