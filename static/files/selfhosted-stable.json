@@ -1,4 +1,75 @@
 [ {
+  "timestamp": 1734393600000,
+  "tags": ["Self-Hosted", "3.4.3-stable"],
+  "heading": "Version 3.4.3",
+  "cards": [
+    {
+      "title": "Added",
+      "type": "added",
+      "points": [
+        "Added health check for Git Sync and SMTP.",
+        "Added icons in Actions and Controls.",
+        "Added cache busting for File Storage.",
+        "Added cache busting for DHQ Database.",
+        "Added fix for handling forward dependency not getting triggered in case of widget controls."
+      ]
+    },
+    {
+      "title": "Enhancements",
+      "type": "improved",
+      "points": [
+        "Minor enhancement in CSV column naming."
+      ]
+    },
+    {
+      "title": "Fixed",
+      "type": "fixed",
+      "points": [
+        "Fixed bug for Git Sync app creation with duplicate names and error message.",
+        "Fixed issue where the default message file was not included for console.",
+        "Fixed table grid squishing when data is fetched while the screen is not active.",
+        "Fixed Multistep connector IDs not updating after importing the app.",
+        "Fixed OTA updates for controls and functions in the airgap module."
+      ]
+    }
+  ]
+}
+,{
+  "timestamp": 1733184000000,
+  "tags": ["Self-Hosted", "3.4.1-stable"],
+  "heading": "Version 3.4.1-stable",
+  "cards": [
+    {
+      "title": "Added",
+      "type": "added",
+      "points": [
+        "Added JWT library for automation."
+      ]
+    },
+    {
+      "title": "Enhancements",
+      "type": "improved",
+      "points": [
+        "Enhanced logic for conditional visibility for the Add-to-Git button.",
+        "Updated icons for action flow actions."
+      ]
+    },
+    {
+      "title": "Fixed",
+      "type": "fixed",
+      "points": [
+        "Fixed sticky header issue that prevented right-side content from rendering on an attached screen canvas.",
+        "Fixed endpoints visible for Managed Storage, AWS S3 in Data Query.",
+        "Fixed issue where controls were selectable to move outside of the widget in the canvas when dropped.",
+        "Fixed autogen form submission issue that caused stack overflow when submitting blank forms.",
+        "Fixed cross-account access to DynamoDB using ARN.",
+        "Fixed logging and error issues.",
+        "Fixed UI issue in Manage User where role tag was overlapping the user group tag."
+      ]
+    }
+  ]
+}
+,{
   "timestamp": 1731628800000,
   "tags": ["Self-Hosted", "3.4.0-stable"],
   "heading": "Version 3.4.0-stable",

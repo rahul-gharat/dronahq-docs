@@ -9,7 +9,7 @@
       "points": [
         "Added a new feature to create REST API-like connector queries and libraries directly from action flows.",
         "Added an option to switch between advanced and free-flow editor types on the header screen.",
-        "Added a suggestion feature for showing suggestions for function parameters in the JavaScript code editors in the studio.",
+        "Added suggestion for function parameters in the JS code editor.",
         "Added a new Custom Library Import feature with conflict detection and recovery to show early errors if libraries conflict with studio functionality.",
         "Added a Docking feature for managing multiple panels and enhancing user experience.",
         "Added a new feature named Dependency Tree, allowing users to visualize the formula reference tree of any data query."
@@ -19,7 +19,11 @@
       "title": "Enhanced",
       "type": "improved",
       "points": [
-        "Enhanced DataQuery to handle release and draft version of the created data queries. Now, editing a dataquery in your App will not affect DataQuery of the published version of the App."
+        "Enhanced DataQuery to handle release and draft version of the created data queries. Now, editing a dataquery in your App will not affect DataQuery of the published version of the App.",
+        "Enhanced Jitsu tracking for control property changes, app variables, PWA status, SSO, and external logging.",
+        "Enhanced SSH Key Management to allow passphrase input for importing SSH keys.",
+        "Enhanced the Table UI for the response/output window in JS editors.",
+        "Enhanced column formatting options for Date and DateTime picker types to allow empty values or 'No date' options."
       ]
     },
     {

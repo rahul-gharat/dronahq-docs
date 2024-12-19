@@ -1,4 +1,79 @@
-[ {
+[{
+  "timestamp": 1731628800000,
+  "tags": ["Self-Hosted", "3.4.0-edge"],
+  "heading": "Version 3.4.0-edge",
+  "cards": [
+    {
+      "title": "Added",
+      "type": "added",
+      "points": [
+        "Enhanced Git Sync module authentication - authentication method changed to personal access token (PAT) and UI enhancements.",
+        "Added airgap compatibility for DronaHQ Self Hosted."
+      ]
+    },
+    {
+      "title": "Fixed",
+      "type": "fixed",
+      "points": [
+        "Fixed an issue with File Storage connector where API list was broken in DataQuery.",
+        "Fixed an issue where Multistep auth screen was not working as expected in the end-user portal.",
+        "Fixed refresh token flow for Salesforce and fixed minor library issues.",
+        "Fixed issues with Classic headers for supporting controls inside it.",
+        "Fixed an issue in IndexDB for clearing unwanted records.",
+        "Fixed an issue with import/export app and added support for custom functions."
+      ]
+    }
+  ]
+}
+,
+ {
+  "timestamp": 1734048000000,
+  "tags": ["Self-Hosted", "3.3.2-edge"],
+  "heading": "Version 3.3.2-edge",
+  "cards": [
+    {
+      "title": "Added",
+      "type": "added",
+      "points": [
+        "Added SSH tunneling for databases.",
+        "Added SSH Key Management."
+      ]
+    },
+    {
+      "title": "Enhancements",
+      "type": "improved",
+      "points": [
+        "Enhanced IndexDB usage for deleting items from cache when category is deleted.",
+        "Enhanced error handling in Salesforce connector when dynamic data is missing.",
+        "Enhanced API response in AWS-import where getUserCredentials was returning a 500 code for data not found.",
+        "Enhanced default messages for localization in HTML."
+      ]
+    },
+    {
+      "title": "Fixed",
+      "type": "fixed",
+      "points": [
+        "Fixed issues with widget properties to improve experience and performance.",
+        "Fixed an issue with unexpected resizing of controls on canvas while updating properties.",
+        "Fixed an issue with widget where it was not updating on builder due to nested scope.",
+        "Fixed issue in Git folder sync.",
+        "Fixed manual Git sync - push and pull action.",
+        "Fixed issue with Addon sync where tasks were not resetting.",
+        "Fixed output of selected tab not visible on tabbed container.",
+        "Fixed an issue with app export panel opening."
+      ]
+    },
+    {
+      "title": "Removed",
+      "type": "removed",
+      "points": [
+        "Removed 'Hide whitelist IP' option from connector configuration."
+      ]
+    }
+  ]
+}
+,
+{
     "timestamp": 1730937600000,
     "tags": ["Self-Hosted", "3.3.1-edge"],
     "heading": "Version 3.3.1-edge",
