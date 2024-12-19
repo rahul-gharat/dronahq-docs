@@ -1,6 +1,55 @@
 [{
+  "timestamp": 1734480000000,
+  "tags": ["Cloud-Hosted"],
+  "heading": "",
+  "cards": [
+    {
+      "title": "Added",
+      "type": "added",
+      "points": [
+        "Added a new feature to create REST API-like connector queries and libraries directly from action flows.",
+        "Added an option to switch between advanced and free-flow editor types on the header screen.",
+        "Added a suggestion feature for showing suggestions for function parameters in the JavaScript code editors in the studio.",
+        "Added a new Custom Library Import feature with conflict detection and recovery to show early errors if libraries conflict with studio functionality.",
+        "Added a Docking feature for managing multiple panels and enhancing user experience.",
+        "Enhanced DataQuery to handle release and draft versions of the created data queries.",
+        "Added a new feature named Dependency Tree, allowing users to visualize the formula reference tree of any data query."
+      ]
+    },
+    {
+      "title": "Enhanced",
+      "type": "improved",
+      "points": []
+    },
+    {
+      "title": "Fixed",
+      "type": "fixed",
+      "points": [
+        "Fixed an issue where table grid data was squeezed when the user navigates back from a child micro-app to a parent micro-app.",
+        "Fixed an issue where DHQ DB queries were not exported properly and imported as blank.",
+        "Fixed an issue where Multistep connector IDs were not updated after importing the app.",
+        "Fixed an issue where toggling the classic header caused live apps not to load when there were controls present in the header.",
+        "Fixed an issue where the screen view was not refreshing after an attached menu was cleared.",
+        "Fixed an issue where controls got smaller in the canvas after widget updates.",
+        "Fixed an issue where deleting any data query did not update the cache.",
+        "Fixed an issue where custom functions were not exported/imported with the app.",
+        "Fixed an issue where the Add SSH key sidebar didn’t reset after a successful key addition or navigation.",
+        "Fixed an issue where the Multistep Auth connector didn’t refresh the SSO token.",
+        "Fixed an issue where autogenerating a form using 'Generate query and add action flow on submit. SQL only' crashed when submitting without feeding fields.",
+        "Fixed an issue where the DQ-Filter reset was not working if the data query was inside folders.",
+        "Fixed an issue where copying data-binding output for objects/arrays was not working.",
+        "Fixed UI and filter-related issues in the Manage Users section.",
+        "Fixed an issue where custom fonts in theme configuration were not working.",
+        "Fixed an issue where publishing a PDF template was possible without adding release notes.",
+        "Fixed issues where adding a folder caused an empty screen in data queries, environments panel was not scrollable, and screen routing failed in preview via URL.",
+        "Fixed an issue where the variable list was not scrollable while dragging queries up the list."
+      ]
+    }
+  ]
+}
+,{
   "timestamp": 1731456000000,
-  "tags": ["1.1.0", "Fix"],
+  "tags": ["1.1.0", "Cloud-Hosted"],
   "heading": "",
   "cards": [
     {
