@@ -1,4 +1,25 @@
-[
+[{
+  "timestamp": 1731456000000,
+  "tags": ["1.1.0", "Fix"],
+  "heading": "",
+  "cards": [
+    {
+      "title": "Fixed",
+      "type": "fixed",
+      "points": [
+        "Fixed an issue where MySQL schema was not loading.",
+        "Fixed multi-step authentication issue in Actionflow where, if the connector returned an error, the success flow was executed instead of the error flow.",
+        "Fixed an issue where widget controls were selectable when clicked in the left sidebar instead of being dropped onto the canvas.",
+        "Fixed an issue where Connector Query dynamic variables' test values were not set on initial rendering.",
+        "Fixed an issue where offline submission was not working.",
+        "Fixed issues in Data Query where filters were not working and, after rollback, Data Query was not visible when placed inside folders.",
+        "Fixed an issue where Connector Query on raw data error response did not display the error message in full-height UI.",
+        "Fixed an issue where duplicating a Data Query was throwing an error.",
+        "Fixed an issue where the 'Add Account' option for AWS was not visible in the 'Add Connector' section."
+      ]
+    }
+  ]
+},
   {
     "timestamp": 1729900800000,
     "tags": ["1.1.0","Cloud-Hosted"],
