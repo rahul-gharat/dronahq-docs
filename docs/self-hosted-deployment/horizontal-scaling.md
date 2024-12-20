@@ -107,7 +107,7 @@ To scale DronaHQ Self-Hosted, you'll need to set up a managed remote database fo
    ```
    cd ~/dronahq/self-hosted
 
-   sudo docker-compose restart webapp
+   sudo docker compose restart webapp
    ```
 
 7. Scaling DronaHQ Self-Hosted

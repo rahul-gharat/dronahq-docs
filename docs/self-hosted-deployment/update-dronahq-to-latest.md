@@ -88,7 +88,7 @@ Restart is mandatory for new updates to take effect.
 
 Restart DronaHQ docker container with following command
 ```
-sudo docker-compose up -d webapp
+sudo docker compose up -d webapp
 ```
 
 ##### b. Restart Kubernetes installation

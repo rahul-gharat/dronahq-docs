@@ -25,9 +25,9 @@ against potential threats.
 3. Restart the web server to apply the changes.
 
    ```bash
-   sudo docker-compose stop webapp webserver
-   sudo docker-compose rm webapp webserver
-   sudo docker-compose up -d webapp webserver
+   sudo docker compose stop webapp webserver
+   sudo docker compose rm webapp webserver
+   sudo docker compose up -d webapp webserver
    ```
 
 ## Configuring SSL for Docker-Based Installation 
@@ -49,14 +49,14 @@ certificate:
 2. Restart the web server to apply the updated configuration.
 
    ```bash
-   sudo docker-compose restart webserver
+   sudo docker compose restart webserver
    ```
 
 3. Generate the SSL certificate using Certbot with the provided Docker Compose
    configuration. Replace `<your_email_id>` with your email address and `<your_custom_domain>` with your custom domain.
 
    ```bash
-   sudo docker-compose -f certbot-docker-compose.yml run --rm certbot certonly --webroot --webroot-path /var/www/certbot/ --force-renewal --email <your_email_id> -d <your_custom_domain> --agree-tos --non-interactive
+   sudo docker compose -f certbot-docker-compose.yml run --rm certbot certonly --webroot --webroot-path /var/www/certbot/ --force-renewal --email <your_email_id> -d <your_custom_domain> --agree-tos --non-interactive
    ```
 
 4. Copy the default configuration file `nginx-ssl-default.conf` from the
@@ -78,9 +78,9 @@ certificate:
 6. Restart Services: Stop and remove the web application and web server containers, then bring them back up to apply
    the SSL configuration.
    ```bash
-   sudo docker-compose stop webapp webserver
-   sudo docker-compose rm webapp webserver
-   sudo docker-compose up -d webapp webserver
+   sudo docker compose stop webapp webserver
+   sudo docker compose rm webapp webserver
+   sudo docker compose up -d webapp webserver
    ```
 
 ### Configuring Custom Certificates:
@@ -107,9 +107,9 @@ certificate:
    ```
 4. Restart the web server to apply the custom certificate configuration.
    ```bash
-   sudo docker-compose stop webapp webserver
-   sudo docker-compose rm webapp webserver
-   sudo docker-compose up -d webapp webserver
+   sudo docker compose stop webapp webserver
+   sudo docker compose rm webapp webserver
+   sudo docker compose up -d webapp webserver
    ```
 
 
