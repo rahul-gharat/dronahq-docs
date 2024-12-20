@@ -385,7 +385,7 @@ DronaHQ runs following script while initializing container to create application
             db: "admin"
         }, {
             role: 'readWrite',
-            db: 'db5x_studio'
+            db: '<% database name %>'
         }]
     })
 
