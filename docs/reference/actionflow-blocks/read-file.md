@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-title: Native Action - Read File
+title: Read File
 ---
 
 import Thumbnail from '@site/src/components/Thumbnail';

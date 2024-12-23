@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-title: Download File
+title: Download Files
 ---
 import Thumbnail from '@site/src/components/Thumbnail';
 

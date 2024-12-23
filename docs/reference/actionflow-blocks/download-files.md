@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-title: Native Action - Download File
+title: Download a File
 ---
 
 import Thumbnail from '@site/src/components/Thumbnail';

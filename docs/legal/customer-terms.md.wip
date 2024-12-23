@@ -1,0 +1,279 @@
+---
+sidebar_position: 2
+title: Customer Terms of Service
+---
+
+These Customer Terms of Service ("Customer Terms") outline your rights and obligations when using DronaHQ's developer tools and platform ("Services"). These terms also apply if you purchase additional expert services provided by DronaHQ to assist in implementing, accelerating, or optimizing your use of the Services ("Expert Services"). Please review these terms carefully. If you are a Customer, these Customer Terms govern your use of the Services and any associated Expert Services. For individual users invited by a Customer, the User Terms of Service will apply.  
+
+
+
+##  The Contract  
+
+#### Formation of a Binding Contract  
+These Customer Terms, along with any applicable Order Form(s), constitute a legally binding agreement ("Contract") between the Customer and DronaHQ. If specific terms apply (e.g., government-specific provisions), those are incorporated by reference. "We," "our," and "us" refer to the DronaHQ entity specified in the section "Which DronaHQ Entity is Customer Contracting With?"  
+
+#### Agreement on Behalf of Customer  
+By purchasing subscriptions, inviting users, using the Services, or continuing usage after updates to these terms, you acknowledge and agree to the Contract on behalf of your organization or entity ("Customer"). Ensure you possess the authority to represent the Customer before proceeding.  
+
+---
+
+## Customer Roles and Configurations  
+
+#### Who is a "Customer"?  
+The term "Customer" refers to the organization or individual setting up the Services. For accounts registered using a corporate email domain, the associated organization will be considered the Customer. The Customer retains rights to manage configurations, roles, and permissions for the Services.  
+
+#### Who is an "Authorized User"?  
+An "Authorized User" is an individual (employee, contractor, or client) invited to use the Services. Depending on the subscription, Authorized Users may have varying levels of access—ranging from building workflows and applications ("Custom Apps") to accessing these apps as end users.  
+
+#### Building and Using Custom Apps  
+Custom Apps can be created by arranging DronaHQ's components (e.g., tables, charts, forms) via a user-friendly interface. These apps integrate with various databases or data resources ("Databases"), allowing Authorized Users to execute queries, workflows, or business logic seamlessly.  
+
+#### What Constitutes "Customer Data"?  
+"Customer Data" includes any information submitted by Authorized Users within Custom Apps. The Customer maintains control over this data, including permissions, retention, and access settings. DronaHQ processes Customer Data strictly per Customer instructions. Customers are responsible for informing Authorized Users of relevant policies and ensuring compliance with applicable data protection laws.  
+
+---
+
+## Subscriptions and Ordering  
+
+#### Subscription Procurement  
+Subscriptions grant Customers and Authorized Users access to the Services for building and using Custom Apps. Subscriptions are tied to individual users and can be purchased through the Services interface or via an Order Form. Subscriptions commence upon activation and are valid for the term specified in the Order Form or Subscription Page.  
+
+#### Adding Users  
+Additional users can be added during an active subscription term, with all subscriptions terminating simultaneously unless stated otherwise.  
+
+#### Beta Products  
+DronaHQ occasionally offers beta features ("Beta Products") for testing purposes. Beta Products are provided "as is," without warranties or commitments applicable to other Services. Customer feedback on Beta Products is encouraged to refine them for broader release.  
+
+---
+
+## Feedback and Third-Party Integrations  
+
+#### Feedback Contributions  
+By providing feedback or suggestions regarding Services, you grant DronaHQ a perpetual, transferable, royalty-free license to use them for any purpose without obligation.  
+
+#### Integrations with Third-Party Tools  
+DronaHQ allows integration with external databases, APIs, and tools ("Non-DronaHQ Products"). These integrations are optional, and Customers must assess their compatibility and risks. DronaHQ is not liable for data processing performed by third-party providers.  
+
+---
+
+## Privacy and Expert Services  
+
+#### Privacy Policy  
+Refer to DronaHQ's Privacy Policy for details on data collection, usage, and retention.  
+
+#### Expert Services  
+Expert Services may be available depending on your subscription plan. These services are subject to additional terms outlined in the DronaHQ Expert Services Addendum, incorporated herein by reference.  
+
+
+## Responsibilities of Customers
+
+#### Use of the Services  
+The Customer, along with its Authorized Users, must adhere to the terms of the Contract and the Acceptable Use Policy at all times. While we may occasionally monitor conduct for compliance purposes, we are not obligated to do so. The Customer is solely responsible for ensuring that:
+
+1. The configuration of the Services and Custom Apps—including data queries, collection, input, and processing—is both lawful and suitable for the Customer’s specific needs.
+2. All actions or decisions taken by the Customer based on the Services or Custom Apps, including any results, reports, or recommendations generated, comply with applicable laws.
+3. All Authorized Users meet the statutory legal age required in their respective jurisdictions.
+
+#### Responsibilities to and for Authorized Users  
+The Customer is responsible for:
+
+- Informing Authorized Users about relevant Customer policies and practices concerning the use of the Services and Custom Apps, including any configurations that may impact the collection, input, or processing of Customer Data.
+- Ensuring that any submission, transfer, or processing of Customer Data complies with applicable laws and regulations.
+
+#### Our Removal Rights  
+If a violation of the Contract occurs that could be resolved by the Customer’s removal of certain Customer Data, Custom Apps, or by reconfiguring the Services (or disabling an integrated third-party tool), we will typically ask the Customer to address the issue directly. However, if the Customer fails to take appropriate action or if we believe there is a credible risk to our platform, other users, or third parties, we may intervene and take necessary action at our discretion.
+
+---
+
+## Payment obligation
+
+#### Service Fees  
+For annual subscription plans and specific pre-approved monthly plans (collectively, “Prepaid Plans”), service fees must be paid in advance before the subscription begins, including any renewals. Fees for these plans are detailed on the Subscription Page, based on the number of Authorized Users specified at the time of purchase.
+
+For monthly subscription plans not classified as Prepaid Plans, fees are determined by:
+
+1. The Customer’s actual usage during the monthly billing period.
+2. Our current rates for Authorized Users, as outlined in the pricing details.
+
+At the end of each monthly billing cycle, an invoice will be generated, and payment will be due immediately.
+
+Payment obligations for Services are non-cancellable, and except as explicitly stated in the Contract, fees are non-refundable. All payments must be made using a valid credit card. By submitting payment details, the Customer authorizes us and relevant financial institutions to process charges for all applicable fees, including renewals and any usage overages.
+
+#### Subscription Overages  
+If the Customer exceeds usage limits specified in their plan, including the number of Authorized Users or other metrics detailed on the Subscription Page, the Customer agrees to pay the additional fees for the excess use.
+
+#### Expert Services  
+Fees for Expert Services, if applicable, are outlined in the Order Form. Unless otherwise stated, payment for Expert Services must be made in full within 30 days of the invoice date. These fees are non-cancellable and non-refundable, except as expressly stated in the Contract.
+
+#### Taxes  
+All fees are exclusive of taxes, duties, or similar charges. The Customer is responsible for paying any applicable taxes, except for taxes based on our net income. If withholding taxes are required by law, the Customer agrees to reimburse us for such amounts.
+
+#### Late Payments  
+If payment is not received by the due date, we reserve the right to take the following actions:
+
+1. Suspend or terminate access to the Services and/or Expert Services after notifying the Customer (via email or other means).
+2. Downgrade the subscription plan to a free tier upon notice to the Customer.
+
+#### Credits  
+Credits applied to the Customer’s account (e.g., promotional offers) will expire upon the termination of the Contract. These credits hold no cash value and are neither transferable nor refundable.
+
+---
+
+## our Responsibilities
+
+#### Providing the Services  
+We are committed to ensuring the Services meet expectations. Specifically, we will:
+
+1. Provide access to the Services for the Customer and Authorized Users as described in the Contract.
+2. Process Customer Data only per the Customer’s instructions. This includes use through Authorized Users and processing necessary to deliver the Services.
+
+We guarantee that:
+
+- The Services will function materially as described in our Documentation.
+- We will not significantly reduce the functionality of the Services during an active subscription term.
+
+For any breach of these commitments, the remedies available to the Customer are outlined in the "Termination for Cause" and "Effect of Termination" sections.
+
+#### Service Availability  
+For cloud-based Services, we will strive to maintain availability 24/7, excluding planned downtime. Planned maintenance will typically be brief, and advance notice will be provided for any expected downtime exceeding five minutes.
+
+#### Protecting Customer Data  
+The security of Customer Data is paramount. We will implement administrative, physical, and technical safeguards to protect against unauthorized access, modification, or disclosure. Before sharing data with third-party service providers, we will ensure they maintain robust confidentiality and security practices. Additional protections and agreements, such as the Data Processing Addendum (DPA) and Standard Contractual Clauses for the European Economic Area, are incorporated into this Contract by reference.
+
+The Customer is responsible for ensuring the security, backup, and protection of Customer Data under its control or in its external databases.
+
+#### Third-Party Involvement  
+We may involve affiliates, contractors, or third parties (our “Extended Family”) to fulfill obligations under the Contract. We take responsibility for ensuring that these parties comply with our commitments under the Contract.
+
+Here is a revised version of your provided text tailored for DronaHQ with the correct information:
+
+---
+
+## Ownership and Proprietry Rights
+
+#### What's Yours is Yours  
+As between us (DronaHQ) on the one hand, and Customer and its Authorized Users on the other, Customer will own all Customer Data and Custom Apps, excluding the components of the Services. Subject to the terms and conditions of the Contract, Customer (for itself and its Users) grants DronaHQ a worldwide, non-exclusive, limited term license to access, use, process, copy, distribute, perform, export, and display Customer Data, Custom Apps, and any Non-DronaHQ Products created or deployed by or for Customer, only as reasonably necessary (a) to provide, maintain, and improve the Services; (b) to prevent or address service, security, support, or technical issues; (c) as required by law, to prevent fraud, or as permitted by the Data Request Policy; and (d) as expressly permitted in writing by Customer.
+
+#### And What's Ours is Ours  
+DronaHQ owns and will continue to own our Services and all components thereof, including all related intellectual property rights. We may make these components available on-premises or for download, for example, via app stores, license keys, or other channels, as part of the Services. We grant to Customer a non-sublicensable, non-transferable, non-exclusive, limited license for Customer and its Authorized Users to use the object code version of these components, but solely as necessary to use the Services and in accordance with the Contract and the User Terms. All of our rights not expressly granted by this license are hereby retained.
+
+#### Improvements to the Service  
+DronaHQ is continuously striving to provide a better product and experience for our customers. To do that, we may collect and analyze information relating to the use, configuration, and performance of the Services (collectively "Usage Information") for purposes of improving the Services. Any improvements we derive from Usage Information may benefit Customer, as well as other customers generally, given the nature of the Services, whether it be a shared platform, multi-tenant environment, and/or unified code base. In no event will our use of Usage Information result in the identification of Customer to any third party (e.g., other customers) or the disclosure of Customer Data.
+
+---
+
+## Terms and Conditions
+
+#### Contract Term  
+The Contract remains effective until all subscriptions ordered under the Contract have expired or been terminated, or the Contract itself terminates. Termination of the Contract will terminate all subscriptions and all Order Forms.
+
+#### Auto-Renewal  
+Unless an Order Form states otherwise, (a) all subscriptions automatically renew (without the need to go through the Services interface "check-out" or execute a renewal Order Form) for additional periods equal to one (1) year or the preceding term, whichever is shorter; and (b) the per-unit pricing during any automatic renewal term will remain the same as it was during the immediately prior term. To opt out of automatic renewal of Customer's paid Services subscription plan, Customer must go to its Billing settings and downgrade to a non-paid subscription plan. DronaHQ may give Customer notice of non-renewal at least thirty (30) days before the end of a subscription term.
+
+#### Termination for Cause  
+Either DronaHQ or Customer may terminate the Contract on notice to the other party if the other party materially breaches the Contract and such breach is not cured within thirty (30) days after the non-breaching party provides notice of the breach. Customer is responsible for its Authorized Users, including for any breaches of this Contract caused by its Users. DronaHQ may terminate the Contract immediately on notice to Customer if we reasonably believe that the Services are being used by Customer or its Users in violation of applicable law.
+
+#### Termination Without Cause  
+Customer may terminate its free subscriptions immediately without cause. DronaHQ may also terminate Customer's free subscriptions without cause, but we will provide Customer with thirty (30) days prior written notice.
+
+#### Effect of Termination  
+Upon any termination for cause by Customer, DronaHQ will refund Customer any prepaid fees covering the remainder of the term of all subscriptions after the effective date of termination. Upon any termination for cause by DronaHQ, Customer will pay any unpaid fees covering the remainder of the term of those subscriptions after the effective date of termination. In no event will any termination relieve Customer of the obligation to pay any fees payable to DronaHQ for the period prior to the effective date of termination.
+
+#### Data Portability and Deletion  
+During the term of a subscription, Customer will be permitted to export Customer Data via the cloud-based Services; provided, that Customer acknowledges and agrees that such ability to export may be limited by the applicable Services plan in effect, Customer's particular configuration of Custom Apps, and the data retention settings enabled by Customer. Customer further understands that there are currently no features or functionality made available by DronaHQ that enables or assists the export, transfer, translation, or transition of Custom Apps off of the Services. Following the Term, DronaHQ shall have no obligation to maintain or provide any Customer Data or Custom Apps, and upon Customer's deletion of its account, DronaHQ shall, unless legally prohibited, delete all Customer Data and Custom Apps in its systems or otherwise in its possession or under its control in accordance with the practices set forth on its Security Practices Page.
+
+---
+
+## Representation, Declarations and Warranties
+
+#### REPRESENTATIONS AND WARRANTIES
+The Customer represents and warrants that it has validly entered into this Contract and possesses the legal authority to do so. The Customer further represents and warrants responsibility for the conduct of its Authorized Users and their adherence to the terms of this Contract and the User Terms. EXCEPT AS EXPRESSLY PROVIDED HEREIN, THE SERVICES, INCLUDING ALL RELATED COMPONENTS AND INFORMATION, ARE PROVIDED ON AN "AS IS" AND "AS AVAILABLE" BASIS WITHOUT WARRANTIES OF ANY KIND. DRONAHQ DISCLAIMS ALL WARRANTIES, WHETHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO IMPLIED WARRANTIES OF MERCHANTABILITY, TITLE, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT. CUSTOMER UNDERSTANDS THAT SPECIFIC CONFIGURATIONS AND INTEGRATIONS OF ITS CUSTOM APPS WITH THE SERVICES MAY AFFECT LATENCY, AVAILABILITY, PERFORMANCE, AND OPTIMIZATION. DRONAHQ DOES NOT GUARANTEE THAT THE SERVICES WILL BE UNINTERRUPTED, TIMELY, SECURE, OR ERROR-FREE. DRONAHQ DISCLAIMS ALL LIABILITY AND INDEMNIFICATION OBLIGATIONS FOR DAMAGES ARISING FROM ANY BETA SERVICES. ALL BETA SERVICES ARE PROVIDED "AS-IS" WITHOUT WARRANTIES OR GUARANTEES REGARDING PERFORMANCE, SPEED, FUNCTIONALITY, OR AVAILABILITY.
+
+---
+
+## LIMITATION OF LIABILITY
+EXCEPT AS OTHERWISE SPECIFIED UNDER INDEMNIFICATION OBLIGATIONS, IN NO EVENT SHALL THE AGGREGATE LIABILITY OF EITHER PARTY EXCEED THE AMOUNT PAID BY THE CUSTOMER IN THE TWELVE (12) MONTHS PRIOR TO THE INCIDENT GIVING RISE TO LIABILITY. THIS LIMITATION DOES NOT AFFECT THE CUSTOMER'S PAYMENT OBLIGATIONS UNDER THE "PAYMENT TERMS" SECTION. NEITHER PARTY SHALL BE LIABLE FOR INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, INCLUDING BUT NOT LIMITED TO LOST PROFITS OR REVENUE, ARISING FROM OR RELATING TO THE CONTRACT OR SERVICES. THIS DISCLAIMER APPLIES REGARDLESS OF LEGAL THEORY AND WHETHER THE PARTY WAS ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+
+---
+
+## INDEMNIFICATION
+
+#### DronaHQ's Indemnification of the Customer
+DronaHQ will defend the Customer against third-party claims asserting that the core Services infringe upon intellectual property rights, indemnifying the Customer for reasonable attorney's fees, damages, and costs awarded through litigation or settlements approved by DronaHQ. However, DronaHQ shall not be liable for claims arising from:
+1. Customer Data, Custom Apps, or third-party integrations.
+2. Modifications to the Services not performed by DronaHQ.
+
+The Customer must promptly notify DronaHQ of any claims and grant DronaHQ the right to assume the defense. The Customer must also cooperate with reasonable requests to assist the defense.
+
+#### Customer's Indemnification of DronaHQ
+The Customer agrees to defend DronaHQ and its affiliates against claims arising from:
+1. The use of Customer Data, Custom Apps, or third-party integrations infringing intellectual property rights.
+2. Violations of applicable laws caused by Custom Apps.
+
+The Customer will indemnify DronaHQ for legal fees, damages, and costs awarded or agreed upon in settlement. DronaHQ must promptly notify the Customer of any claims and allow the Customer to assume the defense.
+
+#### Limitations on Indemnification
+Both parties may choose their counsel if they bear the costs. Settlements requiring admissions or failing to release the indemnified party must be approved by the affected party.
+
+---
+
+## CONFIDENTIALITY
+
+#### Confidential Information
+Each party may disclose "Confidential Information" that should reasonably be understood as confidential, including business, technical, and marketing information. Customer Data and Custom Apps are the Customer's Confidential Information. Confidential Information excludes information that is public, already known, obtained lawfully from a third party, or independently developed.
+
+#### Protection of Confidential Information
+The Receiving Party must use reasonable measures to protect Confidential Information and restrict access to those who need it to perform under the Contract. Confidential Information may be shared with legal or financial advisors if bound by equivalent confidentiality obligations.
+
+#### Compelled Disclosure
+The Receiving Party may access or disclose the Disclosing Party's Confidential Information if required by law, provided that the Receiving Party gives prior notice to the Disclosing Party (to the extent legally permitted) and offers reasonable assistance, at the Disclosing Party's expense, should the Disclosing Party wish to challenge the access or disclosure. For more details, refer to the Data Request Policy, which outlines procedures for handling requests to disclose Customer Data. If legal obligations compel the Receiving Party to access or disclose the Disclosing Party's Confidential Information, the Disclosing Party must reimburse the Receiving Party for reasonable costs incurred in compiling and providing access to the information, as well as for any support provided to secure a protective order or ensure confidential treatment of the disclosed information.
+
+---
+
+## SURVIVAL
+
+The sections titled "Feedback is Welcome," "DronaHQ as a Platform," "Our Removal Rights," "Conditions of Use," "Payment Terms," "Credits," "The DronaHQ Ecosystem," "Ownership of Customer Data," "Ownership of DronaHQ Services," "Effect of Termination," "Data Portability and Deletion," "Representations; Disclaimer of Warranties," "Limitation of Liability," "Our Indemnification of Customer," "Customer's Indemnification of Us," "Limitations on Indemnifications," "Confidentiality," and "Survival," along with all provisions under the general heading "General Provisions," will remain effective even after the termination or expiration of the Contract.
+
+## GENERAL PROVISIONS 
+
+#### Publicity  
+The Customer grants DronaHQ the right to use the Customer's company name and logo for marketing or promotional purposes on our website and in other public or private communications with existing or potential customers. This is subject to the Customer's standard trademark usage guidelines, provided to us periodically. If the Customer prefers not to be listed as a reference, they may notify us by emailing support@dronahq.com, and we will respect their request.
+
+#### Force Majeure  
+Neither DronaHQ nor the Customer will be held liable for any failure or delay in performing obligations under the Contract due to events beyond reasonable control. These events include, but are not limited to, denial-of-service attacks, failures by third-party hosting or utility providers, strikes, shortages, riots, fires, natural disasters, war, terrorism, or governmental actions.
+
+#### Relationship of the Parties; No Third-Party Beneficiaries  
+The relationship between DronaHQ and the Customer is that of independent contractors. This Contract does not establish a partnership, franchise, joint venture, agency, fiduciary, or employment relationship between the parties. Furthermore, the Contract does not grant rights or benefits to any third parties.
+
+#### Email Notices  
+Unless otherwise stated, all notices under this Contract will be sent via email. DronaHQ may choose to provide notifications directly through the platform (e.g., DronaHQ dashboard).  
+- Notices to DronaHQ must be sent to support@dronahq.com, with legal notices (e.g., termination or indemnifiable claims) directed to legal@dronahq.com.  
+- Notices are deemed effective the day after being sent via email or on the same day if delivered through the platform.
+
+### Modifications  
+DronaHQ reserves the right to amend these terms or other components of the Contract (excluding Order Forms) as the business evolves. Any material changes will be communicated with reasonable notice, either via email or platform notifications. The revised terms will take effect on the specified date. Continued use of the platform after the effective date signifies acceptance of the changes.
+
+#### Waiver  
+A delay or failure by either party to exercise any rights under the Contract does not constitute a waiver of those rights. Waivers are only effective if documented in writing and signed by an authorized representative.
+
+#### Severability  
+If any provision of the Contract is deemed unlawful or unenforceable, it will be modified to fulfill its original intent within the legal limits. The remainder of the Contract will continue to be valid and enforceable.
+
+#### Assignment  
+Neither party may transfer its rights or obligations under this Contract without prior written consent, except in cases of corporate mergers, acquisitions, reorganizations, or sales of substantial assets. The Customer is responsible for keeping billing and contact information up to date. Unauthorized assignments are void, and in such cases, the non-assigning party may terminate the Contract. Upon termination by the Customer, DronaHQ will refund any prepaid fees for unused services beyond the termination date.
+
+#### Which DronaHQ Entity is Customer Contracting With?  
+The governing entity, applicable law, and jurisdiction depend on the Customer’s domicile:  
+- Anywhere: DronaHQ, Inc.  
+- Governing Law:   
+- Venue: 
+
+Disputes will be governed by the stated governing law, excluding conflict-of-laws principles and the United Nations Convention on the International Sale of Goods. Disputes will be resolved exclusively in the courts of the applicable venue. Each party consents to the jurisdiction of these courts. The prevailing party in any legal action will be entitled to recover reasonable costs and attorney’s fees.
+
+## Entire Agreement  
+The Contract, including these Customer Terms, referenced documents, and any applicable Order Forms, constitutes the entire agreement between DronaHQ and the Customer. It supersedes prior agreements or representations, whether written or oral. In the event of a conflict, the following precedence applies:  
+1. Order Forms (if any)  
+2. Customer-Specific Supplements (if any)  
+3. Customer Terms  
+4. Referenced documents or pages.  
+

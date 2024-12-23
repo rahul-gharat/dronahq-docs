@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-title: Native Action - Write File
+title: Write File
 ---
 
 import Thumbnail from '@site/src/components/Thumbnail';
