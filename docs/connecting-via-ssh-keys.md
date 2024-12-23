@@ -114,7 +114,7 @@ This completes the setup of the SSH key for the `dronahq` user, allowing secure,
 
 Using SSH keys for secure access to various services is a crucial part of the process. Here are some scenarios for using SSH keys:
 
-### SSH Keys for Git Sync (Self-Hosted) - Depricated
+### SSH Keys for Git Sync (Self-Hosted) - Deprecated
 
 
 To enable Git Sync in self-hosted DronaHQ instances, you'll need to generate an SSH key and configure specific environment variables for secure and efficient version control. Follow these steps:
