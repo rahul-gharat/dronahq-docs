@@ -121,7 +121,7 @@ You can also checkout other [Environment Variables](/self-hosted-deployment/envi
 You can apply all new changes in configuration, and restart DronaHQ simply by running following command.
 
 ```shell
-sudo docker-compose up -d
+sudo docker compose up -d
 ```
 
 ### 7. Verify that containers are running
@@ -129,11 +129,11 @@ sudo docker-compose up -d
 You can use following command to check running docker containers.
 
 ```shell
-sudo docker-compose ps
+sudo docker compose ps
 ```
 
 It should look something like this
 
-![sudo docker-compose ps](./sudo-docker-compose-ps.png "sudo docker-compose ps")
+![sudo docker compose ps](./sudo-docker-compose-ps.png "sudo docker compose ps")
 
 #### Hurray !!! Now you have working self hosted DronaHQ.

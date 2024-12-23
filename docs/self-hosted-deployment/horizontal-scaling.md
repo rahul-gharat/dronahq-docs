@@ -40,7 +40,7 @@ To scale DronaHQ Self-Hosted, you'll need to set up a managed remote database fo
    ```
    cd ~/dronahq/self-hosted
 
-   sudo docker exec -i dronahq-self-hosted-mysqldb /usr/bin/mysqldump -u root --password=<%password%> --databases dhq_audit_log db5x --add-drop-database --triggers --events --routines --single-transaction > mysqldump.sql
+   sudo docker exec -i dronahq-self-hosted-mysqldb /usr/bin/mysqldump -u root --password=<%password%> --databases <% database name %> --add-drop-database --triggers --events --routines --single-transaction > mysqldump.sql
 
    echo "SET GLOBAL log_bin_trust_function_creators = 1;" | cat - mysqldump.sql > /tmp/out && mv /tmp/out mysqldump.sql
 
@@ -61,7 +61,7 @@ To scale DronaHQ Self-Hosted, you'll need to set up a managed remote database fo
    ```
    cd ~/dronahq/self-hosted
 
-   sudo docker exec -i dronahq-self-hosted-mongodb /usr/bin/mongodump --username root --password <% password %> --authenticationDatabase admin --db db5x_studio --out /mongodbdump
+   sudo docker exec -i dronahq-self-hosted-mongodb /usr/bin/mongodump --username root --password <% password %> --authenticationDatabase admin --db <% database name %> --out /mongodbdump
 
    sudo docker cp dronahq-self-hosted-mongodb:/mongodbdump ~/mongodbdump
    ```
@@ -69,7 +69,7 @@ To scale DronaHQ Self-Hosted, you'll need to set up a managed remote database fo
    - Restore MongoDB dump on RDS with the following command:
 
    ```
-   sudo docker exec -i dronahq-self-hosted-mongodb /usr/bin/mongorestore --host=<% remote host %> --port=<% remote port %> -u <% username %> -p <% password %> --db db5x_studio /mongodbdump/db5x_studio --authenticationDatabase admin
+   sudo docker exec -i dronahq-self-hosted-mongodb /usr/bin/mongorestore --host=<% remote host %> --port=<% remote port %> -u <% username %> -p <% password %> --db <% database name %> /mongodbdump/<% dataabse name %> --authenticationDatabase admin
    ```
 
 4. Create AWS S3 Bucket and Generate Credentials
@@ -83,32 +83,31 @@ To scale DronaHQ Self-Hosted, you'll need to set up a managed remote database fo
 5. Configure Credentials in dronahq.env File
 
    Update the following variables in the environment file:
-   - DHQ_MYSQL_HOST
-   - DHQ_MYSQL_USER
-   - DHQ_MYSQL_PASSWORD
-   - DHQ_MYSQL_DATABASE
-   - DHQ_MYSQL_PORT
-   - DHQ_AUDIT_LOG_MYSQL_DATABASE
+   - MYSQL_HOST
+   - MYSQL_USER
+   - MYSQL_PASSWORD
+   - MYSQL_DATABASE
+   - MYSQL_PORT
 
-   - DHQ_MONGODB_HOST
-   - DHQ_MONGODB_USER
-   - DHQ_MONGODB_PASSWORD
-   - DHQ_MONGODB_DATABASE
-   - DHQ_MONGODB_PORT
+   - MONGODB_HOST
+   - MONGODB_USER
+   - MONGODB_PASSWORD
+   - MONGODB_DATABASE
+   - MONGODB_PORT
 
    - FILE_UPLOAD_TYPE= ”aws”
-
-   - DHQ_AWS_REGION
-   - DHQ_AWS_ACCESS_KEY_ID
-   - DHQ_AWS_SECRET_ACCESS_KEY
-   - DHQ_AWS_BUCKET_NAME
+ 
+   - AWS_REGION
+   - AWS_S3_ACCESS_KEY_ID
+   - AWS_ACCESS_KEY_SECRET
+   - AWS_S3_BUCKET_NAME
 
 6. Restart Docker Container
 
    ```
    cd ~/dronahq/self-hosted
 
-   sudo docker-compose restart webapp
+   sudo docker compose restart webapp
    ```
 
 7. Scaling DronaHQ Self-Hosted

@@ -81,7 +81,7 @@ Open `dronahq.env` file in your Installation directory -
 - Update it to - `BUILDER_URL= http://your-ip-address:8080`
 
 Save and close the above file and finally restart the web app using the below command-
-sudo docker-compose restart webapp
+sudo docker compose restart webapp
 :::
 
 ## Related Topics

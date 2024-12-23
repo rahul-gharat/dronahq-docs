@@ -105,8 +105,8 @@ There are two possible ways by which you can export MYSQL data.
 To export data from MYSQL container, run the following command in DronaHQ installation directory. Use this option, if you want to migrate your MYSQL containerized database to external database.
 
 ```shell
-sudo docker-compose exec -T mysqldb sh -c 'exec mysqldump -u <% user %> --password=<% password %> \
---databases dhq_audit_log db5x --add-drop-database --routines --triggers --events --single-transaction' > mysql-init.sql && sed -i 's/ DEFINER=[^ |\*]*//g' mysql-init.sql
+sudo docker compose exec -T mysqldb sh -c 'exec mysqldump -u <% user %> --password=<% password %> \
+--databases <% database name %> --add-drop-database --routines --triggers --events --single-transaction' > mysql-init.sql && sed -i 's/ DEFINER=[^ |\*]*//g' mysql-init.sql
 ```
 Replace variables encapsulated in `<% variable %>` with actual value. 
 
@@ -127,7 +127,7 @@ There are two possible ways by which you can export MONGODB data.
 To export data from MONGODB container, run the following command in DronaHQ installation directory. Use this option, if you want to migrate your MONGODB containerized database to external database.
 
 ```shell
-sudo docker-compose exec -T mongodb sh -c 'mongodump -d db5x_studio -u <% user %> -p <% password %> --authenticationDatabase admin  --archive' > mongo-init.dump
+sudo docker compose exec -T mongodb sh -c 'mongodump -d <% database name %> -u <% user %> -p <% password %> --authenticationDatabase admin  --archive' > mongo-init.dump
 ```
 
 Replace variables encapsulated in `<% variable %>` with actual value.
@@ -155,7 +155,7 @@ While running following shell commands for restoring data on external database, 
 Run the following command in your DronaHQ installation directory to restore data on external database.
 
 ```shell
-sudo docker-compose exec -T mysqldb sh -c 'mysql --host=<% host %> --user=<% user %> --password=<% password %>' < mysql-init.sql
+sudo docker compose exec -T mysqldb sh -c 'mysql --host=<% host %> --user=<% user %> --password=<% password %>' < mysql-init.sql
 ```
 
 Replace variables encapsulated in `<% variable %>` with actual value.
@@ -177,7 +177,7 @@ Replace variables encapsulated in `<% variable %>` with actual value.
 Run the following command in your DronaHQ installation directory to restore data on external database.
 
 ```shell
-sudo docker-compose exec -T mongodb sh -c 'mongorestore --host=localhost -u <% user %> -p <% password %> --db db5x_studio --authenticationDatabase admin --archive' < mongo-init.dump
+sudo docker compose exec -T mongodb sh -c 'mongorestore --host=localhost -u <% user %> -p <% password %> --db <% database name %> --authenticationDatabase admin --archive' < mongo-init.dump
 ```
 
 Replace variables encapsulated in `<% variable %>` with actual value.
@@ -187,7 +187,7 @@ Replace variables encapsulated in `<% variable %>` with actual value.
 Run following command to restore data on external database
 
 ```shell
-mongorestore --host=<% host %> -u <% user %> -p <% password %> --db db5x_studio --authenticationDatabase admin --archive=mongo-init.dump
+mongorestore --host=<% host %> -u <% user %> -p <% password %> --db <% database name %> --authenticationDatabase admin --archive=mongo-init.dump
 ```
 
 Replace variables encapsulated in `<% variable %>` with actual value.
@@ -237,7 +237,7 @@ db.createUser({
     db: "admin"
   }, {
     role: 'readWrite',
-    db: 'db5x_studio'
+    db: '<% database name %>'
   }]
 })
 EOF
@@ -271,5 +271,5 @@ After modifying any configuration, restart is must for changes to take effect.
 you can restart DronaHQ using following command
 
 ```bash
-sudo docker-compose up -d
+sudo docker compose up -d
 ```
