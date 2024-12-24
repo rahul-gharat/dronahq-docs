@@ -16,12 +16,12 @@ The Speech Recognition Control enables applications to capture user input via vo
 
 ## Properties
 
-The following properties allow customization and control of the SpeechRecognition component:
+The following properties allow customization and control of the Speech Recognition component:
 
 | Property            | Description                                                                                   |
 |---------------------|-----------------------------------------------------------------------------------------------|
-| Language        | The language in which the SpeechRecognition processes input (e.g., English).                 |
-| Matches         | The maximum number of matches the SpeechRecognition will return (default: 5).                |
+| Language        | The language in which the Speech Recognition processes input (e.g., English).                 |
+| Matches         | The maximum number of matches the Speech Recognition will return (default: 5).                |
 | Prompt          | The text displayed in Android devices as a popup prompt for voice input.                     |
 | Start Speech Style | Customization options for the style of the "Start Listening" UI.                         |
 | Stop Speech Style | Customization options for the style of the "Stop Listening" UI.                          |
@@ -30,7 +30,7 @@ The following properties allow customization and control of the SpeechRecognitio
 
 ## Control Outputs
 
-The outputs from the SpeechRecognition Control, represented by the placeholder `{{speechrecognition}}`, can be referenced in other controls, data queries, or JavaScript functions using the control's unique name.
+The outputs from the Speech Recognition Control, represented by the placeholder `{{speechrecognition}}`, can be referenced in other controls, data queries, or JavaScript functions using the control's unique name.
 
 | Output            | Description                                                                                   |
 |-------------------|-----------------------------------------------------------------------------------------------|
