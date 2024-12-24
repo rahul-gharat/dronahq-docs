@@ -1,20 +1,118 @@
-[{
-  "timestamp": 1726790400000,
-  "tags": ["Control","Action"],
-  "heading": "",
-  "cards": [
-    {
-      "title": "Enhancements",
-      "type": "improved",
-      "points": [
-        "Enhanced the On Validate Screen Action to focus on the first invalid control when any validation fails.",
-        "Enhanced the DetailView Control to include an editable option for selected fields."
-      ]
-    }, 
-    {
-      "title": "Fixes",
-      "type": "fixed",
-      "points": ["Fixed an issue where the Change State Actionblock did not show the states to be set or removed."]
-    }
-  ]
-}]
+[  {
+    "timestamp": 1724889600000,
+    "tags": ["Control", "Action"],
+    "heading": "",
+    "cards": [
+      {
+        "title": "Enhanced",
+        "type": "improved",
+        "points": [
+          "Enhanced on URL to download field now supports dynamic values in download file (action)."
+        ]
+      },
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed z-index issue for image preview in detail view in Table grid."
+        ]
+      },
+      {
+        "title": "Deprecated",
+        "type": "deprecated",
+        "points": [
+          "This action is now deprecated for cloud, soon will be deprecated for on-prem as well in Compute (action).",
+          "This action is now deprecated for cloud, soon will be deprecated for on-prem as well in Create Dynamic Text (Action)."
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1724803200000,
+    "tags": ["Control", "Action"],
+    "heading": "",
+    "cards": [
+      {
+        "title": "Enhanced",
+        "type": "improved",
+        "points": [
+          "Enhanced on Localization support added for aggregation footer in Table grid."
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1724371200000,
+    "tags": ["Control", "Action"],
+    "heading": "",
+    "cards": [
+      {
+        "title": "Enhanced",
+        "type": "improved",
+        "points": [
+          "Enhanced on Iterate tasks will now be executed sequentially in Iterate task.",
+          "Enhanced on support for offline submission added via data queries in BindApi."
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1724284800000,
+    "tags": ["Control", "Action"],
+    "heading": "",
+    "cards": [
+      {
+        "title": "Enhanced",
+        "type": "improved",
+        "points": [
+          "Enhanced an issue where the enum dropdown did not support the search option in Query Builder.",
+          "Enhanced support for localization in Query Builder.",
+          "Enhanced dropdown to display operators based on datatype (text/number) in Query Builder.",
+          "Enhanced support for passing data as an array of strings and an array of objects in Checkbox and Radio controls.",
+          "Enhanced support for passing data as an array of objects with behavior similar to advanced dropdowns in Checkbox and Radio controls.",
+          "Enhanced UI for a clearer and more summarized view in Dropdown."
+        ]
+      },
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed issues related to focus-out behavior in Query Builder.",
+          "Fixed output keyword suggestion in Range Picker."
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1723766400000,
+    "tags": ["Control", "Action"],
+    "heading": "",
+    "cards": [
+      {
+        "title": "Enhanced",
+        "type": "improved",
+        "points": ["Enhanced support to allow passing custom parameters in trigger data queries in CUSTOMJS function."]
+      }
+    ]
+  },
+  {
+    "timestamp": 1726790400000,
+    "tags": ["Control", "Action"],
+    "heading": "",
+    "cards": [
+      {
+        "title": "Enhancements",
+        "type": "improved",
+        "points": [
+          "Enhanced the On Validate Screen Action to focus on the first invalid control when any validation fails.",
+          "Enhanced the DetailView Control to include an editable option for selected fields."
+        ]
+      },
+      {
+        "title": "Fixes",
+        "type": "fixed",
+        "points": ["Fixed an issue where the Change State Actionblock did not show the states to be set or removed."]
+      }
+    ]
+  }
+]
