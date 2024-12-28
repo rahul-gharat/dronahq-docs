@@ -476,5 +476,24 @@ MAILER_EMAIL='no-reply@dronahq.com'
 MAILER_NAME='DronaHQ'
 ```
 
+#### `REST_PROXY_WHITELISTED_DOMAINS`
+
+Use this variable to whitelist API domains for the `Data Query -> REST API` feature. Specify a comma-separated list of hostnames that are allowed. For example:  
+
+```
+REST_PROXY_WHITELISTED_DOMAINS=dronahq.com,google.com,api.example.com
+```
+
+#### `FILE_UPLOAD_RESTRICTED_EXTENSIONS`
+
+This variable allows you to restrict specific file extensions for file uploads in DronaHQ.  
+By default, the following extensions are restricted: `.exe, .dll, .bat, .sh, .cmd, .vbs`.  
+
+If the `FILE_UPLOAD_RESTRICTED_EXTENSIONS` variable is configured, it will override the default restrictions. Add comma-separated file extensions to this variable to customize the restrictions. For example:  
+
+```
+FILE_UPLOAD_RESTRICTED_EXTENSIONS=.exe,.dll,.bat,.sh,.cmd,.vbs
+```
+
 <!-- #### `SSH_TUNNEL_USER` -->
 <!-- #### `LD_LIBRARY_PATH` -->
