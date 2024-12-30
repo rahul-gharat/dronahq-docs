@@ -1,4 +1,58 @@
 [{
+  "timestamp": 1735344000000,
+  "tags": ["Self-Hosted", "3.5.1-edge"],
+  "heading": "Version 3.5.1-edge",
+  "cards": [
+    {
+      "title": "Added",
+      "type": "added",
+      "points": [
+        "Added new action icon."
+      ]
+    },
+    {
+      "title": "Enhancements",
+      "type": "improved",
+      "points": [
+        "Enhanced with a new column type as HTML View. New options for editable output in Date Time and Date Time column types.",
+        "Enhanced with function parameters suggestion in CodeMirror.",
+        "Enhanced Custom Library Import with conflict detection and recovery module.",
+        "Enhanced Automation listing by adding via iframe."
+      ]
+    },
+    {
+      "title": "Fixed",
+      "type": "fixed",
+      "points": [
+        "Fixed logging and error issues.",
+        "Fixed issue where custom fonts were not working in theme configuration.",
+        "Fixed issue where the last metric control inside the grid panel appeared slightly larger than others."
+      ]
+    }
+  ]
+},
+{
+  "timestamp": 1732233600000,
+  "tags": ["Self-Hosted", "3.5.0-edge"],
+  "heading": "Version 3.5.0-edge",
+  "cards": [
+    {
+      "title": "Added",
+      "type": "added",
+      "points": [
+        "Added Screen ID option to change under Screen Properties."
+      ]
+    },
+    {
+      "title": "Fixed",
+      "type": "fixed",
+      "points": [
+        "Fixed issue in DataQuery where the edited state (green dot) was visible by default on opening a connector query in RestAPI."
+      ]
+    }
+  ]
+}
+,{
   "timestamp": 1731628800000,
   "tags": ["Self-Hosted", "3.4.0-edge"],
   "heading": "Version 3.4.0-edge",

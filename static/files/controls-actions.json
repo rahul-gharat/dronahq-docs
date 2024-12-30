@@ -1,4 +1,94 @@
-[  {
+[ {
+    "timestamp": 1726790400000,
+    "tags": ["Control", "Action"],
+    "heading": "",
+    "cards": [
+      {
+        "title": "Enhancements",
+        "type": "improved",
+        "points": [
+          "Enhanced the On Validate Screen Action to focus on the first invalid control when any validation fails.",
+          "Enhanced the DetailView Control to include an editable option for selected fields."
+        ]
+      },
+      {
+        "title": "Fixes",
+        "type": "fixed",
+        "points": ["Fixed an issue where the Change State Actionblock did not show the states to be set or removed."]
+      }
+    ]
+  },{
+  "timestamp": 1726704000000,
+  "tags": ["Control", "Action"],
+  "heading": "",
+  "cards": [
+    {
+      "title": "Enhanced",
+      "type": "improved",
+      "points": [
+        "Enhanced in Calendar UI now supports single tag and multi-tag options.",
+        "Enhanced in Sortable UI now supports single tag and multi-tag options.",
+        "Enhanced in Kanban UI now supports single tag and multi-tag options.",
+        "Enhanced in Compact card (all card controls) UI now supports single tag and multi-tag options.",
+        "Enhanced in Table grid UI now supports single tag and multi-tag options, along with UI enhancements for the editable part.",
+        "Enhanced in Detail view now allows direct data editing in the control, along with UI enhancements."
+      ]
+    },
+    {
+      "title": "Fixed",
+      "type": "fixed",
+      "points": [
+        "Fixed in Prefix and suffix value not giving output for numeric."
+      ]
+    }
+  ]
+},
+{
+  "timestamp": 1726617600000,
+  "tags": ["Control", "Action"],
+  "heading": "",
+  "cards": [
+    {
+      "title": "Added",
+      "type": "added",
+      "points": [
+        "Added new property to add a border for all tabs when the pill option is selected in Tabbed container.",
+        "Added advanced dropdown option in Focus Control action to enable focus."
+      ]
+    },
+    {
+      "title": "Fixed",
+      "type": "fixed",
+      "points": [
+        "Fixed in Time Picker action flow triggering on clear option.",
+        "Fixed in Tabbed container issue where tabs were getting multiplied on resetControlData action.",
+        "Fixed in Query builder issue by adding more static messages for master JSON localization.",
+        "Fixed in Advanced dropdown default width size reduced, issue with dropdown visibility in popup and tray resolved.",
+        "Fixed in collapsible menu default width size reduction.",
+        "Fixed in Menu list default width size reduced.",
+        "Fixed in Grouped menu default width size reduced.",
+        "Fixed in Default formula for value section added in prefix and suffix.",
+        "Fixed in Checkbox minor UI fixes, checkmark not clickable on iOS devices.",
+        "Fixed in Radio button minor UI fixes, checkmark not clickable on iOS devices."
+      ]
+    }
+  ]
+},
+{
+  "timestamp": 1725321600000,
+  "tags": ["Control", "Action"],
+  "heading": "",
+  "cards": [
+    {
+      "title": "Fixed",
+      "type": "fixed",
+      "points": [
+        "Fixed edge case for Enter press event handling."
+      ]
+    }
+  ]
+}
+, {
     "timestamp": 1724889600000,
     "tags": ["Control", "Action"],
     "heading": "",
@@ -92,26 +182,6 @@
         "title": "Enhanced",
         "type": "improved",
         "points": ["Enhanced support to allow passing custom parameters in trigger data queries in CUSTOMJS function."]
-      }
-    ]
-  },
-  {
-    "timestamp": 1726790400000,
-    "tags": ["Control", "Action"],
-    "heading": "",
-    "cards": [
-      {
-        "title": "Enhancements",
-        "type": "improved",
-        "points": [
-          "Enhanced the On Validate Screen Action to focus on the first invalid control when any validation fails.",
-          "Enhanced the DetailView Control to include an editable option for selected fields."
-        ]
-      },
-      {
-        "title": "Fixes",
-        "type": "fixed",
-        "points": ["Fixed an issue where the Change State Actionblock did not show the states to be set or removed."]
       }
     ]
   }
