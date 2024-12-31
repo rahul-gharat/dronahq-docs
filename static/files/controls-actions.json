@@ -1,4 +1,536 @@
-[ {
+[
+  {
+    "timestamp": 1735344000000,
+    "tags": ["Control", "Action"],
+    "heading": "",
+    "cards": [
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Fix for data being not returned as expected in GETLOCALSTORAGE."
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1735257600000,
+    "tags": ["Control", "Action"],
+    "heading": "",
+    "cards": [
+      {
+        "title": "Added",
+        "type": "added",
+        "points": [
+          "New action added to perform secure REST API calls on web and mobile devices (SECUREAPICALL)."
+        ]
+      },
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Minor UI fix regarding textarea property in HTML."
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1735171200000,
+    "tags": ["Control", "Action"],
+    "heading": "",
+    "cards": [
+      {
+        "title": "Enhancements",
+        "type": "improved",
+        "points": [
+          "Help text added for easy use in DownloadFileFromURL.",
+          "Help text added for easy use in WriteFile.",
+          "Removed selected option section in Tabbed container.",
+          "Minor issue related to close icon fixed in FILE PARSER."
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1734998400000,
+    "tags": ["Control", "Action"],
+    "heading": "",
+    "cards": [
+      {
+        "title": "Added",
+        "type": "added",
+        "points": [
+          "New action to turn on and off the flashlight on mobile devices.",
+          "New action to get the address from the provided coordinates.",
+          "New action to get coordinates from the provided address.",
+          "New action to convert text to speech for mobile devices."
+        ]
+      },
+      {
+        "title": "Enhancements",
+        "type": "improved",
+        "points": [
+          "New UI for properties, data, and actions section for all controls."
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1734652800000,
+    "tags": ["Control", "Action"],
+    "heading": "",
+    "cards": [
+      {
+        "title": "Added",
+        "type": "added",
+        "points": [
+          "New action to open files on mobile devices (OpenFile).",
+          "New action to read files on mobile devices (ReadFile).",
+          "New action to write files on mobile devices (WriteFile).",
+          "New action to download files on both web and mobile devices (DownloadFileFromURL)."
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1734566400000,
+    "tags": ["Control", "Action"],
+    "heading": "",
+    "cards": [
+      {
+        "title": "Enhancements",
+        "type": "improved",
+        "points": [
+          "Added support for displaying parameter suggestions for multiple actions, including Toast, Confirm, Alert, Email, Call, SMS, Set control value, Refresh control, Show control, Hide control, Set variable, Navigate, Navigate to auth screen, Microapp navigation, Confetti, Show loader (for controls), Stop loader (for controls), Invoke action (triggerAction), Copy to clipboard, Open URL, Play sound, Call REST API, File Parser, DownloadFileAs, TransformDataToArray, TransformDataToObject, Interchange, MergeArrays, Concat, Flattened, Range, ArrayToCSV."
+        ]
+      },
+      {
+        "title": "Added",
+        "type": "added",
+        "points": [
+          "New functions to convert between Blob URL, Base64, and byte array: BLOBURLTOBASE64, BASE64TOBLOBURL, BLOBURLTOBYTEARRAY, BYTEARRAYTOBLOBURL."
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1734480000000,
+    "tags": ["Control", "Action"],
+    "heading": "",
+    "cards": [
+      {
+        "title": "Added",
+        "type": "added",
+        "points": [
+          "Date, time, and datetime datatypes added to the Query builder.",
+          "'Maintain search text' property introduced in Dropdown."
+        ]
+      },
+      {
+        "title": "Enhancements",
+        "type": "improved",
+        "points": [
+          "Image control enhanced with a new default URL link."
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1734048000000,
+    "tags": ["Control", "Action"],
+    "heading": "",
+    "cards": [
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Minor UI fix in Tabbed container when opened in Firefox."
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1733788800000,
+    "tags": ["Control", "Action"],
+    "heading": "",
+    "cards": [
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Issue where dynamic values were not accepted in min date and max date in Date range picker."
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1733702400000,
+    "tags": ["Control", "Action"],
+    "heading": "",
+    "cards": [
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Issue where files could not be uploaded in File upload."
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1733443200000,
+    "tags": ["Control", "Action"],
+    "heading": "",
+    "cards": [
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Bug related to file extension reading in File parser."
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1733270400000,
+    "tags": ["Control", "Action"],
+    "heading": "",
+    "cards": [
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Minor bug fix for header names and added custom action for column visibility in Table grid."
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1732838400000,
+    "tags": ["Control", "Action"],
+    "heading": "",
+    "cards": [
+      {
+        "title": "Enhancements",
+        "type": "improved",
+        "points": [
+          "Enhanced in Table grid with new property output added as isEditing."
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1732492800000,
+    "tags": ["Control", "Action"],
+    "heading": "",
+    "cards": [
+      {
+        "title": "Enhancements",
+        "type": "improved",
+        "points": [
+          "Enhanced in Image with image_click action added."
+        ]
+      },
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed in Markdown viewer minor bug fix for scrolling."
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1731369600000,
+    "tags": ["Control", "Action"],
+    "heading": "",
+    "cards": [
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed in Detail View minor bug fix for properties output.",
+          "Fixed in Table grid minor bug fix for sort and filter, and disabled interaction during loading state."
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1730937600000,
+    "tags": ["Control", "Action"],
+    "heading": "",
+    "cards": [
+      {
+        "title": "Enhancements",
+        "type": "improved",
+        "points": [
+          "Enhanced in Dropdown with 'Select All' feature introduced and 'Clear' option property added."
+        ]
+      },
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed in Collapsible menu localization-related issues.",
+          "Fixed in Kanban minor bug fix for search."
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1730851200000,
+    "tags": ["Control", "Action"],
+    "heading": "",
+    "cards": [
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed in Table grid minor bug fix for tag colors."
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1730764800000,
+    "tags": ["Control", "Action"],
+    "heading": "",
+    "cards": [
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed in File upload minor UI fix in the property section.",
+          "Fixed in Tabbed container issue where the output of the selected tab was not visible."
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1730160000000,
+    "tags": ["Control", "Action"],
+    "heading": "",
+    "cards": [
+      {
+        "title": "Enhancements",
+        "type": "improved",
+        "points": [
+          "Enhanced in BindApi now supports download as a file.",
+          "Enhanced in VariableApi now supports download as a file."
+        ]
+      },
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed in Table grid UI enhancement for single tag and multi-tag, and issue with table column widths."
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1730073600000,
+    "tags": ["Control", "Action"],
+    "heading": "",
+    "cards": [
+      {
+        "title": "Enhancements",
+        "type": "improved",
+        "points": [
+          "Enhanced the Default grid configuration changes for dashboard, image select bar, image choice, sortable, compact card, detail select, detail view, query builder, and BPM submit."
+        ]
+      },
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed in File upload localization-related bug."
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1729555200000,
+    "tags": ["Control", "Action"],
+    "heading": "",
+    "cards": [
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed in Text input edge case when the control is disabled via rules.",
+          "Fixed in Detail view header mismatch issue when data is changed dynamically.",
+          "Fixed in VALIDATEPAGES issue where validation was not working as expected when the screen ID was changed."
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1729209600000,
+    "tags": ["Control", "Action"],
+    "heading": "",
+    "cards": [
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed in Table grid UI issue for grouped data on the builder.",
+          "Fixed in Text input disabled class removed.",
+          "Fixed in Navbar options dropdown not opening issue.",
+          "Fixed in Select bar issue where the background color was not removed from unselected options."
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1729123200000,
+    "tags": ["Control", "Action"],
+    "heading": "",
+    "cards": [
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed in Detail view edge case issue for package."
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1728518400000,
+    "tags": ["Control", "Action"],
+    "heading": "",
+    "cards": [
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed in Checkbox where typing on the 'Others option' was not possible.",
+          "Fixed in Radio where typing on the 'Others option' was not possible."
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1728432000000,
+    "tags": ["Control", "Action"],
+    "heading": "",
+    "cards": [
+      {
+        "title": "Added",
+        "type": "added",
+        "points": [
+          "Added in UI JSON introduced with value, icon, prefix, and color in the data bind section for Detail Select."
+        ]
+      },
+      {
+        "title": "Deprecated",
+        "type": "deprecated",
+        "points": [
+          "Deprecated the older Detail Select control."
+        ]
+      },
+      {
+        "title": "Enhancements",
+        "type": "improved",
+        "points": [
+          "Enhanced in Dropdown now supports server-side search, server-side pagination, and tab index.",
+          "Enhanced in Prefix and suffix now support the introduction of the classic dropdown.",
+          "Enhanced in Split button with color, prefix, and icon keys in the data bind UI JSON.",
+          "Enhanced in Select bar with value, color, prefix, and icon keys in the UI JSON data bind section.",
+          "Enhanced in Table grid with the introduction of the _isSelected key for selected rows."
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1728345600000,
+    "tags": ["Control", "Action"],
+    "heading": "",
+    "cards": [
+      {
+        "title": "Enhancements",
+        "type": "improved",
+        "points": [
+          "Enhanced in UI JSON introduced in the data section for Switch group.",
+          "Enhanced in SetCtrlValue now includes handling for list-type controls."
+        ]
+      },
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed in Table grid number type column not accepting value as 0 when data is empty.",
+          "Fixed in Collapsible menu default min-width reduced to prevent excessive space when data has only one option.",
+          "Fixed in Terms and conditions in builder, changes not reflecting when data is provided through the data section, along with a minor CSS fix.",
+          "Fixed in File upload issues related to localization.",
+          "Fixed in Numeric data not showing when 0 is passed from the data section."
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1727740800000,
+    "tags": ["Control", "Action"],
+    "heading": "",
+    "cards": [
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed in Phone UI issue in package."
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1727481600000,
+    "tags": ["Control", "Action"],
+    "heading": "",
+    "cards": [
+      {
+        "title": "Added",
+        "type": "added",
+        "points": [
+          "Added in SETLOCALSTORAGE action to store data in local storage.",
+          "Added in GETLOCALSTORAGE action to retrieve data from local storage.",
+          "Added in CLEARLOCALSTORAGE action to clear data from local storage."
+        ]
+      },
+      {
+        "title": "Enhanc",
+        "type": "improved",
+        "points": [
+          "Enhanced in Table grid UI for aggregation footer options."
+        ]
+      },
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed in Kanban UI for filter and quick filters in single tag and multi-tag.",
+          "Fixed in Compact card UI for filter and quick filters in single tag and multi-tag.",
+          "Fixed in Cascader control not working properly on iOS devices."
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1727308800000,
+    "tags": ["Control", "Action"],
+    "heading": "",
+    "cards": [
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed in Call service (action) now supports download file action in Multistep Auth refresh flow.",
+          "Fixed in Table grid UI for filter and quick filters in single tag and multi-tag, and freeze columns UI issue with custom column widths."
+        ]
+      }
+    ]
+  }
+,{
     "timestamp": 1726790400000,
     "tags": ["Control", "Action"],
     "heading": "",
@@ -23,7 +555,7 @@
   "heading": "",
   "cards": [
     {
-      "title": "Enhanced",
+      "title": "Enhancements",
       "type": "improved",
       "points": [
         "Enhanced in Calendar UI now supports single tag and multi-tag options.",
@@ -94,7 +626,7 @@
     "heading": "",
     "cards": [
       {
-        "title": "Enhanced",
+        "title": "Enhancements",
         "type": "improved",
         "points": [
           "Enhanced on URL to download field now supports dynamic values in download file (action)."
@@ -123,7 +655,7 @@
     "heading": "",
     "cards": [
       {
-        "title": "Enhanced",
+        "title": "Enhancements",
         "type": "improved",
         "points": [
           "Enhanced on Localization support added for aggregation footer in Table grid."
@@ -137,7 +669,7 @@
     "heading": "",
     "cards": [
       {
-        "title": "Enhanced",
+        "title": "Enhancements",
         "type": "improved",
         "points": [
           "Enhanced on Iterate tasks will now be executed sequentially in Iterate task.",
@@ -152,7 +684,7 @@
     "heading": "",
     "cards": [
       {
-        "title": "Enhanced",
+        "title": "Enhancements",
         "type": "improved",
         "points": [
           "Enhanced an issue where the enum dropdown did not support the search option in Query Builder.",
@@ -179,7 +711,7 @@
     "heading": "",
     "cards": [
       {
-        "title": "Enhanced",
+        "title": "Enhancements",
         "type": "improved",
         "points": ["Enhanced support to allow passing custom parameters in trigger data queries in CUSTOMJS function."]
       }
