@@ -1,0 +1,160 @@
+---
+sidebar_position: 2
+title: Data Processing Addendum
+---
+
+ 
+This Data Processing Addendum ("DPA") is entered into between DronaHQ, a product of Deltecs InfoTech Pvt. Ltd., a company incorporated under the Companies Act of India, with its registered office at [Insert Address Here], on behalf and as agent for its Affiliates (as defined below) ("DronaHQ") and the Customer identified in the relevant Order Form ("Customer") (each a "Party" and together the "Parties"). This DPA is supplemental to, and forms part of, the Customer Terms of Service or other written agreement between DronaHQ and Customer (in either case, the "Agreement"). This DPA has been pre-signed on behalf of DronaHQ and becomes legally binding upon receipt by DronaHQ of the validly completed DPA (the "DPA Effective Date").  
+
+---
+
+### 1. DEFINITIONS  
+In this Agreement, the following terms have the following meanings:  
+
+- "Affiliate" means any entity that directly or indirectly controls, is controlled by, or is under common control with the subject entity. "Control" for the purposes of this definition means direct or indirect ownership or control of more than 50% of the voting interests of the subject entity.  
+- "Applicable Laws" means any law, rule, regulation, or order applicable to the respective Party in the Processing of Personal Data under the Agreement, including but not limited to the General Data Protection Regulation (GDPR), the Indian IT Act 2000 (and its amendments), and other relevant privacy and data protection laws.  
+- "Controller" means the entity which determines the purposes and means of the Processing of Personal Data.  
+- "Customer Data" has the meaning given to that term in the Agreement.  
+- "Data Protection Laws" means all data protection and privacy laws applicable to the respective Party in its role in the Processing of Personal Data under the Agreement, which may include, without limitation, GDPR, Indian IT Act 2000 (and its amendments), and other applicable privacy laws in jurisdictions where the Parties operate.  
+- "Data Subject" means the identified or identifiable natural person to whom Personal Data relates.  
+- "Instructions" means any reasonable instructions provided by Customer under this DPA that are consistent with the terms of the Agreement.  
+- "Personal Data" means any data that relates to an identified or identifiable natural person, to the extent that such information is protected as personal data under Data Protection Laws.  
+- "Processor" means the entity that Processes Personal Data on behalf of the Controller.  
+- "Processing" means any operation or set of operations performed upon Personal Data, whether or not by automatic means, such as collection, recording, organisation, structuring, storage, adaptation, retrieval, use, or destruction.  
+- "Security Incident" means any breach of security leading to the accidental or unlawful destruction, loss, alteration, unauthorised disclosure of, or access to, Personal Data.  
+- "Services" has the meaning given to that term in the Agreement.  
+- "Sub-processor" means any entity engaged by DronaHQ or its Affiliates to Process Personal Data in connection with the Services.  
+
+Capitalised terms used in this DPA that are not defined in this clause 1 shall have the meaning ascribed to them elsewhere in this DPA and/or the Agreement unless otherwise specified.  
+
+---
+
+### 2. PROCESSING OF PERSONAL DATA  
+#### 2.1 Customer Obligations  
+The Customer shall, in its use of the Services and provision of the Instructions, Process Personal Data in accordance with the requirements of Applicable Laws. The Customer shall have sole responsibility for the accuracy, quality, and legality of Personal Data and the means by which the Customer acquired such Personal Data.  
+
+#### 2.2 DronaHQ's Processing of Personal Data  
+As the Customer’s Processor, DronaHQ shall only Process Personal Data for the following purposes:  
+1. Processing in accordance with the Agreement and applicable Order Form(s);  
+2. Processing initiated by Authorised Users in their use of the Services; and  
+3. Processing to comply with the Instructions, and DronaHQ shall immediately inform the Customer if, in DronaHQ’s opinion, the Customer’s Instructions infringe Applicable Laws.  
+
+DronaHQ shall ensure that all personnel (including employees, agents, contractors, and subcontractors) authorised to Process Personal Data have entered into appropriate contractually binding confidentiality obligations.  
+
+#### 2.3 Details of the Processing  
+The Parties acknowledge and agree that Schedule 1 (Description of Processing Activities) to this DPA accurately describes the Processing carried out under this DPA.  
+
+---
+
+### 3. SUB-PROCESSORS
+
+#### 3.1 Appointment of Sub-processors
+The Customer acknowledges and agrees that:
+
+1. DronaHQ’s Affiliates (related companies) may act as Sub-processors under a written agreement with DronaHQ.
+2. DronaHQ and its Affiliates may also engage third-party Sub-processors to support the delivery of Services.
+
+Before allowing any third-party Sub-processor to handle Relevant Personal Data, DronaHQ or its Affiliates will ensure that the Sub-processor signs a written agreement. This agreement will include data protection obligations that provide the same level of protection as outlined in this DPA. The Customer agrees that DronaHQ may use Sub-processors as detailed in clause 3.2 below.
+
+#### 3.2 List of Current Sub-processors and Notification of New Sub-processors
+The current list of Sub-processors for DronaHQ’s Services, including their names, locations, and activities, is available at [DronaHQ Sub-processor List](https://docs.dronahq.com/subprocessors) (the "Sub-processor List"). By agreeing to this DPA, the Customer consents to these Sub-processors, their locations, and their processing activities for handling Relevant Personal Data.
+
+The Sub-processor List also allows the Customer to subscribe for notifications about new Sub-processors. If subscribed, the Customer will receive updates before any new Sub-processor is authorized to process Relevant Personal Data for the Services.
+
+#### 3.3 Objection to New Sub-processors
+If the Customer has reasonable concerns about a new Sub-processor (e.g., the processing may violate data protection laws or reduce data security), they may object. The objection must be submitted in writing within 10 business days of receiving the notification. The objection must explain the reasons for the concern.
+
+If the Customer objects, DronaHQ will attempt to provide an alternative solution, such as modifying the Services or configuration to avoid the use of the new Sub-processor. If no resolution is possible within 30 days, either party may terminate the affected portion of the Services without penalties. DronaHQ will refund any prepaid fees for the terminated Services.
+
+#### 3.4 Liability
+DronaHQ will be responsible for the actions or mistakes of its Sub-processors as if DronaHQ had performed the Services directly.
+
+---
+
+### 4. REQUESTS FOR RELEVANT PERSONAL DATA
+
+#### 4.1 Data Subject Requests
+If DronaHQ receives a request from a data subject (e.g., to access or delete their data), they will notify the Customer promptly, unless restricted by law. Based on the nature of the request, DronaHQ will assist the Customer by providing necessary technical and organizational support to help them fulfill their legal obligations.
+
+If the Customer is unable to handle the request using the Services, DronaHQ will, upon request, make reasonable efforts to assist in addressing the request. Any associated costs for such assistance, including fees for additional functionality, will be the responsibility of the Customer.
+
+#### 4.2 Regulator Correspondence
+If DronaHQ receives any correspondence from regulators (e.g., data protection authorities) or third-party requests (e.g., legal demands), they will notify the Customer promptly unless prohibited by law. DronaHQ will not disclose Relevant Personal Data without consulting the Customer and obtaining their written approval unless legally required to do so.
+
+---
+
+### 5. SECURITY
+
+#### 5.1 Security Measures
+DronaHQ will implement and maintain appropriate technical and organizational measures to protect the security, confidentiality, and integrity of Relevant Personal Data. These measures will guard against unauthorized or unlawful processing, accidental or unlawful destruction, loss, alteration, damage, or unauthorized disclosure or access, as detailed on the [DronaHQ Security Practices Page](https://docs.dronahq.com/security). DronaHQ will regularly monitor compliance with these measures and will not materially reduce the overall security of the Services during the subscription term.
+
+#### 5.2 Security Incidents
+DronaHQ will notify the Customer without undue delay upon becoming aware of a Security Incident. The notification will include the following details (as far as available to DronaHQ):
+1. A description of the nature of the Security Incident, including (if possible) the categories and approximate number of affected Data Subjects and data records.
+2. Contact details for further information about the Security Incident.
+3. The likely consequences of the incident and the measures taken or proposed to mitigate its effects and prevent recurrence.
+
+Notifications may be provided in phases as more information becomes available. DronaHQ will cooperate with the Customer to identify the cause of the Security Incident and take commercially reasonable steps to remediate it, to the extent such steps are within DronaHQ’s control. These obligations do not apply to incidents caused by the Customer, authorized users, or non-DronaHQ products, except as required by applicable Data Protection Laws.
+
+---
+
+### 6. RECORD-KEEPING
+
+#### 6.1 Third-Party Certifications and Audits
+DronaHQ has obtained third-party certifications and audits as listed on the [DronaHQ Security Practices Page](https://docs.dronahq.com/security). Upon request and subject to confidentiality obligations, DronaHQ will provide the Customer (or an independent auditor appointed by the Customer) with information regarding DronaHQ’s compliance with this DPA, including any third-party certifications and audit results. 
+
+DronaHQ will also support audits of its processing activities in the following circumstances:
+- At reasonable intervals.
+- When there are reasonable indications of non-compliance with this DPA, as determined by the Customer.
+- When required by a Supervisory Authority.
+
+The Customer may request an on-site audit of DronaHQ’s relevant procedures for protecting Relevant Personal Data. Such audits must comply with Data Protection Laws and follow these conditions:
+1. The Customer and DronaHQ will mutually agree on the scope, timing, and duration of the audit.
+2. The Customer will reimburse DronaHQ for reasonable costs, including time spent on the audit at DronaHQ’s current rates (available upon request).
+
+The Customer must notify DronaHQ promptly about any discovered non-compliance. DronaHQ will use commercially reasonable efforts to address such non-compliance.
+
+#### 6.2 Data Protection Impact Assessments
+If applicable and upon request, DronaHQ will assist the Customer in conducting a Data Protection Impact Assessment (DPIA) as required under GDPR. This includes providing relevant information about DronaHQ’s processing activities, to the extent such information is not already accessible to the Customer. DronaHQ will also assist in prior consultations with Supervisory Authorities if required under GDPR.
+
+---
+
+### 7. TRANSFERS OF RELEVANT PERSONAL DATA
+
+#### 7.1 Restricted Transfers
+If the Customer engages in Restricted Transfers of Relevant Personal Data, the following mechanisms will apply:
+
+##### 7.1.1 Controller to Processor Clauses
+Where the Customer acts as a Controller (data exporter) and DronaHQ acts as a Processor (data importer), both parties agree to comply with the Controller-to-Processor Clauses as outlined in Schedule 2 (Additional Transfer Terms).
+
+##### 7.1.2 Processor to Processor Clauses
+Where the Customer acts as a Processor (data exporter) and DronaHQ acts as a Processor (data importer), both parties agree to comply with the Processor-to-Processor Clauses as outlined in Schedule 2 (Additional Transfer Terms).
+
+#### 7.2 Incorporation of Standard Contractual Clauses
+When clause 7.1 applies, both parties agree to adopt and comply with the Standard Contractual Clauses (SCCs), which are incorporated into this DPA by reference. The parties are deemed to have signed the SCCs by entering into this DPA, and the SCCs will take precedence over this DPA and the Agreement in case of any conflict.
+
+---
+
+### 8. GENERAL
+
+#### 8.1 Relationship with the Agreement
+Subject to clause 7.2, in the event of a conflict between this DPA and the Agreement, this DPA will take precedence as it relates to the Processing of Personal Data. Notwithstanding anything in the Agreement or this DPA, the liability of each Party and its Affiliates under this DPA is subject to the exclusions and limitations of liability outlined in the Agreement. For clarity, DronaHQ’s and its Affiliates’ total liability for claims arising from or related to the Agreement and this DPA will apply in aggregate to all claims under both the Agreement and any DPAs established under it.
+
+#### 8.2 Return and Deletion of Relevant Personal Data
+Upon termination of the Services involving the Processing of Relevant Personal Data, DronaHQ will, upon the Customer’s request and subject to the limitations described in the Agreement and the [Security Practices Page](https://docs.dronahq.com/security), either:
+1. Return all Relevant Personal Data in its possession to the Customer; or 
+2. Securely destroy such data and provide evidence to the Customer that the measures have been completed.
+
+If applicable law prohibits the return or destruction of any Relevant Personal Data, DronaHQ will retain such data in compliance with applicable law and continue to ensure its confidentiality and security.
+
+#### 8.3 Liability
+Each Party’s and its Affiliates’ liability, taken together in the aggregate, arising from or related to this DPA and any DPAs between Controller Affiliates and DronaHQ will be governed by the limitations and exclusions of liability set forth in the Agreement. For clarity:
+- DronaHQ’s and its Affiliates’ total liability for claims from the Customer and all of its Controller Affiliates under the Agreement and any DPAs will apply in aggregate.
+- Liability will not apply individually and severally to each Customer or Controller Affiliate.
+
+#### 8.4 Updates to the DPA
+If changes occur in Data Protection Laws, including new laws, amendments, or regulations affecting either Party, the Parties agree to review this DPA and negotiate updates in good faith. This includes amendments, additions, or replacements to the schedules or clauses necessary to ensure compliance.
+
+#### 8.5 Governing Law
+This DPA, along with any disputes or claims arising from it (including non-contractual disputes or claims), will be governed by the internal laws of the State of California, excluding its conflicts of laws principles and the United Nations Convention on Contracts for the International Sale of Goods. The state and federal courts in San Francisco County, California, will have exclusive jurisdiction over any disputes arising from this DPA. Each Party consents to this jurisdiction and waives any right to a jury trial for disputes related to this Agreement. In any legal action to enforce this Agreement, the prevailing Party will be entitled to recover reasonable costs and attorney fees.
+

@@ -17,7 +17,8 @@
         "Enhanced with a new column type as HTML View. New options for editable output in Date Time and Date Time column types.",
         "Enhanced with function parameters suggestion in CodeMirror.",
         "Enhanced Custom Library Import with conflict detection and recovery module.",
-        "Enhanced Automation listing by adding via iframe."
+        "Enhanced Automation listing by adding via iframe.",
+        "Enhanced the Protected Apps option for Apps added into Git, enabling app editing only through the feature branch for improved collaboration."
       ]
     },
     {
