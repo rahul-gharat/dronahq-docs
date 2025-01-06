@@ -1,7 +1,91 @@
-[ {
+[  {
+      "timestamp": 1764720000000,
+      "tags": ["Self-Hosted", "3.4.6-stable"],
+      "heading": "Version 3.4.6-stable",
+      "cards": [
+        {
+          "title": "Enhancements",
+          "type": "improved",
+          "points": [
+            "Enhanced session management by excluding a few callback endpoints.",
+            "Enhanced DataQuery with a secure response feature.",
+            "Enhanced security by removing the RMID cookie and replacing it with globalConfig.session_key_name.",
+            "Enhanced public link and CDN checks for potential issues.",
+            "Enhanced PDF Creator by adding cache busting support.",
+            "Enhanced multer middleware for the updateAppDetails and registerNewAppV3 endpoints."
+          ]
+        },
+        {
+          "title": "Fixed",
+          "type": "fixed",
+          "points": [
+            "Fixed an issue where the delete shortcut was not working.",
+            "Fixed the logout button issue on the end-user portal.",
+            "Fixed an issue by stringifying the API subcategory's body data while editing in the sidebar."
+          ]
+        }
+      ]
+    },
+    {
+      "timestamp": 1735344000000,
+      "tags": ["Self-Hosted", "3.4.5-stable"],
+      "heading": "Version 3.4.5-stable",
+      "cards": [
+        {
+          "title": "Enhancements",
+          "type": "improved",
+          "points": [
+            "Enhanced DronaHQ Database APIs with improved security.",
+            "Enhanced File Storage APIs for better security.",
+            "Enhanced webapp EJS files by adding static file versions.",
+            "Enhanced security by changing the secret key name.",
+            "Enhanced session IP address validation for Addons."
+          ]
+        },
+        {
+          "title": "Fixed",
+          "type": "fixed",
+          "points": [
+            "Fixed an issue where the tabbed container did not maintain space for hidden controls.",
+            "Fixed multiple security vulnerabilities with patches.",
+            "Fixed UI issues for SSO configuration in the manage users section.",
+            "Fixed an issue where the edit option for SSO did not appear during the first configuration.",
+            "Fixed a Salesforce refresh token flow issue where queries failed for older connectors."
+          ]
+        }
+      ]
+    },
+    {
+      "timestamp": 1734652800000,
+      "tags": ["Self-Hosted", "3.4.4-stable"],
+      "heading": "Version 3.4.4-stable",
+      "cards": [
+        {
+          "title": "Enhancements",
+          "type": "improved",
+          "points": ["Enhanced security by adding encryption for all multistep auth connector API requests."]
+        },
+        {
+          "title": "Fixed",
+          "type": "fixed",
+          "points": [
+            "Fixed a vulnerability by removing private keys.",
+            "Fixed incorrect health status on the activation and login pages.",
+            "Fixed an issue where the edit details option was not visible to owners.",
+            "Fixed a DHQ DB query issue during the import/export of apps.",
+            "Fixed container crashes when the password field was empty while connecting to MongoDB."
+          ]
+        },
+        {
+          "title": "Deprecated",
+          "type": "deprecated",
+          "points": ["Removed the channel ID from API requests."]
+        }
+      ]
+    },{
   "timestamp": 1734393600000,
   "tags": ["Self-Hosted", "3.4.3-stable"],
-  "heading": "Version 3.4.3",
+  "heading": "Version 3.4.3-stable",
   "cards": [
     {
       "title": "Added",

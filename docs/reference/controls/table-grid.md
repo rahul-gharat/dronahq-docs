@@ -6,21 +6,21 @@ title: Table Grid
 import Image from '@site/src/components/Image'; import VersionedLink from '@site/src/components/VersionedLink'; import
 Thumbnail from '@site/src/components/Thumbnail';
 
-The Table Grid control is a type of Display control that obtains data from a Sheet, connector, or other data source and
-displays it in a table format. The table can be sorted, filtered, paginated, and downloaded, and includes features like
-row selection and insertion, server-side pagination, and custom columns.
+The Table Grid control is a type of Display control that obtains data from a Sheet, connector, or other data source and displays it in a table format. The table can be sorted, filtered, paginated, and downloaded, and includes features like row selection and insertion, server-side pagination, and custom columns.
 
 <figure>
   <Thumbnail src="/img/reference/controls/table-grid/preview.png" alt="table Grid" />
   <figcaption align = "center"><i>Table Grid</i></figcaption>
 </figure>
 
-## Binding Data Options
+## Content
+
+### Binding Data Options
 
 Table Grid control accepts array of objects to display data. There are different ways in which you can bind data to the
 Table Grid control.
 
-### Static Data Option
+#### Static Data Option
 
 To display static options in the Table Grid control, you can use the Bind Data option.
 
@@ -41,7 +41,7 @@ The Bind Data option must be specified as an array of objects. For example:
 ];
 ```
 
-### Dynamic Data Option
+#### Dynamic Data Option
 
 You can dynamically Bind options by fetching data from `Data queries`, `Sheets` or `Custom functions` by binding the
 response to the Data Bind option. For example:
@@ -63,6 +63,12 @@ In the Table Grid control, Bind Data Options, select the
 
 Real-time visualization of table grid control changes in the builder view, with updated data fetched from an SQL
 database.
+
+### Add-ons
+
+This is the segment where you can add different kinf of add-ons to your table grid control to make it more iteractive, editable, and more.
+
+
 
 ---
 
@@ -142,12 +148,11 @@ customization, and aggregation footers. For an in-depth understanding, you can r
 |------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Searchbar                     | Toggle ON or OFF to Show the Searchbar.                                                                                                                                           |
 | Placeholder                   | Allows you to set placeholder text for the search bar or specific fields.                                                                                                         |
-| Search                        | Enables the ability to perform a search across the table's data.                                                                                                                  |
-| Enable Actions                | Toggles the ability to perform table actions such as Add, Update, Delete, Download, Refresh, and Filter.                                                                          |
-| Add                           | It is the button displayed for the Add action. You need to specify under Actions, the action flow to add the record. |
-| Update                        | Select rows and click "Update" to modify the record.                                                                                                                              |
-| Delete                        | Select rows and click "Delete" to delete the selected records.                                                                                                                    |
-| Column Reorder and Visibility | Toggle ON/OFF to reorder columns or change their visibility on the client side of the app.                                                                                        |
+| Search At                       | Enables the ability to perform a search between `server` and `client` for the table's data.                                                                                                                  |
+| Preset Actions                | Include the ability to perform table actions such as Add, Update, and Delete by adding respective buttons.                                                                          |
+| Column ordering and Visibility | Toggle ON/OFF to reorder columns or change their visibility on the client side of the app.                                                                                        |
+| Filter Query | Enables or disables the generation of filter query outputs (filterquery and filterjson), which can be used for filtering data server-side.|
+| Sort Query | Enables or disables the generation of sort query outputs (sortquery and sortjson), which can be used for ordering data server-side. |
 | Download File Name            | Allows you to specify the default file name for the CSV file downloaded from the table grid.                                                                                      |
 | Refresh                       | Refreshes the data in the table grid depending on the actions performed.                                                                                                          |
 | Filters                       | Lets you apply advanced filters to table data. Choose a filter, click "Apply," and view the data based on the selection.                                                          |

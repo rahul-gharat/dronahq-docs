@@ -69,6 +69,7 @@ Below Environment variables to be configured -
 | Environment Variable  | Description |
 |----------------------------------------------|-----------------------------------------------------------------------------------------------------|
 | GIT_SYNC                            | This variable specifies if you want to enable Global Git Sync feature. By default it is set to `false` |
+| GIT_PROVIDER                        | Specifies the provider you are using, values can be `GITHUB` / `GITLAB` / `BITBUCKET`   |
 | GIT_SYNC_REPOSITORY_URL             | HTTPS Url of the Git Repo which you want all your apps to be checked into. Mandatory if GIT_SYNC is true |
 | GIT_SYNC_BRANCH_NAME                | Branch name of the above repo url which this instance should be synced with. For production instance, ideally use `main` branch.    |
 | GIT_SYNC_PERSONAL_ACCESS_TOKEN      | Personal Access token generated on github repository that you want to use to sync apps is placed here |

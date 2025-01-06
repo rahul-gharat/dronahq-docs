@@ -16,7 +16,7 @@
       ]
     },
     {
-      "title": "Enhanced",
+      "title": "Enhancements",
       "type": "improved",
       "points": [
         "Enhanced DataQuery to handle release and draft version of the created data queries. Now, editing a dataquery in your App will not affect DataQuery of the published version of the App.",
@@ -89,7 +89,7 @@
         ]
       },
       {
-        "title": "Enhanced",
+        "title": "Enhancements",
         "type": "improved",
         "points": [
           "Enhanced the Connector Query/Library information for the user by including meta-data info with timeline.",
