@@ -4,13 +4,6 @@
   "heading": "Version 3.5.1-edge",
   "cards": [
     {
-      "title": "Added",
-      "type": "added",
-      "points": [
-        "Added new action icon."
-      ]
-    },
-    {
       "title": "Enhancements",
       "type": "improved",
       "points": [
