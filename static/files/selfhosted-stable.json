@@ -1,7 +1,7 @@
 [  {
       "timestamp": 1764720000000,
       "tags": ["Self-Hosted", "3.4.6-stable"],
-      "heading": "Version 3.4.6",
+      "heading": "Version 3.4.6-stable",
       "cards": [
         {
           "title": "Enhancements",
@@ -29,7 +29,7 @@
     {
       "timestamp": 1735344000000,
       "tags": ["Self-Hosted", "3.4.5-stable"],
-      "heading": "Version 3.4.5",
+      "heading": "Version 3.4.5-stable",
       "cards": [
         {
           "title": "Enhancements",
@@ -58,7 +58,7 @@
     {
       "timestamp": 1734652800000,
       "tags": ["Self-Hosted", "3.4.4-stable"],
-      "heading": "Version 3.4.4",
+      "heading": "Version 3.4.4-stable",
       "cards": [
         {
           "title": "Enhancements",
