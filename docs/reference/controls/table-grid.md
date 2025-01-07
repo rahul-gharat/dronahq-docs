@@ -66,7 +66,7 @@ database.
 
 ### Add-ons
 
-This is the segment where you can add different kinf of add-ons to your table grid control to make it more iteractive, editable, and more.
+This is the segment where you can add different kind of add ons to your table grid control to make it more interactive, editable, and more.
 
 
 
@@ -92,8 +92,7 @@ involves fetching the entire data set upfront and then dividing it into pages lo
 
 #### Key Benefits
 
-- Since all data is loaded at once, client-side pagination is best suited for smaller data sets. For very large data
-  sets, this can lead to performance issues such as slow loading times and high memory usage.
+- Since all data is loaded at once, client-side pagination is best suited for smaller data sets. For very large data  sets, this can lead to performance issues such as slow loading times and high memory usage.
 - Implementation is simpler as it doesn't require server-side changes or multiple requests to fetch data.
 - Once the data is loaded, navigation between pages is instant, providing a smooth user experience without additional
   server requests.

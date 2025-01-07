@@ -93,8 +93,8 @@ If the selected template requires additional parameters, they will be incorporat
 </div>
 <br></br>
 
-Upon successful execution, the response returns a JSON object containing the pdfFile key, which holds the publicly accessible URL to the generated PDF
+Upon successful execution, the response returns a JSON object containing the pdf File key, which holds the publicly accessible URL to the generated PDF
 
 The generated PDF is uploaded and hosted on DronaHQ's S3 bucket (Amazon Web Services). This ensures easy access and public visibility of the file for sharing and other use cases.
 Users cannot delete the files directly from DronaHQ's S3 bucket once they are generated.
-rsistent and publicly accessible unless restricted otherwise by backend settings.
+resistent and publicly accessible unless restricted otherwise by backend settings.
