@@ -15,6 +15,12 @@ The Table Grid control is a type of Display control that obtains data from a She
 
 ## Content
 
+<figure>
+  <Thumbnail src="/img/reference/controls/table-grid/content.jpg" alt="table Grid" />
+  <figcaption align = "center"><i>Table Grid</i></figcaption>
+</figure>
+
+
 ### Binding Data Options
 
 Table Grid control accepts array of objects to display data. There are different ways in which you can bind data to the
@@ -66,13 +72,159 @@ database.
 
 ### Add-ons
 
-This is the segment where you can add different kind of add ons to your table grid control to make it more interactive, editable, and more.
+<figure>
+  <Thumbnail src="/img/reference/controls/table-grid/add-ons.jpg" alt="table Grid" />
+</figure>
 
 
+| Add-on                         | Description                                                                                                                                                                   |
+|--------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Tooltip                    | Allows you to display additional information or helpful hints when users hover over table cells or column headers.                                                             |
+| Description                | Adds descriptive text beneath table headers or rows to provide better context for users.                                                                                      |
+| Label                      | Enables the addition of labels for specific columns or rows, making the data easier to interpret.                                                                             |
+| Detail View                | Lets users expand rows to view more details about a particular record. Useful for showing extended data not displayed in the main table.                                       |
+| Group Data                 | Organizes rows into collapsible sections based on shared column values, improving readability and navigation.                                                                 |
+| Searchbar                  | Toggle ON or OFF to show the Searchbar. Users can filter table rows dynamically by entering keywords.                                                                          |
+| Preset Actions             | Includes built-in actions like Add, Update, and Delete, with respective buttons for quick operations.                                                                          |
+| Toolbar                    | Provide users with an intuitive interface to control and manage table functionalities such as column visibility, filter queries, sort queries, and more.                                                         |
+| Editable Table             | Allows users to modify table data directly within the table grid. Editable columns and validations can be configured for specific use cases.                                   |
+| Pagination                 | Adds pagination to the table grid for managing large datasets by splitting them into smaller, navigable pages.                                                                |
+
+
+### Toolbar
+
+
+<figure>
+  <Thumbnail src="/img/reference/controls/table-grid/toolbar.jpg" alt="table Grid" />
+</figure>
+
+| Feature                | Description                                                                                                                                                            |
+|----------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Column Ordering and Visibility | Allows users to toggle ON/OFF columns to reorder them or change their visibility directly from the app interface.                                                      |
+| Filter Query           | Enables or disables the generation of server-side filter query outputs (`filterquery` and `filterjson`). This is useful for filtering data dynamically based on conditions.  |
+| Sort Query             | Generates sort query outputs (`sortquery` and `sortjson`) for ordering data by specific columns on the server-side.                                                                            |
+| Add-ons                | Additional options that enhance table behavior, such as grouping data, exporting, or displaying tooltips.                                                                    |
+| Refresh                | Provides a button to reload the table data, ensuring users can fetch the latest records from the server or data source.                                                     |
+| Sorting Options        | Enables sorting functionality with options to persist sorting state across sessions or reset it when required.                                                              |
+| Filter Options         | Allows temporary filtering, persistent filtering, and the ability to reset filters applied to the table.                                                                    |
+| Downloaded File Name   | Sets the default file name for exported data from the table.                                                                                                                |
+
+#### Filter Query and Sort Query 
+
+The Filter Query and Sort Query features enable dynamic filtering and sorting of data for both client-side and server-side operations. These functionalities generate outputs in SQL and JSON formats, which can be consumed directly for backend processing or local data manipulation.
+
+
+
+#### Filter Query
+
+The Filter Query feature provides users with the ability to define conditions for filtering data. The conditions can be applied server-side or client-side to retrieve only the relevant data rows.
+
+| Property/Output             | Description                                                                                   |
+|---------------------------------|---------------------------------------------------------------------------------------------------|
+| `tablegrid.properties.filterquery` | Generates the filter conditions as a SQL-compatible string. Example: `name = 'John' AND age > 25`.  |
+| `tablegrid.properties.filterjson`  | Outputs the filter conditions in JSON format. Example: `{"name": "John", "age": {"$gt": 25}}`.     |
+
+<!-- **How It Works:**
+1. **User Interaction:**  
+   - Users select or input filter criteria through the table grid interface (e.g., "Name equals Vaibhav" and "Age greater than 25").
+   
+2. **Generated Outputs:**  
+   - **SQL Output:** A filter query string that can be sent to a backend for data retrieval.  
+     Example:  
+     ```sql
+     SELECT * FROM table_name WHERE name = 'Vaibhav' AND age > 25;
+     ```
+   - **JSON Output:** A structured JSON object representing the filter conditions for client-side use.  
+     Example:  
+     ```json
+     {
+       "name": "Vaibhav",
+       "age": { "$gt": 25 }
+     }
+     ```
+
+3. **Use Case:**  
+   - Dynamic data filtering in SQL-based databases or NoSQL environments like MongoDB (with JSON filters).  
+   - Adaptable to both server-side and client-side search behavior. -->
+
+
+
+#### Sort Query
+
+The Sort Query feature allows users to sort table data based on one or more columns, either in ascending or descending order. This can be used for backend processing or client-side table arrangements.
+
+| Property/Output             | Description                                                                             |
+|---------------------------------|---------------------------------------------------------------------------------------------|
+| `tablegrid.properties.sortquery` | Generates the sorting criteria as a SQL-compatible string. Example: `status ASC, age DESC`. |
+| `tablegrid.properties.sortjson`  | Outputs the sorting criteria in JSON format. Example: `{"status": "asc", "age": "desc"}`.   |
+
+<!-- How It Works:**
+1. **User Interaction:**  
+   - Users select columns to sort by (e.g., "Sort by Status in Ascending Order" and "Sort by Age in Descending Order").
+   
+2. **Generated Outputs:**  
+   - **SQL Output:** A sort query string that defines the column order for a backend query.  
+     Example:  
+     ```sql
+     SELECT * FROM table_name ORDER BY status ASC, age DESC;
+     ```
+   - **JSON Output:** A structured JSON object for sorting criteria.  
+     Example:  
+     ```json
+     {
+       "status": "asc",
+       "age": "desc"
+     } 
+     ```
+ ### **Filter Query and Sort Query in Action**
+
+    #### **Filter Query Example**
+Imagine a user wants to filter rows where `name` equals "John" and `age` is greater than 25.  
+- **SQL Output:**  
+  ```sql
+  SELECT * FROM users WHERE name = 'John' AND age > 25;
+  ```
+-    **JSON Output:**  
+  ```json
+  {
+    "name": "John",
+    "age": { "$gt": 25 }
+  }
+  ```
+
+#### **Sort Query Example**
+The user wants to sort data by `status` in ascending order and by `age` in descending order.  
+- **SQL Output:**  
+  ```sql
+  ORDER BY status ASC, age DESC;
+  ```
+- **JSON Output:**  
+  ```json
+  {
+    "status": "asc",
+    "age": "desc"
+  }
+  ```
 
 ---
 
-## Server-Side Pagination
+### **Properties Summary**
+
+| **Property**                       | **Type**   | **Description**                                                                                                                                       |
+|------------------------------------|------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `tablegrid.properties.filterquery` | String     | Returns filter conditions as a SQL query string. Example: `name = 'Vaibhav' AND age > 25`.                                                            |
+| `tablegrid.properties.filterjson`  | JSON Object| Outputs filter conditions in JSON format for use in client-side or NoSQL environments. Example: `{"name": "Vaibhav", "age": {"$gt": 25}}`.            |
+| `tablegrid.properties.sortquery`   | String     | Returns sorting criteria as a SQL query string. Example: `status ASC, age DESC`.                                                                      |
+| `tablegrid.properties.sortjson`    | JSON Object| Outputs sorting criteria in JSON format for client-side or NoSQL-based sorting. Example: `{"status": "asc", "age": "desc"}`.                          |
+
+ -->
+
+### Pagination
+Pagination helps manage large data sets by splitting them into smaller, more manageable pages. This ensures optimal performance and easier navigation for users.
+
+
+
+#### Server-Side Pagination
 
 Server-side pagination is a technique for displaying large data sets in a web application by dividing the data into
 pages and only sending the current page to the browser. This can improve performance and make the data easier to manage.
@@ -84,7 +236,7 @@ pages and only sending the current page to the browser. This can improve perform
 - This method handles large data sets efficiently, as it doesn't require loading all data at once.
 - Improves the user experience by ensuring quick data retrieval and display, even with extensive data sets.
 
-## Client-Side Pagination
+#### Client-Side Pagination
 
 Client-side pagination is another method used to manage large data sets in web applications. Unlike server-side
 pagination, where only the necessary data for the current page is fetched from the server, client-side pagination
@@ -97,6 +249,11 @@ involves fetching the entire data set upfront and then dividing it into pages lo
 - Once the data is loaded, navigation between pages is instant, providing a smooth user experience without additional
   server requests.
 
+:::caution NOTE 
+When the pagination is enabled your Filter and the Search features do not work on the columns. However,
+if you disable pagination you would note that the search provides you with the rows matching the search text. The Filter feature would also allow you specify the filter conditions 
+:::
+
 :::info 
 To know about implementing pagination in Tablegrid control within DronaHQ, understand the types and
 configurations necessary for efficient data management. Pagination types include server-side, client-side, and
@@ -106,21 +263,37 @@ For a comprehensive guide, you can read the
 [Pagination in Tablegrid Control](https://docs.dronahq.com/building-apps-concepts/pagination-in-tablegrid/) article. 
 :::
 
+
+### Actions
+
+<figure>
+  <Thumbnail src="/img/reference/controls/table-grid/actions.jpg" alt="table Grid" />
+</figure>
+
+
 ---
 
-| Property             | Description                                                                               |
-| -------------------- | ----------------------------------------------------------------------------------------- |
-| Rows per page        | This allows you to set the index value of the default selected row.                       |
-| Default offset       | This allows you to set the default Offset to start pagination from.                       |
-| Default selected row | Is the row selected by default on loading of the data.                                    |
-| Height               | This allows you to set the height for the table grid control.                             |
-| Visible              | By default you can set the visible rows and columns to specify the height of the control. |
+| Property                | Description                                                                                                                                                                                                                                                                                                  |
+|-------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Text               | Add the text for the action to be displayed on the button or in the column.                                                                                                                                                                                                                                 |
+| Icon               | Allows you to select an icon for the action to visually represent it.                                                                                                                                                                                                                                       |
+| Header Text        | Define the text that will appear in the column header when the action is added as a column.                                                                                                                                                                                                                  |
+| Color              | Lets you assign a color to the action or icon for better distinction and customization.                                                                                                                                                                                                                      |
+| Show On            | Configure when the action should appear. Options include Single-select, Multi-select, or Both.                                                                                                                                                                                                   |
+| Show In Header     | Toggles whether the action will appear in the table header for easy access.                                                                                                                                                                                                                                  |
+| Show On Hover      | Specifies whether the action or icon will be visible only when hovering over a selected row.                                                                                                                                                                                                                 |
+| Add As Column      | Adds the action as a column in the table grid. The action text will appear in the column, and the position can be adjusted using column settings.                                                                                                                                                             |
+| Hide Text          | Hides the action text while keeping the icon visible. Useful for creating a cleaner look.                                                                                                                                                                                                                   |
+| Condition to Hide  | Allows you to define conditions under which the action or icon should be hidden.                                                                                                                                                                                                                            |
+| Condition to Disable | Lets you define conditions to disable the action or icon, preventing it from being triggered under specific scenarios.                                                                                                                                                                                      |
 
-:::caution NOTE 
-When the pagination is enabled your Filter and the Search features do not work on the columns. However,
-if you disable pagination you would note that the search provides you with the rows matching the search text. The Filter
-feature would also allow you specify the filter conditions 
-:::
+
+
+---
+
+
+
+
 
 ## Properties
 
