@@ -271,8 +271,6 @@ For a comprehensive guide, you can read the
 </figure>
 
 
----
-
 | Property                | Description                                                                                                                                                                                                                                                                                                  |
 |-------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Text               | Add the text for the action to be displayed on the button or in the column.                                                                                                                                                                                                                                 |
@@ -291,108 +289,76 @@ For a comprehensive guide, you can read the
 
 ---
 
+## Interaction
+
+<figure>
+  <Thumbnail src="/img/reference/controls/table-grid/intraction-event.jpg" alt="table Grid" />
+</figure>
 
 
+| Property               | Description                                                                 |
+|----------------------------|---------------------------------------------------------------------------------|
+| Selection              | Configures how rows can be selected in the grid. Options are:                   |
+|                            | - None: No selection allowed.                                              |
+|                            | - Single: Allows selecting a single row at a time.                         |
+|                            | - Multiple: Allows selecting multiple rows at a time.                      |
+| Default Index          | Specifies the index of the row that should be selected by default (e.g., `0`). |
+| On Row Click           | Defines the action to be performed on clicking a row:                          |
+|                            | - Select Row: Selects the row when clicked.                                |
+|                            | - None: Disables row selection on click.                                   |
+| Show Animation on Data Refresh | Enables or disables animation when data in the table is refreshed.             |
+| Default View           | Sets the default view for displaying data. Options are:                        |
+|                            | - List: Displays data in a tabular list format.                            |
+|                            | - Map: Displays data in a map view (if applicable).                        |
+| Freeze Columns         | Allows freezing specific columns so they remain visible during horizontal scroll.|
 
 
-## Properties
+### Events
 
-:::info 
-To know about the various functionalities of interactive tables in DronaHQ, you can explore features such as
-data loading, column customization, and editable table columns. Additionally, learn how to handle events, pagination,
-and grouping data for a comprehensive table management experience. With options for row selection, dynamic UI
-customization, and aggregation footers. For an in-depth understanding, you can read the
-[Building Interactive tables](https://docs.dronahq.com/building-apps-guides/building-interactive-tables/) article. 
-:::
-
-| Property              | Description                                                                      |
-| --------------------- | -------------------------------------------------------------------------------- |
-| Table Header          | Specifies the font size and font weight for the table header.                    |
-| Table Data            | Specifies the font size and font weight for the table data.                      |
-| Theme                 | Allows you to specify the theme for the table grid.                              |
-| Row Background Colors | Set the background color for odd and even rows distinctively                     |
-| Column Width          | Allows you to specify the maximum and minimum width of the columns in the table. |
-
-### Top Bar
+| Trigger       | Description                                                                                     |
+| ------------- | ----------------------------------------------------------------------------------------------- |
+| row_select    | Occurs when a row in the table or a list is selected.                                           |
+| add_click     | Occurs when the add button for adding new items is clicked.                                     |
+| update_click  | Occurs when the update button for updating existing items is clicked.                           |
+| delete_click  | Occurs when the delete button for deleting items is clicked.                                    |
+| save_changes  | Occurs when the save button for saving changes is clicked, typically after editing or updating. |
+| refresh_click | Occurs when you click the refresh button of the table grid control                              |
 
 
-| Property                      | Description                                                                                                                                                                    |
-|------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Searchbar                     | Toggle ON or OFF to Show the Searchbar.                                                                                                                                           |
-| Placeholder                   | Allows you to set placeholder text for the search bar or specific fields.                                                                                                         |
-| Search At                       | Enables the ability to perform a search between `server` and `client` for the table's data.                                                                                                                  |
-| Preset Actions                | Include the ability to perform table actions such as Add, Update, and Delete by adding respective buttons.                                                                          |
-| Column ordering and Visibility | Toggle ON/OFF to reorder columns or change their visibility on the client side of the app.                                                                                        |
-| Filter Query | Enables or disables the generation of filter query outputs (filterquery and filterjson), which can be used for filtering data server-side.|
-| Sort Query | Enables or disables the generation of sort query outputs (sortquery and sortjson), which can be used for ordering data server-side. |
-| Download File Name            | Allows you to specify the default file name for the CSV file downloaded from the table grid.                                                                                      |
-| Refresh                       | Refreshes the data in the table grid depending on the actions performed.                                                                                                          |
-| Filters                       | Lets you apply advanced filters to table data. Choose a filter, click "Apply," and view the data based on the selection.                                                          |
-| Persist Filter                | Retains the applied filter across sessions.                                                                                                                                       |
-| Quick Filter                  | Adds quick filters for selected columns. Works with Single Tag or Multi-Tag types. Info: Ensure columns are formatted as Single Tag or Multi-Tag in column settings.          |
-| Sorting                       | Enables sorting of table data by specific columns.                                                                                                                               |
-| Persist Sort                  | Retains the applied sort order across sessions.                                                                                                                                   |
-| Row Size                      | Allows adjustment of row size, offering options such as Small, Medium, or Large.                                                                                                 |
-| Default Row Size              | Sets the default row size for the table. Options include Small (S), Medium (M), or Large (L).                                                                                     |
-| Downloaded File Name          | Lets you specify the file name for downloaded CSV files.                                                                                                                         |
-| Unique Identifier for Update  | Select a column that serves as the unique identifier for updating rows.                                                                                                           |
-| Add New Row                   | Allows users to add new rows to the table grid.                                                                                                                                   |
-| Choose Editable Columns       | Lets you choose one or more columns from the table grid to make editable.                                                                                                         |
-| Editable Columns for New Rows | Choose columns that will be editable when adding new rows to the table grid.                                                                                                     |
-| Custom Label                  | Lets you set a custom label for buttons or input fields.                                                                                                                         |
+## Appearance
 
-### Properties 
+<figure>
+  <Thumbnail src="/img/reference/controls/table-grid/appear.jpg" alt="table Grid" />
+</figure>
 
-| Property                       | Description                                                                                                                                                                    |
-|--------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Dynamic Headers                | Toggle ON/OFF to enable dynamic adjustments to the table headers based on data or conditions.                                                                                 |
-| Background                     | Allows you to set a background color or style for the table header.                                                                                                           |
-| Text Alignment                 | Align the text in the table header (options: Left, Center, or Right).                                                                                                         |
-| Table Data                 | Section for configuring the appearance of the table's content rows.                                                                                                           |
-| Dynamic Text for No Data       | Customize the message displayed when the table contains no data (e.g., "No Data Present!").                                                                                   |
-| Dynamic Text While Loading Data| Set a custom message displayed while data is being loaded (e.g., "Working...").                                                                                                |
-| Hide Vertical Lines            | Toggle ON/OFF to hide the vertical grid lines within the table.                                                                                                                |
-| Row Background Colors      | Configure alternating background colors for table rows (odd and even).                                                                                                                        |
-| Theme                          | Choose a predefined theme for the table (e.g., Brand).                                                                                                                         |
-| Enable Custom Column Width     | Toggle ON/OFF to allow custom widths for columns.                                                                                                                              |
-| Custom Column Widths           | Specify custom widths for individual columns, represented as an array (e.g., `[220, 176, 221, 293, 140, 122, 101]`).                                                           |
 
-### Display
+| Property             | Description                                                                                     |
+|--------------------------|-----------------------------------------------------------------------------------------------------|
+| Visibility           | Configures whether the table is visible on the screen. Can be dynamically controlled using rules.   |
+| Theme                | Applies a predefined visual theme to the table for styling consistency.                            |
+| Brand                | Sets the brand color or accent to align with the application's branding.                           |
+| Selected Row Color   | Specifies the color of the text for the selected row.                                              |
+| Selected Bg          | Defines the background color for the selected row.                                                |
+| Table Header         | Customizes the table headers.                                      |
+| Table Content        | Configures the content of the table cells.                              |
+| Row Backgrounds      | Sets the background colors for rows.                                    |
+| Column Widths        | Configures the width of table columns.                                  |
+| Hide Vertical Lines  | Removes vertical divider lines between columns in the table.                                       |
+| No Data Text         | Specifies the text to display when no data is present. Default: *No Data Present!*                |
+| Loading Text         | Specifies the text to display while the table is loading data. Default: *Working...*              |
 
-| Property                | Description                                                                                                                                                                |
-| ----------------------- | ----------------------------------------------------------------------------- | 
-| Map                     | Toggle on or off the Map view to display data like the co-ordinates on a Map.                                                                                                                                                                                       |
-| Default view            | This allows you to select the default view as Map or List.                                                                                                                                                                                                          |
-| Show Thumbnails         | Enable Show Thumbnails when you want your Images to be displayed as thumbnails. The column would be of type File. If it contains PDFs the PDF file icon would be shown.                                                                                             |
-| Detailed view           | This allows you to switch ON or OFF to show data in the Detailed view of your sheet data. Whenever you click any of the records it would display the row data as a detailed view.                                                                                   |
-| Show Key Value Map      | This would display the selected row as a key-value map instead of the default grid (as seen in above screenshot).                                                                                                                                                   |
-| Customize               | By switching on Customize, you can customize the columns shown in the detailed view. By default all columns are shown, however, you can select a limited number as well if you want to give a quick look at the data.                                               |
-| Select column           | When you enable Customize property above, you can then select the columns to be displayed in the Detailed view.                                                                                                                                                     |
-| Group data              | Enable to Group your Data and select the column to Group By. The rows would appear in the Accordion Style selected.                                                                                                                                                 |
-| Group by                | Allows you to select the column to group by.                                                                                                                                                                                                                        |
-| Show Aggregation Footer | This checkbox allows you to generate an aggregate value of different distinct information such as unique values, the number of values, the sum of values, empty values, checked values, and more, then displays the result at the bottom of its respective columns. |
-| Freeze Columns          | This property enables you to select the number of columns from the table grid control which you want to appear as frozen in tablegrid control while doing horizontal scrolling on it.                                                                               |
-| Fit height to screen    | Enable to set the Height of the Table grid to fit the screen. During pagination, the table fits the screen and you can scroll within the table within the area.                                                                                                     |
-| Checkbox                | This allows you to add a single select or multi-select check box in your table grid data. It has options as Yes (with single select), Yes (with multi-select), and No.                                                                                              |
-| Pagination              | This allows you to enable pagination for your data. When you allow pagination some more properties would be added to your list of properties. You can have Limit Offset based pagination or Cursor Based Pagination.                                                | Height | This allows you to set the height for the table grid control. |     | Height | This allows you to set the height for the table grid control. | By default you can set the visible rows and columns to specify the height of the control. |
 
-### Actions
+## Advanced Settings
+For power users and developers, the advanced settings offer additional control over the Tabbed Container.
 
-| Property                | Description                                                                                                                                                                                                                                                                                                                                          |
-| ----------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| On Row click            | This is the default action on click of the Table grid row. You can Navigate to another page, Select a Row, or Show details.                                                                                                                                                                                                                          |
-| Navigate with Selection | If you select the Navigate with Selection action you would be able to further define the navigation.                                                                                                                                                                                                                                                 |
-| Type                    | Specify the type of navigation as Navigate (With validation) or Navigate (Without validation).                                                                                                                                                                                                                                                       |
-| To                      | Specify the page/ screen to navigate to.                                                                                                                                                                                                                                                                                                             |
-| Transition              | You can specify the transition style for your page when navigating.                                                                                                                                                                                                                                                                                  |
-| Actions                 | The remaining Actions (Action 1, Action 2…) allow you to set the actions that would be performed when the row/s are selected.                                                                                                                                                                                                                        |
-| Action Text             | Add a Action Text and select a color for the Action Text.                                                                                                                                                                                                                                                                                            |
-| Icon                    | Allows you to select the Icon for the action.                                                                                                                                                                                                                                                                                                        |
-| Color                   | Allows you to add the color of the icon.                                                                                                                                                                                                                                                                                                             |
-| Show on                 | Allows you to set when the action should be shown. It can be Single-select, Multiselect, or Both.                                                                                                                                                                                                                                                    |
-| Show on hover           | Allows you to set whether the action or action icon would be shown when you hover over the selected row.                                                                                                                                                                                                                                             |
-| Bind to Column          | Now you can bind the hover functionality of the action or action icon to a specific column instead of the end of the table.                                                                                                                                                                                                                          |
-| Add as column           | This adds the action as a column which can then be selected by you to trigger further action. It will appear as the action text in the last column by default but you can set the position for the column to display in your table grid control using Column Index of Action by specifying the position for the column to be added in numeric value. |
+#### External CSS
+Inject custom CSS styles for granular control over the design and behavior of the tabs.
+
+#### Trigger Dependents
+Set up dependent actions or triggers based on user interactions with the tabs.
+
+#### Caching
+Enable caching to store data locally and improve app performance.
 
 ## Control Outputs
 
@@ -411,13 +377,4 @@ These outputs can be referenced in other controls, data queries, or JS functions
 | {{tablegrid.PROPERTIES.EDITEDTABLE}}  | This property allows users to edit data in a table grid without making any changes to the underlying data source. The altered data can be used by the table grid itself or exported to another data source. |
 | {{tablegrid.PROPERTIES.isediting}}	  | A property that checks whether the table grid is in an editing state. It returns true if any row or cell is being edited. |
 
-## Events
 
-| Trigger       | Description                                                                                     |
-| ------------- | ----------------------------------------------------------------------------------------------- |
-| row_select    | Occurs when a row in the table or a list is selected.                                           |
-| add_click     | Occurs when the add button for adding new items is clicked.                                     |
-| update_click  | Occurs when the update button for updating existing items is clicked.                           |
-| delete_click  | Occurs when the delete button for deleting items is clicked.                                    |
-| save_changes  | Occurs when the save button for saving changes is clicked, typically after editing or updating. |
-| refresh_click | Occurs when you click the refresh button of the table grid control                              |
