@@ -1,5 +1,100 @@
 [
   {
+    "timestamp": 1736380800000,
+    "tags": ["Control", "Action"],
+    "heading": "",
+    "cards": [
+      {
+        "title": "Enhanced",
+        "type": "improved",
+        "points": [
+          "Added tool tip for the tab container."
+        ]
+      },
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed console errors for images in the chat component."
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1736208000000,
+    "tags": ["Control", "Action"],
+    "heading": "",
+    "cards": [
+      {
+        "title": "Enhanced",
+        "type": "improved",
+        "points": [
+          "Improved UI for the properties section in Statistics.",
+          "Improved UI for the properties section in Alert.",
+          "Improved UI for the properties section in Dual Text.",
+          "Improved UI for the properties section in Quantity.",
+          "Improved UI for the properties section in Dashboard.",
+          "Improved UI for the properties section in Label.",
+          "Improved UI for the properties section in Embed.",
+          "Improved UI for the properties section in Heading.",
+          "Improved UI for the properties section in Lottie Player.",
+          "Improved UI for the properties section in Metric.",
+          "Improved UI for the properties section in Button.",
+          "Improved UI for the properties section in BPM Submit.",
+          "Improved UI for the properties section in Toggle Theme."
+        ]
+      },
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed library initialization issue in Markdown Viewer.",
+          "Fixed minor bug related to server-side filtering in TableGrid.",
+          "Fixed overlapping tabs issue in Tabbed Container."
+        ]
+      },
+      {
+        "title": "Deprecated",
+        "type": "deprecated",
+        "points": [
+          "Deprecated the Image Menu Grid."
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1735776000000,
+    "tags": ["Control", "Action"],
+    "heading": "",
+    "cards": [
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed _isSelected not working as expected in Table Grid.",
+          "Fixed minor UI issue related to code blocks in Markdown Viewer."
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1735603200000,
+    "tags": ["Control", "Action"],
+    "heading": "",
+    "cards": [
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed special character handling in file names for the DownloadFileFromURL action.",
+          "Fixed special character handling in file names for the WriteFile action."
+        ]
+      }
+    ]
+  }
+
+,
+  {
     "timestamp": 1735344000000,
     "tags": ["Control", "Action"],
     "heading": "",
@@ -98,17 +193,17 @@
     "heading": "",
     "cards": [
       {
-        "title": "Enhancements",
-        "type": "improved",
-        "points": [
-          "Added support for displaying parameter suggestions for multiple actions, including Toast, Confirm, Alert, Email, Call, SMS, Set control value, Refresh control, Show control, Hide control, Set variable, Navigate, Navigate to auth screen, Microapp navigation, Confetti, Show loader (for controls), Stop loader (for controls), Invoke action (triggerAction), Copy to clipboard, Open URL, Play sound, Call REST API, File Parser, DownloadFileAs, TransformDataToArray, TransformDataToObject, Interchange, MergeArrays, Concat, Flattened, Range, ArrayToCSV."
-        ]
-      },
-      {
         "title": "Added",
         "type": "added",
         "points": [
           "New functions to convert between Blob URL, Base64, and byte array: BLOBURLTOBASE64, BASE64TOBLOBURL, BLOBURLTOBYTEARRAY, BYTEARRAYTOBLOBURL."
+        ]
+      },
+      {
+        "title": "Enhancements",
+        "type": "improved",
+        "points": [
+          "Added support for displaying parameter suggestions for multiple actions, including Toast, Confirm, Alert, Email, Call, SMS, Set control value, Refresh control, Show control, Hide control, Set variable, Navigate, Navigate to auth screen, Microapp navigation, Confetti, Show loader (for controls), Stop loader (for controls), Invoke action (triggerAction), Copy to clipboard, Open URL, Play sound, Call REST API, File Parser, DownloadFileAs, TransformDataToArray, TransformDataToObject, Interchange, MergeArrays, Concat, Flattened, Range, ArrayToCSV."
         ]
       }
     ]

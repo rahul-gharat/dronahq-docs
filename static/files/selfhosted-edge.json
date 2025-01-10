@@ -1,127 +1,137 @@
-[{
-  "timestamp": 1735344000000,
-  "tags": ["Self-Hosted", "3.5.1-edge"],
-  "heading": "Version 3.5.1-edge",
-  "cards": [
-    {
-      "title": "Enhancements",
-      "type": "improved",
-      "points": [
-        "Enhanced with a new column type as HTML View. New options for editable output in Date Time and Date Time column types.",
-        "Enhanced with function parameters suggestion in CodeMirror.",
-        "Enhanced Custom Library Import with conflict detection and recovery module.",
-        "Enhanced Automation listing by adding via iframe.",
-        "Enhanced the Protected Apps option for Apps added into Git, enabling app editing only through the feature branch for improved collaboration."
-      ]
-    },
-    {
-      "title": "Fixed",
-      "type": "fixed",
-      "points": [
-        "Fixed logging and error issues.",
-        "Fixed issue where custom fonts were not working in theme configuration.",
-        "Fixed issue where the last metric control inside the grid panel appeared slightly larger than others."
-      ]
-    }
-  ]
-},
-{
-  "timestamp": 1732233600000,
-  "tags": ["Self-Hosted", "3.5.0-edge"],
-  "heading": "Version 3.5.0-edge",
-  "cards": [
-    {
-      "title": "Added",
-      "type": "added",
-      "points": [
-        "Added Screen ID option to change under Screen Properties."
-      ]
-    },
-    {
-      "title": "Fixed",
-      "type": "fixed",
-      "points": [
-        "Fixed issue in DataQuery where the edited state (green dot) was visible by default on opening a connector query in RestAPI."
-      ]
-    }
-  ]
-}
-,{
-  "timestamp": 1731628800000,
-  "tags": ["Self-Hosted", "3.4.0-edge"],
-  "heading": "Version 3.4.0-edge",
-  "cards": [
-    {
-      "title": "Added",
-      "type": "added",
-      "points": [
-        "Enhanced Git Sync module authentication - authentication method changed to personal access token (PAT) and UI enhancements.",
-        "Added airgap compatibility for DronaHQ Self Hosted."
-      ]
-    },
-    {
-      "title": "Fixed",
-      "type": "fixed",
-      "points": [
-        "Fixed an issue with File Storage connector where API list was broken in DataQuery.",
-        "Fixed an issue where Multistep auth screen was not working as expected in the end-user portal.",
-        "Fixed refresh token flow for Salesforce and fixed minor library issues.",
-        "Fixed issues with Classic headers for supporting controls inside it.",
-        "Fixed an issue in IndexDB for clearing unwanted records.",
-        "Fixed an issue with import/export app and added support for custom functions."
-      ]
-    }
-  ]
-}
-,
- {
-  "timestamp": 1734048000000,
-  "tags": ["Self-Hosted", "3.3.2-edge"],
-  "heading": "Version 3.3.2-edge",
-  "cards": [
-    {
-      "title": "Added",
-      "type": "added",
-      "points": [
-        "Added SSH tunneling for databases.",
-        "Added SSH Key Management."
-      ]
-    },
-    {
-      "title": "Enhancements",
-      "type": "improved",
-      "points": [
-        "Enhanced IndexDB usage for deleting items from cache when category is deleted.",
-        "Enhanced error handling in Salesforce connector when dynamic data is missing.",
-        "Enhanced API response in AWS-import where getUserCredentials was returning a 500 code for data not found.",
-        "Enhanced default messages for localization in HTML."
-      ]
-    },
-    {
-      "title": "Fixed",
-      "type": "fixed",
-      "points": [
-        "Fixed issues with widget properties to improve experience and performance.",
-        "Fixed an issue with unexpected resizing of controls on canvas while updating properties.",
-        "Fixed an issue with widget where it was not updating on builder due to nested scope.",
-        "Fixed issue in Git folder sync.",
-        "Fixed manual Git sync - push and pull action.",
-        "Fixed issue with Addon sync where tasks were not resetting.",
-        "Fixed output of selected tab not visible on tabbed container.",
-        "Fixed an issue with app export panel opening."
-      ]
-    },
-    {
-      "title": "Removed",
-      "type": "removed",
-      "points": [
-        "Removed 'Hide whitelist IP' option from connector configuration."
-      ]
-    }
-  ]
-}
-,
-{
+[
+  {
+    "timestamp": 1736380800000,
+    "tags": ["Self-Hosted", "3.5.2-edge"],
+    "heading": "Version 3.5.2-edge",
+    "cards": [
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed a bug in the Connector Library rendering dot-separated dynamic variable values in DataQuery.",
+          "Fixed an issue with the AWS RDS status code.",
+          "Fixed an issue where toggle-type column images appeared to flash when the control was refreshed.",
+          "Fixed an issue where the PDF modal was sticking to the top instead of appearing at the center.",
+          "Fixed an issue where adding a connector failed for self-hosted setups configured over HTTP."
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1735344000000,
+    "tags": ["Self-Hosted", "3.5.1-edge"],
+    "heading": "Version 3.5.1-edge",
+    "cards": [
+      {
+        "title": "Enhancements",
+        "type": "improved",
+        "points": [
+          "Enhanced with a new column type as HTML View. New options for editable output in Date Time and Date Time column types.",
+          "Enhanced with function parameters suggestion in CodeMirror.",
+          "Enhanced Custom Library Import with conflict detection and recovery module.",
+          "Enhanced Automation listing by adding via iframe.",
+          "Enhanced the Protected Apps option for Apps added into Git, enabling app editing only through the feature branch for improved collaboration."
+        ]
+      },
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed logging and error issues.",
+          "Fixed issue where custom fonts were not working in theme configuration.",
+          "Fixed issue where the last metric control inside the grid panel appeared slightly larger than others."
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1732233600000,
+    "tags": ["Self-Hosted", "3.5.0-edge"],
+    "heading": "Version 3.5.0-edge",
+    "cards": [
+      {
+        "title": "Added",
+        "type": "added",
+        "points": ["Added Screen ID option to change under Screen Properties."]
+      },
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed issue in DataQuery where the edited state (green dot) was visible by default on opening a connector query in RestAPI."
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1731628800000,
+    "tags": ["Self-Hosted", "3.4.0-edge"],
+    "heading": "Version 3.4.0-edge",
+    "cards": [
+      {
+        "title": "Added",
+        "type": "added",
+        "points": [
+          "Enhanced Git Sync module authentication - authentication method changed to personal access token (PAT) and UI enhancements.",
+          "Added airgap compatibility for DronaHQ Self Hosted."
+        ]
+      },
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed an issue with File Storage connector where API list was broken in DataQuery.",
+          "Fixed an issue where Multistep auth screen was not working as expected in the end-user portal.",
+          "Fixed refresh token flow for Salesforce and fixed minor library issues.",
+          "Fixed issues with Classic headers for supporting controls inside it.",
+          "Fixed an issue in IndexDB for clearing unwanted records.",
+          "Fixed an issue with import/export app and added support for custom functions."
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1734048000000,
+    "tags": ["Self-Hosted", "3.3.2-edge"],
+    "heading": "Version 3.3.2-edge",
+    "cards": [
+      {
+        "title": "Added",
+        "type": "added",
+        "points": ["Added SSH tunneling for databases.", "Added SSH Key Management."]
+      },
+      {
+        "title": "Enhancements",
+        "type": "improved",
+        "points": [
+          "Enhanced IndexDB usage for deleting items from cache when category is deleted.",
+          "Enhanced error handling in Salesforce connector when dynamic data is missing.",
+          "Enhanced API response in AWS-import where getUserCredentials was returning a 500 code for data not found.",
+          "Enhanced default messages for localization in HTML."
+        ]
+      },
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed issues with widget properties to improve experience and performance.",
+          "Fixed an issue with unexpected resizing of controls on canvas while updating properties.",
+          "Fixed an issue with widget where it was not updating on builder due to nested scope.",
+          "Fixed issue in Git folder sync.",
+          "Fixed manual Git sync - push and pull action.",
+          "Fixed issue with Addon sync where tasks were not resetting.",
+          "Fixed output of selected tab not visible on tabbed container.",
+          "Fixed an issue with app export panel opening."
+        ]
+      },
+      {
+        "title": "Removed",
+        "type": "removed",
+        "points": ["Removed 'Hide whitelist IP' option from connector configuration."]
+      }
+    ]
+  },
+  {
     "timestamp": 1730937600000,
     "tags": ["Self-Hosted", "3.3.1-edge"],
     "heading": "Version 3.3.1-edge",
@@ -131,7 +141,7 @@
         "type": "added",
         "points": [
           "Added Airgap module for self-hosted environments.",
-           "Added ListObjectsAdvanced and SDK handling in AWS S3 connector."
+          "Added ListObjectsAdvanced and SDK handling in AWS S3 connector."
         ]
       },
       {
@@ -169,9 +179,7 @@
       {
         "title": "Added",
         "type": "added",
-        "points": [
-          "Added support for key ‘IdPResponse’ in multistep SAML-based authentication."
-        ]
+        "points": ["Added support for key ‘IdPResponse’ in multistep SAML-based authentication."]
       },
       {
         "title": "Enhancements",
@@ -201,50 +209,50 @@
     ]
   },
   {
-  "timestamp": 1726704000000,
-  "tags": ["Self-Hosted", "3.2.1-edge"],
-  "heading": "Version 3.2.1-edge",
-  "cards": [
-    {
-      "title": "Added",
-      "type": "added",
-      "points": [
-        "Added bulk import/export for branding, jsObject, and theme configuration.",
-        "Added sort and filtering options in Data Query.",
-        "Added option to enable overflow for screen types 'tray' and 'popup'."
-      ]
-    },
-    {
-      "title": "Enhancements",
-      "type": "improved",
-      "points": [
-        "Enhanced Data Query experience by adding indication (green dot) for unsaved queries.",
-        "Enhanced Data Query experience by adding unsaved query count in the left menu.",
-        "Enhanced Data Query experience by adding a Query tab.",
-        "Enhanced message for concurrent access when the same user logs in from multiple locations.",
-        "Enhanced automation webhook configuration sidebar view and made minor improvements.",
-        "Changed JS code block saving in automation to save without testing."
-      ]
-    },
-    {
-      "title": "Fixes",
-      "type": "fixed",
-      "points": [
-        "Fixed AWS IAM activation for Managed File Storage.",
-        "Fixed minor UI issues in REST API field’s placeholder.",
-        "Fixed dropdown icon alignment for long texts in REST API fields.",
-        "Fixed minor UI issues when configuring Managed Storage and Managed PDF connectors in Data Query.",
-        "Fixed action addition for button clicks.",
-        "Fixed bug in validation tab when switching from UI to JS tab.",
-        "Fixed a bug in Add Query sidebar for adding multistep auth variables.",
-        "Fixed bug in REST API loader if dynamic variable is not present.",
-        "Fixed issue with populating endpoint in GraphQL Connector.",
-        "Fixed UI issue in Query Builder where environment dropdown test-icon was misaligned.",
-        "Fixed bug in JS code block where a comment on the last line affected the result."
-      ]
-    }
-  ]
-},
+    "timestamp": 1726704000000,
+    "tags": ["Self-Hosted", "3.2.1-edge"],
+    "heading": "Version 3.2.1-edge",
+    "cards": [
+      {
+        "title": "Added",
+        "type": "added",
+        "points": [
+          "Added bulk import/export for branding, jsObject, and theme configuration.",
+          "Added sort and filtering options in Data Query.",
+          "Added option to enable overflow for screen types 'tray' and 'popup'."
+        ]
+      },
+      {
+        "title": "Enhancements",
+        "type": "improved",
+        "points": [
+          "Enhanced Data Query experience by adding indication (green dot) for unsaved queries.",
+          "Enhanced Data Query experience by adding unsaved query count in the left menu.",
+          "Enhanced Data Query experience by adding a Query tab.",
+          "Enhanced message for concurrent access when the same user logs in from multiple locations.",
+          "Enhanced automation webhook configuration sidebar view and made minor improvements.",
+          "Changed JS code block saving in automation to save without testing."
+        ]
+      },
+      {
+        "title": "Fixes",
+        "type": "fixed",
+        "points": [
+          "Fixed AWS IAM activation for Managed File Storage.",
+          "Fixed minor UI issues in REST API field’s placeholder.",
+          "Fixed dropdown icon alignment for long texts in REST API fields.",
+          "Fixed minor UI issues when configuring Managed Storage and Managed PDF connectors in Data Query.",
+          "Fixed action addition for button clicks.",
+          "Fixed bug in validation tab when switching from UI to JS tab.",
+          "Fixed a bug in Add Query sidebar for adding multistep auth variables.",
+          "Fixed bug in REST API loader if dynamic variable is not present.",
+          "Fixed issue with populating endpoint in GraphQL Connector.",
+          "Fixed UI issue in Query Builder where environment dropdown test-icon was misaligned.",
+          "Fixed bug in JS code block where a comment on the last line affected the result."
+        ]
+      }
+    ]
+  },
   {
     "timestamp": 1725926400000,
     "tags": ["Self-Hosted", "3.2.0-edge"],
