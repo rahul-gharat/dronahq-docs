@@ -54,32 +54,21 @@ After successfully configuring and saving the connector settings, you can easily
 
 ### Get all rows
 
-To fetch all rows matching criteria you can use the `GetAllRows` connector. To configure fields you can provide the
-dynamic values using the `keywords`. You can add `variables` to return a response value to this connector. There are
-several Output values returned which can be used as required.
+To fetch all rows from a specific spreadsheet, you can use the GetAllRows subcategory of the Google Sheet API connector in DronaHQ. This subcategory allows you to retrieve data from an entire sheet or a specified range of rows and columns. Here’s how you can configure it:
 
-In this example shown below, will first fetch all the rows matching the Search Value which is a dynamic value provided using the keywords.
+Inputs You Can Provide:
+- Spreadsheet Name: The name of the spreadsheet from which you want to fetch data.
+- Sheet Name: The specific sheet within the spreadsheet (useful when the spreadsheet - contains multiple sheets).
+- Column Range: Define a range of columns to limit the data fetched (e.g., A:D for columns A through D).
+- Start Row: Specify the starting row number from which data retrieval should begin.
+- End Row: (Optional) Specify the last row number to limit the data retrieved.
 
-1. Use variables to fetch the data from column `B` for the searched rows. You can see here that we have also used the Row number as well as a return value. These Row number values can be used in other use cases or scenarios like updating rows, deleting rows based on certain conditions, and so on.
+
 <figure>
   <Thumbnail src="/img/reference/connectors/googlesheet/getall1.jpeg" alt="Configuring fields to do multiple row clearing." />
 </figure>
 
-2. While using `GetAll Rows` in Google Sheets the response had fixed keys values.A and values.B and so on. DronaHQ has introduced a new enhanced feature Use `Header Rows` option that replaces the fixed keys with headings in your sheets.
 
-3. For the `GetAll Rows` option, you provide the required inputs, and view the result with fixed keys `B` and `C`.
-
-<figure>
-  <Thumbnail src="/img/reference/connectors/googlesheet/getall2.png" alt="Configuring fields to do multiple row clearing." />
-</figure>
-
-In the above example we can view fixed keys `B` and `C` whereas the headings of the google sheets action-name, type and so on are viewed as rows.
-
-3. Now change the Use Header Row in Response to `True/Yes`. Click Refresh Response you will be able to view this screen.
-
-<figure>
-  <Thumbnail src="/img/reference/connectors/googlesheet/getall3.png" alt="Configuring fields to do multiple row clearing." />
-</figure>
 
 ### Get Single Row
 
