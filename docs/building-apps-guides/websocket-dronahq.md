@@ -299,7 +299,7 @@ document.getElementById('clearBtn').addEventListener('click', () => {
 This project showcases how to stream live cryptocurrency prices using WebSocket connections from Binance. It provides an
 easy way to manage connections—allowing users to enter a crypto pair, view real-time updates, and close the connection anytime.
 
-
+<!-- 
 
 <div style={{ position: 'relative', paddingBottom: 'calc(46.33333333333333% + 41px)', height: 0 }}> 
     <iframe 
@@ -312,6 +312,6 @@ easy way to manage connections—allowing users to enter a crypto pair, view rea
         allowfullscreen 
         style= {{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', colorScheme: 'light' }} >
     </iframe>
-</div>
+</div> -->
 
 This example serves as an excellent starting point for building more complex trading applications or dashboards.
