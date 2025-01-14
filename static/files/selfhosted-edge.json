@@ -5,6 +5,13 @@
     "heading": "Version 3.5.2-edge",
     "cards": [
       {
+        "title": "Enhancements",
+        "type": "improved",
+        "points": [
+          "Enhanced Git Sync health check for write permission check."
+        ]
+      },
+      {
         "title": "Fixed",
         "type": "fixed",
         "points": [
@@ -12,7 +19,14 @@
           "Fixed an issue with the AWS RDS status code.",
           "Fixed an issue where toggle-type column images appeared to flash when the control was refreshed.",
           "Fixed an issue where the PDF modal was sticking to the top instead of appearing at the center.",
-          "Fixed an issue where adding a connector failed for self-hosted setups configured over HTTP."
+          "Fixed an issue where adding a connector failed for self-hosted setups configured over HTTP.",
+          "Fixed the issue with the edit app details for git apps which were not working.",
+          "Fixed the issue preventing API calls related to the share sidebar from occurring.",
+          "Fixed the issue causing the home screen of the app to appear during routing.",
+          "Fixed the problem where the app did not function as expected after publishing.",
+          "Fixed the old server-side Actionflow connector sidebar rendering bug.",
+          "Fixed the issue where dynamic credentials were not passing the values of controls or variables.",
+          "Fixed the conflict where the delete control shortcut interfered with the normal Cmd+Del behavior."
         ]
       }
     ]
