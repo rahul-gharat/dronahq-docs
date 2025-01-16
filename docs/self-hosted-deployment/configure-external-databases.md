@@ -187,7 +187,10 @@ Replace variables encapsulated in `<%variable%>` with actual value.
 Run following command to restore data on external database
 
 ```shell
-mongorestore --host=<% host %> -u <%user%> -p <%password%> --db <%database_name%> --authenticationDatabase admin --archive=mongo-init.dump
+mongorestore --host=<% host %> -u <%user%> -p <%password%> --nsFrom="db5x_studio.*"  --nsTo="<%dbname%>.*" --authenticationDatabase admin --archive=mongo-init.dump
+
+
+mongorestore --host=localhost -u root -p NDc4MTBmYTItNjIwMi00ODUwLTgxMTct --nsFrom="db5x_studio.*" --nsTo="dronahq_intrernal.*" --authenticationDatabase admin --archive=mongo-init.dump
 ```
 
 Replace variables encapsulated in `<% variable %>` with actual value.
