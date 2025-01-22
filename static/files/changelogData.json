@@ -1,4 +1,68 @@
 [{
+  "timestamp": 1736899200000,
+  "tags": ["Cloud-Hosted"],
+  "heading": "",
+  "cards": [
+    {
+      "title": "Enhancements",
+      "type": "improved",
+      "points": [
+        "Enhanced PostgreSQL and MSSQL connector schema."
+      ]
+    },
+    {
+      "title": "Fixed",
+      "type": "fixed",
+      "points": [
+        "Fixed an issue where the home screen of app is visible while routing via routing URL.",
+        "Fixed an UI issue for connector query div glitches in docking mode.",
+        "Fixed Global Connectors Endpoint Visible in Data Queries & Action Flow.",
+        "Fixed a behavior for duplicate variable in DQ disappearing on creation.",
+        "Fixed an UI issue where Builder overlapping new property with bottom panel.",
+        "Fixed an issue where dynamic creds were rendering, even dynamic creds toggle was off."
+      ]
+    }
+  ]
+}
+,{
+  "timestamp": 1736294400000,
+  "tags": ["Cloud-Hosted"],
+  "heading": "",
+  "cards": [
+    {
+      "title": "Added",
+      "type": "added",
+      "points": [
+        "Added Encryption for all the multistep auth connector API requests to provide security."
+      ]
+    },
+    {
+      "title": "Enhancements",
+      "type": "improved",
+      "points": [
+        "Enhanced the connector query dynamic credentials handling.",
+        "Enhancements made to left setting button sidebars for New UI in dedicated forms."
+      ]
+    },
+    {
+      "title": "Fixed",
+      "type": "fixed",
+      "points": [
+        "Fixed an issue for tabbed container maintaining space for hidden controls.",
+        "Fixed an UI issue for custom code block does not expand.",
+        "Fixed an issue where Header and Search Bar Visible for Un-activated Addons: PDF and Automation.",
+        "Fixed an issue where Widget update notification was shown on wrong section.",
+        "Fixed an issue where external CSS not getting applied on controls.",
+        "Fixed PDF Creator Sub Cat List Broken On Refresh in DQ & Action Flow.",
+        "Fixed an UI issue where tabular view is not working for connectors' response.",
+        "Fixed an issue where Toast colors are not according to theme nomenclature.",
+        "Fixed an issue where the logout button overflows on the end-user portal.",
+        "Fixed the UI issue where the options dropdown in the SSO configuration list was not opening properly."
+      ]
+    }
+  ]
+}
+,{
   "timestamp": 1734480000000,
   "tags": ["Cloud-Hosted"],
   "heading": "",
