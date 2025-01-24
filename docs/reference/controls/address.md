@@ -91,7 +91,7 @@ The Address control may trigger events when there is a modification in the value
 :::caution
 The `focus_out` event for the address control `only triggers when all input fields within the control are filled.` If any field remains incomplete, the event will not fire, even if the user clicks outside the control. This behavior is intentional and ensures data completeness before triggering dependent actions.  
  
- This logic applies to similar controls with autofill functionality.
+
 :::
 
 ---
