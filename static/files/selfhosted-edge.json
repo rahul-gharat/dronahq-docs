@@ -1,4 +1,41 @@
 [{
+  "timestamp": 1737936000000,
+  "tags": ["Self-Hosted", "3.5.5-edge"],
+  "heading": "Version 3.5.5-edge",
+  "cards": [
+    {
+      "title": "Fixed",
+      "type": "fixed",
+      "points": [
+        "Fixed session logout issue on automation iframe reload to reload the entire page.",
+        "Fixed sorting and persistence issues in StudioConsole.",
+        "Fixed a bug where custom JavaScript could not be added from quick select.",
+        "Fixed missing PDF Modal opening transition.",
+        "Fixed a bug where permission sidebars in 'Manage Users' did not show apps inside folders.",
+        "Fixed version preview scrolling issue. For Scheduler, added a tooltip popup for save actions and an icon in the trigger label. Also, added sanitizeHtmlCharacters function for preselect dropdowns.",
+        "Fixed automation import, export, and GitSync sidebar UI issues."
+      ]
+    }
+  ]
+},
+{
+  "timestamp": 1737763200000,
+  "tags": ["Self-Hosted", "3.5.5-edge"],
+  "heading": "Version 3.5.5-edge",
+  "cards": [
+    {
+      "title": "Fixed",
+      "type": "fixed",
+      "points": [
+        "Fixed credential vulnerabilities in connector.scheme.modal.js.",
+        "Fixed an issue where RMID cookie was not generated after activating the license.",
+        "Fixed an issue where multistep auth connector errors in data queries and account decryption failures were not properly handled.",
+        "Fixed an issue where icon and image URLs caused errors in the console."
+      ]
+    }
+  ]
+}
+,{
     "timestamp": 1737676800000,
     "tags": ["Self-Hosted", "3.5.4-edge"],
     "heading": "Version 3.5.4-edge",
