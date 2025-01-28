@@ -1,4 +1,34 @@
-[
+[{
+  "timestamp": 1737936000000,
+  "tags": ["Control", "Action"],
+  "heading": "",
+  "cards": [
+    {
+      "title": "Fixed",
+      "type": "fixed",
+      "points": [
+        "Fixed issue where the cursor was misplaced when focused in Rich Text Editor.",
+        "Fixed issue where the parent container background image was visible on the child container.",
+        "Fixed issue related to filters with data, time, and date-time columns in Table Grid."
+      ]
+    }
+  ]
+},
+{
+  "timestamp": 1737676800000,
+  "tags": ["Control", "Action"],
+  "heading": "",
+  "cards": [
+    {
+      "title": "Enhancements",
+      "type": "improved",
+      "points": [
+        "Enhanced with a minor update for the new property section in BPM Submit."
+      ]
+    }
+  ]
+}
+,
   {
   "timestamp": 1737417600000,
   "tags": ["Control", "Action"],

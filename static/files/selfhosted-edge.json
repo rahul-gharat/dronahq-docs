@@ -1,4 +1,71 @@
-[
+[{
+    "timestamp": 1737676800000,
+    "tags": ["Self-Hosted", "3.5.4-edge"],
+    "heading": "Version 3.5.4-edge",
+    "cards": [
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed custom file name passed to Google Cloud Storage connector in case of multiple files causing issue in file extension.",
+          "Fixed the issue where branches of Git-protected apps inside folders wouldn't load.",
+          "Fixed reload icon in File Storage (was looking like undo).",
+          "Fixed bug related to header update on folders rename, delete, and other operations.",
+          "Fixed editable green dot visible for connector query only for DataQueries.",
+          "Fixed filtered out Redis and JDBC from Autogen.",
+          "Fixed connector response for table view.",
+          "Fixed field value retention issue when editing OIDC SSO config and adding new one.",
+          "Fixed duplicate click event function causing app setting dropdown toggle issue.",
+          "Fixed an issue where dynamic creds were rendering even when dynamic creds toggle was off.",
+          "Fixed Audit logger error handling and sidebar access.",
+          "Fixed rules condition name change.",
+          "Fixed DataQuery: Connector library/query on direct save suggestion not creating bug."
+        ]
+      },
+      {
+        "title": "Enhancements",
+        "type": "improved",
+        "points": [
+          "Enhanced addAndCommit method performance and created new function addRemoveGenerateCommitMessageAndCommit."
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1736985600000,
+    "tags": ["Self-Hosted", "3.5.3-edge"],
+    "heading": "Version 3.5.3-edge",
+    "cards": [
+      {
+        "title": "Enhancements",
+        "type": "improved",
+        "points": [
+          "Enhanced Snowflake SDK version upgraded from 1.6.3 to 2.0.1.",
+          "Enhanced fast-xml-parser version upgraded from 3.21.1 to 4.2.7.",
+          "Enhanced GitSync feature with added logger."
+        ]
+      },
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed bug in Git Sync branch creation and minor CSS fix for update loader UI, app publish issue from Git Sync sidebar.",
+          "Fixed issue where old app JSON file persists in Git causing old app to get synced when pulled from Git.",
+          "Fixed Git-protected app not working as per permission.",
+          "Fixed bug where last release JSON was given priority over new JSON.",
+          "Fixed DataQuery editable state green dot bug.",
+          "Fixed bug for DataQuery datatypes and homepage selection."
+        ]
+      },
+      {
+        "title": "Added",
+        "type": "added",
+        "points": [
+          "Added IGNORE_CALLBACK_MESSAGE variable to ignore error_message from OAuth callback."
+        ]
+      }
+    ]
+  },
   {
     "timestamp": 1736380800000,
     "tags": ["Self-Hosted", "3.5.2-edge"],

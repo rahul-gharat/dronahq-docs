@@ -1,5 +1,75 @@
-[  {
-      "timestamp": 1764720000000,
+[    {
+    "timestamp": 1737676800000,
+    "tags": ["Self-Hosted", "3.4.9-stable"],
+    "heading": "Version 3.4.9-stable",
+    "cards": [
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed issue where Tablegrid squishes if the data is fetched while the screen is not active.",
+          "Fixed an issue where the home screen of the app is visible while routing.",
+          "Fixed issue by removing dynamic_variables key from test_db_sub_cat call.",
+          "Fixed custom file name passed to Google Cloud Storage connector in case of multiple files causing issues in file extension.",
+          "Fixed internet error when creating a user group."
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1737072000000,
+    "tags": ["Self-Hosted", "3.4.8-stable"],
+    "heading": "Version 3.4.8-stable",
+    "cards": [
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed an issue where the home screen of the app is visible while routing.",
+          "Fixed issue by adding 'from email' field in SMTP connector configuration."
+        ]
+      },
+      {
+        "title": "Enhancements",
+        "type": "improved",
+        "points": [
+          "Enhanced Git Sync health check for write permission check."
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1736380800000,
+    "tags": ["Self-Hosted", "3.4.7-stable"],
+    "heading": "Version 3.4.7-stable",
+    "cards": [
+      {
+        "title": "Enhancements",
+        "type": "improved",
+        "points": [
+          "Enhanced encryption with RMID cookie and added two variables in config file: session_timeout_ms, session_refresh_time_frame.",
+          "Enhanced GitLab authentication support for Git Sync."
+        ]
+      },
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed connection to Snowflake failing due to library version.",
+          "Fixed issue where adding a connector fails for self-hosted when configured over HTTP."
+        ]
+      },
+      {
+        "title": "Added",
+        "type": "added",
+        "points": [
+          "Added IGNORE_CALLBACK_MESSAGE variable to ignore error_message from OAuth callback."
+        ]
+      }
+    ]
+  },
+  {
+      "timestamp": 1733184000000,
       "tags": ["Self-Hosted", "3.4.6-stable"],
       "heading": "Version 3.4.6-stable",
       "cards": [
