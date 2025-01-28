@@ -8,7 +8,7 @@ import Thumbnail from '@site/src/components/Thumbnail';
 
 The Email action in DronaHQ empowers your app to send emails directly. This feature is particularly useful when you need to confirm activities or communicate information via email.
 
-This is a native action suitable for mobile application developement.
+This is a native action suitable for mobile application development.
 
 <figure>
 <Thumbnail src="/img/reference/actionflow-blocks/email/email.png" alt="Email" />
