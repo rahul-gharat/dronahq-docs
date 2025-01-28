@@ -81,4 +81,3 @@ You can have a look at this video to understand how to use the Form repeat contr
 <figure>
   <VideoEmbed host='youtube' videoId='4qhpRxy01e4' />
 </figure>
-https://youtu.be/4qhpRxy01e4?si=v3X3IDfLo2eSrBpq
