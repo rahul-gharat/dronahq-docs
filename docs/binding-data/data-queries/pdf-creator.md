@@ -97,4 +97,4 @@ Upon successful execution, the response returns a JSON object containing the pdf
 
 The generated PDF is uploaded and hosted on DronaHQ's S3 bucket (Amazon Web Services). This ensures easy access and public visibility of the file for sharing and other use cases.
 Users cannot delete the files directly from DronaHQ's S3 bucket once they are generated.
-resistent and publicly accessible unless restricted otherwise by backend settings.
+resistant and publicly accessible unless restricted otherwise by backend settings.
