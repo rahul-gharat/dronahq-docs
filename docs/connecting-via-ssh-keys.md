@@ -25,7 +25,7 @@ To generate an SSH key in the cloud version, follow these steps:
 
 :::tip
 
-You also have the option to add an existing SSH key from your system. Simply toggle the Import Key option and choose a `.pem` file from the system.
+You also have the option to add an existing SSH key from your system. Simply toggle the Import Key option and choose a `.pem` file from the system with addition to passphrase implication.
 
 <figure>
   <Thumbnail src="/img/advanced-concepts/connecting-via-ssh-keys/import-key.png" alt="Import SSH Key" />
