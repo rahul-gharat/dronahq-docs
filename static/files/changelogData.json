@@ -1,4 +1,44 @@
 [{
+  "timestamp": 1738108800000,
+  "tags": ["Cloud-Hosted"],
+  "heading": "",
+  "cards": [
+    {
+      "title": "Enhancements",
+      "type": "improved",
+      "points": [
+        "Enhanced action flow variable handling by removing them from dependency generation for better performance.",
+        "Enhanced DataQuery to support displaying JavaScript parameter values with data type tags.",
+        "Enhanced the folder name validation while creating and renaming folders.",
+        "Enhanced the existing File Upload mechanism by integrating AWS S3 Presigned URLs to reduce server overhead.",
+        "Enhanced the dhqupload (file upload control) to ensure non-image files are uploaded to S3 directly using signed URLs.",
+        "Enhanced missing endpoints by adding the 'hide' and 'is_global' keys to subcategories."
+      ]
+    },
+    {
+      "title": "Fixed",
+      "type": "fixed",
+      "points": [
+        "Fixed a UI issue where the 'Manage Users' screen shifted up when clicking the edit button.",
+        "Fixed an issue where direct save in Connector Library/Query did not generate suggestions for master variables (array of objects).",
+        "Fixed an issue in dynamic credential conditions where rendered values were incorrectly coming in boolean format.",
+        "Fixed an edge case where new branch creation allowed restricted actions like Confirm, Alert, End Actionflow, and Import Actionflow inside iterate tasks.",
+        "Fixed a sidebar issue where the bind data editor height was incorrect.",
+        "Fixed an issue where the dependency tree in DataQuery was still showing old references instead of reflecting the latest dependencies.",
+        "Fixed an issue where old Actionflows containing Fx formulas in 'When to Execute' blocks were not working properly.",
+        "Fixed a UI issue where the tabbed container inside a widget was not working as expected.",
+        "Fixed an issue where the shortcut for deleting a control was not functioning correctly.",
+        "Fixed a table grid squish issue when an app was set as the home screen in a package.",
+        "Fixed an issue where custom JavaScript with a boolean (false) value was incorrectly set as an empty string.",
+        "Fixed an issue where variable duplication was not working correctly for REST API requests.",
+        "Fixed an issue where Redis and JDBC were not properly filtered out from Autogen.",
+        "Fixed an issue where custom file names for multiple files in Google Cloud Storage uploads caused issues with file extensions.",
+        "Fixed an issue where the SMTP 'from' email field was not handled correctly in the executeQuery API.",
+        "Fixed a UI issue where the cancel and save buttons in the external CSS panel were moving outside the panel."
+      ]
+    }
+  ]
+},{
   "timestamp": 1736899200000,
   "tags": ["Cloud-Hosted"],
   "heading": "",

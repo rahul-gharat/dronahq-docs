@@ -1,4 +1,56 @@
 [{
+  "timestamp": 1738108800000,
+  "tags": ["Self-Hosted", "3.5.5-edge"],
+  "heading": "Version 3.5.5-edge",
+  "cards": [
+    {
+      "title": "Fixed",
+      "type": "fixed",
+      "points": [
+        "Fixed an issue where apps added to favourites were not appearing in the Favourites tab after removing sorting.",
+        "Fixed: Saved connector query rendering null raw response value showing error message toast.",
+        "Fixed PDF Template Creation Sidebar Header Missing.",
+        "Fixed Health Status UI Issue by Adding a Non-Configured State.",
+        "Fixed 'Sign in with Google' button removal on end user portal login.",
+        "Fixed an issue where removing an app from Git took a long time and failed.",
+        "Fixed an issue where editing app details inside a folder was logging an error and preventing changes from being saved.",
+        "Fixed an issue where creating a folder while in the 'Folder' tab caused only folders to render in the 'App' tab."
+      ]
+    }
+  ]
+},
+{
+  "timestamp": 1738022400000,
+  "tags": ["Self-Hosted", "3.5.5-edge"],
+  "heading": "Version 3.5.5-edge",
+  "cards": [
+    {
+      "title": "Fixed",
+      "type": "fixed",
+      "points": [
+        "Fixed minor UI issues in Git sync (button color and confirmation message).",
+        "Fixed DataQuery table response post-save.",
+        "Fixed an issue where active tabs were not being updated properly in case of no sorting preference.",
+        "Fixed user list filter icon and process.",
+        "Fixed incorrect positioning of tooltip in CodeMirror instances in some cases."
+      ]
+    },
+    {
+      "title": "Enhancements",
+      "type": "improved",
+      "points": [
+        "Enhanced the Redis connector by adding an 'Expire' action.",
+        "Enhanced the Git-protected app builder by displaying the current working branch name.",
+        "Enhanced query functionality by adding a method to fetch Glue tables.",
+        "Improved SSH key management by adding passphrase support when importing a private key.",
+        "Improved DataQuery security by sanitizing HTML responses for table views.",
+        "Removed the Terms & Conditions checkbox button from the End User Portal login.",
+        "Improved DataQuery UI by ensuring saved queries display a green dot in GraphQL."
+      ]
+    }
+  ]
+}
+,{
   "timestamp": 1737936000000,
   "tags": ["Self-Hosted", "3.5.5-edge"],
   "heading": "Version 3.5.5-edge",
