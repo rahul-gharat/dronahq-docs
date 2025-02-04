@@ -1,4 +1,78 @@
 [{
+  "timestamp": 1738540800000,
+  "tags": ["Control", "Action"],
+  "heading": "",
+  "cards": [
+    {
+      "title": "Enhancements",
+      "type": "improved",
+      "points": [
+        "Enhanced builder view by adding a scroll bar for better UI experience."
+      ]
+    },
+    {
+      "title": "Fixed",
+      "type": "fixed",
+      "points": [
+        "Fixed scroll bar issue in Lottie Player preview.",
+        "Fixed an issue where focusout was triggered when pressing the input in iOS."
+      ]
+    }
+  ]
+},
+{
+  "timestamp": 1738281600000,
+  "tags": ["Control", "Action"],
+  "heading": "",
+  "cards": [
+     {
+      "title": "Enhancements",
+      "type": "improved",
+      "points": [
+        "Enhanced Markdown Editor by reducing the default grid width.",
+        "Enhanced Markdown Viewer by reducing the default grid width.",
+        "Enhanced Markdown Viewer by updating the default formula for the control.",
+        "Enhanced Text control by updating the default formula for the control."
+      ]
+    },
+    {
+      "title": "Fixed",
+      "type": "fixed",
+      "points": [
+        "Fixed an issue where the border was not getting applied through external CSS in the Container component."
+      ]
+    }
+  ]
+},
+{
+  "timestamp": 1738022400000,
+  "tags": ["Control", "Action"
+    
+  ],
+  "heading": "",
+  "cards": [
+    {
+      "title": "Fixed",
+      "type": "fixed",
+      "points": [
+        "Fixed an issue where the change event was not triggered on autofill suggestion in Address control.",
+        "Fixed an issue where placeholder text in Advanced Dropdown wrapped to the next line despite available space.",
+        "Fixed an issue where focusout was triggered when pressing the input in iOS for Prefix Suffix control.",
+        "Fixed an issue where popups in focusout event were closing the tray screen unexpectedly for Prefix Suffix control.",
+        "Fixed an issue where popups in focusout event were closing the tray screen unexpectedly for Numeric control.",
+        "Fixed an issue where popups in focusout event were closing the tray screen unexpectedly for Currency control.",
+        "Fixed an issue where popups in focusout event were closing the tray screen unexpectedly for Phone control.",
+        "Fixed an issue where popups in focusout event were closing the tray screen unexpectedly for Quantity control.",
+        "Fixed an issue where popups in focusout event were closing the tray screen unexpectedly for Text Input control.",
+        "Fixed a minor CSS issue where the range border was getting cut in Value Picker control.",
+        "Fixed an issue in Advanced Dropdown where the scroll bar was not visible when multiple options were present.",
+        "Fixed an image regex-related issue in Table Grid.",
+        "Fixed an issue where connector logs' initiator was not working correctly for app open and recurring actions in CallService (Action)."
+      ]
+    }
+  ]
+}
+,{
   "timestamp": 1737936000000,
   "tags": ["Control", "Action"],
   "heading": "",

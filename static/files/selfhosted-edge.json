@@ -1,4 +1,67 @@
 [{
+    "timestamp": 1738281600000,
+    "tags": ["Self-Hosted", "3.6.7-edge"],
+    "heading": "Version 3.6.7-edge",
+    "cards": [
+        {
+            "title": "Fixed",
+            "type": "fixed",
+            "points": [
+                "Fixed an issue where RMID expiration was not extending properly by utilizing the session cookie.",
+                "Fixed and enhanced error handling for multistep SSO to improve stability."
+            ]
+        }
+    ]
+}
+,{
+    "timestamp": 1738281600000,
+    "tags": ["Self-Hosted", "3.5.6-edge"],
+    "heading": "Version 3.5.6-edge",
+    "cards": [
+        {
+            "title": "Fixed",
+            "type": "fixed",
+            "points": [
+                "Fixed an issue where the 'lastRelease' folder and dynamic variables were not removed from the subcat schema.",
+                "Fixed a security issue by rectifying the connector API details for export JSON.",
+                "Fixed an issue where subcat's response and failure headers were not muted.",
+                "Fixed a bug that caused Salesforce account addition to fail."
+            ]
+        }
+    ]
+},  
+{
+    "timestamp": 1738195200000,
+    "tags": ["Self-Hosted", "3.5.6-edge"],
+    "heading": "Version 3.5.6-edge",
+    "cards": [
+        {
+            "title": "Enhancements",
+            "type": "improved",
+            "points": [
+                "Enhanced error handling in multistep SSO by retrying nonce fetching if missing and refining minor error handling."
+            ]
+        },
+        {
+            "title": "Added",
+            "type": "added",
+            "points": [
+                "Added a new connector for Databricks."
+            ]
+        },
+        {
+            "title": "Fixed",
+            "type": "fixed",
+            "points": [
+                "Fixed a vulnerability by removing the Redshift module from runAPI.",
+                "Fixed an issue where the header was not updating to display tabs after modifying app details for an app inside a folder.",
+                "Fixed an issue by hiding the Reset Password field.",
+                "Fixed AWS authentication not working on self-hosted instances."
+            ]
+        }
+    ]
+}
+,{
   "timestamp": 1738108800000,
   "tags": ["Self-Hosted", "3.5.5-edge"],
   "heading": "Version 3.5.5-edge",
