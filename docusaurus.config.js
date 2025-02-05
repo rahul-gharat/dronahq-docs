@@ -156,7 +156,7 @@ const config = {
         indexName: 'dronahq',
         insights: true, // Optional, automatically send insights when user interacts with search results
         container: 'div', // ### REPLACE ME WITH A CONTAINER (e.g. div) ###',
-        debug: false, // Set debug to true if you want to inspect the modal
+        debug: false // Set debug to true if you want to inspect the modal
       },
       // algolia: {
       //   // If Algolia did not provide you any appId, use 'BH4D9OD16A'
@@ -185,7 +185,7 @@ const config = {
       announcementBar: {
         id: 'anouncement',
         content:
-          '<span class="badge badge--success announcement-badge margin-right--sm">What\'s new</span> <a target="_blank" rel="noopener noreferrer" href="https://lu.ma/8gpejuv7">DronaHQ : Frontend designing workshop for backend engineers.</a>',
+          '<span class="badge badge--success announcement-badge margin-right--sm">What\'s new</span> <a target="_blank" rel="noopener noreferrer" href="/forms">DronaHQ Forms: Connect to DB and generate forms</a>',
         backgroundColor: '#fafbfc',
         textColor: '#091E42',
         isCloseable: true,
@@ -238,7 +238,7 @@ const config = {
           //   position: 'left',
           // },
           {
-            label: 'Changelog',
+            label: "Changelog",
             position: 'left',
             items: [
               // {
@@ -246,25 +246,25 @@ const config = {
               //   to: '/all-changelog'
               // },
               {
-                label: 'Cloud-Hosted',
-                to: '/cloud-changelog',
+                label:'Cloud-Hosted',
+                to:'/cloud-changelog'
               },
               // {
               //   label:'Self-Hosted (deprecated)',
               //   to:'/self-changelog'
               // },
               {
-                label: 'Self-Hosted (Stable)',
-                to: '/selfhosted-stable',
+                label:'Self-Hosted (Stable)',
+                to:'/selfhosted-stable'
               },
               {
-                label: 'Self-Hosted (Edge)',
-                to: '/selfhosted-edge',
+                label:'Self-Hosted (Edge)',
+                to:'/selfhosted-edge'
               },
               {
-                label: 'Controls and Actions',
-                to: '/controls-actions',
-              },
+                label:'Controls and Actions',
+                to:'/controls-actions'
+              }
             ],
           },
           // {
