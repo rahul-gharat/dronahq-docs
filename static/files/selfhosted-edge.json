@@ -1,4 +1,31 @@
 [{
+  "timestamp": 1738800000000,
+  "tags": ["Self-Hosted", "3.5.7-edge"],
+  "heading": "Version 3.5.7-edge",
+  "cards": [
+    
+    {
+      "title": "Enhancements",
+      "type": "improved",
+      "points": ["Enhanced exception handling of Aggregate errors for MySQL and MariaDB."]
+    },
+    {
+      "title": "Fixed",
+      "type": "fixed",
+      "points": [
+        "Fixed an issue where the default Drona icon was displayed for all apps in view mode instead of their respective icons.",
+        "Fixed missing HTTP/HTTPS in the endpoint URL, which was causing the UI to become stuck.",
+        "Fixed AWS Auth REST API mandatory field issue.",
+        "Fixed inability to import apps containing PDF Creator and File Storage Queries.",
+        "Fixed an empty connector screen that was displaying upon search.",
+        "Fixed UI issues on the 'Forgot Password' screen while logging in.",
+        "Fixed the docs icon for control documentation.",
+        "Fixed controls overlapping in the 'Add New Screen' popup."
+      ]
+    }
+  ]
+},
+{
     "timestamp": 1738281600000,
     "tags": ["Self-Hosted", "3.5.7-edge"],
     "heading": "Version 3.5.7-edge",
