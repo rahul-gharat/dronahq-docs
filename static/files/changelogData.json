@@ -1,4 +1,111 @@
 [{
+  "timestamp": 1739836800000,
+  "tags": ["Cloud-Hosted"],
+  "heading": "",
+  "cards": [
+    {
+      "title": "Enhancements",
+      "type": "improved",
+      "points": [
+        "Linkages of labels to nested properties now directly navigate to the respective property.",
+        "Salesforce connector enhancements implemented.",
+        "Minor CSS fix applied to resolve hover issue in the headers within the right-side property section.",
+        "Enhanced Actionflow UI and search functionality for better usability and relevance."
+      ]
+    },
+    {
+      "title": "Fixed",
+      "type": "fixed",
+      "points": [
+        "Fixed the issue where multiselect dropdowns in properties were not reflecting immediately.",
+        "Resolved bug in DataQuery where Custom JS direct save click output was not displaying."
+      ]
+    }
+  ]
+}
+,{
+  "timestamp": 1739750400000,
+  "tags": ["Cloud-Hosted"],
+  "heading": "",
+  "cards": [
+    {
+      "title": "Enhancements",
+      "type": "improved",
+      "points": [
+        "Tooltip added to delete icon, and list options now visible in select control."
+      ]
+    },
+    {
+      "title": "Fixed",
+      "type": "fixed",
+      "points": [
+        "Fixed missing HTTP/HTTPS in endpoint URL causing UI to freeze.",
+        "Fixed issues related to 'When to execute' evaluation conditions when testing and saving DQ.",
+        "Corrected background color issues and fixed condition saving in DronahqDB for 'When to execute'.",
+        "Added a warning message for deleting folders containing screens.",
+        "Fixed Quick select width, cursor issue, and AutoGen not opening on single-click from container.",
+        "Improved studio app listing with sorting and persisting last modifications.",
+        "Fixed canvas shrinkage when deleting screens.",
+        "Resolved UI issue with DQ dynamic variable dropdown in connectors.",
+        "Fixed session expiration popup message display error.",
+        "Fixed issue with Copy-Paste not working in Bind Data Editor.",
+        "Fixed issues with Dependency Tree and Watchlist binding for controls.",
+        "Resolved UI issue with Help (?) visibility over other panels by increasing z-index.",
+        "Fixed incorrect Montserrat.css loading due to relative path issue.",
+        "Fixed UI editor error related to parameterized SQL query tests.",
+        "Fixed note visibility in white label app creation form and UI issues with manager users.",
+        "Removed unnecessary API registration declarations.",
+        "Fixed issue where default data appeared as ToC when schema was unavailable for GraphQL.",
+        "Fixed issue with disappearing test and schema for dhqdb in docking mode.",
+        "Resolved UI issue with list-type control manual mode options."
+      ]
+    }
+  ]
+}
+,{
+  "timestamp": 1738713600000,
+  "tags": ["Cloud-Hosted"],
+  "heading": "",
+  "cards": [
+    {
+      "title": "Added",
+      "type": "added",
+      "points": [
+        "Added refresh option for PDF templates in Autogenerate form.",
+        "Added DronaHQ AI Assist for binding data to controls, transforming data query results using JavaScript, predicting format data options of different column types, and transforming data to controls."
+      ]
+    },
+    {
+      "title": "Enhancements",
+      "type": "improved",
+      "points": [
+        "Improved UX for sidebars, control tags, and duplication handling.",
+        "Added user-friendly toast titles and messages in new toast action configuration based on selected toast type (error, warning, info)."
+      ]
+    },
+    {
+      "title": "Fixed",
+      "type": "fixed",
+      "points": [
+        "Fixed execution issues in CustomJS and Connector Lib/Query when rendering or changing JavaScript, including DQ trigger execution.",
+        "Fixed issue where saved connector queries with null raw response showed an error message toast.",
+        "Fixed font mismatch issue in the PDF modal.",
+        "Fixed issue where the 'Sync' option was incorrectly visible in the DronaHQ Cloud connector library; only meant for self-hosted instances.",
+        "Fixed issue where variables in PDF Creator couldn't be deleted from the sidebar after removing all references.",
+        "Fixed issue where Address Line 1 & 2 were not binding to PDF Creator Action in Action Flow, despite working in Data Queries.",
+        "Fixed issue where Text control and Markdown viewer showed different values in bind data and preview.",
+        "Fixed issue where 'Cancel' and 'Save' buttons in the External CSS panel were positioned outside the panel.",
+        "Fixed issue where binding a Boolean control in JavaScript parameters and saving a test value as NULL caused UI break upon re-rendering the same DQ.",
+        "Fixed issues with dropdown modal, sidebar events, and right-side sidebar UI.",
+        "Fixed issue where deleting the last option in the 'Add More' box caused problems when removing any option in the Right Properties panel.",
+        "Fixed issue allowing Data Query names to have trailing spaces. Now, spacebars are not allowed while typing or pasting in the name field.",
+        "Fixed issue where the screen name appeared as undefined in the screen routing URL.",
+        "Fixed UI issue on the connectors page where the 'No connectors found' image was displayed even when connectors were present."
+      ]
+    }
+  ]
+}
+,{
   "timestamp": 1738108800000,
   "tags": ["Cloud-Hosted"],
   "heading": "",
