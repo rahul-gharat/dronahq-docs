@@ -149,7 +149,7 @@ the spreadsheet ID is the string of characters between /d/ and /edit, which in t
 
 This ID is used in various Google Sheets API requests to specify which spreadsheet you want to access or modify.
 
-**Follow the steps below to find your spreadsheet ID in Google Sheets:**
+Follow the steps below to find your spreadsheet ID in Google Sheets:
 
 #### 1. Open the Google Sheets Spreadsheet and View the URL
 
@@ -181,3 +181,27 @@ Highlight and copy the ID portion from the URL. Use shortcuts like Ctrl+C (Windo
 #### 4. Use the Copied Spreadsheet ID for Your Required Purpose
 
 With the spreadsheet ID copied, you can now use it for various purposes, such as accessing the spreadsheet through the Google Sheets API on DronaHQ.
+
+
+## Self-Hosted Installation  for Google Sheets 
+
+
+
+### API Endpoint Details
+The base URL for your API endpoint is `https://www.googleapis.com`. It should be a valid domain name preceded by the `http` or `https` protocol, such as `https://studio.dronahq.com`.
+
+The OAuth Redirect URL is `https://qa-selfhosted.dronahq.ai/oauth_callback`. Copy this URL and use it in your app's API or developer settings when creating a new integration for DronaHQ. If necessary, add it to the allowed list in your app's admin console.
+
+### Obtaining OAuth Credentials
+To set up OAuth credentials, start by creating a new project in Google Cloud Console. Navigate to `APIs & Services`, enable the `Google Drive API`, and generate `OAuth Client ID` credentials for a web application. Ensure the `Authorized Redirect URI` is set to `https://qa-selfhosted.dronahq.ai/oauth_callback` before saving your configuration.
+
+### OAuth Credentials Configuration
+Provide the obtained Client ID and Client Secret in DronaHQ. Define the scope for Google Drive as `https://www.googleapis.com/auth/drive`. The authorization, access token, and refresh token request URLs are:
+- Authorization Request URL: `https://accounts.google.com/o/oauth2/auth`
+- Access Token Request URL: `https://oauth2.googleapis.com/token`
+- Refresh Token Request URL: `https://oauth2.googleapis.com/token`
+
+
+Enter the OAuth credentials, specify the scope and request URLs, and save the configuration.
+Ensure the Client ID and Client Secret are correct, verify the Redirect URI, and check the specified scope. If issues persist, confirm that the redirect URL is included in your app’s allowed list.
+
