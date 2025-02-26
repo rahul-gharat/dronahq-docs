@@ -7,16 +7,18 @@ import Thumbnail from '@site/src/components/Thumbnail';
 
 # Overview
 
-You can now use DronaHQ's managed file storage build on top of Amazon web services's simple secure storage (AWS S3).
-DronaHQ File Storage comes with build in File explorer for storing and managing your files in simple and friendly way.
+You can now use DronaHQ's managed file storage built on top of Amazon web services's simple secure storage (AWS S3). 
+DronaHQ File Storage comes with built in File explorer for storing and managing your files in simple and friendly way.
 You can also interact with File storage using dedicate connector which allows you to upload file(s), get list of
 uploaded objects, get signed url of files, also get contents of file.
 
 ## Getting started
 
-On Cloud, DronaHQ File storage is available for all users and can be located within the DronaHQ Managed section by
-navigating to the Connector's tab. You can view and manage your data within the storage using the File explorer and
-dedicated connector.
+On Cloud:
+DronaHQ provides Managed File Storage for all users. You can access it under the DronaHQ Managed section by navigating to the Connectors tab. The File Explorer and a dedicated connector allow you to view and manage your stored files seamlessly.
+
+On Self-Hosted Installation:
+For self-hosted deployments, users must configure their own AWS S3 credentials to enable Managed File Storage. Additionally, the appropriate permissions must be granted to the S3 bucket to ensure smooth integration with DronaHQ’s File Explorer.
 
 You can use this feature for free by activating trial license which offers 1 GB of file storage.
 
