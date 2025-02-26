@@ -78,15 +78,14 @@ The File Upload control offers important outputs that enable you to work with th
 The `files` property stores an array of file objects that the user has selected. Each file object contains information about the selected file, which can be accessed through its properties.
 
 Example:
+| Output                          | Description                                                               |  
+|---------------------------------|---------------------------------------------------------------------------|  
+| `{{fileupload}}`                | An array of selected file objects containing various file properties.   |  
+| `{{fileupload.PROPERTIES.FILENAMES}}` | An array of selected file names.                                        |  
 
-| Output              | Description                                                             |
-|---------------------|-------------------------------------------------------------------------|
-| `fileupload.files` | An array of selected file objects containing various file properties.  |
-
-To access the data of the first selected file:
+To access the filenames of the selected files:  
 ```javascript
-{{ FilePicker1.files[0].data }}
-
+{{fileupload.PROPERTIES.FILENAMES}}
 ```
 
 ## Events
