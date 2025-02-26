@@ -53,7 +53,7 @@ Use following command.
 cd dronahq-self-hosted
 ```
 
-### 3. Update resources
+<!-- ### 3. Update resources
 
 This is recommended step by DronaHQ. Updating your resources periodically will help you stay aligned with DronaHQ.
 
@@ -61,8 +61,9 @@ Run following command
 
 ```shell
 /bin/bash -c "$(curl -fsSL https://license.dronahq.com/self-hosted/master/update_resources.sh)"
-```
-### 4. Setup DronaHQ Environment
+``` -->
+
+### 3. Setup DronaHQ Environment
 
 :::caution Warning
 Running this script will clear your existing installation if you have any. It will setup completely new environment. It will create back of your current environment and storage directory with time stamp followed by file/folder name.
@@ -74,7 +75,7 @@ To setup dronahq environment, you have to run `./dronahq_setup` already present 
 ./dronahq_setup
 ```
 
-### 5. Update environment variables
+### 4. Update environment variables
 
 DronaHQ writes all configurable environment variables in file `dronahq.env`. Please make sure you have all mandatory variables are in place.
 
@@ -116,7 +117,7 @@ BUILDER_URL='http://dronahq.example.com'
 #### iii. Other environment variables
 You can also checkout other [Environment Variables](/self-hosted-deployment/environment-variables.md), which can enable advance options for you to use DronaHQ Self Hosted.
 
-### 6. Restart DronaHQ
+### 5. Restart DronaHQ
 
 You can apply all new changes in configuration, and restart DronaHQ simply by running following command.
 
@@ -124,7 +125,7 @@ You can apply all new changes in configuration, and restart DronaHQ simply by ru
 sudo docker compose up -d
 ```
 
-### 7. Verify that containers are running
+### 6. Verify that containers are running
 
 You can use following command to check running docker containers.
 
