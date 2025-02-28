@@ -1,4 +1,92 @@
 [{
+    "timestamp": 1740614400000,
+    "tags": ["Cloud-Hosted"],
+    "heading": "",
+    "cards": [
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed issue where Verify Digest Property returned null.",
+          "Fixed runtime load issue for Hotjar script.",
+          "Fixed editable state issue in Connector Query for SQL.",
+          "Fixed issue where user selection in preview user dropdown did not relate to user email keyword.",
+          "Fixed overlapping issue between screen popup and folder popup.",
+          "Fixed widget version display issue.",
+          "Fixed issue where Data Query deletion was not working.",
+          "Fixed request spoofing issue related to code digit handling.",
+          "Resolved issue where mapped formula box should be seen expanded.",
+          "Fixed docking handling for canvas size, sidebar state, and opening issues.",
+          "Fixed scrolling issue in SQL UI editor and query output display."
+        ]
+      }
+    ]
+  },
+
+  {
+    "timestamp": 1740528000000,
+    "tags": ["Cloud-Hosted"],
+    "heading": "",
+    "cards": [
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed header breaking issue when opened in docking mode.",
+          "Fixed issue where mapped formula box should be seen expanded.",
+          "Fixed default text property UI issue in the rich text editor control.",
+          "Fixed issue where data for JSON viewer was getting double stringified.",
+          "Added nested key suggestions in JSEditor and String Builder.",
+          "Fixed issue where empty string key was suggested incorrectly in DataQuery.",
+          "Handled case where test INSERT, UPDATE, and DELETE queries should not execute in DataQuery connector test.",
+          "Added dynamic tooltip and improved click behavior on 'Order By' text in Studio apps list sorting."
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1740009600000,
+    "tags": ["Cloud-Hosted"],
+    "heading": "",
+    "cards": [
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed issue where SQL query with prepared statement failed when variable had array/object value.",
+          "Fixed Z-index conflict issue in the footer affecting ActionFlow.",
+          "Fixed issue where empty renamed folders could not be deleted."
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1739923200000,
+    "tags": ["Cloud-Hosted"],
+    "heading": "",
+    "cards": [
+      {
+        "title": "Enhancements",
+        "type": "improved",
+        "points": [
+          "Enhanced error logging by moving deleted controls logs to the error log."
+        ]
+      },
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed SQL UI JsEditor initialization issue.",
+          "Updated dynamic variable regex to support square brackets and escape them for databases.",
+          "Fixed issue where mapped options were not visible in manual options.",
+          "Fixed page header height issue causing control drop problems.",
+          "Fixed minor issue with label linkage to nested properties for direct navigation.",
+          "Fixed UI bug related to List control option deletion."
+        ]
+      }
+    ]
+  }  ,
+  {
   "timestamp": 1739836800000,
   "tags": ["Cloud-Hosted"],
   "heading": "",
@@ -10,7 +98,8 @@
         "Linkages of labels to nested properties now directly navigate to the respective property.",
         "Salesforce connector enhancements implemented.",
         "Minor CSS fix applied to resolve hover issue in the headers within the right-side property section.",
-        "Enhanced Actionflow UI and search functionality for better usability and relevance."
+        "Enhanced Actionflow UI and search functionality for better usability and relevance.",
+        "Improved dashboard frontend UI for better user experience."
       ]
     },
     {
@@ -18,7 +107,12 @@
       "type": "fixed",
       "points": [
         "Fixed the issue where multiselect dropdowns in properties were not reflecting immediately.",
-        "Resolved bug in DataQuery where Custom JS direct save click output was not displaying."
+        "Resolved bug in DataQuery where Custom JS direct save click output was not displaying.",
+        "Fixed issue in Autogen form where all field suggestions were not available for form creation.",
+        "Fixed Z-index issue for Rules Panel header when docking was enabled.",
+        "Fixed issue where DataQuery connector query saved with dynamic field reloaded test value as a string tag instead of a bound field data type.",
+        "Fixed issue where custom validation directly routed to rules and validation through the property section.",
+        "Fixed issue where DataQuery connector test value change did not update query test value data type."
       ]
     }
   ]
