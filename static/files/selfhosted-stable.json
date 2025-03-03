@@ -1,4 +1,71 @@
-[    {
+[    
+  {
+    "timestamp": 1738800000000,
+    "tags": ["Self-Hosted", "3.4.11-stable"],
+    "heading": "Version 3.4.11-stable",
+    "cards": [
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed a bug in the template for the old connector binding sidebar."
+        ]
+      },
+      {
+        "title": "Enhancements",
+        "type": "improved",
+        "points": [
+          "Enhanced HashiCorp unwrapped secret ID location."
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1738540800000,
+    "tags": ["Self-Hosted", "3.4.11-stable"],
+    "heading": "Version 3.4.11-stable",
+    "cards": [
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed RMID expiration by extending it through session cookies."
+        ]
+      },
+      {
+        "title": "Enhancements",
+        "type": "improved",
+        "points": [
+          "Improved error handling in multistep SSO by retrying nonce fetching if missing and refining minor error handling.",
+          "Enhanced multistep SSO error handling."
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1737763200000,
+    "tags": ["Self-Hosted", "3.4.10-stable"],
+    "heading": "Version 3.4.10-stable",
+    "cards": [
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed credential vulnerabilities in connector.scheme.modal.js.",
+          "Fixed generic checks for multistepAuthenticationScreen function calls."
+        ]
+      },
+      {
+        "title": "Enhancements",
+        "type": "improved",
+        "points": [
+          "Enhanced Screen ID configuration, allowing changes under Screen Properties."
+        ]
+      }
+    ]
+  }
+
+,{
     "timestamp": 1737676800000,
     "tags": ["Self-Hosted", "3.4.9-stable"],
     "heading": "Version 3.4.9-stable",

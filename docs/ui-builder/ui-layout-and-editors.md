@@ -68,7 +68,7 @@ The Advanced Editor empowers users to create more complex and flexible screen la
 - **Advanced Screen Layout**: The Advanced Editor is ideal for creating intricate designs that adapt to various screen sizes and orientations.
 
 :::info info
-Advance Editor is deprecated and will not be available to use in future releases.
+Advance Editor will no longer receive enhancements but will continue to be supported.
 :::
 
 

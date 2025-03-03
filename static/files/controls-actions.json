@@ -1,4 +1,227 @@
 [{
+    "timestamp": 1739750400000,
+    "tags": ["Control", "Action"],
+    "heading": "",
+    "cards": [
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed issue in download file from URL where blob file download was not working on Safari, headers being passed in network request in web, and automatically detecting the extension of file depending on MIME type.",
+          "Fixed issue in download file where blob file download was not working on Safari."
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1739491200000,
+    "tags": ["Control", "Action"],
+    "heading": "",
+    "cards": [
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed issue in data builder where string type formula was getting parsed incorrectly.",
+          "Fixed issue in chat where pressing enter moved the scrollbar to the top, pointing to the first query."
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1739404800000,
+    "tags": ["Control", "Action"],
+    "heading": "",
+    "cards": [
+      {
+        "title": "Enhancements",
+        "type": "improved",
+        "points": [
+          "Increased default height of radio control.",
+          "Decreased default height of checkbox control."
+        ]
+      },
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed minor CSS issue for scrollbar z-index in JSON editor.",
+          "Fixed minor UI issue in charts.",
+          "Fixed minor UI issue in table grid."
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1739318400000,
+    "tags": ["Control", "Action"],
+    "heading": "",
+    "cards": [
+      {
+        "title": "Enhancements",
+        "type": "improved",
+        "points": [
+          "Reduced default width of keyword box control."
+        ]
+      },
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed issue in callservice where the 'Download as File' option in ActionFlow's server-side actions was not working properly.",
+          "Fixed issue in textarea where it can now accept numbers as data."
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1739145600000,
+    "tags": ["Control", "Action"],
+    "heading": "",
+    "cards": [
+      {
+        "title": "Enhancements",
+        "type": "improved",
+        "points": [
+          "Reduced default width of quantity control."
+        ]
+      },
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed minor CSS issue in container control.",
+          "Fixed issue in table grid where quick filter was not visible in builder."
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1738800000000,
+    "tags": ["Control", "Action"],
+    "heading": "",
+    "cards": [
+      {
+        "title": "Enhancements",
+        "type": "improved",
+        "points": [
+          "Added row height customization feature in table grid, configurable debounce for search, and minor UI fixes."
+        ]
+      },
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed issue in HTML control where builder and preview control views were different.",
+          "Fixed issue in download file where file extension was getting set as undefined for blob URLs."
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1738713600000,
+    "tags": ["Control", "Action"],
+    "heading": "",
+    "cards": [
+      {
+        "title": "Added",
+        "type": "added",
+        "points": [
+          "Introduced remove property (readonly/required) action for input controls.",
+          "Introduced set property (readonly/required) action for input controls."
+        ]
+      },
+      {
+        "title": "Enhancements",
+        "type": "improved",
+        "points": [
+          "Introduced utility for redirecting parent window."
+        ]
+      },
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed issue in advanced dropdown where tag was not created when other option toggle was on."
+        ]
+      }
+    ]
+  },
+  {
+  "timestamp": 1738540800000,
+  "tags": ["Control", "Action"],
+  "heading": "",
+  "cards": [
+    {
+      "title": "Enhancements",
+      "type": "improved",
+      "points": [
+        "Enhanced builder view by adding a scroll bar for better UI experience."
+      ]
+    },
+    {
+      "title": "Fixed",
+      "type": "fixed",
+      "points": [
+        "Fixed scroll bar issue in Lottie Player preview.",
+        "Fixed an issue where focusout was triggered when pressing the input in iOS."
+      ]
+    }
+  ]
+},
+{
+  "timestamp": 1738281600000,
+  "tags": ["Control", "Action"],
+  "heading": "",
+  "cards": [
+     {
+      "title": "Enhancements",
+      "type": "improved",
+      "points": [
+        "Enhanced Markdown Editor by reducing the default grid width.",
+        "Enhanced Markdown Viewer by reducing the default grid width.",
+        "Enhanced Markdown Viewer by updating the default formula for the control.",
+        "Enhanced Text control by updating the default formula for the control."
+      ]
+    },
+    {
+      "title": "Fixed",
+      "type": "fixed",
+      "points": [
+        "Fixed an issue where the border was not getting applied through external CSS in the Container component."
+      ]
+    }
+  ]
+},
+{
+  "timestamp": 1738022400000,
+  "tags": ["Control", "Action"
+    
+  ],
+  "heading": "",
+  "cards": [
+    {
+      "title": "Fixed",
+      "type": "fixed",
+      "points": [
+        "Fixed an issue where the change event was not triggered on autofill suggestion in Address control.",
+        "Fixed an issue where placeholder text in Advanced Dropdown wrapped to the next line despite available space.",
+        "Fixed an issue where focusout was triggered when pressing the input in iOS for Prefix Suffix control.",
+        "Fixed an issue where popups in focusout event were closing the tray screen unexpectedly for Prefix Suffix control.",
+        "Fixed an issue where popups in focusout event were closing the tray screen unexpectedly for Numeric control.",
+        "Fixed an issue where popups in focusout event were closing the tray screen unexpectedly for Currency control.",
+        "Fixed an issue where popups in focusout event were closing the tray screen unexpectedly for Phone control.",
+        "Fixed an issue where popups in focusout event were closing the tray screen unexpectedly for Quantity control.",
+        "Fixed an issue where popups in focusout event were closing the tray screen unexpectedly for Text Input control.",
+        "Fixed a minor CSS issue where the range border was getting cut in Value Picker control.",
+        "Fixed an issue in Advanced Dropdown where the scroll bar was not visible when multiple options were present.",
+        "Fixed an image regex-related issue in Table Grid.",
+        "Fixed an issue where connector logs' initiator was not working correctly for app open and recurring actions in CallService (Action)."
+      ]
+    }
+  ]
+}
+,{
   "timestamp": 1737936000000,
   "tags": ["Control", "Action"],
   "heading": "",
