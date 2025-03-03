@@ -49,6 +49,25 @@ In this documentation, we'll delve into various following aspects of the control
 |--------------------------|-----------------------------------------------------------------------------------------|
 | value_change             | Occurs when there is a modification in the respective control's value.                  |
 
+## Control Outputs
+
+The outputs from the fileparser control can be accessed using the control's unique name and the following keywords:
+
+| Output       | Description                                                                                           |
+|--------------|-------------------------------------------------------------------------------------------------------|
+| PROPERTIES.META   | Returns all the meta information about the uploaded file.                                        |
+| PROPERTIES.META.name | Returns the name of the uploaded file.                                                        |
+| PROPERTIES.META.size | Returns the size of the uploaded file in bytes.                                               |
+| PROPERTIES.META.type | Returns the MIME type of the uploaded file.                                                   |
+| PROPERTIES.META.lastModified | Returns the last modified time in Unix Timestamp                                      |
+| PROPERTIES.META.lastModifiedDate | Returns the last modified date time in date type object                           |
+| PROPERTIES.META.strictCheckingColumns | Returns an array of expected columns if strict checking is on                |
+
+
+These properties can be referenced using the control's unique name and the keyword as follows:
+- `{{fileparser.PROPERTIES.META}}`
+- `{{fileparser.PROPERTIES.META.name}}`
+
 
 ## Data input
 
