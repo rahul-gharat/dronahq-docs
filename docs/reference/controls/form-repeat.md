@@ -2,10 +2,9 @@
 sidebar_position: 1
 title: Form Repeat
 ---
-
 import VideoEmbed from "@site/src/components/VideoEmbed";
-import Image from '@site/src/components/Image';
 import VersionedLink from '@site/src/components/VersionedLink';
+import Image from '@site/src/components/Image';
 import Thumbnail from '@site/src/components/Thumbnail';
 
 The Form Repeat control is a Container control that enables you to group multiple controls together. It is similar to the Form MultiRow control in functionality but provides a distinct output. With the Form Repeat control, you can directly assign the controls to a JSON column in a sheet as a single row, without the need for iteration.

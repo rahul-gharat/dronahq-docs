@@ -113,7 +113,7 @@ Use following command.
 cd dronahq-self-hosted
 ```
 
-### 5. Update resources
+<!-- ### 5. Update resources
 
 This is recommended step by DronaHQ. Updating your resources periodically will help you stay aligned with DronaHQ.
 
@@ -121,9 +121,9 @@ Run following command
 
 ```shell
 /bin/bash -c "$(curl -fsSL https://license.dronahq.com/self-hosted/master/update_resources.sh)"
-```
+``` -->
 
-### 6. Setup Externalize databases
+### 5. Setup Externalize databases
 
 For deployment on `Azure Virtual Machine`, it is mandatory to setup external databases for both MYSQL and MONGODB. 
 

@@ -495,5 +495,13 @@ If the `FILE_UPLOAD_RESTRICTED_EXTENSIONS` variable is configured, it will overr
 FILE_UPLOAD_RESTRICTED_EXTENSIONS=.exe,.dll,.bat,.sh,.cmd,.vbs
 ```
 
+#### `IGNORE_CALLBACK_MESSAGES`
+
+If set to `true`, This variable allows you to ignore error messages from authentication callback request and show static error message on screen.
+
+```
+IGNORE_CALLBACK_MESSAGES=true
+```
+
 <!-- #### `SSH_TUNNEL_USER` -->
 <!-- #### `LD_LIBRARY_PATH` -->

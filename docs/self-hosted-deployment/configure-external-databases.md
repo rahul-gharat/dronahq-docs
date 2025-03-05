@@ -105,8 +105,8 @@ There are two possible ways by which you can export MYSQL data.
 To export data from MYSQL container, run the following command in DronaHQ installation directory. Use this option, if you want to migrate your MYSQL containerized database to external database.
 
 ```shell
-sudo docker compose exec -T mysqldb sh -c 'exec mysqldump -u <% user %> --password=<% password %> \
---databases <% database name %> --add-drop-database --routines --triggers --events --single-transaction' > mysql-init.sql && sed -i 's/ DEFINER=[^ |\*]*//g' mysql-init.sql
+sudo docker compose exec -T mysqldb sh -c 'exec mysqldump -u <%user%> --password=<%password%> \
+--databases <%database_name%> --add-drop-database --routines --triggers --events --single-transaction' > mysql-init.sql && sed -i 's/ DEFINER=[^ |\*]*//g' mysql-init.sql
 ```
 Replace variables encapsulated in `<% variable %>` with actual value. 
 
@@ -127,10 +127,10 @@ There are two possible ways by which you can export MONGODB data.
 To export data from MONGODB container, run the following command in DronaHQ installation directory. Use this option, if you want to migrate your MONGODB containerized database to external database.
 
 ```shell
-sudo docker compose exec -T mongodb sh -c 'mongodump -d <% database name %> -u <% user %> -p <% password %> --authenticationDatabase admin  --archive' > mongo-init.dump
+sudo docker compose exec -T mongodb sh -c 'mongodump -d <%database_name %> -u <%user%> -p <%password%> --authenticationDatabase admin  --archive' > mongo-init.dump
 ```
 
-Replace variables encapsulated in `<% variable %>` with actual value.
+Replace variables encapsulated in `<%variable%>` with actual value.
 
 #### b. Download from DronaHQ repository
 
@@ -155,7 +155,7 @@ While running following shell commands for restoring data on external database, 
 Run the following command in your DronaHQ installation directory to restore data on external database.
 
 ```shell
-sudo docker compose exec -T mysqldb sh -c 'mysql --host=<% host %> --user=<% user %> --password=<% password %>' < mysql-init.sql
+sudo docker compose exec -T mysqldb sh -c 'mysql --host=<%host%> --user=<%user%> --password=<%password%>  <%database_name%>' < mysql-init.sql
 ```
 
 Replace variables encapsulated in `<% variable %>` with actual value.
@@ -165,10 +165,10 @@ Replace variables encapsulated in `<% variable %>` with actual value.
 Run following command to restore data on external database
 
 ```shell
-mysql --host=<% host %> --user=<% user %> --password=<% password %> < mysql-init.sql
+mysql --host=<%host%> --user=<%user%> --password=<%password%> <%database_name%> < mysql-init.sql
 ```
 
-Replace variables encapsulated in `<% variable %>` with actual value.
+Replace variables encapsulated in `<%variable%>` with actual value.
 
 ### 2.2 Restore data on external MONGODB database.
 
@@ -177,17 +177,17 @@ Replace variables encapsulated in `<% variable %>` with actual value.
 Run the following command in your DronaHQ installation directory to restore data on external database.
 
 ```shell
-sudo docker compose exec -T mongodb sh -c 'mongorestore --host=localhost -u <% user %> -p <% password %> --db <% database name %> --authenticationDatabase admin --archive' < mongo-init.dump
+sudo docker compose exec -T mongodb sh -c 'mongorestore --host=localhost -u <%user%> -p <%password%> --nsFrom="db5x_studio.*"  --nsTo="<%dbname%>.*" --authenticationDatabase admin --archive' < mongo-init.dump
 ```
 
-Replace variables encapsulated in `<% variable %>` with actual value.
+Replace variables encapsulated in `<%variable%>` with actual value.
 
 #### b. Using installed client on host machine
 
 Run following command to restore data on external database
 
 ```shell
-mongorestore --host=<% host %> -u <% user %> -p <% password %> --db <% database name %> --authenticationDatabase admin --archive=mongo-init.dump
+mongorestore --host=<% host %> -u <%user%> -p <%password%> --nsFrom="db5x_studio.*"  --nsTo="<%dbname%>.*" --authenticationDatabase admin --archive=mongo-init.dump
 ```
 
 Replace variables encapsulated in `<% variable %>` with actual value.
@@ -200,34 +200,34 @@ You can create application user in external database using following commands.
 
 ### 3.1 Create application user in MYSQL external database
 
-Replace variables encapsulated in `<% variable %>` with actual value.
+Replace variables encapsulated in `<%variable%>` with actual value.
 
 #### i. Create database user 
 
 ```shell
-mysql -h<% host %> -u<% user %> -p<% password %> -e "CREATE USER '<% application-user %>'@'%' IDENTIFIED BY '<% application-password %>';"
+mysql -h<%host%> -u<%user%> -p<%password%> -e "CREATE USER '<%application-user%>'@'%' IDENTIFIED BY '<%application-password%>';"
 ```
 
 #### ii. Grant privileges to new user
 
 ```shell
-mysql -h<% host %> -u<% user %> -p<% password %> -e "GRANT ALL PRIVILEGES ON *.* TO '<% application-user %>'@'%';"
+mysql -h<%host%> -u<%user%> -p<%password%> -e "GRANT ALL PRIVILEGES ON *.* TO '<%application-user%>'@'%';"
 ```
 
 #### iii. Flush privileges for newly assigned privileges to take effect immediately
 
 ```shell
-mysql -h<% host %> -u<% user %> -p<% password %> -e "FLUSH PRIVILEGES;"
+mysql -h<%host%> -u<%user%> -p<%password%> -e "FLUSH PRIVILEGES;"
 ```
 
 ### 3.2 Create application user in MONGODB external database
 
 To create application user in external mongodb database, run following command.
 
-Replace variables encapsulated in `<% variable %>` with actual value.
+Replace variables encapsulated in `<%variable%>` with actual value.
 
 ```shell
-mongosh --host <% host %> --username <% user %>  --password <% password %> <<EOF
+mongosh --host <%host%> --username <%user%>  --password <%password%> <<EOF
 use admin
 db.createUser({
   user: '<% application-user %>',
@@ -250,16 +250,16 @@ Find following variables in `dronahq.env` and update them with external database
 
 ```shell
 # MYSQL Credentials
-MYSQL_HOST=<% host %>
+MYSQL_HOST=<%host%>
 MYSQL_PORT=3306
-MYSQL_USER=<% application-user %>
-MYSQL_PASSWORD=<% application-password %>
+MYSQL_USER=<%application-user%>
+MYSQL_PASSWORD=<%application-password%>
 
 # MONGODB credentials
-MONGODB_HOST=<% host %>
+MONGODB_HOST=<%host%>
 MONGODB_PORT=27017
-MONGODB_USER=<% application-user %>
-MONGODB_PASSWORD=<% application-password %>
+MONGODB_USER=<%application-user%>
+MONGODB_PASSWORD=<%application-password%>
 ```
 
 Update following variables with appropriate values and save the file.

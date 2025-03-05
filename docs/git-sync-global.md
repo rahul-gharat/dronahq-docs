@@ -53,7 +53,7 @@ gitGraph
 
 To connect your apps on DronaHQ with Git, you must have a GitHub account, or any other version control accounts such as GitLab, Bitbucket, etc., and must have basic knowledge of git operations.
 
-## New way to configue Global Git Sync 
+## New way to configure Global Git Sync 
 Github has made decision to migration from SSH to Personal Access Tokens (PAT) based authentication. While SSH keys provide secure authentication, managing them can be complex, especially across multiple devices or teams. PATs offer finer-grained control with customizable scopes, allowing you to grant access only to specific actions or repositories, reducing risks. 
 
 We are also migrating from old SSH to  PAT based authentication, and this is going to be available to you in self-host version `3.4.0-stable and greater`. 
@@ -69,17 +69,18 @@ Below Environment variables to be configured -
 | Environment Variable  | Description |
 |----------------------------------------------|-----------------------------------------------------------------------------------------------------|
 | GIT_SYNC                            | This variable specifies if you want to enable Global Git Sync feature. By default it is set to `false` |
+| GIT_PROVIDER                        | Specifies the provider you are using, values can be `GITHUB` / `GITLAB` / `BITBUCKET`   |
 | GIT_SYNC_REPOSITORY_URL             | HTTPS Url of the Git Repo which you want all your apps to be checked into. Mandatory if GIT_SYNC is true |
 | GIT_SYNC_BRANCH_NAME                | Branch name of the above repo url which this instance should be synced with. For production instance, ideally use `main` branch.    |
-| GIT_SYNC_PERSONAL_ACCESS_TOKEN      | Personal Access token generated on githug repository that you want to use to sync apps is placed here |
+| GIT_SYNC_PERSONAL_ACCESS_TOKEN      | Personal Access token generated on github repository that you want to use to sync apps is placed here |
 | GIT_SYNC_AUTO_SAVE                  | Enable this to automatically save your app changes to your GIT repo. |
 | GIT_SYNC_ALLOW_EDIT                 | Enable this to allow editing of you app that is added to GIT. Ideally, you should set to `false` for your production instance and set it to `true` for your development instance. |
 | GIT_SYNC_AUTO_ADD_NEW_RESOURCES     | Enable this to automatically add new apps to git. Ideally, you should set to `true` for your development instance if you want all apps to be automatically added to git and set it to `false` for your production instance. By default, it is set to `false`. |
 
 
 
-## Old way to configue Global Git Sync 
-If you are using `pervious self-host version than 3.4.0-stable` then you need to follow the old configuration to enable globl git sync feature.
+## Old way to configure Global Git Sync 
+If you are using `pervious self-host version than 3.4.0-stable` then you need to follow the old configuration to enable global git sync feature.
 
 
 ### Create SSH Key in each DronaHQ Instance

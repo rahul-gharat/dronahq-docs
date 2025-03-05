@@ -184,6 +184,105 @@ To know about implementing pagination in Tablegrid control within DronaHQ, explo
 ### Freeze columns
 To use this feature you need to toggle on `Freeze columns` property, this feature enables you to freeze columns when you are scrolling horizontally the number of columns froze will not move from there position.
 
+### Sort and Filter Query
+
+The Filter Query and Sort Query features enable dynamic filtering and sorting of data for both client-side and server-side operations. These functionalities generate outputs in SQL and JSON formats, which can be consumed directly for backend processing or local data manipulation.
+
+
+
+#### Filter Query
+
+The Filter Query feature provides users with the ability to define conditions for filtering data. The conditions can be applied server-side or client-side to retrieve only the relevant data rows.
+
+**How It Works:**
+1. **User Interaction:**  
+   - Users select or input filter criteria through the table grid interface (e.g., "Name equals Vaibhav" and "Age greater than 25").
+   
+2. **Generated Outputs:**  
+   - **SQL Output:** A filter query string that can be sent to a backend for data retrieval.  
+     Example:  
+     ```sql
+     SELECT * FROM table_name WHERE name = 'Vaibhav' AND age > 25;
+     ```
+   - **JSON Output:** A structured JSON object representing the filter conditions for client-side use.  
+     Example:  
+     ```json
+     {
+       "name": "Vaibhav",
+       "age": { "$gt": 25 }
+     }
+     ```
+
+3. **Use Case:**  
+   - Dynamic data filtering in SQL-based databases or NoSQL environments like MongoDB (with JSON filters).  
+   - Adaptable to both server-side and client-side search behavior. 
+
+
+
+#### Sort Query
+
+The Sort Query feature allows users to sort table data based on one or more columns, either in ascending or descending order. This can be used for backend processing or client-side table arrangements.
+
+
+**How It Works:**
+1. **User Interaction:**  
+   - Users select columns to sort by (e.g., "Sort by Status in Ascending Order" and "Sort by Age in Descending Order").
+   
+2. **Generated Outputs:**  
+   - **SQL Output:** A sort query string that defines the column order for a backend query.  
+     Example:  
+     ```sql
+     SELECT * FROM table_name ORDER BY status ASC, age DESC;
+     ```
+   - **JSON Output:** A structured JSON object for sorting criteria.  
+     Example:  
+     ```json
+     {
+       "status": "asc",
+       "age": "desc"
+     } 
+     ```
+ ### **Filter Query and Sort Query in Action**
+
+    #### **Filter Query Example**
+Imagine a user wants to filter rows where `name` equals "John" and `age` is greater than 25.  
+- **SQL Output:**  
+  ```sql
+  SELECT * FROM users WHERE name = 'John' AND age > 25;
+  ```
+-    **JSON Output:**  
+  ```json
+  {
+    "name": "John",
+    "age": { "$gt": 25 }
+  }
+  ```
+
+#### **Sort Query Example**
+The user wants to sort data by `status` in ascending order and by `age` in descending order.  
+- **SQL Output:**  
+  ```sql
+  ORDER BY status ASC, age DESC;
+  ```
+- **JSON Output:**  
+  ```json
+  {
+    "status": "asc",
+    "age": "desc"
+  }
+  ```
+
+### **Properties Summary**
+
+| **Property**                       | **Type**   | **Description**                                                                                                                                       |
+|------------------------------------|------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `tablegrid.properties.filterquery` | String     | Returns filter conditions as a SQL query string. Example: `name = 'Vaibhav' AND age > 25`.                                                            |
+| `tablegrid.properties.filterjson`  | JSON Object| Outputs filter conditions in JSON format for use in client-side or NoSQL environments. Example: `{"name": "Vaibhav", "age": {"$gt": 25}}`.            |
+| `tablegrid.properties.sortquery`   | String     | Returns sorting criteria as a SQL query string. Example: `status ASC, age DESC`.                                                                      |
+| `tablegrid.properties.sortjson`    | JSON Object| Outputs sorting criteria in JSON format for client-side or NoSQL-based sorting. Example: `{"status": "asc", "age": "desc"}`.                          |
+
+ 
+
 ## Actions
 In Table grid control you can configure different set of actions like `row_select`, `add_click`, `update_click`, `refresh_click`, etc. The First action here is `on Row click`, so what action will be performed on row click like `Select Row` will perform the action flow configured in `row_select` event,`Show Details` will open detail view, `Navigate with Selection` will navigate to screen that is configured.
 

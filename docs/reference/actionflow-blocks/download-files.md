@@ -32,6 +32,15 @@ The Download File action allows users to download files directly to their device
 | Download Path (iOS)   | Set the directory for file storage on iOS devices, similar to Android.                                              |
 | Dynamic Query Fields  | Add query parameters to the file URL. Specify the key and value for each parameter.                                 |
 
+::: note
+
+When downloading a file, the `URL or file name` can include spaces, but it’s recommended to follow these guidelines for consistency and ease of use:  
+
+Spaces are acceptable in the file name, but using underscores (`_`) or hyphens (`-`) is preferable for clarity. Special characters such as `?`, `*`, `<`, `>`, `|`, `\`, `/`, `:` should still be avoided as they may cause compatibility issues. 
+
+Examples:  
+- Good URL: `https://example.com/report%202023-12-25.pdf`  
+:::
 
 <figure>
 <Thumbnail src="/img/reference/actionflow-blocks/download-files/download-files-config.png" alt="Download File" />

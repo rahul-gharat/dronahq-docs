@@ -9,8 +9,8 @@ import Thumbnail from '@site/src/components/Thumbnail';
 
 :::info PLEASE NOTE
 
-Available only on Self-Hosted Version
-
+Available only on Self-Hosted Version.
+If you are on DronaHQ Cloud version, Please refer [Configuring Sign In with Google](/sso/configuring-sign-in-with-google)
 :::
 
 

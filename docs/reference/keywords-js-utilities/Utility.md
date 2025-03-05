@@ -717,3 +717,80 @@ UTILITY.CLEARLOCALSTORAGE(key)
 ```
 UTILITY.CLEARLOCALSTORAGE(key)
 ```
+Here’s your formatted documentation for `SETPROPERTY`:  
+
+## SETPROPERTY  
+
+The `UTILITY.SETPROPERTY()` method allows you to dynamically set properties like `read_only` and `required` on input elements, controlling user interaction and validation.  
+
+#### Usage  
+
+```javascript
+UTILITY.SETPROPERTY([
+   { ctrlName: "controlUniqueName", property: "property_name" },
+   { ctrlName: "anotherControlUniqueName", property: "property_name" }
+]);
+```
+
+#### Parameters  
+
+| Parameter  | Accepts | Possible Values                                      |
+|------------|---------|------------------------------------------------------|
+| `ctrlName` | string  | Unique name of the control where the property is set. |
+| `property` | string  | Property name to set. Possible values: "read_only", "required". |
+
+#### Example  
+
+```javascript
+UTILITY.SETPROPERTY([
+   { ctrlName: "textinput1", property: "read_only" },
+   { ctrlName: "textinput2", property: "required" }
+]);
+```  
+
+## REMOVESETPROPERTY  
+
+`UTILITY.REMOVESETPROPERTY()` method can be used to dynamically remove specific properties from input controls. The method takes an object, where the object specifies the control name and the property to be removed.
+
+
+#### Usage  
+
+```UTILITY.REMOVESETPROPERTY([{ ctrlName: "controlName", property: "propertyName" }]);```
+
+
+
+#### Parameters  
+| Parameter              | Accepts | Possible Values                                                                                  |
+|------------------------|---------|--------------------------------------------------------------------------------------------------|
+| `ctrlName`             | string  | Unique name of the control where the property is to be removed.                                  |
+| `property`             | string  | Property name to remove. Possible values are: "read_only" (to make the control editable) or "required" (to make it optional). |
+
+
+#### Example  
+```javascript
+UTILITY.REMOVESETPROPERTY([
+   { ctrlName: "textinput1", property: "read_only" }
+]);
+```
+
+## REDIRECTPARENTUTILITY  
+
+The `UTILITY.REDIRECTPARENTUTILITY()` method allows you to redirect the parent of an iframe to a specified URL. This is useful when your micro-app is embedded within a parent website, enabling controlled navigation to an external destination.  
+
+#### Usage  
+
+```javascript
+UTILITY.REDIRECTPARENTUTILITY("URL");
+```
+
+#### Parameters  
+
+| Parameter | Accepts | Description |
+|-----------|---------|-------------|
+| `URL`     | string  | The destination URL to which the parent window should be redirected. |
+
+#### Example  
+
+```javascript
+UTILITY.REDIRECTPARENTUTILITY("https://docs.dronahq.com/reference/keywords-js-utilities/Utility/#setctrlvalue");
+```  

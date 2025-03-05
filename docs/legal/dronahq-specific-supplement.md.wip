@@ -1,0 +1,44 @@
+---
+sidebar_position: 2
+title: DronaHQ-Specific Supplement
+---
+
+The terms of this DronaHQ-Specific Supplement ("Supplement") below supplement and amend the Customer's Contract (as defined in our Customer Terms of Service) if the Customer falls into the corresponding category outlined below. In case of any conflict between this Supplement and the Contract, the terms of this Supplement will take precedence. Nothing in this Supplement designates DronaHQ as a government contractor for any federal, state, local, or foreign government.
+
+---
+
+### I. U.S. Government Customers  
+If the Customer is a U.S. government entity or public entity (or the Services are used for the U.S. Government), the following terms apply:  
+
+- Use by or for the U.S. Government: DronaHQ Services are classified as "commercial items" under 48 C.F.R. §2.101, including "commercial computer software" and "commercial computer software documentation," as per 48 C.F.R. §12.212 or 48 C.F.R. §227.7202-4. These Services are provided to U.S. Government end users with only those rights granted to all other users under this agreement.  
+- Indemnification, Auto-Renewal, Venue, Legal Fees: Provisions in the Contract related to "Governing Law," "Auto-renewal," "Venue; Waiver of Jury Trial; Fees," and "Customer's Indemnification of Us" are waived to the extent inconsistent with federal law.  
+- No Endorsement: DronaHQ agrees that Customer's seals, trademarks, logos, or trade names, and the fact that the Customer uses DronaHQ Services, will not imply endorsement by the U.S. Government. DronaHQ may only list the Customer’s name in a public customer list, ensuring it is not given undue prominence.  
+
+---
+
+### II. State or Local Government Customers  
+If the Customer is a state or local government entity and uses the Services in an official capacity, the following applies:  
+
+- The sections in the Contract regarding "Governing Law," "Venue; Waiver of Jury Trial; Fees," and "Customer's Indemnification of Us" will not apply if the Customer's jurisdiction prohibits acceptance of those provisions.  
+
+---
+
+### III. Healthcare Customers  
+If the Customer operates in the healthcare industry:  
+
+- HIPAA Compliance: DronaHQ is not a Business Associate or subcontractor under HIPAA (Health Insurance Portability and Accountability Act) and does not support the processing of "protected health information" (PHI) as defined in 45 CFR §160.103. Customers must not submit or use PHI within DronaHQ’s cloud-based Services, as DronaHQ has no liability for such information.  
+
+---
+
+### IV. Education Customers  
+For schools or educators utilizing DronaHQ Services:  
+
+- Compliance with FERPA: U.S.-based educational institutions must comply with the Family Educational Rights and Privacy Act (FERPA). Customers are responsible for notifying parents/guardians about the data collected and shared with DronaHQ and obtaining consent for students (aged 13 and above) before allowing them to use DronaHQ Services.  
+- International Compliance: For Customers outside the U.S., compliance with local education laws is required, including obtaining parental/guardian consent, if applicable.  
+
+---
+
+### V. Patent Assertion Entities  
+If the Customer is a Patent Assertion Entity or acting on behalf of one:  
+
+- Restriction on Claims: Customers agree not to assert or enable any third party to assert claims, lawsuits, or demands against DronaHQ or its affiliates alleging intellectual property infringement (including patents). A "Patent Assertion Entity" refers to entities deriving most of their revenue from patent assertions or entities controlled by such entities. This provision survives any termination of the Contract.  

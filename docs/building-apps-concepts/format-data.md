@@ -99,7 +99,7 @@ Both Single Tag and Multi-Tag components offer two primary ways to configure the
 
 2. Dynamic  
    In this mode, the tags are populated dynamically using a query or data source. This is useful when the list of tags is large, constantly updated, or derived from a database.  
-   Select the Data query in which you can dynamically send the tag values and other meta data. If you map a Data query with "Array of strings" as a format it will auto assign the colors of the tags. Incase your Data query is of type JSON - "Array of objects", you can map the values and other meta data below.
+   Select the Data query in which you can dynamically send the tag values and other meta data. If you map a Data query with "Array of strings" as a format it will auto assign the colors of the tags. In case your Data query is of type JSON - "Array of objects", you can map the values and other meta data below.
 
 
 ## Date, Time, and Datetime  

@@ -102,5 +102,5 @@ These security implementations demonstrate DronaHQ's commitment to maintaining a
 
 ## Reporting Security Vulnerabilities
 
-DronaHQ maintains an open communication channel with security researchers to report security vulnerabilities responsibly. If you notice a security vulnerability, please raise ticket from DRonaHQ Platform.
+DronaHQ maintains an open communication channel with security researchers to report security vulnerabilities responsibly. If you notice a security vulnerability, please raise ticket from DronaHQ Platform or submit it using our [Vulnerability Disclosure Program](/reference/vulnerability-reporting) Form.
 

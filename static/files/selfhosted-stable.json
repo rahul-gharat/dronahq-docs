@@ -1,7 +1,228 @@
-[ {
+[    
+  {
+    "timestamp": 1738800000000,
+    "tags": ["Self-Hosted", "3.4.11-stable"],
+    "heading": "Version 3.4.11-stable",
+    "cards": [
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed a bug in the template for the old connector binding sidebar."
+        ]
+      },
+      {
+        "title": "Enhancements",
+        "type": "improved",
+        "points": [
+          "Enhanced HashiCorp unwrapped secret ID location."
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1738540800000,
+    "tags": ["Self-Hosted", "3.4.11-stable"],
+    "heading": "Version 3.4.11-stable",
+    "cards": [
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed RMID expiration by extending it through session cookies."
+        ]
+      },
+      {
+        "title": "Enhancements",
+        "type": "improved",
+        "points": [
+          "Improved error handling in multistep SSO by retrying nonce fetching if missing and refining minor error handling.",
+          "Enhanced multistep SSO error handling."
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1737763200000,
+    "tags": ["Self-Hosted", "3.4.10-stable"],
+    "heading": "Version 3.4.10-stable",
+    "cards": [
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed credential vulnerabilities in connector.scheme.modal.js.",
+          "Fixed generic checks for multistepAuthenticationScreen function calls."
+        ]
+      },
+      {
+        "title": "Enhancements",
+        "type": "improved",
+        "points": [
+          "Enhanced Screen ID configuration, allowing changes under Screen Properties."
+        ]
+      }
+    ]
+  }
+
+,{
+    "timestamp": 1737676800000,
+    "tags": ["Self-Hosted", "3.4.9-stable"],
+    "heading": "Version 3.4.9-stable",
+    "cards": [
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed issue where Tablegrid squishes if the data is fetched while the screen is not active.",
+          "Fixed an issue where the home screen of the app is visible while routing.",
+          "Fixed issue by removing dynamic_variables key from test_db_sub_cat call.",
+          "Fixed custom file name passed to Google Cloud Storage connector in case of multiple files causing issues in file extension.",
+          "Fixed internet error when creating a user group."
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1737072000000,
+    "tags": ["Self-Hosted", "3.4.8-stable"],
+    "heading": "Version 3.4.8-stable",
+    "cards": [
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed an issue where the home screen of the app is visible while routing.",
+          "Fixed issue by adding 'from email' field in SMTP connector configuration."
+        ]
+      },
+      {
+        "title": "Enhancements",
+        "type": "improved",
+        "points": [
+          "Enhanced Git Sync health check for write permission check."
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1736380800000,
+    "tags": ["Self-Hosted", "3.4.7-stable"],
+    "heading": "Version 3.4.7-stable",
+    "cards": [
+      {
+        "title": "Enhancements",
+        "type": "improved",
+        "points": [
+          "Enhanced encryption with RMID cookie and added two variables in config file: session_timeout_ms, session_refresh_time_frame.",
+          "Enhanced GitLab authentication support for Git Sync."
+        ]
+      },
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed connection to Snowflake failing due to library version.",
+          "Fixed issue where adding a connector fails for self-hosted when configured over HTTP."
+        ]
+      },
+      {
+        "title": "Added",
+        "type": "added",
+        "points": [
+          "Added IGNORE_CALLBACK_MESSAGE variable to ignore error_message from OAuth callback."
+        ]
+      }
+    ]
+  },
+  {
+      "timestamp": 1733184000000,
+      "tags": ["Self-Hosted", "3.4.6-stable"],
+      "heading": "Version 3.4.6-stable",
+      "cards": [
+        {
+          "title": "Enhancements",
+          "type": "improved",
+          "points": [
+            "Enhanced session management by excluding a few callback endpoints.",
+            "Enhanced DataQuery with a secure response feature.",
+            "Enhanced security by removing the RMID cookie and replacing it with globalConfig.session_key_name.",
+            "Enhanced public link and CDN checks for potential issues.",
+            "Enhanced PDF Creator by adding cache busting support.",
+            "Enhanced multer middleware for the updateAppDetails and registerNewAppV3 endpoints."
+          ]
+        },
+        {
+          "title": "Fixed",
+          "type": "fixed",
+          "points": [
+            "Fixed an issue where the delete shortcut was not working.",
+            "Fixed the logout button issue on the end-user portal.",
+            "Fixed an issue by stringifying the API subcategory's body data while editing in the sidebar."
+          ]
+        }
+      ]
+    },
+    {
+      "timestamp": 1735344000000,
+      "tags": ["Self-Hosted", "3.4.5-stable"],
+      "heading": "Version 3.4.5-stable",
+      "cards": [
+        {
+          "title": "Enhancements",
+          "type": "improved",
+          "points": [
+            "Enhanced DronaHQ Database APIs with improved security.",
+            "Enhanced File Storage APIs for better security.",
+            "Enhanced webapp EJS files by adding static file versions.",
+            "Enhanced security by changing the secret key name.",
+            "Enhanced session IP address validation for Addons."
+          ]
+        },
+        {
+          "title": "Fixed",
+          "type": "fixed",
+          "points": [
+            "Fixed an issue where the tabbed container did not maintain space for hidden controls.",
+            "Fixed multiple security vulnerabilities with patches.",
+            "Fixed UI issues for SSO configuration in the manage users section.",
+            "Fixed an issue where the edit option for SSO did not appear during the first configuration.",
+            "Fixed a Salesforce refresh token flow issue where queries failed for older connectors."
+          ]
+        }
+      ]
+    },
+    {
+      "timestamp": 1734652800000,
+      "tags": ["Self-Hosted", "3.4.4-stable"],
+      "heading": "Version 3.4.4-stable",
+      "cards": [
+        {
+          "title": "Enhancements",
+          "type": "improved",
+          "points": ["Enhanced security by adding encryption for all multistep auth connector API requests."]
+        },
+        {
+          "title": "Fixed",
+          "type": "fixed",
+          "points": [
+            "Fixed a vulnerability by removing private keys.",
+            "Fixed incorrect health status on the activation and login pages.",
+            "Fixed an issue where the edit details option was not visible to owners.",
+            "Fixed a DHQ DB query issue during the import/export of apps.",
+            "Fixed container crashes when the password field was empty while connecting to MongoDB."
+          ]
+        },
+        {
+          "title": "Deprecated",
+          "type": "deprecated",
+          "points": ["Removed the channel ID from API requests."]
+        }
+      ]
+    },{
   "timestamp": 1734393600000,
   "tags": ["Self-Hosted", "3.4.3-stable"],
-  "heading": "Version 3.4.3",
+  "heading": "Version 3.4.3-stable",
   "cards": [
     {
       "title": "Added",
