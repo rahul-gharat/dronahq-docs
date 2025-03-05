@@ -52,7 +52,9 @@ This centralized location allows you to conveniently monitor and manage your con
 
 - You can query several columns at a time (A:AZ). Once you configure a connector on DronaHQ and you add Column to your
   Google Sheet, then your existing configured Google Sheet connector will have to be updated/refreshed in order to
-  reflect the new column added in your Google Sheet. :::
+  reflect the new column added in your Google Sheet. 
+
+:::
 
 ## Using Google Sheets Connector
 
