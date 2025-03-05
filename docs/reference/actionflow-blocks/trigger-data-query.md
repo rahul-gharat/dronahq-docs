@@ -69,10 +69,11 @@ In this case, if `id` is provided in the custom parameters section, the query wi
 #### Checking Available Custom Parameters
 
 When using the Trigger Data Query action, you can view or check the available custom parameters directly within the `Data Query` section. All you have to do is go to your data query and check for its `Trigger Query from JS option` You can see the expected parameters, including their keys and data types, making it easier to pass the correct values dynamically. This ensures that the values being sent align with the expected query format.
+
 <figure>
 <Thumbnail src="/img/reference/actionflow-blocks/trigger-data-query/params.png" alt="Trigger Data Query" />
 <figcaption align='center'><i>You can use the higlighted format to pass on in the custom params.</i></figcaption>
-</figure
+</figure>
 
 :::
 
