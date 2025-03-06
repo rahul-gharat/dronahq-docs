@@ -256,6 +256,14 @@ This is a storage bucket inside which DronaHQ will be uploading some resources a
 
 ## Automation
 
+#### `AUTOMATION_LOGGING_CHARACTER_LIMIT`
+
+This variable allows you to set the character limit for automation's [custom task logging](/automations/run-logs/#custom-task-logging). By default, the character limit is set to `300` characters. You can customize this limit as per your requirement. for unlimited characters, set it to `0`.
+
+```shell
+    AUTOMATION_LOGGING_CHARACTER_LIMIT=300
+```
+
 To streamline automation tasks on AWS, you'll be leveraging two core AWS services: [`Lambda`](https://docs.aws.amazon.com/lambda/) and [`EventBridge`](https://docs.aws.amazon.com/eventbridge/). Before initiating any automation procedures, ensure the correct configuration of the following environment variables:
 ```shell
     RUN_AUTOMATION_ON_AWS='true'
@@ -376,7 +384,7 @@ This variable allows you to specify the name of a database to be used for creati
 #### `MONGO_INITDB_USER`, `MONGO_INITDB_PWD`
 These are custom variables added by DronaHQ. This will create application user in your database while initializing MongoDB container.
 DronaHQ runs following script while initializing container to create application users and and assign read/write access to them.
-
+```shell
     db.createUser({
         user: '$MONGO_INITDB_USER',
         pwd: '$MONGO_INITDB_PWD',
@@ -388,7 +396,7 @@ DronaHQ runs following script while initializing container to create application
             db: '<% database name %>'
         }]
     })
-
+```
 ## Global GIT Sync configuration
 
 Below are the environment variables to be configured when you want to enable [Git Sync globally](/git-sync-global).
@@ -446,32 +454,32 @@ Enable this to automatically add new apps to git. Ideally, you should set to `tr
 #### `SECRET_API_TOKEN_KEY`
 By default, DronaHQ uses its own secret token for authentication of internal APIs. You can add your custom token instead.
 
-```
+```shell
 SECRET_API_TOKEN_KEY='some-random-secret-token'
 ```
 
 #### `ENCRYPTION_KEY`
 By default, DronaHQ user its own encryption key to encrypt credentials and secret information flows in system. You can configure your own encryption key for added security. Also make sure to keep backup of your key at secure location.
-```
+```shell
 ENCRYPTION_KEY='some-random-secret-key'
 ```
 
 #### `SESSION_KEY_NAME`, `SESSION_KEY_SECRET`
 By default, DronaHQ user its own session key and secret key. You can configure your own if you want to customize.
-```
+```shell
 SESSION_KEY_NAME='cookie-name'
 SESSION_KEY_SECRET='secret-key-to-sign-cookie'
 ```
 
 #### `SENDGRID_API_KEY`
 DronaHQ uses sendgrid as a mailing client. Configure your sendgrid key for activating activity mails.
-```
+```shell
 SENDGRID_API_KEY='sendgrid api key'
 ```
 
 #### `MAILER_EMAIL`, `MAILER_NAME`
 This is sender mailer name and email id for all the mails shoot from dronahq. You can configure your own mailer options as per your sendgrid account.
-```
+```shell
 MAILER_EMAIL='no-reply@dronahq.com'
 MAILER_NAME='DronaHQ'
 ```
@@ -480,7 +488,7 @@ MAILER_NAME='DronaHQ'
 
 Use this variable to whitelist API domains for the `Data Query -> REST API` feature. Specify a comma-separated list of hostnames that are allowed. For example:  
 
-```
+```shell
 REST_PROXY_WHITELISTED_DOMAINS=dronahq.com,google.com,api.example.com
 ```
 
@@ -491,7 +499,7 @@ By default, the following extensions are restricted: `.exe, .dll, .bat, .sh, .cm
 
 If the `FILE_UPLOAD_RESTRICTED_EXTENSIONS` variable is configured, it will override the default restrictions. Add comma-separated file extensions to this variable to customize the restrictions. For example:  
 
-```
+```shell
 FILE_UPLOAD_RESTRICTED_EXTENSIONS=.exe,.dll,.bat,.sh,.cmd,.vbs
 ```
 
@@ -499,7 +507,7 @@ FILE_UPLOAD_RESTRICTED_EXTENSIONS=.exe,.dll,.bat,.sh,.cmd,.vbs
 
 If set to `true`, This variable allows you to ignore error messages from authentication callback request and show static error message on screen.
 
-```
+```shell
 IGNORE_CALLBACK_MESSAGES=true
 ```
 
