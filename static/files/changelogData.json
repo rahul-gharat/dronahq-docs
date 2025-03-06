@@ -1,4 +1,49 @@
-[{
+[  {
+    "timestamp": 1741046400000,
+    "tags": ["Cloud-Hosted"],
+    "heading": "",
+    "cards": [
+      {
+        "title": "Added",
+        "type": "added",
+        "points": [
+          "Added a new connector for Databricks, expanding integration capabilities."
+        ]
+      },{
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed an issue where shifting was going into an infinite unnecessary shifting loop.",
+          "Fixed an issue where the widget version was not displaying correctly.",
+          "Fixed an issue where data in the JSON viewer was getting double-stringified.",
+          "Updated multistep encryption key to enhance security.",
+          "Fixed click behavior on 'Order By' text and added a dynamic tooltip in the DronaHQ apps list sorting.",
+          "Fixed an issue where formulas for controls were missing in ready-to-use templates."
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1740960000000,
+    "tags": ["Cloud-Hosted"],
+    "heading": "",
+    "cards": [
+      {
+        "title": "Enhancements",
+        "type": "improved",
+        "points": [
+          "Improved the formula management for controls in ready-to-use templates, ensuring smoother configuration and usability."
+        ]
+      },
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": ["Fixed an issue where the 'Download as File' option was not working in Data Query."]
+      }
+    ]
+  }
+
+,{
     "timestamp": 1740614400000,
     "tags": ["Cloud-Hosted"],
     "heading": "",
