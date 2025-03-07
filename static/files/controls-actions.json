@@ -1,4 +1,103 @@
-[{
+[  {
+    "timestamp": 1741219200000,
+    "tags": ["Control", "Action"],
+    "heading": "",
+    "cards": [
+      {
+        "title": "Added",
+        "type": "added",
+        "points": [
+          "Added a new JSON Schema Form control for improved form handling and flexibility."
+        ]
+      },
+      {
+        "title": "Enhancements",
+        "type": "improved",
+        "points": [
+          "Enhanced Dropdown control to allow empty names for more customization."
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1740960000000,
+    "tags": ["Control", "Action"],
+    "heading": "",
+    "cards": [
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed editable data inconsistencies in Table Grid, resolved height-related issues, and addressed localization-related fixes."
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1740700800000,
+    "tags": ["Control", "Action"],
+    "heading": "",
+    "cards": [
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed an issue where the Prefix and Suffix dropdowns were not clickable on iOS devices.",
+          "Fixed an issue in Custom Control where error messages were not displaying correctly when using rules and validation.",
+          "Fixed an issue in the CallService action where 'Download as file' failure cases were not handled properly."
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1740614400000,
+    "tags": ["Control", "Action"],
+    "heading": "",
+    "cards": [
+      {
+        "title": "Enhancements",
+        "type": "improved",
+        "points": [
+          "Changed default formula behavior for the Heading control to improve consistency."
+        ]
+      },
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed an issue in the CallService action where the action remained in a loading state if the REST API returned an error while 'Download as file' was enabled."
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1740441600000,
+    "tags": ["Control", "Action"],
+    "heading": "",
+    "cards": [
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed an issue where columns in the property section were incorrectly visible for Breadcrumbs, Switch Group, Profile Group, Select Bar, Split Button, and Detail Select controls."
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1739836800000,
+    "tags": ["Control", "Action"],
+    "heading": "",
+    "cards": [
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed an issue in the Collapsible Menu where setting data through another control triggered the action repeatedly in an infinite loop."
+        ]
+      }
+    ]
+  },{
     "timestamp": 1739750400000,
     "tags": ["Control", "Action"],
     "heading": "",

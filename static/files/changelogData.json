@@ -1,4 +1,29 @@
-[  {
+[
+  {
+    "timestamp": 1741219200000,
+    "tags": ["Cloud-Hosted"],
+    "heading": "",
+    "cards": [
+      {
+        "title": "Added",
+        "type": "added",
+        "points": ["Added theming functions to detect and apply themes and custom fonts on iframe-type controls."]
+      },
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "The data type modification for data binding in control properties.",
+          "An issue where headers were not generating in list-type controls.",
+          "The Hotjar script to load correctly at runtime.",
+          "The screen popup overlap issue when a folder popup opens.",
+          "Nested key suggestions in JSEditor and String Builder.",
+          "Bind data scrolling on save and resolved the gutter glitching issue."
+        ]
+      }
+    ]
+  },
+  {
     "timestamp": 1741046400000,
     "tags": ["Cloud-Hosted"],
     "heading": "",
@@ -6,10 +31,9 @@
       {
         "title": "Added",
         "type": "added",
-        "points": [
-          "Added a new connector for Databricks, expanding integration capabilities."
-        ]
-      },{
+        "points": ["Added a new connector for Databricks, expanding integration capabilities."]
+      },
+      {
         "title": "Fixed",
         "type": "fixed",
         "points": [
@@ -41,9 +65,9 @@
         "points": ["Fixed an issue where the 'Download as File' option was not working in Data Query."]
       }
     ]
-  }
+  },
 
-,{
+  {
     "timestamp": 1740614400000,
     "tags": ["Cloud-Hosted"],
     "heading": "",
@@ -113,9 +137,7 @@
       {
         "title": "Enhancements",
         "type": "improved",
-        "points": [
-          "Enhanced error logging by moving deleted controls logs to the error log."
-        ]
+        "points": ["Enhanced error logging by moving deleted controls logs to the error log."]
       },
       {
         "title": "Fixed",
@@ -130,300 +152,295 @@
         ]
       }
     ]
-  }  ,
+  },
   {
-  "timestamp": 1739836800000,
-  "tags": ["Cloud-Hosted"],
-  "heading": "",
-  "cards": [
-    {
-      "title": "Enhancements",
-      "type": "improved",
-      "points": [
-        "Linkages of labels to nested properties now directly navigate to the respective property.",
-        "Salesforce connector enhancements implemented.",
-        "Minor CSS fix applied to resolve hover issue in the headers within the right-side property section.",
-        "Enhanced Actionflow UI and search functionality for better usability and relevance.",
-        "Improved dashboard frontend UI for better user experience."
-      ]
-    },
-    {
-      "title": "Fixed",
-      "type": "fixed",
-      "points": [
-        "Fixed the issue where multiselect dropdowns in properties were not reflecting immediately.",
-        "Resolved bug in DataQuery where Custom JS direct save click output was not displaying.",
-        "Fixed issue in Autogen form where all field suggestions were not available for form creation.",
-        "Fixed Z-index issue for Rules Panel header when docking was enabled.",
-        "Fixed issue where DataQuery connector query saved with dynamic field reloaded test value as a string tag instead of a bound field data type.",
-        "Fixed issue where custom validation directly routed to rules and validation through the property section.",
-        "Fixed issue where DataQuery connector test value change did not update query test value data type."
-      ]
-    }
-  ]
-}
-,{
-  "timestamp": 1739750400000,
-  "tags": ["Cloud-Hosted"],
-  "heading": "",
-  "cards": [
-    {
-      "title": "Enhancements",
-      "type": "improved",
-      "points": [
-        "Tooltip added to delete icon, and list options now visible in select control."
-      ]
-    },
-    {
-      "title": "Fixed",
-      "type": "fixed",
-      "points": [
-        "Fixed missing HTTP/HTTPS in endpoint URL causing UI to freeze.",
-        "Fixed issues related to 'When to execute' evaluation conditions when testing and saving DQ.",
-        "Corrected background color issues and fixed condition saving in DronahqDB for 'When to execute'.",
-        "Added a warning message for deleting folders containing screens.",
-        "Fixed Quick select width, cursor issue, and AutoGen not opening on single-click from container.",
-        "Improved studio app listing with sorting and persisting last modifications.",
-        "Fixed canvas shrinkage when deleting screens.",
-        "Resolved UI issue with DQ dynamic variable dropdown in connectors.",
-        "Fixed session expiration popup message display error.",
-        "Fixed issue with Copy-Paste not working in Bind Data Editor.",
-        "Fixed issues with Dependency Tree and Watchlist binding for controls.",
-        "Resolved UI issue with Help (?) visibility over other panels by increasing z-index.",
-        "Fixed incorrect Montserrat.css loading due to relative path issue.",
-        "Fixed UI editor error related to parameterized SQL query tests.",
-        "Fixed note visibility in white label app creation form and UI issues with manager users.",
-        "Removed unnecessary API registration declarations.",
-        "Fixed issue where default data appeared as ToC when schema was unavailable for GraphQL.",
-        "Fixed issue with disappearing test and schema for dhqdb in docking mode.",
-        "Resolved UI issue with list-type control manual mode options."
-      ]
-    }
-  ]
-}
-,{
-  "timestamp": 1738713600000,
-  "tags": ["Cloud-Hosted"],
-  "heading": "",
-  "cards": [
-    {
-      "title": "Added",
-      "type": "added",
-      "points": [
-        "Added refresh option for PDF templates in Autogenerate form.",
-        "Added DronaHQ AI Assist for binding data to controls, transforming data query results using JavaScript, predicting format data options of different column types, and transforming data to controls."
-      ]
-    },
-    {
-      "title": "Enhancements",
-      "type": "improved",
-      "points": [
-        "Improved UX for sidebars, control tags, and duplication handling.",
-        "Added user-friendly toast titles and messages in new toast action configuration based on selected toast type (error, warning, info)."
-      ]
-    },
-    {
-      "title": "Fixed",
-      "type": "fixed",
-      "points": [
-        "Fixed execution issues in CustomJS and Connector Lib/Query when rendering or changing JavaScript, including DQ trigger execution.",
-        "Fixed issue where saved connector queries with null raw response showed an error message toast.",
-        "Fixed font mismatch issue in the PDF modal.",
-        "Fixed issue where the 'Sync' option was incorrectly visible in the DronaHQ Cloud connector library; only meant for self-hosted instances.",
-        "Fixed issue where variables in PDF Creator couldn't be deleted from the sidebar after removing all references.",
-        "Fixed issue where Address Line 1 & 2 were not binding to PDF Creator Action in Action Flow, despite working in Data Queries.",
-        "Fixed issue where Text control and Markdown viewer showed different values in bind data and preview.",
-        "Fixed issue where 'Cancel' and 'Save' buttons in the External CSS panel were positioned outside the panel.",
-        "Fixed issue where binding a Boolean control in JavaScript parameters and saving a test value as NULL caused UI break upon re-rendering the same DQ.",
-        "Fixed issues with dropdown modal, sidebar events, and right-side sidebar UI.",
-        "Fixed issue where deleting the last option in the 'Add More' box caused problems when removing any option in the Right Properties panel.",
-        "Fixed issue allowing Data Query names to have trailing spaces. Now, spacebars are not allowed while typing or pasting in the name field.",
-        "Fixed issue where the screen name appeared as undefined in the screen routing URL.",
-        "Fixed UI issue on the connectors page where the 'No connectors found' image was displayed even when connectors were present."
-      ]
-    }
-  ]
-}
-,{
-  "timestamp": 1738108800000,
-  "tags": ["Cloud-Hosted"],
-  "heading": "",
-  "cards": [
-    {
-      "title": "Enhancements",
-      "type": "improved",
-      "points": [
-        "Enhanced action flow variable handling by removing them from dependency generation for better performance.",
-        "Enhanced DataQuery to support displaying JavaScript parameter values with data type tags.",
-        "Enhanced the folder name validation while creating and renaming folders.",
-        "Enhanced the existing File Upload mechanism by integrating AWS S3 Presigned URLs to reduce server overhead.",
-        "Enhanced the dhqupload (file upload control) to ensure non-image files are uploaded to S3 directly using signed URLs.",
-        "Enhanced missing endpoints by adding the 'hide' and 'is_global' keys to subcategories."
-      ]
-    },
-    {
-      "title": "Fixed",
-      "type": "fixed",
-      "points": [
-        "Fixed a UI issue where the 'Manage Users' screen shifted up when clicking the edit button.",
-        "Fixed an issue where direct save in Connector Library/Query did not generate suggestions for master variables (array of objects).",
-        "Fixed an issue in dynamic credential conditions where rendered values were incorrectly coming in boolean format.",
-        "Fixed an edge case where new branch creation allowed restricted actions like Confirm, Alert, End Actionflow, and Import Actionflow inside iterate tasks.",
-        "Fixed a sidebar issue where the bind data editor height was incorrect.",
-        "Fixed an issue where the dependency tree in DataQuery was still showing old references instead of reflecting the latest dependencies.",
-        "Fixed an issue where old Actionflows containing Fx formulas in 'When to Execute' blocks were not working properly.",
-        "Fixed a UI issue where the tabbed container inside a widget was not working as expected.",
-        "Fixed an issue where the shortcut for deleting a control was not functioning correctly.",
-        "Fixed a table grid squish issue when an app was set as the home screen in a package.",
-        "Fixed an issue where custom JavaScript with a boolean (false) value was incorrectly set as an empty string.",
-        "Fixed an issue where variable duplication was not working correctly for REST API requests.",
-        "Fixed an issue where Redis and JDBC were not properly filtered out from Autogen.",
-        "Fixed an issue where custom file names for multiple files in Google Cloud Storage uploads caused issues with file extensions.",
-        "Fixed an issue where the SMTP 'from' email field was not handled correctly in the executeQuery API.",
-        "Fixed a UI issue where the cancel and save buttons in the external CSS panel were moving outside the panel."
-      ]
-    }
-  ]
-},{
-  "timestamp": 1736899200000,
-  "tags": ["Cloud-Hosted"],
-  "heading": "",
-  "cards": [
-    {
-      "title": "Enhancements",
-      "type": "improved",
-      "points": [
-        "Enhanced PostgreSQL and MSSQL connector schema."
-      ]
-    },
-    {
-      "title": "Fixed",
-      "type": "fixed",
-      "points": [
-        "Fixed an issue where the home screen of app is visible while routing via routing URL.",
-        "Fixed an UI issue for connector query div glitches in docking mode.",
-        "Fixed Global Connectors Endpoint Visible in Data Queries & Action Flow.",
-        "Fixed a behavior for duplicate variable in DQ disappearing on creation.",
-        "Fixed an UI issue where Builder overlapping new property with bottom panel.",
-        "Fixed an issue where dynamic creds were rendering, even dynamic creds toggle was off."
-      ]
-    }
-  ]
-}
-,{
-  "timestamp": 1736294400000,
-  "tags": ["Cloud-Hosted"],
-  "heading": "",
-  "cards": [
-    {
-      "title": "Added",
-      "type": "added",
-      "points": [
-        "Added Encryption for all the multistep auth connector API requests to provide security."
-      ]
-    },
-    {
-      "title": "Enhancements",
-      "type": "improved",
-      "points": [
-        "Enhanced the connector query dynamic credentials handling.",
-        "Enhancements made to left setting button sidebars for New UI in dedicated forms."
-      ]
-    },
-    {
-      "title": "Fixed",
-      "type": "fixed",
-      "points": [
-        "Fixed an issue for tabbed container maintaining space for hidden controls.",
-        "Fixed an UI issue for custom code block does not expand.",
-        "Fixed an issue where Header and Search Bar Visible for Un-activated Addons: PDF and Automation.",
-        "Fixed an issue where Widget update notification was shown on wrong section.",
-        "Fixed an issue where external CSS not getting applied on controls.",
-        "Fixed PDF Creator Sub Cat List Broken On Refresh in DQ & Action Flow.",
-        "Fixed an UI issue where tabular view is not working for connectors' response.",
-        "Fixed an issue where Toast colors are not according to theme nomenclature.",
-        "Fixed an issue where the logout button overflows on the end-user portal.",
-        "Fixed the UI issue where the options dropdown in the SSO configuration list was not opening properly."
-      ]
-    }
-  ]
-}
-,{
-  "timestamp": 1734480000000,
-  "tags": ["Cloud-Hosted"],
-  "heading": "",
-  "cards": [
-    {
-      "title": "Added",
-      "type": "added",
-      "points": [
-        "Added a new feature to create REST API-like connector queries and libraries directly from action flows.",
-        "Added an option to switch between advanced and free-flow editor types on the header screen.",
-        "Added suggestion for function parameters in the JS code editor.",
-        "Added a new Custom Library Import feature with conflict detection and recovery to show early errors if libraries conflict with studio functionality.",
-        "Added a Docking feature for managing multiple panels and enhancing user experience.",
-        "Added a new feature named Dependency Tree, allowing users to visualize the formula reference tree of any data query."
-      ]
-    },
-    {
-      "title": "Enhancements",
-      "type": "improved",
-      "points": [
-        "Enhanced DataQuery to handle release and draft version of the created data queries. Now, editing a dataquery in your App will not affect DataQuery of the published version of the App.",
-        "Enhanced Jitsu tracking for control property changes, app variables, PWA status, SSO, and external logging.",
-        "Enhanced SSH Key Management to allow passphrase input for importing SSH keys.",
-        "Enhanced the Table UI for the response/output window in JS editors.",
-        "Enhanced column formatting options for Date and DateTime picker types to allow empty values or 'No date' options."
-      ]
-    },
-    {
-      "title": "Fixed",
-      "type": "fixed",
-      "points": [
-        "Fixed an issue where table grid data was squeezed when the user navigates back from a child micro-app to a parent micro-app.",
-        "Fixed an issue where DHQ DB queries were not exported properly and imported as blank.",
-        "Fixed an issue where Multistep connector IDs were not updated after importing the app.",
-        "Fixed an issue where toggling the classic header caused live apps not to load when there were controls present in the header.",
-        "Fixed an issue where the screen view was not refreshing after an attached menu was cleared.",
-        "Fixed an issue where controls got smaller in the canvas after widget updates.",
-        "Fixed an issue where deleting any data query did not update the cache.",
-        "Fixed an issue where custom functions were not exported/imported with the app.",
-        "Fixed an issue where the Add SSH key sidebar didn’t reset after a successful key addition or navigation.",
-        "Fixed an issue where the Multistep Auth connector didn’t refresh the SSO token.",
-        "Fixed an issue where autogenerating a form using 'Generate query and add action flow on submit. SQL only' crashed when submitting without feeding fields.",
-        "Fixed an issue where the DQ-Filter reset was not working if the data query was inside folders.",
-        "Fixed an issue where copying data-binding output for objects/arrays was not working.",
-        "Fixed UI and filter-related issues in the Manage Users section.",
-        "Fixed an issue where custom fonts in theme configuration were not working.",
-        "Fixed an issue where publishing a PDF template was possible without adding release notes.",
-        "Fixed issues where adding a folder caused an empty screen in data queries, environments panel was not scrollable, and screen routing failed in preview via URL.",
-        "Fixed an issue where the variable list was not scrollable while dragging queries up the list."
-      ]
-    }
-  ]
-}
-,{
-  "timestamp": 1731456000000,
-  "tags": ["Cloud-Hosted"],
-  "heading": "",
-  "cards": [
-    {
-      "title": "Fixed",
-      "type": "fixed",
-      "points": [
-        "Fixed an issue where MySQL schema was not loading.",
-        "Fixed multi-step authentication issue in Actionflow where, if the connector returned an error, the success flow was executed instead of the error flow.",
-        "Fixed an issue where widget controls were selectable when clicked in the left sidebar instead of being dropped onto the canvas.",
-        "Fixed an issue where Connector Query dynamic variables' test values were not set on initial rendering.",
-        "Fixed an issue where offline submission was not working.",
-        "Fixed issues in Data Query where filters were not working and, after rollback, Data Query was not visible when placed inside folders.",
-        "Fixed an issue where Connector Query on raw data error response did not display the error message in full-height UI.",
-        "Fixed an issue where duplicating a Data Query was throwing an error.",
-        "Fixed an issue where the 'Add Account' option for AWS was not visible in the 'Add Connector' section."
-      ]
-    }
-  ]
-},
+    "timestamp": 1739836800000,
+    "tags": ["Cloud-Hosted"],
+    "heading": "",
+    "cards": [
+      {
+        "title": "Enhancements",
+        "type": "improved",
+        "points": [
+          "Linkages of labels to nested properties now directly navigate to the respective property.",
+          "Salesforce connector enhancements implemented.",
+          "Minor CSS fix applied to resolve hover issue in the headers within the right-side property section.",
+          "Enhanced Actionflow UI and search functionality for better usability and relevance.",
+          "Improved dashboard frontend UI for better user experience."
+        ]
+      },
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed the issue where multiselect dropdowns in properties were not reflecting immediately.",
+          "Resolved bug in DataQuery where Custom JS direct save click output was not displaying.",
+          "Fixed issue in Autogen form where all field suggestions were not available for form creation.",
+          "Fixed Z-index issue for Rules Panel header when docking was enabled.",
+          "Fixed issue where DataQuery connector query saved with dynamic field reloaded test value as a string tag instead of a bound field data type.",
+          "Fixed issue where custom validation directly routed to rules and validation through the property section.",
+          "Fixed issue where DataQuery connector test value change did not update query test value data type."
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1739750400000,
+    "tags": ["Cloud-Hosted"],
+    "heading": "",
+    "cards": [
+      {
+        "title": "Enhancements",
+        "type": "improved",
+        "points": ["Tooltip added to delete icon, and list options now visible in select control."]
+      },
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed missing HTTP/HTTPS in endpoint URL causing UI to freeze.",
+          "Fixed issues related to 'When to execute' evaluation conditions when testing and saving DQ.",
+          "Corrected background color issues and fixed condition saving in DronahqDB for 'When to execute'.",
+          "Added a warning message for deleting folders containing screens.",
+          "Fixed Quick select width, cursor issue, and AutoGen not opening on single-click from container.",
+          "Improved studio app listing with sorting and persisting last modifications.",
+          "Fixed canvas shrinkage when deleting screens.",
+          "Resolved UI issue with DQ dynamic variable dropdown in connectors.",
+          "Fixed session expiration popup message display error.",
+          "Fixed issue with Copy-Paste not working in Bind Data Editor.",
+          "Fixed issues with Dependency Tree and Watchlist binding for controls.",
+          "Resolved UI issue with Help (?) visibility over other panels by increasing z-index.",
+          "Fixed incorrect Montserrat.css loading due to relative path issue.",
+          "Fixed UI editor error related to parameterized SQL query tests.",
+          "Fixed note visibility in white label app creation form and UI issues with manager users.",
+          "Removed unnecessary API registration declarations.",
+          "Fixed issue where default data appeared as ToC when schema was unavailable for GraphQL.",
+          "Fixed issue with disappearing test and schema for dhqdb in docking mode.",
+          "Resolved UI issue with list-type control manual mode options."
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1738713600000,
+    "tags": ["Cloud-Hosted"],
+    "heading": "",
+    "cards": [
+      {
+        "title": "Added",
+        "type": "added",
+        "points": [
+          "Added refresh option for PDF templates in Autogenerate form.",
+          "Added DronaHQ AI Assist for binding data to controls, transforming data query results using JavaScript, predicting format data options of different column types, and transforming data to controls."
+        ]
+      },
+      {
+        "title": "Enhancements",
+        "type": "improved",
+        "points": [
+          "Improved UX for sidebars, control tags, and duplication handling.",
+          "Added user-friendly toast titles and messages in new toast action configuration based on selected toast type (error, warning, info)."
+        ]
+      },
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed execution issues in CustomJS and Connector Lib/Query when rendering or changing JavaScript, including DQ trigger execution.",
+          "Fixed issue where saved connector queries with null raw response showed an error message toast.",
+          "Fixed font mismatch issue in the PDF modal.",
+          "Fixed issue where the 'Sync' option was incorrectly visible in the DronaHQ Cloud connector library; only meant for self-hosted instances.",
+          "Fixed issue where variables in PDF Creator couldn't be deleted from the sidebar after removing all references.",
+          "Fixed issue where Address Line 1 & 2 were not binding to PDF Creator Action in Action Flow, despite working in Data Queries.",
+          "Fixed issue where Text control and Markdown viewer showed different values in bind data and preview.",
+          "Fixed issue where 'Cancel' and 'Save' buttons in the External CSS panel were positioned outside the panel.",
+          "Fixed issue where binding a Boolean control in JavaScript parameters and saving a test value as NULL caused UI break upon re-rendering the same DQ.",
+          "Fixed issues with dropdown modal, sidebar events, and right-side sidebar UI.",
+          "Fixed issue where deleting the last option in the 'Add More' box caused problems when removing any option in the Right Properties panel.",
+          "Fixed issue allowing Data Query names to have trailing spaces. Now, spacebars are not allowed while typing or pasting in the name field.",
+          "Fixed issue where the screen name appeared as undefined in the screen routing URL.",
+          "Fixed UI issue on the connectors page where the 'No connectors found' image was displayed even when connectors were present."
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1738108800000,
+    "tags": ["Cloud-Hosted"],
+    "heading": "",
+    "cards": [
+      {
+        "title": "Enhancements",
+        "type": "improved",
+        "points": [
+          "Enhanced action flow variable handling by removing them from dependency generation for better performance.",
+          "Enhanced DataQuery to support displaying JavaScript parameter values with data type tags.",
+          "Enhanced the folder name validation while creating and renaming folders.",
+          "Enhanced the existing File Upload mechanism by integrating AWS S3 Presigned URLs to reduce server overhead.",
+          "Enhanced the dhqupload (file upload control) to ensure non-image files are uploaded to S3 directly using signed URLs.",
+          "Enhanced missing endpoints by adding the 'hide' and 'is_global' keys to subcategories."
+        ]
+      },
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed a UI issue where the 'Manage Users' screen shifted up when clicking the edit button.",
+          "Fixed an issue where direct save in Connector Library/Query did not generate suggestions for master variables (array of objects).",
+          "Fixed an issue in dynamic credential conditions where rendered values were incorrectly coming in boolean format.",
+          "Fixed an edge case where new branch creation allowed restricted actions like Confirm, Alert, End Actionflow, and Import Actionflow inside iterate tasks.",
+          "Fixed a sidebar issue where the bind data editor height was incorrect.",
+          "Fixed an issue where the dependency tree in DataQuery was still showing old references instead of reflecting the latest dependencies.",
+          "Fixed an issue where old Actionflows containing Fx formulas in 'When to Execute' blocks were not working properly.",
+          "Fixed a UI issue where the tabbed container inside a widget was not working as expected.",
+          "Fixed an issue where the shortcut for deleting a control was not functioning correctly.",
+          "Fixed a table grid squish issue when an app was set as the home screen in a package.",
+          "Fixed an issue where custom JavaScript with a boolean (false) value was incorrectly set as an empty string.",
+          "Fixed an issue where variable duplication was not working correctly for REST API requests.",
+          "Fixed an issue where Redis and JDBC were not properly filtered out from Autogen.",
+          "Fixed an issue where custom file names for multiple files in Google Cloud Storage uploads caused issues with file extensions.",
+          "Fixed an issue where the SMTP 'from' email field was not handled correctly in the executeQuery API.",
+          "Fixed a UI issue where the cancel and save buttons in the external CSS panel were moving outside the panel."
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1736899200000,
+    "tags": ["Cloud-Hosted"],
+    "heading": "",
+    "cards": [
+      {
+        "title": "Enhancements",
+        "type": "improved",
+        "points": ["Enhanced PostgreSQL and MSSQL connector schema."]
+      },
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed an issue where the home screen of app is visible while routing via routing URL.",
+          "Fixed an UI issue for connector query div glitches in docking mode.",
+          "Fixed Global Connectors Endpoint Visible in Data Queries & Action Flow.",
+          "Fixed a behavior for duplicate variable in DQ disappearing on creation.",
+          "Fixed an UI issue where Builder overlapping new property with bottom panel.",
+          "Fixed an issue where dynamic creds were rendering, even dynamic creds toggle was off."
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1736294400000,
+    "tags": ["Cloud-Hosted"],
+    "heading": "",
+    "cards": [
+      {
+        "title": "Added",
+        "type": "added",
+        "points": ["Added Encryption for all the multistep auth connector API requests to provide security."]
+      },
+      {
+        "title": "Enhancements",
+        "type": "improved",
+        "points": [
+          "Enhanced the connector query dynamic credentials handling.",
+          "Enhancements made to left setting button sidebars for New UI in dedicated forms."
+        ]
+      },
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed an issue for tabbed container maintaining space for hidden controls.",
+          "Fixed an UI issue for custom code block does not expand.",
+          "Fixed an issue where Header and Search Bar Visible for Un-activated Addons: PDF and Automation.",
+          "Fixed an issue where Widget update notification was shown on wrong section.",
+          "Fixed an issue where external CSS not getting applied on controls.",
+          "Fixed PDF Creator Sub Cat List Broken On Refresh in DQ & Action Flow.",
+          "Fixed an UI issue where tabular view is not working for connectors' response.",
+          "Fixed an issue where Toast colors are not according to theme nomenclature.",
+          "Fixed an issue where the logout button overflows on the end-user portal.",
+          "Fixed the UI issue where the options dropdown in the SSO configuration list was not opening properly."
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1734480000000,
+    "tags": ["Cloud-Hosted"],
+    "heading": "",
+    "cards": [
+      {
+        "title": "Added",
+        "type": "added",
+        "points": [
+          "Added a new feature to create REST API-like connector queries and libraries directly from action flows.",
+          "Added an option to switch between advanced and free-flow editor types on the header screen.",
+          "Added suggestion for function parameters in the JS code editor.",
+          "Added a new Custom Library Import feature with conflict detection and recovery to show early errors if libraries conflict with studio functionality.",
+          "Added a Docking feature for managing multiple panels and enhancing user experience.",
+          "Added a new feature named Dependency Tree, allowing users to visualize the formula reference tree of any data query."
+        ]
+      },
+      {
+        "title": "Enhancements",
+        "type": "improved",
+        "points": [
+          "Enhanced DataQuery to handle release and draft version of the created data queries. Now, editing a dataquery in your App will not affect DataQuery of the published version of the App.",
+          "Enhanced Jitsu tracking for control property changes, app variables, PWA status, SSO, and external logging.",
+          "Enhanced SSH Key Management to allow passphrase input for importing SSH keys.",
+          "Enhanced the Table UI for the response/output window in JS editors.",
+          "Enhanced column formatting options for Date and DateTime picker types to allow empty values or 'No date' options."
+        ]
+      },
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed an issue where table grid data was squeezed when the user navigates back from a child micro-app to a parent micro-app.",
+          "Fixed an issue where DHQ DB queries were not exported properly and imported as blank.",
+          "Fixed an issue where Multistep connector IDs were not updated after importing the app.",
+          "Fixed an issue where toggling the classic header caused live apps not to load when there were controls present in the header.",
+          "Fixed an issue where the screen view was not refreshing after an attached menu was cleared.",
+          "Fixed an issue where controls got smaller in the canvas after widget updates.",
+          "Fixed an issue where deleting any data query did not update the cache.",
+          "Fixed an issue where custom functions were not exported/imported with the app.",
+          "Fixed an issue where the Add SSH key sidebar didn’t reset after a successful key addition or navigation.",
+          "Fixed an issue where the Multistep Auth connector didn’t refresh the SSO token.",
+          "Fixed an issue where autogenerating a form using 'Generate query and add action flow on submit. SQL only' crashed when submitting without feeding fields.",
+          "Fixed an issue where the DQ-Filter reset was not working if the data query was inside folders.",
+          "Fixed an issue where copying data-binding output for objects/arrays was not working.",
+          "Fixed UI and filter-related issues in the Manage Users section.",
+          "Fixed an issue where custom fonts in theme configuration were not working.",
+          "Fixed an issue where publishing a PDF template was possible without adding release notes.",
+          "Fixed issues where adding a folder caused an empty screen in data queries, environments panel was not scrollable, and screen routing failed in preview via URL.",
+          "Fixed an issue where the variable list was not scrollable while dragging queries up the list."
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1731456000000,
+    "tags": ["Cloud-Hosted"],
+    "heading": "",
+    "cards": [
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed an issue where MySQL schema was not loading.",
+          "Fixed multi-step authentication issue in Actionflow where, if the connector returned an error, the success flow was executed instead of the error flow.",
+          "Fixed an issue where widget controls were selectable when clicked in the left sidebar instead of being dropped onto the canvas.",
+          "Fixed an issue where Connector Query dynamic variables' test values were not set on initial rendering.",
+          "Fixed an issue where offline submission was not working.",
+          "Fixed issues in Data Query where filters were not working and, after rollback, Data Query was not visible when placed inside folders.",
+          "Fixed an issue where Connector Query on raw data error response did not display the error message in full-height UI.",
+          "Fixed an issue where duplicating a Data Query was throwing an error.",
+          "Fixed an issue where the 'Add Account' option for AWS was not visible in the 'Add Connector' section."
+        ]
+      }
+    ]
+  },
   {
     "timestamp": 1729900800000,
     "tags": ["Cloud-Hosted"],
