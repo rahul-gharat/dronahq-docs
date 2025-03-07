@@ -72,7 +72,7 @@ When using the Trigger Data Query action, you can view or check the available cu
 
 <figure>
 <Thumbnail src="/img/reference/actionflow-blocks/trigger-data-query/params.png" alt="Trigger Data Query" />
-<figcaption align='center'><i>You can use the higlighted format to pass on in the custom params.</i></figcaption>
+<figcaption align='center'><i>You can use the highlighted format to pass on in the custom params.</i></figcaption>
 </figure>
 
 :::
