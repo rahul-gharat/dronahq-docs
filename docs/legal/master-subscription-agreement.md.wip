@@ -94,33 +94,33 @@ Any credits that may be accrued during the subscription term will expire upon th
 #### 6.2 Invoicing and Payment  
 Fees are invoiced in advance unless stated otherwise in the relevant Order Form. Invoices will be sent via email to the billing contact designated by the Customer. Customers are required to remit full payment within 30 days of the invoice date.  
 
-Failure to make timely payments may lead to additional charges and penalties. Retool reserves the right to charge interest on overdue balances at a rate of 1.5% per month or the maximum legally permissible rate, whichever is lower. Additionally, Retool may seek reimbursement for any expenses incurred during the collection process. If payments are overdue by 30 days or more, Retool may suspend the provision of its Services or Expert Services. Customers will receive at least 10 days’ notice, typically via email, before such a suspension is enforced. Services will only be reinstated once all outstanding amounts are settled in full.  
+Failure to make timely payments may lead to additional charges and penalties. DronaHQ reserves the right to charge interest on overdue balances at a rate of 1.5% per month or the maximum legally permissible rate, whichever is lower. Additionally, DronaHQ may seek reimbursement for any expenses incurred during the collection process. If payments are overdue by 30 days or more, DronaHQ may suspend the provision of its Services or Expert Services. Customers will receive at least 10 days’ notice, typically via email, before such a suspension is enforced. Services will only be reinstated once all outstanding amounts are settled in full.  
 
 #### 6.3 Taxes  
-Customers are responsible for all applicable taxes related to the Services, except for taxes based on Retool's net income. This includes, but is not limited to, sales, use, excise, value-added, goods and services, consumption, and other similar taxes or duties. If any payments to Retool are subject to withholding taxes imposed by a governmental authority, the Customer is required to reimburse Retool for the amount withheld. Customers should ensure compliance with local tax laws when using Retool’s Services.  
+Customers are responsible for all applicable taxes related to the Services, except for taxes based on DronaHQ's net income. This includes, but is not limited to, sales, use, excise, value-added, goods and services, consumption, and other similar taxes or duties. If any payments to DronaHQ are subject to withholding taxes imposed by a governmental authority, the Customer is required to reimburse DronaHQ for the amount withheld. Customers should ensure compliance with local tax laws when using DronaHQ's Services.  
 
 
 ### 7. Proprietary Rights  
 
 #### 7.1 Reservation of Rights  
-Retool retains all rights, titles, and interests in and to the Services, including all related intellectual property rights. These rights are not transferred to Customers, except as explicitly granted under this Agreement. Similarly, Customers retain all rights, titles, and interests in and to their Custom Apps and Customer Data, including intellectual property rights therein.  
+DronaHQ retains all rights, titles, and interests in and to the Services, including all related intellectual property rights. These rights are not transferred to Customers, except as explicitly granted under this Agreement. Similarly, Customers retain all rights, titles, and interests in and to their Custom Apps and Customer Data, including intellectual property rights therein.  
 
 #### 7.2 License to Self-Hosted Services  
-For Customers purchasing Self-Hosted Services under an Order Form, Retool grants a non-sublicensable, non-exclusive license to use the Self-Hosted Services. This license is subject to the terms of this Agreement, the applicable Order Form, and any related Documentation.  
+For Customers purchasing Self-Hosted Services under an Order Form, DronaHQ grants a non-sublicensable, non-exclusive license to use the Self-Hosted Services. This license is subject to the terms of this Agreement, the applicable Order Form, and any related Documentation.  
 
 #### 7.3 Limited License for Cloud Services  
-If a Customer purchases Cloud Services, they grant Retool and its affiliates a limited, non-exclusive, worldwide license to access and use Custom Apps, Customer Data, and Non-Retool Products solely for:  
+If a Customer purchases Cloud Services, they grant DronaHQ and its affiliates a limited, non-exclusive, worldwide license to access and use Custom Apps, Customer Data, and Non-DronaHQ Products solely for:  
 - Maintaining, updating, and providing the Services.  
 - Addressing technical issues or responding to customer support requests.  
 - Complying with legal obligations or requests.  
 
-This license allows Retool to engage third-party service providers, such as cloud hosting providers, to fulfill these purposes. Retool's access and use of Customer Data are strictly limited to these specified purposes.  
+This license allows DronaHQ to engage third-party service providers, such as cloud hosting providers, to fulfill these purposes. DronaHQ's access and use of Customer Data are strictly limited to these specified purposes.  
 
 #### 7.4 Suggestions  
-Customers or Authorized Users who share feedback or suggestions (“Suggestions”) grant Retool an unlimited, irrevocable, perpetual, sublicensable, royalty-free license to use such Suggestions for any purpose. Retool is not obligated to provide compensation or credit for any Suggestions received.  
+Customers or Authorized Users who share feedback or suggestions (“Suggestions”) grant DronaHQ an unlimited, irrevocable, perpetual, sublicensable, royalty-free license to use such Suggestions for any purpose. DronaHQ is not obligated to provide compensation or credit for any Suggestions received.  
 
 #### 7.5 Usage Information and Service Improvements  
-Retool may collect and analyze Usage Information related to how its Services are configured and used. This data is utilized to enhance the performance and functionality of the Services. Improvements derived from such analyses benefit both individual Customers and the broader customer base. Retool ensures that Usage Information is aggregated or de-identified before sharing it externally to protect the confidentiality of Customer data.  
+DronaHQ may collect and analyze Usage Information related to how its Services are configured and used. This data is utilized to enhance the performance and functionality of the Services. Improvements derived from such analyses benefit both individual Customers and the broader customer base. DronaHQ ensures that Usage Information is aggregated or de-identified before sharing it externally to protect the confidentiality of Customer data.  
 
 
 ### 8. Term and Termination  
@@ -133,15 +133,15 @@ Services subscriptions commence on the start date specified in the applicable Or
 
 #### 8.3 Termination for Cause  
 Either party may terminate this Agreement with 30 days’ written notice if the other party materially breaches its terms and fails to remedy the breach within the notice period. In cases of termination:  
-- If initiated by the Customer, Retool will refund any prepaid fees for the unused subscription term.  
-- If initiated by Retool, the Customer will be liable for any unpaid fees for the remainder of the subscription term.  
+- If initiated by the Customer, DronaHQ will refund any prepaid fees for the unused subscription term.  
+- If initiated by DronaHQ, the Customer will be liable for any unpaid fees for the remainder of the subscription term.  
 
 Termination does not absolve the Customer from paying any fees incurred before the effective termination date.  
 
 #### 8.4 Data Portability and Deletion  
 During the subscription term, Customers can export their data via the Cloud Services. This capability may be limited by the Customer’s subscription plan, app configuration, or data retention settings.  
 
-Upon termination of the Agreement, Customers have up to 30 days to request a copy of their data. After this period, Retool is not obligated to retain or provide access to Customer Data or Custom Apps. If an account is deleted, Retool will, unless prohibited by law, delete all Customer Data and Custom Apps in accordance with its Security Practices.  
+Upon termination of the Agreement, Customers have up to 30 days to request a copy of their data. After this period, DronaHQ is not obligated to retain or provide access to Customer Data or Custom Apps. If an account is deleted, DronaHQ will, unless prohibited by law, delete all Customer Data and Custom Apps in accordance with its Security Practices.  
 
 #### 8.5 Surviving Provisions  
 Certain provisions of this Agreement will survive its termination or expiration. These include sections related to Fees and Payment, Proprietary Rights, Confidentiality, Indemnification, Limitation of Liability, and Data Portability and Deletion, among others. These provisions ensure continuity in obligations such as payment, data protection, and dispute resolution even after the Agreement concludes.

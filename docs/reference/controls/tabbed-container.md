@@ -51,17 +51,24 @@ Expected value:
 - Mapped: Dynamically generate tabs by mapping data from external sources.
 - View Data: Preview the data being rendered in the tabs to ensure accuracy.
 
-#### Tabs
-- Home: The default tab that can act as the primary landing section.
-- Features: Highlight key features or functionalities.
-- Product: Showcase product-related information or details.
-- Admin: Include admin-specific controls or views.
-- String: Utilize for displaying custom string-based content.
+
 
 ### Add-ons
 - Tooltip: Add tooltips to provide contextual information about each tab.
 - Description: Include detailed descriptions for better user understanding.
-- Label: Customize the labels for each tab.
+- Label: Customize the labels for each tab such as its size, heinght, color and allignment.
+
+
+:::info
+
+In the Tabbed Container, If the tab value is altered, then the associated controls will be automatically removed. This is because the system maps controls based on the value key, not the label.  
+
+It is best to:
+- First set the tab value and then inject the controls accordingly to ensure they persist.
+- Modify the tab label as it is safe and will not affect the controls.  
+
+
+:::
 
 ## Interaction
 Interaction settings provide flexibility in handling user actions and input validations.
@@ -70,68 +77,42 @@ Interaction settings provide flexibility in handling user actions and input vali
   <Thumbnail src="/img/reference/controls/tabbed-container/interaction.png" alt="tabbed-container" />
 </figure>
 
-#### Validation
-- Required: Mark specific fields or tabs as mandatory.
-- Read Only: Restrict users from editing specific tabs or fields.
 
-#### Submit Data
-- Always: Define when data should be submitted across tabs.
-
-#### Variant
-- Pill: Rounded tab design.
-- Line: Minimalist line-style tabs.
-
-#### Alignment
-- Center: Position tabs centrally for a symmetrical layout.
-- Minimum Tab Width: Set a minimum width (in percentage) for each tab to maintain uniformity.
+| Property          | Description  |  
+|----------------------|--------------------------------------------------------------|  
+| Validation      | Defines rules for user input. `Required`: Marks specific fields or tabs as mandatory. `Read Only`: Restricts users from editing specific tabs or fields. |  
+| Submit Data     | Determines when data should be submitted: `Always`: Data is submitted every time. `Never`: Data is never submitted. `Not When Hidden`: Data is submitted only when the field/tab is visible. |  
+| Variant         | Specifies the tab style: `Pill`: Rounded tab design. `Line`: Minimalist line-style tabs. |  
+| Minimum Tab Width | Defines the minimum width for a tab to maintain layout consistency. |  
+| Alignment       | Controls tab positioning  to:  `Center ` `Left` `Right ` `Normal`:as Default alignment behavior. |  
 
 ### Events
 - `tab_change`: Trigger custom events or actions when a user switches between tabs.
 
 ## Appearance
-Appearance settings allow you to fully customize the visual design of the Tabbed Container, ensuring it aligns with your app's branding.
 
-#### Visibility
-Control the visibility of the entire container or specific tabs.
+| Property              | Description  |  
+|--------------------------|--------------------------------------------------------------|  
+| Visibility          | Controls the visibility of the entire container or specific tabs. |  
+| Box Shadow          | Adds a shadow effect to enhance the container’s depth and visual appeal. |  
+| Tab Customization   | Customizes tab appearance such as Size, Weight, Color, Background Color and more. |  
+| Active Tab Customization | Modifies the active tab's appearance:such as Size, Weight, Color, Background Color and more. Differentiates the active tab with a unique background. |  
+| Background         | Controls the container’s backgroundsuch as Size, Weight, Color, Background Color, Opacity, and more. |  
+| Border             | Defines the container’s border styling: Border such as Sets border visibility, Width, Style of the  border as solid, dashed, or dotted styles, Color, Radius, and  more. |  
 
-#### Box Shadow
-Add a shadow effect to enhance the container’s depth and visual appeal.
 
-#### Tab Customization
-- Size: Adjust the size of the tabs.
-- Weight: Define the font weight.
-- Color: Change the text color.
-- Background Color: Set a background color for the tabs.
-- Border: Add borders to enhance the tab edges.
 
-#### Active Tab Customization
-- Color: Highlight the active tab with a distinct color.
-- Border: Emphasize the active tab’s border.
-- Background Color: Differentiate the active tab with a unique background.
-
-#### Background
-- Color: Set the background color for the entire container.
-- Image: Add a background image.
-- Image Fit: Adjust the fit of the image (e.g., cover, contain).
-- Opacity: Control the transparency of the background.
-
-#### Border
-- Border: Define the border visibility.
-- Width: Customize the border thickness.
-- Style: Choose between solid, dashed, or dotted styles.
-- Color: Pick a border color.
-- Radius: Round the corners for a softer look.
 
 ## Advanced Settings
 For power users and developers, the advanced settings offer additional control over the Tabbed Container.
 
-#### External CSS
+- External CSS
 Inject custom CSS styles for granular control over the design and behavior of the tabs.
 
-#### Trigger Dependents
+- Trigger Dependents
 Set up dependent actions or triggers based on user interactions with the tabs.
 
-#### Caching
+- Caching
 Enable caching to store data locally and improve app performance.
 
 
