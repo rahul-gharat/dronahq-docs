@@ -1,43 +1,153 @@
-[    
+[
+  {
+    "timestamp": 1741564800000,
+    "tags": ["Self-Hosted", "3.6.0-stable"],
+    "heading": "Version 3.6.0-stable",
+    "cards": [
+      {
+        "title": "Added",
+        "type": "added",
+        "points": [
+          "Added Screen ID option to change under Screen Properties.",
+          "Added IGNORE_CALLBACK_MESSAGE variable to ignore error_message from OAuth callback.",
+          "Added a new connector for Databricks."
+        ]
+      },
+      {
+        "title": "Enhancements",
+        "type": "improved",
+        "points": [
+          "Enhanced with a new column type as HTML View. New options for editable output in Date Time and Date Time column types.",
+          "Enhanced with function parameters suggestion in CodeMirror.",
+          "Enhanced Custom Library Import with conflict detection and recovery module.",
+          "Enhanced Automation listing by adding via iframe.",
+          "Enhanced the Protected Apps option for Apps added into Git, enabling app editing only through the feature branch for improved collaboration.",
+          "Enhanced Git Sync health check for write permission check.",
+          "Enhanced Snowflake SDK version upgraded from 1.6.3 to 2.0.1.",
+          "Enhanced fast-xml-parser version upgraded from 3.21.1 to 4.2.7.",
+          "Enhanced GitSync feature with added logger.",
+          "Enhanced addAndCommit method performance and created new function addRemoveGenerateCommitMessageAndCommit.",
+          "Enhanced the Redis connector by adding an 'Expire' action.",
+          "Enhanced the Git-protected app builder by displaying the current working branch name.",
+          "Enhanced query functionality by adding a method to fetch Glue tables.",
+          "Improved SSH key management by adding passphrase support when importing a private key.",
+          "Improved DataQuery security by sanitizing HTML responses for table views.",
+          "Removed the Terms & Conditions checkbox button from the End User Portal login.",
+          "Improved DataQuery UI by ensuring saved queries display a green dot in GraphQL.",
+          "Enhanced error handling in multistep SSO by retrying nonce fetching if missing and refining minor error handling.",
+          "Enhanced exception handling of Aggregate errors for MySQL and MariaDB.",
+          "Enhanced the process of generating Git commit messages for better clarity and efficiency.",
+          "Enhanced the encryption of dynamic_variables when saving a connector's account API for improved security.",
+          "Enhanced the REST API connector by allowing no_auth, api_key, basic_auth, aws_auth, digest_auth, and hawk_auth methods to be saved directly without testing from the 'Manage Environments' section in the edit/create sidebar."
+        ]
+      },
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed issue in DataQuery where the edited state (green dot) was visible by default on opening a connector query in RestAPI.",
+          "Fixed logging and error issues.",
+          "Fixed issue where custom fonts were not working in theme configuration.",
+          "Fixed issue where the last metric control inside the grid panel appeared slightly larger than others.",
+          "Fixed a bug in the Connector Library rendering dot-separated dynamic variable values in DataQuery.",
+          "Fixed an issue with the AWS RDS status code.",
+          "Fixed an issue where toggle-type column images appeared to flash when the control was refreshed.",
+          "Fixed an issue where the PDF modal was sticking to the top instead of appearing at the center.",
+          "Fixed an issue where adding a connector failed for self-hosted setups configured over HTTP.",
+          "Fixed the issue with the edit app details for git apps which were not working.",
+          "Fixed the issue preventing API calls related to the share sidebar from occurring.",
+          "Fixed the issue causing the home screen of the app to appear during routing.",
+          "Fixed the problem where the app did not function as expected after publishing.",
+          "Fixed the old server-side Actionflow connector sidebar rendering bug.",
+          "Fixed the issue where dynamic credentials were not passing the values of controls or variables.",
+          "Fixed the conflict where the delete control shortcut interfered with the normal Cmd+Del behavior.",
+          "Fixed bug in Git Sync branch creation and minor CSS fix for update loader UI, app publish issue from Git Sync sidebar.",
+          "Fixed issue where old app JSON file persists in Git causing old app to get synced when pulled from Git.",
+          "Fixed Git-protected app not working as per permission.",
+          "Fixed bug where last release JSON was given priority over new JSON.",
+          "Fixed DataQuery editable state green dot bug.",
+          "Fixed bug for DataQuery datatypes and homepage selection.",
+          "Fixed custom file name passed to Google Cloud Storage connector in case of multiple files causing issue in file extension.",
+          "Fixed the issue where branches of Git-protected apps inside folders wouldn't load.",
+          "Fixed reload icon in File Storage (was looking like undo).",
+          "Fixed bug related to header update on folders rename, delete, and other operations.",
+          "Fixed editable green dot visible for connector query only for DataQueries.",
+          "Fixed filtered out Redis and JDBC from Autogen.",
+          "Fixed connector response for table view.",
+          "Fixed field value retention issue when editing OIDC SSO config and adding new one.",
+          "Fixed duplicate click event function causing app setting dropdown toggle issue.",
+          "Fixed an issue where dynamic creds were rendering even when dynamic creds toggle was off.",
+          "Fixed Audit logger error handling and sidebar access.",
+          "Fixed rules condition name change.",
+          "Fixed DataQuery: Connector library/query on direct save suggestion not creating bug.",
+          "Fixed credential vulnerabilities in connector.scheme.modal.js.",
+          "Fixed an issue where RMID cookie was not generated after activating the license.",
+          "Fixed an issue where multistep auth connector errors in data queries and account decryption failures were not properly handled.",
+          "Fixed an issue where icon and image URLs caused errors in the console.",
+          "Fixed session logout issue on automation iframe reload to reload the entire page.",
+          "Fixed sorting and persistence issues in StudioConsole.",
+          "Fixed a bug where custom JavaScript could not be added from quick select.",
+          "Fixed missing PDF Modal opening transition.",
+          "Fixed a bug where permission sidebars in 'Manage Users' did not show apps inside folders.",
+          "Fixed version preview scrolling issue. For Scheduler, added a tooltip popup for save actions and an icon in the trigger label. Also, added sanitizeHtmlCharacters function for preselect dropdowns.",
+          "Fixed automation import, export, and GitSync sidebar UI issues.",
+          "Fixed minor UI issues in Git sync (button color and confirmation message).",
+          "Fixed DataQuery table response post-save.",
+          "Fixed an issue where active tabs were not being updated properly in case of no sorting preference.",
+          "Fixed user list filter icon and process.",
+          "Fixed incorrect positioning of tooltip in CodeMirror instances in some cases.",
+          "Fixed an issue where apps added to favourites were not appearing in the Favourites tab after removing sorting.",
+          "Fixed: Saved connector query rendering null raw response value showing error message toast.",
+          "Fixed PDF Template Creation Sidebar Header Missing.",
+          "Fixed Health Status UI Issue by Adding a Non-Configured State.",
+          "Fixed 'Sign in with Google' button removal on end user portal login.",
+          "Fixed an issue where removing an app from Git took a long time and failed.",
+          "Fixed an issue where editing app details inside a folder was logging an error and preventing changes from being saved.",
+          "Fixed an issue where creating a folder while in the 'Folder' tab caused only folders to render in the 'App' tab.",
+          "Fixed a vulnerability by removing the Redshift module from runAPI.",
+          "Fixed an issue where the header was not updating to display tabs after modifying app details for an app inside a folder.",
+          "Fixed an issue by hiding the Reset Password field.",
+          "Fixed AWS authentication not working on self-hosted instances.",
+          "Fixed an issue where the 'lastRelease' folder and dynamic variables were not removed from the subcat schema.",
+          "Fixed a security issue by rectifying the connector API details for export JSON.",
+          "Fixed an issue where subcat's response and failure headers were not muted.",
+          "Fixed a bug that caused Salesforce account addition to fail.",
+          "Fixed an issue where RMID expiration was not extending properly by utilizing the session cookie.",
+          "Fixed and enhanced error handling for multistep SSO to improve stability.",
+          "Fixed an issue where the default Drona icon was displayed for all apps in view mode instead of their respective icons.",
+          "Fixed missing HTTP/HTTPS in the endpoint URL, which was causing the UI to become stuck.",
+          "Fixed AWS Auth REST API mandatory field issue.",
+          "Fixed inability to import apps containing PDF Creator and File Storage Queries.",
+          "Fixed an empty connector screen that was displaying upon search.",
+          "Fixed UI issues on the 'Forgot Password' screen while logging in.",
+          "Fixed the docs icon for control documentation.",
+          "Fixed controls overlapping in the 'Add New Screen' popup.",
+           "Fixed the issue where the foreign key dropdown excluded the current table when creating a new table."
+          
+        ]
+      }
+    ]
+  },
   {
     "timestamp": 1738800000000,
     "tags": ["Self-Hosted", "3.4.11-stable"],
     "heading": "Version 3.4.11-stable",
     "cards": [
       {
-        "title": "Fixed",
-        "type": "fixed",
-        "points": [
-          "Fixed a bug in the template for the old connector binding sidebar."
-        ]
-      },
-      {
         "title": "Enhancements",
         "type": "improved",
         "points": [
-          "Enhanced HashiCorp unwrapped secret ID location."
-        ]
-      }
-    ]
-  },
-  {
-    "timestamp": 1738540800000,
-    "tags": ["Self-Hosted", "3.4.11-stable"],
-    "heading": "Version 3.4.11-stable",
-    "cards": [
-      {
-        "title": "Fixed",
-        "type": "fixed",
-        "points": [
-          "Fixed RMID expiration by extending it through session cookies."
-        ]
-      },
-      {
-        "title": "Enhancements",
-        "type": "improved",
-        "points": [
+          "Enhanced HashiCorp unwrapped secret ID location.",
           "Improved error handling in multistep SSO by retrying nonce fetching if missing and refining minor error handling.",
           "Enhanced multistep SSO error handling."
+        ]
+      },
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed a bug in the template for the old connector binding sidebar.",
+          "Fixed RMID expiration by extending it through session cookies."
         ]
       }
     ]
@@ -58,14 +168,12 @@
       {
         "title": "Enhancements",
         "type": "improved",
-        "points": [
-          "Enhanced Screen ID configuration, allowing changes under Screen Properties."
-        ]
+        "points": ["Enhanced Screen ID configuration, allowing changes under Screen Properties."]
       }
     ]
-  }
+  },
 
-,{
+  {
     "timestamp": 1737676800000,
     "tags": ["Self-Hosted", "3.4.9-stable"],
     "heading": "Version 3.4.9-stable",
@@ -99,9 +207,7 @@
       {
         "title": "Enhancements",
         "type": "improved",
-        "points": [
-          "Enhanced Git Sync health check for write permission check."
-        ]
+        "points": ["Enhanced Git Sync health check for write permission check."]
       }
     ]
   },
@@ -129,222 +235,221 @@
       {
         "title": "Added",
         "type": "added",
+        "points": ["Added IGNORE_CALLBACK_MESSAGE variable to ignore error_message from OAuth callback."]
+      }
+    ]
+  },
+  {
+    "timestamp": 1733184000000,
+    "tags": ["Self-Hosted", "3.4.6-stable"],
+    "heading": "Version 3.4.6-stable",
+    "cards": [
+      {
+        "title": "Enhancements",
+        "type": "improved",
         "points": [
-          "Added IGNORE_CALLBACK_MESSAGE variable to ignore error_message from OAuth callback."
+          "Enhanced session management by excluding a few callback endpoints.",
+          "Enhanced DataQuery with a secure response feature.",
+          "Enhanced security by removing the RMID cookie and replacing it with globalConfig.session_key_name.",
+          "Enhanced public link and CDN checks for potential issues.",
+          "Enhanced PDF Creator by adding cache busting support.",
+          "Enhanced multer middleware for the updateAppDetails and registerNewAppV3 endpoints."
+        ]
+      },
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed an issue where the delete shortcut was not working.",
+          "Fixed the logout button issue on the end-user portal.",
+          "Fixed an issue by stringifying the API subcategory's body data while editing in the sidebar."
         ]
       }
     ]
   },
   {
-      "timestamp": 1733184000000,
-      "tags": ["Self-Hosted", "3.4.6-stable"],
-      "heading": "Version 3.4.6-stable",
-      "cards": [
-        {
-          "title": "Enhancements",
-          "type": "improved",
-          "points": [
-            "Enhanced session management by excluding a few callback endpoints.",
-            "Enhanced DataQuery with a secure response feature.",
-            "Enhanced security by removing the RMID cookie and replacing it with globalConfig.session_key_name.",
-            "Enhanced public link and CDN checks for potential issues.",
-            "Enhanced PDF Creator by adding cache busting support.",
-            "Enhanced multer middleware for the updateAppDetails and registerNewAppV3 endpoints."
-          ]
-        },
-        {
-          "title": "Fixed",
-          "type": "fixed",
-          "points": [
-            "Fixed an issue where the delete shortcut was not working.",
-            "Fixed the logout button issue on the end-user portal.",
-            "Fixed an issue by stringifying the API subcategory's body data while editing in the sidebar."
-          ]
-        }
-      ]
-    },
-    {
-      "timestamp": 1735344000000,
-      "tags": ["Self-Hosted", "3.4.5-stable"],
-      "heading": "Version 3.4.5-stable",
-      "cards": [
-        {
-          "title": "Enhancements",
-          "type": "improved",
-          "points": [
-            "Enhanced DronaHQ Database APIs with improved security.",
-            "Enhanced File Storage APIs for better security.",
-            "Enhanced webapp EJS files by adding static file versions.",
-            "Enhanced security by changing the secret key name.",
-            "Enhanced session IP address validation for Addons."
-          ]
-        },
-        {
-          "title": "Fixed",
-          "type": "fixed",
-          "points": [
-            "Fixed an issue where the tabbed container did not maintain space for hidden controls.",
-            "Fixed multiple security vulnerabilities with patches.",
-            "Fixed UI issues for SSO configuration in the manage users section.",
-            "Fixed an issue where the edit option for SSO did not appear during the first configuration.",
-            "Fixed a Salesforce refresh token flow issue where queries failed for older connectors."
-          ]
-        }
-      ]
-    },
-    {
-      "timestamp": 1734652800000,
-      "tags": ["Self-Hosted", "3.4.4-stable"],
-      "heading": "Version 3.4.4-stable",
-      "cards": [
-        {
-          "title": "Enhancements",
-          "type": "improved",
-          "points": ["Enhanced security by adding encryption for all multistep auth connector API requests."]
-        },
-        {
-          "title": "Fixed",
-          "type": "fixed",
-          "points": [
-            "Fixed a vulnerability by removing private keys.",
-            "Fixed incorrect health status on the activation and login pages.",
-            "Fixed an issue where the edit details option was not visible to owners.",
-            "Fixed a DHQ DB query issue during the import/export of apps.",
-            "Fixed container crashes when the password field was empty while connecting to MongoDB."
-          ]
-        },
-        {
-          "title": "Deprecated",
-          "type": "deprecated",
-          "points": ["Removed the channel ID from API requests."]
-        }
-      ]
-    },{
-  "timestamp": 1734393600000,
-  "tags": ["Self-Hosted", "3.4.3-stable"],
-  "heading": "Version 3.4.3-stable",
-  "cards": [
-    {
-      "title": "Added",
-      "type": "added",
-      "points": [
-        "Added health check for Git Sync and SMTP.",
-        "Added icons in Actions and Controls.",
-        "Added cache busting for File Storage.",
-        "Added cache busting for DHQ Database.",
-        "Added fix for handling forward dependency not getting triggered in case of widget controls."
-      ]
-    },
-    {
-      "title": "Enhancements",
-      "type": "improved",
-      "points": [
-        "Minor enhancement in CSV column naming."
-      ]
-    },
-    {
-      "title": "Fixed",
-      "type": "fixed",
-      "points": [
-        "Fixed bug for Git Sync app creation with duplicate names and error message.",
-        "Fixed issue where the default message file was not included for console.",
-        "Fixed table grid squishing when data is fetched while the screen is not active.",
-        "Fixed Multistep connector IDs not updating after importing the app.",
-        "Fixed OTA updates for controls and functions in the airgap module."
-      ]
-    }
-  ]
-}
-,{
-  "timestamp": 1733184000000,
-  "tags": ["Self-Hosted", "3.4.1-stable"],
-  "heading": "Version 3.4.1-stable",
-  "cards": [
-    {
-      "title": "Added",
-      "type": "added",
-      "points": [
-        "Added JWT library for automation."
-      ]
-    },
-    {
-      "title": "Enhancements",
-      "type": "improved",
-      "points": [
-        "Enhanced logic for conditional visibility for the Add-to-Git button.",
-        "Updated icons for action flow actions."
-      ]
-    },
-    {
-      "title": "Fixed",
-      "type": "fixed",
-      "points": [
-        "Fixed sticky header issue that prevented right-side content from rendering on an attached screen canvas.",
-        "Fixed endpoints visible for Managed Storage, AWS S3 in Data Query.",
-        "Fixed issue where controls were selectable to move outside of the widget in the canvas when dropped.",
-        "Fixed autogen form submission issue that caused stack overflow when submitting blank forms.",
-        "Fixed cross-account access to DynamoDB using ARN.",
-        "Fixed logging and error issues.",
-        "Fixed UI issue in Manage User where role tag was overlapping the user group tag."
-      ]
-    }
-  ]
-}
-,{
-  "timestamp": 1731628800000,
-  "tags": ["Self-Hosted", "3.4.0-stable"],
-  "heading": "Version 3.4.0-stable",
-  "cards": [
-    {
-      "title": "Added",
-      "type": "added",
-      "points": ["Enhanced Git Sync module authentication - authentication method changed to personal access token (PAT) and UI Enhancements",
-        "Added Airgap compatibility for DronaHQ Self-Hosted."]
-    },
-    {
-      "title": "Fixes",
-      "type": "fixed",
-      "points": [
-        "Fixed an issue with import/export app and added support for custom functions.",
-        "Fixed an issue in IndexDB for clearing unwanted records.",
-        "Fixed issues with Classic headers for supporting controls inside it.",
-        "Fixed refresh token flow for salesforce and fixed minor library issues.",
-        "Fixed an issue where Multistep auth screen not working as expected in end user portal.",
-        "Fixed an issue with File Storage connector where api list was broken in DataQuery."
-      ]
-    }
-  ]
-},{
-  "timestamp": 1731369600000,
-  "tags": ["Self-Hosted", "3.1.7-stable"],
-  "heading": "Version 3.1.7-stable",
-  "cards": [
-    {
-      "title": "Added",
-      "type": "added",
-      "points": ["Added SSH Key Management.", "Added SSH tunneling for databases."]
-    },
-    {
-      "title": "Enhancements",
-      "type": "improved",
-      "points": [
-        "Enhanced API response in aws-import where getusercredentials was returning 500 code for data not found.",
-        "Enhanced error handling in Salesforce connector when dynamic data is missing.",
-        "Enhanced IndexDB usage for deleting item from cache when category is deleted."
-      ]
-    },
-    {
-      "title": "Fixes",
-      "type": "fixed",
-      "points": ["Fixed issue with Addon sync where tasks were not resetting."]
-    },
-    {
-      "title": "Removed",
-      "type": "removed",
-      "points": ["Removed 'Hide whitelist IP' option from connector configuration."]
-    }
-  ]
-},{
+    "timestamp": 1735344000000,
+    "tags": ["Self-Hosted", "3.4.5-stable"],
+    "heading": "Version 3.4.5-stable",
+    "cards": [
+      {
+        "title": "Enhancements",
+        "type": "improved",
+        "points": [
+          "Enhanced DronaHQ Database APIs with improved security.",
+          "Enhanced File Storage APIs for better security.",
+          "Enhanced webapp EJS files by adding static file versions.",
+          "Enhanced security by changing the secret key name.",
+          "Enhanced session IP address validation for Addons."
+        ]
+      },
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed an issue where the tabbed container did not maintain space for hidden controls.",
+          "Fixed multiple security vulnerabilities with patches.",
+          "Fixed UI issues for SSO configuration in the manage users section.",
+          "Fixed an issue where the edit option for SSO did not appear during the first configuration.",
+          "Fixed a Salesforce refresh token flow issue where queries failed for older connectors."
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1734652800000,
+    "tags": ["Self-Hosted", "3.4.4-stable"],
+    "heading": "Version 3.4.4-stable",
+    "cards": [
+      {
+        "title": "Enhancements",
+        "type": "improved",
+        "points": ["Enhanced security by adding encryption for all multistep auth connector API requests."]
+      },
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed a vulnerability by removing private keys.",
+          "Fixed incorrect health status on the activation and login pages.",
+          "Fixed an issue where the edit details option was not visible to owners.",
+          "Fixed a DHQ DB query issue during the import/export of apps.",
+          "Fixed container crashes when the password field was empty while connecting to MongoDB."
+        ]
+      },
+      {
+        "title": "Deprecated",
+        "type": "deprecated",
+        "points": ["Removed the channel ID from API requests."]
+      }
+    ]
+  },
+  {
+    "timestamp": 1734393600000,
+    "tags": ["Self-Hosted", "3.4.3-stable"],
+    "heading": "Version 3.4.3-stable",
+    "cards": [
+      {
+        "title": "Added",
+        "type": "added",
+        "points": [
+          "Added health check for Git Sync and SMTP.",
+          "Added icons in Actions and Controls.",
+          "Added cache busting for File Storage.",
+          "Added cache busting for DHQ Database.",
+          "Added fix for handling forward dependency not getting triggered in case of widget controls."
+        ]
+      },
+      {
+        "title": "Enhancements",
+        "type": "improved",
+        "points": ["Minor enhancement in CSV column naming."]
+      },
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed bug for Git Sync app creation with duplicate names and error message.",
+          "Fixed issue where the default message file was not included for console.",
+          "Fixed table grid squishing when data is fetched while the screen is not active.",
+          "Fixed Multistep connector IDs not updating after importing the app.",
+          "Fixed OTA updates for controls and functions in the airgap module."
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1733184000000,
+    "tags": ["Self-Hosted", "3.4.1-stable"],
+    "heading": "Version 3.4.1-stable",
+    "cards": [
+      {
+        "title": "Added",
+        "type": "added",
+        "points": ["Added JWT library for automation."]
+      },
+      {
+        "title": "Enhancements",
+        "type": "improved",
+        "points": [
+          "Enhanced logic for conditional visibility for the Add-to-Git button.",
+          "Updated icons for action flow actions."
+        ]
+      },
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed sticky header issue that prevented right-side content from rendering on an attached screen canvas.",
+          "Fixed endpoints visible for Managed Storage, AWS S3 in Data Query.",
+          "Fixed issue where controls were selectable to move outside of the widget in the canvas when dropped.",
+          "Fixed autogen form submission issue that caused stack overflow when submitting blank forms.",
+          "Fixed cross-account access to DynamoDB using ARN.",
+          "Fixed logging and error issues.",
+          "Fixed UI issue in Manage User where role tag was overlapping the user group tag."
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1731628800000,
+    "tags": ["Self-Hosted", "3.4.0-stable"],
+    "heading": "Version 3.4.0-stable",
+    "cards": [
+      {
+        "title": "Added",
+        "type": "added",
+        "points": [
+          "Enhanced Git Sync module authentication - authentication method changed to personal access token (PAT) and UI Enhancements",
+          "Added Airgap compatibility for DronaHQ Self-Hosted."
+        ]
+      },
+      {
+        "title": "Fixes",
+        "type": "fixed",
+        "points": [
+          "Fixed an issue with import/export app and added support for custom functions.",
+          "Fixed an issue in IndexDB for clearing unwanted records.",
+          "Fixed issues with Classic headers for supporting controls inside it.",
+          "Fixed refresh token flow for salesforce and fixed minor library issues.",
+          "Fixed an issue where Multistep auth screen not working as expected in end user portal.",
+          "Fixed an issue with File Storage connector where api list was broken in DataQuery."
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1731369600000,
+    "tags": ["Self-Hosted", "3.1.7-stable"],
+    "heading": "Version 3.1.7-stable",
+    "cards": [
+      {
+        "title": "Added",
+        "type": "added",
+        "points": ["Added SSH Key Management.", "Added SSH tunneling for databases."]
+      },
+      {
+        "title": "Enhancements",
+        "type": "improved",
+        "points": [
+          "Enhanced API response in aws-import where getusercredentials was returning 500 code for data not found.",
+          "Enhanced error handling in Salesforce connector when dynamic data is missing.",
+          "Enhanced IndexDB usage for deleting item from cache when category is deleted."
+        ]
+      },
+      {
+        "title": "Fixes",
+        "type": "fixed",
+        "points": ["Fixed issue with Addon sync where tasks were not resetting."]
+      },
+      {
+        "title": "Removed",
+        "type": "removed",
+        "points": ["Removed 'Hide whitelist IP' option from connector configuration."]
+      }
+    ]
+  },
+  {
     "timestamp": 1731024000000,
     "tags": ["Self-Hosted", "3.1.6-stable"],
     "heading": "Version 3.1.6-stable",
@@ -352,8 +457,7 @@
       {
         "title": "Added",
         "type": "added",
-        "points": ["Added ListObjectsAdvanced and SDK handling in AWS S3 connector."
-        ]
+        "points": ["Added ListObjectsAdvanced and SDK handling in AWS S3 connector."]
       },
       {
         "title": "Enhancements",
@@ -383,44 +487,40 @@
     ]
   },
   {
-  "timestamp": 1729814400000,
-  "tags": ["Self-Hosted", "3.1.5-stable"],
-  "heading": "Version 3.1.5-stable",
-  "cards": [
-    {
-      "title": "Added",
-      "type": "added",
-      "points": [
-        "Added icons for localStorage actions."
-      ]
-    },
-    {
-      "title": "Enhancements",
-      "type": "improved",
-      "points": [
-        "Enhanced configuration file with automation webhook listening variables."
-      ]
-    },
-    {
-      "title": "Fixes",
-      "type": "fixed",
-      "points": [
-        "Fixed issue with DHQ Database CSV import.",
-        "Fixed issue where the presigned URL copy failed due to expiration time exceeding one week (SigV4 limitation).",
-        "Fixed Actionflow opening in a minimized window.",
-        "Fixed connection issue with Redshift.",
-        "Fixed bug causing a 500 error when saving a MongoDB query with variable referencing.",
-        "Fixed alert positioning issue behind the tray on bottom-opening trays.",
-        "Fixed controls for attached menu and header where drag and resize were disabled.",
-        "Fixed broken delete icon on the manage user screen.",
-        "Fixed issue with routing variables not displaying values correctly.",
-        "Fixed dropdown visibility issue for language selection after uploading a new language.",
-        "Fixed missing tab index for Advanced Dropdown.",
-        "Fixed bug where the sticky menu was hidden on app launch."
-      ]
-    }
-  ]
-},
+    "timestamp": 1729814400000,
+    "tags": ["Self-Hosted", "3.1.5-stable"],
+    "heading": "Version 3.1.5-stable",
+    "cards": [
+      {
+        "title": "Added",
+        "type": "added",
+        "points": ["Added icons for localStorage actions."]
+      },
+      {
+        "title": "Enhancements",
+        "type": "improved",
+        "points": ["Enhanced configuration file with automation webhook listening variables."]
+      },
+      {
+        "title": "Fixes",
+        "type": "fixed",
+        "points": [
+          "Fixed issue with DHQ Database CSV import.",
+          "Fixed issue where the presigned URL copy failed due to expiration time exceeding one week (SigV4 limitation).",
+          "Fixed Actionflow opening in a minimized window.",
+          "Fixed connection issue with Redshift.",
+          "Fixed bug causing a 500 error when saving a MongoDB query with variable referencing.",
+          "Fixed alert positioning issue behind the tray on bottom-opening trays.",
+          "Fixed controls for attached menu and header where drag and resize were disabled.",
+          "Fixed broken delete icon on the manage user screen.",
+          "Fixed issue with routing variables not displaying values correctly.",
+          "Fixed dropdown visibility issue for language selection after uploading a new language.",
+          "Fixed missing tab index for Advanced Dropdown.",
+          "Fixed bug where the sticky menu was hidden on app launch."
+        ]
+      }
+    ]
+  },
   {
     "timestamp": 1727222400000,
     "tags": ["Self-Hosted", "3.1.4-stable"],
@@ -429,9 +529,7 @@
       {
         "title": "Added",
         "type": "added",
-        "points": [
-          "Added support for key ‘IdPResponse’ in multistep SAML based auth."
-        ]
+        "points": ["Added support for key ‘IdPResponse’ in multistep SAML based auth."]
       }
     ]
   },
