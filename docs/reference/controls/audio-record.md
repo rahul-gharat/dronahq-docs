@@ -62,7 +62,7 @@ We can trigger actions using the Audio Record control's trigger events during re
 
 ## Advanced Settings
 
-- External CSS: Add custom styles to the Address control.
+- External CSS: Add custom styles to the Audio Record control.
 - Trigger Dependents: Automatically invoke linked controls or workflows.
 - Caching: Enable caching to store frequently used inputs.
 
