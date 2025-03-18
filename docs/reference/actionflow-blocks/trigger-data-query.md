@@ -7,7 +7,9 @@ title: Trigger Data Queries
 import Thumbnail from '@site/src/components/Thumbnail';
 
 
-The Trigger Data Query feature in DronaHQ allows you to initiate actions that connect various data sources or controls within your app, enabling a more dynamic and interactive experience.
+The Trigger Data Query action in DronaHQ allows you to run data queries available in your application. This is especially helpful for initiating a query run and fetching data.
+
+When a data query is set to "Run query only on manual trigger," it runs only when explicitly triggered using an action, such as a button click and more. By using the "Trigger Data Query" action, you can manually execute these queries at the right moment, ensuring better control, Avoiding Unintended Updates and enhancing Performance Optimization.
 
 
 
@@ -18,11 +20,11 @@ The Trigger Data Query feature in DronaHQ allows you to initiate actions that co
 
 
 ### Understanding the TriggerDataQuery Action
-With this action, you can pass specific parameters and trigger queries based on user interactions or other control actions. This feature is essential for creating responsive workflows, where user input or certain conditions initiate real-time data queries.
+With this action, you can trigger queries based on user interactions or other control actions and also can pass specific parameters. This feature is essential for creating actionflow, where user input or certain conditions initiate data queries.
 
 ### Using the TriggerDataQuery Action
 1. Choose the relevant query that you wish to trigger from your data source.
-2. Define any specific parameters that should be passed to the query based on user inputs or predefined conditions.
+2. **(OPTIONAL)**Define any specific parameters that should be passed to the query based on user inputs or predefined conditions.
 
 
 
@@ -35,6 +37,10 @@ The `Custom Parameters` section allows users to pass specific values dynamically
 - Use custom parameters when you need to override default variable values in a query.  
 - If a variable is `not passed` in the custom parameters section, its value will be automatically picked up from the references used within the data query section.  
 - This feature is useful when executing queries based on user inputs or conditional triggers.  
+
+:::note INFO
+Custom parameters in **Trigger Data Query** allow users to pass runtime values that differ from the ones configured in the data query. If the values remain the same as those in the data query configuration, there's no need to pass anything in custom parameters—the query will automatically use the configured values.
+:::
 
 #### Defining Custom Parameters  
 
