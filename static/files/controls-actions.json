@@ -1,4 +1,64 @@
-[  {
+[ 
+  {
+    "timestamp": 1742169600000,
+    "tags": ["Control", "Action"],
+    "heading": "",
+    "cards": [
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed data escaping issues in Table Grid and resolved filter-related inconsistencies."
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1741824000000,
+    "tags": ["Control", "Action"],
+    "heading": "",
+    "cards": [
+      {
+        "title": "Enhancements",
+        "type": "improved",
+        "points": [
+          "Enhanced default HTML data provided in the Custom Control."
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1741737600000,
+    "tags": ["Control", "Action"],
+    "heading": "",
+    "cards": [
+      {
+        "title": "Added",
+        "type": "added",
+        "points": [
+          "Added a new Audio Record control for improved recording functionality.",
+          "Added a new Speech Recognition control for enhanced voice input capabilities."
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1741651200000,
+    "tags": ["Control", "Action"],
+    "heading": "",
+    "cards": [
+      {
+        "title": "Enhancements",
+        "type": "improved",
+        "points": [
+          "Enhanced Dropdown control to reset mapping on data change for better adaptability.",
+          "Enhanced File Parser with strict checking toggle set to off by default for more flexibility.",
+          "Enhanced JSON Schema Form by adding descriptions for properties to improve usability."
+        ]
+      }
+    ]
+  },
+  {
     "timestamp": 1741219200000,
     "tags": ["Control", "Action"],
     "heading": "",
