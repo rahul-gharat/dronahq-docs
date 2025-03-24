@@ -17,6 +17,58 @@ The GPS control is used to get the current location of the user’s device. You 
 
 
 
+:::note TIP
+
+
+DronaHQ provides a built-in GPS control to fetch location coordinates. However, if you need more flexibility, you can also use JavaScript within a JS Code block to retrieve location data programmatically.  
+
+<figure>
+  <Thumbnail src="/img/reference/controls/gps/js.png" alt="GPS" />
+  <figcaption align = "center"><i>Location JS -Code</i></figcaption>
+</figure>
+
+#### JavaScript Code to Get GPS Coordinates  
+
+```javascript
+  function getLocation() {
+      return new Promise((resolve, reject) => {
+        navigator.geolocation.getCurrentPosition(
+          (position) => {
+            resolve(position);
+            },(error) => {
+           reject(error);
+          }
+        );
+      });
+  }
+  output = await getLocation();
+```
+
+#### Code Explanation  
+
+This function uses the browser's `navigator.geolocation.getCurrentPosition()` method to fetch the current location asynchronously. It returns a Promise that either resolves with the position data or rejects in case of an error.  
+
+#### Sample Output  
+
+```json
+{
+  "timestamp": 1742812489191,
+  "coords": {
+    "accuracy": 1529.4395985928138,
+    "latitude": 22.4571189,
+    "longitude": 88.411294,
+    "altitude": null,
+    "altitudeAccuracy": null,
+    "heading": null,
+    "speed": null
+  }
+}
+```
+
+This approach allows you to fetch real-time location data dynamically within DronaHQ.
+:::
+
+
 ## Control Outputs
 
 The outputs from the GPS control, represented by the placeholder `{{gps}}`, can be referenced in other controls, data queries, or JavaScript functions using the control's unique name.
