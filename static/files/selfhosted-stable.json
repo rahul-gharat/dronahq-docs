@@ -1,5 +1,21 @@
 [
   {
+    "timestamp": 1742515200000,
+    "tags": ["Self-Hosted", "3.6.1-stable"],
+    "heading": "Version 3.6.1-stable",
+    "cards": [
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+         "Fixed an issue where the Form Repeat Control was not working as expected in the package.",   "Fixed a dropdown issue in the Google Sheets connector."  
+, "Fixed environment variable validation for managed audit logs. " 
+, "Fixed a bug where Rules were not working when referencing a query string set via micro-app navigation."
+        ]
+      }
+    ]
+  },
+  {
     "timestamp": 1741564800000,
     "tags": ["Self-Hosted", "3.6.0-stable"],
     "heading": "Version 3.6.0-stable",
@@ -122,8 +138,7 @@
           "Fixed UI issues on the 'Forgot Password' screen while logging in.",
           "Fixed the docs icon for control documentation.",
           "Fixed controls overlapping in the 'Add New Screen' popup.",
-           "Fixed the issue where the foreign key dropdown excluded the current table when creating a new table."
-          
+          "Fixed the issue where the foreign key dropdown excluded the current table when creating a new table."
         ]
       }
     ]
