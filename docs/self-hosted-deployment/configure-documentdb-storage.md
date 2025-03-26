@@ -73,7 +73,7 @@ Following are variables needed to be configured extra for using DocumentDB
 Specifies whether TLS is required for connections to the server.
 
 ```
-MONGODB_TLS='true'
+MONGODB_TLS=true
 ```
 
 #### `MONGODB_CA_CERT_DIR`
@@ -81,5 +81,5 @@ MONGODB_TLS='true'
 Specifies the path to a file with either a single or bundle of certificate authorities to trust when making a TLS connection.
 
 ```
-MONGODB_CA_CERT_DIR='/private/global.bundle.pem'
+MONGODB_CA_CERT_DIR=/private/global.bundle.pem
 ```

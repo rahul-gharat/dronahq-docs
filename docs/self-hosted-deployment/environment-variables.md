@@ -69,13 +69,13 @@ Defines the base URL for accessing the **Creator Portal**, **End-User Portal**, 
 
 ###### Example:
 ```sh
-BUILDER_URL='https://dronahq.example.com'
+BUILDER_URL=https://dronahq.example.com
 ```
 If unset, DronaHQ automatically determines the base URL from your machine's local configuration.
 
 ###### Default (Localhost Example):
 ```sh
-BUILDER_URL='http://localhost:8080'
+BUILDER_URL=http://localhost:8080
 ```
 
 > **Alternative Approach:** You can use `DOMAIN` and `SECURE_HTTP` variables instead of `BUILDER_URL`.
@@ -86,7 +86,7 @@ Defines the domain name of your **DronaHQ Self-Hosted** instance. Use this when 
 
 ###### Example:
 ```sh
-DOMAIN='dronahq.example.com'
+DOMAIN=dronahq.example.com
 ```
 
 #### `SECURE_HTTP` (Alternative to `BUILDER_URL`)
@@ -98,7 +98,7 @@ Determines whether DronaHQ should use **HTTPS**. This setting is only required i
 
 ###### Example:
 ```sh
-SECURE_HTTP='true'
+SECURE_HTTP=true
 ```
 
 > If you disable HTTPS (`SECURE_HTTP=false`), some features requiring SSL may not function properly.
@@ -114,7 +114,7 @@ https://dronahq.example.com/studio
 ```
 Set the `PATHNAME` as follows:
 ```sh
-PATHNAME='/studio'
+PATHNAME=/studio
 ```
 
 > Use this only if you are serving DronaHQ behind a custom web server that modifies the base path.
@@ -125,7 +125,7 @@ PATHNAME='/studio'
 This is a unique key assigned to you by DronaHQ for activating your self-hosted installation. You can retrieve your **LICENSE_KEY** by logging into the [Self-Hosted Portal](https://studio.dronahq.com/selfhosted/login).
 
 ```sh
-LICENSE_KEY='<your-unique-license-key>'
+LICENSE_KEY=<your-unique-license-key>
 ```
 
 #### `DRONAHQ_LICENSE_URL` (Optional)
@@ -135,7 +135,7 @@ For activation and licensing, your **Self-Hosted DronaHQ** instance needs to com
 - If direct access is restricted, you can set up a **proxy server** and configure this variable to point to your proxy’s URL.
 
 ```sh
-DRONAHQ_LICENSE_URL='https://license.dronahq.com'
+DRONAHQ_LICENSE_URL=https://license.dronahq.com
 ```
 
 > **Best Practice:** If operating behind a corporate firewall or VPN, consult your network administrator to configure the appropriate firewall rules or proxy settings for uninterrupted licensing communication.
@@ -149,19 +149,19 @@ Configure the database credentials for your **DronaHQ Self-Hosted** instance. Th
 - If using a **Docker container** for MySQL, set the following variables:
 
     ```sh
-    MYSQL_HOST='dronahq-self-hosted-mysqldb'
-    MYSQL_USER='<application-user>'
-    MYSQL_PASSWORD='<password>'
-    MYSQL_PORT='3306'
+    MYSQL_HOST=dronahq-self-hosted-mysqldb
+    MYSQL_USER=<application-user>
+    MYSQL_PASSWORD=<password>
+    MYSQL_PORT=3306
     ```
 
 - If using **AWS RDS or another managed MySQL service**, set the values accordingly:
 
     ```sh
-    MYSQL_HOST='<your-rds-endpoint>'
-    MYSQL_USER='<application-user>'
-    MYSQL_PASSWORD='<password>'
-    MYSQL_PORT='3306'
+    MYSQL_HOST=<your-rds-endpoint>
+    MYSQL_USER=<application-user>
+    MYSQL_PASSWORD=<password>
+    MYSQL_PORT=3306
     ```
 
 ## Connectivity to MongoDB
@@ -173,19 +173,19 @@ Configure MongoDB settings for your **DronaHQ Self-Hosted** instance. MongoDB is
 - If using a **Docker container** for MongoDB, set the following variables:
 
     ```sh
-    MONGODB_HOST='dronahq-self-hosted-mongodb'
-    MONGODB_USER='<application-user>'
-    MONGODB_PASSWORD='<password>'
-    MONGODB_PORT='27017'
+    MONGODB_HOST=dronahq-self-hosted-mongodb
+    MONGODB_USER=<application-user>
+    MONGODB_PASSWORD=<password>
+    MONGODB_PORT=27017
     ```
 
 - If using **AWS DocumentDB or another managed MongoDB service**, set the values accordingly:
 
     ```sh
-    MONGODB_HOST='<your-mongodb-endpoint>'
-    MONGODB_USER='<application-user>'
-    MONGODB_PASSWORD='<password>'
-    MONGODB_PORT='27017'
+    MONGODB_HOST=<your-mongodb-endpoint>
+    MONGODB_USER=<application-user>
+    MONGODB_PASSWORD=<password>
+    MONGODB_PORT=27017
     ```
 
 #### `MONGODB_ENCODE_CREDENTIALS`
@@ -204,7 +204,7 @@ Defines the MongoDB connection protocol:
 - Use `mongodb+srv` for **clustered or replica set** configurations.
 
 ```sh
-MONGODB_PROTOCOL='mongodb'
+MONGODB_PROTOCOL=mongodb
 ```
 
 #### `MONGODB_PARAMS`
@@ -212,7 +212,7 @@ MONGODB_PROTOCOL='mongodb'
 Additional MongoDB parameters can be specified using **URL search parameter format**. Example:
 
 ```sh
-MONGODB_PARAMS='ssl=true&retryWrites=false'
+MONGODB_PARAMS=ssl=true&retryWrites=false
 ```
 
 #### `MONGODB_TLS`
@@ -220,7 +220,7 @@ MONGODB_PARAMS='ssl=true&retryWrites=false'
 Enable TLS for a **secure connection** to MongoDB:
 
 ```sh
-MONGODB_TLS='true'
+MONGODB_TLS=true
 ```
 
 #### `MONGODB_CA_CERT_DIR`
@@ -228,7 +228,7 @@ MONGODB_TLS='true'
 If MongoDB uses **TLS authentication**, specify the **certificate authority (CA) bundle** path:
 
 ```sh
-MONGODB_CA_CERT_DIR='/private/global.bundle.pem'
+MONGODB_CA_CERT_DIR=/private/global.bundle.pem
 ```
 
 #### `MONGODB_CONNECTION_STRING`
@@ -236,7 +236,7 @@ MONGODB_CA_CERT_DIR='/private/global.bundle.pem'
 Instead of defining separate environment variables, you can provide a **single connection string**:
 
 ```sh
-MONGODB_CONNECTION_STRING='mongodb://username:password@prod.mongodb.domain.com?ssl=true&retryWrites=false'
+MONGODB_CONNECTION_STRING=mongodb://username:password@prod.mongodb.domain.com?ssl=true&retryWrites=false
 ```
 
 ## File Repository
@@ -255,7 +255,7 @@ DronaHQ supports multiple options for storing files:
 If this variable is unset, the built-in local file repository (`repository`) will be used by default.
 
 ```sh
-FILE_UPLOAD_TYPE='repository'
+FILE_UPLOAD_TYPE=repository
 ```
 
 ### Local File Repository Configurations
@@ -263,7 +263,7 @@ FILE_UPLOAD_TYPE='repository'
 To use DronaHQ's managed file repository, set `FILE_UPLOAD_TYPE` to `repository` in your environment variables.
 
 ```sh
-FILE_UPLOAD_TYPE='repository'
+FILE_UPLOAD_TYPE=repository
 ```
 
 #### `FILEREPOSITORY_STORAGE_LOCATION`
@@ -271,7 +271,7 @@ FILE_UPLOAD_TYPE='repository'
 Defines the storage location for files. By default, this is set to the working directory of your installation. You can configure this location as needed.
 
 ```sh
-FILEREPOSITORY_STORAGE_LOCATION='/path/to/storage/directory'
+FILEREPOSITORY_STORAGE_LOCATION=/path/to/storage/directory
 ```
 
 #### `FILEREPOSITORY_STORAGE_PREFIX`
@@ -279,7 +279,7 @@ FILEREPOSITORY_STORAGE_LOCATION='/path/to/storage/directory'
 Specifies a prefix (folder name) that will be created inside the `FILEREPOSITORY_STORAGE_LOCATION` directory to organize stored files.
 
 ```sh
-FILEREPOSITORY_STORAGE_PREFIX='files'
+FILEREPOSITORY_STORAGE_PREFIX=files
 ```
 
 ### Amazon Simple Storage Service (S3) Configuration
@@ -289,7 +289,7 @@ You can use Amazon S3 as a file storage solution with DronaHQ. DronaHQ will uplo
 To enable Amazon S3 as the file storage provider, set the following environment variable:
 
 ```
-FILE_UPLOAD_TYPE='aws'
+FILE_UPLOAD_TYPE=aws
 ```
 
 #### `AWS_S3_BUCKET_NAME`
@@ -331,7 +331,7 @@ You can use an **Azure Storage Container** as a file storage solution with Drona
 To use Azure Storage Container, set the following environment variable:
 
 ```sh
-FILE_UPLOAD_TYPE='azure'
+FILE_UPLOAD_TYPE=azure
 ```
 
 #### `AZURE_STORAGE_ACCOUNT_NAME`
@@ -350,7 +350,7 @@ You can use **Google Cloud Storage** as a file storage solution with DronaHQ. Dr
 To use Google Cloud Storage, set the following environment variable:
 
 ```sh
-FILE_UPLOAD_TYPE='gcloud'
+FILE_UPLOAD_TYPE=gcloud
 ```
 
 #### `GCLOUD_STORAGE_PROJECT_ID`
@@ -374,7 +374,7 @@ This variable allows you to set the character limit for automation's [custom tas
 
 To streamline automation tasks on AWS, you'll be leveraging two core AWS services: [`Lambda`](https://docs.aws.amazon.com/lambda/) and [`EventBridge`](https://docs.aws.amazon.com/eventbridge/). Before initiating any automation procedures, ensure the correct configuration of the following environment variables:
 ```shell
-    RUN_AUTOMATION_ON_AWS='true'
+    RUN_AUTOMATION_ON_AWS=true
 ```
 To interact with Lambda and EventBridge seamlessly, you need to set up the appropriate credentials:
 
@@ -409,7 +409,7 @@ This API key facilitates communication between AWS Lambda and DronaHQ Automation
 This URL points to your DronaHQ Instances, facilitating communication between AWS Lambda and DronaHQ Automation. It should be added to the AWS Lambda environment variables. For setup guidance, refer to the screenshot below (Figure: AWS Lambda Environment variable settings).
 
 <figure>
-  <Thumbnail src="/img/self-hosted-deployment/lambda-env-variables-settings.png" alt="AWS Lambda Environment variable settings" width='80%'/>
+  <Thumbnail src="/img/self-hosted-deployment/lambda-env-variables-settings.png" alt="AWS Lambda Environment variable settings" width="80%"/>
   <figcaption align = "center"><i>AWS Lambda Environment variable settings</i></figcaption>
 </figure>
 
@@ -516,46 +516,46 @@ This variable specifies if you want to enable Global Git Sync feature.
 By default it is set to `false`, GIT Sync Global feature is disabled
 If set `true`, GIT Sync Global feature is enabled and you need to configure git repo and other configuration variables listed below 
 
-    GIT_SYNC_IS_GLOBAL='true'
+    GIT_SYNC_IS_GLOBAL=true
 
 #### GIT_SYNC_SSH_REPO_URL
 
 SSH Url of the Git Repo which you want all your apps to be checked into. Mandatory if GIT_SYNC_IS_GLOBAL is set to true.
 
-    GIT_SYNC_SSH_REPO_URL='git@github.com:UserName/RepoName.git'
+    GIT_SYNC_SSH_REPO_URL=git@github.com:UserName/RepoName.git
 
 
 #### GIT_SYNC_BRANCH_NAME
 
 Branch name of the above repo url which this instance should be synced with. For production instance, ideally use `main` branch. For development instance, you can create `dev` branch and so on. Mandatory if GIT_SYNC_IS_GLOBAL is set to true.
 
-    GIT_SYNC_BRANCH_NAME='main'
+    GIT_SYNC_BRANCH_NAME=main
 
 
 #### GIT_SYNC_AUTH_SSH_KEY_FRIENDLY_NAME
 
 Friendly Key name you have used for creating SSH key from SSH Key management. The public key of this friendly key should be added in your GIT repo with read/write rights to above GIT Sync repo. Mandatory if GIT_SYNC_IS_GLOBAL is set to true.
 
-    GIT_SYNC_AUTH_SSH_KEY_FRIENDLY_NAME='MyGitSyncKey'
+    GIT_SYNC_AUTH_SSH_KEY_FRIENDLY_NAME=MyGitSyncKey
 
 
 #### GIT_SYNC_IS_AUTO_SAVE
 
 Enable this to automatically save your app changes to your GIT repo.
 
-    GIT_SYNC_IS_AUTO_SAVE='true'
+    GIT_SYNC_IS_AUTO_SAVE=true
 
 #### GIT_SYNC_IS_LOCK_APP_EDIT
 
 Enable this to disable editing of you app that is added to GIT. Ideally, you should set to `true` for your production instance and set it to `false` for your development instance.
 
-    GIT_SYNC_IS_LOCK_APP_EDIT='false'
+    GIT_SYNC_IS_LOCK_APP_EDIT=false
 
 #### GIT_SYNC_CREATE_REPO_ON_APP_ADD
 
 Enable this to automatically add new apps to git. Ideally, you should set to `true` for your development instance if you want all apps to be automatically added to git and set it to `false` for your production instance. By default, it is set to `false`.
 
-    GIT_SYNC_CREATE_REPO_ON_APP_ADD='true'
+    GIT_SYNC_CREATE_REPO_ON_APP_ADD=true
 
 ## Other optional variables
 
@@ -563,33 +563,33 @@ Enable this to automatically add new apps to git. Ideally, you should set to `tr
 By default, DronaHQ uses its own secret token for authentication of internal APIs. You can add your custom token instead.
 
 ```shell
-SECRET_API_TOKEN_KEY='some-random-secret-token'
+SECRET_API_TOKEN_KEY=some-random-secret-token
 ```
 
 #### `ENCRYPTION_KEY`
 By default, DronaHQ user its own encryption key to encrypt credentials and secret information flows in system. You can configure your own encryption key for added security. Also make sure to keep backup of your key at secure location.
 ```shell
-ENCRYPTION_KEY='some-random-secret-key'
+ENCRYPTION_KEY=some-random-secret-key
 ```
 
 #### `SESSION_KEY_NAME`, `SESSION_KEY_SECRET`
 By default, DronaHQ user its own session key and secret key. You can configure your own if you want to customize.
 ```shell
-SESSION_KEY_NAME='cookie-name'
-SESSION_KEY_SECRET='secret-key-to-sign-cookie'
+SESSION_KEY_NAME=cookie-name
+SESSION_KEY_SECRET=secret-key-to-sign-cookie
 ```
 
 #### `SENDGRID_API_KEY`
 DronaHQ uses sendgrid as a mailing client. Configure your sendgrid key for activating activity mails.
 ```shell
-SENDGRID_API_KEY='sendgrid api key'
+SENDGRID_API_KEY=sendgrid api key
 ```
 
 #### `MAILER_EMAIL`, `MAILER_NAME`
 This is sender mailer name and email id for all the mails shoot from dronahq. You can configure your own mailer options as per your sendgrid account.
 ```shell
-MAILER_EMAIL='no-reply@dronahq.com'
-MAILER_NAME='DronaHQ'
+MAILER_EMAIL=no-reply@dronahq.com
+MAILER_NAME=DronaHQ
 ```
 
 #### `REST_PROXY_WHITELISTED_DOMAINS`
