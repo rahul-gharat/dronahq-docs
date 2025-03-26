@@ -10,7 +10,8 @@
         "points": [
          "Fixed an issue where the Form Repeat Control was not working as expected in the package.",   "Fixed a dropdown issue in the Google Sheets connector."  
 , "Fixed environment variable validation for managed audit logs. " 
-, "Fixed a bug where Rules were not working when referencing a query string set via micro-app navigation."
+, "Fixed a bug where Rules were not working when referencing a query string set via micro-app navigation.",
+"Fixed an issue where App name was not getting passed in published api call."
         ]
       }
     ]
