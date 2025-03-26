@@ -243,8 +243,6 @@ MONGODB_CONNECTION_STRING=mongodb://username:password@prod.mongodb.domain.com?ss
 
 DronaHQ requires file storage to manage uploaded files from apps and store resources used in applications. Additionally, when an application is published, DronaHQ compresses the application files and serves them from the same repository.
 
-`FILE_UPLOAD_TYPE`
-
 DronaHQ supports multiple options for storing files:
 
 - `repository`: Uses the built-in local file repository
