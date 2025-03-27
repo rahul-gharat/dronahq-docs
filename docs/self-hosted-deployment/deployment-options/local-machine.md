@@ -84,7 +84,7 @@ DronaHQ writes all configurable environment variables in file `dronahq.env`. Ple
 If not you can add this variable. Following is the example of how this variable should look like in environment file.
 
 ```shell
-LICENSE_KEY='DRONAHQ-LICENSE-KEY'
+LICENSE_KEY=< DRONAHQ-LICENSE-KEY >
 ```
 
 If you don't have DronaHQ license key for self hosted, you can [sign up](https://www.dronahq.com/self-hosted-signup/) for DronaHQ self hosted and get your license key by logging in to [self-hosted portal](https://studio.dronahq.com/selfhosted/login).
@@ -98,20 +98,20 @@ This variable specifies how do yo want to access DronaHQ.
 **Example 1**. If you are using DronaHQ on local machine.
 
 ```shell
-BUILDER_URL='http://localhost'
+BUILDER_URL=http://localhost
 ```
 **Example 2**. If you have configured DronaHQ on server and want to use it with server's public IP address.
 
 ```shell
 # replace your ip address here
-BUILDER_URL='http://10.100.3.21'
+BUILDER_URL=http://10.100.3.21
 ```
 
 **Example 3**. If you have mapped your domain name to server's IP address.
 
 ```shell
 # replace your domain name
-BUILDER_URL='http://dronahq.example.com'
+BUILDER_URL=http://dronahq.example.com
 ```
 
 #### iii. Other environment variables

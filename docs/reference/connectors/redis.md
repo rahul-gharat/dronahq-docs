@@ -100,6 +100,7 @@ Saved queries appear under your connector in Connector Library.
 | GET           | Retrieve the value of a specified key.                                      |
 | SET           | Set the value of a key.                                                     |
 | DEL           | Delete a key.                                                               |
+|EXPIRE         | This enables user to expire their key after the timeout.|
 | KEYS          | Retrieve all keys matching a specified pattern.                             |
 | MGET          | Retrieve the values of multiple keys.                                       |
 | HGET          | Retrieve the value of a field in a hash.                                    |
