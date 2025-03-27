@@ -2,108 +2,130 @@
 sidebar_position: 96
 ---
 
-# Update DronaHQ version
+# Updating DronaHQ Version
 
-While updating DronaHQ, users might need downtime. Its a good practice to always notify users about downtimes and newly installed updates. Also create backup of your instance and databases regularly before update. DronaHQ provide incremental updates for database. it should be performed in sequence. If you wish to downgrade your installation, you do not need to downgrade database.
+Keeping your **DronaHQ Self-Hosted** instance up-to-date ensures you have the latest features, performance improvements, and security patches. This guide outlines the steps to safely update your installation with minimal downtime.
 
-### 1. Notify users about downtime
+:::caution
+Updating DronaHQ might require temporary downtime. Always notify users in advance and create backups before proceeding.
+:::
 
-Its always helpful to send announcements before performing any activity slightly before you start downtime.
+## 1. Notify Users About Downtime
 
-### 2. Create a backup
+Communication is key when performing an update. Before starting, inform your users about potential downtime and any new features or changes they should expect.
 
-Create backup of your server instance before upgrading so that you can restore them if needed.
+## 2. Backup Your Instance and Databases
 
-If you are using any cloud service like AWS, GCP, Azure, the cloud provider might have a convenient way to backup and restore state of your instance.
+Creating backups is essential to prevent data loss in case of a failed update. Follow these steps:
 
-- Backup your MySQL and Mongo database. If you have setup your databases with a managed service like AWS, they provide a managed way to take periodic backup of your databases. You can also take snapshots of your database to restore is faster in case of any failure.
+- **Instance Backup:** If using a cloud provider (AWS, GCP, Azure, etc.), leverage snapshot or backup features for your instance.
+- **Database Backup:**
+  - **Managed Services:** If using a cloud-managed database (e.g., AWS RDS, Azure Database), enable automated backups or take a manual snapshot.
+  - **Self-Hosted MySQL Database:** Run the following command to create a backup:
+    ```sh
+    mysqldump --host=<host> --port=<port> --user=<username> --password=<password> --all-databases > backup.sql
+    ```
+  - **Self-Hosted MongoDB Database:** Run the following command to create a backup:
+    ```sh
+    mongodump --host=<host> --port=<port> --username=<username> --password=<password> --db=<database-name> --authenticationDatabase=admin --archive=backup.archive
+    ```
+- **Environment Variables:** Backup any custom configuration stored as environment variables.
 
-- Also, take backup of your environment variables specific to your installation and store in safe place.
+## 3. Choose the DronaHQ Version
 
-### 3. Choose DronaHQ version
+Visit the [Stable Releases](https://docs.dronahq.com/selfhosted-stable/) page to check for the latest version and its changelog. Reviewing changelogs is important to understand new features, bug fixes, and deprecated functionalities.
 
-Check [Stable Releases](https://docs.dronahq.com/selfhosted-stable/) page to see available DronaHQ updates and its changelogs. always read changelogs between your current version and the version you are upgrading to. It may also include notification and instructions for managing deprecated features.
+## 4. Download Database Updates for Target Version
 
-It is highly recommended for you to frequently check updates and always be on latest version.
-
-### 4. Download database updates for target version.
-
-Following is a interactive shell script, which will help you download the database updates for the upgrade version you choose.
-
-```shell
+DronaHQ provides incremental database updates. Run the following command to download update scripts for the target version:
+```sh
 /bin/bash -c "$(curl -fsSL https://license.dronahq.com/self-hosted/master/get-database-updates.sh)"
 ```
+This will generate an `update.sql` file in your working directory.
 
-Above line will download an update file with name `update.sql` in your working directory.
+## 5. Apply Database Updates
 
-### 5. Apply updates on your database
+### a. Updating a Containerized Database
 
-##### a. Apply updates on containerized database
+1. Identify the database container ID:
+    ```sh
+    sudo docker ps -q --filter "name=dronahq-self-hosted-mysqldb"
+    ```
+2. Copy the update script inside the container:
+    ```sh
+    sudo docker cp ./update.sql <container-id>:/update.sql
+    ```
+3. Access the container shell:
+    ```sh
+    sudo docker exec -it <container-id> /bin/bash
+    ```
+4. Apply the update:
+    ```sh
+    /usr/bin/mysql -u root --password=<root-password> <database-name> --comments < update.sql
+    ```
 
-Run following command to apply updates on  containerized database.
+### b. Updating an External Database
 
-```shell
-sudo docker exec dronahq-self-hosted-mysqldb /bin/sh -c "mysql -u root -p<% root password %> <%db name%>" < update.sql
+Run the following command to apply updates on an external MySQL database:
+```sh
+mysql --host=<host> --port=<port> --user=<username> --password=<password> <database-name> < update.sql
 ```
-##### b. Apply updates on external database
 
-Run following command to apply updates on  external database.
+## 6. Update DronaHQ Version in Service File
 
-```shell
-mysql --host=<% host %> --port=<% port %> --user=<% username %> --password=<% password %> <%db name%> < update.sql
-```
+### a. For Docker Installation
 
-### 6. Update DronaHQ version in service file.
-
-##### a. For Docker installation
-
-In `docker-compose.yaml`, change the image tag to indicate the version of DronaHQ to install. The following example specifies the image tag to install version `2.2.8`.
-
-```
+Modify the `docker-compose.yaml` file to use the latest DronaHQ image:
+```yaml
 services:
-...
   webapp:
-    image: dronahq/self-hosted:2.2.8
-...
+    image: dronahq/self-hosted:<latest-version>
 ```
-##### b. For Kubernetes cluster installation
 
-In `dronahq-webapp.yaml`, change the image tag to indicate the version of DronaHQ to install. The following example specifies the image tag to install version `2.2.8`.
+### b. For Kubernetes Installation
 
-```
-...
+Modify the `dronahq-webapp.yaml` file to update the image tag:
+```yaml
 spec:
   template:
     spec:
       containers:
-        - image: dronahq/self-hosted:2.2.8
-...
+        - image: dronahq/self-hosted:<latest-version>
 ```
 
-### 7. Restart DronaHQ service
+## 7. Restart DronaHQ Services
 
-Restart is mandatory for new updates to take effect.
-
-##### a. Restart Docker installation
-
-Restart DronaHQ docker container with following command
-```
-sudo docker-compose up -d webapp
+### a. Restart Docker Installation
+Restart the DronaHQ container with:
+```sh
+sudo docker compose up -d webapp
 ```
 
-##### b. Restart Kubernetes installation
-
-Apply modified manifest file with following command
+### b. Restart Kubernetes Installation
+Apply the updated manifest:
+```sh
+kubectl apply -f dronahq-webapp.yaml
 ```
-sudo kubectl apply -f dronahq-webapp.yaml
-```
 
-### 8. Clear cache from your content delivery partner
+## 8. Clear CDN Cache (If Applicable)
 
-If you are using a CDN - Content Delivery Network, you should know that it also caches content (pages/ scripts/ images/ videos) in servers that are located closer to the users than the origin servers. 
+If you are using a **Content Delivery Network (CDN)**, cached files must be cleared so users receive the updated version.
 
-This way, when a request is made on a website that is using a content delivery network, the CDN will deliver it faster, as the server storing the cached content will be situated closer to the user making the request. However, this content needs to be flushed after updating DronaHQ so that users will get the latest updated files. This cached content can be removed, by clearing/purging/flushing the CDN cache.
+- **Cloudflare Users:** Follow [this guide](https://developers.cloudflare.com/cache/how-to/purge-cache/) to purge cache.
+- **Other CDNs:** Refer to your provider’s documentation for cache invalidation.
 
-For **Cloudflare** : You can refer [this article](https://developers.cloudflare.com/cache/how-to/purge-cache/) on clearing cache.
+## Summary
 
-Depending on your content delivery partner, you may refer to their respective configuration for clearing cache.
+| Step | Action |
+|------|--------|
+| **1** | Notify users about downtime |
+| **2** | Create backups of instance and databases |
+| **3** | Choose the correct DronaHQ version |
+| **4** | Download database updates |
+| **5** | Apply database updates |
+| **6** | Update service files (Docker/Kubernetes) |
+| **7** | Restart DronaHQ services |
+| **8** | Clear CDN cache |
+
+By following this guide, you ensure a smooth upgrade process while minimizing downtime and risks. Keeping DronaHQ updated improves performance, security, and access to new features.
+

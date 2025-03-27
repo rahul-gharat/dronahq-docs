@@ -114,7 +114,7 @@ Use following command.
 cd dronahq-self-hosted
 ```
 
-### 5. Update resources
+<!-- ### 5. Update resources
 
 This is recommended step by DronaHQ. Updating your resources periodically will help you stay aligned with DronaHQ.
 
@@ -122,9 +122,9 @@ Run following command
 
 ```shell
 /bin/bash -c "$(curl -fsSL https://license.dronahq.com/self-hosted/master/update_resources.sh)"
-```
+``` -->
 
-### 6. Setup Externalize databases
+### 5. Setup Externalize databases
 
 For deployment on `AWS EC2`, it is mandatory to setup external databases for both MYSQL and MONGODB. 
 
@@ -151,7 +151,7 @@ DronaHQ writes all configurable environment variables in file `dronahq.env`. Ple
 If not you can add this variable. Following is the example of how this variable should look like in environment file.
 
 ```shell
-LICENSE_KEY='DRONAHQ-LICENSE-KEY'
+LICENSE_KEY=< DRONAHQ-LICENSE-KEY >
 ```
 
 If you don't have DronaHQ license key for self hosted, you can [sign up](https://www.dronahq.com/self-hosted-signup/) for DronaHQ self hosted and get your license key by logging in to [self-hosted portal](https://studio.dronahq.com/selfhosted/login).
@@ -165,21 +165,21 @@ This variable specifies how do yo want to access DronaHQ.
 **Example 1**. If you are using DronaHQ on local machine.
 
 ```shell
-BULDER_URL='http://localhost'
+BULDER_URL=http://localhost
 ```
 
 **Example 2**. If you have configured DronaHQ on server and want to use it with server's public IP address.
 
 ```shell
 # replace your ip address here
-BUILDER_URL='http://198.51.100.1'
+BUILDER_URL=http://198.51.100.1
 ```
 
 **Example 3**. If you have mapped your domain name to server's IP address.
 
 ```shell
 # replace your domain name
-BUILDER_URL='http://dronahq.example.com'
+BUILDER_URL=http://dronahq.example.com
 ```
 
 #### iii. Database configuration variables
@@ -189,20 +189,20 @@ Configure variables for external MYSQL credentials
 `MYSQL_HOST`, `MYSQL_USER`, `MYSQL_PASSWORD`, `MYSQL_PORT`
 
 ```shell
-MYSQL_HOST='mysql.example.com'
-MYSQL_USER='dronahq'
-MYSQL_PASSWORD='secret-password'
-MYSQL_PORT='3306'
+MYSQL_HOST=mysql.example.com
+MYSQL_USER=dronahq
+MYSQL_PASSWORD=secret-password
+MYSQL_PORT=3306
 ```
 Configure variables for external MONGODB credentials
 
 `MONGODB_HOST`, `MONGODB_USER`, `MONGODB_PASSWORD`, `MONGODB_PORT`
 
 ```shell
-MONGODB_HOST='mongodb.example.com'
-MONGODB_USER='dronahq'
-MONGODB_PASSWORD='secret-password'
-MONGODB_PORT='27017'
+MONGODB_HOST=mongodb.example.com
+MONGODB_USER=dronahq
+MONGODB_PASSWORD=secret-password
+MONGODB_PORT=27017
 ```
 
 #### iv. Other environment variables
@@ -213,7 +213,7 @@ You can also checkout other [Environment Variables](/self-hosted-deployment/envi
 You can apply all new changes in configuration, and restart DronaHQ simply by running following command.
 
 ```shell
-sudo docker-compose up -d
+sudo docker compose up -d
 ```
 
 ### 9. Verify that containers are running
@@ -221,11 +221,11 @@ sudo docker-compose up -d
 You can use following command to check running docker containers.
 
 ```shell
-sudo docker-compose ps
+sudo docker compose ps
 ```
 
 It should look something like this
 
-![sudo docker-compose ps](./sudo-docker-compose-ps.png "sudo docker-compose ps")
+![sudo docker compose ps](./sudo-docker-compose-ps.png "sudo docker compose ps")
 
 #### Hurray !!! Now you have working self hosted DronaHQ.

@@ -26,7 +26,7 @@ The File Upload control is used to upload files like documents, pictures, audio 
 | Multiple Files         | Toggle ON to allow multiple files to be uploaded.                                                              |
 | No. of Files           | Specify the maximum number of files that can be uploaded.                                                      |
 | Upload from            | Choose File Manager or Camera as the upload source.                                                            |
-| Upload                 | Specify whether files are uploaded on selection or on form submission.                                         |
+| Upload                 | Specify whether files are uploaded on selection or on form submission.     Files can be uploaded on selection (immediate upload to DronaHQ's S3). All files are uploaded in DronaHQ’s S3 bucket and are publicly accessible via their URLs. Users cannot delete files directly from the S3 bucket through the UI.                                    |
 | File Type              | Choose the type of files that can be uploaded.                                                                 |
 | Size Per File          | Set a limit on the size of uploaded files.                                                                     |
 | Whitelist File Type    | Toggle ON to specify specific file types, extensions, and magic numbers.                                      |
@@ -78,15 +78,14 @@ The File Upload control offers important outputs that enable you to work with th
 The `files` property stores an array of file objects that the user has selected. Each file object contains information about the selected file, which can be accessed through its properties.
 
 Example:
+| Output                          | Description                                                               |  
+|---------------------------------|---------------------------------------------------------------------------|  
+| `{{fileupload}}`                | An array of selected file objects containing various file properties.   |  
+| `{{fileupload.PROPERTIES.FILENAMES}}` | An array of selected file names.                                        |  
 
-| Output              | Description                                                             |
-|---------------------|-------------------------------------------------------------------------|
-| `fileupload.files` | An array of selected file objects containing various file properties.  |
-
-To access the data of the first selected file:
+To access the filenames of the selected files:  
 ```javascript
-{{ FilePicker1.files[0].data }}
-
+{{fileupload.PROPERTIES.FILENAMES}}
 ```
 
 ## Events

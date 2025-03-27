@@ -21,7 +21,7 @@ It is possible to create multiple versions of the same template. A new version o
 ### Configuration
 
 <Tabs groupId="configuration">
-  <TabItem value="global-settings" label="Global Settings">
+<TabItem value="global-settings" label="Global Settings">
 Global settings applies to all the pages at once and has the following fields as listed below.
 <br/>
 <br/>

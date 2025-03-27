@@ -86,16 +86,16 @@ Now let us see, how to set up the routing level in our public URL. You can achie
 Select the control, whose value you want to save in the routing level variable. Go to it’s events and add an On-Screen action of Set Routing URL.
 
 <figure>
-  <Thumbnail src="/img/advanced-concepts/screen-routing/screen-routing-set-routing-action.png" alt="Simple Database GUI" />
-  <figcaption align='center'><i>Set Routing URL action in actionflow.</i></figcaption>
-</figure>
+<Thumbnail src="/img/reference/actionflow-blocks/set-routing-level/set-routing-level.png" alt="Set Routing URL" />
+<figcaption align='center'><i>Set Routing URL</i></figcaption>
+</figure> 
 
 Next, you will have configuration fields.
 
+
 <figure>
-  <Thumbnail src="/img/advanced-concepts/screen-routing/screen-routing-set-routing-action-config-screen.png" alt="Simple Database GUI" />
-  <figcaption align='center'><i>Set Routing URL action config screen.</i></figcaption>
-</figure>
+<Thumbnail src="/img/reference/actionflow-blocks/set-routing-level/feild.jpeg" alt="Set Routing URL" />
+</figure> 
 
 - **Browser History** :– The browser stores everything in its history. The Browser History dropdown comes with two options, by virtue of which we can determine the push flow data being added to the URL as history.
 

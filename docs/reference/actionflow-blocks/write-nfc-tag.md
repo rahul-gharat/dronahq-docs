@@ -21,6 +21,10 @@ Support is available only in Android and iOS apps. This action is not applicable
 
 ## Setting up the Write NFC Tag
 
+<figure>
+<Thumbnail src="/img/reference/actionflow-blocks/write-nfc-tag/feild.jpeg" alt="Write NFC Tag" />
+</figure>
+
 1. Navigate to the Actions of any control and select an action.
 
 2. This will open up the action flow area. Click to add an action or connector. Search for `Write NFC Tag` in the `On-Screen Actions` section under the `Utility` group.

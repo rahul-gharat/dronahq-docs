@@ -24,6 +24,10 @@ To set up routing levels, you can use the On-Screen action called `Set Routing U
 
 3. Configure the fields as follows:
 
+<figure>
+<Thumbnail src="/img/reference/actionflow-blocks/set-routing-level/feild.jpeg" alt="Set Routing URL" />
+</figure> 
+
    - Browser History: The browser history dropdown offers two options for handling push flow data in the URL history.
    
    - Append in history: This option allows you to navigate back and forth in the browser with respect to the appended routing levels. Each appended level corresponds to a navigation step.

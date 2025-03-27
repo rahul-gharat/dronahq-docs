@@ -340,10 +340,11 @@ However, `DronaHQ` smartly utilizes previously entered credentials for different
 ## Navigate to Authentication screen – Action Flow
 
 When a user needs to clear the cached authentication data or switch to different credentials for connector authentication, DronaHQ offers an on-screen action called `Navigate to Authentication Screen`. This action facilitates the clearing of cached tokens saved in the backend/frontend of the app after successfully authenticating the connector.
-  <figure>
-    <Thumbnail src="/img/advanced-concepts/multistep-auth/navigate-to-auth-screen-action.png" alt="Navigate To Authentication screen (Action)" width='70%'/>
-    <figcaption align = "center"><i>Navigate To Authentication screen (Action)</i></figcaption>
-  </figure>
+
+<figure>
+<Thumbnail src="/img/reference/actionflow-blocks/navigate-to-auth/navigate-to-auth.png" alt="Navigate to Auth URL" />
+<figcaption align='center'><i>Navigate to Auth URL</i></figcaption>
+</figure> 
 
 In the following screen of `Configure Action's Fields`, you will encounter a dropdown menu where you can choose between two options: `Reload App after Authentication` or `Continue without Reloading`.
 

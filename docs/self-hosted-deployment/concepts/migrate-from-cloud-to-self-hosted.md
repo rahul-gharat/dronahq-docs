@@ -8,6 +8,10 @@ import Thumbnail from '@site/src/components/Thumbnail';
 
 This guide provides detailed steps to migrate your applications and configuration from DronaHQ Cloud to a self-hosted deployment. Before you begin, make sure to review your self-hosted plan's [features](https://www.dronahq.com/pricing/) to ensure they meet your requirements, as self-hosted plans may have different feature sets and [billing structures](/org-management/billing/) compared to Cloud plans.
 
+:::caution
+Migrating apps from Cloud to Self-Hosted may temporarily be impacted due to a critical update in how App's Data Queries are saved on the Cloud platform. This update has not yet been released on the Self-Hosted version but is scheduled for release in approximately 3-4 weeks. Once this update is available, it will streamline the migration process and ensure a smoother transition.
+:::
+
 ## Requirements
 
 To perform this migration, you will need:

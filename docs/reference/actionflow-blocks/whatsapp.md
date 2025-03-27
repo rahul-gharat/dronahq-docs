@@ -15,6 +15,10 @@ You can utilize Action Flows to send WhatsApp text messages to your contacts dir
 
 To send a WhatsApp message, follow these steps:
 
+<figure>
+<Thumbnail src="/img/reference/actionflow-blocks/whatsapp/feild.jpeg" alt="WhatsApp Message" />
+</figure>
+
 1. Message Text: This is a mandatory field where you input the content of your WhatsApp message. You can also make use of Keywords to incorporate text from your app, such as messages inserted by users or notifications sent by your app.
 
 2. Phone Number:** This is a mandatory field where you need to provide the receiver's phone number. The phone number should be entered in a valid format, including the country code and the phone number itself (e.g., +(country code)(phone number)).
@@ -27,9 +31,7 @@ In the provided example, we will send a message that is entered in the Text cont
 
 Upon clicking the "Send Message" button, the Action Flow is initiated.
 
-<figure>
-<Thumbnail src="/img/reference/actionflow-blocks/whatsapp/example.jpeg" alt="WhatsApp Message" />
-</figure>
+
 
 
 Next, configure the WhatsApp Message block by assigning the message text and phone number. In our example, we are using the respective keywords: the Text control and the output of the Compute block.

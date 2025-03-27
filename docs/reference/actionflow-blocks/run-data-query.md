@@ -16,8 +16,11 @@ The Run Data Queries action is a valuable tool in your app-building arsenal. It 
 
 ## Setting up the Run Dat Queries Action
 
-1. Select Data Query: In this field, you select the specific data query that you want to run. Your application might have multiple data queries that serve different purposes. This action lets you choose the relevant one for your use case.
+Select Data Query: In this field, you select the specific data query that you want to run. Your application might have multiple data queries that serve different purposes. This action lets you choose the relevant one for your use case.
 
+<figure>
+<Thumbnail src="/img/reference/actionflow-blocks/run-data-query/feild.jpeg" alt="Run Data Queries" />
+</figure>
 
 
 ### Usage

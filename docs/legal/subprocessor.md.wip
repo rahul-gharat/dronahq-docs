@@ -1,0 +1,43 @@
+---
+sidebar_position: 2
+title: Subprocessors
+---
+
+
+To provide our services, DronaHQ may engage third-party subprocessors who have access to certain customer data. This page outlines the identity, location, and role of each subprocessor.
+
+## Third-Party Subprocessors
+
+DronaHQ uses third-party subprocessors to deliver infrastructure services, customer support, and email notifications. Before engaging any subprocessor, DronaHQ evaluates their privacy, security, and confidentiality practices and enters into an agreement to enforce the applicable obligations.
+
+## Infrastructure Subprocessors
+
+DronaHQ may utilize the following subprocessors to host customer data or provide infrastructure services:
+
+| Entity Name               | Relevant Services            | Purpose of Processing                                             | Location    |
+|-------------------------------|----------------------------------|---------------------------------------------------------------------|-----------------|
+| Amazon Web Services, Inc.      | Cloud Offerings                  | Third-party hosting provider                                        | United States   |
+| Amazon Web Services, Inc.      | Workflows (DronaHQ Cloud)        | Third-party hosting provider for queries and workflow caching        | United States   |
+| Temporal Technologies, Inc.    | Workflows (Self-Hosted Offerings)| Third-party hosting provider for workflow orchestration              | United States   |
+| Temporal Technologies, Inc.    | Workflows (DronaHQ Cloud)        | Third-party hosting provider for workflow orchestration              | United States   |
+| OpenAI, Inc.                   | Optional AI Features             | Third-party artificial intelligence large language model and engine  | United States   |
+| Neon, Inc.                     | DronaHQ Database (Self-Serve Customers) | Third-party hosting provider                                     | United States   |
+
+## Other Subprocessors
+
+DronaHQ may engage the following subprocessors to perform additional service functions:
+
+| Entity Name               | Purpose of Processing                                  | Location    |
+|-------------------------------|-----------------------------------------------------------|-----------------|
+| Intercom, Inc.                 | Customer support tools                                    | United States   |
+| Mailgun Technologies, Inc.     | Sending DronaHQ email notifications                       | United States   |
+
+## DronaHQ Affiliates
+
+Depending on the customer's location and the services provided, DronaHQ may engage affiliates as subprocessors.
+
+## Updates
+
+As our business evolves, we may update our subprocessors. We will notify customers of new subprocessors as required and post updates here.
+
+Current customers can sign up to receive notifications of new subprocessors by emailing: subprocessor.notification.requests@dronahq.com.

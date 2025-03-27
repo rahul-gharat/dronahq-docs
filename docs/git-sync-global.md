@@ -10,7 +10,7 @@ You can enable Git Sync globally to effectively manage version control for all y
 
 :::info
 
-For Git sync to work the user needs Git hosting service which supports SSH protocols and currently it is available on self-hosted and not available on the cloud.
+For Git sync to work the user needs Git hosting service which supports PAT and currently it is available on self-hosted and not available on the cloud.
 
 :::
 
@@ -53,12 +53,42 @@ gitGraph
 
 To connect your apps on DronaHQ with Git, you must have a GitHub account, or any other version control accounts such as GitLab, Bitbucket, etc., and must have basic knowledge of git operations.
 
+## New way to configure Global Git Sync 
+Github has made decision to migration from SSH to Personal Access Tokens (PAT) based authentication. While SSH keys provide secure authentication, managing them can be complex, especially across multiple devices or teams. PATs offer finer-grained control with customizable scopes, allowing you to grant access only to specific actions or repositories, reducing risks. 
+
+We are also migrating from old SSH to  PAT based authentication, and this is going to be available to you in self-host version `3.4.0-stable and greater`. 
+
+### Create Personal Access Tokens (PAT)
+
+You need to create PAT key in GitHub. Navigate to `Setting -> Developer Settings -> Personal access tokens`. Generate new token and configure the permissions as you like.
+
+### Setting up New Git Sync Environment Variables
+
+Below Environment variables to be configured -
+
+| Environment Variable  | Description |
+|----------------------------------------------|-----------------------------------------------------------------------------------------------------|
+| GIT_SYNC                            | This variable specifies if you want to enable Global Git Sync feature. By default it is set to `false` |
+| GIT_PROVIDER                        | Specifies the provider you are using, values can be `GITHUB` / `GITLAB` / `BITBUCKET`   |
+| GIT_SYNC_REPOSITORY_URL             | HTTPS Url of the Git Repo which you want all your apps to be checked into. Mandatory if GIT_SYNC is true |
+| GIT_SYNC_BRANCH_NAME                | Branch name of the above repo url which this instance should be synced with. For production instance, ideally use `main` branch.    |
+| GIT_SYNC_PERSONAL_ACCESS_TOKEN      | Personal Access token generated on github repository that you want to use to sync apps is placed here |
+| GIT_SYNC_AUTO_SAVE                  | Enable this to automatically save your app changes to your GIT repo. |
+| GIT_SYNC_ALLOW_EDIT                 | Enable this to allow editing of you app that is added to GIT. Ideally, you should set to `false` for your production instance and set it to `true` for your development instance. |
+| GIT_SYNC_AUTO_ADD_NEW_RESOURCES     | Enable this to automatically add new apps to git. Ideally, you should set to `true` for your development instance if you want all apps to be automatically added to git and set it to `false` for your production instance. By default, it is set to `false`. |
+
+
+
+## Old way to configure Global Git Sync 
+If you are using `pervious self-host version than 3.4.0-stable` then you need to follow the old configuration to enable global git sync feature.
+
+
 ### Create SSH Key in each DronaHQ Instance
 
 You need to create SSH key in each of your DronaHQ instances. Navigate to `Profile -> Account Settings -> Integrations -> SSH Key Management -> + Add Key`. Provide a friendly name and `Generate & Save Key`. Make a note of the friendly name that will be required later for setting up environment variable and public key that will be required for setting up Git repository later.
 
 
-### Setting up Git Sync Environment Variables
+### Setting up Old Git Sync Environment Variables
 
 Below Environment variables to be configured -
 
@@ -79,6 +109,46 @@ Various Git providers are supported. For detailed instructions refer [here](#set
 - Github
 - Gitlab
 - Bitbucket
+
+### Setting up on supported Git providers
+
+#### Adding SSH Keys to Git Service Accounts
+1. To add this SSH key to your GitHub account, navigate to `GitHub > Settings > SSH and GPG Keys > New SSH key`.
+
+
+2. Provide the required details, including a Title, and paste the SSH key copied from the app in DronaHQ. Click `Add SSH key`. Confirmation and a password prompt may follow.
+
+
+:::info 
+The default branch for the connection is main for GitHub.
+:::
+
+#### Adding SSH Keys to a particular GitHub Repository
+
+This option is specially helpful for enterprise accounts which do not have access to `SSH & GPG Keys` option in your personal settings.
+
+1. To add this SSH key to your GitHub repo, navigate to `GitHub -> Repository -> Settings -> Deploy Keys > Add deploy key`.
+
+
+2. Provide the required details, including a Title, and paste the SSH key copied from the app in DronaHQ. Also enable `Allow write access` checkbox. Click `Add key`. Confirmation and a password prompt may follow.
+
+
+#### Adding SSH Key in GitLab
+
+1. To add this SSH key to your GitLab account, go to `GitLab > User Settings > SSH Keys`.
+
+
+
+2. Provide the necessary details, such as Title and Expiry date, and paste the SSH key copied from the app in DronaHQ. Click `Add key`.
+
+  
+
+#### Adding SSH Key in Bitbucket
+
+1. To add this SSH key to your Bitbucket account, visit `Bitbucket > Settings > SSH Keys (under security) > Add key`. Note that you need to add the key at the account level, not the repository level.
+
+
+2. Provide the necessary details, including the Label, and paste the SSH key copied from the app in DronaHQ. Click `Add key`.
 
 ## Git Sync In Action 
 
@@ -166,42 +236,3 @@ Below are the various options available
 1. This section lists all the Apps deleted in other instance. You can use `Delete` option to remove this app from the current instance.
 
 
-## Setting up on supported Git providers
-
-### Adding SSH Keys to Git Service Accounts
-1. To add this SSH key to your GitHub account, navigate to `GitHub > Settings > SSH and GPG Keys > New SSH key`.
-
-
-2. Provide the required details, including a Title, and paste the SSH key copied from the app in DronaHQ. Click `Add SSH key`. Confirmation and a password prompt may follow.
-
-
-:::info 
-The default branch for the connection is main for GitHub.
-:::
-
-### Adding SSH Keys to a particular GitHub Repository
-
-This option is specially helpful for enterprise accounts which do not have access to `SSH & GPG Keys` option in your personal settings.
-
-1. To add this SSH key to your GitHub repo, navigate to `GitHub -> Repository -> Settings -> Deploy Keys > Add deploy key`.
-
-
-2. Provide the required details, including a Title, and paste the SSH key copied from the app in DronaHQ. Also enable `Allow write access` checkbox. Click `Add key`. Confirmation and a password prompt may follow.
-
-
-### Adding SSH Key in GitLab
-
-1. To add this SSH key to your GitLab account, go to `GitLab > User Settings > SSH Keys`.
-
-
-
-2. Provide the necessary details, such as Title and Expiry date, and paste the SSH key copied from the app in DronaHQ. Click `Add key`.
-
-  
-
-### Adding SSH Key in Bitbucket
-
-1. To add this SSH key to your Bitbucket account, visit `Bitbucket > Settings > SSH Keys (under security) > Add key`. Note that you need to add the key at the account level, not the repository level.
-
-
-2. Provide the necessary details, including the Label, and paste the SSH key copied from the app in DronaHQ. Click `Add key`.

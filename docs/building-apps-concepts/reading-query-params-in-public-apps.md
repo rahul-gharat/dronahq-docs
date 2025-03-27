@@ -21,27 +21,30 @@ Navigate to `Config Options -> Query String`. Click on `Add query string` and de
 
 The query string parameter values can be accessed through the `QUERYSTRING("paramName")` function where `paramName` is the name of the query string parameter you want to access. The query string value can be statically binded to any control using the Formula Box available in Data Bind Section or can be accessed in the Actionflow using the Compute action block.
 
+### Using the variable
+
+You can simply bind query string value to the control, by using parameter name as variable. Click on the control, and then `Content > Bind Data` to mention `{{paraName}}`.
+
+<figure>
+  <Thumbnail src="/img/building-apps-concepts/reading_query_params_in_public_apps/data-bind-variable-query-string.png" alt="Query String Config Options Modal" />
+  <figcaption align='center'><i>Data bind through variable</i></figcaption>
+</figure>
+
 ### Using Data Bind Section
 
-You can bind query string value to the control, by clicking on the `Control -> Data Bind Section -> FX -> Edit` and then specify the query string parameter within the `QUERYSTRING("paramName")` function in the formula box as shown below. In our example, it is `QUERYSTRING("Name")`.
+You can bind query string value to the control, by clicking on the `Control -> Content ->Quick Select -> FX -> Edit` and then specify the query string parameter within the `QUERYSTRING("paramName")` function in the formula box as shown below. In our example, it is `QUERYSTRING("Name")`.
 
 <figure>
   <Thumbnail src="/img/building-apps-concepts/reading_query_params_in_public_apps/data-bind-formula-box-query-string.png" alt="Query String Config Options Modal" />
   <figcaption align='center'><i>Data bind formula box</i></figcaption>
 </figure>
 
-### Using Actionflow's Compute Block
+### Using Actionflow
 
-Binding query string variable is a two step process in Actionflow, where firstly the query string parameter value is stored inside a variable using the `Compute` block and then using `Set Control Value` block the variable's stored value is assigned to a control.
+You can pass on the query parastring in the action flow for various purposes according to need. Since, we have a variable for the query string parameter, we can simply use the variable name as keyword to pass into various action blocks.
 
-- **Access Query String** - Add a `Compute` block, and create variable(s) by clicking on the `Add Variable` button. In our example, we have set the variable name as `emailVar` and the formula as `QUERYSTRING("Email")`.
 
-<figure>
-  <Thumbnail src="/img/building-apps-concepts/reading_query_params_in_public_apps/action-flow-compute-query-string.png" alt="Action Flow Set Control Value - Query String" />
-  <figcaption align='center'><i>Actionflow compute block to access query string value</i></figcaption>
-</figure>
-
-- **Bind Variable to Control** - Within the `Set Control Value` block, select the control you want to bind data with, and set the control value as the variable created inside the `Compute` block.
+- **Bind Variable to Control** - Within the `Set Control Value` block, select the control you want to bind data with, and set the control value as the variable created.
 
 <figure>
   <Thumbnail src="/img/building-apps-concepts/reading_query_params_in_public_apps/action-flow-setControlValue-query-string.png" alt="Action Flow Set Control Value - Query String" />

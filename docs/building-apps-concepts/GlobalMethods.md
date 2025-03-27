@@ -34,7 +34,7 @@ Global methods should only be used inside Custom Javascript / JS Code.
             <h4>Explore Utility Methods</h4>
         </div>
         <p>Checkout the documentation for Usage and Examples of Utility Methods</p>
-        <VersionedLink to="/reference/Utility/">
+        <VersionedLink to="/reference/keywords-js-utilities/Utility/">
             See Utility Methods <ArrowRight className="arrow" />
         </VersionedLink>
     </div>
@@ -43,7 +43,7 @@ Global methods should only be used inside Custom Javascript / JS Code.
             <h4>Explore File Utility Methods</h4>
         </div>
         <p>Checkout the documentation for Usage and Examples of File Utility Methods</p>
-        <VersionedLink to="/reference/FileUtility/">
+        <VersionedLink to="/reference/keywords-js-utilities/FileUtility/">
             See File Utility Methods <ArrowRight className="arrow" />
         </VersionedLink>
     </div>
@@ -52,7 +52,7 @@ Global methods should only be used inside Custom Javascript / JS Code.
             <h4>Explore Helper Methods</h4>
         </div>
         <p>Checkout the documentation for Usage and Examples of Helper Methods</p>
-        <VersionedLink to="/reference/Helper/">
+        <VersionedLink to="/reference/keywords-js-utilities/Helper/">
             See Helper Methods <ArrowRight className="arrow" />
         </VersionedLink>
     </div>

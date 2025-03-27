@@ -244,6 +244,7 @@ UTILITY.SETCTRLVALUE(
 |-------------|---------|---------------------------------------------------|
 | `name`      | string  | Control's unique name                             |
 | `value`     | string or object  | any string value for single value controls and object for composite controls |
+| `selected_value`     | string or array | any string value or array of strings for list type controls |
 
 <span style={{fontSize: 24}}>Example for single value controls</span>
 
@@ -273,6 +274,28 @@ UTILITY.SETCTRLVALUE(
     }
   ]
 );
+```
+
+<span style={{fontSize: 24}}>Example for list controls</span>
+
+```
+let dd_data = [
+  {
+    "name": "test1",
+    "value": "test1"
+  },
+  {
+    "name": "test",
+    "value": "test"
+  }
+]
+UTILITY.SETCTRLVALUE([
+  {
+    name: "advanceddropdown",
+    value: dd_data,
+    selected_value: "test"
+  }
+])
 ```
 
 ## HIDECTRL
@@ -628,3 +651,146 @@ UTILITY.MICROAPPNAV('appId',[{queryKey: 'yourkey', queryValue: 'yourvalue'}]);
 UTILITY.MICROAPPNAV('4139',[{queryKey: 'key1', queryValue: 'value1'}]);
 ```
 
+## SETLOCALSTORAGE
+
+`UTILITY.SETLOCALSTORAGE()` method can be used to store key value pairs locally. This method returns a `Promise`, so make sure to use the `await` keyword to successfully complete the operation.
+
+<span style={{fontSize: 24}}>Usage</span>
+
+```
+UTILITY.SETLOCALSTORAGE(key, value);
+```
+
+<span style={{fontSize: 24}}>Parameters</span>
+
+| Parameter   | Accepts | Possible values                                   |
+|-------------|---------|---------------------------------------------------|
+| `key`      | string  | any string value          |
+| `value`     | string  | any string value                                  |
+
+<span style={{fontSize: 24}}>Example</span>
+
+```
+UTILITY.SETLOCALSTORAGE('dronahq', {Name:John,Age:25})
+```
+
+## GETLOCALSTORAGE
+
+`UTILITY.GETLOCALSTORAGE()` method can be used to retrieved the locally stored value using its unique key. This method returns a `Promise`, so make sure to use the `await` keyword to successfully complete the operation.
+
+<span style={{fontSize: 24}}>Usage</span>
+
+```
+UTILITY.GETLOCALSTORAGE(key);
+```
+
+<span style={{fontSize: 24}}>Parameters</span>
+
+| Parameter   | Accepts | Possible values                                   |
+|-------------|---------|---------------------------------------------------|
+| `key`      | string  | any string value           |
+
+<span style={{fontSize: 24}}>Example</span>
+
+```
+UTILITY.GETLOCALSTORAGE('dronahq');
+```
+
+## CLEARLOCALSTORAGE
+
+`UTILITY.CLEARLOCALSTORAGE()` method can be used to remove the locally stored key value pairs. This method returns a `Promise`, so make sure to use the `await` keyword to successfully complete the operation.
+
+<span style={{fontSize: 24}}>Usage</span>
+
+```
+UTILITY.CLEARLOCALSTORAGE(key)
+```
+
+<span style={{fontSize: 24}}>Parameters</span>
+
+| Parameter   | Accepts | Possible values                                   |
+|-------------|---------|---------------------------------------------------|
+| `key`      | string  | any string value           |
+
+<span style={{fontSize: 24}}>Example</span>
+
+```
+UTILITY.CLEARLOCALSTORAGE(key)
+```
+Here’s your formatted documentation for `SETPROPERTY`:  
+
+## SETPROPERTY  
+
+The `UTILITY.SETPROPERTY()` method allows you to dynamically set properties like `read_only` and `required` on input elements, controlling user interaction and validation.  
+
+#### Usage  
+
+```javascript
+UTILITY.SETPROPERTY([
+   { ctrlName: "controlUniqueName", property: "property_name" },
+   { ctrlName: "anotherControlUniqueName", property: "property_name" }
+]);
+```
+
+#### Parameters  
+
+| Parameter  | Accepts | Possible Values                                      |
+|------------|---------|------------------------------------------------------|
+| `ctrlName` | string  | Unique name of the control where the property is set. |
+| `property` | string  | Property name to set. Possible values: "read_only", "required". |
+
+#### Example  
+
+```javascript
+UTILITY.SETPROPERTY([
+   { ctrlName: "textinput1", property: "read_only" },
+   { ctrlName: "textinput2", property: "required" }
+]);
+```  
+
+## REMOVESETPROPERTY  
+
+`UTILITY.REMOVESETPROPERTY()` method can be used to dynamically remove specific properties from input controls. The method takes an object, where the object specifies the control name and the property to be removed.
+
+
+#### Usage  
+
+```UTILITY.REMOVESETPROPERTY([{ ctrlName: "controlName", property: "propertyName" }]);```
+
+
+
+#### Parameters  
+| Parameter              | Accepts | Possible Values                                                                                  |
+|------------------------|---------|--------------------------------------------------------------------------------------------------|
+| `ctrlName`             | string  | Unique name of the control where the property is to be removed.                                  |
+| `property`             | string  | Property name to remove. Possible values are: "read_only" (to make the control editable) or "required" (to make it optional). |
+
+
+#### Example  
+```javascript
+UTILITY.REMOVESETPROPERTY([
+   { ctrlName: "textinput1", property: "read_only" }
+]);
+```
+
+## REDIRECTPARENTUTILITY  
+
+The `UTILITY.REDIRECTPARENTUTILITY()` method allows you to redirect the parent of an iframe to a specified URL. This is useful when your micro-app is embedded within a parent website, enabling controlled navigation to an external destination.  
+
+#### Usage  
+
+```javascript
+UTILITY.REDIRECTPARENTUTILITY("URL");
+```
+
+#### Parameters  
+
+| Parameter | Accepts | Description |
+|-----------|---------|-------------|
+| `URL`     | string  | The destination URL to which the parent window should be redirected. |
+
+#### Example  
+
+```javascript
+UTILITY.REDIRECTPARENTUTILITY("https://docs.dronahq.com/reference/keywords-js-utilities/Utility/#setctrlvalue");
+```  

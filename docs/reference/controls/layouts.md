@@ -7,6 +7,11 @@ import Image from '@site/src/components/Image';
 import VersionedLink from '@site/src/components/VersionedLink';
 import Thumbnail from '@site/src/components/Thumbnail';
 
+
+:::info
+This component can be found under [Advanced editor ](https://docs.dronahq.com/ui-builder/ui-layout-and-editors/#advanced-editor).
+:::
+
 When creating apps, the layouts enable you to arrange the form components in a logical order well suited to the different devices. It enables you to easily design complex apps in a manner that it becomes easily navigable to the users of any of the devices.
 
 If you design a form with a single column it would be a great user experience for a user accessing it on mobile with standard screen size. However, the same might not be true for a user on a desktop or even a widescreen tablet. In such scenarios, two or even more columns can be a good option for ease of use. 

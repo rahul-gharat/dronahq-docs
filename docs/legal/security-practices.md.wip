@@ -1,0 +1,75 @@
+---
+sidebar_position: 2
+title: Security practices
+---
+
+We take the security of your data very seriously at DronaHQ. If you have additional questions regarding security, we are happy to answer them. Please write to support@dronahq.com and we will respond as quickly as we can. This Security Practices page describes the administrative, technical and physical controls applicable to DronaHQ.
+
+## Hosting, Architecture, and configurations
+### Cloud-Based Services
+The cloud-based DronaHQ services are operated on a multitenant architecture at both the platform and infrastructure layers that is designed to segregate and restrict access to any applications, workflows or processes you and your users build using the DronaHQ services (each, a "Custom App"). This infrastructure is provided and hosted by Amazon Web Services, Inc. ("AWS"). Information about security provided by AWS is available from the AWS Security website. Information about security and privacy-related audits and certifications received by AWS, including information on SOC reports, is available from the AWS Compliance website.
+
+### Self-Hosted Services
+For self-hosted DronaHQ services, Custom Apps are hosted using your own infrastructure - such as on-premises — so that you and your users can build Custom Apps in your virtual private cloud (VPC) or behind your virtual private network (VPN). 
+
+### Database, Query and Workflow Configurations
+Whether using DronaHQ's cloud-based or self-hosted services, you and your users may submit data and content to your Custom Apps ("Customer Data"), for example by querying a database or automating a workflow. You have the option to build and use Custom Apps without workflows and/or without connecting them to any database, or alternatively, you have the ability to connect Custom Apps to your own databases, databases hosted by third parties, or databases hosted by DronaHQ.
+
+### Storage of Customer Data
+When you connect a Custom App to a database provided by DronaHQ, DronaHQ stores Customer Data using infrastructure provided by AWS. When you instead connect a Custom App to your own database or data resource or that of a third party, DronaHQ does not store Customer Data but rather proxies requests to that database and applies the credentials server-side. The DronaHQ services are architected this way because having the end-user's browser connect directly to the database would require you to provision every user individually, rather than just the DronaHQ server, which would potentially expose credentials.
+
+Note that if you enable query or workflow caching, Customer Data is temporarily cached by DronaHQ for the specified cache duration. You can invalidate a query's cache—or disable query and workflow caching entirely—at any time.
+
+When you elect to deploy self-hosted Workflows with a DronaHQ-managed Temporal cluster, only encrypted internal Workflow ids and Workflow block names are stored in Temporal Technologies’ Cloud offering; no other Customer Data, code or query contents are sent to Temporal Cloud. All Customer Data is encrypted with your private encryption key prior to leaving your own VPC or VPN. The encryption key is defined within your infrastructure and is never sent to DronaHQ or Temporal Technologies. Customer Data is stored in Temporal Cloud for 14 days by default, this retention period is configurable by submitting a request to DronaHQ.
+
+## Confidentiality and security controls
+### Confidentiality
+DronaHQ places strict controls over its employees' access to Custom Apps and any associated Customer Data. The operation of the DronaHQ services requires that some employees have access to the systems which store or process this information and data. For example, in order to diagnose a problem you are having with the DronaHQ services, we may need to access your account. These employees are prohibited from using these permissions to view Customer Data unless it is necessary to do so. We have technical controls and audit policies in place to ensure that any access to your account is logged.
+
+All of our employees and contract personnel are bound to our policies regarding confidentiality and we treat these issues as matters of the highest importance within our company.
+
+### Protection of Customer Data
+While the protection of Customer Data is a joint responsibility between you and DronaHQ, DronaHQ will implement and maintain appropriate technical and organizational measures designed to protect your Customer Data against accidental or unlawful destruction, loss, alteration, and unauthorized disclosure when stored or processed using the DronaHQ services. The DronaHQ services have a number of security controls, including but not limited to:
+
+Audit logging. Detailed audit logs are available to administrators of your account if you are on the Business or Enterprise plan. We log every time an account signs in, noting the type of device used and the IP address of the connection. Administrators can review consolidated access logs for their whole team. More information about access logging is available in our Documentation.
+Access Management. Administrators can remotely disable users authenticated to the DronaHQ services, on demand. More information about access management is available in our Documentation.
+Host Management. We perform automated vulnerability and malware scans on our production hosts and company endpoints, and promptly triage or remediate any findings that present a risk to our environment. We enforce screen lock-outs and the use of full disk encryption for company laptops.
+Network Protection. In addition to sophisticated system monitoring and logging, we have implemented two-factor authentication for all server access across our production environment. Firewalls are configured according to industry best practices, using AWS security groups, network segmentation, and real-time intrusion monitoring.
+Product security practices. New features, significant functionality, and design changes go through a security review process facilitated by the security team. In addition, our code is audited with automated static analysis software, tested, and manually peer-reviewed prior to being deployed to production. The security team works closely with development teams to resolve any additional security concerns that may arise during development. DronaHQ also operates a vulnerability disclosure program. Security researchers around the world continuously test the security of the DronaHQ services, and report issues via the program. For more program details please see DronaHQ.com/vulnerability-reporting.
+Team-wide two-factor authentication. Administrators can require all users to set up two-factor authentication on their accounts. Instructions for doing this are available in our Documentation.
+### Data Encryption
+The DronaHQ services use industry-accepted encryption products to protect Customer Data during transmissions between your network and the DronaHQ services, and when at rest. The DronaHQ services support the latest recommended secure cipher suites and protocols to encrypt all traffic in transit. DronaHQ monitors the changing cryptographic landscape closely and works promptly to upgrade the service to respond to new cryptographic weaknesses as they are discovered and implement best practices as they evolve. For encryption in transit, DronaHQ does this while also balancing the need for compatibility with older data sources.
+
+### Reliability, Backup, and Business Continuity
+DronaHQ is committed to making the DronaHQ services a highly available service that you can rely on. The infrastructure DronaHQ uses for delivering the services run on systems that are fault-tolerant, for failures of individual servers or even entire data centers. DronaHQ's operations team tests disaster recovery measures regularly and has a 24-hour on-call team to quickly resolve unexpected incidents. DronaHQ performs regular backups, facilitates rollbacks of software and system changes when necessary and replication of data as needed.
+
+Customer Data, when stored by DronaHQ, is done so redundantly in multiple locations in our hosting provider's data centers to ensure availability. DronaHQ has well-tested backup and restoration procedures which allow recovery from a major disaster. Customer Data, Custom Apps and our source code are automatically backed up every night and stored for seven days. The operations team is alerted in the event of a failure in this system. Backups are stored for seven days in the event of a catastrophic failure and fully tested at least every 90 days to confirm that DronaHQ's processes and tools work as expected.
+
+### Portability of Custom Apps
+During the term of a subscription, your administrator may import and export Custom Apps in JSON, as further described in our Documentation, but please be advised that there may be technical constraints to such portability and any subsequent compatibility and utility.
+
+### Return of Customer Data
+Within 30 days post contract termination, you may request return of Customer Data stored by DronaHQ (to the extent such data has not already been deleted by you). Information about the export capabilities of the DronaHQ services can be found by reaching out to our data protection team at dpo@DronaHQ.com.
+
+### Deletion of Custom Apps and Customer Data
+The DronaHQ services provide the option for administrators to delete Custom Apps and all associated Customer Data stored by DronaHQ at any time during a subscription term. Within 24 hours of administrator-initiated deletion, DronaHQ hard deletes all Custom Apps and Customer Data from currently running production systems. DronaHQ-maintained backups of services and data are destroyed within 30 days (backups are destroyed within 30 days, except that during an on-going investigation of an incident such period may be temporarily extended).
+
+## Monitoring, validation, and practices
+Certifications
+Certifications are performed on the DronaHQ services, and Customers may download a copy of available applicable certifications by reaching out to security@DronaHQ.com. At a minimum, DronaHQ will align with prevailing industry standards such as SOC 2 Type 2, or any successor or superseding standard.
+
+### Audits
+To verify that our security practices are sound and to monitor the DronaHQ services for new vulnerabilities discovered by the security research community, the DronaHQ services undergo security assessments by internal personnel, and for the DronaHQ services by respected external security firms who perform regular audits of the DronaHQ services. In addition to periodic and targeted audits of the DronaHQ services, we also employ the use of continuous hybrid automated scanning of our web platform. Customers may download a copy of available applicable external audit reports by reaching out to security@DronaHQ.com.
+
+### Intrusion Detection
+DronaHQ, or an authorized external entity, will monitor all DronaHQ services and endpoints. Endpoints are monitored through continuous malware and anomaly detection. DronaHQ-hosted cloud environments are logged and alerted 24/7 for suspicious or known malicious activity. Logs are also reviewed manually at least every 90 days.
+
+### Security Logs
+Systems used in the provision of the DronaHQ services log information to their respective system log facilities or a centralized logging service (for network systems) in order to enable security reviews and analysis. DronaHQ maintains an extensive centralized logging environment in the production environment which contains information pertaining to security, monitoring, availability, access and other metrics about the DronaHQ services. These logs are analyzed for security events via automated monitoring software, overseen by the security team.
+
+### Incident Management
+
+DronaHQ maintains security incident management policies and procedures. DronaHQ notifies impacted customers without undue delay of any unauthorized disclosure of their respective Customer Data by DronaHQ or its agents of which DronaHQ becomes aware to the extent permitted by law. DronaHQ typically notifies customers of significant system incidents by email.
+
+### Personnel Practices
+DronaHQ conducts background checks on all employees before employment, and employees receive privacy and security training during onboarding as well as on an ongoing basis. All employees are required to read and sign our comprehensive information security policy covering the security, availability, and confidentiality of the DronaHQ services.

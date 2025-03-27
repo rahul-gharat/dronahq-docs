@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3
+sidebar_position: 1
 title: Hide Control Loader
 ---
 
@@ -13,6 +13,11 @@ The `Hide Control Loader` action enables the removal of loading indicators or sp
 </figure>
 
 ## Setting up the Hide Control Loader Action
+
+
+<figure>
+  <Thumbnail src="/img/reference/actionflow-blocks/hide-control-loader/feild.jpeg" alt="Hide Control Loader" />
+</figure>
 
 Follow these steps to effectively utilize the `Hide Control Loader` action:
 

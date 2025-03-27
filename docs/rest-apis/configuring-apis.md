@@ -100,7 +100,7 @@ The request body can be provided either as a string in a specified format (e.g.,
 
 You can pass dynamic parameters to your REST API endpoints by creating variables under _content type_ as **`RAW`**
 
-Wrap the variable name inside double curly braces to make it dynamic.
+Wrap the variable name inside double curly braces to make it dynamic, refrain from using `_` in the variable name.
 
 ```js
 {

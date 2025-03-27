@@ -14,6 +14,12 @@ The `Show Control Loader` action facilitates the display of a loading indicator 
 
 ## Setting up the Show Control Loader Action
 
+
+<figure>
+  <Thumbnail src="/img/reference/actionflow-blocks/show-control-loader/feild.jpeg" alt="Show Control Loader" />
+</figure>
+
+
 Follow these steps to effectively utilize the `Show Control Loader` action:
 
 1. Within the `Action Flows` section, locate the `Show Control Loader` block.

@@ -5,6 +5,8 @@ title: Oracle
 
 import Image from '@site/src/components/Image'; import VersionedLink from '@site/src/components/VersionedLink'; import
 Thumbnail from '@site/src/components/Thumbnail';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
 Oracle is an open-source object-relational database system that allows you to safely store and scale the different data
 workloads.
@@ -33,18 +35,56 @@ settings for secure database setup.
 
 #### General
 
-| Field         | Description                 |
-| ------------- | --------------------------- |
-| Host          | Enter the Host Domain or IP |
-| Port          | Enter the Port number       |
-| Database Name | Enter the Database name     |
-| Username      | Enter the Username          |
-| Password      | Enter the Password          |
-
 <figure>
   <Thumbnail src="/img/reference/connectors/oracle/details.png" alt="Oracle with Sample details." />
   <figcaption align = "center"><i>Oracle with Sample details.</i></figcaption>
 </figure>
+
+
+
+
+<Tabs groupId="configuration">
+  <TabItem value="version-1" label="Version 1">
+<br/>
+<br/>
+
+
+| Field            | Description                          |
+|------------------|--------------------------------------|
+| Host         | Please enter the Host Domain or IP   |
+| Port         | Please enter the Port number         |
+| Database Name| Please enter the Database name       |
+| Username     | Please enter the Username            |
+| Password     | Please enter the Password            | 
+| Treat Database Name as SID | Enable this option to interpret the database name as the System Identifier (SID) for the connection.|
+
+
+
+<figure>
+  <Thumbnail src="/img/reference/connectors/oracle/version1.jpeg" alt="Oracle with Sample details." />
+</figure>
+
+
+  </TabItem>
+
+  <TabItem value="version-2" label="Version 2">
+<br/>
+<br/>
+
+
+| Field             | Description                                   |
+|-------------------|-----------------------------------------------|
+| Username      | Please enter the Username.                    |
+| Password      | Please enter the Password.                    |
+| Connection String | Enter the connection string in the format `mydbmachine.example.com:1984/orclpdb1`. |
+
+<figure>
+  <Thumbnail src="/img/reference/connectors/oracle/version2.jpeg" alt="Oracle with Sample details." />
+</figure>
+
+ </TabItem>
+</Tabs>
+
 
 #### Admin
 

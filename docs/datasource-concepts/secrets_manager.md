@@ -91,7 +91,7 @@ path "<YOUR-ENGINE-NAME>/creds/*" {
   You will need to add volume mapping in the docker-compose.yaml file. The underlined path represents the path inside the container that you need to add to the secret manager's configuration. The path on the left side of the ':' is the path on your host machine where your file is located. After making these changes, run the following command to restart the web application:
 
   ```shell
-  sudo docker-compose restart webapp
+  sudo docker compose restart webapp
   ```
   sample vault_wrapped_token.json
   ```json

@@ -13,9 +13,13 @@ There are situations when you need to copy data from your app's screen and paste
 <figcaption align='center'><i>Copy to Clipboard</i></figcaption>
 </figure>
 
-1. Copy Text or Keywords: To initiate the copy action, navigate to the `Action Flow` section, specifically `On-screen Actions,` and select the `Edit` block. Here, you can specify the text you want to copy or choose from a list of Keywords. Keywords allow you to copy dynamic content from form controls, variables, and action outputs.
+1. Copy Text or Keywords: To initiate the copy action, navigate to the `Utility` section, and select the `Copy to Clipboard` block. Here, you can specify the text you want to copy or choose from a list of Keywords. Keywords allow you to copy dynamic content from form controls, variables, and action outputs.
 
 2. Action Unique Name: Provide a unique name for this action. This helps you identify this task within your action flow.
+
+<figure>
+<Thumbnail src="/img/reference/actionflow-blocks/copy-to-clipboard/feild.jpeg" alt="Copy to Clipboard" />
+</figure>
 
 3. Conditions and Environment: Define under what conditions this action should execute and in which environment. This allows for precise control over when and where the copy action occurs.
 

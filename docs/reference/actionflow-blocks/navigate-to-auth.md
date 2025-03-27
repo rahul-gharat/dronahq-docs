@@ -14,6 +14,11 @@ The `Navigate to Authentication Screen` action is designed to clear cached authe
 
 ## Setting up the Navigate to Auth
 
+<figure>
+<Thumbnail src="/img/reference/actionflow-blocks/navigate-to-auth/feild.jpeg" alt="Navigate to Auth URL" />
+</figure>
+
+
 1. After successful authentication with a connector, you might want to reset cached token data. In this case, you can utilize the `Navigate to Authentication Screen` action.
 
 2. In the Configure Action's Fields section, you'll find a dropdown option that determines whether the app should be reloaded after authentication or if it should continue from where the user left off.

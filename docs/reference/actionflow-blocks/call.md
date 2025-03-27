@@ -8,12 +8,19 @@ import Thumbnail from '@site/src/components/Thumbnail';
 
 The `Call` action in DronaHQ empowers your app to initiate phone calls directly. This feature is particularly useful when you need to enable users to call a configured phone number, which can either be a default number or dynamically fetched from an input control or sheet column.
 
+This is a native action suitable for mobile application development.
+
 <figure>
 <Thumbnail src="/img/reference/actionflow-blocks/call/call.png" alt="Call" />
 <figcaption align='center'><i>Call</i></figcaption>
 </figure>
 
 ### Setting up the Call Action
+
+
+<figure>
+<Thumbnail src="/img/reference/actionflow-blocks/call/call-feild.jpeg" alt="Call" />
+</figure>
 
 1. Phone Number (Mandatory Field): Start by specifying the phone number in a valid format that you want to call. You can enter a single number, multiple numbers separated by commas, or even fetch the number dynamically using keywords or variables.
 

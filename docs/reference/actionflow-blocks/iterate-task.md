@@ -19,6 +19,9 @@ The `Iterate Tasks` action empowers you to efficiently repeat actions based on s
     </figure>
 
 3. Choose a control or keyword from the dropdown list, containing all currently used controls and keywords in your app. The iteration will operate on select controls and keywords such as datastore, multi-select, and others that return responses in list format.
+    <figure>
+    <Thumbnail src="/img/reference/actionflow-blocks/iterate-task/feild.jpeg" alt="Iterate Tasks" />
+    </figure>
 
    Iterate Tasks supports the following items for iteration:
 

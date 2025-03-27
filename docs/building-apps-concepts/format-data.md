@@ -71,27 +71,56 @@ You can add a Prefix or a Suffix to your numeric values, such as a currency symb
 ### Conditional formatting
 If you need to check each value based on a condition, like if the value is more than or equal to a certain amount, you can make use of conditional formatting.
 
-## Toggle
 
-When you have toggle switches to indicate data, like/dislike, star rating, toggle switch on or off, and so on, you can select styles such as a toggle switch, star, heart, like/dislike, checkmark, or flag.
 
-### Styles
-You can provide different styles of toggle symbols and use different colors for them.
+
+## Single Tag and Multi-Tag
+
+The Single Tag and Multi-Tag components are versatile UI elements that allow users to select one or multiple tags from a predefined list. These components support formatting options for defining how tags are populated, categorized, and displayed, making them adaptable to various use cases like filtering, categorization, or tagging.
 
 <figure>
-  <Thumbnail src="/img/building-apps-concepts/format-data/toggle-style.png" alt="Toggle Styles" />
-  <figcaption align='center'><i>Toggle Styles</i></figcaption>
+  <Thumbnail src="/img/building-apps-concepts/format-data/tags.jpeg" alt="Multi tag" />
+  <figcaption align='center'><i>Multi tag</i></figcaption>
 </figure>
 
 
-## Single Select and Multi-Select
+### Format Options for Adding Tags
 
-Both single and multi-select have formatting to define options and add colors to categorize each type of option.
+Both Single Tag and Multi-Tag components offer two primary ways to configure their options:
 
-<figure>
-  <Thumbnail src="/img/building-apps-concepts/format-data/single-tag.png" alt="Single Select and Multi-Select Tag" />
-  <figcaption align='center'><i>Single Select and Multi-Select Tag</i></figcaption>
-</figure>
+1. Manual  
+   In this mode, you define the tags explicitly. This is useful when the tags are static and predefined.  
+   Example:
+   - `High Priority` (Red)
+   - `Medium Priority` (Yellow)
+   - `Low Priority` (Green)
+
+
+
+2. Dynamic  
+   In this mode, the tags are populated dynamically using a query or data source. This is useful when the list of tags is large, constantly updated, or derived from a database.  
+   Select the Data query in which you can dynamically send the tag values and other meta data. If you map a Data query with "Array of strings" as a format it will auto assign the colors of the tags. In case your Data query is of type JSON - "Array of objects", you can map the values and other meta data below.
+
+
+## Date, Time, and Datetime  
+
+The `Date`, `Time`, and `Datetime` column types in the table grid offer robust formatting options to handle date and time data efficiently and consistently.  
+
+### Format Options  
+- Date Format: Customize how the date is displayed in the column, allowing formats like `dd-mm-yyyy` or `mm/dd/yyyy`.  
+- Time Format: Adjust how the time appears, such as `HH:MM` (24-hour) or `hh:mm AM/PM`.  
+- UTC / Local: Switch between Coordinated Universal Time (UTC) and Local Time for displaying time-based values accurately.  
+- Condition Formatting: Apply custom styles or conditions to the column's data for improved visual representation and analysis.  
+
+### Toggles  
+- Without Date: Available for Time column types, this toggle ensures only the time is displayed, removing any associated date values.  
+- Allow Empty: Present across Date, Time, and Datetime column types, this toggle allows the field to remain empty, providing flexibility for optional inputs.  
+
+<figure>  
+  <Thumbnail src="/img/building-apps-concepts/format-data/format-options.png" alt="Date and Time Formatting Toggles" />  
+  <figcaption align='center'><i>Date and Time Formatting Toggles</i></figcaption>  
+</figure>  
+
 
 
 ## Percent
@@ -114,6 +143,22 @@ You can set icons like a star, heart shape, and set the color for each of the ty
 
 <figure>
   <Thumbnail src="/img/building-apps-concepts/format-data/rating.png" alt="Import Formatting" />
+</figure>
+
+
+
+
+
+## Toggle
+
+When you have toggle switches to indicate data, like/dislike, star rating, toggle switch on or off, and so on, you can select styles such as a toggle switch, star, heart, like/dislike, checkmark, or flag.
+
+### Styles
+You can provide different styles of toggle symbols and use different colors for them.
+
+<figure>
+  <Thumbnail src="/img/building-apps-concepts/format-data/toggle-style.png" alt="Toggle Styles" />
+  <figcaption align='center'><i>Toggle Styles</i></figcaption>
 </figure>
 
 

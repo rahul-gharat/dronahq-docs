@@ -15,6 +15,10 @@ The `Toast` action is a non-intrusive way to display notification messages to us
 
 Key features of the `Toast` action include:
 
+<figure>
+<Thumbnail src="/img/reference/actionflow-blocks/toast/feild.jpeg" alt="Toast" />
+</figure>
+
 - Type: Toast messages can have different types, such as `success,` `warning,` `error,` or `info.` The type defines the color scheme of the toast, making it easy for users to identify the nature of the message.
 
 - Title: This is a short title that appears on the toast. It provides a brief context for the message.
@@ -27,8 +31,6 @@ Key features of the `Toast` action include:
 
 - Close After (in milliseconds): This setting determines the time, in milliseconds, that the toast message will remain visible before automatically disappearing. You can customize this duration based on your application's requirements.
 
-<figure>
-<Thumbnail src="/img/reference/actionflow-blocks/toast/action.png" alt="Toast" />
-</figure>
+
 
 Toasts are a valuable tool for delivering timely information without disrupting the user's workflow. Whether it's a success message, a warning, an error notification, or general information, toasts provide a subtle and user-friendly way to keep your users informed.

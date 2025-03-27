@@ -5,9 +5,9 @@ title: Self-hosted release channels
 
 ### Stable Releases
 
-DronaHQ Self-hosted Stable versions get release approximately every 4-weeks. DronaHQ recomends all users to use stable releases as these are well tested and log supported versions for bugfixes and enhancements.
+DronaHQ Self-hosted Stable versions get release approximately every 4-weeks. DronaHQ recommends all users to use stable releases as these are well tested and log supported versions for bugfixes and enhancements.
 
-For table release, DronaHQ supports deplricated feature for 6 months and share advance notice to each users 2  months in advance before starting wait period for deprication for smooth transition of alretnative.
+For table release, DronaHQ supports depricated feature for 6 months and share advance notice to each users 2  months in advance before starting wait period for deprecation for smooth transition of alretnative.
 
 DronaHQ releases security patches and critical bug fixes more frequently for stable versions. This updates do not contain any functional changes, new features and ui enhancements. Updates in Stable versions can get smothly updated as these are just fixes for critical issues.
 
@@ -15,11 +15,11 @@ DronaHQ releases security patches and critical bug fixes more frequently for sta
 
 DronaHQ edge release occurs once a week preferably on each friday for internal users and releases for end users on next consecutive Monday.
 
-Edge releases are recomended for users who wants to used private beta features, unreleased latest features, partial fixes for critical bugs at early stage. DronaHQ recomends using stable versions for productin use cases.
+Edge releases are recomended for users who wants to used private beta features, unreleased latest features, partial fixes for critical bugs at early stage. DronaHQ recommends using stable versions for productin use cases.
 
 DronaHQ only support most recent edge release. As edge versions released weekly all bugfixes and enhancements happens in next version. Once DronaHQ releases new Edge release, all old previous edge version s become deprecated by default.
 
-DronaHQ recomends all users using edge build to be on latest edge release.
+DronaHQ recommends all users using edge build to be on latest edge release.
 
 ### Database migration
 

@@ -8,12 +8,18 @@ import Thumbnail from '@site/src/components/Thumbnail';
 
 The SMS action in DronaHQ empowers your app to send text messages directly. This feature is particularly useful when you need to enable users to send SMS to a configured phone number, which can either be a default number or dynamically fetched from an input control or sheet column.
 
+This is a native action suitable for mobile application development.
+
 <figure>
 <Thumbnail src="/img/reference/actionflow-blocks/sms/sms.png" alt="SMS" />
 <figcaption align='center'><i>SMS</i></figcaption>
 </figure>
 
 ### Setting up the SMS Action
+
+<figure>
+<Thumbnail src="/img/reference/actionflow-blocks/sms/feild.jpeg" alt="SMS" />
+</figure>
 
 1. Phone Number (Mandatory Field): Start by specifying the phone number in a valid format to which you want to send the SMS. You can enter a single number, multiple numbers separated by commas, or even fetch the number dynamically using keywords or variables.
 
