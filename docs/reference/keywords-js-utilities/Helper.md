@@ -249,3 +249,31 @@ Name, Age, Location
 John Doe, 30, New York
 Jane Smith, 25, Los Angeles
 ```
+
+## GETLOCATION
+
+`HELPER.GETLOCATION()` method can be used to get current location co-ordinates. The location permissions from browser should be allowed in order to use this method. The parameter `location_name` is optional.
+
+<span style={{fontSize: 24}}>Usage</span>
+
+```
+HELPER.GETLOCATION(location_name);
+```
+
+<span style={{fontSize: 24}}>Example</span>
+
+```
+HELPER.GETLOCATION("home");
+
+```
+
+<span style={{fontSize: 24}}>Result</span>
+
+```
+[
+  {
+    "location": "19.0087168,72.8203264",
+    "name": "home"
+  }
+]
+```
