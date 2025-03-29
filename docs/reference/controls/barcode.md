@@ -14,6 +14,10 @@ The Barcode Control is an advanced control that enables barcode scanning. Using 
   <figcaption align = "center"><i>Barcode</i></figcaption>
 </figure>
 
+:::info
+Camera permission handling for Web and Preview would be required for the control to work efficiently.
+:::
+
 ## Binding Data Options
 
  There are different ways in which you can bind data to the Barcode control.
