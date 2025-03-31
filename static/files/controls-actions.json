@@ -1,5 +1,110 @@
 [ 
   {
+    "timestamp": 1743033600000,
+    "tags": ["Control", "Action"],
+    "heading": "",
+    "cards": [
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed an issue for column selection in filter in Table Grid."
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1742860800000,
+    "tags": ["Control", "Action"],
+    "heading": "",
+    "cards": [
+      {
+        "title": "Added",
+        "type": "added",
+        "points": [
+          "Added new GEOLOCATION function to get your desired location in GETLOCATION."
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1742774400000,
+    "tags": ["Control", "Action"],
+    "heading": "",
+    "cards": [
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed issue where GPS control was not showing data.",
+          "Fixed an issue on change form data where values were not getting updated in JSON Schema Form."
+        ]
+      },
+      {
+        "title": "Enhancements",
+        "type": "improved",
+        "points": [
+          "Renamed bind data nomenclature in Breadcrumbs, Switch Group, Profile Groups, Detail Select, and Split Button.",
+          "Minor UI enhancement in Date Range Control."
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1742515200000,
+    "tags": ["Control", "Action"],
+    "heading": "",
+    "cards": [
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixes deprecation message made dynamic in Compute (VARIABLES) and Message (Create dynamic text).",
+          "Fixed HTML view handling in Table Grid Detail View."
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1742428800000,
+    "tags": ["Control", "Action"],
+    "heading": "",
+    "cards": [
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed an issue where IMAGE control was getting the wrong URL.",
+          "Fixed an issue in Table Grid where editing a number-type column converted it to a string; also included minor UI fixes."
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1742342400000,
+    "tags": ["Control", "Action"],
+    "heading": "",
+    "cards": [
+      {
+        "title": "Enhancements",
+        "type": "improved",
+        "points": [
+          "Updated JSON Schema Form control library to avoid lagging issues.",
+          "Changed default formula in Custom Control for better usability."
+        ]
+      },
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed an issue where GETLOCALSTORAGE would cause an exception when the value did not exist in local storage.",
+          "Fixed minor UI issue in METRIC control."
+        ]
+      }
+    ]
+  }
+,
+  {
     "timestamp": 1742169600000,
     "tags": ["Control", "Action"],
     "heading": "",
@@ -487,7 +592,7 @@
     "heading": "",
     "cards": [
       {
-        "title": "Enhanced",
+        "title": "Enhancements",
         "type": "improved",
         "points": ["Added tool tip for the tab container."]
       },
