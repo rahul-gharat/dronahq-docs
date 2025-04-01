@@ -18,6 +18,11 @@ The Barcode Control is an advanced control that enables barcode scanning. Using 
 Camera permission handling for Web and Preview would be required for the control to work efficiently.
 :::
 
+
+:::note 
+You can use web and preview option for existing controls like text input, numeric, phone, currency and Barcode control with barcode scanning support.
+:::
+
 ## Binding Data Options
 
  There are different ways in which you can bind data to the Barcode control.

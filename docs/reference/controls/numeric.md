@@ -24,7 +24,7 @@ The Numeric Control is a versatile tool used to gather numeric data or perform c
 | Placeholder         | Provides a hint to users on what to input. It appears in the field and disappears when users start typing.                           |
 | Decimal Precision   | Defines the number of digits after the decimal point to be displayed. Use 0 for no decimal points.                                   |
 | Debounce Time (ms)  | Specifies the delay between events in milliseconds, controlling the action frequency on value change.                                |
-| Show Barcode Scanner| Enables barcode scanning for data entry using a mobile device's camera. When scanned, the interpreted data sets as the control value. |
+| Show Barcode Scanner| Enables barcode scanning for data entry using device's camera. When scanned, the interpreted data sets as the control value. |
 
 
 ## Control Output
