@@ -306,6 +306,6 @@ The Advanced Section of Data Query allows you to control specific behaviors such
 | Sanitize Special Characters| This option cleans special characters from response data keys to ensure compatibility with downstream processes or integrations. By toggling this ON, you can prevent issues that might arise from unsupported characters in response keys.                                                                                       |
 | Allow Offline Submission   | Enabling this feature ensures the query runs even in offline mode. While offline, certain on-screen actions are skipped, and data submission becomes possible. However, some functionalities, such as file uploads and output variables from previous actions, may not work in this mode.                                       |
 | Download as File           | If the API returns a file or attachment, enabling this setting ensures it is automatically downloaded. For example, when an API response includes a document or an image, the system will download it directly. Note that this applies only to file attachments, not JSON responses.                                         |
-
+|Run on App open | This will make the dataquery to run on app open regardless of if it's referenced in any other control or dataquery.|
 
 

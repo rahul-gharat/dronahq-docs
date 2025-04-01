@@ -106,3 +106,9 @@ This dataquery can be referenced in any control (e.g. dropdown) with the followi
 DronaHQ automatically imports moment.js, underscore.js, crypto.js, papaparse.js, alasql.js and jquery.js by default beyond which you can import your own libraries or script tags or build reusable JS functions using JS objects.
 
 :::
+
+## Advanced
+
+ 1. When to Execute : Here you can write a condition which results in TRUE/FALSE to decide whether to execute this action or not.
+ 2. Error message : Here you can write a error message that will be displayed when the condition fails to execute.
+ 3. Run on App open - Toggle: This will make the dataquery to run on app open regardless of if it's referenced in any other control or dataquery.
