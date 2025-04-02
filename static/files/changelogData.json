@@ -1,4 +1,24 @@
-[  {
+[
+  {
+    "timestamp": 1743465600000,
+    "tags": ["Cloud-Hosted"],
+    "heading": "",
+    "cards": [
+      {
+        "title": "Enhancements",
+        "type": "improved",
+        "points": ["Enhanced SSH Key management with support for passphrase-encrypted keys."]
+      },
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed MongoDb projections."
+        ]
+      }
+    ]
+  },
+  {
     "timestamp": 1743379200000,
     "tags": ["Cloud-Hosted"],
     "heading": "",
@@ -61,100 +81,91 @@
         ]
       }
     ]
-}
-,
-    {
-      "timestamp": 1742256000000,
-      "tags": ["Cloud-Hosted"],
-      "heading": "",
-      "cards": [
-        {
-          "title": "Added",
-          "type": "added",
-          "points": [
-            "Added support for configurable deprecation messages in Actionflow blocks.",
-            "Added a fix for the Autogen PDF form submit button not working."
-          ]
-        },
-        {
-          "title": "Fixed",
-          "type": "fixed",
-          "points": [
-            "Fixed an issue where the 'No data found' text was not displaying correctly in the Data Query listing.",
-            "Fixed an issue where mapped options were not shown when the value was an array of objects.",
-            "Fixed an issue where list-type controls with false or 0 in the static array were being removed from the execution result.",
-            "Fixed an issue where an infinite loading state occurred when an invalid URL was passed while saving the API.",
-            "Fixed an issue where the semantic dropdown was not opening on icon click.",
-            "Fixed minor UI issues in the User and Screen dropdown on Preview.",
-            "Fixed a bug where the Data Query Transform section with data type tags was incorrectly displayed as a list type.",
-            "Fixed a UI issue in Data Query where the connector list showed 'no result' on refresh.",
-            "Fixed a value parsing issue in prepared statement queries.",
-            "Fixed an issue in GETLOCALSTORAGE action where an exception was caused when a value did not exist in local storage on Preview.",
-            "Fixed an issue where the Forms Setup sidebar was not opening by default on load.",
-            "Fixed an edge case for handling strings with double quotes.",
-            "Fixed an issue where the cursor did not display as a pointer in the table grid's column format dropdown for column type selection."
-          ]
-        },
-        {
-          "title": "Enhancements",
-          "type": "improved",
-          "points": [
-            "Enhanced Data Query JSQuery to ensure output formatting is maintained after save."
-          ]
-        }
-      ]
-    },
-    {
-      "timestamp": 1742342400000,
-      "tags": ["Cloud-Hosted"],
-      "heading": "",
-      "cards": [{
-          "title": "Enhancements",
-          "type": "improved",
-          "points": [
-            "Enhanced control editing UX in the Builder."
-          ]
-        },
-        {
-          "title": "Fixed",
-          "type": "fixed",
-          "points": [
-            "Fixed a UI issue where table column titles in the SQL form connector sidebar were misaligned.",
-            "Fixed an issue where the edit connector was not rendering the saved value for the 'use latest MongoDB driver' toggle."
-          ]
-        }
-        
-      ]
-    }
-  ,{
-      "timestamp": 1742256000000,
-      "tags": ["Cloud-Hosted"],
-      "heading": "",
-      "cards": [
-        {
-          "title": "Added",
-          "type": "added",
-          "points": [
-            "Added an expire action in the Redis connector to enhance data management."
-          ]
-        },
-        {
-          "title": "Fixed",
-          "type": "fixed",
-          "points": [
-            "Fixed an issue where the SQL UI test value was getting emptied.",
-            "Fixed an issue where the app type was not correctly checked in tab persistence logic for the App listing."
-          ]
-        },
-        {
-          "title": "Enhancements",
-          "type": "improved",
-          "points": [
-            "Improved default formula handling to support additional data type cases for selected flags."
-          ]
-        }
-      ]
-    },
+  },
+  {
+    "timestamp": 1742256000000,
+    "tags": ["Cloud-Hosted"],
+    "heading": "",
+    "cards": [
+      {
+        "title": "Added",
+        "type": "added",
+        "points": [
+          "Added support for configurable deprecation messages in Actionflow blocks.",
+          "Added a fix for the Autogen PDF form submit button not working."
+        ]
+      },
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed an issue where the 'No data found' text was not displaying correctly in the Data Query listing.",
+          "Fixed an issue where mapped options were not shown when the value was an array of objects.",
+          "Fixed an issue where list-type controls with false or 0 in the static array were being removed from the execution result.",
+          "Fixed an issue where an infinite loading state occurred when an invalid URL was passed while saving the API.",
+          "Fixed an issue where the semantic dropdown was not opening on icon click.",
+          "Fixed minor UI issues in the User and Screen dropdown on Preview.",
+          "Fixed a bug where the Data Query Transform section with data type tags was incorrectly displayed as a list type.",
+          "Fixed a UI issue in Data Query where the connector list showed 'no result' on refresh.",
+          "Fixed a value parsing issue in prepared statement queries.",
+          "Fixed an issue in GETLOCALSTORAGE action where an exception was caused when a value did not exist in local storage on Preview.",
+          "Fixed an issue where the Forms Setup sidebar was not opening by default on load.",
+          "Fixed an edge case for handling strings with double quotes.",
+          "Fixed an issue where the cursor did not display as a pointer in the table grid's column format dropdown for column type selection."
+        ]
+      },
+      {
+        "title": "Enhancements",
+        "type": "improved",
+        "points": ["Enhanced Data Query JSQuery to ensure output formatting is maintained after save."]
+      }
+    ]
+  },
+  {
+    "timestamp": 1742342400000,
+    "tags": ["Cloud-Hosted"],
+    "heading": "",
+    "cards": [
+      {
+        "title": "Enhancements",
+        "type": "improved",
+        "points": ["Enhanced control editing UX in the Builder."]
+      },
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed a UI issue where table column titles in the SQL form connector sidebar were misaligned.",
+          "Fixed an issue where the edit connector was not rendering the saved value for the 'use latest MongoDB driver' toggle."
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1742256000000,
+    "tags": ["Cloud-Hosted"],
+    "heading": "",
+    "cards": [
+      {
+        "title": "Added",
+        "type": "added",
+        "points": ["Added an expire action in the Redis connector to enhance data management."]
+      },
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed an issue where the SQL UI test value was getting emptied.",
+          "Fixed an issue where the app type was not correctly checked in tab persistence logic for the App listing."
+        ]
+      },
+      {
+        "title": "Enhancements",
+        "type": "improved",
+        "points": ["Improved default formula handling to support additional data type cases for selected flags."]
+      }
+    ]
+  },
   {
     "timestamp": 1741737600000,
     "tags": ["Cloud-Hosted"],
@@ -163,9 +174,7 @@
       {
         "title": "Fixed",
         "type": "fixed",
-        "points": [
-          "Fixed an issue where non-array cases were not properly handled in getAllPossibleHeaders."
-        ]
+        "points": ["Fixed an issue where non-array cases were not properly handled in getAllPossibleHeaders."]
       },
       {
         "title": "Enhancements",
@@ -185,13 +194,10 @@
       {
         "title": "Fixed",
         "type": "fixed",
-        "points": [
-          "Fixed an issue where nested key suggestion execution in Actionflow was not functioning correctly."
-        ]
+        "points": ["Fixed an issue where nested key suggestion execution in Actionflow was not functioning correctly."]
       }
     ]
-  }
-,
+  },
   {
     "timestamp": 1741219200000,
     "tags": ["Cloud-Hosted"],
