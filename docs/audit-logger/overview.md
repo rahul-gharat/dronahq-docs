@@ -24,9 +24,9 @@ DronaHQ Managed Audit Logging is supported only on self hosted version.
 
 To enable this feature you need to configure this environment variable on your self-hosted environment file
 
-    DHQ_MANAGED_AUDIT_LOG_ENABLED=’true’
+    DHQ_MANAGED_AUDIT_LOG_ENABLED=true
 
-Once this is enabled, your audit logs will be saved in the `dhq_managed_audit_log` collection which will be auto-created in your configured `DHQ_MONGODB_HOST` server with database name `DHQ_MONGODB_DATABASE`.
+Once this is enabled, your audit logs will be saved in the `audit_logs` collection which will be auto-created in your configured `MONGODB_HOST` server with database name `MONGODB_DATABASE`.
 The above variables are configured while setting up self-hosted instance.
 
  Once this is set up, go to `Account Settings -> General & Security -> Audit Logging` section, you will find `DronaHQ managed Audit Logging is Enabled` message and to View Audit logs you can click on `View Audit Logs` button
