@@ -1,4 +1,43 @@
-[
+[{
+    "timestamp": 1743724800000,
+    "tags": ["Self-Hosted", "3.7.0-edge"],
+    "heading": "Version 3.7.0-edge",
+    "cards": [
+        {
+            "title": "Added",
+            "type": "added",
+            "points": [
+                "Added support for IAM Role based access for GCP Storage.",
+                "Added support for AWS S3 compatible Storage for file storage."
+            ]
+        },
+        {
+            "title": "Enhancements",
+            "type": "improved",
+            "points": [
+                "Enhanced to support nonce exception by adding Buckets URL to whitelisted domains."
+            ]
+        },
+        {
+            "title": "Fixed",
+            "type": "fixed",
+            "points": [
+                "Fixed an issue where on click of share button, the sidebar was not opening.",
+                "Fixed an issue where switching to table view removed response data.",
+                "Fixed an issue in DQ whenToExecute failure to stop execution on preview and package.",
+                "Fixed an issue where publish was not working as expected.",
+                "Fixed Health Status File Repository check throwing invalid file name error.",
+                "Fixed a bug in DataQuery where on cursor-based pagination, Offset key dropdown option was not displaying.",
+                "Fixed an issue where, on connector test, INSERT, UPDATE, and DELETE queries would not execute.",
+                "Fixed missing lib reference and corrected image references.",
+                "Fixed Logout action taking too much time in public app with allowed verified user.",
+                "Fixed broken user activation UI.",
+                "Fixed an issue where clicking the 'Get Reset Link' button on the Reset Password screen resulted in an error."
+            ]
+        }
+    ]
+}
+,
   {
     "timestamp": 1743206400000,
     "tags": ["Self-Hosted", "3.7.0-edge"],
