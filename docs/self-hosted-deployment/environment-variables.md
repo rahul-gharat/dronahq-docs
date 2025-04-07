@@ -322,6 +322,9 @@ If you prefer to keep your S3 bucket private, you can set up an authentication m
 AWS_S3_BUCKET_PROXY_URL=https://dronahq.example-proxy.com
 ```
 
+#### `AWS_S3_ENDPOINT`
+Specifies a custom S3-compatible endpoint URL for AWS SDKs and tools. Set this when using third-party or self-hosted S3 storage solutions. Defaults to AWS's standard S3 endpoint if not set. Useful for private cloud deployments or local testing. When this variable is set, DronaHQ will internally enable `s3ForcePathStyle`. Ensure the endpoint is accessible and correctly configured.
+
 ### Azure Storage Container Configuration
 
 You can use an **Azure Storage Container** as a file storage solution with DronaHQ. DronaHQ will store uploaded files, application resources, and published applications in the container.
@@ -359,6 +362,9 @@ This is the file path (inside your container or mapped volume) of your Google Cl
 
 #### `GCLOUD_STORAGE_BUCKET_NAME`
 This is the storage bucket where DronaHQ will upload application resources and user files. This bucket will also serve some resources for your applications.
+
+#### `GCLOUD_IAM_ROLE_ACCESS`
+Set to `true` to enable IAM role-based access control for Google Cloud services. When enabled, the application will use assigned IAM roles for authentication and authorization. Defaults to `false` if not set. This is useful for restricting access based on predefined roles. Ensure the necessary IAM roles are assigned to avoid permission issues.
 
 ## Automation
 
