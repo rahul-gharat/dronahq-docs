@@ -1,0 +1,132 @@
+---
+sidebar_position: 101
+---
+
+# DronaHQ Self-Hosted Migration Plan: Docker to Kubernetes
+
+This document outlines a **comprehensive, step-by-step plan** to migrate your DronaHQ self-hosted instance from Docker to Kubernetes. The process ensures minimal downtime and maximum reliability.
+
+---
+
+## 📅 Pre-Migration Preparation
+
+### 1. 🔔 Notify All Developers
+- Inform the team about the **planned downtime** in advance.
+- During this window, **no app creation, editing, or publishing** should occur.
+- Any changes made during migration **may be lost** — communicate this clearly.
+
+---
+
+### 2. 🛡️ Take Database Backups
+- Perform **simultaneous backups** of both:
+  - **MySQL**
+  - **MongoDB**
+- Restore these backups to **cloud-hosted** or **externally managed** databases for accessibility from Kubernetes.
+
+---
+
+### 3. ☁️ Upload File Repository to Cloud Storage
+- Migrate all files from your **local file repository** to one of the following cloud storage solutions:
+  - AWS S3
+  - Google Cloud Storage (GCS)
+  - Azure Blob Storage (S3-compatible)
+- Ensure:
+  - The **folder/path structure** remains intact.
+  - **Public read access** or appropriate IAM/ACL permissions are configured.
+
+---
+
+### 4. 🛠️ Update Resource URLs in MySQL
+- Execute **3 SQL update queries** to replace file paths with new cloud storage URLs.
+- Request these queries directly from the **DronaHQ support team**.
+
+---
+
+### 5. 🔐 Configure Access Permissions & Network Connectivity
+Ensure your Kubernetes cluster can successfully connect to:
+- ✅ **MySQL** & **MongoDB** instances
+- ✅ Cloud file storage (S3/GCS/Azure Blob)
+- ✅ DronaHQ License Server: [https://license.dronahq.com](https://license.dronahq.com)
+
+> 🔄 **Test all connections thoroughly** to confirm accessibility before proceeding.
+
+---
+
+## ⚙️ Kubernetes Setup
+
+### 6. 📦 Pull Latest DronaHQ Image
+\`\`\`bash
+docker pull dronahq/self-hosted:3.6.1
+\`\`\`
+
+---
+
+### 7. 📄 Create Kubernetes Manifests
+- Define all **deployment YAML files** including:
+  - \`Deployment\`
+  - \`Service\`
+  - \`Ingress\`
+  - Required **environment variables** (e.g. DB credentials, S3 config)
+
+---
+
+### 8. 🌐 Deploy to a Temporary Domain
+- Deploy the platform on a **temporary subdomain** to validate setup:
+  - Example: \`staging-dronahq.yourdomain.com\`
+
+---
+
+### 9. 🔍 Perform Initial Checks
+- Verify:
+  - The **portal loads** without errors.
+  - Published apps correctly **fetch assets from the cloud storage**.
+
+---
+
+## 🚧 Migration Execution — Downtime Starts
+
+### 10. ⏳ Start Downtime Window
+- Officially **announce downtime start**.
+- Freeze all user and developer activity on the platform.
+
+---
+
+### 11. 🌍 Switch Production Domain
+- Update DNS to point the main domain to your **Kubernetes Ingress/Load Balancer**:
+  - \`dronahq.yourdomain.com ➜ Kubernetes IP\`
+
+---
+
+## ✅ Post-Migration Validation
+
+### 12. 🧪 Test Everything End-to-End
+Ensure all core functionalities work perfectly:
+- 🔧 Apps open in **Builder**
+- 👥 Apps open in **End User Portal**
+- 🔒 Apps work in **Secure Embed Mode**
+- 🔌 **Connectors** fetch and return data
+- 🖼️ Published apps load assets from **cloud storage**
+- 🔁 Assets load properly via **reverse proxy**
+- ✅ Key business apps work **end-to-end**
+
+---
+
+### 13. 🎉 Confirm Migration Success
+- Declare the **migration successful**.
+- Announce the **end of downtime** to the team and stakeholders.
+
+---
+
+## 🔁 Rollback Plan (If Needed)
+
+### 14. ⏮️ Revert to Old Setup
+- In case of unexpected issues:
+  - Switch domain back to the **Docker-based deployment**.
+  - Troubleshoot and fix problems.
+  - Retry the migration once the issues are resolved.
+
+---
+
+## 📌 Final Notes
+> A successful migration depends on **precise planning, clear communication**, and **flawless execution**.  
+Reach out to the DronaHQ team or your Kubernetes admin for support during the process.
