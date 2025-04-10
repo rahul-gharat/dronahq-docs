@@ -1,5 +1,26 @@
 [
   {
+    "timestamp": 1744257904000,
+    "tags": ["Self-Hosted", "3.6.2-stable"],
+    "heading": "Version 3.6.2-stable",
+    "cards": [
+      {
+        "title": "Enhancements",
+        "type": "improved",
+        "points": [
+          "Enhanced the Asset Manager with support for cloud services."
+        ]
+      },
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed file repository fallback issues by adding a reverse proxy for cloud storage."
+        ]
+      }
+    ]
+  },
+  {
     "timestamp": 1742515200000,
     "tags": ["Self-Hosted", "3.6.1-stable"],
     "heading": "Version 3.6.1-stable",
@@ -8,11 +29,12 @@
         "title": "Fixed",
         "type": "fixed",
         "points": [
-         "Fixed an issue where the Form Repeat Control was not working as expected in the package.",   "Fixed a dropdown issue in the Google Sheets connector."  
-, "Fixed environment variable validation for managed audit logs. " 
-, "Fixed a bug where Rules were not working when referencing a query string set via micro-app navigation.",
-"Fixed an issue where App name was not getting passed in published api call.",
-"Fixed an issue with secure embed where it was stuck in an infinite loading state."
+          "Fixed an issue where the Form Repeat Control was not working as expected in the package.",
+          "Fixed a dropdown issue in the Google Sheets connector.",
+          "Fixed environment variable validation for managed audit logs. ",
+          "Fixed a bug where Rules were not working when referencing a query string set via micro-app navigation.",
+          "Fixed an issue where App name was not getting passed in published api call.",
+          "Fixed an issue with secure embed where it was stuck in an infinite loading state."
         ]
       }
     ]
