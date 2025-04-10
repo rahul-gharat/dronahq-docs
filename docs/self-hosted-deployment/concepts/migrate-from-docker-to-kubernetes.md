@@ -1,18 +1,24 @@
 ---
-sidebar_position: 101
+sidebar_position: 2
+title: DronaHQ Self-Hosted Migration Plan- Docker to Kubernetes
 ---
+import Image from '@site/src/components/Image';
+import VersionedLink from '@site/src/components/VersionedLink';
+import Thumbnail from '@site/src/components/Thumbnail';
 
 # DronaHQ Self-Hosted Migration Plan: Docker to Kubernetes
 
 
 
-This technical guide outlines a complete and structured plan for migrating your **DronaHQ self-hosted deployment** from a **Docker-based environment** to a **Kubernetes-based infrastructure**. The goal of this migration is to enhance scalability, increase operational reliability, and align your deployment with modern DevOps best practices. By following this migration plan step-by-step, you can ensure a smooth transition with minimal service disruption and secure integration with all required backend resources such as databases, file storage, and license management services.
+This technical guide outlines a complete and structured plan for migrating your **DronaHQ self-hosted deployment** from a **Docker-based environment** to a **Kubernetes-based infrastructure**. 
 
----
+The goal of this migration is to enhance scalability, increase operational reliability, and align your deployment with modern DevOps best practices. 
+
+By following this migration plan step-by-step, you can ensure a smooth transition with minimal service disruption and secure integration with all required backend resources such as databases, file storage, and license management services.
+
+
 
 ## Pre-Migration Preparation
-
-
 
 ### Notify Your Development Teams
 
