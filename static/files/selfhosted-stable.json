@@ -15,7 +15,8 @@
         "title": "Fixed",
         "type": "fixed",
         "points": [
-          "Fixed file repository fallback issues by adding a reverse proxy for cloud storage."
+          "Fixed file repository fallback issues by adding a reverse proxy for cloud storage.",
+          "Fixed JavaScript module import issue on builder - which was clashing with existing module"
         ]
       }
     ]
