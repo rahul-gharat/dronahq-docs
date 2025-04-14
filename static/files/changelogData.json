@@ -1,42 +1,60 @@
-[{
-  "timestamp": 1744186803000,
-  "tags": ["Cloud-Hosted"],
-  "heading": "",
-  "cards": [
-    {
-      "title": "Added",
-      "type": "added",
-      "points": [
-        "Added 'Add to wishlist' feature for upcoming builds with AI chat support.",
-        "Implemented Redis for RunAPI connector database calls."
-      ]
-    },
-    {
-      "title": "Fixed",
-      "type": "fixed",
-      "points": [
-        "Fixed AI column format bug and improved Ask AI functionality.",
-        "Fixed multiple bugs and UI issues in AI Assist.",
-        "Fixed an issue where 'whenToExecute' save and render was not working for Connector Query in Data Query.",
-        "Fixed an issue where the Offset key dropdown option was not displaying during cursor-based pagination in Data Query.",
-        "Fixed an issue where action flow was not cleared when duplicating or copy-pasting a control.",
-        "Fixed an issue where the tray screen footer appeared incorrectly when the keyboard was visible.",
-        "Fixed AWS region field in connector sidebar by changing it to a dropdown for Athena and AWS IAM authentication.",
-        "Fixed an issue in Summary control where the Pages selection dropdown (multi-select) was not functioning correctly.",
-        "Fixed an issue where clicking a control with custom validation through properties caused it to lose focus."
-      ]
-    },
-    {
-      "title": "Enhancements",
-      "type": "improved",
-      "points": [
-        "Enhanced dynamic field binding by merging two mapping functions into one optimized function.",
-        "Enhanced logging by replacing all console.* calls with logger.*."
-      ]
-    }
-  ]
-}
-,
+[
+  {
+    "timestamp": 1744633065000,
+    "tags": ["Cloud-Hosted"],
+    "heading": "",
+    "cards": [
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed an issue where the data query (DQ) filter popup was getting cut off at the bottom.",
+          "Fixed a bug where toast messages were getting cut off on HHD (Handheld Device) screens.",
+          "Fixed an issue where opening a tray screen caused the main screen to shift unexpectedly.",
+          "Fixed an issue where falsy values were being incorrectly treated as empty strings when passed as custom parameters in trigger data queries.",
+          "Fixed an issue where the schema did not update when the Firebase service was changed in the query editor or data query."
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1744186803000,
+    "tags": ["Cloud-Hosted"],
+    "heading": "",
+    "cards": [
+      {
+        "title": "Added",
+        "type": "added",
+        "points": [
+          "Added 'Add to wishlist' feature for upcoming builds with AI chat support.",
+          "Implemented Redis for RunAPI connector database calls."
+        ]
+      },
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed AI column format bug and improved Ask AI functionality.",
+          "Fixed multiple bugs and UI issues in AI Assist.",
+          "Fixed an issue where 'whenToExecute' save and render was not working for Connector Query in Data Query.",
+          "Fixed an issue where the Offset key dropdown option was not displaying during cursor-based pagination in Data Query.",
+          "Fixed an issue where action flow was not cleared when duplicating or copy-pasting a control.",
+          "Fixed an issue where the tray screen footer appeared incorrectly when the keyboard was visible.",
+          "Fixed AWS region field in connector sidebar by changing it to a dropdown for Athena and AWS IAM authentication.",
+          "Fixed an issue in Summary control where the Pages selection dropdown (multi-select) was not functioning correctly.",
+          "Fixed an issue where clicking a control with custom validation through properties caused it to lose focus."
+        ]
+      },
+      {
+        "title": "Enhancements",
+        "type": "improved",
+        "points": [
+          "Enhanced dynamic field binding by merging two mapping functions into one optimized function.",
+          "Enhanced logging by replacing all console.* calls with logger.*."
+        ]
+      }
+    ]
+  },
   {
     "timestamp": 1743465600000,
     "tags": ["Cloud-Hosted"],
@@ -50,9 +68,7 @@
       {
         "title": "Fixed",
         "type": "fixed",
-        "points": [
-          "Fixed MongoDb projections."
-        ]
+        "points": ["Fixed MongoDb projections."]
       }
     ]
   },
