@@ -1,5 +1,55 @@
 [
   {
+    "timestamp": 1745213952000,
+    "tags": ["Cloud-Hosted"],
+    "heading": "",
+    "cards": [
+      {
+        "title": "Added",
+        "type": "added",
+        "points": [
+          "Added a fix for autogen form removing composite control and UI fixes.",
+          "Added support to auto-populate custom parameters in Trigger Dataquery actions.",
+          "Added moment-timezone library.",
+          "Added ARN to AWS Athena connector.",
+          "Added Automation rename option.",
+          "Added search functionality for 'Move' and 'Duplicate' action task selection in Actionflow.",
+          "Added expire time field in set action of Redis connector."
+        ]
+      },
+      {
+        "title": "Enhancements",
+        "type": "improved",
+        "points": [
+          "Enhanced font visibility with color-coding and improved sidebar close icon.",
+          "Enhanced default loader functionality by adding reset to default loader option."
+        ]
+      }   ,     
+    {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "UI Modification: balanced dropdown padding, uniform toggle borders, matched formula box radius, and enabled popup & advanced section dropdown overflow.",
+          "Fixed an issue where on new app creation, the page template opened by default and affected the app creation flow.",
+          "Fixed dropdowns to close properly on sidebar close and 'add more' click.",
+          "Fixed an issue where validation errors persisted when reopening the Manage Group sidebar under Manage Users.",
+          "Fixed an issue where the users dropdown in preview was not displaying the initial list and did not persist the selected user after switching.",
+          "Fixed bug where removing event in new property caused wrong data storage in Actionflow key.",
+          "Fixed label alignment not working.",
+          "Fixed an issue where some control dropdowns in the right properties panel failed due to stringified values instead of arrays.",
+          "Fixed: controls used in Dataquery are now gracefully handled on delete.",
+          "Fixed role-based permission model implementation for granular permissions.",
+          "Fixed enhancements in connector search bar.",
+          "Fixed typo in control error messages.",
+          "Fixed an issue where offline submission value was not passed to the intended function.",
+          "Fixed icon padding in 'Inside property' advanced settings.",
+          "Fixed issue in quick select sheet option not appearing green like other options.",
+          "Fixed an issue where control selection was lost when dragging and releasing outside the green drop area on the builder canvas."
+        ]
+      }
+    ]
+  },
+  {
     "timestamp": 1744633065000,
     "tags": ["Cloud-Hosted"],
     "heading": "",
