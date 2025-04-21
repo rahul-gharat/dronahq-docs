@@ -1,8 +1,8 @@
 [
   {
     "timestamp": 1745213952000,
-    "tags": ["Self-Hosted", "3.7.0-edge"],
-    "heading": "Version 3.7.0-edge",
+    "tags": ["Self-Hosted", "3.7.0-stable"],
+    "heading": "Version 3.7.0-stable",
     "cards": [
       {
         "title": "Added",
