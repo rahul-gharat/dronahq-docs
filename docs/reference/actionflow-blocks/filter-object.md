@@ -26,7 +26,8 @@ Here's how to use the Filter Object action:
 
 ### Practical Application
 
-In the example above, we have a data source represented by an array of objects. By applying a filter condition, we can refine this data based on specific criteria. In this case, only the objects with an `active_user` value of 1 have been filtered.
+
+Let's say our data source is `query_1`, which contains product information as key-value pairs. By applying a filter condition like `{{query_1.category == "Skincare"}}`, we can selectively work with entries that belong to a specific category. In this case, only the product(s) categorized under `“Skincare”` will be filtered and returned.
 
 <figure>
 <Thumbnail src="/img/reference/actionflow-blocks/filter-object/feild.png" alt="Filter Object Window" />
