@@ -24,7 +24,9 @@ With this action, you can trigger queries based on user interactions or other co
 
 ### Using the TriggerDataQuery Action
 1. Choose the relevant query that you wish to trigger from your data source.
-2. **(OPTIONAL)**Define any specific parameters that should be passed to the query based on user inputs or predefined conditions.
+2. Override Dynamic Variables Toggle - This toggle, allows you to automatically  set values for variables by enabling user to pass `custom parameters`. Query specific parameters that should be passed to the query will be auto-populated.
+3. Trigger Data Query Dependencies Toggle - This toggle, when enabled, ensures that any dependent data queries are automatically re-triggered.
+
 
 
 
