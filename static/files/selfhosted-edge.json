@@ -1,44 +1,94 @@
 [
   {
+    "timestamp": 1745213952000,
+    "tags": ["Self-Hosted", "3.7.0-edge"],
+    "heading": "Version 3.7.0-edge",
+    "cards": [
+      {
+        "title": "Added",
+        "type": "added",
+        "points": [
+          "Added moment-timezone library.",
+          "Added support for configurable deprecation messages in Actionflow blocks."
+        ]
+      },
+      {
+        "title": "Enhancements",
+        "type": "improved",
+        "points": [
+          "Enhanced support for environment variables in oauth_v2 type, multistep auth, and related features.",
+          "Enhanced UI with new 'Publish' and 'Publish with Git' buttons.",
+          "Improved logging by removing unwanted automation JSON from console output."
+        ]
+      },
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed an issue where isPDFAccess was being set to the wrong value.",
+          "Fixed an issue with Postgres insert/update query where $ was causing failure.",
+          "Fixed an issue in published app where persistent variable was making extra connector calls.",
+          "Fixed loader fallback when selected loader fails to load.",
+          "Fixed DQ filter popup getting cut off from the bottom.",
+          "Fixed an issue where Multistep SSO was not working in secure embed.",
+          "Fixed default access issue for PDF Creator and Connector in Automation.",
+          "Fixed default access issue for PDF Creator and Connector in Builder.",
+          "Fixed issue in Google OAuth SSO.",
+          "Fixed an issue where offline submission value was not being passed to the desired function.",
+          "Fixed blank screen issue on double-clicking menu item to navigate to another screen.",
+          "Fixed toast message box for HHD screen size.",
+          "Fixed headers not getting created in list-type controls.",
+          "Fixed default text property UI bug in Rich Text Editor control.",
+          "Fixed padding for Inside property advanced settings icon.",
+          "Fixed issue where color picker box was not clickable.",
+          "Fixed dropdown in Microapp Nav action configuration closing when clicking inside search bar.",
+          "Fixed falsy values being treated as empty strings in custom parameters for trigger data query.",
+          "Fixed validation errors persisting when reopening Manage Group sidebar under Manage Users.",
+          "Fixed issue where selected preview user and useremail keyword were not matching.",
+          "Fixed main screen shifting when tray screen opens.",
+          "Fixed tray screen footer misalignment when keyboard was visible.",
+          "Fixed typographic mistake in error handling."
+        ]
+      }
+    ]
+  },
+  {
     "timestamp": 1743724800000,
     "tags": ["Self-Hosted", "3.7.0-edge"],
     "heading": "Version 3.7.0-edge",
     "cards": [
-        {
-            "title": "Added",
-            "type": "added",
-            "points": [
-                "Added support for IAM Role based access for GCP Storage.",
-                "Added support for AWS S3 compatible Storage for file storage."
-            ]
-        },
-        {
-            "title": "Enhancements",
-            "type": "improved",
-            "points": [
-                "Enhanced to support nonce exception by adding Buckets URL to whitelisted domains."
-            ]
-        },
-        {
-            "title": "Fixed",
-            "type": "fixed",
-            "points": [
-                "Fixed an issue where on click of share button, the sidebar was not opening.",
-                "Fixed an issue where switching to table view removed response data.",
-                "Fixed an issue in DQ whenToExecute failure to stop execution on preview and package.",
-                "Fixed an issue where publish was not working as expected.",
-                "Fixed Health Status File Repository check throwing invalid file name error.",
-                "Fixed a bug in DataQuery where on cursor-based pagination, Offset key dropdown option was not displaying.",
-                "Fixed an issue where, on connector test, INSERT, UPDATE, and DELETE queries would not execute.",
-                "Fixed missing lib reference and corrected image references.",
-                "Fixed Logout action taking too much time in public app with allowed verified user.",
-                "Fixed broken user activation UI.",
-                "Fixed an issue where clicking the 'Get Reset Link' button on the Reset Password screen resulted in an error."
-            ]
-        }
+      {
+        "title": "Added",
+        "type": "added",
+        "points": [
+          "Added support for IAM Role based access for GCP Storage.",
+          "Added support for AWS S3 compatible Storage for file storage."
+        ]
+      },
+      {
+        "title": "Enhancements",
+        "type": "improved",
+        "points": ["Enhanced to support nonce exception by adding Buckets URL to whitelisted domains."]
+      },
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed an issue where on click of share button, the sidebar was not opening.",
+          "Fixed an issue where switching to table view removed response data.",
+          "Fixed an issue in DQ whenToExecute failure to stop execution on preview and package.",
+          "Fixed an issue where publish was not working as expected.",
+          "Fixed Health Status File Repository check throwing invalid file name error.",
+          "Fixed a bug in DataQuery where on cursor-based pagination, Offset key dropdown option was not displaying.",
+          "Fixed an issue where, on connector test, INSERT, UPDATE, and DELETE queries would not execute.",
+          "Fixed missing lib reference and corrected image references.",
+          "Fixed Logout action taking too much time in public app with allowed verified user.",
+          "Fixed broken user activation UI.",
+          "Fixed an issue where clicking the 'Get Reset Link' button on the Reset Password screen resulted in an error."
+        ]
+      }
     ]
-}
-,
+  },
   {
     "timestamp": 1743206400000,
     "tags": ["Self-Hosted", "3.7.0-edge"],
@@ -59,21 +109,19 @@
         "title": "Enhancements",
         "type": "improved",
         "points": [
-          
-              "Enhanced security by removing sensitive information from REST API and GraphQL connector network calls.",
-              "Enhanced documentation with updated URLs for run logs and custom task logs.",
-              "Enhanced automation variables to provide better flexibility and usability.",
-              "Enhanced the Snowflake connector for improved functionality. Which also handles exception in case of wrong passphrase while authenticate with private key",
-              "Enhanced security by auto-generating default secret keys on restart, removing the need for manual setup.",
-              "Enhanced DronaHQ by syncing cloud fixes and features with self-hosted environments for consistency.",
-              "Enhanced with support for suggesting nested keys in JSEditor and String Builder.",
-              "Enhanced the 'Order By' text click behavior by adding a dynamic tooltip in the Studio apps list sorting.",
-              "Enhanced flexibility by allowing access to environment variables in connectors.",
-              "Enhanced the Databricks connector by adding schema support for better integration.",
-              "Enhanced user experience by maintaining scroll position in the Screens sidebar when selecting a screen.",
-              "Enhanced DQ JS Query formatting, ensuring the output is correctly formatted after saving.",
-              "Improved the environment variable support for oauth_v2 type, multistep autentiction and more."
-          
+          "Enhanced security by removing sensitive information from REST API and GraphQL connector network calls.",
+          "Enhanced documentation with updated URLs for run logs and custom task logs.",
+          "Enhanced automation variables to provide better flexibility and usability.",
+          "Enhanced the Snowflake connector for improved functionality. Which also handles exception in case of wrong passphrase while authenticate with private key",
+          "Enhanced security by auto-generating default secret keys on restart, removing the need for manual setup.",
+          "Enhanced DronaHQ by syncing cloud fixes and features with self-hosted environments for consistency.",
+          "Enhanced with support for suggesting nested keys in JSEditor and String Builder.",
+          "Enhanced the 'Order By' text click behavior by adding a dynamic tooltip in the Studio apps list sorting.",
+          "Enhanced flexibility by allowing access to environment variables in connectors.",
+          "Enhanced the Databricks connector by adding schema support for better integration.",
+          "Enhanced user experience by maintaining scroll position in the Screens sidebar when selecting a screen.",
+          "Enhanced DQ JS Query formatting, ensuring the output is correctly formatted after saving.",
+          "Improved the environment variable support for oauth_v2 type, multistep autentiction and more."
         ]
       },
       {
