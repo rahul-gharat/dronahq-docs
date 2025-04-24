@@ -6,259 +6,379 @@ import Thumbnail from '@site/src/components/Thumbnail';
 
 # Environment Variables
 
-Environment variables for Self-hosted DronaHQ deployments.
+## Overview
 
-Environment variables control or override certain functions and characteristics of [Self-hosted DronaHQ](https://github.com/dronahq/self-hosted) instances. Some DronaHQ features require you to set environment variables.
+Environment variables allow you to configure and customize your **Self-hosted DronaHQ** deployment. These variables control key functionalities, override default settings, and enable optional features. Some features in DronaHQ require specific environment variables to be set for proper operation.
 
-You should only configure environment variables when needed. You must restart your instance after setting any variables for them to take effect.
+## Best Practices
 
-## General
-General environment variables available for use with Self-hosted DronaHQ deployments.
+- **Only set variables when necessary** – Avoid modifying default settings unless required.
+- **Restart your instance** after making changes for the variables to take effect.
+- **Secure sensitive values** – Store credentials and tokens securely using a vault or secrets management tool.
+- Use a **`.env`** file to manage environment variables systematically.
 
-#### `BUILDER_URL` (deprecated)
+## Configuration
 
-The full URL of your DronaHQ deployment for accessing creators portal, End-user portal, user invitations and password resets. This also needs to be set if you dynamically set callback URLs on protected resources.
+You can define environment variables directly in your shell, within your Docker Compose file, or in a Kubernetes deployment manifest.
 
-    BUILDER_URL='https://dronahq.example.com'
+### Setting Variables in Shell
 
-If unset, DronaHQ determine the base domain automatically from your local machine with port number.
+```sh
+export VARIABLE_NAME=value
+```
 
-    BUILDER_URL='http://localhost:8080'
+### Using a `.env` File
 
-You can use `DOMAIN` & `SECURE_HTTP` variable pair instead of `BUILDER_URL`
+Create a `.env` file in your deployment directory:
 
-#### `DOMAIN`
-This is your domain name or DNS owned by you, which you can set to your self hosted installations.
+```env
+VARIABLE_NAME=value
+```
 
-    DOMAIN='dronahq.example.com'
+### Defining Variables in Docker Compose
 
-#### `SECURE_HTTP`
+```yaml
+services:
+  webapp:
+    environment:
+      - VARIABLE_NAME=value
+```
 
-This variable specifies you want to use your self hosted installation over SSL. 
-If set `true`, system will access above `DOMAIN` with `https` protocol
-If not set, system will access above `DOMAIN` with `http` protocol. with this, you may not be able to access resources with `SSL` enabled.
+### Using Environment Variables in Kubernetes
 
-    SECURE_HTTP='false'
+```yaml
+spec:
+  containers:
+    - name: dronahq-webapp
+      env:
+        - name: VARIABLE_NAME
+          value: "value"
+```
 
-#### `PATHNAME`
+For a full list of supported environment variables and their descriptions, refer to the official *documentation*.
 
-If you are deploying DronaHQ with custom webserver on `sub-path`, then this option will be useful.
+By properly configuring environment variables, you can optimize the performance, security, and functionality of your **Self-hosted DronaHQ** instance.
 
-Example.
+## General Environment Variables
+
+These environment variables configure key aspects of **DronaHQ Self-Hosted** deployments.
+
+#### `BUILDER_URL` (Recommended)
+
+Defines the base URL for accessing the **Creator Portal**, **End-User Portal**, user invitations, password resets, and callback URLs for protected resources.
+
+###### Example:
+```sh
+BUILDER_URL=https://dronahq.example.com
+```
+If unset, DronaHQ automatically determines the base URL from your machine's local configuration.
+
+###### Default (Localhost Example):
+```sh
+BUILDER_URL=http://localhost:8080
+```
+
+> **Alternative Approach:** You can use `DOMAIN` and `SECURE_HTTP` variables instead of `BUILDER_URL`.
+
+#### `DOMAIN` (Alternative to `BUILDER_URL`)
+
+Defines the domain name of your **DronaHQ Self-Hosted** instance. Use this when not specifying `BUILDER_URL`.
+
+###### Example:
+```sh
+DOMAIN=dronahq.example.com
+```
+
+#### `SECURE_HTTP` (Alternative to `BUILDER_URL`)
+
+Determines whether DronaHQ should use **HTTPS**. This setting is only required if `BUILDER_URL` is not used.
+
+- If set to `true`, DronaHQ uses **HTTPS**.
+- If set to `false` or unset, DronaHQ defaults to **HTTP**.
+
+###### Example:
+```sh
+SECURE_HTTP=true
+```
+
+> If you disable HTTPS (`SECURE_HTTP=false`), some features requiring SSL may not function properly.
+
+#### `PATHNAME` (Optional – Use for Sub-Path Deployments)
+
+If DronaHQ is deployed on a **sub-path** rather than the root domain, specify the path using this variable.
+
+###### Example Scenario:
+Your instance is accessible at:
 ```
 https://dronahq.example.com/studio
 ```
-
-In this variable you only have to provide sub-path name following forward slash (`/`)
-
+Set the `PATHNAME` as follows:
+```sh
+PATHNAME=/studio
 ```
-PATHNAME='/studio'
-```
+
+> Use this only if you are serving DronaHQ behind a custom web server that modifies the base path.
+
+## Licensing and Activation
 
 #### `LICENSE_KEY`
-This is a unique key assigned to you by DronaHQ. you can get by logging in to [Self-Hosted Portal](https://studio.dronahq.com/selfhosted/login).
+This is a unique key assigned to you by DronaHQ for activating your self-hosted installation. You can retrieve your **LICENSE_KEY** by logging into the [Self-Hosted Portal](https://studio.dronahq.com/selfhosted/login).
 
-#### `DRONAHQ_LICENSE_URL` (optional)
+```sh
+LICENSE_KEY=<your-unique-license-key>
+```
 
-For activation and licensing of your self hosted installation, DronaHQ needs to communicate with its in house licensing server hosted on `license.dronahq.com` with public IP as `52.203.193.48`. If you are working in closed intranet environment then you need to whitelist this domain for `outbound traffic`. Optionally you can set-up a proxy to DronaHQ's licensing system and update your proxy url here.
+#### `DRONAHQ_LICENSE_URL` (Optional)
+For activation and licensing, your **Self-Hosted DronaHQ** instance needs to communicate with DronaHQ’s licensing server. The licensing server is hosted at `license.dronahq.com`, with a public IP address of `52.203.193.48`.
 
-    DRONAHQ_LICENSE_URL='https://license.dronahq.com'
+- If your instance is running in a **closed intranet environment**, ensure that `license.dronahq.com` is whitelisted for outbound traffic.
+- If direct access is restricted, you can set up a **proxy server** and configure this variable to point to your proxy’s URL.
 
-## Connectivity to MySQL (for DronaHQ)
+```sh
+DRONAHQ_LICENSE_URL=https://license.dronahq.com
+```
 
-Provide your database credentials for DronaHQ self hosted. Your installation will access this database and read/write into it. to store information about resources used for building apps and some meta information.
+> **Best Practice:** If operating behind a corporate firewall or VPN, consult your network administrator to configure the appropriate firewall rules or proxy settings for uninterrupted licensing communication.
+
+## Connectivity to MySQL
+
+Configure the database credentials for your **DronaHQ Self-Hosted** instance. This database stores essential metadata and resources required for application building.
 
 #### `MYSQL_HOST`, `MYSQL_PORT`, `MYSQL_USER`, `MYSQL_PASSWORD`
 
-If you are using Docker container for mysql, then you should set these variables as follows
+- If using a **Docker container** for MySQL, set the following variables:
 
-    MYSQL_HOST='dronahq-self-hosted-mysqldb'
-    MYSQL_USER='<application user>'
-    MYSQL_PASSWORD='<password>'
-    MYSQL_PORT='3306'
+    ```sh
+    MYSQL_HOST=dronahq-self-hosted-mysqldb
+    MYSQL_USER=<application-user>
+    MYSQL_PASSWORD=<password>
+    MYSQL_PORT=3306
+    ```
 
-if you are using RDS or any other managed MySQL service then you can set variables accordingly.
+- If using **AWS RDS or another managed MySQL service**, set the values accordingly:
 
-<!-- ### Connectivity to MySQL (for Audit Logs - optional)
-#### `AUDIT_LOG_MYSQL_HOST`, `AUDIT_LOG_MYSQL_PORT`, `AUDIT_LOG_MYSQL_USER`, `AUDIT_LOG_MYSQL_PASSWORD`
-
-This are optional variables. If not set, DronaHQ will use same credentials you provided in above variables.
-
-If you are using Docker container for mysql, then you should set these variables as follows
-
-    AUDIT_LOG_MYSQL_HOST='dronahq-self-hosted-mysqldb'
-    AUDIT_LOG_MYSQL_USER='<application user>'
-    AUDIT_LOG_MYSQL_PASSWORD='<password>'
-    AUDIT_LOG_MYSQL_PORT='3306'
-
-if you are using RDS or any other managed MySQL service then you can set variables accordingly. -->
+    ```sh
+    MYSQL_HOST=<your-rds-endpoint>
+    MYSQL_USER=<application-user>
+    MYSQL_PASSWORD=<password>
+    MYSQL_PORT=3306
+    ```
 
 ## Connectivity to MongoDB
+
+Configure MongoDB settings for your **DronaHQ Self-Hosted** instance. MongoDB is used to store application data and configurations.
+
 #### `MONGODB_HOST`, `MONGODB_PORT`, `MONGODB_USER`, `MONGODB_PASSWORD`
 
-If you are using Docker container for MongoDB, then you should set these variables as follows
+- If using a **Docker container** for MongoDB, set the following variables:
 
-    MONGODB_HOST='dronahq-self-hosted-mongodb'
-    MONGODB_USER='<application user>'
-    MONGODB_PASSWORD='<password>'
-    MONGODB_PORT='27017'
+    ```sh
+    MONGODB_HOST=dronahq-self-hosted-mongodb
+    MONGODB_USER=<application-user>
+    MONGODB_PASSWORD=<password>
+    MONGODB_PORT=27017
+    ```
 
-if you are using DocumentDB or any other managed MongoDB service then you can set variables accordingly.
+- If using **AWS DocumentDB or another managed MongoDB service**, set the values accordingly:
+
+    ```sh
+    MONGODB_HOST=<your-mongodb-endpoint>
+    MONGODB_USER=<application-user>
+    MONGODB_PASSWORD=<password>
+    MONGODB_PORT=27017
+    ```
 
 #### `MONGODB_ENCODE_CREDENTIALS`
 
-If your credentials (username, password) has special characters, you will need to set `MONGODB_ENCODE_CREDENTIALS` as `true`. Enabling this option will encode your credentials before forming connection string.
+If your MongoDB credentials contain special characters, enable credential encoding:
 
-```
+```sh
 MONGODB_ENCODE_CREDENTIALS=true
 ```
 
 #### `MONGODB_PROTOCOL`
 
-You can use mongodb with `mongodb` or `mongodb+srv` protocol. In normal installations we use `mongodb` as a protocol which is default value for this option. `mongo+srv` is useful we want to connect mongodb in cluster or replicaset configuration.
+Defines the MongoDB connection protocol:
 
-```
-MONGODB_PROTOCOL='mongodb'
+- Use `mongodb` for standard installations (default).
+- Use `mongodb+srv` for **clustered or replica set** configurations.
+
+```sh
+MONGODB_PROTOCOL=mongodb
 ```
 
 #### `MONGODB_PARAMS`
 
-Mongodb parameters are extra options or settings we use with mongodb for advanced functionality. We write params as `url search params` format.
+Additional MongoDB parameters can be specified using **URL search parameter format**. Example:
 
-Example.
-```
-MONGODB_PARAMS='ssl=true&retryWrites=false'
+```sh
+MONGODB_PARAMS=ssl=true&retryWrites=false
 ```
 
 #### `MONGODB_TLS`
 
-Specifies whether TLS is required for connections to the server.
+Enable TLS for a **secure connection** to MongoDB:
 
-```
-MONGODB_TLS='true'
+```sh
+MONGODB_TLS=true
 ```
 
 #### `MONGODB_CA_CERT_DIR`
 
-Specifies the path to a file with either a single or bundle of certificate authorities to trust when making a TLS connection.
+If MongoDB uses **TLS authentication**, specify the **certificate authority (CA) bundle** path:
 
-```
-MONGODB_CA_CERT_DIR='/private/global.bundle.pem'
+```sh
+MONGODB_CA_CERT_DIR=/private/global.bundle.pem
 ```
 
 #### `MONGODB_CONNECTION_STRING`
 
-This is alternate way for providing mongodb credentials. Instead of providing credentials separately, you can provide it in single connection string
-```
-MONGODB_CONNECTION_STRING='mongodb://username:password@prod.mongodb.domain.com?ssl=true&retryWrites=false'
-```
+Instead of defining separate environment variables, you can provide a **single connection string**:
 
+```sh
+MONGODB_CONNECTION_STRING=mongodb://username:password@prod.mongodb.domain.com?ssl=true&retryWrites=false
+```
 
 ## File Repository
 
-DronaHQ needs file storage to store files uploaded from apps and resources used in application. Also, when you publish your application, DronaHQ upload compressed files for your application version and serve it from same repository.
+DronaHQ requires file storage to manage uploaded files from apps and store resources used in applications. Additionally, when an application is published, DronaHQ compresses the application files and serves them from the same repository.
 
-#### `FILE_UPLOAD_TYPE`
+DronaHQ supports multiple options for storing files:
 
-DronaHQ supports following options for storing your files.
+- `repository`: Uses the built-in local file repository
+- `aws`: Uses AWS S3 for file storage
+- `azure`: Uses Azure Storage Container for file storage
+- `gcloud`: Uses Google Cloud Storage for file storage
 
-- `repository`: Use in-built 'Local file repository'
-- `aws`: Use AWS S3 as a file storage
-- `azure`: Use Azure Storage Container as a file storage
-- `gcloud`: Use Google Cloud Storage as a file storage
+If this variable is unset, the built-in local file repository (`repository`) will be used by default.
 
-if unset, 'Local file repository' will be used.
+```sh
+FILE_UPLOAD_TYPE=repository
+```
 
-    FILE_UPLOAD_TYPE='repository'
+### Local File Repository Configurations
 
-### Local file repository configurations
-To use DronaHQ managed file repository, you  need to set `FILE_UPLOAD_TYPE` as `repository` in environment variables.
+To use DronaHQ's managed file repository, set `FILE_UPLOAD_TYPE` to `repository` in your environment variables.
 
-    FILE_UPLOAD_TYPE='repository'
+```sh
+FILE_UPLOAD_TYPE=repository
+```
 
 #### `FILEREPOSITORY_STORAGE_LOCATION`
-By default this is working directory for your installation. You can configure this location.
 
-    FILEREPOSITORY_STORAGE_LOCATION=process.cwd()
+Defines the storage location for files. By default, this is set to the working directory of your installation. You can configure this location as needed.
+
+```sh
+FILEREPOSITORY_STORAGE_LOCATION=/path/to/storage/directory
+```
 
 #### `FILEREPOSITORY_STORAGE_PREFIX`
-Prefix is like a folder name. This will create a folder inside `FILEREPOSITORY_STORAGE_LOCATION`
 
-    FILEREPOSITORY_STORAGE_PREFIX='files'
+Specifies a prefix (folder name) that will be created inside the `FILEREPOSITORY_STORAGE_LOCATION` directory to organize stored files.
 
-### Amazon Simple Storage Service (S3) configuration
-You can use Amazon S3 as a File storage with DronaHQ. DronaHQ will upload your uploaded files and other resources. Also your published applications will get served from AWS S3. You will need to set required permission/policy for your bucket so files can get accessed on the browser.
+```sh
+FILEREPOSITORY_STORAGE_PREFIX=files
+```
 
-To use Amazon Simple Storage Service, you need to set following variables.
+### Amazon Simple Storage Service (S3) Configuration
 
-    FILE_UPLOAD_TYPE='aws'
+You can use Amazon S3 as a file storage solution with DronaHQ. DronaHQ will upload user-uploaded files and other resources to S3. Additionally, published applications will be served from AWS S3. Ensure that the required permissions and policies are set for your bucket so files can be accessed in the browser.
+
+To enable Amazon S3 as the file storage provider, set the following environment variable:
+
+```
+FILE_UPLOAD_TYPE=aws
+```
 
 #### `AWS_S3_BUCKET_NAME`
-This is your Bucket, in which you want to store you files.
+Specifies the S3 bucket where files will be stored.
 
 #### `AWS_S3_REGION`
-This is your AWS region in which bucked it hosted/created.
+Defines the AWS region where the S3 bucket is hosted or created.
 
 #### `AWS_S3_ACCESS_KEY_ID`, `AWS_S3_SECRET_ACCESS_KEY`
-`AccessKeyId` and `AccessKeySecret` is required to access your bucket and objects inside bucket.
-It is recommended that you provide complete read/write access of your bucket to this key pair.
+These credentials (`AccessKeyId` and `AccessKeySecret`) are required for accessing your S3 bucket and the objects within it. It is recommended to grant full read/write access to this key pair for seamless file management.
 
 #### `AWS_IAM_ROLE_ACCESS`
-You can grant aws bucket access to your instance by adding a Aws IAM Role to that instance. This allows a key-secret less access to your bucket from your instance.
+You can grant S3 bucket access to your instance by assigning an AWS IAM Role. This allows keyless access to your bucket from the instance without exposing credentials.
 
-To enable IAM role access, set following variable in your environment and add respected role to your instance
+To enable IAM role-based access, set the following variable in your environment and ensure the correct IAM role is assigned to your instance:
 
-    AWS_IAM_ROLE_ACCESS=true
+```
+AWS_IAM_ROLE_ACCESS=true
+```
 
 #### `AWS_S3_ACL`
-By default, dronahq uses S3 buckets with ACL. You can turn ACl off by setting this variable as false.
+By default, DronaHQ uses S3 buckets with ACL enabled. If you want to disable ACL, set this variable to `false`.
 
-    AWS_S3_ACL=false
+```
+AWS_S3_ACL=false
+```
 
 #### `AWS_S3_BUCKET_PROXY_URL`
-If you want to keep your bucket private, you can setup authentication middleware (AWS Cloudfront) or any other service and provide its proxy url in this variable.
+If you prefer to keep your S3 bucket private, you can set up an authentication middleware (e.g., AWS CloudFront) or another proxy service and provide its URL in this variable.
 
-    AWS_S3_BUCKET_PROXY_URL=https://dronahq.example-proxy.com
+```
+AWS_S3_BUCKET_PROXY_URL=https://dronahq.example-proxy.com
+```
 
-### Azure Storage Container configuration
+#### `AWS_S3_ENDPOINT`
+Specifies a custom S3-compatible endpoint URL for AWS SDKs and tools. Set this when using third-party or self-hosted S3 storage solutions. Defaults to AWS's standard S3 endpoint if not set. Useful for private cloud deployments or local testing. When this variable is set, DronaHQ will internally enable `s3ForcePathStyle`. Ensure the endpoint is accessible and correctly configured.
 
-You can use Azure storage container as a File storage with DronaHQ. DronaHQ will upload your uploaded files and other resources. Also your published applications will get served from Azure storage container.
+### Azure Storage Container Configuration
 
-To use Azure Storage Container, you need to set following variables.
+You can use an **Azure Storage Container** as a file storage solution with DronaHQ. DronaHQ will store uploaded files, application resources, and published applications in the container.
 
-    FILE_UPLOAD_TYPE='azure'
+To use Azure Storage Container, set the following environment variable:
+
+```sh
+FILE_UPLOAD_TYPE=azure
+```
 
 #### `AZURE_STORAGE_ACCOUNT_NAME`
-This is your Azure storage account name under which you have created your storage container.
+This is your Azure storage account name where your storage container is created.
 
 #### `AZURE_STORAGE_ACCOUNT_KEY`
-This is a secret key for your storage account. This key should have required permissions to read and write inside your storage container.
+This is a secret key for your storage account. This key must have the necessary permissions to read and write inside your storage container.
 
 #### `AZURE_STORAGE_CONTAINER_NAME`
-This is a container inside which DronaHQ will be uploading some resources and files uploaded by your application. Also this container will server some resources for your application.
+This is the container where DronaHQ will upload application resources and user files. This container will also serve some resources for your applications.
 
-### Google Cloud Storage configuration
+### Google Cloud Storage Configuration
 
-You can use Google Cloud Storage as a File storage with DronaHQ. DronaHQ will upload your uploaded files and other resources. Also your published applications will get served from Google Cloud Storage.
+You can use **Google Cloud Storage** as a file storage solution with DronaHQ. DronaHQ will store uploaded files, application resources, and published applications in the Google Cloud Storage bucket.
 
-To use Azure Storage Container, you need to set following variables.
+To use Google Cloud Storage, set the following environment variable:
 
-    FILE_UPLOAD_TYPE='gcloud'
+```sh
+FILE_UPLOAD_TYPE=gcloud
+```
 
 #### `GCLOUD_STORAGE_PROJECT_ID`
-This is id of your Google cloud project under which you have created your storage bucket.
+This is the ID of your Google Cloud project where your storage bucket is created.
 
 #### `GCLOUD_STORAGE_SERVICE_ACCOUNT_KEY_FILE_PATH`
-This is a your Google cloud service account's key file path inside your container or mapped volume. This key should have required permissions to read and write inside your storage container.
+This is the file path (inside your container or mapped volume) of your Google Cloud service account key. This key must have the required permissions to read and write inside your storage bucket.
 
 #### `GCLOUD_STORAGE_BUCKET_NAME`
-This is a storage bucket inside which DronaHQ will be uploading some resources and files uploaded by your application. Also this container will server some resources for your application.
+This is the storage bucket where DronaHQ will upload application resources and user files. This bucket will also serve some resources for your applications.
+
+#### `GCLOUD_IAM_ROLE_ACCESS`
+Set to `true` to enable IAM role-based access control for Google Cloud services. When enabled, the application will use assigned IAM roles for authentication and authorization. Defaults to `false` if not set. This is useful for restricting access based on predefined roles. Ensure the necessary IAM roles are assigned to avoid permission issues.
 
 ## Automation
 
+#### `AUTOMATION_LOGGING_CHARACTER_LIMIT`
+
+This variable allows you to set the character limit for automation's [custom task logging](/automations/run-logs/#custom-task-logging). By default, the character limit is set to `300` characters. You can customize this limit as per your requirement. for unlimited characters, set it to `0`.
+
+```shell
+    AUTOMATION_LOGGING_CHARACTER_LIMIT=300
+```
+
 To streamline automation tasks on AWS, you'll be leveraging two core AWS services: [`Lambda`](https://docs.aws.amazon.com/lambda/) and [`EventBridge`](https://docs.aws.amazon.com/eventbridge/). Before initiating any automation procedures, ensure the correct configuration of the following environment variables:
 ```shell
-    RUN_AUTOMATION_ON_AWS='true'
+    RUN_AUTOMATION_ON_AWS=true
 ```
 To interact with Lambda and EventBridge seamlessly, you need to set up the appropriate credentials:
 
@@ -293,7 +413,7 @@ This API key facilitates communication between AWS Lambda and DronaHQ Automation
 This URL points to your DronaHQ Instances, facilitating communication between AWS Lambda and DronaHQ Automation. It should be added to the AWS Lambda environment variables. For setup guidance, refer to the screenshot below (Figure: AWS Lambda Environment variable settings).
 
 <figure>
-  <Thumbnail src="/img/self-hosted-deployment/lambda-env-variables-settings.png" alt="AWS Lambda Environment variable settings" width='80%'/>
+  <Thumbnail src="/img/self-hosted-deployment/lambda-env-variables-settings.png" alt="AWS Lambda Environment variable settings" width="80%"/>
   <figcaption align = "center"><i>AWS Lambda Environment variable settings</i></figcaption>
 </figure>
 
@@ -376,7 +496,7 @@ This variable allows you to specify the name of a database to be used for creati
 #### `MONGO_INITDB_USER`, `MONGO_INITDB_PWD`
 These are custom variables added by DronaHQ. This will create application user in your database while initializing MongoDB container.
 DronaHQ runs following script while initializing container to create application users and and assign read/write access to them.
-
+```shell
     db.createUser({
         user: '$MONGO_INITDB_USER',
         pwd: '$MONGO_INITDB_PWD',
@@ -388,7 +508,7 @@ DronaHQ runs following script while initializing container to create application
             db: '<% database name %>'
         }]
     })
-
+```
 ## Global GIT Sync configuration
 
 Below are the environment variables to be configured when you want to enable [Git Sync globally](/git-sync-global).
@@ -400,87 +520,123 @@ This variable specifies if you want to enable Global Git Sync feature.
 By default it is set to `false`, GIT Sync Global feature is disabled
 If set `true`, GIT Sync Global feature is enabled and you need to configure git repo and other configuration variables listed below 
 
-    GIT_SYNC_IS_GLOBAL='true'
+    GIT_SYNC_IS_GLOBAL=true
 
 #### GIT_SYNC_SSH_REPO_URL
 
 SSH Url of the Git Repo which you want all your apps to be checked into. Mandatory if GIT_SYNC_IS_GLOBAL is set to true.
 
-    GIT_SYNC_SSH_REPO_URL='git@github.com:UserName/RepoName.git'
+    GIT_SYNC_SSH_REPO_URL=git@github.com:UserName/RepoName.git
 
 
 #### GIT_SYNC_BRANCH_NAME
 
 Branch name of the above repo url which this instance should be synced with. For production instance, ideally use `main` branch. For development instance, you can create `dev` branch and so on. Mandatory if GIT_SYNC_IS_GLOBAL is set to true.
 
-    GIT_SYNC_BRANCH_NAME='main'
+    GIT_SYNC_BRANCH_NAME=main
 
 
 #### GIT_SYNC_AUTH_SSH_KEY_FRIENDLY_NAME
 
 Friendly Key name you have used for creating SSH key from SSH Key management. The public key of this friendly key should be added in your GIT repo with read/write rights to above GIT Sync repo. Mandatory if GIT_SYNC_IS_GLOBAL is set to true.
 
-    GIT_SYNC_AUTH_SSH_KEY_FRIENDLY_NAME='MyGitSyncKey'
+    GIT_SYNC_AUTH_SSH_KEY_FRIENDLY_NAME=MyGitSyncKey
 
 
 #### GIT_SYNC_IS_AUTO_SAVE
 
 Enable this to automatically save your app changes to your GIT repo.
 
-    GIT_SYNC_IS_AUTO_SAVE='true'
+    GIT_SYNC_IS_AUTO_SAVE=true
 
 #### GIT_SYNC_IS_LOCK_APP_EDIT
 
 Enable this to disable editing of you app that is added to GIT. Ideally, you should set to `true` for your production instance and set it to `false` for your development instance.
 
-    GIT_SYNC_IS_LOCK_APP_EDIT='false'
+    GIT_SYNC_IS_LOCK_APP_EDIT=false
 
 #### GIT_SYNC_CREATE_REPO_ON_APP_ADD
 
 Enable this to automatically add new apps to git. Ideally, you should set to `true` for your development instance if you want all apps to be automatically added to git and set it to `false` for your production instance. By default, it is set to `false`.
 
-    GIT_SYNC_CREATE_REPO_ON_APP_ADD='true'
+    GIT_SYNC_CREATE_REPO_ON_APP_ADD=true
+
+## Secret keys
+
+:::info
+To enhance security for dronahq self-hosted deployments, secret keys are automatically generated on every server restart. This prevents long-lived secrets from being exposed or misused, reducing security risks.
+:::
+
+### Auto-Generated Secret Keys
+
+By default, the following secret keys are automatically generated on every server restart:
+
+- **`SESSION_KEY_SECRET`** - Used for self-hosted logged-in sessions.
+- **`AUTOMATION_API_KEY`** - Used for automation's internal calls, such as run log entry.
+- **`JWT_SECRET_KEY`** - Used for automation internal session validation.
+- **`SECRET_API_TOKEN_KEY`** - Used for studio and all other module internal calls.
+- **`BUILDER_LICENSE_TOKEN`** - Used for internal authentication between the builder and add-ons (automation, database, file storage).
+
+### Persisting Secret Keys
+
+If you want to persist these secret values across server restarts, set the corresponding environment variables in the environment file:
+
+```shell
+SESSION_KEY_SECRET=your_session_key_secret
+AUTOMATION_API_KEY=your_automation_api_key
+JWT_SECRET_KEY=your_jwt_secret_key
+SECRET_API_TOKEN_KEY=your_secret_api_token_key
+EMBED_APP_JWT_SECRET_KEY=your_embed_app_jwt_secret_key
+BUILDER_LICENSE_TOKEN=your_builder_license_token
+```
+
+By setting these environment variables, the secret keys will remain constant across server restarts, ensuring consistent authentication and security behavior.
+
+:::caution Security Risks of Persisting Secret Keys
+Persisting secret keys can introduce security risks, including:
+
+- **Long-Lived Secrets:** Static secret keys remain valid indefinitely, making them a target for exploitation if leaked.
+- **Configuration Management Risks:** Improper handling of environment files (such as committing them to version control or using insecure storage) can expose secret values.
+
+To mitigate these risks, ensure that environment files are securely stored, access is restricted, and keys are rotated periodically.
+:::
 
 ## Other optional variables
 
-#### `SECRET_API_TOKEN_KEY`
-By default, DronaHQ uses its own secret token for authentication of internal APIs. You can add your custom token instead.
-
-```
-SECRET_API_TOKEN_KEY='some-random-secret-token'
-```
-
 #### `ENCRYPTION_KEY`
+
 By default, DronaHQ user its own encryption key to encrypt credentials and secret information flows in system. You can configure your own encryption key for added security. Also make sure to keep backup of your key at secure location.
-```
-ENCRYPTION_KEY='some-random-secret-key'
+
+```shell
+ENCRYPTION_KEY=some-random-secret-key
 ```
 
-#### `SESSION_KEY_NAME`, `SESSION_KEY_SECRET`
+#### `SESSION_KEY_NAME`
+
 By default, DronaHQ user its own session key and secret key. You can configure your own if you want to customize.
-```
-SESSION_KEY_NAME='cookie-name'
-SESSION_KEY_SECRET='secret-key-to-sign-cookie'
+
+```shell
+SESSION_KEY_NAME=cookie-name
 ```
 
 #### `SENDGRID_API_KEY`
 DronaHQ uses sendgrid as a mailing client. Configure your sendgrid key for activating activity mails.
-```
-SENDGRID_API_KEY='sendgrid api key'
+```shell
+SENDGRID_API_KEY=sendgrid api key
 ```
 
 #### `MAILER_EMAIL`, `MAILER_NAME`
 This is sender mailer name and email id for all the mails shoot from dronahq. You can configure your own mailer options as per your sendgrid account.
-```
-MAILER_EMAIL='no-reply@dronahq.com'
-MAILER_NAME='DronaHQ'
+```shell
+MAILER_EMAIL=no-reply@dronahq.com
+MAILER_NAME=DronaHQ
 ```
 
 #### `REST_PROXY_WHITELISTED_DOMAINS`
 
 Use this variable to whitelist API domains for the `Data Query -> REST API` feature. Specify a comma-separated list of hostnames that are allowed. For example:  
 
-```
+```shell
 REST_PROXY_WHITELISTED_DOMAINS=dronahq.com,google.com,api.example.com
 ```
 
@@ -491,7 +647,7 @@ By default, the following extensions are restricted: `.exe, .dll, .bat, .sh, .cm
 
 If the `FILE_UPLOAD_RESTRICTED_EXTENSIONS` variable is configured, it will override the default restrictions. Add comma-separated file extensions to this variable to customize the restrictions. For example:  
 
-```
+```shell
 FILE_UPLOAD_RESTRICTED_EXTENSIONS=.exe,.dll,.bat,.sh,.cmd,.vbs
 ```
 
@@ -499,7 +655,7 @@ FILE_UPLOAD_RESTRICTED_EXTENSIONS=.exe,.dll,.bat,.sh,.cmd,.vbs
 
 If set to `true`, This variable allows you to ignore error messages from authentication callback request and show static error message on screen.
 
-```
+```shell
 IGNORE_CALLBACK_MESSAGES=true
 ```
 

@@ -2,33 +2,45 @@
 sidebar_position: 92
 ---
 
-# Minimum requirements
+# Minimum Requirements
 
-Learn about DronaHQ Self-hosted requirements then follow a deployment guide to get started.
+Before deploying **DronaHQ Self-Hosted**, ensure your environment meets the following system, software, and networking requirements.
 
-### Machine specifications
-- `Linux` based os or Virtual machine / `MacOS`
-- `2` vCPUs
-- `8 GiB` Memory
-- `60 GiB` Storage
-- Active internet connection for downloading resources.
+## Machine Specifications
 
-### Software requirements
-- linux packages - `curl`, `wget`, `git`, `unzip`
-- Docker Engine
-- Docker Compose
-- Text editor of your choice
+- **Operating System**: `Linux` (VM, cloud instance, or on-prem) / `MacOS`
+- **CPU**: `2 vCPUs`
+- **Memory**: `8 GiB`
+- **Storage**: `60 GiB`
+- **Network**: Active internet connection for downloading dependencies and updates
 
-### Networking requirements
-- Port `22`(ssh) To allow you to SSH into your instance and configure it.
-- Port `80/443` For connecting to the server from the browser. (HTTP/HTTPS).
-- Port `8080` (optional) for connecting to node service directly without web server.
-- Enable outbound traffic to DronaHQ Licensing server(`https://license.dronahq.com` or IP `52.203.193.48`).
+## Software Requirements
 
-### Storage database
+- **Essential Linux Packages**: `curl`, `wget`, `git`, `unzip`
+- **Containerization**:
+  - Docker Engine
+  - Docker Compose
+- **Text Editor**: Any editor of your choice (e.g., `vim`, `nano`, `VS Code`)
 
-By default, all deployments include a containerized instance of `MYSQL` and `MONGODB` along with `DronaHQ` and `NGINX` (web server). But, it is recommended to externalize the database, to support a stateless deployment. Externalizing databases helps you make your installation more maintainable, scalable and reliable.
+## Networking Requirements
 
-The minimum recommended version for the MYSQL database is version 8.0.36 and for MongoDB it is version 5.0.11
+Ensure the following ports are open for proper communication:
 
-[Learn how to make your external databases DronaHQ ready](./configure-external-databases.md).
+- **Port `22` (SSH)** – Allows secure access to your instance for configuration.
+- **Port `80/443` (HTTP/HTTPS)** – Enables access to the platform via a web browser.
+- **Port `8080` (Optional)** – Used for direct access to the Node.js service (bypassing the web server).
+- **Outbound Access** – Required for DronaHQ licensing verification:
+  - URL: `https://license.dronahq.com`
+  - IP: `52.203.193.48`
+
+## Database Storage
+
+By default, deployments include containerized instances of **MySQL**, **MongoDB**, **DronaHQ**, and **NGINX** (web server). However, we strongly recommend externalizing the databases for **stateless deployments** to improve maintainability, scalability, and reliability.
+
+### Recommended External Database Versions
+
+- **MySQL**: `8.0.36` or later
+- **MongoDB**: `5.0.11` or later
+
+For a step-by-step guide on configuring external databases, refer to:  
+[Configure External Databases](./configure-external-databases.md)

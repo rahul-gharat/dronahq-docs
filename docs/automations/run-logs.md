@@ -78,6 +78,8 @@ The power of these filters truly shines when used in conjunction. By combining b
 
 In addition to the default task logs, you have the ability to add your own custom messages to be displayed in the Run Logs. This feature proves to be extremely useful for effectively debugging tasks. You can access this feature for each individual task configuration within the `Advanced` accordion.
 
+In [selfhosted](/self-hosted-deployment), you can configure the character limit with [`AUTOMATION_LOGGING_CHARACTER_LIMIT`](/self-hosted-deployment/environment-variables/#automation_logging_character_limit) environment variable.
+
 <figure>
   <Thumbnail src="/img/automation/run-logs/task-logging.png" alt="Compose Custom Task Logs" width='70%'/>
   <figcaption align="center"><i>Compose Custom Task Logs</i></figcaption>

@@ -25,5 +25,5 @@ Following are the list of Native Mobile controls that are supported by DronaHQ E
     - Annotation
 - [GPS](/reference/controls/gps)
 - [NFC Reader](/reference/controls/nfc-reader) 
-- [Barcode Scanner](/reference/controls/barcode)
+<!-- - [Barcode Scanner](/reference/controls/barcode) -->
 - [Signature](/reference/controls/signature)

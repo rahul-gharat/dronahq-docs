@@ -23,7 +23,7 @@ DronaHQ provides various App configurations which are only applicable to DronaHQ
 
 ### Native Device Features
 
-With DronaHQ, creators can seamlessly integrate native device features such as camera, GPS, barcode scanner, and more into their apps. This enables the creation of interactive and engaging mobile experiences. Refer [Native Controls](/mobile-apps/native-controls) and [Native Actionblocks](/mobile-apps/native-actionblocks) for more info on native device features.
+With DronaHQ, creators can seamlessly integrate native device features such as camera, GPS, and more into their apps. This enables the creation of interactive and engaging mobile experiences. Refer [Native Controls](/mobile-apps/native-controls) and [Native Actionblocks](/mobile-apps/native-actionblocks) for more info on native device features.
 
 ### Offline Functionality 
 

@@ -7,12 +7,21 @@ import Image from '@site/src/components/Image';
 import VersionedLink from '@site/src/components/VersionedLink';
 import Thumbnail from '@site/src/components/Thumbnail';
 
-The Barcode Control is an advanced control that enables barcode scanning for mobile apps. Using the device's camera, the control scans barcodes and fetches the related code text.
+The Barcode Control is an advanced control that enables barcode scanning. Using the device's camera, the control scans barcodes and fetches the related code text.
 
 <figure>
   <Thumbnail src="/img/reference/controls/barcode/preview.png" alt="Barcode" />
   <figcaption align = "center"><i>Barcode</i></figcaption>
 </figure>
+
+:::info
+Camera permission handling for Web and Preview would be required for the control to work efficiently.
+:::
+
+
+:::note 
+You can use web and preview option for existing controls like text input, numeric, phone, currency and Barcode control with barcode scanning support.
+:::
 
 ## Binding Data Options
 
@@ -24,7 +33,7 @@ Let's explore a practical example to demonstrate that the Barcode Control can be
 
 - You can add an automation to your app that will handle the data submission process. For example, when the barcode is scanned and the value is obtained, the automation will be triggered to submit this data to a designated sheet.
 
-- When they reach the Barcode scan field and tap on "Scan," the mobile phone's camera will act as a barcode scanner.
+- When they reach the Barcode scan field and tap on "Scan," attached camera will act as a barcode scanner.
 
 - The scanned barcode value will be displayed in the text box that is linked to the Barcode Control, making it visible to users.
 

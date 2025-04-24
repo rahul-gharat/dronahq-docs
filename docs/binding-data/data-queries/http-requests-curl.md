@@ -44,6 +44,7 @@ Specifies the endpoint to be queried.
 - Headers
 
   Sets key/value pairs to send in the request header.
+-  Run on App open - Toggle: This will make the dataquery to run on app open regardless of if it's referenced in any other control or dataquery.
 
 ### Handling Response/failure
 

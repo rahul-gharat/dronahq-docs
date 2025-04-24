@@ -1,0 +1,11 @@
+{
+  "label": "Add on - Build with AI",
+  "position": 92,
+  "link": {
+    "type": "generated-index",
+    "description": "learn how to build with AI"
+  },
+    "className": "sidebar_category_heading",
+    "collapsed": false,
+    "collapsible": false
+}

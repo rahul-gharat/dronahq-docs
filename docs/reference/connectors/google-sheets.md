@@ -113,8 +113,10 @@ values using keywords. Several output values are returned, which can be used as 
 
 In the example shown below, rows are added to the specified range in the Google Sheets.
 
-:::tip Ensure that the range matches exactly with the one present in your Google Sheets column names. This is crucial
-for the data to be appended correctly. :::
+:::tip 
+Ensure that the range matches exactly with the one present in your Google Sheets column names. This is crucial
+for the data to be appended correctly. 
+:::
 
 Here’s the process and the response you can expect:
 
@@ -136,8 +138,7 @@ can utilize data from the table grid control to insert information in your Googl
   <figcaption align = "center"><i>Configuring fields to Update multiple rows.</i></figcaption>
 </figure>
 
-As shown in the image above, you can provide multiple data entries for different row numbers. The start row number is
-considered, and the number of rows updated corresponds to the size of the array.
+As shown in the image above, you can provide multiple data entries for different row numbers. The start row number is considered, and the number of rows updated corresponds to the size of the array.
 
 If you wish to update a row but retain certain column values, use NULL as a keyword. This prevents those columns from
 being overwritten, ensuring the original values remain intact. Only the columns with specified inputs will be updated.
@@ -196,17 +197,7 @@ Google Sheets API on DronaHQ.
 
 ## Self-Hosted Installation for Google Sheets
 
-Here’s the revised blog with a more detailed explanation and proper placement for images.
 
----
-
-# Installing Google Sheets on Self-Hosted DronaHQ
-
-Got it. Here’s the corrected version with only four images referenced properly.
-
----
-
-# Installing Google Sheets on Self-Hosted DronaHQ
 
 To start, go to the `Google Cloud Console > APIs & Services > Google Sheets API` and enable it. Once done, head over to the `Credentials` tab to create OAuth credentials.
 

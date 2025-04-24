@@ -26,7 +26,7 @@ The Text Input Control enables users to input or modify text data within a Text 
 | Max Character        | The character limit sets the maximum number of characters allowed in the text field.                                                                                                                                                                                                                                |
 | Debounce Time (In ms)| This is the delay in milliseconds between events. You can use the debounce time to control the frequency of action triggers when there is a change in value.                                                                                                                                                       |
 | Show Raw Data        | This option allows you to display JSON data directly in a textbox without any formatting. By default, the Show Raw Data is set to ON.                                                                                                                                                                                |
-| Show Barcode Scanner | When selected, this option enables a barcode scanner for entering data into the text field using a mobile device's camera. A QR code scanner opens up, and the scanned data is set as the control value.                                                                                                            |
+| Show Barcode Scanner | When selected, this option enables a barcode scanner for entering data into the text field using device's camera. A QR code scanner opens up, and the scanned data is set as the control value.                                                                                                            |
 
 
 ## Control Output

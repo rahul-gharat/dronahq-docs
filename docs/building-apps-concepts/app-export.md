@@ -8,11 +8,6 @@ import Thumbnail from '@site/src/components/Thumbnail';
 
 The `App Export` feature allows you to export the entire app in JSON format, which can be useful when migrating app from one account to another, or in case you wish to duplicate the app in the same account.
 
-:::info
-
-The prerequisite for exporting for an app, is that it should be published. Whenever you make any changes to the app, you need to publish it as any unpublished changes will not be exported with the app.
-
-:::
 
 To export an app, navigate to `Config -> App Export` and click on `Export app json`.
 

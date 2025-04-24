@@ -215,6 +215,15 @@ Columns For Database Loggers:
 | User Group Bulk Mapping | ``manage_user_groups_bulk`` | ✔️ | ✔️ |
 | New Theme Created | ``new_theme_created`` | ❌ | ✔️ |
 | Logger Deleted | `` logger_deleted `` | ✔️ | ✔️ |
+| App Git Sync | `` app_git_sync `` | ✔️ | ❌ |  
+| App Added to Git | `` app_added_to_git `` | ✔️ | ❌ |  
+| App Removed from Git | `` app_removed_from_git `` | ✔️ | ❌ |  
+| App Git Pushed | `` app_changes_push_to_git `` | ✔️ | ❌ |  
+| App Git Pull | `` app_changes_pull_from_git `` | ✔️ | ❌ |  
+| Git App Protected | `` app_protected `` | ✔️ | ❌ |  
+| Git App Unprotected | `` app_unprotected `` | ✔️ | ❌ |  
+| Git App Branch Created | `` app_protected_branch_created `` | ✔️ | ❌ |  
+| Git App Branch Deleted | `` app_protected_branch_deleted `` | ✔️ | ❌ |  
 <!-- some remaining -->
 <!-- 
 

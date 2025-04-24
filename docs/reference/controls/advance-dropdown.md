@@ -24,21 +24,19 @@ The Dropdown control helps users to view much more details in the dropdown itsel
   <img src="/img/reference/controls/adv-dropdown/content.jpg" alt="Dropdown" />  
 </figure> 
 
+### Mode
 The Dropdown control provides two modes for data binding:  
 - Manual: Enter static data manually.  
 - Mapped: Bind data dynamically using connectors or controls.  
 
-#### Dropdown Options  
+:::note INFO
 
-- Approve  
-- Reject  
-- None  
+If Label is empty, the system will use the Value as the label. The Value field placeholder will display the same text as the label for clarity. This  improves usability by allowing users to modify values without changing or defining a separate label.
+:::
 
-You can add more.
+### Default
 
-#### Quick Select  
-
-Default: `approve`  
+This is where you can provide the default selected item for the dropdown control. 
 
 ---
 
