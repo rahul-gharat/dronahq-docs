@@ -44,7 +44,7 @@ Once your API key is set, you can access the AI Chatbot right inside the App Bui
 
 ## Build Your Application
 
-To start building your app, simply type a prompt like "Create a form to capture customer feedback using @formFeeddback" and let AI generate the layout for you.
+To start building your app, simply type a prompt like "Create a form to capture customer feedback using @formFeedbackDB" and let AI generate the layout for you.
 
 To know more about creating apps with AI, refer to the [Create Apps with AI](create-apps-with-ai.md).
 
