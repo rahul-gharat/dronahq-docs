@@ -561,26 +561,62 @@ Enable this to automatically add new apps to git. Ideally, you should set to `tr
 
     GIT_SYNC_CREATE_REPO_ON_APP_ADD=true
 
-## Other optional variables
+## Secret keys
 
-#### `SECRET_API_TOKEN_KEY`
-By default, DronaHQ uses its own secret token for authentication of internal APIs. You can add your custom token instead.
+:::info
+To enhance security for dronahq self-hosted deployments, secret keys are automatically generated on every server restart. This prevents long-lived secrets from being exposed or misused, reducing security risks.
+:::
+
+### Auto-Generated Secret Keys
+
+By default, the following secret keys are automatically generated on every server restart:
+
+- **`SESSION_KEY_SECRET`** - Used for self-hosted logged-in sessions.
+- **`AUTOMATION_API_KEY`** - Used for automation's internal calls, such as run log entry.
+- **`JWT_SECRET_KEY`** - Used for automation internal session validation.
+- **`SECRET_API_TOKEN_KEY`** - Used for studio and all other module internal calls.
+- **`BUILDER_LICENSE_TOKEN`** - Used for internal authentication between the builder and add-ons (automation, database, file storage).
+
+### Persisting Secret Keys
+
+If you want to persist these secret values across server restarts, set the corresponding environment variables in the environment file:
 
 ```shell
-SECRET_API_TOKEN_KEY=some-random-secret-token
+SESSION_KEY_SECRET=your_session_key_secret
+AUTOMATION_API_KEY=your_automation_api_key
+JWT_SECRET_KEY=your_jwt_secret_key
+SECRET_API_TOKEN_KEY=your_secret_api_token_key
+EMBED_APP_JWT_SECRET_KEY=your_embed_app_jwt_secret_key
+BUILDER_LICENSE_TOKEN=your_builder_license_token
 ```
 
+By setting these environment variables, the secret keys will remain constant across server restarts, ensuring consistent authentication and security behavior.
+
+:::caution Security Risks of Persisting Secret Keys
+Persisting secret keys can introduce security risks, including:
+
+- **Long-Lived Secrets:** Static secret keys remain valid indefinitely, making them a target for exploitation if leaked.
+- **Configuration Management Risks:** Improper handling of environment files (such as committing them to version control or using insecure storage) can expose secret values.
+
+To mitigate these risks, ensure that environment files are securely stored, access is restricted, and keys are rotated periodically.
+:::
+
+## Other optional variables
+
 #### `ENCRYPTION_KEY`
+
 By default, DronaHQ user its own encryption key to encrypt credentials and secret information flows in system. You can configure your own encryption key for added security. Also make sure to keep backup of your key at secure location.
+
 ```shell
 ENCRYPTION_KEY=some-random-secret-key
 ```
 
-#### `SESSION_KEY_NAME`, `SESSION_KEY_SECRET`
+#### `SESSION_KEY_NAME`
+
 By default, DronaHQ user its own session key and secret key. You can configure your own if you want to customize.
+
 ```shell
 SESSION_KEY_NAME=cookie-name
-SESSION_KEY_SECRET=secret-key-to-sign-cookie
 ```
 
 #### `SENDGRID_API_KEY`
