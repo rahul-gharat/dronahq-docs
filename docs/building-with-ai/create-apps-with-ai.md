@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 3
 title: Create App with AI
 ---
 
@@ -21,7 +21,7 @@ No need to write a prompt. It’s a visual-first way to get started fast.
 ### Option 2: Describe the App in a Prompt
 You can type a simple prompt like:
 
->"Create a customer feedback form with name, rating, and comment box."
+>"Create a customer feedback form with name, rating, and comment box using @formFeedback."
 
 Here’s what happens next:
 1. AI generates a BRD (Business Requirements Document) based on your prompt.
@@ -32,15 +32,14 @@ This is perfect for when you have the app idea but no design yet.
 
 Once the app is created, you can use AI-powered prompts to:
 - Edit components using @component prompts
-- Add actions and workflows
+- Add actionflows
 - Replace components dynamically
 
 To know more refer to the following docs.
 
 ### Current Limitations
-- Supports only SQL connector for now
+- Supports only SQL connector for now, also without data-query UI can't be generated.
 - Cannot generate or bind full custom data queries
-- Property updates supported on limited controls (9 for now)
-- Action flow generation is limited in scope
-- Replace operation is supported on select controls only
+- Property updates supported on [limited controls](/building-with-ai/ai-powered-editing/#supported-controls).
+- Action flow generation is limited in scope with [limited actions](/building-with-ai/ai-powered-editing/#supported-actions).
 

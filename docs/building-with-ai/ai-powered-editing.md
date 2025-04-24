@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 4
 title: AI-Powered Editing
 ---
 
@@ -26,7 +26,7 @@ For example:
 - `@headerText align center and change text to Welcome!`
 
 #### How to Use
-1. Open the AI Chat Assistant from the left sidebar.
+1. Open the AI Chatbot from the left sidebar.
 2. Type your prompt using `@componentName` to refer to an existing control.
 3. The AI will parse and apply updates immediately to the component.
 
@@ -37,8 +37,6 @@ For example:
 This method is ideal for making quick UI tweaks — like updating button styles, label text, visibility rules, or sizing.
 
 
-
-Certainly! Continuing with the same style and structure:
 
 ---
 
@@ -52,7 +50,7 @@ For example:
 - `@inputField add action to validate email format`
 
 #### How to Use
-1. Open the AI Chat Assistant from the left sidebar.
+1. Open the AI Chatbot from the left sidebar.
 2. Type your prompt  using `@componentName` and desired action.
 3. The AI will automatically create and attach the specified action to the component.
 
@@ -69,6 +67,20 @@ Currently, only a limited set of actions are supported for generating Actionflow
 
 This feature is great for rapidly implementing behaviors like form submissions, redirects, and API integrations directly from your interface.
 
+#### Supported Actions
+
+| Action Name         | Description                                     |
+|---------------------|-------------------------------------------------|
+| JS Code             | Executes custom JavaScript code                 |
+| Navigate To Screen  | Moves the user to another screen                |
+| confirm             | Displays a confirmation dialog                  |
+| Toast               | Shows a toast notification                      |
+| Validate Screens    | Triggers screen-level validations               |
+| Connector Query     | Executes a backend connector or data query      |
+| Set Control Value   | Programmatically updates a control’s value      |
+
+
+
 ---
 
 
@@ -82,7 +94,7 @@ For example:
 - `@inputField replace with rich text editor`
 
 #### How to Use
-1. Open the AI Chat Assistant from the left sidebar.
+1. Open the AI Chatbot from the left sidebar.
 2. Type your prompt with `@componentName` and specify the replacement component.
 3. The AI will replace the specified component with the new one, and automatically update any relevant properties where necessary.
 
@@ -91,13 +103,27 @@ For example:
 Currently, replacement is supported for 9 control types. This list will expand in future updates.
 :::
 
-Here's the segment with the requested information:
+#### Supported Controls
+
+| Control Name             | Description                              |
+|--------------------------|------------------------------------------|
+| Tablegrid                | Displays tabular data from a data source |
+| Container                | Groups components for layout and styling |
+| Image Box                | Displays images from URLs or uploads     |
+| Button                   | Triggers actions on click                |
+| Detail View              | Shows detailed data view per row/item    |
+| Dashboard                | Container for charts, KPIs, metrics      |
+| Tabbed Container         | Displays grouped content in tab layout   |
+| JSON Schema Form Control | Renders forms based on JSON schema       |
+| Grouped Menu             | Navigation menu with grouped sections    |
+
+
 
 ---
 
 ## Adding Data Queries to Components via AI
 
-At the moment, the AI Chat Assistant in DronaHQ does not support directly adding data queries to components via prompt. However, you can still leverage AI assistance to bind data to your components by using a different approach.
+At the moment, the AI Chatbot in DronaHQ does not support directly adding data queries to components via prompt. However, you can still leverage AI assistance to bind data to your components by using a different approach.
 
 #### How to Use
 
