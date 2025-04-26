@@ -48,3 +48,51 @@ To start building your app, simply type a prompt like "Create a form to capture 
 
 To know more about creating apps with AI, refer to the [Create Apps with AI](create-apps-with-ai.md).
 
+
+Got you! Here's a **fancier**, more **engaging Markdown version** — perfect if you're planning to use this in **docs**, **marketing material**, or **user onboarding screens** ✨:
+
+---
+
+## AI Credits Usage Overview
+
+Depending on how you connect your AI models, your credit consumption varies:
+
+- **DronaHQ API Key** → Higher credits usage
+- **Your LLM Provider API Key** → Lower credits usage
+
+---
+
+### AI Chatbot Credit Usage
+
+Below are the number of credits used when conversing with DronaHQ Ai chatbot using either DronaHQ credentials or your credentials when conversing to LLM provider.
+
+| Feature | DronaHQ | Your LLM Provider |
+|:-----------|:------------------------|:-------------------------------------|
+| Generate Image | 3 | 1 |
+| Generate BRD | 30 | 10 |
+| Approve BRD | 75 | 25 |
+| Update Control Properties | 30 | 10 |
+| Single Control Action Flow | 9 | 3 |
+| Replace Control | 60 | 20 |
+
+
+### AI Assist Credit Usage
+
+Below are the number of credits used when conversing with DronaHQ Ai Assist (🪄) using either DronaHQ credentials or your credentials when conversing to LLM provider.
+
+| Feature | DronaHQ | Your LLM Provider |
+|:-----------|:------------------------|:-------------------------------------|
+| Bind DB Connector to control using Data Query | 9 | 3 |
+| Bind Static/JavaScript to control using Data Query | 6 | 2 |
+| Transform JS while Binding Data to control | 3 | 1 |
+| Column Formatting | 3 | 1 |
+| Raw Data Transform | 3 | 1 |
+| Generate SQL Query | 9 | 3 |
+| TransformJS in SQL Query | 3 | 1 |
+| Custom JavaScript in Dataquery | 6 | 2 |
+| Custom JavaScript in Actionflows | 6 | 2 |
+
+
+:::tip
+⚡ Using your own LLM Provider Api key gives you up to **3× more efficient credit usage**!
+:::
