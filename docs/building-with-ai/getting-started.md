@@ -68,7 +68,7 @@ Below are the number of credits used when conversing with DronaHQ Ai chatbot usi
 
 | Feature | DronaHQ | Your LLM Provider |
 |:-----------|:------------------------|:-------------------------------------|
-| Generate Image | 3 | 1 |
+| Generate UI from Image | 3 | 1 |
 | Generate BRD | 30 | 10 |
 | Approve BRD | 75 | 25 |
 | Update Control Properties | 30 | 10 |
