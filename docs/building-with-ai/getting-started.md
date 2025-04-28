@@ -11,8 +11,6 @@ import Thumbnail from '@site/src/components/Thumbnail';
 
 DronaHQ’s Build With AI experience is designed to help you create apps faster, smarter, and with fewer manual steps. Whether you want to generate entire screens from a sentence or tweak individual components using simple prompts, the AI Chatbot is here to make things smoother.
 
-Here’s how to get started:
-
 ##  Set Up Your OpenAI API Key
 
 To begin using the AI features, you need to make sure the platform has access to an OpenAI API key.
@@ -40,6 +38,9 @@ Once your API key is set, you can access the AI Chatbot right inside the App Bui
 - On the left sidebar, look for the 🪄 AI Chatbot icon .
 - Click it to launch the chat panel and start building with prompts.
 
+<figure>
+  <Thumbnail src="/img/build-with-ai/chatbot.png" alt="Chatbot" />
+</figure>
 
 
 ## Build Your Application
