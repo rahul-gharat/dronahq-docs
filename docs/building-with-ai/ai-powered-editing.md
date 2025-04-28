@@ -21,9 +21,9 @@ This allows for an intuitive editing experience, helping you move fast without d
 You can update properties of individual components using prompts and `@mentions`.
 
 For example:
-- `@submitBtn make it primary`
-- `@inputEmail placeholder should be 'Enter your email'`
-- `@headerText align center and change text to Welcome!`
+- `@submitBtn change label to Submit and background color to blue`
+- `Enable pagination in @tablegrid`
+- `Update the label for @jsonForm to Customer Details Form and make it bold`
 
 #### How to Use
 1. Open the AI Chatbot from the left sidebar.
@@ -36,18 +36,21 @@ For example:
 
 This method is ideal for making quick UI tweaks — like updating button styles, label text, visibility rules, or sizing.
 
+:::note
+Currently, only a limited set of controls are supported for updating component properties. This [list](#supported-controls) will expand in future updates.
+:::
 
 
 ---
 
 ## Add Actions to Components via Prompt
 
-With AI-powered editing in DronaHQ, you can quickly add actions to components by typing simple prompts. These actions can trigger specific behaviors, such as submitting a form, sending an email, or performing an API call.
+With AI-powered editing in DronaHQ, you can quickly add actions to components by typing simple prompts. These actions can trigger specific behaviors, such as validating a screen, run a query on DB connector , or showing confirmation popup.
 
 For example:
-- `@submitBtn add action to submit form data to SQL`
-- `@loginForm add action to redirect to dashboard on success`
-- `@inputField add action to validate email format`
+- `On @loginForm submit click, insert form details into @formFeedbackDB`
+- `On @submitBtn button click, validate screen-1 and navigate to screen-2`
+- `On @inputField focus out, validate screen-1 and show toast on validation failure`
 
 #### How to Use
 1. Open the AI Chatbot from the left sidebar.
@@ -73,7 +76,7 @@ This feature is great for rapidly implementing behaviors like form submissions, 
 |---------------------|-------------------------------------------------|
 | JS Code             | Executes custom JavaScript code                 |
 | Navigate To Screen  | Moves the user to another screen                |
-| confirm             | Displays a confirmation dialog                  |
+| Confirm             | Displays a confirmation dialog                  |
 | Toast               | Shows a toast notification                      |
 | Validate Screens    | Triggers screen-level validations               |
 | Connector Query     | Executes a backend connector or data query      |
@@ -89,9 +92,9 @@ This feature is great for rapidly implementing behaviors like form submissions, 
 If you need to swap one component for another in your app, you can do this quickly via conversational prompts. This saves you from the hassle of manually deleting and adding new components, helping you keep your workflow efficient.
 
 For example:
-- `@dropdown replace with radiogroup for single selection`
-- `@submitBtn replace with custom button with icon`
-- `@inputField replace with rich text editor`
+- `Replace @dropdown with form for capturing customer information`
+- `Replace @inputfield with Button control with purple background and label as Submit`
+- `Replace @submitBtn with Table`
 
 #### How to Use
 1. Open the AI Chatbot from the left sidebar.
@@ -99,8 +102,8 @@ For example:
 3. The AI will replace the specified component with the new one, and automatically update any relevant properties where necessary.
 
 
-:::caution
-Currently, replacement is supported for 9 control types. This list will expand in future updates.
+:::note
+Currently, only a limited set of controls are supported that can be used to replace control with. This [list](#supported-controls) will expand in future updates.
 :::
 
 #### Supported Controls
@@ -123,15 +126,15 @@ Currently, replacement is supported for 9 control types. This list will expand i
 
 ## Adding Data Queries to Components via AI
 
-At the moment, the AI Chatbot in DronaHQ does not support directly adding data queries to components via prompt. However, you can still leverage AI assistance to bind data to your components by using a different approach.
+At the moment, the DronaHQ AI Chatbot does not support directly bind data to components using data queries via prompt. However, you can still leverage AI assistant to bind data to your components by using a different approach.
 
 #### How to Use
 
 1. Click on the component (e.g., Table Grid) where you want to bind data.
 2. Click on the top Ai assist icon on the component.
-3. Enter your prompt, such as "For this Table Grid, fetch all data from the [Data Query Name]".
+3. Enter your prompt, such as "fetch all data from the @[DB Connector Name]".
 
-This will guide the AI to generate the appropriate connections for you, helping you bind your data source to the component.
+This will guide the AI to generate the appropriate data query for you, helping you bind your data source to the component.
 
 :::note
 Currently, this is a workaround since direct data query binding via AI prompts is not yet supported. However, with AI Assist, you can still accomplish the task by interacting with the component individually.
