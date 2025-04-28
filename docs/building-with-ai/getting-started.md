@@ -43,6 +43,17 @@ Once your API key is set, you can access the AI Chatbot right inside the App Bui
 </figure>
 
 
+
+- Top Bar: Shows your app name and feature label ("Build With AI").
+- Tabs: Switch between "Chat" (current session) and "History" (past interactions).
+- Main Area: 
+  - A personalized greeting.
+  - Options to either type prompts or upload images to build apps.
+  - Clear pointers on tasks like building UI, updating properties, or replacing controls using natural language.
+- Templates: Ready-to-use templates like "Billing Management System" and "Supply Chain Management" to jumpstart your project.
+- Input Box: Describe your app idea or upload images to generate screens. There's also an Attachment button for uploading templates.
+
+
 ## Build Your Application
 
 To start building your app, simply type a prompt like "Create a form to capture customer feedback using @formFeedbackDB" and let AI generate the layout for you.
@@ -50,9 +61,6 @@ To start building your app, simply type a prompt like "Create a form to capture 
 To know more about creating apps with AI, refer to the [Create Apps with AI](create-apps-with-ai.md).
 
 
-Got you! Here's a **fancier**, more **engaging Markdown version** — perfect if you're planning to use this in **docs**, **marketing material**, or **user onboarding screens** ✨:
-
----
 
 ## AI Credits Usage Overview
 

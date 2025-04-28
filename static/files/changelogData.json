@@ -1,4 +1,27 @@
-[
+[ {
+    "timestamp": 1745213952000,
+    "tags": ["Cloud-Hosted"],
+    "heading": "",
+     "cards": [
+      {
+        "title": "Added",
+        "type": "added",
+        "points": [
+          "Added live countdown timer for Build with AI."
+        ]
+      },
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed spacing issue when enabling label plus description.",
+          "Fixed an issue where the old way of navigation was not working in preview.",
+          "Commented out logger in files.",
+          "Optimization for form save, screen delete, screen duplicate, and memory management."
+        ]
+      }
+    ]
+  },
   {
     "timestamp": 1745213952000,
     "tags": ["Cloud-Hosted"],

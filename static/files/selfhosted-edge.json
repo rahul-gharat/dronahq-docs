@@ -1,4 +1,20 @@
-[
+[ {
+    "timestamp": 1745816666000,
+    "tags": ["Self-Hosted", "3.7.0-edge"],
+    "heading": "Version 3.7.0-edge",
+     "cards": [
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed an issue where persistent was not working as expected.",
+          "Fixed connector logs issue by adding compareOnPremVersions function to it.",
+          "Fixed GetSSO token encryption issue.",
+          "Fixed an issue where Advanced Editor was not able to add columns in layout."
+        ]
+      }
+    ]
+  },
   {
     "timestamp": 1745213952000,
     "tags": ["Self-Hosted", "3.7.0-edge"],

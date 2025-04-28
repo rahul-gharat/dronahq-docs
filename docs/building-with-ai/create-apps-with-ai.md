@@ -16,6 +16,20 @@ You can upload an image of a layout — like a screenshot of a form, a sketch, o
 
 The AI will analyze the image and generate a matching screen with relevant components like text inputs, dropdowns, buttons, and labels.
 
+<div style={{ position: 'relative', paddingBottom: 'calc(46.33333333333333% + 41px)', height: 0 }}> 
+    <iframe 
+        src="https://demo.arcade.software/mc5VGpTSNLXmiJpcy4s2?embed&embed_mobile=tab&embed_desktop=inline&show_copy_link=true"
+        title="Building a UI with AI Assistance"
+        frameborder="0" 
+        loading="lazy" 
+        webkitallowfullscreen 
+        mozallowfullscreen 
+        allowfullscreen 
+        style= {{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', colorScheme: 'light' }} >
+    </iframe>
+</div>
+<br></br>
+
 No need to write a prompt. It’s a visual-first way to get started fast.
 
 ### Option 2: Describe the App in a Prompt
