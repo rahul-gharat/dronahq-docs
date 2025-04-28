@@ -1,4 +1,41 @@
-[
+[  {
+    "timestamp": 1745816666000,
+    "tags": ["Control", "Action"],
+    "heading": "",
+    "cards": [
+      {
+        "title": "Added",
+        "type": "added",
+        "points": [
+          "Added extra new properties for advanced editor in LIST REPEAT."
+        ]
+      },
+      {
+        "title": "Enhancements",
+        "type": "improved",
+        "points": [
+          "Added indeterminate and hide value label properties in PROGRESS BAR.",
+          "Added indeterminate and hide value label properties in CIRCULAR PROGRESS BAR.",
+          "Enhanced LINK with prefix/suffix icons, allow wrapping, underline type, and underline style properties.",
+          "Enhanced RANGE PICKER with show end value and display value properties.",
+          "Added default formula binding section and new default formula in CHECKBOX TREE.",
+          "Reduced default width of control in CONTAINER.",
+          "Added a progress bar in TIMELINE to indicate timeline status.",
+          "Enhanced PHONE with prefix/suffix text and icon, show clear, and lock selected country properties.",
+          "Added function in BINDAPI to compare on-prem version for better control on execution.",
+          "Enhanced TABLE GRID with configurable custom actions column, configurable search bar minimum width, turn off row selections option, and configurable header visibility.",
+          "Added info for sample file in FILE UPLOAD."
+        ]
+      },
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed issue in FILE UPLOAD where resetting control for only one allowed file still showed a limit exceeded error for the new file."
+        ]
+      }
+    ]
+  },
   {
     "timestamp": 1745213952000,
     "tags": ["Control", "Action"],
@@ -26,7 +63,7 @@
         "title": "Fixed",
         "type": "fixed",
         "points": [
-          "Fixed ActionFlow filter object action in FILTER OBJECTS.",
+          "Fixed ActionFlow filter object action in FILTER OBJECTS, NAME, PHONE AND ADDRESS.",
           "Added proper function reference in SETVARIABLE for select data query dropdown.",
           "Minor UI fix in CUSTOM CONTROL.",
           "Minor UI fixes in PREFIX SUFFIX and MAP.",
