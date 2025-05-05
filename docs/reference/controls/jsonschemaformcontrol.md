@@ -100,6 +100,42 @@ You can reffer here to  know more about structuring of [UI Schema](https://react
 }
 ```
 
+### Signature Pad Widget - Feature
+
+The Signature Pad widget brings signature capture directly into your JSON Schema Forms. It allows users to draw their signature, that is then stored as an image .
+
+<figure>
+  <Thumbnail src="/img/reference/controls/json-schema-form-control/sig.png" alt="JSON Schema Form Control" />
+</figure>
+
+#### JSON Schema
+
+```json
+{
+  "title": "User Registration",
+  "type": "object",
+  "properties": {
+    "signature": {
+      "type": "string",
+      "title": "Signature"
+    }
+  }
+}
+```
+
+####  UI Schema
+
+```json
+{
+  "signature": {
+    "ui:widget": "signature"
+  }
+}
+```
+
+
+
+
 ### Form Data
 
 The Form Data represents the submitted values in JSON format. It holds the final output once the user interacts with and
