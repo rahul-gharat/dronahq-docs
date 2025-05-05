@@ -36,7 +36,7 @@ Provide a placeholder text to guide the user.
 | ----------- | ----------------------------------------------------------------------------------------- |
 | Tooltip     | Provides helpful hints or extra information on hover.                                     |
 | Description | Adds descriptive text beneath options or sections.                                        |
-| Label       | Displays labels for specific options or sections.                                         |
+| Label       | Displays labels for specific options or sections.   Configurable with size, weight, and color. |
 | Prefix      | Adds an icon or text before the field content. Configurable with size, weight, and color. |
 | Suffix      | Adds an icon or text after the field content. Configurable with size, weight, and color.  |
 
@@ -68,6 +68,7 @@ The Input text control may trigger events when there is a modification in the va
 | focus_out    | Triggers when the control loses focus, typically when the user clicks outside the control.   |
 | enter_press  | Activates upon pressing the Enter key while interacting with the Input text control.          |
 
+---
 
 <figure>
   <Thumbnail src="/img/reference/controls/textinput/app-adv.png" alt="Text Input" />
