@@ -86,9 +86,12 @@ Whether you're building a full screen or a single component, the system ensures 
 One of the most powerful enhancements to the DronaHQ Design System is its integration with  DronaHQ AI - **Build With  AI**.
 
 
+
 <video width="100%" controls preload="metadata">
-  <source src="videos/figma-ai/figmaai.mp4"/>
+  <source src="/videos/figma-ai/figmaai.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
 </video>
+
 
 ### How It Works:
 
