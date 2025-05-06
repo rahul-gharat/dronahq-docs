@@ -1,4 +1,28 @@
 [  {
+  "timestamp": 1746506350000,
+  "tags": ["Control", "Action"],
+  "heading": "",
+  "cards": [
+    {
+      "title": "Enhancements",
+      "type": "improved",
+      "points": [
+        "Enhanced Color Picker control with prefix, suffix text and icon, show clear option, and color format support."
+      ]
+    },
+    {
+      "title": "Fixed",
+      "type": "fixed",
+      "points": ["Fixed an issue in Text Input control where error was not getting cleared on data change."]
+    },
+    {
+      "title": "Removed",
+      "type": "removed",
+      "points": ["Removed Button 3 control."]
+    }
+  ]
+}
+,{
     "timestamp": 1745816666000,
     "tags": ["Control", "Action"],
     "heading": "",

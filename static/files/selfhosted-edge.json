@@ -1,4 +1,99 @@
 [ {
+  "timestamp": 1746506350000,
+  "tags": ["Self-Hosted", "3.8.1-edge"],
+  "heading": "Version 3.8.1-edge",
+  "cards": [
+    {
+      "title": "Added",
+      "type": "added",
+      "points": [
+        "Added new library of Barcode Detector for Barcode control."
+      ]
+    },
+    {
+      "title": "Enhancements",
+      "type": "improved",
+      "points": [
+        "Enhanced Bind Data section by renaming it to Default Values.",
+        "Enhanced default behavior in custom control to show maximized view of CodeMirror.",
+        "Enhanced page height calculation logic to add extra padding at the end of the page.",
+        "Enhanced addon, dropdown item, and action dropdown by adding hover property.",
+        "Enhanced Studio App Listing, Connectors, Catalogs, Manage User → User Details, and Builder-side connector library by adding fallback images for image failure.",
+        "Enhanced hover interaction to allow copying content and opening links when mouse is over.",
+        "Enhanced UX to open properties on unique name click and close it on second click.",
+        "Improved GlobalConfig variable handling for Automation rename."
+      ]
+    },
+    {
+      "title": "Fixed",
+      "type": "fixed",
+      "points": [
+        "Fixed issue with control formulas in ready-to-use templates.",
+        "Fixed issue where mapped options were not visible in manual options.",
+        "Fixed issue where controlName was disappearing in WhenToExecute editor.",
+        "Fixed an issue where WhenToExecute condition was not working for Actionflow Data Queries.",
+        "Fixed issue where Failure condition was not working properly."
+      ]
+    }
+  ]
+}
+,{
+  "timestamp": 1746506350000,
+  "tags": ["Self-Hosted", "3.8.0-edge"],
+  "heading": "Version 3.8.0-edge",
+  "cards": [
+    {
+      "title": "Added",
+      "type": "added",
+      "points": [
+        "Added expire time field in Set action of Redis connector.",
+        "Added GCS Secret Manager.",
+        "Added feature \"Run on app open\" toggle in Data Query, which allows you to execute query at start of app.",
+        "Added option to rename Automation.",
+        "Added UploadFilev2 endpoint for Managed Storage Connector."
+      ]
+    },
+    {
+      "title": "Enhancements",
+      "type": "improved",
+      "points": [
+        "Enhanced Add Connector search bar and Connector listing search bar in Console.",
+        "Enhanced AWS Region field by changing it from input to dropdown.",
+        "Enhanced page load process by updating RunAPI and DHQ Submission base URL at runtime.",
+        "Enhanced security by implementing RBAC permission model.",
+        "Improved Control Editing UX on Builder.",
+        "Improved backward evaluation flow for Data Queries on refresh from table grid, refresh control, and Trigger Data Query.",
+        "Improved XML processing by upgrading fast-xml-parser version and updating its functions.",
+        "Improved dropdown behavior to show mapped options when value is an array of objects.",
+        "Enhanced support for interactive PDFs by enabling uploading, viewing, and filling AcroForm.",
+        "Enhanced logging by converting all console.log and console.error (console.* functions) to Logger.*."
+      ]
+    },
+    {
+      "title": "Fixed",
+      "type": "fixed",
+      "points": [
+        "Fixed an issue where Athena connector gives integer type data in string type.",
+        "Fixed an issue where controls used in Data Query, if deleted, caused errors to be logged in the console.",
+        "Fixed an issue in Summary control where Pages selection dropdown (multi-select) was not working properly.",
+        "Fixed an issue where the Users dropdown in Preview was not displaying the initial user list and not persisting the selected user after switching.",
+        "Fixed story alignment according to new UI of Properties and Action flow.",
+        "Fixed error indication by highlighting controls with configuration issues in Rules and Validation.",
+        "Fixed race condition on Data Query switch that caused an empty screen.",
+        "Fixed an issue where beta users were unable to navigate to the parent app properly.",
+        "Fixed dropdown configuration to allow empty name and display text as value instead of blank.",
+        "Fixed Data Bind section to reflect renamed Data Query in list and composite controls.",
+        "Fixed data model issue where removing event in new property stored incorrect Action flow key.",
+        "Fixed focus issue when clicking custom validation through property.",
+        "Fixed data type handling for default formula in control property binding.",
+        "Fixed issue where executeQuery's user and license validation URL was not resolving properly.",
+        "Fixed Advance Editor panel issue where the plus button did not open control listing in Builder view.",
+        "Fixed layout issue by increasing height of CodeMirror."
+      ]
+    }
+  ]
+},
+{
     "timestamp": 1745816666000,
     "tags": ["Self-Hosted", "3.7.0-edge"],
     "heading": "Version 3.7.0-edge",
@@ -25,7 +120,7 @@
         "type": "added",
         "points": [
           "Added moment-timezone library.",
-          "Added support for configurable deprecation messages in Actionflow blocks."
+          "Added support for configurable deprecation messages in Action flow blocks."
         ]
       },
       {
@@ -498,7 +593,7 @@
           "Fixed the issue preventing API calls related to the share sidebar from occurring.",
           "Fixed the issue causing the home screen of the app to appear during routing.",
           "Fixed the problem where the app did not function as expected after publishing.",
-          "Fixed the old server-side Actionflow connector sidebar rendering bug.",
+          "Fixed the old server-side Action flow connector sidebar rendering bug.",
           "Fixed the issue where dynamic credentials were not passing the values of controls or variables.",
           "Fixed the conflict where the delete control shortcut interfered with the normal Cmd+Del behavior."
         ]
@@ -645,7 +740,7 @@
         "points": [
           "Fixed broken UI in Automation modal.",
           "Fixed issue with app import failing.",
-          "Fixed multistep authentication issue in Actionflow where connector returned error but ran success flow instead.",
+          "Fixed multistep authentication issue in Action flow where connector returned error but ran success flow instead.",
           "Fixed assumeRole flow in cases where no security tokens are provided.",
           "Fixed broken image problem in the create dropdown on the App Listing page.",
           "Fixes made for app export not opening in settings.",

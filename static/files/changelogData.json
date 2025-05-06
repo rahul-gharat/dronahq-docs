@@ -1,14 +1,28 @@
-[ {
+[
+  {
+    "timestamp": 1746506350000,
+    "tags": ["Cloud-Hosted"],
+    "heading": "",
+    "cards": [
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed Advanced Editor row and column drag-and-drop issue.",
+          "Fixed an issue where persistent was not working as expected."
+        ]
+      }
+    ]
+  },
+  {
     "timestamp": 1745213952000,
     "tags": ["Cloud-Hosted"],
     "heading": "",
-     "cards": [
+    "cards": [
       {
         "title": "Added",
         "type": "added",
-        "points": [
-          "Added live countdown timer for Build with AI."
-        ]
+        "points": ["Added live countdown timer for Build with AI."]
       },
       {
         "title": "Fixed",
@@ -47,8 +61,8 @@
           "Enhanced font visibility with color-coding and improved sidebar close icon.",
           "Enhanced default loader functionality by adding reset to default loader option."
         ]
-      }   ,     
-    {
+      },
+      {
         "title": "Fixed",
         "type": "fixed",
         "points": [
