@@ -8,16 +8,7 @@ import Image from '@site/src/components/Image';
 import VersionedLink from '@site/src/components/VersionedLink';
 import Thumbnail from '@site/src/components/Thumbnail';
 
-The GPS control is used to get the current location of the user’s device. You need to enable GPS Location to use this control on the app. This might be useful in apps like the Site Inspection app where the user’s location can be noted to see if they are at site location when performing the inspection.
-
-<figure>
-  <Thumbnail src="/img/reference/controls/gps/preview.png" alt="GPS" />
-  <figcaption align = "center"><i>GPS</i></figcaption>
-</figure>
-
-
-
-:::note TIP
+:::note Start from here
 
 
 DronaHQ provides a built-in GPS control to fetch location coordinates. However, if you need more flexibility, you can also use JavaScript within a JS Code block to retrieve location data programmatically.  
@@ -67,6 +58,22 @@ This function uses the browser's `navigator.geolocation.getCurrentPosition()` me
 
 This approach allows you to fetch real-time location data dynamically within DronaHQ.
 :::
+
+:::caution DEPRECATED
+
+We are deprecating this control but you can use helper function [GETLOCATION](../keywords-js-utilities/Helper.md/#getlocation).
+:::
+
+The GPS control is used to get the current location of the user’s device. You need to enable GPS Location to use this control on the app. This might be useful in apps like the Site Inspection app where the user’s location can be noted to see if they are at site location when performing the inspection.
+
+<figure>
+  <Thumbnail src="/img/reference/controls/gps/preview.png" alt="GPS" />
+  <figcaption align = "center"><i>GPS</i></figcaption>
+</figure>
+
+
+
+
 
 
 ## Control Outputs
