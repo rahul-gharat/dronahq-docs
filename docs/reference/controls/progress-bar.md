@@ -13,29 +13,42 @@ The Progress Bar Control serves as a visual indicator, showcasing the percentage
   <figcaption align="center"><i>Progress Bar Control Preview</i></figcaption>
 </figure>
 
-## Binding Data Options
+---
 
-The Progress Bar Control allows the tracking of progress using the Bind Data option. It accepts two binding data options:
+<figure>
+  <Thumbnail src="/img/reference/controls/progress-bar/content.png" alt="Progress Bar Control Preview" />
+</figure>
 
-- `label`: Represents the label or text displayed on the left side of the progress bar.
-- `percentage`: Indicates the percentage value for the progress.
 
-### Static Data Option
+## Content
 
-You can use this feature to define or modify the progress value:
+#### label
+Represents the label or text displayed on the left side of the progress bar.
+#### Percentage
+Indicates the percentage value for the progress.
 
-```json
-{
-  "label": "Progress",
-  "percentage": 75
-}
-```
+### Add-ons  
 
-## Properties
+| Add-on      | Description                                                                               |
+| ----------- | ----------------------------------------------------------------------------------------- |
+| Tooltip     | Provides helpful hints or extra information on hover.                                     |
+| Description | Adds descriptive text beneath options or sections.                                        |
+| Label       | Displays labels for specific options or sections.   Configurable with size, weight, and color. |
 
-| Property         | Description                                                        |
-|------------------|--------------------------------------------------------------------|
-| Progress         | Specifies the size, filled and empty color of the progress bar.     |
-| Left Text        | Customizes the text on the left side of the progress bar.           |
-| Right Text       | Customizes the text on the right side of the progress bar.          |
+
+## Appearance
+
+- Visibility – Controls whether the element is shown or hidden in the interface.  
+- Hide value label -  Toggle this yo hide and show label and values of the control.
+- Progress   :       Specifies the size, filled and empty color of the progress bar.     
+- Left Text  :       Customizes the text on the left side of the progress bar.           
+- Right Text :       Customizes the text on the right side of the progress bar.          
+
+
+
+## Advanced Settings
+
+- External CSS: Add custom styles to the Link control.
+- Trigger Dependents: Automatically invoke linked controls or workflows.
+- Caching: Enable caching to store frequently used inputs.
 

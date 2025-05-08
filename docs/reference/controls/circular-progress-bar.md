@@ -12,33 +12,42 @@ The Circular Progress Bar Control is a Display control used for indicating the p
   <Thumbnail src="/img/reference/controls/circular-progress-bar/preview.png" alt="Circular Progress Bar Control Preview" />
   <figcaption align="center"><i>Circular Progress Bar Control Preview</i></figcaption>
 </figure>
+---
 
-## Binding Data Options
+<figure>
+  <Thumbnail src="/img/reference/controls/circular-progress-bar/content.png" alt="Circular Progress Bar Control Preview" />
+</figure>
 
-The Circular Progress Bar Control allows tracking progress using the Bind Data option. It accepts two binding data options:
 
-- `label`: Represents the label or text displayed at the center of the circular progress bar.
-- `percentage`: Indicates the percentage value for the progress.
+## Content
 
-### Static Data Option
 
-You can use this feature to define or modify the progress value:
 
-```json
-{
-  "label": "Progress",
-  "percentage": 75
-}
-```
+#### label
+Represents the label or text displayed on the left side of the progress bar.
+#### Percentage
+Indicates the percentage value for the progress.
+#### Indeterminate
+The circular progress bar spins continuously or animates in a loop. It indicates that a task is in progress, but no specific progress percentage can be shown.
 
-## Properties
+### Add-ons  
 
-### Progress Bar Properties
+| Add-on      | Description                                                                               |
+| ----------- | ----------------------------------------------------------------------------------------- |
+| Tooltip     | Provides helpful hints or extra information on hover.                                     |
+| Description | Adds descriptive text beneath options or sections.                                        |
+| Label       | Displays labels for specific options or sections.   Configurable with size, weight, and color. |
 
-| Property         | Description                                                        |
-|------------------|--------------------------------------------------------------------|
-| Font             | Properties for the label in the center of the circular progress bar.|
-| Progress         | Customizes the look of the circular progress bar control.           |
-| Alignment        | Specifies the alignment of the circular progress bar.               |
-| Line Clamp       | Wraps the label inside the control to a specified number of lines.  |
 
+## Appearance
+
+- Visibility – Controls whether the element is shown or hidden in the interface.  
+- Hide value label -  Toggle this yo hide and show label and values of the control.
+- Font         : Properties for the label in the center of the circular progress bar.
+- Progress     : Customizes the look of the circular progress bar control.           
+
+## Advanced Settings
+
+- External CSS: Add custom styles to the Link control.
+- Trigger Dependents: Automatically invoke linked controls or workflows.
+- Caching: Enable caching to store frequently used inputs.
