@@ -171,6 +171,8 @@ The rich text editor is activated when you click or focus on any text component 
 
 Fillable Templates let you upload existing PDFs with fillable form fields (such as those created in Adobe Acrobat) and populate them programmatically using DronaHQ. This is ideal when you want to work with standard government forms, contracts, or any pre-designed document. Miscellaneous settings like Zoom In, Zoom Out enhances the pdf viewing experience.
 
+PDFs that have **AcroForm fields** are generally considered fillable PDFs. [Here is an example of a fillable PDF](/documents/pdf-creator/fillable-pdf-example.pdf).
+
 ### Fillable PDF Working
 
 #### Add a Fillable PDF
@@ -184,6 +186,11 @@ Fillable Templates let you upload existing PDFs with fillable form fields (such 
 :::info
 Make sure you upload a valid fillable PDF - the system only accepts PDFs with interactive form fields and does not support regular (non-fillable) documents.
 :::
+
+<figure>
+    <Thumbnail src="/img/pdf_creator/pdf-editor/add-fillable-pdf-ui.png" alt="Add Fillable PDF Sidebar" />
+    <figcaption align='center'><i>Add Fillable PDF Sidebar</i></figcaption>
+</figure>
 
 #### Preview & JSON Mapping
 When a fillable PDF template is clicked from the PDF template listing, it opens in a new tab with the following UI elements:
@@ -199,6 +206,8 @@ When a fillable PDF template is clicked from the PDF template listing, it opens 
     - `type`: Same as the form field type
     - `value`: The actual data to populate
     - `options`: Not required and usually omitted
+
+Check all supported fillable fields [here](./pdf-creator-concepts/fillable-json.md)
     
 - **Generate PDF Button:** Located at the top, this allows you to test the PDF output using the data from the `Generate PDF JSON`.
 

@@ -44,7 +44,7 @@ To generate a pdf from the template you need to configure the fields as follows:
 | PDF Name                     | Name for the generated PDF file.                                                                                                          |
 | Password                     | Is the password to encrypt your PDF. It is an optional field.                                                                             |
 | Template ID                  | The pdf template you want to generate. Click on the down arrow to the extreme right and all the published templates will be listed        |
-| Form JSON Data | Provide the Generate PDF JSON to populate the fillable fields. |
+| Form JSON Data | Provide the Generate PDF JSON to populate the fillable fields. You can find this JSON in the [PDF Editor Sidebar](/pdf-creator-editor/#preview--json-mapping) |
 | Flatten Form | Set to "yes" to make the final PDF non-editable after generation. Set to "no" or leave blank to keep the PDF editable. |
 
 <figure>
