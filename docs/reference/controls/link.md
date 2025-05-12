@@ -14,46 +14,71 @@ The Link control is a Custom control designed to create links either from URLs o
   <figcaption align = "center"><i>Link</i></figcaption>
 </figure>
 
-## Binding Data Options
 
-Link control accepts a string object to create a hyperlink. There are different ways in which you can bind data to the Link control.
+## Content
 
-### Static Data Option
+<figure>
+  <Thumbnail src="/img/reference/controls/link/content.png" alt="Link" />
+</figure>
 
-To display a static link in the Link control, you can use the Bind Data option. The Bind Data option must be specified as a string representing the link URL. For example:
+#### Default
 
-```js
-"https://www.google.com"
-```
+This is where you can provide the default link value for the Link control. 
 
-### Dynamic Data Option
+#### Link Text  
+Specifies the text that will appear as the hyperlink on the form.
 
-You can dynamically bind the link URL by fetching data from `Data queries`, `Sheets`, or `Custom functions` and binding the response to the Data Bind option. For example:
+### Add-ons  
 
-Assuming you want to create a link that directs users to a specific page based on the `country` selected from a database.
+| Add-on      | Description                                                                               |
+| ----------- | ----------------------------------------------------------------------------------------- |
+| Tooltip     | Provides helpful hints or extra information on hover.                                     |
+| Description | Adds descriptive text beneath options or sections.                                        |
+| Label       | Displays labels for specific options or sections.   Configurable with size, weight, and color. |
+| Prefix      | Adds an icon or text before the field content. Configurable with size, weight, and color. |
+| Suffix      | Adds an icon or text after the field content. Configurable with size, weight, and color.  |
 
-Make sure you have a data query named `getCountryLink` that is configured to fetch the link URL for the selected country from your database. The SQL syntax for this query could be:
+## Interaction
 
-```sql
-SELECT link_url FROM country_links WHERE country = :selected_country
-```
+<figure>
+  <Thumbnail src="/img/reference/controls/link/inter.png" alt="Link" />
+</figure>
 
-This query retrieves the link URL from the `country_links` table in your database based on the selected country.
 
-In the Link control, Bind Data Options, select the `Quick Select -> Data Queries -> getCountryLink`
+| Option            | Details                                                                                 |
+|-----------------------|---------------------------------------------------------------------------------------------|
+| Validation        | Add validation rules like `required` or more to the control.                                                       |
+| Read Only         | Makes the control non-editable.                                                            |
+| Submit Data       | Determines when data is submitted (Options: Always, Never, Not When Hidden).                                        |
+| Events            | Lets you define logic or actions (like bindings or workflows) that should trigger based on user interaction.            |
 
-```js
-{{getCountryLink}}
-```
+### Events
 
-By selecting the `getCountryLink` data query, the Link control will fetch the link URL from your database based on the selected country, creating a dynamic hyperlink for the user to follow.
+| Trigger      | Description                                                                                                      |
+|--------------|------------------------------------------------------------------------------------------------------------------|
+| link_click   | Actions triggered when you click the link text. You can add Open URL or Navigate to action and other actions as needed. |
 
-## Properties
+---
 
-| Property   | Description                                                                                           |
-|------------|-------------------------------------------------------------------------------------------------------|
-| Link Text  | Specifies the text that will appear as the hyperlink on the form.                                   |
-| Font       | Defines various font properties, including Size, Line Height, Letter Spacing, Weight, Color, and Alignment. |
+<figure>
+  <Thumbnail src="/img/reference/controls/link/app.png" alt="Link" />
+</figure>
+
+
+## Appearance
+
+- Visibility – Controls whether the element is shown or hidden in the interface.  
+- Allow Wrapping : Determines if text within the element should wrap to the next line when it reaches the container’s edge.
+-Underline Style:  Defines the appearance of the underline, such as solid, dashed, or dotted.
+- Font – Defines the appearance of displayed text. Controls the font size, boldness, color, and alignment of the output text.  
+
+
+
+## Advanced Settings
+
+- External CSS: Add custom styles to the Link control.
+- Trigger Dependents: Automatically invoke linked controls or workflows.
+- Caching: Enable caching to store frequently used inputs.
 
 ## Control Outputs
 
@@ -63,8 +88,3 @@ The outputs from the Link control, represented by the placeholder `{{link}}`, ca
 |--------------|--------------------------------------------------------------------------------------------------------------|
 | link    | Represents the link present in the Link control.                        |
 
-## Events
-
-| Trigger      | Description                                                                                                      |
-|--------------|------------------------------------------------------------------------------------------------------------------|
-| link_click   | Actions triggered when you click the link text. You can add Open URL or Navigate to action and other actions as needed. |

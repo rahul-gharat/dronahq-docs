@@ -35,9 +35,24 @@ No need to write a prompt. It’s a visual-first way to get started fast.
 ### Option 2: Describe the App in a Prompt
 You can type a simple prompt like:
 
->"Create a customer feedback form with name, rating, and comment box using @formFeedbackDB."
+>"Create a simple Property management App using @SD-workshop "
+
+<div style={{ position: 'relative', paddingBottom: 'calc(46.33333333333333% + 41px)', height: 0 }}> 
+    <iframe 
+        src="https://demo.arcade.software/7KKFLX6o76BkC8W9BWt3?embed&embed_mobile=tab&embed_desktop=inline&show_copy_link=true"
+        title="Create a Property Management App with AI"
+        frameborder="0" 
+        loading="lazy" 
+        webkitallowfullscreen 
+        mozallowfullscreen 
+        allowfullscreen 
+        style= {{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', colorScheme: 'light' }} >
+    </iframe>
+</div>
+<br></br>   
 
 Here’s what happens next:
+1. With the propmt user will also mention the exact schema in the configured connector.
 1. AI generates a BRD (Business Requirements Document) based on your prompt.
 2. You can edit this BRD using markdown — rename fields, update text, add or remove items.
 3. Once done, click **Approve** — and DronaHQ will instantly build the app screen using the BRD.
@@ -49,7 +64,7 @@ Once the app is created, you can use AI-powered prompts to:
 - Add actionflows
 - Replace components dynamically
 
-To know more refer to the following docs.
+To know more refer to the [following docs](/building-with-ai/ai-powered-editing/).
 
 ### Current Limitations
 - Supports only SQL based DB connector for now, also without passing @DBConnector, App can't be generated.

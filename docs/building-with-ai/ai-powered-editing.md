@@ -25,6 +25,20 @@ For example:
 - `Enable pagination in @tablegrid`
 - `Update the label for @jsonForm to Customer Details Form and make it bold`
 
+<div style={{ position: 'relative', paddingBottom: 'calc(46.33333333333333% + 41px)', height: 0 }}> 
+    <iframe 
+        src="https://demo.arcade.software/GsLcXalswdcEeJwq0EoG?embed&embed_mobile=tab&embed_desktop=inline&show_copy_link=true"
+        title="Create and Customize an AI-Powered App"
+        frameborder="0" 
+        loading="lazy" 
+        webkitallowfullscreen 
+        mozallowfullscreen 
+        allowfullscreen 
+        style= {{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', colorScheme: 'light' }} >
+    </iframe>
+</div>
+<br></br>  
+
 #### How to Use
 1. Open the AI Chatbot from the left sidebar.
 2. Type your prompt using `@componentName` to refer to an existing control.
@@ -47,10 +61,14 @@ Currently, only a limited set of controls are supported for updating component p
 
 With AI-powered editing in DronaHQ, you can quickly add actions to components by typing simple prompts. These actions can trigger specific behaviors, such as validating a screen, run a query on DB connector , or showing confirmation popup.
 
+  
+  <figure>
+    <Thumbnail src="/img/build-with-ai/actionai.gif" alt="Chatbot" />
+  </figure>
+
 For example:
 - `On @loginForm submit click, insert form details into @formFeedbackDB`
 - `On @submitBtn button click, validate screen-1 and navigate to screen-2`
-- `On @inputField focus out, validate screen-1 and show toast on validation failure`
 
 #### How to Use
 1. Open the AI Chatbot from the left sidebar.
@@ -90,6 +108,11 @@ This feature is great for rapidly implementing behaviors like form submissions, 
 ## Replace Components via Prompt
 
 If you need to swap one component for another in your app, you can do this quickly via conversational prompts. This saves you from the hassle of manually deleting and adding new components, helping you keep your workflow efficient.
+
+  <figure>
+    <Thumbnail src="/img/build-with-ai/replaceai.gif" alt="Chatbot" />
+  </figure>
+
 
 For example:
 - `Replace @dropdown with form for capturing customer information`
@@ -133,6 +156,20 @@ At the moment, the DronaHQ AI Chatbot does not support directly bind data to com
 1. Click on the component (e.g., Table Grid) where you want to bind data.
 2. Click on the top Ai assist icon on the component.
 3. Enter your prompt, such as "fetch all data from the @[DB Connector Name]".
+
+<div style={{ position: 'relative', paddingBottom: 'calc(46.33333333333333% + 41px)', height: 0 }}> 
+    <iframe 
+        src="https://demo.arcade.software/bgKkFRh58LanOWS4Pwo5?embed&embed_mobile=tab&embed_desktop=inline&show_copy_link=true"
+        title="Configuring and Executing Data Queries"
+        frameborder="0" 
+        loading="lazy" 
+        webkitallowfullscreen 
+        mozallowfullscreen 
+        allowfullscreen 
+        style= {{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', colorScheme: 'light' }} >
+    </iframe>
+</div>
+<br></br>  
 
 This will guide the AI to generate the appropriate data query for you, helping you bind your data source to the component.
 

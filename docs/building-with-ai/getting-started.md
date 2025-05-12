@@ -29,34 +29,47 @@ To know more refer to our [Configure OpenAI keys](/ai-configure-openai-keys/) do
 
 Once your key is added, you’re ready to start building with AI!
 
+  ##  Locate the AI Chatbot
+  
+  <figure>
+    <Thumbnail src="/img/build-with-ai/chatbot.png" alt="Chatbot" />
+  </figure>
 
-##  Locate the AI Chatbot
+ 
+  Once your API key is set, you can access the AI Chatbot right inside the App Builder.
 
-Once your API key is set, you can access the AI Chatbot right inside the App Builder.
+  - Open the App Builder from your DronaHQ app builder.
+  - On the left sidebar, look for the 🪄 AI Chatbot icon .
+  - Click it to launch the chat panel and start building with prompts.
 
-- Open the App Builder from your DronaHQ app builder.
-- On the left sidebar, look for the 🪄 AI Chatbot icon .
-- Click it to launch the chat panel and start building with prompts.
+  #### 🔑 Configure API Key (First-time setup)
+  You can either configure your own OpenAi Api Key or use DronaHQ Api key.
 
-<figure>
-  <Thumbnail src="/img/build-with-ai/chatbot.png" alt="Chatbot" />
-</figure>
+  * **Add your own API key** (recommended for faster responses and higher credit limits)
+  * **Using DronaHQ’s API key** (ideal for trying out the feature)
 
 
 
-- Top Bar: Shows your app name and feature label ("Build With AI").
-- Tabs: Switch between "Chat" (current session) and "History" (past interactions).
-- Main Area: 
-  - A personalized greeting.
-  - Options to either type prompts or upload images to build apps.
-  - Clear pointers on tasks like building UI, updating properties, or replacing controls using natural language.
-- Templates: Ready-to-use templates like "Billing Management System" and "Supply Chain Management" to jumpstart your project.
-- Input Box: Describe your app idea or upload images to generate screens. There's also an Attachment button for uploading templates.
+  - Top Bar: Shows your app name and feature label ("Build With AI").
+  - Tabs: Switch between "Chat" (current session) and "History" (past interactions).
+  - Main Area: 
+    - A personalized greeting.
+    - Options to either type prompts or upload images to build apps.
+    - Clear pointers on tasks like building UI, updating properties, or replacing controls using natural language.
+  - Templates: Ready-to-use templates like "Billing Management System" and "Supply Chain Management" to jumpstart your project.
+  - Input Box: Describe your app idea or upload images to generate screens. There's also an Attachment button for uploading templates.
+  - Credit balance - Right on the corner of the input  box, we can keep track of tokens getting used.
+
+
 
 
 ## Build Your Application
 
-To start building your app, simply type a prompt like "Create a form to capture customer feedback using @formFeedbackDB" and let AI generate the layout for you.
+To start building your app, simply type a prompt like `Generate a form to collect attendance using @workshopDB-SD` and let AI generate the layout for you.
+
+<figure>
+  <Thumbnail src="/img/build-with-ai/nlp-gen.png" alt="Chatbot" />
+</figure>
 
 To know more about creating apps with AI, refer to the [Create Apps with AI](create-apps-with-ai.md).
 

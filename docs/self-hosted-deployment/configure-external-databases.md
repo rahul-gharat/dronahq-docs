@@ -177,7 +177,7 @@ Replace variables encapsulated in `<%variable%>` with actual value.
 Run the following command in your DronaHQ installation directory to restore data on external database.
 
 ```shell
-sudo docker compose exec -T mongodb sh -c 'mongorestore --host=localhost -u <%user%> -p <%password%> --nsFrom="db5x_studio.*"  --nsTo="<%dbname%>.*" --authenticationDatabase admin --archive' < mongo-init.dump
+sudo docker compose exec -T mongodb sh -c 'mongorestore --host=localhost -u <%user%> -p <%password%> --nsFrom="dronahq_internal.*"  --nsTo="<%dbname%>.*" --authenticationDatabase admin --archive' < mongo-init.dump
 ```
 
 Replace variables encapsulated in `<%variable%>` with actual value.
@@ -187,10 +187,12 @@ Replace variables encapsulated in `<%variable%>` with actual value.
 Run following command to restore data on external database
 
 ```shell
-mongorestore --host=<% host %> -u <%user%> -p <%password%> --nsFrom="db5x_studio.*"  --nsTo="<%dbname%>.*" --authenticationDatabase admin --archive=mongo-init.dump
+mongorestore --host=<% host %> -u <%user%> -p <%password%> --nsFrom="dronahq_internal.*"  --nsTo="<%dbname%>.*" --authenticationDatabase admin --archive=mongo-init.dump
 ```
 
 Replace variables encapsulated in `<% variable %>` with actual value.
+
+*Note: value provided for --nsFrom refers to default/previous database name or name of the the database using which dump is taken.*
 
 ## 3. Create application user in external database
 
