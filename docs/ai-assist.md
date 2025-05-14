@@ -164,7 +164,7 @@ Unlike data binding, **data formatting doesn’t need a prompt**. As soon as dat
 
 **Auto-formatting highlights:**
 
-* Detects field types like **text**, **numeric**, **email**, **tags**, **booleans** (toggles), and more
+* Detects field types like **text**, **numeric**, **email**, **tags**, **boolean** (toggles), and more
 * Applies conditional row coloring, e.g., different colors for departments like HR, Sales
 
 This smart detection ensures your data appears clean, categorized, and user-friendly—without needing any manual formatting rules.

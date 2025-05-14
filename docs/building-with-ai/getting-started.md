@@ -116,5 +116,5 @@ Below are the number of credits used when conversing with DronaHQ Ai Assist (�
 
 
 :::tip
-⚡ Using your own LLM Provider Api key gives you up to **3× more efficient credit usage**!
+⚡ Using your own LLM Provider Api key gives you up to **3x more efficient credit usage**!
 :::

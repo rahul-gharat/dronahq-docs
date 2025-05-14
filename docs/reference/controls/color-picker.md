@@ -53,7 +53,7 @@ Set the format between `RGB` and `Hex` for the control.
 | --------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Validation            | Defines to make this field as types `Required`. |
 | Read Only             | Makes the input field non-editable. The user can view the content but cannot modify it. |
-| Submit Data           | Determines whether the field's value should be included in form submission. Options include `Always`, `Never`, andd `Not When hidden`.  |
+| Submit Data           | Determines whether the field's value should be included in form submission. Options include `Always`, `Never`, and `Not When hidden`.  |
 | Show Barcode Scanner  | Displays a barcode scanner icon that lets users input values by scanning barcode.  |
 | Debounce Time (In ms) | Sets a delay (in milliseconds) to wait after user input before triggering events like search or API calls. Helps reduce unnecessary calls.|
 | Show Raw Data         | Displays the raw unprocessed data value behind the input (useful for debugging or viewing bound values).|

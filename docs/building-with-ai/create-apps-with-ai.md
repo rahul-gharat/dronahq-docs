@@ -52,7 +52,7 @@ You can type a simple prompt like:
 <br></br>   
 
 Here’s what happens next:
-1. With the propmt user will also mention the exact schema in the configured connector.
+1. With the prompt user will also mention the exact schema in the configured connector.
 1. AI generates a BRD (Business Requirements Document) based on your prompt.
 2. You can edit this BRD using markdown — rename fields, update text, add or remove items.
 3. Once done, click **Approve** — and DronaHQ will instantly build the app screen using the BRD.

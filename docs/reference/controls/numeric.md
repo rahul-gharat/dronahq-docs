@@ -55,7 +55,7 @@ Along with Rounding Options (`Floor/Round/Ceiling`) and Decimal Separator,  the 
 | --------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Validation            | Defines how the input is validated. Includes several validation types: `Required` (ensures the field is not empty), `Minimum` and `Maximum` (limits input numeric - value). |
 | Read Only             | Makes the input field non-editable. The user can view the content but cannot modify it. |
-| Submit Data           | Determines whether the field's value should be included in form submission. Options include `Always`, `Never`, andd `Not When hidden`.  |
+| Submit Data           | Determines whether the field's value should be included in form submission. Options include `Always`, `Never`, and `Not When hidden`.  |
 | Show Barcode Scanner  | Displays a barcode scanner icon that lets users input values by scanning barcodes.  |
 | Debounce Time (In ms) | Sets a delay (in milliseconds) to wait after user input before triggering events like search or API calls. Helps reduce unnecessary calls.|
 | Events                | Allows configuration of actions (like workflows or bindings) to trigger based on user interactions, such as input change, focus, or press enter. |

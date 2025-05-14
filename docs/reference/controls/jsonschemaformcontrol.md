@@ -42,7 +42,7 @@ JSON structures, while dynamic data binding enables form updates based on real-t
 ### JSON Schema
 
 The JSON Schema defines the expected structure and validation rules for the form. It determines how the form fields behave, what input types are expected, and which fields are mandatory.
-You can reffer here to  know more about structuring of [JSON Schema](https://rjsf-team.github.io/react-jsonschema-form/) 
+You can refer here to  know more about structuring of [JSON Schema](https://rjsf-team.github.io/react-jsonschema-form/) 
 
 #### Example Format:
 
@@ -79,7 +79,7 @@ You can reffer here to  know more about structuring of [JSON Schema](https://rjs
 The UI Schema defines additional functionalities such as placeholders, focus behaviors, and input field modifications.
 It enhances user experience by specifying how fields should be displayed and interacted with.
 
-You can reffer here to  know more about structuring of [UI Schema](https://react-jsonschema-form.readthedocs.io/en/v1.8.1/form-customization/)  
+You can refer here to  know more about structuring of [UI Schema](https://react-jsonschema-form.readthedocs.io/en/v1.8.1/form-customization/)  
 
 #### Example Format:
 
@@ -154,7 +154,7 @@ completes the form.
 
 ### Style
 
-Provide your own CSS stylying for the JSON Form created. This broadens the UI customization for the personalized curated form control.
+Provide your own CSS styling for the JSON Form created. This broadens the UI customization for the personalized curated form control.
 
 
 
