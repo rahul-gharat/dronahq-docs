@@ -23,6 +23,13 @@ To create a new control we use control editor , so every time we create a new co
 
 we can drop our control to the builder screen to use it in our app.
 
+With new property
+<figure>
+  <Thumbnail src="/img/advanced-concepts/custom-control-ide/basics/new-builder-screen.png" alt="Simple Database GUI" />
+  <figcaption align='center'><i>Builder screen and Controls components.</i></figcaption>
+</figure>
+
+With old property
 <figure>
   <Thumbnail src="/img/advanced-concepts/custom-control-ide/basics/builder-screen.png" alt="Simple Database GUI" />
   <figcaption align='center'><i>Builder screen and Controls components.</i></figcaption>
@@ -254,6 +261,35 @@ Here also we have comments to guide us exactly where we have to write our code.
 
 To add any new property we have to add this block of code accordingly -
 
+**For new property** :-
+```javascript
+<%= Formbuilder.templates['edit/revamp_text_input']({
+   "label": {name:"textfield", width:"one_col"},
+   "name": "placeholder",
+   "isDisabled": false
+}) %>
+```
+
+**Output** :-
+<figure>
+  <Image src="/img/advanced-concepts/custom-control-ide/basics/control-editor-properties-example.png" alt="Simple Database GUI" />
+  <figcaption align='left'><i>Text input property.</i></figcaption>
+</figure>
+
+**Explanation** :-
+
+**Formbuilder.templates['edit/revamp_text_input']** :- this defines that our property will be an input box.
+
+**"label"** :- here we have label attribute divided in 3 parts :
+
+- **name** :- text to be displayed on the label.
+- **width** :- we can specify the width of the label default is one_col, possible values are one_col, two_col, three_col, four_col only.
+
+**"name"** :- this is the variable that must be present in defaultAttributes, so once we write variable name here we have to add that variable in defaultAttributes simultaneously.
+
+**"col_width"** :- this is the width that will be provided to the text input field and default width is three_col, here also possible values are `one_col, two_col, three_col, four_col` only.
+
+**For old property** :-
 ```javascript
 <%= Formbuilder.templates['edit/text_input']({
    "label": {name:"textfield", position:"left", width:"one_col"},
