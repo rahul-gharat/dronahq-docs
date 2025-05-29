@@ -27,8 +27,8 @@ Uploading files allows users to store files, such as images, documents, and vide
 
 #### Variables:
 
-| Name        | Value             | Test Value                                                                                                                        |
-|-------------|-------------------|-----------------------------------------------------------------------------------------------------------------------------------|
+| Name        | Value             | Description  |
+|-------------|-------------------|--------------------|
 | Folder  | `{{username}}`    | (Optional) Specify the folder your file is placed inside, in your bucket.                                                         |
 | Key     | `{{username}}`    | (Optional) Supported filename with extension formats are String for single File and Array of Strings for multiple file uploads. Eg "sample.txt" or ["sample.csv","image.jpg"]. If you are uploading a file with extension other than the one specified in the above key, then file's extension will be added in the above key name's end. For example, if you specify sample.csv but are uploading a file "helptext.txt" then file key would be "sample.csv.txt".|
 | Files   | `{{username}}`    | Select your file control for this field (multiple files allowed).                                                                |
