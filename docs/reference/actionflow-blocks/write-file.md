@@ -29,7 +29,7 @@ can access locally on their devices.
 | Path for Android    | The directory on Android where the file will be stored. Use system-defined paths.             |
 | Path for iOS        | The directory on iOS where the file will be stored. Similar to Android paths.                 |
 
-::: note
+:::note
 
 When writing a file, ensure the `file name` follows these conventions for compatibility and to avoid errors:
 
