@@ -9,7 +9,7 @@ import Thumbnail from '@site/src/components/Thumbnail';
 
 # Getting Started 
 
-DronaHQ’s Build With AI experience is designed to help you create apps faster, smarter, and with fewer manual steps. Whether you want to generate entire screens from a sentence or tweak individual components using simple prompts, the AI Chatbot is here to make things smoother.
+DronaHQ AI is designed to help you create apps faster, smarter, and with fewer manual steps. Whether you want to generate entire screens from a sentence or tweak individual components using simple prompts, the AI Chatbot is here to make things smoother.
 
 ##  Set Up Your OpenAI API Key
 
@@ -50,17 +50,13 @@ Once your key is added, you’re ready to start building with AI!
 
 
 
-  - Top Bar: Shows your app name and feature label ("Build With AI").
+  - Top Bar: Shows your app name and feature label ("DronaHQ AI").
   - Tabs: Switch between "Chat" (current session) and "History" (past interactions).
   - Main Area: 
-    - A personalized greeting.
     - Options to either type prompts or upload images to build apps.
     - Clear pointers on tasks like building UI, updating properties, or replacing controls using natural language.
-  - Templates: Ready-to-use templates like "Billing Management System" and "Supply Chain Management" to jumpstart your project.
   - Input Box: Describe your app idea or upload images to generate screens. There's also an Attachment button for uploading templates.
   - Credit balance - Right on the corner of the input  box, we can keep track of tokens getting used.
-
-
 
 
 ## Build Your Application
