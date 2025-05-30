@@ -1,9 +1,9 @@
 {
-  "label": "Add on - Build with AI",
+  "label": "Add on - DronaHQ AI",
   "position": 92,
   "link": {
     "type": "generated-index",
-    "description": "learn how to build with AI"
+    "description": "learn how to DronaHQ AI"
   },
     "className": "sidebar_category_heading",
     "collapsed": false,
