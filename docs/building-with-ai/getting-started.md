@@ -9,7 +9,7 @@ import Thumbnail from '@site/src/components/Thumbnail';
 
 # Getting Started 
 
-DronaHQ AI is designed to help you create apps faster, smarter, and with fewer manual steps. Whether you want to generate entire screens from a sentence or tweak individual components using simple prompts, the AI Chatbot is here to make things smoother.
+Veda AI is designed to help you create apps faster, smarter, and with fewer manual steps. Whether you want to generate entire screens from a sentence or tweak individual components using simple prompts, the AI Chatbot is here to make things smoother.
 
 ##  Set Up Your OpenAI API Key
 
@@ -50,7 +50,7 @@ Once your key is added, you’re ready to start building with AI!
 
 
 
-  - Top Bar: Shows your app name and feature label ("DronaHQ AI").
+  - Top Bar: Shows your app name and feature label ("Veda AI").
   - Tabs: Switch between "Chat" (current session) and "History" (past interactions).
   - Main Area: 
     - Options to either type prompts or upload images to build apps.
@@ -82,7 +82,7 @@ Depending on how you connect your AI models, your credit consumption varies:
 
 ### AI Chatbot Credit Usage
 
-Below are the number of credits used when conversing with DronaHQ Ai chatbot using either DronaHQ credentials or your credentials when conversing to LLM provider.
+Below are the number of credits used when conversing with Veda Ai chatbot using either DronaHQ credentials or your credentials when conversing to LLM provider.
 
 | Feature | DronaHQ | Your LLM Provider |
 |:-----------|:------------------------|:-------------------------------------|

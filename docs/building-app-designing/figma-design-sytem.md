@@ -83,7 +83,7 @@ Whether you're building a full screen or a single component, the system ensures 
 
 ## AI-Enhanced Design to App Flow
 
-One of the most powerful enhancements to the DronaHQ Design System is its integration with  DronaHQ AI - **Build With  AI**.
+One of the most powerful enhancements to the DronaHQ Design System is its integration with  Veda AI - **Build With  AI**.
 
 
 
