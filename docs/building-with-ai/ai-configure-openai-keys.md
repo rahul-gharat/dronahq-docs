@@ -31,9 +31,9 @@ This action will open a sidebar, providing you with various operations to manage
 "Configure Accounts" option in the OpenAI Accounts sidebar, you can easily manage your OpenAI accounts and perform the
 following tasks.
 
-- [Add new OpenAI account](./ai-configure-openai-keys.md/#add-new-openai-account)
-- [Edit key for existing accounts](./ai-configure-openai-keys.md/#edit-key-for-existing-accounts)
-- [See list of all accounts](./ai-configure-openai-keys.md/#see-list-of-all-accounts)
+- [Add new OpenAI account](#add-new-openai-account)
+- [Edit key for existing accounts](#edit-key-for-existing-accounts)
+- [See list of all accounts](#see-list-of-all-accounts)
   - Delete accounts
   - Make any account default
 

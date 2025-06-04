@@ -25,7 +25,7 @@ From here, you can either:
 - Use DronaHQ’s default OpenAI key — great for quick experimentation.
 - Or bring your own OpenAI key — ideal if you want lower costs or higher usage limits.
 
-To know more refer to our [Configure OpenAI keys](/ai-configure-openai-keys/) documentation.
+To know more refer to our [Configure OpenAI keys](/building-with-ai/ai-configure-openai-keys/) documentation.
 
 Once your key is added, you’re ready to start building with AI!
 
