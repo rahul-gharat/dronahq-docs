@@ -32,6 +32,10 @@ The AI will analyze the image and generate a matching screen with relevant compo
 
 No need to write a prompt. It’s a visual-first way to get started fast.
 
+:::info Supported Image Formats
+jpeg, jpg, png, tif, webp Image formats are supported.
+:::
+
 ### Option 2: Describe the App in a Prompt
 You can type a simple prompt like:
 
