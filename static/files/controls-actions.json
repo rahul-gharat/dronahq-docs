@@ -1,4 +1,125 @@
-[  {
+[  
+{
+  "timestamp": 1749494212000,
+  "tags": ["Control", "Action"],
+  "heading": "",
+  "cards": [
+    {
+      "title": "Added",
+      "type": "added",
+      "points": [
+        "Added new actions to start and stop GPS location tracking. "
+
+      ]
+    },
+    {
+      "title": "Enhancements",
+      "type": "improved",
+      "points": [
+        "Enhanced Date Range Picker control with prefix, suffix and close icon property.",
+        "Enhanced page height calculation for Hide control and Show control actions."
+      ]
+    }
+  ]
+}, 
+{
+  "timestamp": 1748371012000,
+  "tags": ["Control", "Action"],
+  "heading": "",
+  "cards": [
+    {
+      "title": "Enhancements",
+      "type": "improved",
+      "points": [
+        "Enhanced Text Area control with spell check, autofill, auto grow height configurations.",
+        "Enhanced File Parser by adding key to hide the headers in the data bind section.",
+        "Enhanced Chat Control with auto grow when new content is introduced.",
+        "Enhanced Numeric control by adding prefix, suffix text and icon, show clear option support.",
+        "Enhanced Charts control by adding key for managing git data types."
+      ]
+    },
+    {
+      "title": "Fixed",
+      "type": "fixed",
+      "points": [
+        "Fixed an issue where renaming data query did not update the data bind section in the control.",
+        "Fixed an issue in Select Bar where number as a value was not working as expected.",
+        "Fixed minor UI issues in Keyword Box control.",
+        "Fixed minor UI issues in Date Range Picker control when it is inside a container."
+      ]
+    }
+  ]
+},
+{
+  "timestamp": 1747679812000,
+  "tags": ["Control", "Action"],
+  "heading": "",
+  "cards": [
+    {
+      "title": "Enhancements",
+      "type": "improved",
+      "points": [
+        "Enhanced Charts control by adding minimum and maximum value properties.",
+        "Enhanced Radio control and Checkbox control by adding group layout property.",
+        "Enhanced JSON Viewer control by adding a recursive expand property and hide root node property.",
+        "Enhanced Split button by adding maximum and minimum list height properties.",
+        "Enhanced Tabbed Container control by introducing multiple view container support.",
+        "Improved Text control by adding markdown text support.",
+        "Enhanced Alert control by moving alert type to the top of the content section",
+        "Improved Switch Group, Detail Select, Checkbox, Radio, Select Bar controls as it now accepts array strings as data and label key is now optional.",
+        "Enhanced JSON Schema Form control by adding auto-generate schema property.",
+        "Enhanced Tags by adding data attributes for better external css support.",
+        "Enhanced Spacer by updating minimum size to one."
+      ]
+    },
+    {
+      "title": "Fixed",
+      "type": "fixed",
+      "points": [
+        "Fixed minor issues in Dropdown control to adjust the label when present, otherwise fallback to showing the value.",
+        "Fixed issues in Query Builder where identical rules appeared in both the main group and the subgroups.",
+        "Fixed an issue in Textarea control where on pasting data in control was not working as expected in mac.",
+        "Fixed an issue where type conversion was required due to a string being compared with a number.",
+        "Fixed a minor CSS issue in Numeric, Phone and Text Input controls for barcode support.",
+        "Fixed a minor issue where tabs were not being truncated correctly in the builder.",
+        "Fixed an issue in Tabbed Container which now accepts and displays data when provided, even in string format in default view.",
+        "Fixed an issue in Compact card, Calendar, Detail View, Sortable and Kanban controls where renaming data query did not update the data bind section in the control.",
+        "Fixed an issue in Select and Dropdown control where resetting the control was not working as expected.",
+        "Fixed a minor UI issue in Color Picker control.",
+        "Fixed a minor UI issue in Phone control."
+
+      ]
+    }
+  ]
+},
+{
+  "timestamp": 1746729412000,
+  "tags": ["Control", "Action"],
+  "heading": "",
+  "cards": [
+    {
+      "title": "Added", 
+      "type": "added",
+      "points": [
+        "Added new Scanner control for scanning barcodes in web and preview",
+        "Added new Video Record control for recording videos."
+      ]
+    },
+    {
+      "title": "Enhancements",
+      "type": "improved",
+      "points": [
+        "Improved File Parser control by introducing maximum file size property.",
+        "Enhanced Text Input, Barcode, Phone and Currency control by adding barcode scan option in web and preview",
+        "Enhanced Numeric control by adding barcode scan option, empty value dropdown , pad decimal property and non value in thousand separator.",
+        "Enhanced Audio Record and Speech Recognition controls by removing data part from the controls.",
+        "Enhanced Playsound control by adding a new property to play sound in mobile devices.",
+        "Enhanced JSON Schema Form control by introducing auto generate schema from json."
+      ]
+    }
+  ]
+}
+,{
   "timestamp": 1746506350000,
   "tags": ["Control", "Action"],
   "heading": "",
@@ -7,7 +128,8 @@
       "title": "Enhancements",
       "type": "improved",
       "points": [
-        "Enhanced Color Picker control with prefix, suffix text and icon, show clear option, and color format support."
+        "Enhanced Color Picker control with prefix, suffix text and icon, show clear option, and color format support.",
+        "Enhanced JSON Schema From by adding support for signature in the control."
       ]
     },
     {

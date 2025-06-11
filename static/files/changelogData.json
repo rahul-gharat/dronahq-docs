@@ -1,15 +1,198 @@
 [
   {
+    "timestamp": 1748371012000,
+    "tags": ["Cloud-Hosted"],
+    "heading": "",
+    "cards": [
+      {
+        "title": "Added",
+        "type": "added",
+        "points": [
+          "Added a new connector - OpenRouter."
+        ]
+      },
+      {
+        "title": "Enhancements",
+        "type": "improved",
+        "points": [
+         "Enhanced Build With AI Injector",
+         "Enhanced PDF Creator allowing Dynamic Table Enhancement by adding Row and Cell Edit",
+         "Improved tooltips by migrating them to csv from sheets.",
+         "Enhanced user experience ensures that the default formula remains hidden in previously dropped tabbed containers."
+
+        ]
+      },
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed an issue where the table grid inside the tabbed container doesnot resize properly, causing width issues when using template.",
+          "Fixed an issue where the header label was hidden by default.",
+          "Fixed an issue where app exported from onprem not getting imported properly on cloud.",
+          "Fixed z-index and width issue in custom control property for add on.",
+          "Fixed an issue where renamed controls were not reflected in the 'use keywords' search within Actionflow.",
+          "Fixed an issue where the editable column dropdown UI was breaking when the table grid is empty.",
+          "Fixed the scroll position of control panel when it is dropped.",
+          "Fixed an issue where manual pagination was not working as expected.",
+          "Fixed spelling mistake in the PDF Template Creation sidebar header.",
+          "Fixed DQ-PDF selection dropdown closing during search.",
+          "Fixed an issue where DataQuery becomes unresponsive when selecting a non-configured environment and clicking the save button.",
+          "Fixed issue where info display would hide on moving the cursor from the underlined trigger element to the info container on hover.",
+          "Fixed an issue where the 'edited' state (green dot) did not reflect when toggling the Run on app open in the Data Queries section.",
+          "Fixed an issue where renamed data query was not reflecting in multiple outputs section in data section",
+          "Fixed an issue in dataquery RestAPI where static field replaced the entire expression with null instead of replacing only the static field.",
+          "Fixed edge case handling for Table grid column reordering and visibility.",
+          "Fixed an issue where numbers in keys of static test values were not being accepted in REST API in the Data Queries section.",
+          "Fixed DataQuery: Removed account_id from configurations and payloads for non-global connectors upon save.",
+          "Fixed an issue where history would not be restored even after cancelling the toast in Build AI Chat history." ,
+          "Fixed an issue where loader no visible while deleting folders.",
+          "Fixed wrong tooltip property for deleting control.",
+          "Fixed an issue in Build AI where all webhook call migrated from frontend to handler.",
+          "Fixed issue where clicking the 'i' button in the Control section caused the control to open stead of just showing its description.",
+          "Fixed positioning issue of forms in the tabbed container when set to 'left'",
+          "Fixed an issue where date range picker date selection was not working in IOS device",
+          "Fixed issue to hide header columns on property section for repeat controls.",
+          "Fixed issues in AI Assist.",
+          "Fixed an issue where Popup screens are rendering very small, when it is created in Advance Editor.",
+          "Fixed an issue where preview is freezing while opening and closing preview.",
+          "Added fix where user is able to prompt when there is no access to Build AI."
+        ]
+      }
+    ]
+  },
+    {
+    "timestamp": 1747679812000,
+    "tags": ["Cloud-Hosted"],
+    "heading": "",
+    "cards": [
+      {
+        "title": "Added",
+        "type": "added",
+        "points": [
+          "Added new connector AlloyDB.",
+          "Added additional padding at the bottom of the published app."
+        ]
+      },
+      {
+        "title": "Enhancements",
+        "type": "improved",
+        "points": [
+         "Enhanced JSON Schema Form Control: Auto-generation of JSON and UI Schemas from Provided JSON.",
+         "Enhanced validation error indicators in list inputs and resolved CSS styling issues."
+        ]
+      },
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed UI/UX of tabbed container and table grid",
+          "Fixed deletion property of DataQuery-bound records using Action Flow.",
+          "Fixed hover property on add-on section with dropdown action.",
+          "Fixed issue in REST API DataQuery where, in RAW configuration, key-value pairs with identical names caused the passed value to replace both key and value.",
+          "Fixed an issue where Custom Parameters were not generated for RAW data in Data Query Section (DQ).",
+          "Fixed an issue When there is no sheet in channel then published app was not opening",
+          "Fixed an issue where an imported actionflow actions's reference not updated properly.",
+          "Fixed an issue where SQL query output rendered was breaking when query is changed on runtime.",
+          "Fixed an issue where beta users not able to go to parent app properly.",
+          "Fixed an issue on DQ switch in race around condition causing empty screen for data query.",
+          "Fixed an issue where failure condition was not working properly in connectors.",
+          "Fixed rendering issue in DataQuery: DHQ Database transform configuration now properly displays DQL, Filter Object, and Filter Keys.",
+          "Fixed issue in DataQuery where PDF Creator and DHQ File Storage now prevent duplicate entries without configuration."
+        ]
+      },
+      {
+        "title": "Removed",
+        "type": "removed",
+        "points": [
+          "Removed handling for cases where INSERT, UPDATE, and DELETE queries wouldn't execute during connector tests.",
+          "Removed invalid code which was causing the advance editor panel control plus button to not open."
+        ]
+      }
+    ]
+  },
+  {
     "timestamp": 1746506350000,
     "tags": ["Cloud-Hosted"],
     "heading": "",
     "cards": [
       {
+        "title": "Added",
+        "type": "added",
+        "points": [
+          "Added a support for build ai response from LLM should have streaming effect",
+          "Added support for the Build AI LLM key backend.",
+          "Added credit fetch on load, chat box fixes, and license check enhancements."
+        ]
+      },
+      {
+        "title": "Enhancements",
+        "type": "improved",
+        "points": [
+         "Enhanced the MongoDB version selection interface by replacing the toggle switch with a dropdown menu.",
+         "Enhanced action menu search to include DHQ Services, Move, Duplicate, and Import action blocks.",
+         "Improved hover interactions now display an information box with a description and clickable link when hovering over underlined controls."
+        ]
+      },
+      {
         "title": "Fixed",
         "type": "fixed",
         "points": [
           "Fixed Advanced Editor row and column drag-and-drop issue.",
-          "Fixed an issue where persistent was not working as expected."
+          "Fixed an issue where persistent was not working as expected.",
+          "Fixed an issue where Advance Editor was not able to add columns in layout.",
+          "Fixed an issue where the image was not uploading on the new app for Build AI.",
+          "Fixed an issue in the Forms module related to handling the DHQ database, specifically concerning the Responses tab."
+
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1746470212000,
+    "tags": ["Cloud-Hosted"],
+    "heading": "",
+    "cards": [
+      {
+        "title": "Added",
+        "type": "added",
+        "points": [
+          "Added new library of barcode detector for barcode control",
+          "Added 'Build with AI' for creating apps from prompt and images."
+        ]
+      },
+      {
+        "title": "Enhancements",
+        "type": "improved",
+        "points": [
+          "Enhanced on-hover-underline-control-properties",
+          "Enhanced action menu search to include DHQ Services, Move, Duplicate, and Import action blocks.",
+          "Enhanced mongodb version setting from toggle to dropdown"
+        ]
+      },
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed issue where the plus button in the Advanced Editor panel did not open the control listing in Builder View.",
+          "Fixed an issue where Import actionflow does not work on clicking “Import”",
+          "Fixed an issue where new connector button when no connectors are present not working as expected.",
+          "Fixed issue where control names were disappearing in the editor.",
+          "Fixed an issue where when to execute condition was not working for actionflow data queries.",
+          "Fixed an issue where App opened in new tab fails when navigated from app to console",
+          "Fixed issue in TableGrid where column visibility and order were not retained after data refresh.",
+          "Fixed an issue where connector does not throw correct exception when execute Query api fails for cases such as (404, bad gateway etc.)",
+          "Fixed an issue where newly added user groups weren't immediately reflected in the group list.",
+          "Fixed cursor visibility issue in CRUD Operation dropdowns after selection.",
+          "Fixed an issue where connector query doesn't open for firebase",
+          "Fixed an issue where dropdown arrow was not working as expected",
+          "Fixed an issue where Homescreen getting assigned to other screen types(tray, popup, menu, header) when deleting the home screen of type-Screen",
+          "Fixed Forms Setup Sidebar Minor UI ",
+          "Fixed an issue where importing app in same channel shows override and new tag both for connectors",
+          "Fixed issue where the Y position of a control dropped inside a multi-container control did not align with the active parent.",
+          "Fixed an issue where Manage environment sidebar opens blank in DataQuery.",
+          "Fixed an issue where renaming a data query was not reflected in the data bind section, especially for list and composite controls.",
+          "Fixed an issue where multiple API calls are triggered when the 'Edit' button is clicked repeatedly in the connector list"
+          
         ]
       }
     ]
