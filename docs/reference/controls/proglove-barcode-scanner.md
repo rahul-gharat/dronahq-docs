@@ -10,6 +10,10 @@ import Thumbnail from '@site/src/components/Thumbnail';
 
 A ProGlove barcode scanner is a device that reads and decodes information from barcodes printed on products, packages, or labels. It captures the data encoded in the barcode and transmits it to a connected system, such as a mobile app, computer, or database.
 
+:::note
+This functionality is only supported on Android devices. ProGlove barcode scanner integration and controls are not available on iOS or other platforms.
+:::
+
 <figure>
   <Thumbnail src="/img/reference/controls/proglove-barcode-scanner/preview.jpeg" alt="ProGlove Barcode Scanner" />
   <figcaption align="center"><i>ProGlove Barcode Scanner</i></figcaption>
@@ -24,7 +28,7 @@ A ProGlove barcode scanner is a device that reads and decodes information from b
 
 
 1. ProGlove Scanner Must Be Paired and Connected
-- The scanner must be successfully paired via Bluetooth and connected to the Android device using the ProGlove SDK, Insight Mobile app, or directly via Android Bluetooth settings (depending on the setup).
+- The scanner must be successfully paired via Bluetooth and connected to the Android device using the Insight Mobile app.
 
 2. Insight Mobile App or SDK Must Be Installed and Running
 - If using Insight Mobile for Android, ensure it is installed and running in the background.
@@ -32,11 +36,7 @@ A ProGlove barcode scanner is a device that reads and decodes information from b
 3. Register a BroadcastReceiver in Your App
 - You must register a BroadcastReceiver in your Android app to receive scan data.
 
-4. Handle the following configuration in Your Code
-
-:::caution
-Important: MARK (Barcode scanner) has to be paired using the ProGlove Connect App before this API will work!
-:::
+4. To register Broadcastreceiver, handle the following configuration in Your Code
 
 | Setting          | Value                             |
 |------------------|-----------------------------------|
@@ -47,9 +47,10 @@ Important: MARK (Barcode scanner) has to be paired using the ProGlove Connect Ap
 | Intent category  | Clear or leave unset              |
 | Intent delivery  | Broadcast intent                  |
 
-For an introduction to Intents on Android please refer to the official documentation:
-- [Class reference](https://developer.android.com/reference/android/content/Intent)
-- [Intent component reference](https://developer.android.com/guide/components/intents-filters)
+
+:::caution
+Note: Before scanning any barcode, ensure that the MARK (barcode scanner) is paired through the ProGlove Connect App.
+:::
 
 ## Binding Data Options
 
