@@ -149,7 +149,7 @@ Currently, only a limited set of controls are supported that can be used to repl
 
 ## Adding Data Queries to Components via AI
 
-At the moment, the DronaHQ AI Chatbot does not support directly bind data to components using data queries via prompt. However, you can still leverage AI assistant to bind data to your components by using a different approach.
+At the moment, the Veda AI Chatbot does not support directly bind data to components using data queries via prompt. However, you can still leverage AI assistant to bind data to your components by using a different approach.
 
 #### How to Use
 
