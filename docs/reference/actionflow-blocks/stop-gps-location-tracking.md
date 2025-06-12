@@ -8,7 +8,7 @@ import Thumbnail from '@site/src/components/Thumbnail';
 Stop GPS Location Tracking allows to gracefully terminate background location tracking when it's no longer needed.
 
 :::info NOTE
-Support is available only in Android and iOS apps. This action is not applicable for preview and is functional only in the published app. Additionally, Android and iOS versions 8.3.27 and above are supported.
+Support is available only in Android and iOS apps. This action is not applicable for preview and is functional only in the published app. Additionally, Android versions 8.3.34 & above and iOS versions 8.3.27 & above are supported.
 :::
 
 ### Steps to Use 

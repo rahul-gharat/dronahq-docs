@@ -8,7 +8,7 @@ import Thumbnail from '@site/src/components/Thumbnail';
 Start GPS Location Tracking allows app to continuously track the device's geographical location, even when the app is in the background or the device is in sleep mode.
 
 :::info NOTE
-Support is available only in Android and iOS apps. This action is not applicable for preview and is functional only in the published app. Additionally, Android and iOS versions 8.3.27 and above are supported.
+Support is available only in Android and iOS apps. This action is not applicable for preview and is functional only in the published app. Additionally, Android versions 8.3.34 & above and iOS versions 8.3.27 & above are supported.
 :::
 
 ### Steps to Use 
