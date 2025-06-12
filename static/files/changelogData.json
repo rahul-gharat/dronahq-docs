@@ -15,9 +15,8 @@
         "title": "Enhancements",
         "type": "improved",
         "points": [
-         "Enhanced Build With AI Injector",
          "Enhanced PDF Creator allowing Dynamic Table Enhancement by adding Row and Cell Edit",
-         "Improved tooltips by migrating them to csv from sheets.",
+         "Improved performance of info popups.",
          "Enhanced user experience ensures that the default formula remains hidden in previously dropped tabbed containers."
 
         ]
@@ -55,7 +54,7 @@
           "Fixed issues in AI Assist.",
           "Fixed an issue where Popup screens are rendering very small, when it is created in Advance Editor.",
           "Fixed an issue where preview is freezing while opening and closing preview.",
-          "Added fix where user is able to prompt when there is no access to Build AI."
+          "Fixed an issue where user is able to prompt when there is no access to Build AI."
         ]
       }
     ]
@@ -119,15 +118,15 @@
         "title": "Added",
         "type": "added",
         "points": [
-          "Added a support for build ai response from LLM should have streaming effect",
-          "Added support for the Build AI LLM key backend.",
-          "Added credit fetch on load, chat box fixes, and license check enhancements."
+          "Added streaming effect on responses from Veda AI.",
+          "Added support for using DronaHQ provided LLM key."
         ]
       },
       {
         "title": "Enhancements",
         "type": "improved",
         "points": [
+         "Enhanced Veda AI Chatbot user experience.",
          "Enhanced the MongoDB version selection interface by replacing the toggle switch with a dropdown menu.",
          "Enhanced action menu search to include DHQ Services, Move, Duplicate, and Import action blocks.",
          "Improved hover interactions now display an information box with a description and clickable link when hovering over underlined controls."

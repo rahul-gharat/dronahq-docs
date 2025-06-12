@@ -28,7 +28,6 @@
       "type": "improved",
       "points": [
         "Enhanced API details handling in commit message generation.",
-        "Enhanced API details handling in commit message generation.",
         "Enhanced whenToExecute in Actionflow to stop execution on false conditions without triggering the error block.",
         "Enhanced MongoDB and MySQL queries to support the use of locally stored connector query schemas during automation export and import processes.",
         "Enhanced UI with balanced dropdown padding, consistent toggle borders, matched formula box border radius, and enabled overflow handling for single and multiple dropdowns in the advanced section.",

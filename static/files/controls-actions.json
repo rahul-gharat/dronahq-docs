@@ -8,8 +8,8 @@
       "title": "Added",
       "type": "added",
       "points": [
-        "Added new actions to start and stop GPS location tracking. "
-
+        "Added Start GPS location tracking action.",
+        "Added Stop GPS location tracking action."
       ]
     },
     {
