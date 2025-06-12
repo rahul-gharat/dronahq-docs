@@ -7,10 +7,13 @@ import Thumbnail from '@site/src/components/Thumbnail';
 
 Start GPS Location Tracking allows app to continuously track the device's geographical location, even when the app is in the background or the device is in sleep mode.
 
+:::info NOTE
+Support is available only in Android and iOS apps. This action is not applicable for preview and is functional only in the published app. Additionally, Android and iOS versions 8.3.0 and above are supported.
+:::
 
 ### Steps to Use 
 
- Go to the `Action Builder`. Click `+ Add Action` > `Utility > Start GPS Location Tracking`.
+ Go to the `Action Builder`. Click `+ Add Action` > `Native > Start GPS Location Tracking`.
 
 <figure>
 <Thumbnail src="/img/reference/actionflow-blocks/start-gps-location-tracking/start-gps-location-tracking.png" alt="Start GPS Location Tracking" />

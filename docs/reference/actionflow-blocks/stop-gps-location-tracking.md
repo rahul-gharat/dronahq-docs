@@ -7,9 +7,13 @@ import Thumbnail from '@site/src/components/Thumbnail';
 
 Stop GPS Location Tracking allows to gracefully terminate background location tracking when it's no longer needed.
 
+:::info NOTE
+Support is available only in Android and iOS apps. This action is not applicable for preview and is functional only in the published app. Additionally, Android and iOS versions 8.3.0 and above are supported.
+:::
+
 ### Steps to Use 
 
- Go to the `Action Builder`. Click `+ Add Action` > `Utility > Stop GPS Location Tracking`.
+ Go to the `Action Builder`. Click `+ Add Action` > `Native > Stop GPS Location Tracking`.
 
 <figure>
 <Thumbnail src="/img/reference/actionflow-blocks/stop-gps-location-tracking/stop-gps-location-tracking.png" alt="Stop GPS Location Tracking" />
