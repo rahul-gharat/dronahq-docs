@@ -1,4 +1,151 @@
-[ {
+[ 
+ {
+  "timestamp":  1749148612000,
+  "tags": ["Self-Hosted", "3.8.4-edge"],
+  "heading": "Version 3.8.4-edge",
+  "cards": [
+    {
+      "title": "Added",
+      "type": "added",
+      "points": [
+        "Added PDF import and export feature.",
+        "Added Fillable PDF ISON input option in automation.",
+        "Added support for link in Azure storage and Google Cloud Storage file upload connector.",
+        "Added 'x-dronahq-request-id' header in REST connector request to improved traceability",
+        "Added filename display and corrected tab visibility in the Secret Manager Connector modal.",
+        "Added support for Markdown formatting and file object attachments in the SMTP connector.",
+        "Added Git Sync support for PDF templates.",
+        "Added images for new actions.",
+        "Added fallback images in update section sidebar for connectors with failed image loads.",
+        "Added new screen templates.",
+        "Added environment field to logger data in external logger.",
+        "Added fallback images for controls in listings, layouts, and panels to improve visual consistency."
+
+      ]
+    },
+    {
+      "title": "Enhancements",
+      "type": "improved",
+      "points": [
+        "Enhanced API details handling in commit message generation.",
+        "Enhanced whenToExecute in Actionflow to stop execution on false conditions without triggering the error block.",
+        "Enhanced MongoDB and MySQL queries to support the use of locally stored connector query schemas during automation export and import processes.",
+        "Enhanced UI with balanced dropdown padding, consistent toggle borders, matched formula box border radius, and enabled overflow handling for single and multiple dropdowns in the advanced section.",
+        "Enhanced Media query for improved Automation list UI on larger screens.",
+        "Enhanced automation to automatically resolve `runAPI` and `workflow` URLs from the browser using the host URL.",
+        "Enhanced system to automatically adapt to the domain and run webPackage API successfully.", 
+        "Enhanced fallback images logic in Studio to use CSS instead of JS for handling failed and broken images.",
+        "Enhanced API and DB connector modules for more efficient operation handling in logger.",
+        "Enhanced Error handling in external logging functions.",
+        "Enhanced `executequery` endpoint and local storage of connector queries in Automation.",
+        "Enhanced Automation listing layout and added iFrame support in styling.",
+        "Enhanced Data Query by excluding `account_id` key from the payload of non-global connectors.",
+        "Enhanced JSON Schema and UI Schema via connectors, DronaHQ DB, PDF, and controls."
+      ]
+    },
+    {
+      "title": "Fixed",
+      "type": "fixed",
+      "points": [
+        "Fixed an issue where type handling for controlMeta was missing in the convertToJSON function",
+        "Fixed an issue where users were unable to filter from the service tag in Datadog logger",
+        "Fixed an issue where dynamic fields binding mapping created two functions; merged them into one optimized function",
+        "Fixed an issue where the fix controls section was not working correctly on clicking the 'i' icon and the control was getting dropped.",
+        "Fixed an issue in properties where the delete control icon tooltip was incorrect.",
+        "Fixed an issue where the keyboard shortcut (Ctrl+Del) was not working in the property section of the control",
+        "Fixed an issue where DQ gets stuck when a non-configured environment is selected and the save button is clicked.",
+        "Fixed an issue in RestAPI where using a static field like '{{test}}' in preview replaced the entire expression with null instead of replacing only the static field.",
+        "Fixed issue in Connector query in RestAPI saved with RAW configuration using dynamic field and on re-render DQ test values value not fill",
+        "Fixed an issue where key names were incorrectly fetched as value names when triggering the API using TriggerDataQuery or a JavaScript code.",
+        "Fixed an issue where the saved DHQ database transform config including DQL, filter object, and filter keys was not rendering.",
+        "Fixed an issue where PDF Creator and DHQ File Storage were being duplicated without configuration",
+        "Fixed an issue where renamed controls or DQs using 'Use Keyword' were not reflecting updated names on re-render",
+        "Fixed an issue with UI in the popup triggered by the three-dot menu in the Apps Connector Library listing.",
+        "Fixed an issue where imported Actionflow action references were not updating properly.",
+        "Fixed an issue where empty action flows were not handled when duplicating or copy-pasting controls",
+        "Fixed an issue where hover effects were missing on Manual Option Addon, Events, and Recursive Event Addon in Screen Properties",
+        "Fixed an issue where deletion of DQ bound via Action Flow was not handled when the control was deleted in DataQuery.",
+        "Fixed an issue with the View Audit Logs filter for certain events",
+        "Fixed an issue with the View Audit Logs search input UI.",
+        "Fixed an issue where Git pull failed when Data Query is present inside a folder.",
+        "Fixed an issue where Git Sync sidebar showed infinite loader when no PDFs were present on Git.",
+        "Fixed an issue where missing files in File-to-JSON conversion for Actions and Screens were handled gracefully.",
+        "Fixed an issue where Blank PDFs from Git were not being pulled and overwritten properly in Builder.",
+        "Fixed an issue with Automation export/import for Local connector queries.",
+        "Fixed an issue where connector images were visible during the loading state.",
+        "Fixed an issue where the accordion closed when clicking inside the content body which now only closes when the header is clicked.",
+        "Fixed an issue where checkboxes were not rendering in fillable PDFs after flattening, by enabling the read-only option.",
+        "Fixed an issue to ensure metadata and output are properly handled when the Data Query API fails.",
+        "Fixed an issue where checkboxes were not rendering in flattened fillable PDFs by enabling the read-only option.",
+        "Fixed an issue where alert tooltip images flickered on hover.",
+        "Fixed an issue where single-page templates were not getting fetched.",
+        "Fixed an issue where time was displayed in 24-hour format in the view audit logs list.",
+        "Fixed a rendering issue with duplicate Data Query (DQ) entries.",
+        "Fixed a UI issue in the property section for adding and deleting custom events in custom controls.",
+        "Fixed an issue where header columns were not being hidden in the property section for repeat controls.",
+        "Fixed an issue where trailing spaces were not removed from value and label fields in the 'Edit Items' section of the data.",
+        "Fixed UI/UX issues in the tabbed container and table grid components."
+      ]
+    }
+  ]
+},
+{
+  "timestamp": 1747334212000,
+  "tags": ["Self-Hosted", "3.8.3-edge"],
+  "heading": "Version 3.8.3-edge",
+  "cards": [
+    {
+      "title": "Added",
+      "type": "added",
+      "points": [
+        "Added external logger and Task metering to execute query endpoint."
+      ]
+    },
+    {
+      "title": "Fixed",
+      "type": "fixed",
+      "points": [
+        "Fixed issue causing the info popup to disappear when the cursor moved from the trigger element to the popup information box.",
+        "Fixed issue where renaming a data query did not update the new name in the data section of some controls which have multiple outputs."
+      ]
+    }
+  ]
+}
+,{
+  "timestamp": 1747247812000,
+  "tags": ["Self-Hosted", "3.8.2-edge"],
+  "heading": "Version 3.8.2-edge",
+  "cards": [
+    {
+      "title": "Added",
+      "type": "added",
+      "points": [
+        "Added Custom Logger for debugging and monitoring",
+        "Enhanced file upload functionality with uploadSingleFile and uploadMultipleFiles methods, offering improved responses and options to replace previously uploaded files, while providing upload path, file size, MIME type, and public accessibility status."
+      ]
+    },
+    {
+      "title": "Enhancements",
+      "type": "improved",
+      "points": [
+          "Enhanced the 'New PDF Template' button to open PDF creation options instead of the regular template creation sidebar."
+      ]
+    },
+    {
+      "title": "Fixed",
+      "type": "fixed",
+      "points": [
+        "Fixed an issue where connector does not throw correct exception when execute Query api fails for cases such as (404, bad gateway etc.)",
+        "Fixed Option button not visible on hover for connector library.",
+        "Fixed Syntax issue for race around condition in DataQuery",
+        "Fixed an issue where the Data Query PDF selection dropdown would close when attempting to search.",
+        "Fixed an issue where multiple API calls are triggered when the 'Edit' button is clicked repeatedly in the connector list"
+      ]
+    }
+  ]
+}
+,
+{
   "timestamp": 1746506350000,
   "tags": ["Self-Hosted", "3.8.1-edge"],
   "heading": "Version 3.8.1-edge",
