@@ -1,5 +1,35 @@
 [
   {
+    "timestamp": 1748354139000,
+    "tags": ["Self-Hosted", "3.7.1-stable"],
+    "heading": "Version 3.7.1-stable",
+    "cards": [
+      {
+        "title":"Added",
+        "type": "added",
+        "points": [
+          "Added External logger and Task metering to execute query endpoint."
+        ]
+
+      },
+      {
+        "title": "Enhancements",
+        "type": "improved",
+        "points": ["Improved Redis connector by adding expire time field in set action."]
+      },
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed an issue where user was unable to filter from service tag in Datadog logger.",
+          "Fixed issues in Secure embed license counter.",
+          "Fixed an issue in Execute Query where it was failing due to missing code.",
+          "Fixed an issue with type handling for controlMeta in convertToJSON function."
+        ]
+      }
+    ]
+  },
+  {
     "timestamp": 1745213952000,
     "tags": ["Self-Hosted", "3.7.0-stable"],
     "heading": "Version 3.7.0-stable",
