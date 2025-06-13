@@ -17,10 +17,10 @@ Go to `DronaHQ AI` in Connectors. Then select any of the provider and add the `A
   <figcaption align = "center"><i>DronaHQ AI with configuration details.</i></figcaption>
 </figure>
 
-After successfully configuring and saving the connector settings, you can easily access your newly connected account by navigating to the `connected accounts` list. You can find this option from the `Connector -> Manage Account` section. This centralized location allows you to conveniently monitor and manage your connected accounts.
-
-
 ## Supported Endpoints
+
+With the DronaHQ AI resource, you can craft queries that instruct AI models to execute specific tasks, as detailed in the following sections.
+
 
 ### Summarize Text
 This action condenses input text into a concise summary. For example, let us take an excerpt from DronaHQ Blog:
