@@ -22,7 +22,7 @@
         "type": "fixed",
         "points": [
           "Fixed an issue where user was unable to filter from service tag in Datadog logger.",
-          "Fixed issues in Secure embed license counter.",
+          "Fixed an issue in Secure embed license counter.",
           "Fixed an issue in Execute Query where it was failing due to missing code.",
           "Fixed an issue with type handling for controlMeta in convertToJSON function."
         ]
