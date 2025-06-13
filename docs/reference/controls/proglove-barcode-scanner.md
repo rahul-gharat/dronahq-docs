@@ -11,7 +11,7 @@ import Thumbnail from '@site/src/components/Thumbnail';
 A ProGlove barcode scanner is a device that reads and decodes information from barcodes printed on products, packages, or labels. It captures the data encoded in the barcode and transmits it to a connected system, such as a mobile app, computer, or database.
 
 :::note
-This functionality is only supported on Android devices. ProGlove barcode scanner integration and controls are not available on iOS or other platforms.
+This control is supported only on Android devices.
 :::
 
 <figure>
@@ -35,8 +35,6 @@ This functionality is only supported on Android devices. ProGlove barcode scanne
 
 3. Register a BroadcastReceiver in Your App
 - You must register a BroadcastReceiver in your Android app to receive scan data.
-
-4. To register Broadcastreceiver, handle the following configuration in Your Code
 
 | Setting          | Value                             |
 |------------------|-----------------------------------|
