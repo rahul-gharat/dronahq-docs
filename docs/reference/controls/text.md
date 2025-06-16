@@ -171,7 +171,7 @@ C --> D
 * Visibility: Toggle the visibility of the control at runtime.
 * Letter Spacing: Configures the space between characters.
 * Line Height: Sets the height of each line of text.
-* Font Options: Customize font size, font-weight, font color and font allignment for the font in the text.
+* Font Options: Customize font size, font-weight, font color and font alignment for the font in the text.
 
 <figure>
   <Thumbnail src="/img/reference/controls/text/appearance.png" />
