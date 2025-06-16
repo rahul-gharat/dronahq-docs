@@ -55,12 +55,12 @@ Let us take an example:
 [
   {
     "role": "user",
-    "content" "Let's talk about India"
+    "content": "Let's talk about India"
   },
-    {
+  {
     "role": "assistant",
-    "content" "hello"
-  },
+    "content": "hello"
+  }
 ]
 
 ```
