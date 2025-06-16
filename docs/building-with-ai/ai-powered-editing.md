@@ -99,8 +99,32 @@ This feature is great for rapidly implementing behaviors like form submissions, 
 | Validate Screens    | Triggers screen-level validations               |
 | Connector Query     | Executes a backend connector or data query      |
 | Set Control Value   | Programmatically updates a control’s value      |
-
-
+| Trigger Data Query  | Triggers provided Data query                    |
+| Branch              | Enable branching in your actionflow with different conditions |
+| Exit App              | Closes the app                              |
+| Open URL              | Opens a specified URL                    |
+| Email                 | Sends an email using configured settings and templates.                   |
+| Popup                 | Displays a custom popup with a provided message                  |
+| Show screen loader    | Displays a full-screen loading indicator                                 |
+| Hide screen loader    | Hides the full-screen loading indicator                                  |
+| Show Controls Loader  | Shows a loading indicator on specified control                          |
+| Hide Controls Loader  | Hides the loading indicator on specified control                        |
+| Reset control data    | Clears or resets data in specified controls to default bind data value             |
+| Set Controls' Value   | Programmatically sets the value of specified controls                    |
+| Delay                 | Pauses the action flow for a specified duration                          |
+| Show Controls         | Makes specified controls visible on the screen                          |
+| Hide Controls         | Hides specified controls from the screen                                 |
+| Close Overlay Screens | Closes any open overlay screens or modals                                |
+| Reset Screens         | Resets specified screens to their initial state                          |
+| Confetti              | Triggers a confetti animation for celebratory effects                    |
+| Set Data Environment  | Switches to a different data environment          |
+| End Action Flow       | Stops the execution of the current action flow                           |
+| Invoke Action         | Triggers another predefined action flow                        |
+| End Branch            | Ends the execution of a conditional branch                               |
+| Logout                | Logs the user out of the application                                     |
+| File Upload           | DronaHQ provided file upload service                   |
+| Generate PDF          | DronaHQ provided PDF service to create a PDF from given data and PDF template                          |
+| DHQ File Storage      | Stores and retrieves files using DronaHQ provided file storage service. |
 
 ---
 
@@ -142,7 +166,35 @@ Currently, only a limited set of controls are supported that can be used to repl
 | Tabbed Container         | Displays grouped content in tab layout   |
 | JSON Schema Form Control | Renders forms based on JSON schema       |
 | Grouped Menu             | Navigation menu with grouped sections    |
-
+| Text Input            | A single-line input field for entering text. |
+| Label                 | Displays static text or information. |
+| Dropdown              | A selectable dropdown list of options.  |
+| Text Area            | A multi-line input field for entering text content. |
+| Select                | A single or multi select options displayed in Grid layout. |
+| Rating                | Allows users to give a star or point-based rating.  |
+| Rich Text Editor      | A WYSIWYG editor for styled or formatted content.   |
+| Numeric               | An input field that accepts only numeric values.    |
+| Text                  | Displays read-only text or bound values.            |
+| Toggle                | A switch to toggle between two states (on/off).     |
+| Quantity              | A stepper control for increasing or decreasing numeric values.                 |
+| Date                  | Date picker for selecting a specific date.          |
+| Heading               | Displays a heading or title within the layout.      |
+| File Upload           | Allows users to upload files from their device.     |
+| Date Time             | Combines date and time selection in a single picker.         |
+| Terms & Conditions    | Displays terms with a required checkbox for user agreement.  |
+| Custom Control        | A developer-defined control with custom logic or rendering.  |
+| JSON Viewer           | Renders JSON data in a structured, readable format. |
+| Icon                  | Displays an icon using predefined icon sets.        |
+| Checkboxes            | A group of checkboxes for multiple selections.      |
+| Charts                | Visualizes data using various chart types (bar, line, pie, etc.).              |
+| Select Bar            | A horizontal segmented control for selecting from multiple options.            |
+| Radio                 | A group of radio buttons for single selection.      |
+| Switch Group          | A set of toggle switches grouped together.          |
+| Time                  | A time picker for selecting a specific time.        |
+| Date Range Picker     | Allows users to select a start and end date range.  |
+| Card List Control     | Displays a list of items using a card-based layout. |
+| Advance Map           | Shows a map with markers, routes, or geolocation support.    |
+| Google Doc Viewer     | Embeds and displays Google Docs within the app.     |
 
 
 ---
