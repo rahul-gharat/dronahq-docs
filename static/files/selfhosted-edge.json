@@ -168,18 +168,22 @@
         "Enhanced Studio App Listing, Connectors, Catalogs, Manage User → User Details, and Builder-side connector library by adding fallback images for image failure.",
         "Enhanced hover interaction to allow copying content and opening links when mouse is over.",
         "Enhanced UX to open properties on unique name click and close it on second click.",
-        "Improved GlobalConfig variable handling for Automation rename."
+        "Improved GlobalConfig variable handling for Automation rename.",
+        "Enhanced JSON Schema Form Control by adding JSON and UI schema support for JSON provided."
       ]
     },
     {
       "title": "Fixed",
       "type": "fixed",
       "points": [
+        "Fixed an issue in Fillable PDF functionality enhancing encryption support, Base64 detection, field type handling, and user interface clarity.",
         "Fixed issue with control formulas in ready-to-use templates.",
-        "Fixed issue where mapped options were not visible in manual options.",
-        "Fixed issue where controlName was disappearing in WhenToExecute editor.",
+        "Fixed an issue where mapped options were not visible in manual options.",
+        "Fixed an issue where controlName was disappearing in WhenToExecute editor.",
         "Fixed an issue where WhenToExecute condition was not working for Actionflow Data Queries.",
-        "Fixed issue where Failure condition was not working properly."
+        "Fixed an issue where Failure condition was not working properly.",
+        "Fixed an issue where the default formula remained visible in already dropped tabbed containers.",
+        "Fixed an issye where output rendering breaks when query is changed on runtime in SQL variable."
       ]
     }
   ]
