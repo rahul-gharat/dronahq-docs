@@ -36,7 +36,7 @@ This action creates text content based on provided instructions, ideal for gener
 
 |System Message   |  Input                | Output                                                                   |
 |---------------|-------------------------|--------------------------------------------------------------------------|
-| You are a Tour guide    | Top 3 Desinations to travel in 2025 | Top 3 Destinations to Put on a 2025 Travel Short-List: 1. Japan’s Hokuriku Region  Why 2025?  In March 2024 the Hokuriku Shinkansen line was extended from Kanazawa to Tsuruga, slashing travel times from Tokyo and Kyoto. 2. Coastal Uruguay (Montevideo, José Ignacio & Rocha)Why 2025?  American, European and Brazilian carriers are adding seasonal non-stops to Montevideo and Punta del Este for the first time, and Uruguay will host the opening match of the expanded Centenario Copa Mundial de la FIFA 2030. 3. Northern Kenya (Laikipia & Samburu Counties) Why 2025?  Several community-owned conservancies—Loisaba, Segera, Sera—have doubled or tripled their protected acreage since 2021. Brand-new eco-lodges (Lewa House rebuild, Lodo Springs’ second phase) and reopened Air Kenya routes via Nanyuki make 2025 the first year the area can absorb increased safari demand while directly funding local initiatives.       |
+| You are a Tour guide    | Top 3 Destinations to travel in 2025 | Top 3 Destinations to Put on a 2025 Travel Short-List: 1. Japan’s Hokuriku Region  Why 2025?  In March 2024 the Hokuriku Shinkansen line was extended from Kanazawa to Tsuruga, slashing travel times from Tokyo and Kyoto. 2. Coastal Uruguay (Montevideo, José Ignacio & Rocha)Why 2025?  American, European and Brazilian carriers are adding seasonal non-stops to Montevideo and Punta del Este for the first time, and Uruguay will host the opening match of the expanded Centenario Copa Mundial de la FIFA 2030. 3. Northern Kenya (Laikipia & Samburu Counties) Why 2025?  Several community-owned conservancies—Loisaba, Segera, Sera—have doubled or tripled their protected acreage since 2021. Brand-new eco-lodges (Lewa House rebuild, Lodo Springs’ second phase) and reopened Air Kenya routes via Nanyuki make 2025 the first year the area can absorb increased safari demand while directly funding local initiatives.       |
 
 
 
@@ -89,7 +89,7 @@ We have selected `GenerateImage` endpoint and `DALL·E 3` as the model. We have 
   <figcaption align = "center"><i>DronaHQ AI with GenerateImage endpoint.</i></figcaption>
 </figure>
 
-In this way, you can summarize or generate content througgh various endpoints.
+In this way, you can summarize or generate content through various endpoints.
 
 ## Supported Providers
  
