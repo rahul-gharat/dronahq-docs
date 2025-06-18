@@ -1,4 +1,54 @@
 [
+    {
+    "timestamp": 1748574994000,
+    "tags": ["Self-Hosted", "3.7.0-stable"],
+    "heading": "Version 3.7.0-stable",
+    "cards": [
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed an issue where Advance editor panel plus button was not opening control listing on builder view.",
+          "Fixed an issue where the URLs for user and license validation in executeQuery were not resolving correctly."
+        ]
+      }
+    ]
+  },  
+  {
+    "timestamp": 1747970194000,
+    "tags": ["Self-Hosted", "3.6.3-stable"],
+    "heading": "Version 3.6.3-stable",
+    "cards": [
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed an issue where the old connector sidebar failed to open due to a conditional error."
+        ]
+      }
+    ]
+  },
+      {
+    "timestamp": 1748315794000,
+    "tags": ["Self-Hosted", "3.6.4-stable"],
+    "heading": "Version 3.6.4-stable",
+    "cards": [
+      {
+        "title": "Added",
+        "type": "added",
+        "points": [
+          "Added the x-dronahq-request-id header in REST connector requests to improve traceability."
+        ]
+      },
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed an issue with JWT encoding in Secure Embed, ensuring proper token generation and validation."
+        ]
+      }
+    ]
+  },
   {
     "timestamp": 1748354139000,
     "tags": ["Self-Hosted", "3.7.1-stable"],
@@ -29,6 +79,7 @@
       }
     ]
   },
+
   {
     "timestamp": 1745213952000,
     "tags": ["Self-Hosted", "3.7.0-stable"],
