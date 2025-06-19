@@ -95,6 +95,18 @@ In this way, you can summarize or generate content through various endpoints.
  
 |  Providers    | Description                                                                              |
 |---------------|------------------------------------------------------------------------------------------|
-| Open AI       | Offers models like GPT-4o-mini, GPT-o3 for text and DALL·E 3, DALL·E 2  image generation.|
+| Open AI       | Offers models like GPT-4o-mini, GPT-o3, etc for text and DALL·E 3, DALL·E 2  image generation.|
 | Cohere        | 	Provides models such as Command R for chat and text generation.                        |
 
+  
+   Additional providers will be available soon. 
+
+
+## Additional Actions
+
+You can enable or disable existing providers at any time, or modify their configuration settings as needed.
+
+<figure>
+  <Thumbnail src="/img/reference/connectors/dronahq-managed-ai/additional-actions.png" alt="DronaHQ AI Additional Actions." />
+  <figcaption align = "center"><i>DronaHQ AI Additional Actions.</i></figcaption>
+</figure>
