@@ -9,7 +9,7 @@
         "type": "fixed",
         "points": [
           "Fixed an issue where Advance editor panel plus button was not opening control listing on builder view.",
-          "Fixed an issue where the URLs for user and license validation in executeQuery were not resolving correctly."
+          "Fixed an issue where the URLs for user and license validation in execute Query were not resolving correctly."
         ]
       }
     ]
@@ -93,9 +93,9 @@
           "Added environment variable support for AUTOMATION_LOGGING_CHARACTER_LIMIT.",
           "Added feature for folder name as prefix filter in Azure Storage getFiles.",
           "Added audit logging for key Git operations.",
-          "Added support for suggesting nested keys in JSEditor and String Builder.",
-          "Added theming functions to detect and apply themes and custom fonts on JSON Schema form control.",
-          "Added improvements for Bindata, docking fixes, folder-name, Canvas fixes.",
+          "Added support for suggesting nested keys in JS Editor and String Builder.",
+          "Added functions to detect and apply themes and custom fonts on JSON Schema form control.",
+          "Added improvements for Bind data, docking fixes, folder-name, Canvas fixes.",
           "Added support for IAM Role-based access for GCP Storage.",
           "Added support for AWS S3-compatible storage for file storage.",
           "Added moment-timezone library.",
@@ -170,7 +170,7 @@
           "Fixed auto-width issue in container control caused by auto-generated form.",
           "Fixed illegal characters being added during variable renaming.",
           "Fixed JSON serialization issue in MySQL JDBC connector.",
-          "Fixed improper error returned by executequery endpoint.",
+          "Fixed improper error returned by execute query endpoint.",
           "Fixed UI cursor pointer in table grid column format dropdown.",
           "Fixed DQ listing showing 'No data found' with updated text.",
           "Fixed parsing issue in prepared statement queries.",
@@ -196,7 +196,7 @@
           "Fixed padding in advanced settings icon for Inside property.",
           "Fixed color picker box click issue.",
           "Fixed dropdown closing in Microapp Nav config on clicking search.",
-          "Fixed falsy value handling in custom parameters in Trigger Data Query.",
+          "Fixed false value handling in custom parameters in Trigger Data Query.",
           "Fixed validation errors persisting in Manage Group sidebar.",
           "Fixed mismatch between selected preview user and useremail keyword.",
           "Fixed screen shift on tray screen open.",
@@ -205,7 +205,7 @@
           "Fixed unwanted scroll in publish sidebar.",
           "Fixed infinite loading state in Git-protected apps.",
           "Fixed publish dropdown options not appearing correctly.",
-          "Fixed filteredData issue in global variables."
+          "Fixed filtered Data issue in global variables."
         ]
       }
     ]
