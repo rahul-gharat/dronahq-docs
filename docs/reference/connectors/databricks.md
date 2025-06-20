@@ -8,36 +8,22 @@ Thumbnail from '@site/src/components/Thumbnail';
 
 Databricks is a cloud-based platform that unifies data engineering, data science, and machine learning workflows, enabling organizations to process, analyze, and govern large-scale data using a data lakehouse architecture.
 
-<!-- ## Prerequisite
+## Prerequisite
 
-To establish a connection with Google BigQuery as a connector, follow these steps:
+To establish a connection with Databricks as a connector, follow these steps:
 
-1. Google Cloud Account: Ensure you have a valid Google Cloud Platform (GCP) account with the necessary permissions for
-   BigQuery access.
+1. Log in to your Databricks workspace.
 
-2. Google Cloud Credentials: Obtain Google Cloud Credentials for authentication. For Service Account Authentication and
-   the private key, refer to this detailed article
-   [here](https://cloud.google.com/docs/authentication/client-libraries#creating_a_service_account).
+2. In the sidebar, click SQL > SQL Warehouses.
 
-3. Service Account Creation: Create a Service Account within `Google Cloud Storage > APIs and Services > Credentials`.
-If not created, select `Service Account` and provide account details, description, and access permissions to projects
-and users.
+3. In the list of available warehouses, click the target warehouse's name.
+
+4. On the Connection Details tab, copy the connection details that you need, such as `Server hostname`, `Port`, and `HTTP path`.
 
 <figure>
-   <Thumbnail src="/img/reference/connectors/bigquery/serviceacc.jpeg" alt="Service Account" />
-   <figcaption align = "center"><i>Service Account</i></figcaption>
+   <Thumbnail src="/img/reference/connectors/databricks/config.png" alt="Databricks account details Key" />
+   <figcaption align = "center"><i>Databricks account details</i></figcaption>
 </figure>
-
-4. Generate JSON Key: From the created Service Account, generate a JSON Key. Provide necessary details and permissions,
-and download the JSON file. Keep it accessible for configuring the connector.
-
-<figure>
-   <Thumbnail src="/img/reference/connectors/bigquery/json.jpeg" alt="JSON Key" />
-   <figcaption align = "center"><i>JSON Key</i></figcaption>
-</figure>
-
-5. Connector Configuration: Configure the BigQuery connector using the obtained Google Cloud Credentials. Set the
-   necessary authentication method and use the downloaded JSON Key for private key authentication. -->
 
 ## Configuring Connector in DronaHQ
 
@@ -49,10 +35,10 @@ settings for secure database setup.
 | Field           | Description                                                             |
 | --------------- | ----------------------------------------------------------------------- |
 |Host             | Enter the Server Host Name                                              |
-| Port            | Enter the Port number                                                   |
+| Port            | Enter the Posrt number                                                  |
 | HTTP Path       | Enter the HTTP Path                                                     |
-| Default Name    | Enter the Database name                                                 |
-| Default Schema  | Enter the Schema name                                                   |
+| Default Name (optional)    | Enter the Database name                                      |
+| Default Schema (optional) | Enter the Schema name                                         |
 | Personal Token Access     | Enter the access key.                                         |
 
 <figure>

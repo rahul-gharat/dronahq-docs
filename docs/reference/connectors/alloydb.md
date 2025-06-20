@@ -123,7 +123,7 @@ This query selects all details from the `employees` schema's table, allowing you
 </figure>
 
 Place the Table grid control from the Controls section. Bind data by selecting the AlloyDB connector from
-` Data Bind Options -> Quick Select -> Connector Library.` . Choose the relevant query for displaying data and bind the
+` Data Bind Options -> Quick Select -> Connector Library`. Choose the relevant query for displaying data and bind the
 preferred columns.
 
 <figure>
@@ -160,7 +160,7 @@ After saving your query after successful configuration testing.
 
 3. Access id using Use Keywords for smooth action flow.
 
-<!-- <figure>
-  <Thumbnail src="/img/reference/connectors/postgresql/delete.png" alt="Actionflow for deleting data" />
+<figure>
+  <Thumbnail src="/img/reference/connectors/alloydb/delete.png" alt="Actionflow for deleting data" />
   <figcaption align = "center"><i>Actionflow for deleting data</i></figcaption>
-</figure>  -->
+</figure> 
