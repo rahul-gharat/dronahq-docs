@@ -93,6 +93,7 @@ Below are the number of credits used when conversing with Veda Ai chatbot using 
 | Single Control Action Flow | 9 | 3 |
 | Replace Control | 60 | 20 |
 | Add Control | 30 | 10 |
+| Bind Data to Control | 30 | 10 |
 
 
 ### AI Assist Credit Usage
