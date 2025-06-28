@@ -61,7 +61,7 @@ This specifies the type of alert. There are five types of alert available:
 | Success| Indicates an success alert as an output.  |
 | Alert | Indicates an notification alert as an output.|
 | Warning  | Indicates an warning alert as an output. |
-| Error | Indicates an error alert was an output. |
+| Error | Indicates an error alert as an output. |
 
 ### Description
 Defines the detailed description or message content which now supports two types of input.
