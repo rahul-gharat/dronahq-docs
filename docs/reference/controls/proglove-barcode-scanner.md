@@ -36,15 +36,6 @@ This control is supported only on Android devices.
 3. Register a BroadcastReceiver in Your App
 - You must register a BroadcastReceiver in your Android app to receive scan data.
 
-| Setting          | Value                             |
-|------------------|-----------------------------------|
-| Associated app   | com.drona5                      |
-| Activity         | *                                 |
-| Intent output    | Enabled                           |
-| Intent action    | com.proglove.api.BARCODE          |
-| Intent category  | Clear or leave unset              |
-| Intent delivery  | Broadcast intent                  |
-
 
 :::caution
 Note: Before scanning any barcode, ensure that the MARK (barcode scanner) is paired through the ProGlove Connect App.
