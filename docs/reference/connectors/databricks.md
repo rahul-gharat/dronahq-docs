@@ -35,7 +35,7 @@ settings for secure database setup.
 | Field           | Description                                                             |
 | --------------- | ----------------------------------------------------------------------- |
 |Host             | Enter the Server Host Name                                              |
-| Port            | Enter the Posrt number                                                  |
+| Port            | Enter the Port number                                                  |
 | HTTP Path       | Enter the HTTP Path                                                     |
 | Default Name (optional)    | Enter the Database name                                      |
 | Default Schema (optional) | Enter the Schema name                                         |
