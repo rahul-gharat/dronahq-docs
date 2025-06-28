@@ -39,13 +39,43 @@ The Alert Control facilitates the display of dynamic content using the Bind Data
 ## Properties
 
 
-| Property       | Description                                               |
-|----------------|-----------------------------------------------------------|
-| Alert Type     | Specifies the type of alert (Info, Note, Alert).           |
+| Property       | Description                                                      |
+|----------------|------------------------------------------------------------------|
+| Alert Type   | Specifies the type of alert (`Info`, `Success`, `Alert`, `Warning`, `Error`).|
 | Title          | Sets the title of the alert.                               |
 | Note           | Represents additional notes or descriptive text.           |
 | Description    | Defines the detailed description or message content.        |
 | Action Text    | Specifies the text label for the action button.            |
+
+<figure>
+  <Thumbnail src="/img/reference/controls/alert/properties.png" alt="Alert Control Properties" />
+  <figcaption align = "center"><i>Alert Control Properties</i></figcaption>
+</figure>
+
+### Alert Type
+This specifies the type of alert. There are five types of alert available:
+
+| Type | Description                                               |
+|--------|-----------------------------------------------------------|
+| Info | Indicates an informational alert as an output.  |
+| Success| Indicates an success alert as an output.  |
+| Alert | Indicates an notification alert as an output.|
+| Warning  | Indicates an warning alert as an output. |
+| Error | Indicates an error alert as an output. |
+
+### Description
+Defines the detailed description or message content which now supports two types of input.
+
+| Type       | Description                                                                               |
+| -----------| ----------------------------------------------------------------------------------------- |
+| Markdown   | A lightweight markup language used to format text with plain syntax. It converts easily to HTML for styled content.                                     |
+| Plain Text | Unformatted text that contains no styling or special formatting. It displays exactly as typed, without interpretation.                                       |
+
+<figure>
+  <Thumbnail src="/img/reference/controls/alert/description-type.png" alt="Description Type" />
+  <figcaption align = "center"><i>Description Type</i></figcaption>
+</figure>
+
 
 ## Control Outputs
 
@@ -60,3 +90,6 @@ The outputs from the Alert Control, represented by the placeholder `{{alert}}`, 
 | Property       | Description                                                                                   |
 |----------------|-----------------------------------------------------------------------------------------------|
 | Action_Click   | Occurs when the action button in the alert control is clicked, typically triggering an action.|
+
+
+
