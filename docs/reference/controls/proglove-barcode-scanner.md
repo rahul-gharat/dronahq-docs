@@ -33,10 +33,6 @@ This control is supported only on Android devices.
 2. Insight Mobile App or SDK Must Be Installed and Running
 - If using Insight Mobile for Android, ensure it is installed and running in the background.
 
-3. Register a BroadcastReceiver in Your App
-- You must register a BroadcastReceiver in your Android app to receive scan data.
-
-
 :::caution
 Note: Before scanning any barcode, ensure that the MARK (barcode scanner) is paired through the ProGlove Connect App.
 :::
