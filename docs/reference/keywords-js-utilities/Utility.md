@@ -794,3 +794,121 @@ UTILITY.REDIRECTPARENTUTILITY("URL");
 ```javascript
 UTILITY.REDIRECTPARENTUTILITY("https://docs.dronahq.com/reference/keywords-js-utilities/Utility/#setctrlvalue");
 ```  
+
+## DownloadFileFromURL  
+
+The `UTILITY.DownloadFileFromURL()` method allows users to dynamically download files directly to their devices.
+
+#### Usage  
+
+```javascript
+UTILITY.DownloadFileFromURL(downloadUrl,fileName,headers,pathOfAndroid,pathOfIos,[{ queryKey: "keyName", queryValue: "key_value" },{ queryKey: "anotherKeyName", queryValue: "key_value" }]);
+```
+
+<span style={{fontSize: 24}}>Parameters</span>
+
+| Parameter   | Accepts | Possible values                                   |
+|-------------|---------|---------------------------------------------------|
+| `downloadUrl`      | string  | A valid HTTP or HTTPS URL pointing to the downloadable file.  |
+| `fileName`     | string  | A valid file name with extension.                                |
+| `headers`   | string  | JSON object of Headers                                  |
+| `pathOfAndroid`  | string  | 'application_directory', 'document_directory', 'cache_directory'  |
+| `pathOfIos`| string | 'application_directory', 'document_directory', 'cache_directory'  |
+| `queryKey`   | string  | Alphanumeric strings used as parameter names in the URL query string.  |
+| `queryValue`   | string  | Values corresponding to query string keys.  |
+
+<span style={{fontSize: 24}}>Example</span>
+
+#### Example  
+
+```javascript
+UTILITY.DownloadFileFromURL("https://file-examples.com/wp-content/storage/2017/02/file-sample_1MB.doc", "test.doc", {"Content-Type": "application/json","token": "1234567890"}, "application_directory", "cache_directory", [{ queryKey: "userId", queryValue: "1" },{ queryKey: "emailId", queryValue:"user@gmail.com" }]);
+```   
+
+## OpenFile  
+
+The `UTILITY.OpenFile()` method allows users to dynamically open files directly from their devices locally.
+
+#### Usage  
+
+```javascript
+UTILITY.OpenFile(filePath,mimeType);
+```
+
+<span style={{fontSize: 24}}>Parameters</span>
+
+| Parameter   | Accepts | Possible values                                   |
+|-------------|---------|---------------------------------------------------|
+| `filePath`      | string  | A valid absolute or relative path to a file.  |
+| `mimeType`| string | 'application/pdf', 'application/vnd.ms-excel', 'application/msword', 'application/vnd.android.package-archive', 'audio/mpeg', 'video/mp4', 'image/png', 'image/jpeg', 'text/plain', 'text/csv'  |
+
+<span style={{fontSize: 24}}>Example</span>
+
+#### Example  
+
+```javascript
+UTILITY.OpenFile("/storage/emulated/0/Download/file.pdf","application/pdf");
+```  
+
+## ReadFile  
+
+The `UTILITY.ReadFile()` method allows users to dynamically read files directly from their devices locally.
+
+#### Usage  
+
+```javascript
+UTILITY.ReadFile(filePath);
+```
+
+<span style={{fontSize: 24}}>Parameters</span>
+
+| Parameter   | Accepts | Possible values                                   |
+|-------------|---------|---------------------------------------------------|
+| `filePath`      | string  | A valid absolute or relative path to a file.  |
+
+<span style={{fontSize: 24}}>Example</span>
+
+#### Example  
+
+```javascript
+UTILITY.ReadFile("/storage/emulated/0/Download/file.pdf");
+```  
+
+## WriteFile  
+
+The `UTILITY.WriteFile()` method allows users to dynamically write files directly to their devices locally.
+
+#### Usage  
+
+```javascript
+UTILITY.WriteFile(fileName,fileContent,appendData,contentType,pathOfAndroid,pathOfIos);
+```
+
+<span style={{fontSize: 24}}>Parameters</span>
+
+| Parameter   | Accepts | Possible values                                   |
+|-------------|---------|---------------------------------------------------|
+| `fileName`     | string  | A valid file name with extension.                                |
+| `fileContent`   | string  | The actual content of the file                                  |
+| `appendData`   | boolean  | true/false                                  |
+| `contentType`   | string  | 'text/plain', 'application/pdf', 'application/msword', 'application/vnd.ms-excel', 'text/csv', 'application/json', 'image/png'                                  |
+| `pathOfAndroid`  | string  | 'application_directory', 'document_directory', 'cache_directory'  |
+| `pathOfIos`| string | 'application_directory', 'document_directory', 'cache_directory'  |
+
+<span style={{fontSize: 24}}>Example</span>
+
+#### Example  
+
+```javascript
+UTILITY.WriteFile("test.pdf","This is a test file",true,"application/pdf","document_directory","application_directory");
+```  
+
+## MpinVerification  
+
+The `UTILITY.MpinVerification()` method enables users to verify their MPIN (Mobile Personal Identification Number) as a means to securely access the app.
+
+#### Usage  
+
+```javascript
+UTILITY.MpinVerification();
+```  
