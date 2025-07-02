@@ -188,7 +188,8 @@ const config = {
       announcementBar: {
         id: 'anouncement',
         content:
-          '<span class="badge badge--success announcement-badge margin-right--sm">What\'s new</span> <a target="_blank" rel="noopener noreferrer" href="https://lu.ma/8gpejuv7">DronaHQ : Frontend designing workshop for backend engineers.</a>',
+          '<span class="badge badge--success announcement-badge margin-right--sm">Explore Veda AI</span> Build internal tools from prompts or designs. <a target="_blank" rel="noopener noreferrer" href="https://www.dronahq.com/ai-workshop/?ref=top-banner-docs"> Register for workshop</a>',
+          
         backgroundColor: '#fafbfc',
         textColor: '#091E42',
         isCloseable: true,
