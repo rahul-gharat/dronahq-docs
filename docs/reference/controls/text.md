@@ -219,7 +219,7 @@ The properties `Line Height`, `Letter Spacing`, `Font Options` are configurable 
 
 ## Advanced Settings
 
-- External CSS: Add custom styles to the Input text control.
+- External CSS: Add custom styles to the control.
 - Trigger Dependents: Automatically invoke linked controls or workflows.
 - Caching: Enable caching to store frequently used inputs.
 
