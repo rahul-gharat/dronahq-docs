@@ -1,5 +1,31 @@
 [
   {
+    "timestamp": 1749733522000,
+    "tags": ["Cloud-Hosted"],
+    "heading": "",
+    "cards": [
+  
+      {
+        "title": "Enhancements",
+        "type": "improved",
+        "points": [
+         "Enhanced Veda AI by adding a 'Skip to Queue' button."
+        ]
+      },
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed an issue where the property section popup would remain visible after closing the sidebar via control name.",
+          "Fixed navigation issues in the connector menu when using arrow keys.",
+          "Fixed an issue where opening a Data Query (DQ) via shortcut would reflect the same DQ in the action flow.",
+          "Fixed an issue preventing connected queries and libraries from being visible in read-only mode."
+
+        ]
+      }
+    ]
+  },
+  {
     "timestamp": 1748371012000,
     "tags": ["Cloud-Hosted"],
     "heading": "",
