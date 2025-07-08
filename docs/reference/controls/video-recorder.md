@@ -36,6 +36,7 @@ To ensure consistent compatibility across platforms, the recorded video is saved
 | Tooltip | Displays contextual hints or information on hover over the video recorder. |
 | Description | Adds additional information above the control to provide user guidance. |
 | Label | Customize the display text including font size, color, position, and alignment. |
+| Video Quality | Allows to configure video quality.  <br /> `Android` : Low & High <br /> `iOS` : Low, Medium & High
 
 
 ## Interaction
