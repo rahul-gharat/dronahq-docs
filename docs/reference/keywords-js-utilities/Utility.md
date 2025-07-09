@@ -852,7 +852,7 @@ UTILITY.OpenFile("/storage/emulated/0/Download/file.pdf","application/pdf");
 
 ## ReadFile  
 
-The `UTILITY.ReadFile()` method allows users to dynamically read files directly from their devices locally.
+The `UTILITY.ReadFile()` method allows users to dynamically read files directly from their devices locally. This method is supported only on Android and iOS platforms.
 
 #### Usage  
 
@@ -876,7 +876,7 @@ UTILITY.ReadFile("/storage/emulated/0/Download/file.pdf");
 
 ## WriteFile  
 
-The `UTILITY.WriteFile()` method allows users to dynamically write files directly to their devices locally.
+The `UTILITY.WriteFile()` method allows users to dynamically write files directly to their devices locally. This method is supported only on Android and iOS platforms.
 
 #### Usage  
 
@@ -905,7 +905,7 @@ UTILITY.WriteFile("test.pdf","This is a test file",true,"application/pdf","docum
 
 ## MpinVerification  
 
-The `UTILITY.MpinVerification()` method enables users to verify their MPIN (Mobile Personal Identification Number) as a means to securely access the app.
+The `UTILITY.MpinVerification()` method enables users to verify their MPIN (Mobile Personal Identification Number) as a means to securely access the app. This method is supported only on Android and iOS platforms.
 
 #### Usage  
 
