@@ -1,30 +1,72 @@
 [
   {
-    "timestamp": 1749733522000,
+    "timestamp": 1749614974000,
     "tags": ["Cloud-Hosted"],
     "heading": "",
     "cards": [
-  
+      {
+        "title": "Added",
+        "type": "added",
+        "points": [
+          "Added a check in data bind intent to verify if a connector is provided for Data Query operations.",
+          "Added fix for screen duplication issues within folders.",
+          "Added support for Data bind Intent, PDF Creator, File Storage, Data Query, and screen-level Actions in Build AI."
+        ]
+      },
       {
         "title": "Enhancements",
         "type": "improved",
         "points": [
-         "Enhanced Veda AI by adding a 'Skip to Queue' button."
+         "Enhanced Veda AI with a 'Skip to Queue' button, updated info text, and reorganized button positions.",
+          "Enhanced manual section in Data Bind by enabling radio options.",
+          "Enhanced the date picker to support first-day selection with min/max limits.",
+          "Enhanced Actionflow to stop execution when `whenToExecute` returns false and skip the error block.",
+          "Enhanced handling of metadata and output updates when the Data Query API fails.",
+          "Enhanced Actionflow: added support for default-selected rows in table grid using primary key.",
+          "Enhanced the Data Query builder to exclude the account id key from resource reference.",
+          "Enhanced the UI by adding hover effects for Manual Option Addon, Events, and Recursive Events in Screen Properties.",
+          "Enhanced logging by refactoring API and DB connector modules for efficient operation handling.",
+          "Enhanced connector support to generate JSON schema and UI schema for DronaHQ DB, PDF, and controls.",
+          "Enhanced screen delete popup by adding a loader on the delete button.",
+          "Enhanced connector selection with pagination, improved system responses, and better error handling.",
+          "Enhanced the Text Control component with a toggle to switch between Plain Text and Markdown modes."
         ]
       },
       {
         "title": "Fixed",
         "type": "fixed",
         "points": [
-          "Fixed an issue where the property section popup would remain visible after closing the sidebar via control name.",
-          "Fixed navigation issues in the connector menu when using arrow keys.",
-          "Fixed an issue where opening a Data Query (DQ) via shortcut would reflect the same DQ in the action flow.",
-          "Fixed an issue preventing connected queries and libraries from being visible in read-only mode."
+          "Fixed an issue where the property section popup did not close when clicking the unique control name.",
 
+          "Fixed keyboard navigation for the connector menu using arrow keys.",   
+          "Fixed an issue where opening a Data Query (DQ) via shortcut incorrectly reflected the same DQ in Actionflow.",
+          "Fixed an issue preventing visibility of connected queries/libraries in read-only mode.",
+          "Fixed a typo in the onboarding template: 'profile' corrected to 'profile.'",
+          "Fixed an issue where duplicating a Data Query did not reflect in the list until re-rendering.",
+          "Fixed a validation issue in Veda AI when a connector was not provided in the action prompt.",
+          "Fixed UI issues in the Actionflow configuration toggle with long text labels.",
+          "Fixed UI issues in the popup triggered by the three-dot menu in the Apps Connector Library.",
+          "Fixed movement issues with certain controls in the layout control of the advanced page.",
+          "Fixed UI glitches in custom control events for adding/deleting events in the property section.",
+          "Fixed an issue where SQL suggestions did not appear while editing variables in Data Query.",
+          "Fixed Data Query to exclude account_id from the payload on test runs for non-global connectors.",
+          "Fixed minor syntax issue in the function executed during Actionflow run query.",
+          "Fixed fallback icon issues in builder and flickering alert tooltip icons.",
+          "Fixed UI inconsistencies in the mention-box and AI panel."
+
+        ]
+      },
+      {
+        "title": "Removed",
+        "type": "removed",
+        "points": [
+          "Removed empty color picker ID to prevent console errors.",
+          "Removed all live data from the JSON payload during package publishing."
         ]
       }
     ]
   },
+
   {
     "timestamp": 1748371012000,
     "tags": ["Cloud-Hosted"],
