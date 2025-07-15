@@ -1,0 +1,56 @@
+---
+sidebar_position: 1
+title: Automation
+---
+import Thumbnail from '@site/src/components/Thumbnail';
+import VersionedLink from '@site/src/components/VersionedLink';
+
+Automation is a bundled sequence of functions or tasks that execute based on triggers or conditions, streamlining data operations and logic flows. It enables seamless integration with APIs and external services to build dynamic, event-driven applications.
+
+## Prerequisites
+### Configuring Your Automation:
+
+
+
+## Query Execution Details:
+
+### Configuring Query Parameters:
+
+<figure>
+  <Thumbnail src="/img/data-queries/automation-section.png" alt="Automation Section" />
+  <figcaption align = "center"><i>Automation Section</i></figcaption>
+</figure>
+
+- `Name:` Specifies the query's identifier or name for easy reference within DronaHQ.
+- `Run Query:` Choose between two options:
+  - **Every Time Variable Changes:** Set the query to automatically execute whenever associated variables are modified, ensuring real-time updates based on dynamic changes.
+  - **Manual Trigger Only:** Opt for manual activation, enabling control over when the query executes, ideal for specific instances or user-triggered actions.
+- `Proxy Call Toggle:` This toggle determines whether the query will utilize a proxy call mechanism:
+  - **Enabled:** Utilize a proxy call for handling GET requests, ensuring efficient management and seamless integration with the designated endpoint.
+  - **Disabled:** Bypass the proxy call, directly executing the query without intermediary handling.
+
+### Variables
+
+Variable      | Description             |
+|-------------|--------------------------|
+Automation |  Select the automation you wish to use .   |
+
+
+
+
+### Advanced
+
+Fields      | Description                                |
+|---------------------|------------------------------------------------------------------|
+Query String Parameters | Sets key/value pairs to send as query parameters in the request. |
+Headers | Sets key/value pairs to send in the request header.|
+Run on App open Toggle: | This will make the dataquery to run on app open regardless of if it's referenced in any other control or dataquery. |
+
+
+
+
+## Transforming Data
+
+This sections is exactly same as the one in the [connector library.](/binding-data/data-queries/connector-library/#transform-response)
+
+

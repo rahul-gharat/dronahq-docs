@@ -1,6 +1,20 @@
 [
+  {
+    "timestamp": 1751893522000,
+    "tags": ["Self-Hosted", "3.6.5-stable"],
+    "heading": "Version 3.6.5-stable",
+    "cards": [
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed an issue where the automation scheduler was triggered multiple times by multiple instances."
+        ]
+      }
+    ]
+  },  
     {
-    "timestamp": 1748574994000,
+    "timestamp": 1748091922000,
     "tags": ["Self-Hosted", "3.7.0-stable"],
     "heading": "Version 3.7.0-stable",
     "cards": [
@@ -73,7 +87,6 @@
         "points": [
           "Fixed an issue where user was unable to filter from service tag in Datadog logger.",
           "Fixed an issue in Secure embed license counter.",
-          "Fixed an issue in Execute Query where it was failing due to missing code.",
           "Fixed an issue with type handling for controlMeta in convertToJSON function."
         ]
       }

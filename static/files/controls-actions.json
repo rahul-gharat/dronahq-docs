@@ -1,4 +1,104 @@
-[  
+[ 
+  {
+    "timestamp": 1751871789000,
+    "tags": ["Control", "Action"],      
+    "heading": "",
+    "cards": [
+      {
+        "title": "Added",
+        "type": "added",
+        "points": [
+          "Added new control: ProGlove Barcode Scanner for dedicated pro glove devices.",
+          "Added new action for Mpin verification."
+        ]
+      },
+      {
+        "title": "Enhancements",
+        "type": "improved",
+        "points": [
+          "Enhanced various controls by adding utility in action.",
+          "Enhanced the Prefix-Suffix control by adding configurations for min/max date, min/max time, and timezone management."
+          
+        ]
+      },
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed an issue in various controls where read-only input fields were editable when a tabindex was set.",
+          "Fixed an issue where disabled days were not functioning as expected in the date picker."
+        ]
+      }
+    ]
+  },  
+{
+    "timestamp": 1751094189000,
+    "tags": ["Control", "Action"],
+    "heading": "",
+    "cards": [
+      {
+        "title": "Added",
+        "type": "added",
+        "points": [
+          "Added new control: ProGlove Barcode Scanner for dedicated pro glove devices.",
+          "Added new action for Mpin verification."
+        ]
+      },
+      {
+        "title": "Enhancements",
+        "type": "improved",
+        "points": [
+          "Enhanced Alert control by adding markdown support for description and icon picker property."
+        ]
+      },
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed various UI issues in Container.",
+          "Fixed an issue in Detail View control where conditional formatting was not working as expected.",
+          "Fixed an issue in Date control where an error message was incorrectly logged when the data set was empty."
+        ]
+      }
+    ]
+  },
+  {
+  "timestamp": 1750143789000,
+  "tags": ["Control", "Action"],
+  "heading": "",
+  "cards": [
+    {
+      "title": "Added",
+      "type": "added",
+      "points": [
+        "Added Start GPS location tracking action.",
+        "Added Stop GPS location tracking action.",
+        "Added functionality to select enabled LLM provider’s model from dropdown in DronaHQ AI"
+      ]
+    },
+    {
+      "title": "Enhancements",
+      "type": "improved",
+      "points": [
+        "Enhanced Detail View by adding group options property and fixes of date/datetime in column.",
+        "Enhanced page height calculation for Hide control and Show control actions."
+      ]
+    },
+    {
+      "title": "Fixed",
+      "type": "fixed",
+      "points": [
+        "Fixed an issue in Gallery Card Control by correcting quick filter functionality.",
+        "Fixed an issue in the Prefix-Suffix control where it remained visible in preview mode even after being turned off.",
+        "Fixed a minor UI issue in Data range Picker, Dropdown, Text Area, and Detail View controls.",
+        "Fixed an issue in Dropdown Control where custom dropdown entries appeared blank unless a default option was selected before or after input.",
+        "Fixed an issue in Table Grid which had UI glitch in the tray screen where the custom width setting for action columns did not apply correctly.",
+        "Fixed an issue in Metric Control where the data binding for values not working properly.",
+        "Fixed an issue in Color Picker control where its UI was not displaying correctly in the dark mode."
+      ]
+    }
+  ]
+},
 {
   "timestamp": 1749494212000,
   "tags": ["Control", "Action"],
