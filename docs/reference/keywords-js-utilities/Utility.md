@@ -794,3 +794,339 @@ UTILITY.REDIRECTPARENTUTILITY("URL");
 ```javascript
 UTILITY.REDIRECTPARENTUTILITY("https://docs.dronahq.com/reference/keywords-js-utilities/Utility/#setctrlvalue");
 ```  
+
+## FLASHLIGHT  
+
+The `UTILITY.FLASHLIGHT()` method allows users to turn on/off flashlight in Android/iOS mobile app.
+
+#### Usage  
+
+```javascript
+UTILITY.FLASHLIGHT(mode,intensity);
+```
+
+<span style={{fontSize: 24}}>Parameters</span>
+
+| Parameter   | Accepts | Possible values                                   |
+|-------------|---------|---------------------------------------------------|
+| `mode`      | string  | 'ON', 'OFF'  |
+| `intensity` | number | Select audio intensity level such as low = 0.3, medium = 0.7, heigh = 1.0  |
+
+<span style={{fontSize: 24}}>Example</span>
+
+#### Example  
+
+<span style={{fontSize: 24}}>Example for Flashlight ON</span>
+
+```javascript
+UTILITY.FLASHLIGHT("ON", 0.7);
+```  
+<span style={{fontSize: 24}}>Example for Flashlight OFF</span>
+
+```javascript
+UTILITY.FLASHLIGHT("OFF", 0.7);
+```  
+
+:::info NOTE
+### Flashligh OFF
+
+If flashlight mode is `OFF` then intensity value will be ignored.
+
+:::
+
+
+## TEXTTOSPEECH  
+b       
+The `UTILITY.TEXTTOSPEECH()` method converts text into spoken audio output in Android/iOS mobile app. This is particularly useful for creating accessible interfaces or adding audio feedback to your applications
+
+#### Usage  
+
+```javascript
+UTILITY.TEXTTOSPEECH(inputtext, rate, locale);
+```
+
+<span style={{fontSize: 24}}>Parameters</span>
+
+| Parameter   | Accepts | Possible values                                   |
+|-------------|---------|---------------------------------------------------|
+| `inputtext` | string  | 'Input the text you want to convert into speech'  |
+| `rate`      |  number | 'Define the speed of speech. Acceptable values range from 0.0 (slowest) to 10.0 (fastest). Default is 1.0 for a normal speaking rate'  |
+| `locale`    | string  | 'Choose the language and voice setting for the speech output. The values for locale are English = `en-US`, Spanish = `es-ES`, French = `fr-FR`, German = `de-DE`, Italian = `it-IT`, Chinese = `zh-CN`, Japanese = `ja-JP`, Korean = `ko-KR`, Russian = `ru-RU`, Portuguese = `pt-PT`'  |
+
+
+#### Example  
+
+```javascript
+UTILITY.TEXTTOSPEECH("hello how you doing", 0.1, "en-US");
+```  
+
+
+## GETADDRESSFROMCOORDINATES  
+
+The `UTILITY.GETADDRESSFROMCOORDINATES()` method allows users to get address from latitude and longitude coordinates in Android/iOS mobile apps. 
+
+#### Usage  
+
+```javascript
+UTILITY.GETADDRESSFROMCOORDINATES(latitude, longitude, maxResults);
+```
+
+<span style={{fontSize: 24}}>Parameters</span>
+
+| Parameter   | Accepts | Possible values                                   |
+|-------------|---------|---------------------------------------------------|
+| `latitude`    | string  | 'Enter the latitude coordinate'  |
+| `longitude`   | string | 'Enter the longitude coordinate'  |
+| `maxResults`  | number  | Select from range '1', '2', '3', '4', '5' to specify the maximum number of address results to return. |
+
+
+#### Example  
+
+```javascript
+UTILITY.GETADDRESSFROMCOORDINATES("11.947148", "79.827917", 1);
+```  
+
+## GETCOORDINATESFROMADDRESS  
+
+The `UTILITY.GETCOORDINATESFROMADDRESS()` method allows users to Get Coordinates from Address action allows users to retrieve geographical coordinates (latitude and longitude) based on a given address in Android/iOS mobile apps.
+
+#### Usage  
+
+```javascript
+UTILITY.GETCOORDINATESFROMADDRESS(address, maxResults);
+```
+
+<span style={{fontSize: 24}}>Parameters</span>
+
+| Parameter   | Accepts | Possible values                                   |
+|-------------|---------|---------------------------------------------------|
+| `address`     | string  | 'The address to retrieve the coordinates for.'  |
+| `maxResults`  | number  | Select from range '1', '2', '3', '4', '5' to specify the maximum number of coordinate results to return.  |
+
+
+#### Example  
+
+```javascript
+UTILITY.GETCOORDINATESFROMADDRESS("201 W 79th St, New York, NY 10024, United States", 1);
+```  
+
+
+
+## SECUREAPICALL
+
+`UTILITY.SECUREAPICALL()` to enables developers to transmit sensitive data securely through API requests. It is ideal for scenarios like authentication, data fetching, and third-party integrations. This action supports flexible configuration, ensuring secure and efficient communication in Android/iOS mobile app. For web, we are using AJAX API call. This method returns a success or failure response. The response of this action can captured using {{SECUREAPICALL.output}}. This method returns a `promise` and to get the response use `await` keyword.
+
+<span style={{fontSize: 24}}>Usage</span>
+
+```
+UTILITY.SECUREAPICALL(url, httpMethod, headers, data, trustMode, useProxy, timeout);
+```
+
+<span style={{fontSize: 24}}>Parameters</span>
+
+| Parameter   | Accepts | Possible values                                   |
+|-------------|---------|---------------------------------------------------|
+| `url`      | string  | The API URL to which the request is sent (e.g., https://api.example.com).  |
+| `method`     | string  | The request method, such as 'GET', 'POST', 'PUT', 'PATCH', 'DELETE' |
+| `headers`     | object  | Key-value pairs for headers (e.g., { "Authorization": "Bearer token" }). |
+| `data`     | object  | Key-value pairs for request body (e.g., { "key": "value" }). |
+| `trustMode`     | string  | Select trust mode for secure communication such as `default`, `nocheck`, `pinned` |
+| `useProxy`     | boolean  | true/false to use proxy (web only) |
+| `timeout`     | number  | Timeout duration in milliseconds |
+
+
+
+<span style={{fontSize: 24}}>Example GET Request</span>
+
+```
+await UTILITY.SECUREAPICALL('https://exampleapi.com/api/users/','GET', '', '', 'default', false, 180000);
+```
+
+:::info
+headers, data, trustMode, useProxy and timeout are optional parameters, in case you don't want to specify any of them, put an empty string ('') instead while calling the method.
+:::
+
+<span style={{fontSize: 24}}>Example POST Request</span>
+
+```
+await UTILITY.SECUREAPICALL("https://exampleapi.com/api/users/", "POST", "", "{'name':'John','place':'New York'}", "nocheck", false, 180000);
+```
+
+## STARTGPSLOCATIONTRACKING  
+
+The `UTILITY.STARTGPSLOCATIONTRACKING()` allows app to continuously track the device's geographical location, even when the app is in the background or the device is in sleep mode in native Android/iOS mobile app. Start GPS Tracking keeps tracking automatically sends location updates to a user-provided API endpoint. This method returns a `promise` and to get the response use `await` keyword.
+
+#### Usage  
+
+```javascript
+UTILITY.STARTGPSLOCATIONTRACKING(stationaryRadius, distanceFilter, locationProvider, desiredAccuracy, notificationsEnabled, notificationTitle, notificationText, interval, fastestInterval, activitiesInterval, url, httpHeader, postTemplate, pauseLocationUpdates, saveBatteryOnBackground);
+```
+
+<span style={{fontSize: 24}}>Parameters</span>
+
+| Parameter            | Accepts | Platform       | Possible values / Description |
+|----------------------|---------|---------------|---------------------------------------------------|
+| `url`               | string  | Android, iOS      | 'Server url where to send HTTP POST with recorded locations' |
+| `headers`        | object  | Android, iOS         | 'Optional HTTP headers sent along in HTTP request. Provide Key value pairs ex: {"Content-Type": "application/json}' |
+| `data`      | object  | Android, iOS              | 'All wanted location properties have to be prefixed with @. For all available properties check [Location event](https://haylltd.github.io/cordova-background-geolocation-plugin/events#location-event). For Example: {"latitude" : "@latitude", "longitude" : "@longitude", "foo": "bar" } where, @latitude and @longitutude will be replace by actual user’s location lat and long respectively while sending api call'| 
+| `stationaryRadius`   | number  | Android, iOS     | 'Stationary radius value in meters' |
+| `distanceFilter`     | number  | Android, iOS     | 'Distance Filter value in meters' |
+| `desiredAccuracy`    | number  | Android, iOS     | 'Determines how precise the location updates should be. Desired accuracy values in meters. Possible values are `HIGH_ACCURACY` = 10, `MEDIUM_ACCURACY` = 100, `LOW_ACCURACY` = 1000' |
+| `locationProvider`   | number  | Android only     | 'Used to obtain location data. Different providers offer different balances of accuracy, battery efficiency, and availability. Possible values are `Android Distance Filter Provider` = 0, `Android Activity Provider` = 1, `Raw Provider` = 2. Set location provider. [Location Providers](https://github.com/mauron85/cordova-plugin-background-geolocation/blob/master/PROVIDERS.md)' |
+| `notificationsEnabled` | boolean | Android only   | 'Enable/disable local notifications when tracking and syncing locations.' |
+| `notificationTitle`  | string  | Android only     | 'Custom notification title in the drawer' |
+| `notificationText`   | string  | Android only     | 'Custom notification text in the drawer' |
+| `interval`          | number  | Android only      | 'Interval duration in milliseconds' |
+| `fastestInterval`   | number  | Android only      | 'Fastest Interval duration in milliseconds' |
+| `activitiesInterval`| number  | Android only      | 'Activities Interval duration in milliseconds' |
+| `pauseLocationUpdates` | boolean | iOS only       | 'It temporarily suspend location tracking while keeping the background service active. This is useful for conserving battery when you know the user won't be moving for a period of time' |
+| `saveBatteryOnBackground` | boolean | iOS only    | Switch to less accurate significant changes and region monitory when in background |
+
+
+#### Example  
+
+```javascript
+await UTILITY.STARTGPSLOCATIONTRACKING("https://example.com/gpslocation", {"Content-Type": "application/json"}, {"latitude":"@latitude","longitude":"@longitude"}, 10, 0, 50, 50, true, "App Name", "Tracking your location in background", 10000, 5000, 10000, true, true);
+```  
+
+## STOPGPSLOCATIONTRACKING
+
+await `UTILITY.STOPGPSLOCATIONTRACKING()` allows to gracefully terminate background location tracking when it's no longer needed native Android/iOS mobile app. This method returns a `promise` and to get the response use `await` keyword.
+
+<span style={{fontSize: 24}}>Usage</span>
+
+```javascript
+await UTILITY.STOPGPSLOCATIONTRACKING();
+```
+
+
+## ADDGEOFENCE  
+
+The `UTILITY.ADDGEOFENCE()` allows users to monitor circular geofences using Android/iOS mobile app. The purpose is to notify user if crossing the boundary of the monitored geofence. This method returns a `promise` and to get the response use `await` keyword.
+
+#### Usage  
+
+```javascript
+UTILITY.ADDGEOFENCE(id, latitude, longitude, radius, transitionType, notificationId, notificationTitle, notificationText, smallIcon, icon, openAppOnClick, data);
+```
+
+<span style={{fontSize: 24}}>Parameters</span>
+
+| Parameter            | Accepts | Platform       | Possible values / Description |
+|----------------------|---------|---------------|---------------------------------------------------|
+| `id`                | string  | Android, iOS  | 'A unique identifier for geofence' |
+| `latitude`          | string  | Android, iOS  | 'Enter the latitude coordinate' |
+| `longitude`         | string  | Android only  | 'Enter the longitude coordinate |
+| `radius`            | number  | Android, iOS  | 'Radius of geofence in meters' |
+| `transitionType`    | string | Android, iOS   | 'Select `Enter` or `Exit` or `Both` to determines when your app should be notified about geofence boundary crossings' |
+| `notificationId`    | number  | Android, iOS  | 'optional should be integer, id of notification' |
+| `notificationTitle` | string  | Android, iOS  | 'Title of notification' |
+| `notificationText`  | string  | Android, iOS  | 'Text of notification' |
+| `smallIcon`         | string  | Android only  | 'Small icon showed in notification area, only res URI' |
+| `icon`              | string  | Android only  | 'Icon showed in notification drawer' |
+| `openAppOnClick`    | boolean  | Android only | ' Select `true` or `false` to open app after clicking on notification' |
+| `data`              | object  | Android, iOS  | 'Provide Key value pairs ex: {"shopId": "coffee123"}' |
+
+
+#### Example  
+
+```javascript
+
+  await UTILITY.ADDGEOFENCE([
+      {
+        "id" : "Geo_121",
+        "latitude" : 11.976134,
+        "longitude" : 79.760558,
+        "radius" : 100,
+        "transitionType" : 3,
+        "notificationId" : 1,
+        "notificationTitle" : "Takka Pizza",
+        "notificationText" : "Your pizza shop is 50m away",
+        "smallIcon" : "res://ic_notification",
+        "icon" : "file://img/coffee_icon.png",
+        "openAppOnClick": true,
+        "data" : {
+          "shopId" : "Pizza44",
+          "promotion" : "GOAL10"
+        }
+      },
+      {
+        "id" : "Geo_122",
+        "latitude" : 11.707063,
+        "longitude" : 79.746497,
+        "radius" : 150,
+        "transitionType" : 3,
+        "notificationId" : 2,
+        "notificationTitle" : "Margarita",
+        "notificationText" : "Your restaurant is 100m away",
+        "smallIcon" : "res://ic_notification1",
+        "icon" : "file://img/coffee_icon1.png",
+        "openAppOnClick": true,
+        "data" : {
+          "shopId" : "margarita123",
+          "promotion" : "FUN20"
+        }
+      }
+  ])
+```  
+
+
+## REMOVEGEOFENCE  
+
+The `UTILITY.REMOVEGEOFENCE()` method allows users to remove the geofences in Android/iOS mobile app. This method returns a `promise` and to get the response use `await` keyword.
+
+#### Usage  
+
+```javascript
+UTILITY.REMOVEGEOFENCE(type, removeById);
+```
+
+<span style={{fontSize: 24}}>Parameters</span>
+
+| Parameter   | Accepts | Possible values                                   |
+|-------------|---------|---------------------------------------------------|
+| `type`       | string  | 'Select `Remove All` or `Remove by Id`'  |
+| `removeById` | string  | 'Any string value to remove geofence by id'  |
+
+
+:::info NOTE
+### Geofence Remove All & Remove by Id
+
+If type `Remove All` is selected then `removeById` value will be ignored. `Remove All` removes all the geofence coordinates created by the specific micro app.
+
+If type `Remove by Id` is selected then we need to provide geofence id that needs to be removed. `Remove by Id` remove specificied geofence coordinate created by the specific micro app.
+
+:::
+
+
+#### Example  for Remove All
+
+```javascript
+await UTILITY.REMOVEGEOFENCE("Remove All", "Geo_1");
+
+```  
+
+#### Example  for Remove by Id
+
+```javascript
+await UTILITY.REMOVEGEOFENCE("Remove by Id", "Geo_1");
+
+```  
+
+
+## GETGEOFENCE
+
+The `UTILITY.GETGEOFENCE()` method allows users to get all the list geofences added in the micro app in Android/iOS mobile app. This method returns a `promise` and to get the response use `await` keyword.
+
+#### Usage  
+
+```javascript
+UTILITY.GETGEOFENCE();
+```
+
+#### Example to Get list of all geofences
+
+```javascript
+await UTILITY.GETGEOFENCE();
+
+```  
