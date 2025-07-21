@@ -5,11 +5,16 @@ title: Automation
 import Thumbnail from '@site/src/components/Thumbnail';
 import VersionedLink from '@site/src/components/VersionedLink';
 
-Automation is a bundled sequence of functions or tasks that execute based on triggers or conditions, streamlining data operations and logic flows. It enables seamless integration with APIs and external services to build dynamic, event-driven applications.
+DronaHQ offers a powerful Automation feature in data query that allows you to automate tasks based on trigger events such as scheduled timings or webhooks from third-party services. With Automation in data query, you can streamline repetitive processes and schedule various activities within your apps on DronaHQ's platform.
+
+:::note
+Only webhooks can be configured for Automation in Data Query.
+:::
 
 ## Prerequisites
 ### Configuring Your Automation:
 
+To set Automation in data query, begin by reviewing the [Automation Overview documentation.](https://docs.dronahq.com/automations/overview/ ) It provides step-by-step guidance on defining automation triggers, connecting tasks or connectors, testing flows, and publishing your automation workflows. You can access the official guide here:
 
 
 ## Query Execution Details:
@@ -17,7 +22,7 @@ Automation is a bundled sequence of functions or tasks that execute based on tri
 ### Configuring Query Parameters:
 
 <figure>
-  <Thumbnail src="/img/data-queries/automation-section.png" alt="Automation Section" />
+  <Thumbnail src="/img/data-queries/automation.png" alt="Automation Section" />
   <figcaption align = "center"><i>Automation Section</i></figcaption>
 </figure>
 
@@ -31,10 +36,16 @@ Automation is a bundled sequence of functions or tasks that execute based on tri
 
 ### Variables
 
-Variable      | Description             |
-|-------------|--------------------------|
-Automation |  Select the automation you wish to use .   |
 
+- `Automation Value:` Select the automation you wish to use from the dropdown.   
+<figure>
+  <Thumbnail src="/img/data-queries/automation-variable.png" alt="Automation Variable" />
+  <figcaption align = "center"><i>Automation Variable</i></figcaption>
+</figure>
+
+:::note
+You can click on refresh button on the top right corner to load new automations in the dropdown.
+:::
 
 
 
@@ -53,4 +64,8 @@ Run on App open Toggle: | This will make the dataquery to run on app open regard
 
 This sections is exactly same as the one in the [connector library.](/binding-data/data-queries/connector-library/#transform-response)
 
+<figure>
+  <Thumbnail src="/img/data-queries/automation-transform.png" alt="Automation Transform Section" />
+  <figcaption align = "center"><i>Automation Transform Section</i></figcaption>
+</figure>
 
