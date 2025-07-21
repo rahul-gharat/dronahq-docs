@@ -1,0 +1,134 @@
+---
+sidebar_position: 1
+title: Date Time Test
+---
+import Image from '@site/src/components/Image';
+import VersionedLink from '@site/src/components/VersionedLink';
+import Thumbnail from '@site/src/components/Thumbnail';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+
+
+# Text Control
+
+The **Text control** in DronaHQ is a versatile component that allows you to display rich textual content within your applications. It supports both **plain text** and **Markdown**, giving you flexibility in how you present information to your users. This control is ideal for displaying verbose content, instructions, or dynamic messages.
+
+-----
+
+## Content
+
+The Content section defines the core of your Text control, determining what text is displayed and how it's interpreted.
+
+### Content (Advanced)
+
+| Property | Type | Description |
+| :------- | :--- | :---------- |
+| Type | `text input` (read only) | Specifies the rendering type of the content. Options include `Markdown` and `Plain text`. |
+| Data | `JS` (JavaScript expression support for dynamic content) | Use JavaScript expressions to dynamically set the content of the Text control. For example, to display a user's name, you might use: `{{currentUser.firstName}}` |
+
+### Add-ons
+
+Add-ons enhance the Text control with additional contextual information and styling options.
+
+| Property | Type | Description |
+| :------- | :--- | :---------- |
+| Tooltip | `text input` | Text displayed when the user hovers over the control. For example: `This is a helpful tooltip.` |
+| Description | `text input` | Additional inline guidance or help text displayed below the main content. |
+| Label | `NestingText` - `text input` | The actual text shown on the control. For example: `Welcome Message` |
+| Size | `font size` | Sets the font size of the control label. For example: `16px` |
+| Weight | `font weight` | Sets how bold the label appears. Options include `normal`, `bold`, `bolder`, `lighter`, or numeric values like `500`. |
+| Color | `color picker` | Sets the label text color. You can use hexadecimal codes, RGB values, or predefined color names. For example: `#FF0000` or `red` |
+| Alignment | `alignment` | Aligns the label text within the control. Options include `left`, `center`, `right`, `justify`. |
+| Position | `select bar` (`top`/`left`) | Sets the label position relative to the control. Options are `top` or `left`. |
+
+-----
+
+## Data Binding
+
+Data binding allows you to connect your Text control to various data sources, enabling dynamic content updates.
+
+### Plain text
+
+When using plain text, the content is displayed exactly as entered, without any special formatting.
+
+:::info Example Input: Plain text
+
+```
+Hello, this is a plain text message.
+```
+
+:::
+
+### Markdown
+
+The Text control supports **GitHub Flavored Markdown (GFM)** with additional plugins for enhanced capabilities.
+
+:::info Markdown Extension List supported
+
+  * **Mermaid**: For creating diagrams and flowcharts.
+  * **Footnote**: For adding footnotes to your content.
+  * **Admonition**: For creating callout blocks like notes, warnings, etc.
+
+:::
+
+:::note Example Input: Markdown
+
+````
+# Welcome to DronaHQ!
+
+This is an **example** of Markdown content.
+
+## Features:
+- Easy to use
+- Fast development
+
+:::info
+This is an info admonition.
+:::
+
+```mermaid
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+````
+
+:::
+
+-----
+
+## Appearance
+
+The Appearance settings allow you to customize the visual presentation of your Text control.
+
+### Appearance (Advanced)
+
+| Property | Type | Description |
+| :------- | :--- | :---------- |
+| Hide on desktop | `checkbox` | Hides the control on desktop viewports. |
+| Hide on mobile | `checkbox` | Hides the control on mobile viewports. |
+| Dynamic height | `checkbox` | Allows control height to adjust automatically based on content. |
+| Maintain space when hidden | `checkbox` | Maintains the allocated space for the control even when it's hidden. |
+| Max height | `num box` | Sets the maximum height the control can grow to. For example: `200px` |
+| Visibility | `Checkbox` | Controls whether the control is visible. |
+| Letter spacing | `number picker with unit` | For `Plain text`. Sets the spacing between characters. For example: `1px` or `0.05em` |
+| Line height | `number picker with unit` | For `Plain text`. Sets the height of each line of text. For example: `1.5` or `24px` |
+| Font | `Popup` | For `Plain text`. Allows selection of the font family. |
+| Font size | `font size` | Sets how large the text appears. For example: `14px` |
+| Font weight | `font weight` | Sets the boldness of the text. Options include `normal`, `bold`, `bolder`, `lighter`, or numeric values. |
+| Font color | `color picker` | Changes the label text color. For example: `#333333` |
+| Alignment | `alignment` | Aligns text within the control horizontally. Options include `left`, `center`, `right`, `justify`. |
+
+-----
+
+## Advanced
+
+The Advanced section provides more granular control over the Text control's behavior and integration.
+
+| Property | Type | Description |
+| :------- | :--- | :---------- |
+| External Css | `text input` | Lets you apply custom CSS classes or styles to the control. For example: `my-custom-class` or `background-color: lightblue;` |
+| Caching | `checkbox` | Enables caching of the control data or behavior for performance optimization. |
+| Trigger dependants | `checkbox` | Triggers any dependent controls or actions when the Text control updates its content or properties. |
