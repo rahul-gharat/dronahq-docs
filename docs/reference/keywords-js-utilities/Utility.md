@@ -794,3 +794,163 @@ UTILITY.REDIRECTPARENTUTILITY("URL");
 ```javascript
 UTILITY.REDIRECTPARENTUTILITY("https://docs.dronahq.com/reference/keywords-js-utilities/Utility/#setctrlvalue");
 ```  
+
+## DownloadFileFromURL  
+
+The `UTILITY.DownloadFileFromURL()` method allows users to dynamically download files directly to their devices. This method returns a `Promise` so the response needs to be captured using `await` keyword.
+
+#### Usage  
+
+```javascript
+UTILITY.DownloadFileFromURL(downloadUrl,fileName,headers,pathOfAndroid,pathOfIos,[{ queryKey: "keyName", queryValue: "key_value" },{ queryKey: "anotherKeyName", queryValue: "key_value" }]);
+```
+
+<span style={{fontSize: 24}}>Parameters</span>
+
+| Parameter   | Accepts | Possible values                                   |
+|-------------|---------|---------------------------------------------------|
+| `downloadUrl`      | string  | A valid HTTP or HTTPS URL pointing to the downloadable file.  |
+| `fileName`     | string  | A valid file name with extension.                                |
+| `headers`   | string  | JSON object of Headers                                  |
+| `pathOfAndroid`  | string  | 'application_directory', 'document_directory', 'cache_directory'  |
+| `pathOfIos`| string | 'application_directory', 'document_directory', 'cache_directory'  |
+| `queryKey`   | string  | Alphanumeric strings used as parameter names in the URL query string.  |
+| `queryValue`   | string  | Values corresponding to query string keys.  |
+
+<span style={{fontSize: 24}}>Example</span>
+
+#### Example  
+
+```javascript
+await UTILITY.DownloadFileFromURL("https://file-examples.com/wp-content/storage/2017/02/file-sample_1MB.doc", "test.doc", {"Content-Type": "application/json","token": "1234567890"}, "application_directory", "cache_directory", [{ queryKey: "userId", queryValue: "1" },{ queryKey: "emailId", queryValue:"user@gmail.com" }]);
+```   
+
+When the `Promise` resolves, the user input will be received in the `output` key inside a javascript object:
+
+```
+{
+  output: 'file:///storage/emulated/0/Android/data/com.deltecs.dhqone/files/Cordova/simple.txt',
+  success: true
+}
+```
+
+## OpenFile  
+
+The `UTILITY.OpenFile()` method allows users to dynamically open files directly from their devices locally. This method returns a `Promise` so the response needs to be captured using `await` keyword.
+
+#### Usage  
+
+```javascript
+UTILITY.OpenFile(filePath,mimeType);
+```
+
+<span style={{fontSize: 24}}>Parameters</span>
+
+| Parameter   | Accepts | Possible values                                   |
+|-------------|---------|---------------------------------------------------|
+| `filePath`      | string  | A valid absolute or relative path to a file.  |
+| `mimeType`| string | 'application/pdf', 'application/vnd.ms-excel', 'application/msword', 'application/vnd.android.package-archive', 'audio/mpeg', 'video/mp4', 'image/png', 'image/jpeg', 'text/plain', 'text/csv'  |
+
+<span style={{fontSize: 24}}>Example</span>
+
+#### Example  
+
+```javascript
+await UTILITY.OpenFile("/storage/emulated/0/Download/file.pdf","application/pdf");
+```  
+
+When the `Promise` resolves, the user input will be received in the `output` key inside a javascript object:
+
+```
+{
+  output: 'file opened successfully'
+}
+```
+
+## ReadFile  
+
+The `UTILITY.ReadFile()` method allows users to dynamically read files directly from their devices locally. This method is supported only on Android and iOS platforms. This method returns a `Promise` so the response needs to be captured using `await` keyword.
+
+#### Usage  
+
+```javascript
+UTILITY.ReadFile(filePath);
+```
+
+<span style={{fontSize: 24}}>Parameters</span>
+
+| Parameter   | Accepts | Possible values                                   |
+|-------------|---------|---------------------------------------------------|
+| `filePath`      | string  | A valid absolute or relative path to a file.  |
+
+<span style={{fontSize: 24}}>Example</span>
+
+#### Example  
+
+```javascript
+await UTILITY.ReadFile("/storage/emulated/0/Download/file.pdf");
+```  
+
+When the `Promise` resolves, the user input will be received in the `output` key inside a javascript object:
+
+```
+{
+  output: 'This is file content.'
+}
+```
+
+## WriteFile  
+
+The `UTILITY.WriteFile()` method allows users to dynamically write files directly to their devices locally. This method is supported only on Android and iOS platforms. This method returns a `Promise` so the response needs to be captured using `await` keyword.
+
+#### Usage  
+
+```javascript
+UTILITY.WriteFile(fileName,fileContent,appendData,contentType,pathOfAndroid,pathOfIos);
+```
+
+<span style={{fontSize: 24}}>Parameters</span>
+
+| Parameter   | Accepts | Possible values                                   |
+|-------------|---------|---------------------------------------------------|
+| `fileName`     | string  | A valid file name with extension.                                |
+| `fileContent`   | string  | The actual content of the file                                  |
+| `appendData`   | boolean  | true/false                                  |
+| `contentType`   | string  | 'text/plain', 'application/pdf', 'application/msword', 'application/vnd.ms-excel', 'text/csv', 'application/json', 'image/png'                                  |
+| `pathOfAndroid`  | string  | 'application_directory', 'document_directory', 'cache_directory'  |
+| `pathOfIos`| string | 'application_directory', 'document_directory', 'cache_directory'  |
+
+<span style={{fontSize: 24}}>Example</span>
+
+#### Example  
+
+```javascript
+await UTILITY.WriteFile("test.pdf","This is a test file",true,"application/pdf","document_directory","application_directory");
+```  
+
+When the `Promise` resolves, the user input will be received in the `output` key inside a javascript object:
+
+```
+{
+  output: 'file:///storage/emulated/0/Android/data/com.deltecs.dhqone/files/Cordova/simple.txt',
+  contentType: 'text/plain'
+}
+```
+
+## MpinVerification  
+
+The `UTILITY.MpinVerification()` method enables users to verify their MPIN (Mobile Personal Identification Number) as a means to securely access the app. This method is supported only on Android and iOS platforms. This method returns a `Promise` so the response needs to be captured using `await` keyword.
+
+#### Usage  
+
+```javascript
+await UTILITY.MpinVerification();
+```  
+
+When the `Promise` resolves, the user input will be received in the `output` key inside a javascript object:
+
+```
+{
+  output: 'Verified'
+}
+```
