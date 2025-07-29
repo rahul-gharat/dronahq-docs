@@ -7,89 +7,97 @@ import Image from '@site/src/components/Image';
 import VersionedLink from '@site/src/components/VersionedLink';
 import Thumbnail from '@site/src/components/Thumbnail';
 
-The Time Picker control allows users to input the desired time in a microapp by selecting it from a clock widget. You have the flexibility to either set the user's device time as the default time or leave the Time Picker empty when presenting it to the user. This versatile control can serve multiple purposes, such as setting meeting times or making reservations.
+The Time Picker control allows users to input the desired time in a microapp by selecting it from a clock widget, or by typing manually. You have the flexibility to either set the user's device time as the default time or leave the Time Picker empty when presenting it to the user. Time picker saves the time in Unix epoch time format by default, and various other formats can also be specified. This versatile control can serve multiple purposes, such as setting meeting times or making reservations.
 
 <figure>
   <Thumbnail src="/img/reference/controls/time-picker/preview.png" alt="Time Picker" />
-  <figcaption align = "center"><i>Time Picker</i></figcaption>
 </figure>
 
 ## Binding Data Options
 
-To populate data in the Time Picker control, you have several options for binding the time. You can provide the time using static data options in either the UNIX timestamp format or the JavaScript `Date` object format.
+To populate data in the Time Picker control, you have several options for binding the time. You can provide the time using static data options in either the UNIX timestamp format or the JavaScript `Date` object format or any other formula.
 
-### Static Data Options
+#### Examples
 
-Example using UNIX timestamp format:
-
+```jsx title="UNIX timestamps in milliseconds"
+1753800808000
 ```
-UNIX timestamp in milliseconds.
-
-Time: 1627868341000
+```jsx title="JavaScript Date object"
+new Date('2025-07-29T15:55:51.000Z')
 ```
-
-Example using JavaScript `Date` object format:
-
-```
-JavaScript Date object.
-
-Time: new Date("2023-08-02T09:39:01")
+```jsx title="Moment object"
+moment().add(30, 'minutes')
 ```
 
-For instance, consider a scenario where you are building an appointment scheduling application, and you need to set specific times for appointments. You can use either the UNIX timestamp format or the JavaScript `Date` object format for data binding.
+For instance, consider a scenario where you are building an appointment scheduling application and you need to set specific times for appointments, you can bind a formula of your choice or a reference, as per requirement.
 
-If you want to provide the time dynamically, you can use the `Bind Data Option`, then select `Time Picker -> Quick Select -> Custom JS`, and write a JavaScript function to retrieve the desired time. Below is an example code that utilizes the Moment.js library for the UNIX timestamp format:
+## Content
 
-```js
-function JSCode(output) {
-  var time = moment().set({ hour: 9, minute: 39, second: 1 }).format('x');
-  output = time;
-  return output;
-}
-```
+- **Time format:** Choose the format for the time to be displayed, either `12 Hours` or `24 Hours` format.
+- **Manage time zone:** Enable this toggle to control the time zones for display purpose and the output value. Below properties become configurable when it is enabled.
+  - **Display:** The time is displayed in the input field as per the time zone selected here.
+  - **Value:** Output value is received as per the time zone selected here.
+- **Submit Format:** Choose `Local` or `UTC` time zone for the time being displayed. It becomes configurable when *Manage time zone* is disabled.
+- **Value format:** Enter a valid format here for the output value, e.g, 'h:mm A', 'HH:mm' etc. Default value format is `Unix` to get the output in milliseconds. `Unix` *is default even if nothing is provided.*
 
-For providing the time using the JavaScript `Date` object format:
-
-```js
-function JSCode(output) {
-  var time = new Date("2023-08-02T09:39:01");
-  output = time;
-  return output;
-}
-```
-
-:::info
-
-When binding data to the Time Picker control, consider the format of the data: UNIX timestamp or JavaScript `Date` object. Choose the appropriate `Submit format` in the `Input Properties` of the control: `UTC` for UNIX timestamp format and `LOCAL` for JavaScript `Date` object format. This ensures accurate handling of times based on the data format.
-
+:::info Note
+When **Manage time zone** is enabled, the output of the control is received as per the selected time zone in **Value** property, else it will be considered as per the selected time zone in **Submit Format** property, either `Local` or `UTC`.
 :::
 
-## Properties
+### Add-ons
 
+| Property | Description |
+| :------- | :---------- |
+| Tooltip | Provides helpful hints or extra information on hover. |
+| Description | Adds descriptive text beneath options or sections. |
+| Label | Displays labels for specific options or sections. Configurable with size, weight, and color. |
+| Prefix | Enables you to add configurable prefix text and prefix icon on the control. |
+| Suffix | Enables you to add configurable suffix text and suffix icon on the control. |
 
+## Interaction
 
-| Setting           | Description                                                                                               |
-|-------------------|-----------------------------------------------------------------------------------------------------------|
-| Theme             | Allows you to choose the color of the Container box. You can either enter a custom hex code value or use one from the available themes in the builder.                    |
-| Timepicker Theme  | Lets you set the color of the Timepicker widget.                                                          |
-| Time Format       | Choose the format you want the time to be selected in. There are 2 formats available: UTC or Local time. |
-| Display Format    | Set the format to display time as 12-hour format or 24-hour format.                                       |
-| Show Arrows       | When this option is selected, the clock widget has arrows to set the time.                                |
+- **Read Only:** Makes the control non-editable. The user can view the content but cannot modify it.
+- **Manual Edit:** Allows users to manually type into the input field.
+- **Debounce Time:** Delay in milliseconds used to control frequency between action triggers on change in value, when edited manually.
+- **Submit Data:** Determines if the output value should be included in form submission. Options include `Always`, `Never`, and `Not When hidden`.
 
+### Validation
 
+| Property | Description |
+| :------- | :---------- |
+| Required | Ensures the field is not empty. |
+| Min time | Sets the minimum time to be allowed in the control. Expected format is the one selected as the *Time format*. If not provided, defaults to start of day. Any provided date is ignored. |
+| Max time | Sets the maximum time to be allowed in the control. Expected format is the one selected as the *Time format*. If not provided, defaults to end of day. Any provided date is ignored. |
+| Custom | Allows us to configure any custom validation(s). |
 
+:::info Note
+- **Min time** & **Max time** fields can be bound dynamically as well, using the references or formulae.
+- If **Manage time zone** is enabled, these fields' values are parsed using the **Value** timezone.
+- These fields are available to be configured, if **self-hosted** version, on versions **3.9.0** and greater.
+:::
+
+:::tip
+**Min time** can be before, after or same as **Max time.** If **Min time** is before or same as **Max time**, all the time values lying in this range only are allowed or selectable. Whereas if **Min time** lies after the **Max time**, all the time values lying in between them can be made unselectable or **not** allowed.
+:::
+
+### Events
+
+| Trigger | Description |
+| :------ | :---------- |
+| value_change | Occurs when there is a modification in the respective control's value. To control the frequency or speed of the change event, you can utilize the *Debounce Time* property associated with the control. |
+
+## Appearance
+
+- **Visibility:** Toggles the visibility of the control at runtime.
+- **Show Clear:** Adds a clear (✕) icon inside the input field to allow users to clear the value.
+- **Theme:** Sets the theme color to the clock widget.
+- **Border:** Sets the border color of the control.
+- **Show Arrows:** Enables arrows to set the time in the clock widget.
 
 ## Control Output
 
 The outputs from the Time picker control, represented by the placeholder `{{timepicker}}`, can be referenced in other controls, data queries, or JavaScript functions using the control's unique name.
 
-| Output       | Description                                                                                                  |
-|--------------|--------------------------------------------------------------------------------------------------------------|
-| timepicker    | Represents the selected time value available in the Time picker control.                        |
-
-
-## Events
-
-| Trigger      | Description                                                                                                                                                                                       |
-| ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| value_change | Occurs when there is a modification in the respective control's value. To control the frequency or speed of the change event, you can utilize the `debounce` property associated with the control. |
+| Output | Description |
+| :----- | :---------- |
+| timepicker | Represents the output of the selected time value available in the time picker control. |
