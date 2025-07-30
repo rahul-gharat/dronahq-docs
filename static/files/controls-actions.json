@@ -1,5 +1,39 @@
 [ 
   {
+    "timestamp": 1753786337000,
+    "tags": ["Control", "Action"],
+    "heading": "",
+    "cards": [
+     
+      {
+        "title": "Enhancements",
+        "type": "improved",
+        "points": [
+          "Enhanced image component with support for alt text property.",
+"Enhanced time picker with prefix/suffix and min/max time configurations.",
+"Enhanced header generation in Data Builder to include all available keys.",
+"Enhanced property UI layout for ProGlove.",
+"Made minor code improvements to file and verification functions (Download File from URL, Read File, Write File, Open File, MPIN Verification)."
+        ]
+      },
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+"Fixed a minor UI issue in the Container component.",
+"Fixed an issue in Date Range Picker where min/max date with time was not working as expected.",
+"Fixed an issue where Detail View Single Tag was displayed twice.",
+"Fixed an issue in Date Range Picker where data was not resetting when value was cleared.",
+"Fixed an issue in Table Grid where 'Add Rows' undo persisted in NEWROWS and white space appeared on scroll for x-small rows.",
+"Fixed an issue in Table Grid where cursor-based pagination was not functioning as expected.",
+"Fixed an issue in Alert control where markdown was not visible when using the description property.",
+"Fixed a minor UI issue in Text Input control.",
+"Fixed an issue in Detail Select and File Upload where read-only fields remained editable when tab-index was set."
+        ]
+      }
+    ]
+  },
+  {
     "timestamp": 1751871789000,
     "tags": ["Control", "Action"],      
     "heading": "",

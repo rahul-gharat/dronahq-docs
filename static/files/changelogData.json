@@ -1,5 +1,191 @@
 [
   {
+    "timestamp":1753872737000,
+    "tags": ["Cloud-Hosted"],
+    "heading": "",
+    "cards": [
+      {
+        "title": "Added",
+        "type": "added",
+        "points": [
+                   "Added support for Webhook input descriptions to improve clarity and documentation.",
+"Added a time picker to the Automation log filter for more precise log filtering."
+        ]
+      },
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+              "Fixed an issue where header UI was breaking in the package."
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1752835937000,
+    "tags": ["Cloud-Hosted"],
+    "heading": "",
+    "cards": [
+      {
+        "title": "Added",
+        "type": "added",
+        "points": [
+
+"Added Connector Request details to Automation's bottom panel to improve debugging and traceability.",
+"Added a logo to the navigation bar.",
+"Added a new automation feature in Data Query to enable automated data operations and workflows."
+        ]
+      },
+      {
+        "title": "Enhancements",
+        "type": "improved",
+        "points": [
+"Enhanced the UI for Automation's Action Task popup and improved icon integration for a more intuitive experience.",
+"Enhanced Code Mirror responsiveness by reducing debounce delay.",
+"Enhanced the data bind section by enabling tooltip support."
+        ]
+      },
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+     
+"Fixed an issue where variable dependency on controls using .META was not created, causing metadata update failures in data query variables.",
+"Fixed an issue where the injection function was incorrectly fetched from STUDIOFUNCTION.",
+"Fixed a runtime error caused by calling an undefined function in the package.",
+"Fixed scroll bars and misalignment in containers during preview when dynamic height was enabled.",
+"Fixed Code Mirror editor scroll issue and improper HTML appending for special characters in Automation conditions.",
+"Fixed an issue where circular errors in data queries showed a red box without an error message.",
+"Fixed an issue where CodeMirror's 'When to Execute' did not display outputs for actions in Actionflow.",
+"Fixed an issue where the screen action flow was not properly handled when empty.",
+"Fixed an issue where screens could not be moved into empty folders.",
+"Fixed an issue where adding a key to JSON in Fouriering reset column names and arrangement.",
+"Fixed delayed button response on first click due to initialization lag.",
+"Fixed an issue where read only mode was still editable via keyboard.",
+"Fixed an issue where Automation export exceeded MongoDB limits by separating category and subcategory data fetch."
+
+
+        ]
+      }
+    ]
+  },
+  {
+   "timestamp": 1752144737000,
+    "tags": ["Cloud-Hosted"],
+    "heading": "",
+    "cards": [
+      {
+        "title": "Added",
+        "type": "added",
+        "points": [
+          "Added support for Create App UI and Data Query Generator Intent.",
+"Added support for output format in prompt reference and preserved AI chat section position on open and close.",
+"Added a feature for caching GraphQL schema using IndexedDB.",
+"Added settings for approval checks in intent responses, control/dataquery referencing via curly braces in prompt box, and monthly reset subscription support for Veda AI.",
+"Added a fallback image feature for broken image sources across Studio and Builder.",
+"Added retry on app creation failure, enhanced mentions UX, and passed user data for image generation analytics in Veda AI.",
+"Added support for emojis and fixed connector reference prompt on BRD detail addition in Veda AI."
+        ]
+      },
+      {
+        "title": "Enhancements",
+        "type": "improved",
+        "points": [
+"Enhanced credit display to show Veda AI renewal date.",
+"Enhanced time picker control to support min and max time values.",
+"Moved REST API ActionBlock to the 'Connector' section in Actionflow.",
+"Enabled data type visibility in custom JS, SQL, and DQL variables during save and live edits.",
+"Improved string builder formula evaluation with proper data type conversion."
+
+        ] 
+
+  },
+    {
+      "title": "Fixed",
+      "type": "fixed",
+      "points": [
+        "Fixed an issue where number data types caused UI breakage in the query output box.",
+"Fixed an issue where control click did not add mention to prompt box and controls under containers ignored grid parameters.",
+"Fixed an issue where nested JSON fields in TableGrid showed as undefined in headers.",
+"Fixed keyword highlighting in Actionflow block string builder.",
+"Fixed an issue where deleting a custom event caused the UI to scroll to the top of the properties section.",
+"Fixed an issue where schema errors were not displayed in the UI when schema loading failed.",
+"Fixed capitalization of element text in the template sidebar (Add New Screen).",
+"Fixed undo/redo not working for App Open events in the builder.",
+"Fixed console warning in Date Picker control.",
+"Fixed an issue where imported Actionflows displayed outdated names in double curly brackets.",
+"Fixed issue with connector reference prompt on BRD detail addition in Veda AI.",
+"Fixed user data not being sent on all prompt requests and resolved intent width issue.",
+"Fixed Actionflow crash and logic wipe when moving branches.",
+"Fixed manual view not refreshing after data binding.",
+"Fixed AI Assist and Veda AI live data related issues.",
+"Fixed custom delete function removing the last item instead of the selected one.",
+"Fixed UI validation errors incorrectly triggered on modal close in JS Editor.",
+"Fixed folder and favorites search returning no results and missing empty folder image on reload.",
+"Fixed publish API call not receiving the updated app name.",
+"Fixed navigation misbehavior on rapid option clicks."
+
+      ]
+    },
+    {
+      "title": "Removed",
+      "type": "removed",
+      "points": [
+        "Removed themes slideshow on app open.",
+"Removed unused files from the package."
+      ]
+      }
+    ]
+  },
+  {
+    "timestamp":1750416737000,
+    "tags": ["Cloud-Hosted"],
+    "heading": "",
+    "cards": [
+      {
+        "title": "Added",
+        "type": "added",
+        "points": [
+           "Added events in control references and system message generation from Veda AI.",
+           "Added support for global API connectors with data binding and action events.",
+           "Added biometric authentication (MPIN) and ProGlove plugin.",
+           "Added automation memory configuration with support for multiple Lambda memory sizes."
+        ]
+  },
+  {
+    "title": "Enhancements",
+    "type": "improved",
+    "points": [
+      "Implemented cache schema, schema refresh, and schema search for connectors.",
+"Updated Automation run API to use the new execute Query endpoint.",
+"Updated Automation connector query to match Data Query behavior in the app.",
+"Improved authentication sidebar behavior by removing AWS region field when not applicable.",
+"Enhanced DronaHQ AI to support additional design system controls and custom text/background colors."
+    ]
+  },
+  {
+    "title": "Fixed",
+    "type": "fixed",
+    "points": [
+      "Fixed meta execution failure on exceptions.",
+"Fixed audit log filters not working together for certain events.",
+"Fixed default value field error handling when using object types.",
+"Fixed missing system message response in AI chat for update event intent in Veda AI.",
+"Fixed incorrect capitalization in tabbed container edit item section labels.",
+"Fixed issue where JS objects local variables were not re-attached on refresh.",
+"Fixed Open URL icon malfunction in Data Query behavior for the PDF Creator tab.",
+"Fixed issue where 'Use Keywords' dropdown did not behave correctly in Actionflow when queries or libraries were present.",
+"Fixed Automation import/export failures for managed services PDFs and file storage.",
+"Fixed export/import automation handling with DronaHQ AI Managed Connector.",
+"Fixed schema error not displaying correctly on failure.",
+"Fixed app detail editing permissions for preview-only users.",
+"Fixed screen copy-paste bug causing failure in data binding.",
+"Fixed AI Assist state not resetting on control change."
+]
+}
+    ]
+  },
+{
     "timestamp": 1749614974000,
     "tags": ["Cloud-Hosted"],
     "heading": "",
