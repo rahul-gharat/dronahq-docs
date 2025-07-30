@@ -828,7 +828,7 @@ UTILITY.FLASHLIGHT("OFF", 0.7);
 ```  
 
 :::info NOTE
-### Flashligh OFF
+### Flashlight OFF
 
 If flashlight mode is `OFF` then intensity value will be ignored.
 
