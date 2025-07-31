@@ -94,6 +94,8 @@ Below are the number of credits used when conversing with Veda Ai chatbot using 
 | Replace Control | 60 | 20 |
 | Add Control | 30 | 10 |
 | Bind Data to Control | 30 | 10 |
+| Generate Data Query | 9 | 3 |
+| Generate UI from NLP | 9 | 3 |
 
 
 ### AI Assist Credit Usage
