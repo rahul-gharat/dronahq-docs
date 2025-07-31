@@ -56,10 +56,10 @@
 "Fixed scroll bars and misalignment in containers during preview when dynamic height was enabled.",
 "Fixed Code Mirror editor scroll issue and improper HTML appending for special characters in Automation conditions.",
 "Fixed an issue where circular errors in data queries showed a red box without an error message.",
-"Fixed an issue where CodeMirror's 'When to Execute' did not display outputs for actions in Actionflow.",
+"Fixed an issue where Code Mirror's 'When to Execute' did not display outputs for actions in Actionflow.",
 "Fixed an issue where the screen action flow was not properly handled when empty.",
 "Fixed an issue where screens could not be moved into empty folders.",
-"Fixed an issue where adding a key to JSON in Fouriering reset column names and arrangement.",
+"Fixed an issue where adding a key to JSON in the table grid now maintains the column names and arrangement.",
 "Fixed delayed button response on first click due to initialization lag.",
 "Fixed an issue where read only mode was still editable via keyboard.",
 "Fixed an issue where Automation export exceeded MongoDB limits by separating category and subcategory data fetch."
