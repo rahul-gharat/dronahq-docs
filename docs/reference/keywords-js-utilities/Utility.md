@@ -748,14 +748,14 @@ UTILITY.SETPROPERTY([
 ]);
 ```  
 
-## REMOVESETPROPERTY  
+## REMOVEPROPERTY  
 
-`UTILITY.REMOVESETPROPERTY()` method can be used to dynamically remove specific properties from input controls. The method takes an object, where the object specifies the control name and the property to be removed.
+`UTILITY.REMOVEPROPERTY()` method can be used to dynamically remove specific properties from input controls. The method takes an object, where the object specifies the control name and the property to be removed.
 
 
 #### Usage  
 
-```UTILITY.REMOVESETPROPERTY([{ ctrlName: "controlName", property: "propertyName" }]);```
+```UTILITY.REMOVEPROPERTY([{ ctrlName: "controlName", property: "propertyName" }]);```
 
 
 
@@ -768,7 +768,7 @@ UTILITY.SETPROPERTY([
 
 #### Example  
 ```javascript
-UTILITY.REMOVESETPROPERTY([
+UTILITY.REMOVEPROPERTY([
    { ctrlName: "textinput1", property: "read_only" }
 ]);
 ```
