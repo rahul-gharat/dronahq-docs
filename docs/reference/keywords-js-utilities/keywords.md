@@ -23,7 +23,6 @@ Following are list of all the static keywords:
  | ------------------- | ------------------- |
  | USER EMAIL | Stores the logged-in user's email address. |
  | USERNAME | Stores the logged-in user's name. |
- | USERFIRSTNAME | Stores the name of the logged-in user. |
  | TRUE | Static keyword for boolean true. |
  | FALSE | Static keyword for boolean false. |
  | NULL | Static keyword for js null value. |
