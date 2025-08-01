@@ -1159,3 +1159,167 @@ await `UTILITY.STOPGPSLOCATIONTRACKING()` allows to gracefully terminate backgro
 ```javascript
 await UTILITY.STOPGPSLOCATIONTRACKING();
 ```
+
+
+## ADDGEOFENCE  
+
+The `UTILITY.ADDGEOFENCE()` allows users to monitor circular geofences using Android/iOS mobile app. The purpose is to notify user if crossing the boundary of the monitored geofence. This method returns a `promise` and to get the response use `await` keyword.
+
+#### Usage  
+
+```javascript
+UTILITY.ADDGEOFENCE(id, latitude, longitude, radius, transitionType, notificationId, notificationTitle, notificationText, smallIcon, icon, openAppOnClick, data);
+```
+
+<span style={{fontSize: 24}}>Parameters</span>
+
+| Parameter            | Accepts | Platform       | Possible values / Description |
+|----------------------|---------|---------------|---------------------------------------------------|
+| `id`                | string  | Android, iOS  | 'A unique identifier for geofence' |
+| `latitude`          | string  | Android, iOS  | 'Enter the latitude coordinate' |
+| `longitude`         | string  | Android only  | 'Enter the longitude coordinate |
+| `radius`            | number  | Android, iOS  | 'Radius of geofence in meters' |
+| `transitionType`    | string | Android, iOS   | 'Select `Enter` or `Exit` or `Both` to determines when your app should be notified about geofence boundary crossings' |
+| `notificationId`    | number  | Android, iOS  | 'optional should be integer, id of notification' |
+| `notificationTitle` | string  | Android, iOS  | 'Title of notification' |
+| `notificationText`  | string  | Android, iOS  | 'Text of notification' |
+| `smallIcon`         | string  | Android only  | 'Small icon showed in notification area, only res URI' |
+| `icon`              | string  | Android only  | 'Icon showed in notification drawer' |
+| `openAppOnClick`    | boolean  | Android only | ' Select `true` or `false` to open app after clicking on notification' |
+| `data`              | object  | Android, iOS  | 'Provide Key value pairs ex: {"shopId": "coffee123"}' |
+
+
+#### Example  
+
+```javascript
+
+  await UTILITY.ADDGEOFENCE([
+      {
+        "id" : "Geo_121",
+        "latitude" : 11.976134,
+        "longitude" : 79.760558,
+        "radius" : 100,
+        "transitionType" : 3,
+        "notificationId" : 1,
+        "notificationTitle" : "Takka Pizza",
+        "notificationText" : "Your pizza shop is 50m away",
+        "smallIcon" : "res://ic_notification",
+        "icon" : "file://img/coffee_icon.png",
+        "openAppOnClick": true,
+        "data" : {
+          "shopId" : "Pizza44",
+          "promotion" : "GOAL10"
+        }
+      },
+      {
+        "id" : "Geo_122",
+        "latitude" : 11.707063,
+        "longitude" : 79.746497,
+        "radius" : 150,
+        "transitionType" : 3,
+        "notificationId" : 2,
+        "notificationTitle" : "Margarita",
+        "notificationText" : "Your restaurant is 100m away",
+        "smallIcon" : "res://ic_notification1",
+        "icon" : "file://img/coffee_icon1.png",
+        "openAppOnClick": true,
+        "data" : {
+          "shopId" : "margarita123",
+          "promotion" : "FUN20"
+        }
+      }
+  ])
+```  
+
+
+## REMOVEGEOFENCE  
+
+The `UTILITY.REMOVEGEOFENCE()` method allows users to remove the geofences in Android/iOS mobile app. This method returns a `promise` and to get the response use `await` keyword.
+
+#### Usage  
+
+```javascript
+UTILITY.REMOVEGEOFENCE(type, removeById);
+```
+
+<span style={{fontSize: 24}}>Parameters</span>
+
+| Parameter   | Accepts | Possible values                                   |
+|-------------|---------|---------------------------------------------------|
+| `type`       | string  | 'Select `Remove All` or `Remove by Id`'  |
+| `removeById` | string  | 'Any string value to remove geofence by id'  |
+
+
+:::info NOTE
+### Geofence Remove All & Remove by Id
+
+If type `Remove All` is selected then `removeById` value will be ignored. `Remove All` removes all the geofence coordinates created by the specific micro app.
+
+If type `Remove by Id` is selected then we need to provide geofence id that needs to be removed. `Remove by Id` remove specificied geofence coordinate created by the specific micro app.
+
+:::
+
+
+#### Example  for Remove All
+
+```javascript
+await UTILITY.REMOVEGEOFENCE("Remove All", "Geo_1");
+
+```  
+
+#### Example  for Remove by Id
+
+```javascript
+await UTILITY.REMOVEGEOFENCE("Remove by Id", "Geo_1");
+
+```  
+
+
+## GETGEOFENCE
+
+The `UTILITY.GETGEOFENCE()` method allows users to get all the list geofences added in the micro app in Android/iOS mobile app. This method returns a `promise` and to get the response use `await` keyword.
+
+#### Usage  
+
+```javascript
+UTILITY.GETGEOFENCE();
+```
+
+#### Example to Get list of all geofences
+
+```javascript
+await UTILITY.GETGEOFENCE();
+
+```  
+
+
+## SHARE  
+
+The `UTILITY.SHARE()` allows to share text, images, files, and links via native sharing dialogs on Android/iOS mobile app.
+
+#### Usage  
+
+```javascript
+UTILITY.SHARE(message, subject, files, url, chooserTitle, appPackageName);
+```
+
+<span style={{fontSize: 24}}>Parameters</span>
+
+| Parameter            | Accepts | Platform       | Possible values / Description |
+|----------------------|---------|---------------|---------------------------------------------------|
+| `message`            |  string  | Android, iOS  | The message content to share. May not be supported on some apps like Facebook or Instagram. |
+| `subject`            |  string  | Android, iOS  | Subject line used for sharing via email or other compatible apps. |
+| `files`              |  array   | Android, iOS  | An array of file paths or URLs to be shared (e.g., images, documents). Supports both local and remote files.  |
+| `url`                |  string  | Android, iOS  | A URL to include in the shared content. Widely supported across most apps. |
+| `chooser title`      |  string  | Android only  | Custom title for the native share sheet (app picker). Overrides the default system title. |
+| `app package name`   |  string  | Android only  | Package name of a specific app to directly share with (e.g., com.whatsapp). |
+
+
+#### Example  
+
+```javascript
+	  
+   UTILITY.SHARE1("test message", "test subject", "https://www.google.com/", "share title", "com.test.share", ["https://example.com/image.png"])
+
+```  
+
