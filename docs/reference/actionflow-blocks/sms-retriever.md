@@ -28,9 +28,20 @@ This action is supported on Android only.
 
 Once configured, the SMS Retriever action will automatically detect the SMS or OTP.
 
-:::note
+:::info
 Ensure the App Hash is generated before sending the SMS.
 
-Send SMS with valid format : <#> Your App verification code is: 123456
-FA+9qCX9VSu (App Hash)
+The App Hash is a unique identifier that links the SMS message to your Android app.
+You can generate the App Hash using <a href="https://developers.google.com/identity/sms-retriever/verify#computing_your_apps_hash_string">tools</a>.
+
+When composing the SMS message:
+
+- Include <#> at the very beginning of the SMS body.
+- Append the App Hash at the end of the SMS body.
+
+This format ensures that the SMS Retriever API can correctly detect and deliver the full SMS to your app.
+
+Correct SMS Format Example : 
+<#> Your App verification code is: 123456
+FA+9qCX9VSu
 :::
