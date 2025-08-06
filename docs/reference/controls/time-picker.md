@@ -101,3 +101,7 @@ The outputs from the Time picker control, represented by the placeholder `{{time
 | Output | Description |
 | :----- | :---------- |
 | timepicker | Represents the output of the selected time value available in the time picker control. |
+
+:::danger Caution
+The output from one time picker control should **not** be used as an input to another, when the *Value format* is set to `Unix`. In this format, the control’s output represents the number of milliseconds elapsed since midnight in the GMT time zone. However, for compatibility, the milliseconds provided as the input should follow the *Unix epoch* standard—measured from midnight UTC on *1970-01-01.*
+:::
