@@ -1,5 +1,31 @@
 [ 
   {
+  "timestamp": 1754461050000,
+  "tags": ["Control", "Action"],
+  "heading": "",
+  "cards": [
+    {
+      "title": "Enhancements",
+      "type": "improved",
+      "points": [
+        "Enhanced tag-based filters in table grid by adding support for 'Is' and 'Not Is' operators.",
+"Enhanced table grid with a separate column for 'Group By' and enabled aggregate figures for all columns per group."
+      ]
+    },
+    {
+      "title": "Fixed",
+      "type": "fixed",
+      "points": [
+        "Fixed an issue where the formula in the time picker did not behave correctly across different time zones.",
+"Fixed an issue where the selected theme was not applied to charts after a theme change.",
+"Fixed an issue where column widths in the table grid reset after adding a row post-resize.",
+"Fixed minor UI issue in text controls.",
+"Fixed minor UI issue in container controls."
+  ]
+}
+  ]
+},
+  {
     "timestamp": 1753786337000,
     "tags": ["Control", "Action"],
     "heading": "",
@@ -11,9 +37,7 @@
         "points": [
           "Enhanced image component with support for alt text property.",
 "Enhanced time picker with prefix/suffix and min/max time configurations.",
-"Enhanced header generation in Data Builder to include all available keys.",
-"Enhanced property UI layout for ProGlove.",
-"Made minor code improvements to file and verification functions (Download File from URL, Read File, Write File, Open File, MPIN Verification)."
+"Enhanced header generation in Data Builder to include all available keys."
         ]
       },
       {
@@ -21,14 +45,11 @@
         "type": "fixed",
         "points": [
 "Fixed a minor UI issue in the Container component.",
-"Fixed an issue in Date Range Picker where min/max date with time was not working as expected.",
-"Fixed an issue where Detail View Single Tag was displayed twice.",
-"Fixed an issue in Date Range Picker where data was not resetting when value was cleared.",
+
 "Fixed an issue in Table Grid where 'Add Rows' undo persisted in NEWROWS and white space appeared on scroll for x-small rows.",
 "Fixed an issue in Table Grid where cursor-based pagination was not functioning as expected.",
-"Fixed an issue in Alert control where markdown was not visible when using the description property.",
-"Fixed a minor UI issue in Text Input control.",
-"Fixed an issue in Detail Select and File Upload where read-only fields remained editable when tab-index was set."
+"Fixed an issue in Alert control where markdown was not visible when using the description property."
+
         ]
       }
     ]
@@ -38,20 +59,13 @@
     "tags": ["Control", "Action"],      
     "heading": "",
     "cards": [
-      {
-        "title": "Added",
-        "type": "added",
-        "points": [
-          "Added new control: ProGlove Barcode Scanner for dedicated pro glove devices.",
-          "Added new action for Mpin verification."
-        ]
-      },
+
       {
         "title": "Enhancements",
         "type": "improved",
         "points": [
-          "Enhanced various controls by adding utility in action.",
-          "Enhanced the Prefix-Suffix control by adding configurations for min/max date, min/max time, and timezone management."
+         "Enhanced property UI layout for ProGlove.",
+"Made minor code improvements to file and verification functions (Download File from URL, Read File, Write File, Open File, MPIN Verification)."
           
         ]
       },
@@ -59,8 +73,11 @@
         "title": "Fixed",
         "type": "fixed",
         "points": [
-          "Fixed an issue in various controls where read-only input fields were editable when a tabindex was set.",
-          "Fixed an issue where disabled days were not functioning as expected in the date picker."
+        "Fixed a minor UI issue in Text Input control.",
+"Fixed an issue in Detail Select and File Upload where read-only fields remained editable when tab-index was set.",
+"Fixed an issue in Date Range Picker where min/max date with time was not working as expected.",
+"Fixed an issue where Detail View Single Tag was displayed twice.",
+"Fixed an issue in Date Range Picker where data was not resetting when value was cleared."
         ]
       }
     ]
@@ -105,8 +122,7 @@
       "title": "Added",
       "type": "added",
       "points": [
-        "Added Start GPS location tracking action.",
-        "Added Stop GPS location tracking action.",
+        
         "Added functionality to select enabled LLM provider’s model from dropdown in DronaHQ AI"
       ]
     },
@@ -114,8 +130,7 @@
       "title": "Enhancements",
       "type": "improved",
       "points": [
-        "Enhanced Detail View by adding group options property and fixes of date/datetime in column.",
-        "Enhanced page height calculation for Hide control and Show control actions."
+        "Enhanced Detail View by adding group options property and fixes of date/datetime in column."
       ]
     },
     {
