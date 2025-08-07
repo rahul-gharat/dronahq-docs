@@ -1,5 +1,19 @@
 [
   {
+    "timestamp": 1753942650000,
+    "tags": ["Self-Hosted", "3.7.4-stable"],
+    "heading": "Version 3.7.4-stable",
+    "cards": [
+      {
+        "title": "Added",
+        "type": "added",
+        "points": [
+          "Added search and pagination options in DronaHQ file storage."
+        ]
+      }
+    ]
+  },
+  {
     "timestamp": 1751893522000,
     "tags": ["Self-Hosted", "3.6.5-stable"],
     "heading": "Version 3.6.5-stable",

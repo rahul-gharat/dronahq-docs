@@ -1,5 +1,89 @@
 [
   {
+   "timestamp": 1754547450000,
+    "tags": ["Cloud-Hosted"],
+    "heading": "",
+    "cards": [
+      {
+        "title": "Added",
+        "type": "added",
+        "points": [
+          "Added support to call another automation webhook directly within an automation task."
+        ]
+      },
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+      "Fixed an issue where tasks executed multiple times when the 'If' branch in Automation was left empty.",
+"Fixed an issue where automation tasks could not fetch array values using square bracket notation across tasks."
+        ]
+      }
+    ]
+  },
+  {
+   "timestamp": 1754461050000,
+    "tags": ["Cloud-Hosted"],
+    "heading": "",
+    "cards": [
+      {
+        "title": "Added",
+        "type": "added",
+        "points": [
+"Added UI for MCP server in the console.",
+"Added localization intent to Veda AI for multi-language support.",
+"Added support for editing actionflow intent with an approve option in Veda AI.",
+"Added validation support for controls in Veda AI.",
+"Added intelligent drill down functionality for headers and footers.",
+"Added support for automatic schema creation in Veda AI connectors, enabling table creation within connectors.",
+"Added error messages for file upload failures in file storage.",
+"Added input fields for sub-category descriptions, variable descriptions, and data types in MCP connectors.",
+"Added DronaHQ email feature."
+        ]
+      },
+      {
+        "title": "Enhancements",
+        "type": "improved",
+        "points": [
+"Enhanced auto-refresh behavior to also trigger header refresh for master controls in the table grid.",
+"Enhanced language support by updating the Moment.js library.",
+"Enhanced the variable info popup in connectors by updating data type values.",
+"Enhanced performance when adding screens with multiple tabs and improved load times in the publish sidebar.",
+"Enhanced the data query section with a new popup UI including sub-options and icon, and added a clear icon to the search input in the actionflow section.",
+"Enhanced code editing experience by integrating the new Code Mirror library."
+        ] 
+
+  },
+    {
+      "title": "Fixed",
+      "type": "fixed",
+      "points": [
+"Fixed an issue where nested child options could not be selected from default values in list-type controls.",
+"Fixed an issue where the toggle click event did not properly trigger the prefix icon in the date range picker.",
+"Fixed an issue where Veda AI prompt box displayed actionflow data queries.",
+"Fixed an issue where the popup screen was incorrectly set as the homepage, causing preview issues.",
+"Fixed an issue where the 'Load More' button was misaligned with content height.",
+"Fixed an issue where the tutorial app did not function as expected.",
+"Fixed an issue where undo-redo did not work for recurring actions/events.",
+"Fixed a bug where dropping a control caused it to jump to the bottom of the screen.",
+"Fixed minor Code Mirror-related issues in the data bind section and custom JavaScript section of data queries.",
+"Fixed an issue where clicking the preview button after session logout opened the login screen in the preview modal instead of showing the standard logout popup.",
+"Fixed a misalignment issue in the loader text on the app edit sidebar.",
+"Fixed an issue in prompt where mention formatting lacked proper whitespace before and after text.",
+"Fixed an issue where the registered API list was missing in the builder for data queries.",
+"Fixed an issue where the registered API list was missing in the builder for actionflow preview.",
+"Fixed an issue where connector query failure condition messages were missing from API responses in packages.",
+"Fixed an issue where chart control UI did not update with theme changes.",
+"Fixed an issue where the Ask AI button was not disabled after a response and improved error handling in AI Assist.",
+"Fixed an issue where screens with classic headers did not display properly on mobile view."
+
+
+
+      ]
+    }
+    ]
+  },
+  {
     "timestamp":1753872737000,
     "tags": ["Cloud-Hosted"],
     "heading": "",
