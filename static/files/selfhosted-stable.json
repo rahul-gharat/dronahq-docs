@@ -1,5 +1,23 @@
 [
   {
+    "timestamp": 1754625886000,
+    "tags": ["Self-Hosted", "3.8.5-stable"],
+    "heading": "Version 3.8.5-stable",
+    "cards": [
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+         "Fixed Git auto-sync issue by adding default values for missing keys",
+"Fixed an issue where controls were not published or saved correctly in Control Designer",
+"Fixed OpenAI module versioning issue to ensure proper dependency management",
+"Fixed an issue where secured login URLs incorrectly redirected to the login screen",
+"Fixed an issue with manual hard resets to ensure proper branch state restoration"
+        ]
+      }
+    ]
+  },
+  {
     "timestamp": 1753942650000,
     "tags": ["Self-Hosted", "3.7.4-stable"],
     "heading": "Version 3.7.4-stable",
@@ -9,6 +27,14 @@
         "type": "added",
         "points": [
           "Added search and pagination options in DronaHQ file storage."
+
+        ]
+      },
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed an issue where during rollback, rules were received as double-stringified in the rollback API call, causing the rollback to fail."
         ]
       }
     ]
@@ -72,7 +98,8 @@
         "title": "Fixed",
         "type": "fixed",
         "points": [
-          "Fixed an issue where the automation scheduler was triggered multiple times by multiple instances."
+          "Fixed an issue in PDF Creator internal URL handling to support local callbacks correctly.",
+          "Fixed an issue in the in-app import/export JSON formatter for improved consistency and reliability."
         ]
       }
     ]
@@ -107,21 +134,7 @@
       }
     ]
   },  
-    {
-    "timestamp": 1748091922000,
-    "tags": ["Self-Hosted", "3.7.0-stable"],
-    "heading": "Version 3.7.0-stable",
-    "cards": [
-      {
-        "title": "Fixed",
-        "type": "fixed",
-        "points": [
-          "Fixed an issue where Advance editor panel plus button was not opening control listing on builder view.",
-          "Fixed an issue where the URLs for user and license validation in execute Query were not resolving correctly."
-        ]
-      }
-    ]
-  },  
+ 
   {
     "timestamp": 1747970194000,
     "tags": ["Self-Hosted", "3.6.3-stable"],
