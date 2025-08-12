@@ -15,8 +15,10 @@
         "title": "Fixed",
         "type": "fixed",
         "points": [
+          "Fixed an issue where chart redraw functionality prevented popup screens from opening in the live app",
       "Fixed an issue where tasks executed multiple times when the 'If' branch in Automation was left empty.",
-"Fixed an issue where automation tasks could not fetch array values using square bracket notation across tasks."
+"Fixed an issue where automation tasks could not fetch array values using square bracket notation across tasks.",
+"Fixed an issue where DQ Automation was not rendering, causing the UI to disappear"
         ]
       }
     ]

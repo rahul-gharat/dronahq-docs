@@ -29,6 +29,13 @@
           "Added search and pagination options in DronaHQ file storage."
 
         ]
+      },
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed an issue where during rollback, rules were received as double-stringified in the rollback API call, causing the rollback to fail."
+        ]
       }
     ]
   },

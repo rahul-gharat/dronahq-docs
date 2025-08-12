@@ -21,14 +21,17 @@
 "Added PDF Creator support to the managed services list in Automation.",
 "Added DronaHQ Automation User-Agent to global configuration and headers.",
 "Veda AI added.",
-"Added icon support to revamp text input with nested popup handling."
+"Added icon support to revamp text input with nested popup handling.",
+"Added search and pagination options in DronaHQ file storage"
+
       ]
     },
     {
       "title": "Enhancements",
       "type": "improved",
       "points": [
-          "Enhanced the code editor by upgrading the Code Mirror library.",
+        "Enhanced user licensing logic to accurately compute unique users.",
+        "Enhanced the code editor by upgrading the Code Mirror library.",
 "Enhanced task metering logic to restrict logging to non-automation sources.",
 "Enhanced control formula binding to show type conversions where applicable.",
 "Enhanced Actionflow by moving the REST API block to the 'Connector' section.",
