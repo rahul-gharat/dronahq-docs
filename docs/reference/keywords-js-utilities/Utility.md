@@ -997,7 +997,7 @@ If flashlight mode is `OFF` then intensity value will be ignored.
 
 
 ## TEXTTOSPEECH  
-b       
+
 The `UTILITY.TEXTTOSPEECH()` method converts text into spoken audio output in Android/iOS mobile app. This is particularly useful for creating accessible interfaces or adding audio feedback to your applications
 
 #### Usage  
@@ -1010,9 +1010,9 @@ UTILITY.TEXTTOSPEECH(inputtext, rate, locale);
 
 | Parameter   | Accepts | Possible values                                   |
 |-------------|---------|---------------------------------------------------|
-| `inputtext` | string  | 'Input the text you want to convert into speech'  |
-| `rate`      |  number | 'Define the speed of speech. Acceptable values range from 0.0 (slowest) to 10.0 (fastest). Default is 1.0 for a normal speaking rate'  |
-| `locale`    | string  | 'Choose the language and voice setting for the speech output. The values for locale are English = `en-US`, Spanish = `es-ES`, French = `fr-FR`, German = `de-DE`, Italian = `it-IT`, Chinese = `zh-CN`, Japanese = `ja-JP`, Korean = `ko-KR`, Russian = `ru-RU`, Portuguese = `pt-PT`'  |
+| `inputtext` | string  | Input the text you want to convert into speech  |
+| `rate`      |  number | Define the speed of speech. Acceptable values range from 0.0 (slowest) to 10.0 (fastest). Default is 1.0 for a normal speaking rate  |
+| `locale`    | string  | Choose the language and voice setting for the speech output. The values for locale are English = `en-US`, Spanish = `es-ES`, French = `fr-FR`, German = `de-DE`, Italian = `it-IT`, Chinese = `zh-CN`, Japanese = `ja-JP`, Korean = `ko-KR`, Russian = `ru-RU`, Portuguese = `pt-PT`  |
 
 
 #### Example  
@@ -1036,8 +1036,8 @@ UTILITY.GETADDRESSFROMCOORDINATES(latitude, longitude, maxResults);
 
 | Parameter   | Accepts | Possible values                                   |
 |-------------|---------|---------------------------------------------------|
-| `latitude`    | string  | 'Enter the latitude coordinate'  |
-| `longitude`   | string | 'Enter the longitude coordinate'  |
+| `latitude`    | string  | Enter the latitude coordinate  |
+| `longitude`   | string | Enter the longitude coordinate  |
 | `maxResults`  | number  | Select from range '1', '2', '3', '4', '5' to specify the maximum number of address results to return. |
 
 
@@ -1061,7 +1061,7 @@ UTILITY.GETCOORDINATESFROMADDRESS(address, maxResults);
 
 | Parameter   | Accepts | Possible values                                   |
 |-------------|---------|---------------------------------------------------|
-| `address`     | string  | 'The address to retrieve the coordinates for.'  |
+| `address`     | string  | The address to retrieve the coordinates for.  |
 | `maxResults`  | number  | Select from range '1', '2', '3', '4', '5' to specify the maximum number of coordinate results to return.  |
 
 
@@ -1125,20 +1125,20 @@ UTILITY.StartGPSLocationTracking(stationaryRadius, distanceFilter, locationProvi
 
 | Parameter            | Accepts | Platform       | Possible values / Description |
 |----------------------|---------|---------------|---------------------------------------------------|
-| `url`               | string  | Android, iOS      | 'Server url where to send HTTP POST with recorded locations' |
-| `headers`        | object  | Android, iOS         | 'Optional HTTP headers sent along in HTTP request. Provide Key value pairs ex: {"Content-Type": "application/json}' |
-| `data`      | object  | Android, iOS              | 'All wanted location properties have to be prefixed with @. For all available properties check [Location event](https://haylltd.github.io/cordova-background-geolocation-plugin/events#location-event). For Example: {"latitude" : "@latitude", "longitude" : "@longitude", "foo": "bar" } where, @latitude and @longitutude will be replace by actual user’s location lat and long respectively while sending api call'| 
-| `stationaryRadius`   | number  | Android, iOS     | 'Stationary radius value in meters' |
-| `distanceFilter`     | number  | Android, iOS     | 'Distance Filter value in meters' |
-| `desiredAccuracy`    | number  | Android, iOS     | 'Determines how precise the location updates should be. Desired accuracy values in meters. Possible values are `HIGH_ACCURACY` = 10, `MEDIUM_ACCURACY` = 100, `LOW_ACCURACY` = 1000' |
-| `locationProvider`   | number  | Android only     | 'Used to obtain location data. Different providers offer different balances of accuracy, battery efficiency, and availability. Possible values are `Android Distance Filter Provider` = 0, `Android Activity Provider` = 1, `Raw Provider` = 2. Set location provider. [Location Providers](https://github.com/mauron85/cordova-plugin-background-geolocation/blob/master/PROVIDERS.md)' |
-| `notificationsEnabled` | boolean | Android only   | 'Enable/disable local notifications when tracking and syncing locations.' |
-| `notificationTitle`  | string  | Android only     | 'Custom notification title in the drawer' |
-| `notificationText`   | string  | Android only     | 'Custom notification text in the drawer' |
-| `interval`          | number  | Android only      | 'Interval duration in milliseconds' |
-| `fastestInterval`   | number  | Android only      | 'Fastest Interval duration in milliseconds' |
-| `activitiesInterval`| number  | Android only      | 'Activities Interval duration in milliseconds' |
-| `pauseLocationUpdates` | boolean | iOS only       | 'It temporarily suspend location tracking while keeping the background service active. This is useful for conserving battery when you know the user won't be moving for a period of time' |
+| `url`               | string  | Android, iOS      | Server url where to send HTTP POST with recorded locations |
+| `headers`        | object  | Android, iOS         | Optional HTTP headers sent along in HTTP request. Provide Key value pairs ex: {"Content-Type": "application/json"} |
+| `data`      | object  | Android, iOS              | All wanted location properties have to be prefixed with @. For all available properties check [Location event](https://haylltd.github.io/cordova-background-geolocation-plugin/events#location-event). For Example: {"latitude" : "@latitude", "longitude" : "@longitude", "foo": "bar" } where, @latitude and @longitutude will be replace by actual user’s location lat and long respectively while sending api call| 
+| `stationaryRadius`   | number  | Android, iOS     | Stationary radius value in meters |
+| `distanceFilter`     | number  | Android, iOS     | Distance Filter value in meters |
+| `desiredAccuracy`    | number  | Android, iOS     | Determines how precise the location updates should be. Desired accuracy values in meters. Possible values are `HIGH_ACCURACY` = 10, `MEDIUM_ACCURACY` = 100, `LOW_ACCURACY` = 1000 |
+| `locationProvider`   | number  | Android only     | Used to obtain location data. Different providers offer different balances of accuracy, battery efficiency, and availability. Possible values are `Android Distance Filter Provider` = 0, `Android Activity Provider` = 1, `Raw Provider` = 2. Set location provider. [Location Providers](https://github.com/mauron85/cordova-plugin-background-geolocation/blob/master/PROVIDERS.md) |
+| `notificationsEnabled` | boolean | Android only   | Enable/disable local notifications when tracking and syncing locations. |
+| `notificationTitle`  | string  | Android only     | Custom notification title in the drawer |
+| `notificationText`   | string  | Android only     | Custom notification text in the drawer |
+| `interval`          | number  | Android only      | Interval duration in milliseconds |
+| `fastestInterval`   | number  | Android only      | Fastest Interval duration in milliseconds |
+| `activitiesInterval`| number  | Android only      | Activities Interval duration in milliseconds |
+| `pauseLocationUpdates` | boolean | iOS only       | It temporarily suspend location tracking while keeping the background service active. This is useful for conserving battery when you know the user won't be moving for a period of time |
 | `saveBatteryOnBackground` | boolean | iOS only    | Switch to less accurate significant changes and region monitory when in background |
 
 
