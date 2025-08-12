@@ -41,8 +41,8 @@
   },
   {
     "timestamp": 1751893522000,
-    "tags": ["Self-Hosted", "3.6.5-stable"],
-    "heading": "Version 3.6.5-stable",
+    "tags": ["Self-Hosted", "3.7.3-stable"],
+    "heading": "Version 3.7.3-stable",
     "cards": [
       {
         "title": "Added",
@@ -70,21 +70,6 @@
 "Fixed an issue where the Dropdown default value was not displaying after navigation.",
 "Fixed an issue where mismatched data types prevented correct control property binding.",
 "Fixed an issue where the Failure Condition message was not sent in the execute query API response."
-        ]
-      }
-    ]
-  },  
-  {
-    "timestamp": 1752231137000,
-    "tags": ["Self-Hosted", "3.7.3-stable"],
-    "heading": "Version 3.7.3-stable",
-    "cards": [
-      {
-        "title": "Fixed",
-        "type": "fixed",
-        "points": [
-          "Fixed the internal URL handling in PDF Creator to support local callbacks correctly.",
-"Fixed issues in the in-app import/export JSON formatter for improved consistency and reliability."
         ]
       }
     ]
