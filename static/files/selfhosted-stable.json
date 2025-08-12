@@ -29,13 +29,6 @@
           "Added search and pagination options in DronaHQ file storage."
 
         ]
-      },
-      {
-        "title": "Fixed",
-        "type": "fixed",
-        "points": [
-          "Fixed an issue where during rollback, rules were received as double-stringified in the rollback API call, causing the rollback to fail."
-        ]
       }
     ]
   },
@@ -46,6 +39,7 @@
     "cards": [
       {
         "title": "Added",
+
         "type": "added",
         "points": [
           "Added automation_scheduled_list collection to the configuration file for centralized scheduler management."
@@ -105,6 +99,20 @@
       }
     ]
   },
+    {
+    "timestamp": 1754625886000,
+    "tags": ["Self-Hosted", "3.6.6-stable"],
+    "heading": "Version 3.6.6-stable",
+    "cards": [
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed an issue where during rollback, rules were received as double-stringified in the rollback API call, causing the rollback to fail."
+        ]
+      }
+    ]
+  },  
   {
     "timestamp": 1751893522000,
     "tags": ["Self-Hosted", "3.6.5-stable"],
