@@ -170,7 +170,8 @@
       "title": "Fixed",
       "type": "fixed",
       "points": [
-        "Fixed an issue where type handling for controlMeta was missing in the convertToJSON function",
+        "Fixed an issue where refresh token header was not working for self-host for Outlook connector",
+        "Fixed an issue where type handling for control Meta was missing in the convertToJSON function",
         "Fixed an issue where users were unable to filter from the service tag in Datadog logger",
         "Fixed an issue where dynamic fields binding mapping created two functions; merged them into one optimized function",
         "Fixed an issue where the fix controls section was not working correctly on clicking the 'i' icon and the control was getting dropped.",
@@ -244,7 +245,7 @@
       "type": "added",
       "points": [
         "Added Custom Logger for debugging and monitoring",
-        "Enhanced file upload functionality with uploadSingleFile and uploadMultipleFiles methods, offering improved responses and options to replace previously uploaded files, while providing upload path, file size, MIME type, and public accessibility status."
+        "Added file upload functionality with upload Single File and upload Multiple Files methods, offering improved responses and options to replace previously uploaded files, while providing upload path, file size, MIME type, and public accessibility status."
       ]
     },
     {
@@ -340,7 +341,7 @@
         "Improved XML processing by upgrading fast-xml-parser version and updating its functions.",
         "Improved dropdown behavior to show mapped options when value is an array of objects.",
         "Enhanced support for interactive PDFs by enabling uploading, viewing, and filling AcroForm.",
-        "Enhanced logging by converting all console.log and console.error (console.* functions) to Logger.*."
+        "Enhanced logging by converting all console.log and console.error (console.* functions) to Logger."
       ]
     },
     {
