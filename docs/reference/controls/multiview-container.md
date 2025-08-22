@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-title: Multiview Container
+title: Multi-view Container
 ---
 
 import Image from '@site/src/components/Image';
@@ -24,7 +24,7 @@ This control is particularly useful for:
 
 ## Content
 
-The Multiview Container’s configuration is comprehensive, offering various ways to define and manage its content. 
+The Multi-view Container’s configuration is comprehensive, offering various ways to define and manage its content. 
 
 ### Content Configuration
 
@@ -78,7 +78,7 @@ Expected value:
 
 :::info
 
-In the Multiview Container, If the tab value is altered, then the associated controls will be automatically removed. This is because the system maps controls based on the value key, not the label.  
+In the Multi-view Container, If the tab value is altered, then the associated controls will be automatically removed. This is because the system maps controls based on the value key, not the label.  
 
 It is best to:
 - First set the tab value and then inject the controls accordingly to ensure they persist.
