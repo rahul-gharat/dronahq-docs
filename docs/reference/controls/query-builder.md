@@ -24,10 +24,42 @@ Here's how you can use schema binding:
 Use JSON notation to define the structure of your data. Include key-value pairs to represent each field along with its data type. For example:
 ```json
 {
-  "ProductName": "string",
-  "ProductID": "string",
-  "Price": "number",
-  "Quantity": "number"
+[ 
+  { 
+    "label": "Status", 
+    "value": "status", 
+    "enum": [ 
+      { 
+        "label":"Approved", 
+        "value":"approved" 
+      },
+      {
+        "label":"Rejected", 
+        "value":"rejected" 
+      }, 
+      {
+        "label":"Pending", 
+        "value":"pending" 
+      } 
+    ] 
+  }, 
+  { 
+    "label": "User Name", 
+    "value": "username", 
+    "type": "text" 
+  }, 
+  { 
+    "label": "Email", 
+    "value": "email", 
+    "type": "text" 
+  }, 
+  {
+    "label":"Age", 
+    "value":"age", 
+    "type":"number" 
+  } 
+  
+]
 }
 ```
 
