@@ -27,19 +27,19 @@ This is the recommended and easiest method.
 2.  Navigate to the Extensions view by clicking the Extensions icon on the Activity Bar or by pressing `Ctrl+Shift+X`.
 3.  Search for "**DronaHQ**".
 4.  Click the "**Install**" button for the official DronaHQ extension.
-5.  Alternatively, you can install it directly from the Visual Studio Marketplace
+5.  Alternatively, you can install it directly from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=DronaHQ.dronahq-prod)
 
-<!-- : [https://marketplace.visualstudio.com/items?itemName=dronahq-dev.dronahq](https://marketplace.visualstudio.com/items?itemName=dronahq-dev.dronahq) -->
-
-### 2. Installing from a `.vsix` File
+### 2. Installing from a vsix File
 
 This method is useful for offline installation or for installing a specific version of the extension.
 
-1.  Open your code editor.
-2.  Press `Ctrl+Shift+P` to open the **Command Palette**.
-3.  Type and select: `Extensions: Install from VSIX...`
-4.  Browse to and select your `.vsix` file.
-5.  Reload the editor if prompted.
+1. You can download the `vsix package` from [here](https://tinyurl.com/dronahq-extension).
+2.  Open your code editor.
+3.  Press `Ctrl+Shift+P` to open the **Command Palette**.
+4.  Type and select: `Extensions: Install from VSIX...`
+5.  Browse to and select your `.vsix` file.
+6.  Reload the editor if prompted.
+
 
 
 
@@ -48,7 +48,8 @@ This method is useful for offline installation or for installing a specific vers
 Once installed, you can access all DronaHQ-related commands via the **Command Palette** (`Ctrl+Shift+P`). Simply type "**DronaHQ**" to filter the available commands.
 
 <figure>
-  <Thumbnail src="/img/code-editor-extension/dronahq-commands.png" />
+  <Thumbnail src="/img/code-editor-extension/dronahq-commands.png" alt="Command Palette in Code Editor" />
+  <figcaption align = "center"><i>Command Palette in Code Editor</i></figcaption>
 </figure>
 
 
@@ -64,11 +65,13 @@ This approach provides a seamless, passwordless authentication flow.
 1.  Log in to your **DronaHQ studio**.
 2.  Navigate to the **Code Editor** extension in bottom-left and click to open your preferred editor from the dropdown.
 <figure>
-  <Thumbnail src="/img/code-editor-extension/extension-in-app-builder.png" />
+  <Thumbnail src="/img/code-editor-extension/extension-in-app-builder.png" alt="Locating Code Editor Extension in the App Builder" />
+  <figcaption align = "center"><i>Locating Code Editor Extension in the App Builder</i></figcaption>
 </figure>
 3.  A passwordless authentication screen will appear in your browser. Click the **Authorize** button.
 <figure>
-  <Thumbnail src="/img/code-editor-extension/authorize.png" />
+  <Thumbnail src="/img/code-editor-extension/authorize.png" alt="Authentication for Code editor Extension" />
+  <figcaption align = "center"><i>Authentication for Code editor Extension</i></figcaption>
 </figure>
 
 :::note 
@@ -90,7 +93,8 @@ If you prefer to authenticate directly from your editor, you can use the built-i
 * To preview the app locally during development, use **`DronaHQ: Preview App`** (`Ctrl+Alt+P`) within your code editor. The app will be served on your localhost at port `4321`.
 
 <figure>
-  <Thumbnail src="/img/code-editor-extension/preview.png" />
+  <Thumbnail src="/img/code-editor-extension/preview.png" alt="Preview for Code Editor" />
+  <figcaption align = "center"><i>Preview for Code Editor</i></figcaption>
 </figure>
 
 * When you're ready to save your changes to the DronaHQ platform, use **`DronaHQ: Commit Changes to App`** (`Ctrl+Shift+S`) to commit the changes.
