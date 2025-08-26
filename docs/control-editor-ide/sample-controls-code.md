@@ -97,13 +97,30 @@ So let’s add a new property,
 Already existing Code :-
 ```html
 <!-- your code here -->
-    <div class="edit_view_ctrl_prop">
-        <%= Formbuilder.templates['edit/text_input']({
-            "label": {name:"Label value", position:"left", width:""},
-            "name": "label_value",
-            "col_width":"two_col"
-        })%>
-    </div>
+    <% var newProperty = rf.get('show_new_property') ? rf.get('show_new_property') : false %>
+    <% if(newProperty == true && Formbuilder.templates && Formbuilder.templates['edit/prop_heading_section']) { %>
+        <div class="revamp-category-section">
+            <%= Formbuilder.templates['edit/prop_heading_section']({
+                "type": "main",
+                "name": "Content",
+                
+            }) %>
+            <div class="child-prop-sec">
+                <%= Formbuilder.templates['edit/revamp_text_input']({
+                    "label": {name:"Label value"},
+                    "name": "label_value",
+                    "col_width":"two_col"
+                })%>
+            </div>
+    <%}else{%>
+        <div class="edit_view_ctrl_prop">
+            <%= Formbuilder.templates['edit/text_input']({
+                "label": {name:"Label value", position:"left", width:""},
+                "name": "label_value",
+                "col_width":"two_col"
+            })%>
+        </div>
+    <%}%>
 <!-- your code ends here-->
 ```
 
@@ -116,6 +133,14 @@ Already existing Code :-
 Add this code in the above section before closing of tag.
 
 ```javascript
+// New property
+<%= Formbuilder.templates['edit/revamp_ext_input']({
+   "label": {name:"Text"},
+   "name": "heading_text",
+   "col_width":"three_col",
+}) %>
+
+// Old property
 <%= Formbuilder.templates['edit/text_input']({
    "label": {name:"Text", position:"left", width:""},
    "name": "heading_text",
@@ -127,18 +152,39 @@ Structure should look like this ,
 
 ```html
 <!-- your code here -->
-    <div class="edit_view_ctrl_prop">
-        <%= Formbuilder.templates['edit/text_input']({
-            "label": {name:"Label value", position:"left", width:""},
-            "name": "label_value",
-            "col_width":"two_col"
-        })%>
-        <%= Formbuilder.templates['edit/text_input']({
-            "label": {name:"Text", position:"left", width:""},
-            "name": "heading_text",
-            "col_width":"two_col",
-        }) %>
-    </div>
+    <% var newProperty = rf.get('show_new_property') ? rf.get('show_new_property') : false %>
+    <% if(newProperty == true && Formbuilder.templates && Formbuilder.templates['edit/prop_heading_section']) { %>
+        <div class="revamp-category-section">
+            <%= Formbuilder.templates['edit/prop_heading_section']({
+                "type": "main",
+                "name": "Content",   
+            }) %>
+            <div class="child-prop-sec">
+                <%= Formbuilder.templates['edit/revamp_text_input']({
+                    "label": {name:"Label value"},
+                    "name": "label_value",
+                    "col_width":"two_col"
+                })%>
+                <%= Formbuilder.templates['edit/text_input']({
+                    "label": {name:"Text"},
+                    "name": "heading_text",
+                    "col_width":"two_col",
+                }) %>
+            </div>
+    <%}else{%>
+        <div class="edit_view_ctrl_prop">
+            <%= Formbuilder.templates['edit/text_input']({
+                "label": {name:"Label value", position:"left", width:""},
+                "name": "label_value",
+                "col_width":"two_col"
+            })%>
+            <%= Formbuilder.templates['edit/text_input']({
+                "label": {name:"Text", position:"left", width:""},
+                "name": "heading_text",
+                "col_width":"two_col",
+            }) %>
+        </div>
+    <%}%>
 <!-- your code ends here-->
 ```
 
@@ -190,6 +236,7 @@ Output after adding this
 
 So like this add all other required properties as,
 
+**For old property** - 
 ```javascript
 <%= Formbuilder.templates['edit/dropdown_new']({
     "label": {name:"Size", position:"left", width:"two_col"},
@@ -488,6 +535,69 @@ Formbuilder.registerField 'text',
      opts.RegisterResChangeCallback(resChangeCallBack)
     
  edit: """
+ <% var newProperty = rf.get('show_new_property') ? rf.get('show_new_property') : false %>
+    <% if(newProperty == true && Formbuilder.templates && Formbuilder.templates['edit/prop_heading_section']) { %>
+        <div class="revamp-category-section">
+            <%= Formbuilder.templates['edit/prop_heading_section']({
+                "type": "main",
+                "name": "Content",
+            }) %>
+            <div class ="child-prop-sec">
+            <%= Formbuilder.templates['edit/revamp_color_picker']({
+                       "label": {name:"Theme"},
+                       "name": "formbuilder_theme",
+                       "solid_color_only" : true
+                   }) %>
+                   <%= Formbuilder.templates['edit/revamp_text_input']({
+                       "label": {name:"Placeholder"},
+                       "name": "placeholder",
+                   }) %>
+                   <%= Formbuilder.templates['edit/revamp_new_dropdown']({
+                       "label": {name:"Input Type"},
+                       "name": "input_type",
+                       "values" :[{"Text":"text"},{"Url":"url"},{"Email":"email"},{"Password":"password"}],
+                       "info": "Text-Properties-Input Type",
+                       "isMultiselect":false,
+                   }) %>
+                   <%= Formbuilder.templates['edit/revamp_numberPicker']({
+                       "label":  {name:"Min Character"},
+                       "name": "text_min_length",
+                       "disableUnit": false,
+                       "steps": "1",
+                       "max": "1000",
+                       "min": "0",
+                   }) %>
+                   <%= Formbuilder.templates['edit/revamp_numberPicker']({
+                       "label":  {name:"Max Character"},
+                       "name": "text_max_length",
+                       "disableUnit": false,
+                       "steps": "1",
+                       "max": "1000",
+                       "min": "0",
+                       "col_width":"three_col",
+                   }) %>
+                   <%= Formbuilder.templates['edit/revamp_numberPicker']({
+                       "label":  {name:"Debounce Time (In ms)"},
+                       "name": "debounceEventTime",
+                       "disableUnit": false,
+                       "steps": "100",
+                       "max": "1000",
+                       "min": "0",
+                       "col_width":"",
+                       "info": "Text Input - Properties - Debounce Time (In ms)",
+                   }) %>
+                    <%= Formbuilder.templates['edit/revamp_checkbox']({
+                       "label": {name:"Show Raw Data"},
+                       "name": "dhq_show_rawdata",
+                       "info": "Text-Properties-Show Raw Data",
+                   }) %>
+                   <%= Formbuilder.templates['edit/revamp_checkbox']({
+                       "label": {name:"Show Barcode Scanner"},
+                       "name": "isqrvisible",
+                   }) %>
+            </div>
+        </div>
+    <%}else{%>
    <div class="category-section">
        <div class="ui edit-accordion accordion">
            <div class="title active header-accordion">
@@ -555,6 +665,7 @@ Formbuilder.registerField 'text',
            </div>
        </div>
    </div>
+   <%}%>
  """
  
  addButton: """
@@ -971,6 +1082,295 @@ view: """
 """
  
 edit: """
+    <% 
+    var newProperty = rf.get('show_new_property') ? rf.get('show_new_property') : false
+    %>
+    <% if(newProperty == true && Formbuilder.templates && Formbuilder.templates['edit/prop_heading_section']) { %>
+        <div class="revamp-category-section">
+            <%= Formbuilder.templates['edit/prop_heading_section']({
+                "type": "main",
+                "name": "Content",
+                "show_advanced_sec": true
+            }) %>
+            <div class="adv-setting-section">
+                <%= Formbuilder.templates['edit/prop_heading_section']({
+                    "type": "advance"
+                }) %>
+                <div class="adv-grp-body">
+                    <%= Formbuilder.templates['edit/revamp_text_input']({
+                        "label": {name:"Type"},
+                        "name": "field_type",
+                        "col_width": "three_col",
+                        "isDisabled": true,
+                    }) %>
+                </div>
+            </div>
+            <div class="child-prop-sec">
+                <div class="data-bind-section"></div>
+                <% if(rf.get('button_label') != '') { %>
+                    <%= Formbuilder.templates['edit/revamp_text_input']({
+                        "label": {name:"Text"},
+                        "name": "button_label"
+                    }) %> 
+                <%}%>
+                <div class="add-on-grp">
+                    <%= Formbuilder.templates['edit/prop_heading_section']({
+                        "type": "add-on",
+                        "values": [{"label":"Label","name":"label_hidden","showOn":"model.label_hidden"},{"label":"Tooltip","name":"show_tooltip","hideOn":"model.show_tooltip"},{"label":"Description","name":"show_description","hideOn":"model.show_description"}]
+                    }) %>
+                    <div class="grp-body">
+                        <%= Formbuilder.templates['edit/revamp_text_input']({
+                            "label": {name:"Tooltip"},
+                            "name": "tooltip",
+                            "showOn":"model.show_tooltip",
+                            "col_width":"three_col",
+                            "add_on_feature": true,
+                        }) %>
+                        <%= Formbuilder.templates['edit/revamp_text_input']({
+                            "label": {name:"Description"},
+                            "name": "tip_description",
+                            "showOn":"model.show_description",
+                            "col_width":"three_col",
+                            "add_on_feature": true,
+                        }) %>
+                        <div class="nested-prop-section">
+                            <%= Formbuilder.templates['edit/revamp_text_input']({
+                                "label": {name:"Label"},
+                                "name": "label",
+                                "hideOn": "model.label_hidden",
+                                "col_width":"three_col",
+                                "add_on_feature": true,
+                                "nested_prop": true,
+                            }) %>
+                            <div class="nested-prop-sidebar">
+                                <%= Formbuilder.templates['edit/nested_heading_section']({
+                                    "label": "label",
+                                    "name": "model.field_display_key_name"
+                                }) %>
+                                <%= Formbuilder.templates['edit/revamp_info_label_group']({rf:rf}) %>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="revamp-category-section">
+            <%= Formbuilder.templates['edit/prop_heading_section']({
+                "type": "main",
+                "name": "Interaction",
+                "show_advanced_sec": false
+            }) %>
+            <div class="child-prop-sec">
+                <%= Formbuilder.templates['edit/revamp_toggle_prop']({
+                    "label": {name:"Button State"},
+                    "name": "state_dropdown",
+                    "values" :[{"Enabled":"enable"},{"Disabled":"disable"}],
+                    "col_width":"three_col",
+                    "isMultiselect":false
+                }) %>
+                <div class="add-on-grp">
+                    <%= Formbuilder.templates['edit/prop_heading_section']({
+                        "type": "add-on",
+                        "values": [{"label":"Show Icon","name":"icon_visible","hideOn":"model.icon_visible"}]
+                    }) %>
+                    <div class="grp-body">
+                        <div class="nested-prop-section">
+                            <%= Formbuilder.templates['edit/revamp_text_input']({
+                                "label": {name:"Show Icon"},
+                                "name": "Configurations",
+                                "col_width":"three_col",
+                                "nested_prop": true,
+                                "add_on_feature": true,
+                                "show_close": true,
+                                "showOn" : "model.icon_visible"
+                            }) %>
+                            <div class="nested-prop-sidebar">
+                                <%= Formbuilder.templates['edit/nested_heading_section']({
+                                    "label": "Show Icon",
+                                    "name": "model.field_display_key_name"
+                                }) %>
+                                        <%= Formbuilder.templates['edit/revamp_toggle_prop']({
+                                            "label": {name:"Icon Position", position:"top"},
+                                            "name": "side_to_display",
+                                            "values" :[{"Right":"right"},{"Left":"left"}],
+                                            "isMultiselect":false,
+                                            "showOn":"model.icon_visible",
+                                            
+                                        }) %>
+                                        <%= Formbuilder.templates['edit/revamp_icon_picker']({
+                                            "label": {name:"Select Icon", position:"left"},
+                                            "name": "workflow_icon",
+                                            "showOn":"model.icon_visible",
+                                            
+                                        }) %>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="actionflow-section"></div>
+            </div>
+        </div>
+        <div class="revamp-category-section">
+            <%= Formbuilder.templates['edit/prop_heading_section']({
+                "type": "main",
+                "name": "Appearance",
+                "show_advanced_sec": true
+            }) %>
+            <div class="adv-setting-section">
+                <%= Formbuilder.templates['edit/prop_heading_section']({
+                    "type": "advance"
+                }) %>
+                <div class="adv-grp-body">
+                    <%= Formbuilder.templates['edit/revamp_checkbox']({
+                        "label": {name:"Hide on desktop", width:"three_col"},
+                        "name": "isDhqHideOnDesktop",
+                        "col_width": "one_col",
+                        "position": "right"
+                    }) %>
+                    <%= Formbuilder.templates['edit/revamp_checkbox']({
+                        "label": {name:"Hide on Mobile", width:"three_col"},
+                        "name": "isDhqHideOnMobile",
+                        "col_width": "one_col",
+                        "position": "right"
+                    }) %>
+                    <%= Formbuilder.templates['edit/revamp_checkbox']({
+                        "label": {name:"Dynamic Height", width:"three_col"},
+                        "name": "grid_dynamic_height",
+                        "col_width": "one_col",
+                        "position": "right"
+                    }) %>
+                    <%= Formbuilder.templates['edit/revamp_checkbox']({
+                        "label": {name:"Maintain Space when hidden", width:"three_col"},
+                        "name": "grid_maintain_space",
+                        "col_width": "one_col",
+                        "position": "right"
+                    }) %>
+                    <%= Formbuilder.templates['edit/revamp_numberPickerWithUnit']({
+                        "label":  {name:"Max Height","width":"two_col"},
+                        "name": "grid_max_height",
+                        "col_width":"two_col",
+                        "steps": "1",
+                        "max": "9999",
+                        "min": "0",
+                        "showOn": "model.grid_dynamic_height"
+                    }) %>
+                </div>
+            </div>
+            <div class="child-prop-sec">
+                <%= Formbuilder.templates['edit/revamp_checkbox']({
+                    "label": {name:"Visibility",width:"three_col"},
+                    "name": "visibility",
+                    "col_width": "one_col",
+                    "position": "right"
+                }) %>
+            </div>
+            <div class="popup-prop-section">
+                <%= Formbuilder.templates['edit/revamp_text_input']({
+                    "label": {name:"Button Properties"},
+                    "name": "color, radius, theme",
+                    "col_width":"three_col",
+                    "popup_prop": true,
+                }) %>
+                <div class="popup-prop-sidebar">
+                    <%= Formbuilder.templates['edit/prop_heading_section']({
+                        "type": "popup",
+                        "name": "Button Properties",
+                    }) %>
+                    <%= Formbuilder.templates['edit/revamp_color_picker']({
+                        "label": {name:"Color", position:"top", width:""},
+                        "name": "card_background_color",
+                    }) %>
+                    <%= Formbuilder.templates['edit/revamp_font_size']({
+                        "label":  {name:"Radius"},
+                        "name": "card_border_radius",
+                        "disableUnit": false,
+                        "steps": "1",
+                        "max": "1000",
+                        "min": "0",
+                    }) %>
+
+                    <%= Formbuilder.templates['edit/revamp_toggle_prop']({
+                        "label": {name:"Theme ", position:"top", width:""},
+                        "name": "card_theme",
+                        "values" :[{"Filled":"filled-theme"},{"Outlined":"outlined-theme"}],
+                        "col_width":"",
+                        "isMultiselect":false,
+                    }) %>
+                </div>
+                
+            </div>
+            <div class="popup-prop-section">
+                <%= Formbuilder.templates['edit/revamp_text_input']({
+                    "label": {name:"Text Properties"},
+                    "name": "size, weight, color, alignment",
+                    "col_width":"three_col",
+                    "popup_prop": true,
+                }) %>
+                <div class="popup-prop-sidebar">
+                    <%= Formbuilder.templates['edit/prop_heading_section']({
+                        "type": "popup",
+                        "name": "Text Properties",
+                    }) %>
+                    <%= Formbuilder.templates['edit/revamp_font_size']({
+                        "label":  {name:"Size"},
+                        "name": "title_font_size",
+                        "disableUnit": true,
+                        "steps": "1",
+                        "max": "1000",
+                        "min": "0",
+                    }) %>
+
+                    <%= Formbuilder.templates['edit/revamp_font_weight']({
+                        "label":  {name:"Weight"},
+                        "name": "title_font_weight",
+                    }) %>
+                        
+                    <%= Formbuilder.templates['edit/revamp_color_picker']({
+                        "label": {name:"Color", position:"top", width:""},
+                        "name": "title_text_color",
+                        "solid_color_only" : true
+                    }) %>
+
+                    <%= Formbuilder.templates['edit/revamp_selectbar']({
+                        "label": {name:"Alignment", position:"top"},
+                        "name": "title_text_alignment",
+                        "Icon_type":"icon",     
+                        "col_width":"three_col",
+                    }) %>
+                </div>
+                
+            </div>
+        </div>
+        <div class="revamp-category-section">
+            <%= Formbuilder.templates['edit/prop_heading_section']({
+                "type": "main",
+                "name": "advanced",
+                "show_advanced_sec": false
+            }) %>
+            <div class="child-prop-sec">
+                <%= Formbuilder.templates['edit/revamp_codemirror_editor']({
+                    "label": {name:"External Css"},
+                    "name": Formbuilder.options.mappings.DHQ_EXTERNAL_CSS_DATA,
+                    "cmConfig": {mode: "text/css"},
+                    "info": "Info External css-Code",
+                })%>
+                <%= Formbuilder.templates['edit/revamp_checkbox']({
+                    "label": {name:"Trigger Dependents",width:"three_col"},
+                    "name": Formbuilder.options.mappings.DHQ_TRIGGGER_FORWARD_DEPENDENCIES,
+                    "col_width": "one_col",
+                    "position": "right"
+                }) %>
+                <%= Formbuilder.templates['edit/revamp_checkbox']({
+                    "label": {name:"Caching",width:"three_col"},
+                    "name": "caching",
+                    "col_width": "one_col",
+                    "position": "right"
+                }) %>
+            </div>
+        </div>
+    <%}else{%>
 <div class="category-section">
    <div class="ui accordion edit-accordion">
        <div class="title active header-accordion">
@@ -1185,6 +1585,7 @@ defaultAttributes: (attrs) ->
  attrs.mailto_body = 'Hi'
  attrs.is_navigation_control = true
  attrs.submit_from_pages = ''
+ attrs.show_new_property = true
  attrs.formbuilder_theme = 'var(--theme-color-light)'
  #CTRL METADATA CONFIGURATION
  attrs.field_composition_type = "single"
