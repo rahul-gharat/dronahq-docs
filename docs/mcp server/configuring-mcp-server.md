@@ -57,4 +57,4 @@ Once the MCP Server add-on is open:
 
 ## Next Steps
 
-Your newly created MCP Server will now be available for installation and use by AI agents like Claude, Cursor and Windsurf, enabling them to execute the actions defined by the selected queries. For installation, head over to [documentation](https://docs.dronahq.com/exposing-mcp-to-ai-agents)
+Your newly created MCP Server will now be available for installation and use by AI agents like Claude, Cursor and Windsurf, enabling them to execute the actions defined by the selected queries. For installation, head over to [documentation](https://docs.dronahq.com/mcp%20server/exposing-mcp-to-ai-agents/)
