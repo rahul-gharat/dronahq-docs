@@ -1,5 +1,40 @@
 [
-  {
+    {
+   "timestamp": 1756375457000,
+    "tags": ["Cloud-Hosted"],
+    "heading": "",
+    "cards": [
+      {
+        "title": "Added",
+        "type": "added",
+        "points": [
+          "Added license activation UI for MCP Builder.",
+"Added variable descriptions and data types in preselect fields for the Connector Library.",
+"Added a new code editor extension.",
+"Added File Upload Control v2 with support for DronaHQ File Storage.",
+"Added support for the connector's request object in Data Query and Preview Connector Logs for better debugging."
+        ]
+      },
+      {
+        "title": "Enhancements",
+        "type": "improved",
+        "points": [
+          "Enhanced UI/UX in MCP Builder for a smoother user experience.",
+"Enhanced the UI in the Data Query popup and Action Flow menu by adding top and bottom spacing to separators for better visual clarity.",
+"Enhanced UI validations in the MCP Builder sidebar.",
+"Enhanced dependent field resolution logic in get dependent fields to trigger."
+        ]
+      },
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed an issue where Data Query in Automation caused infinite loading when selecting an Automation value.",
+"Fixed an issue where clicking 'Today' did not update the selected date and input field."
+        ]
+      }
+    ]
+  },  {
    "timestamp": 1754547450000,
     "tags": ["Cloud-Hosted"],
     "heading": "",
@@ -19,6 +54,34 @@
       "Fixed an issue where tasks executed multiple times when the 'If' branch in Automation was left empty.",
 "Fixed an issue where automation tasks could not fetch array values using square bracket notation across tasks.",
 "Fixed an issue where DQ Automation was not rendering, causing the UI to disappear"
+        ]
+      }
+    ]
+  },
+  {
+   "timestamp": 1755770657000,
+    "tags": ["Cloud-Hosted"],
+    "heading": "",
+    "cards": [
+      {
+        "title": "Added",
+        "type": "added",
+        "points": [
+          "Added a Webhook raw input UI with a JSON Code Mirror editor for improved payload editing."
+        ]
+      },
+      {
+        "title": "Enhancements",
+        "type": "improved",
+        "points": [
+          "Enhanced RazorPay Connector to include the Notes option in the create payment link API."
+        ]
+      },
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed connector usage permissions in the Automation builder."
         ]
       }
     ]
@@ -49,7 +112,7 @@
         "points": [
 "Enhanced auto-refresh behavior to also trigger header refresh for master controls in the table grid.",
 "Enhanced language support by updating the Moment.js library.",
-"Enhanced the variable info popup in connectors by updating data type values.",
+"Enhanced the variable info pop-up in connectors by updating data type values.",
 "Enhanced performance when adding screens with multiple tabs and improved load times in the publish sidebar.",
 "Enhanced the data query section with a new popup UI including sub-options and icon, and added a clear icon to the search input in the actionflow section.",
 "Enhanced code editing experience by integrating the new Code Mirror library."

@@ -1,5 +1,35 @@
 [ 
   {
+  "timestamp": 1756375457000,
+  "tags": ["Control", "Action"],
+  "heading": "",
+  "cards": [
+    {
+      "title": "Added",
+      "type": "added",
+      "points": [
+       "Added new File Storage addon integration in the File Upload control."
+      ]
+    },
+    {
+      "title": "Enhancements",
+      "type": "improved",
+      "points": [
+"Enhanced logic for offline file submission to improve reliability.",
+"Enhanced controls by reducing minimum height to 2 grid units for better layout flexibility."
+      ]
+    },
+    {
+      "title": "Fixed",
+      "type": "fixed",
+      "points": [
+        "Fixed a minor UI issue in the interface.",
+"Fixed an issue where dropdown search was not functioning as expected."
+  ]
+ }
+  ]
+},
+  {
   "timestamp": 1754461050000,
   "tags": ["Control", "Action"],
   "heading": "",
