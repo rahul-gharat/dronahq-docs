@@ -1,5 +1,76 @@
 [ 
   {
+     "timestamp": 1756116257000,
+  "tags": ["Self-Hosted", "3.9.1-edge"],
+  "heading": "Version 3.9.1-edge",
+  "cards": [
+    {
+      "title": "Added",
+      "type": "added",
+      "points": [
+        "Added support for dynamic values in the limit and offset fields of the Data Query SQL UI editor.",
+        "Added File Upload Control v2 with integration to DronaHQ File Storage.",
+        "Added hover support to view credit info and renewal dates in the UI.",
+        "Added info texts to Time control properties.",
+        "Added support for base URL with path in Manage Environment and Data Query.",
+        "Added Automation descriptions and filtered Automation objects before saving.",
+        "Added support for base URL with path in REST API connectors for flexible endpoint configuration.",
+        "Added a time picker to the Automation log filter for precise filtering."
+      ]
+    },
+    {
+      "title": "Enhancements",
+      "type": "improved",
+      "points": [
+        "Enhanced logic to restrict multiple SSO configurations to enterprise clients only.",
+        "Enhanced UI by integrating icons and improving the Action Task popup in Automation.",
+        "Enhanced Connector Query REST API to dynamically update the base URL based on the selected environment.",
+        "Enhanced manage environment parameter handling in studioConsole.js.",
+        "Updated moment.js library to include multi-language support."
+      ]
+    },
+    {
+      "title": "Fixed",
+      "type": "fixed",
+      "points": [
+        "Fixed an issue where the test value field in the DQ SQL UI was unexpectedly cleared.",
+        "Fixed an issue in the SQL UI editor by adding horizontal scrolling for improved usability.",
+        "Fixed an issue where an invalid URL caused an infinite loading state when saving an API.",
+        "Fixed an issue where Code Mirror output was not displaying in Actionflow's 'When to Execute' condition.",
+        "Fixed an issue where registered API list was missing in the builder during Actionflow preview.",
+        "Fixed a broken cross icon in the 'Format Data' section.",
+        "Fixed parameterized SQL query issues in the DQ UI editor.",
+        "Fixed backward compatibility issues in the DQ SQL UI editor.",
+        "Fixed incorrect metadata updates in DQ caused by overwriting with output section metadata.",
+        "Fixed an issue with dynamic binding not functioning in the Data Query SQL UI editor.",
+        "Fixed an issue where Connector Query was not editable in SQL UI.",
+        "Fixed an issue where empty-screen Action Flows were not handled properly.",
+        "Fixed undo-redo functionality issues in recurring actions/events.",
+        "Fixed an issue where the Chart control UI did not reflect theme changes.",
+        "Fixed an issue where the tutorial app failed to function as expected.",
+        "Fixed an issue where toggle clicks failed to trigger the prefix icon in the Date Range Picker.",
+        "Fixed an issue causing delayed response on first button click due to initialization lag.",
+        "Fixed a rollback issue caused by double-stringified rules data.",
+        "Fixed a Git auto-sync issue by setting default values when keys were missing.",
+        "Fixed an issue where secured routing URLs did not redirect users to the login screen.",
+        "Fixed an issue with manual hard reset on branches not restoring the correct state.",
+        "Fixed timeout value application in BigQuery connector connection options.",
+        "Fixed OpenAI assistant backend failure by preventing multiple responses.",
+        "Fixed an issue in the datetime picker where clicking 'Today' did not update the date field.",
+        "Fixed a preview issue where a popup screen was incorrectly set as the homepage.",
+        "Fixed an issue where setGlobalVariable was undefined in the builder.",
+        "Fixed an issue where DataQuery import/export did not work correctly.",
+        "Fixed duplicate control operations in the Builder.",
+        "Fixed an issue where Automation queries executed multiple times due to empty 'If' branches.",
+        "Fixed connector usage permissions in the Automation builder.",
+        "Fixed schema generation issues in the GraphQL connector for better compatibility.",
+        "Fixed a MongoDB size limit issue during Automation export by fetching category and subcategory data separately.",
+        "Fixed an issue where Automation tasks could not fetch array values using bracket notation."
+      ]
+    }
+  ]
+},
+  {
   "timestamp": 1751626337000,
   "tags": ["Self-Hosted", "3.9.0-edge"],
   "heading": "Version 3.9.0-edge",
