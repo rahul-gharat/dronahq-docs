@@ -971,7 +971,7 @@ UTILITY.Flashlight(mode,intensity);
 | Parameter   | Accepts | Possible values                                   |
 |-------------|---------|---------------------------------------------------|
 | `flashlight_mode`      | string  | 'ON', 'OFF'  |
-| `flashlight_intensity` | number | Select audio intensity level such as low = 0.3, medium = 0.7, heigh = 1.0  |
+| `flashlight_intensity` | number | Select audio intensity level such as low = 0.3, medium = 0.7, high = 1.0  |
 
 <span style={{fontSize: 24}}>Example</span>
 
@@ -1127,7 +1127,7 @@ UTILITY.StartGPSLocationTracking(stationaryRadius, distanceFilter, locationProvi
 |----------------------|---------|---------------|---------------------------------------------------|
 | `url`               | string  | Android, iOS      | Server url where to send HTTP POST with recorded locations |
 | `headers`        | object  | Android, iOS         | Optional HTTP headers sent along in HTTP request. Provide Key value pairs ex: {"Content-Type": "application/json"} |
-| `data`      | object  | Android, iOS              | All wanted location properties have to be prefixed with @. For all available properties check [Location event](https://haylltd.github.io/cordova-background-geolocation-plugin/events#location-event). For Example: {"latitude" : "@latitude", "longitude" : "@longitude", "foo": "bar" } where, @latitude and @longitutude will be replace by actual user’s location lat and long respectively while sending api call| 
+| `data`      | object  | Android, iOS              | All wanted location properties have to be prefixed with @. For all available properties check [Location event](https://haylltd.github.io/cordova-background-geolocation-plugin/events#location-event). For Example: {"latitude" : "@latitude", "longitude" : "@longitude", "foo": "bar" } where, @latitude and @longitude will be replace by actual user’s location lat and long respectively while sending api call| 
 | `stationaryRadius`   | number  | Android, iOS     | Stationary radius value in meters |
 | `distanceFilter`     | number  | Android, iOS     | Distance Filter value in meters |
 | `desiredAccuracy`    | number  | Android, iOS     | Determines how precise the location updates should be. Desired accuracy values in meters. Possible values are `HIGH_ACCURACY` = 10, `MEDIUM_ACCURACY` = 100, `LOW_ACCURACY` = 1000 |
