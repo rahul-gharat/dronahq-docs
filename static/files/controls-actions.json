@@ -8,7 +8,8 @@
       "title": "Added",
       "type": "added",
       "points": [
-       "Added new File Storage addon integration in the File Upload control."
+       "Added new File Storage addon integration in the File Upload control.",
+       "Added support for SMS Retriever as a new action."
       ]
     },
     {
@@ -24,7 +25,9 @@
       "type": "fixed",
       "points": [
         "Fixed a minor UI issue in the interface.",
-"Fixed an issue where dropdown search was not functioning as expected."
+"Fixed an issue where dropdown search was not functioning as expected.",
+"Fixed minor UI and console errors during file upload.",
+"Fixed an issue in the tabbed container where tab labels were not properly localized."
   ]
  }
   ]

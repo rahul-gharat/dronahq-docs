@@ -377,19 +377,133 @@ Custom Events allow to have a predefined list of events that your custom control
 In the property section, you have an option to add one or more custom events that you want in your Custom Control. You can add custom events using `ADD MORE` option and provide a friendly name. You can also update the event name and delete any event using `delete` action.
 
 <figure>
-  <Thumbnail src="/img/reference/controls/custom-control/add-custom-event.png" alt="Add Custom Event" />
+  <Thumbnail src="/img/reference/controls/custom-control/add-custom-events.png" alt="Add Custom Event" />
   <figcaption align="center"><i>Add Custom Event</i></figcaption>
 </figure>
+
+Here is a example of code block how you can add custom events.
+```html
+<html>
+  <head>
+<link href="/static/fonts/montserrat/Montserrat.css" rel="stylesheet"></head> 
+<style>
+  body{
+    font-family: "Montserrat", sans-serif;
+  }
+  .Heading{
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  .doc-tag{
+    position: absolute;
+    right: 1rem;
+    top: 0.7rem;
+    text-decoration: none;
+    font-size: 0.75rem;
+    color: #26bc6a;
+    
+  }
+  p{
+    font-size:0.75rem;
+  }
+  .hilight{
+    text-decoration: none;
+    font-size: 0.75rem;
+    color: #26bc6a;
+  }
+  button{
+    border: 0px;
+    border-radius: 5px;
+    padding:10px;
+    background: #26bc6a;
+    color: white;
+    
+  }
+</style>
+		
+<body>
+  <div class="Heading">Custom Control</div>
+  <a class="doc-tag" href="https://docs.dronahq.com/reference/controls/custom-control/" target="_blank">Read Docs</a>
+  <p>Here is the <span class="bindedData hilight"></span> that you binded to the control you can access it in the <a href="https://docs.dronahq.com/reference/controls/custom-control/#pass-data-to-your-custom-control" class="hilight">setValue</a> callback type </p>
+  <p><b>Counter: <span class="counter">0<span></b></p>
+  <ul>
+    <li><p>Clicking on Trigger Change, you will see counter value passed to control referring custom control</p></li>
+    <li><p>Configure event named demo, that will get trigger on the click of Trigger Event</p></li>
+  </ul>
+  <button class="change">Trigger Change</button> <button class="event">Trigger Demo Event </button> <button class="showerror">Show Error</button> <button class="clearerror">Clear Error</button>
+</body>
+<script>
+  let counter = 0;
+  const callback = function (payload) {
+    if (payload.type == "initComponent") {
+    }
+    if (payload.type == "setValue") {
+      let data;
+      try{
+        data = JSON.parse(payload.value);
+      }catch(err){
+        data["text"] = "";
+      }
+      document.querySelector(".bindedData").innerText = data.text;
+    }
+    if (payload.type == "getValue") {
+      let val = counter;
+      CI.returnValue(val);
+    }
+    if (payload.type == "runValidation") {
+      CI.returnValidationResult(true);
+    }
+  }
+  CI.init(callback);
+  document.addEventListener("DOMContentLoaded", (event) => {
+    document.querySelector(".change").addEventListener("click",function(e){
+       counter = counter + 1;
+       document.querySelector(".counter").innerText = counter;
+       CI.triggerChange();
+       document.querySelector(".counter").innerText = counter;
+    });
+    document.querySelector(".event").addEventListener("click",function(e){
+       CI.triggerAction("demo");
+    });
+    document.querySelector(".showerror").addEventListener("click",function(e){
+       CI.showError(["custom error message"]);
+    });
+    document.querySelector(".clearerror").addEventListener("click",function(e){
+       CI.clearError()
+    });
+  });
+</script>
+</html>
+```
 
 ### Trigger Custom Event
 
 For triggering any custom event of your control, you should call `CI.triggerAction("event_name");` , where `event_name` should be the friendly name you provided when adding the event. For example, you can have custom event named - `on_change` to call whenever user is inputting data to any Input control in your Custom Control using `CI.triggerAction("on_change");` method call.
 
+```html
+<html>
+  <script>
+      // TODO: You can add Custom Event named - on_change
+      CI.triggerAction("on_change");
+  </script>
+</html>
+```
 
-<figure>
-  <Thumbnail src="/img/reference/controls/custom-control/custom-events-added.png" alt="Custom Events Added" />
-  <figcaption align="center"><i>Custom Events Added</i></figcaption>
-</figure>
+
+<div style={{ position: 'relative', paddingBottom: 'calc(46.33333333333333% + 41px)', height: 0 }}> 
+    <iframe 
+        src="https://demo.arcade.software/TGzjsLuhyy59XmSt98Ek?embed"
+        title="Add and Trigger Custom Event" 
+        frameborder="0" 
+        loading="lazy" 
+        webkitallowfullscreen 
+        mozallowfullscreen 
+        allowfullscreen 
+        style= {{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', colorScheme: 'light' }} >
+    </iframe>
+</div>
+<figcaption align="center"><i>Adding and triggering custom event in custom control</i></figcaption>
+
 
 ## Limitations
 

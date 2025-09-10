@@ -1,5 +1,28 @@
 [
     {
+    "timestamp": 1756879178000,
+    "tags": ["Self-Hosted", "3.8.10-stable"],
+    "heading": "Version 3.8.10-stable",
+    "cards" : [
+    
+      {
+        "title": "Added",
+        "type": "added",
+        "points": [
+          "Added search and pagination options in DronaHQ file storage."
+        ]
+      },
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+    "Fixed an issue where the default loader briefly appeared before the custom theme loader.",
+"Fixed an issue where local JS Objects were not re-attached after a page refresh."
+        ]
+      }
+    ]
+  },
+    {
     "timestamp": 1756548257000,
     "tags": ["Self-Hosted", "3.8.9-stable"],
     "heading": "Version 3.8.9-stable",
