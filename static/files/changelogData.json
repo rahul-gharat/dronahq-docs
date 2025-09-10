@@ -53,7 +53,9 @@
           "Fixed an issue where chart redraw functionality prevented popup screens from opening in the live app",
       "Fixed an issue where tasks executed multiple times when the 'If' branch in Automation was left empty.",
 "Fixed an issue where automation tasks could not fetch array values using square bracket notation across tasks.",
-"Fixed an issue where DQ Automation was not rendering, causing the UI to disappear"
+"Fixed an issue where DQ Automation was not rendering, causing the UI to disappear",
+"Fixed an issue where the Connector Library would not open for REST API connectors containing only raw variables.",
+"Fixed an issue where cross-channel connector data appeared in the connector dropdown of the Add MCP sidebar."
         ]
       }
     ]

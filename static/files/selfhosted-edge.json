@@ -1,4 +1,26 @@
 [ 
+ {
+     "timestamp": 1757397578000,
+  "tags": ["Self-Hosted", "3.9.2-edge"],
+  "heading": "Version 3.9.2-edge",
+  "cards": [
+  
+    {
+      "title": "Enhancements",
+      "type": "improved",
+      "points": [
+        "Enhanced Elasticsearch and gRPC implementations for improved performance and maintainability."
+      ]
+    },
+    {
+      "title": "Fixed",
+      "type": "fixed",
+      "points": [
+        "Fixed an issue where Automation failed to open in version 3.9.0-edge."
+      ]
+    }
+  ]
+},
   {
      "timestamp": 1756116257000,
   "tags": ["Self-Hosted", "3.9.1-edge"],
