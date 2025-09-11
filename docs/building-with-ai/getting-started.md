@@ -98,6 +98,8 @@ Below are the number of credits used when conversing with Veda Ai chatbot using 
 | Generate UI from NLP | 9 | 3 |
 | Add Validations to Control | 18 | 6 |
 | Add New Language JSON | 30 | 10 |
+| DronaHQ Docs search | 15 | 5 |
+| Add Rules to Control | 18 | 6 |
 
 
 ### AI Assist Credit Usage
