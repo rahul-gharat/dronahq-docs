@@ -195,9 +195,65 @@ These can be used when additional React-based rendering is needed within JSON Sc
 | Clear After Submission   | Resets the form fields after submission.                 |
 | Readonly Whole Form      | Makes the entire form non-editable.                      |
 | Events      | Supports `Submit` as the only event trigger.                                      |
+|Extra errors| Maps server-side validation errors to specific form fields, enabling consistent error display within the JSON Form Builder.|
 
+### Extra errors
 
+The Extra errors property allows external validation errors- when is submitted and a backend API returns validation errors, these can be passed to the form via the extra errors property. Each key in the extra errors object should correspond to a field path in the form schema. The associated value is an array of error messages to be displayed for that field. The dropdown evaluates the most recently executed data query, which is also necessary for your validation logic.
 
+<figure>
+  <Thumbnail src="/img/reference/controls/json-schema-form-control/extra-errors.png" alt="Extra error validation dropdown" />  <figcaption align="center">Extra error validation dropdown in protperties section
+  </figcaption>
+</figure>
+
+#### Setting `isValid` key for error validation
+
+```js
+{ "isVaild": false,"validationObj": {}}
+//The isValid key is mandatory and must be set to either true or false based on the presence of errors in the ValidationObj.
+//The ValidationObj should include all field-specific errors in the following format:{"key1": ["Error message 1"]}
+```
+
+Sample code format for error validation:
+```js
+function getData() {
+  return new Promise((resolve, reject) => {
+    try {
+      setTimeout(() => {
+      //Error validation
+        let errors = {
+          "isVaild": false,"validationObj": {}}; 
+        if (formData.email !== "admin@example.com) {
+          errors.validationObj.email = ["This email does not exist"];
+        }
+        if (formData.age >=31) {
+          errors.validationObj.age = ["Incorrect age"];
+        }
+
+        if (Object.keys(errors.validationObj).length > 0) {
+          reject(errors);
+        } else {
+          errors.isValid = true;
+          resolve(errors);
+        }
+      }, 500);
+    } catch (err) {
+      reject(err.message);
+    }
+  });
+}
+
+try {
+  output = await getData();
+} catch (err) {
+  output = err;
+}
+```
+
+<figure>
+  <Thumbnail src="/img/reference/controls/json-schema-form-control/extra-error-js.png" alt="Error validation JS " />
+  <figcaption align="center">Dataquery for error validation</figcaption>
+</figure>
 
 ### Advanced Options
 
