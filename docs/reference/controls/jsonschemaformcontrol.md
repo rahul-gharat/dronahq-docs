@@ -199,7 +199,7 @@ These can be used when additional React-based rendering is needed within JSON Sc
 
 ### Extra errors
 
-The extraErrors property allows external validation errors- when is submitted and a backend API returns validation errors, these can be passed to the form via the extraErrors property. Each key in the extraErrors object should correspond to a field path in the form schema. The associated value is an array of error messages to be displayed for that field. The dropdown evaluates the most recently executed data query, which is also necessary for your validation logic.
+The Extra errors property allows external validation errors- when is submitted and a backend API returns validation errors, these can be passed to the form via the extra errors property. Each key in the extra errors object should correspond to a field path in the form schema. The associated value is an array of error messages to be displayed for that field. The dropdown evaluates the most recently executed data query, which is also necessary for your validation logic.
 
 <figure>
   <Thumbnail src="/img/reference/controls/json-schema-form-control/extra-errors.png" alt="Extra error validation dropdown" />  <figcaption align="center">Extra error validation dropdown in protperties section
