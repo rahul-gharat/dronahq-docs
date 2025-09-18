@@ -1067,7 +1067,7 @@ $fromMillis($val:number, $picture?: string) => string
 ```
 ##### Result
 ```bash
-$fromMillis(1521801216617, "dd/M/yyyy") -> "23/3/2018"
+$fromMillis(1757317127799,'[D01]/[M]/[Y0001]') -> "23/3/2018"
 $fromMillis(1522616700000, "E EEEE") -> "7 Sunday"
 ```
 

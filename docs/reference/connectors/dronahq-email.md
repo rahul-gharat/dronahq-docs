@@ -14,7 +14,7 @@ import TabItem from '@theme/TabItem';
 
 DronaHQ provides a powerful and easy-to-use email feature that allows you to send emails without the need to configure any external SMTP resources. This simplifies the setup process and enables quick communication through automated workflows or user-triggered actions.
 
----
+
 
 ### Key Features
 
@@ -27,20 +27,23 @@ You can send emails instantly without setting up or managing SMTP credentials. D
 #### Attachment Support for Paid Users:
  Paid users can include attachments in their emails, enabling richer communication such as sending reports, documents, or media files directly from your app.
 
----
 
 ## Prerequisites
 
 - DronaHQ Email add-on should be activated on your account  
 - This is available on Cloud platform only.
 
----
+
 
 ## Send email via Data Queries
 
 You can configure trigger email functionality using send email action of DronaHQ Email in data queries. You can bind input values using control values, variables, or results from previous queries.
 
----
+<figure>
+  <Thumbnail src="/img/reference/connectors/dronahq-email/dronahq-email.png" alt="DronaHQ email in Data Queries" />
+  <figcaption align="center"><i>DronaHQ email in Data Queries</i></figcaption>
+</figure>
+
 
 ## Variables
 
@@ -54,10 +57,15 @@ Below is a reference table for configuring the send email action. Provide corres
 |Cc|{{cc@example.com}}| Optional. Email addresses to be CC'd. Supports single or multiple addresses.|
 |Bcc| {{bcc@emaple.com}}|Optional. Email addresses to be BCC'd. Supports single or multiple addresses|
 |Subject|Welcome Email| Optional. Subject line to email.|
-|Format(required)|{{format}}|Specifies the format of the email body. Optionas:HTML, "Plain text", or "Markdown". The content of the email message. Format must align with the selected *Format* field.|
-Attachment|{{attachement}}|Optional. Provide a direct URL to the file or bind a file upload control. Attachements are only supported for **paid users**|
+|Format(required)|{{format}}|Specifies the format of the email body. Options: HTML, "Plain text", or "Markdown". The content of the email message. Format must align with the selected *Format* field.|
+Attachment|{{attachement}}|Optional. Provide a direct URL to the file or bind a file upload control. Attachments are only supported for **paid users**|
 
----
+:::note
+If a **Reply-To** address is provided, the email is sent from
+ mail-dhqemail-<your_name>@ses.dronahq.ai
+ If **no Reply-To** address is specified, the email is sent from
+ noreply-dhqemail-<your_name>@ses.dronahq.ai
+:::
 
 ## Email body formats
 
@@ -92,7 +100,7 @@ _Happy Building!_
 
 ## Usage Limit
 
-|Account|Monthly Email Credits|Attachements Support|Notes|
+|Account|Monthly Email Credits|Attachments Support|Notes|
 |------|----------------------|-------------------|-------|
 |Free Trial| 500|no|Email credits reset every month|
 |Paid(Any Tier)|Based on Plan|yes|Attachments can be added via file input|
