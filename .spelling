@@ -1925,8 +1925,8 @@ RazorPay
 vsix
 UploadFilev2
 PlainText 
-CC'd
-BCC'd
+CC
+Bcc
 mail-dhqemail
 ses.dronahq.ai 
 your_name
