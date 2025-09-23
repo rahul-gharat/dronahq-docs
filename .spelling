@@ -1924,6 +1924,14 @@ baseURL
 RazorPay
 vsix
 UploadFilev2
+PlainText 
+CC
+Bcc
+mail-dhqemail
+ses.dronahq.ai 
+your_name
+Bcc
+From-Name
 DownloadFileFromURL
 application_directory
 document_directory
@@ -1949,3 +1957,4 @@ kbps
 UpdateRowV2
 9qCX9VSu
 VoIP
+
