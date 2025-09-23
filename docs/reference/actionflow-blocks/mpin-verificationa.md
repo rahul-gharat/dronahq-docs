@@ -8,7 +8,7 @@ import Thumbnail from '@site/src/components/Thumbnail';
 
 # MPIN Verification
 
-The `MPIN Verification` action is a native action that enables users to verify an MPIN (Mobile Personal Identification Number) or even by Biometric to epen an app. It is designed to run on mobile apps only.
+The `MPIN Verification` action is a native action that enables users to verify an MPIN (Mobile Personal Identification Number) or even by Biometric to open an app. It is designed to run on mobile apps only.
 
 <figure>
 <Thumbnail src="/img/reference/actionflow-blocks/mpin-verification/mpin-verification.png" alt="MPIN Verification Action" />
@@ -22,7 +22,7 @@ The `MPIN Verification` action is a native action that enables users to verify a
 3. Save your configuration.
 
 
-Once saved and applied to a screen, the respective app will ask for MPIN verifcation to  access the app further.
+Once saved and applied to a screen, the respective app will ask for MPIN verification to  access the app further.
 
 <figure>
 <Thumbnail src="/img/reference/actionflow-blocks/mpin-verification/mpin-lock.png" alt="MPIN Verification Action" style={{ width: '300px' }}  />

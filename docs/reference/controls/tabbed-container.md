@@ -39,11 +39,30 @@ The Tabbed Container’s configuration is comprehensive, offering various ways t
 Expected value:
 ```json
 [
-  {"label":"Home","value":"home","icon":"icon-home","active":true,"image":""},
-  {"label":"Features","value":"features","icon":"icon-organization","active":false,"image":""},
-  {"label":"Product","value":"product","icon":"icon-handbag","active":false,"image":""},
-  {"label":"Admin","value":"admin","icon":"icon-user-follow","active":false,"image":""},
-  {"label":"string","value":"string","icon":"","active":false,"image":""}
+  {
+    "value": "home",
+    "label": "Home",
+    "icon": "icon-home",
+    "image": ""
+  },
+  {
+    "value": "features",
+    "label": "Features",
+    "icon": "icon-organization",
+    "image": ""
+  },
+  {
+    "value": "product",
+    "label": "Product",
+    "icon": "icon-handbag",
+    "image": ""
+  },
+  {
+    "value": "admin",
+    "label": "Admin",
+    "icon": "icon-user-follow",
+    "image": ""
+  }
 ]
 ```
 
@@ -56,7 +75,7 @@ Expected value:
 ### Add-ons
 - Tooltip: Add tooltips to provide contextual information about each tab.
 - Description: Include detailed descriptions for better user understanding.
-- Label: Customize the labels for each tab such as its size, heinght, color and allignment.
+- Label: Customize the labels for each tab such as its size, height, color and alignment.
 
 
 :::info
@@ -97,7 +116,7 @@ Interaction settings provide flexibility in handling user actions and input vali
 | Box Shadow          | Adds a shadow effect to enhance the container’s depth and visual appeal. |  
 | Tab Customization   | Customizes tab appearance such as Size, Weight, Color, Background Color and more. |  
 | Active Tab Customization | Modifies the active tab's appearance:such as Size, Weight, Color, Background Color and more. Differentiates the active tab with a unique background. |  
-| Background         | Controls the container’s backgroundsuch as Size, Weight, Color, Background Color, Opacity, and more. |  
+| Background         | Controls the container’s background such as Size, Weight, Color, Background Color, Opacity, and more. |  
 | Border             | Defines the container’s border styling: Border such as Sets border visibility, Width, Style of the  border as solid, dashed, or dotted styles, Color, Radius, and  more. |  
 
 

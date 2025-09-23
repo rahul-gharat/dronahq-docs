@@ -24,10 +24,42 @@ Here's how you can use schema binding:
 Use JSON notation to define the structure of your data. Include key-value pairs to represent each field along with its data type. For example:
 ```json
 {
-  "ProductName": "string",
-  "ProductID": "string",
-  "Price": "number",
-  "Quantity": "number"
+[ 
+  { 
+    "label": "Status", 
+    "value": "status", 
+    "enum": [ 
+      { 
+        "label":"Approved", 
+        "value":"approved" 
+      },
+      {
+        "label":"Rejected", 
+        "value":"rejected" 
+      }, 
+      {
+        "label":"Pending", 
+        "value":"pending" 
+      } 
+    ] 
+  }, 
+  { 
+    "label": "User Name", 
+    "value": "username", 
+    "type": "text" 
+  }, 
+  { 
+    "label": "Email", 
+    "value": "email", 
+    "type": "text" 
+  }, 
+  {
+    "label":"Age", 
+    "value":"age", 
+    "type":"number" 
+  } 
+  
+]
 }
 ```
 
@@ -184,7 +216,7 @@ Schema Explanation
     - Ensures the value for the field is selected from a predefined list.
     - Useful for any scenario where the input must be restricted to a specific set of choices.
   
-  - **Note** : label and value are required keys, as they define the display name and unique identifier for the field.Whereas type and enum are optional keys
+  - **Note** : label and value are required keys, as they define the display name and unique identifier for the field. Whereas type and enum are optional keys
 
   - **Date Types**
 

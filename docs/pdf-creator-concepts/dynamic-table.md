@@ -37,14 +37,7 @@ Upon `button_click` event of the `Generate Books Report`, add a `Generate PDF` a
   <figcaption align='center'><i>Generate PDF Action Configuration</i></figcaption>
 </figure>
 
-Continue and add a variable which will hold the generated pdf's link
-
-<figure>
-  <Thumbnail src="/img/pdf-creator-concepts/dynamic-table/generate-pdf-link-variable.png" alt="Generate PDF Action Configuration" />
-  <figcaption align='center'><i>Generate PDF Action Configuration</i></figcaption>
-</figure>
-
-Now add `Open URL` action on to the success branch of `Generate PDF` action, and in the URL field give reference to the link variable we created inside the `Generate PDF` action.
+Now add `Open URL` action on to the success branch of `Generate PDF` action, and in the URL field give reference to the `Generate PDF` action block output `pdfFile` as shown below.
 
 <figure>
   <Thumbnail src="/img/pdf-creator-concepts/dynamic-table/open-url-action-configuration.png" alt="Open PDF Link using Open URL action" />

@@ -3,39 +3,47 @@ sidebar_position: 2
 title: Data Request Policy
 ---
 
-
-DronaHQ, like other technology providers, occasionally receives requests from individuals and governmental authorities to disclose or delete data outside the standard operation and provision of its Services. This Data Request Policy outlines how DronaHQ addresses such requests and establishes the procedures we follow when handling requests for Customer Data. Capitalized terms in this Data Request Policy that are undefined will have the meanings assigned to them in the DronaHQ Customer Terms of Service. If there is any conflict between this Policy and the Customer Terms of Service, the Customer Terms of Service will prevail.  
-
----
-
-## Requests for Customer Data by Individuals  
-Individuals seeking access to or requesting the deletion of Customer Data should contact the respective Customer. The Customer retains ownership of their Customer Data and determines how it is handled within DronaHQ services. While DronaHQ primarily defers to the Customer regarding decisions about Customer Data, DronaHQ reserves the right to remove Customer Data that violates its policies or applicable law.  
-
-For example, DronaHQ may take action to remove content involving child sexual exploitation and report such material to the relevant legal or regulatory authorities, such as the National Center for Missing and Exploited Children.  
+When necessary to operate and maintain our Services, DronaHQ processes Customer Data. Occasionally, third parties—including end users and government authorities—seek additional access to or removal of that data. This Policy sets out how DronaHQ handles such requests. Capitalized terms not defined here have the meanings set forth in the [Customer Terms of Service](/legal/customer-terms). If there is any conflict between this Policy and those Terms, the Terms will control.
 
 ---
 
-## Requests for Customer Data by Legal Authorities  
-Courts, government entities, or litigants requesting Customer Data must send their requests to legal@dronahq.com and include:  
-1. The requesting entity's identity.  
-2. Details about the legal, criminal, or civil matter.  
-3. A specific description of the Customer Data being requested, including the relevant Customer’s name and the associated User (if applicable).  
+## 1. Individual Requests for Customer Data
 
-Requests must comply with applicable laws and should focus narrowly on the specific data required. Broad or overly generalized requests will not be entertained and will be construed narrowly.  
+**1.1 Directed to Customer.**
 
-DronaHQ will not disclose Customer Data unless:  
-- Required by law.  
-- Compelled by a valid court order or governmental directive.  
-- Necessary to address emergencies to prevent death or physical harm.  
+Individuals must submit requests for access to or deletion of their information directly to the Customer that owns the data.
 
-Before disclosing any Customer Data, DronaHQ will notify the Customer (if legally permissible) to allow them an opportunity to seek protective measures against the disclosure. Exceptions apply when DronaHQ is prohibited by law from notifying the Customer or when there is evidence of illegal conduct or imminent harm linked to the Customer Data.  
+**1.2 DronaHQ’s Role.**
 
-If legal action or protective measures incur costs, the Customer will bear responsibility for covering such expenses.  
+While we generally follow Customer instructions regarding retention or removal of Customer Data, we reserve the right to delete any content that violates our policies or applicable law. For example, we will remove—and report—any materials depicting the sexual exploitation of minors to the National Center for Missing and Exploited Children.
 
 ---
 
-## Legal Process and Jurisdiction  
-Legal requests must be properly served and domesticated within a jurisdiction where DronaHQ operates or has a registered agent. DronaHQ does not accept legal processes directly from law enforcement agencies outside of the jurisdictions in which it operates.  
+## 2. Legal or Governmental Requests
 
-For international law enforcement agencies, requests must be processed through appropriate diplomatic or legal channels, such as a Mutual Legal Assistance Treaty (MLAT), to obtain a valid court order within DronaHQ's jurisdiction.  
+**2.1 Submission Requirements.**
+
+All legal process (e.g., subpoenas, warrants, court orders) demanding Customer Data must be served on DronaHQ at [**legal@dronahq.com**](mailto:legal@dronahq.com) and include:
+
+- **Requesting Authority:** Name and jurisdiction of the issuing body.
+- **Case Reference:** Criminal or civil matter identifiers.
+- **Data Description:** Precise Customer Data sought, including the Customer’s name and, if applicable, the individual User’s identifier.
+
+**2.2 Narrow Scope.**
+
+Requests must comply with applicable law and be narrowly tailored to the specific data. DronaHQ will interpret all process strictly and decline to comply with overbroad demands.
+
+**2.3 Compelled Disclosure.**
+
+Except for emergencies to prevent death or serious harm, we will not disclose Customer Data unless compelled by a valid, binding legal order. Where permissible, we will notify the affected Customer before disclosure so it may seek protective relief—unless prohibited by law or we believe the request concerns illegal activity or poses imminent risk.
+
+**2.4 Cost Recovery.**
+
+Customer is responsible for any reasonable costs DronaHQ incurs in responding to legal requests for Customer Data.
+
+---
+
+## 3. Service of Process
+
+DronaHQ must be served in a jurisdiction where we are subject to suit, or via our registered agent. We do not accept direct service from foreign law enforcement; such agencies must proceed through Mutual Legal Assistance Treaties or equivalent diplomatic channels.
 

@@ -1,4 +1,379 @@
-[
+[ 
+  {
+  "timestamp": 1756375457000,
+  "tags": ["Control", "Action"],
+  "heading": "",
+  "cards": [
+    {
+      "title": "Added",
+      "type": "added",
+      "points": [
+       "Added new File Storage addon integration in the File Upload control.",
+       "Added support for SMS Retriever as a new action."
+      ]
+    },
+    {
+      "title": "Enhancements",
+      "type": "improved",
+      "points": [
+"Enhanced logic for offline file submission to improve reliability.",
+"Enhanced controls by reducing minimum height to 2 grid units for better layout flexibility."
+      ]
+    },
+    {
+      "title": "Fixed",
+      "type": "fixed",
+      "points": [
+        "Fixed a minor UI issue in the interface.",
+"Fixed an issue where dropdown search was not functioning as expected.",
+"Fixed minor UI and console errors during file upload.",
+"Fixed an issue in the tabbed container where tab labels were not properly localized."
+  ]
+ }
+  ]
+},
+  {
+  "timestamp": 1754461050000,
+  "tags": ["Control", "Action"],
+  "heading": "",
+  "cards": [
+    {
+      "title": "Added",
+      "type": "added",
+      "points": [
+       "Added support for writing PDF and PNG files using Base64-encoded content."
+      ]
+    },
+    {
+      "title": "Enhancements",
+      "type": "improved",
+      "points": [
+        "Enhanced tag-based filters in table grid by adding support for 'Is' and 'Not Is' operators.",
+"Enhanced table grid with a separate column for 'Group By' and enabled aggregate figures for all columns per group."
+      ]
+    },
+    {
+      "title": "Fixed",
+      "type": "fixed",
+      "points": [
+        "Fixed an issue where the formula in the time picker did not behave correctly across different time zones.",
+"Fixed an issue where the selected theme was not applied to charts after a theme change.",
+"Fixed an issue where column widths in the table grid reset after adding a row post-resize.",
+"Fixed minor UI issue in text controls.",
+"Fixed minor UI issue in container controls.",
+"Fixed an issue where alignment options in the properties section did not display correctly.",
+"Fixed line height value to improve text UI rendering.",
+"Fixed minor UI issues in the icon component."
+  ]
+}
+  ]
+},
+  {
+    "timestamp": 1753786337000,
+    "tags": ["Control", "Action"],
+    "heading": "",
+    "cards": [
+     
+      {
+        "title": "Enhancements",
+        "type": "improved",
+        "points": [
+          "Enhanced image component with support for alt text property.",
+"Enhanced time picker with prefix/suffix and min/max time configurations.",
+"Enhanced header generation in Data Builder to include all available keys."
+        ]
+      },
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+"Fixed a minor UI issue in the Container component.",
+
+"Fixed an issue in Table Grid where 'Add Rows' undo persisted in NEWROWS and white space appeared on scroll for x-small rows.",
+"Fixed an issue in Table Grid where cursor-based pagination was not functioning as expected.",
+"Fixed an issue in Alert control where markdown was not visible when using the description property."
+
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1751871789000,
+    "tags": ["Control", "Action"],      
+    "heading": "",
+    "cards": [
+
+      {
+        "title": "Enhancements",
+        "type": "improved",
+        "points": [
+         "Enhanced property UI layout for ProGlove.",
+"Made minor code improvements to file and verification functions (Download File from URL, Read File, Write File, Open File, MPIN Verification)."
+          
+        ]
+      },
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+        "Fixed a minor UI issue in Text Input control.",
+"Fixed an issue in Detail Select and File Upload where read-only fields remained editable when tab-index was set.",
+"Fixed an issue in Date Range Picker where min/max date with time was not working as expected.",
+"Fixed an issue where Detail View Single Tag was displayed twice.",
+"Fixed an issue in Date Range Picker where data was not resetting when value was cleared."
+        ]
+      }
+    ]
+  },  
+{
+    "timestamp": 1751094189000,
+    "tags": ["Control", "Action"],
+    "heading": "",
+    "cards": [
+      {
+        "title": "Added",
+        "type": "added",
+        "points": [
+          "Added new control: ProGlove Barcode Scanner for dedicated pro glove devices.",
+          "Added new action for Mpin verification."
+        ]
+      },
+      {
+        "title": "Enhancements",
+        "type": "improved",
+        "points": [
+          "Enhanced Alert control by adding markdown support for description and icon picker property."
+        ]
+      },
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed various UI issues in Container.",
+          "Fixed an issue in Detail View control where conditional formatting was not working as expected.",
+          "Fixed an issue in Date control where an error message was incorrectly logged when the data set was empty."
+        ]
+      }
+    ]
+  },
+  {
+  "timestamp": 1750143789000,
+  "tags": ["Control", "Action"],
+  "heading": "",
+  "cards": [
+    {
+      "title": "Added",
+      "type": "added",
+      "points": [
+        
+        "Added functionality to select enabled LLM provider’s model from dropdown in DronaHQ AI"
+      ]
+    },
+    {
+      "title": "Enhancements",
+      "type": "improved",
+      "points": [
+        "Enhanced Detail View by adding group options property and fixes of date/datetime in column."
+      ]
+    },
+    {
+      "title": "Fixed",
+      "type": "fixed",
+      "points": [
+        "Fixed an issue in Gallery Card Control by correcting quick filter functionality.",
+        "Fixed an issue in the Prefix-Suffix control where it remained visible in preview mode even after being turned off.",
+        "Fixed a minor UI issue in Data range Picker, Dropdown, Text Area, and Detail View controls.",
+        "Fixed an issue in Dropdown Control where custom dropdown entries appeared blank unless a default option was selected before or after input.",
+        "Fixed an issue in Table Grid which had UI glitch in the tray screen where the custom width setting for action columns did not apply correctly.",
+        "Fixed an issue in Metric Control where the data binding for values not working properly.",
+        "Fixed an issue in Color Picker control where its UI was not displaying correctly in the dark mode."
+      ]
+    }
+  ]
+},
+{
+  "timestamp": 1749494212000,
+  "tags": ["Control", "Action"],
+  "heading": "",
+  "cards": [
+    {
+      "title": "Added",
+      "type": "added",
+      "points": [
+        "Added Start GPS location tracking action.",
+        "Added Stop GPS location tracking action."
+      ]
+    },
+    {
+      "title": "Enhancements",
+      "type": "improved",
+      "points": [
+        "Enhanced Date Range Picker control with prefix, suffix and close icon property.",
+        "Enhanced page height calculation for Hide control and Show control actions."
+      ]
+    }
+  ]
+}, 
+{
+  "timestamp": 1748371012000,
+  "tags": ["Control", "Action"],
+  "heading": "",
+  "cards": [
+    {
+      "title": "Enhancements",
+      "type": "improved",
+      "points": [
+        "Enhanced Text Area control with spell check, autofill, auto grow height configurations.",
+        "Enhanced File Parser by adding key to hide the headers in the data bind section.",
+        "Enhanced Chat Control with auto grow when new content is introduced.",
+        "Enhanced Numeric control by adding prefix, suffix text and icon, show clear option support.",
+        "Enhanced Charts control by adding key for managing git data types."
+      ]
+    },
+    {
+      "title": "Fixed",
+      "type": "fixed",
+      "points": [
+        "Fixed an issue where renaming data query did not update the data bind section in the control.",
+        "Fixed an issue in Select Bar where number as a value was not working as expected.",
+        "Fixed minor UI issues in Keyword Box control.",
+        "Fixed minor UI issues in Date Range Picker control when it is inside a container."
+      ]
+    }
+  ]
+},
+{
+  "timestamp": 1747679812000,
+  "tags": ["Control", "Action"],
+  "heading": "",
+  "cards": [
+    {
+      "title": "Enhancements",
+      "type": "improved",
+      "points": [
+        "Enhanced Charts control by adding minimum and maximum value properties.",
+        "Enhanced Radio control and Checkbox control by adding group layout property.",
+        "Enhanced JSON Viewer control by adding a recursive expand property and hide root node property.",
+        "Enhanced Split button by adding maximum and minimum list height properties.",
+        "Enhanced Tabbed Container control by introducing multiple view container support.",
+        "Improved Text control by adding markdown text support.",
+        "Enhanced Alert control by moving alert type to the top of the content section",
+        "Improved Switch Group, Detail Select, Checkbox, Radio, Select Bar controls as it now accepts array strings as data and label key is now optional.",
+        "Enhanced JSON Schema Form control by adding auto-generate schema property.",
+        "Enhanced Tags by adding data attributes for better external css support.",
+        "Enhanced Spacer by updating minimum size to one."
+      ]
+    },
+    {
+      "title": "Fixed",
+      "type": "fixed",
+      "points": [
+        "Fixed minor issues in Dropdown control to adjust the label when present, otherwise fallback to showing the value.",
+        "Fixed issues in Query Builder where identical rules appeared in both the main group and the subgroups.",
+        "Fixed an issue in Textarea control where on pasting data in control was not working as expected in mac.",
+        "Fixed an issue where type conversion was required due to a string being compared with a number.",
+        "Fixed a minor CSS issue in Numeric, Phone and Text Input controls for barcode support.",
+        "Fixed a minor issue where tabs were not being truncated correctly in the builder.",
+        "Fixed an issue in Tabbed Container which now accepts and displays data when provided, even in string format in default view.",
+        "Fixed an issue in Compact card, Calendar, Detail View, Sortable and Kanban controls where renaming data query did not update the data bind section in the control.",
+        "Fixed an issue in Select and Dropdown control where resetting the control was not working as expected.",
+        "Fixed a minor UI issue in Color Picker control.",
+        "Fixed a minor UI issue in Phone control."
+
+      ]
+    }
+  ]
+},
+{
+  "timestamp": 1746729412000,
+  "tags": ["Control", "Action"],
+  "heading": "",
+  "cards": [
+    {
+      "title": "Added", 
+      "type": "added",
+      "points": [
+        "Added new Scanner control for scanning barcodes in web and preview",
+        "Added new Video Record control for recording videos."
+      ]
+    },
+    {
+      "title": "Enhancements",
+      "type": "improved",
+      "points": [
+        "Improved File Parser control by introducing maximum file size property.",
+        "Enhanced Text Input, Barcode, Phone and Currency control by adding barcode scan option in web and preview",
+        "Enhanced Numeric control by adding barcode scan option, empty value dropdown , pad decimal property and non value in thousand separator.",
+        "Enhanced Audio Record and Speech Recognition controls by removing data part from the controls.",
+        "Enhanced Playsound control by adding a new property to play sound in mobile devices.",
+        "Enhanced JSON Schema Form control by introducing auto generate schema from json."
+      ]
+    }
+  ]
+}
+,{
+  "timestamp": 1746506350000,
+  "tags": ["Control", "Action"],
+  "heading": "",
+  "cards": [
+    {
+      "title": "Enhancements",
+      "type": "improved",
+      "points": [
+        "Enhanced Color Picker control with prefix, suffix text and icon, show clear option, and color format support.",
+        "Enhanced JSON Schema From by adding support for signature in the control."
+      ]
+    },
+    {
+      "title": "Fixed",
+      "type": "fixed",
+      "points": ["Fixed an issue in Text Input control where error was not getting cleared on data change."]
+    },
+    {
+      "title": "Removed",
+      "type": "removed",
+      "points": ["Removed Button 3 control."]
+    }
+  ]
+}
+,{
+    "timestamp": 1745816666000,
+    "tags": ["Control", "Action"],
+    "heading": "",
+    "cards": [
+      {
+        "title": "Added",
+        "type": "added",
+        "points": [
+          "Added extra new properties for advanced editor in LIST REPEAT."
+        ]
+      },
+      {
+        "title": "Enhancements",
+        "type": "improved",
+        "points": [
+          "Added indeterminate and hide value label properties in PROGRESS BAR.",
+          "Added indeterminate and hide value label properties in CIRCULAR PROGRESS BAR.",
+          "Enhanced LINK with prefix/suffix icons, allow wrapping, underline type, and underline style properties.",
+          "Enhanced RANGE PICKER with show end value and display value properties.",
+          "Added default formula binding section and new default formula in CHECKBOX TREE.",
+          "Reduced default width of control in CONTAINER.",
+          "Added a progress bar in TIMELINE to indicate timeline status.",
+          "Enhanced PHONE with prefix/suffix text and icon, show clear, and lock selected country properties.",
+          "Added function in BINDAPI to compare on-prem version for better control on execution.",
+          "Enhanced TABLE GRID with configurable custom actions column, configurable search bar minimum width, turn off row selections option, and configurable header visibility.",
+          "Added info for sample file in FILE UPLOAD."
+        ]
+      },
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed issue in FILE UPLOAD where resetting control for only one allowed file still showed a limit exceeded error for the new file."
+        ]
+      }
+    ]
+  },
   {
     "timestamp": 1745213952000,
     "tags": ["Control", "Action"],
@@ -26,7 +401,7 @@
         "title": "Fixed",
         "type": "fixed",
         "points": [
-          "Fixed ActionFlow filter object action in FILTER OBJECTS.",
+          "Fixed ActionFlow filter object action in FILTER OBJECTS, NAME, PHONE AND ADDRESS.",
           "Added proper function reference in SETVARIABLE for select data query dropdown.",
           "Minor UI fix in CUSTOM CONTROL.",
           "Minor UI fixes in PREFIX SUFFIX and MAP.",

@@ -41,7 +41,7 @@ You can bind query string value to the control, by clicking on the `Control -> C
 
 ### Using Actionflow
 
-You can pass on the query parastring in the action flow for various purposes according to need. Since, we have a variable for the query string parameter, we can simply use the variable name as keyword to pass into various action blocks.
+You can pass on the query string in the action flow for various purposes according to need. Since, we have a variable for the query string parameter, we can simply use the variable name as keyword to pass into various action blocks.
 
 
 - **Bind Variable to Control** - Within the `Set Control Value` block, select the control you want to bind data with, and set the control value as the variable created.

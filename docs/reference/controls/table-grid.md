@@ -223,6 +223,18 @@ The user wants to sort data by `status` in ascending order and by `age` in desce
 Pagination helps manage large data sets by splitting them into smaller, more manageable pages. This ensures optimal performance and easier navigation for users.
 
 
+<figure>
+  <Thumbnail src="/img/reference/controls/table-grid/pagination.png" alt="table Grid" />
+</figure>
+
+| Property            | Description                                          |
+|---------------------|------------------------------------------------------|
+| Pagination Side     | Determines whether pagination is handled on the server or client side. |
+| Pagination Type     | Method used for pagination: either Cursor-based or Limit/Offset-based. |
+| Default Offset      | Starting point for pagination, usually set to 0.     |
+| Rows Per Page       | Default number of rows displayed per page, typically 100. |
+| Location            | Position of pagination controls (Top, or  Bottom). |
+| Dropdown Visibility | Controls visibility of the rows-per-page selection dropdown. |
 
 #### Server-Side Pagination
 
@@ -284,6 +296,8 @@ For a comprehensive guide, you can read the
 | Hide Text          | Hides the action text while keeping the icon visible. Useful for creating a cleaner look.                                                                                                                                                                                                                   |
 | Condition to Hide  | Allows you to define conditions under which the action or icon should be hidden.                                                                                                                                                                                                                            |
 | Condition to Disable | Lets you define conditions to disable the action or icon, preventing it from being triggered under specific scenarios.                                                                                                                                                                                      |
+| Add Custom Column Width | Check mark this ON, after opting for "Add as column", to add custom width to the column containing the action.|
+| Custom Column Width (in px) |  Once you opt for "Add Custom Column Width", you can decide on the required width off the column by providing the exact value.|
 
 
 
@@ -300,8 +314,9 @@ For a comprehensive guide, you can read the
 |----------------------------|---------------------------------------------------------------------------------|
 | Selection              | Configures how rows can be selected in the grid. Options are:                   |
 |                            | - None: No selection allowed.                                              |
-|                            | - Single: Allows selecting a single row at a time.                         |
-|                            | - Multiple: Allows selecting multiple rows at a time.                      |
+|                            | - Single with checkbox: Allows selecting a single row at a time with visual checkbox.                         |
+|                            | - Single without checkbox: Allows selecting a single row at a time without visual checkbox.                         |
+|                            | - Multiple with checkbox: Allows selecting multiple rows at a time.                      |
 | Default Index          | Specifies the index of the row that should be selected by default (e.g., `0`). |
 | On Row Click           | Defines the action to be performed on clicking a row:                          |
 |                            | - Select Row: Selects the row when clicked.                                |

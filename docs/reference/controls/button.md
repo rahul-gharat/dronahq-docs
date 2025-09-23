@@ -18,34 +18,62 @@ The Button Control is an interactive element designed for users to initiate spec
 
 The Button Control is a user-interactive element primarily utilized to trigger specific actions upon user interaction. 
 
-## Properties
+## Content
 
-|   Property       |   Description                                       |
-|------------------|-----------------------------------------------------|
-| Control ID       | It displays the identifier of the control           |
-| Text             | It helps to display text on the button control      |
-| Show Icon        | Option to display an icon on the Button.            |
-| Icon Position    | Specifies the placement of the displayed icon.      |
-| Select Icon      | Choose icon from list of available option.          |
+<figure>
+  <Thumbnail src="/img/reference/controls/button/content.png" alt="Button control" />
+</figure>
 
-### Style
+- Text : This is where you can provide the text value for the Button control.
+- Accessible Name: An accessible description of the button for screen readers.
 
-| Property         | Description                                                                                                     |
-|------------------|-----------------------------------------------------------------------------------------------------------------|
-| Text             | Text configuration for the control.                                                                             |
-| Size             | Font size of the text in pixels.                                                                                |
-| Weight           | The weight or thickness of the text (e.g., Light, Normal, Bold).                                                 |
-| Color            | Text color code, typically defined in hex format (e.g., #ffffff for white).                                     |
-| Alignment        | Specifies how the text is aligned within the control.                                                            |
-| Background Color | The color code of the control's background, generally provided in hexadecimal (e.g., #28bc6a for a specific shade).|
-| Radius           | The curvature or roundedness of the control's corners, given in pixels.                                          |
-| Theme            | Predefined or custom themes for the control's appearance.                                                        |
+### Add-ons  
+
+| Add-on      | Description                                                                               |
+| ----------- | ----------------------------------------------------------------------------------------- |
+| Tooltip     | Provides helpful hints or extra information on hover.                                     |
+| Description | Adds descriptive text beneath options or sections.                                        |
+| Label       | Displays labels for specific options or sections.   Configurable with size, weight, and color. |
+| Prefix      | Adds an icon or text before the field content. Configurable with size, weight, and color. |
+| Suffix      | Adds an icon or text after the field content. Configurable with size, weight, and color.  |
+
+## Interaction  
+<figure>
+  <Thumbnail src="/img/reference/controls/button/inter.png" alt="Button control" />
+</figure>
+
+| Property       | Description                                                                                                                                          |
+| -------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Button State   | Defines the interactivity of the button. Options include `Enabled` (clickable and active) and `Disabled` (visibly inactive and non-interactive). |
+| Show Icon      | Makes you decide on its position and icon-text values.                                         |
+| Events         | Allows configuration of actions (like workflows or bindings) to trigger based on user interaction, such as button click.              |
+
+
 
 ## Events
 
 | Trigger        | Description                                                                             |
 |----------------|-----------------------------------------------------------------------------------------|
 | button_click   | Occurs upon clicking the button, triggering a specific action.                           |
+
+---
+
+<figure>
+  <Thumbnail src="/img/reference/controls/button/adv.png" alt="Button control" />
+</figure>
+
+## Appearance
+
+* Visibility: Toggle the visibility of the control at runtime.
+* Wrap Text: Enables or disables text wrapping within the control, allowing multi-line display when content overflows.
+* Button Properties: Customize the button’s appearance including color, corner radius, and theme to match your design style.
+* Text Properties: Configure the text with options for size, weight, color, and alignment for better readability and design consistency.
+
+## Advanced Settings
+
+- External CSS: Add custom styles to the Button control.
+- Trigger Dependents: Automatically invoke linked controls or workflows.
+- Caching: Enable caching to store frequently used inputs.
 
 ## Using Button Control with DronaHQ
 

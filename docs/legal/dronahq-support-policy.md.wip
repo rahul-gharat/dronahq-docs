@@ -4,90 +4,80 @@ title: DronaHQ Support Policy
 ---
 
 
+This DronaHQ Support Policy ("**Policy**") is subject to the terms and conditions between DronaHQ and Customer, as referenced in the applicable Order Form (the "**Agreement**"). Capitalized terms used but not otherwise defined in this Policy will have the definitions given to them in the Agreement.
 
-This DronaHQ Support Policy ("Policy") is subject to the terms and conditions between DronaHQ and Customer, as referenced in the applicable Order Form (the "Agreement"). Capitalized terms used but not otherwise defined in this Policy will have the definitions given to them in the Agreement.
+## Applicability
 
+This Policy describes DronaHQ's support services under the following Support Plans:
 
-### Applicability
-This Policy outlines DronaHQ's support services under the following Support Plans:
+- Enterprise Support (applicable if Customer has purchased an "Enterprise" level Services subscription under the current Order Form)
+- Premium Support (applicable if Customer has purchased the "Premium Support" subscription under the current Order Form)
 
-1. Enterprise Support (applicable if the Customer has purchased an "Enterprise" level Services subscription under the current Order Form).
-2. Premium Support (applicable if the Customer has purchased the "Premium Support" subscription under the current Order Form).
+## DronaHQ Support
 
+At all times during the subscription term of the Order Form, DronaHQ will maintain a sufficient number of personnel who are experienced, knowledgeable, and qualified in the use and support of the Services. DronaHQ will respond to Customer's support tickets related to the Services, which must be submitted by Customer to a DronaHQ Support Channel ("**Support Tickets**"), in accordance with this Policy. All support by DronaHQ will be performed remotely and in the English language.
 
-### DronaHQ Support
-Throughout the subscription term specified in the Order Form, DronaHQ will maintain sufficient personnel who are knowledgeable and qualified to provide effective support for the Services. DronaHQ will respond to Customer's support tickets submitted via DronaHQ’s Support Channels ("Support Tickets") in accordance with this Policy. All support will be conducted remotely and in English.
+The DronaHQ Support Channels available to Customer will depend on Customer's current Support Plan:
 
-The available DronaHQ Support Channels depend on the Customer's current Support Plan:
+| DronaHQ Support Channel | Enterprise Support | Premium Support |
+| --- | --- | --- |
+| **DronaHQ Help Portal (located at** [docs.dronahq.com](http://docs.dronahq.com) **or such other successor URL)** | √ | √ |
+| **Slack Support Channel** | Not available | √ |
 
-| DronaHQ Support Channel       | Enterprise Support | Premium Support |
-|-----------------------------------|-------------------------|---------------------|
-| DronaHQ Help Portal (help.dronahq.com) | ✓                     | ✓                |
-| Slack Support Channel             | Not available          | ✓                |
+### Slack Support Channel
 
-#### Slack Support Channel
-Customers with the Premium Support Plan can create Support Tickets through a shared Slack Connect channel integrated with DronaHQ’s Slack Organization. All Support Tickets submitted via Slack will be categorized as P3 issues by default. For higher priority issues, Customers must use the DronaHQ Help Portal.
+Customers with the Premium Support Plan have the option to get connected with DronaHQ tech experts via a shared channel connected to DronaHQ's Slack Organization. If DronaHQ receives a Support Ticket for the same issue in both the Help Portal and the Slack Support Channel, DronaHQ will be permitted to close one of the tickets provided that assistance resumes in the other channel. To ensure streamlined communication and efficient responses, DronaHQ recommends using one channel when submitting Support Tickets for each issue.
 
+## Support Hours and Regions
 
-### Support Hours and Regions
-DronaHQ’s support hours depend on the Customer’s current Support Plan and the priority level of the request:
+DronaHQ's support hours are based on Customer's current Support Plan and the priority level of Customer's request.
 
-| Priority Level | Enterprise Support                             | Premium Support                       |
-|--------------------|----------------------------------------------------|------------------------------------------|
-| P0 Issues      | From 5 PM on Sundays to 5 PM on Fridays (PT)       | 24x7x365, including local office holidays |
-| P1 - P3 Issues | Business hours* of Customer’s preferred region     | Business hours* of all support regions    |
+|  | Enterprise Support | Premium Support |
+| --- | --- | --- |
+| For P0 issues | From 5 pm on Sundays to 5 pm on Fridays, Pacific Time | 24 x 7 x 365, including local office holidays |
+| For P1 - P3 issues | Business hours excluding local holidays of Customer's preferred Support Region, as set forth in the Order Form. | Business hours excluding local holidays of all Support Regions |
 
-*Excludes local office holidays.
+### Support Regions
 
-#### Support Regions
-- US West: 9 AM - 5 PM PT, Mondays through Fridays.
-- US East: 9 AM - 5 PM ET, Mondays through Fridays.
-- EMEA: 9 AM - 5 PM GMT/BST, Mondays through Fridays.
-- US Late (APAC): 5 PM - 1 AM PT, Sundays through Fridays.
+- US West: 9 am - 5 pm US Pacific Time; Mondays through Fridays
+- US East: 9 am - 5 pm US Eastern Time; Mondays through Fridays
+- EMEA: 9 am - 5 pm GMT/BST; Mondays through Fridays
+- US Late (APAC): 5 pm - 1 am US Pacific Time; Sundays through Fridays
+- India: 9 am - 5 pm IST; Mondays through Fridays
 
-*Hours of coverage adjust based on locale-specific daylight-saving time changes.*
+Hours of coverage will be adjusted in accordance with locale-specific daylight-saving changes.
 
-For Enterprise Support customers, the preferred Support Region may be changed once during the current Order Form term by submitting a P3 Support Ticket through the DronaHQ Help Portal.
+If Customer is under the Enterprise Support Plan, Customer may change its preferred Support Region no more than once during the term of the current Order Form. To request a change in Customer's preferred Support Region, Customer must submit a P3 Support Ticket to the DronaHQ Help Portal.
 
+## Priority Level Descriptions; Target Response Times
 
-### Priority Level Descriptions and Target Response Times
-The table below outlines priority level descriptions and corresponding target response times for each Support Plan. Resolution times depend on issue complexity and may require Customer collaboration for timely resolution.
+Priority level descriptions, along with target response times corresponding to Customer's current Support Plan, are set forth in the table below.
 
-| Priority Level | Description                                                                                                                                          | Enterprise Support | Premium Support |
-|---------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------|---------------------|
-| P0             | Emergency conditions severely impacting production use cases. Example: All Authorized Users are locked out.                                               | 2 global business hours | 1 hour              |
-| P1             | Critical conditions impacting configuration or essential functionality, with no reasonable workaround. Example: Resource credentials are unusable.         | 1 business day          | 4 global business hours |
-| P2             | Limited issues with available workarounds. Example: Odd drag-and-drop behavior in the editor under certain conditions.                                    | 2 business days         | 1 business day      |
-| P3             | Minor issues or feature suggestions. Example: Requests for configuration documentation or examples.                                                      | 4 business days         | 2 business days     |
+Resolution times are dependent on the nature and complexity of the issue raised by Customer. Customer's active engagement and assistance may be required to support resolution in a timely manner.
 
-Target Response Time refers to the time between DronaHQ’s receipt of a Support Ticket and its next response by a support agent.
+| Priority Level** and Description | Target Response Times* for Enterprise Support | Target Response Times* for Premium Support |
+| --- | --- | --- |
+| **P0 - An emergency condition which makes the continued use of any production use cases depending on the Services impossible or significantly impaired. The condition requires an immediate solution that is not already available to Customer.**<br/><br/>**Example Issues:** <br/>• All Authorized Users are locked out of the primary workspace of DronaHQ<br/>• An important production Workflow is suddenly malfunctioning** | 2 global business hours | 1 hour |
+| **P1 - Any condition which makes configuration of any one or more functions of the Services impossible and which Customer cannot reasonably circumvent or avoid on a temporary basis without the expenditure of significant time or effort.**<br/><br/>**Example Issues:**<br/>• Resource credentials on development instances of DronaHQ are suddenly unusable<br/>• Part of the DronaHQ editor UI is crashing | 1 business day | 4 global business hours |
+| **P2 - Limited problem conditions which can be reasonably circumvented on a temporary basis without significant expenditure of time or effort, or unclear configuration blockers needing troubleshooting to identify potential product fault.**<br/><br/>**Example Issues:**<br/>• A bug report of odd drag & drop behavior inside of the editor in inconsistent scenarios<br/>• A newly configured query behaves differently when run from DronaHQ than directly against the database | 2 business days | 1 business day |
+| **P3 - A minor problem condition or Documentation error which Customer can easily circumvent or avoid. Suggestions for new Service features or enhancements are also classified as Priority Level 3.**<br/><br/>**Example Issues:**<br/>• Requests for documentation or examples of how to configure a DronaHQ feature<br/>• All other non-product inquiries | 4 business days | 2 business days | 
 
+- *"Target Response Time" means the time between DronaHQ's receipt of any Customer message within a Support Ticket, including the initial submission, and DronaHQ's next response.
 
-### Customer Responsibilities
-To facilitate efficient issue resolution, Customers must:
-- Remain accessible to engage with DronaHQ support personnel.
-- Possess a basic understanding of the Services.
-- Provide all necessary information for effective troubleshooting.
+- ** Customer will have the ability to designate the priority level of its Support Tickets if submitted via the DronaHQ Help Portal. DronaHQ may reassign the priority level, provided that such reassignment follows criteria set forth in the table above. 
 
-Support provision is contingent on the Customer’s compliance with payment obligations under the Agreement.
+## Customer Responsibilities
 
+To assist DronaHQ in addressing and troubleshooting requests, Customer must remain accessible to engage with DronaHQ, have a base knowledge and familiarity with the Services, and provide DronaHQ with all information reasonably necessary to assist Customer in addressing Customer's request. DronaHQ's provision of any support in accordance with this Policy is subject to Customer's compliance with its payment obligations under the Agreement.
 
+## Exclusions
 
-### Exclusions
-DronaHQ’s support services are limited to issues within the base functionality of the Services as described in the applicable Documentation. Excluded scenarios include:
-- Administration of Authorized User access.
-- Use of custom applications.
-- Deprecated versions no longer supported by DronaHQ.
-- Trial products or issues caused by the Customer’s infrastructure.
-- Misuse of the Services in breach of the Agreement or Documentation.
+DronaHQ's support offering is limited to issues in the base delivered functionality of the Services, as described in the applicable Documentation and will not include administering Authorized User access to the Services or use of Custom Apps. DronaHQ's support offering does not apply to (i) deprecated versions of the Services that are no longer supported by DronaHQ (as specified in the applicable Documentation), (ii) Trial Products; (iii) Customer's infrastructure or other failures related to Customer's deployment; or (iv) issues caused by Customer's use of the Services in breach of the Agreement or the applicable Documentation.
 
+## Disclaimers
 
+In response to support requests raised by Customer in accordance with this Policy, DronaHQ may offer temporary workarounds, patches, bypass procedures, or other solutions to mitigate the effects of the issue. DronaHQ does not guarantee that it will be able to resolve all issues raised by Customer under this Policy.
 
-### Disclaimers
-DronaHQ may provide temporary workarounds, patches, or solutions to mitigate issues. However, DronaHQ does not guarantee resolution of all issues raised under this Policy.
+## Operational Changes
 
-
-
-### Operational Changes
-DronaHQ reserves the right to modify this Policy periodically to reflect new features or changes in operational practices. Modifications will not retroactively reduce DronaHQ’s obligations during the current Order Form term.
-
+DronaHQ may modify this Support Policy from time to time to reflect new features or changing operational practices, but the modifications may not be retroactive or materially decrease DronaHQ's overall obligations during the applicable Order Form term.

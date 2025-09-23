@@ -100,9 +100,9 @@ Choose the appropriate `Submit format` in the `Input Properties` of the control:
 
 | Add-on                         | Description                                                                                                                                                                   |
 |--------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Tooltip                    | Allows you to display additional information or helpful hintsfor the control                                            |
+| Tooltip                    | Allows you to display additional information or helpful hints for the control                                            |
 | Description                | Adds descriptive text beneath to provide better context for users.                                                                                      |
-| Label                      | Enables the addition of labels for specificdetails, making the data easier to interpret.                                                                             |
+| Label                      | Enables the addition of labels for specific details, making the data easier to interpret.                                                                             |
 
 
 ## Interaction

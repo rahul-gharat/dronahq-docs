@@ -90,7 +90,7 @@ To begin the process, you must first whitelist DronaHQ. Follow these steps metic
 
 | Field           | Description                                                             |
 | --------------- | ----------------------------------------------------------------------- |
-|Account Indentifier| Provide teh account identifier which uniquely identifies a Snowflake account within your organization, as well as throughout the global network |
+|Account Identifier| Provide the account identifier which uniquely identifies a Snowflake account within your organization, as well as throughout the global network |
 | Account Name    | Enter the Snowflake Account name                                        |
 | Database Name   | Enter the Database name                                                 |
 | Database Schema | Enter the Schema name                                                   |

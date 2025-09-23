@@ -16,7 +16,7 @@ Protected Apps feature is available on self-hosted and not available on the clou
 
 In DronaHQ, to protect your app, go to the App in the App listing Page that is already added into Git and select `... -> Protect App`.
 
-This option will be visible only to the App owner and Account owner.
+This option will be visible to all admins, as they have access to all applications.
 
 ### Git Workflow
 

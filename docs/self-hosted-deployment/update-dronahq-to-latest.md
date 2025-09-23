@@ -4,6 +4,10 @@ sidebar_position: 96
 
 # Updating DronaHQ Version
 
+:::important
+It is strongly recommended to have separate **development** and **production** servers set up from the beginning. Always upgrade your **development instance first**, perform all necessary validations and checks, and ensure everything works as expected. Once verified, follow the same steps to safely upgrade your **production instance**.
+:::
+
 Keeping your **DronaHQ Self-Hosted** instance up-to-date ensures you have the latest features, performance improvements, and security patches. This guide outlines the steps to safely update your installation with minimal downtime.
 
 :::caution

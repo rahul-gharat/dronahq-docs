@@ -1,4 +1,483 @@
-[
+[ 
+ {
+     "timestamp": 1757397578000,
+  "tags": ["Self-Hosted", "3.9.2-edge"],
+  "heading": "Version 3.9.2-edge",
+  "cards": [
+  
+    {
+      "title": "Enhancements",
+      "type": "improved",
+      "points": [
+        "Enhanced Elasticsearch and gRPC implementations for improved performance and maintainability."
+      ]
+    },
+    {
+      "title": "Fixed",
+      "type": "fixed",
+      "points": [
+        "Fixed an issue where Automation failed to open in version 3.9.0-edge."
+      ]
+    }
+  ]
+},
+  {
+     "timestamp": 1756116257000,
+  "tags": ["Self-Hosted", "3.9.1-edge"],
+  "heading": "Version 3.9.1-edge",
+  "cards": [
+    {
+      "title": "Added",
+      "type": "added",
+      "points": [
+        "Added support for dynamic values in the limit and offset fields of the Data Query SQL UI editor.",
+        "Added File Upload Control v2 with integration to DronaHQ File Storage.",
+        "Added hover support to view credit info and renewal dates in the UI.",
+        "Added info texts to Time control properties.",
+        "Added support for base URL with path in Manage Environment and Data Query.",
+        "Added Automation descriptions and filtered Automation objects before saving.",
+        "Added support for base URL with path in REST API connectors for flexible endpoint configuration.",
+        "Added a time picker to the Automation log filter for precise filtering."
+      ]
+    },
+    {
+      "title": "Enhancements",
+      "type": "improved",
+      "points": [
+        "Enhanced logic to restrict multiple SSO configurations to enterprise clients only.",
+        "Enhanced UI by integrating icons and improving the Action Task popup in Automation.",
+        "Enhanced Connector Query REST API to dynamically update the base URL based on the selected environment.",
+        "Enhanced manage environment parameter handling in studioConsole.js.",
+        "Updated moment.js library to include multi-language support."
+      ]
+    },
+    {
+      "title": "Fixed",
+      "type": "fixed",
+      "points": [
+        "Fixed an issue where the test value field in the DQ SQL UI was unexpectedly cleared.",
+        "Fixed an issue in the SQL UI editor by adding horizontal scrolling for improved usability.",
+        "Fixed an issue where an invalid URL caused an infinite loading state when saving an API.",
+        "Fixed an issue where Code Mirror output was not displaying in Actionflow's 'When to Execute' condition.",
+        "Fixed an issue where registered API list was missing in the builder during Actionflow preview.",
+        "Fixed a broken cross icon in the 'Format Data' section.",
+        "Fixed parameterized SQL query issues in the DQ UI editor.",
+        "Fixed backward compatibility issues in the DQ SQL UI editor.",
+        "Fixed incorrect metadata updates in DQ caused by overwriting with output section metadata.",
+        "Fixed an issue with dynamic binding not functioning in the Data Query SQL UI editor.",
+        "Fixed an issue where Connector Query was not editable in SQL UI.",
+        "Fixed an issue where empty-screen Action Flows were not handled properly.",
+        "Fixed undo-redo functionality issues in recurring actions/events.",
+        "Fixed an issue where the Chart control UI did not reflect theme changes.",
+        "Fixed an issue where the tutorial app failed to function as expected.",
+        "Fixed an issue where toggle clicks failed to trigger the prefix icon in the Date Range Picker.",
+        "Fixed an issue causing delayed response on first button click due to initialization lag.",
+        "Fixed a rollback issue caused by double-stringified rules data.",
+        "Fixed a Git auto-sync issue by setting default values when keys were missing.",
+        "Fixed an issue where secured routing URLs did not redirect users to the login screen.",
+        "Fixed an issue with manual hard reset on branches not restoring the correct state.",
+        "Fixed timeout value application in BigQuery connector connection options.",
+        "Fixed OpenAI assistant backend failure by preventing multiple responses.",
+        "Fixed an issue in the datetime picker where clicking 'Today' did not update the date field.",
+        "Fixed a preview issue where a popup screen was incorrectly set as the homepage.",
+        "Fixed an issue where setGlobalVariable was undefined in the builder.",
+        "Fixed an issue where DataQuery import/export did not work correctly.",
+        "Fixed duplicate control operations in the Builder.",
+        "Fixed an issue where Automation queries executed multiple times due to empty 'If' branches.",
+        "Fixed connector usage permissions in the Automation builder.",
+        "Fixed schema generation issues in the GraphQL connector for better compatibility.",
+        "Fixed a MongoDB size limit issue during Automation export by fetching category and subcategory data separately.",
+        "Fixed an issue where Automation tasks could not fetch array values using bracket notation."
+      ]
+    }
+  ]
+},
+  {
+  "timestamp": 1751626337000,
+  "tags": ["Self-Hosted", "3.9.0-edge"],
+  "heading": "Version 3.9.0-edge",
+  "cards": [
+    {
+      "title": "Added",
+      "type": "added",
+      "points": [
+       "Added support for the new AlloyDB connector.",
+"Added biometric MPIN authentication and ProGlove scanner module support in DronaHQ JS.",
+"Added an Automation User-Agent to the global config for consistent cross-service identification.",
+"Added current self-hosted version info to the package for easier reference.",
+"Added search functionality for 'Move' and 'Duplicate' tasks in Actionflow.",
+"Added support to auto-populate custom parameters in Trigger DataQuery actions.",
+"Added support for default-selected rows in TableGrid using primary key matching.",
+"Added radio options in the manual section of data binding.",
+"Added tabbed container  to prevent misaligned labels.",
+"Added a toggle in Text Control to switch between Plain Text and Markdown modes.",
+"Added PDF Creator support to the managed services list in Automation.",
+"Added DronaHQ Automation User-Agent to global configuration and headers.",
+"Veda AI added.",
+"Added icon support to revamp text input with nested popup handling.",
+"Added search and pagination options in DronaHQ file storage"
+
+      ]
+    },
+    {
+      "title": "Enhancements",
+      "type": "improved",
+      "points": [
+        "Enhanced user licensing logic to accurately compute unique users.",
+        "Enhanced the code editor by upgrading the Code Mirror library.",
+"Enhanced task metering logic to restrict logging to non-automation sources.",
+"Enhanced control formula binding to show type conversions where applicable.",
+"Enhanced Actionflow by moving the REST API block to the 'Connector' section.",
+"Enhanced support for data types in JS, Data, SQL, and DQL variables during save and live edit.",
+"Enhanced theme loader with a reset option to restore the default loader.",
+"Enhanced the Date Picker with Min/Max range, display format, manual input, and value format options.",
+"Enhanced error handling with standardized status codes and cleaner conditionals.",
+"Enhanced tag label input by improving placeholder behavior and initialization.",
+"Enhanced control behavior to auto-scroll and focus when dropped on canvas.",
+"Enhanced action menu search to include DHQ Services, Move, Duplicate, and Import actions.",
+"Enhanced page templates to open automatically during screen/app creation.",
+"Enhanced the Date-Time control with clearer info texts for better user guidance.",
+"Enhanced header extraction logic to support all unique headers in JSON arrays.",
+"Enhanced default formula handling to cover additional data type cases.",
+"Enhanced the Time Picker with support for minimum and maximum time ranges.",
+"Enhanced the system by adding the info section template for improved display."
+      ]
+    },
+    {
+      "title": "Fixed",
+      "type": "fixed",
+      "points": [
+        "Fixed an issue where UI validation errors were incorrectly triggered when closing the JS Editor modal.",
+"Fixed an issue where local JS Objects were not reattached after a page refresh.",
+"Fixed an issue where the publish button was not visible for existing apps after a page reload.",
+"Fixed an issue that prevented Public URL and Embed Apps from rendering correctly in the Share App section.",
+"Fixed an issue where deleted connectors were not removed from the connector library list.",
+"Fixed an issue where the Themes Slideshow appeared upon app open even when disabled.",
+"Fixed an issue where searching within folders and favorites showed 'No apps found' incorrectly.",
+"Fixed an issue where the app summary failed to open due to a function name change.",
+"Fixed an issue where Action Flow crashed and logic was lost when branches were moved.",
+"Fixed an issue where control selection was lost when dragging outside the drop area in the builder canvas.",
+"Fixed an issue where Data Query with manual pagination was not working as expected.",
+"Fixed an issue where the default loader appeared briefly before the theme-defined loader.",
+"Fixed an issue where preview-only users were able to edit app details.",
+"Fixed an issue where nested JSON fields in TableGrid appeared as undefined.",
+"Fixed an issue where navigation behaved incorrectly when options were clicked rapidly.",
+"Fixed an issue where page template controls had duplicate CID and unique names.",
+"Fixed an issue where imported apps in the same channel showed both 'override' and 'new' tags for connectors.",
+"Fixed an issue where apps exported from on-prem were not imported properly to cloud.",
+"Fixed an issue where popup screens created in Advanced Editor rendered too small.",
+"Fixed an issue where the App Open event did not support undo/redo in the builder.",
+"Fixed an issue where TableGrid lost column settings after data changes.",
+"Fixed an issue in the tabbed container where edit item labels were incorrectly capitalized.",
+"Fixed an issue where the custom delete function removed the last item instead of the selected one.",
+"Fixed an issue where preview froze during open and close transitions.",
+"Fixed an issue where data binding failed for copied on-screen elements.",
+"Fixed an issue where the Home Screen was reassigned incorrectly when deleting a screen of type 'Screen'.",
+"Fixed an issue where the JSON UI in list-type controls re-rendered unnecessarily.",
+"Fixed an issue where placeholder and dropdown UI were inconsistent in Form Setup.",
+"Fixed a bug where the property popup remained open after the sidebar was closed.",
+"Fixed an issue where Table Grids in tabbed containers did not resize properly when using templates.",
+"Fixed an issue where dropdowns in TableGrid did not close correctly when the sidebar was closed.",
+"Fixed a bug where header columns and toggle buttons were hidden after data was cleared.",
+"Fixed connector schema caching and added refresh and search support for all DB connectors.",
+"Fixed an issue where read only mode still allowed keyboard edits.",
+"Fixed an issue where DataQuery opened via shortcut was incorrectly reflected in Actionflow.",
+"Fixed an issue where imported Actionflows displayed outdated control names.",
+"Fixed spacing issues when label and description were enabled together.",
+"Fixed an issue where static test keys with numbers were not accepted in REST APIs.",
+"Fixed an issue where new user groups were not immediately reflected in the group list.",
+"Fixed an issue where Actionflow preview failed to highlight keywords properly in string builders.",
+"Fixed a UI bug with long labels not displaying correctly in Actionflow toggles.",
+"Fixed an issue where apps opened in a new tab failed to load from the console.",
+"Fixed an issue where the Import Actionflow button failed to trigger the import.",
+"Fixed an issue where renamed controls were not updated in Actionflow keyword search.",
+"Fixed a UI issue with editable dropdowns in empty Table Grids.",
+"Fixed an issue where the 'Sheet' option was not styled correctly in quick select.",
+"Fixed an issue where the 'Use Keywords' dropdown failed in Actionflow when queries/libraries were present.",
+"Fixed an issue where Builder URL was not applied correctly in database and file storage config.",
+"Fixed an issue where invalid Form JSON caused errors during fillable PDF generation.",
+"Fixed a syntax issue in Actionflow query execution logic.",
+"Fixed an issue where the edit environment sidebar had incorrect height rendering.",
+"Fixed an issue where the cursor disappeared in CRUD dropdowns after making a selection.",
+"Fixed an issue where the green dot 'edited' state was not shown when toggling 'Run on app open'.",
+"Fixed an issue where the automation scheduler triggered multiple times due to concurrent instances.",
+"Fixed an issue where task outputs were not populated correctly during edit.",
+"Fixed Code Mirror scroll issue and improper special character handling in Automation conditions."
+      ]
+    },
+    {
+      "title": "Removed",
+      "type": "removed",
+      "points": [
+        "Removed beta tags from Database, File Storage, and PDF features in Automation."
+      ]
+    }
+  ]
+}
+,
+ {
+  "timestamp":  1749148612000,
+  "tags": ["Self-Hosted", "3.8.4-edge"],
+  "heading": "Version 3.8.4-edge",
+  "cards": [
+    {
+      "title": "Added",
+      "type": "added",
+      "points": [
+        "Added PDF import and export feature.",
+        "Added Fillable PDF ISON input option in automation.",
+        "Added support for link in Azure storage and Google Cloud Storage file upload connector.",
+        "Added 'x-dronahq-request-id' header in REST connector request to improved traceability",
+        "Added filename display and corrected tab visibility in the Secret Manager Connector modal.",
+        "Added support for Markdown formatting and file object attachments in the SMTP connector.",
+        "Added Git Sync support for PDF templates.",
+        "Added images for new actions.",
+        "Added fallback images in update section sidebar for connectors with failed image loads.",
+        "Added new screen templates.",
+        "Added environment field to logger data in external logger.",
+        "Added fallback images for controls in listings, layouts, and panels to improve visual consistency."
+
+      ]
+    },
+    {
+      "title": "Enhancements",
+      "type": "improved",
+      "points": [
+        "Enhanced API details handling in commit message generation.",
+        "Enhanced whenToExecute in Actionflow to stop execution on false conditions without triggering the error block.",
+        "Enhanced MongoDB and MySQL queries to support the use of locally stored connector query schemas during automation export and import processes.",
+        "Enhanced UI with balanced dropdown padding, consistent toggle borders, matched formula box border radius, and enabled overflow handling for single and multiple dropdowns in the advanced section.",
+        "Enhanced Media query for improved Automation list UI on larger screens.",
+        "Enhanced automation to automatically resolve `runAPI` and `workflow` URLs from the browser using the host URL.",
+        "Enhanced system to automatically adapt to the domain and run webPackage API successfully.", 
+        "Enhanced fallback images logic in Studio to use CSS instead of JS for handling failed and broken images.",
+        "Enhanced API and DB connector modules for more efficient operation handling in logger.",
+        "Enhanced Error handling in external logging functions.",
+        "Enhanced `executequery` endpoint and local storage of connector queries in Automation.",
+        "Enhanced Automation listing layout and added iFrame support in styling.",
+        "Enhanced Data Query by excluding `account_id` key from the payload of non-global connectors.",
+        "Enhanced JSON Schema and UI Schema via connectors, DronaHQ DB, PDF, and controls."
+      ]
+    },
+    {
+      "title": "Fixed",
+      "type": "fixed",
+      "points": [
+        "Fixed an issue where refresh token header was not working for self-host for Outlook connector",
+        "Fixed an issue where type handling for control Meta was missing in the convertToJSON function",
+        "Fixed an issue where users were unable to filter from the service tag in Datadog logger",
+        "Fixed an issue where dynamic fields binding mapping created two functions; merged them into one optimized function",
+        "Fixed an issue where the fix controls section was not working correctly on clicking the 'i' icon and the control was getting dropped.",
+        "Fixed an issue in properties where the delete control icon tooltip was incorrect.",
+        "Fixed an issue where the keyboard shortcut (Ctrl+Del) was not working in the property section of the control",
+        "Fixed an issue where DQ gets stuck when a non-configured environment is selected and the save button is clicked.",
+        "Fixed an issue in RestAPI where using a static field like '{{test}}' in preview replaced the entire expression with null instead of replacing only the static field.",
+        "Fixed issue in Connector query in RestAPI saved with RAW configuration using dynamic field and on re-render DQ test values value not fill",
+        "Fixed an issue where key names were incorrectly fetched as value names when triggering the API using TriggerDataQuery or a JavaScript code.",
+        "Fixed an issue where the saved DHQ database transform config including DQL, filter object, and filter keys was not rendering.",
+        "Fixed an issue where PDF Creator and DHQ File Storage were being duplicated without configuration",
+        "Fixed an issue where renamed controls or DQs using 'Use Keyword' were not reflecting updated names on re-render",
+        "Fixed an issue with UI in the popup triggered by the three-dot menu in the Apps Connector Library listing.",
+        "Fixed an issue where imported Actionflow action references were not updating properly.",
+        "Fixed an issue where empty action flows were not handled when duplicating or copy-pasting controls",
+        "Fixed an issue where hover effects were missing on Manual Option Addon, Events, and Recursive Event Addon in Screen Properties",
+        "Fixed an issue where deletion of DQ bound via Action Flow was not handled when the control was deleted in DataQuery.",
+        "Fixed an issue with the View Audit Logs filter for certain events",
+        "Fixed an issue with the View Audit Logs search input UI.",
+        "Fixed an issue where Git pull failed when Data Query is present inside a folder.",
+        "Fixed an issue where Git Sync sidebar showed infinite loader when no PDFs were present on Git.",
+        "Fixed an issue where missing files in File-to-JSON conversion for Actions and Screens were handled gracefully.",
+        "Fixed an issue where Blank PDFs from Git were not being pulled and overwritten properly in Builder.",
+        "Fixed an issue with Automation export/import for Local connector queries.",
+        "Fixed an issue where connector images were visible during the loading state.",
+        "Fixed an issue where the accordion closed when clicking inside the content body which now only closes when the header is clicked.",
+        "Fixed an issue where checkboxes were not rendering in fillable PDFs after flattening, by enabling the read-only option.",
+        "Fixed an issue to ensure metadata and output are properly handled when the Data Query API fails.",
+        "Fixed an issue where checkboxes were not rendering in flattened fillable PDFs by enabling the read-only option.",
+        "Fixed an issue where alert tooltip images flickered on hover.",
+        "Fixed an issue where single-page templates were not getting fetched.",
+        "Fixed an issue where time was displayed in 24-hour format in the view audit logs list.",
+        "Fixed a rendering issue with duplicate Data Query (DQ) entries.",
+        "Fixed a UI issue in the property section for adding and deleting custom events in custom controls.",
+        "Fixed an issue where header columns were not being hidden in the property section for repeat controls.",
+        "Fixed an issue where trailing spaces were not removed from value and label fields in the 'Edit Items' section of the data.",
+        "Fixed UI/UX issues in the tabbed container and table grid components."
+      ]
+    }
+  ]
+},
+{
+  "timestamp": 1747334212000,
+  "tags": ["Self-Hosted", "3.8.3-edge"],
+  "heading": "Version 3.8.3-edge",
+  "cards": [
+    {
+      "title": "Added",
+      "type": "added",
+      "points": [
+        "Added external logger and Task metering to execute query endpoint."
+      ]
+    },
+    {
+      "title": "Fixed",
+      "type": "fixed",
+      "points": [
+        "Fixed issue causing the info popup to disappear when the cursor moved from the trigger element to the popup information box.",
+        "Fixed issue where renaming a data query did not update the new name in the data section of some controls which have multiple outputs."
+      ]
+    }
+  ]
+}
+,{
+  "timestamp": 1747247812000,
+  "tags": ["Self-Hosted", "3.8.2-edge"],
+  "heading": "Version 3.8.2-edge",
+  "cards": [
+    {
+      "title": "Added",
+      "type": "added",
+      "points": [
+        "Added Custom Logger for debugging and monitoring",
+        "Added file upload functionality with upload Single File and upload Multiple Files methods, offering improved responses and options to replace previously uploaded files, while providing upload path, file size, MIME type, and public accessibility status."
+      ]
+    },
+    {
+      "title": "Enhancements",
+      "type": "improved",
+      "points": [
+          "Enhanced the 'New PDF Template' button to open PDF creation options instead of the regular template creation sidebar."
+      ]
+    },
+    {
+      "title": "Fixed",
+      "type": "fixed",
+      "points": [
+        "Fixed an issue where connector does not throw correct exception when execute Query api fails for cases such as (404, bad gateway etc.)",
+        "Fixed Option button not visible on hover for connector library.",
+        "Fixed Syntax issue for race around condition in DataQuery",
+        "Fixed an issue where the Data Query PDF selection dropdown would close when attempting to search.",
+        "Fixed an issue where multiple API calls are triggered when the 'Edit' button is clicked repeatedly in the connector list"
+      ]
+    }
+  ]
+}
+,
+{
+  "timestamp": 1746506350000,
+  "tags": ["Self-Hosted", "3.8.1-edge"],
+  "heading": "Version 3.8.1-edge",
+  "cards": [
+    {
+      "title": "Added",
+      "type": "added",
+      "points": [
+        "Added new library of Barcode Detector for Barcode control."
+      ]
+    },
+    {
+      "title": "Enhancements",
+      "type": "improved",
+      "points": [
+        "Enhanced Bind Data section by renaming it to Default Values.",
+        "Enhanced default behavior in custom control to show maximized view of CodeMirror.",
+        "Enhanced page height calculation logic to add extra padding at the end of the page.",
+        "Enhanced addon, dropdown item, and action dropdown by adding hover property.",
+        "Enhanced Studio App Listing, Connectors, Catalogs, Manage User → User Details, and Builder-side connector library by adding fallback images for image failure.",
+        "Enhanced hover interaction to allow copying content and opening links when mouse is over.",
+        "Enhanced UX to open properties on unique name click and close it on second click.",
+        "Improved GlobalConfig variable handling for Automation rename.",
+        "Enhanced JSON Schema Form Control by adding JSON and UI schema support for JSON provided."
+      ]
+    },
+    {
+      "title": "Fixed",
+      "type": "fixed",
+      "points": [
+        "Fixed an issue in Fillable PDF functionality enhancing encryption support, Base64 detection, field type handling, and user interface clarity.",
+        "Fixed issue with control formulas in ready-to-use templates.",
+        "Fixed an issue where mapped options were not visible in manual options.",
+        "Fixed an issue where controlName was disappearing in WhenToExecute editor.",
+        "Fixed an issue where WhenToExecute condition was not working for Actionflow Data Queries.",
+        "Fixed an issue where Failure condition was not working properly.",
+        "Fixed an issue where the default formula remained visible in already dropped tabbed containers.",
+        "Fixed an issye where output rendering breaks when query is changed on runtime in SQL variable."
+      ]
+    }
+  ]
+}
+,{
+  "timestamp": 1746506350000,
+  "tags": ["Self-Hosted", "3.8.0-edge"],
+  "heading": "Version 3.8.0-edge",
+  "cards": [
+    {
+      "title": "Added",
+      "type": "added",
+      "points": [
+        "Added expire time field in Set action of Redis connector.",
+        "Added GCS Secret Manager.",
+        "Added feature \"Run on app open\" toggle in Data Query, which allows you to execute query at start of app.",
+        "Added option to rename Automation.",
+        "Added UploadFilev2 endpoint for Managed Storage Connector."
+      ]
+    },
+    {
+      "title": "Enhancements",
+      "type": "improved",
+      "points": [
+        "Enhanced Add Connector search bar and Connector listing search bar in Console.",
+        "Enhanced AWS Region field by changing it from input to dropdown.",
+        "Enhanced page load process by updating RunAPI and DHQ Submission base URL at runtime.",
+        "Enhanced security by implementing RBAC permission model.",
+        "Improved Control Editing UX on Builder.",
+        "Improved backward evaluation flow for Data Queries on refresh from table grid, refresh control, and Trigger Data Query.",
+        "Improved XML processing by upgrading fast-xml-parser version and updating its functions.",
+        "Improved dropdown behavior to show mapped options when value is an array of objects.",
+        "Enhanced support for interactive PDFs by enabling uploading, viewing, and filling AcroForm.",
+        "Enhanced logging by converting all console.log and console.error (console.* functions) to Logger."
+      ]
+    },
+    {
+      "title": "Fixed",
+      "type": "fixed",
+      "points": [
+        "Fixed an issue where Athena connector gives integer type data in string type.",
+        "Fixed an issue where controls used in Data Query, if deleted, caused errors to be logged in the console.",
+        "Fixed an issue in Summary control where Pages selection dropdown (multi-select) was not working properly.",
+        "Fixed an issue where the Users dropdown in Preview was not displaying the initial user list and not persisting the selected user after switching.",
+        "Fixed story alignment according to new UI of Properties and Action flow.",
+        "Fixed error indication by highlighting controls with configuration issues in Rules and Validation.",
+        "Fixed race condition on Data Query switch that caused an empty screen.",
+        "Fixed an issue where beta users were unable to navigate to the parent app properly.",
+        "Fixed dropdown configuration to allow empty name and display text as value instead of blank.",
+        "Fixed Data Bind section to reflect renamed Data Query in list and composite controls.",
+        "Fixed data model issue where removing event in new property stored incorrect Action flow key.",
+        "Fixed focus issue when clicking custom validation through property.",
+        "Fixed data type handling for default formula in control property binding.",
+        "Fixed issue where executeQuery's user and license validation URL was not resolving properly.",
+        "Fixed Advance Editor panel issue where the plus button did not open control listing in Builder view.",
+        "Fixed layout issue by increasing height of CodeMirror."
+      ]
+    }
+  ]
+},
+{
+    "timestamp": 1745816666000,
+    "tags": ["Self-Hosted", "3.7.0-edge"],
+    "heading": "Version 3.7.0-edge",
+     "cards": [
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed an issue where persistent was not working as expected.",
+          "Fixed connector logs issue by adding compareOnPremVersions function to it.",
+          "Fixed GetSSO token encryption issue.",
+          "Fixed an issue where Advanced Editor was not able to add columns in layout."
+        ]
+      }
+    ]
+  },
   {
     "timestamp": 1745213952000,
     "tags": ["Self-Hosted", "3.7.0-edge"],
@@ -9,7 +488,7 @@
         "type": "added",
         "points": [
           "Added moment-timezone library.",
-          "Added support for configurable deprecation messages in Actionflow blocks."
+          "Added support for configurable deprecation messages in Action flow blocks."
         ]
       },
       {
@@ -482,7 +961,7 @@
           "Fixed the issue preventing API calls related to the share sidebar from occurring.",
           "Fixed the issue causing the home screen of the app to appear during routing.",
           "Fixed the problem where the app did not function as expected after publishing.",
-          "Fixed the old server-side Actionflow connector sidebar rendering bug.",
+          "Fixed the old server-side Action flow connector sidebar rendering bug.",
           "Fixed the issue where dynamic credentials were not passing the values of controls or variables.",
           "Fixed the conflict where the delete control shortcut interfered with the normal Cmd+Del behavior."
         ]
@@ -629,7 +1108,7 @@
         "points": [
           "Fixed broken UI in Automation modal.",
           "Fixed issue with app import failing.",
-          "Fixed multistep authentication issue in Actionflow where connector returned error but ran success flow instead.",
+          "Fixed multistep authentication issue in Action flow where connector returned error but ran success flow instead.",
           "Fixed assumeRole flow in cases where no security tokens are provided.",
           "Fixed broken image problem in the create dropdown on the App Listing page.",
           "Fixes made for app export not opening in settings.",

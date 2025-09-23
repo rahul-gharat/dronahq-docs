@@ -1,4 +1,628 @@
 [
+    {
+   "timestamp": 1756375457000,
+    "tags": ["Cloud-Hosted"],
+    "heading": "",
+    "cards": [
+      {
+        "title": "Added",
+        "type": "added",
+        "points": [
+          "Added license activation UI for MCP Builder.",
+"Added variable descriptions and data types in preselect fields for the Connector Library.",
+"Added a new code editor extension.",
+"Added File Upload Control v2 with support for DronaHQ File Storage.",
+"Added support for the connector's request object in Data Query and Preview Connector Logs for better debugging."
+        ]
+      },
+      {
+        "title": "Enhancements",
+        "type": "improved",
+        "points": [
+          "Enhanced UI/UX in MCP Builder for a smoother user experience.",
+"Enhanced the UI in the Data Query popup and Action Flow menu by adding top and bottom spacing to separators for better visual clarity.",
+"Enhanced UI validations in the MCP Builder sidebar.",
+"Enhanced dependent field resolution logic in get dependent fields to trigger."
+        ]
+      },
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed an issue where Data Query in Automation caused infinite loading when selecting an Automation value.",
+"Fixed an issue where clicking 'Today' did not update the selected date and input field."
+        ]
+      }
+    ]
+  },  {
+   "timestamp": 1754547450000,
+    "tags": ["Cloud-Hosted"],
+    "heading": "",
+    "cards": [
+      {
+        "title": "Added",
+        "type": "added",
+        "points": [
+          "Added support to call another automation webhook directly within an automation task."
+        ]
+      },
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed an issue where chart redraw functionality prevented popup screens from opening in the live app",
+      "Fixed an issue where tasks executed multiple times when the 'If' branch in Automation was left empty.",
+"Fixed an issue where automation tasks could not fetch array values using square bracket notation across tasks.",
+"Fixed an issue where DQ Automation was not rendering, causing the UI to disappear",
+"Fixed an issue where the Connector Library would not open for REST API connectors containing only raw variables.",
+"Fixed an issue where cross-channel connector data appeared in the connector dropdown of the Add MCP sidebar."
+        ]
+      }
+    ]
+  },
+  {
+   "timestamp": 1755770657000,
+    "tags": ["Cloud-Hosted"],
+    "heading": "",
+    "cards": [
+      {
+        "title": "Added",
+        "type": "added",
+        "points": [
+          "Added a Webhook raw input UI with a JSON Code Mirror editor for improved payload editing."
+        ]
+      },
+      {
+        "title": "Enhancements",
+        "type": "improved",
+        "points": [
+          "Enhanced RazorPay Connector to include the Notes option in the create payment link API."
+        ]
+      },
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed connector usage permissions in the Automation builder."
+        ]
+      }
+    ]
+  },
+  {
+   "timestamp": 1754461050000,
+    "tags": ["Cloud-Hosted"],
+    "heading": "",
+    "cards": [
+      {
+        "title": "Added",
+        "type": "added",
+        "points": [
+"Added UI for MCP server in the console.",
+"Added localization intent to Veda AI for multi-language support.",
+"Added support for editing actionflow intent with an approve option in Veda AI.",
+"Added validation support for controls in Veda AI.",
+"Added intelligent drill down functionality for headers and footers.",
+"Added support for automatic schema creation in Veda AI connectors, enabling table creation within connectors.",
+"Added error messages for file upload failures in file storage.",
+"Added input fields for sub-category descriptions, variable descriptions, and data types in MCP connectors.",
+"Added DronaHQ email feature."
+        ]
+      },
+      {
+        "title": "Enhancements",
+        "type": "improved",
+        "points": [
+"Enhanced auto-refresh behavior to also trigger header refresh for master controls in the table grid.",
+"Enhanced language support by updating the Moment.js library.",
+"Enhanced the variable info pop-up in connectors by updating data type values.",
+"Enhanced performance when adding screens with multiple tabs and improved load times in the publish sidebar.",
+"Enhanced the data query section with a new popup UI including sub-options and icon, and added a clear icon to the search input in the actionflow section.",
+"Enhanced code editing experience by integrating the new Code Mirror library."
+        ] 
+
+  },
+    {
+      "title": "Fixed",
+      "type": "fixed",
+      "points": [
+"Fixed an issue where nested child options could not be selected from default values in list-type controls.",
+"Fixed an issue where the toggle click event did not properly trigger the prefix icon in the date range picker.",
+"Fixed an issue where Veda AI prompt box displayed actionflow data queries.",
+"Fixed an issue where the popup screen was incorrectly set as the homepage, causing preview issues.",
+"Fixed an issue where the 'Load More' button was misaligned with content height.",
+"Fixed an issue where the tutorial app did not function as expected.",
+"Fixed an issue where undo-redo did not work for recurring actions/events.",
+"Fixed a bug where dropping a control caused it to jump to the bottom of the screen.",
+"Fixed minor Code Mirror-related issues in the data bind section and custom JavaScript section of data queries.",
+"Fixed an issue where clicking the preview button after session logout opened the login screen in the preview modal instead of showing the standard logout popup.",
+"Fixed a misalignment issue in the loader text on the app edit sidebar.",
+"Fixed an issue in prompt where mention formatting lacked proper whitespace before and after text.",
+"Fixed an issue where the registered API list was missing in the builder for data queries.",
+"Fixed an issue where the registered API list was missing in the builder for actionflow preview.",
+"Fixed an issue where connector query failure condition messages were missing from API responses in packages.",
+"Fixed an issue where chart control UI did not update with theme changes.",
+"Fixed an issue where the Ask AI button was not disabled after a response and improved error handling in AI Assist.",
+"Fixed an issue where screens with classic headers did not display properly on mobile view."
+
+
+
+      ]
+    }
+    ]
+  },
+  {
+    "timestamp":1753872737000,
+    "tags": ["Cloud-Hosted"],
+    "heading": "",
+    "cards": [
+      {
+        "title": "Added",
+        "type": "added",
+        "points": [
+                   "Added support for Webhook input descriptions to improve clarity and documentation.",
+"Added a time picker to the Automation log filter for more precise log filtering."
+        ]
+      },
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+              "Fixed an issue where header UI was breaking in the package."
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1752835937000,
+    "tags": ["Cloud-Hosted"],
+    "heading": "",
+    "cards": [
+      {
+        "title": "Added",
+        "type": "added",
+        "points": [
+
+"Added Connector Request details to Automation's bottom panel to improve debugging and traceability.",
+"Added a logo to the navigation bar.",
+"Added a new automation feature in Data Query to enable automated data operations and workflows."
+        ]
+      },
+      {
+        "title": "Enhancements",
+        "type": "improved",
+        "points": [
+"Enhanced the UI for Automation's Action Task popup and improved icon integration for a more intuitive experience.",
+"Enhanced Code Mirror responsiveness by reducing debounce delay.",
+"Enhanced the data bind section by enabling tooltip support."
+        ]
+      },
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+     
+"Fixed an issue where variable dependency on controls using .META was not created, causing metadata update failures in data query variables.",
+"Fixed an issue where the injection function was incorrectly fetched from STUDIOFUNCTION.",
+"Fixed a runtime error caused by calling an undefined function in the package.",
+"Fixed scroll bars and misalignment in containers during preview when dynamic height was enabled.",
+"Fixed Code Mirror editor scroll issue and improper HTML appending for special characters in Automation conditions.",
+"Fixed an issue where circular errors in data queries showed a red box without an error message.",
+"Fixed an issue where Code Mirror's 'When to Execute' did not display outputs for actions in Actionflow.",
+"Fixed an issue where the screen action flow was not properly handled when empty.",
+"Fixed an issue where screens could not be moved into empty folders.",
+"Fixed an issue where adding a key to JSON in the table grid now maintains the column names and arrangement.",
+"Fixed delayed button response on first click due to initialization lag.",
+"Fixed an issue where read only mode was still editable via keyboard.",
+"Fixed an issue where Automation export exceeded MongoDB limits by separating category and subcategory data fetch."
+
+
+        ]
+      }
+    ]
+  },
+  {
+   "timestamp": 1752144737000,
+    "tags": ["Cloud-Hosted"],
+    "heading": "",
+    "cards": [
+      {
+        "title": "Added",
+        "type": "added",
+        "points": [
+          "Added support for Create App UI and Data Query Generator Intent.",
+"Added support for output format in prompt reference and preserved AI chat section position on open and close.",
+"Added a feature for caching GraphQL schema using IndexedDB.",
+"Added settings for approval checks in intent responses, control/dataquery referencing via curly braces in prompt box, and monthly reset subscription support for Veda AI.",
+"Added a fallback image feature for broken image sources across Studio and Builder.",
+"Added retry on app creation failure, enhanced mentions UX, and passed user data for image generation analytics in Veda AI.",
+"Added support for emojis and fixed connector reference prompt on BRD detail addition in Veda AI."
+        ]
+      },
+      {
+        "title": "Enhancements",
+        "type": "improved",
+        "points": [
+"Enhanced credit display to show Veda AI renewal date.",
+"Enhanced time picker control to support min and max time values.",
+"Moved REST API ActionBlock to the 'Connector' section in Actionflow.",
+"Enabled data type visibility in custom JS, SQL, and DQL variables during save and live edits.",
+"Improved string builder formula evaluation with proper data type conversion."
+
+        ] 
+
+  },
+    {
+      "title": "Fixed",
+      "type": "fixed",
+      "points": [
+        "Fixed an issue where number data types caused UI breakage in the query output box.",
+"Fixed an issue where control click did not add mention to prompt box and controls under containers ignored grid parameters.",
+"Fixed an issue where nested JSON fields in TableGrid showed as undefined in headers.",
+"Fixed keyword highlighting in Actionflow block string builder.",
+"Fixed an issue where deleting a custom event caused the UI to scroll to the top of the properties section.",
+"Fixed an issue where schema errors were not displayed in the UI when schema loading failed.",
+"Fixed capitalization of element text in the template sidebar (Add New Screen).",
+"Fixed undo/redo not working for App Open events in the builder.",
+"Fixed console warning in Date Picker control.",
+"Fixed an issue where imported Actionflows displayed outdated names in double curly brackets.",
+"Fixed issue with connector reference prompt on BRD detail addition in Veda AI.",
+"Fixed user data not being sent on all prompt requests and resolved intent width issue.",
+"Fixed Actionflow crash and logic wipe when moving branches.",
+"Fixed manual view not refreshing after data binding.",
+"Fixed AI Assist and Veda AI live data related issues.",
+"Fixed custom delete function removing the last item instead of the selected one.",
+"Fixed UI validation errors incorrectly triggered on modal close in JS Editor.",
+"Fixed folder and favorites search returning no results and missing empty folder image on reload.",
+"Fixed publish API call not receiving the updated app name.",
+"Fixed navigation misbehavior on rapid option clicks."
+
+      ]
+    },
+    {
+      "title": "Removed",
+      "type": "removed",
+      "points": [
+        "Removed themes slideshow on app open.",
+"Removed unused files from the package."
+      ]
+      }
+    ]
+  },
+  {
+    "timestamp":1750416737000,
+    "tags": ["Cloud-Hosted"],
+    "heading": "",
+    "cards": [
+      {
+        "title": "Added",
+        "type": "added",
+        "points": [
+           "Added events in control references and system message generation from Veda AI.",
+           "Added support for global API connectors with data binding and action events.",
+           "Added biometric authentication (MPIN) and ProGlove plugin.",
+           "Added automation memory configuration with support for multiple Lambda memory sizes."
+        ]
+  },
+  {
+    "title": "Enhancements",
+    "type": "improved",
+    "points": [
+      "Implemented cache schema, schema refresh, and schema search for connectors.",
+"Updated Automation run API to use the new execute Query endpoint.",
+"Updated Automation connector query to match Data Query behavior in the app.",
+"Improved authentication sidebar behavior by removing AWS region field when not applicable.",
+"Enhanced DronaHQ AI to support additional design system controls and custom text/background colors."
+    ]
+  },
+  {
+    "title": "Fixed",
+    "type": "fixed",
+    "points": [
+      "Fixed meta execution failure on exceptions.",
+"Fixed audit log filters not working together for certain events.",
+"Fixed default value field error handling when using object types.",
+"Fixed missing system message response in AI chat for update event intent in Veda AI.",
+"Fixed incorrect capitalization in tabbed container edit item section labels.",
+"Fixed issue where JS objects local variables were not re-attached on refresh.",
+"Fixed Open URL icon malfunction in Data Query behavior for the PDF Creator tab.",
+"Fixed issue where 'Use Keywords' dropdown did not behave correctly in Actionflow when queries or libraries were present.",
+"Fixed Automation import/export failures for managed services PDFs and file storage.",
+"Fixed export/import automation handling with DronaHQ AI Managed Connector.",
+"Fixed schema error not displaying correctly on failure.",
+"Fixed app detail editing permissions for preview-only users.",
+"Fixed screen copy-paste bug causing failure in data binding.",
+"Fixed AI Assist state not resetting on control change."
+]
+}
+    ]
+  },
+{
+    "timestamp": 1749614974000,
+    "tags": ["Cloud-Hosted"],
+    "heading": "",
+    "cards": [
+      {
+        "title": "Added",
+        "type": "added",
+        "points": [
+          "Added a check in data bind intent to verify if a connector is provided for Data Query operations.",
+          "Added fix for screen duplication issues within folders.",
+          "Added support for Data bind Intent, PDF Creator, File Storage, Data Query, and screen-level Actions in Build AI."
+        ]
+      },
+      {
+        "title": "Enhancements",
+        "type": "improved",
+        "points": [
+         "Enhanced Veda AI with a 'Skip to Queue' button, updated info text, and reorganized button positions.",
+          "Enhanced manual section in Data Bind by enabling radio options.",
+          "Enhanced the date picker to support first-day selection with min/max limits.",
+          "Enhanced Actionflow to stop execution when `whenToExecute` returns false and skip the error block.",
+          "Enhanced handling of metadata and output updates when the Data Query API fails.",
+          "Enhanced Actionflow: added support for default-selected rows in table grid using primary key.",
+          "Enhanced the Data Query builder to exclude the account id key from resource reference.",
+          "Enhanced the UI by adding hover effects for Manual Option Addon, Events, and Recursive Events in Screen Properties.",
+          "Enhanced logging by refactoring API and DB connector modules for efficient operation handling.",
+          "Enhanced connector support to generate JSON schema and UI schema for DronaHQ DB, PDF, and controls.",
+          "Enhanced screen delete popup by adding a loader on the delete button.",
+          "Enhanced connector selection with pagination, improved system responses, and better error handling.",
+          "Enhanced the Text Control component with a toggle to switch between Plain Text and Markdown modes."
+        ]
+      },
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed an issue where the property section popup did not close when clicking the unique control name.",
+
+          "Fixed keyboard navigation for the connector menu using arrow keys.",   
+          "Fixed an issue where opening a Data Query (DQ) via shortcut incorrectly reflected the same DQ in Actionflow.",
+          "Fixed an issue preventing visibility of connected queries/libraries in read-only mode.",
+          "Fixed a typo in the onboarding template: 'profile' corrected to 'profile.'",
+          "Fixed an issue where duplicating a Data Query did not reflect in the list until re-rendering.",
+          "Fixed a validation issue in Veda AI when a connector was not provided in the action prompt.",
+          "Fixed UI issues in the Actionflow configuration toggle with long text labels.",
+          "Fixed UI issues in the popup triggered by the three-dot menu in the Apps Connector Library.",
+          "Fixed movement issues with certain controls in the layout control of the advanced page.",
+          "Fixed UI glitches in custom control events for adding/deleting events in the property section.",
+          "Fixed an issue where SQL suggestions did not appear while editing variables in Data Query.",
+          "Fixed Data Query to exclude account_id from the payload on test runs for non-global connectors.",
+          "Fixed minor syntax issue in the function executed during Actionflow run query.",
+          "Fixed fallback icon issues in builder and flickering alert tooltip icons.",
+          "Fixed UI inconsistencies in the mention-box and AI panel."
+
+        ]
+      },
+      {
+        "title": "Removed",
+        "type": "removed",
+        "points": [
+          "Removed empty color picker ID to prevent console errors.",
+          "Removed all live data from the JSON payload during package publishing."
+        ]
+      }
+    ]
+  },
+
+  {
+    "timestamp": 1748371012000,
+    "tags": ["Cloud-Hosted"],
+    "heading": "",
+    "cards": [
+      {
+        "title": "Added",
+        "type": "added",
+        "points": [
+          "Added a new connector - OpenRouter."
+        ]
+      },
+      {
+        "title": "Enhancements",
+        "type": "improved",
+        "points": [
+         "Enhanced PDF Creator allowing Dynamic Table Enhancement by adding Row and Cell Edit",
+         "Improved performance of info popups.",
+         "Enhanced user experience ensures that the default formula remains hidden in previously dropped tabbed containers."
+
+        ]
+      },
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed an issue where the table grid inside the tabbed container doesnot resize properly, causing width issues when using template.",
+          "Fixed an issue where the header label was hidden by default.",
+          "Fixed an issue where app exported from onprem not getting imported properly on cloud.",
+          "Fixed z-index and width issue in custom control property for add on.",
+          "Fixed an issue where renamed controls were not reflected in the 'use keywords' search within Actionflow.",
+          "Fixed an issue where the editable column dropdown UI was breaking when the table grid is empty.",
+          "Fixed the scroll position of control panel when it is dropped.",
+          "Fixed an issue where manual pagination was not working as expected.",
+          "Fixed spelling mistake in the PDF Template Creation sidebar header.",
+          "Fixed DQ-PDF selection dropdown closing during search.",
+          "Fixed an issue where DataQuery becomes unresponsive when selecting a non-configured environment and clicking the save button.",
+          "Fixed issue where info display would hide on moving the cursor from the underlined trigger element to the info container on hover.",
+          "Fixed an issue where the 'edited' state (green dot) did not reflect when toggling the Run on app open in the Data Queries section.",
+          "Fixed an issue where renamed data query was not reflecting in multiple outputs section in data section",
+          "Fixed an issue in dataquery RestAPI where static field replaced the entire expression with null instead of replacing only the static field.",
+          "Fixed edge case handling for Table grid column reordering and visibility.",
+          "Fixed an issue where numbers in keys of static test values were not being accepted in REST API in the Data Queries section.",
+          "Fixed DataQuery: Removed account_id from configurations and payloads for non-global connectors upon save.",
+          "Fixed an issue where history would not be restored even after cancelling the toast in Build AI Chat history." ,
+          "Fixed an issue where loader no visible while deleting folders.",
+          "Fixed wrong tooltip property for deleting control.",
+          "Fixed an issue in Build AI where all webhook call migrated from frontend to handler.",
+          "Fixed issue where clicking the 'i' button in the Control section caused the control to open stead of just showing its description.",
+          "Fixed positioning issue of forms in the tabbed container when set to 'left'",
+          "Fixed an issue where date range picker date selection was not working in IOS device",
+          "Fixed issue to hide header columns on property section for repeat controls.",
+          "Fixed issues in AI Assist.",
+          "Fixed an issue where Popup screens are rendering very small, when it is created in Advance Editor.",
+          "Fixed an issue where preview is freezing while opening and closing preview.",
+          "Fixed an issue where user is able to prompt when there is no access to Build AI."
+        ]
+      }
+    ]
+  },
+    {
+    "timestamp": 1747679812000,
+    "tags": ["Cloud-Hosted"],
+    "heading": "",
+    "cards": [
+      {
+        "title": "Added",
+        "type": "added",
+        "points": [
+          "Added new connector AlloyDB.",
+          "Added additional padding at the bottom of the published app."
+        ]
+      },
+      {
+        "title": "Enhancements",
+        "type": "improved",
+        "points": [
+         "Enhanced JSON Schema Form Control: Auto-generation of JSON and UI Schemas from Provided JSON.",
+         "Enhanced validation error indicators in list inputs and resolved CSS styling issues."
+        ]
+      },
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed UI/UX of tabbed container and table grid",
+          "Fixed deletion property of DataQuery-bound records using Action Flow.",
+          "Fixed hover property on add-on section with dropdown action.",
+          "Fixed issue in REST API DataQuery where, in RAW configuration, key-value pairs with identical names caused the passed value to replace both key and value.",
+          "Fixed an issue where Custom Parameters were not generated for RAW data in Data Query Section (DQ).",
+          "Fixed an issue When there is no sheet in channel then published app was not opening",
+          "Fixed an issue where an imported actionflow actions's reference not updated properly.",
+          "Fixed an issue where SQL query output rendered was breaking when query is changed on runtime.",
+          "Fixed an issue where beta users not able to go to parent app properly.",
+          "Fixed an issue on DQ switch in race around condition causing empty screen for data query.",
+          "Fixed an issue where failure condition was not working properly in connectors.",
+          "Fixed rendering issue in DataQuery: DHQ Database transform configuration now properly displays DQL, Filter Object, and Filter Keys.",
+          "Fixed issue in DataQuery where PDF Creator and DHQ File Storage now prevent duplicate entries without configuration."
+        ]
+      },
+      {
+        "title": "Removed",
+        "type": "removed",
+        "points": [
+          "Removed handling for cases where INSERT, UPDATE, and DELETE queries wouldn't execute during connector tests.",
+          "Removed invalid code which was causing the advance editor panel control plus button to not open."
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1746506350000,
+    "tags": ["Cloud-Hosted"],
+    "heading": "",
+    "cards": [
+      {
+        "title": "Added",
+        "type": "added",
+        "points": [
+          "Added streaming effect on responses from Veda AI.",
+          "Added support for using DronaHQ provided LLM key."
+        ]
+      },
+      {
+        "title": "Enhancements",
+        "type": "improved",
+        "points": [
+         "Enhanced Veda AI Chatbot user experience.",
+         "Enhanced the MongoDB version selection interface by replacing the toggle switch with a dropdown menu.",
+         "Enhanced action menu search to include DHQ Services, Move, Duplicate, and Import action blocks.",
+         "Improved hover interactions now display an information box with a description and clickable link when hovering over underlined controls."
+        ]
+      },
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed Advanced Editor row and column drag-and-drop issue.",
+          "Fixed an issue where persistent was not working as expected.",
+          "Fixed an issue where Advance Editor was not able to add columns in layout.",
+          "Fixed an issue where the image was not uploading on the new app for Build AI.",
+          "Fixed an issue in the Forms module related to handling the DHQ database, specifically concerning the Responses tab."
+
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1746470212000,
+    "tags": ["Cloud-Hosted"],
+    "heading": "",
+    "cards": [
+      {
+        "title": "Added",
+        "type": "added",
+        "points": [
+          "Added new library of barcode detector for barcode control",
+          "Added 'Build with AI' for creating apps from prompt and images."
+        ]
+      },
+      {
+        "title": "Enhancements",
+        "type": "improved",
+        "points": [
+          "Enhanced on-hover-underline-control-properties",
+          "Enhanced action menu search to include DHQ Services, Move, Duplicate, and Import action blocks.",
+          "Enhanced mongodb version setting from toggle to dropdown"
+        ]
+      },
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed issue where the plus button in the Advanced Editor panel did not open the control listing in Builder View.",
+          "Fixed an issue where Import actionflow does not work on clicking “Import”",
+          "Fixed an issue where new connector button when no connectors are present not working as expected.",
+          "Fixed issue where control names were disappearing in the editor.",
+          "Fixed an issue where when to execute condition was not working for actionflow data queries.",
+          "Fixed an issue where App opened in new tab fails when navigated from app to console",
+          "Fixed issue in TableGrid where column visibility and order were not retained after data refresh.",
+          "Fixed an issue where connector does not throw correct exception when execute Query api fails for cases such as (404, bad gateway etc.)",
+          "Fixed an issue where newly added user groups weren't immediately reflected in the group list.",
+          "Fixed cursor visibility issue in CRUD Operation dropdowns after selection.",
+          "Fixed an issue where connector query doesn't open for firebase",
+          "Fixed an issue where dropdown arrow was not working as expected",
+          "Fixed an issue where Homescreen getting assigned to other screen types(tray, popup, menu, header) when deleting the home screen of type-Screen",
+          "Fixed Forms Setup Sidebar Minor UI ",
+          "Fixed an issue where importing app in same channel shows override and new tag both for connectors",
+          "Fixed issue where the Y position of a control dropped inside a multi-container control did not align with the active parent.",
+          "Fixed an issue where Manage environment sidebar opens blank in DataQuery.",
+          "Fixed an issue where renaming a data query was not reflected in the data bind section, especially for list and composite controls.",
+          "Fixed an issue where multiple API calls are triggered when the 'Edit' button is clicked repeatedly in the connector list"
+          
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1745213952000,
+    "tags": ["Cloud-Hosted"],
+    "heading": "",
+    "cards": [
+      {
+        "title": "Added",
+        "type": "added",
+        "points": ["Added live countdown timer for Build with AI."]
+      },
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed spacing issue when enabling label plus description.",
+          "Fixed an issue where the old way of navigation was not working in preview.",
+          "Commented out logger in files.",
+          "Optimization for form save, screen delete, screen duplicate, and memory management."
+        ]
+      }
+    ]
+  },
   {
     "timestamp": 1745213952000,
     "tags": ["Cloud-Hosted"],
@@ -24,8 +648,8 @@
           "Enhanced font visibility with color-coding and improved sidebar close icon.",
           "Enhanced default loader functionality by adding reset to default loader option."
         ]
-      }   ,     
-    {
+      },
+      {
         "title": "Fixed",
         "type": "fixed",
         "points": [

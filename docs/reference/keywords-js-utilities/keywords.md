@@ -23,7 +23,6 @@ Following are list of all the static keywords:
  | ------------------- | ------------------- |
  | USER EMAIL | Stores the logged-in user's email address. |
  | USERNAME | Stores the logged-in user's name. |
- | USERFIRSTNAME | Stores the name of the logged-in user. |
  | TRUE | Static keyword for boolean true. |
  | FALSE | Static keyword for boolean false. |
  | NULL | Static keyword for js null value. |
@@ -59,4 +58,3 @@ Automation keywords provide essential functionalities for DronaHQ's automation b
 | webhook.headers        | Accesses the headers of the webhook request. Useful for authentication and request details.   |
 | SELF                   | Refers to the current task. In the Logging section, use `SELF.output_variable_name` to access the task's output. Useful for data chaining between tasks. |
 
-## BPM Flow keywords
