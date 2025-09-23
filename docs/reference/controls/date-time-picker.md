@@ -87,8 +87,9 @@ When **Manage time zone** is enabled, the output of the control is received as p
   - If *Min time* is after *Max time*, all the time values same or after *Min time*, as well as same or before *Max time* are allowed.
 
 :::info Note
-- All these fields can be bound dynamically as well, using the references or formulae.
+- **Min date, Max date, Min time** & **Max time** properties can be bound dynamically as well, using the references or formulae.
 - If **Manage time zone** is enabled, these fields' values are parsed using the **Value** timezone.
+- These fields are available to be configured, if **self-hosted** version, on versions **3.9.0** and greater.
 :::
 
 ::::

@@ -66,9 +66,10 @@ You will find the ID of your base in the Introduction section.
 | FindRows          | Retrieve multiple rows from a specific table using filters or conditions.                         |
 | FindRowById       | Fetch a row from a table using its unique identifier, such as a record ID or primary key.         |
 | CreateRow         | Insert a new row into a table, filling in the necessary fields.                                   |
-| UpdateRow         | Update existing data in a row with specified field changes.                                       |
+| UpdateRow         | Update existing data in a row with specified field changes. If value is not specified or empty string for any field it will not consider that field for update. Use UpdateRowV2 in case you want to update columns with empty values.                                     |
 | DeleteRow         | Remove a row from a table using unique identifiers or specific criteria.                          |
 | FindARow          | Access a single row from a table based on specified criteria or field values.                     |
+| UpdateRowV2          | Update existing data in a row with specified field changes. All the fields will be updated for the given row. In case you don't configure a column, then empty value will be updated. In case you want to skip updating a specific column, use {{NULL}} keyword. For Auto-generate or Formula column, always specify {{NULL}}  keyword.                  |
 
 ---
 

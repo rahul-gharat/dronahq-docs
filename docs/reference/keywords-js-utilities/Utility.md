@@ -794,3 +794,366 @@ UTILITY.REDIRECTPARENTUTILITY("URL");
 ```javascript
 UTILITY.REDIRECTPARENTUTILITY("https://docs.dronahq.com/reference/keywords-js-utilities/Utility/#setctrlvalue");
 ```  
+
+## DownloadFileFromURL  
+
+The `UTILITY.DownloadFileFromURL()` method allows users to dynamically download files directly to their devices. This method returns a `Promise` so the response needs to be captured using `await` keyword.
+
+#### Usage  
+
+```javascript
+UTILITY.DownloadFileFromURL(downloadUrl,fileName,headers,pathOfAndroid,pathOfIos,[{ queryKey: "keyName", queryValue: "key_value" },{ queryKey: "anotherKeyName", queryValue: "key_value" }]);
+```
+
+<span style={{fontSize: 24}}>Parameters</span>
+
+| Parameter   | Accepts | Possible values                                   |
+|-------------|---------|---------------------------------------------------|
+| `downloadUrl`      | string  | A valid HTTP or HTTPS URL pointing to the downloadable file.  |
+| `fileName`     | string  | A valid file name with extension.                                |
+| `headers`   | string  | JSON object of Headers                                  |
+| `pathOfAndroid`  | string  | 'application_directory', 'document_directory', 'cache_directory'  |
+| `pathOfIos`| string | 'application_directory', 'document_directory', 'cache_directory'  |
+| `queryKey`   | string  | Alphanumeric strings used as parameter names in the URL query string.  |
+| `queryValue`   | string  | Values corresponding to query string keys.  |
+
+<span style={{fontSize: 24}}>Example</span>
+
+#### Example  
+
+```javascript
+await UTILITY.DownloadFileFromURL("https://file-examples.com/wp-content/storage/2017/02/file-sample_1MB.doc", "test.doc", {"Content-Type": "application/json","token": "1234567890"}, "application_directory", "cache_directory", [{ queryKey: "userId", queryValue: "1" },{ queryKey: "emailId", queryValue:"user@gmail.com" }]);
+```   
+
+When the `Promise` resolves, the user input will be received in the `output` key inside a javascript object:
+
+```
+{
+  output: 'file:///storage/emulated/0/Android/data/com.deltecs.dhqone/files/Cordova/simple.txt',
+  success: true
+}
+```
+
+## OpenFile  
+
+The `UTILITY.OpenFile()` method allows users to dynamically open files directly from their devices locally. This method returns a `Promise` so the response needs to be captured using `await` keyword.
+
+#### Usage  
+
+```javascript
+UTILITY.OpenFile(filePath,mimeType);
+```
+
+<span style={{fontSize: 24}}>Parameters</span>
+
+| Parameter   | Accepts | Possible values                                   |
+|-------------|---------|---------------------------------------------------|
+| `filePath`      | string  | A valid absolute or relative path to a file.  |
+| `mimeType`| string | 'application/pdf', 'application/vnd.ms-excel', 'application/msword', 'application/vnd.android.package-archive', 'audio/mpeg', 'video/mp4', 'image/png', 'image/jpeg', 'text/plain', 'text/csv'  |
+
+<span style={{fontSize: 24}}>Example</span>
+
+#### Example  
+
+```javascript
+await UTILITY.OpenFile("/storage/emulated/0/Download/file.pdf","application/pdf");
+```  
+
+When the `Promise` resolves, the user input will be received in the `output` key inside a javascript object:
+
+```
+{
+  output: 'file opened successfully'
+}
+```
+
+## ReadFile  
+
+The `UTILITY.ReadFile()` method allows users to dynamically read files directly from their devices locally. This method is supported only on Android and iOS platforms. This method returns a `Promise` so the response needs to be captured using `await` keyword.
+
+#### Usage  
+
+```javascript
+UTILITY.ReadFile(filePath);
+```
+
+<span style={{fontSize: 24}}>Parameters</span>
+
+| Parameter   | Accepts | Possible values                                   |
+|-------------|---------|---------------------------------------------------|
+| `filePath`      | string  | A valid absolute or relative path to a file.  |
+
+<span style={{fontSize: 24}}>Example</span>
+
+#### Example  
+
+```javascript
+await UTILITY.ReadFile("/storage/emulated/0/Download/file.pdf");
+```  
+
+When the `Promise` resolves, the user input will be received in the `output` key inside a javascript object:
+
+```
+{
+  output: 'This is file content.'
+}
+```
+
+## WriteFile  
+
+The `UTILITY.WriteFile()` method allows users to dynamically write files directly to their devices locally. This method is supported only on Android and iOS platforms. This method returns a `Promise` so the response needs to be captured using `await` keyword.
+
+#### Usage  
+
+```javascript
+UTILITY.WriteFile(fileName,fileContent,appendData,contentType,pathOfAndroid,pathOfIos);
+```
+
+<span style={{fontSize: 24}}>Parameters</span>
+
+| Parameter   | Accepts | Possible values                                   |
+|-------------|---------|---------------------------------------------------|
+| `fileName`     | string  | A valid file name with extension.                                |
+| `fileContent`   | string  | The actual content of the file                                  |
+| `appendData`   | boolean  | true/false                                  |
+| `contentType`   | string  | 'text/plain', 'application/pdf', 'application/msword', 'application/vnd.ms-excel', 'text/csv', 'application/json', 'image/png'                                  |
+| `pathOfAndroid`  | string  | 'application_directory', 'document_directory', 'cache_directory'  |
+| `pathOfIos`| string | 'application_directory', 'document_directory', 'cache_directory'  |
+
+<span style={{fontSize: 24}}>Example</span>
+
+#### Example  
+
+```javascript
+await UTILITY.WriteFile("test.pdf","This is a test file",true,"application/pdf","document_directory","application_directory");
+```  
+
+When the `Promise` resolves, the user input will be received in the `output` key inside a javascript object:
+
+```
+{
+  output: 'file:///storage/emulated/0/Android/data/com.deltecs.dhqone/files/Cordova/simple.txt',
+  contentType: 'text/plain'
+}
+```
+
+## MpinVerification  
+
+The `UTILITY.MpinVerification()` method enables users to verify their MPIN (Mobile Personal Identification Number) as a means to securely access the app. This method is supported only on Android and iOS platforms. This method returns a `Promise` so the response needs to be captured using `await` keyword.
+
+#### Usage  
+
+```javascript
+await UTILITY.MpinVerification();
+```  
+
+When the `Promise` resolves, the user input will be received in the `output` key inside a javascript object:
+
+```
+{
+  output: 'Verified'
+}
+```
+
+
+## FLASHLIGHT  
+
+The `UTILITY.Flashlight()` method allows users to turn on/off flashlight in Android/iOS mobile app.
+
+#### Usage  
+
+```javascript
+UTILITY.Flashlight(mode,intensity);
+```
+
+<span style={{fontSize: 24}}>Parameters</span>
+
+| Parameter   | Accepts | Possible values                                   |
+|-------------|---------|---------------------------------------------------|
+| `flashlight_mode`      | string  | 'ON', 'OFF'  |
+| `flashlight_intensity` | number | Select audio intensity level such as low = 0.3, medium = 0.7, high = 1.0  |
+
+<span style={{fontSize: 24}}>Example</span>
+
+#### Example  
+
+<span style={{fontSize: 24}}>Example for Flashlight ON</span>
+
+```javascript
+UTILITY.Flashlight("ON", 0.7);
+```  
+<span style={{fontSize: 24}}>Example for Flashlight OFF</span>
+
+```javascript
+UTILITY.Flashlight("OFF", 0.7);
+```  
+
+:::info NOTE
+### Flashlight OFF
+
+If flashlight mode is `OFF` then intensity value will be ignored.
+
+:::
+
+
+## TEXTTOSPEECH  
+
+The `UTILITY.TEXTTOSPEECH()` method converts text into spoken audio output in Android/iOS mobile app. This is particularly useful for creating accessible interfaces or adding audio feedback to your applications
+
+#### Usage  
+
+```javascript
+UTILITY.TEXTTOSPEECH(inputtext, rate, locale);
+```
+
+<span style={{fontSize: 24}}>Parameters</span>
+
+| Parameter   | Accepts | Possible values                                   |
+|-------------|---------|---------------------------------------------------|
+| `inputtext` | string  | Input the text you want to convert into speech  |
+| `rate`      |  number | Define the speed of speech. Acceptable values range from 0.0 (slowest) to 10.0 (fastest). Default is 1.0 for a normal speaking rate  |
+| `locale`    | string  | Choose the language and voice setting for the speech output. The values for locale are English = `en-US`, Spanish = `es-ES`, French = `fr-FR`, German = `de-DE`, Italian = `it-IT`, Chinese = `zh-CN`, Japanese = `ja-JP`, Korean = `ko-KR`, Russian = `ru-RU`, Portuguese = `pt-PT`  |
+
+
+#### Example  
+
+```javascript
+UTILITY.TEXTTOSPEECH("hello how you doing", 0.1, "en-US");
+```  
+
+
+## GETADDRESSFROMCOORDINATES  
+
+The `UTILITY.GETADDRESSFROMCOORDINATES()` method allows users to get address from latitude and longitude coordinates in Android/iOS mobile apps. 
+
+#### Usage  
+
+```javascript
+UTILITY.GETADDRESSFROMCOORDINATES(latitude, longitude, maxResults);
+```
+
+<span style={{fontSize: 24}}>Parameters</span>
+
+| Parameter   | Accepts | Possible values                                   |
+|-------------|---------|---------------------------------------------------|
+| `latitude`    | string  | Enter the latitude coordinate  |
+| `longitude`   | string | Enter the longitude coordinate  |
+| `maxResults`  | number  | Select from range '1', '2', '3', '4', '5' to specify the maximum number of address results to return. |
+
+
+#### Example  
+
+```javascript
+UTILITY.GETADDRESSFROMCOORDINATES("11.947148", "79.827917", 1);
+```  
+
+## GETCOORDINATESFROMADDRESS  
+
+The `UTILITY.GETCOORDINATESFROMADDRESS()` method allows users to Get Coordinates from Address action allows users to retrieve geographical coordinates (latitude and longitude) based on a given address in Android/iOS mobile apps.
+
+#### Usage  
+
+```javascript
+UTILITY.GETCOORDINATESFROMADDRESS(address, maxResults);
+```
+
+<span style={{fontSize: 24}}>Parameters</span>
+
+| Parameter   | Accepts | Possible values                                   |
+|-------------|---------|---------------------------------------------------|
+| `address`     | string  | The address to retrieve the coordinates for.  |
+| `maxResults`  | number  | Select from range '1', '2', '3', '4', '5' to specify the maximum number of coordinate results to return.  |
+
+
+#### Example  
+
+```javascript
+UTILITY.GETCOORDINATESFROMADDRESS("201 W 79th St, New York, NY 10024, United States", 1);
+```  
+
+
+## SECUREAPICALL
+
+`UTILITY.SECUREAPICALL()` to enables developers to transmit sensitive data securely through API requests. It is ideal for scenarios like authentication, data fetching, and third-party integrations. This action supports flexible configuration, ensuring secure and efficient communication in Android/iOS mobile app. For web, we are using AJAX API call. This method returns a success or failure response. The response of this action can captured using {{SECUREAPICALL.output}}. This method returns a `promise` and to get the response use `await` keyword.
+
+<span style={{fontSize: 24}}>Usage</span>
+
+```
+UTILITY.SECUREAPICALL(url, httpMethod, headers, data, trustMode, useProxy, timeout);
+```
+
+<span style={{fontSize: 24}}>Parameters</span>
+
+| Parameter   | Accepts | Possible values                                   |
+|-------------|---------|---------------------------------------------------|
+| `url`      | string  | The API URL to which the request is sent (e.g., https://api.example.com).  |
+| `method`     | string  | The request method, such as 'GET', 'POST', 'PUT', 'PATCH', 'DELETE' |
+| `headers`     | object  | Key-value pairs for headers (e.g., { "Authorization": "Bearer token" }). |
+| `data`     | object  | Key-value pairs for request body (e.g., { "key": "value" }). |
+| `trustMode`     | string  | Select trust mode for secure communication such as `default`, `nocheck`, `pinned` |
+| `useProxy`     | boolean  | true/false to use proxy (web only) |
+| `timeout`     | number  | Timeout duration in milliseconds |
+
+
+<span style={{fontSize: 24}}>Example GET Request</span>
+
+```
+await UTILITY.SECUREAPICALL('https://exampleapi.com/api/users/','GET', '', '', 'default', false, 180000);
+```
+
+:::info
+headers, data, trustMode, useProxy and timeout are optional parameters, in case you don't want to specify any of them, put an empty string ('') instead while calling the method.
+:::
+
+<span style={{fontSize: 24}}>Example POST Request</span>
+
+```
+await UTILITY.SECUREAPICALL("https://exampleapi.com/api/users/", "POST", "", "{'name':'John','place':'New York'}", "nocheck", false, 180000);
+```
+
+## STARTGPSLOCATIONTRACKING  
+
+The `UTILITY.StartGPSLocationTracking()` allows app to continuously track the device's geographical location, even when the app is in the background or the device is in sleep mode in native Android/iOS mobile app. Start GPS Tracking keeps tracking automatically sends location updates to a user-provided API endpoint. This method returns a `promise` and to get the response use `await` keyword.
+
+#### Usage  
+
+```javascript
+UTILITY.StartGPSLocationTracking(stationaryRadius, distanceFilter, locationProvider, desiredAccuracy, notificationsEnabled, notificationTitle, notificationText, interval, fastestInterval, activitiesInterval, url, httpHeader, postTemplate, pauseLocationUpdates, saveBatteryOnBackground);
+```
+
+<span style={{fontSize: 24}}>Parameters</span>
+
+| Parameter            | Accepts | Platform       | Possible values / Description |
+|----------------------|---------|---------------|---------------------------------------------------|
+| `url`               | string  | Android, iOS      | Server url where to send HTTP POST with recorded locations |
+| `headers`        | object  | Android, iOS         | Optional HTTP headers sent along in HTTP request. Provide Key value pairs ex: {"Content-Type": "application/json"} |
+| `data`      | object  | Android, iOS              | All wanted location properties have to be prefixed with @. For all available properties check [Location event](https://haylltd.github.io/cordova-background-geolocation-plugin/events#location-event). For Example: {"latitude" : "@latitude", "longitude" : "@longitude", "foo": "bar" } where, @latitude and @longitude will be replace by actual user’s location lat and long respectively while sending api call| 
+| `stationaryRadius`   | number  | Android, iOS     | Stationary radius value in meters |
+| `distanceFilter`     | number  | Android, iOS     | Distance Filter value in meters |
+| `desiredAccuracy`    | number  | Android, iOS     | Determines how precise the location updates should be. Desired accuracy values in meters. Possible values are `HIGH_ACCURACY` = 10, `MEDIUM_ACCURACY` = 100, `LOW_ACCURACY` = 1000 |
+| `locationProvider`   | number  | Android only     | Used to obtain location data. Different providers offer different balances of accuracy, battery efficiency, and availability. Possible values are `Android Distance Filter Provider` = 0, `Android Activity Provider` = 1, `Raw Provider` = 2. Set location provider. [Location Providers](https://github.com/mauron85/cordova-plugin-background-geolocation/blob/master/PROVIDERS.md) |
+| `notificationsEnabled` | boolean | Android only   | Enable/disable local notifications when tracking and syncing locations. |
+| `notificationTitle`  | string  | Android only     | Custom notification title in the drawer |
+| `notificationText`   | string  | Android only     | Custom notification text in the drawer |
+| `interval`          | number  | Android only      | Interval duration in milliseconds |
+| `fastestInterval`   | number  | Android only      | Fastest Interval duration in milliseconds |
+| `activitiesInterval`| number  | Android only      | Activities Interval duration in milliseconds |
+| `pauseLocationUpdates` | boolean | iOS only       | It temporarily suspend location tracking while keeping the background service active. This is useful for conserving battery when you know the user won't be moving for a period of time |
+| `saveBatteryOnBackground` | boolean | iOS only    | Switch to less accurate significant changes and region monitory when in background |
+
+
+#### Example  
+
+```javascript
+await UTILITY.StartGPSLocationTracking("https://example.com/gpslocation", {"Content-Type": "application/json"}, {"latitude":"@latitude","longitude":"@longitude"}, 10, 0, 50, 50, true, "App Name", "Tracking your location in background", 10000, 5000, 10000, true, true);
+```  
+
+## STOPGPSLOCATIONTRACKING
+
+await `UTILITY.StopGPSLocationTracking()` allows to gracefully terminate background location tracking when it's no longer needed native Android/iOS mobile app. This method returns a `promise` and to get the response use `await` keyword.
+
+<span style={{fontSize: 24}}>Usage</span>
+
+```javascript
+await UTILITY.StopGPSLocationTracking();
+```
