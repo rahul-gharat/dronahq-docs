@@ -1,34 +1,5 @@
 [ 
- {
-     "timestamp": 1757397578000,
-  "tags": ["Self-Hosted", "3.9.2-edge"],
-  "heading": "Version 3.9.2-edge",
-  "cards": [
-    {
-      "title": "Added",
-      "type": "added",
-      "points": [
-        "Added support for dynamic metadata when triggering queries in the gRPC connector."
-      ]
-    },
-    {
-      "title": "Enhancements",
-      "type": "improved",
-      "points": [
-        "Enhanced gRPC metadata serialization for improved robustness and reliability.",
-"Enhanced gRPC response handling by adding deserialization support for better data readability.",
-        "Enhanced Elasticsearch and gRPC implementations for improved performance and maintainability."
-      ]
-    },
-    {
-      "title": "Fixed",
-      "type": "fixed",
-      "points": [
-        "Fixed an issue where Automation failed to open in version 3.9.0-edge."
-      ]
-    }
-  ]
-},
+
   {
      "timestamp": 1756116257000,
   "tags": ["Self-Hosted", "3.9.1-edge"],
