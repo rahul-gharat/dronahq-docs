@@ -1,5 +1,22 @@
 [ 
   {
+  "timestamp": 1758954256000,
+  "tags": ["Control", "Action"],
+  "heading": "",
+  "cards":[
+    {
+      "title": "Fixed",
+      "type": "fixed",
+      "points": [
+        "Fixed an issue where menu options were not recreated on server-side search when no items matched.",
+"Fixed an issue where number-type dropdowns were not functioning as expected.",
+"Fixed a minor UI issue.",
+"Fixed an issue where Markdown text formatting was not retained after reopening a popup or tray."
+      ]
+    }
+  ]
+},
+  {
   "timestamp": 1756375457000,
   "tags": ["Control", "Action"],
   "heading": "",
@@ -124,7 +141,7 @@
         ]
       }
     ]
-  },  
+  }, 
 {
     "timestamp": 1751094189000,
     "tags": ["Control", "Action"],
