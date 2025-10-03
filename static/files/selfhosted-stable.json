@@ -1,5 +1,45 @@
 [
-    {
+  {
+    "timestamp": 1758176656000,
+    "tags": ["Self-Hosted", "3.8.11-stable"],
+    "heading": "Version 3.8.11-stable",
+    "cards" : [
+    
+      {
+        "title": "Added",
+        "type": "added",
+        "points": [
+          "Added new response header dronahq-service in all API responses to provide deployment type, version, and service name for easier debugging and support."
+        ]
+      },
+      {
+        "title":"Enhancements",
+        "type": "improved",
+        "points": [
+          "Enhanced the code editor by upgrading the CodeMirror library to a newer version.",
+"Enhanced error handling for connector decryption to improve stability and prevent crashes.",
+"Enhanced the File Storage bottom panel with better support for single-select and multi-select options."
+        ]
+      },
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+    "Fixed an issue where connectors within REST API action branches were not being exported in Automation.",
+"Fixed an issue where fields could still be edited via keyboard input despite being in Read-Only mode.",
+"Fixed an issue where the concurrent access popup reappeared after selecting 'Continue' in read-only mode.",
+"Fixed an issue where the Create App Tour would get stuck on the 'Select Email Button' step.",
+"Fixed an issue where Data Query with manual pagination did not function as expected.",
+"Fixed an issue where special characters were incorrectly allowed in screen and screen folder names.",
+"Fixed an issue where empty Screen Action Flows were not handled correctly.",
+"Fixed an issue where the Failure Condition message was missing in the execute Query API response in the package.",
+"Fixed an issue where the timeout value from connection options was not applied in the BigQuery connector.",
+"Fixed an issue where the Edit Environment sidebar height was rendering incorrectly."
+        ]
+      }
+    ]
+  },  
+  {
     "timestamp": 1756879178000,
     "tags": ["Self-Hosted", "3.8.10-stable"],
     "heading": "Version 3.8.10-stable",

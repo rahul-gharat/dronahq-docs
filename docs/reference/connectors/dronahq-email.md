@@ -51,7 +51,7 @@ Below is a reference table for configuring the send email action. Provide corres
 
 | Name | Value | Description|
 |------|-------|------------|
-|Frome-Name| {{fromname}}|The name that will appear as the sender in the recipient's inbox.|
+|From-Name| {{fromname}}|The name that will appear as the sender in the recipient's inbox.|
 |To| John Doe| Who will this email be sent to? Add a single email or an array pf email addresses.|
 |Reply-To| {{replyto}}|Optional. Email address that will receive replies. Defaults to sender's email if not specified|
 |Cc|{{cc@example.com}}| Optional. Email addresses to be CC'd. Supports single or multiple addresses.|
