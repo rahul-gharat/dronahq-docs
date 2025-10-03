@@ -223,11 +223,11 @@ const config = {
             label: 'Apps',
             position: 'left',
           },
-          {
-            to: '/agents/getting-started/introduction/',
-            label: 'Agents',
-            position: 'left',
-          },
+          // {
+          //   to: '/agents/getting-started/introduction/',
+          //   label: 'Agents',
+          //   position: 'left',
+          // },
           {
             to: 'https://discord.gg/QfN8yq4mqM',
             label: 'Discord',
