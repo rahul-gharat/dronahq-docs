@@ -18,7 +18,7 @@
         "points": [
           "Enhanced the code editor by upgrading the CodeMirror library to a newer version.",
 "Enhanced error handling for connector decryption to improve stability and prevent crashes.",
-"Enhanced the FileStorage bottom panel with better support for single-select and multi-select options."
+"Enhanced the File Storage bottom panel with better support for single-select and multi-select options."
         ]
       },
       {
@@ -32,7 +32,7 @@
 "Fixed an issue where Data Query with manual pagination did not function as expected.",
 "Fixed an issue where special characters were incorrectly allowed in screen and screen folder names.",
 "Fixed an issue where empty Screen Action Flows were not handled correctly.",
-"Fixed an issue where the Failure Condition message was missing in the executeQuery API response in the package.",
+"Fixed an issue where the Failure Condition message was missing in the execute Query API response in the package.",
 "Fixed an issue where the timeout value from connection options was not applied in the BigQuery connector.",
 "Fixed an issue where the Edit Environment sidebar height was rendering incorrectly."
         ]
