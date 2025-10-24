@@ -1,5 +1,37 @@
 [
   {
+    "timestamp": 1761211636000,
+    "tags": ["Self-Hosted", "3.8.12-stable"],
+    "heading": "Version 3.8.12-stable",
+    "cards" : [
+    
+      {
+        "title": "Added",
+        "type": "added",
+        "points": [
+          " Added support for configuring REST API base URLs through environment variables in Manage Environment."
+        ]
+      },
+      {
+        "title":"Fixed",
+        "type": "fixed",
+        "points": [
+  "Fixed an issue where deleting a branch inside a query in ActionFlow also removed the parent query unintentionally.",
+"Fixed an issue in secure response handling caused by missing code.",
+"Fixed an issue where auto-save rules and validations were not functioning as expected.",
+"Fixed an issue where multiple concurrent access and save operations were triggered even when the app was already saved.",
+"Fixed an issue where MySQL raised session memory leak warnings.",
+"Fixed an issue where fields remained editable via keyboard in Readonly Mode.",
+"Fixed an issue where bindings disappeared in ActionFlow.",
+"Fixed an issue where embed code IDs conflicted with database limits due to a 45-character restriction.",
+"Fixed an issue where empty folders from deleted screens were retained in the Git repository after synchronization.",
+"Fixed an issue where Production environment details were unintentionally modified while editing connector details.",
+"Fixed an issue where the 'Pull from Git' operation failed when using custom controls.",
+"Fixed an issue where string functions caused failures during Git synchronization."]
+      }
+    ]
+  },  
+  {
     "timestamp": 1758176656000,
     "tags": ["Self-Hosted", "3.8.11-stable"],
     "heading": "Version 3.8.11-stable",

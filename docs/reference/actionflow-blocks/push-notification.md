@@ -4,6 +4,12 @@ title: Push Notification
 ---
 import Thumbnail from '@site/src/components/Thumbnail';
 
+:::note
+This feature is only available in the cloud-hosted version and is not supported in self-hosted deployments.
+
+:::
+
+
 ## Setting up the Push Notifications Action 
 
 Push notifications are a powerful way to engage with users and keep them informed about important updates or events within your app. With Action Flows, you can easily set up and send push notifications to users of your mobile app. Here's how to do it:
