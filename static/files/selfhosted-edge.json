@@ -1,5 +1,37 @@
 [ 
-
+   {
+     "timestamp": 1759915636000,
+  "tags": ["Self-Hosted", "3.9.2-edge"],
+  "heading": "Version 3.9.2-edge",
+  "cards": [
+    {
+      "title": "Added",
+      "type": "added",
+      "points": [
+        "Added support for dynamic metadata when triggering queries in the gRPC connector.",
+"Added support for the new AWS OpenSearch connector."
+      ]
+  },
+    {
+      "title": "Enhancements",
+      "type": "improved",
+      "points": [
+        "Restructured Elasticsearch and gRPC implementations for improved performance and maintainability.",
+"Enhanced gRPC by making metadata serialization more robust and reliable.",
+"Added deserialization support for gRPC responses to improve data handling and readability."
+      ]
+    },
+    {
+      "title": "Fixed",
+      "type": "fixed",
+      "points": [
+        "Fixed an issue where Automation was not opening as expected.",
+"Fixed an issue in Automation where passing an object in the connector query caused errors in the NoSQL connector.",
+"Fixed an issue where the complete error object was not accessible in the 'Failure condition'."
+      ]
+    }
+  ]
+},
   {
      "timestamp": 1756116257000,
   "tags": ["Self-Hosted", "3.9.1-edge"],

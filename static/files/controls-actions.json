@@ -1,4 +1,53 @@
-[ 
+[ {
+"timestamp": 1760436814000,
+"tags": ["Control", "Action"],
+"heading": "",
+"cards": [
+    {
+      "title": "Enhancements",
+      "type": "improved",
+      "points": [
+        "Enhanced multiple components and actions — including Dropdowns, Date Pickers, Editors, Numeric, Currency, Buttons, Radios, Checkboxes, Tabs, and more — by adding comprehensive support for live preview functionality.",
+"Enhanced system-level actions such as navigation, validation, variable handling, property updates, loaders, and control visibility to support real-time live preview updates.",
+"Enhanced layout and interactive components like Grid Menu, Footer Tabs, Tabbed Containers, and Switch Groups with improved live preview behavior for better responsiveness.",
+"Fixed an issue in the File Upload component where localization messages were not being added correctly to the JSON file."
+      ]
+    },
+    {
+      "title": "Fixed",
+      "type": "fixed",
+      "points": [
+        "Fixed an issue in the File Upload component where localization messages were not being added correctly to the JSON file."
+      ]
+    }
+  ]
+},
+  {
+  "timestamp": 1758708814000,
+  "tags": ["Control", "Action"],
+  "heading": "",
+  "cards": [
+    {
+      "title": "Enhancements",
+      "type": "improved",
+      "points": [
+  "Enhanced the Table Grid component by integrating code support for live preview functionality.",
+"Enhanced the Text Input component by improving handling of property value changes for better accuracy.",
+"Enhanced the Name component with additional live preview functionality for improved responsiveness."
+      ]
+    },
+    {
+      "title": "Fixed",
+      "type": "fixed",
+      "points": [
+"Fixed an issue in the Dropdown component where menu options were not being recreated after a server-side search with no matching results.",
+"Fixed an issue in the Query Builder where number-type dropdowns were not functioning as expected.",
+"Fixed minor UI inconsistencies in the Container component.",
+"Fixed an issue in the Text component where Markdown formatting was not retained after reopening the popup or tray."
+      ]
+    }
+  ]
+  },
   {
   "timestamp": 1758954256000,
   "tags": ["Control", "Action"],

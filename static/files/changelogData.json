@@ -1,4 +1,47 @@
 [
+    {
+    "timestamp": 1760434036000,
+    "tags": ["Cloud-Hosted"],
+    "heading": "",
+    "cards": [
+      {
+        "title": "Added",
+        "type": "added",
+        "points": [
+          "Added iframe embed mode in Studio.",
+"Added an AI Providers listing page for DronaHQ AI.",
+
+"Added a self-activation option in Veda AI with 300 credits using a personal key.",
+"Added access control for AI features.",
+"Added live interaction on the builder for controls and data queries."
+        ]
+      },
+      {
+        "title": "Enhancements",
+        "type": "improved",
+        "points": [
+          "Enhanced Veda AI initialization for improved performance.",
+"Enhanced and optimized the frequency of addon check calls when opening screens.",
+"Enhanced the MCP installation flow with AI Agent based improvements.",
+"Enhanced the column formatting UI with a revamped design.",
+"Enhanced the Preview Screen Selection dropdown to be case-insensitive."
+        ]
+      },    
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed an issue where newly added or modified connectors could not be added or edited within the legacy Workflow (BPM workflow).",
+"Fixed an issue where the test connection failed for the Firebase connector when Firebase authentication was not configured.",
+"Fixed an issue where branch logic in Actionflow library JS code incorrectly deleted the parent query along with its children.",
+"Fixed an issue where the Undo button was not visible in Veda AI chat for approved actions.",
+"Fixed an issue with the menu background being cut off.",
+"Fixed schema fetching in AI Assist via RunAPI.",
+"Fixed a spelling error and added a nullable checkbox in the variable list popup."
+        ]
+      }
+    ]
+  },
   {
     "timestamp": 1758176656000,
     "tags": ["Cloud-Hosted"],
