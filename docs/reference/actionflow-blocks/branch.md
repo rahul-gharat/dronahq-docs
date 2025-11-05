@@ -31,7 +31,7 @@ In each branch, you specify a condition that evaluates to either TRUE or FALSE. 
 
 :::note
 When configuring a branch action flow, a **converge node** must be included to serve as the convergence point for all branches within the flow. This node is mandatory and cannot remain empty.
-If no specific action or display behavior is required at this point, a False Condition Node may be used as a placeholder.
+If no specific action or display behavior is required at this point, a false condition node may be used as a placeholder.
 :::
 
   <div style={{ position: 'relative', paddingBottom: 'calc(45.729166666666664% + 41px)', height: '0', width: '100%' }}>
