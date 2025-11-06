@@ -16,7 +16,7 @@ Create DocumentDB cluster using `AWS Management Console`. Also, create user cred
 #### 2. Restore required data into DocumentDB
 Download prerequisite data dump from DronaHQ and restore it onto DocumentDB.
 
-Refer [Configure External Databases](http://localhost:3000/self-hosted-deployment/configure-external-databases/)
+Refer [Configure External Databases](https://docs.dronahq.com/self-hosted-deployment/configure-external-databases/)
 
 #### 3. Copy certificate file to the host machine
 
@@ -65,7 +65,7 @@ In above example, we added mapping as `/certificates/global.bundle.pem:/private/
 
 #### 5. Add environment variables
 
-Configure environment variables necessary to connect to DocumentDB. Refer [Environment Variables](http://localhost:3000/self-hosted-deployment/environment-variables/#connectivity-to-mongodb) for detailed information about variables to configure.
+Configure environment variables necessary to connect to DocumentDB. Refer [Environment Variables](https://docs.dronahq.com/self-hosted-deployment/environment-variables/#connectivity-to-mongodb) for detailed information about variables to configure.
 
 Following are variables needed to be configured extra for using DocumentDB
 #### `MONGODB_TLS`
