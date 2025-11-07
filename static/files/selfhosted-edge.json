@@ -1,4 +1,58 @@
 [ 
+  {
+     "timestamp": 1762236729000,
+  "tags": ["Self-Hosted", "3.9.3-edge"],
+  "heading": "Version 3.9.3-edge",
+  "cards": [
+    {
+      "title": "Added",
+      "type": "added",
+      "points": ["Added a new response header `dronahq-service` in all API responses to include deployment type, version, and service name for easier debugging and support.",
+"Added environment variable support for REST API base URLs through the Manage Environment settings.",
+"Added support for repeat query strings for array-type values in REST APIs.",
+"Added `UpdateRowV2` to support empty value updates using the Airtable connector.",
+"Added info text for proper rendering of Font Awesome icons in respective controls.",
+"Added support for Webhook input descriptions to improve clarity and documentation in automation."]
+  }
+,
+    {
+      "title": "Enhancements",
+      "type": "improved",
+      "points": [
+        "Enhanced the FileStorage bottom panel with improved support for both single-select and multi-select options.",
+"Enhanced error handling for connector decryption to prevent crashes and improve stability.",
+"Enhanced the Builder to allow apps to be edited directly from code editors via the DronaHQ extension.",
+"Enhanced dynamic host support for DB connector queries and removed unused code."
+      ]
+    },
+    {
+      "title": "Fixed",
+      "type": "fixed",
+      "points": [
+        "Fixed an issue where special characters were incorrectly allowed in screen names and screen folder names.",
+"Fixed an issue where the create app tour was stuck on the 'Select Email Button' step.",
+"Fixed an issue where the concurrent access popup reappeared when users selected 'Continue' in read-only mode.",
+"Fixed an issue where the old connector library sidebar was not working as expected.",
+"Fixed an issue where HTML responses from connectors were breaking the Connector Log Panel UI.",
+"Fixed an issue where branches inside queries in Actionflow library JS code were incorrectly deleting the parent query along with child nodes.",
+"Fixed an issue where autosave rules and validations were not working as expected.",
+"Fixed an issue where multiple concurrent access and save calls were triggered even after the app was already saved.",
+"Fixed an issue where the 'Pull from Git' operation was failing with custom controls.",
+"Fixed an issue where production environment details were unintentionally modified while editing connector details.",
+"Fixed an issue where empty folders from deleted screens were retained in the Git repository after synchronization.",
+"Fixed an issue where connector libraries with dynamic variables broke after Git synchronization.",
+"Fixed an issue where the save button was missing and JSON parsing failed during save operations in widget editor mode.",
+"Fixed an issue where controls were not being published or saved correctly in the Control Designer.",
+"Fixed a grammatical error and improved the offline submission message phrasing.",
+"Fixed an issue where the file path for offline submissions was not handled properly.",
+"Fixed an issue in Automation where connectors within REST API action branches were not exported correctly.",
+"Fixed an issue where Automations could not be imported with Connector Libraries.",
+"Fixed an issue where GraphQL connector queries were not working in Automation.",
+"Fixed an issue where branding was not applied correctly to the End User Portal."
+      ]
+    }
+  ]
+},
    {
      "timestamp": 1759915636000,
   "tags": ["Self-Hosted", "3.9.2-edge"],
