@@ -20,6 +20,39 @@ If we wish to add this kind of dynamic field like this we have to use this struc
 
 **Code in Edit Section**
 ```handlebars
+<!-- New property -->
+<div class="add-on-grp">
+    <%= Formbuilder.templates['edit/prop_heading_section']({
+        "type": "add-on",
+        "name": "Pallette color",
+        "group": true,
+    }) %>
+    <div class="grp-body">
+        <div class="option" data-rv-each-option="model.<%= Formbuilder.options.mappings.OPTIONS %>" style="display:flex;">
+            <%= Formbuilder.templates['edit/revamp_color_picker']({
+                "label" : {name:"Pick Color"},
+                "name" : "option:code",
+                "inside_repeat" : true,
+                "solid_color_only" : true,
+                "add_on_feature": true,
+                "show_close": false
+            }) %>
+            <a class="js-remove-option" title="Remove Option" style="margin: auto;background-image:none;padding:0 2em 2em 1.5em;">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6 8H7.33333H18" stroke="#828282" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M9.33334 7.99992V6.66659C9.33334 6.31296 9.47381 5.97382 9.72386 5.72378C9.97391 5.47373 10.313 5.33325 10.6667 5.33325H13.3333C13.687 5.33325 14.0261 5.47373 14.2761 5.72378C14.5262 5.97382 14.6667 6.31296 14.6667 6.66659V7.99992M16.6667 7.99992V17.3333C16.6667 17.6869 16.5262 18.026 16.2761 18.2761C16.0261 18.5261 15.687 18.6666 15.3333 18.6666H8.66667C8.31305 18.6666 7.97391 18.5261 7.72386 18.2761C7.47381 18.026 7.33334 17.6869 7.33334 17.3333V7.99992H16.6667Z" stroke="#828282" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </a>
+        </div>
+        <div class="nocode" style="padding: 0.33em 0.33em 0.5em;">
+            <a class="add-action-option three_col hq-border-btn d-flex align-center pointer justify-center add-action-option three_col fb-button" style="width: 100%;background-image: none;background:none;height:20px;font-size: 1em;">
+                <span>Add More</span>
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- Old property -->
 <div data-rv-each-option="model.<%= Formbuilder.options.mappings.OPTIONS %>" data-rv-show="model.dynamic_color" class="edit_view_prop_nested three_col" style="margin:0;">
     <div class="edit_view_prop_nested three_col" style="margin: 0">
         <%= Formbuilder.templates['edit/color_picker']({
