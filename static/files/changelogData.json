@@ -1,4 +1,36 @@
 [
+   {
+    "timestamp": 1762495929000,
+    "tags": ["Cloud-Hosted"],
+    "heading": "",
+    "cards": [
+      {
+        "title": "Added",
+        "type": "added",
+        "points": [
+          "Added the Vibe Code feature to enable creation of powerful apps using AI."
+        ]
+      },
+      {
+        "title": "Enhancements",
+        "type": "improved",
+        "points": [
+          "Enhanced the Developer On-Demand Call Balance feature with an updated app link.",
+"Enhanced the MCP sidebar by adding functionality to edit sub-category information."
+        ]
+      },
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed an issue where the file path for offline submissions was not handled properly.",
+"Fixed an issue where transformed response data was lost after switching data queries without saving.",
+"Fixed an issue where HTML responses from connectors were breaking the Connector Log Panel UI.",
+"Fixed various drag-and-drop issues to improve usability."
+        ]
+      }
+    ]
+  },
     {
     "timestamp": 1760434036000,
     "tags": ["Cloud-Hosted"],

@@ -1969,3 +1969,5 @@ OpenSearch
 deserialization
 stateOperation
 ctrlName
+FileStorage 
+autosave
