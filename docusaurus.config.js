@@ -201,9 +201,8 @@ const config = {
       // },
       announcementBar: {
         id: 'anouncement',
-        content:
-          '<span class="badge badge--success announcement-badge margin-right--sm">Explore Veda AI</span> Build internal tools from prompts or designs. <a target="_blank" rel="noopener noreferrer" href="https://www.dronahq.com/ai-workshop/?ref=top-banner-docs"> Register for workshop</a>',
-          
+        content: '<span class="badge badge--success announcement-badge margin-right--sm">&lsqb;Streaming live&rsqb;</span> DronaHQ Agentic AI launch keynote ✨ <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/live/ga0hv2En4JU?feature=share">Watch now</a>',
+        // content: '<span class="badge badge--success announcement-badge margin-right--sm">Explore Veda AI</span> Build internal tools from prompts or designs. <a target="_blank" rel="noopener noreferrer" href="https://www.dronahq.com/ai-workshop/?ref=top-banner-docs"> Register for workshop</a>',          
         backgroundColor: '#fafbfc',
         textColor: '#091E42',
         isCloseable: true,
