@@ -30,6 +30,7 @@
       "title": "Enhancements",
       "type": "improved",
       "points": [
+        "Enhanced the table grid by enabling user-defined grouping and resolving related UI and localization issues.",
         "Enhanced multiple components and actions — including Dropdowns, Date Pickers, Editors, Numeric, Currency, Buttons, Radios, Checkboxes, Tabs, and more — by adding comprehensive support for live preview functionality.",
 "Enhanced system-level actions such as navigation, validation, variable handling, property updates, loaders, and control visibility to support real-time live preview updates.",
 "Enhanced layout and interactive components like Grid Menu, Footer Tabs, Tabbed Containers, and Switch Groups with improved live preview behavior for better responsiveness.",

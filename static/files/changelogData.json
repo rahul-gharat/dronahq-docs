@@ -23,6 +23,7 @@
         "title": "Fixed",
         "type": "fixed",
         "points": [
+          "Fixed issues related to multi-resolution preview support, Data Query variable attachment in Vibe apps, and last conversation loading.",
           "Fixed an issue where the file path for offline submissions was not handled properly.",
 "Fixed an issue where transformed response data was lost after switching data queries without saving.",
 "Fixed an issue where HTML responses from connectors were breaking the Connector Log Panel UI.",
