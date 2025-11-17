@@ -1,4 +1,36 @@
 [
+    {
+    "timestamp": 1761289443000,
+    "tags": ["Self-Hosted", "3.8.13-stable"],
+    "heading": "Version 3.8.13-stable",
+    "cards" : [
+      {
+        "title": "Added",
+        "type": "added",
+        "points": [
+          "Added support for repeat query strings for array-type values in REST API within automation.",
+"Added support for repeat query strings for array-type values in REST API."
+        ]
+      },
+      {
+        "title":"Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed an issue where connector libraries with dynamic variables broke after Git sync.",
+"Fixed an issue where transformed response data was lost after switching data queries without saving.",
+"Fixed an issue where Action Flow crashed and logic was wiped when moving branches.",
+"Fixed an issue where the Save button was not visible and JSON parsing failed during save operations in widget editor mode."
+        ]
+      },
+      {
+        "title": "Removed",
+        "type": "removed",
+        "points": [
+          "Removed the deprecated Filter Objects option from the Fx Formula module."
+    ]
+  }
+    ]
+  },
   {
     "timestamp": 1762922853000,
     "tags": ["Self-Hosted", "3.8.14-stable"],
