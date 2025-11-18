@@ -1,4 +1,27 @@
-[ {
+[ 
+  {
+"timestamp": 1761894243000,
+"tags": ["Control", "Action"],
+"heading": "",
+"cards": [
+    {
+      "title": "Enhancements",
+      "type": "improved",
+      "points": [
+"Enhanced phone input by adding functional icon support.",
+"Enhanced prefix/suffix fields by adding functional icon support and improving mouse-wheel behavior.",
+"Enhanced date-time input by adding functional icon support.",
+"Enhanced time input by adding functional icon support.",
+"Enhanced text input by adding functional icon support.",
+"Enhanced Typeahead with a default selection behavior similar to dropdown controls.",
+"Enhanced date range picker by adding functional icon support.",
+"Enhanced date input by adding functional icon support.",
+"Enhanced numeric input by adding functional icon support and improving mouse-wheel behavior." 
+      ]
+    }
+  ]
+}, 
+{
 "timestamp": 1761894243000,
 "tags": ["Control", "Action"],
 "heading": "",
