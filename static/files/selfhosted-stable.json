@@ -32,6 +32,71 @@
     ]
   },
   {
+    "timestamp": 1762922853000,
+    "tags": ["Self-Hosted", "3.8.14-stable"],
+    "heading": "Version 3.8.14-stable",
+    "cards" : [
+      {
+        "title": "Added",
+        "type": "added",
+        "points": [
+          "Added the updateRowV2 API in Airtable to improve row update handling.",
+          "Added informational text to ensure proper rendering of Font Awesome icons in supported controls."
+        ]
+      },
+      {
+        "title":"Enhancements",
+        "type": "improved",
+        "points": [
+          "Enhanced database compatibility by updating the MySQL dependency to mysql2."
+
+        ]
+      },
+      {
+        "title":"Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed an issue where the file path for offline submissions was not handled correctly.",
+"Fixed an issue where branding settings were not correctly applied to the end-user portal.",
+"Fixed an issue where the test connection was not functioning correctly for the Firebase connector.",
+"Fixed an issue in the Data Query module where connector queries failed to open after saving their associated subcategory."
+    ]
+  }
+    ]
+    },
+    {
+    "timestamp": 1761289443000,
+    "tags": ["Self-Hosted", "3.8.13-stable"],
+    "heading": "Version 3.8.13-stable",
+    "cards" : [
+      {
+        "title": "Added",
+        "type": "added",
+        "points": [
+          "Added support for repeat query strings for array-type values in REST API within automation.",
+"Added support for repeat query strings for array-type values in REST API."
+        ]
+      },
+      {
+        "title":"Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed an issue where connector libraries with dynamic variables broke after Git sync.",
+"Fixed an issue where transformed response data was lost after switching data queries without saving.",
+"Fixed an issue where Action Flow crashed and logic was wiped when moving branches.",
+"Fixed an issue where the Save button was not visible and JSON parsing failed during save operations in widget editor mode."
+        ]
+      },
+      {
+        "title": "Removed",
+        "type": "removed",
+        "points": [
+          "Removed the deprecated Filter Objects option from the Fx Formula module."
+    ]
+  }
+    ]
+  },
+  {
     "timestamp": 1761211636000,
     "tags": ["Self-Hosted", "3.8.12-stable"],
     "heading": "Version 3.8.12-stable",
