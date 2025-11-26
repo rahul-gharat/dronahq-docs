@@ -70,6 +70,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           // editUrl: `https://github.com/${gitUser}/${gitRepo}/tree/main/`,
+          path: 'docs',
           routeBasePath: '/',
           // editUrl: ({ docPath }) => `https://github.com/${gitUser}/${gitRepo}/blob/main/docs/${docPath}`,
           docItemComponent: require.resolve('./src/components/CustomDocItem/index.tsx'),
@@ -127,6 +128,19 @@ const config = {
         sidebarPath: require.resolve('./sidebarsWiki.js'),
         // showLastUpdateAuthor: true,
         showLastUpdateTime: true,
+      }),
+    ],
+    [
+      'content-docs',
+      /** @type {import('@docusaurus/plugin-content-docs').Options} */
+      ({
+        id: 'agents',
+        path: 'docs-agents',
+        routeBasePath: 'agents',
+        sidebarPath: require.resolve('./sidebarsAgents.js'),
+        showLastUpdateTime: true,
+        breadcrumbs: true,
+        exclude: ['**/*.wip'],
       }),
     ],
     // require.resolve("@cmfcmf/docusaurus-search-local")
@@ -187,9 +201,8 @@ const config = {
       // },
       announcementBar: {
         id: 'anouncement',
-        content:
-          '<span class="badge badge--success announcement-badge margin-right--sm">Explore Veda AI</span> Build internal tools from prompts or designs. <a target="_blank" rel="noopener noreferrer" href="https://www.dronahq.com/ai-workshop/?ref=top-banner-docs"> Register for workshop</a>',
-          
+        content: '<span class="badge badge--success announcement-badge margin-right--sm">&lsqb;Streaming live&rsqb;</span> DronaHQ Agentic AI launch keynote ✨ <a target="_blank" rel="noopener noreferrer" href="https://www.dronahq.com/launching-agents/?utm_source=docs">Watch now</a>',
+        // content: '<span class="badge badge--success announcement-badge margin-right--sm">Explore Veda AI</span> Build internal tools from prompts or designs. <a target="_blank" rel="noopener noreferrer" href="https://www.dronahq.com/ai-workshop/?ref=top-banner-docs"> Register for workshop</a>',          
         backgroundColor: '#fafbfc',
         textColor: '#091E42',
         isCloseable: true,
@@ -204,6 +217,67 @@ const config = {
           href: 'https://dronahq.com',
         },
         items: [
+          {
+            to: '/getting-started/introduction/',
+            label: 'Apps',
+            position: 'left',
+          },
+          {
+            to: '/agents/getting-started/introduction/',
+            label: 'Agents',
+            position: 'left',
+          },
+          {
+            to: 'https://discord.gg/QfN8yq4mqM',
+            label: 'Discord',
+            position: 'left',
+          },
+          {
+            label: 'Changelog',
+            position: 'left',
+            items: [
+              {
+                label: 'Cloud-Hosted',
+                to: '/cloud-changelog',
+              },
+              {
+                label: 'Self-Hosted (Stable)',
+                to: '/selfhosted-stable',
+              },
+              {
+                label: 'Self-Hosted (Edge)',
+                to: '/selfhosted-edge',
+              },
+              {
+                label: 'Controls and Actions',
+                to: '/controls-actions',
+              },
+              // {
+              //   label:'All',
+              //   to: '/all-changelog'
+              // },
+              // {
+              //   label:'Self-Hosted (deprecated)',
+              //   to:'/self-changelog'
+              // },
+            ],
+          },
+          {
+            type: 'search',
+            position: 'right',
+          },
+          {
+            to: 'https://studio.dronahq.com/login.aspx',
+            label: 'Login',
+            position: 'right',
+            className: 'nav-link_login',
+          },
+          {
+            to: 'https://www.dronahq.com/signup/',
+            label: 'Get Started',
+            position: 'right',
+            className: 'nav-link_getting-started',
+          },
           // {
           //   // type: 'docSidebar',
           //   sidebarId: 'docSidebar',
@@ -221,56 +295,19 @@ const config = {
           //   label: 'Blog',
           //   position: 'left',
           // },
-          {
-            to: '/getting-started/introduction/',
-            label: 'Docs',
-            position: 'left',
-          },
+          
           // {
           //   to: 'https://community.dronahq.com/c/ask-community',
           //   label: 'Forum',
           //   position: 'left',
           // },
-          {
-            to: 'https://discord.gg/QfN8yq4mqM',
-            label: 'Discord',
-            position: 'left',
-          },
+          
           // {
           //   to: 'https://headwayapp.co/dronahq-changelog',
           //   label: "What's New",
           //   position: 'left',
           // },
-          {
-            label: 'Changelog',
-            position: 'left',
-            items: [
-              // {
-              //   label:'All',
-              //   to: '/all-changelog'
-              // },
-              {
-                label: 'Cloud-Hosted',
-                to: '/cloud-changelog',
-              },
-              // {
-              //   label:'Self-Hosted (deprecated)',
-              //   to:'/self-changelog'
-              // },
-              {
-                label: 'Self-Hosted (Stable)',
-                to: '/selfhosted-stable',
-              },
-              {
-                label: 'Self-Hosted (Edge)',
-                to: '/selfhosted-edge',
-              },
-              {
-                label: 'Controls and Actions',
-                to: '/controls-actions',
-              },
-            ],
-          },
+          
           // {
           //   to: '/apidocs',
           //   label: "API Docs",
@@ -309,22 +346,6 @@ const config = {
           //   className: 'header-github-link',
           //   'aria-label': 'GitHub repository',
           // },
-          {
-            type: 'search',
-            position: 'right',
-          },
-          {
-            to: 'https://studio.dronahq.com/login.aspx',
-            label: 'Login',
-            position: 'right',
-            className: 'nav-link_login',
-          },
-          {
-            to: 'https://www.dronahq.com/signup/',
-            label: 'Get Started',
-            position: 'right',
-            className: 'nav-link_getting-started',
-          },
         ],
       },
       // footer: {
