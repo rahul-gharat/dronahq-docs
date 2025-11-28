@@ -8,7 +8,17 @@ pagination_prev: null
 
 ## Overview
 
-Your usage on the platform is measured using **credits**, based on the number of **input tokens** and **output tokens** processed by an AI model. This document explains how credits are calculated and lists the credit values for all supported models.
+Your usage on the platform is measured in **credits**, which reflect the amount of AI processing you consume. Credits are primarily calculated based on the number of **input tokens** and **output tokens** processed by AI models during a request.
+In addition to token usage, credits are also consumed by other platform capabilities, including:
+
+* **Knowledge Base operations** (e.g., retrieval, vector search)
+* **Built-in tools** such as:
+  * File parsing
+  * URL Crawling
+  * Text extraction
+Each of these operations has its own credit cost depending on the processing required.
+
+This document explains how credits are calculated and lists the credit values for all supported models.
 
 ## What Are Tokens?
 
