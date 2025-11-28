@@ -4,47 +4,101 @@ title: "Introduction"
 pagination_prev: null
 ---
 
-# DronaHQ Agent Builder - Introduction
+Welcome to **DronaHQ Agents**, a powerful platform for building AI-driven workflows, copilots, and agentic automations inside your apps—without managing infrastructure. This guide will help you get started quickly by setting up your environment, creating your first agent, connecting tools, and deploying.
 
-Welcome to DronaHQ Agent Builder! **Coming Soon** - A revolutionary platform designed to help developers create powerful, production-ready AI agents without the usual setup headaches.
+## What Are DronaHQ Agents?
+DronaHQ Agents are autonomous or semi-autonomous AI workers that can:
+- Use tools (APIs, databases, actions) to get work done
+- Follow multi-step plans
+- Work with your business data
+- Trigger workflows or complete tasks end-to-end
+- Integrate into apps, portals, forms, or automations
 
-## What is DronaHQ Agent Builder?
+Agents run in a secure, scalable execution environment and can be connected to apps via UI components, APIs, webhooks, or external systems.
 
-DronaHQ Agent Builder is an upcoming platform that will enable you to build sophisticated AI agents with ease. Unlike traditional development approaches that require extensive setup and configuration, our Agent Builder provides a streamlined, developer-friendly environment for creating intelligent automation solutions.
+## Key Concepts
 
-## Key Features
+#### **1. Agents**
+Programmable AI workers capable of planning and performing tasks using tools.
 
-### 🚀 **No Setup Headaches**
-- Build agents without complex configurations
-- Streamlined development environment
-- Simplified deployment process
+#### **2. Tools**
+Actions the agent can call—e.g., database queries, REST APIs, GPT models, DronaHQ actions, automations.
 
-### ⚡ **Production Ready**
-- Enterprise-grade performance
-- Scalable architecture
-- Robust security features
+#### **3. Memory**
+Store intermediate results, context, or conversation history.
 
-### 🎯 **Developer Friendly**
-- Intuitive interface
-- Powerful debugging tools
-- Comprehensive documentation
+#### **4. Workflows**
+Multi-step logic where agents can be embedded as steps.
 
-## Coming Soon
+#### **5. Integrations**
+Connect external services like Google Sheets, Gmail, Slack, Connector Libraries, REST APIs.
 
-We're working hard to bring you the next generation of AI agent development. Our Agent Builder will revolutionize how you create intelligent automation solutions, making it accessible for developers of all skill levels.
+## ✅ Prerequisites
+Before you start:
+- A DronaHQ account (sign up if you don't have one)
+- Access to **DronaHQ AI Agents**
 
-## Stay Updated
 
-Be the first to know when DronaHQ Agent Builder launches! Keep an eye on our announcements and documentation updates.
+## Step 1: Create Your First Agent
 
-:::info Documentation Status
-This documentation section is currently being developed and will be updated as our Agent Builder platform approaches launch. Check back regularly for the latest information and guides.
-:::
+1. Go to **DronaHQ → Agents**
+2. Click **+ Add Agent**
+3. Configure the basic properties:
+   - Agent Name
+   - Agent Description
+   - Model (OpenAI, Gemini, Anthropic)
 
-:::tip Coming Soon
-DronaHQ Agent Builder is in active development. The documentation will be comprehensive once the platform is ready for general availability.
-:::
+## Step 2: Add Tools to Your Agent
+Tools allow your agent to execute real tasks.
+1. Click **+ Add Tools**
+2. Choose tools from available list under - DronaHQ Tools, Connector Library, Automations, Code, MCP etc
+3. Configure Account for selected tool if not already configured using Edit option -> Add Account (under Environment section).
 
----
+### Types of Tools
+- **DronaHQ Tools** – Ready Integrations to 3rd party services like Gmail, Github, Slack, Notion, Google Sheets etc.
+- **Connector Library** – Connectors configured in your Account.
+- **Connector Query** – Use and Add Query for Connectors configured in your Account.
+- **Automations** (Coming Soon) – Connect with your automations .
+- **Code** – Write Python or Javascript code to be executed.
+- **MCP** – Integrate with your MCP servers in your account.
+- **Agent** (Coming Soon) – write custom logic/functions.
+- **Inbuilt Tools** – Inbuilt tools such as Websearch, Time, Calculator.
 
-*Last updated: Documentation coming soon*
+The agent will now call these tools using natural language instructions.
+
+## Step 3: Configure Instruction
+- Write down in details how your agent should execute for the given user instruction describing how the above added tools to be used.
+- Add Knowledge Base in case you want to perform RAG operation on Webpages, PDFs or any other Text files.
+- Use Keywords in instructions like {{currentuser.email}}, {{currentuser.groups}} etc to personalize the instructions specific to end user.
+
+## Step 4: Test Your Agent
+1. Go to **Playground**.
+2. Try natural prompts like:
+   - "Create a support ticket for user John Doe."
+   - "Find orders above $1000 from last week."
+3. Inspect:
+   - Tool calling sequence
+   - Final output
+   - Model reasoning
+
+## Step 5: Publish Your Agent
+Once you are satisfied with the Agent's working in playground for different prompts, You can publish your Agent. After publish, you can access the Agent as a standalone chatbot, embed in DronaHQ App or your website or integrate in any of your Automation.
+
+## Observability
+DronaHQ provides:
+- Agent execution logs
+- Tool call traces
+- Token usage & credit consumption
+- Error monitoring
+
+This helps debug and scale your agent workloads.
+
+## Best Practices
+- Keep tool schemas well-defined
+- Add guardrails & constraints in system prompt
+- Break large tasks into multi-step agents
+- Use Knowledge Base for RAG or knowledge tasks
+- Test each tool independently before connecting
+
+## You're Ready to Build Powerful Agents!
+With DronaHQ Agents, you can automate business processes, power internal copilots, and connect AI to real systems with minimal effort.
