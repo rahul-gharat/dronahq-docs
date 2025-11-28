@@ -4,7 +4,7 @@ title: Customer-Specific Supplement
 ---
 
 
-The terms of this DronaHQ–Specific Supplement (“Supplement”) below modify and supplement the Customer’s Contract (as defined in the [Customer Terms of Service](/legal/customer-terms)) for any Customer category to which they apply.  In the event of any inconsistency between this Supplement and the Contract, the terms of this Supplement shall govern.  Nothing herein constitutes DronaHQ acting as a government contractor.
+The terms of this DronaHQ–Specific Supplement (“Supplement”) below modify and supplement the Customer’s Contract (as defined in the [Customer Terms of Service](/legal/customer-user-agreement/customer-terms)) for any Customer category to which they apply.  In the event of any inconsistency between this Supplement and the Contract, the terms of this Supplement shall govern.  Nothing herein constitutes DronaHQ acting as a government contractor.
 
 ---
 

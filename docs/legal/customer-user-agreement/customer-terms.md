@@ -5,13 +5,13 @@ title: Customer Terms of Service
 
 
 
-These Customer Terms of Service (the "Customer Terms") describe your rights and responsibilities when using our developer tools and platform (the "Services"). These Customer Terms apply both to direct use of the Services and to any expert services we offer to help customers launch, accelerate, or optimize their use of the Services ("Expert Services"). Please read these Customer Terms carefully. If you are a Customer (defined below), these Customer Terms govern your access and use of our Services and Expert Services. If you are an individual invited by a Customer to use the Services, the [User Terms of Service](/legal/user-terms-of-services) (the "User Terms") govern your access and use.
+These Customer Terms of Service (the "Customer Terms") describe your rights and responsibilities when using our developer tools and platform (the "Services"). These Customer Terms apply both to direct use of the Services and to any expert services we offer to help customers launch, accelerate, or optimize their use of the Services ("Expert Services"). Please read these Customer Terms carefully. If you are a Customer (defined below), these Customer Terms govern your access and use of our Services and Expert Services. If you are an individual invited by a Customer to use the Services, the [User Terms of Service](/legal/customer-user-agreement/user-terms-of-services) (the "User Terms") govern your access and use.
 
 ## THE CONTRACT
 
 ### These "Customer Terms" Form a Part of a Binding "Contract”
 
-These Customer Terms, together with any written agreement between Customer and DronaHQ and any executed Order Forms, constitute the entire binding Contract governing Customer’s acquisition and use of the Services. Any [Customer-Specific Supplement](/legal/customer-specific-supplement) applicable to Customer, by reference, is also part of this Contract. References to “DronaHQ,” “we,” “us” or “our” denote the specific corporate entity identified under “Governing Law and Venue.”
+These Customer Terms, together with any written agreement between Customer and DronaHQ and any executed Order Forms, constitute the entire binding Contract governing Customer’s acquisition and use of the Services. Any [Customer-Specific Supplement](/legal/customer-user-agreement/customer-specific-supplement) applicable to Customer, by reference, is also part of this Contract. References to “DronaHQ,” “we,” “us” or “our” denote the specific corporate entity identified under “Governing Law and Venue.”
 
 ## Agreement on Behalf of Customer
 
@@ -55,11 +55,11 @@ The Services may enable connections to third-party databases, applications, AI e
 
 **Privacy**
 
-Customer and its Authorized Users should consult [DronaHQ’s Privacy Policy](/legal/privacy-policy) for details on how usage and performance data are collected and used.
+Customer and its Authorized Users should consult [DronaHQ’s Privacy Policy](/legal/privacy-data-protection-and-security/privacy-policy) for details on how usage and performance data are collected and used.
 
 **Expert Services**
 
-If Customer elects to purchase Expert Services pursuant to its subscription plan, Customer and DronaHQ will execute an Order Form specifying the scope and fees. Expert Services are governed by the [Expert Services Addendum](/legal/custom-services-agreement), which is incorporated into this Contract.
+If Customer elects to purchase Expert Services pursuant to its subscription plan, Customer and DronaHQ will execute an Order Form specifying the scope and fees. Expert Services are governed by the [Expert Services Addendum](/legal/customer-user-agreement/custom-services-agreement), which is incorporated into this Contract.
 
 ## CUSTOMER RESPONSIBILITIES
 
@@ -276,5 +276,5 @@ The Contract, and any disputes arising out of or related hereto, will be governe
 
 ## Entire Agreement
 
-The Contract, including these Customer Terms and all referenced pages and Order Forms, if applicable, constitutes the entire agreement between the parties and supersedes all prior and contemporaneous agreements, proposals or representations, written or oral, concerning its subject matter. Without limiting the foregoing, the Contract supersedes the terms of any online agreement electronically accepted by Customer, Authorized Personnel or any Users. However, to the extent of any conflict or inconsistency between the provisions in these Customer Terms and any other documents or pages referenced in these Customer Terms, the following order of precedence will apply: (1) the terms of any Order Form (if any), (2) the portions of the [Customer-Specific Supplement](/legal/customer-specific-supplement) that apply to Customer (if any), (3) the Customer Terms and (4) finally any other documents or pages referenced in the Terms. Notwithstanding any language to the contrary therein, no terms or conditions stated in a Customer purchase order, vendor onboarding process or web portal, or any other Customer order documentation (excluding Order Forms) will be incorporated into or form any part of the Contract, and all such terms or conditions will be null and void.
+The Contract, including these Customer Terms and all referenced pages and Order Forms, if applicable, constitutes the entire agreement between the parties and supersedes all prior and contemporaneous agreements, proposals or representations, written or oral, concerning its subject matter. Without limiting the foregoing, the Contract supersedes the terms of any online agreement electronically accepted by Customer, Authorized Personnel or any Users. However, to the extent of any conflict or inconsistency between the provisions in these Customer Terms and any other documents or pages referenced in these Customer Terms, the following order of precedence will apply: (1) the terms of any Order Form (if any), (2) the portions of the [Customer-Specific Supplement](/legal/customer-user-agreement/customer-specific-supplement) that apply to Customer (if any), (3) the Customer Terms and (4) finally any other documents or pages referenced in the Terms. Notwithstanding any language to the contrary therein, no terms or conditions stated in a Customer purchase order, vendor onboarding process or web portal, or any other Customer order documentation (excluding Order Forms) will be incorporated into or form any part of the Contract, and all such terms or conditions will be null and void.
 
