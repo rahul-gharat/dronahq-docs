@@ -3,7 +3,7 @@ sidebar_position: 2
 title: Security practices
 ---
 
-We take the security of your data very seriously at DronaHQ. If you have additional questions regarding security, we are happy to answer them. Please write to [security@dronahq.com](mailto:security@dronahq.com) and we will respond as quickly as we can for more security information. This Security Practices page describes the administrative, technical and physical controls applicable to DronaHQ.
+We take the security of your data very seriously at DronaHQ. If you have additional questions regarding security, we are happy to answer them. Please write to [support@dronahq.com](mailto:support@dronahq.com) and we will respond as quickly as we can for more security information. This Security Practices page describes the administrative, technical and physical controls applicable to DronaHQ.
 
 ## Hosting, Architecture, and configurations
 
@@ -59,7 +59,7 @@ During the term of a subscription, your administrator may import and export Cust
 
 ### Return of Customer Data
 
-Within 30 days post contract termination, you may request return of Customer Data stored by DronaHQ (to the extent such data has not already been deleted by you). Information about the export capabilities of the DronaHQ services can be found by reaching out to our data protection team at [friends@dronahq.com](mailto:friends@dronahq.com).
+Within 30 days post contract termination, you may request return of Customer Data stored by DronaHQ (to the extent such data has not already been deleted by you). Information about the export capabilities of the DronaHQ services can be found by reaching out to our data protection team at [support@dronahq.com](mailto:support@dronahq.com).
 
 ### Deletion of Custom Apps and Customer Data
 
@@ -69,11 +69,11 @@ The DronaHQ services provide the option for administrators to delete Custom Apps
 
 ### Certifications
 
-Certifications are performed on the DronaHQ services, and Customers may request a copy of available applicable certifications by writing us to [security@dronahq.com](mailto:security@dronahq.com). At a minimum, DronaHQ will align with prevailing industry standards such as SOC 2 Type 2, or any successor or superseding standard.
+Certifications are performed on the DronaHQ services, and Customers may request a copy of available applicable certifications by writing us to [support@dronahq.com](mailto:support@dronahq.com). At a minimum, DronaHQ will align with prevailing industry standards such as SOC 2 Type 2, or any successor or superseding standard.
 
 ### Audits
 
-To verify that our security practices are sound and to monitor the DronaHQ services for new vulnerabilities discovered by the security research community, the DronaHQ services undergo security assessments by internal personnel, and for the DronaHQ services by respected external security firms who perform regular audits of the DronaHQ services. In addition to periodic and targeted audits of the DronaHQ services, we also employ the use of continuous hybrid automated scanning of our web platform. Customers may request a copy of available applicable external audit reports by writing us to [security@dronahq.com](mailto:security@dronahq.com).
+To verify that our security practices are sound and to monitor the DronaHQ services for new vulnerabilities discovered by the security research community, the DronaHQ services undergo security assessments by internal personnel, and for the DronaHQ services by respected external security firms who perform regular audits of the DronaHQ services. In addition to periodic and targeted audits of the DronaHQ services, we also employ the use of continuous hybrid automated scanning of our web platform. Customers may request a copy of available applicable external audit reports by writing us to [support@dronahq.com](mailto:support@dronahq.com).
 
 ### Intrusion Detection
 

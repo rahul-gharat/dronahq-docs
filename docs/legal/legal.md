@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-title: "DronaHQ Legal Agreements and Policies"
+title: "Overview"
 pagination_prev: null
 ---
 
@@ -19,7 +19,7 @@ import ArrowRight from '@site/static/icons/arrow_right.svg';
     <p>
       This Acceptable Use Policy defines acceptable and unacceptable practices for using DronaHQ's services. Violations may lead to suspension or termination of access. Regularly review for updates.
     </p>
-    <VersionedLink to="/legal/acceptable-use-policy">
+    <VersionedLink to="/legal/customer-user-agreement/acceptable-use-policy">
       View Acceptable Use Policy <ArrowRight className="arrow" />
     </VersionedLink>
   </div>
@@ -31,7 +31,7 @@ import ArrowRight from '@site/static/icons/arrow_right.svg';
     <p>
       Understand your rights and responsibilities when accessing DronaHQ services, including expert services to enhance your use of our platform.
     </p>
-    <VersionedLink to="/legal/customer-terms">
+    <VersionedLink to="/legal/customer-user-agreement/customer-terms">
       View Customer Terms of Service <ArrowRight className="arrow" />
     </VersionedLink>
   </div>
@@ -43,7 +43,7 @@ import ArrowRight from '@site/static/icons/arrow_right.svg';
     <p>
       Learn about our practices for collecting, using, and protecting your data. This policy does not apply to third-party integrations.
     </p>
-    <VersionedLink to="/legal/privacy-policy">
+    <VersionedLink to="/legal/privacy-data-protection-and-security/privacy-policy">
       View Privacy Policy <ArrowRight className="arrow" />
     </VersionedLink>
   </div>
@@ -55,7 +55,7 @@ import ArrowRight from '@site/static/icons/arrow_right.svg';
     <p>
       DronaHQ’s policy for handling data disclosure or deletion requests from users and government agencies.
     </p>
-    <VersionedLink to="/legal/data-request-policy">
+    <VersionedLink to="/legal/privacy-data-protection-and-security/data-request-policy">
       View Data Request Policy <ArrowRight className="arrow" />
     </VersionedLink>
   </div>
@@ -67,22 +67,12 @@ import ArrowRight from '@site/static/icons/arrow_right.svg';
     <p>
       Discover the measures we take to protect your data, including technical and administrative controls.
     </p>
-    <VersionedLink to="/legal/security-practices">
+    <VersionedLink to="/legal/privacy-data-protection-and-security/security-practices">
       View Security Practices <ArrowRight className="arrow" />
     </VersionedLink>
   </div>
 
-  <div className="card">
-    <div className="card-header">
-      <h4>ANY Licenses</h4>
-    </div>
-    <p>
-      A detailed list of software used by DronaHQ, including the applicable licenses.
-    </p>
-    <VersionedLink to="/legal/source-licenses">
-      View Licenses <ArrowRight className="arrow" />
-    </VersionedLink>
-  </div>
+  
 
   <div className="card">
     <div className="card-header">
@@ -91,7 +81,7 @@ import ArrowRight from '@site/static/icons/arrow_right.svg';
     <p>
       Steps to report copyright infringement under the Digital Millennium Copyright Act.
     </p>
-    <VersionedLink to="/legal/dmca-policy">
+    <VersionedLink to="/legal/intellectual-property/dmca-policy">
       View DMCA Policy <ArrowRight className="arrow" />
     </VersionedLink>
   </div>
@@ -103,7 +93,7 @@ import ArrowRight from '@site/static/icons/arrow_right.svg';
     <p>
       Information about third-party data processors engaged by DronaHQ to deliver services.
     </p>
-    <VersionedLink to="/legal/subprocessors">
+    <VersionedLink to="/legal/privacy-data-protection-and-security/subprocessor">
       View Subprocessors <ArrowRight className="arrow" />
     </VersionedLink>
   </div>
