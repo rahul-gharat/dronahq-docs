@@ -66,7 +66,7 @@ Here, we will connect to a `mysql` database.
 3. Enter connector string which will be in a format represented below.
 
   ```sql
-  mysql://<username>:<pwd>@db-dhq.c8jniapv05hb.us-east-1.rds.amazonaws.com:3306/dbonbording
+  mysql://username:password@host:port/database
   ```
 
 4. Click the `Test connection` button to test the connection and ensure the database is valid.
@@ -92,7 +92,7 @@ Here, we will connect to a `mysql` database.
 6. Enter below query under `Write Your Query` to get first 10 `customers`.
 
 ```sql
-select * from Customers ORDER BY id asc LiMIT 10;
+select * from Customers ORDER BY id asc LIMIT 10;
 ```
 
 7. Click on `Test Query` and then `Save` this query once test is successful.
