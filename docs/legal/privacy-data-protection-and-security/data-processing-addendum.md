@@ -47,7 +47,7 @@ In this Agreement, the following terms have the following meanings:
 - "Regulator Correspondence" means any correspondence or communication received from a Supervisory Authority or other regulatory authority relating to Relevant Personal Data.
 - "Restricted Transfer" means: (a) any transfer of Relevant Personal Data Processed under this DPA: (b) from the EU, the EEA, the United Kingdom or Switzerland; (c) to countries which do not ensure an adequate level of data protection within the meaning of Data Protection Laws; and (d) subject to Data Protection Laws.
 - "DronaHQ Group" means DronaHQ and its Affiliates engaged in the Processing of Relevant Personal Data.
-- "Security Practices Page" means DronaHQ’s Security Practices Page, as updated from time to time, and currently accessible at https://docs.dronahq.com/legal/security.
+- "Security Practices Page" means DronaHQ’s Security Practices Page, as updated from time to time, and currently accessible at https://docs.dronahq.com/legal/privacy-data-protection-and-security/security-practices/.
 - "Security Incident" means any breach of security leading to the accidental or unlawful destruction, loss, alteration, unauthorised disclosure of, or access to, Relevant Personal Data.
 - "Services" has the meaning given to that term in the Agreement.
 - "Standard Contractual Clauses" means the EEA SCCs, Swiss SCCs and UK SCCs.
@@ -107,7 +107,7 @@ As a condition to permitting a third-party Sub-processor to Process Relevant Per
 
 ### 3.2 List of Current Sub-processors and Notification of New Sub-processors.
 
-A current list of Sub-processors for the Services, including the identities of those Sub-processors and their country of location, is accessible via https://docs.dronahq.com/legal/subprocessors (the "Sub-processor List"). Customer hereby consents to these Sub-processors, their locations and Processing activities as it pertains to Relevant Personal Data. The Sub-processor List contains a mechanism to subscribe to notifications of new Sub-processors, and if Customer subscribes, shall provide notification of new Sub-processor(s) before authorising such new Sub-processor(s) to Process Relevant Personal Data in connection with the provision of the applicable Services.
+A current list of Sub-processors for the Services, including the identities of those Sub-processors and their country of location, is accessible via https://docs.dronahq.com/legal/privacy-data-protection-and-security/subprocessor (the "Sub-processor List"). Customer hereby consents to these Sub-processors, their locations and Processing activities as it pertains to Relevant Personal Data. The Sub-processor List contains a mechanism to subscribe to notifications of new Sub-processors, and if Customer subscribes, shall provide notification of new Sub-processor(s) before authorising such new Sub-processor(s) to Process Relevant Personal Data in connection with the provision of the applicable Services.
 
 ### 3.3 Objection Right for New Sub-processors.
 

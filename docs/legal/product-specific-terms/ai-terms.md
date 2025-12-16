@@ -5,7 +5,7 @@ title: AI Terms
 
 # **DronaHQ AI Terms**
 
-These DronaHQ AI Terms (“AI Terms”) govern the Customer’s use of DronaHQ AI (defined below) and supplement the Terms of Service, Master Subscription Agreement, or any other agreement executed between DronaHQ, Inc. (“DronaHQ”) and the Customer governing use of the Services (“Agreement”). Capitalised terms not defined here shall have the meanings assigned in the Agreement. DronaHQ AI shall be deemed part of the “Services” for all purposes of the Agreement.
+These DronaHQ AI Terms (“AI Terms”) govern the Customer’s use of DronaHQ AI (defined below) and supplement the [Terms of Service](/legal/customer-user-agreement/customer-terms), [Master Subscription Agreement](/legal/customer-user-agreement/master-subscription-agreement/), or any other agreement executed between DronaHQ, Inc. (“DronaHQ”) and the Customer governing use of the Services (“Agreement”). Capitalised terms not defined here shall have the meanings assigned in the Agreement. DronaHQ AI shall be deemed part of the “Services” for all purposes of the Agreement.
 
 ---
 
