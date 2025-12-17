@@ -37,10 +37,16 @@ The Numeric Control is a versatile tool used to gather numeric data or perform c
   Select here what you want to show in the input area when it's empty.
 
   #### Format
-  This property segment helps user to determine to keep the numeric format suitable for the app, provided with options like `accounting`,`normal`, and `Currency` also can determine whether to make the thousand separator as `comma, dot, space` and `quote`.
+  Different properties to decide the format for the value being displayed can be configured here, like `Format`, `Digit-Grouping` and `Separator` .
+
+  | Property | Description |
+  | :------- | :---------- |
+  | Format | This property segment helps user to determine to keep the numeric format suitable for the app, provided with options like `Normal`, `Accounting`, and `Currency` also can determine whether to make the thousand separator as `comma, dot, space` and `quote`. |
+  | Digit-Grouping | It specifies the system according to which the digit should be grouped together. We can select a value among `International`, `Indian` and `Myriad (East Asia)` *(Myriad-based system).*
+  | Separator | Specifies what separator should be used for grouping of digits. |
 
   #### Decimal
-  In this property segment you can defines the number of digits after the decimal point to be displayed fro decimal precision. Use 0 for no decimal points.
+  In this property segment you can define the number of digits after the decimal point to be displayed for decimal precision. Use 0 for no decimal points.
 
   </TabItem>
 </Tabs>
