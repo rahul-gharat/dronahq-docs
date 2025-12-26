@@ -21,7 +21,7 @@
     "typecheck": "tsc",
     "spellcheck": "./spell_check.sh",
     "spelladd": "./spell_add.sh",
-    "spellingcheck": "echo \"Spellchecking...\" && mdspell \"./docs/**/*.html\" \"./docs/**/*.md\" \"./docs/**/*.mdx\" \"./static/files/*.json\" \"!**/node_modules/**/*\" -a --en-us -r || :",
+    "spellingcheck": "echo \"Spellchecking...\" && mdspell \"./docs/**/*.html\" \"./docs/**/*.md\" \"./docs/**/*.mdx\" \"./static/files/*.json\" \"./docs-agents/**/*.md\" \"./docs-agents/**/*.mdx\" \"!**/node_modules/**/*\" -a --en-us -r || :",
     "spellcheck-file": "mdspell -a --en-us -r"
   },
   "dependencies": {

@@ -3,7 +3,7 @@ sidebar_position: 2
 title: Acceptable Use Policy
 ---
 
-## Acceptable Use Policy
+
 
 This Acceptable Use Policy (“AUP”) describes permitted and prohibited conduct when using DronaHQ and related services (collectively, the “Services”). We may suspend, terminate, or downgrade your access if you engage in willful, repeated, or harmful violations of this AUP. Capitalized terms not defined here have the meanings given in our User Terms of Service.
 
@@ -97,7 +97,7 @@ You may **not** use our Services or Custom Apps to:
 
 ### Contact
 
-If you have questions about this policy, please contact us at [friends@dronamobile.com](mailto:friends@dronamobile.com) or by mail:
+If you have questions about this policy, please contact us at [support@dronahq.com](mailto:support@dronahq.com) or by mail:
 
 ```
 Deltecs Infotech Pvt. Ltd.

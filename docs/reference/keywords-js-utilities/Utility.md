@@ -1157,3 +1157,41 @@ await `UTILITY.StopGPSLocationTracking()` allows to gracefully terminate backgro
 ```javascript
 await UTILITY.StopGPSLocationTracking();
 ```
+
+## CHANGESTATE
+
+`UTILITY.CHANGESTATE()` method updates the state of one or more controls by setting, removing, or toggling specified states dynamically in order to set the state of multiple control across screens from one place.
+
+
+#### Usage
+
+```jsx
+UTILITY.CHANGESTATE(
+  [
+    { ctrlName: 'controlUniqueName', stateOperation: 'set',    states: ['StateName'] },
+    { ctrlName: 'anotherControlName', stateOperation: 'remove', states: ['StateName'] },
+    { ctrlName: 'thirdControlName',  stateOperation: 'toggle', states: ['StateName', 'AnotherStateName'] }
+  ]
+);
+
+```
+
+#### Parameters
+
+
+| Parameter          | Accepts         | Possible Values                                                                 |
+| ------------------ | --------------- | ------------------------------------------------------------------------------- |
+| **ctrlName**       | `string`        | Unique name of the control whose state will be modified.                        |
+| **stateOperation** | `string`        | Type of operation to perform. Possible values: `"set"`, `"remove"`, `"toggle"`. |
+| **states**         | `array[string]` | If you select Toggle, provide an array of multiple states to toggle through; for other operations, provide an array with a single state.       |
+
+
+#### Example
+
+```jsx
+UTILITY.CHANGESTATE([
+   { ctrlName: "button8", stateOperation: "set", states: ["Disable"] },
+   { ctrlName: "button9", stateOperation: "remove", states: ["Disable"] },
+   { ctrlName: "button10", stateOperation: "toggle", states: ["Enable","Disable"] }
+]);
+```

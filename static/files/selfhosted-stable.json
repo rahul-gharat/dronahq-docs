@@ -1,5 +1,174 @@
 [
     {
+    "timestamp": 1761289443000,
+    "tags": ["Self-Hosted", "3.8.13-stable"],
+    "heading": "Version 3.8.13-stable",
+    "cards" : [
+      {
+        "title": "Added",
+        "type": "added",
+        "points": [
+          "Added support for repeat query strings for array-type values in REST API within automation.",
+"Added support for repeat query strings for array-type values in REST API."
+        ]
+      },
+      {
+        "title":"Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed an issue where connector libraries with dynamic variables broke after Git sync.",
+"Fixed an issue where transformed response data was lost after switching data queries without saving.",
+"Fixed an issue where Action Flow crashed and logic was wiped when moving branches.",
+"Fixed an issue where the Save button was not visible and JSON parsing failed during save operations in widget editor mode."
+        ]
+      },
+      {
+        "title": "Removed",
+        "type": "removed",
+        "points": [
+          "Removed the deprecated Filter Objects option from the Fx Formula module."
+    ]
+  }
+    ]
+  },
+  {
+    "timestamp": 1762922853000,
+    "tags": ["Self-Hosted", "3.8.14-stable"],
+    "heading": "Version 3.8.14-stable",
+    "cards" : [
+      {
+        "title": "Added",
+        "type": "added",
+        "points": [
+          "Added the updateRowV2 API in Airtable to improve row update handling.",
+          "Added informational text to ensure proper rendering of Font Awesome icons in supported controls."
+        ]
+      },
+      {
+        "title":"Enhancements",
+        "type": "improved",
+        "points": [
+          "Enhanced database compatibility by updating the MySQL dependency to mysql2."
+
+        ]
+      },
+      {
+        "title":"Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed an issue where the file path for offline submissions was not handled correctly.",
+"Fixed an issue where branding settings were not correctly applied to the end-user portal.",
+"Fixed an issue where the test connection was not functioning correctly for the Firebase connector.",
+"Fixed an issue in the Data Query module where connector queries failed to open after saving their associated subcategory."
+    ]
+  }
+    ]
+    },
+    {
+    "timestamp": 1761289443000,
+    "tags": ["Self-Hosted", "3.8.13-stable"],
+    "heading": "Version 3.8.13-stable",
+    "cards" : [
+      {
+        "title": "Added",
+        "type": "added",
+        "points": [
+          "Added support for repeat query strings for array-type values in REST API within automation.",
+"Added support for repeat query strings for array-type values in REST API."
+        ]
+      },
+      {
+        "title":"Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed an issue where connector libraries with dynamic variables broke after Git sync.",
+"Fixed an issue where transformed response data was lost after switching data queries without saving.",
+"Fixed an issue where Action Flow crashed and logic was wiped when moving branches.",
+"Fixed an issue where the Save button was not visible and JSON parsing failed during save operations in widget editor mode."
+        ]
+      },
+      {
+        "title": "Removed",
+        "type": "removed",
+        "points": [
+          "Removed the deprecated Filter Objects option from the Fx Formula module."
+    ]
+  }
+    ]
+  },
+  {
+    "timestamp": 1761211636000,
+    "tags": ["Self-Hosted", "3.8.12-stable"],
+    "heading": "Version 3.8.12-stable",
+    "cards" : [
+    
+      {
+        "title": "Added",
+        "type": "added",
+        "points": [
+          " Added support for configuring REST API base URLs through environment variables in Manage Environment."
+        ]
+      },
+      {
+        "title":"Fixed",
+        "type": "fixed",
+        "points": [
+  "Fixed an issue where deleting a branch inside a query in ActionFlow also removed the parent query unintentionally.",
+"Fixed an issue in secure response handling caused by missing code.",
+"Fixed an issue where auto-save rules and validations were not functioning as expected.",
+"Fixed an issue where multiple concurrent access and save operations were triggered even when the app was already saved.",
+"Fixed an issue where MySQL raised session memory leak warnings.",
+"Fixed an issue where fields remained editable via keyboard in Readonly Mode.",
+"Fixed an issue where bindings disappeared in ActionFlow.",
+"Fixed an issue where embed code IDs conflicted with database limits due to a 45-character restriction.",
+"Fixed an issue where empty folders from deleted screens were retained in the Git repository after synchronization.",
+"Fixed an issue where Production environment details were unintentionally modified while editing connector details.",
+"Fixed an issue where the 'Pull from Git' operation failed when using custom controls.",
+"Fixed an issue where string functions caused failures during Git synchronization."]
+      }
+    ]
+  },  
+  {
+    "timestamp": 1758176656000,
+    "tags": ["Self-Hosted", "3.8.11-stable"],
+    "heading": "Version 3.8.11-stable",
+    "cards" : [
+    
+      {
+        "title": "Added",
+        "type": "added",
+        "points": [
+          "Added new response header dronahq-service in all API responses to provide deployment type, version, and service name for easier debugging and support."
+        ]
+      },
+      {
+        "title":"Enhancements",
+        "type": "improved",
+        "points": [
+          "Enhanced the code editor by upgrading the CodeMirror library to a newer version.",
+"Enhanced error handling for connector decryption to improve stability and prevent crashes.",
+"Enhanced the File Storage bottom panel with better support for single-select and multi-select options."
+        ]
+      },
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+    "Fixed an issue where connectors within REST API action branches were not being exported in Automation.",
+"Fixed an issue where fields could still be edited via keyboard input despite being in Read-Only mode.",
+"Fixed an issue where the concurrent access popup reappeared after selecting 'Continue' in read-only mode.",
+"Fixed an issue where the Create App Tour would get stuck on the 'Select Email Button' step.",
+"Fixed an issue where Data Query with manual pagination did not function as expected.",
+"Fixed an issue where special characters were incorrectly allowed in screen and screen folder names.",
+"Fixed an issue where empty Screen Action Flows were not handled correctly.",
+"Fixed an issue where the Failure Condition message was missing in the execute Query API response in the package.",
+"Fixed an issue where the timeout value from connection options was not applied in the BigQuery connector.",
+"Fixed an issue where the Edit Environment sidebar height was rendering incorrectly."
+        ]
+      }
+    ]
+  },  
+  {
     "timestamp": 1756879178000,
     "tags": ["Self-Hosted", "3.8.10-stable"],
     "heading": "Version 3.8.10-stable",

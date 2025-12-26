@@ -1,4 +1,160 @@
 [
+   {
+    "timestamp": 1762495929000,
+    "tags": ["Cloud-Hosted"],
+    "heading": "",
+    "cards": [
+      {
+        "title": "Added",
+        "type": "added",
+        "points": [
+          "Added the Vibe Code feature to enable creation of powerful apps using AI."
+        ]
+      },
+      {
+        "title": "Enhancements",
+        "type": "improved",
+        "points": [
+          "Enhanced the Developer On-Demand Call Balance feature with an updated app link.",
+"Enhanced the MCP sidebar by adding functionality to edit sub-category information."
+        ]
+      },
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed issues related to multi-resolution preview support, Data Query variable attachment in Vibe apps, and last conversation loading.",
+          "Fixed an issue where the file path for offline submissions was not handled properly.",
+"Fixed an issue where transformed response data was lost after switching data queries without saving.",
+"Fixed an issue where HTML responses from connectors were breaking the Connector Log Panel UI.",
+"Fixed various drag-and-drop issues to improve usability."
+        ]
+      }
+    ]
+  },
+    {
+    "timestamp": 1760434036000,
+    "tags": ["Cloud-Hosted"],
+    "heading": "",
+    "cards": [
+      {
+        "title": "Added",
+        "type": "added",
+        "points": [
+          "Added iframe embed mode in Studio.",
+"Added an AI Providers listing page for DronaHQ AI.",
+
+"Added a self-activation option in Veda AI with 300 credits using a personal key.",
+"Added access control for AI features.",
+"Added live interaction on the builder for controls and data queries."
+        ]
+      },
+      {
+        "title": "Enhancements",
+        "type": "improved",
+        "points": [
+          "Enhanced Veda AI initialization for improved performance.",
+"Enhanced and optimized the frequency of addon check calls when opening screens.",
+"Enhanced the MCP installation flow with AI Agent based improvements.",
+"Enhanced the column formatting UI with a revamped design.",
+"Enhanced the Preview Screen Selection dropdown to be case-insensitive."
+        ]
+      },    
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed an issue where newly added or modified connectors could not be added or edited within the legacy Workflow (BPM workflow).",
+"Fixed an issue where the test connection failed for the Firebase connector when Firebase authentication was not configured.",
+"Fixed an issue where branch logic in Actionflow library JS code incorrectly deleted the parent query along with its children.",
+"Fixed an issue where the Undo button was not visible in Veda AI chat for approved actions.",
+"Fixed an issue with the menu background being cut off.",
+"Fixed schema fetching in AI Assist via RunAPI.",
+"Fixed a spelling error and added a nullable checkbox in the variable list popup."
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1758176656000,
+    "tags": ["Cloud-Hosted"],
+    "heading": "",
+    "cards": [
+      {
+        "title": "Added",
+        "type": "added",
+        "points": [
+          "Added AI Agents models listing.",
+"Added dot operator compatibility in Veda AI.",
+
+"Added AI Agent tools listing."
+        ]
+      },
+      {
+        "title": "Enhancements",
+        "type": "improved",
+        "points": [
+          "Enhanced the Studio Agents Dashboard by integrating Agent Flows project endpoints.",
+"Enhanced dot operator functionality in Veda AI."
+        ]
+      },
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed an issue where the old connector library sidebar was not working as expected.",
+"Fixed a bug causing formulas not to save when clicking 'Save and Validate' in the mapped data section.",
+"Fixed an issue where special characters were incorrectly allowed in screen and screen folder names.",
+"Fixed an issue where Date/Description height was not rendering properly in Preview mode."
+        ]
+      },
+      {
+        "title": "Removed",
+        "type": "removed",
+        "points": [
+          "Removed an unnecessary encryption layer as DronaHQ credentials now never leave the server, ensuring secure handling."
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": 1757571856000,
+    "tags": ["Cloud-Hosted"],
+    "heading": "",
+    "cards": [
+      {
+        "title": "Added",
+        "type": "added",
+        "points": [
+          "Added support for undoing actions in Veda AI, allowing users to revert changes seamlessly.",
+"Added support for the Rules Agent in Veda AI.",
+"Added support in PDF Creator for creating Data Queries with variables in Veda AI.",
+"Added a feature for DronaHQ Docs search within Veda AI."
+        ]
+      },
+      {
+        "title": "Enhancements",
+        "type": "improved",
+        "points": [
+          "Enhanced DQ with a new redirection option for Create PDF and Automation actions."
+        ]
+      },
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed an issue where the Approve BRD action displayed an error despite receiving a success response.",
+"Fixed an issue where incorrect icons were shown for OpenAI integration.",
+
+"Fixed an issue in DQ-PDF Creator where the 'Add new PDF' option disappeared after clicking the refresh icon.",
+"Fixed an issue where the endpoint for fetching table/schema data was incorrect in the DQ SQL UI editor.",
+"Fixed an issue where the cross icon disappeared when typing long query strings in the DataQuery SQL UI editor.",
+"Fixed an issue where users were unable to delete branches inside success/failure actions.",
+"Fixed an issue where offline submission for file uploads was not working as expected."
+        ]
+      }
+    ]
+  },
     {
    "timestamp": 1756375457000,
     "tags": ["Cloud-Hosted"],
@@ -43,7 +199,8 @@
         "title": "Added",
         "type": "added",
         "points": [
-          "Added support to call another automation webhook directly within an automation task."
+          "Added support to call another automation webhook directly within an automation task.",
+          "Added support in VedaAI to set External CSS for control using NLP."
         ]
       },
       {
@@ -112,6 +269,7 @@
         "title": "Enhancements",
         "type": "improved",
         "points": [
+          "Enhanced Composite Control to support multiple bindings.",
 "Enhanced auto-refresh behavior to also trigger header refresh for master controls in the table grid.",
 "Enhanced language support by updating the Moment.js library.",
 "Enhanced the variable info pop-up in connectors by updating data type values.",
@@ -125,6 +283,7 @@
       "title": "Fixed",
       "type": "fixed",
       "points": [
+        "Fixed an issue where some control formulas were not being added correctly.",
 "Fixed an issue where nested child options could not be selected from default values in list-type controls.",
 "Fixed an issue where the toggle click event did not properly trigger the prefix icon in the date range picker.",
 "Fixed an issue where Veda AI prompt box displayed actionflow data queries.",

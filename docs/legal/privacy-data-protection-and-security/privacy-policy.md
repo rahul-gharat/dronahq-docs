@@ -49,7 +49,7 @@ In general, you are not subject to a statutory or contractual obligation to prov
 
 ## How We Process your Information and our Legal Bases (under GDPR) for Doing So
 
-Customer Data will be used by DronaHQ in accordance with Customer's instructions, including any applicable terms in the [Customer Terms of Service](/legal/customer-terms) ("Terms"), Subscription Agreement, or DPA, and as required by applicable law. As explained above, in general, DronaHQ is a processor of Customer Data and the Customer is the controller. The Customer may, for example, use the Services to provision or deprovision access to the Custom App, enable or disable Third Party Services, manage permissions and otherwise apply its policies to the Services.
+Customer Data will be used by DronaHQ in accordance with Customer's instructions, including any applicable terms in the [Customer Terms of Service](/legal/customer-user-agreement/customer-terms) ("Terms"), Subscription Agreement, or DPA, and as required by applicable law. As explained above, in general, DronaHQ is a processor of Customer Data and the Customer is the controller. The Customer may, for example, use the Services to provision or deprovision access to the Custom App, enable or disable Third Party Services, manage permissions and otherwise apply its policies to the Services.
 
 DronaHQ uses Other Information to operate our Services, Website and business for the following purposes:
 
@@ -119,7 +119,7 @@ The following safeguards are applied where DronaHQ transfers Personal Data betwe
 
 DronaHQ retains Customer Data in line with the Customer's instructions (including through use of the Services, the performance of any applicable terms in the Subscription Agreement and DPA), and as required by applicable law.
 
-Depending on the Services, Customer may be able to customize its retention settings and apply those customized settings at the Custom App level or other level. The Customer may also apply different settings to Customer Data. The deletion of Customer Data and other use of the Services by the Customer may result in the deletion and/or de-identification of certain associated Other Information. For more detail, please review [DronaHQ's Security Practices Page](/legal/security-practices) or contact the Customer.
+Depending on the Services, Customer may be able to customize its retention settings and apply those customized settings at the Custom App level or other level. The Customer may also apply different settings to Customer Data. The deletion of Customer Data and other use of the Services by the Customer may result in the deletion and/or de-identification of certain associated Other Information. For more detail, please review [DronaHQ's Security Practices Page](/legal/privacy-data-protection-and-security/security-practices) or contact the Customer.
 
 ### Other Information
 
@@ -132,9 +132,9 @@ For example, DronaHQ will retain:
 
 ## Your Rights
 
-Individuals in various jurisdictions, including the European Economic Area, the United Kingdom and Brazil, have legal rights in relation to their personal data. You may have the right to request access to your personal information and/or to request that this information is updated, corrected or deleted. You can do this by emailing [dpo@dronahq.com](mailto:dpo@dronahq.com).
+Individuals in various jurisdictions, including the European Economic Area, the United Kingdom and Brazil, have legal rights in relation to their personal data. You may have the right to request access to your personal information and/or to request that this information is updated, corrected or deleted. You can do this by emailing [support@dronahq.com](mailto:support@dronahq.com).
 
-DronaHQ primarily relies on its legitimate interests, described in the "How We Process your Information and our Legal Bases for Doing So" section above, to process your Personal Data in the European Economic Area, UK and Brazil. You have a right to object to processing of your Personal Data where we rely on legitimate interests. You can exercise this right by emailing [dpo@dronahq.com](mailto:dpo@dronahq.com). In the event that you submit an objection, we will cease processing your information for the relevant purposes unless we have compelling grounds to continue the processing or it is necessary for legal claims. DronaHQ may also process Other Information that constitutes your Personal Data for direct marketing purposes. You have a right to object to DronaHQ's use of your Personal Data for direct marketing purposes at any time by emailing [dpo@dronahq.com](mailto:dpo@dronahq.com).
+DronaHQ primarily relies on its legitimate interests, described in the "How We Process your Information and our Legal Bases for Doing So" section above, to process your Personal Data in the European Economic Area, UK and Brazil. You have a right to object to processing of your Personal Data where we rely on legitimate interests. You can exercise this right by emailing [support@dronahq.com](mailto:support@dronahq.com). In the event that you submit an objection, we will cease processing your information for the relevant purposes unless we have compelling grounds to continue the processing or it is necessary for legal claims. DronaHQ may also process Other Information that constitutes your Personal Data for direct marketing purposes. You have a right to object to DronaHQ's use of your Personal Data for direct marketing purposes at any time by emailing [support@dronahq.com](mailto:support@dronahq.com).
 
 ## Data Protection Authority
 
@@ -159,7 +159,7 @@ We collect this information for the business and commercial purposes described i
 
 Subject to certain limitations, the CCPA provides California consumers the right to request to know more details about the categories or specific pieces of personal information we collect (including how we use, disclose, or may sell this information), to delete their personal information, to opt out of any "sales", to know and opt out of sharing of personal information for delivering advertisements on non-DronaHQ websites, and to not be discriminated against for exercising these rights.
 
-California consumers may make a request pursuant to their rights under the CCPA by contacting us at [dpo@dronahq.com](mailto:dpo@dronahq.com) or by filling out this form. We will verify your request using the information associated with your account, including email address. Government identification may be required. Consumers can also designate an authorized agent to exercise these rights on their behalf. Authorized agents must submit proof of authorization.
+California consumers may make a request pursuant to their rights under the CCPA by contacting us at [support@dronahq.com](mailto:support@dronahq.com) or by filling out this form. We will verify your request using the information associated with your account, including email address. Government identification may be required. Consumers can also designate an authorized agent to exercise these rights on their behalf. Authorized agents must submit proof of authorization.
 
 ## Security
 
@@ -173,11 +173,11 @@ These Services are not directed to individuals under the age of 18, and we kindl
 
 ## Data Protection Officer
 
-Our Data Protection Officer can be contacted at [dpo@dronahq.com](mailto:dpo@dronahq.com).
+Our Data Protection Officer can be contacted at [support@dronahq.com](mailto:support@dronahq.com).
 
 ## Contact DronaHQ
 
-You can contact DronaHQ directly at [dpo@dronahq.com](mailto:dpo@dronahq.com) or at our mailing address below if you are seeking to exercise any of your statutory rights or if you have any questions or concerns about DronaHQ's practices or this Privacy Policy. We will respond within a reasonable timeframe. If you would like to submit a data subject rights request, please email [dpo@dronahq.com](mailto:dpo@dronahq.com).
+You can contact DronaHQ directly at [support@dronahq.com](mailto:support@dronahq.com) or at our mailing address below if you are seeking to exercise any of your statutory rights or if you have any questions or concerns about DronaHQ's practices or this Privacy Policy. We will respond within a reasonable timeframe. If you would like to submit a data subject rights request, please email [support@dronahq.com](mailto:support@dronahq.com).
 
 If you have any other questions, comments, or concerns about this privacy policy, please contact us using the following contact information:
 
@@ -187,7 +187,7 @@ If you have any other questions, comments, or concerns about this privacy policy
 - Dahisar East,
 - Mumbai, 400068,
 - Maharashtra
-- [dpo@dronahq.com](mailto:dpo@dronahq.com)
+- [support@dronahq.com](mailto:support@dronahq.com)
 
 ## Changes To This Privacy Policy
 

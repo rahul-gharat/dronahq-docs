@@ -1,4 +1,155 @@
 [ 
+    {
+"timestamp": 1763441296000,
+"tags": ["Control", "Action"],
+"heading": "",
+"cards": [
+    {
+      "title": "Enhancements",
+      "type": "improved",
+      "points": [
+        "Enhanced the phone component by adding icon support.",
+
+"Enhanced prefix/suffix behavior by adding icon support and improving mouse-wheel handling.",
+
+"Enhanced the date-time component by adding icon support.",
+
+"Enhanced the time input by adding icon support.",
+
+"Enhanced the text input by adding icon support.",
+
+"Enhanced the Typeahead component with default selection behavior similar to dropdowns.",
+
+"Enhanced the date-range picker by adding icon support.",
+
+"Enhanced the date component by adding icon support.",
+
+"Enhanced the numeric input by adding icon support and improving mouse-wheel handling."
+      ]
+    },
+      {
+      "title":"Fixed",
+      "type":"fixed",
+      "points":[
+        "Fixed an issue where strict file-parser checking did not function as expected.",
+        "Fixed localization and UI-related issues in the dropdown component."
+      ]
+    }
+  ]
+},
+  {
+"timestamp": 1761894243000,
+"tags": ["Control", "Action"],
+"heading": "",
+"cards": [
+    {
+      "title": "Enhancements",
+      "type": "improved",
+      "points": [
+"Enhanced phone input by adding functional icon support.",
+"Enhanced prefix/suffix fields by adding functional icon support and improving mouse-wheel behavior.",
+"Enhanced date-time input by adding functional icon support.",
+"Enhanced time input by adding functional icon support.",
+"Enhanced text input by adding functional icon support.",
+"Enhanced Typeahead with a default selection behavior similar to dropdown controls.",
+"Enhanced date range picker by adding functional icon support.",
+"Enhanced date input by adding functional icon support.",
+"Enhanced numeric input by adding functional icon support and improving mouse-wheel behavior." 
+      ]
+    }
+  ]
+}, 
+{
+"timestamp": 1761894243000,
+"tags": ["Control", "Action"],
+"heading": "",
+"cards": [
+    {
+      "title": "Enhancements",
+      "type": "improved",
+      "points": [
+        "Enhanced the change state function by adding utility logic for improved functionality.",
+"Enhanced the container module by adding code support for live preview."
+      ]
+    },
+    {
+      "title": "Fixed",
+      "type": "fixed",
+      "points": [
+        "Fixed syntax issues in the show control function to ensure proper function validation.",
+"Fixed syntax issues in the hide control function to ensure proper function validation."
+      ]
+    }
+  ]
+},
+        {
+"timestamp": 1760436814000,
+"tags": ["Control", "Action"],
+"heading": "",
+"cards": [
+    {
+      "title": "Enhancements",
+      "type": "improved",
+      "points": [
+        "Enhanced the table grid by enabling user-defined grouping and resolving related UI and localization issues.",
+        "Enhanced multiple components and actions — including Dropdowns, Date Pickers, Editors, Numeric, Currency, Buttons, Radios, Checkboxes, Tabs, and more — by adding comprehensive support for live preview functionality.",
+"Enhanced system-level actions such as navigation, validation, variable handling, property updates, loaders, and control visibility to support real-time live preview updates.",
+"Enhanced layout and interactive components like Grid Menu, Footer Tabs, Tabbed Containers, and Switch Groups with improved live preview behavior for better responsiveness.",
+"Fixed an issue in the File Upload component where localization messages were not being added correctly to the JSON file."
+      ]
+    },
+    {
+      "title": "Fixed",
+      "type": "fixed",
+      "points": [
+        "Fixed an issue in the File Upload component where localization messages were not being added correctly to the JSON file."
+      ]
+    }
+  ]
+},
+  {
+  "timestamp": 1758708814000,
+  "tags": ["Control", "Action"],
+  "heading": "",
+  "cards": [
+    {
+      "title": "Enhancements",
+      "type": "improved",
+      "points": [
+  "Enhanced the Table Grid component by integrating code support for live preview functionality.",
+"Enhanced the Text Input component by improving handling of property value changes for better accuracy.",
+"Enhanced the Name component with additional live preview functionality for improved responsiveness."
+      ]
+    },
+    {
+      "title": "Fixed",
+      "type": "fixed",
+      "points": [
+"Fixed an issue in the Dropdown component where menu options were not being recreated after a server-side search with no matching results.",
+"Fixed an issue in the Query Builder where number-type dropdowns were not functioning as expected.",
+"Fixed minor UI inconsistencies in the Container component.",
+"Fixed an issue in the Text component where Markdown formatting was not retained after reopening the popup or tray."
+      ]
+    }
+  ]
+  },
+  {
+  "timestamp": 1758954256000,
+  "tags": ["Control", "Action"],
+  "heading": "",
+  "cards":[
+    {
+      "title": "Fixed",
+      "type": "fixed",
+      "points": [
+        "Fixed an issue where menu options were not recreated on server-side search when no items matched.",
+"Fixed an issue where number-type dropdowns were not functioning as expected.",
+"Fixed a minor UI issue.",
+"Fixed an issue where Markdown text formatting was not retained after reopening a popup or tray."
+      ]
+    }
+  ]
+},
   {
   "timestamp": 1756375457000,
   "tags": ["Control", "Action"],
@@ -124,7 +275,7 @@
         ]
       }
     ]
-  },  
+  }, 
 {
     "timestamp": 1751094189000,
     "tags": ["Control", "Action"],

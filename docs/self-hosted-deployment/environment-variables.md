@@ -228,8 +228,11 @@ MONGODB_TLS=true
 If MongoDB uses **TLS authentication**, specify the **certificate authority (CA) bundle** path:
 
 ```sh
-MONGODB_CA_CERT_DIR=/private/global.bundle.pem
+MONGODB_CA_CERT_DIR=global.bundle.pem
 ```
+:::note
+The .pem file must be placed in the root directory of the project (not inside any nested folders). For the `MONGODB_CA_CERT_DIR` environment variable, you should specify only the file name, not the full path.
+:::
 
 #### `MONGODB_CONNECTION_STRING`
 

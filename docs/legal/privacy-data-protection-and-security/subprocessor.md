@@ -40,4 +40,4 @@ Depending on the customer's location and the services provided, DronaHQ may enga
 
 As our business evolves, we may update our subprocessors. We will notify customers of new subprocessors as required and post updates here.
 
-Current customers can sign up to receive notifications of new subprocessors by emailing: subprocessor.notification.requests@dronahq.com.
+Current customers can sign up to receive notifications of new subprocessors by emailing: support@dronahq.com.

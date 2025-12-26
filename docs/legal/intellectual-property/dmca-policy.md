@@ -22,7 +22,7 @@ c/o Deltecs Infotech Private Ltd.
 Indian oil Petrol Pump, 
 S V Road,Dahisar East, 
 Mumbai, 400068, Maharashtra
-By email: [legal@dronahq.com](mailto:legal@dronahq.com)
+By email: [support@dronahq.com](mailto:support@dronahq.com)
 
 We may, in appropriate circumstances, disable or terminate the accounts of users who may be repeat infringers.
 

@@ -3,7 +3,7 @@ sidebar_position: 2
 title: Data Request Policy
 ---
 
-When necessary to operate and maintain our Services, DronaHQ processes Customer Data. Occasionally, third parties—including end users and government authorities—seek additional access to or removal of that data. This Policy sets out how DronaHQ handles such requests. Capitalized terms not defined here have the meanings set forth in the [Customer Terms of Service](/legal/customer-terms). If there is any conflict between this Policy and those Terms, the Terms will control.
+When necessary to operate and maintain our Services, DronaHQ processes Customer Data. Occasionally, third parties—including end users and government authorities—seek additional access to or removal of that data. This Policy sets out how DronaHQ handles such requests. Capitalized terms not defined here have the meanings set forth in the [Customer Terms of Service](/legal/customer-user-agreement/customer-terms). If there is any conflict between this Policy and those Terms, the Terms will control.
 
 ---
 
@@ -23,7 +23,7 @@ While we generally follow Customer instructions regarding retention or removal o
 
 **2.1 Submission Requirements.**
 
-All legal process (e.g., subpoenas, warrants, court orders) demanding Customer Data must be served on DronaHQ at [**legal@dronahq.com**](mailto:legal@dronahq.com) and include:
+All legal process (e.g., subpoenas, warrants, court orders) demanding Customer Data must be served on DronaHQ at [**support@dronahq.com**](mailto:support@dronahq.com) and include:
 
 - **Requesting Authority:** Name and jurisdiction of the issuing body.
 - **Case Reference:** Criminal or civil matter identifiers.
