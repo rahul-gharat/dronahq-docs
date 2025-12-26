@@ -1,0 +1,324 @@
+---
+sidebar_position: 7
+title: "WhatsApp"
+---
+
+import Thumbnail from '@site/src/components/Thumbnail';
+
+# WhatsApp Trigger
+
+The **WhatsApp Trigger** allows your AI agent to respond automatically when users send messages on WhatsApp.
+
+It enables you to build **conversational agents** for customer support, FAQs, lead qualification, order tracking, and guided workflows—directly inside WhatsApp.
+
+This trigger integrates with **Meta’s WhatsApp Business API** and works entirely through secure webhooks.
+
+
+## Overview
+
+When a WhatsApp message is received:
+
+1. Meta sends the message event to your webhook
+2. The WhatsApp trigger activates
+3. Message context (sender, content, metadata) is created
+4. Your agent executes its instructions
+5. The agent can reply back to the same WhatsApp conversation
+
+Each user's incoming message is handled **independently**, while still allowing you to maintain conversational continuity.
+
+<figure>
+  <Thumbnail src="/img/agent-trigger/whatsapp-webhook.png" alt="Webhook Overview" width='70%'/>
+  <figcaption align = "center"><i>Webhook Overview</i></figcaption>
+</figure>
+
+
+## When Should I Use WhatsApp Trigger?
+
+Use this trigger when:
+
+- Users should interact with your agent via WhatsApp
+- Conversations happen in real time
+- Human-like responses are required
+
+**Common use cases**
+- Customer support & helpdesk
+- FAQ automation
+- Lead qualification
+- Order updates & tracking
+- Appointment booking
+- Conversational onboarding
+
+
+## Configure WhatsApp Trigger
+
+### Step 1: Add WhatsApp Trigger
+
+1. Go to **DronaHQ → Agents → Triggers**
+2. Click **+ Add Trigger**
+3. Select **WhatsApp**
+
+
+### Step 2: Basic Configuration
+
+#### Name
+- Provide a descriptive name  
+  **Examples**:
+  - `Customer Support – WhatsApp`
+  - `Orders Bot – WhatsApp`
+- Helps identify the trigger in logs and UI
+- **Required field**
+
+
+#### Webhook URL
+
+Each WhatsApp trigger generates a **unique webhook URL**.
+
+- Copy this URL from the configuration panel
+- Paste it into **Meta → My Apps → Use cases → WhatsApp → Configuration → Webhook**
+<figure>
+  <Thumbnail src="/img/agent-trigger/whatsapp-webhook-configuration.png" alt="WhatsApp Webhook Configuration" width='100%'/>
+  <figcaption align = "center"><i>WhatsApp Webhook Configuration</i></figcaption>
+</figure>
+- This is where Meta sends incoming WhatsApp message events
+
+<figure>
+  <Thumbnail src="/img/agent-trigger/whatsapp-webhook-events-sub.png" alt="WhatsApp Webhook Events Subscribe" width='100%'/>
+  <figcaption align = "center"><i>WhatsApp Webhook Events Subscribe</i></figcaption>
+</figure>
+
+:::info
+Your agent will only receive WhatsApp messages after this webhook is configured and verified in Meta.
+:::
+
+
+#### Verify Token
+
+A verification token used **once** by Meta to confirm webhook ownership.
+
+- Copy the Verify Token from the trigger
+- Paste it into **Meta → Webhooks → Verify Token**
+- Required during webhook verification
+
+
+
+#### Verified Status
+
+Shows whether Meta has successfully verified your webhook.
+
+- **Not Verified** → Webhook not connected
+- **Verified** → Ready to receive WhatsApp messages
+- Click **Check status** to refresh
+
+A timestamp is shown once verification is complete.
+
+
+#### Meta App Secret (Optional)
+
+Used to validate webhook signatures sent by Meta.
+
+- Found in **Meta → My Apps → Settings → Basic → App Secret**
+- Helps ensure requests truly come from Meta
+- Toggle visibility using the eye icon
+
+<figure>
+  <Thumbnail src="/img/agent-trigger/whatsapp-meta-app-secret.png" alt="WhatsApp Meta App Secret" width='100%'/>
+  <figcaption align = "center"><i>WhatsApp Meta App Secret</i></figcaption>
+</figure>
+
+:::tip
+Highly recommended for production use to prevent spoofed webhook calls.
+:::
+
+
+## Step 3: Auto Populate Payload Data (Optional)
+
+The **Auto populate payload data from a live WhatsApp call** feature helps you inspect real message payloads.
+
+1. Click **Start Listening**
+2. Send a message to your WhatsApp Business number
+3. The first incoming payload is captured and displayed
+
+This helps you:
+- Understand WhatsApp payload structure
+- Confirm webhook connectivity
+- Auto-fill input schemas
+
+:::warning
+While editing an existing agent, real messages may be captured but **will not execute** the agent during configuration.
+:::
+
+
+## Step 4: Webhook Input (WhatsApp Payload)
+
+WhatsApp messages follow Meta’s webhook structure.
+
+### Raw Input (Example)
+
+```json
+{
+  "entry": [
+    {
+      "changes": [
+        {
+          "value": {
+            "contacts": [
+              {
+                "wa_id": "16315551181",
+                "profile": { "name": "Test User" }
+              }
+            ],
+            "messages": [
+              {
+                "id": "ABGGFlA5Fpa",
+                "from": "16315551181",
+                "type": "text",
+                "text": { "body": "Hello" },
+                "timestamp": "1504902988"
+              }
+            ],
+            "metadata": {
+              "phone_number_id": "123456",
+              "display_phone_number": "16505551111"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
+````
+
+### Important Fields
+
+* **Sender**
+
+  * `contacts[0].wa_id` → WhatsApp user ID
+  * `contacts[0].profile.name` → Display name
+
+* **Message**
+
+  * `messages[0].id` → Message ID (required for replies)
+  * `messages[0].type` → text, image, audio, etc.
+  * `messages[0].text.body` → Message content
+  * `messages[0].timestamp` → Time received
+
+* **Metadata**
+
+  * `phone_number_id` → Your WhatsApp Business number
+
+
+## Step 5: Configure Message (Agent Context)
+
+The **Message** section defines what context your agent receives.
+
+### Write Tab
+
+Use templates to extract relevant data.
+
+**Template Rules**
+
+* Use `{{...}}` for placeholders
+* Use dot notation for nested fields
+* Array indices are supported
+
+### Recommended Template
+
+```
+New WhatsApp message received.
+
+From: {{entry[0].changes[0].value.contacts[0].profile.name}}
+Phone: {{entry[0].changes[0].value.contacts[0].wa_id}}
+
+Message:
+{{entry[0].changes[0].value.messages[0].text.body}}
+
+Message ID:
+{{entry[0].changes[0].value.messages[0].id}}
+```
+
+### Full Payload Option
+
+```
+{{$}}
+```
+
+
+### Preview Tab
+
+Shows exactly how your agent will receive the formatted message.
+
+Use this to:
+
+* Verify placeholders
+* Confirm message text extraction
+* Avoid runtime issues
+
+
+## Step 6: Save Configuration
+
+1. Ensure webhook is **Verified**
+2. Review message template preview
+3. Click **Save**
+
+Once saved, incoming WhatsApp messages will trigger your agent.
+
+
+## Accessing WhatsApp Data in Agent Instructions
+
+Common references:
+
+* Sender Name
+  `{{entry[0].changes[0].value.contacts[0].profile.name}}`
+
+* Sender Phone
+  `{{entry[0].changes[0].value.contacts[0].wa_id}}`
+
+* Message Text
+  `{{entry[0].changes[0].value.messages[0].text.body}}`
+
+* Message ID
+  `{{entry[0].changes[0].value.messages[0].id}}`
+
+
+### Example Agent Instruction
+
+```
+When a WhatsApp message is received:
+- Read the user's message
+- Use the Message ID to reply
+- Respond politely and clearly
+- Maintain conversational context
+```
+
+
+## Best Practices
+
+* Verify webhook before production use
+* Always store and reuse Message IDs
+* Handle different message types (text, image, audio)
+* Keep responses short and conversational
+* Test using real WhatsApp messages
+* Secure your Meta App Secret
+* Monitor webhook verification status
+
+
+## WhatsApp Webhook Verification (Meta)
+
+1. Copy **Webhook URL** and **Verify Token**
+2. Go to **Meta for Developers → Webhooks**
+3. Configure WhatsApp webhook
+4. Subscribe to `messages` events
+5. Verify and save
+6. Confirm status in DronaHQ
+
+
+## Next Steps
+
+* Publish your agent
+* Verify webhook in Meta
+* Send test messages on WhatsApp
+* Monitor agent tracing
+* Combine with:
+
+  * [Webhook Trigger](/agents/triggers/webhook) for integrations
+  * [Scheduler Trigger](/agents/triggers/scheduler) for proactive messaging
