@@ -99,7 +99,7 @@ To display options in the CheckBox Tree control, you can use the Binding Data op
 
 - **Visibility:** Toggles the visibility of the control at runtime.
 - **Theme Color:** Sets the theme color to the checkbox.
-- **Checkbox label:** Enables you to se the size, weight and color of the checkbox label.
+- **Checkbox label:** Enables you to see the size, weight and color of the checkbox label.
 - **Expand Level:** Specifies the expansion *(or collapse)* state of the checkbox tree. Use **'1'** for a fully collapsed tree, and any number beyond the maximum expected tree depth for a fully expanded tree.
 
 ## Control Output
