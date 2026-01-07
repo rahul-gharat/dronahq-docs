@@ -56,7 +56,7 @@ By utilizing these options, you can effectively bind data to the Image control a
 
 - **Image Caching:** Enables image caching to improve loading speed by storing the image in cache for future use.
 - **Magnify:** Toggles the magnify feature, adding an eye icon to the image control for zooming in and out.
-- **Image Fit:** Chooses between `Contain` and `Cover` depending upon the UI requirementof the image to be displayed.
+- **Image Fit:** Chooses between `Contain` and `Cover` depending upon the UI requirement of the image to be displayed.
 
 ### Events
 
