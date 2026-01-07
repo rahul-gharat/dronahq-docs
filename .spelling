@@ -2038,4 +2038,12 @@ Mailgun
 3.6
 2.6
 14.5
-
+greyed-out
+AnyOf
+Schedular
+Enums
+OneOf
+minItems
+uniqueItems
+2020-12
+AllOf
