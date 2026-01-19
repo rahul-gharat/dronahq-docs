@@ -1,0 +1,173 @@
+---
+sidebar_position: 4
+title: "Instruction"
+---
+
+import Image from '@site/src/components/Image';
+import VersionedLink from '@site/src/components/VersionedLink';
+import Thumbnail from '@site/src/components/Thumbnail';
+
+
+
+# Best Practices: Agent Instructions
+
+## Overview
+
+Agent Instructions are the foundational configuration layer in DronaHQ's agentic platform that defines how your AI agent behaves, responds, and interacts with users. Think of it as the "DNA" of your agent, it establishes personality, capabilities, knowledge boundaries, and operational guardrails.
+
+## What are Agent Instructions?
+
+Agent Instructions are structured prompts that shape your agent's behavior by defining:
+
+- **Identity and Role:** Who the agent is and what it represents  
+- **Behavioral Guidelines:** How the agent should communicate and respond  
+- **Knowledge Boundaries:** What the agent knows and can access  
+- **Tool Integration:** Which tools and APIs the agent can leverage  
+- **Safety Guardrails:** Ethical and operational constraints₹11  
+
+## Why Agent Instructions Matter
+
+Well-crafted instructions ensure your agent delivers consistent, contextually appropriate, and valuable interactions. Poor instructions lead to unpredictable behavior, off-brand responses, and potential compliance issues.
+
+## The Five Principles of Effective Agent Instructions
+
+### Principle 1: Define a Clear Role and Purpose
+
+**What it means:** Establish exactly who your agent is, what it does, and why it exists.  
+**Why it matters:** Clarity of purpose prevents scope creep and keeps the agent focused on its intended function.
+
+**Implementation**
+
+**Best Practices:**
+- Use specific job titles or functional roles rather than vague descriptors  
+- Define what the agent does AND what it doesn't do  
+- Include the target audience (who uses this agent)  
+- State measurable outcomes when possible  
+
+### Principle 2: Define Behavior and Tone of Voice
+
+**What it means:** Specify how the agent communicates, including language style, formality level, and personality traits.  
+**Why it matters:** Consistent tone builds trust and ensures brand alignment across all interactions.
+
+**Implementation**
+
+**Best Practices:**
+- Provide concrete examples of preferred phrasing  
+- Specify response length expectations  
+- Define how to handle uncertainty ("I don't have that information" vs. searching)  
+- Match tone to your user base (technical vs. general audience)  
+
+### Principle 3: Set Clear Behavioral Rules and Guardrails
+
+**What it means:** Establish explicit boundaries for what the agent can and cannot do, including ethical guidelines and safety constraints.  
+**Why it matters:** Guardrails prevent harmful outputs, ensure compliance, and protect both users and your organization.
+
+**Implementation**
+
+**Best Practices:**
+- Use imperative language (MUST, NEVER, ALWAYS)  
+- Be specific about prohibited actions  
+- Provide fallback behaviors for common edge cases  
+- Include escalation paths for complex scenarios  
+- Document compliance requirements explicitly  
+
+### Principle 4: Build Agent Memory, Knowledge, and Context
+
+**What it means:** Define what information the agent has access to, how it should use contextual data, and what it should remember across interactions.  
+**Why it matters:** Contextual awareness enables personalized, relevant responses and prevents repetitive conversations.
+
+**Implementation**
+
+**Best Practices:**
+- Specify data sources explicitly  
+- Define data freshness requirements  
+- Establish memory scope (session vs. persistent)  
+- Include privacy considerations  
+- Document what data is logged and for how long  
+
+### Principle 5: Make it Actionable and Tool-Aware
+
+**What it means:** Clearly define which tools, integrations, and actions the agent can perform, and when to use them.  
+**Why it matters:** Tool integration is what transforms a conversational agent into an operational assistant that can actually complete tasks.
+
+**Implementation**
+
+**Best Practices:**
+- Document each tool's purpose and triggers  
+- Specify required parameters  
+- Define error handling for tool failures  
+- Establish confirmation requirements for destructive actions  
+- Provide examples of tool usage  
+
+### Principle 6: Handle Edge Cases
+
+**What it means:** Anticipate unusual scenarios, ambiguous requests, and error conditions, then define appropriate responses.  
+**Why it matters:** Edge case handling prevents frustrating user experiences and reduces need for human intervention.
+
+**Implementation**
+
+#### Edge Cases Quick Reference
+
+| Situation        | Response Pattern                 | Example                                                                 |
+|------------------|----------------------------------|-------------------------------------------------------------------------|
+| Ambiguous        | Offer 2-3 specific options       | "Do you mean: (a) standard pricing, (b) custom quote, or (c) comparison?" |
+| Out of Scope     | Redirect with alternative        | "I handle pre-sales. For billing, I'll connect you with accounts."      |
+| Missing Data     | Explain what's needed            | "To quote accurately, I need: company size, region, user count."       |
+| System Error     | Acknowledge + workaround         | "CRM is down. I can answer general questions or email sales@co.com."    |
+| Frustrated User  | Empathize + escalate             | "I understand. Let me connect you with a senior specialist now."        |
+| Unauthorized     | Explain + alternative            | "Can't modify pricing. I can request manager approval (1-2 hrs)."      |
+| Repetitive       | Suggest alternative help         | "We've covered this. Would a guide or expert call help more?"           |
+| Too Technical    | Acknowledge limits               | "This needs engineering expertise. I'll connect you with them."        |
+| Hostile          | Set boundary                     | "I need respectful conversation to help. Can we reset?"                |
+| Urgent           | Acknowledge + set timeline       | "I can [action] now (2 min), then [follow-up] in [time]."               |
+
+**Best Practices:**
+- Identify top 10 edge cases from user feedback  
+- Provide specific response templates  
+- Build graceful degradation paths  
+- Include escalation triggers  
+- Test edge cases regularly  
+
+---
+
+## Complete Agent Instruction Template
+
+Below is a comprehensive template that incorporates all six principles. Copy and customize this for your DronaHQ agentic platform:
+
+```markdown
+# 1. ROLE & PURPOSE
+Role: [Specific function, e.g., "Customer Support Specialist"]
+Purpose: [One sentence objective]
+Scope: Handle [X, Y]. Don't handle [A, B].
+
+# 2. TONE & STYLE
+Tone: [Professional/Casual, Technical/Simple]
+- Response length: [Concise/Detailed]
+- Format: [Bullets/Prose when...]
+- Personality: [2-3 key traits]
+
+# 3. RULES & GUARDRAILS
+MUST: [3-5 critical requirements]
+NEVER: [3-5 prohibited actions]
+Uncertain: [How to handle low confidence]
+Escalate when: [Trigger conditions]
+
+# 4. KNOWLEDGE & CONTEXT
+Sources: [Data sources + update frequency]
+Remember: [What to track in session]
+Access: [Available user data]
+Privacy: [What never to log]
+
+# 5. TOOLS
+[Tool Name]: Use when [trigger] | Needs [params]
+[Tool Name]: Use when [trigger] | Needs [params]
+[Tool Name]: Use when [trigger] | Needs [params]
+
+Always: Explain tool usage | Confirm before modifying data
+
+# 6. EDGE CASES
+- Ambiguous → Clarify with options
+- Out of scope → Redirect + alternative
+- Missing data → Request specifics
+- Error → Acknowledge + workaround
+- Frustrated → Empathize + escalate

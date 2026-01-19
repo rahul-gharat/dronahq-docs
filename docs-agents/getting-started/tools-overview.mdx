@@ -1,0 +1,102 @@
+---
+sidebar_position: 4
+title: "Tools Overview"
+---
+
+import Image from '@site/src/components/Image';
+import VersionedLink from '@site/src/components/VersionedLink';
+import Thumbnail from '@site/src/components/Thumbnail';
+
+# DronaHQ Tools: Overview & Integration Guide
+
+DronaHQ Tools ecosystem has 900+ powerful tools to help developers quickly build data-driven apps, integrate AI and databases, and automate workflows with ease.
+
+## What Are Tools?
+
+In an agentic platform, tools are actions an agent can use to accomplish tasks. They let an agent go from reasoning to acting.
+
+Agents can use tools to:
+- Fetch or update data from APIs or databases  
+- Trigger workflows or automations  
+- Run custom code  
+- Interact with external services or other agents  
+
+The agent decides which tools to use and in what order, based on the goal.
+
+IMG
+
+## List of Tools available:
+- [DronaHQ Tools](https://docs.dronahq.com/agents/getting-started/tools-overview/#dronahq-tools)
+- [Connector Library](https://docs.dronahq.com/agents/getting-started/tools-overview/#connector-library)
+- [Connector Query](https://docs.dronahq.com/agents/getting-started/tools-overview/#connector-query)
+- [Automations](https://docs.dronahq.com/agents/getting-started/tools-overview/#automations)
+- [Code](https://docs.dronahq.com/agents/getting-started/tools-overview/#code)
+- [MCP](https://docs.dronahq.com/agents/getting-started/tools-overview/#mcp-model-context-protocol)
+- [Inbuilt Tools](https://docs.dronahq.com/agents/getting-started/tools-overview/#inbuilt-tools)
+
+## DronaHQ Tools
+
+You can connect your agent to a wide range of prebuilt external apps using DronaHQ Tools, giving you access to popular services like Gmail, Slack, Google Calendar, Apollo, and more, with minimal setup and no need to build individual integrations. These tools let your agents connect directly to external apps, extend workflow capabilities, and automate interactions seamlessly.
+
+## Connector Library
+
+A comprehensive hub to consolidate data from multiple sources. It allows you to fetch, insert, update, or remove data across various databases and APIs, providing a unified layer for data management and widget binding. You can read more about how to use the connector library.
+
+## Connector Query
+
+DronaHQ enables your controls to interact with various data sources by using data queries. With DronaHQ, you can seamlessly query most databases and APIs. You can read more about how to work with the connector query.
+
+## Automations
+
+A logic engine for hands-free operations. Use this to trigger data queries based on Scheduled timings (CRON) or external Webhooks, allowing you to automate repetitive background tasks seamlessly. Learn more about Automation and how to use it.
+
+## Code
+
+A dedicated environment for custom logic that allows developers to write snippets for complex data transformations or bespoke business rules beyond standard configurations. It supports code written in JavaScript and Python.
+
+## MCP (Model Context Protocol)
+
+You can connect your existing MCP servers directly to DronaHQ, enabling agentic workflows to securely access and interact with external tools and standardized data protocols.
+
+- Integrate external MCP servers to extend your platform’s capabilities.  
+- **Server Types:** Supports Streamable HTTP and SSE  
+- **Configuration:** Define the server name, URL, and description  
+- **Security:** Supports no authentication, access tokens, or custom headers  
+
+## Inbuilt Tools
+
+To accelerate development, DronaHQ includes a suite of Inbuilt Tools that handle common utility tasks out of the box. These tools save you from writing custom logic for standard operations:
+
+| Tool         | Purpose                                                      |
+|--------------|--------------------------------------------------------------|
+| Web Search   | Perform live searches and fetch external web data.           |
+| Calculator   | Execute complex mathematical operations within your flows.   |
+| Time         | Handle timezone conversions and timestamp formatting.        |
+| File Parser  | Extract structured data from uploaded files (CSV, JSON, etc.)|
+| URL Parser   | Deconstruct URLs to extract query parameters and paths.      |
+
+## Add Tools
+
+To give your agent more capabilities:
+1. Go to **Add Tools** in the agent builder.  
+2. Select the tools you want to include.  
+3. For **DronaHQ Tools**: Add the tool and set up a new account or use an existing one.  
+4. For **Connector Library**, **Automations**, or **MCP**: Add new or use existing resources.  
+5. Include any inbuilt tools as needed.  
+
+**Tip:** Only add the tools you need, avoid adding unnecessary tools to optimize performance and stay within plan limits.
+
+6. Click **Add Tools** to finalize your selection.
+
+<div style={{ position: 'relative', paddingBottom: 'calc(46.33333333333333% + 41px)', height: 0 }}> 
+    <iframe 
+        src="https://demo.arcade.software/AVnGSTTKvaemmZPKG6qx?embed" 
+        title="Add Tools" 
+        frameborder="0" 
+        loading="lazy" 
+        webkitallowfullscreen 
+        mozallowfullscreen 
+        allowfullscreen 
+        style= {{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', colorScheme: 'light' }} >
+    </iframe>
+</div>
