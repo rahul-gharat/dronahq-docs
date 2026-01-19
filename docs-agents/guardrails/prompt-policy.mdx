@@ -1,0 +1,89 @@
+---
+sidebar_position: 4
+title: "Prompt Policy"
+toc_min_heading_level: 2
+toc_max_heading_level: 2
+---
+
+import Image from '@site/src/components/Image';
+import VersionedLink from '@site/src/components/VersionedLink';
+import Thumbnail from '@site/src/components/Thumbnail';
+
+
+Prompt Policies act as the first line of defense in your AI agent's execution flow. They intercept user messages to prevent security breaches, maintain data privacy, and ensure content safety.The Prompt Policy is divided into specialized scanners that can be individually Enabled or Disabled based on your security requirements.
+
+:::info
+**Prerequisite:** Ensure your LLM provider (e.g., OpenAI gpt-4o) is enabled and configured with valid credentials in the Models section for these guardrails to function.
+:::
+
+Use the following tables to understand the configuration properties and behavioral logic for each scanner within the Prompt Policy.
+
+## 1. PII & Data Privacy
+
+Protect sensitive information by detecting and handling Personally Identifiable Information (PII) before it is processed by the agent.
+
+| Feature           | Logic   | Action        | Configuration Example                                   |
+|-------------------|---------|---------------|---------------------------------------------------------|
+| PII Detection     | Non-LLM | Redact / Block| Entities: [EMAIL, PHONE_NUMBER, SSN]                    |
+| Regex Scanner     | Non-LLM | Block         | Pattern: ^[A-Z]{2}-\d{4}$ (e.g., Internal ID)           |
+| Secrets Detection | Non-LLM | Block         | Targets: [API_KEYS, AUTH_TOKENS, PEM_KEYS]             |
+
+Usage Note:
+
+:::info
+PII Redaction will replace sensitive text with a placeholder like `[PII_DATA]`, allowing the LLM to understand the context without seeing the actual data.
+:::
+
+## 2. Security & Prompt Integrity
+
+Prevent adversarial attacks designed to manipulate or bypass the agent’s core instructions.
+
+| Feature           | Logic   | Primary Goal                 | Fallback Message Requirement                                   |
+|-------------------|---------|------------------------------|----------------------------------------------------------------|
+| Prompt Injection  | LLM     | Detect override attempts     | "Security violation: Unauthorized instructions detected."     |
+| Code Detection    | LLM     | Block non-natural language   | "The system only accepts natural language queries."            |
+| Invisible Text    | Non-LLM | Strip hidden characters      | (Automatic Redaction)                                          |
+
+## 3. Moderation & Content Safety
+
+Enforce organizational standards and prevent the generation of harmful content.
+
+| Feature             | Logic   | Description                   | Example Values                                   |
+|---------------------|---------|-------------------------------|--------------------------------------------------|
+| Toxicity Detection  | LLM     | Scan for harmful language     | Threshold: High/Medium/Low                       |
+| Ban Topics          | LLM     | Prevent off-topic chat        | Topics: ["Financial Advice", "Legal"]            |
+| Ban Competitors     | LLM     | Mask competitor names         | List: ["CompetitorA", "CompetitorB"]             |
+| Ban Code            | LLM     | Prevent code generation       | (Enable/Disable toggle)                          |
+| Jailbreak Detection | LLM     | Detect sandbox escapes        | (Enable/Disable toggle)                          |
+| Ban Substrings      | Non-LLM | Strict phrase matching        | ["password123", "internal_db"]                   |
+
+## 4. Factuality & Relevance
+
+**Gibberish Detection (LLM)**  
+Filters out nonsensical or "keyboard mash" inputs (e.g., "asdfghjkl") to save on token costs and maintain clean logs.
+
+## 5. Performance & Utility
+
+**Token Limit (Non-LLM)**  
+Enforces a maximum token count for user inputs to prevent "Prompt Stuffing" and manage costs.
+
+| Property    | Value Type | Description                                              |
+|-------------|------------|----------------------------------------------------------|
+| Max Tokens  | Integer    | Maximum allowed tokens per prompt (e.g., 500).           |
+| Action      | Dropdown   | Block or Truncate.                                       |
+
+## Logic Type Comparison
+
+When configuring your Blueprint, consider the latency and cost implications of the logic type:
+
+| Type     | Latency              | Cost        | Accuracy for Context                          |
+|----------|----------------------|-------------|-----------------------------------------------|
+| Non-LLM  | Ultra-Low (<50ms)    | Negligible  | Best for fixed patterns (Regex, Tokens)       |
+| LLM      | Moderate (200ms+)    | Token-based | Best for intent (Injection, Toxicity)         |
+
+
+:::note
+## Developer Tip: Custom Fallbacks
+
+Whenever a scanner triggers a Block action, the `fallback_message` property is returned to the user interface. It is recommended to use clear, non-technical language for these messages.
+:::
