@@ -78,7 +78,7 @@ All schedules—including Cron—are evaluated using this timezone.
 :::
 
 
-## Step 3: Configure Frequency
+### Step 3: Configure Frequency
 
 You can configure schedules in **two ways**:
 
@@ -88,7 +88,7 @@ You can configure schedules in **two ways**:
 | **Cron** | Advanced, precise control |
 
 
-## Interval Schedule (Recommended for Most Users)
+### Interval Schedule (Recommended for Most Users)
 
 The **Interval** option lets you create schedules without writing Cron expressions.
 
@@ -97,7 +97,7 @@ The **Interval** option lets you create schedules without writing Cron expressio
   <figcaption align = "center"><i>Scheduler Interval</i></figcaption>
 </figure>
 
-### Repeat Every
+#### Repeat Every
 
 Choose how often your agent should run:
 
@@ -108,26 +108,26 @@ Choose how often your agent should run:
 - **Month** – On a specific date each month
 
 
-### Interval Examples
+#### Interval Examples
 
-#### Every 5 Minutes
+##### Every 5 Minutes
 - Repeat Every: `Minute`
 - Interval: `5`
 
-#### Every Hour
+##### Every Hour
 - Repeat Every: `Hour`
 - Time: `at 0 minutes`
 
-#### Daily at 9:00 AM
+##### Daily at 9:00 AM
 - Repeat Every: `Day`
 - Time: `9:00 AM`
 
-#### Weekly on Sunday at Midnight
+##### Weekly on Sunday at Midnight
 - Repeat Every: `Week`
 - Day: `Sunday`
 - Time: `12:00 AM`
 
-#### Monthly on the 1st at Midnight
+##### Monthly on the 1st at Midnight
 - Repeat Every: `Month`
 - Day: `1st`
 - Time: `12:00 AM`
@@ -137,7 +137,7 @@ The Interval scheduler always shows a **human-readable preview** so you can veri
 :::
 
 
-## Cron Schedule (Advanced)
+### Cron Schedule (Advanced)
 
 Use **Cron** when you need:
 - Complex rules
@@ -150,7 +150,7 @@ Use **Cron** when you need:
   <figcaption align = "center"><i>Scheduler Cron</i></figcaption>
 </figure>
 
-### Cron Expression Format
+#### Cron Expression Format
 
 Cron expressions consist of **five fields**:
 
@@ -166,7 +166,7 @@ Cron expressions consist of **five fields**:
 ```
 
 
-### Cron Symbols
+#### Cron Symbols
 
 | Symbol | Meaning |
 |------|--------|
@@ -178,7 +178,7 @@ Cron expressions consist of **five fields**:
 
 
 
-### Important Cron Rule
+#### Important Cron Rule
 
 :::warning
 **Day-of-Month vs Day-of-Week**
@@ -197,29 +197,29 @@ You **cannot specify both** fields at the same time.
 :::
 
 
-### Common Cron Examples
+#### Common Cron Examples
 
-#### Every 2 Minutes
+##### Every 2 Minutes
 ```
 */2 * * * ?
 ```
 
-#### Every Day at 9:30 AM
+##### Every Day at 9:30 AM
 ```
 30 9 * * ?
 ```
 
-#### Monday, Wednesday, Friday at 9 AM
+##### Monday, Wednesday, Friday at 9 AM
 ```
 0 9 ? * MON,WED,FRI
 ```
 
-#### First Day of Every Month
+##### First Day of Every Month
 ```
 0 0 1 * ?
 ```
 
-#### Weekdays (Jan–Sep) at 9:30 AM
+##### Weekdays (Jan–Sep) at 9:30 AM
 ```
 30 9 ? 1-9 MON-FRI
 ```
@@ -237,7 +237,7 @@ As you type a Cron expression, the scheduler shows a **human-readable explanatio
 
 Always verify this preview before saving.
 
-## Step 4: Save Configuration
+### Step 4: Save Configuration
 
 1. Review the schedule preview
 2. Confirm timezone and timing

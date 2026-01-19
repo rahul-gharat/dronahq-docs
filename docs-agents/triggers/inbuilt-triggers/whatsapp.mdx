@@ -131,7 +131,7 @@ Highly recommended for production use to prevent spoofed webhook calls.
 :::
 
 
-## Step 3: Auto Populate Payload Data (Optional)
+### Step 3: Auto Populate Payload Data (Optional)
 
 The **Auto populate payload data from a live WhatsApp call** feature helps you inspect real message payloads.
 
@@ -149,11 +149,11 @@ While editing an existing agent, real messages may be captured but **will not ex
 :::
 
 
-## Step 4: Webhook Input (WhatsApp Payload)
+### Step 4: Webhook Input (WhatsApp Payload)
 
 WhatsApp messages follow Meta’s webhook structure.
 
-### Raw Input (Example)
+#### Raw Input (Example)
 
 ```json
 {
@@ -189,7 +189,7 @@ WhatsApp messages follow Meta’s webhook structure.
 }
 ````
 
-### Important Fields
+#### Important Fields
 
 * **Sender**
 
@@ -208,11 +208,11 @@ WhatsApp messages follow Meta’s webhook structure.
   * `phone_number_id` → Your WhatsApp Business number
 
 
-## Step 5: Configure Message (Agent Context)
+### Step 5: Configure Message (Agent Context)
 
 The **Message** section defines what context your agent receives.
 
-### Write Tab
+#### Write Tab
 
 Use templates to extract relevant data.
 
@@ -222,7 +222,7 @@ Use templates to extract relevant data.
 * Use dot notation for nested fields
 * Array indices are supported
 
-### Recommended Template
+#### Recommended Template
 
 ```
 New WhatsApp message received.
@@ -237,14 +237,14 @@ Message ID:
 {{entry[0].changes[0].value.messages[0].id}}
 ```
 
-### Full Payload Option
+#### Full Payload Option
 
 ```
 {{$}}
 ```
 
 
-### Preview Tab
+#### Preview Tab
 
 Shows exactly how your agent will receive the formatted message.
 
@@ -255,7 +255,7 @@ Use this to:
 * Avoid runtime issues
 
 
-## Step 6: Save Configuration
+### Step 6: Save Configuration
 
 1. Ensure webhook is **Verified**
 2. Review message template preview
