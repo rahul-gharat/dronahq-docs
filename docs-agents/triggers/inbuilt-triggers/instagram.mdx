@@ -1,0 +1,330 @@
+---
+sidebar_position: 4
+title: "Instagram"
+---
+
+import Thumbnail from '@site/src/components/Thumbnail';
+
+# Instagram Trigger
+
+The **Instagram Trigger** allows your AI agent to respond automatically when users send messages on Instagram Direct Messages.
+
+It enables you to build **conversational agents** for customer support, FAQs, lead qualification, order tracking, and guided workflows—directly inside Instagram.
+
+This trigger integrates with **Meta's Instagram Messaging API** and works entirely through secure webhooks.
+
+
+## Overview
+
+When an Instagram message is received:
+
+1. Meta sends the message event to your webhook
+2. The Instagram trigger activates
+3. Message context (sender, content, metadata) is created
+4. Your agent executes its instructions
+5. The agent can reply back to the same Instagram conversation
+
+Each user's incoming message is handled **independently**, while still allowing you to maintain conversational continuity.
+
+<figure>
+  <Thumbnail src="/img/agent-trigger/ig-webhook.png" alt="Instagram Trigger Webhook Overview" width='70%'/>
+  <figcaption align = "center"><i>Instagram Webhook Overview</i></figcaption>
+</figure>
+
+
+## When Should I Use Instagram Trigger?
+
+Use this trigger when:
+
+- Users should interact with your agent via Instagram Direct Messages
+- Conversations happen in real time
+- Human-like responses are required
+- You want to engage with your Instagram audience directly
+
+**Common use cases**
+- Customer support & helpdesk
+- FAQ automation
+- Lead qualification
+- Order updates & tracking
+- Appointment booking
+- Conversational onboarding
+- Social media engagement
+
+
+## Configure Instagram Trigger
+
+### Step 1: Add Instagram Trigger
+
+1. Go to **DronaHQ → Agents → Triggers**
+2. Click **+ Add Trigger**
+3. Select **Instagram**
+
+
+### Step 2: Basic Configuration
+
+#### Name
+- Provide a descriptive name  
+  **Examples**:
+  - `Customer Support – Instagram`
+  - `Orders Bot – Instagram`
+  - `Lead Gen – Instagram`
+- Helps identify the trigger in logs and UI
+- **Required field**
+
+
+#### Webhook URL
+
+Each Instagram trigger generates a **unique webhook URL**.
+
+- Copy this URL from the configuration panel
+- Go to [**Meta for Developers**](https://developers.facebook.com)
+- Paste it into **Meta → My Apps → [Select Your App] → Use cases → Instagram API → API setup with Instagram Login → Configure Webhooks**
+<figure>
+  <Thumbnail src="/img/agent-trigger/ig-webhook-configuration.png" alt="Instagram Webhook Configuration" width='100%'/>
+  <figcaption align = "center"><i>Instagram Webhook Configuration</i></figcaption>
+</figure>
+- This is where Meta sends incoming Instagram message events
+
+<figure>
+  <Thumbnail src="/img/agent-trigger/ig-webhook-events-sub.png" alt="Instagram Webhook Events Subscribe" width='100%'/>
+  <figcaption align = "center"><i>Instagram Webhook Events Subscribe</i></figcaption>
+</figure>
+
+:::info
+Your agent will only receive Instagram messages after this webhook is configured and verified in Meta.
+:::
+
+
+#### Verify Token
+
+A verification token used **once** by Meta to confirm webhook ownership.
+
+- Copy the Verify Token from the trigger
+- Paste it into **Meta → My Apps → [Select Your App] → Use cases → Instagram API → API setup with Instagram Login → Configure Webhooks → Verify Token**
+- Required during webhook verification
+
+
+
+#### Verified Status
+
+Shows whether Meta has successfully verified your webhook.
+
+- **Not Verified** → Webhook not connected
+- **Verified** → Ready to receive Instagram messages
+- Click **Check status** to refresh
+
+A timestamp is shown once verification is complete.
+
+
+#### Meta App Secret (Optional)
+
+Used to validate webhook signatures sent by Meta.
+
+- Found in **Meta → My Apps → Settings → Basic → App Secret**
+- Helps ensure requests truly come from Meta
+- Toggle visibility using the eye icon
+
+<figure>
+  <Thumbnail src="/img/agent-trigger/whatsapp-meta-app-secret.png" alt="Instagram Meta App Secret" width='100%'/>
+  <figcaption align = "center"><i>Instagram Meta App Secret</i></figcaption>
+</figure>
+
+:::tip
+Highly recommended for production use to prevent spoofed webhook calls.
+:::
+
+
+### Step 3: Auto Populate Payload Data (Optional)
+
+The **Auto populate payload data from a live Instagram call** feature helps you inspect real message payloads.
+
+1. Click **Start Listening**
+2. Send a message to your Instagram Business account
+3. The first incoming payload is captured and displayed
+
+This helps you:
+- Understand Instagram payload structure
+- Confirm webhook connectivity
+- Auto-fill input schemas
+
+:::warning
+While editing an existing agent, real messages may be captured but **will not execute** the agent during configuration.
+:::
+
+
+### Step 4: Webhook Input (Instagram Payload)
+
+Instagram messages follow Meta's webhook structure.
+
+#### Raw Input (Example)
+
+```json
+{
+  "entry": [
+    {
+      "id": "17841405309211844",
+      "time": 1504902988,
+      "messaging": [
+        {
+          "sender": {
+            "id": "123456789"
+          },
+          "recipient": {
+            "id": "17841405309211844"
+          },
+          "timestamp": 1504902988,
+          "message": {
+            "mid": "mid.$cAAE1QiBYk6pr6s_1PdB5jvfmMwca",
+            "text": "Hello"
+          }
+        }
+      ]
+    }
+  ],
+  "object": "instagram"
+}
+```
+
+#### Important Fields
+
+* **Sender**
+
+  * `entry[0].messaging[0].sender.id` → Instagram user ID
+  * `entry[0].id` → Instagram page/business account ID
+
+* **Message**
+
+  * `entry[0].messaging[0].message.mid` → Message ID (required for replies)
+  * `entry[0].messaging[0].message.text` → Message content
+  * `entry[0].messaging[0].message.attachments` → Media attachments (images, videos)
+  * `entry[0].messaging[0].timestamp` → Time received
+
+* **Metadata**
+
+  * `entry[0].id` → Your Instagram Business account ID
+  * `object` → Always "instagram" for Instagram messages
+
+
+### Step 5: Configure Message (Agent Context)
+
+The **Message** section defines what context your agent receives.
+
+#### Write Tab
+
+Use templates to extract relevant data.
+
+**Template Rules**
+
+* Use `{{...}}` for placeholders
+* Use dot notation for nested fields
+* Array indices are supported
+
+#### Recommended Template
+
+```
+New Instagram message received.
+
+From: {{entry[0].messaging[0].sender.id}}
+Instagram Account ID: {{entry[0].id}}
+
+Message:
+{{entry[0].messaging[0].message.text}}
+
+Message ID:
+{{entry[0].messaging[0].message.mid}}
+```
+
+#### Full Payload Option
+
+```
+{{$}}
+```
+
+
+#### Preview Tab
+
+Shows exactly how your agent will receive the formatted message.
+
+Use this to:
+
+* Verify placeholders
+* Confirm message text extraction
+* Avoid runtime issues
+
+
+### Step 6: Save Configuration
+
+1. Ensure webhook is **Verified**
+2. Review message template preview
+3. Click **Save**
+
+Once saved, incoming Instagram messages will trigger your agent.
+
+
+## Accessing Instagram Data in Agent Instructions
+
+Common references:
+
+* Sender ID
+  `{{entry[0].messaging[0].sender.id}}`
+
+* Instagram Account ID
+  `{{entry[0].id}}`
+
+* Message Text
+  `{{entry[0].messaging[0].message.text}}`
+
+* Message ID
+  `{{entry[0].messaging[0].message.mid}}`
+
+* Timestamp
+  `{{entry[0].messaging[0].timestamp}}`
+
+
+### Example Agent Instruction
+
+```
+When an Instagram message is received:
+- Read the user's message
+- Use the Message ID to reply
+- Respond politely and clearly
+- Maintain conversational context
+- Handle media attachments if present
+```
+
+
+## Best Practices
+
+* Verify webhook before production use
+* Always store and reuse Message IDs
+* Handle different message types (text, images, videos, stories)
+* Keep responses short and conversational
+* Test using real Instagram messages
+* Secure your Meta App Secret
+* Monitor webhook verification status
+* Consider Instagram's 24-hour messaging window for customer conversations
+
+
+## Instagram Webhook Verification (Meta)
+
+1. Copy **Webhook URL** and **Verify Token**
+2. Go to **Meta for Developers → Webhooks**
+3. Configure Instagram webhook
+4. Subscribe to `messages` events
+5. Verify and save
+6. Confirm status in DronaHQ
+
+
+## Next Steps
+
+* Publish your agent
+* Verify webhook in Meta
+* Send test messages on Instagram
+* Monitor agent tracing
+* Combine with:
+
+  * [Webhook Trigger](/agents/triggers/webhook) for integrations
+  * [Scheduler Trigger](/agents/triggers/scheduler) for proactive messaging
+  * [WhatsApp Trigger](/agents/triggers/inbuilt-triggers/whatsapp) for multi-channel support
+  * [Facebook Trigger](/agents/triggers/inbuilt-triggers/facebook) for social media coverage
+
