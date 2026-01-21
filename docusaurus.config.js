@@ -201,8 +201,8 @@ const config = {
       // },
       announcementBar: {
         id: 'anouncement',
-        content: '<span class="badge badge--success announcement-badge margin-right--sm">Agentic Platform</span> Build your AI workforce, no code required <a target="_blank" rel="noopener noreferrer" href="https://www.dronahq.com/agents-demo-video/?utm_source=doc-banner">Watch demo</a>',
-        // content: '<span class="badge badge--success announcement-badge margin-right--sm">Explore Veda AI</span> Build internal tools from prompts or designs. <a target="_blank" rel="noopener noreferrer" href="https://www.dronahq.com/ai-workshop/?ref=top-banner-docs"> Register for workshop</a>',          
+        content: '<span class="badge badge--success announcement-badge margin-right--sm">Live Workshop</span> Build your first AI agent <a target="_blank" rel="noopener noreferrer" href="https://luma.com/8gpejuv7?utm_source=docs-top-banner">Register Now</a>',
+        // content: '<span class="badge badge--success announcement-badge margin-right--sm">Agentic Platform</span> Build your AI workforce, no code required <a target="_blank" rel="noopener noreferrer" href="https://www.dronahq.com/agents-demo-video/?utm_source=doc-banner">Watch demo</a>',
         backgroundColor: '#fafbfc',
         textColor: '#091E42',
         isCloseable: true,
