@@ -1,5 +1,116 @@
 [
-    {
+  {
+
+    "timestamp": 1769490125000,
+    "tags": ["Self-Hosted", "3.8.17-stable"],
+    "heading": "Version 3.8.17-stable",
+    "cards" : [
+      {
+        "title": "Added",
+        "type": "added",
+        "points": [
+          "Added a feature to highlight the action item for a new control (if a single action item) and prompt for confirmation before deleting an existing actionflow."
+        ]
+      },{
+        "title":"Enhancements",
+        "type": "improved",
+        "points": [
+          "Enhanced error handling in the multistep authentication screen."
+        ] }
+      ,
+      {"title":"Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed an issue where SSO login users were confused by the email displayed.",
+
+"Fixed an issue where the data query end URL was rendered as the base URL only, with the path missing.",
+
+"Fixed a noticeable transition issue when creating a new app.",
+
+"Fixed an issue where the header screen was not visible in the validate screen action."
+        ]
+      }
+    ]
+  },
+{
+    "timestamp": 1768846517000,
+    "tags": ["Self-Hosted", "3.8.16-stable"],
+    "heading": "Version 3.8.16-stable",
+    "cards" : [
+      {
+        "title": "Added",
+        "type": "added",
+        "points": [
+          "Added localization attributes and a no-data indicator container for the phone control (dropdown) template."
+        ]
+      },{
+
+        "title":"Enhancements",
+        "type": "improved",
+        "points": [ "Enhanced the Change State action for improved functionality."
+        ]
+      },
+      {
+        "title":"Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed an issue where Actionflow JS was triggering unexpectedly during TableGrid search.",
+
+"Fixed an issue where the Data Query UI broke and generated duplicate tabs.",
+
+"Fixed an issue where the app summary did not open as expected.",
+
+"Fixed an issue where headers were not forming when the header key was numeric.",
+
+"Fixed an issue where external CSS was reset on widget update.",
+
+"Fixed an issue where data queries in Actionflow were not sending the correct data for API calls."
+        ]
+      }
+    ]
+},
+  {
+    "timestamp": 1767636917000,
+    "tags": ["Self-Hosted", "3.8.15-stable"],
+    "heading": "Version 3.8.15-stable",
+    "cards" : [
+      {
+        "title": "Added",
+        "type": "added",
+        "points": [
+          "Added info text for new properties in the checkbox tree and chart control JSON editor type props.",
+
+"Added a logo for the navigation bar control to enhance visual branding.",
+
+"Added tooltip info for the user-defined group by property of the table grid."
+        ]
+      },  
+      {
+        "title":"Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed an issue where a 502 server error caused the screen or action flow to freeze.",
+
+"Fixed an issue where data queries did not reflect the updated environment URL.",
+
+"Fixed the logic to generate field data types for older data formats in controls.",
+
+"Fixed the nested controls search issue in the sidebar and top bar.",
+
+"Fixed an issue where a noticeable flicker or abrupt transition occurred when creating a new app or refreshing the page before the UI fully loaded.",
+
+"Fixed an issue where adding a query string incorrectly triggered a 'Keyword Name already exists' error.",
+
+"Fixed an issue where location was not working on first app load.",
+
+"Fixed a vulnerability by upgrading Node to version 22.21.1.",
+
+"Fixed an issue where importing automation showed duplicate connector warnings even when the same connector library was intentionally used multiple times."
+        ]
+      }
+    ]
+  },
+  {
     "timestamp": 1761289443000,
     "tags": ["Self-Hosted", "3.8.13-stable"],
     "heading": "Version 3.8.13-stable",
@@ -59,7 +170,8 @@
           "Fixed an issue where the file path for offline submissions was not handled correctly.",
 "Fixed an issue where branding settings were not correctly applied to the end-user portal.",
 "Fixed an issue where the test connection was not functioning correctly for the Firebase connector.",
-"Fixed an issue in the Data Query module where connector queries failed to open after saving their associated subcategory."
+"Fixed an issue in the Data Query module where connector queries failed to open after saving their associated subcategory.",
+"Fixed an issue where transformed response data was lost after switching data queries without saving due to a minor code defect."
     ]
   }
     ]

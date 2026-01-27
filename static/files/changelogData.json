@@ -1,4 +1,120 @@
 [
+  {
+    "timestamp": 1765563317000,
+    "tags": ["Cloud-Hosted"],
+    "heading": "",
+    "cards": [
+      {
+        "title": "Added",
+        "type": "added",
+        "points": [
+          "Added an option to insert images with prompt in the prompt box of Vibe App.",
+
+"Added chat history for previous context in NLP calls for Vibe App.",
+
+"Added OpenMeter credit tracking for Vibe App AI usage.",
+
+"Added menu options in Vibe App preview mode to navigate to component and code view.",
+
+"Added context-aware prompt processing enhancements.",
+
+"Added support for the new doc-search agent for improved documentation retrieval.",
+
+"Added digit grouping support across multiple formatting standards in Table Grid for number format data.",
+
+"Added support for the master schema intent.",
+
+"Added the signature pad library in the builder for live editing.",
+
+"Added GRPCv2 server reflection and ElasticSearch API key auth.",
+
+"Added support for dynamic properties, allowing formulas within property values."
+        ]
+      },
+      {
+        "title": "Enhancements",
+        "type": "improved",
+        "points": [
+          "Enhanced retry mechanism, response polling, and recovery logic in Vibe App.",
+
+"Enhanced publish and share functionality with revamped UI for Vibe App.",
+
+"Improved code view stability, preview behavior, and UI responsiveness during code generation in Vibe App.",
+
+"Enhanced Change State action.",
+
+"Removed deprecated filter objects option in the FX formula module."
+        ]
+      },
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed an issue where chat history support was added to AI panel requests.",
+
+"Fixed an issue where external CSS was reset during widget update.",
+
+"Fixed an issue where Vibe App requests blocked other requests when calling the AI backend.",
+
+"Fixed an issue where the logo was distorted on the end-user login page.",
+
+"Fixed an issue where live builder editing was enabled on hidden controls.",
+
+"Fixed preview frame behavior in Vibe App to always open and navigate to the component tab.",
+
+"Fixed component refresh button to update components according to React code in Vibe App.",
+
+"Fixed an issue where headers were not forming when the header key was numeric.",
+
+"Fixed an issue for thinking steps appearing as dropdown in Vibe App.",
+
+"Fixed a permission issue on initial app load.",
+
+"Fixed an issue where controls shrank when moved to the wrong position.",
+
+"Fixed component key reference support and resolved preview, modal, prompt limit, and EndPortal access bugs.",
+
+"Fixed an issue where the DataQuery UI broke and generated duplicate tabs.",
+
+"Fixed toggle button positioning, carousel display, Vibe App DataQuery toggle button, and component card data tab opening in the components panel.",
+
+"Fixed an issue in the Data Query module where a connector query failed to open after saving its subcategory.",
+
+"Fixed the nested controls search issue in the sidebar and top bar.",
+
+"Fixed placeholder visibility and save event issues.",
+
+"Fixed the logic to generate field data types for older data formats in controls.",
+
+"Fixed the query string bug where adding a query string triggered a ‘Keyword Name already exists’ error.",
+
+"Fixed an issue where a noticeable flicker occurred when creating a new app or refreshing the page before the UI stabilized.",
+
+"Fixed an issue in the Vibe panel where the preview frame called the same action multiple times.",
+
+"Fixed an issue where file upload select image property did not work properly when minimized.",
+
+"Fixed an issue where Table Grid action conditions to hide/disable were not working.",
+
+"Fixed an issue where TableGrid property pop-up closed unexpectedly when editing 'Condition to Hide/Disable'.",
+
+"Fixed an issue where a 502 server error caused the screen/action flow to freeze.",
+
+"Fixed an issue where errors were visible on label hover only and not when * was present.",
+
+"Added focus-out handling and UI improvements for column formatting.",
+
+"Fixed an issue where extra spaces were added before and after {{USERNAME}} in preview mode.",
+
+"Fixed the initialize logic of the live-edit feature.",
+
+"Fixed a grammatical error in the offline submission message.",
+
+"Fixed an issue where embed code random ID matched as DB only takes 45 chars."
+        ]
+      }
+    ]
+  },
    {
     "timestamp": 1762495929000,
     "tags": ["Cloud-Hosted"],
