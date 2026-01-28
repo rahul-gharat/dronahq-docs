@@ -1,5 +1,110 @@
 [ 
+{
+"timestamp": 1768846517000,
+"tags": ["Control", "Action"],  
+"heading": "",
+"cards": [{
+      "title": "Added",
+      "type": "added",
+      "points": [
+       "Added Vibe App support for Custom Control."
+      ]
+},
     {
+      "title": "Enhancements",
+      "type": "improved",
+      "points": [
+        "Enhanced the image slider with live preview support.",
+
+"Enhanced the value picker with live preview support.",
+
+"Enhanced the cascader with live preview support.",
+
+"Enhanced the menu list with live preview support.",
+
+"Enhanced the rich text editor with live preview support.",
+
+"Enhanced the split button with live preview support.",
+
+"Enhanced Table Grid with auto row height based on data length.",
+
+"Enhanced charts to allow the use of CSS variables in JSON editor properties."
+      ]
+    },
+    {
+      "title":"Fixed",
+      "type":"fixed",
+      "points":[
+        "Fixed localization issues in the dashboard.",
+
+"Fixed an issue where dropdown output of other options did not preserve the original text case.",
+
+"Fixed an issue where the validate pages header screen was not visible in the screens dropdown.",
+
+"Fixed an issue where the heading control did not correctly clear its value when set to an empty state.",
+
+"Fixed common key conflicts for Fit-to-Screen configuration, iOS pagination dropdown arrow display, and internal scroll in editable cells for Table Grid.",
+
+"Fixed an issue where the dropdown did not clear properly when empty data was received.",
+
+"Fixed localization issues in Table Grid.",
+
+"Fixed an issue in File Upload by adding toggle support for base64 generation and file preview.",
+
+"Fixed the radio selection issue related to duplicate IDs.",
+
+"Fixed duplicity of 'United States' in the default country dropdown for the address control.",
+
+"Fixed dynamic assignment for DHQCTRLPROPERTYDATAMAP in Custom Control for Vibe App.",
+
+"Fixed phone control handling for no data present and sorted countries list alphabetically."
+  ]
+}
+  ]
+} ,
+{
+"timestamp": 1766859317000,
+"tags": ["Control", "Action"],  
+"heading": "",
+"cards": [{
+      "title": "Added",
+      "type": "added",
+      "points": [
+        "Added dynamic disable/hidden states in mapped mode for checkbox."
+      ]
+},
+    {
+      "title": "Enhancements",
+      "type": "improved",
+      "points": [
+        "Enhanced Table Grid with digit grouping in number column formatting and scroll support for multi-tag.",
+
+"Enhanced Table Grid with delete functionality for newly added rows.",
+
+"Added property to expand the checkbox tree structure by default."
+      ]
+    },
+    {
+      "title":"Fixed",
+      "type":"fixed",
+      "points":[
+        "Fixed the issue where the PROPERTIES keyword in output was not enabled for Vibe App custom controls.",
+
+"Fixed multiple action flow triggers when using the selectAll option in dropdown.",
+
+"Fixed an issue where validation messages were not displaying for text input.",
+
+"Fixed localization support for placeholder text in text input.",
+
+"Fixed a dropdown 'Other' option validation display issue.",
+
+"Fixed an issue where dropdown-type editing was not working as expected on iOS devices in Table Grid."
+      ]
+    }
+  ]
+
+} ,   
+{
 "timestamp": 1763441296000,
 "tags": ["Control", "Action"],
 "heading": "",
