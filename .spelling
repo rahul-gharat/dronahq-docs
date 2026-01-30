@@ -2120,4 +2120,12 @@ subCatDetails
 SBTokenizer
 inlineJSTokenizer
 axios
-
+'
+brand_name 
+timezone_offset
+channel_id 
+channel_token
+user_id
+uid
+user_email
+ env_id

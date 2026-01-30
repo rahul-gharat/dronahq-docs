@@ -1,0 +1,30 @@
+---
+sidebar_position: 2
+title: "Keywords"
+pagination_prev: null
+---
+import VideoEmbed from "@site/src/components/VideoEmbed";
+import Image from "@site/src/components/Image";
+import VersionedLink from '@site/src/components/VersionedLink';
+import ArrowRight from '@site/static/icons/arrow_right.svg';
+
+
+
+Keywords are predefined variables in a DronaHQ’s agentic platform that users can use in their agent instruction. They provide important information about the logged-in user or the agent's state, which is vital for building logical workflows.
+
+| Keyword | Keyword | Description |
+|--------|--------|-------------|
+| brand_name | {{current_user.brand_name}} | The name of the brand associated with the active session. |
+| email | {{current_user.email}} | The primary email address of the authenticated user. |
+| name | {{current_user.name}} | The full name of the current user. |
+| groups | {{current_user.groups}} | Organizational groups the user belongs to. |
+| timezone | {{current_user.timezone}} | The string representation of the user's local timezone (e.g., "Europe/London"). |
+| timezone_offset | {{current_user.timezone_offset}} | The numerical UTC offset (in minutes or hours) for the user's timezone. |
+| thread_id | {{thread_id}} | Unique identifier for the specific conversation or process thread. |
+| channel_id | {{channel_id}} | The unique identifier for user |
+| channel_token | {{channel_token}} | The security token used to authenticate requests for the specific channel. |
+| user_id | {{user_id}} | The primary database identifier for the user. |
+| uid | {{uid}} | The unique session-specific identifier. |
+| user_email | {{user_email}} | user's email address. |
+| env_id | {{env_id}} | The identifier for the environment (e.g., Production, Sandbox). |
+
