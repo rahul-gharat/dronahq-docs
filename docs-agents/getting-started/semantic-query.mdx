@@ -1,0 +1,36 @@
+---
+sidebar_position: 2
+title: "Semantic Query"
+pagination_prev: null
+---
+import VideoEmbed from "@site/src/components/VideoEmbed";
+import Image from "@site/src/components/Image";
+import VersionedLink from '@site/src/components/VersionedLink';
+import ArrowRight from '@site/static/icons/arrow_right.svg';
+
+
+
+# Semantic Query
+
+## Overview
+The Semantic Query control enables natural-language access to structured data by translating user intent into executable queries. Powered by Large Language Models (LLMs), it automatically generates and executes SQL or API parameters against connected data sources—allowing users to retrieve precise results without understanding schemas or query syntax.
+
+## Configuration
+To configure a Semantic Query control, define both the Brain (reasoning model) and the Body (data source).
+
+### 1. Model Configuration 
+
+| Property          | Description                                              |
+|------------------|----------------------------------------------------------|
+| Name             | Unique identifier for this Semantic Query instance       |
+| Description      | Contextual guidance for the model about the query’s purpose |
+| Model            | LLM provider and version used for reasoning             |
+| Temperature      | Controls determinism vs. creativity in query generation |
+| Connector Library| Data connector used to execute generated queries        |
+
+### 2. Data Source Configuration 
+1. Select a connector from the Connector Library.  
+2. Choose the target table or API resource.  
+3. Provide schema metadata to improve semantic accuracy.  
+
+Once configured, the Semantic Query control is ready to accept natural-language prompts and return structured results.
