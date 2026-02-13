@@ -18,12 +18,12 @@ This allows for an intuitive editing experience, helping you move fast without d
 
 ## Update Component Properties via Prompt
 
-You can update properties of individual components using prompts and `@mentions`.
+You can update properties of individual components using prompts and `{{mentions}}`.
 
 For example:
-- `@submitBtn change label to Submit and background color to blue`
-- `Enable pagination in @tablegrid`
-- `Update the label for @jsonForm to Customer Details Form and make it bold`
+- `{{submitBtn}} change label to Submit and background color to blue`
+- `Enable pagination in {{tablegrid}}`
+- `Update the label for {{jsonForm}} to Customer Details Form and make it bold`
 
 <div style={{ position: 'relative', paddingBottom: 'calc(46.33333333333333% + 41px)', height: 0 }}> 
     <iframe 
@@ -41,11 +41,11 @@ For example:
 
 #### How to Use
 1. Open the AI Chatbot from the left sidebar.
-2. Type your prompt using `@componentName` to refer to an existing control.
+2. Type your prompt using `{{componentName}}` to refer to an existing control.
 3. The AI will parse and apply updates immediately to the component.
 
 :::caution
- Make sure your component names are unique and recognizable. When you type `@`, DronaHQ will auto-suggest existing component IDs in context.
+ Make sure your component names are unique and recognizable. When you type `{{`, DronaHQ will auto-suggest existing component IDs in context.
 :::
 
 This method is ideal for making quick UI tweaks — like updating button styles, label text, visibility rules, or sizing.
@@ -67,12 +67,12 @@ With AI-powered editing in DronaHQ, you can quickly add actions to components by
   </figure>
 
 For example:
-- `On @loginForm submit click, insert form details into @formFeedbackDB`
-- `On @submitBtn button click, validate screen-1 and navigate to screen-2`
+- `On {{loginForm}} submit click, insert form details into @formFeedbackDB`
+- `On {{submitBtn}} button click, validate screen-1 and navigate to screen-2`
 
 #### How to Use
 1. Open the AI Chatbot from the left sidebar.
-2. Type your prompt  using `@componentName` and desired action.
+2. Type your prompt  using `{{componentName}}` and desired action.
 3. The AI will automatically create and attach the specified action to the component.
 
 Adding actions this way eliminates the need to navigate through menus or open the Actionflow editor — just type your requirements, and the AI will handle the rest.
@@ -139,13 +139,13 @@ If you need to swap one component for another in your app, you can do this quick
 
 
 For example:
-- `Replace @dropdown with form for capturing customer information`
-- `Replace @inputfield with Button control with purple background and label as Submit`
-- `Replace @submitBtn with Table`
+- `Replace {{dropdown}} with form for capturing customer information`
+- `Replace {{inputfield}} with Button control with purple background and label as Submit`
+- `Replace {{submitBtn}} with Table`
 
 #### How to Use
 1. Open the AI Chatbot from the left sidebar.
-2. Type your prompt with `@componentName` and specify the replacement component.
+2. Type your prompt with `{{componentName}}` and specify the replacement component.
 3. The AI will replace the specified component with the new one, and automatically update any relevant properties where necessary.
 
 
