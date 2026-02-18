@@ -27,7 +27,7 @@ For example:
 
 <div style={{ position: 'relative', paddingBottom: 'calc(46.33333333333333% + 41px)', height: 0 }}> 
     <iframe 
-        src="https://demo.arcade.software/GsLcXalswdcEeJwq0EoG?embed&embed_mobile=tab&embed_desktop=inline&show_copy_link=true"
+        src="https://demo.arcade.software/ImrOppjsQTElXhum0Qw7?embed&embed_mobile=tab&embed_desktop=inline&show_copy_link=true"
         title="Create and Customize an AI-Powered App"
         frameborder="0" 
         loading="lazy" 

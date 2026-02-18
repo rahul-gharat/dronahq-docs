@@ -1,5 +1,39 @@
 [
   {
+    "timestamp": 1769536464000,
+    "tags": [
+      "Self-Hosted",
+      "3.9.6-edge"
+    ],
+    "heading": "Version 3.9.6-edge",
+    "cards": [
+      {
+        "title": "Added",
+        "type": "added",
+        "points": [
+          "Added missing helper text for several control properties to improve clarity and usability.",
+"Added support to highlight the action item for new controls (when a single action item exists) and prompt for confirmation before deleting an existing action flow.",
+"Added localization attributes and a no-data indicator container to the phone control dropdown template."
+        ]
+      },
+      {
+        "title":"Enhancements",
+        "type":"improved",
+        "points":[
+          "Enhanced error handling on the multi-step authentication screen for improved reliability."
+        ]
+      },
+      {
+        "title":"Fixed",
+        "type":"fixed",
+        "points":[
+          "Fixed an issue causing a noticeable transition during new app creation.",
+"Fixed an issue where PostgreSQL prepared statements were not functioning correctly during Data Query save and preview operations."
+        ]
+      }
+    ]
+  },
+  {
     "timestamp": 1768846517000,
     "tags": [
       "Self-Hosted",
