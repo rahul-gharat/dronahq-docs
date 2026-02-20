@@ -1,4 +1,43 @@
 [
+   {
+    "timestamp": 1771481350000,
+    "tags": [
+      "Self-Hosted",
+      "3.10.0-edge"
+    ],
+    "heading": "Version 3.10.0-edge",
+    "cards": [
+      {
+        "title": "Added",
+        "type": "added",
+        "points": [
+          "Added support for configuring delay tasks within automation workflows.",
+"Added an option to exclude parameters with empty or null values in REST API Data Queries.",
+"Added live interaction support in the builder for controls and Data Queries."
+        ]
+      },
+      {
+        "title":"Enhancements",
+        "type": "improved",
+        "points": [
+          "Enhanced automation search functionality to include matching by Automation ID."
+        ]
+      },
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points":[
+          "Fixed an issue where nested controls were not searchable from the sidebar and top bar.",
+"Fixed a UI issue with the 'Add to Git' option in the Settings dropdown.",
+"Fixed an issue where global variables with a value of 0 were incorrectly converted to empty strings.",
+"Fixed an issue where page scrolling occurred even when 'Fit to Screen' was applied to a control.",
+"Fixed an issue where the required asterisk was not displayed correctly after page re-render.",
+"Fixed an issue where TableGrid row selection was not working on Public URLs.",
+"Fixed an issue where PDF Creator and DHQ File Storage were duplicated without proper configuration."
+        ]
+      }
+    ]
+   },
   {
     "timestamp": 1769536464000,
     "tags": [
