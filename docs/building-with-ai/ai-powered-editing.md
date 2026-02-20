@@ -27,7 +27,7 @@ For example:
 
 <div style={{ position: 'relative', paddingBottom: 'calc(46.33333333333333% + 41px)', height: 0 }}> 
     <iframe 
-        src="https://demo.arcade.software/ImrOppjsQTElXhum0Qw7?embed&embed_mobile=tab&embed_desktop=inline&show_copy_link=true"
+        src= "https://demo.arcade.software/TFSPu2P83Vi1s0tfKm0J?embed&embed_mobile=tab&embed_desktop=inline&show_copy_link=true"
         title="Create and Customize an AI-Powered App"
         frameborder="0" 
         loading="lazy" 
@@ -45,7 +45,9 @@ For example:
 3. The AI will parse and apply updates immediately to the component.
 
 :::caution
- Make sure your component names are unique and recognizable. When you type `{{`, DronaHQ will auto-suggest existing component IDs in context.
+
+ Make sure your component names are unique and recognizable. When you type `{{}}`, DronaHQ will auto-suggest existing component IDs in context.
+
 :::
 
 This method is ideal for making quick UI tweaks — like updating button styles, label text, visibility rules, or sizing.
