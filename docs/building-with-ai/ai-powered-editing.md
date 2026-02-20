@@ -45,7 +45,9 @@ For example:
 3. The AI will parse and apply updates immediately to the component.
 
 :::caution
+
  Make sure your component names are unique and recognizable. When you type `{{}}`, DronaHQ will auto-suggest existing component IDs in context.
+
 :::
 
 This method is ideal for making quick UI tweaks — like updating button styles, label text, visibility rules, or sizing.

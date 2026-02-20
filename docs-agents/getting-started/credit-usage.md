@@ -82,8 +82,10 @@ import TabItem from '@theme/TabItem';
 | gpt-5 | 1.25 | 10 | 
 | gpt-5-mini | 0.25 | 2 | 
 | gpt-5-nano | 0.05 | 0.4 |
-| text-embedding-3-small | 0.13 | 0 | 
-| text-embedding-3-large | 0.02 | 0 |
+| gpt-5.2 | 1.75 | 14 | 
+| gpt-5.2-pro | 21 | 168 | 
+| text-embedding-3-small | 0.02 | 0 | 
+| text-embedding-3-large | 0.13 | 0 |
 | text-embedding-ada-002 | 0.10 | 0 |
 
 </TabItem>
