@@ -1,4 +1,56 @@
 [
+   {
+
+    "timestamp": 1771481350000,
+    "tags": ["Self-Hosted", "3.9.7-stable"],
+    "heading": "Version 3.9.7-stable",
+    "cards" : [
+      
+      {
+        "title": "Enhancements",
+        "type": "improved",
+        "points": [
+        "Enhanced the Change State action for improved reliability and behavior."
+        ]
+      },
+        {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed an issue where the displayed email during SSO login caused user confusion.",
+"Fixed an issue where content type was not validated as a string before performing a replace operation.",
+"Fixed an issue where Data Query in Action Flow was not passing the correct data in API calls.",
+"Fixed an issue where updating a widget caused external CSS to reset.",
+"Fixed an issue where headers were not generated correctly when the header key was numeric.",
+"Fixed an issue where the Data Query UI was breaking and generating duplicate tabs.",
+"Fixed an issue where the Data Query end URL was incorrectly set to the base URL, omitting the defined path.",
+"Fixed an issue where switching a Data Query while editing without saving would clear the query.",
+"Fixed an issue where the fillable PDF JSON column did not provide sufficient space for editing JSON content.",
+
+"Fixed an issue where the header screen was not visible within the Validate Screen action.",
+"Fixed an issue with the Set and Remove property functionality in the textarea component."
+        ]
+      }
+    ]
+  },
+   {
+
+    "timestamp": 1771567750000,
+    "tags": ["Self-Hosted", "3.8.18-stable"],
+    "heading": "Version 3.8.18-stable",
+    "cards" : [
+      {
+        "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed an issue where the fillable PDF JSON column did not provide sufficient space for editing JSON content.",
+          "Fixed an issue where switching a DQ while editing without saving would clear the query.",
+"Fixed an issue where content type was not validated as a string before performing a replace operation.",
+"Fixed an issue with the Set and Remove property functionality in the textarea component."
+        ]
+      }
+    ]
+  },
     {
 
     "timestamp": 1771005264000,
