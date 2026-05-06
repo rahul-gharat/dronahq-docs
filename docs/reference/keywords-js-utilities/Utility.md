@@ -1195,3 +1195,23 @@ UTILITY.CHANGESTATE([
    { ctrlName: "button10", stateOperation: "toggle", states: ["Enable","Disable"] }
 ]);
 ```
+
+## VALIDATECTRL 
+
+The `UTILITY.VALIDATECTRL()` is a utility function used to validate multiple controls (fields) at once. It returns a Promise that resolves if all controls are valid, and rejects if any control is 
+
+#### Usage
+
+```javascript
+UTILITY.VALIDATECTRL(["textinput","fileupload"])
+    .then(function(res) {
+        console.log("All valid:", res.VALIDCONTROLS);
+    })
+    .catch(function(err) {
+        console.log("Invalid:", err.INVALIDCONTROLS);
+    });
+```
+
+:::note
+(["textinput", "fileupload"]) represents an array of controls used in the Validate Control action.
+:::

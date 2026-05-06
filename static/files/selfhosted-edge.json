@@ -1,35 +1,4 @@
 [
-     {
-    "timestamp": 1775561771000,
-    "tags": [
-      "Self-Hosted",
-      "3.10.1-edge"
-    ],
-    "heading": "Version 3.10.1-edge",
-    "cards": [
-      {
-        "title": "Added",
-        "type": "added",
-        "points": ["Added support for dynamic properties, enabling the use of formulas within property values."]
-      },
-      {
-        "title":"Enhancements",
-        "type":"improved",
-        "points":[
-          "Enhanced system security by addressing vulnerabilities in ClickHouse integration to improve safety and reliability."
-        ]
-      },{
-        "title":"Fixed",
-        "type":"fixed",
-        "points":["Fixed an issue where duplicate import URLs appeared in the UI when adding widgets with existing libraries.",
-"Fixed an issue where default selection did not work correctly in nested controls.",
-"Fixed an issue where the query appeared blank when opening DQ in certain cases.",
-"Fixed an issue where the app failed to open when the default view was set to mobile.",
-"Fixed an issue where the Table Grid skeleton was incorrectly displayed on the Menu screen on mobile devices."]
-      }
-
-    ]
-  },
    {
     "timestamp": 1773764289000,
     "tags": [
@@ -42,6 +11,7 @@
         "title": "Added",
         "type": "added",
         "points": [
+          "Added support for dynamic properties, enabling the use of formulas within property values.",
          "Added support for delay task functionality.",
 
 "Added support to skip passing parameters with empty or null values in REST API DQ.",
@@ -57,6 +27,8 @@
         "title":"Enhancements",
         "type": "improved",
         "points": [
+          "Enhanced system security by addressing vulnerabilities in ClickHouse integration to improve safety and reliability."
+,
          "Enhanced automation search functionality to include matching by automation ID.",
 
 "Enhanced screen scrolling behavior when the left sidebar is opened and improved handling of the Add Task popup for empty action flows.",
@@ -68,6 +40,11 @@
         "title": "Fixed",
         "type": "fixed",
         "points":[
+          "Fixed an issue where duplicate import URLs appeared in the UI when adding widgets with existing libraries.",
+"Fixed an issue where default selection did not work correctly in nested controls.",
+"Fixed an issue where the query appeared blank when opening DQ in certain cases.",
+"Fixed an issue where the app failed to open when the default view was set to mobile.",
+"Fixed an issue where the Table Grid skeleton was incorrectly displayed on the Menu screen on mobile devices.",
          "Fixed an issue where nested controls search did not work correctly in the sidebar and top bar.",
 
 "Fixed a UI issue with the 'Add to Git' option in the settings dropdown.",
@@ -101,7 +78,9 @@
 "Fixed an issue where Git operations caused high RAM and CPU consumption.",
 "Fixed an issue where proxy requests were failing intermittently.",
 "Fixed an issue where unnecessary scrolling occurred in the publish sidebar body.",
-"Fixed an issue where the “Update Widget” notification persisted for imported widgets with custom controls."
+"Fixed an issue where the “Update Widget” notification persisted for imported widgets with custom controls.",
+ "Fixed an issue with nested variable keyword mapping in the JS editor.",
+"Fixed an issue when body values are not sending in the rest api task in automation."
         ]
       }
     ]
