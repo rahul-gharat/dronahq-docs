@@ -1,4 +1,48 @@
 [
+  { "timestamp": 1778750068000,
+    "tags": ["Self-Hosted", "3.9.11-stable"],
+    "heading": "Version 3.9.11-stable",
+    "cards" : [
+    
+      { "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed an issue where SCIM user creation could fail when the emails array was undefined."
+        ]
+    }
+  ]
+  },{ "timestamp": 1777454068000,
+    "tags": ["Self-Hosted", "3.9.10-stable"],
+    "heading": "Version 3.9.10-stable",
+    "cards" : [
+    
+      { "title": "Fixed",
+        "type": "fixed",
+        "points": [
+          "Fixed an issue where the required asterisk indicator was not displayed correctly after page re-rendering.",
+"Fixed an issue where action flows were being triggered automatically on page open.",
+"Fixed an issue where false values in packages were not being handled as expected."
+        ]
+    }
+  ]
+  },
+
+  {
+    "timestamp":   1777022068000,
+    "tags": ["Self-Hosted", "3.9.9-stable"],
+    "heading": "Version 3.9.9-stable",
+    "cards" : [
+    
+      { "title": "Fixed",
+        "type": "fixed",
+        "points": [
+      "Fixed an issue where body values were not being sent in REST API tasks within Automation.",
+"Fixed an issue where duplicate import URLs appeared in the UI when adding widgets with existing libraries.",
+"Fixed an issue where Data Query (DQ) occasionally displayed a blank query when opened."
+        ]
+      }
+    ]
+  },
   { "timestamp": 1777453545000,
     "tags": ["Self-Hosted", "3.10.0-stable"],
     "heading": "Version 3.10.0-stable",
