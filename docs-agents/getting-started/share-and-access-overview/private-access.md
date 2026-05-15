@@ -11,7 +11,7 @@ import Thumbnail from '@site/src/components/Thumbnail';
 
 
 
-When your agent's access is set to **Private**, it is not accessible to the public. Only users you explicitly grant access to — either by invite or via a verified JWT — can open and interact with it.
+When your agent's access is set to **Private**, it is not accessible to the public. Only users you explicitly grant access to, either by invite or via a verified JWT, can open and interact with it.
 
 <figure>
   <Thumbnail src="/img/agent-share-access/private-access.png" alt="Diagram of Secure Embed Sharing" width='100%'/>
@@ -59,7 +59,7 @@ This is the right approach when:
 - Your users have accounts in your system, not DronaHQ
 - You need per-user conversation history scoped to your own identity
 
-For the full Secure Embed setup — including how to generate your Identity Secret, sign a JWT, embed the agent via iframe, and handle token refresh — see the [Secure Embed documentation](./secure-embed-dronahq.md).
+For the full Secure Embed setup — including how to generate your Identity Secret, sign a JWT, embed the agent via iframe, and handle token refresh — see the [Secure Embed documentation](https://docs.dronahq.com/agents/getting-started/share-and-access-overview/secure-embed/).
 
 ---
 

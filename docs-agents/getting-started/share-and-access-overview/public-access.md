@@ -16,7 +16,8 @@ When you set your agent's access to **Public**, anyone with the link can open an
 
 <figure>
   <Thumbnail src="/img/agent-share-access/public-access.png" alt="Diagram of Secure Embed Sharing" width='100%'/>
-  <figcaption align = "center"></figcaption>
+  <figcaption align = "center"><i> Public Access</i>
+  </figcaption>
 </figure>
 
 DronaHQ gives you three ways to share a public agent:
@@ -108,6 +109,7 @@ Copy the script from the Share panel and paste it before the closing `</body>` t
 | `data-position` | Position of the bubble on screen — `right` or `left`                     |
 | `data-icon`     | Optional URL for a custom icon image inside the bubble button             |
 
-> 💡 **Tip:** Match `data-color` to your brand's primary colour so the widget feels native to your site.
+> **Tip:** Match `data-color` to your brand's primary colour so the widget feels native to your site.
+
 
 ---

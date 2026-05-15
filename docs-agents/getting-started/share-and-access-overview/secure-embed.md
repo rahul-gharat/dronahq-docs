@@ -85,6 +85,15 @@ The `variables` object lets you pass runtime values from your backend directly i
 
 When a key inside `variables` matches a variable already defined in the agent's variable section, the JWT value takes precedence and overrides it for that session.
 
+<figure>
+  <Thumbnail src="/img/agent-share-access/variable.png" alt="Assigning key inside variable-section
+  " width='100%' align = "center"  />
+  <figcaption align = "center"><i> Assigning key inside variable-section
+  </i>
+  </figcaption>
+</figure>
+
+
 This is useful for personalising the agent with user-specific context — for example, passing in the user's name, role, or any other attribute your backend has at login time — without needing to configure those values statically inside the agent.
 
 ```js
