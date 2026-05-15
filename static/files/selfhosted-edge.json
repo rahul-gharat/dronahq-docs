@@ -1,5 +1,31 @@
 [
    {
+    "timestamp":1778750068000,
+    "tags": [
+      "Self-Hosted",
+      "3.10.1-edge"
+    ],
+    "heading": "Version 3.10.1-edge",
+    "cards": [
+      {
+        "title": "Enhancements ",
+        "type": "improved",
+        "points": [
+          "Enhanced Google Sheets Update APIs by adding a Retain Value toggle to preserve existing values during updates."
+        ]
+      },
+      {
+        "title":"Fixed",
+        "type":"fixed",
+        "points":[
+          "Fixed an issue where SCIM user creation could fail when the emails array was undefined.",
+"Fixed an issue where bulk user uploads via Excel could trigger unexpected container restarts.",
+"Fixed an issue where action flows were being triggered automatically on page open."
+        ]
+      }
+    ]
+  },
+   {
     "timestamp": 1773764289000,
     "tags": [
       "Self-Hosted",
