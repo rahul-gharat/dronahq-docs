@@ -270,7 +270,7 @@ All references to 'DronaHQ,' 'we,' or 'us' under the Contract, what law will app
 
 | Domicile | DronaHQ Contracting Entity | Governing Law | Venue |
 | --- | --- | --- | --- |
-| **Anywhere** | Deltecs Infotech Private Ltd | California | San Francisco County, California |
+| **Anywhere** | Deltecs Infotech Private Ltd | India | Mumbai, India |
 
 The Contract, and any disputes arising out of or related hereto, will be governed exclusively by the applicable governing law above, without regard to conflicts of laws rules or the United Nations Convention on the International Sale of Goods. The courts located in the applicable venue above will have exclusive jurisdiction to adjudicate any dispute arising out of or relating to the Contract or its formation, interpretation or enforcement. Each party hereby consents and submits to the exclusive jurisdiction of such courts. In any action or proceeding to enforce rights under the Contract, the prevailing party will be entitled to recover its reasonable costs and attorney's fees.
 
